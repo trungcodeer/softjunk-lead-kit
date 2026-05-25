@@ -14,6 +14,10 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 - Appointment setting template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
 - Med spa template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
 - Tutoring template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
+- HVAC template: https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html
+- Roofing estimate template: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
+- Real estate lead template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
+- Plumbing lead template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 - AI-readable offer summary: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Machine-readable offers: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json

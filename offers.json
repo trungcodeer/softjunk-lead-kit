@@ -43,10 +43,24 @@
     "Dental offices",
     "Med spas",
     "Tutoring services",
+    "HVAC companies",
+    "Roofing companies",
+    "Real estate agents",
+    "Plumbing companies",
     "Appointment setters",
     "Virtual assistants",
     "Small agencies",
     "Local service businesses"
+  ],
+  "niche_pages": [
+    "https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html"
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
