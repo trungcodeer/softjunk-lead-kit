@@ -5,6 +5,9 @@ SoftJunk Lead Kit is a $5 lead follow-up offer for small businesses that get lea
 Main page:
 https://trungcodeer.github.io/softjunk-lead-kit/
 
+Payment page:
+https://trungcodeer.github.io/softjunk-lead-kit/pay.html
+
 Niche pages:
 - Med spa follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
 - Tutoring follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
