@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 02:01:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 03:28:00 +0700</lastBuildDate>
+    <item>
+      <title>SoftJunk $5 PayPal Payment Intent Gist</title>
+      <link>https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02</link>
+      <guid isPermaLink="true">https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02</guid>
+      <description>Independent public Gist with the exact 5 USD PayPal payment intent, buyer routes, machine-readable sources, and seller-side verification gate.</description>
+      <pubDate>Tue, 26 May 2026 03:28:00 +0700</pubDate>
+    </item>
     <item>
       <title>SoftJunk Root Buyer Hub</title>
       <link>https://trungcodeer.github.io/</link>

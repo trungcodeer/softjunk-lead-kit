@@ -16,6 +16,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 - Root payment intent JSON: https://trungcodeer.github.io/paypal.json
+- Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
@@ -80,6 +81,8 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 - Root payment intent JSON: https://trungcodeer.github.io/paypal.json
 - Root well-known payment intent: https://trungcodeer.github.io/.well-known/paypal-payment.json
+- Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
+- Raw Gist payment intent JSON: https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json
 - GitHub-readable buyer index: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 - GitHub profile offer: https://github.com/trungcodeer/trungcodeer
 - GitHub profile microsite: https://trungcodeer.github.io/trungcodeer/

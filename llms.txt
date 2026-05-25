@@ -17,6 +17,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 Root payment intent JSON:
 https://trungcodeer.github.io/paypal.json
 
+Public payment intent Gist:
+https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
+
+Raw Gist payment intent JSON:
+https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json
+
 Buyer index:
 https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 

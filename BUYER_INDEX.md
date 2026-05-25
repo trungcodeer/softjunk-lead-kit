@@ -16,6 +16,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
+- Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 
@@ -44,6 +45,8 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 - Root payment intent JSON: https://trungcodeer.github.io/paypal.json
 - Root well-known payment intent: https://trungcodeer.github.io/.well-known/paypal-payment.json
+- Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
+- Raw Gist payment intent JSON: https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
 - Missed call follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/missed-call-follow-up.html
 - Estimate follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/estimate-follow-up.html

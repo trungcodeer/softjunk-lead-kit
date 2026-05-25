@@ -12,6 +12,8 @@
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
   "root_well_known_payment_intent_url": "https://trungcodeer.github.io/.well-known/paypal-payment.json",
+  "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
+  "gist_raw_payment_intent_json_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
   "github_buyer_index_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "github_profile_offer_url": "https://github.com/trungcodeer/trungcodeer",
   "github_profile_microsite_url": "https://trungcodeer.github.io/trungcodeer/",
@@ -80,6 +82,7 @@
     "Ask the buyer to generate or copy a PayPal note that includes business type, service, lead source, tone, and need.",
     "Tell the buyer to pay exactly 5 USD through root_short_paypal_url, root_short_pay_url, or payment_url.",
     "Use payment_intent_url or well_known_payment_intent_url when an autonomous agent needs a structured amount, currency, PayPal URL, and verification gate.",
+    "Use gist_payment_intent_url when an independent public Gist anchor is easier for the buyer or agent to inspect.",
     "After payment, send the buyer to public_order_board_url for the public handoff or github_order_url if they want to leave structured non-sensitive fulfillment details.",
     "Do not tell the buyer the order is paid or delivered unless the seller confirms the PayPal transaction is visible.",
     "Tell the buyer that fulfillment is manual and uses the email shown in the PayPal transaction."

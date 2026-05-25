@@ -4,6 +4,8 @@
   "name": "SoftJunk 5 USD PayPal Payment Intent Alias",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
+  "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
+  "gist_raw_payment_intent_json_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "amount": "5.00",
   "currency": "USD",

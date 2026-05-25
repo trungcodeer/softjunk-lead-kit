@@ -11,6 +11,8 @@
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
   "root_well_known_payment_intent_url": "https://trungcodeer.github.io/.well-known/paypal-payment.json",
+  "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
+  "gist_raw_payment_intent_json_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
   "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
   "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",

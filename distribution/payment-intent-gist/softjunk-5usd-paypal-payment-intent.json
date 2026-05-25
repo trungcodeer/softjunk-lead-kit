@@ -1,0 +1,49 @@
+{
+  "schema_version": "softjunk-gist-paypal-payment-intent-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk 5 USD PayPal Payment Intent",
+  "summary": "Pay exactly 5.00 USD via PayPal.Me for the SoftJunk Lead Follow-Up Kit or custom 7-day sequence.",
+  "payment": {
+    "provider": "PayPal.Me",
+    "amount": "5.00",
+    "currency": "USD",
+    "url": "https://paypal.me/softjunk/5USD",
+    "note_for_digital_kit": "Lead Follow-Up Kit",
+    "custom_sequence_note_source": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html"
+  },
+  "buyer_routes": {
+    "root_hub": "https://trungcodeer.github.io/",
+    "root_paypal_route": "https://trungcodeer.github.io/paypal/",
+    "product_checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "agent_order": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+    "after_payment": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+    "public_order_board": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1"
+  },
+  "machine_readable_sources": {
+    "product_payment_intent": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
+    "product_well_known_payment_intent": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
+    "root_payment_intent": "https://trungcodeer.github.io/paypal.json",
+    "root_well_known_payment_intent": "https://trungcodeer.github.io/.well-known/paypal-payment.json",
+    "buyer_index": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+    "agent_offer": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
+    "openapi": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
+    "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt"
+  },
+  "agent_action": {
+    "intent": "pay_softjunk_5_usd_paypal_then_wait_for_seller_side_verification",
+    "steps": [
+      "Confirm the buyer wants the SoftJunk 5 USD lead follow-up offer.",
+      "Open https://paypal.me/softjunk/5USD.",
+      "Pay exactly 5.00 USD.",
+      "Use note Lead Follow-Up Kit for the digital kit, or generate a custom sequence note at the agent order route.",
+      "Open the after-payment handoff route.",
+      "Do not claim paid, started, delivered, or complete until seller-side PayPal verification succeeds."
+    ]
+  },
+  "verification_gate": {
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_script": "scripts/verify-paypal-5usd.ps1",
+    "instructions": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
+    "rule": "This Gist is a payment request and discovery surface, not proof that money arrived. Fulfillment starts only after seller-side PayPal evidence verifies the 5 USD transaction."
+  }
+}
