@@ -73,6 +73,7 @@
   "machine_readable": {
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
+    "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "template_library": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
     "examples": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
     "well_known_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",

@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Buyer Brief for $5 Lead Follow-Up | SoftJunk</title>
+  <meta name="description" content="A machine-readable buyer brief for the $5 SoftJunk custom lead follow-up sequence, including PayPal URL, fulfillment rule, and agent-safe handoff.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="AI Buyer Brief for $5 Lead Follow-Up">
+  <meta property="og:description" content="Exact PayPal URL, price, order handoff, and verification gate for the SoftJunk $5 follow-up offer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AI Buyer Brief for $5 Lead Follow-Up">
+  <meta name="twitter:description" content="Machine-readable purchase brief for the SoftJunk $5 PayPal offer.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card.png">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json" title="SoftJunk agent offer JSON">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/offers.json" title="SoftJunk offers JSON">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "AI Buyer Brief for SoftJunk Lead Follow-Up",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
+          "description": "A machine-readable buyer brief for the $5 SoftJunk custom lead follow-up sequence.",
+          "primaryImageOfPage": {
+            "@type": "ImageObject",
+            "url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card.png",
+            "width": 1200,
+            "height": 630
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Custom 7-Day Lead Follow-Up Sequence",
+          "serviceType": "Lead follow-up copywriting",
+          "provider": {
+            "@type": "Organization",
+            "name": "SoftJunk",
+            "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+          },
+          "description": "Day 0, 1, 3, 5, and 7 follow-up messages for one small-business offer, plus no-show and price-objection replies.",
+          "offers": {
+            "@type": "Offer",
+            "price": "5.00",
+            "priceCurrency": "USD",
+            "url": "https://paypal.me/softjunk/5USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "potentialAction": {
+            "@type": "PayAction",
+            "target": "https://paypal.me/softjunk/5USD",
+            "price": "5.00",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "HowTo",
+          "name": "Buy the SoftJunk custom lead follow-up sequence",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Confirm fit",
+              "text": "Use this when a small business needs follow-up messages for leads from calls, forms, DMs, referrals, ads, quotes, or appointments."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Pay",
+              "text": "Pay exactly 5 USD through https://paypal.me/softjunk/5USD."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Send details",
+              "text": "Use the agent order path or GitHub issue form to provide business type, service, lead source, tone, and follow-up need."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Verify",
+              "text": "Fulfillment starts only after the seller can see the PayPal payment or the verifier returns PAYPAL_PAYMENT_VERIFIED=true."
+            }
+          ]
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8f7f1;
+      --paper: #ffffff;
+      --ink: #111827;
+      --muted: #475569;
+      --line: #d5dce5;
+      --teal: #0f766e;
+      --teal-dark: #0b4f49;
+      --blue: #2563eb;
+      --amber: #f59e0b;
+      --soft: #e8f3f1;
+      --focus: #92400e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, var(--teal) 0, var(--teal) 14px, transparent 14px),
+        linear-gradient(135deg, var(--bg) 0%, var(--bg) 62%, var(--soft) 62%, var(--soft) 100%);
+      line-height: 1.5;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 20px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1120px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 390px;
+      gap: 34px;
+      align-items: center;
+      padding: 58px 0 36px;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--teal);
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 740px;
+      margin-bottom: 18px;
+      font-size: 58px;
+      line-height: 1.02;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 32px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 700px;
+      margin-bottom: 24px;
+      font-size: 21px;
+    }
+
+    .actions,
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .button,
+    button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      font: inherit;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: var(--blue);
+      color: #ffffff;
+    }
+
+    .button.secondary,
+    button {
+      background: var(--paper);
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .visual {
+      padding: 10px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 20px 45px rgba(17, 24, 39, 0.09);
+    }
+
+    .visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 34px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .panel {
+      min-height: 100%;
+      padding: 22px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .payment-strip {
+      display: grid;
+      grid-template-columns: 170px minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: center;
+      padding: 22px;
+      background: var(--ink);
+      color: #ffffff;
+      border-radius: 8px;
+    }
+
+    .price {
+      font-size: 64px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: 0;
+    }
+
+    .payment-strip p {
+      margin-bottom: 0;
+      color: #dbeafe;
+    }
+
+    .payment-strip code {
+      color: #ffffff;
+      overflow-wrap: anywhere;
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .copy-block {
+      margin: 12px 0 14px;
+      padding: 16px;
+      background: #f1f5f9;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      color: var(--ink);
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font: 15px/1.45 Consolas, "Liberation Mono", monospace;
+    }
+
+    .status {
+      min-height: 24px;
+      margin: 12px 0 0;
+      color: var(--teal-dark);
+      font-weight: 800;
+    }
+
+    .rule {
+      border-left: 6px solid var(--amber);
+    }
+
+    footer {
+      padding: 30px 0 48px;
+      color: var(--muted);
+    }
+
+    code {
+      font-family: Consolas, "Liberation Mono", monospace;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 880px) {
+      .hero,
+      .grid,
+      .payment-strip {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+
+      .payment-strip {
+        align-items: start;
+      }
+    }
+
+    @media (max-width: 520px) {
+      header,
+      main,
+      footer {
+        width: min(100% - 28px, 1120px);
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      .lead {
+        font-size: 18px;
+      }
+
+      .button,
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="pay.html">Pay</a>
+        <a href="agent-order.html">Agent order</a>
+        <a href="follow-up-examples.html">Examples</a>
+        <a href="agent-offer.json">JSON</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">AI-native purchase brief</p>
+        <h1 id="page-title">A $5 paid handoff for lead follow-up work.</h1>
+        <p class="lead">Use this page when a buyer, VA, assistant, or autonomous agent needs a small-business follow-up sequence and needs the exact PayPal path without guessing.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 on PayPal</a>
+          <a class="button secondary" href="agent-order.html">Open order path</a>
+          <a class="button secondary" href="offers.json">Read offers JSON</a>
+        </div>
+      </div>
+      <div class="visual" aria-label="SoftJunk social payment card">
+        <img src="social-card.png" alt="SoftJunk Lead Kit social card with $5 PayPal offer">
+      </div>
+    </section>
+
+    <section aria-labelledby="payment-title">
+      <div class="payment-strip">
+        <div class="price">$5</div>
+        <div>
+          <h2 id="payment-title">Exact payment target</h2>
+          <p>Provider: PayPal.Me. URL: <code>https://paypal.me/softjunk/5USD</code>. Fulfillment starts only after payment is visible to the seller.</p>
+        </div>
+        <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="decision-title">
+      <h2 id="decision-title">Agent decision rule</h2>
+      <div class="grid">
+        <article class="panel">
+          <h3>Use when</h3>
+          <ul class="list">
+            <li>A lead came from a call, form, DM, referral, ad, quote, or appointment request.</li>
+            <li>The buyer wants a simple 7-day follow-up sequence for one service.</li>
+            <li>The buyer accepts manual fulfillment after PayPal verification.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Buyer receives</h3>
+          <ul class="list">
+            <li>Day 0, 1, 3, 5, and 7 messages.</li>
+            <li>No-show recovery reply.</li>
+            <li>Price-objection reply.</li>
+          </ul>
+        </article>
+        <article class="panel rule">
+          <h3>Hard gate</h3>
+          <p>Do not mark the order as paid, delivered, or complete unless the seller can see the 5 USD PayPal transaction or the verifier returns <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="copy-title">
+      <h2 id="copy-title">Copyable handoff</h2>
+      <div class="grid">
+        <article class="panel">
+          <h3>Buyer message</h3>
+          <pre id="buyer-message" class="copy-block">I found a $5 SoftJunk custom 7-day lead follow-up sequence.
+
+PayPal:
+https://paypal.me/softjunk/5USD
+
+After paying, send business type, service, lead source, tone, and follow-up need through:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html</pre>
+          <button type="button" data-copy-target="buyer-message">Copy buyer message</button>
+        </article>
+        <article class="panel">
+          <h3>PayPal note</h3>
+          <pre id="paypal-note" class="copy-block">Custom 7-day sequence | Business: [type] | Service: [service] | Lead source: [call/form/DM/referral/ad/quote] | Tone: [friendly/direct/professional] | Need: [missed call/quote follow-up/no-show/new inquiry]</pre>
+          <button type="button" data-copy-target="paypal-note">Copy PayPal note</button>
+        </article>
+        <article class="panel">
+          <h3>Machine URLs</h3>
+          <pre id="machine-urls" class="copy-block">Offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
+Agent JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+OpenAPI: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
+Verification: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md</pre>
+          <button type="button" data-copy-target="machine-urls">Copy machine URLs</button>
+        </article>
+      </div>
+      <p id="copy-status" class="status" role="status" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>SoftJunk Lead Kit. Payment URL: <a href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">https://paypal.me/softjunk/5USD</a>.</p>
+  </footer>
+
+  <script>
+    const statusMessage = document.getElementById('copy-status');
+
+    document.querySelectorAll('[data-copy-target]').forEach((button) => {
+      button.addEventListener('click', async () => {
+        const target = document.getElementById(button.dataset.copyTarget);
+        const text = target ? target.textContent.trim() : '';
+
+        try {
+          await navigator.clipboard.writeText(text);
+          statusMessage.textContent = 'Copied.';
+        } catch {
+          statusMessage.textContent = 'Copy failed. Select the text manually.';
+        }
+      });
+    });
+  </script>
+</body>
+</html>

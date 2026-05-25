@@ -39,6 +39,17 @@ paths:
             application/json:
               schema:
                 type: object
+  /agent-buy-brief.html:
+    get:
+      operationId: openAgentBuyBrief
+      summary: Open the AI buyer brief for the $5 follow-up offer.
+      responses:
+        "200":
+          description: Machine-readable buyer brief with PayPal URL, handoff copy, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
   /lead-loss-calculator.html:
     get:
       operationId: openLeadLossCalculator

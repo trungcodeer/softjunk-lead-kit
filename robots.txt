@@ -8,6 +8,7 @@ Allow: /lead-follow-up-templates.html
 Allow: /follow-up-examples.html
 Allow: /share-kit.html
 Allow: /share-kit.json
+Allow: /agent-buy-brief.html
 Allow: /pay-qr.html
 Allow: /missed-call-follow-up.html
 Allow: /estimate-follow-up-template.html

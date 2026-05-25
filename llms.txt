@@ -29,6 +29,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 AI agent order path:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
+AI buyer brief:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+
 Machine-readable offers:
 https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 
@@ -72,6 +75,9 @@ https://paypal.me/softjunk/5USD
 
 PayPal QR page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
+
+Social card:
+https://trungcodeer.github.io/softjunk-lead-kit/social-card.png
 
 GitHub order issue forms:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
