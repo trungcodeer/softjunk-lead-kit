@@ -186,6 +186,47 @@ section {
   padding: 18px;
 }
 
+.tool {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label {
+  font-weight: 800;
+}
+
+.field input,
+.field select {
+  min-height: 46px;
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 0 12px;
+  font: inherit;
+  color: var(--ink);
+  background: #fff;
+}
+
+.status {
+  min-height: 24px;
+  margin: 12px 0 0;
+  color: var(--accent-dark);
+  font-weight: 700;
+}
+
 .sample {
   white-space: pre-line;
   color: #26312b;
@@ -215,6 +256,7 @@ footer {
 @media (max-width: 820px) {
   .hero,
   .grid,
+  .tool-grid,
   .note-panel {
     grid-template-columns: 1fr;
   }

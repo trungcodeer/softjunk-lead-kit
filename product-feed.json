@@ -49,6 +49,10 @@
     {
       "name": "Free Follow-Up Preview",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html"
+    },
+    {
+      "name": "Missed Call Follow-Up Sample",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html"
     }
   ],
   "machine_readable": {
@@ -72,6 +76,7 @@
     "Appointment setters",
     "Virtual assistants",
     "Small agencies",
-    "Local service businesses"
+    "Local service businesses",
+    "Businesses with missed calls or voicemails"
   ]
 }

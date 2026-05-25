@@ -33,6 +33,7 @@ Use PayPal note `Lead Follow-Up Kit` for the ZIP. For a custom sequence, use the
 - Roofing estimate template: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
 - Real estate lead template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing lead template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
+- Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - AI-readable offer summary: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Machine-readable offers: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json

@@ -61,6 +61,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /missed-call-follow-up.html:
+    get:
+      operationId: openMissedCallFollowUp
+      summary: Open the missed call follow-up sample generator.
+      responses:
+        "200":
+          description: Browser page for missed call follow-up samples and the $5 custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
   /pay.html:
     get:
       operationId: openPaymentPage

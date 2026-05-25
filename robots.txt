@@ -6,6 +6,7 @@ Allow: /product-feed.json
 Allow: /share-kit.html
 Allow: /share-kit.json
 Allow: /pay-qr.html
+Allow: /missed-call-follow-up.html
 Allow: /paypal-qr.svg
 Allow: /.well-known/softjunk-offer.json
 Allow: /.well-known/openapi.yaml
