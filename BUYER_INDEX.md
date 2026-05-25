@@ -31,6 +31,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
+- Missed call follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/missed-call-follow-up.html
+- Estimate follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/estimate-follow-up.html
+- Quote follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/quote-follow-up.html
 - Quiet lead buyer route JSON: https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
