@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pay $5 on PayPal
+    url: https://paypal.me/softjunk/5USD
+    about: Pay here first, then use an order issue form if fulfillment details are needed.
+  - name: Lead loss calculator
+    url: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
+    about: Estimate missed lead value before buying.
+  - name: PayPal QR page
+    url: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
+    about: Scan or open the QR payment page.

@@ -1,0 +1,54 @@
+name: Digital $5 kit order
+description: Use this after paying $5 for the digital Lead Follow-Up Kit ZIP.
+title: "Digital kit order"
+labels:
+  - digital-kit
+  - paid-order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pay first, then submit this form if you want to leave a fulfillment trail in GitHub.
+
+        Payment URL: https://paypal.me/softjunk/5USD
+
+        Use PayPal note: `Lead Follow-Up Kit`
+
+        The ZIP is not public. Delivery starts only after the $5 PayPal transaction is visible to the seller.
+  - type: input
+    id: paypal-note
+    attributes:
+      label: PayPal note or transaction note
+      placeholder: "Lead Follow-Up Kit"
+    validations:
+      required: true
+  - type: dropdown
+    id: buyer-type
+    attributes:
+      label: Buyer type
+      options:
+        - Small business owner
+        - Agency
+        - Virtual assistant
+        - Appointment setter
+        - Freelancer
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: delivery-notes
+    attributes:
+      label: Delivery notes
+      description: Do not post private customer data. Delivery uses the email shown in the PayPal transaction.
+      placeholder: "Optional: I mainly need the tracker and templates."
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I paid $5 at https://paypal.me/softjunk/5USD with PayPal note `Lead Follow-Up Kit`.
+          required: true
+        - label: I understand the ZIP is delivered manually after the seller can see the PayPal payment.
+          required: true

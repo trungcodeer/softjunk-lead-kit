@@ -414,6 +414,7 @@
         <div class="actions">
           <button class="button" type="button" id="copy-handoff">Copy buyer handoff</button>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal</a>
+          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose" target="_blank" rel="noopener noreferrer">Order form</a>
         </div>
       </div>
     </section>
@@ -435,6 +436,7 @@
     const copyNote = document.querySelector('#copy-note');
     const copyHandoff = document.querySelector('#copy-handoff');
     const paymentUrl = 'https://paypal.me/softjunk/5USD';
+    const orderFormUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose';
 
     function value(name) {
       return String(new FormData(form).get(name) || '').trim();
@@ -450,6 +452,9 @@
 
 Payment URL:
 ${paymentUrl}
+
+Order form after payment:
+${orderFormUrl}
 
 Paste this PayPal note:
 ${makeNote()}

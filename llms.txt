@@ -60,6 +60,9 @@ https://paypal.me/softjunk/5USD
 PayPal QR page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 
+GitHub order issue forms:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
+
 Offers:
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
 - Free preview for $0: browser-generated Day 0, 1, and 3 sample for one business.

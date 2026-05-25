@@ -1,0 +1,94 @@
+name: Custom $5 follow-up sequence order
+description: Use this after paying $5 for a custom Day 0, 1, 3, 5, and 7 sequence.
+title: "Custom sequence order: "
+labels:
+  - custom-sequence
+  - paid-order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Pay first, then submit this form.
+
+        Payment URL: https://paypal.me/softjunk/5USD
+
+        Fulfillment starts only after the $5 PayPal transaction is visible to the seller. Do not include private customer, patient, or client data.
+  - type: input
+    id: paypal-note
+    attributes:
+      label: PayPal note or transaction note
+      description: Paste the note you used in PayPal. If you used the agent order path, paste that note here.
+      placeholder: "Custom Follow-Up | Business: HVAC company | Service: AC repair | Source: Website form | Tone: Professional | Concern: price | Next: schedule a service visit"
+    validations:
+      required: true
+  - type: input
+    id: business-type
+    attributes:
+      label: Business type
+      placeholder: "HVAC company, dental office, real estate agent, med spa"
+    validations:
+      required: true
+  - type: input
+    id: service
+    attributes:
+      label: Service sold
+      placeholder: "AC repair, new patient appointment, seller consultation"
+    validations:
+      required: true
+  - type: dropdown
+    id: lead-source
+    attributes:
+      label: Lead source
+      options:
+        - Website form
+        - Instagram DM
+        - Facebook message
+        - Phone call
+        - Email
+        - Referral
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: tone
+    attributes:
+      label: Tone
+      options:
+        - Professional
+        - Friendly
+        - Premium
+        - Direct
+        - Casual
+    validations:
+      required: true
+  - type: input
+    id: concern
+    attributes:
+      label: Main concern to address
+      placeholder: "price, timing, trust, scheduling, no-show recovery"
+    validations:
+      required: true
+  - type: input
+    id: next-step
+    attributes:
+      label: Desired next step
+      placeholder: "book an appointment, schedule a quick call, send available times"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra context
+      description: Keep it non-sensitive. Do not paste private lead/customer details.
+      placeholder: "We want the messages to be short and suitable for SMS."
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I paid $5 at https://paypal.me/softjunk/5USD and understand fulfillment starts after the seller can see the PayPal payment.
+          required: true
+        - label: I did not include private customer, patient, or client data.
+          required: true
