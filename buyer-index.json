@@ -10,6 +10,7 @@
     "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
     "github_profile_url": "https://github.com/trungcodeer",
     "github_profile_repo_url": "https://github.com/trungcodeer/trungcodeer",
+    "github_profile_pages_url": "https://trungcodeer.github.io/trungcodeer/",
     "contact_email": "trungcodeer@users.noreply.github.com"
   },
   "payment": {
@@ -107,6 +108,7 @@
     "GitHub issue order board",
     "GitHub releases",
     "GitHub profile README",
+    "GitHub profile Pages microsite",
     "GitHub profile release",
     "Public Gist",
     "RSS feed",
@@ -124,9 +126,12 @@
   },
   "machine_readable_sources": {
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
+    "github_profile_pages": "https://trungcodeer.github.io/trungcodeer/",
     "github_profile_readme": "https://github.com/trungcodeer/trungcodeer",
     "github_profile_offer_json": "https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json",
+    "github_profile_pages_offer_json": "https://trungcodeer.github.io/trungcodeer/softjunk-profile-offer.json",
     "github_profile_llms_txt": "https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/llms.txt",
+    "github_profile_pages_llms_txt": "https://trungcodeer.github.io/trungcodeer/llms.txt",
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
     "product_feed_json": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",

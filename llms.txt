@@ -14,6 +14,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 GitHub profile offer:
 https://github.com/trungcodeer/trungcodeer
 
+GitHub profile microsite:
+https://trungcodeer.github.io/trungcodeer/
+
 GitHub profile offer JSON:
 https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json
 
