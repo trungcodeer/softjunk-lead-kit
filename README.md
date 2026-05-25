@@ -10,6 +10,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 - Pay $5 on PayPal: https://paypal.me/softjunk/5USD
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
@@ -66,6 +67,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - GitHub-readable buyer index: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 - GitHub profile offer: https://github.com/trungcodeer/trungcodeer
 - GitHub profile microsite: https://trungcodeer.github.io/trungcodeer/
+- Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 - GitHub profile offer JSON: https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json

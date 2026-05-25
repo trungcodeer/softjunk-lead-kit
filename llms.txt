@@ -17,6 +17,9 @@ https://github.com/trungcodeer/trungcodeer
 GitHub profile microsite:
 https://trungcodeer.github.io/trungcodeer/
 
+Quiet lead public Gist:
+https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
+
 GitHub profile offer JSON:
 https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json
 
@@ -52,6 +55,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWER
 
 Public Gist answer brief:
 https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
+
+Quiet lead public Gist:
+https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 
 Free sample pack:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html

@@ -1,0 +1,28 @@
+{
+  "schema_version": "softjunk-quiet-lead-gist-v1",
+  "updated": "2026-05-26",
+  "intent": "quiet lead follow-up, missed call recovery, estimate follow-up, no-show recovery, price objection reply",
+  "free_first_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "rewriter_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
+  "answers_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
+  "profile_microsite_url": "https://trungcodeer.github.io/trungcodeer/",
+  "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "offers": [
+    {
+      "name": "7-Day Lead Follow-Up Kit",
+      "paypal_note": "Lead Follow-Up Kit",
+      "delivery": "Manual ZIP delivery after PayPal payment is visible to the seller."
+    },
+    {
+      "name": "Custom 7-Day Lead Follow-Up Sequence",
+      "order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+      "delivery": "Manual same-day delivery after PayPal payment is visible to the seller."
+    }
+  ],
+  "copy_ready_message": "If one lead has gone quiet, use this free SoftJunk page first, then buy the $5 custom 7-day sequence if the lead is worth recovering: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "fulfillment_rule": "Do not claim an order is paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+}

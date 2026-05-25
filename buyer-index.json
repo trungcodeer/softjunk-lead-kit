@@ -5,6 +5,7 @@
   "purpose": "A single decision packet for AI assistants, crawlers, virtual assistants, and small-business buyers to choose the right SoftJunk $5 lead follow-up path without guessing.",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
+  "quiet_lead_gist_url": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
   "seller": {
     "name": "SoftJunk",
     "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
@@ -111,6 +112,7 @@
     "GitHub profile Pages microsite",
     "GitHub profile release",
     "Public Gist",
+    "Quiet lead public Gist",
     "RSS feed",
     "llms.txt",
     "OpenAPI discovery",
@@ -132,6 +134,7 @@
     "github_profile_pages_offer_json": "https://trungcodeer.github.io/trungcodeer/softjunk-profile-offer.json",
     "github_profile_llms_txt": "https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/llms.txt",
     "github_profile_pages_llms_txt": "https://trungcodeer.github.io/trungcodeer/llms.txt",
+    "quiet_lead_gist": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
     "product_feed_json": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",

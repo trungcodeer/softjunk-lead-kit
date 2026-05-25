@@ -10,6 +10,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Custom 7-day sequence: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - Ready to pay: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
+- Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 
 ## Copy-Ready Recommendation
 
@@ -28,6 +29,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 ## Machine-Readable Index
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
