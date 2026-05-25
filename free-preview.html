@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Free Follow-Up Preview | SoftJunk Lead Kit</title>
+  <meta name="description" content="Generate a free 3-message lead follow-up preview for dental, med spa, tutoring, appointment-setting, and local service leads. Pay $5 for the full custom 7-day sequence.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Free Follow-Up Preview">
+  <meta property="og:description" content="Generate a free 3-message preview, then pay $5 for the full custom follow-up sequence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "SoftJunk Free Follow-Up Preview",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Any",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Custom 7-Day Lead Follow-Up Sequence",
+          "description": "Same-day custom Day 0, 1, 3, 5, and 7 lead follow-up messages for one business.",
+          "offers": {
+            "@type": "Offer",
+            "price": "5",
+            "priceCurrency": "USD",
+            "url": "https://paypal.me/softjunk/5USD",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8f5;
+      --paper: #ffffff;
+      --ink: #17211c;
+      --muted: #526159;
+      --line: #d8ded7;
+      --accent: #106a5b;
+      --accent-dark: #0b5146;
+      --soft: #e8f4f1;
+      --focus: #c26a00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 54px 0 28px;
+    }
+
+    h1 {
+      max-width: 880px;
+      margin: 0 0 16px;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0 0 22px;
+      font-size: clamp(18px, 2.2vw, 22px);
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      font-weight: 800;
+      font-family: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .button.primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.active {
+      border-color: var(--accent);
+      box-shadow: inset 0 0 0 2px var(--accent);
+    }
+
+    .actions,
+    .preset-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .tool {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 18px;
+      align-items: start;
+      padding: 24px 0 38px;
+    }
+
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #bac8bf;
+      border-radius: 7px;
+      padding: 0 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    .output {
+      min-height: 320px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      padding: 16px;
+      background: #fbfcfb;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      color: #26312b;
+    }
+
+    .status {
+      min-height: 24px;
+      margin: 10px 0 0;
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .share-box {
+      padding: 12px;
+      background: var(--soft);
+      border: 1px solid #b9ddd5;
+      border-radius: 7px;
+      overflow-wrap: anywhere;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      padding: 8px 0 36px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    footer {
+      padding: 18px 0 42px;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .tool,
+      .grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .field.full {
+        grid-column: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="free-preview.html">Free preview</a>
+        <a href="pay.html">Pay $5</a>
+        <a href="offers.json">Offer JSON</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Get the first follow-up preview free.</h1>
+      <p class="lead">Generate a 3-message sample for one business. If the preview fits, pay $5 for the full Day 0, 1, 3, 5, and 7 custom sequence.</p>
+      <div class="actions">
+        <a class="button primary" href="#preview-tool">Generate preview</a>
+        <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+      </div>
+    </section>
+
+    <section class="tool" id="preview-tool" aria-labelledby="tool-title">
+      <form class="panel" id="preview-form" aria-describedby="tool-hint">
+        <h2 id="tool-title">Preview builder</h2>
+        <p id="tool-hint">Pick a niche or type your own details. Everything runs in this browser.</p>
+
+        <div class="preset-row" aria-label="Preset examples">
+          <button class="button" type="button" data-preset="dental">Dental</button>
+          <button class="button" type="button" data-preset="medspa">Med spa</button>
+          <button class="button" type="button" data-preset="tutoring">Tutoring</button>
+          <button class="button" type="button" data-preset="appointment">Appointment setting</button>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="business-type">Business type</label>
+            <input id="business-type" name="businessType" autocomplete="organization" placeholder="Dental office" required>
+          </div>
+          <div class="field">
+            <label for="service">Service sold</label>
+            <input id="service" name="service" placeholder="New patient appointment" required>
+          </div>
+          <div class="field">
+            <label for="lead-source">Lead source</label>
+            <select id="lead-source" name="leadSource">
+              <option>Website form</option>
+              <option>Instagram DM</option>
+              <option>Facebook message</option>
+              <option>Email</option>
+              <option>Phone call</option>
+              <option>Referral</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tone">Tone</label>
+            <select id="tone" name="tone">
+              <option>Professional</option>
+              <option>Friendly</option>
+              <option>Premium</option>
+              <option>Direct</option>
+              <option>Casual</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="concern">Main concern</label>
+            <input id="concern" name="concern" placeholder="Cost and scheduling">
+          </div>
+          <div class="field">
+            <label for="next-step">Next step</label>
+            <input id="next-step" name="nextStep" placeholder="Book an appointment" required>
+          </div>
+        </div>
+
+        <div class="actions" style="margin-top:16px">
+          <button class="button primary" type="submit">Generate free preview</button>
+          <button class="button" type="button" id="copy-note">Copy PayPal note</button>
+        </div>
+      </form>
+
+      <div class="panel" aria-labelledby="output-title">
+        <h2 id="output-title">Preview output</h2>
+        <p class="output" id="output" aria-live="polite">Choose a preset or fill the form to generate a free 3-message sample.</p>
+        <p class="status" id="status" aria-live="polite"></p>
+        <div class="actions">
+          <button class="button" type="button" id="copy-output">Copy preview</button>
+          <button class="button" type="button" id="copy-link">Copy share link</button>
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 for full sequence</a>
+        </div>
+        <p class="share-box" id="share-link">Share link appears after generation.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="fit-title">
+      <h2 id="fit-title">What the $5 version adds</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Full sequence</h3>
+          <p>Day 0, 1, 3, 5, and 7 messages matched to one business, lead source, tone, concern, and next step.</p>
+        </article>
+        <article class="card">
+          <h3>Recovery replies</h3>
+          <p>No-show recovery and price-objection replies written for the same business context.</p>
+        </article>
+        <article class="card">
+          <h3>Same-day delivery</h3>
+          <p>Paste the copied PayPal note when paying. The custom sequence is delivered manually after PayPal shows the payment.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Seller note: review all customer or patient communications for accuracy, compliance, and fit with your business before sending.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('#preview-form');
+    const output = document.querySelector('#output');
+    const statusMessage = document.querySelector('#status');
+    const shareLink = document.querySelector('#share-link');
+    const copyOutput = document.querySelector('#copy-output');
+    const copyNote = document.querySelector('#copy-note');
+    const copyLink = document.querySelector('#copy-link');
+
+    const presets = {
+      dental: {
+        businessType: 'Dental office',
+        service: 'New patient appointment',
+        leadSource: 'Website form',
+        tone: 'Professional',
+        concern: 'cost and scheduling',
+        nextStep: 'book an appointment'
+      },
+      medspa: {
+        businessType: 'Med spa',
+        service: 'Consultation',
+        leadSource: 'Instagram DM',
+        tone: 'Premium',
+        concern: 'pricing',
+        nextStep: 'book a consultation'
+      },
+      tutoring: {
+        businessType: 'Tutoring service',
+        service: 'Free consultation',
+        leadSource: 'Website form',
+        tone: 'Friendly',
+        concern: 'student fit',
+        nextStep: 'schedule a free consultation'
+      },
+      appointment: {
+        businessType: 'Appointment setting service',
+        service: 'Lead follow-up',
+        leadSource: 'Website form',
+        tone: 'Professional',
+        concern: 'response time',
+        nextStep: 'book a quick call'
+      }
+    };
+
+    function value(name) {
+      return String(new FormData(form).get(name) || '').trim();
+    }
+
+    function setField(name, val) {
+      const field = form.elements[name];
+      if (!field) return;
+      field.value = val;
+    }
+
+    function applyPreset(name) {
+      Object.entries(presets[name] || {}).forEach(([key, val]) => setField(key, val));
+      generate();
+    }
+
+    function makePreview() {
+      const businessType = value('businessType');
+      const service = value('service');
+      const leadSource = value('leadSource');
+      const tone = value('tone').toLowerCase();
+      const concern = value('concern') || 'timing';
+      const nextStep = value('nextStep');
+
+      return `Free 3-message preview for ${businessType}
+Lead source: ${leadSource}
+Tone: ${tone}
+
+Day 0: Hi [Name], thanks for reaching out about ${service}. The best next step is to ${nextStep} so we can confirm fit, timing, and what you need first.
+
+Day 1: Hi [Name], just checking if you still wanted help with ${service}. If ${concern} is the main question, I can answer that first or send the next step.
+
+Day 3: Hi [Name], should I close the loop for now? If you still want help, reply with one word and I will send the ${nextStep} details again.
+
+Full $5 custom version adds Day 5, Day 7, no-show recovery, and price-objection replies.`;
+    }
+
+    function makeNote() {
+      return `Custom Follow-Up | Business: ${value('businessType')} | Service: ${value('service')} | Source: ${value('leadSource')} | Tone: ${value('tone')} | Concern: ${value('concern') || 'not specified'} | Next: ${value('nextStep')}`;
+    }
+
+    function currentShareUrl() {
+      const params = new URLSearchParams();
+      params.set('business', value('businessType'));
+      params.set('service', value('service'));
+      params.set('source', value('leadSource'));
+      params.set('tone', value('tone'));
+      params.set('concern', value('concern'));
+      params.set('next', value('nextStep'));
+      params.set('autogen', '1');
+      return `${window.location.origin}${window.location.pathname}?${params.toString()}#preview-tool`;
+    }
+
+    function generate() {
+      if (!form.reportValidity()) return;
+      output.textContent = makePreview();
+      shareLink.textContent = currentShareUrl();
+      statusMessage.textContent = 'Preview generated. Copy the PayPal note before paying $5 for the full custom sequence.';
+    }
+
+    async function copyText(text, success) {
+      try {
+        await navigator.clipboard.writeText(text);
+        statusMessage.textContent = success;
+      } catch {
+        statusMessage.textContent = 'Copy failed. Select the text and copy it manually.';
+      }
+    }
+
+    function applyUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      const map = {
+        business: 'businessType',
+        service: 'service',
+        source: 'leadSource',
+        tone: 'tone',
+        concern: 'concern',
+        next: 'nextStep'
+      };
+
+      Object.entries(map).forEach(([param, field]) => {
+        if (params.has(param)) setField(field, params.get(param));
+      });
+
+      if (params.get('autogen') === '1') generate();
+    }
+
+    document.querySelectorAll('[data-preset]').forEach((button) => {
+      button.addEventListener('click', () => applyPreset(button.dataset.preset));
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      generate();
+    });
+
+    copyOutput.addEventListener('click', () => copyText(output.textContent.trim(), 'Preview copied.'));
+    copyNote.addEventListener('click', () => {
+      if (!form.reportValidity()) return;
+      copyText(makeNote(), 'PayPal note copied. Paste it into PayPal when paying $5.');
+    });
+    copyLink.addEventListener('click', () => {
+      if (!form.reportValidity()) return;
+      copyText(currentShareUrl(), 'Share link copied.');
+    });
+
+    applyUrlParams();
+  </script>
+</body>
+</html>

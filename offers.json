@@ -1,0 +1,52 @@
+{
+  "name": "SoftJunk Lead Follow-Up Kit",
+  "updated": "2026-05-25",
+  "currency": "USD",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
+  "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
+  "offers": [
+    {
+      "name": "Free 3-message follow-up preview",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+      "delivery": "Instant browser-generated preview"
+    },
+    {
+      "name": "Custom 7-day lead follow-up sequence",
+      "price": "5.00",
+      "url": "https://paypal.me/softjunk/5USD",
+      "delivery": "Manual same-day delivery after PayPal payment appears",
+      "includes": [
+        "Day 0 follow-up",
+        "Day 1 follow-up",
+        "Day 3 follow-up",
+        "Day 5 follow-up",
+        "Day 7 follow-up",
+        "No-show recovery reply",
+        "Price-objection reply"
+      ]
+    },
+    {
+      "name": "7-Day Lead Follow-Up Kit",
+      "price": "5.00",
+      "url": "https://paypal.me/softjunk/5USD",
+      "delivery": "Manual ZIP delivery after PayPal payment appears",
+      "paypal_note": "Lead Follow-Up Kit"
+    }
+  ],
+  "best_fit": [
+    "Dental offices",
+    "Med spas",
+    "Tutoring services",
+    "Appointment setters",
+    "Virtual assistants",
+    "Small agencies",
+    "Local service businesses"
+  ],
+  "payment_notes": {
+    "digital_kit": "Lead Follow-Up Kit",
+    "custom_sequence": "Use the free preview builder, copy the PayPal note, and paste that note into PayPal before paying."
+  }
+}
