@@ -8,6 +8,14 @@
   "quiet_lead_gist_url": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
   "quiet_lead_repo_url": "https://github.com/trungcodeer/quiet-lead-follow-up",
   "quiet_lead_microsite_url": "https://trungcodeer.github.io/quiet-lead-follow-up/",
+  "quiet_lead_exact_intent_urls": [
+    "https://trungcodeer.github.io/quiet-lead-follow-up/missed-call-follow-up.html",
+    "https://trungcodeer.github.io/quiet-lead-follow-up/estimate-follow-up.html",
+    "https://trungcodeer.github.io/quiet-lead-follow-up/quote-follow-up.html",
+    "https://trungcodeer.github.io/quiet-lead-follow-up/no-show-follow-up.html",
+    "https://trungcodeer.github.io/quiet-lead-follow-up/price-objection-reply.html",
+    "https://trungcodeer.github.io/quiet-lead-follow-up/quiet-dm-follow-up.html"
+  ],
   "seller": {
     "name": "SoftJunk",
     "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
@@ -144,6 +152,9 @@
     "quiet_lead_missed_call_page": "https://trungcodeer.github.io/quiet-lead-follow-up/missed-call-follow-up.html",
     "quiet_lead_estimate_page": "https://trungcodeer.github.io/quiet-lead-follow-up/estimate-follow-up.html",
     "quiet_lead_quote_page": "https://trungcodeer.github.io/quiet-lead-follow-up/quote-follow-up.html",
+    "quiet_lead_no_show_page": "https://trungcodeer.github.io/quiet-lead-follow-up/no-show-follow-up.html",
+    "quiet_lead_price_objection_page": "https://trungcodeer.github.io/quiet-lead-follow-up/price-objection-reply.html",
+    "quiet_lead_quiet_dm_page": "https://trungcodeer.github.io/quiet-lead-follow-up/quiet-dm-follow-up.html",
     "quiet_lead_buyer_route_json": "https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json",
     "quiet_lead_llms_txt": "https://trungcodeer.github.io/quiet-lead-follow-up/llms.txt",
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
