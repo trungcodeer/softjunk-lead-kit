@@ -74,3 +74,40 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a higher-conversion owned order handoff.
 - Compatibility boundary: static GitHub Pages, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Custom Sequence Preview Checkpoint
+
+Current todo:
+- Commit and push product/root custom-sequence-preview wiring.
+- Wait for Pages deployments and verify live preview/discovery URLs.
+- Submit discovery pings, comment the public tracking issue, and rerun PayPal verification gate.
+
+Active slice:
+- Create an AI-native custom sequence preview route that shows tailored Day 0, Day 1, and Day 3 copy before the buyer pays $5, then hands off to a PayPal note and shareable order link.
+
+Completed todos:
+- Added `custom-sequence-preview.html`, `.json`, and `.txt`.
+- Wired the preview route into product homepage, buyer index, offer manifests, payment intent, agent offer, agent buyer packet, share kit, README, `llms.txt`, robots, sitemap, RSS, and OpenAPI discovery.
+- Wired the preview route into the root hub, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, root JSON, root text, root README, root robots, root sitemap, and root OpenAPI discovery.
+- Updated public payment-intent, quiet-lead, and agent-buyer-packet Gists from local sources.
+- Parsed product/root JSON and XML successfully after edits.
+- Parsed affected inline scripts with Node.
+- Used Chrome headless `--dump-dom` against the preview page with query params and confirmed generated preview, PayPal note, shareable order link, and status text appear.
+
+Evidence refs:
+- `ConvertFrom-Json` succeeded for product/root JSON, `.well-known` JSON, and distribution Gist JSON.
+- XML parse succeeded for product `sitemap.xml`/`feed.xml` and root `sitemap.xml`.
+- Node inline script parse succeeded for product `custom-sequence-preview.html`, `index.html`, `share-kit.html`, and root short-route pages.
+- Chrome headless DOM dump included `Preview generated`, `Custom Sequence Preview`, and `shareable-order-link.html`.
+
+Blocked-on items:
+- PayPal seller-side credentials or CSV proof are still required to verify actual payment.
+
+Next step:
+- Commit, push, wait for Pages, run live URL checks, ping IndexNow, comment the public tracking issue, and rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves conversion by giving a tailored useful artifact before checkout without spam or false payment claims.
+- Compatibility boundary: static GitHub Pages, public Gists, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

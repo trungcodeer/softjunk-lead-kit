@@ -14,6 +14,9 @@
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
   "gist_raw_payment_intent_json_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
   "lead_recovery_audit_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
+  "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+  "custom_sequence_preview_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
+  "custom_sequence_preview_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
@@ -102,6 +105,13 @@
       "use_when": "The buyer has a weak follow-up, basic lead numbers, and needs a concrete recovery audit before paying.",
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
       "why": "Combines missed-value estimate, stronger Day 0/Day 3 messages, and a copyable PayPal note for the $5 custom sequence."
+    },
+    {
+      "use_when": "The buyer wants to see tailored custom sequence copy before paying.",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+      "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
+      "why": "Generates Day 0, Day 1, and Day 3 preview copy plus a PayPal note and shareable order link."
     },
     {
       "use_when": "The buyer has one quiet lead and wants the shortest free sample before paying.",
@@ -202,6 +212,7 @@
     "RSS feed",
     "llms.txt",
     "Shareable order link",
+    "Custom sequence preview",
     "OpenAPI discovery",
     "Well-known offer manifest",
     "IndexNow ping"
@@ -226,6 +237,9 @@
     "gist_raw_shareable_order_link_json": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.json",
     "gist_raw_shareable_order_link_text": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.txt",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
+    "custom_sequence_preview": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+    "custom_sequence_preview_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
+    "custom_sequence_preview_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",

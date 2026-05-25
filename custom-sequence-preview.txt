@@ -1,0 +1,24 @@
+SoftJunk Custom Sequence Preview
+
+Use this free page when a buyer wants to see a tailored lead follow-up preview before paying for the full 7-day sequence:
+
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
+
+It generates:
+- Day 0 follow-up
+- Day 1 follow-up
+- Day 3 close-the-loop message
+- PayPal note
+- Shareable order link
+
+The paid $5 custom sequence adds Day 5, Day 7, no-show recovery, price-objection reply, and final copy tuned to one business and lead context.
+
+Pay exactly 5 USD:
+
+https://paypal.me/softjunk/5USD
+
+Machine-readable JSON:
+
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json
+
+Fulfillment starts only after seller-side PayPal evidence verifies the 5 USD transaction.

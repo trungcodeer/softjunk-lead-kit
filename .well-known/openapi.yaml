@@ -138,6 +138,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /custom-sequence-preview.html:
+    get:
+      operationId: openCustomSequencePreview
+      summary: Open the custom sequence preview builder.
+      responses:
+        "200":
+          description: Browser page that generates a free sequence preview, shareable order link, and PayPal note for the 5 USD custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
+  /custom-sequence-preview.json:
+    get:
+      operationId: getCustomSequencePreview
+      summary: Get custom sequence preview metadata.
+      responses:
+        "200":
+          description: Machine-readable metadata for the preview fields, PayPal note template, payment URL, paid upgrade, privacy rule, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /custom-sequence-preview.txt:
+    get:
+      operationId: getCustomSequencePreviewText
+      summary: Get custom sequence preview text.
+      responses:
+        "200":
+          description: Plain-text instructions for using the preview and exact 5 USD PayPal checkout.
+          content:
+            text/plain:
+              schema:
+                type: string
   /paypal-payment-intent.json:
     get:
       operationId: getProductPayPalPaymentIntent

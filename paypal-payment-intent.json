@@ -31,6 +31,7 @@
     "root_short_pay_url": "https://trungcodeer.github.io/pay/",
     "root_short_buy_url": "https://trungcodeer.github.io/buy/",
     "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "qr_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
     "paypal_note_for_digital_kit": "Lead Follow-Up Kit"
@@ -46,7 +47,7 @@
       "Open https://paypal.me/softjunk/5USD.",
       "Pay exactly 5.00 USD.",
       "Use PayPal note Lead Follow-Up Kit for the digital kit.",
-      "Use the generated note from https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html for a custom sequence.",
+      "Use the generated note from https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html for a custom sequence.",
       "Open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html after payment.",
       "Do not claim payment or delivery until seller-side PayPal verification succeeds."
     ]

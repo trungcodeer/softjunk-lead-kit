@@ -3,6 +3,7 @@
   "updated": "2026-05-26",
   "name": "SoftJunk 5 USD PayPal Payment Intent Alias",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
+  "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
   "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",

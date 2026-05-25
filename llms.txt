@@ -107,6 +107,15 @@ https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 Lead recovery audit:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 
+Custom sequence preview:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
+
+Custom sequence preview JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json
+
+Custom sequence preview text:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt
+
 Fast checkout:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
@@ -246,6 +255,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 Offers:
 - Free AI follow-up prompt for $0: copy into ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead and route to the 5 USD custom sequence when useful.
 - Free shareable order link for $0: creates a URL, PayPal note, and buyer handoff when non-sensitive order context is already known.
+- Free custom sequence preview for $0: creates Day 0, Day 1, Day 3 preview copy, a PayPal note, and a shareable order link before the buyer pays.
 - Public buyer examples thread for $0: missed call, quiet quote, and price-objection examples with the exact 5 USD PayPal path.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.

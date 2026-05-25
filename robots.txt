@@ -15,6 +15,9 @@ Allow: /free-sample-pack.html
 Allow: /softjunk-free-sample-pack.zip
 Allow: /share-kit.html
 Allow: /share-kit.json
+Allow: /custom-sequence-preview.html
+Allow: /custom-sequence-preview.json
+Allow: /custom-sequence-preview.txt
 Allow: /agent-buy-brief.html
 Allow: /checkout.html
 Allow: /paid-kit-proof.html

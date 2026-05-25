@@ -9,12 +9,14 @@
     "currency": "USD",
     "url": "https://paypal.me/softjunk/5USD",
     "note_for_digital_kit": "Lead Follow-Up Kit",
+    "custom_sequence_preview_source": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "custom_sequence_note_source": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html"
   },
   "buyer_routes": {
     "root_hub": "https://trungcodeer.github.io/",
     "root_paypal_route": "https://trungcodeer.github.io/paypal/",
     "product_checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "custom_sequence_preview": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "shareable_order_link": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "agent_order": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
     "after_payment": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
@@ -26,6 +28,7 @@
     "root_payment_intent": "https://trungcodeer.github.io/paypal.json",
     "root_well_known_payment_intent": "https://trungcodeer.github.io/.well-known/paypal-payment.json",
     "buyer_index": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+    "custom_sequence_preview_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
     "agent_offer": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
     "openapi": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt"
@@ -36,7 +39,7 @@
       "Confirm the buyer wants the SoftJunk 5 USD lead follow-up offer.",
       "Open https://paypal.me/softjunk/5USD.",
       "Pay exactly 5.00 USD.",
-      "Use note Lead Follow-Up Kit for the digital kit, or generate a custom sequence note at the shareable order link route.",
+      "Use note Lead Follow-Up Kit for the digital kit, or generate a custom sequence preview and PayPal note at the custom preview or shareable order link route.",
       "Open the after-payment handoff route.",
       "Do not claim paid, started, delivered, or complete until seller-side PayPal verification succeeds."
     ]

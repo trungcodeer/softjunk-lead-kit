@@ -14,6 +14,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
@@ -53,6 +54,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt text: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt
 - Public AI follow-up prompt Gist: https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1
@@ -89,6 +91,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
+- Custom sequence preview JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json
+- Custom sequence preview text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html

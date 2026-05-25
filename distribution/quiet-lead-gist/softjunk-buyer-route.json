@@ -5,6 +5,8 @@
   "free_first_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "rewriter_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
   "answers_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
+  "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+  "custom_sequence_preview_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
   "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
   "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
   "shareable_order_link_gist_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
@@ -22,6 +24,7 @@
     },
     {
       "name": "Custom 7-Day Lead Follow-Up Sequence",
+      "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
       "order_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
       "delivery": "Manual same-day delivery after PayPal payment is visible to the seller."

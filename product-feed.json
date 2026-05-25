@@ -31,6 +31,7 @@
     "currency": "USD",
     "order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
     "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+    "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
     "delivery": "Manual same-day delivery after PayPal payment appears",
@@ -77,6 +78,12 @@
     {
       "name": "Lead Recovery Audit",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html"
+    },
+    {
+      "name": "Custom Sequence Preview",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt"
     },
     {
       "name": "Lead Loss Calculator",
@@ -162,6 +169,9 @@
     "shareable_order_link_text": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
     "gist_shareable_order_link": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
+    "custom_sequence_preview": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+    "custom_sequence_preview_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
+    "custom_sequence_preview_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",

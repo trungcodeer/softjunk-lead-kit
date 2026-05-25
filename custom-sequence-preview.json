@@ -1,0 +1,43 @@
+{
+  "schema_version": "softjunk-custom-sequence-preview-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk Custom Sequence Preview",
+  "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
+  "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+  "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "purpose": "Generate a free custom lead follow-up preview, a shareable order link, and a PayPal note before the buyer pays for the full 7-day sequence.",
+  "query_parameters": [
+    "business",
+    "service",
+    "source",
+    "tone",
+    "blocker",
+    "next",
+    "value",
+    "urgency",
+    "context",
+    "ready"
+  ],
+  "free_preview_includes": [
+    "Day 0 follow-up",
+    "Day 1 follow-up",
+    "Day 3 close-the-loop message",
+    "PayPal note",
+    "shareable order link"
+  ],
+  "paid_sequence_adds": [
+    "Day 5 follow-up",
+    "Day 7 follow-up",
+    "No-show recovery reply",
+    "Price-objection reply",
+    "Final copy tuned to one business and lead context"
+  ],
+  "paypal_note_template": "Custom Sequence Preview | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [blocker] | Next: [next] | Value: [value]",
+  "privacy_rule": "Do not put customer names, phone numbers, addresses, private customer details, or PayPal transaction details in public URLs.",
+  "fulfillment_rule": "Do not mark the order paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+}

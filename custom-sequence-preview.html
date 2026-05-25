@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Sequence Preview | SoftJunk $5 Lead Follow-Up</title>
+  <meta name="description" content="Generate a free custom lead follow-up sequence preview, shareable order link, and PayPal note before paying $5 for the full 7-day SoftJunk sequence.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Custom Sequence Preview | SoftJunk">
+  <meta property="og:description" content="Create a tailored preview, PayPal note, and shareable order link for the $5 custom 7-day sequence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Custom Sequence Preview | SoftJunk">
+  <meta name="twitter:description" content="Preview the first follow-ups, then pay $5 for the full custom sequence.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json" title="Custom sequence preview JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt" title="Custom sequence preview text">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "SoftJunk Custom Sequence Preview",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Any",
+          "description": "A browser tool that generates a free preview, shareable order link, and PayPal note for the SoftJunk 5 USD custom lead follow-up sequence."
+        },
+        {
+          "@type": "Offer",
+          "name": "Custom 7-Day Lead Follow-Up Sequence",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f8f7;
+      --paper: #ffffff;
+      --ink: #14201b;
+      --muted: #526159;
+      --line: #d6ded8;
+      --accent: #0f6b5c;
+      --accent-dark: #0a5147;
+      --blue: #1d4ed8;
+      --soft: #e7f2ef;
+      --warn: #fff7df;
+      --focus: #b45309;
+      --shadow: 0 18px 44px rgba(20, 32, 27, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a { color: inherit; }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      z-index: 10;
+      transform: translateY(-96px);
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+    }
+
+    .skip-link:focus { transform: translateY(0); }
+
+    header,
+    main,
+    footer {
+      width: min(1140px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+      gap: 42px;
+      align-items: center;
+      padding: 54px 0 30px;
+    }
+
+    h1 {
+      max-width: 860px;
+      margin: 0 0 16px;
+      font-size: clamp(36px, 7vw, 68px);
+      line-height: 1.03;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+
+    p,
+    li,
+    pre {
+      overflow-wrap: anywhere;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .actions,
+    .preset-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .button,
+    button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 0 18px;
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .button.primary,
+    button.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    .button.primary:hover,
+    button.primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.blue {
+      background: var(--blue);
+      border-color: var(--blue);
+      color: #fff;
+    }
+
+    .media,
+    .panel,
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .media {
+      padding: 12px;
+      box-shadow: var(--shadow);
+    }
+
+    .media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .note,
+    .field-hint,
+    .status {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .note { margin: 14px 0 0; }
+
+    .tool {
+      display: grid;
+      grid-template-columns: minmax(0, 0.96fr) minmax(0, 1.04fr);
+      gap: 18px;
+      align-items: start;
+      padding: 24px 0 34px;
+    }
+
+    .panel,
+    .card {
+      padding: 20px;
+    }
+
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field.full { grid-column: 1 / -1; }
+
+    label {
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #bac8bf;
+      border-radius: 7px;
+      padding: 0 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 96px;
+      padding-top: 10px;
+      resize: vertical;
+    }
+
+    .output-block {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .output {
+      min-height: 90px;
+      margin: 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfb;
+      color: var(--ink);
+      white-space: pre-wrap;
+    }
+
+    .output.long { min-height: 260px; }
+
+    .status {
+      min-height: 22px;
+      margin: 12px 0 0;
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      padding: 8px 0 30px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .warning {
+      margin-top: 18px;
+      padding: 14px;
+      border: 1px solid #e7c978;
+      border-radius: 8px;
+      background: var(--warn);
+      color: #6f4a00;
+      font-weight: 800;
+    }
+
+    footer {
+      padding: 26px 0 42px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .tool,
+      .steps {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .field-grid { grid-template-columns: 1fr; }
+      .field.full { grid-column: auto; }
+      .actions,
+      .button,
+      button { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="lead-recovery-audit.html">Audit</a>
+        <a href="shareable-order-link.html">Order link</a>
+        <a href="custom-sequence-preview.json">JSON</a>
+        <a href="pay.html">Pay $5</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Preview the custom sequence before paying $5.</h1>
+        <p class="lead">Generate the first useful follow-ups, a shareable order link, and a PayPal note from non-sensitive lead context. Pay $5 when the preview proves the sequence is worth finishing.</p>
+        <div class="actions">
+          <a class="button primary" href="#preview-tool">Create preview</a>
+          <a class="button" href="custom-sequence-preview.json">Read JSON</a>
+          <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal</a>
+        </div>
+        <p class="note">Do not put customer names, phone numbers, addresses, or PayPal transaction details in the preview URL.</p>
+      </div>
+      <div class="media" aria-label="SoftJunk PayPal preview">
+        <img src="social-card-qr.png" alt="SoftJunk lead follow-up offer card with PayPal QR code">
+      </div>
+    </section>
+
+    <section class="steps" aria-label="Preview rules">
+      <article class="card">
+        <h2>Free preview</h2>
+        <p>Get Day 0, Day 1, and Day 3 style copy immediately so the buyer can judge fit before paying.</p>
+      </article>
+      <article class="card">
+        <h2>Full paid sequence</h2>
+        <p>The $5 version adds Day 5, Day 7, no-show recovery, price-objection reply, and a cleaner final handoff.</p>
+      </article>
+      <article class="card">
+        <h2>Verified fulfillment</h2>
+        <p>Delivery starts only after seller-side PayPal evidence confirms the exact 5 USD transaction.</p>
+      </article>
+    </section>
+
+    <section class="tool" id="preview-tool" aria-labelledby="tool-title">
+      <form class="panel" id="preview-form" aria-describedby="privacy-hint">
+        <h2 id="tool-title">Preview inputs</h2>
+        <p id="privacy-hint" class="note">Use business context only. Keep private customer and payment details out of public URLs.</p>
+
+        <div class="preset-row" aria-label="Preset examples" style="margin-top:14px">
+          <button type="button" data-preset="roofing">Roofing</button>
+          <button type="button" data-preset="hvac">HVAC</button>
+          <button type="button" data-preset="dental">Dental</button>
+          <button type="button" data-preset="agency">Agency</button>
+        </div>
+
+        <div class="field-grid">
+          <div class="field">
+            <label for="business">Business type</label>
+            <input id="business" name="business" autocomplete="organization" placeholder="Roofing company" required>
+          </div>
+          <div class="field">
+            <label for="service">Service sold</label>
+            <input id="service" name="service" placeholder="Roof inspection" required>
+          </div>
+          <div class="field">
+            <label for="source">Lead source</label>
+            <select id="source" name="source">
+              <option>Website form</option>
+              <option>Missed call</option>
+              <option>Instagram DM</option>
+              <option>Facebook message</option>
+              <option>Email</option>
+              <option>Referral</option>
+              <option>Quote request</option>
+              <option>No-show</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tone">Tone</label>
+            <select id="tone" name="tone">
+              <option>Professional</option>
+              <option>Friendly</option>
+              <option>Warm</option>
+              <option>Direct</option>
+              <option>Premium</option>
+              <option>Concise</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="blocker">Likely blocker</label>
+            <input id="blocker" name="blocker" placeholder="Price and timing">
+          </div>
+          <div class="field">
+            <label for="next">Desired next step</label>
+            <input id="next" name="next" placeholder="Book a quick call">
+          </div>
+          <div class="field">
+            <label for="value">Approximate lead value</label>
+            <input id="value" name="value" inputmode="decimal" placeholder="$1,200">
+          </div>
+          <div class="field">
+            <label for="urgency">Urgency</label>
+            <select id="urgency" name="urgency">
+              <option>Normal</option>
+              <option>Same day</option>
+              <option>This week</option>
+              <option>Low pressure</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="context">Context summary</label>
+            <textarea id="context" name="context" placeholder="The lead asked for a quote, received a range, then stopped replying."></textarea>
+            <p class="field-hint">One or two non-sensitive sentences is enough.</p>
+          </div>
+        </div>
+
+        <div class="actions" style="margin-top:16px">
+          <button class="primary" type="submit">Generate preview</button>
+          <button type="button" id="clear-fields">Clear</button>
+        </div>
+      </form>
+
+      <div class="panel" aria-labelledby="output-title">
+        <h2 id="output-title">Preview and handoff</h2>
+
+        <div class="output-block">
+          <h3>Free sequence preview</h3>
+          <p class="output long" id="preview-output">Fill the form to create a sequence preview.</p>
+          <div class="actions">
+            <button type="button" id="copy-preview">Copy preview</button>
+            <button type="button" id="copy-share">Copy preview link</button>
+          </div>
+        </div>
+
+        <div class="output-block">
+          <h3>PayPal note</h3>
+          <p class="output" id="paypal-note">Fill the form to create the PayPal note.</p>
+          <div class="actions">
+            <button type="button" id="copy-note">Copy PayPal note</button>
+            <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+          </div>
+        </div>
+
+        <div class="output-block">
+          <h3>Shareable order link</h3>
+          <p class="output" id="order-link">Fill the form to create the shareable order link.</p>
+          <div class="actions">
+            <button type="button" id="copy-order">Copy order link</button>
+            <a class="button" id="open-order" href="shareable-order-link.html">Open order link</a>
+            <a class="button" href="after-pay.html">After payment</a>
+          </div>
+        </div>
+
+        <p class="status" id="status" role="status" aria-live="polite"></p>
+        <p class="warning">Verification gate: do not mark paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SoftJunk provides operational templates and follow-up copy. Review messages for accuracy, compliance, and fit before sending.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('#preview-form');
+    const previewOutput = document.querySelector('#preview-output');
+    const noteOutput = document.querySelector('#paypal-note');
+    const orderLinkOutput = document.querySelector('#order-link');
+    const openOrder = document.querySelector('#open-order');
+    const statusMessage = document.querySelector('#status');
+    const paymentUrl = 'https://paypal.me/softjunk/5USD';
+
+    const presets = {
+      roofing: {
+        business: 'Roofing company',
+        service: 'roof inspection',
+        source: 'Quote request',
+        tone: 'Direct',
+        blocker: 'cost and project timing',
+        next: 'schedule an inspection',
+        value: '$1,800',
+        urgency: 'This week',
+        context: 'The lead asked for a roof estimate, received a range, then stopped replying.'
+      },
+      hvac: {
+        business: 'HVAC company',
+        service: 'AC repair estimate',
+        source: 'Website form',
+        tone: 'Professional',
+        blocker: 'price and appointment timing',
+        next: 'book a service visit',
+        value: '$450',
+        urgency: 'Same day',
+        context: 'The lead asked about AC repair and went quiet after the first reply.'
+      },
+      dental: {
+        business: 'Dental office',
+        service: 'new patient appointment',
+        source: 'Missed call',
+        tone: 'Friendly',
+        blocker: 'insurance and scheduling',
+        next: 'book a new patient appointment',
+        value: '$280',
+        urgency: 'Normal',
+        context: 'The lead called about becoming a new patient but did not schedule.'
+      },
+      agency: {
+        business: 'Small agency',
+        service: 'lead follow-up help',
+        source: 'Referral',
+        tone: 'Warm',
+        blocker: 'fit and next steps',
+        next: 'book a quick call',
+        value: '$900',
+        urgency: 'Low pressure',
+        context: 'The lead was referred, asked for details, then stopped replying.'
+      }
+    };
+
+    function clean(value, fallback = '') {
+      const text = String(value || '').trim().replace(/\s+/g, ' ');
+      return (text || fallback).slice(0, 140);
+    }
+
+    function data() {
+      const fd = new FormData(form);
+      return {
+        business: clean(fd.get('business'), 'local business'),
+        service: clean(fd.get('service'), 'lead follow-up'),
+        source: clean(fd.get('source'), 'Website form'),
+        tone: clean(fd.get('tone'), 'Professional'),
+        blocker: clean(fd.get('blocker'), 'timing'),
+        next: clean(fd.get('next'), 'book the next step'),
+        value: clean(fd.get('value'), 'not specified'),
+        urgency: clean(fd.get('urgency'), 'Normal'),
+        context: clean(fd.get('context'), 'A lead went quiet and needs a clear follow-up path.')
+      };
+    }
+
+    function setField(name, value) {
+      const field = form.elements[name];
+      if (!field) return;
+      field.value = value;
+    }
+
+    function orderUrl(d) {
+      const url = new URL('shareable-order-link.html', window.location.href);
+      url.search = '';
+      url.searchParams.set('business', d.business);
+      url.searchParams.set('service', d.service);
+      url.searchParams.set('source', d.source);
+      url.searchParams.set('tone', d.tone);
+      url.searchParams.set('need', d.blocker);
+      url.searchParams.set('next', d.next);
+      if (d.value !== 'not specified') url.searchParams.set('value', d.value);
+      url.searchParams.set('ready', '1');
+      return url.toString();
+    }
+
+    function previewUrl(d) {
+      const url = new URL('custom-sequence-preview.html', window.location.href);
+      url.search = '';
+      Object.entries(d).forEach(([key, value]) => {
+        if (value && value !== 'not specified') url.searchParams.set(key, value);
+      });
+      url.searchParams.set('ready', '1');
+      url.hash = 'preview-tool';
+      return url.toString();
+    }
+
+    function note(d) {
+      return `Custom Sequence Preview | Business: ${d.business} | Service: ${d.service} | Source: ${d.source} | Tone: ${d.tone} | Need: ${d.blocker} | Next: ${d.next} | Value: ${d.value}`;
+    }
+
+    function preview(d) {
+      return `Free custom sequence preview for ${d.business}
+Service: ${d.service}
+Source: ${d.source}
+Tone: ${d.tone}
+Context: ${d.context}
+
+Day 0 - reopen the conversation:
+Hi [Name], quick follow-up on ${d.service}. The easiest next step is to ${d.next}. If ${d.blocker} is the main question, reply with that and I will answer it first.
+
+Day 1 - reduce friction:
+Hi [Name], I can make this simple. If you still want help with ${d.service}, reply "yes" and I will send the next step. If timing is off, reply "later" and I will close the loop for now.
+
+Day 3 - close the loop without pressure:
+Hi [Name], I have not heard back, so I will close this for now. If ${d.service} becomes useful again, reply here and I will reopen it.
+
+Paid $5 version adds:
+- Day 5 and Day 7 follow-ups
+- no-show recovery reply
+- price-objection reply
+- final copy tuned to ${d.business}, ${d.source}, ${d.tone}, and ${d.urgency.toLowerCase()} urgency
+
+Pay exactly $5:
+${paymentUrl}
+
+Paste this PayPal note:
+${note(d)}`;
+    }
+
+    function render() {
+      if (!form.reportValidity()) return false;
+      const d = data();
+      const order = orderUrl(d);
+      previewOutput.textContent = preview(d);
+      noteOutput.textContent = note(d);
+      orderLinkOutput.textContent = order;
+      openOrder.href = order;
+      statusMessage.textContent = 'Preview generated. Copy the PayPal note before paying for the full sequence.';
+      return true;
+    }
+
+    async function copyText(text, success) {
+      const trimmed = String(text || '').trim();
+      if (!trimmed || trimmed.startsWith('Fill the form')) {
+        statusMessage.textContent = 'Generate the preview before copying.';
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(trimmed);
+        statusMessage.textContent = success;
+      } catch {
+        statusMessage.textContent = 'Copy failed. Select the text and copy it manually.';
+      }
+    }
+
+    function applyUrlData() {
+      const params = new URLSearchParams(window.location.search);
+      ['business', 'service', 'source', 'tone', 'blocker', 'next', 'value', 'urgency', 'context'].forEach((name) => {
+        if (params.has(name)) setField(name, params.get(name));
+      });
+      if (params.get('ready') === '1') render();
+    }
+
+    document.querySelectorAll('[data-preset]').forEach((button) => {
+      button.addEventListener('click', () => {
+        Object.entries(presets[button.dataset.preset] || {}).forEach(([key, value]) => setField(key, value));
+        render();
+      });
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      render();
+    });
+
+    document.querySelector('#clear-fields').addEventListener('click', () => {
+      form.reset();
+      previewOutput.textContent = 'Fill the form to create a sequence preview.';
+      noteOutput.textContent = 'Fill the form to create the PayPal note.';
+      orderLinkOutput.textContent = 'Fill the form to create the shareable order link.';
+      openOrder.href = 'shareable-order-link.html';
+      statusMessage.textContent = 'Fields cleared.';
+    });
+
+    document.querySelector('#copy-preview').addEventListener('click', () => copyText(previewOutput.textContent, 'Preview copied.'));
+    document.querySelector('#copy-note').addEventListener('click', () => copyText(noteOutput.textContent, 'PayPal note copied.'));
+    document.querySelector('#copy-order').addEventListener('click', () => copyText(orderLinkOutput.textContent, 'Shareable order link copied.'));
+    document.querySelector('#copy-share').addEventListener('click', () => {
+      if (!render()) return;
+      copyText(previewUrl(data()), 'Preview link copied.');
+    });
+
+    applyUrlData();
+  </script>
+</body>
+</html>
