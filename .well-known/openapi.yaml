@@ -83,6 +83,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /lead-follow-up-rewriter.html:
+    get:
+      operationId: openLeadFollowUpRewriter
+      summary: Open the free lead follow-up rewriter.
+      responses:
+        "200":
+          description: Browser tool that rewrites one weak follow-up message and offers the $5 custom sequence path.
+          content:
+            text/html:
+              schema:
+                type: string
   /free-sample-pack.html:
     get:
       operationId: openFreeSamplePack

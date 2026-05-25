@@ -23,6 +23,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 Free preview builder:
 https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 
+Lead follow-up rewriter:
+https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
+
 Free sample pack:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 
@@ -73,6 +76,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
 
 Niche pages:
 - Lead follow-up template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
+- Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
@@ -105,6 +109,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Offers:
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
+- Free lead follow-up rewriter for $0: rewrites one weak follow-up message and creates a PayPal note.
 - Free preview for $0: browser-generated Day 0, 1, and 3 sample for one business.
 - Digital kit for $5: 7-day follow-up guide, message templates, lead tracker CSV, and AI prompts.
 - Custom sequence for $5: Day 0, 1, 3, 5, and 7 messages written for one business, plus no-show and price-objection replies.

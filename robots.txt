@@ -4,6 +4,7 @@ Allow: /llms.txt
 Allow: /feed.xml
 Allow: /product-feed.json
 Allow: /PAYPAL_VERIFICATION.md
+Allow: /lead-follow-up-rewriter.html
 Allow: /lead-follow-up-templates.html
 Allow: /follow-up-examples.html
 Allow: /free-sample-pack.html

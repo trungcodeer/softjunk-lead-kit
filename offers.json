@@ -8,6 +8,7 @@
   "public_order_board_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
+  "lead_follow_up_rewriter_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
   "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
   "free_sample_pack_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html",
   "free_sample_zip_url": "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
@@ -39,6 +40,12 @@
       "price": "0.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
       "delivery": "Instant browser-generated estimate and PayPal note"
+    },
+    {
+      "name": "Free lead follow-up rewriter",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
+      "delivery": "Instant browser rewrite of one weak follow-up message plus a PayPal note"
     },
     {
       "name": "Free 3-message follow-up preview",

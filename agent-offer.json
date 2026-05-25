@@ -45,7 +45,7 @@
     "The buyer does not want to use PayPal"
   ],
   "agent_instructions": [
-    "Send the buyer to agent_order_url or free_preview_url.",
+    "Send the buyer to lead_follow_up_rewriter_url when they already have a weak message, or to agent_order_url or free_preview_url when they need a new sequence.",
     "Ask the buyer to generate or copy a PayPal note that includes business type, service, lead source, tone, and need.",
     "Tell the buyer to pay exactly 5 USD through payment_url.",
     "After payment, send the buyer to public_order_board_url for the public handoff or github_order_url if they want to leave structured non-sensitive fulfillment details.",
@@ -53,6 +53,7 @@
     "Tell the buyer that fulfillment is manual and uses the email shown in the PayPal transaction."
   ],
   "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "lead_follow_up_rewriter_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
   "free_sample_pack_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html",
   "free_sample_zip_url": "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",

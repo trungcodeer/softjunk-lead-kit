@@ -34,6 +34,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
+- Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
