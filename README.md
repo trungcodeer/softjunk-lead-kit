@@ -13,6 +13,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
+- Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 - Root payment intent JSON: https://trungcodeer.github.io/paypal.json
@@ -45,6 +46,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 ## Try Before Paying
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
+- Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
@@ -73,6 +75,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 ## Machine-Readable Discovery
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/

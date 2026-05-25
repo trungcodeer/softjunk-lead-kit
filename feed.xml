@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 03:28:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 04:05:00 +0700</lastBuildDate>
+    <item>
+      <title>Lead Recovery Audit</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html</guid>
+      <description>Free browser audit that estimates missed lead value, rewrites a weak follow-up, creates a PayPal note, and routes to the 5 USD custom sequence.</description>
+      <pubDate>Tue, 26 May 2026 04:05:00 +0700</pubDate>
+    </item>
     <item>
       <title>SoftJunk $5 PayPal Payment Intent Gist</title>
       <link>https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02</link>

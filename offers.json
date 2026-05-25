@@ -5,6 +5,7 @@
   "payment_url": "https://paypal.me/softjunk/5USD",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_buyer_index_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
+  "lead_recovery_audit_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
@@ -47,6 +48,12 @@
   "well_known_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
   "openapi_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
   "offers": [
+    {
+      "name": "Free lead recovery audit",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
+      "delivery": "Instant browser-generated recovery audit with missed-value estimate, stronger follow-up copy, and PayPal note"
+    },
     {
       "name": "Free lead loss calculator",
       "price": "0.00",
@@ -131,6 +138,7 @@
     "Businesses with sent estimates or quotes"
   ],
   "niche_pages": [
+    "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",

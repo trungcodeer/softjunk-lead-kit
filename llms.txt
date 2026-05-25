@@ -71,6 +71,9 @@ https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-
 Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 
+Lead recovery audit:
+https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+
 Fast checkout:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
@@ -208,6 +211,7 @@ Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Offers:
+- Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
 - Free lead follow-up rewriter for $0: rewrites one weak follow-up message and creates a PayPal note.
 - Free preview for $0: browser-generated Day 0, 1, and 3 sample for one business.

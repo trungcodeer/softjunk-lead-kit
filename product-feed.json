@@ -53,6 +53,10 @@
   },
   "free_tools": [
     {
+      "name": "Lead Recovery Audit",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html"
+    },
+    {
       "name": "Lead Loss Calculator",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html"
     },
@@ -126,6 +130,7 @@
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "fix_one_quiet_lead": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "printable_paypal_flyer": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",
     "paypal_qr_svg": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg",

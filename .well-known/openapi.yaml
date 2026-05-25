@@ -127,6 +127,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /lead-recovery-audit.html:
+    get:
+      operationId: openLeadRecoveryAudit
+      summary: Open the free lead recovery audit.
+      responses:
+        "200":
+          description: Browser audit that estimates missed lead value, rewrites the next follow-up, and creates a PayPal note.
+          content:
+            text/html:
+              schema:
+                type: string
   /fix-one-quiet-lead.html:
     get:
       operationId: openFixOneQuietLead
