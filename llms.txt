@@ -9,6 +9,7 @@ Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 
 Niche pages:
+- Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
 - Med spa follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
 - Tutoring follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
 
@@ -27,6 +28,7 @@ PayPal notes:
 - Custom sequence: fill the free generator, click Copy PayPal note, and paste that note into PayPal before paying.
 
 Best-fit buyers:
+- Appointment setters, virtual assistants, and small agencies
 - Med spas and appointment-based wellness businesses
 - Tutoring and academic coaching services
 - Local service businesses

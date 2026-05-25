@@ -318,7 +318,12 @@
       padding: 20px;
     }
 
-    .example-grid,
+    .example-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
     .offer-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -603,6 +608,7 @@
         <a href="#inside">Inside</a>
         <a href="#generator">Generator</a>
         <a href="#examples">Examples</a>
+        <a href="appointment-setting-follow-up.html">Appointment</a>
         <a href="med-spa-follow-up.html">Med spa</a>
         <a href="tutoring-follow-up.html">Tutoring</a>
         <a href="#offers">Offers</a>
@@ -716,8 +722,22 @@
 
     <section id="examples" aria-labelledby="examples-title">
       <h2 id="examples-title">Examples for appointment businesses</h2>
-      <p class="section-lead">The custom option is strongest when the next step is clear: book, reply, confirm, or ask for pricing. Here are two common cases.</p>
+      <p class="section-lead">The custom option is strongest when the next step is clear: book, reply, confirm, or ask for pricing. Here are three common cases.</p>
       <div class="example-grid">
+        <article class="offer-card">
+          <h3>Appointment setting lead</h3>
+          <p><strong>Lead source:</strong> Website form. <strong>Next step:</strong> book a quick call.</p>
+          <p class="template">Day 0: Hi [Name], thanks for reaching out about [service]. The easiest next step is a quick call so we can confirm fit, timing, and what you need handled first.
+
+Day 1: Hi [Name], just checking if you still want help with [service]. If yes, reply with a good time or I can send a booking link.
+
+Day 3: Hi [Name], should I close the loop for now? If you still want to talk, reply "call" and I will send the next open times.</p>
+          <div class="generator-actions">
+            <a class="button secondary" href="?preset=appointment#generator">Create an appointment note</a>
+            <a class="button secondary" href="appointment-setting-follow-up.html">Open appointment page</a>
+          </div>
+        </article>
+
         <article class="offer-card">
           <h3>Med spa booking inquiry</h3>
           <p><strong>Lead source:</strong> Instagram DM. <strong>Next step:</strong> book a consultation.</p>
@@ -964,6 +984,14 @@ I can keep this simple. Do you want me to send the next step?`;
           tone: 'Friendly',
           concern: 'student fit',
           nextStep: 'schedule a free consultation'
+        },
+        appointment: {
+          businessType: 'Appointment setting service',
+          service: 'Lead follow-up',
+          leadSource: 'Website form',
+          tone: 'Professional',
+          concern: 'response time',
+          nextStep: 'book a quick call'
         }
       };
 

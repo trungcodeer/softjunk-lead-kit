@@ -247,7 +247,7 @@
 
     .example-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
     }
 
@@ -288,6 +288,7 @@
       <a class="brand" href="./">SoftJunk Lead Kit</a>
       <div class="nav-links">
         <a href="./">Free generator</a>
+        <a href="appointment-setting-follow-up.html">Appointment</a>
         <a href="med-spa-follow-up.html">Med spa</a>
         <a href="tutoring-follow-up.html">Tutoring</a>
       </div>
@@ -328,8 +329,15 @@
 
     <section class="example" aria-labelledby="example-title">
       <h2 id="example-title">What the custom version looks like</h2>
-      <p>The paid custom option expands the sample into a full sequence for one business. Here are two short examples.</p>
+      <p>The paid custom option expands the sample into a full sequence for one business. Here are three short examples.</p>
       <div class="example-grid">
+        <article class="card">
+          <h2>Appointment setting</h2>
+          <p class="sample">Day 0: Hi [Name], thanks for reaching out about [service]. A quick call is the easiest next step so we can confirm fit, timing, and what you need handled first.
+
+Day 3: Hi [Name], should I close the loop for now? If you still want to talk, reply "call" and I will send the next open times.</p>
+        </article>
+
         <article class="card">
           <h2>Med spa</h2>
           <p class="sample">Day 0: Hi [Name], thanks for asking about [treatment]. A short consultation is the best next step so we can check fit, timing, and pricing.
