@@ -25,6 +25,9 @@
   "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
   "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
   "shareable_order_link_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+  "gist_shareable_order_link_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
+  "gist_raw_shareable_order_link_json_url": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.json",
+  "gist_raw_shareable_order_link_text_url": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.txt",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "quiet_lead_gist_url": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
@@ -81,6 +84,7 @@
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
       "why": "Creates a shareable order URL, explicit PayPal note, and buyer handoff while keeping private customer details out of public URLs."
     },
     {
@@ -216,6 +220,9 @@
     "shareable_order_link": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "shareable_order_link_json": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
     "shareable_order_link_text": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+    "gist_shareable_order_link": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
+    "gist_raw_shareable_order_link_json": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.json",
+    "gist_raw_shareable_order_link_text": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.txt",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",

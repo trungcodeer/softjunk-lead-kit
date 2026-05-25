@@ -71,7 +71,8 @@
       "name": "Shareable Order Link",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
-      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt"
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb"
     },
     {
       "name": "Lead Recovery Audit",
@@ -159,6 +160,7 @@
     "shareable_order_link": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "shareable_order_link_json": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
     "shareable_order_link_text": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+    "gist_shareable_order_link": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",

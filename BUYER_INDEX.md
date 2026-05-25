@@ -8,6 +8,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+- Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
@@ -53,6 +54,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Shareable order link JSON: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json
 - Shareable order link text: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt
+- Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c

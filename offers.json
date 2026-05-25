@@ -17,6 +17,7 @@
   "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
   "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
   "shareable_order_link_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+  "gist_shareable_order_link_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
@@ -82,6 +83,7 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
       "delivery": "Browser-generated shareable order URL, PayPal note, and buyer handoff for a 5 USD custom sequence"
     },
     {
@@ -177,6 +179,7 @@
   "niche_pages": [
     "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+    "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
     "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
