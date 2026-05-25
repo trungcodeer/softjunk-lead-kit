@@ -1,0 +1,38 @@
+SoftJunk Custom Sequence Gallery
+
+Open prefilled custom sequence previews for common quiet-lead situations, then pay exactly 5 USD for the full 7-day custom sequence.
+
+Gallery:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+
+Gallery JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
+
+Custom preview builder:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
+
+Shareable order link:
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+
+PayPal:
+https://paypal.me/softjunk/5USD
+
+Ready scenarios:
+- HVAC repair form lead: price and appointment timing, same day urgency.
+- Roofing quote went quiet: cost and project timing, this week urgency.
+- Dental new patient missed call: insurance and scheduling.
+- Med spa consultation no-show: trust and timing.
+- Real estate buyer lead: budget and timeline.
+- Tutor trial lesson inquiry: fit and schedule.
+- Plumbing emergency quote: availability and price.
+- Agency referral follow-up: fit and next steps.
+
+Fast buyer path:
+1. Open a scenario from the gallery.
+2. Read the generated Day 0, Day 1, and Day 3 preview.
+3. Copy the generated PayPal note.
+4. Pay exactly 5 USD through https://paypal.me/softjunk/5USD.
+5. Open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html.
+
+Payment gate:
+Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.

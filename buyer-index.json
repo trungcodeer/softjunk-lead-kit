@@ -17,6 +17,9 @@
   "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
   "custom_sequence_preview_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
   "custom_sequence_preview_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
+  "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+  "custom_sequence_gallery_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
+  "custom_sequence_gallery_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
@@ -114,6 +117,13 @@
       "why": "Generates Day 0, Day 1, and Day 3 preview copy plus a PayPal note and shareable order link."
     },
     {
+      "use_when": "The buyer wants a ready-to-open example for a common quiet-lead situation before paying.",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+      "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
+      "why": "Lists prefilled HVAC, roofing, dental, med spa, real estate, tutoring, plumbing, and agency preview links that open directly into the custom sequence preview."
+    },
+    {
       "use_when": "The buyer has one quiet lead and wants the shortest free sample before paying.",
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "why": "Lowest-friction path: one free follow-up message plus a direct $5 custom sequence checkout."
@@ -182,7 +192,7 @@
     "direct_buy_message": "Buy the $5 SoftJunk Lead Follow-Up Kit here: https://paypal.me/softjunk/5USD. Use PayPal note: Lead Follow-Up Kit. After payment, open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html.",
     "short_root_buy_message": "Short SoftJunk PayPal route: https://trungcodeer.github.io/paypal/. Direct PayPal: https://paypal.me/softjunk/5USD.",
     "shareable_order_link_message": "If you already know the business type, service, source, tone, value, and follow-up need, create a shareable SoftJunk order link here: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html. Copy the generated PayPal note, then pay exactly $5 at https://paypal.me/softjunk/5USD.",
-    "custom_sequence_message": "For a custom 7-day lead follow-up sequence, open https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html, create a shareable order URL, copy the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and paste the generated note into PayPal.",
+    "custom_sequence_message": "For a custom 7-day lead follow-up sequence, open https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html for a ready scenario or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when context is already ready, copy the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and paste the generated note into PayPal.",
     "qr_message": "Scan or share this $5 PayPal QR page for SoftJunk: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html"
   },
   "buyer_fit": [
@@ -213,6 +223,7 @@
     "llms.txt",
     "Shareable order link",
     "Custom sequence preview",
+    "Custom sequence gallery",
     "OpenAPI discovery",
     "Well-known offer manifest",
     "IndexNow ping"
@@ -240,6 +251,9 @@
     "custom_sequence_preview": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "custom_sequence_preview_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
     "custom_sequence_preview_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
+    "custom_sequence_gallery": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+    "custom_sequence_gallery_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
+    "custom_sequence_gallery_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",

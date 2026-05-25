@@ -4,6 +4,10 @@ Use this free page when a buyer wants to see a tailored lead follow-up preview b
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 
+Ready scenario gallery:
+
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+
 It generates:
 - Day 0 follow-up
 - Day 1 follow-up

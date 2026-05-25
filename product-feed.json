@@ -32,6 +32,7 @@
     "order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
     "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+    "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
     "delivery": "Manual same-day delivery after PayPal payment appears",
@@ -84,6 +85,12 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt"
+    },
+    {
+      "name": "Custom Sequence Gallery",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt"
     },
     {
       "name": "Lead Loss Calculator",
@@ -172,6 +179,9 @@
     "custom_sequence_preview": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "custom_sequence_preview_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
     "custom_sequence_preview_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
+    "custom_sequence_gallery": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+    "custom_sequence_gallery_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
+    "custom_sequence_gallery_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",

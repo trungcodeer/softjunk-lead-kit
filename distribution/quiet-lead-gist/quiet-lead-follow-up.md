@@ -15,6 +15,7 @@ Hi [Name], quick follow-up on [service]. If you still want help, reply with one 
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Rewrite a weak follow-up: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
+- Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
@@ -35,7 +36,11 @@ https://paypal.me/softjunk/5USD
 
 For the digital kit, use PayPal note `Lead Follow-Up Kit`.
 
-For a custom sequence, create the tailored preview, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
+For a custom sequence, open a ready scenario, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
+
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+
+Or create a tailored preview from scratch here:
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 

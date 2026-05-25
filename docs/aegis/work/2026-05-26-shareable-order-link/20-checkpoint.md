@@ -111,3 +111,42 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves conversion by giving a tailored useful artifact before checkout without spam or false payment claims.
 - Compatibility boundary: static GitHub Pages, public Gists, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Custom Sequence Gallery Checkpoint
+
+Current todo:
+- Commit and push product/root custom-sequence-gallery wiring.
+- Wait for Pages deployments and verify live gallery/discovery URLs.
+- Submit discovery pings, update public issue examples, and rerun PayPal verification gate.
+
+Active slice:
+- Add a ready-to-open scenario gallery that maps common quiet-lead situations to prefilled custom sequence preview URLs, order links, and PayPal notes.
+
+Completed todos:
+- Read current worktree state, PayPal verifier output, latest checkpoint, evidence bundle, and public buyer examples issue.
+- Added `custom-sequence-gallery.html`, `.json`, and `.txt`.
+- Wired the gallery into product homepage, custom preview page, examples page, buyer index, offer manifests, payment intent, agent offer, agent buyer packet, share kit, README, `llms.txt`, robots, sitemap, RSS, and OpenAPI discovery.
+- Wired the gallery into root hub, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, root JSON, root text, root README, root robots, root sitemap, root OpenAPI, and root AI plugin manifest.
+- Updated public payment-intent, quiet-lead, and agent-buyer-packet Gists from local sources.
+- Parsed product/root JSON and XML successfully after edits.
+- Parsed affected inline scripts with Node.
+- Used Chrome headless `--dump-dom` against the gallery and an HVAC prefilled preview URL and confirmed scenario links, PayPal URL, generated preview, PayPal note, shareable order link, and verification status text appear.
+
+Evidence refs:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- `ConvertFrom-Json` succeeded for product/root JSON, `.well-known` JSON, and distribution Gist JSON.
+- XML parse succeeded for product `sitemap.xml`/`feed.xml` and root `sitemap.xml`.
+- Node inline script parse succeeded for product `custom-sequence-gallery.html`, `custom-sequence-preview.html`, `index.html`, `share-kit.html`, `follow-up-examples.html`, and root short-route pages.
+- Chrome headless DOM dump included `Custom Sequence Gallery`, `HVAC repair form lead`, `custom-sequence-preview.html`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, `Preview generated`, and `shareable-order-link.html`.
+
+Blocked-on items:
+- PayPal seller-side credentials or CSV proof are still required to verify actual payment.
+
+Next step:
+- Commit, push, wait for Pages, run live URL checks, ping IndexNow, comment the public examples/tracking issues, and rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it reduces buyer friction by turning likely lead problems into direct preview/payment paths without spam or false payment claims.
+- Compatibility boundary: static GitHub Pages, public Gists, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

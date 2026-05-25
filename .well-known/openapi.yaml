@@ -171,6 +171,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /custom-sequence-gallery.html:
+    get:
+      operationId: openCustomSequenceGallery
+      summary: Open the custom sequence scenario gallery.
+      responses:
+        "200":
+          description: Ready-to-open scenario gallery with prefilled preview and order links for common quiet-lead situations.
+          content:
+            text/html:
+              schema:
+                type: string
+  /custom-sequence-gallery.json:
+    get:
+      operationId: getCustomSequenceGallery
+      summary: Get custom sequence scenario gallery metadata.
+      responses:
+        "200":
+          description: Machine-readable scenario gallery with preview URLs, order URLs, PayPal notes, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /custom-sequence-gallery.txt:
+    get:
+      operationId: getCustomSequenceGalleryText
+      summary: Get custom sequence scenario gallery text.
+      responses:
+        "200":
+          description: Plain-text scenario gallery and exact 5 USD PayPal checkout path.
+          content:
+            text/plain:
+              schema:
+                type: string
   /paypal-payment-intent.json:
     get:
       operationId: getProductPayPalPaymentIntent

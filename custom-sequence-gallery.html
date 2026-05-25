@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Custom Sequence Gallery | SoftJunk $5 Lead Follow-Up</title>
+  <meta name="description" content="Open prefilled SoftJunk custom sequence previews for common quiet-lead situations, then pay $5 through PayPal for the full sequence.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Custom Sequence Gallery | SoftJunk">
+  <meta property="og:description" content="Prefilled lead follow-up scenarios that open a custom preview, PayPal note, and order handoff.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Custom Sequence Gallery | SoftJunk">
+  <meta name="twitter:description" content="Open prefilled lead follow-up previews, then pay $5 for the full custom sequence.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json" title="Custom sequence gallery JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt" title="Custom sequence gallery text">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "name": "SoftJunk Custom Sequence Gallery",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+          "description": "Prefilled lead follow-up situations that open a custom preview, PayPal note, and shareable order handoff."
+        },
+        {
+          "@type": "Offer",
+          "name": "Custom 7-Day Lead Follow-Up Sequence",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9f6;
+      --paper: #ffffff;
+      --ink: #17211c;
+      --muted: #526159;
+      --line: #d8ded7;
+      --accent: #0f6959;
+      --accent-dark: #0a4f43;
+      --blue: #2457a6;
+      --soft: #e7f4f0;
+      --focus: #b45f00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      background: var(--ink);
+      color: #fff;
+      border-radius: 7px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav-links,
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
+      gap: 34px;
+      align-items: center;
+      padding: 54px 0 34px;
+    }
+
+    h1 {
+      max-width: 840px;
+      margin: 0 0 16px;
+      font-size: clamp(38px, 6.5vw, 70px);
+      line-height: 1.03;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 760px;
+      margin: 0 0 22px;
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 0 18px;
+      background: var(--paper);
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .button.primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.blue {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+    }
+
+    .media {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+      padding: 12px;
+    }
+
+    .media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 30px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .meta {
+      margin: 0 0 10px;
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .sample {
+      margin: 0 0 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      background: #fbfcfb;
+      color: var(--ink);
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .band {
+      margin: 8px 0 32px;
+      padding: 22px;
+      border: 1px solid #b9ddd5;
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
+    footer {
+      padding: 28px 0 42px;
+    }
+
+    @media (max-width: 820px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="custom-sequence-preview.html">Preview</a>
+        <a href="shareable-order-link.html">Order link</a>
+        <a href="lead-recovery-audit.html">Audit</a>
+        <a href="buyer-index.json">Buyer index</a>
+        <a href="custom-sequence-gallery.json">JSON</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Pick the quiet-lead situation, then open a ready preview.</h1>
+        <p class="lead">Each scenario opens the custom sequence preview with business type, lead source, blocker, value, and next step already filled in. The full 7-day custom sequence is $5 after the buyer copies the PayPal note.</p>
+        <div class="actions">
+          <a class="button primary" href="#scenarios">Browse scenarios</a>
+          <a class="button" href="custom-sequence-preview.html">Build your own preview</a>
+          <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal $5</a>
+        </div>
+      </div>
+      <div class="media">
+        <img src="social-card-qr.png" alt="SoftJunk lead follow-up offer card with PayPal QR code">
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="how-title">
+      <h2 id="how-title">Fast buyer path</h2>
+      <p>Open a scenario, read the generated Day 0, Day 1, and Day 3 preview, copy the PayPal note, pay exactly $5, then use the after-payment handoff. Fulfillment starts only after seller-side PayPal evidence confirms payment.</p>
+      <div class="actions">
+        <a class="button" href="after-pay.html">After payment</a>
+        <a class="button" href="PAYPAL_VERIFICATION.md">Verification rule</a>
+        <a class="button" href="custom-sequence-gallery.txt">Plain text</a>
+      </div>
+    </section>
+
+    <section id="scenarios" aria-labelledby="scenarios-title">
+      <h2 id="scenarios-title">Ready-to-open scenarios</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>HVAC repair form lead</h3>
+          <p class="meta">Website form, price and appointment timing, same day urgency.</p>
+          <p class="sample">Day 0 angle:
+Ask whether the lead wants the earliest service window or the price question answered first.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=HVAC%20company&amp;service=AC%20repair%20estimate&amp;source=Website%20form&amp;tone=Professional&amp;blocker=price%20and%20appointment%20timing&amp;next=book%20a%20service%20visit&amp;value=%24450&amp;urgency=Same%20day&amp;context=The%20lead%20asked%20about%20AC%20repair%20and%20went%20quiet%20after%20the%20first%20reply&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=HVAC%20company&amp;service=AC%20repair%20estimate&amp;source=Website%20form&amp;tone=Professional&amp;need=price%20and%20appointment%20timing&amp;next=book%20a%20service%20visit&amp;value=%24450&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Roofing quote went quiet</h3>
+          <p class="meta">Quote request, cost and project timing, this week urgency.</p>
+          <p class="sample">Day 0 angle:
+Make it easy to ask about cost, timing, or roof scope without restarting the sales conversation.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Roofing%20company&amp;service=roof%20inspection&amp;source=Quote%20request&amp;tone=Direct&amp;blocker=cost%20and%20project%20timing&amp;next=schedule%20an%20inspection&amp;value=%241800&amp;urgency=This%20week&amp;context=The%20lead%20asked%20for%20a%20roof%20estimate%2C%20received%20a%20range%2C%20then%20stopped%20replying&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Roofing%20company&amp;service=roof%20inspection&amp;source=Quote%20request&amp;tone=Direct&amp;need=cost%20and%20project%20timing&amp;next=schedule%20an%20inspection&amp;value=%241800&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Dental new patient missed call</h3>
+          <p class="meta">Missed call, insurance and scheduling, normal urgency.</p>
+          <p class="sample">Day 0 angle:
+Offer the easiest appointment path while giving the lead permission to ask the insurance question first.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Dental%20office&amp;service=new%20patient%20appointment&amp;source=Missed%20call&amp;tone=Friendly&amp;blocker=insurance%20and%20scheduling&amp;next=book%20a%20new%20patient%20appointment&amp;value=%24280&amp;urgency=Normal&amp;context=The%20lead%20called%20about%20becoming%20a%20new%20patient%20but%20did%20not%20schedule&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Dental%20office&amp;service=new%20patient%20appointment&amp;source=Missed%20call&amp;tone=Friendly&amp;need=insurance%20and%20scheduling&amp;next=book%20a%20new%20patient%20appointment&amp;value=%24280&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Med spa consult no-show</h3>
+          <p class="meta">Appointment request, trust and timing, low pressure urgency.</p>
+          <p class="sample">Day 0 angle:
+Recover the no-show without blame and offer a smaller next step than rebooking immediately.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Med%20spa&amp;service=consultation&amp;source=No-show&amp;tone=Warm&amp;blocker=trust%20and%20timing&amp;next=reschedule%20a%20short%20consultation&amp;value=%24600&amp;urgency=Low%20pressure&amp;context=The%20lead%20booked%20a%20consultation%20but%20missed%20the%20appointment%20and%20has%20not%20replied&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Med%20spa&amp;service=consultation&amp;source=No-show&amp;tone=Warm&amp;need=trust%20and%20timing&amp;next=reschedule%20a%20short%20consultation&amp;value=%24600&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Real estate buyer lead</h3>
+          <p class="meta">Ad lead, budget and timeline, this week urgency.</p>
+          <p class="sample">Day 0 angle:
+Turn an open-ended property inquiry into a simple budget, timing, or call-time reply.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Real%20estate%20agent&amp;service=buyer%20consultation&amp;source=Ad%20lead&amp;tone=Professional&amp;blocker=budget%20and%20timeline&amp;next=book%20a%20quick%20buyer%20call&amp;value=%242500&amp;urgency=This%20week&amp;context=The%20lead%20asked%20about%20homes%20in%20an%20area%20but%20stopped%20replying%20after%20the%20first%20message&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Real%20estate%20agent&amp;service=buyer%20consultation&amp;source=Ad%20lead&amp;tone=Professional&amp;need=budget%20and%20timeline&amp;next=book%20a%20quick%20buyer%20call&amp;value=%242500&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Tutor trial lesson inquiry</h3>
+          <p class="meta">Referral, fit and schedule, normal urgency.</p>
+          <p class="sample">Day 0 angle:
+Help the parent answer with subject, grade, or schedule instead of deciding on the full program.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Tutoring%20business&amp;service=trial%20lesson&amp;source=Referral&amp;tone=Warm&amp;blocker=fit%20and%20schedule&amp;next=book%20a%20trial%20lesson&amp;value=%24150&amp;urgency=Normal&amp;context=The%20parent%20asked%20about%20tutoring%20availability%20but%20did%20not%20choose%20a%20time&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Tutoring%20business&amp;service=trial%20lesson&amp;source=Referral&amp;tone=Warm&amp;need=fit%20and%20schedule&amp;next=book%20a%20trial%20lesson&amp;value=%24150&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Plumbing emergency quote</h3>
+          <p class="meta">Missed call, availability and price, same day urgency.</p>
+          <p class="sample">Day 0 angle:
+Give the lead a fast reply path for timing or price before they call a competitor.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Plumbing%20company&amp;service=emergency%20repair&amp;source=Missed%20call&amp;tone=Direct&amp;blocker=availability%20and%20price&amp;next=send%20the%20earliest%20repair%20window&amp;value=%24750&amp;urgency=Same%20day&amp;context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Plumbing%20company&amp;service=emergency%20repair&amp;source=Missed%20call&amp;tone=Direct&amp;need=availability%20and%20price&amp;next=send%20the%20earliest%20repair%20window&amp;value=%24750&amp;ready=1">Order link</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Agency referral follow-up</h3>
+          <p class="meta">Referral, fit and next steps, low pressure urgency.</p>
+          <p class="sample">Day 0 angle:
+Keep the referral warm by making the first call feel like a fit check, not a pitch.</p>
+          <div class="actions">
+            <a class="button primary" href="custom-sequence-preview.html?business=Small%20agency&amp;service=lead%20follow-up%20help&amp;source=Referral&amp;tone=Warm&amp;blocker=fit%20and%20next%20steps&amp;next=book%20a%20quick%20call&amp;value=%24900&amp;urgency=Low%20pressure&amp;context=The%20lead%20was%20referred%2C%20asked%20for%20details%2C%20then%20stopped%20replying&amp;ready=1#preview-tool">Open preview</a>
+            <a class="button" href="shareable-order-link.html?business=Small%20agency&amp;service=lead%20follow-up%20help&amp;source=Referral&amp;tone=Warm&amp;need=fit%20and%20next%20steps&amp;next=book%20a%20quick%20call&amp;value=%24900&amp;ready=1">Order link</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="order-title">
+      <h2 id="order-title">Need a different business type?</h2>
+      <p>Use the blank custom preview builder for any lead source, service, tone, blocker, next step, and estimated lead value.</p>
+      <div class="actions">
+        <a class="button primary" href="custom-sequence-preview.html">Build custom preview</a>
+        <a class="button" href="shareable-order-link.html">Create order link</a>
+        <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Seller rule: do not mark paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.</p>
+  </footer>
+</body>
+</html>

@@ -18,6 +18,9 @@ Allow: /share-kit.json
 Allow: /custom-sequence-preview.html
 Allow: /custom-sequence-preview.json
 Allow: /custom-sequence-preview.txt
+Allow: /custom-sequence-gallery.html
+Allow: /custom-sequence-gallery.json
+Allow: /custom-sequence-gallery.txt
 Allow: /agent-buy-brief.html
 Allow: /checkout.html
 Allow: /paid-kit-proof.html
