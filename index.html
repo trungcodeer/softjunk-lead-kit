@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SoftJunk Lead Follow-Up Kit - $5</title>
-  <meta name="description" content="A $5 lead follow-up kit for small businesses: copy-paste messages, a lead tracker, AI prompts, and a simple 7-day workflow.">
+  <meta name="description" content="Try a free lead reply generator, then get the $5 SoftJunk lead follow-up kit with copy-paste messages, a lead tracker, AI prompts, and a 7-day workflow.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="SoftJunk Lead Follow-Up Kit - $5">
-  <meta property="og:description" content="Copy-paste follow-up messages, a lead tracker, AI prompts, and a simple 7-day workflow for small businesses.">
+  <meta property="og:description" content="Try a free lead reply generator, then get copy-paste follow-up messages, a lead tracker, AI prompts, and a simple 7-day workflow for small businesses.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
@@ -50,7 +50,11 @@
       color: inherit;
     }
 
-    a:focus-visible {
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
       outline: 3px solid var(--focus);
       outline-offset: 4px;
     }
@@ -177,6 +181,8 @@
       font-size: 16px;
       font-weight: 800;
       white-space: nowrap;
+      font-family: inherit;
+      cursor: pointer;
     }
 
     .button.primary {
@@ -264,6 +270,93 @@
       border: 1px solid var(--line);
       border-radius: 8px;
       padding: 22px;
+    }
+
+    .generator {
+      display: grid;
+      grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .generator-panel,
+    .result-panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #bac8bf;
+      border-radius: 7px;
+      padding: 0 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    .field-hint {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .generator-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+
+    .result-title {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 800;
+    }
+
+    .result-output {
+      min-height: 250px;
+      margin: 0;
+      padding: 16px;
+      background: #fbfcfb;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      color: #26312b;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .result-status {
+      min-height: 22px;
+      margin: 10px 0 0;
+      color: var(--accent-dark);
+      font-size: 14px;
+      font-weight: 700;
     }
 
     .template {
@@ -367,7 +460,8 @@
       .hero,
       .grid,
       .steps,
-      .buy-panel {
+      .buy-panel,
+      .generator {
         grid-template-columns: 1fr;
       }
 
@@ -406,6 +500,10 @@
         width: 100%;
       }
 
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
       .hero {
         display: block;
       }
@@ -431,6 +529,7 @@
       <div class="brand">SoftJunk Lead Kit</div>
       <div class="nav-links">
         <a href="#inside">Inside</a>
+        <a href="#generator">Generator</a>
         <a href="#sample">Sample</a>
         <a href="#buy">Buy</a>
       </div>
@@ -470,6 +569,70 @@
           <strong>AI prompt pack</strong>
           <p>Prompts to adapt the messages by business type, channel, customer concern, and tone without starting from a blank page.</p>
         </article>
+      </div>
+    </section>
+
+    <section id="generator" aria-labelledby="generator-title">
+      <h2 id="generator-title">Try the free reply generator</h2>
+      <p class="section-lead">Generate a short sample sequence for one business. The paid kit adds the full 7-day workflow, more templates, a lead tracker CSV, and AI prompts.</p>
+      <div class="generator">
+        <form class="generator-panel" id="reply-form" aria-describedby="generator-hint">
+          <div class="form-grid">
+            <div class="field">
+              <label for="business-type">Business type</label>
+              <input id="business-type" name="businessType" autocomplete="organization" placeholder="Dental clinic" required>
+            </div>
+            <div class="field">
+              <label for="service">Service sold</label>
+              <input id="service" name="service" placeholder="Teeth whitening" required>
+            </div>
+            <div class="field">
+              <label for="lead-source">Lead source</label>
+              <select id="lead-source" name="leadSource">
+                <option>Instagram DM</option>
+                <option>Facebook message</option>
+                <option>Website form</option>
+                <option>Email</option>
+                <option>Phone call</option>
+                <option>Referral</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="tone">Tone</label>
+              <select id="tone" name="tone">
+                <option>Friendly</option>
+                <option>Professional</option>
+                <option>Direct</option>
+                <option>Premium</option>
+                <option>Casual</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="concern">Main concern</label>
+              <input id="concern" name="concern" placeholder="Price, schedule, trust">
+            </div>
+            <div class="field">
+              <label for="next-step">Next step</label>
+              <input id="next-step" name="nextStep" placeholder="Book a consultation" required>
+            </div>
+            <div class="field full">
+              <p class="field-hint" id="generator-hint">This tool creates a free 3-message sample. Keep each input short and specific.</p>
+            </div>
+          </div>
+          <div class="generator-actions">
+            <button class="button primary" type="submit">Generate sample</button>
+            <button class="button secondary" type="button" id="copy-result">Copy sample</button>
+          </div>
+        </form>
+
+        <div class="result-panel" aria-labelledby="result-title">
+          <p class="result-title" id="result-title">Sample output</p>
+          <p class="result-output" id="generator-result" aria-live="polite">Fill out the form and generate a short Day 0, Day 1, and Day 3 follow-up sample.</p>
+          <p class="result-status" id="generator-status" aria-live="polite"></p>
+          <div class="generator-actions">
+            <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Get the full kit for $5</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -537,5 +700,73 @@ Happy to help. If easier, reply with just the number:
   <footer>
     <p>Seller note: this kit provides operational templates only. Review customer communications for accuracy, compliance, and fit with your business before sending.</p>
   </footer>
+  <script>
+    const form = document.querySelector('#reply-form');
+    const result = document.querySelector('#generator-result');
+    const statusMessage = document.querySelector('#generator-status');
+    const copyButton = document.querySelector('#copy-result');
+
+    function clean(value, fallback) {
+      const text = String(value || '').trim().replace(/\s+/g, ' ');
+      return text || fallback;
+    }
+
+    function articleFor(word) {
+      return /^[aeiou]/i.test(word) ? 'an' : 'a';
+    }
+
+    function makeSample(data) {
+      const business = clean(data.get('businessType'), 'local business');
+      const service = clean(data.get('service'), 'your service');
+      const source = clean(data.get('leadSource'), 'message');
+      const tone = clean(data.get('tone'), 'friendly').toLowerCase();
+      const concern = clean(data.get('concern'), 'timing');
+      const nextStep = clean(data.get('nextStep'), 'book a quick call');
+      const businessIntro = `${articleFor(business)} ${business}`;
+
+      return `Free sample for ${businessIntro}
+Tone: ${tone}
+Lead source: ${source}
+
+Day 0 - first reply
+Hi [Name], thanks for reaching out about ${service}. I can help with that.
+
+Quick question so I point you in the right direction: would you like to ${nextStep.toLowerCase()}, or do you want a quick answer about ${concern.toLowerCase()} first?
+
+Day 1 - gentle follow-up
+Hi [Name], just checking that you saw my reply about ${service}.
+
+If it helps, reply with one word: "details" for more info, "time" to ${nextStep.toLowerCase()}, or "later" if this is not urgent.
+
+Day 3 - trust follow-up
+Hi [Name], one useful note before you decide: most people ask about ${concern.toLowerCase()} before choosing ${service}.
+
+I can keep this simple. Do you want me to send the next step?`;
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      result.textContent = makeSample(data);
+      statusMessage.textContent = 'Sample generated. The paid kit includes the full 7-day version and tracker CSV.';
+    });
+
+    copyButton.addEventListener('click', async () => {
+      const text = result.textContent.trim();
+      if (!text || text.startsWith('Fill out the form')) {
+        statusMessage.textContent = 'Generate a sample before copying.';
+        return;
+      }
+
+      try {
+        await navigator.clipboard.writeText(text);
+        statusMessage.textContent = 'Sample copied.';
+      } catch {
+        statusMessage.textContent = 'Select the sample text and copy it manually.';
+      }
+    });
+  </script>
 </body>
 </html>
