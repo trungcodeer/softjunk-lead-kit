@@ -13,6 +13,9 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
+- Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+- Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
+- Root payment intent JSON: https://trungcodeer.github.io/paypal.json
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
@@ -73,6 +76,10 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
+- Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+- Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
+- Root payment intent JSON: https://trungcodeer.github.io/paypal.json
+- Root well-known payment intent: https://trungcodeer.github.io/.well-known/paypal-payment.json
 - GitHub-readable buyer index: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 - GitHub profile offer: https://github.com/trungcodeer/trungcodeer
 - GitHub profile microsite: https://trungcodeer.github.io/trungcodeer/

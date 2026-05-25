@@ -61,6 +61,28 @@ paths:
             application/json:
               schema:
                 type: object
+  /paypal-payment-intent.json:
+    get:
+      operationId: getProductPayPalPaymentIntent
+      summary: Get the product-local PayPal payment intent.
+      responses:
+        "200":
+          description: Exact 5 USD PayPal payment intent with agent action and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /.well-known/paypal-payment.json:
+    get:
+      operationId: getProductWellKnownPayPalPaymentIntent
+      summary: Get the well-known PayPal payment intent alias.
+      responses:
+        "200":
+          description: Well-known alias for the exact 5 USD PayPal payment intent.
+          content:
+            application/json:
+              schema:
+                type: object
   /agent-buy-brief.html:
     get:
       operationId: openAgentBuyBrief

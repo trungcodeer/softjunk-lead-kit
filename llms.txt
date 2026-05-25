@@ -8,6 +8,15 @@ https://trungcodeer.github.io/softjunk-lead-kit/
 Root buyer hub:
 https://trungcodeer.github.io/
 
+Payment intent JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+
+Well-known payment intent:
+https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
+
+Root payment intent JSON:
+https://trungcodeer.github.io/paypal.json
+
 Buyer index:
 https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 

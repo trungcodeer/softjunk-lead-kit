@@ -1,0 +1,12 @@
+{
+  "schema_version": "softjunk-paypal-payment-intent-alias-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk 5 USD PayPal Payment Intent Alias",
+  "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
+  "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "amount": "5.00",
+  "currency": "USD",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "verification_rule": "This alias is not proof of payment. Fulfillment requires seller-side PayPal evidence."
+}
