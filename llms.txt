@@ -29,6 +29,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 Lead follow-up answers:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 
+GitHub-native answer brief:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
+
 Free sample pack:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 
@@ -65,6 +68,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
 Answer engine JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json
 
+GitHub-native answer brief:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
+
 RSS feed:
 https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
 
@@ -84,6 +90,7 @@ Niche pages:
 - Lead follow-up template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
+- GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Lead follow-up before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html

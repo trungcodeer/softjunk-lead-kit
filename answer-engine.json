@@ -5,6 +5,7 @@
   "purpose": "Answer high-intent lead follow-up questions and route buyers to the $5 custom follow-up sequence or kit.",
   "human_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
   "canonical_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json",
+  "github_answer_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md",
   "payment": {
     "provider": "PayPal.Me",
     "amount": "5.00",
