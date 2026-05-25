@@ -1,6 +1,16 @@
 # SoftJunk Lead Kit
 
-Follow-up templates for small businesses that get leads from forms, DMs, email, ads, referrals, or calls.
+A $5 lead follow-up kit and custom follow-up sequence for small businesses that get leads from forms, DMs, email, ads, referrals, or calls.
+
+## Buy or Try
+
+- Buy for $5: https://paypal.me/softjunk/5USD
+- Estimate missed lead value: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
+- Get a free preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
+- Build a custom order note: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
+Use PayPal note `Lead Follow-Up Kit` for the ZIP. For a custom sequence, use the free preview or agent order path to copy the PayPal note before paying.
 
 ![Preview of the SoftJunk Lead Kit](preview.png)
 
@@ -32,7 +42,7 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 
 ## Buy
 
-There are two USD 5 options:
+There are two $5 options:
 
 1. Digital kit: 7-day follow-up guide, templates, tracker CSV, and AI prompts.
 2. Custom sequence: Day 0, 1, 3, 5, and 7 messages written for one business, plus no-show and price-objection replies.
