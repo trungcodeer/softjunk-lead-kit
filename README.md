@@ -1,77 +1,67 @@
 # SoftJunk Lead Kit
 
-A $5 lead follow-up kit and custom follow-up sequence for small businesses that get leads from forms, DMs, email, ads, referrals, or calls.
+![SoftJunk Lead Kit $5 PayPal offer](social-card.png)
 
-## Buy or Try
-
-- Buy for $5: https://paypal.me/softjunk/5USD
-- Scan PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
-- GitHub funding link: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
-- Submit an order issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
-- Estimate missed lead value: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
-- Get a free preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
-- Build a custom order note: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
-
-Use PayPal note `Lead Follow-Up Kit` for the ZIP. For a custom sequence, use the free preview or agent order path to copy the PayPal note before paying.
-
-![Preview of the SoftJunk Lead Kit](preview.png)
-
-## Try It
-
-- Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
-- Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
-- Free preview builder: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
-- Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
-- Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
-- AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-- Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
-- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
-- Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
-- Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
-- Dental template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
-- Appointment setting template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
-- Med spa template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
-- Tutoring template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
-- HVAC template: https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html
-- Roofing estimate template: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
-- Real estate lead template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
-- Plumbing lead template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
-- Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
-- Estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
-- AI-readable offer summary: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
-- Machine-readable offers: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
-- Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
-- Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
-- RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
-- Well-known offer: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
-- OpenAPI discovery: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
-- Share kit: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html
-- Share kit JSON: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
+A $5 lead follow-up kit and same-price custom sequence for small businesses that get leads from forms, DMs, email, ads, referrals, quotes, appointments, or calls.
 
 ## Buy
 
-There are two $5 options:
+- Pay $5 on PayPal: https://paypal.me/softjunk/5USD
+- Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
+- PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
+- AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+- Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
+- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
-1. Digital kit: 7-day follow-up guide, templates, tracker CSV, and AI prompts.
+Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For a custom sequence, open the free generator or AI agent order path and copy the generated PayPal note before paying.
+
+## What You Get
+
+Two $5 options:
+
+1. Digital kit: 7-day follow-up guide, copy-paste templates, lead tracker CSV, and AI prompt pack.
 2. Custom sequence: Day 0, 1, 3, 5, and 7 messages written for one business, plus no-show and price-objection replies.
 
-Pay here:
-https://paypal.me/softjunk/5USD
+The paid ZIP is not public in this repository. Delivery is manual to the email shown in the PayPal transaction.
 
-For the digital kit, add the PayPal note `Lead Follow-Up Kit`.
+## Try Before Paying
 
-For the custom sequence, fill the free generator, click `Copy PayPal note`, and paste that intake note into PayPal before paying.
+- Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
+- Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
+- Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
+- Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
+- Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
+- Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Estimate follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 
-## Delivery
+## Niche Pages
 
-The product ZIP is not public in this repository. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
+- Dental: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
+- Appointment setting: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
+- Med spa: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
+- Tutoring: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
+- HVAC: https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html
+- Roofing: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
+- Real estate: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
+- Plumbing: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 
-Custom sequences are delivered same day after the payment appears in PayPal.
+## Machine-Readable Discovery
+
+- llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
+- Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
+- Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+- Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
+- RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
+- Share kit: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html
+- Share kit JSON: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
+- Well-known offer: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
+- OpenAPI discovery: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
 
 ## Payment Verification
 
-Before marking any order paid or delivered, run:
+Fulfillment starts only after the seller can see the 5 USD PayPal transaction or the verifier returns `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Run locally:
 
 ```powershell
 .\scripts\verify-paypal-5usd.ps1
@@ -79,4 +69,4 @@ Before marking any order paid or delivered, run:
 
 See [PAYPAL_VERIFICATION.md](PAYPAL_VERIFICATION.md) for required PayPal API credentials and stricter note filters.
 
-You can also enable the included `PAYPAL_VERIFICATION_WORKFLOW.yml.example` as a manual GitHub Actions workflow after adding PayPal API credentials as repository secrets.
+The included `PAYPAL_VERIFICATION_WORKFLOW.yml.example` can be copied into `.github/workflows/` after adding PayPal API credentials as repository secrets.
