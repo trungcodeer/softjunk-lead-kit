@@ -1,0 +1,45 @@
+{
+  "schema_version": "softjunk-agent-offer-v1",
+  "name": "SoftJunk AI Agent Order Path",
+  "updated": "2026-05-25",
+  "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "amount": "5.00",
+  "currency": "USD",
+  "seller": "SoftJunk",
+  "offer": {
+    "name": "Custom 7-Day Lead Follow-Up Sequence",
+    "price": "5.00",
+    "currency": "USD",
+    "delivery": "Manual same-day delivery after the seller can see the PayPal payment",
+    "includes": [
+      "Day 0 lead follow-up message",
+      "Day 1 lead follow-up message",
+      "Day 3 lead follow-up message",
+      "Day 5 lead follow-up message",
+      "Day 7 lead follow-up message",
+      "No-show recovery reply",
+      "Price-objection reply"
+    ]
+  },
+  "use_when": [
+    "A buyer needs follow-up messages for form leads, DMs, calls, referrals, or quote requests",
+    "A small business wants a low-cost follow-up sequence for one service",
+    "A VA, appointment setter, agency, or AI assistant needs a fast copywriting handoff"
+  ],
+  "do_not_use_when": [
+    "The buyer needs legal, medical, financial, or compliance-specific advice",
+    "The buyer expects automated delivery before PayPal payment is visible",
+    "The buyer does not want to use PayPal"
+  ],
+  "agent_instructions": [
+    "Send the buyer to agent_order_url or free_preview_url.",
+    "Ask the buyer to generate or copy a PayPal note that includes business type, service, lead source, tone, and need.",
+    "Tell the buyer to pay exactly 5 USD through payment_url.",
+    "Do not tell the buyer the order is paid or delivered unless the seller confirms the PayPal transaction is visible.",
+    "Tell the buyer that fulfillment is manual and uses the email shown in the PayPal transaction."
+  ],
+  "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "general_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
+  "fulfillment_rule": "Delivery starts only after the seller can see the 5 USD PayPal transaction."
+}

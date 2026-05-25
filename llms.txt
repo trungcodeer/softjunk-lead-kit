@@ -11,8 +11,14 @@ https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 Free preview builder:
 https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 
+AI agent order path:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+
 Machine-readable offers:
 https://trungcodeer.github.io/softjunk-lead-kit/offers.json
+
+Agent offer manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 
 Niche pages:
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
@@ -34,6 +40,7 @@ The product ZIP is not public. Buyers pay through PayPal and receive fulfillment
 PayPal notes:
 - Digital kit: Lead Follow-Up Kit
 - Custom sequence: fill the free generator, click Copy PayPal note, and paste that note into PayPal before paying.
+- Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
 
 Best-fit buyers:
 - Dental offices with new patient inquiries, treatment questions, missed calls, or consultation requests

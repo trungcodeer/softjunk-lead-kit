@@ -4,6 +4,8 @@
   "currency": "USD",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+  "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
   "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
   "offers": [
@@ -16,7 +18,8 @@
     {
       "name": "Custom 7-day lead follow-up sequence",
       "price": "5.00",
-      "url": "https://paypal.me/softjunk/5USD",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+      "payment_url": "https://paypal.me/softjunk/5USD",
       "delivery": "Manual same-day delivery after PayPal payment appears",
       "includes": [
         "Day 0 follow-up",
@@ -47,6 +50,6 @@
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
-    "custom_sequence": "Use the free preview builder, copy the PayPal note, and paste that note into PayPal before paying."
+    "custom_sequence": "Use the free preview builder or AI agent order path, copy the PayPal note, and paste that note into PayPal before paying."
   }
 }

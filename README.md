@@ -8,6 +8,7 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Free preview builder: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
+- AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - Dental template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
@@ -15,6 +16,7 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 - Tutoring template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
 - AI-readable offer summary: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Machine-readable offers: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
+- Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 
 ## Buy
 
