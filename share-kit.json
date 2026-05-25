@@ -7,6 +7,7 @@
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "payment_qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
+  "payment_qr_svg_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg",
   "public_order_board_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
   "price": "5.00",

@@ -172,6 +172,28 @@ paths:
             text/html:
               schema:
                 type: string
+  /pay-qr.html:
+    get:
+      operationId: openPayPalQrPage
+      summary: Open the scan-to-pay QR page.
+      responses:
+        "200":
+          description: Payment page with a PayPal QR code and direct PayPal.Me link.
+          content:
+            text/html:
+              schema:
+                type: string
+  /paypal-qr.svg:
+    get:
+      operationId: getPayPalQrSvg
+      summary: Get the PayPal QR SVG for the $5 checkout.
+      responses:
+        "200":
+          description: SVG QR code linking to the exact 5 USD PayPal.Me payment URL.
+          content:
+            image/svg+xml:
+              schema:
+                type: string
   /checkout.html:
     get:
       operationId: openCheckout
