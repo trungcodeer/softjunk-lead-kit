@@ -8,6 +8,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/
 Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 
+After-payment handoff:
+https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
 Lead loss calculator:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 
@@ -44,6 +47,7 @@ Offers:
 
 Delivery:
 The product ZIP is not public. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
+After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
 PayPal notes:
 - Digital kit: Lead Follow-Up Kit

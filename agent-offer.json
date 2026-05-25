@@ -42,6 +42,7 @@
   ],
   "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
+  "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "general_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
   "fulfillment_rule": "Delivery starts only after the seller can see the 5 USD PayPal transaction."
 }

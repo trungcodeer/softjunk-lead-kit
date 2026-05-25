@@ -8,6 +8,7 @@
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
+  "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
   "offers": [
     {
@@ -71,6 +72,7 @@
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
-    "custom_sequence": "Use the free preview builder or AI agent order path, copy the PayPal note, and paste that note into PayPal before paying."
+    "custom_sequence": "Use the free preview builder or AI agent order path, copy the PayPal note, and paste that note into PayPal before paying.",
+    "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary."
   }
 }
