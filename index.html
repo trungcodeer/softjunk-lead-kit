@@ -608,6 +608,7 @@
         <a href="#inside">Inside</a>
         <a href="#generator">Generator</a>
         <a href="#examples">Examples</a>
+        <a href="dental-follow-up.html">Dental</a>
         <a href="appointment-setting-follow-up.html">Appointment</a>
         <a href="med-spa-follow-up.html">Med spa</a>
         <a href="tutoring-follow-up.html">Tutoring</a>
@@ -722,8 +723,22 @@
 
     <section id="examples" aria-labelledby="examples-title">
       <h2 id="examples-title">Examples for appointment businesses</h2>
-      <p class="section-lead">The custom option is strongest when the next step is clear: book, reply, confirm, or ask for pricing. Here are three common cases.</p>
+      <p class="section-lead">The custom option is strongest when the next step is clear: book, reply, confirm, or ask for pricing. Here are four common cases.</p>
       <div class="example-grid">
+        <article class="offer-card">
+          <h3>Dental new patient inquiry</h3>
+          <p><strong>Lead source:</strong> Website form. <strong>Next step:</strong> book an appointment.</p>
+          <p class="template">Day 0: Hi [Name], thanks for reaching out about [service]. The best next step is a short appointment so the doctor can check what is going on and explain the right options.
+
+Day 1: Hi [Name], just checking if you still wanted help with [service]. I can send available appointment times or answer one quick question first.
+
+Day 3: Hi [Name], should I close the loop for now? If you still want to schedule, reply "visit" and I will send the next available times.</p>
+          <div class="generator-actions">
+            <a class="button secondary" href="?preset=dental#generator">Create a dental note</a>
+            <a class="button secondary" href="dental-follow-up.html">Open dental page</a>
+          </div>
+        </article>
+
         <article class="offer-card">
           <h3>Appointment setting lead</h3>
           <p><strong>Lead source:</strong> Website form. <strong>Next step:</strong> book a quick call.</p>
@@ -992,6 +1007,14 @@ I can keep this simple. Do you want me to send the next step?`;
           tone: 'Professional',
           concern: 'response time',
           nextStep: 'book a quick call'
+        },
+        dental: {
+          businessType: 'Dental office',
+          service: 'New patient appointment',
+          leadSource: 'Website form',
+          tone: 'Professional',
+          concern: 'cost and scheduling',
+          nextStep: 'book an appointment'
         }
       };
 
