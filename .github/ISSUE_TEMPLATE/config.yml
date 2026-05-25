@@ -1,8 +1,14 @@
 blank_issues_enabled: false
 contact_links:
   - name: Pay $5 on PayPal
+    url: https://trungcodeer.github.io/paypal/
+    about: Short route with the exact 5 USD PayPal.Me link, QR fallback, and payment verification rule.
+  - name: Direct PayPal.Me link
     url: https://paypal.me/softjunk/5USD
-    about: Pay here first, then use an order issue form if fulfillment details are needed.
+    about: Direct payment URL for the exact SoftJunk 5 USD offer.
+  - name: Payment intent Gist
+    url: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
+    about: Public GitHub-native payment intent with exact amount, PayPal URL, buyer routes, and verification gate.
   - name: Fast checkout
     url: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
     about: Copy the correct PayPal note, open the $5 PayPal link, and review the after-payment handoff.

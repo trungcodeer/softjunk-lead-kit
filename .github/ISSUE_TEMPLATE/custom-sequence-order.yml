@@ -11,6 +11,9 @@ body:
         Pay first, then submit this form.
 
         Payment URL: https://paypal.me/softjunk/5USD
+        Short PayPal route: https://trungcodeer.github.io/paypal/
+        Payment intent: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+        Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 
         Fulfillment starts only after the $5 PayPal transaction is visible to the seller. Do not include private customer, patient, or client data.
   - type: input
@@ -88,7 +91,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I paid $5 at https://paypal.me/softjunk/5USD and understand fulfillment starts after the seller can see the PayPal payment.
+        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD or https://trungcodeer.github.io/paypal/ and understand fulfillment starts after the seller can see the PayPal payment.
           required: true
         - label: I did not include private customer, patient, or client data.
           required: true

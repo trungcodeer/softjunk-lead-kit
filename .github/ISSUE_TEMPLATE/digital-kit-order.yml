@@ -11,6 +11,9 @@ body:
         Pay first, then submit this form if you want to leave a fulfillment trail in GitHub.
 
         Payment URL: https://paypal.me/softjunk/5USD
+        Short PayPal route: https://trungcodeer.github.io/paypal/
+        Payment intent: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+        Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 
         Use PayPal note: `Lead Follow-Up Kit`
 
@@ -48,7 +51,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I paid $5 at https://paypal.me/softjunk/5USD with PayPal note `Lead Follow-Up Kit`.
+        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD or https://trungcodeer.github.io/paypal/ with PayPal note `Lead Follow-Up Kit`.
           required: true
         - label: I understand the ZIP is delivered manually after the seller can see the PayPal payment.
           required: true
