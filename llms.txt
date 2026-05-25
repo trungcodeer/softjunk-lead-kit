@@ -38,6 +38,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
 OpenAPI discovery:
 https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
 
+Share kit:
+https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html
+
+Share kit JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
+
 Niche pages:
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html

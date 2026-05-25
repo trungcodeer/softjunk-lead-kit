@@ -12,6 +12,8 @@
   "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
   "product_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
   "rss_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
+  "share_kit_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",
+  "share_kit_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
   "well_known_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
   "openapi_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
   "offers": [

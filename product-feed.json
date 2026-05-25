@@ -54,6 +54,8 @@
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
     "well_known_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
     "openapi_yaml": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
+    "share_kit": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",
+    "share_kit_json": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
     "rss_feed": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml"
   },

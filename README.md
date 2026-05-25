@@ -27,6 +27,8 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 - RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
 - Well-known offer: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
 - OpenAPI discovery: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
+- Share kit: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html
+- Share kit JSON: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
 
 ## Buy
 
