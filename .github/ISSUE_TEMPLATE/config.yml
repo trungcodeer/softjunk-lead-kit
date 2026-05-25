@@ -3,6 +3,12 @@ contact_links:
   - name: Pay $5 on PayPal
     url: https://paypal.me/softjunk/5USD
     about: Pay here first, then use an order issue form if fulfillment details are needed.
+  - name: Fast checkout
+    url: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+    about: Copy the correct PayPal note, open the $5 PayPal link, and review the after-payment handoff.
+  - name: Create custom PayPal note
+    url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+    about: Build the short PayPal note for a custom 7-day follow-up sequence before paying.
   - name: Public order board
     url: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
     about: Public buyer handoff. Do not post private payment or customer details.
