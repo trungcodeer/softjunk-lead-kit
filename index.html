@@ -1,0 +1,510 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoftJunk Lead Follow-Up Kit - $5</title>
+  <meta name="description" content="A $5 lead follow-up kit for small businesses: copy-paste messages, a lead tracker, AI prompts, and a simple 7-day workflow.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="SoftJunk Lead Follow-Up Kit - $5">
+  <meta property="og:description" content="Copy-paste follow-up messages, a lead tracker, AI prompts, and a simple 7-day workflow for small businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8f5;
+      --paper: #ffffff;
+      --ink: #17211c;
+      --muted: #526159;
+      --line: #d8ded7;
+      --accent: #106a5b;
+      --accent-dark: #0b5146;
+      --accent-soft: #dcefeb;
+      --warn: #8a5a00;
+      --shadow: 0 22px 56px rgba(23, 33, 28, 0.12);
+      --focus: #c26a00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    a:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 4px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      transform: translateY(-96px);
+      background: var(--ink);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 6px;
+      z-index: 10;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    header {
+      background: rgba(255, 255, 255, 0.92);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      backdrop-filter: blur(12px);
+    }
+
+    .nav,
+    main,
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      min-height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--muted);
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(320px, 0.95fr);
+      gap: 48px;
+      align-items: center;
+      padding: 68px 0 42px;
+    }
+
+    .hero > *,
+    .buy-panel > *,
+    .proof-row > * {
+      min-width: 0;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 0 0 18px;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .lead {
+      max-width: 650px;
+      margin: 0 0 28px;
+      color: var(--muted);
+      font-size: clamp(18px, 2.2vw, 22px);
+      overflow-wrap: anywhere;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin: 0 0 18px;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      padding: 0 18px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .button.primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .button.secondary {
+      background: var(--paper);
+      border-color: var(--line);
+      color: var(--ink);
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+    }
+
+    .preview {
+      background: #edf2ef;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 12px;
+    }
+
+    .preview img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    section {
+      padding: 36px 0;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(26px, 4vw, 40px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    .section-lead {
+      max-width: 740px;
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 156px;
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 8px;
+      font-size: 17px;
+      color: var(--ink);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .sample {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+    }
+
+    .template {
+      margin: 0;
+      padding: 16px;
+      background: #fbfcfb;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      color: #26312b;
+    }
+
+    .buy-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 22px;
+      align-items: center;
+      background: var(--accent-soft);
+      border: 1px solid #bddbd4;
+      border-radius: 8px;
+      padding: 24px;
+    }
+
+    .buy-panel p {
+      margin: 4px 0 0;
+      color: #35564e;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+      counter-reset: step;
+    }
+
+    .step {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px;
+      counter-increment: step;
+    }
+
+    .step::before {
+      content: counter(step);
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 800;
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .faq {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 16px 18px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800;
+      min-height: 32px;
+    }
+
+    details p {
+      margin: 10px 0 0;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 24px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .grid,
+      .steps,
+      .buy-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 44px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 14px 0;
+      }
+
+      .nav-links {
+        justify-content: flex-start;
+        gap: 12px;
+      }
+
+      h1 {
+        font-size: 36px;
+        line-height: 1.08;
+      }
+
+      .actions,
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav class="nav" aria-label="Primary">
+      <div class="brand">SoftJunk Lead Kit</div>
+      <div class="nav-links">
+        <a href="#inside">Inside</a>
+        <a href="#sample">Sample</a>
+        <a href="#buy">Buy</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">Stop losing small-business leads in the inbox.</h1>
+        <p class="lead">A $5 digital kit with copy-paste follow-up messages, a simple lead tracker, AI prompts, and a 7-day workflow for local service businesses.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Buy for $5 on PayPal</a>
+          <a class="button secondary" href="#inside">See what you get</a>
+        </div>
+        <p class="note">Add the note "Lead Follow-Up Kit" in PayPal. The ZIP is delivered manually to the email shown in the PayPal transaction.</p>
+      </div>
+
+      <div class="preview" aria-label="Product preview">
+        <img src="preview.png" alt="Preview of the 7-Day Lead Follow-Up Kit showing templates, a lead tracker, and AI prompts">
+      </div>
+    </section>
+
+    <section id="inside" aria-labelledby="inside-title">
+      <h2 id="inside-title">What is inside</h2>
+      <p class="section-lead">This is a small operating system for the first week after a lead arrives. It is built for businesses that are not ready for a full CRM but still need a repeatable follow-up habit.</p>
+      <div class="grid">
+        <article class="card">
+          <strong>10 message templates</strong>
+          <p>First reply, quote request, day 1, day 3, day 5, day 7, no-show recovery, price objection, and internal approval.</p>
+        </article>
+        <article class="card">
+          <strong>Lead tracker CSV</strong>
+          <p>A spreadsheet structure for Google Sheets or Excel with status, next follow-up date, source, and notes.</p>
+        </article>
+        <article class="card">
+          <strong>AI prompt pack</strong>
+          <p>Prompts to adapt the messages by business type, channel, customer concern, and tone without starting from a blank page.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sample" aria-labelledby="sample-title">
+      <h2 id="sample-title">Sample template</h2>
+      <p class="section-lead">The full kit includes the full 7-day sequence. Here is one example from the Day 1 follow-up.</p>
+      <div class="sample">
+        <p class="template">Hi [Name], just checking that you saw my reply about [topic].
+
+Happy to help. If easier, reply with just the number:
+1. I want to book
+2. I need pricing first
+3. I have a question</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="fit-title">
+      <h2 id="fit-title">Best fit</h2>
+      <p class="section-lead">Useful for local services, appointment businesses, agencies, freelancers, consultants, tutors, clinics, spas, realtors, and home services that get inquiries from forms, DMs, email, ads, referrals, or calls.</p>
+      <div class="steps" aria-label="How to use the kit">
+        <div class="step">
+          <p>Open the HTML guide in your browser.</p>
+        </div>
+        <div class="step">
+          <p>Import the CSV into Google Sheets or Excel.</p>
+        </div>
+        <div class="step">
+          <p>Copy the right follow-up message for each lead.</p>
+        </div>
+        <div class="step">
+          <p>Update the tracker every morning for 10 minutes.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="buy" aria-labelledby="buy-title">
+      <div class="buy-panel">
+        <div>
+          <h2 id="buy-title">Buy the kit for $5</h2>
+          <p>Pay with PayPal.Me. Add the note "Lead Follow-Up Kit" so the payment can be matched to the ZIP delivery.</p>
+        </div>
+        <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <h2 id="faq-title">FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>How is the file delivered?</summary>
+          <p>The ZIP is delivered manually to the email shown in the PayPal transaction. Add the note "Lead Follow-Up Kit" when paying.</p>
+        </details>
+        <details>
+          <summary>What file formats are included?</summary>
+          <p>The ZIP includes a browser-based HTML guide and a CSV lead tracker that opens in Google Sheets, Excel, or LibreOffice.</p>
+        </details>
+        <details>
+          <summary>Is this a CRM?</summary>
+          <p>No. It is a simple starter workflow for businesses that need better follow-up before buying or configuring CRM software.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Seller note: this kit provides operational templates only. Review customer communications for accuracy, compliance, and fit with your business before sending.</p>
+  </footer>
+</body>
+</html>
