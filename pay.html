@@ -241,6 +241,21 @@
       overflow-wrap: anywhere;
     }
 
+    .example {
+      padding: 24px 0 10px;
+    }
+
+    .example-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .sample {
+      white-space: pre-line;
+      color: #26312b;
+    }
+
     .delivery {
       margin: 10px 0 34px;
       background: var(--soft);
@@ -258,7 +273,8 @@
     }
 
     @media (max-width: 760px) {
-      .pay-grid {
+      .pay-grid,
+      .example-grid {
         grid-template-columns: 1fr;
       }
     }
@@ -308,6 +324,26 @@
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
         </div>
       </article>
+    </section>
+
+    <section class="example" aria-labelledby="example-title">
+      <h2 id="example-title">What the custom version looks like</h2>
+      <p>The paid custom option expands the sample into a full sequence for one business. Here are two short examples.</p>
+      <div class="example-grid">
+        <article class="card">
+          <h2>Med spa</h2>
+          <p class="sample">Day 0: Hi [Name], thanks for asking about [treatment]. A short consultation is the best next step so we can check fit, timing, and pricing.
+
+Day 3: Hi [Name], should I close the loop for now? If you still want help choosing the right treatment, reply "consult" and I will send times.</p>
+        </article>
+
+        <article class="card">
+          <h2>Tutoring</h2>
+          <p class="sample">Day 0: Hi [Name], thanks for reaching out about tutoring. A short consultation helps us understand the student's goals and suggest the right plan.
+
+Day 3: Hi [Name], should I keep this open? If tutoring is still useful, reply with the student's grade and best time to talk.</p>
+        </article>
+      </div>
     </section>
 
     <section class="delivery" aria-labelledby="delivery-title">
