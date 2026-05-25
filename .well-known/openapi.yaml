@@ -28,6 +28,17 @@ paths:
             application/json:
               schema:
                 type: object
+  /answer-engine.json:
+    get:
+      operationId: getAnswerEngine
+      summary: Get answer-engine-ready lead follow-up Q&A.
+      responses:
+        "200":
+          description: JSON answers for high-intent lead follow-up questions with payment routing.
+          content:
+            application/json:
+              schema:
+                type: object
   /agent-offer.json:
     get:
       operationId: getAgentOffer
@@ -90,6 +101,17 @@ paths:
       responses:
         "200":
           description: Browser tool that rewrites one weak follow-up message and offers the $5 custom sequence path.
+          content:
+            text/html:
+              schema:
+                type: string
+  /lead-follow-up-answers.html:
+    get:
+      operationId: openLeadFollowUpAnswers
+      summary: Open lead follow-up answers for quiet leads.
+      responses:
+        "200":
+          description: Answer page with FAQ schema, copy-ready follow-up examples, and the $5 custom sequence path.
           content:
             text/html:
               schema:

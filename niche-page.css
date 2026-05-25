@@ -233,6 +233,13 @@ section {
   color: #26312b;
 }
 
+.answer-copy {
+  margin: 10px 0 0;
+  color: #26312b;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
 .note-panel {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto auto;

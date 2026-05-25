@@ -35,6 +35,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
+- Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
@@ -58,6 +59,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
+- Answer engine JSON: https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - Paid kit manifest: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 - Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
