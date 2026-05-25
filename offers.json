@@ -8,6 +8,8 @@
   "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "free_sample_pack_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html",
+  "free_sample_zip_url": "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
   "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card.png",
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
   "examples_url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
@@ -40,6 +42,13 @@
       "price": "0.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
       "delivery": "Instant browser-generated preview"
+    },
+    {
+      "name": "Free lead follow-up sample pack",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html",
+      "download_url": "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
+      "delivery": "Instant ZIP download with sample templates, tracker preview, and AI prompts"
     },
     {
       "name": "Free follow-up before and after examples",

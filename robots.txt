@@ -6,6 +6,8 @@ Allow: /product-feed.json
 Allow: /PAYPAL_VERIFICATION.md
 Allow: /lead-follow-up-templates.html
 Allow: /follow-up-examples.html
+Allow: /free-sample-pack.html
+Allow: /softjunk-free-sample-pack.zip
 Allow: /share-kit.html
 Allow: /share-kit.json
 Allow: /agent-buy-brief.html

@@ -83,6 +83,29 @@ paths:
             text/html:
               schema:
                 type: string
+  /free-sample-pack.html:
+    get:
+      operationId: openFreeSamplePack
+      summary: Open the free lead follow-up sample pack page.
+      responses:
+        "200":
+          description: Free sample pack landing page with ZIP download and $5 checkout path.
+          content:
+            text/html:
+              schema:
+                type: string
+  /softjunk-free-sample-pack.zip:
+    get:
+      operationId: downloadFreeSamplePack
+      summary: Download the free lead follow-up sample ZIP.
+      responses:
+        "200":
+          description: ZIP containing sample templates, tracker preview, and AI prompt samples.
+          content:
+            application/zip:
+              schema:
+                type: string
+                format: binary
   /lead-follow-up-templates.html:
     get:
       operationId: openLeadFollowUpTemplates

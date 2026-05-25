@@ -1,0 +1,18 @@
+SoftJunk Free Follow-Up Samples
+
+Use these as examples. The paid kit includes more templates, the full tracker, and the AI prompt pack.
+
+Day 0 first reply
+Hi [Name], thanks for reaching out about [service]. The easiest next step is [next step] so we can confirm what you need and recommend the right option. Would [time option 1] or [time option 2] work?
+
+Day 1 follow-up
+Hi [Name], just checking that you saw my reply about [service]. If it is still useful, I can help you take the next step today. Should I send a couple of available times?
+
+Quote follow-up
+Hi [Name], checking in on the [estimate/quote] for [service]. Do you want me to answer any questions, adjust the scope, or send the next step to get it scheduled?
+
+Missed call recovery
+Hi [Name], sorry we missed your call about [service]. I can help here. What is the best next step: call you back, send times, or answer a quick question by text?
+
+Buy the full $5 kit or custom sequence:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.html

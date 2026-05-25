@@ -1,0 +1,21 @@
+SoftJunk Free AI Prompt Samples
+
+Prompt 1 - adapt one message
+Rewrite this follow-up message for a [business type] selling [service]. Keep it short enough for SMS, use a [tone] tone, and make the next step [next step].
+
+Message:
+[paste message]
+
+Prompt 2 - create a short 3-message preview
+Create a 3-message follow-up preview for a lead from [lead source].
+
+Business type: [business type]
+Service: [service]
+Lead source: [website form / phone call / DM / referral / quote]
+Tone: [friendly / professional / direct]
+Desired next step: [book appointment / schedule call / approve estimate]
+
+Return Day 0, Day 1, and Day 3 messages. Keep each one clear, low-pressure, and easy to reply to.
+
+Buy the full $5 kit or custom sequence:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
