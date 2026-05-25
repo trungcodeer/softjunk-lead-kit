@@ -1,6 +1,6 @@
 {
   "schema_version": "softjunk-product-feed-v1",
-  "updated": "2026-05-25",
+  "updated": "2026-05-26",
   "seller": {
     "name": "SoftJunk",
     "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
@@ -91,6 +91,8 @@
     }
   ],
   "machine_readable": {
+    "buyer_index_json": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+    "github_buyer_index": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",

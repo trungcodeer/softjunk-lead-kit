@@ -9,6 +9,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 ![PayPal QR code for the $5 SoftJunk checkout](paypal-qr.svg)
 
 - Pay $5 on PayPal: https://paypal.me/softjunk/5USD
+- Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
@@ -61,6 +62,8 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 ## Machine-Readable Discovery
 
+- Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- GitHub-readable buyer index: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Answer engine JSON: https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json

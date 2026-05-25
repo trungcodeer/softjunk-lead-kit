@@ -6,6 +6,17 @@ info:
 servers:
   - url: https://trungcodeer.github.io/softjunk-lead-kit
 paths:
+  /buyer-index.json:
+    get:
+      operationId: getBuyerIndex
+      summary: Get the SoftJunk buyer decision index.
+      responses:
+        "200":
+          description: Decision packet with the shortest route to the right free tool, paid offer, exact PayPal URL, and verification rule.
+          content:
+            application/json:
+              schema:
+                type: object
   /offers.json:
     get:
       operationId: getOffers

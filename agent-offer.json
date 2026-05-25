@@ -1,7 +1,9 @@
 {
   "schema_version": "softjunk-agent-offer-v1",
   "name": "SoftJunk AI Agent Order Path",
-  "updated": "2026-05-25",
+  "updated": "2026-05-26",
+  "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "github_buyer_index_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
   "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
@@ -48,6 +50,7 @@
     "The buyer does not want to use PayPal"
   ],
   "agent_instructions": [
+    "Use buyer_index_url first when choosing the shortest path for a one-lead sample, weak-message rewrite, direct answer, custom sequence, QR handoff, or checkout.",
     "Send the buyer to fix_one_quiet_lead_url when they need the shortest possible free sample and checkout path, lead_follow_up_rewriter_url when they already have a weak message, answer_engine_url when they ask a direct follow-up question, or agent_order_url or free_preview_url when they need a new sequence.",
     "Ask the buyer to generate or copy a PayPal note that includes business type, service, lead source, tone, and need.",
     "Tell the buyer to pay exactly 5 USD through payment_url.",

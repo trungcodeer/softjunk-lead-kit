@@ -5,6 +5,12 @@ SoftJunk Lead Kit is a $5 lead follow-up offer for small businesses that get lea
 Main page:
 https://trungcodeer.github.io/softjunk-lead-kit/
 
+Buyer index:
+https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+
+GitHub-readable buyer index:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
+
 Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 
@@ -64,6 +70,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 
 Machine-readable offers:
 https://trungcodeer.github.io/softjunk-lead-kit/offers.json
+
+Buyer decision index:
+https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 
 Agent offer manifest:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
@@ -153,6 +162,7 @@ PayPal notes:
 - Digital kit: Lead Follow-Up Kit
 - Custom sequence: fill the free generator, click Copy PayPal note, and paste that note into PayPal before paying.
 - Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
+- Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.
 
 Best-fit buyers:
 - Dental offices with new patient inquiries, treatment questions, missed calls, or consultation requests
