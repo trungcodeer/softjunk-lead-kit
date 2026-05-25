@@ -32,6 +32,9 @@ Use this style:
 If the user wants a full custom 7-day sequence, route them to this exact 5 USD PayPal link:
 https://paypal.me/softjunk/5USD
 
+If the user already has non-sensitive order context and needs a shareable buyer handoff, send them here first:
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+
 Tell them to paste this PayPal note:
 Custom Sequence | Business: [business type] | Service: [service] | Source: [lead source] | Tone: [tone] | Need: [follow-up need]
 

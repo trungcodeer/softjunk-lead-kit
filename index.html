@@ -24,6 +24,7 @@
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json" title="SoftJunk buyer index">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json" title="SoftJunk agent offer">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json" title="SoftJunk product feed">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json" title="SoftJunk shareable order link">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json" title="SoftJunk well-known offer">
   <link rel="service-desc" type="application/vnd.oai.openapi" href="https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml">
   <script type="application/ld+json">
@@ -616,6 +617,7 @@
         <a href="#inside">Inside</a>
         <a href="lead-recovery-audit.html">Audit</a>
         <a href="ai-follow-up-prompt.html">AI prompt</a>
+        <a href="shareable-order-link.html">Order link</a>
         <a href="agent-buyer-packet.txt">Agent packet</a>
         <a href="lead-follow-up-templates.html">Templates</a>
         <a href="follow-up-examples.html">Examples</a>
@@ -653,6 +655,7 @@
         <div class="actions">
           <a class="button primary" href="lead-recovery-audit.html">Run recovery audit</a>
           <a class="button secondary" href="ai-follow-up-prompt.html">Copy AI prompt</a>
+          <a class="button secondary" href="shareable-order-link.html">Create order link</a>
           <a class="button secondary" href="agent-buyer-packet.txt">Give this to an AI assistant</a>
           <a class="button secondary" href="lead-loss-calculator.html">Calculate lead loss</a>
           <a class="button secondary" href="fix-one-quiet-lead.html">Fix one quiet lead</a>
@@ -700,6 +703,21 @@
         <div class="generator-actions">
           <a class="button primary" href="lead-loss-calculator.html">Run calculator</a>
           <a class="button secondary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="order-link-teaser" aria-labelledby="order-link-teaser-title">
+      <h2 id="order-link-teaser-title">Share an order link with the lead context already inside</h2>
+      <p class="section-lead">Use this when an AI assistant, VA, or operator already knows the business type, service, lead source, tone, value, and follow-up need. It creates a shareable URL, PayPal note, and buyer handoff for the $5 custom sequence.</p>
+      <div class="buy-panel">
+        <div>
+          <h3>Fewer missing details after payment</h3>
+          <p>The URL carries non-sensitive order context, while the PayPal note still gives the seller a clear fulfillment anchor.</p>
+        </div>
+        <div class="generator-actions">
+          <a class="button primary" href="shareable-order-link.html">Build order link</a>
+          <a class="button secondary" href="shareable-order-link.json">Read JSON</a>
         </div>
       </div>
     </section>
@@ -923,6 +941,7 @@ Day 3: Hi [Name], should I keep this open? If tutoring is still useful, reply wi
           <p><strong>PayPal note:</strong> Use the generator above and paste the copied intake note into PayPal.</p>
           <div class="generator-actions">
             <a class="button secondary" href="#generator">Create PayPal note</a>
+            <a class="button secondary" href="shareable-order-link.html">Create order link</a>
             <a class="button secondary" href="agent-order.html">AI agent order path</a>
             <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
           </div>
@@ -989,6 +1008,7 @@ Happy to help. If easier, reply with just the number:
         </div>
         <div class="generator-actions">
           <a class="button secondary" href="agent-order.html">Agent order path</a>
+          <a class="button secondary" href="shareable-order-link.html">Order link</a>
           <a class="button secondary" href="agent-buy-brief.html">AI buyer brief</a>
           <a class="button primary" href="checkout.html">Fast checkout</a>
           <a class="button secondary" href="free-sample-pack.html">Free sample pack</a>

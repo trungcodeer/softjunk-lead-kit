@@ -48,6 +48,9 @@
   "ai_follow_up_prompt_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
   "ai_follow_up_prompt_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
   "gist_ai_follow_up_prompt_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
+  "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+  "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+  "shareable_order_link_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
   "buy_now_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
   "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
   "fix_one_quiet_lead_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -81,6 +84,7 @@
       "price": "5.00",
       "currency": "USD",
       "payment_url": "https://paypal.me/softjunk/5USD",
+      "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "delivery": "Manual same-day delivery after PayPal payment appears"
     },
     {

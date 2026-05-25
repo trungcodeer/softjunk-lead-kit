@@ -30,6 +30,7 @@
     "price": "5.00",
     "currency": "USD",
     "order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+    "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
     "delivery": "Manual same-day delivery after PayPal payment appears",
@@ -65,6 +66,12 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
       "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c"
+    },
+    {
+      "name": "Shareable Order Link",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt"
     },
     {
       "name": "Lead Recovery Audit",
@@ -149,6 +156,9 @@
     "ai_follow_up_prompt_text": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
     "ai_follow_up_prompt_json": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
     "gist_ai_follow_up_prompt": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
+    "shareable_order_link": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+    "shareable_order_link_json": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+    "shareable_order_link_text": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",

@@ -105,6 +105,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /shareable-order-link.html:
+    get:
+      operationId: openShareableOrderLink
+      summary: Open the shareable order link builder.
+      responses:
+        "200":
+          description: Browser page that creates a shareable order URL, PayPal note, and buyer handoff for the 5 USD custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
+  /shareable-order-link.json:
+    get:
+      operationId: getShareableOrderLink
+      summary: Get the shareable order link metadata.
+      responses:
+        "200":
+          description: Machine-readable metadata for the order URL query parameters, PayPal note template, payment URL, privacy rule, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /shareable-order-link.txt:
+    get:
+      operationId: getShareableOrderLinkText
+      summary: Get the copyable shareable order link handoff.
+      responses:
+        "200":
+          description: Plain-text instructions for using the shareable order link and exact 5 USD PayPal checkout.
+          content:
+            text/plain:
+              schema:
+                type: string
   /paypal-payment-intent.json:
     get:
       operationId: getProductPayPalPaymentIntent

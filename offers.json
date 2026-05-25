@@ -14,6 +14,9 @@
   "ai_follow_up_prompt_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
   "ai_follow_up_prompt_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
   "gist_ai_follow_up_prompt_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
+  "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+  "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+  "shareable_order_link_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
@@ -74,6 +77,14 @@
       "delivery": "Agent-readable decision packet with lead audit path, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule"
     },
     {
+      "name": "Free shareable order link",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
+      "delivery": "Browser-generated shareable order URL, PayPal note, and buyer handoff for a 5 USD custom sequence"
+    },
+    {
       "name": "Free lead recovery audit",
       "price": "0.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
@@ -127,6 +138,7 @@
       "name": "Custom 7-day lead follow-up sequence",
       "price": "5.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+      "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "payment_url": "https://paypal.me/softjunk/5USD",
       "delivery": "Manual same-day delivery after PayPal payment appears",
       "includes": [
@@ -164,6 +176,7 @@
   ],
   "niche_pages": [
     "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
@@ -184,7 +197,8 @@
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
-    "custom_sequence": "Use the free preview builder or AI agent order path, copy the PayPal note, and paste that note into PayPal before paying.",
+    "custom_sequence": "Use the shareable order link, free preview builder, or AI agent order path, copy the PayPal note, and paste that note into PayPal before paying.",
+    "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
     "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary.",
     "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment."
   }

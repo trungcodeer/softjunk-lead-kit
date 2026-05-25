@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 05:08:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 05:34:00 +0700</lastBuildDate>
+    <item>
+      <title>Shareable SoftJunk Order Link</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html</guid>
+      <description>Browser tool that creates a shareable order URL, PayPal note, and buyer handoff for the 5 USD custom lead follow-up sequence.</description>
+      <pubDate>Tue, 26 May 2026 05:34:00 +0700</pubDate>
+    </item>
     <item>
       <title>AI Follow-Up Prompt</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html</link>

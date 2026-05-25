@@ -1,0 +1,25 @@
+SoftJunk shareable order link
+
+Use this when a buyer, virtual assistant, or AI assistant has the basic lead context for a $5 custom lead follow-up sequence:
+
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+
+The page creates:
+- A shareable order URL with non-sensitive business context.
+- A PayPal note for matching the $5 payment to the custom sequence.
+- A buyer handoff message with payment and after-payment links.
+
+Pay exactly 5 USD:
+https://paypal.me/softjunk/5USD
+
+PayPal note template:
+Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]
+
+After payment:
+https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
+Verification gate:
+Do not claim the order is paid, started, or delivered unless seller-side PayPal evidence exists, the verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.
+
+Privacy rule:
+Use only non-sensitive business context in the URL. Do not include customer names, phone numbers, emails, addresses, PayPal transaction IDs, or private lead details.
