@@ -445,7 +445,7 @@ Day 3: Hi [Name], should I keep this open? If tutoring is still useful, reply wi
     <section class="delivery" aria-labelledby="delivery-title">
       <h2 id="delivery-title">Delivery</h2>
       <p>The ZIP is not public. The digital kit is delivered to the email shown in the PayPal transaction. Custom sequences are delivered the same day after payment appears in PayPal.</p>
-      <p>Seller verification is strict: delivery starts only after the seller can see the $5 PayPal transaction or the verifier returns <strong>PAYPAL_PAYMENT_VERIFIED=true</strong>.</p>
+      <p>Seller verification is strict: delivery starts only after the seller can see the $5 PayPal transaction, the API verifier returns <strong>PAYPAL_PAYMENT_VERIFIED=true</strong>, or a trusted seller-side CSV export returns <strong>PAYPAL_PAYMENT_VERIFIED=true source=csv</strong>.</p>
       <p>If the PayPal note is missing, I will ask for the missing details before delivery.</p>
       <p><a href="after-pay.html">Open the after-payment handoff page</a> for the exact delivery rule and copyable buyer summary.</p>
       <p><a href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose">Submit a GitHub order form</a> after paying if you want a structured fulfillment trail.</p>

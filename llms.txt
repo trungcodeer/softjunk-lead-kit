@@ -101,6 +101,7 @@ Delivery:
 The product ZIP is not public. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
 After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 Payment verification script: scripts/verify-paypal-5usd.ps1 in the GitHub repository.
+Manual CSV verification: run scripts/verify-paypal-5usd.ps1 -CsvPath "C:\path\to\paypal-activity.csv" -NoteContains "Lead Follow-Up Kit" against a seller-side PayPal activity export.
 GitHub Actions workflow template: PAYPAL_VERIFICATION_WORKFLOW.yml.example. The enabled workflow should succeed only when the verifier prints PAYPAL_PAYMENT_VERIFIED=true.
 
 PayPal notes:

@@ -15,7 +15,7 @@
     "verification_workflow_template": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION_WORKFLOW.yml.example",
     "amount": "5.00",
     "currency": "USD",
-    "proof_required": "Fulfillment starts only after the seller can see the PayPal transaction or the PayPal verifier returns PAYPAL_PAYMENT_VERIFIED=true."
+    "proof_required": "Fulfillment starts only after the seller can see the PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
   },
   "primary_offer": {
     "name": "Custom 7-Day Lead Follow-Up Sequence",

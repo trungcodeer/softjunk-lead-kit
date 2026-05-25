@@ -62,12 +62,18 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 ## Payment Verification
 
-Fulfillment starts only after the seller can see the 5 USD PayPal transaction or the verifier returns `PAYPAL_PAYMENT_VERIFIED=true`.
+Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns `PAYPAL_PAYMENT_VERIFIED=true`, or a trusted seller-side CSV export returns `PAYPAL_PAYMENT_VERIFIED=true source=csv`.
 
 Run locally:
 
 ```powershell
 .\scripts\verify-paypal-5usd.ps1
+```
+
+Or verify a seller-side PayPal activity CSV export:
+
+```powershell
+.\scripts\verify-paypal-5usd.ps1 -CsvPath "C:\path\to\paypal-activity.csv" -NoteContains "Lead Follow-Up Kit"
 ```
 
 See [PAYPAL_VERIFICATION.md](PAYPAL_VERIFICATION.md) for required PayPal API credentials and stricter note filters.

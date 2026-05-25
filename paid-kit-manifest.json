@@ -38,7 +38,7 @@
       "purpose": "seller-side fulfillment email template"
     }
   ],
-  "delivery_rule": "Send the paid ZIP only after the seller can see the 5 USD PayPal transaction or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.",
+  "delivery_rule": "Send the paid ZIP only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.",
   "verification_url": "https://trungcodeer.github.io/softjunk-lead-kit/PAYPAL_VERIFICATION.md",
   "verifier_command": ".\\scripts\\verify-paypal-5usd.ps1"
 }

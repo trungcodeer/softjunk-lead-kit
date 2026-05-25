@@ -64,5 +64,5 @@
   "share_kit_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
   "well_known_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
   "openapi_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
-  "fulfillment_rule": "Delivery starts only after the seller can see the 5 USD PayPal transaction or the PayPal verifier returns PAYPAL_PAYMENT_VERIFIED=true."
+  "fulfillment_rule": "Delivery starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
 }

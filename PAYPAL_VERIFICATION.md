@@ -38,6 +38,40 @@ Optional stricter checks:
 .\scripts\verify-paypal-5usd.ps1 -LookbackHours 168 -NoteContains "Estimate Follow-Up"
 ```
 
+## Verify from a PayPal CSV export
+
+If API credentials are not available, export recent activity from the seller PayPal account as CSV and verify it locally. Do not commit the CSV, upload it to the public repository, or paste buyer details into issues.
+
+Expected CSV fields can use common PayPal export names such as:
+
+- `Currency`
+- `Gross` or `Amount`
+- `Status`
+- `Transaction ID`
+- `Date`
+- `Note`
+
+Run:
+
+```powershell
+.\scripts\verify-paypal-5usd.ps1 -CsvPath "C:\path\to\paypal-activity.csv"
+```
+
+With a stricter note filter:
+
+```powershell
+.\scripts\verify-paypal-5usd.ps1 -CsvPath "C:\path\to\paypal-activity.csv" -NoteContains "Lead Follow-Up Kit"
+```
+
+Or set an environment variable:
+
+```powershell
+$env:PAYPAL_TRANSACTION_CSV = "C:\path\to\paypal-activity.csv"
+.\scripts\verify-paypal-5usd.ps1 -NoteContains "Lead Follow-Up Kit"
+```
+
+The CSV verifier accepts only a completed or successful `5.00 USD` row. It prints `PAYPAL_PAYMENT_VERIFIED=true source=csv` only when a matching row is found.
+
 ## Verify from GitHub Actions
 
 Add repository secrets for either:
@@ -81,7 +115,7 @@ Exit codes:
 - `2`: no matching payment was found, or credentials are missing.
 - `1`: PayPal API/token call failed unexpectedly.
 
-Fulfillment rule: do not deliver the ZIP or custom sequence until this verifier returns `PAYPAL_PAYMENT_VERIFIED=true` or the seller manually confirms the same payment inside PayPal.
+Fulfillment rule: do not deliver the ZIP or custom sequence until this verifier returns `PAYPAL_PAYMENT_VERIFIED=true` from the API, returns `PAYPAL_PAYMENT_VERIFIED=true source=csv` from a trusted seller-side PayPal CSV export, or the seller manually confirms the same payment inside PayPal.
 
 Official PayPal references:
 

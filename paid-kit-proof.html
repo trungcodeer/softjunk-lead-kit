@@ -407,7 +407,7 @@
         </article>
         <article class="panel rule">
           <h3>Fulfillment gate</h3>
-          <p>Send the paid ZIP only after the seller can see the 5 USD PayPal transaction or the verifier returns <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+          <p>Send the paid ZIP only after the seller can see the 5 USD PayPal transaction, the API verifier returns <code>PAYPAL_PAYMENT_VERIFIED=true</code>, or a trusted seller-side CSV export returns <code>PAYPAL_PAYMENT_VERIFIED=true source=csv</code>.</p>
           <p><a href="PAYPAL_VERIFICATION.md">Read verification instructions</a>.</p>
         </article>
       </div>
