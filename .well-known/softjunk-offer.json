@@ -6,6 +6,7 @@
   "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card.png",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "payment_qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
+  "public_order_board_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
   "amount": "5.00",
   "currency": "USD",

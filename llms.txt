@@ -91,6 +91,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/social-card.png
 GitHub order issue forms:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 
+Public order board:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+
 Offers:
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
 - Free preview for $0: browser-generated Day 0, 1, and 3 sample for one business.

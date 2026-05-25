@@ -10,6 +10,7 @@
   "paid_kit_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "payment_qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
+  "public_order_board_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
   "amount": "5.00",
   "currency": "USD",
@@ -46,7 +47,7 @@
     "Send the buyer to agent_order_url or free_preview_url.",
     "Ask the buyer to generate or copy a PayPal note that includes business type, service, lead source, tone, and need.",
     "Tell the buyer to pay exactly 5 USD through payment_url.",
-    "After payment, send the buyer to github_order_url if they want to leave structured fulfillment details.",
+    "After payment, send the buyer to public_order_board_url for the public handoff or github_order_url if they want to leave structured non-sensitive fulfillment details.",
     "Do not tell the buyer the order is paid or delivered unless the seller confirms the PayPal transaction is visible.",
     "Tell the buyer that fulfillment is manual and uses the email shown in the PayPal transaction."
   ],
