@@ -16,9 +16,13 @@ For the digital kit, use this PayPal note:
 
 ## Custom Sequence Note
 
-For a custom sequence, generate the PayPal note here:
+For a custom sequence, create the shareable order link and generated PayPal note here:
 
-https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+
+Public shareable order link Gist:
+
+https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 
 Then paste the generated note into PayPal before sending payment.
 

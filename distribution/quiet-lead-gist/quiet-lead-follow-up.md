@@ -15,6 +15,8 @@ Hi [Name], quick follow-up on [service]. If you still want help, reply with one 
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Rewrite a weak follow-up: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
+- Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+- Shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - Profile microsite: https://trungcodeer.github.io/trungcodeer/
 
 ## $5 Paid Options
@@ -32,9 +34,9 @@ https://paypal.me/softjunk/5USD
 
 For the digital kit, use PayPal note `Lead Follow-Up Kit`.
 
-For a custom sequence, open the agent order page, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
+For a custom sequence, create the shareable order link, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
 
-https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 
 ## Fulfillment Rule
 

@@ -14,6 +14,7 @@
     "currency": "USD",
     "url": "https://paypal.me/softjunk/5USD",
     "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
     "qr_svg_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg",
     "printable_flyer_url": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html"
@@ -33,7 +34,7 @@
     },
     {
       "if": "The buyer wants a full custom sequence",
-      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html"
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html"
     },
     {
       "if": "The buyer is ready to pay",

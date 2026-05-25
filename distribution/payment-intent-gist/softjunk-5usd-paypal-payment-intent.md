@@ -6,15 +6,16 @@ PayPal:
 
 https://paypal.me/softjunk/5USD
 
-Use PayPal note `Lead Follow-Up Kit` for the digital kit. For a custom sequence, generate the note here:
+Use PayPal note `Lead Follow-Up Kit` for the digital kit. For a custom sequence, create the shareable order link and generated note here:
 
-https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 
 ## Buyer Routes
 
 - Root buyer hub: https://trungcodeer.github.io/
 - Root PayPal route: https://trungcodeer.github.io/paypal/
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+- Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Product payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json

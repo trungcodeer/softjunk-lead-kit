@@ -14,7 +14,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Weak message to rewrite: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Direct follow-up answer: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
-- Custom 7-day sequence: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- Custom 7-day sequence: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Ready to pay: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
 - Root buyer hub: https://trungcodeer.github.io/
@@ -37,9 +37,9 @@ For the digital kit, pay $5 here and use PayPal note `Lead Follow-Up Kit`:
 
 https://paypal.me/softjunk/5USD
 
-For a custom sequence, open the agent order page, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
+For a custom sequence, create a shareable order link, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
 
-https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 
 If the non-sensitive order context is already known, create a shareable order link and PayPal note here:
 
