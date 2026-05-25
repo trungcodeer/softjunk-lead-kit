@@ -7,6 +7,7 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 ## Try It
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
+- Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Free preview builder: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html

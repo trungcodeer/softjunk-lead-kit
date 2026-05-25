@@ -3,12 +3,19 @@
   "updated": "2026-05-25",
   "currency": "USD",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
   "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
   "offers": [
+    {
+      "name": "Free lead loss calculator",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
+      "delivery": "Instant browser-generated estimate and PayPal note"
+    },
     {
       "name": "Free 3-message follow-up preview",
       "price": "0.00",

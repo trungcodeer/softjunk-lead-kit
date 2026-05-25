@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lead Loss Calculator | SoftJunk Lead Kit</title>
+  <meta name="description" content="Estimate how much money a small business may lose each month when leads are not followed up. Get a $5 custom follow-up sequence through PayPal.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Lead Loss Calculator">
+  <meta property="og:description" content="Estimate monthly missed-lead value, then buy a $5 custom follow-up sequence.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "name": "SoftJunk Lead Loss Calculator",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Any",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Custom 7-Day Lead Follow-Up Sequence",
+          "description": "A $5 custom lead follow-up sequence for one business based on its lead source, job value, concern, and next step.",
+          "offers": {
+            "@type": "Offer",
+            "price": "5.00",
+            "priceCurrency": "USD",
+            "url": "https://paypal.me/softjunk/5USD",
+            "availability": "https://schema.org/InStock"
+          }
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f8f5;
+      --paper: #ffffff;
+      --ink: #17211c;
+      --muted: #526159;
+      --line: #d8ded7;
+      --accent: #106a5b;
+      --accent-dark: #0b5146;
+      --soft: #e8f4f1;
+      --focus: #c26a00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-weight: 800;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      padding: 54px 0 28px;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0 0 16px;
+      font-size: clamp(38px, 7vw, 72px);
+      line-height: 1.02;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(26px, 4vw, 38px);
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+      line-height: 1.2;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 780px;
+      margin: 0 0 22px;
+      font-size: clamp(18px, 2.2vw, 22px);
+    }
+
+    .actions,
+    .preset-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      font-weight: 800;
+      font-family: inherit;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .button.primary:hover {
+      background: var(--accent-dark);
+    }
+
+    .tool {
+      display: grid;
+      grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+      gap: 18px;
+      align-items: start;
+      padding: 18px 0 38px;
+    }
+
+    .panel,
+    .card {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .field {
+      display: grid;
+      gap: 7px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--ink);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 46px;
+      border: 1px solid #bac8bf;
+      border-radius: 7px;
+      padding: 0 12px;
+      background: #fff;
+      color: var(--ink);
+      font: inherit;
+    }
+
+    .output {
+      white-space: pre-wrap;
+      min-height: 268px;
+      margin: 12px 0;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      color: var(--ink);
+      overflow-wrap: anywhere;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    .metric {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+    }
+
+    .metric strong {
+      display: block;
+      color: var(--ink);
+      font-size: clamp(22px, 4vw, 34px);
+      line-height: 1.05;
+      overflow-wrap: anywhere;
+    }
+
+    .status {
+      min-height: 24px;
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0 36px;
+    }
+
+    footer {
+      padding: 32px 0 42px;
+      border-top: 1px solid var(--line);
+      margin-top: 24px;
+    }
+
+    @media (max-width: 860px) {
+      .tool,
+      .grid,
+      .metric-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <nav aria-label="Main navigation">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="./">Main</a>
+        <a href="free-preview.html">Free preview</a>
+        <a href="agent-order.html">Agent order</a>
+        <a href="pay.html">Pay $5</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Calculate what missed follow-up may be costing.</h1>
+      <p class="lead">Estimate the monthly value of leads that arrive but do not get a clear Day 0, 1, 3, 5, and 7 follow-up path. Then buy a $5 sequence to plug the leak.</p>
+      <div class="actions">
+        <a class="button primary" href="#calculator">Run calculator</a>
+        <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+      </div>
+    </section>
+
+    <section class="tool" id="calculator" aria-labelledby="calculator-title">
+      <form class="panel" id="calculator-form" aria-describedby="calculator-hint">
+        <h2 id="calculator-title">Lead loss calculator</h2>
+        <p id="calculator-hint">Use conservative numbers. This is a directional estimate, not a guarantee.</p>
+
+        <div class="preset-row" aria-label="Preset examples">
+          <button class="button" type="button" data-preset="hvac">HVAC</button>
+          <button class="button" type="button" data-preset="roofing">Roofing</button>
+          <button class="button" type="button" data-preset="realestate">Real estate</button>
+          <button class="button" type="button" data-preset="plumbing">Plumbing</button>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="business">Business type</label>
+            <input id="business" name="business" autocomplete="organization" value="HVAC company" required>
+          </div>
+          <div class="field">
+            <label for="lead-source">Lead source</label>
+            <select id="lead-source" name="leadSource">
+              <option>Website form</option>
+              <option>Instagram DM</option>
+              <option>Facebook message</option>
+              <option>Phone call</option>
+              <option>Email</option>
+              <option>Referral</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="leads-month">New leads per month</label>
+            <input id="leads-month" name="leadsMonth" type="number" min="1" max="10000" value="40" required>
+          </div>
+          <div class="field">
+            <label for="missed-percent">Leads without solid follow-up (%)</label>
+            <input id="missed-percent" name="missedPercent" type="number" min="1" max="100" value="30" required>
+          </div>
+          <div class="field">
+            <label for="job-value">Average job or client value (USD)</label>
+            <input id="job-value" name="jobValue" type="number" min="1" max="10000000" value="450" required>
+          </div>
+          <div class="field">
+            <label for="close-rate">Conservative close rate after follow-up (%)</label>
+            <input id="close-rate" name="closeRate" type="number" min="1" max="100" value="15" required>
+          </div>
+        </div>
+
+        <div class="actions" style="margin-top:16px">
+          <button class="button primary" type="submit">Calculate loss</button>
+          <button class="button" type="button" id="copy-note">Copy PayPal note</button>
+        </div>
+      </form>
+
+      <div class="panel" aria-labelledby="output-title">
+        <h2 id="output-title">Result</h2>
+        <div class="metric-grid" aria-label="Estimated metrics">
+          <div class="metric">
+            <span>Missed leads/month</span>
+            <strong id="missed-leads">12</strong>
+          </div>
+          <div class="metric">
+            <span>Estimated monthly leak</span>
+            <strong id="monthly-loss">$810</strong>
+          </div>
+          <div class="metric">
+            <span>$5 sequence vs leak</span>
+            <strong id="multiple">162x</strong>
+          </div>
+        </div>
+        <p class="output" id="output" aria-live="polite">Run the calculator to generate a short report.</p>
+        <p class="status" id="status" aria-live="polite"></p>
+        <div class="actions">
+          <button class="button" type="button" id="copy-report">Copy report</button>
+          <button class="button" type="button" id="copy-link">Copy share link</button>
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 for follow-up sequence</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="buy-title">
+      <h2 id="buy-title">What the $5 sequence fixes</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Day 0 speed</h3>
+          <p>A first reply that moves the lead toward one clear next step instead of leaving the conversation vague.</p>
+        </article>
+        <article class="card">
+          <h3>Day 1 and 3 recovery</h3>
+          <p>Follow-ups that reopen the conversation without sounding needy, pushy, or generic.</p>
+        </article>
+        <article class="card">
+          <h3>Day 5 and 7 close loop</h3>
+          <p>A polite final sequence plus no-show and price-objection replies for the same business context.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Seller rule: delivery starts only after the $5 PayPal payment is visible to the seller. Calculator numbers are estimates and should be adjusted to your real business data.</p>
+  </footer>
+
+  <script>
+    const form = document.querySelector('#calculator-form');
+    const output = document.querySelector('#output');
+    const statusMessage = document.querySelector('#status');
+    const missedLeadsEl = document.querySelector('#missed-leads');
+    const monthlyLossEl = document.querySelector('#monthly-loss');
+    const multipleEl = document.querySelector('#multiple');
+    const copyReport = document.querySelector('#copy-report');
+    const copyNote = document.querySelector('#copy-note');
+    const copyLink = document.querySelector('#copy-link');
+    const money = new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 });
+
+    const presets = {
+      hvac: {
+        business: 'HVAC company',
+        leadSource: 'Website form',
+        leadsMonth: 40,
+        missedPercent: 30,
+        jobValue: 450,
+        closeRate: 15
+      },
+      roofing: {
+        business: 'Roofing company',
+        leadSource: 'Website form',
+        leadsMonth: 25,
+        missedPercent: 35,
+        jobValue: 1800,
+        closeRate: 10
+      },
+      realestate: {
+        business: 'Real estate agent',
+        leadSource: 'Website form',
+        leadsMonth: 30,
+        missedPercent: 40,
+        jobValue: 3000,
+        closeRate: 5
+      },
+      plumbing: {
+        business: 'Plumbing company',
+        leadSource: 'Phone call',
+        leadsMonth: 55,
+        missedPercent: 25,
+        jobValue: 325,
+        closeRate: 18
+      }
+    };
+
+    function value(name) {
+      return String(new FormData(form).get(name) || '').trim();
+    }
+
+    function numberValue(name) {
+      const parsed = Number(value(name));
+      return Number.isFinite(parsed) ? parsed : 0;
+    }
+
+    function setField(name, val) {
+      const field = form.elements[name];
+      if (!field) return;
+      field.value = val;
+    }
+
+    function calculate() {
+      const leadsMonth = numberValue('leadsMonth');
+      const missedPercent = numberValue('missedPercent') / 100;
+      const jobValue = numberValue('jobValue');
+      const closeRate = numberValue('closeRate') / 100;
+      const missedLeads = Math.max(0, leadsMonth * missedPercent);
+      const monthlyLoss = Math.max(0, missedLeads * closeRate * jobValue);
+      const multiple = monthlyLoss > 0 ? Math.round(monthlyLoss / 5) : 0;
+
+      return {
+        business: value('business'),
+        leadSource: value('leadSource'),
+        leadsMonth,
+        missedPercent,
+        jobValue,
+        closeRate,
+        missedLeads,
+        monthlyLoss,
+        multiple
+      };
+    }
+
+    function makeReport() {
+      const result = calculate();
+      return `Lead loss estimate for ${result.business}
+Lead source: ${result.leadSource}
+New leads/month: ${result.leadsMonth}
+Leads without solid follow-up: ${Math.round(result.missedPercent * 100)}%
+Average job/client value: ${money.format(result.jobValue)}
+Conservative close rate after follow-up: ${Math.round(result.closeRate * 100)}%
+
+Estimated missed leads/month: ${result.missedLeads.toFixed(1)}
+Estimated monthly value leaking from weak follow-up: ${money.format(result.monthlyLoss)}
+The $5 custom follow-up sequence is about ${result.multiple}x smaller than this estimated monthly leak.
+
+Next step:
+Buy the $5 custom Day 0, 1, 3, 5, and 7 follow-up sequence:
+https://paypal.me/softjunk/5USD`;
+    }
+
+    function makeNote() {
+      const result = calculate();
+      return `Lead Loss Calculator | ${result.business} | Source: ${result.leadSource} | Leads/mo: ${result.leadsMonth} | Weak follow-up: ${Math.round(result.missedPercent * 100)}% | Avg value: ${money.format(result.jobValue)} | Est leak: ${money.format(result.monthlyLoss)}`;
+    }
+
+    function currentShareUrl() {
+      const params = new URLSearchParams();
+      params.set('business', value('business'));
+      params.set('source', value('leadSource'));
+      params.set('leads', value('leadsMonth'));
+      params.set('missed', value('missedPercent'));
+      params.set('value', value('jobValue'));
+      params.set('close', value('closeRate'));
+      params.set('autogen', '1');
+      return `${window.location.origin}${window.location.pathname}?${params.toString()}#calculator`;
+    }
+
+    function render() {
+      if (!form.reportValidity()) return;
+      const result = calculate();
+      missedLeadsEl.textContent = result.missedLeads.toFixed(1);
+      monthlyLossEl.textContent = money.format(result.monthlyLoss);
+      multipleEl.textContent = `${result.multiple}x`;
+      output.textContent = makeReport();
+      statusMessage.textContent = 'Estimate generated. Copy the PayPal note before paying $5 for the custom sequence.';
+    }
+
+    async function copyText(text, success) {
+      try {
+        await navigator.clipboard.writeText(text);
+        statusMessage.textContent = success;
+      } catch {
+        statusMessage.textContent = 'Copy failed. Select the text and copy it manually.';
+      }
+    }
+
+    function applyPreset(name) {
+      Object.entries(presets[name] || {}).forEach(([key, val]) => setField(key, val));
+      render();
+    }
+
+    function applyUrlParams() {
+      const params = new URLSearchParams(window.location.search);
+      const map = {
+        business: 'business',
+        source: 'leadSource',
+        leads: 'leadsMonth',
+        missed: 'missedPercent',
+        value: 'jobValue',
+        close: 'closeRate'
+      };
+      Object.entries(map).forEach(([param, field]) => {
+        if (params.has(param)) setField(field, params.get(param));
+      });
+      render();
+    }
+
+    document.querySelectorAll('[data-preset]').forEach((button) => {
+      button.addEventListener('click', () => applyPreset(button.dataset.preset));
+    });
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      render();
+    });
+
+    copyReport.addEventListener('click', () => copyText(makeReport(), 'Report copied.'));
+    copyNote.addEventListener('click', () => {
+      if (!form.reportValidity()) return;
+      copyText(makeNote(), 'PayPal note copied.');
+    });
+    copyLink.addEventListener('click', () => {
+      if (!form.reportValidity()) return;
+      copyText(currentShareUrl(), 'Share link copied.');
+    });
+
+    applyUrlParams();
+  </script>
+</body>
+</html>
