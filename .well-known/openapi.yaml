@@ -116,6 +116,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /PAYPAL_VERIFICATION.md:
+    get:
+      operationId: getPaypalVerificationInstructions
+      summary: Get PayPal payment verification instructions.
+      responses:
+        "200":
+          description: Instructions for verifying a 5 USD PayPal transaction before fulfillment.
+          content:
+            text/markdown:
+              schema:
+                type: string
   /feed.xml:
     get:
       operationId: getRssFeed

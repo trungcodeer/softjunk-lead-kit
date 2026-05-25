@@ -49,6 +49,7 @@
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+  "payment_verification_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
   "general_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
   "product_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
   "rss_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
@@ -56,5 +57,5 @@
   "share_kit_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
   "well_known_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
   "openapi_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
-  "fulfillment_rule": "Delivery starts only after the seller can see the 5 USD PayPal transaction."
+  "fulfillment_rule": "Delivery starts only after the seller can see the 5 USD PayPal transaction or the PayPal verifier returns PAYPAL_PAYMENT_VERIFIED=true."
 }

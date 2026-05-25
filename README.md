@@ -66,3 +66,13 @@ For the custom sequence, fill the free generator, click `Copy PayPal note`, and 
 The product ZIP is not public in this repository. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
 
 Custom sequences are delivered same day after the payment appears in PayPal.
+
+## Payment Verification
+
+Before marking any order paid or delivered, run:
+
+```powershell
+.\scripts\verify-paypal-5usd.ps1
+```
+
+See [PAYPAL_VERIFICATION.md](PAYPAL_VERIFICATION.md) for required PayPal API credentials and stricter note filters.
