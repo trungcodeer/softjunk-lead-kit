@@ -704,7 +704,8 @@
           <p class="result-output" id="generator-result" aria-live="polite">Fill out the form and generate a short Day 0, Day 1, and Day 3 follow-up sample.</p>
           <p class="result-status" id="generator-status" aria-live="polite"></p>
           <div class="generator-actions">
-            <a class="button primary" href="#offers">Choose a $5 option</a>
+            <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 after copying note</a>
+            <a class="button secondary" href="#offers">See both $5 options</a>
           </div>
         </div>
       </div>
@@ -953,7 +954,7 @@ I can keep this simple. Do you want me to send the next step?`;
         if (form.reportValidity()) {
           const data = new FormData(form);
           result.textContent = makeSample(data);
-          statusMessage.textContent = 'Sample generated from the link. Edit any field, then click "Copy PayPal note" for the custom option.';
+          statusMessage.textContent = 'Sample generated from the link. Edit any field, copy the PayPal note, then use the $5 PayPal button.';
         }
       }
     }
@@ -988,7 +989,7 @@ I can keep this simple. Do you want me to send the next step?`;
       const note = makePayPalNote(new FormData(form));
       try {
         await navigator.clipboard.writeText(note);
-        statusMessage.textContent = 'PayPal note copied. Paste it into PayPal when ordering the custom sequence.';
+        statusMessage.textContent = 'PayPal note copied. Open PayPal, pay $5, and paste the note before sending payment.';
       } catch {
         result.textContent = note;
         statusMessage.textContent = 'Copy the PayPal note from the sample output box.';
