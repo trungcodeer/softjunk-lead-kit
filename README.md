@@ -25,6 +25,8 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
 - RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
+- Well-known offer: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
+- OpenAPI discovery: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
 
 ## Buy
 

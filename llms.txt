@@ -32,6 +32,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
 RSS feed:
 https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
 
+Well-known offer:
+https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
+
+OpenAPI discovery:
+https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
+
 Niche pages:
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html

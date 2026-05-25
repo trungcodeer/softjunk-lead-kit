@@ -1,0 +1,96 @@
+openapi: 3.1.0
+info:
+  title: SoftJunk Lead Kit Discovery
+  version: "1.0.0"
+  description: Static discovery endpoints for the $5 SoftJunk Lead Follow-Up Kit and custom sequence.
+servers:
+  - url: https://trungcodeer.github.io/softjunk-lead-kit
+paths:
+  /offers.json:
+    get:
+      operationId: getOffers
+      summary: Get machine-readable SoftJunk offers.
+      responses:
+        "200":
+          description: Offer metadata with PayPal payment URL.
+          content:
+            application/json:
+              schema:
+                type: object
+  /product-feed.json:
+    get:
+      operationId: getProductFeed
+      summary: Get product feed for the $5 follow-up offer.
+      responses:
+        "200":
+          description: Product feed with payment, delivery, and free tool links.
+          content:
+            application/json:
+              schema:
+                type: object
+  /agent-offer.json:
+    get:
+      operationId: getAgentOffer
+      summary: Get AI-agent handoff instructions for buying the custom sequence.
+      responses:
+        "200":
+          description: Agent-safe order instructions and fulfillment rule.
+          content:
+            application/json:
+              schema:
+                type: object
+  /lead-loss-calculator.html:
+    get:
+      operationId: openLeadLossCalculator
+      summary: Open the free lead loss calculator.
+      responses:
+        "200":
+          description: Browser calculator for estimating missed follow-up value.
+          content:
+            text/html:
+              schema:
+                type: string
+  /agent-order.html:
+    get:
+      operationId: openAgentOrderPath
+      summary: Open the buyer-safe AI agent order path.
+      responses:
+        "200":
+          description: Order handoff page that creates a PayPal note.
+          content:
+            text/html:
+              schema:
+                type: string
+  /pay.html:
+    get:
+      operationId: openPaymentPage
+      summary: Open the $5 payment page.
+      responses:
+        "200":
+          description: Payment options and PayPal link.
+          content:
+            text/html:
+              schema:
+                type: string
+  /after-pay.html:
+    get:
+      operationId: openAfterPaymentHandoff
+      summary: Open the after-payment handoff page.
+      responses:
+        "200":
+          description: Delivery rules after PayPal payment is visible.
+          content:
+            text/html:
+              schema:
+                type: string
+  /feed.xml:
+    get:
+      operationId: getRssFeed
+      summary: Get the RSS offer feed.
+      responses:
+        "200":
+          description: RSS feed for SoftJunk offer pages.
+          content:
+            application/rss+xml:
+              schema:
+                type: string

@@ -3,5 +3,8 @@ Allow: /
 Allow: /llms.txt
 Allow: /feed.xml
 Allow: /product-feed.json
+Allow: /.well-known/softjunk-offer.json
+Allow: /.well-known/openapi.yaml
+Allow: /.well-known/ai-plugin.json
 Allow: /aa82219152e573922c28c39ed0ad85ce.txt
 Sitemap: https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml

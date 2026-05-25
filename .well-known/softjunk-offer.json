@@ -1,0 +1,35 @@
+{
+  "schema_version": "softjunk-well-known-offer-v1",
+  "updated": "2026-05-25",
+  "name": "SoftJunk Lead Follow-Up Kit",
+  "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "amount": "5.00",
+  "currency": "USD",
+  "buy_now_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
+  "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
+  "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+  "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+  "product_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
+  "rss_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
+  "offers": [
+    {
+      "name": "Custom 7-Day Lead Follow-Up Sequence",
+      "price": "5.00",
+      "currency": "USD",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "delivery": "Manual same-day delivery after PayPal payment appears"
+    },
+    {
+      "name": "7-Day Lead Follow-Up Kit",
+      "price": "5.00",
+      "currency": "USD",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "paypal_note": "Lead Follow-Up Kit",
+      "delivery": "Manual ZIP delivery after PayPal payment appears",
+      "zip_public": false
+    }
+  ],
+  "fulfillment_rule": "Do not mark the order paid or delivered unless the seller can see the 5 USD PayPal transaction."
+}
