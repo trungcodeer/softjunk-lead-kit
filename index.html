@@ -722,7 +722,7 @@
 Day 1: Hi [Name], just checking if you still wanted help choosing the right [treatment]. I can send booking times or answer one question first.
 
 Day 3: Hi [Name], should I close the loop on this for now? If you want to come back later, reply "consult" and I will send the booking link again.</p>
-          <a class="button secondary" href="#generator">Create a custom med spa note</a>
+          <a class="button secondary" href="?preset=medspa#generator">Create a custom med spa note</a>
         </article>
 
         <article class="offer-card">
@@ -733,7 +733,7 @@ Day 3: Hi [Name], should I close the loop on this for now? If you want to come b
 Day 1: Hi [Name], following up in case the school week got busy. Would you like me to send a few consultation times?
 
 Day 3: Hi [Name], should I keep this open? If tutoring is still useful, reply with the student's grade and best time to talk.</p>
-          <a class="button secondary" href="#generator">Create a custom tutoring note</a>
+          <a class="button secondary" href="?preset=tutoring#generator">Create a custom tutoring note</a>
         </article>
       </div>
     </section>
@@ -897,6 +897,67 @@ I can keep this simple. Do you want me to send the next step?`;
       return `Custom Follow-Up | Business: ${business} | Service: ${service} | Source: ${source} | Tone: ${tone} | Concern: ${concern} | Next: ${nextStep}`;
     }
 
+    function setField(name, value) {
+      const field = form.elements[name];
+      if (!field || !value) return;
+
+      if (field.tagName === 'SELECT') {
+        const option = Array.from(field.options).find((item) => item.value.toLowerCase() === String(value).toLowerCase());
+        if (option) field.value = option.value;
+        return;
+      }
+
+      field.value = value;
+    }
+
+    function applyPreset(params) {
+      const preset = String(params.get('preset') || '').toLowerCase();
+      const presets = {
+        medspa: {
+          businessType: 'Med spa',
+          service: 'Consultation',
+          leadSource: 'Instagram DM',
+          tone: 'Premium',
+          concern: 'pricing',
+          nextStep: 'book a consultation'
+        },
+        tutoring: {
+          businessType: 'Tutoring service',
+          service: 'Free consultation',
+          leadSource: 'Website form',
+          tone: 'Friendly',
+          concern: 'student fit',
+          nextStep: 'schedule a free consultation'
+        }
+      };
+
+      Object.entries(presets[preset] || {}).forEach(([name, value]) => setField(name, value));
+    }
+
+    function applyUrlPrefill() {
+      const params = new URLSearchParams(window.location.search);
+      applyPreset(params);
+
+      const fieldMap = {
+        business: 'businessType',
+        service: 'service',
+        source: 'leadSource',
+        tone: 'tone',
+        concern: 'concern',
+        next: 'nextStep'
+      };
+
+      Object.entries(fieldMap).forEach(([param, field]) => setField(field, params.get(param)));
+
+      if (params.has('preset') || params.get('autogen') === '1') {
+        if (form.reportValidity()) {
+          const data = new FormData(form);
+          result.textContent = makeSample(data);
+          statusMessage.textContent = 'Sample generated from the link. Edit any field, then click "Copy PayPal note" for the custom option.';
+        }
+      }
+    }
+
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       if (!form.reportValidity()) return;
@@ -933,6 +994,8 @@ I can keep this simple. Do you want me to send the next step?`;
         statusMessage.textContent = 'Copy the PayPal note from the sample output box.';
       }
     });
+
+    applyUrlPrefill();
   </script>
 </body>
 </html>
