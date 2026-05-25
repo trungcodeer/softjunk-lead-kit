@@ -1,0 +1,53 @@
+name: Verify PayPal $5 payment
+
+on:
+  workflow_dispatch:
+    inputs:
+      lookback_hours:
+        description: Hours of PayPal transaction history to search
+        required: true
+        default: "72"
+      note_contains:
+        description: Optional PayPal note text to require
+        required: false
+        default: ""
+      sandbox:
+        description: Use PayPal sandbox API
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    name: Verify transaction
+    runs-on: windows-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Verify PayPal transaction
+        shell: pwsh
+        env:
+          PAYPAL_ACCESS_TOKEN: ${{ secrets.PAYPAL_ACCESS_TOKEN }}
+          PAYPAL_CLIENT_ID: ${{ secrets.PAYPAL_CLIENT_ID }}
+          PAYPAL_SECRET: ${{ secrets.PAYPAL_SECRET }}
+        run: |
+          $argsList = @(
+            "-Amount", "5.00",
+            "-Currency", "USD",
+            "-LookbackHours", "${{ inputs.lookback_hours }}"
+          )
+
+          if ("${{ inputs.note_contains }}".Trim().Length -gt 0) {
+            $argsList += @("-NoteContains", "${{ inputs.note_contains }}")
+          }
+
+          if ("${{ inputs.sandbox }}" -eq "true") {
+            $argsList += "-Sandbox"
+          }
+
+          & .\scripts\verify-paypal-5usd.ps1 @argsList

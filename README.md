@@ -76,3 +76,5 @@ Before marking any order paid or delivered, run:
 ```
 
 See [PAYPAL_VERIFICATION.md](PAYPAL_VERIFICATION.md) for required PayPal API credentials and stricter note filters.
+
+You can also enable the included `PAYPAL_VERIFICATION_WORKFLOW.yml.example` as a manual GitHub Actions workflow after adding PayPal API credentials as repository secrets.

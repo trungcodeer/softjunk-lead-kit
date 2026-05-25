@@ -15,6 +15,7 @@
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "payment_verification_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
+  "payment_verification_workflow_template": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION_WORKFLOW.yml.example",
   "product_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
   "rss_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
   "share_kit_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",

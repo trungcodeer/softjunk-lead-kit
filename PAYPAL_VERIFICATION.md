@@ -38,6 +38,43 @@ Optional stricter checks:
 .\scripts\verify-paypal-5usd.ps1 -LookbackHours 168 -NoteContains "Estimate Follow-Up"
 ```
 
+## Verify from GitHub Actions
+
+Add repository secrets for either:
+
+- `PAYPAL_ACCESS_TOKEN`
+
+Or:
+
+- `PAYPAL_CLIENT_ID`
+- `PAYPAL_SECRET`
+
+This repository includes a workflow template:
+
+```text
+PAYPAL_VERIFICATION_WORKFLOW.yml.example
+```
+
+To enable it, copy that file to:
+
+```text
+.github/workflows/verify-paypal-payment.yml
+```
+
+Then run the manual workflow in GitHub:
+
+```text
+Actions -> Verify PayPal $5 payment -> Run workflow
+```
+
+Inputs:
+
+- `lookback_hours`: how far back to search, default `72`.
+- `note_contains`: optional text that must appear in the transaction details.
+- `sandbox`: only enable for sandbox API testing.
+
+The workflow succeeds only when the script exits `0` and prints `PAYPAL_PAYMENT_VERIFIED=true`. Creating or updating files under `.github/workflows/` requires GitHub workflow permission; if that permission is unavailable, run the PowerShell verifier locally instead.
+
 Exit codes:
 
 - `0`: a successful `5.00 USD` PayPal transaction was found.
