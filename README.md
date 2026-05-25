@@ -10,6 +10,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 - Pay $5 on PayPal: https://paypal.me/softjunk/5USD
 - Root buyer hub: https://trungcodeer.github.io/
+- Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
@@ -69,6 +70,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Root buyer hub: https://trungcodeer.github.io/
+- Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - GitHub-readable buyer index: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md

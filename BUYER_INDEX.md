@@ -11,6 +11,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Ready to pay: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
 - Root buyer hub: https://trungcodeer.github.io/
+- Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
@@ -34,6 +35,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Root buyer hub: https://trungcodeer.github.io/
+- Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
