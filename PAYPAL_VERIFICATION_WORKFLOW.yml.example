@@ -1,4 +1,4 @@
-name: Verify PayPal $5 payment
+name: Verify PayPal 5 USD payment
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
       lookback_hours:
         description: Hours of PayPal transaction history to search
         required: true
-        default: "72"
+        default: "168"
       note_contains:
         description: Optional PayPal note text to require
         required: false
@@ -16,38 +16,100 @@ on:
         required: false
         type: boolean
         default: false
+  schedule:
+    - cron: "17 */6 * * *"
 
 permissions:
   contents: read
+  issues: write
 
 jobs:
   verify:
-    name: Verify transaction
+    name: Verify 5 USD transaction
     runs-on: windows-latest
     timeout-minutes: 5
+    env:
+      PAYPAL_ACCESS_TOKEN: ${{ secrets.PAYPAL_ACCESS_TOKEN }}
+      PAYPAL_CLIENT_ID: ${{ secrets.PAYPAL_CLIENT_ID }}
+      PAYPAL_SECRET: ${{ secrets.PAYPAL_SECRET }}
+      VERIFY_LOOKBACK_HOURS: ${{ github.event.inputs.lookback_hours || '168' }}
+      VERIFY_NOTE_CONTAINS: ${{ github.event.inputs.note_contains || '' }}
+      VERIFY_SANDBOX: ${{ github.event.inputs.sandbox || 'false' }}
+      ANNOUNCEMENT_ISSUE: "2"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Verify PayPal transaction
+        id: verify
         shell: pwsh
-        env:
-          PAYPAL_ACCESS_TOKEN: ${{ secrets.PAYPAL_ACCESS_TOKEN }}
-          PAYPAL_CLIENT_ID: ${{ secrets.PAYPAL_CLIENT_ID }}
-          PAYPAL_SECRET: ${{ secrets.PAYPAL_SECRET }}
         run: |
+          $hasAccessToken = -not [string]::IsNullOrWhiteSpace($env:PAYPAL_ACCESS_TOKEN)
+          $hasClientPair = (-not [string]::IsNullOrWhiteSpace($env:PAYPAL_CLIENT_ID)) -and (-not [string]::IsNullOrWhiteSpace($env:PAYPAL_SECRET))
+
+          if (-not ($hasAccessToken -or $hasClientPair)) {
+            $message = "PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET"
+            Write-Host $message
+            Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "## PayPal verification"
+            Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value ""
+            Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value $message
+            "verified=false" >> $env:GITHUB_OUTPUT
+            "reason=missing_credentials" >> $env:GITHUB_OUTPUT
+            exit 0
+          }
+
           $argsList = @(
             "-Amount", "5.00",
             "-Currency", "USD",
-            "-LookbackHours", "${{ inputs.lookback_hours }}"
+            "-LookbackHours", $env:VERIFY_LOOKBACK_HOURS
           )
 
-          if ("${{ inputs.note_contains }}".Trim().Length -gt 0) {
-            $argsList += @("-NoteContains", "${{ inputs.note_contains }}")
+          if (-not [string]::IsNullOrWhiteSpace($env:VERIFY_NOTE_CONTAINS)) {
+            $argsList += @("-NoteContains", $env:VERIFY_NOTE_CONTAINS)
           }
 
-          if ("${{ inputs.sandbox }}" -eq "true") {
+          if ($env:VERIFY_SANDBOX -eq "true") {
             $argsList += "-Sandbox"
           }
 
-          & .\scripts\verify-paypal-5usd.ps1 @argsList
+          $output = & .\scripts\verify-paypal-5usd.ps1 @argsList 2>&1
+          $exitCode = $LASTEXITCODE
+          $text = ($output | Out-String).Trim()
+
+          if ($exitCode -eq 0 -and $text -match "PAYPAL_PAYMENT_VERIFIED=true") {
+            Write-Host "PAYPAL_PAYMENT_VERIFIED=true source=workflow amount=5.00 currency=USD"
+            Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "## PayPal verification"
+            Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value ""
+            Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "PAYPAL_PAYMENT_VERIFIED=true source=workflow amount=5.00 currency=USD"
+            "verified=true" >> $env:GITHUB_OUTPUT
+            "reason=verified" >> $env:GITHUB_OUTPUT
+            exit 0
+          }
+
+          if ([string]::IsNullOrWhiteSpace($text)) {
+            $text = "PAYPAL_PAYMENT_VERIFIED=false reason=empty_verifier_output"
+          }
+
+          Write-Host $text
+          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value "## PayPal verification"
+          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value ""
+          Add-Content -Path $env:GITHUB_STEP_SUMMARY -Value $text
+          "verified=false" >> $env:GITHUB_OUTPUT
+          "reason=not_found" >> $env:GITHUB_OUTPUT
+          exit 1
+
+      - name: Comment when verified
+        if: steps.verify.outputs.verified == 'true'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $body = @"
+          PAYPAL_PAYMENT_VERIFIED=true
+
+          The GitHub Actions PayPal verifier found a completed 5.00 USD transaction. Fulfillment can proceed only after the seller confirms the same payment in PayPal or trusts this workflow run.
+
+          Workflow run: $env:GITHUB_SERVER_URL/$env:GITHUB_REPOSITORY/actions/runs/$env:GITHUB_RUN_ID
+          "@
+
+          gh issue comment $env:ANNOUNCEMENT_ISSUE --body $body

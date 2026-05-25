@@ -95,19 +95,21 @@ To enable it, copy that file to:
 .github/workflows/verify-paypal-payment.yml
 ```
 
+The current publishing token does not have GitHub `workflow` scope, so this repository cannot add the live workflow file automatically. A user or token with `workflow` scope must copy the template into `.github/workflows/`.
+
 Then run the manual workflow in GitHub:
 
 ```text
-Actions -> Verify PayPal $5 payment -> Run workflow
+Actions -> Verify PayPal 5 USD payment -> Run workflow
 ```
 
 Inputs:
 
-- `lookback_hours`: how far back to search, default `72`.
+- `lookback_hours`: how far back to search, default `168`.
 - `note_contains`: optional text that must appear in the transaction details.
 - `sandbox`: only enable for sandbox API testing.
 
-The workflow succeeds only when the script exits `0` and prints `PAYPAL_PAYMENT_VERIFIED=true`. Creating or updating files under `.github/workflows/` requires GitHub workflow permission; if that permission is unavailable, run the PowerShell verifier locally instead.
+The template runs manually and on a 6-hour schedule. If secrets are missing, it records `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials` and does not claim the gate passed. When secrets exist, the workflow succeeds only when the script exits `0` and prints `PAYPAL_PAYMENT_VERIFIED=true`. On success it posts a short verification comment to the public announcement issue.
 
 Exit codes:
 
