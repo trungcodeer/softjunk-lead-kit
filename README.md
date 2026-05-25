@@ -11,6 +11,7 @@ https://paypal.me/softjunk/5USD
 What is on the page:
 
 - A free reply generator for small-business leads
+- Med spa and tutoring examples for appointment follow-up
 - A USD 5 digital kit with follow-up templates and a lead tracker
 - A USD 5 same-day custom follow-up sequence option
 
