@@ -26,6 +26,15 @@ https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/
 Buyer index:
 https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 
+AI agent buyer packet JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
+
+AI agent buyer packet text:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
+
+Public agent buyer packet Gist:
+https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
+
 GitHub-readable buyer index:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 
@@ -211,6 +220,7 @@ Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Offers:
+- Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
 - Free lead follow-up rewriter for $0: rewrites one weak follow-up message and creates a PayPal note.

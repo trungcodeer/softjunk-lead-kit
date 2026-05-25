@@ -6,6 +6,8 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 
 - One quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
+- Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
 - Weak message to rewrite: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Direct follow-up answer: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - Custom 7-day sequence: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
@@ -39,6 +41,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
+- AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
+- Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/

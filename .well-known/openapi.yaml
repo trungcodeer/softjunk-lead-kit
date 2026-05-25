@@ -61,6 +61,28 @@ paths:
             application/json:
               schema:
                 type: object
+  /agent-buyer-packet.json:
+    get:
+      operationId: getAgentBuyerPacket
+      summary: Get the AI agent buyer packet.
+      responses:
+        "200":
+          description: Agent-readable decision packet with the free audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
+          content:
+            application/json:
+              schema:
+                type: object
+  /agent-buyer-packet.txt:
+    get:
+      operationId: getAgentBuyerPacketText
+      summary: Get the copyable AI agent buyer packet text.
+      responses:
+        "200":
+          description: Plain-text packet an AI assistant or virtual assistant can copy when routing a relevant lead follow-up buyer.
+          content:
+            text/plain:
+              schema:
+                type: string
   /paypal-payment-intent.json:
     get:
       operationId: getProductPayPalPaymentIntent

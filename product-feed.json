@@ -53,6 +53,12 @@
   },
   "free_tools": [
     {
+      "name": "AI Agent Buyer Packet",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c"
+    },
+    {
       "name": "Lead Recovery Audit",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html"
     },
@@ -128,6 +134,9 @@
     "quiet_lead_buyer_route_json": "https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json",
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
+    "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
+    "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
+    "gist_agent_buyer_packet": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",

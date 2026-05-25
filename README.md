@@ -14,6 +14,8 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
+- Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
 - Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
 - Well-known payment intent: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
 - Root payment intent JSON: https://trungcodeer.github.io/paypal.json
@@ -47,6 +49,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
@@ -76,6 +79,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
+- AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
+- Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/

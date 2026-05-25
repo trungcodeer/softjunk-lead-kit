@@ -14,6 +14,9 @@
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
   "gist_raw_payment_intent_json_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
   "lead_recovery_audit_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
+  "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
+  "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
+  "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "quiet_lead_gist_url": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
@@ -58,6 +61,12 @@
     "verification_rule": "Do not claim an order is paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
   },
   "primary_paths": [
+    {
+      "use_when": "An AI assistant or virtual assistant needs the complete buyer handoff packet before recommending the $5 PayPal path.",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
+      "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
+      "why": "Provides an agent-safe decision path, copyable prompt, exact PayPal URL, payment note, and seller-side verification rule."
+    },
     {
       "use_when": "The buyer has a weak follow-up, basic lead numbers, and needs a concrete recovery audit before paying.",
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
@@ -171,6 +180,10 @@
   "machine_readable_sources": {
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
+    "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
+    "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
+    "gist_agent_buyer_packet": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
+    "gist_raw_agent_buyer_packet_json": "https://gist.githubusercontent.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c/raw/agent-buyer-packet.json",
     "root_hub": "https://trungcodeer.github.io/",
     "root_short_paypal": "https://trungcodeer.github.io/paypal/",
     "root_short_pay": "https://trungcodeer.github.io/pay/",
