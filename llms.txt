@@ -20,6 +20,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.m
 Lead loss calculator:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 
+Fix one quiet lead:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
 Free preview builder:
 https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 
@@ -93,6 +96,7 @@ Share kit JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
 
 Niche pages:
+- Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead follow-up template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html

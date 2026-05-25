@@ -23,6 +23,10 @@
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html"
     },
     {
+      "if": "The buyer wants the shortest free sample and checkout path for one quiet lead",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+    },
+    {
       "if": "The buyer wants to estimate the value of lost follow-up",
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html"
     },

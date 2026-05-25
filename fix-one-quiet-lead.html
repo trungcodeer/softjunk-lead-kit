@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fix One Quiet Lead for $5 | SoftJunk</title>
+  <meta name="description" content="Use one free follow-up message for a quiet lead, then buy a $5 custom 7-day sequence through PayPal if the lead is worth recovering.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
+  <link rel="stylesheet" href="niche-page.css">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Fix One Quiet Lead for $5">
+  <meta property="og:description" content="A short follow-up message, a QR checkout, and a $5 custom sequence path for one quiet lead.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fix One Quiet Lead for $5">
+  <meta name="twitter:description" content="One free follow-up message and a $5 custom sequence path.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Fix One Quiet Lead for $5",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+          "description": "A short follow-up offer for recovering one quiet lead with a $5 custom sequence option."
+        },
+        {
+          "@type": "Offer",
+          "name": "Custom 7-Day Lead Follow-Up Sequence",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="lead-follow-up-answers.html">Answers</a>
+        <a href="lead-follow-up-rewriter.html">Rewriter</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="printable-paypal-flyer.html">Flyer</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <h1 id="page-title">If one quiet lead is worth more than $5, fix the follow-up.</h1>
+        <p class="lead">Use the free message below now. If the lead matters, buy the $5 custom 7-day sequence for that business, service, source, tone, and next step.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 on PayPal</a>
+          <a class="button" href="agent-order.html">Create PayPal note</a>
+          <button class="button" type="button" id="copy-message">Copy free message</button>
+        </div>
+        <p class="status" id="status" aria-live="polite"></p>
+      </div>
+      <a class="qr-mini" href="pay-qr.html" aria-label="Open PayPal QR page">
+        <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
+        Scan $5
+      </a>
+    </section>
+
+    <section aria-labelledby="message-title">
+      <h2 id="message-title">Free message to send now</h2>
+      <p class="sample" id="free-message">Hi [Name], just checking if you still want help with [service].
+
+If price, timing, or fit is the main question, reply with that and I will answer it first.
+
+If you want the next step, reply "yes" and I will send it over.</p>
+    </section>
+
+    <section aria-labelledby="paid-title">
+      <h2 id="paid-title">What the $5 custom version adds</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Full week</h3>
+          <p>Day 0, 1, 3, 5, and 7 messages for one business and one lead situation.</p>
+        </article>
+        <article class="card">
+          <h3>Recovery replies</h3>
+          <p>No-show and price-objection replies matched to the same service and next step.</p>
+        </article>
+        <article class="card">
+          <h3>Clean handoff</h3>
+          <p>Use the generated PayPal note so payment can be matched to the right custom sequence.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="pay-title">
+      <div class="note-panel">
+        <div>
+          <h2 id="pay-title">Pay exactly $5</h2>
+          <p>For the digital kit, use PayPal note "Lead Follow-Up Kit." For a custom sequence, create the PayPal note first.</p>
+        </div>
+        <a class="qr-mini" href="pay-qr.html">
+          <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
+          QR checkout
+        </a>
+        <div class="actions">
+          <a class="button" href="checkout.html">Fast checkout</a>
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Fulfillment starts only after the seller can see the $5 PayPal transaction or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.</p>
+  </footer>
+
+  <script>
+    const copyButton = document.querySelector('#copy-message');
+    const message = document.querySelector('#free-message');
+    const statusMessage = document.querySelector('#status');
+
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(message.textContent.trim());
+        statusMessage.textContent = 'Message copied.';
+      } catch {
+        statusMessage.textContent = 'Copy failed. Select the message and copy it manually.';
+      }
+    });
+  </script>
+</body>
+</html>

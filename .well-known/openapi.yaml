@@ -94,6 +94,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /fix-one-quiet-lead.html:
+    get:
+      operationId: openFixOneQuietLead
+      summary: Open the shortest one-lead follow-up offer.
+      responses:
+        "200":
+          description: Short page with one free follow-up message and the $5 custom sequence checkout path.
+          content:
+            text/html:
+              schema:
+                type: string
   /lead-follow-up-rewriter.html:
     get:
       operationId: openLeadFollowUpRewriter

@@ -7,6 +7,7 @@
   "payment_qr_svg_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg",
   "public_order_board_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
+  "fix_one_quiet_lead_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "lead_follow_up_rewriter_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
   "lead_follow_up_answers_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
@@ -45,6 +46,12 @@
       "price": "0.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
       "delivery": "Instant browser-generated estimate and PayPal note"
+    },
+    {
+      "name": "Fix one quiet lead",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "delivery": "Instant free message plus a direct $5 custom sequence checkout path"
     },
     {
       "name": "Free lead follow-up rewriter",
@@ -118,6 +125,7 @@
     "Businesses with sent estimates or quotes"
   ],
   "niche_pages": [
+    "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",

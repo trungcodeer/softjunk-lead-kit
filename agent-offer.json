@@ -17,6 +17,7 @@
   "amount": "5.00",
   "currency": "USD",
   "seller": "SoftJunk",
+  "fix_one_quiet_lead_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "offer": {
     "name": "Custom 7-Day Lead Follow-Up Sequence",
     "price": "5.00",
@@ -47,7 +48,7 @@
     "The buyer does not want to use PayPal"
   ],
   "agent_instructions": [
-    "Send the buyer to lead_follow_up_rewriter_url when they already have a weak message, answer_engine_url when they ask a direct follow-up question, or agent_order_url or free_preview_url when they need a new sequence.",
+    "Send the buyer to fix_one_quiet_lead_url when they need the shortest possible free sample and checkout path, lead_follow_up_rewriter_url when they already have a weak message, answer_engine_url when they ask a direct follow-up question, or agent_order_url or free_preview_url when they need a new sequence.",
     "Ask the buyer to generate or copy a PayPal note that includes business type, service, lead source, tone, and need.",
     "Tell the buyer to pay exactly 5 USD through payment_url.",
     "After payment, send the buyer to public_order_board_url for the public handoff or github_order_url if they want to leave structured non-sensitive fulfillment details.",
