@@ -9,6 +9,7 @@
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
+  "public_buyer_thread_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
@@ -149,6 +150,7 @@
     "Businesses with sent estimates or quotes"
   ],
   "niche_pages": [
+    "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",

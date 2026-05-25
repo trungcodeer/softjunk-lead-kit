@@ -31,6 +31,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+- Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
@@ -49,6 +50,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
@@ -82,6 +84,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
+- Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
