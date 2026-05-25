@@ -5,6 +5,8 @@ Allow: /feed.xml
 Allow: /product-feed.json
 Allow: /share-kit.html
 Allow: /share-kit.json
+Allow: /pay-qr.html
+Allow: /paypal-qr.svg
 Allow: /.well-known/softjunk-offer.json
 Allow: /.well-known/openapi.yaml
 Allow: /.well-known/ai-plugin.json

@@ -5,6 +5,7 @@ A $5 lead follow-up kit and custom follow-up sequence for small businesses that 
 ## Buy or Try
 
 - Buy for $5: https://paypal.me/softjunk/5USD
+- Scan PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 - GitHub funding link: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 - Estimate missed lead value: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Get a free preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html

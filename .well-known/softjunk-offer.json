@@ -4,6 +4,7 @@
   "name": "SoftJunk Lead Follow-Up Kit",
   "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
   "amount": "5.00",
   "currency": "USD",
   "buy_now_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",

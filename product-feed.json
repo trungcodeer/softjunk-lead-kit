@@ -8,6 +8,7 @@
   "payment": {
     "provider": "PayPal.Me",
     "url": "https://paypal.me/softjunk/5USD",
+    "qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
     "amount": "5.00",
     "currency": "USD",
     "proof_required": "Fulfillment starts only after the seller can see the PayPal transaction."

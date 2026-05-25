@@ -3,6 +3,7 @@
   "updated": "2026-05-25",
   "currency": "USD",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",

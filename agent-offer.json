@@ -4,6 +4,7 @@
   "updated": "2026-05-25",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
   "amount": "5.00",
   "currency": "USD",
   "seller": "SoftJunk",
