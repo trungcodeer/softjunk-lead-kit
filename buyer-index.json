@@ -3,6 +3,7 @@
   "updated": "2026-05-26",
   "name": "SoftJunk Buyer Index",
   "purpose": "A single decision packet for AI assistants, crawlers, virtual assistants, and small-business buyers to choose the right SoftJunk $5 lead follow-up path without guessing.",
+  "root_hub_url": "https://trungcodeer.github.io/",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "quiet_lead_gist_url": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
@@ -141,6 +142,9 @@
   },
   "machine_readable_sources": {
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
+    "root_hub": "https://trungcodeer.github.io/",
+    "root_offer_json": "https://trungcodeer.github.io/root-offer.json",
+    "root_llms_txt": "https://trungcodeer.github.io/llms.txt",
     "github_profile_pages": "https://trungcodeer.github.io/trungcodeer/",
     "github_profile_readme": "https://github.com/trungcodeer/trungcodeer",
     "github_profile_offer_json": "https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json",

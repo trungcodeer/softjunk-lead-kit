@@ -2,6 +2,8 @@
   "schema_version": "softjunk-well-known-offer-v1",
   "updated": "2026-05-26",
   "name": "SoftJunk Lead Follow-Up Kit",
+  "root_hub_url": "https://trungcodeer.github.io/",
+  "root_offer_json_url": "https://trungcodeer.github.io/root-offer.json",
   "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
   "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",

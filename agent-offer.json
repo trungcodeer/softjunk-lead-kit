@@ -3,6 +3,8 @@
   "name": "SoftJunk AI Agent Order Path",
   "updated": "2026-05-26",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "root_hub_url": "https://trungcodeer.github.io/",
+  "root_offer_json_url": "https://trungcodeer.github.io/root-offer.json",
   "github_buyer_index_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "github_profile_offer_url": "https://github.com/trungcodeer/trungcodeer",
   "github_profile_microsite_url": "https://trungcodeer.github.io/trungcodeer/",
