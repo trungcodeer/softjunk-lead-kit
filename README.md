@@ -1,27 +1,31 @@
-# SoftJunk Lead Kit Sales Page
+# SoftJunk Lead Kit
 
-Public sales page for the USD 5 SoftJunk lead follow-up kit. The page includes a free lead reply generator, digital kit offer, same-day custom sequence offer, and PayPal buttons.
+Follow-up templates for small businesses that get leads from forms, DMs, email, ads, referrals, or calls.
 
-Live page:
-https://trungcodeer.github.io/softjunk-lead-kit/
+![Preview of the SoftJunk Lead Kit](preview.png)
 
-Niche pages:
-- https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
-- https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
+## Try It
 
-Payment link:
+- Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
+- Med spa template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
+- Tutoring template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
+
+## Buy
+
+There are two USD 5 options:
+
+1. Digital kit: 7-day follow-up guide, templates, tracker CSV, and AI prompts.
+2. Custom sequence: Day 0, 1, 3, 5, and 7 messages written for one business, plus no-show and price-objection replies.
+
+Pay here:
 https://paypal.me/softjunk/5USD
 
-What is on the page:
+For the digital kit, add the PayPal note `Lead Follow-Up Kit`.
 
-- A free reply generator for small-business leads
-- Med spa and tutoring examples for appointment follow-up
-- Dedicated med spa and tutoring follow-up template pages
-- A USD 5 digital kit with follow-up templates and a lead tracker
-- A USD 5 same-day custom follow-up sequence option
+For the custom sequence, fill the free generator, click `Copy PayPal note`, and paste that intake note into PayPal before paying.
 
-This repository intentionally does not include the product ZIP. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
+## Delivery
 
-For the digital kit, buyers add the note `Lead Follow-Up Kit`.
+The product ZIP is not public in this repository. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
 
-For the custom sequence, buyers fill the free generator, click `Copy PayPal note`, and paste that intake note into PayPal before paying.
+Custom sequences are delivered same day after the payment appears in PayPal.
