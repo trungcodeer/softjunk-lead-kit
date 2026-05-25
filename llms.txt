@@ -91,7 +91,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/social-card.png
 GitHub order issue forms:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 
-Public order board:
+Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Offers:
