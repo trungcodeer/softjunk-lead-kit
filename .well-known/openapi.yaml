@@ -83,6 +83,28 @@ paths:
             text/plain:
               schema:
                 type: string
+  /ai-follow-up-prompt.json:
+    get:
+      operationId: getAiFollowUpPrompt
+      summary: Get the AI follow-up prompt packet.
+      responses:
+        "200":
+          description: JSON packet with a copyable AI prompt, free audit route, exact PayPal URL, payment note, and verification rule.
+          content:
+            application/json:
+              schema:
+                type: object
+  /ai-follow-up-prompt.txt:
+    get:
+      operationId: getAiFollowUpPromptText
+      summary: Get the copyable AI follow-up prompt text.
+      responses:
+        "200":
+          description: Plain-text prompt for ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead.
+          content:
+            text/plain:
+              schema:
+                type: string
   /paypal-payment-intent.json:
     get:
       operationId: getProductPayPalPaymentIntent
@@ -156,6 +178,17 @@ paths:
       responses:
         "200":
           description: Browser audit that estimates missed lead value, rewrites the next follow-up, and creates a PayPal note.
+          content:
+            text/html:
+              schema:
+                type: string
+  /ai-follow-up-prompt.html:
+    get:
+      operationId: openAiFollowUpPrompt
+      summary: Open the AI follow-up prompt page.
+      responses:
+        "200":
+          description: Browser page with copyable AI prompt, free audit route, exact PayPal URL, payment note, and verification rule.
           content:
             text/html:
               schema:

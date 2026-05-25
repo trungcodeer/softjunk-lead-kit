@@ -10,6 +10,10 @@
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
   "public_buyer_thread_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
+  "ai_follow_up_prompt_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+  "ai_follow_up_prompt_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+  "ai_follow_up_prompt_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
+  "gist_ai_follow_up_prompt_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "gist_payment_intent_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
@@ -52,6 +56,15 @@
   "well_known_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
   "openapi_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
   "offers": [
+    {
+      "name": "Free AI follow-up prompt",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
+      "gist_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
+      "delivery": "Copyable prompt for ChatGPT, Claude, Gemini, or VAs to write a better quiet-lead follow-up and route to the 5 USD custom sequence when useful"
+    },
     {
       "name": "Free AI agent buyer packet",
       "price": "0.00",
@@ -150,6 +163,7 @@
     "Businesses with sent estimates or quotes"
   ],
   "niche_pages": [
+    "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
     "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",

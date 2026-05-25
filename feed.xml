@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 04:47:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 05:08:00 +0700</lastBuildDate>
+    <item>
+      <title>AI Follow-Up Prompt</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html</guid>
+      <description>Free copyable prompt for ChatGPT, Claude, Gemini, or VAs to recover one quiet lead and route to the 5 USD custom sequence when useful.</description>
+      <pubDate>Tue, 26 May 2026 05:08:00 +0700</pubDate>
+    </item>
     <item>
       <title>Public Buyer Examples Thread</title>
       <link>https://github.com/trungcodeer/softjunk-lead-kit/issues/3</link>

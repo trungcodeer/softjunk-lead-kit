@@ -54,6 +54,13 @@
   },
   "free_tools": [
     {
+      "name": "AI Follow-Up Prompt",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
+      "gist_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1"
+    },
+    {
       "name": "AI Agent Buyer Packet",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
@@ -138,6 +145,10 @@
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
     "gist_agent_buyer_packet": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
+    "ai_follow_up_prompt": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+    "ai_follow_up_prompt_text": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+    "ai_follow_up_prompt_json": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
+    "gist_ai_follow_up_prompt": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
     "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",

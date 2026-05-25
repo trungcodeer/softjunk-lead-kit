@@ -14,6 +14,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
 - Payment intent JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
@@ -50,6 +51,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
+- AI follow-up prompt text: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt
+- Public AI follow-up prompt Gist: https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
@@ -81,6 +85,8 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
+- AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json
 - AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c

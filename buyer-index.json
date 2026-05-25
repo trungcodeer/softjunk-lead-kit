@@ -18,6 +18,10 @@
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
   "public_buyer_thread_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
+  "ai_follow_up_prompt_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+  "ai_follow_up_prompt_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+  "ai_follow_up_prompt_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
+  "gist_ai_follow_up_prompt_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "quiet_lead_gist_url": "https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08",
@@ -62,6 +66,13 @@
     "verification_rule": "Do not claim an order is paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
   },
   "primary_paths": [
+    {
+      "use_when": "The buyer or VA wants to paste one prompt into ChatGPT, Claude, Gemini, or another assistant.",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
+      "why": "Copyable prompt gives a free useful answer first, then routes to the exact $5 PayPal custom sequence when the buyer wants the full plan."
+    },
     {
       "use_when": "The buyer wants public examples before paying for the $5 custom sequence.",
       "send_to": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
@@ -185,6 +196,10 @@
   },
   "machine_readable_sources": {
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
+    "ai_follow_up_prompt": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+    "ai_follow_up_prompt_text": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
+    "ai_follow_up_prompt_json": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
+    "gist_ai_follow_up_prompt": "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
     "public_buyer_thread": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",

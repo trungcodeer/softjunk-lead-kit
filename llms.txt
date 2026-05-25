@@ -29,6 +29,15 @@ https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 AI agent buyer packet JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 
+AI follow-up prompt:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
+
+AI follow-up prompt text:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt
+
+Public AI follow-up prompt Gist:
+https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1
+
 AI agent buyer packet text:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 
@@ -223,6 +232,7 @@ Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Offers:
+- Free AI follow-up prompt for $0: copy into ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead and route to the 5 USD custom sequence when useful.
 - Public buyer examples thread for $0: missed call, quiet quote, and price-objection examples with the exact 5 USD PayPal path.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
