@@ -16,6 +16,8 @@
   "examples_url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
   "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+  "paid_kit_proof_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
+  "paid_kit_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "payment_verification_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
   "payment_verification_workflow_template": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION_WORKFLOW.yml.example",

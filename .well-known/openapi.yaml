@@ -50,6 +50,28 @@ paths:
             text/html:
               schema:
                 type: string
+  /paid-kit-proof.html:
+    get:
+      operationId: openPaidKitProof
+      summary: Open public proof that the paid ZIP is packaged.
+      responses:
+        "200":
+          description: Public paid kit proof page with ZIP hash, file manifest, price, and fulfillment gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /paid-kit-manifest.json:
+    get:
+      operationId: getPaidKitManifest
+      summary: Get the paid ZIP manifest without exposing the private ZIP.
+      responses:
+        "200":
+          description: JSON manifest with ZIP byte size, SHA-256, file list, and fulfillment rule.
+          content:
+            application/json:
+              schema:
+                type: object
   /lead-loss-calculator.html:
     get:
       operationId: openLeadLossCalculator

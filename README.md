@@ -10,6 +10,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+- Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
@@ -50,6 +51,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+- Paid kit manifest: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 - Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
 - RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
 - Share kit: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html

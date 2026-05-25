@@ -32,6 +32,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 AI buyer brief:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 
+Paid ZIP proof:
+https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
+
+Paid kit manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
+
 Machine-readable offers:
 https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 

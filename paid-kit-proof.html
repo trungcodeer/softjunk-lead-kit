@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paid Kit Proof | SoftJunk Lead Kit</title>
+  <meta name="description" content="Public proof that the $5 SoftJunk paid ZIP exists without exposing the private deliverable before PayPal payment.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Paid Kit Proof | SoftJunk Lead Kit">
+  <meta property="og:description" content="ZIP hash, file manifest, price, PayPal URL, and fulfillment gate for the $5 SoftJunk paid kit.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Paid Kit Proof | SoftJunk Lead Kit">
+  <meta name="twitter:description" content="Public manifest for the private $5 SoftJunk paid ZIP.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card.png">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json" title="SoftJunk paid kit manifest">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Paid Kit Proof",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
+          "description": "Public proof that the $5 SoftJunk paid ZIP exists without exposing the private deliverable before PayPal payment."
+        },
+        {
+          "@type": "DigitalDocument",
+          "name": "SoftJunk Lead Follow-Up Kit paid ZIP manifest",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
+          "encodingFormat": "application/json",
+          "sha256": "ddfc19a8237fc5962816c9f60197d8df6136db6404ffe205d45dceae81c5d6f1"
+        },
+        {
+          "@type": "Offer",
+          "name": "SoftJunk Lead Follow-Up Kit",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f8f7f1;
+      --paper: #ffffff;
+      --ink: #111827;
+      --muted: #475569;
+      --line: #d5dce5;
+      --teal: #0f766e;
+      --teal-dark: #0b4f49;
+      --blue: #2563eb;
+      --soft: #e8f3f1;
+      --amber: #92400e;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: linear-gradient(90deg, var(--teal) 0, var(--teal) 14px, var(--bg) 14px, var(--bg) 100%);
+      line-height: 1.5;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--amber);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 20px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1080px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      color: var(--ink);
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--muted);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 360px;
+      gap: 32px;
+      align-items: center;
+      padding: 56px 0 36px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--teal);
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 720px;
+      margin-bottom: 16px;
+      font-size: 52px;
+      line-height: 1.04;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin-bottom: 6px;
+      font-size: 20px;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+    }
+
+    .lead {
+      max-width: 700px;
+      margin-bottom: 22px;
+      font-size: 20px;
+    }
+
+    .button,
+    button {
+      min-height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 7px;
+      padding: 0 18px;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      font: inherit;
+      font-weight: 800;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .button.primary {
+      background: var(--blue);
+      color: #ffffff;
+      border-color: var(--blue);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .visual {
+      padding: 10px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+    }
+
+    section {
+      padding: 30px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .panel {
+      min-height: 100%;
+      padding: 20px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .manifest {
+      display: grid;
+      grid-template-columns: 170px minmax(0, 1fr);
+      gap: 10px 18px;
+      margin: 0;
+    }
+
+    .manifest dt {
+      color: var(--ink);
+      font-weight: 800;
+    }
+
+    .manifest dd {
+      margin: 0;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+
+    code {
+      font-family: Consolas, "Liberation Mono", monospace;
+      font-size: 0.95em;
+    }
+
+    .files {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .rule {
+      background: var(--soft);
+      border-color: #b9ddd5;
+    }
+
+    .status {
+      min-height: 24px;
+      margin: 12px 0 0;
+      color: var(--teal-dark);
+      font-weight: 800;
+    }
+
+    footer {
+      padding: 30px 0 48px;
+    }
+
+    @media (max-width: 860px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      header,
+      main,
+      footer {
+        width: min(100% - 28px, 1080px);
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      .button,
+      button {
+        width: 100%;
+      }
+
+      .manifest {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="./">SoftJunk Lead Kit</a>
+      <div class="nav-links">
+        <a href="pay.html">Pay</a>
+        <a href="agent-buy-brief.html">AI brief</a>
+        <a href="paid-kit-manifest.json">Manifest JSON</a>
+        <a href="after-pay.html">After pay</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Paid ZIP proof</p>
+        <h1 id="page-title">The paid kit is packaged and gated.</h1>
+        <p class="lead">This page proves the $5 ZIP exists by publishing its manifest, byte size, and SHA-256 hash without exposing the private deliverable before PayPal payment.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 on PayPal</a>
+          <a class="button" href="paid-kit-manifest.json">Open manifest JSON</a>
+          <button type="button" id="copy-hash">Copy SHA-256</button>
+        </div>
+        <p class="status" id="copy-status" role="status" aria-live="polite"></p>
+      </div>
+      <div class="visual">
+        <img src="social-card.png" alt="SoftJunk Lead Kit $5 PayPal offer card">
+      </div>
+    </section>
+
+    <section aria-labelledby="manifest-title">
+      <h2 id="manifest-title">ZIP manifest</h2>
+      <div class="panel">
+        <dl class="manifest">
+          <dt>Price</dt>
+          <dd>5.00 USD</dd>
+          <dt>Payment URL</dt>
+          <dd><a href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">https://paypal.me/softjunk/5USD</a></dd>
+          <dt>ZIP public?</dt>
+          <dd>No. Delivery is manual after payment appears in PayPal.</dd>
+          <dt>ZIP bytes</dt>
+          <dd>5377</dd>
+          <dt>ZIP SHA-256</dt>
+          <dd><code id="zip-hash">ddfc19a8237fc5962816c9f60197d8df6136db6404ffe205d45dceae81c5d6f1</code></dd>
+          <dt>Built at</dt>
+          <dd>2026-05-25T21:55:30+07:00</dd>
+        </dl>
+      </div>
+    </section>
+
+    <section aria-labelledby="files-title">
+      <h2 id="files-title">Files inside the paid ZIP</h2>
+      <div class="grid">
+        <article class="panel">
+          <h3>Guide and tracker</h3>
+          <ul class="files">
+            <li><code>README.txt</code>: buyer start note and delivery rule.</li>
+            <li><code>guide.html</code>: browser guide for using the workflow.</li>
+            <li><code>lead-tracker.csv</code>: spreadsheet tracker for open leads and next actions.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <h3>Copy assets</h3>
+          <ul class="files">
+            <li><code>templates.txt</code>: copy-paste follow-up templates.</li>
+            <li><code>ai-prompts.txt</code>: prompts for adapting messages by niche, channel, concern, and tone.</li>
+          </ul>
+        </article>
+        <article class="panel rule">
+          <h3>Fulfillment gate</h3>
+          <p>Send the paid ZIP only after the seller can see the 5 USD PayPal transaction or the verifier returns <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+          <p><a href="PAYPAL_VERIFICATION.md">Read verification instructions</a>.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SoftJunk Lead Kit. The manifest is public; the paid ZIP is not public.</p>
+  </footer>
+
+  <script>
+    const copyButton = document.querySelector('#copy-hash');
+    const hash = document.querySelector('#zip-hash');
+    const statusMessage = document.querySelector('#copy-status');
+
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(hash.textContent.trim());
+        statusMessage.textContent = 'SHA-256 copied.';
+      } catch {
+        statusMessage.textContent = 'Copy failed. Select the hash manually.';
+      }
+    });
+  </script>
+</body>
+</html>

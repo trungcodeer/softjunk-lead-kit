@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 22:20:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 22:55:00 +0700</lastBuildDate>
+    <item>
+      <title>Paid ZIP Proof for SoftJunk Lead Kit</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</guid>
+      <description>Public proof that the $5 paid ZIP is packaged, with SHA-256 hash, byte size, file manifest, and fulfillment gate.</description>
+      <pubDate>Mon, 25 May 2026 22:55:00 +0700</pubDate>
+    </item>
     <item>
       <title>AI Buyer Brief for $5 Lead Follow-Up</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html</link>
