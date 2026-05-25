@@ -1,6 +1,6 @@
 # SoftJunk Lead Kit Sales Page
 
-Public sales page for the USD 5 SoftJunk lead follow-up kit. The page includes a free lead reply generator and PayPal buttons.
+Public sales page for the USD 5 SoftJunk lead follow-up kit. The page includes a free lead reply generator, digital kit offer, same-day custom sequence offer, and PayPal buttons.
 
 Live page:
 https://trungcodeer.github.io/softjunk-lead-kit/
