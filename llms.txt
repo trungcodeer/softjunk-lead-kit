@@ -8,6 +8,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/
 Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 
+Fast checkout:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+
 After-payment handoff:
 https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 

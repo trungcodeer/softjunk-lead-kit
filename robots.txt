@@ -9,6 +9,7 @@ Allow: /follow-up-examples.html
 Allow: /share-kit.html
 Allow: /share-kit.json
 Allow: /agent-buy-brief.html
+Allow: /checkout.html
 Allow: /paid-kit-proof.html
 Allow: /paid-kit-manifest.json
 Allow: /pay-qr.html

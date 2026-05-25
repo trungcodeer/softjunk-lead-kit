@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Mon, 25 May 2026 22:55:00 +0700</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 23:20:00 +0700</lastBuildDate>
+    <item>
+      <title>Fast $5 Checkout for SoftJunk Lead Kit</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/checkout.html</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/checkout.html</guid>
+      <description>A minimal checkout page with the PayPal.Me payment link, copyable PayPal note, and paid ZIP proof link.</description>
+      <pubDate>Mon, 25 May 2026 23:20:00 +0700</pubDate>
+    </item>
     <item>
       <title>Paid ZIP Proof for SoftJunk Lead Kit</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</link>

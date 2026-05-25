@@ -149,6 +149,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /checkout.html:
+    get:
+      operationId: openCheckout
+      summary: Open the fast $5 checkout page.
+      responses:
+        "200":
+          description: Minimal checkout page with PayPal.Me payment link, copyable note, and proof link.
+          content:
+            text/html:
+              schema:
+                type: string
   /after-pay.html:
     get:
       operationId: openAfterPaymentHandoff

@@ -10,6 +10,7 @@
   "amount": "5.00",
   "currency": "USD",
   "buy_now_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
+  "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
