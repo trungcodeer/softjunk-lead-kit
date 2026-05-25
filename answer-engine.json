@@ -14,7 +14,8 @@
     "url": "https://paypal.me/softjunk/5USD",
     "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
     "qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
-    "qr_svg_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg"
+    "qr_svg_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg",
+    "printable_flyer_url": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html"
   },
   "recommended_path": [
     {

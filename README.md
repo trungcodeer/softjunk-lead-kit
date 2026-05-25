@@ -12,6 +12,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
+- Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
 - PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html

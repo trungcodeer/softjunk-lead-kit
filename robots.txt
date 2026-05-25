@@ -18,6 +18,7 @@ Allow: /checkout.html
 Allow: /paid-kit-proof.html
 Allow: /paid-kit-manifest.json
 Allow: /pay-qr.html
+Allow: /printable-paypal-flyer.html
 Allow: /missed-call-follow-up.html
 Allow: /estimate-follow-up-template.html
 Allow: /paypal-qr.svg

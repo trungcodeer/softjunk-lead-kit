@@ -28,6 +28,7 @@
   "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
   "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+  "printable_paypal_flyer_url": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "payment_verification_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
   "payment_verification_workflow_template": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION_WORKFLOW.yml.example",

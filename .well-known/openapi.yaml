@@ -216,6 +216,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /printable-paypal-flyer.html:
+    get:
+      operationId: openPrintablePayPalFlyer
+      summary: Open the printable $5 PayPal flyer.
+      responses:
+        "200":
+          description: Printable QR flyer for the $5 SoftJunk lead follow-up offer.
+          content:
+            text/html:
+              schema:
+                type: string
   /paypal-qr.svg:
     get:
       operationId: getPayPalQrSvg

@@ -116,6 +116,9 @@ https://paypal.me/softjunk/5USD
 PayPal QR page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 
+Printable QR flyer:
+https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
+
 PayPal QR SVG:
 https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 
