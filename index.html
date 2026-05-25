@@ -687,6 +687,7 @@
           </div>
           <div class="generator-actions">
             <button class="button primary" type="submit">Generate sample</button>
+            <button class="button secondary" type="button" id="copy-paypal-note">Copy PayPal note</button>
             <button class="button secondary" type="button" id="copy-result">Copy sample</button>
           </div>
         </form>
@@ -728,7 +729,7 @@
             <li>Price objection reply</li>
             <li>Same-day delivery</li>
           </ul>
-          <p><strong>PayPal note:</strong> Custom Follow-Up</p>
+          <p><strong>PayPal note:</strong> Custom Follow-Up. For best results, use the generator above and copy the PayPal note before paying.</p>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Order custom for $5</a>
         </article>
       </div>
@@ -785,7 +786,7 @@ Happy to help. If easier, reply with just the number:
         </details>
         <details>
           <summary>How does the custom sequence work?</summary>
-          <p>Add the PayPal note "Custom Follow-Up". After payment, send the business type, service, lead source, tone, and next step you want leads to take.</p>
+          <p>Fill out the free generator, click "Copy PayPal note", then paste that note into PayPal when paying. The note includes your business type, service, lead source, tone, concern, and next step.</p>
         </details>
         <details>
           <summary>What file formats are included?</summary>
@@ -807,6 +808,7 @@ Happy to help. If easier, reply with just the number:
     const result = document.querySelector('#generator-result');
     const statusMessage = document.querySelector('#generator-status');
     const copyButton = document.querySelector('#copy-result');
+    const copyPayPalNoteButton = document.querySelector('#copy-paypal-note');
 
     function clean(value, fallback) {
       const text = String(value || '').trim().replace(/\s+/g, ' ');
@@ -846,6 +848,17 @@ Hi [Name], one useful note before you decide: most people ask about ${concern.to
 I can keep this simple. Do you want me to send the next step?`;
     }
 
+    function makePayPalNote(data) {
+      const business = clean(data.get('businessType'), 'local business');
+      const service = clean(data.get('service'), 'your service');
+      const source = clean(data.get('leadSource'), 'message');
+      const tone = clean(data.get('tone'), 'friendly');
+      const concern = clean(data.get('concern'), 'timing');
+      const nextStep = clean(data.get('nextStep'), 'book a quick call');
+
+      return `Custom Follow-Up | Business: ${business} | Service: ${service} | Source: ${source} | Tone: ${tone} | Concern: ${concern} | Next: ${nextStep}`;
+    }
+
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       if (!form.reportValidity()) return;
@@ -867,6 +880,19 @@ I can keep this simple. Do you want me to send the next step?`;
         statusMessage.textContent = 'Sample copied.';
       } catch {
         statusMessage.textContent = 'Select the sample text and copy it manually.';
+      }
+    });
+
+    copyPayPalNoteButton.addEventListener('click', async () => {
+      if (!form.reportValidity()) return;
+
+      const note = makePayPalNote(new FormData(form));
+      try {
+        await navigator.clipboard.writeText(note);
+        statusMessage.textContent = 'PayPal note copied. Paste it into PayPal when ordering the custom sequence.';
+      } catch {
+        result.textContent = note;
+        statusMessage.textContent = 'Copy the PayPal note from the sample output box.';
       }
     });
   </script>
