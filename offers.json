@@ -8,6 +8,7 @@
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
+  "examples_url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
@@ -33,6 +34,12 @@
       "price": "0.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
       "delivery": "Instant browser-generated preview"
+    },
+    {
+      "name": "Free follow-up before and after examples",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
+      "delivery": "Instant browser-readable examples"
     },
     {
       "name": "Custom 7-day lead follow-up sequence",
@@ -75,6 +82,7 @@
   ],
   "niche_pages": [
     "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html",

@@ -61,6 +61,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /follow-up-examples.html:
+    get:
+      operationId: openFollowUpExamples
+      summary: Open lead follow-up before and after examples.
+      responses:
+        "200":
+          description: Before and after examples for weak and improved lead follow-up messages.
+          content:
+            text/html:
+              schema:
+                type: string
   /agent-order.html:
     get:
       operationId: openAgentOrderPath

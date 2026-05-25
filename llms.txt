@@ -23,6 +23,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 Template library:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 
+Before and after examples:
+https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
+
 AI agent order path:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
@@ -52,6 +55,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
 
 Niche pages:
 - Lead follow-up template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
+- Lead follow-up before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
 - Med spa follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html

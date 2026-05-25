@@ -57,6 +57,10 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html"
     },
     {
+      "name": "Lead Follow-Up Before and After Examples",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html"
+    },
+    {
       "name": "Missed Call Follow-Up Sample",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html"
     },
@@ -69,6 +73,7 @@
     "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
     "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
     "template_library": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
+    "examples": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
     "well_known_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
     "openapi_yaml": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
     "share_kit": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",
