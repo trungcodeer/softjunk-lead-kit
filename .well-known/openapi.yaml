@@ -50,6 +50,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /lead-follow-up-templates.html:
+    get:
+      operationId: openLeadFollowUpTemplates
+      summary: Open the lead follow-up template library.
+      responses:
+        "200":
+          description: Template library for small-business follow-up samples and $5 custom sequence paths.
+          content:
+            text/html:
+              schema:
+                type: string
   /agent-order.html:
     get:
       operationId: openAgentOrderPath

@@ -45,6 +45,7 @@
     "Tell the buyer that fulfillment is manual and uses the email shown in the PayPal transaction."
   ],
   "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html",
+  "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
   "lead_loss_calculator_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "general_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",

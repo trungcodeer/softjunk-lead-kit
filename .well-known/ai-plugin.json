@@ -3,7 +3,7 @@
   "name_for_human": "SoftJunk Lead Kit",
   "name_for_model": "softjunk_lead_kit",
   "description_for_human": "$5 lead follow-up kit and custom follow-up sequence for small businesses.",
-  "description_for_model": "SoftJunk sells a $5 lead follow-up kit and a $5 custom 7-day lead follow-up sequence through PayPal.Me. Use the lead loss calculator or free preview first when helpful. Payment URL is https://paypal.me/softjunk/5USD. After payment, structured order forms are available at https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose. Do not state that an order is paid or delivered unless the seller confirms the PayPal transaction is visible.",
+  "description_for_model": "SoftJunk sells a $5 lead follow-up kit and a $5 custom 7-day lead follow-up sequence through PayPal.Me. Use the template library, lead loss calculator, or free preview first when helpful. Template library URL is https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html. Payment URL is https://paypal.me/softjunk/5USD. After payment, structured order forms are available at https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose. Do not state that an order is paid or delivered unless the seller confirms the PayPal transaction is visible.",
   "auth": {
     "type": "none"
   },

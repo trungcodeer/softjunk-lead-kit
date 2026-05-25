@@ -22,9 +22,11 @@ Use PayPal note `Lead Follow-Up Kit` for the ZIP. For a custom sequence, use the
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Free preview builder: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
+- Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+- Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Dental template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
 - Med spa template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
