@@ -4,15 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SoftJunk Lead Follow-Up Kit - $5</title>
-  <meta name="description" content="Try a free lead reply generator, then get the $5 SoftJunk lead follow-up kit with copy-paste messages, a lead tracker, AI prompts, and a 7-day workflow.">
+  <meta name="description" content="Try a free lead reply generator, then get a $5 lead follow-up kit or a same-day custom follow-up sequence through SoftJunk PayPal.Me.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="SoftJunk Lead Follow-Up Kit - $5">
-  <meta property="og:description" content="Try a free lead reply generator, then get copy-paste follow-up messages, a lead tracker, AI prompts, and a simple 7-day workflow for small businesses.">
+  <meta property="og:description" content="Try a free lead reply generator, then get a $5 lead follow-up kit or same-day custom follow-up sequence for small businesses.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
   <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "OfferCatalog",
+      "name": "SoftJunk Lead Follow-Up Offers",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "7-Day Lead Follow-Up Kit",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Custom Lead Follow-Up Sequence",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
   <style>
     :root {
       color-scheme: light;
@@ -287,6 +313,44 @@
       padding: 20px;
     }
 
+    .offer-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .offer-card {
+      display: grid;
+      align-content: start;
+      gap: 14px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      min-height: 100%;
+    }
+
+    .offer-card h3 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.15;
+    }
+
+    .offer-card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .offer-list {
+      margin: 0;
+      padding-left: 20px;
+      color: var(--muted);
+    }
+
+    .offer-list li {
+      margin-bottom: 7px;
+    }
+
     .form-grid {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -461,7 +525,8 @@
       .grid,
       .steps,
       .buy-panel,
-      .generator {
+      .generator,
+      .offer-grid {
         grid-template-columns: 1fr;
       }
 
@@ -530,6 +595,7 @@
       <div class="nav-links">
         <a href="#inside">Inside</a>
         <a href="#generator">Generator</a>
+        <a href="#offers">Offers</a>
         <a href="#sample">Sample</a>
         <a href="#buy">Buy</a>
       </div>
@@ -630,9 +696,41 @@
           <p class="result-output" id="generator-result" aria-live="polite">Fill out the form and generate a short Day 0, Day 1, and Day 3 follow-up sample.</p>
           <p class="result-status" id="generator-status" aria-live="polite"></p>
           <div class="generator-actions">
-            <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Get the full kit for $5</a>
+            <a class="button primary" href="#offers">Choose a $5 option</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="offers" aria-labelledby="offers-title">
+      <h2 id="offers-title">Two $5 options</h2>
+      <p class="section-lead">Pick the faster fit. Use the PayPal note exactly so the payment can be matched to the right delivery.</p>
+      <div class="offer-grid">
+        <article class="offer-card">
+          <h3>Digital kit</h3>
+          <p>Best if you want the templates and tracker now.</p>
+          <ul class="offer-list">
+            <li>7-day follow-up guide</li>
+            <li>Lead tracker CSV</li>
+            <li>AI prompt pack</li>
+            <li>Delivery by ZIP</li>
+          </ul>
+          <p><strong>PayPal note:</strong> Lead Follow-Up Kit</p>
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Buy the kit for $5</a>
+        </article>
+
+        <article class="offer-card">
+          <h3>Custom sequence</h3>
+          <p>Best if you want the messages written for one business today.</p>
+          <ul class="offer-list">
+            <li>Day 0, 1, 3, 5, and 7 messages</li>
+            <li>No-show recovery message</li>
+            <li>Price objection reply</li>
+            <li>Same-day delivery</li>
+          </ul>
+          <p><strong>PayPal note:</strong> Custom Follow-Up</p>
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Order custom for $5</a>
+        </article>
       </div>
     </section>
 
@@ -671,8 +769,8 @@ Happy to help. If easier, reply with just the number:
     <section id="buy" aria-labelledby="buy-title">
       <div class="buy-panel">
         <div>
-          <h2 id="buy-title">Buy the kit for $5</h2>
-          <p>Pay with PayPal.Me. Add the note "Lead Follow-Up Kit" so the payment can be matched to the ZIP delivery.</p>
+          <h2 id="buy-title">Ready to use it?</h2>
+          <p>Pay with PayPal.Me. Use note "Lead Follow-Up Kit" for the ZIP, or "Custom Follow-Up" for same-day custom writing.</p>
         </div>
         <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
       </div>
@@ -684,6 +782,10 @@ Happy to help. If easier, reply with just the number:
         <details>
           <summary>How is the file delivered?</summary>
           <p>The ZIP is delivered manually to the email shown in the PayPal transaction. Add the note "Lead Follow-Up Kit" when paying.</p>
+        </details>
+        <details>
+          <summary>How does the custom sequence work?</summary>
+          <p>Add the PayPal note "Custom Follow-Up". After payment, send the business type, service, lead source, tone, and next step you want leads to take.</p>
         </details>
         <details>
           <summary>What file formats are included?</summary>
