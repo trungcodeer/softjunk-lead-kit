@@ -37,6 +37,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
+- Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
@@ -62,6 +63,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Answer engine JSON: https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
+- Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - Paid kit manifest: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 - Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
