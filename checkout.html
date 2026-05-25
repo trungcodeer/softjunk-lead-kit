@@ -278,6 +278,26 @@
       margin-bottom: 8px;
     }
 
+    .scan-pay {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .scan-pay img {
+      width: min(190px, 100%);
+      display: block;
+      margin: 10px 0 12px;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .scan-pay p {
+      margin-bottom: 8px;
+    }
+
     footer {
       padding: 28px 0 44px;
     }
@@ -362,6 +382,12 @@
           <p>Paid ZIP proof is public; the ZIP itself is private.</p>
           <p><a href="paid-kit-manifest.json">Open manifest JSON</a></p>
           <p><a href="https://github.com/trungcodeer/softjunk-lead-kit/issues/1">Pinned public order board</a></p>
+        </div>
+        <div class="scan-pay" aria-labelledby="scan-pay-title">
+          <h2 id="scan-pay-title">Scan to pay</h2>
+          <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
+          <p><a href="pay-qr.html">Open QR payment page</a></p>
+          <p><a href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal $5 link</a></p>
         </div>
       </aside>
     </section>

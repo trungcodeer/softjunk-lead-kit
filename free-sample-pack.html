@@ -193,6 +193,26 @@
       background: var(--soft);
     }
 
+    .scan-pay {
+      margin-top: 18px;
+      padding-top: 18px;
+      border-top: 1px solid #b9ddd5;
+    }
+
+    .scan-pay img {
+      width: min(180px, 100%);
+      display: block;
+      margin: 10px 0 12px;
+      padding: 10px;
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .scan-pay p {
+      margin-bottom: 8px;
+    }
+
     footer {
       padding: 28px 0 44px;
     }
@@ -256,6 +276,12 @@
           <li>2 AI prompt samples</li>
           <li>Links to checkout and proof</li>
         </ul>
+        <div class="scan-pay" aria-labelledby="sample-scan-title">
+          <h2 id="sample-scan-title">Ready after preview?</h2>
+          <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk full kit">
+          <p><a href="pay-qr.html">Scan-to-pay page</a></p>
+          <p><a href="checkout.html">Fast checkout</a></p>
+        </div>
       </aside>
     </section>
 
