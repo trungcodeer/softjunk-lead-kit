@@ -1,2 +1,3 @@
 User-agent: *
 Allow: /
+Sitemap: https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml
