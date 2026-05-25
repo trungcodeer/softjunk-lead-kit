@@ -44,6 +44,9 @@ https://trungcodeer.github.io/quiet-lead-follow-up/quiet-dm-follow-up.html
 Quiet lead buyer route JSON:
 https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
 
+Quiet lead PayPal handoff note:
+https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html
+
 GitHub profile offer JSON:
 https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json
 

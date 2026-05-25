@@ -38,6 +38,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - Price-objection reply page: https://trungcodeer.github.io/quiet-lead-follow-up/price-objection-reply.html
 - Quiet DM follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/quiet-dm-follow-up.html
 - Quiet lead buyer route JSON: https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
+- Quiet lead PayPal handoff note: https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 - llms.txt: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Offers JSON: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
