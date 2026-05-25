@@ -11,7 +11,13 @@
   <meta property="og:description" content="Estimate monthly missed-lead value, then buy a $5 custom follow-up sequence.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html">
-  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Lead Loss Calculator">
+  <meta name="twitter:description" content="Estimate monthly missed-lead value, then buy a $5 custom follow-up sequence.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -294,6 +300,28 @@
       font-weight: 800;
     }
 
+    .qr-mini {
+      width: 136px;
+      display: grid;
+      gap: 6px;
+      justify-items: center;
+      margin: 4px 0 12px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .qr-mini img {
+      width: 116px;
+      display: block;
+      padding: 6px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -335,6 +363,8 @@
         <a href="./">Main</a>
         <a href="free-preview.html">Free preview</a>
         <a href="agent-order.html">Agent order</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="pay-qr.html">QR</a>
         <a href="pay.html">Pay $5</a>
       </div>
     </nav>
@@ -347,6 +377,7 @@
       <div class="actions">
         <a class="button primary" href="#calculator">Run calculator</a>
         <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+        <a class="button" href="pay-qr.html">Scan QR</a>
       </div>
     </section>
 
@@ -419,10 +450,15 @@
           </div>
         </div>
         <p class="output" id="output" aria-live="polite">Run the calculator to generate a short report.</p>
+        <a class="qr-mini" href="pay-qr.html" aria-label="Open PayPal QR page">
+          <img src="paypal-qr.svg" alt="PayPal QR code for the $5 follow-up sequence">
+          <span>Scan $5</span>
+        </a>
         <p class="status" id="status" aria-live="polite"></p>
         <div class="actions">
           <button class="button" type="button" id="copy-report">Copy report</button>
           <button class="button" type="button" id="copy-link">Copy share link</button>
+          <a class="button" href="checkout.html">Fast checkout</a>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 for follow-up sequence</a>
         </div>
       </div>
