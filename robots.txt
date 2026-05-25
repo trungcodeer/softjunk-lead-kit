@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /llms.txt
+Allow: /feed.xml
+Allow: /product-feed.json
 Allow: /aa82219152e573922c28c39ed0ad85ce.txt
 Sitemap: https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml

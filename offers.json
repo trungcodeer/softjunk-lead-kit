@@ -10,6 +10,8 @@
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
+  "product_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json",
+  "rss_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
   "offers": [
     {
       "name": "Free lead loss calculator",

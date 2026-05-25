@@ -23,6 +23,8 @@ Follow-up templates for small businesses that get leads from forms, DMs, email, 
 - AI-readable offer summary: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
 - Machine-readable offers: https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+- Product feed: https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
+- RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
 
 ## Buy
 

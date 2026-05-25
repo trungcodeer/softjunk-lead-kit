@@ -1,0 +1,71 @@
+{
+  "schema_version": "softjunk-product-feed-v1",
+  "updated": "2026-05-25",
+  "seller": {
+    "name": "SoftJunk",
+    "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+  },
+  "payment": {
+    "provider": "PayPal.Me",
+    "url": "https://paypal.me/softjunk/5USD",
+    "amount": "5.00",
+    "currency": "USD",
+    "proof_required": "Fulfillment starts only after the seller can see the PayPal transaction."
+  },
+  "primary_offer": {
+    "name": "Custom 7-Day Lead Follow-Up Sequence",
+    "price": "5.00",
+    "currency": "USD",
+    "order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+    "delivery": "Manual same-day delivery after PayPal payment appears",
+    "includes": [
+      "Day 0 follow-up",
+      "Day 1 follow-up",
+      "Day 3 follow-up",
+      "Day 5 follow-up",
+      "Day 7 follow-up",
+      "No-show recovery reply",
+      "Price-objection reply"
+    ]
+  },
+  "secondary_offer": {
+    "name": "7-Day Lead Follow-Up Kit",
+    "price": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "paypal_note": "Lead Follow-Up Kit",
+    "delivery": "Manual ZIP delivery after PayPal payment appears",
+    "zip_public": false
+  },
+  "free_tools": [
+    {
+      "name": "Lead Loss Calculator",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html"
+    },
+    {
+      "name": "Free Follow-Up Preview",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html"
+    }
+  ],
+  "machine_readable": {
+    "offers_json": "https://trungcodeer.github.io/softjunk-lead-kit/offers.json",
+    "agent_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
+    "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
+    "rss_feed": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml"
+  },
+  "best_fit": [
+    "HVAC companies",
+    "Roofing companies",
+    "Plumbing companies",
+    "Real estate agents",
+    "Dental offices",
+    "Med spas",
+    "Tutoring services",
+    "Appointment setters",
+    "Virtual assistants",
+    "Small agencies",
+    "Local service businesses"
+  ]
+}

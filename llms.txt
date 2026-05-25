@@ -26,6 +26,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 Agent offer manifest:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 
+Product feed:
+https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
+
+RSS feed:
+https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
+
 Niche pages:
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
