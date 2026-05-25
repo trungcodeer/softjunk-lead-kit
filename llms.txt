@@ -20,6 +20,12 @@ https://trungcodeer.github.io/trungcodeer/
 Quiet lead public Gist:
 https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 
+Quiet lead microsite:
+https://trungcodeer.github.io/quiet-lead-follow-up/
+
+Quiet lead buyer route JSON:
+https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
+
 GitHub profile offer JSON:
 https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json
 
@@ -58,6 +64,9 @@ https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 
 Quiet lead public Gist:
 https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
+
+Quiet lead microsite:
+https://trungcodeer.github.io/quiet-lead-follow-up/
 
 Free sample pack:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
