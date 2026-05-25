@@ -3,7 +3,8 @@
   "updated": "2026-05-25",
   "seller": {
     "name": "SoftJunk",
-    "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+    "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
+    "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card.png"
   },
   "payment": {
     "provider": "PayPal.Me",
