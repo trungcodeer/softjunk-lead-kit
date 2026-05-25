@@ -5,6 +5,10 @@ Public sales page for the USD 5 SoftJunk lead follow-up kit. The page includes a
 Live page:
 https://trungcodeer.github.io/softjunk-lead-kit/
 
+Niche pages:
+- https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
+- https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
+
 Payment link:
 https://paypal.me/softjunk/5USD
 
@@ -12,6 +16,7 @@ What is on the page:
 
 - A free reply generator for small-business leads
 - Med spa and tutoring examples for appointment follow-up
+- Dedicated med spa and tutoring follow-up template pages
 - A USD 5 digital kit with follow-up templates and a lead tracker
 - A USD 5 same-day custom follow-up sequence option
 
