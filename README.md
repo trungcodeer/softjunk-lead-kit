@@ -2,6 +2,9 @@
 
 Public sales page for the USD 5 SoftJunk lead follow-up kit.
 
+Live page:
+https://trungcodeer.github.io/softjunk-lead-kit/
+
 Payment link:
 https://paypal.me/softjunk/5USD
 
