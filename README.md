@@ -1,6 +1,6 @@
 # SoftJunk Lead Kit
 
-![SoftJunk Lead Kit $5 PayPal offer](social-card.png)
+![SoftJunk Lead Kit $5 PayPal offer](social-card-qr.png)
 
 A $5 lead follow-up kit and same-price custom sequence for small businesses that get leads from forms, DMs, email, ads, referrals, quotes, appointments, or calls.
 

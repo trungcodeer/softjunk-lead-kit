@@ -4,7 +4,7 @@
   "seller": {
     "name": "SoftJunk",
     "site_url": "https://trungcodeer.github.io/softjunk-lead-kit/",
-    "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card.png"
+    "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png"
   },
   "payment": {
     "provider": "PayPal.Me",

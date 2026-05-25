@@ -19,6 +19,7 @@ Allow: /missed-call-follow-up.html
 Allow: /estimate-follow-up-template.html
 Allow: /paypal-qr.svg
 Allow: /social-card.png
+Allow: /social-card-qr.png
 Allow: /.well-known/softjunk-offer.json
 Allow: /.well-known/openapi.yaml
 Allow: /.well-known/ai-plugin.json
