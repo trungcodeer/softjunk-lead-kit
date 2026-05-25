@@ -11,6 +11,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 GitHub-readable buyer index:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
 
+GitHub profile offer:
+https://github.com/trungcodeer/trungcodeer
+
+GitHub profile offer JSON:
+https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-offer.json
+
 Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 
