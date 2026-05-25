@@ -83,6 +83,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /estimate-follow-up-template.html:
+    get:
+      operationId: openEstimateFollowUpTemplate
+      summary: Open the estimate follow-up sample generator.
+      responses:
+        "200":
+          description: Browser page for quote and estimate follow-up samples and the $5 custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
   /pay.html:
     get:
       operationId: openPaymentPage

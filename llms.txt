@@ -58,6 +58,7 @@ Niche pages:
 - Real estate lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 - Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 
 Payment:
 https://paypal.me/softjunk/5USD
@@ -90,5 +91,6 @@ Best-fit buyers:
 - Tutoring and academic coaching services
 - Local service businesses
 - Businesses with missed calls, voicemails, and leads that went quiet after first contact
+- Businesses with sent estimates, quotes, proposals, or price ranges that need decision follow-up
 - HVAC, roofing, plumbing, and real estate operators with high-value inquiry follow-up
 - Small agencies, freelancers, and virtual assistants helping clients with lead follow-up

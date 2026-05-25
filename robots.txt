@@ -8,6 +8,7 @@ Allow: /share-kit.html
 Allow: /share-kit.json
 Allow: /pay-qr.html
 Allow: /missed-call-follow-up.html
+Allow: /estimate-follow-up-template.html
 Allow: /paypal-qr.svg
 Allow: /.well-known/softjunk-offer.json
 Allow: /.well-known/openapi.yaml
