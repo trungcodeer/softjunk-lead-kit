@@ -79,6 +79,50 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Root AGENTS Buyer-Agent Checkout Evidence
+
+Files changed:
+- `AGENTS.md`
+- `agents-checkout.json`
+- `README.md`
+- `BUY_NOW.md`
+- `buy-now.json`
+- `llms.txt`
+- `agent-buyer-catalog.jsonl`
+- `.github/ISSUE_TEMPLATE/config.yml`
+
+Commit, Gist, release, and issue evidence:
+- Product commit: `7048466 Add buyer-agent checkout instructions`.
+- Agent instructions: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md`.
+- Agent checkout JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json`.
+- Agent checkout Gist: `https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b`.
+- Agent checkout Gist raw JSON: `https://gist.githubusercontent.com/trungcodeer/795587172ee240078c4377559b20b49b/raw/agents-checkout.json`.
+- Updated Buy Now Gist: `https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.46`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545159925`.
+
+Local validation:
+- `json_ok buy-now.json`.
+- `json_ok agents-checkout.json`.
+- `jsonl_ok agent-buyer-catalog.jsonl lines=28`.
+- `issue_config_yaml_ok contact_links=23`.
+- Marker checks passed for `AGENTS.md`, `agents-checkout.json`, `README.md`, `BUY_NOW.md`, `buy-now.json`, `llms.txt`, `agent-buyer-catalog.jsonl`, and `.github/ISSUE_TEMPLATE/config.yml`.
+- `git diff --check` returned no whitespace errors.
+
+Public validation:
+- `agents_md_raw_ok bytes=2536`.
+- `agents_json_raw_ok bytes=3508`.
+- `buy_now_json_raw_ok bytes=9140`.
+- `agents_gist_md_ok chars=2535`.
+- `agents_gist_json_ok chars=3507`.
+- `buy_now_gist_json_ok chars=9139`.
+- `release_agents_ok tag=v2.29.46 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.46`.
+- `issue_agents_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545159925`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 GitHub Repo Metadata PayPal Route Evidence
 
 Metadata updates:
