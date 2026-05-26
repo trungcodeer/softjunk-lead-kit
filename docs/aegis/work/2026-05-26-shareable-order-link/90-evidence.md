@@ -3177,3 +3177,15 @@ Payment gate:
 - Root Pages run `26478021176` completed with success for `ee366716f66c326c33e5392e873cabd67e8b027c`.
 - IndexNow accepted 9 related URLs with `status=200`.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-27 Profile Buyer-Send Evidence
+
+- Profile README commit: `https://github.com/trungcodeer/trungcodeer/commit/b742f73448659a035fc523f02f3677f1440f12ad`.
+- Profile funding commit: `https://github.com/trungcodeer/trungcodeer/commit/84814a73af1b4615da7b30ebe0aefa3d392b7686`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-buyer-send-v1`.
+- Profile README: `https://github.com/trungcodeer/trungcodeer/blob/main/README.md`.
+- Profile funding: `https://github.com/trungcodeer/trungcodeer/blob/main/.github/FUNDING.yml`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549511133`.
+- Raw profile README validation: buyer-send HTML, buyer-send JSON, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy placeholder rule are present.
+- Raw profile funding validation: exact PayPal URL, buyer-send packet, and `PAYPAL_PAYMENT_VERIFIED=true` gate comment are present.
+- Profile repo metadata validation: description includes the roofing buyer-send packet, and topics include `roofing`, `roofing-estimates`, and `roofing-follow-up`.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

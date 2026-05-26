@@ -4255,3 +4255,47 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses GitHub's native funding/Sponsor surface to move qualified buyers toward PayPal and the buyer-send packet without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos/Gists/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+## 2026-05-27 Profile Buyer-Send Checkpoint
+
+Current todo:
+- Route GitHub profile visitors and buyer-agents to the current roofing buyer-send packet and exact 5 USD PayPal checkout.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Active slice:
+- Updated the `trungcodeer/trungcodeer` profile README with a top-level current $5 buyer route linking the roofing buyer-send HTML/JSON, exact PayPal URL, verification gate, and privacy placeholder rule.
+- Updated profile `.github/FUNDING.yml` so PayPal remains first and `roofing-buyer-send.html` is second.
+- Updated profile repo description and topics to include the roofing buyer-send route.
+- Released, validated raw profile surfaces, published issue evidence, and reran the PayPal verifier.
+
+Completed todos:
+- Profile README commit `b742f73448659a035fc523f02f3677f1440f12ad` pushed to `main` via Git Data API.
+- Profile funding commit `84814a73af1b4615da7b30ebe0aefa3d392b7686` pushed to `main` via Git Data API.
+- Profile release `profile-buyer-send-v1` created.
+- Raw profile README and funding validation passed.
+- Profile repo metadata now includes roofing buyer description and topics.
+- Product issue #5 evidence comment added.
+- PayPal verifier rerun after profile update.
+
+Evidence refs:
+- Profile README commit: `https://github.com/trungcodeer/trungcodeer/commit/b742f73448659a035fc523f02f3677f1440f12ad`.
+- Profile funding commit: `https://github.com/trungcodeer/trungcodeer/commit/84814a73af1b4615da7b30ebe0aefa3d392b7686`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-buyer-send-v1`.
+- Profile README: `https://github.com/trungcodeer/trungcodeer/blob/main/README.md`.
+- Profile funding: `https://github.com/trungcodeer/trungcodeer/blob/main/.github/FUNDING.yml`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549511133`.
+- Raw README validation confirmed buyer-send HTML, buyer-send JSON, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy placeholder rule.
+- Raw funding validation confirmed exact PayPal URL, buyer-send packet, and `PAYPAL_PAYMENT_VERIFIED=true` gate comment.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Local C: has 0 free bytes, so remote API commits are being used for small checkpoint/evidence updates.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses the GitHub profile and profile funding surface to route qualified buyers toward PayPal and the buyer-send packet without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos/Gists/releases/issues, GitHub profile README, GitHub Pages, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
