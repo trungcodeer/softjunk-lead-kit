@@ -31,6 +31,10 @@
   "send_to_buyer_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md",
   "send_to_buyer_gist_url": "https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683",
   "roofing_estimate_rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+  "roofing_estimate_follow_up_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
+  "roofing_estimate_follow_up_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.json",
+  "roofing_estimate_follow_up_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.txt",
+  "roofing_estimate_follow_up_gist_url": "https://gist.github.com/trungcodeer/dc2a23fd197c91f166cc558495f61b10",
   "roofing_estimate_rescue_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json",
   "roofing_estimate_rescue_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt",
   "roofing_estimate_rescue_gist_url": "https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59",
@@ -111,6 +115,11 @@
       "step": "roofing_estimate_rescue",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
       "instruction": "Use the roofing estimate rescue packet when the fitting buyer is a roofing contractor with one unanswered estimate and one recovered roof job is worth more than 5 USD."
+    },
+    {
+      "step": "roofing_estimate_follow_up_answer",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
+      "instruction": "Use the roofing estimate follow-up answer page when the buyer needs copy-ready Day 0, 1, 3, 5, and 7 messages before choosing the 5 USD custom rescue."
     },
     {
       "step": "sponsor_button_buy",

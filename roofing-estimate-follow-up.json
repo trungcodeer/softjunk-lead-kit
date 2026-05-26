@@ -1,0 +1,34 @@
+{
+  "schema_version": "softjunk-roofing-estimate-follow-up-answer-v1",
+  "updated": "2026-05-27",
+  "name": "Roofing Estimate Follow-Up Texts",
+  "purpose": "Answer-engine and SEO-friendly page for roofing contractors who need copy-ready follow-up texts after a roof estimate goes quiet, with a direct 5 USD custom rescue path.",
+  "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
+  "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.json",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.txt",
+  "gist_url": "https://gist.github.com/trungcodeer/dc2a23fd197c91f166cc558495f61b10",
+  "rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+  "prefilled_send_to_buyer_url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "paypal_note": "One Lead Rescue | Business: roofing contractor | Service: roof estimate | Source: estimate | Need: has an unanswered estimate | Tone: direct | Next: quote",
+  "short_answer": "Reference the roof estimate, ask whether scope, timing, or budget is the blocker, and offer one simple next step instead of resending the whole quote.",
+  "sequence": [
+    "Day 0: Hi [Name], checking that you saw the roof estimate for [project]. If the scope looks right, I can confirm the next step. If timing, budget, or one line item is the blocker, reply with that and I will make it clearer.",
+    "Day 1: Hi [Name], quick follow-up on the roof estimate. Do you want me to hold the current scope, show a smaller option, or answer one question first?",
+    "Day 3: Hi [Name], I know roofing decisions are not small. If you are comparing options, I can clarify what is included so the estimate is easier to judge.",
+    "Day 5: Hi [Name], should I keep this roof estimate active? Reply \"yes\" and I will send the next step, or reply with the part you want adjusted.",
+    "Day 7: Hi [Name], I will close the loop for now so I do not keep bothering you. If the roof project comes back up, reply here and I can reopen the estimate path."
+  ],
+  "fit_rule": [
+    "A roofing contractor sent one estimate and the homeowner stopped replying.",
+    "One recovered roof job is worth more than 5 USD.",
+    "The context can be described without private homeowner data."
+  ],
+  "verification_gate": {
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "script_path": "scripts/verify-paypal-5usd.ps1",
+    "rule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+  }
+}

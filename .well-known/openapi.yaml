@@ -752,6 +752,39 @@ paths:
             text/html:
               schema:
                 type: string
+  /roofing-estimate-follow-up.html:
+    get:
+      operationId: openRoofingEstimateFollowUp
+      summary: Open the roofing estimate follow-up answer page.
+      responses:
+        "200":
+          description: Answer page with FAQ schema, copy-ready Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, and the 5 USD custom rescue path.
+          content:
+            text/html:
+              schema:
+                type: string
+  /roofing-estimate-follow-up.json:
+    get:
+      operationId: getRoofingEstimateFollowUp
+      summary: Get the roofing estimate follow-up answer JSON.
+      responses:
+        "200":
+          description: Machine-readable roofing estimate follow-up answer, sequence, payment route, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /roofing-estimate-follow-up.txt:
+    get:
+      operationId: getRoofingEstimateFollowUpText
+      summary: Get the roofing estimate follow-up answer text.
+      responses:
+        "200":
+          description: Plain-text roofing estimate follow-up sequence, payment route, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /price-objection-reply.html:
     get:
       operationId: openPriceObjectionReplyTemplate

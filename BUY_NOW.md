@@ -90,6 +90,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Send-to-buyer Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
 - Send-to-buyer Gist: https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 - Roofing estimate rescue: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+- Roofing estimate follow-up answer: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
+- Roofing estimate follow-up JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.json
+- Roofing estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.txt
+- Roofing estimate follow-up Gist: https://gist.github.com/trungcodeer/dc2a23fd197c91f166cc558495f61b10
 - Roofing estimate rescue JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
 - Roofing estimate rescue text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt
 - Roofing estimate rescue Gist: https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59

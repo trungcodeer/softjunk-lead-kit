@@ -43,6 +43,10 @@
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html"
     },
     {
+      "if": "The buyer is a roofing contractor with one estimate that went quiet",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html"
+    },
+    {
       "if": "The buyer is ready to pay",
       "send_to": "https://paypal.me/softjunk/5USD"
     }
@@ -66,6 +70,16 @@
       "exact_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt",
       "paid_upgrade": "Custom 7-day estimate follow-up sequence with objection handling.",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "question": "What should I text after sending a roofing estimate?",
+      "intent": "roofing_estimate_follow_up",
+      "short_answer": "Reference the roof estimate, ask whether scope, timing, or budget is the blocker, and offer one simple next step instead of resending the whole quote.",
+      "sample": "Hi [Name], checking that you saw the roof estimate for [project]. If the scope looks right, I can confirm the next step. If timing, budget, or one line item is the blocker, reply with that and I will make it clearer.",
+      "exact_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.txt",
+      "paid_upgrade": "Custom 7-day roofing estimate rescue for one unanswered estimate.",
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
