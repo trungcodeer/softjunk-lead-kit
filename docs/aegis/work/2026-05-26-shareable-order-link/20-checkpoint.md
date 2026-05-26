@@ -4209,3 +4209,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a buyer-send packet optimized for agents and direct checkout without spam, scraping, deception, or premature fulfillment.
 - Compatibility boundary: owned GitHub repo files/Gists/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Sponsor Button Buyer-Send Checkpoint
+
+Current todo:
+- Make GitHub-native Sponsor-button surfaces route a GitHub buyer to the exact 5 USD PayPal checkout and the one-read roofing buyer-send packet.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Active slice:
+- Updated product and root `.github/FUNDING.yml` so PayPal remains the first custom funding URL and `roofing-buyer-send.html` is the second custom funding URL.
+- Updated `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.json`, and the public sponsor route Gist to point to the buyer-send packet.
+- Released, validated raw/Gist surfaces, checked Pages runs, submitted IndexNow, published issue evidence, and reran the PayPal verifier.
+
+Completed todos:
+- Product commit `14f6935ffb6a653429a5f5e529df06fc04cfaeae` pushed to `main` via Git Data API.
+- Root commit `ee366716f66c326c33e5392e873cabd67e8b027c` pushed to `main` via Git Data API.
+- Product release `v2.29.68` created.
+- Root release `root-funding-buyer-send-v1` created.
+- Sponsor Gist `8f30064ad27d3f9f71ae152fe46703a7` updated.
+- Raw product/root funding and sponsor route validations passed.
+- Product Pages run `26478001764` and root Pages run `26478021176` completed successfully.
+- IndexNow accepted 9 related URLs with `status=200`.
+- Public product issue #5 evidence comment added.
+- PayPal verifier rerun after the Sponsor-button update.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/14f6935ffb6a653429a5f5e529df06fc04cfaeae`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/ee366716f66c326c33e5392e873cabd67e8b027c`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.68`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-funding-buyer-send-v1`.
+- Sponsor route Gist: `https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549470839`.
+- Sponsor JSON funding order validated as PayPal first and roofing buyer-send packet second.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Local C: has 0 free bytes, so remote API commits are being used for small checkpoint/evidence updates.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses GitHub's native funding/Sponsor surface to move qualified buyers toward PayPal and the buyer-send packet without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos/Gists/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

@@ -3162,3 +3162,18 @@ Payment gate:
 - Required buyer markers were present where expected: `roofing-buyer-send`, Discussion #8, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy/non-sensitive handling.
 - IndexNow returned `status=200 urls=16`.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-27 Sponsor Button Buyer-Send Evidence
+
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/14f6935ffb6a653429a5f5e529df06fc04cfaeae`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/ee366716f66c326c33e5392e873cabd67e8b027c`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.68`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-funding-buyer-send-v1`.
+- Sponsor route Gist: `https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549470839`.
+- Product funding, root funding, sponsor route markdown, sponsor route JSON, sponsor Gist markdown, and sponsor Gist JSON validated with buyer-send packet and exact PayPal URL.
+- Sponsor JSON funding order validated: first `https://paypal.me/softjunk/5USD`, second `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html`.
+- Product Pages run `26478001764` completed with success for `14f6935ffb6a653429a5f5e529df06fc04cfaeae`.
+- Root Pages run `26478021176` completed with success for `ee366716f66c326c33e5392e873cabd67e8b027c`.
+- IndexNow accepted 9 related URLs with `status=200`.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
