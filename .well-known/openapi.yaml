@@ -640,7 +640,7 @@ paths:
       summary: Open the AI checkout handoff page.
       responses:
         "200":
-          description: Agent-first checkout page with AI Deal Desk, exact 5 USD PayPal payment, after-payment handoff, GitHub buyer discussion, and verification gate.
+          description: Agent-first checkout page with inline PayPal note builder, AI Deal Desk, exact 5 USD PayPal payment, after-payment handoff, GitHub buyer discussion, and verification gate.
           content:
             text/html:
               schema:
@@ -651,7 +651,7 @@ paths:
       summary: Get the AI checkout handoff JSON.
       responses:
         "200":
-          description: Machine-readable checkout contract with AI Deal Desk route, exact 5 USD PayPal URL, PayPal note templates, after-payment handoff, and verification gate.
+          description: Machine-readable checkout contract with inline PayPal note builder, AI Deal Desk route, exact 5 USD PayPal URL, PayPal note templates, after-payment handoff, and verification gate.
           content:
             application/json:
               schema:
@@ -662,7 +662,7 @@ paths:
       summary: Get the AI checkout handoff text.
       responses:
         "200":
-          description: Plain-text checkout handoff for buyer-agents routing a qualified SoftJunk buyer to the exact 5 USD PayPal payment.
+          description: Plain-text checkout handoff for buyer-agents routing a qualified SoftJunk buyer to the inline note builder and exact 5 USD PayPal payment.
           content:
             text/plain:
               schema:

@@ -42,7 +42,7 @@
     "checkout_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
-    "delivery": "Manual same-day delivery after PayPal payment appears",
+    "delivery": "Checkout includes an inline PayPal note builder; manual same-day delivery starts after PayPal payment appears",
     "includes": [
       "Day 0 follow-up",
       "Day 1 follow-up",
@@ -87,7 +87,8 @@
       "name": "AI Checkout Handoff",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
-      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt"
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
+      "note_builder": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title"
     },
     {
       "name": "Agent Commerce Capsule",

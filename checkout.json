@@ -2,7 +2,7 @@
   "schema_version": "softjunk-ai-checkout-handoff-v1",
   "updated": "2026-05-26",
   "name": "SoftJunk AI Checkout Handoff",
-  "purpose": "A buyer-agent readable checkout contract for routing a qualified lead follow-up buyer to the exact 5 USD SoftJunk PayPal payment and after-payment handoff.",
+  "purpose": "A buyer-agent readable checkout contract for routing a qualified lead follow-up buyer to the exact 5 USD SoftJunk PayPal payment, inline PayPal note builder, and after-payment handoff.",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
   "html_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
@@ -17,6 +17,18 @@
     "amount": "5.00",
     "currency": "USD",
     "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json"
+  },
+  "inline_note_builder": {
+    "html_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+    "fields": [
+      "business",
+      "service",
+      "source",
+      "tone",
+      "need"
+    ],
+    "paypal_note_template": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need]",
+    "use_when": "The buyer is ready to pay and only needs a custom sequence PayPal note without leaving checkout."
   },
   "paid_offers": [
     {
@@ -38,7 +50,7 @@
     {
       "step": "prepare_note",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
-      "instruction": "Open the AI Deal Desk when non-sensitive lead context exists, then generate the buyer decision and PayPal note."
+      "instruction": "Use the inline checkout note builder for the fastest custom sequence PayPal note, or open the AI Deal Desk when the buyer needs a decision and preview before paying."
     },
     {
       "step": "pay",
@@ -56,7 +68,7 @@
       "instruction": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
     }
   ],
-  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. Open the AI checkout handoff at https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/checkout.json. If non-sensitive lead context exists, open the AI Deal Desk first, copy the generated PayPal note, then route the buyer to exactly 5 USD at https://paypal.me/softjunk/5USD. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim payment or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. Open the AI checkout handoff at https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/checkout.json. If the buyer is ready to pay, generate the PayPal note directly on checkout, then route the buyer to exactly 5 USD at https://paypal.me/softjunk/5USD. If they need a decision or preview first, open the AI Deal Desk. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim payment or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
   "verification_gate": {
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "script_path": "scripts/verify-paypal-5usd.ps1",
