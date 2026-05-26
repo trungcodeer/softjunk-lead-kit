@@ -1056,3 +1056,32 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Quiet Lead GitHub Native Rescue Evidence
+
+Local validation:
+- YAML parse passed for quiet repo `.github/FUNDING.yml` and `.github/ISSUE_TEMPLATE/config.yml`.
+- Marker scan confirmed `.github/FUNDING.yml`, `.github/SUPPORT.md`, and `.github/ISSUE_TEMPLATE/config.yml` expose `https://trungcodeer.github.io/rescue/`, `https://paypal.me/softjunk/5USD`, and/or `PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check` returned no whitespace errors.
+
+Files changed in quiet repo:
+- `.github/FUNDING.yml`
+- `.github/SUPPORT.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+
+Commit, release, and deploy:
+- Quiet repo commit: `00da24c Add quiet lead GitHub rescue links`.
+- Quiet repo release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-github-rescue-links-v1`.
+- Quiet GitHub Pages run `26441249283` completed with success.
+
+Raw GitHub validation:
+- `quiet_github_raw_ok checks=3`.
+- Validated raw funding, support, and issue template config files.
+
+Release and discovery:
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542131182`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542132665`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

@@ -1418,3 +1418,44 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves a high-intent owned microsite and public Gist without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, GitHub repo metadata, IndexNow discovery, JSON/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Quiet Lead GitHub Native Rescue Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Add GitHub-native funding, support, and issue contact links for the quiet-lead repo that point to the root one-lead rescue route first.
+
+Completed todos:
+- Updated quiet repo `.github/FUNDING.yml` to put `https://trungcodeer.github.io/rescue/` and `rescue.json` before direct PayPal.
+- Added quiet repo `.github/SUPPORT.md` with root rescue, quiet route, PayPal, and verification gate.
+- Added quiet repo `.github/ISSUE_TEMPLATE/config.yml` contact links for root rescue, buyer-route JSON, and exact PayPal route with the `PAYPAL_PAYMENT_VERIFIED=true` rule.
+- Validated YAML, marker coverage, and whitespace locally.
+- Committed and pushed quiet repo change `00da24c`.
+- Created quiet repo release `quiet-github-rescue-links-v1`.
+- Confirmed quiet GitHub Pages deployment succeeded.
+- Validated raw GitHub funding, support, and issue config files.
+- Commented public issues #2 and #3 with the GitHub-native update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Quiet repo commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/00da24c`.
+- Quiet repo release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-github-rescue-links-v1`.
+- GitHub Pages run: `26441249283`, success.
+- Raw GitHub validation passed for `.github/FUNDING.yml`, `.github/SUPPORT.md`, and `.github/ISSUE_TEMPLATE/config.yml`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542131182` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542132665`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves GitHub-native discovery and support routing for an owned high-intent repo without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: GitHub funding/support/issue config, public releases/issues, GitHub Pages deployment, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
