@@ -79,6 +79,51 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Owned Repo AGENTS Propagation Evidence
+
+Files changed outside product repo:
+- Root repo `trungcodeer.github.io`: `AGENTS.md`, `README.md`, `llms.txt`, `root-offer.json`.
+- Profile repo `trungcodeer`: `AGENTS.md`, `README.md`, `llms.txt`, `softjunk-profile-offer.json`.
+- Quiet lead repo `quiet-lead-follow-up`: `AGENTS.md`, `README.md`, `llms.txt`, `buyer-route.json`.
+
+Commits and releases:
+- Root commit: `4925acd Add root buyer-agent checkout instructions`.
+- Profile commit: `b6c43b3 Add profile buyer-agent checkout instructions`.
+- Quiet lead commit: `0fdf610 Add quiet lead buyer-agent checkout instructions`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agents-checkout-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-agents-checkout-v1`.
+- Quiet lead release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-agents-checkout-v1`.
+
+Public route evidence:
+- Root AGENTS: `https://github.com/trungcodeer/trungcodeer.github.io/blob/main/AGENTS.md`.
+- Profile AGENTS: `https://github.com/trungcodeer/trungcodeer/blob/main/AGENTS.md`.
+- Quiet lead AGENTS: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/AGENTS.md`.
+- Product AGENTS: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md`.
+- Agent checkout JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json`.
+- Agent checkout Gist: `https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b`.
+- Direct PayPal checkout: `https://paypal.me/softjunk/5USD`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545239325`.
+
+Local validation:
+- Root validation: `json_ok root-offer.json`, `root_marker_ok AGENTS.md`, `root_marker_ok README.md`, `root_marker_ok llms.txt`, `root_marker_ok root-offer.json`.
+- Profile validation: `json_ok softjunk-profile-offer.json`, `profile_marker_ok AGENTS.md`, `profile_marker_ok README.md`, `profile_marker_ok llms.txt`, `profile_marker_ok softjunk-profile-offer.json`.
+- Quiet lead validation: `json_ok buyer-route.json`, `quiet_marker_ok AGENTS.md`, `quiet_marker_ok README.md`, `quiet_marker_ok llms.txt`, `quiet_marker_ok buyer-route.json`.
+- `git diff --check` returned no whitespace errors in all three repos.
+
+Public validation:
+- `root_agents_raw_ok bytes=1283`.
+- `root_offer_raw_ok bytes=17341`.
+- `profile_agents_raw_ok bytes=1284`.
+- `profile_offer_raw_ok bytes=8541`.
+- `quiet_agents_raw_ok bytes=1316`.
+- `quiet_route_raw_ok bytes=10978`.
+- `release_ok` for `root-agents-checkout-v1`, `profile-agents-checkout-v1`, and `quiet-agents-checkout-v1`.
+- `issue_owned_agents_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545239325`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Root AGENTS Buyer-Agent Checkout Evidence
 
 Files changed:

@@ -2942,3 +2942,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it targets AI/coding-agent discovery, the assistant's strongest channel, while routing only fitting buyers to the exact PayPal checkout and preserving the verification gate.
 - Compatibility boundary: owned GitHub repo, public GitHub raw/blob content, public Gists, GitHub release/issue comment, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Owned Repo AGENTS Propagation Checkpoint
+
+Current todo:
+- Propagate the AI/coding-agent checkout route into the other owned public GitHub entry points.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add `AGENTS.md` and agent checkout links to root, profile, and quiet-lead repos so assistants, VAs, crawlers, and buyer-agents can discover the exact USD 5 PayPal route from any owned GitHub entry point.
+
+Completed todos:
+- Added root repo `AGENTS.md` and updated `README.md`, `llms.txt`, and `root-offer.json`.
+- Added profile repo `AGENTS.md` and updated `README.md`, `llms.txt`, and `softjunk-profile-offer.json`.
+- Added quiet-lead repo `AGENTS.md` and updated `README.md`, `llms.txt`, and `buyer-route.json`.
+- Validated local JSON, marker coverage, and whitespace in all three repos.
+- Committed and pushed root commit `4925acd`, profile commit `b6c43b3`, and quiet-lead commit `0fdf610`.
+- Created releases `root-agents-checkout-v1`, `profile-agents-checkout-v1`, and `quiet-agents-checkout-v1`.
+- Validated public raw GitHub AGENTS/JSON files for all three repos.
+- Validated release bodies for all three releases.
+- Added and validated public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/4925acd`.
+- Profile commit: `https://github.com/trungcodeer/trungcodeer/commit/b6c43b3`.
+- Quiet lead commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/0fdf610`.
+- Root AGENTS: `https://github.com/trungcodeer/trungcodeer.github.io/blob/main/AGENTS.md`.
+- Profile AGENTS: `https://github.com/trungcodeer/trungcodeer/blob/main/AGENTS.md`.
+- Quiet lead AGENTS: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/AGENTS.md`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agents-checkout-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-agents-checkout-v1`.
+- Quiet lead release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-agents-checkout-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545239325`.
+- Local validation passed: `json_ok root-offer.json`, `json_ok softjunk-profile-offer.json`, `json_ok buyer-route.json`, marker checks for AGENTS/README/llms/JSON in all three repos, and `git diff --check` in all three repos.
+- Public raw validation passed: `root_agents_raw_ok`, `root_offer_raw_ok`, `profile_agents_raw_ok`, `profile_offer_raw_ok`, `quiet_agents_raw_ok`, `quiet_route_raw_ok`.
+- Release validation passed: `release_ok` for root/profile/quiet AGENTS checkout releases.
+- Issue comment validation passed: `issue_owned_agents_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545239325`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it expands the strongest AI-agent discovery route across owned GitHub entry points without spam, unauthorized outreach, fake transactions, or false completion claims.
+- Compatibility boundary: owned GitHub repos, public GitHub raw/blob content, GitHub releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
