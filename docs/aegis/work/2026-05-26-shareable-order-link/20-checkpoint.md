@@ -1835,3 +1835,47 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves AI/crawler discovery by making retrieval contracts, well-known manifests, OpenAPI, sitemap, robots, and product feeds all point to root one-lead rescue before PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/JSONL/YAML/XML/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub Native Rescue-First Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert GitHub-native buyer surfaces from direct PayPal first to root one-lead rescue and agent-order first.
+
+Completed todos:
+- Rechecked goal state, product worktree, latest checkpoint, and PayPal verifier before the slice.
+- Audited `README.md`, `BUYER_INDEX.md`, `.github/FUNDING.yml`, `.github/SUPPORT.md`, `.github/ISSUE_TEMPLATE/config.yml`, `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`, `.github/ISSUE_TEMPLATE/custom-sequence-order.yml`, and `.github/ISSUE_TEMPLATE/digital-kit-order.yml`.
+- Updated GitHub-native surfaces to prioritize `https://trungcodeer.github.io/rescue/`, `agent-order.html`, `agent-offer.json`, exact PayPal URL after note creation, one-lead rescue order form, and the verification gate.
+- Validated local YAML parsing, marker coverage, and whitespace.
+- Committed and pushed product change `5c4eb77`.
+- Created product release `v2.29.33`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated live GitHub Pages `README.md` and `BUYER_INDEX.md`.
+- Validated raw GitHub content for all updated GitHub-native files at the exact commit.
+- Submitted 6 host-valid GitHub-native and rescue URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the GitHub-native rescue-first update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/5c4eb771a4565c814860cc9bdac80cc57f067495`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.33`.
+- Product Pages run: `26447176395`, success.
+- Live/raw validation passed: `github_native_live_raw_ok live=2 raw=8 checks=10 commit=5c4eb77`.
+- IndexNow returned `status=200 urls=6`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543495615` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543495919`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves GitHub-native buyer and buyer-agent entry points by making README, Buyer Index, Funding, Support, and issue templates start from one-lead rescue before direct PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, raw GitHub content, public releases/issues, IndexNow discovery, GitHub issue forms, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

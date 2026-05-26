@@ -79,6 +79,43 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub Native Rescue-First Evidence
+
+Local validation:
+- YAML parse passed for `.github/FUNDING.yml` and all `.github/ISSUE_TEMPLATE/*.yml` files.
+- Marker validation confirmed root rescue, `agent-order.html`, `agent-offer.json`, PayPal URL, one-lead rescue order form, and `PAYPAL_PAYMENT_VERIFIED=true` across route-appropriate files.
+- Product `git diff --check` returned no whitespace errors.
+
+Files changed in product repo:
+- `README.md`
+- `BUYER_INDEX.md`
+- `.github/FUNDING.yml`
+- `.github/SUPPORT.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+- `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`
+- `.github/ISSUE_TEMPLATE/custom-sequence-order.yml`
+- `.github/ISSUE_TEMPLATE/digital-kit-order.yml`
+
+Commit, release, and deploy:
+- Product commit: `5c4eb77 Route GitHub native buyer surfaces to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.33`.
+- Product GitHub Pages run `26447176395` completed with success.
+
+Live/raw validation:
+- `github_native_live_raw_ok live=2 raw=8 checks=10 commit=5c4eb77`.
+- Validated live GitHub Pages `README.md` and `BUYER_INDEX.md`.
+- Validated raw GitHub content for `README.md`, `BUYER_INDEX.md`, `.github/SUPPORT.md`, `.github/FUNDING.yml`, `.github/ISSUE_TEMPLATE/config.yml`, `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`, `.github/ISSUE_TEMPLATE/custom-sequence-order.yml`, and `.github/ISSUE_TEMPLATE/digital-kit-order.yml`.
+- GitHub Pages does not serve `.github/` files directly, so those GitHub-native files were validated through raw GitHub at commit `5c4eb771a4565c814860cc9bdac80cc57f067495`.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=6` for the GitHub-native Pages files and root rescue URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543495615`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543495919`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Inline Checkout Note Builder Evidence
 
 Local validation:
