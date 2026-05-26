@@ -105,6 +105,7 @@
     "rootRescueUrl": "https://trungcodeer.github.io/rescue/",
     "checkoutUrl": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
     "roofingEstimateGeneratorUrl": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
+    "roofingEstimateOrderFormUrl": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
     "mcpCheckoutManifestUrl": "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
     "aiActionCheckoutUrl": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json",
     "agentCheckoutJsonUrl": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json",

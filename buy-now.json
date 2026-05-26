@@ -43,6 +43,7 @@
   "roofing_estimate_rescue_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json",
   "roofing_estimate_rescue_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt",
   "roofing_estimate_rescue_gist_url": "https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59",
+  "roofing_estimate_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
@@ -165,6 +166,11 @@
       "step": "pay",
       "url": "https://paypal.me/softjunk/5USD",
       "instruction": "Pay exactly 5 USD through PayPal.Me."
+    },
+    {
+      "step": "submit_roofing_estimate_order",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
+      "instruction": "After paying exactly 5 USD for a roofing estimate rescue, submit non-sensitive roofing details through the dedicated roofing order form."
     },
     {
       "step": "submit_order_form",

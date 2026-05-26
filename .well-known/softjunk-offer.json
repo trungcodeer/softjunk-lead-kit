@@ -98,6 +98,7 @@
   "roofing_estimate_rescue_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json",
   "roofing_estimate_rescue_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt",
   "roofing_estimate_rescue_gist_url": "https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59",
+  "roofing_estimate_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
   "exact_intent_answer_pack_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
   "exact_intent_answer_pack_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt",
   "exact_intent_answer_pack_gist_url": "https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35",

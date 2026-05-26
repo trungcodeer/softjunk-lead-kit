@@ -1,0 +1,125 @@
+name: Roofing estimate $5 rescue order
+description: Use this after paying $5 for one custom roofing estimate follow-up rescue.
+title: "Roofing estimate rescue order: "
+labels:
+  - roofing-estimate-rescue
+  - paid-order
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form after paying exactly $5 for one custom roofing estimate follow-up rescue.
+
+        Root roofing route: https://trungcodeer.github.io/roofing/
+        Roofing generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+        Roofing rescue packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+        Payment URL: https://paypal.me/softjunk/5USD
+
+        Fulfillment starts only after the $5 PayPal transaction is visible to the seller or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+        Use placeholders and non-sensitive business context only. Do not include homeowner names, phone numbers, email addresses, street addresses, insurance claim numbers, invoice IDs, transaction IDs, PayPal IDs, or private job details.
+  - type: input
+    id: paypal-note
+    attributes:
+      label: PayPal note used
+      description: Paste the exact note used with the $5 PayPal payment.
+      placeholder: "Roofing estimate rescue | Business: roofing contractor | Service: roof replacement estimate | Estimate status: sent/not answered | Tone: professional"
+    validations:
+      required: true
+  - type: input
+    id: business-context
+    attributes:
+      label: Business context
+      description: Keep this generic and public-safe.
+      placeholder: "Local roofing contractor, residential roof replacement, storm repair, gutter add-on"
+    validations:
+      required: true
+  - type: dropdown
+    id: roof-service
+    attributes:
+      label: Roof service
+      options:
+        - Roof replacement estimate
+        - Roof repair estimate
+        - Storm damage estimate
+        - Leak repair estimate
+        - Gutter or fascia estimate
+        - Inspection follow-up
+        - Other roofing estimate
+    validations:
+      required: true
+  - type: dropdown
+    id: estimate-status
+    attributes:
+      label: Estimate status
+      options:
+        - Estimate sent and no reply
+        - Estimate viewed but no next step
+        - Asked about price then went quiet
+        - Asked about timing then went quiet
+        - Comparing other contractors
+        - Insurance or financing question
+        - Other quiet estimate status
+    validations:
+      required: true
+  - type: dropdown
+    id: likely-blocker
+    attributes:
+      label: Likely blocker
+      options:
+        - Budget
+        - Timing
+        - Trust
+        - Scope confusion
+        - Insurance
+        - Financing
+        - Comparing options
+        - Unknown
+    validations:
+      required: true
+  - type: dropdown
+    id: tone
+    attributes:
+      label: Tone
+      options:
+        - Professional
+        - Direct
+        - Friendly
+        - Premium
+        - Plain
+    validations:
+      required: true
+  - type: input
+    id: desired-next-step
+    attributes:
+      label: Desired next step
+      placeholder: "approve the estimate, schedule the roof visit, answer one question, choose a scope"
+    validations:
+      required: true
+  - type: textarea
+    id: current-follow-up
+    attributes:
+      label: Current weak follow-up
+      description: Use placeholders only. Keep private homeowner and payment data out.
+      placeholder: "Hi [Name], just following up on the roof estimate. Let me know if you are interested."
+    validations:
+      required: true
+  - type: textarea
+    id: extra-context
+    attributes:
+      label: Extra public-safe context
+      description: Optional. Do not paste private customer, claim, address, invoice, or payment data.
+      placeholder: "The homeowner asked whether the project could start next month and then stopped replying. SMS length is preferred."
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD.
+          required: true
+        - label: I understand fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+          required: true
+        - label: I did not include homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, PayPal IDs, or private job details.
+          required: true

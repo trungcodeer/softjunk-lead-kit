@@ -5,6 +5,8 @@ const readline = require("node:readline");
 const PAYMENT_URL = "https://paypal.me/softjunk/5USD";
 const ORDER_FORM_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml";
+const ROOFING_ORDER_FORM_URL =
+  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml";
 const ROOT_RESCUE_URL = "https://trungcodeer.github.io/rescue/";
 const CHECKOUT_URL =
   "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title";
@@ -301,11 +303,12 @@ function buildRoofingEstimateSequence(args) {
     sequence,
     paypal_note: paypalNote,
     buyer_message:
-      `Use this generated roofing estimate sequence. If a custom rescue is wanted, copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive order details at ${ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
+      `Use this generated roofing estimate sequence. If a custom rescue is wanted, copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive roofing order details at ${ROOFING_ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
     roofing_estimate_generator_url: ROOFING_GENERATOR_URL,
     roofing_estimate_generator_json_url: ROOFING_GENERATOR_JSON_URL,
     roofing_estimate_generator_text_url: ROOFING_GENERATOR_TEXT_URL,
     roofing_estimate_rescue_url: ROOFING_RESCUE_URL,
+    roofing_estimate_order_form_url: ROOFING_ORDER_FORM_URL,
     ...checkoutRoutes()
   };
 }
@@ -322,6 +325,7 @@ function checkoutRoutes() {
     price: "5.00",
     currency: "USD",
     order_form_url: ORDER_FORM_URL,
+    roofing_estimate_order_form_url: ROOFING_ORDER_FORM_URL,
     agents_checkout_json_url: AGENTS_CHECKOUT_JSON,
     ai_action_checkout_json_url: AI_ACTION_CHECKOUT_JSON,
     a2a_agent_card_url:

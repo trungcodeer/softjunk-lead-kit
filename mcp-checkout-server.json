@@ -60,6 +60,7 @@
   "price": "5.00",
   "currency": "USD",
   "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "roofing_estimate_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
   "verification_gate": {
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "script_path": "scripts/verify-paypal-5usd.ps1",

@@ -9,6 +9,7 @@
   "answer_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
   "rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
   "price": "5.00",
   "currency": "USD",
   "query_parameters": [

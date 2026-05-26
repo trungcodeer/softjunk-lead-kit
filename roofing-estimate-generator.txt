@@ -28,8 +28,8 @@ Day 7: Hi, I will close the loop for now so I do not keep bothering you. If the 
 $5 custom rescue:
 https://paypal.me/softjunk/5USD
 
-Order form after payment:
-https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+Roofing order form after payment:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
 
 Privacy rule:
 Use non-sensitive business context only. Do not enter homeowner names, emails, phone numbers, street addresses, insurance claim numbers, invoice IDs, transaction IDs, PayPal IDs, or private job details.
