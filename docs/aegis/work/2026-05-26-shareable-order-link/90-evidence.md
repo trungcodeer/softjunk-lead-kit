@@ -79,6 +79,30 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Pages Candidate Agent Close Evidence
+
+Candidate branch attempt:
+- Existing product Pages routes still returned HTTP 200 for `/`, `checkout.html`, and `agent-order.html` before the candidate switch.
+- Product/root `agent-close` Pages URLs returned 404.
+- Created branch `pages-agent-close` from last known built product commit `c038c44`.
+- Added only `agent-close.html`, `agent-close.json`, and `agent-close.txt` from `main`.
+- Candidate branch commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/5899983b33245edf5edbf8210feda14818ada613`.
+- Product Pages source was temporarily changed to `pages-agent-close` root and a Pages build was manually queued.
+
+Validation:
+- Candidate local validation passed: `candidate_agent_close_markers_ok`.
+- Candidate build stayed `building`; product Pages status stayed `errored`.
+- Product `agent-close.html` and `agent-close.json` still returned 404 after the candidate switch.
+- Product Pages source was reverted back to `main` root after the candidate branch did not make `agent-close` live.
+
+Active route decision:
+- Existing Pages routes that were already live remain useful, but new `agent-close` Pages route is not counted as live.
+- Active buyer routes remain GitHub issue #1, GitHub issue #5, Funding/homepage metadata, RawGitHack Agent Close fallback, Gist fallback, root rescue, and exact PayPal URL.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Pinned Order Board Agent Close Route Evidence
 
 Public order board update:

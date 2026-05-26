@@ -2066,3 +2066,47 @@ DriftCheckDraft:
 - Current slice fit: yes, it turns the most stable public checkout issue into a concise buyer handoff to PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: public GitHub issues, RawGitHack/Gist fallbacks, GitHub Pages if it recovers, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Pages Candidate Agent Close Checkpoint
+
+Current todo:
+- Keep GitHub-native issue #1/#5, Funding, repo homepage, RawGitHack, and Gist as the active buyer routes.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Test whether a safe product Pages candidate branch can make `agent-close.html` live without disturbing the old deployment that still serves existing checkout routes.
+
+Completed todos:
+- Confirmed existing product Pages routes still serve old deployed pages for `/`, `checkout.html`, and `agent-order.html`.
+- Confirmed product/root `agent-close` Pages URLs still return 404.
+- Created local worktree branch `pages-agent-close` from last known built product commit `c038c44`.
+- Added only product `agent-close.html`, `agent-close.json`, and `agent-close.txt` from `main` to the candidate branch.
+- Validated candidate agent-close JSON and markers locally.
+- Pushed remote branch `pages-agent-close` at commit `5899983`.
+- Temporarily changed product GitHub Pages source to `pages-agent-close` root and manually queued a Pages build.
+- Confirmed candidate Pages build stayed `building`, product Pages status stayed `errored`, and product `agent-close` live URLs still returned 404.
+- Reverted product GitHub Pages source back to `main` root.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Candidate branch commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/5899983b33245edf5edbf8210feda14818ada613`.
+- Remote branch: `refs/heads/pages-agent-close` at `5899983b33245edf5edbf8210feda14818ada613`.
+- Candidate local validation passed: `candidate_agent_close_markers_ok`.
+- Product Pages source is back to `main` root.
+- Product Pages latest build for `5899983b33245edf5edbf8210feda14818ada613` remained `building`.
+- Live checks after candidate switch still returned 404 for product `agent-close.html` and `agent-close.json`.
+- Existing product Pages routes remained live for `/`, `checkout.html`, and `agent-order.html`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages build infrastructure remains unreliable for new `agent-close` routes, so GitHub-native issue and RawGitHack/Gist fallbacks remain the active route.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it tested a web route recovery path while preserving live checkout pages and without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: public GitHub Pages source config, candidate branch, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
