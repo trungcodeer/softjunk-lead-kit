@@ -79,6 +79,40 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub Funding And Metadata Route Evidence
+
+Local validation:
+- Product `.github/FUNDING.yml` contains AI Deal Desk, `paypal.me/softjunk/5USD`, and exactly 4 custom links.
+- Root `.github/FUNDING.yml` contains AI Deal Desk, `paypal.me/softjunk/5USD`, and exactly 4 custom links.
+- Profile `.github/FUNDING.yml` contains profile microsite, AI Deal Desk, `paypal.me/softjunk/5USD`, and exactly 4 custom links.
+- Product `.github/ISSUE_TEMPLATE/config.yml` contains the AI Deal Desk contact link before the PayPal links.
+- Product `.github/SUPPORT.md` contains AI Deal Desk, PayPal.Me, and the `PAYPAL_PAYMENT_VERIFIED=true` fulfillment gate.
+- `git diff --check` found only Windows line-ending warnings and no whitespace errors.
+
+Public deploy and metadata validation:
+- Product commit: `6f8e10d` in `https://github.com/trungcodeer/softjunk-lead-kit`.
+- Root commit: `82511a7` in `https://github.com/trungcodeer/trungcodeer.github.io`.
+- Profile commit: `bf84189` in `https://github.com/trungcodeer/trungcodeer`.
+- GitHub Pages deployments completed successfully for all three repos.
+- GitHub API product metadata: homepage `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`, topic `ai-deal-desk`, topic `agent-commerce`.
+- GitHub API root metadata: homepage `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`, topics `ai-deal-desk`, `agent-commerce`, and `lead-recovery`.
+- GitHub API profile metadata: homepage `https://trungcodeer.github.io/trungcodeer/`, topics `ai-deal-desk`, `lead-recovery`, and `llms-txt`.
+- Raw product funding file exposed AI Deal Desk, PayPal.Me, and 4 custom links from default branch.
+- Raw root funding file exposed AI Deal Desk, PayPal.Me, and 4 custom links from default branch.
+- Raw profile funding file exposed profile microsite, AI Deal Desk, PayPal.Me, and 4 custom links from default branch.
+- Raw product issue config exposed AI Deal Desk, PayPal.Me, and Agent Commerce Capsule contact links.
+
+Release and discovery:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.7`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-github-funding-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-github-funding-v1`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539046137`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539046101`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Profile AI Deal Desk Route Evidence
 
 Local validation:

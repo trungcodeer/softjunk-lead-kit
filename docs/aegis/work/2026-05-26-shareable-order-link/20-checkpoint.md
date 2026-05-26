@@ -330,3 +330,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses the trusted GitHub profile surface as a non-traditional AI-native handoff path while avoiding spam, unauthorized outreach, and false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub Funding And Metadata Route Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Align GitHub-native surfaces that a buyer can see before opening Pages: repo homepage URLs, repo descriptions, topics, funding links, support links, and issue contact links.
+
+Completed todos:
+- Updated product `.github/FUNDING.yml`, `.github/SUPPORT.md`, and `.github/ISSUE_TEMPLATE/config.yml` to put AI Deal Desk before the exact 5 USD PayPal path.
+- Updated root `.github/FUNDING.yml` to include AI Deal Desk and exact 5 USD PayPal path.
+- Updated profile `.github/FUNDING.yml` to include the profile microsite, AI Deal Desk, and exact 5 USD PayPal path.
+- Edited GitHub repo metadata for product, root, and profile repos.
+- Product repo homepage now points to `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`.
+- Root repo homepage now points to `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`.
+- Profile repo homepage now points to `https://trungcodeer.github.io/trungcodeer/`.
+- Added/verified GitHub topics including `ai-deal-desk`, `agent-commerce`, `lead-recovery`, and `llms-txt` where appropriate.
+- Committed and pushed product change `6f8e10d`, root change `82511a7`, and profile change `bf84189`.
+- Confirmed GitHub Pages deployments succeeded for all three repos.
+- Created releases `v2.29.7`, `root-github-funding-v1`, and `profile-github-funding-v1`.
+- Verified raw default-branch funding/config files and GitHub repo metadata via `gh repo view`.
+- Commented public issues #2 and #3 with the GitHub-native route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product raw `.github/FUNDING.yml` contains AI Deal Desk, `paypal.me/softjunk/5USD`, and exactly 4 custom links.
+- Root raw `.github/FUNDING.yml` contains AI Deal Desk, `paypal.me/softjunk/5USD`, and exactly 4 custom links.
+- Profile raw `.github/FUNDING.yml` contains profile microsite, AI Deal Desk, `paypal.me/softjunk/5USD`, and exactly 4 custom links.
+- Product raw `.github/ISSUE_TEMPLATE/config.yml` contains `AI Deal Desk`, `paypal.me/softjunk/5USD`, and `Agent commerce capsule`.
+- GitHub API reports product description `SoftJunk AI Deal Desk for $5 lead follow-up sequences, PayPal checkout, and quiet-lead recovery templates`.
+- GitHub API reports root description `SoftJunk root buyer hub routing quiet-lead recovery buyers to the $5 AI Deal Desk and PayPal handoff`.
+- GitHub API reports profile description `Public profile route for SoftJunk $5 AI Deal Desk, lead follow-up buyer handoff, and exact PayPal checkout`.
+- Releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.7`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-github-funding-v1`, and `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-github-funding-v1`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539046137` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539046101`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses GitHub-native owned surfaces that a buyer or crawler can discover without spam or unauthorized outreach.
+- Compatibility boundary: GitHub repo metadata, static GitHub Pages, public releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
