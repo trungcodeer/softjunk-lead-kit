@@ -56,7 +56,7 @@ https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-
 MCP checkout Gist:
 https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 
-Send-to-buyer page:
+Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 
 Send-to-buyer JSON:

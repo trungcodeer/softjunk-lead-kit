@@ -14,6 +14,20 @@ https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 PayPal checkout:
 https://paypal.me/softjunk/5USD
 
+## Local Buyer Pitch Generator
+
+The public page includes a local-only generator for:
+
+- Business type
+- Service or offer
+- Why $5 is worth it
+- Lead source
+- Lead problem
+- Tone
+- Best next step
+
+It outputs a buyer-specific short DM, email, PayPal note, and `mailto:` link. It does not submit field values, and it warns before copying if editable fields appear to contain email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs.
+
 ## Short DM
 
 ```text

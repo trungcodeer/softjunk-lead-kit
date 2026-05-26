@@ -229,7 +229,7 @@ paths:
       summary: Open the SoftJunk send-to-buyer packet.
       responses:
         "200":
-          description: Buyer-facing page with copy-ready DM, email, PayPal note, exact 5 USD PayPal URL, order form, and verification gate.
+          description: Buyer-facing page with a local-only pitch generator, copy-ready DM, email, PayPal note, exact 5 USD PayPal URL, order form, and verification gate.
           content:
             text/html:
               schema:
@@ -240,7 +240,7 @@ paths:
       summary: Get the SoftJunk send-to-buyer packet JSON.
       responses:
         "200":
-          description: Machine-readable buyer-facing packet with copy-ready messages, PayPal note template, payment URL, order form, and verification gate.
+          description: Machine-readable buyer-facing packet with local generator metadata, copy-ready messages, PayPal note template, payment URL, order form, and verification gate.
           content:
             application/json:
               schema:

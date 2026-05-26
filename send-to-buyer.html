@@ -68,7 +68,10 @@
     }
 
     a:focus-visible,
-    button:focus-visible {
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible,
+    textarea:focus-visible {
       outline: 3px solid var(--focus);
       outline-offset: 3px;
     }
@@ -192,6 +195,12 @@
       border-color: var(--accent);
     }
 
+    button:disabled,
+    .button[aria-disabled="true"] {
+      cursor: not-allowed;
+      opacity: 0.58;
+    }
+
     .panel {
       background: var(--paper);
       border: 1px solid var(--line);
@@ -213,8 +222,38 @@
       margin: 18px 0 28px;
     }
 
+    .builder {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 16px;
+    }
+
     .wide {
       grid-column: 1 / -1;
+    }
+
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 800;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 44px;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 10px 12px;
+      font: inherit;
+      color: var(--ink);
+      background: #fbfcfa;
     }
 
     textarea {
@@ -238,11 +277,27 @@
       font-weight: 700;
     }
 
+    .hint {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .inline-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
     .status {
       min-height: 24px;
       color: var(--accent-dark);
       font-weight: 700;
       margin-top: 8px;
+    }
+
+    .status.warning {
+      color: #8a3b12;
     }
 
     footer {
@@ -253,7 +308,8 @@
 
     @media (max-width: 760px) {
       .hero,
-      .grid {
+      .grid,
+      .builder {
         grid-template-columns: 1fr;
       }
 
@@ -281,7 +337,7 @@
     <section class="hero" aria-labelledby="title">
       <div>
         <h1 id="title">Send this to one buyer with one quiet lead.</h1>
-        <p class="lead">Copy a short DM or email that routes a fitting buyer to the exact $5 PayPal checkout. Use it only for a relevant buyer, not unsolicited spam.</p>
+        <p class="lead">Generate a buyer-specific DM, email, and PayPal note from non-sensitive context, then route a fitting buyer to the exact $5 PayPal checkout. Use it only for a relevant buyer, not unsolicited spam.</p>
         <div class="actions">
           <a class="button primary" href="https://paypal.me/softjunk/5USD">Pay $5 on PayPal</a>
           <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml">Order form</a>
@@ -293,9 +349,72 @@
       </aside>
     </section>
 
+    <section class="panel" aria-labelledby="builder-title">
+      <h2 id="builder-title">Buyer Pitch Generator</h2>
+      <p class="hint">Local-only fields. Do not enter customer names, phone numbers, email addresses, street addresses, PayPal IDs, invoice IDs, or transaction IDs.</p>
+      <form class="builder" id="pitch-form" novalidate>
+        <div class="field">
+          <label for="business">Business type</label>
+          <input id="business" name="business" type="text" autocomplete="off" maxlength="80" value="local service business">
+        </div>
+        <div class="field">
+          <label for="service">Service or offer</label>
+          <input id="service" name="service" type="text" autocomplete="off" maxlength="80" value="estimate or appointment">
+        </div>
+        <div class="field">
+          <label for="value">Why $5 is worth it</label>
+          <input id="value" name="value" type="text" autocomplete="off" maxlength="110" value="one recovered job is worth more than $5">
+        </div>
+        <div class="field">
+          <label for="source">Lead source</label>
+          <select id="source" name="source">
+            <option>form</option>
+            <option>DM</option>
+            <option>call</option>
+            <option>email</option>
+            <option>referral</option>
+            <option>quote</option>
+            <option>estimate</option>
+            <option>appointment</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="need">Lead problem</label>
+          <select id="need" name="need">
+            <option>went quiet</option>
+            <option>needs a missed-call follow-up</option>
+            <option>has an unanswered estimate</option>
+            <option>missed the appointment</option>
+            <option>raised a price objection</option>
+            <option>stopped replying in DM</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="tone">Tone</label>
+          <select id="tone" name="tone">
+            <option>friendly</option>
+            <option>professional</option>
+            <option>direct</option>
+            <option>calm</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="next">Best next step</label>
+          <select id="next" name="next">
+            <option>book</option>
+            <option>reply</option>
+            <option>quote</option>
+            <option>call</option>
+            <option>reschedule</option>
+          </select>
+        </div>
+      </form>
+      <p class="status" id="privacy-status" aria-live="polite"></p>
+    </section>
+
     <section class="grid" aria-label="Copyable buyer messages">
       <article class="panel">
-        <h2>Short DM</h2>
+        <h2>Generated Short DM</h2>
         <textarea id="dm" aria-label="Short DM text" readonly>You have one lead that went quiet. If one recovered reply is worth more than $5, I can write the Day 0, 1, 3, 5, and 7 follow-up sequence for that one situation.
 
 Use only non-sensitive business context. Pay exactly $5 here:
@@ -306,12 +425,14 @@ One Lead Rescue | Business: [business type] | Service: [service] | Source: [form
 
 After payment, send non-sensitive details here:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml</textarea>
-        <button class="accent" type="button" data-copy="dm">Copy DM</button>
+        <div class="inline-actions">
+          <button class="accent" type="button" data-copy="dm">Copy DM</button>
+        </div>
         <p class="status" id="dm-status" aria-live="polite"></p>
       </article>
 
       <article class="panel">
-        <h2>Email</h2>
+        <h2>Generated Email</h2>
         <textarea id="email" aria-label="Email text" readonly>Subject: $5 follow-up sequence for one quiet lead
 
 Hi,
@@ -328,7 +449,10 @@ One Lead Rescue | Business: [business type] | Service: [service] | Source: [form
 
 After payment, submit non-sensitive order details:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml</textarea>
-        <button class="accent" type="button" data-copy="email">Copy Email</button>
+        <div class="inline-actions">
+          <button class="accent" type="button" data-copy="email">Copy Email</button>
+          <a class="button" id="email-client" href="mailto:">Open Email</a>
+        </div>
         <p class="status" id="email-status" aria-live="polite"></p>
       </article>
 
@@ -346,9 +470,103 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
   </footer>
 
   <script>
+    var fieldIds = ["business", "service", "value", "source", "need", "tone", "next"];
+    var inputIds = ["business", "service", "value"];
+    var privacyRisk = false;
+
+    function cleanField(id, fallback) {
+      var element = document.getElementById(id);
+      var value = element ? element.value : "";
+      value = value.trim().replace(/\s+/g, " ").replace(/[|<>]/g, " ");
+      return value.slice(0, 110) || fallback;
+    }
+
+    function hasPrivateIdentifier(value) {
+      return /\S+@\S+\.\S+/.test(value)
+        || /(?:\+?\d[\d\s().-]{6,}\d)/.test(value)
+        || /\b\d{1,5}\s+[A-Za-z0-9.\s]{2,}\s+(?:street|st|avenue|ave|road|rd|lane|ln|drive|dr|blvd|boulevard)\b/i.test(value)
+        || /\b(?:paypal|transaction|invoice)\s*(?:id|email|number)\b/i.test(value);
+    }
+
+    function buildPayload() {
+      var business = cleanField("business", "local service business");
+      var service = cleanField("service", "estimate or appointment");
+      var value = cleanField("value", "one recovered job is worth more than $5");
+      var source = cleanField("source", "form");
+      var need = cleanField("need", "went quiet");
+      var tone = cleanField("tone", "friendly");
+      var next = cleanField("next", "book");
+      var note = "One Lead Rescue | Business: " + business + " | Service: " + service + " | Source: " + source + " | Need: " + need + " | Tone: " + tone + " | Next: " + next;
+      var dm = "You have one " + source + " lead for " + service + " that " + need + ". If " + value + ", the $5 SoftJunk One-Lead Rescue writes the Day 0, 1, 3, 5, and 7 follow-up sequence for that exact " + business + " situation in a " + tone + " tone.\n\n"
+        + "Use only non-sensitive business context. Pay exactly $5 here:\n"
+        + "https://paypal.me/softjunk/5USD\n\n"
+        + "PayPal note:\n" + note + "\n\n"
+        + "After payment, send non-sensitive details here:\n"
+        + "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml\n\n"
+        + "Fulfillment starts only after seller-side PayPal proof confirms the $5 payment.";
+      var subject = "$5 " + tone + " follow-up sequence for one " + source + " lead";
+      var email = "Subject: " + subject + "\n\n"
+        + "Hi,\n\n"
+        + "You have one " + source + " lead for " + service + " that " + need + ". If " + value + ", the $5 SoftJunk One-Lead Rescue can turn that situation into a Day 0, 1, 3, 5, and 7 follow-up sequence.\n\n"
+        + "The sequence is written for a " + business + " in a " + tone + " tone, with the next step set to " + next + ". Use only non-sensitive business context.\n\n"
+        + "Pay exactly $5:\n"
+        + "https://paypal.me/softjunk/5USD\n\n"
+        + "PayPal note:\n" + note + "\n\n"
+        + "After payment, submit non-sensitive order details:\n"
+        + "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml\n\n"
+        + "Fulfillment starts only after seller-side PayPal proof confirms the $5 payment.";
+
+      return {
+        dm: dm,
+        email: email,
+        note: note,
+        subject: subject,
+        body: email.replace(/^Subject: .+\n\n/, "")
+      };
+    }
+
+    function updateGeneratedText() {
+      var payload = buildPayload();
+      document.getElementById("dm").value = payload.dm;
+      document.getElementById("email").value = payload.email;
+      document.getElementById("note").value = payload.note;
+
+      privacyRisk = inputIds.some(function (id) {
+        return hasPrivateIdentifier(document.getElementById(id).value);
+      });
+
+      var privacyStatus = document.getElementById("privacy-status");
+      var copyButtons = document.querySelectorAll("[data-copy]");
+      var emailClient = document.getElementById("email-client");
+
+      if (privacyRisk) {
+        privacyStatus.textContent = "Remove private identifiers before copying or opening email.";
+        privacyStatus.classList.add("warning");
+        copyButtons.forEach(function (button) {
+          button.disabled = true;
+        });
+        emailClient.removeAttribute("href");
+        emailClient.setAttribute("aria-disabled", "true");
+        emailClient.tabIndex = -1;
+      } else {
+        privacyStatus.textContent = "No private identifiers detected in the editable fields.";
+        privacyStatus.classList.remove("warning");
+        copyButtons.forEach(function (button) {
+          button.disabled = false;
+        });
+        emailClient.href = "mailto:?subject=" + encodeURIComponent(payload.subject) + "&body=" + encodeURIComponent(payload.body);
+        emailClient.removeAttribute("aria-disabled");
+        emailClient.removeAttribute("tabindex");
+      }
+    }
+
     async function copyText(id) {
       var element = document.getElementById(id);
       var status = document.getElementById(id + "-status");
+      if (privacyRisk) {
+        status.textContent = "Remove private identifiers before copying.";
+        return;
+      }
       try {
         await navigator.clipboard.writeText(element.value);
         status.textContent = "Copied.";
@@ -365,6 +583,14 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
         copyText(button.getAttribute("data-copy"));
       });
     });
+
+    fieldIds.forEach(function (id) {
+      var element = document.getElementById(id);
+      element.addEventListener("input", updateGeneratedText);
+      element.addEventListener("change", updateGeneratedText);
+    });
+
+    updateGeneratedText();
   </script>
 </body>
 </html>

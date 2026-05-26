@@ -19,7 +19,7 @@ Start here if you have one real quiet lead:
 6. Root A2A agent card: https://trungcodeer.github.io/.well-known/agent-card.json
 7. MCP checkout server: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
 8. MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
-9. Send-to-buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
+9. Send-to-buyer generator packet: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 10. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
 11. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
 12. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
@@ -83,7 +83,7 @@ https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-
 MCP checkout Gist:
 https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 
-Send-to-buyer page:
+Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 
 Send-to-buyer JSON:

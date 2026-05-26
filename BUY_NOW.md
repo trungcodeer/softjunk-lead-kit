@@ -22,7 +22,7 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
 9. MCP checkout manifest:
    https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
-10. Send-to-buyer packet:
+10. Send-to-buyer generator packet:
    https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 11. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
@@ -83,7 +83,7 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Well-known MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
 - MCP checkout server source: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
 - MCP checkout Gist: https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
-- Send-to-buyer page: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
+- Send-to-buyer generator page: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 - Send-to-buyer JSON: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json
 - Send-to-buyer Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
 - Send-to-buyer Gist: https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
