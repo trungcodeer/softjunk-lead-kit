@@ -38,6 +38,42 @@ Payment gate:
 - This slice still did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Root Short Routes Agent Pay Evidence
+
+Root route changes:
+- Updated `/pay/`, `/paypal/`, `/buy/`, and `/ai/` in `trungcodeer/trungcodeer.github.io`.
+- Each route now puts `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `After-payment handoff`, and `GitHub buyer discussion` in the first-screen buyer flow.
+- Each route exposes exact 5 USD PayPal payment and the seller-side verification rule with `PAYPAL_PAYMENT_VERIFIED=true`.
+- `/buy/` now includes Product JSON-LD and alternate JSON links to `root-offer.json`, `paypal.json`, and `ai.json`.
+- Mobile route styling was tightened to prevent clipped first-screen text.
+
+Local validation:
+- `git diff --check` passed in the root repo.
+- JSON-LD parsing reported `jsonld=1` for `pay/index.html`, `paypal/index.html`, `buy/index.html`, and `ai/index.html`.
+- `rg` confirmed AI Deal Desk, PayPal, after-payment handoff, GitHub buyer discussion, PayPal URL, and verification gate text across the route set.
+- Chrome headless desktop/mobile screenshots were generated for all four routes; mobile screenshots showed readable, unclipped first-screen buyer actions.
+
+Live validation:
+- GitHub Pages run `26429580964` completed successfully.
+- `Invoke-WebRequest` returned HTTP 200 for:
+  - `https://trungcodeer.github.io/pay/?v=607a5f2`
+  - `https://trungcodeer.github.io/paypal/?v=607a5f2`
+  - `https://trungcodeer.github.io/buy/?v=607a5f2`
+  - `https://trungcodeer.github.io/ai/?v=607a5f2`
+- Each live route contained `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `After-payment handoff`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Chrome headless `--dump-dom` on the live `/buy/` route emitted `Open AI Deal Desk`, `Pay 5 USD on PayPal`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Release and discovery:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/607a5f2`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-short-routes-agent-pay-v1`.
+- IndexNow returned `status=200 urls=5`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539534558`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539534827`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Agent Commerce Capsule Evidence
 
 Local validation:

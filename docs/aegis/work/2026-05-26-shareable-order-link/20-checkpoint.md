@@ -562,3 +562,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the shortest owned homepage path from discovery to AI Deal Desk and PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Root Short Routes Agent Pay Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Improve the shortest root payment routes (`/pay/`, `/paypal/`, `/buy/`, and `/ai/`) so buyers and buyer-agents see the AI Deal Desk, exact 5 USD PayPal payment, after-payment handoff, public buyer discussion, and verification gate in the first-screen route.
+
+Completed todos:
+- Re-audited the root short route pages and found they had PayPal/verification coverage but still behaved more like traditional payment pages than agent-first buyer contracts.
+- Updated `/pay/`, `/paypal/`, `/buy/`, and `/ai/` to put `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `After-payment handoff`, and `GitHub buyer discussion` at the top of the route.
+- Added or strengthened first-screen payment contract copy with exact PayPal amount, generated-note flow, after-payment handoff, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Added JSON-LD and alternate JSON discovery links to `/buy/`.
+- Fixed mobile wrapping/cropping issues on the short routes with `min-width: 0`, overflow wrapping, shorter headings, and mobile width constraints.
+- Validated local JSON-LD parsing, required text coverage, `git diff --check`, and Chrome headless desktop/mobile screenshots.
+- Committed and pushed root change `607a5f2`.
+- Created root release `root-short-routes-agent-pay-v1`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified live `/pay/`, `/paypal/`, `/buy/`, and `/ai/` returned HTTP 200 and exposed the buyer actions plus verification gate.
+- Submitted 5 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the short route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/607a5f2`.
+- Release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-short-routes-agent-pay-v1`.
+- Live routes checked with cache-busting: `https://trungcodeer.github.io/pay/?v=607a5f2`, `https://trungcodeer.github.io/paypal/?v=607a5f2`, `https://trungcodeer.github.io/buy/?v=607a5f2`, and `https://trungcodeer.github.io/ai/?v=607a5f2`.
+- Each live route returned HTTP 200 and contained `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `After-payment handoff`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Chrome headless DOM on the live `/buy/` route emitted the same AI Deal Desk, PayPal, and verification gate content.
+- IndexNow returned `status=200 urls=5`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539534558` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539534827`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it converts the shortest root payment URLs into AI/buyer-agent-friendly payment contracts without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
