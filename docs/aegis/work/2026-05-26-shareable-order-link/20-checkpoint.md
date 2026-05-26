@@ -1010,3 +1010,59 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses AI-readable buyer routing and checkout-local conversion work without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Commerce Graph Buyer Action Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Add a structured Product -> Offer -> BuyAction commerce graph so buyer-agents can route a relevant buyer to the exact 5 USD PayPal payment without guessing.
+
+Completed todos:
+- Added `commerce-graph.html`, `commerce-graph.json`, and `commerce-graph.txt`.
+- The graph exposes Schema.org Product, Offer, BuyAction, checkout API, HowTo, PayPal, and verification gate nodes.
+- Created public Gist mirror `https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db`.
+- Wired product buyer index, product feed, offers, agent buyer packet, agent buyer catalog JSONL, well-known offer, AI plugin manifest, OpenAPI, sitemap, robots, RSS, `llms.txt`, and README to expose the commerce graph and Gist/raw URLs.
+- Wired root offer JSON, root AI route JSON/TXT, root well-known offer, root AI plugin manifest, root OpenAPI, root sitemap, root robots, root `llms.txt`, and README to expose the commerce graph and Gist/raw URLs.
+- Validated product/root JSON, JSONL, XML, JSON-LD, local commerce page DOM, raw Gist, whitespace, and live Pages endpoints.
+- Committed and pushed product change `dd2c086`.
+- Created product release `v2.29.19`.
+- Committed and pushed root change `782e1eb`.
+- Created root release `root-commerce-graph-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Submitted 25 host-valid updated URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the commerce graph update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/dd2c086`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.19`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/782e1eb`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-commerce-graph-v1`.
+- Commerce graph page: `https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html`.
+- Commerce graph JSON-LD: `https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json`.
+- Commerce graph text: `https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt`.
+- Commerce graph Gist: `https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json`.
+- Raw Gist text: `https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt`.
+- GitHub Pages runs: product `26434589300`, root `26434589204`, both success.
+- Live product checks confirmed commerce graph HTML/JSON/TXT, buyer index, product feed, offers, agent packet, JSONL catalog, well-known offer, AI plugin, OpenAPI, `llms.txt`, robots, sitemap, and RSS expose the graph/Gist routes.
+- Live root checks confirmed root offer, AI JSON/TXT, `llms.txt`, well-known root offer, AI plugin, OpenAPI, robots, and sitemap expose the graph/Gist routes.
+- Live raw Gist checks confirmed `BuyAction`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow returned `status=200 urls=25`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540693277` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540693273`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates non-traditional structured buyer-agent routing without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON-LD/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

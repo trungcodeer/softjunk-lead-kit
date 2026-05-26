@@ -70,6 +70,43 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Commerce Graph Buyer Action Evidence
+
+Local validation:
+- Product JSON parse passed for `commerce-graph.json`, buyer index, product feed, offers, agent buyer packet, well-known offer, and product AI plugin.
+- Product JSONL parse passed for `agent-buyer-catalog.jsonl`, including `free_commerce_graph`.
+- Product XML parse passed for `sitemap.xml` and `feed.xml`.
+- Commerce graph HTML JSON-LD script parsed successfully and exposed `BuyAction`.
+- Chrome headless local DOM check passed for `commerce-graph.html`, `commerce-graph.json`, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and `Generate PayPal note`.
+- Root JSON parse passed for `root-offer.json`, `ai.json`, root well-known offer, and root AI plugin manifest.
+- Root XML parse passed for `sitemap.xml`.
+- Product and root `git diff --check` passed with line-ending warnings only.
+
+Commits and releases:
+- Product commit `dd2c086`: `Add commerce graph buyer action`.
+- Product release `v2.29.19`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.19`.
+- Root commit `782e1eb`: `Expose commerce graph from root hub`.
+- Root release `root-commerce-graph-v1`: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-commerce-graph-v1`.
+
+Public deploy validation:
+- Product Pages run `26434589300` completed successfully.
+- Root Pages run `26434589204` completed successfully.
+- Live product checks passed for `commerce-graph.html`, `commerce-graph.json`, `commerce-graph.txt`, buyer index, product feed, offers, agent buyer packet, agent buyer catalog JSONL, well-known offer, AI plugin, OpenAPI, `llms.txt`, robots, sitemap, and RSS.
+- Live root checks passed for `root-offer.json`, `ai.json`, `ai.txt`, `llms.txt`, well-known root offer, AI plugin, OpenAPI, robots, and sitemap.
+- Raw Gist checks passed for `BuyAction`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Public distribution:
+- Commerce graph Gist: `https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db`.
+- Raw commerce graph JSON: `https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json`.
+- Raw commerce graph text: `https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt`.
+- IndexNow returned `status=200 urls=25` for product and root commerce graph metadata URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540693277`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540693273`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Product Exact-Intent Follow-Up Pages Evidence
 
 Local validation:
