@@ -3216,3 +3216,14 @@ Payment gate:
 - Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549653649`.
 - GraphQL validation confirmed pinned comments on #1, #5, and #7 include `roofing-buyer-send`, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy language.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-27 Buyer-Send Visible Titles Evidence
+
+- Issue #1 title: `Start here: $5 buyer-send checkout for SoftJunk rescue`.
+- Issue #5 title: `Agent Close Contract: $5 buyer-send checkout route`.
+- Issue #7 title: `Roofing buyer-send packet: $5 Day 0/1/3/5/7 rescue`.
+- Discussion #8 title: `Roofing buyer-send packet: $5 Day 0/1/3/5/7 rescue`.
+- Discussion #8 URL: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/8`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549688589`.
+- Validation confirmed issues #1, #5, and #7 titles contain `buyer-send` and bodies contain `roofing-buyer-send`, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validation confirmed Discussion #8 title/body contain buyer-send route, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and the direct PayPal checkout line.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
