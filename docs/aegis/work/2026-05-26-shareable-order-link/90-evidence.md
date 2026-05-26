@@ -79,6 +79,26 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Pinned Roofing Buyer Issue Evidence
+
+Public pinned route:
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548163381`.
+
+Validation:
+- GitHub GraphQL `pinnedIssues(first: 6)` returned issues #1, #5, and #7 for `trungcodeer/softjunk-lead-kit`.
+- Issue #7 title in the pinned response: `Roofing estimate went quiet? $5 Day 0/1/3/5/7 rescue`.
+- `gh api repos/trungcodeer/softjunk-lead-kit/issues/comments/4548163381` confirmed `body_has_issue7=true` and `body_has_gate=true`.
+- Product worktree remained clean before the worklog update.
+
+Accessibility and privacy guardrails:
+- The pinned buyer route uses a plain-text issue title and direct GitHub issue URL.
+- The public evidence keeps exact amount wording, placeholder-only sample data, and the warning not to post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Roofing Issue Chooser Route Evidence
 
 Artifact changed:

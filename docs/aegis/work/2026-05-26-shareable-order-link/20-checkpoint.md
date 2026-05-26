@@ -3905,3 +3905,39 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the GitHub-native buyer path by showing the roofing sample route in the chooser before the payment/order form.
 - Compatibility boundary: owned GitHub repo issue templates, GitHub release/evidence issue, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Pinned Roofing Buyer Issue Checkpoint
+
+Current todo:
+- Keep the highest-intent public roofing buyer issue visible from GitHub's repo-level issue surface.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Query current GitHub pinned issues, confirm issue #7 is pinned, add public evidence to issue #5, and rerun the PayPal verifier.
+
+Completed todos:
+- Queried `pinnedIssues(first: 6)` for `trungcodeer/softjunk-lead-kit`.
+- Confirmed issue #7 is already pinned next to issues #1 and #5.
+- Did not run `gh issue pin` because no state change was needed.
+- Added public product issue #5 evidence comment.
+- Validated the issue #5 comment exists and contains issue #7 plus the closed PayPal gate marker.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548163381`.
+- Pinned issue validation returned issues #1, #5, and #7.
+- Comment validation returned `body_has_issue7=true` and `body_has_gate=true`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it keeps the most concrete buyer-facing roofing route visible in the repo's public issue surface without spam, deception, private data collection, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repo issue pins/comments, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
