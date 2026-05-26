@@ -471,6 +471,64 @@ Payment gate:
 - Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
 - Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
+## 2026-05-26 Roofing Estimate Rescue Funnel Evidence
+
+Files changed:
+- Product new files: `roofing-estimate-rescue.html`, `roofing-estimate-rescue.json`, `roofing-estimate-rescue.txt`.
+- Product discovery files: `README.md`, `BUY_NOW.md`, `ONE_MESSAGE_BUYER_PACKET.md`, `llms.txt`, `buy-now.json`, `agents-checkout.json`, `agent-buyer-catalog.jsonl`, `.well-known/softjunk-offer.json`, `.well-known/openapi.yaml`, `sitemap.xml`, and `feed.xml`.
+- Root discovery files: `README.md`, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, and `sitemap.xml`.
+
+Behavior added:
+- Focused buyer-facing route for a roofing contractor with one unanswered estimate.
+- Copy-ready message to send to a fitting roofing contractor.
+- Exact 5 USD PayPal URL and PayPal note.
+- Free preview follow-up message.
+- Prefilled send-to-buyer generator link.
+- Public Gist fallback.
+- Seller-side PayPal verification gate remains unchanged.
+
+Local validation:
+- `product_json_ok`: JSON parse passed for `roofing-estimate-rescue.json`, `buy-now.json`, `agents-checkout.json`, `.well-known/softjunk-offer.json`, and `send-to-buyer.json`.
+- `product_jsonl_ok lines=33`: JSONL parse passed for `agent-buyer-catalog.jsonl`.
+- `roofing_html_static_ok`: HTML script syntax and markers passed for skip link, `aria-live`, PayPal URL, roofing contractor copy, verifier gate, and QR image.
+- `product_xml_ok`: product sitemap and feed XML parsed.
+- `product_yaml_ok`: product OpenAPI YAML parsed.
+- `root_json_ok`: root offer JSON and well-known root offer JSON parsed.
+- `root_xml_ok`: root sitemap XML parsed.
+- `root_yaml_ok`: root OpenAPI YAML parsed.
+- Product and root `git diff --check` passed with only line-ending warnings.
+
+Public validation:
+- `pages_roof_html=ok`.
+- `pages_roof_json=ok`.
+- `pages_roof_txt=ok`.
+- `pages_roof_paypal=ok`.
+- `pages_roof_prefill=ok`.
+- `raw_roof_json_gist_meta=ok`.
+- `gist_roof_json=ok`.
+- `root_offer_roof=ok`.
+- `root_openapi_roof=ok`.
+- `product_release=ok`.
+- `root_release=ok`.
+
+Public refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/a2330e6`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/125ba5a`.
+- Roofing estimate rescue page: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html`.
+- Roofing estimate rescue JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json`.
+- Roofing estimate rescue text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59`.
+- Prefilled buyer link: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.56`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-estimate-rescue-gist-v1`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546613008`.
+
+Discovery:
+- IndexNow returned `status=200 urls=13` for updated product/root discovery URLs.
+
+Payment verifier:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
 ## 2026-05-26 Send-To-Buyer Pitch Generator Evidence
 
 Files changed:

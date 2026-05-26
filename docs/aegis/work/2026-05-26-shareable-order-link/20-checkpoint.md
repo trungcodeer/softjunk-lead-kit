@@ -3387,3 +3387,57 @@ DriftCheckDraft:
 - Current slice fit: yes, it makes the buyer handoff directly shareable by AI/VA workflows while keeping context non-sensitive and refusing copy/share/open-email on likely private identifiers.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Roofing Estimate Rescue Funnel Checkpoint
+
+Current todo:
+- Create a higher-intent, actually sendable funnel for one concrete buyer type: a roofing contractor with one unanswered estimate.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add roofing estimate rescue HTML/JSON/TXT, copy-ready buyer message, PayPal note, free preview, prefilled send-to-buyer link, Gist fallback, product/root discovery wiring, releases, IndexNow, issue evidence, and PayPal verifier rerun.
+
+Completed todos:
+- Added `roofing-estimate-rescue.html`, `roofing-estimate-rescue.json`, and `roofing-estimate-rescue.txt`.
+- The page includes a copy-ready message to send to a fitting roofing contractor, exact PayPal URL, PayPal note, free preview, privacy rule, QR image, and seller-side verification gate.
+- Added product discovery wiring in README, BUY_NOW, ONE_MESSAGE_BUYER_PACKET, llms, buy-now JSON, agents-checkout JSON, well-known offer JSON, OpenAPI, sitemap, feed, and agent-buyer catalog JSONL.
+- Added root discovery wiring in README, llms, root-offer JSON, well-known root offer JSON, root OpenAPI, and root sitemap.
+- Committed and pushed product commits `87455b5` and `a2330e6`.
+- Committed and pushed root commits `2662a0d` and `125ba5a`.
+- Created public Gist `https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59`.
+- Created product releases `v2.29.55` and `v2.29.56`.
+- Created root releases `root-roofing-estimate-rescue-v1` and `root-roofing-estimate-rescue-gist-v1`.
+- Validated local product JSON, JSONL, XML, OpenAPI YAML, HTML script/static markers, accessibility markers, and whitespace.
+- Validated local root JSON, XML, OpenAPI YAML, and whitespace.
+- Validated public Pages, raw GitHub, Gist raw JSON, root offer, root OpenAPI, and releases.
+- Submitted 13 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/a2330e6`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/125ba5a`.
+- Roofing estimate rescue page: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html`.
+- Roofing estimate rescue JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json`.
+- Roofing estimate rescue text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59`.
+- Prefilled buyer link: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.56`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-estimate-rescue-gist-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546613008`.
+- Local validation passed: `product_json_ok`, `product_jsonl_ok lines=33`, `roofing_html_static_ok`, `product_xml_ok`, `product_yaml_ok`, `root_json_ok`, `root_xml_ok`, `root_yaml_ok`, and product/root `git diff --check`.
+- Public validation passed: `pages_roof_html`, `pages_roof_json`, `pages_roof_txt`, `pages_roof_paypal`, `pages_roof_prefill`, `raw_roof_json_gist_meta`, `gist_roof_json`, `root_offer_roof`, `root_openapi_roof`, `product_release`, and `root_release`.
+- IndexNow submission passed: `indexnow_status=200 urls=13`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate buyer-facing conversion/distribution work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves from generic checkout metadata to a concrete, sendable, high-value niche funnel for one likely buyer situation without spam, deception, private data leakage, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
