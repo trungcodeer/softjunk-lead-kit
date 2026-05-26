@@ -79,6 +79,34 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 README Buyer Shortcut Evidence
+
+Local validation:
+- Product README contains `## Buyer Shortcut`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, `after-pay.html`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root README contains `Buyer shortcut:`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, after-payment handoff, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Profile README contains `Buyer shortcut:`, `Open the profile handoff`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, after-payment handoff, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check` returned only Windows line-ending warnings and no whitespace errors before commit.
+
+Public deploy validation:
+- Product commit: `dbb6b2d` in `https://github.com/trungcodeer/softjunk-lead-kit`.
+- Root commit: `b816f18` in `https://github.com/trungcodeer/trungcodeer.github.io`.
+- Profile commit: `e02566d` in `https://github.com/trungcodeer/trungcodeer`.
+- GitHub Pages deployments completed successfully for all three repos.
+- Raw product README from default branch contains the shortcut, AI Deal Desk, PayPal URL, and verification gate.
+- Raw root README from default branch contains the shortcut, AI Deal Desk, PayPal URL, and verification gate.
+- Raw profile README from default branch contains the shortcut, profile handoff, AI Deal Desk, PayPal URL, and verification gate.
+
+Release and discovery:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.8`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-buyer-shortcut-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-readme-buyer-shortcut-v1`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539092729`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539092701`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 GitHub Funding And Metadata Route Evidence
 
 Local validation:

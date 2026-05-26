@@ -379,3 +379,45 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses GitHub-native owned surfaces that a buyer or crawler can discover without spam or unauthorized outreach.
 - Compatibility boundary: GitHub repo metadata, static GitHub Pages, public releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 README Buyer Shortcut Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Put the conversion path in the first screen of the product, root, and profile READMEs so GitHub visitors do not need to scan long link directories before seeing the AI Deal Desk and exact 5 USD PayPal route.
+
+Completed todos:
+- Added a `Buyer Shortcut` block near the top of the product README.
+- Added a buyer shortcut near the top of the root README.
+- Added a buyer shortcut near the top of the profile README.
+- Each shortcut routes to AI Deal Desk or profile handoff, exact `https://paypal.me/softjunk/5USD`, after-payment handoff, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Validated local README text with `rg` and `git diff --check`.
+- Committed and pushed product change `dbb6b2d`, root change `b816f18`, and profile change `e02566d`.
+- Confirmed GitHub Pages deployments succeeded for all three repos.
+- Verified raw default-branch READMEs expose the shortcut, AI Deal Desk/profile handoff, PayPal URL, and verification gate.
+- Created releases `v2.29.8`, `root-readme-buyer-shortcut-v1`, and `profile-readme-buyer-shortcut-v1`.
+- Commented public issues #2 and #3 with the README shortcut update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product raw README contains `## Buyer Shortcut`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root raw README contains `Buyer shortcut:`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Profile raw README contains `Buyer shortcut:`, `Open the profile handoff`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.8`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-buyer-shortcut-v1`, and `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-readme-buyer-shortcut-v1`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539092729` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539092701`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it shortens the GitHub-native path from discovery to PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: GitHub README/default branch, static GitHub Pages, public releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
