@@ -1122,3 +1122,59 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses an AI-native buyer-agent relay and public owned-channel distribution without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Fix One Quiet Lead Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Turn the existing `fix-one-quiet-lead.html` route into a one-screen AI-native buyer conversion flow that generates one stronger reply, a PayPal note, a shareable rescue link, and the exact 5 USD PayPal handoff.
+
+Completed todos:
+- Rechecked current product/root worktree state and PayPal verifier status.
+- Rebuilt `fix-one-quiet-lead.html` as an interactive builder with copy actions, query-param presets, PayPal note generation, Gist links, and the `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Added `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`.
+- Created public Gist mirror `https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759`.
+- Wired product buyer index, product feed, offers, agent buyer packet, JSONL catalog, well-known offer, AI plugin manifest, OpenAPI, sitemap, robots, RSS, `llms.txt`, and README to expose the route and Gist/raw URLs.
+- Wired root page, `/ai/`, root offer JSON, root AI JSON/TXT, well-known root offer, root AI plugin manifest, root OpenAPI, sitemap, robots, `llms.txt`, and README to expose the route.
+- Fixed `offers.json` so it explicitly carries `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validated product/root JSON, JSONL, XML, JSON-LD, local Chrome DOM, raw Gist JSON/TXT, whitespace, and live Pages endpoints.
+- Committed and pushed product changes `a058ca3` and `bd83b01`.
+- Created product releases `v2.29.21` and `v2.29.22`.
+- Committed and pushed root change `edeea72`.
+- Created root release `root-one-lead-rescue-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Submitted 26 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the new one-lead rescue route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commits: `https://github.com/trungcodeer/softjunk-lead-kit/commit/a058ca3` and `https://github.com/trungcodeer/softjunk-lead-kit/commit/bd83b01`.
+- Product releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.21` and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.22`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/edeea72`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-lead-rescue-v1`.
+- One-lead builder page: `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+- One-lead builder JSON: `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json`.
+- One-lead builder text: `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt`.
+- Public Gist: `https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json`.
+- Raw Gist text: `https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt`.
+- GitHub Pages runs: product `26436616207`, root `26436615886`, product offers-gate redeploy `26436699796`, all success.
+- Live validation passed for 22 URLs across product, root, and raw Gist surfaces.
+- IndexNow returned `status=200 urls=26`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541272722` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541272727`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a non-traditional AI-ingestible one-lead rescue and checkout surface without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

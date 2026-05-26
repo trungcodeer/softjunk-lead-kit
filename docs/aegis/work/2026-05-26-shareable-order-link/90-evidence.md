@@ -111,6 +111,48 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Fix One Quiet Lead Evidence
+
+Local validation:
+- Product structured validation passed for 7 JSON files, 19 JSONL rows, one JSON-LD block, and one inline script for the new route.
+- Product XML validation passed for `sitemap.xml` and `feed.xml`.
+- Chrome headless local DOM validation passed for `fix-one-quiet-lead.html` with sample query params and confirmed generated message, PayPal note, PayPal URL, public Gist link, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root structured validation passed for root JSON metadata, root pages, and OpenAPI markers for the one-lead route.
+- Root XML validation passed for `sitemap.xml`.
+- Chrome headless local DOM validation passed for root `index.html` and `/ai/` with the one-lead route, PayPal URL, and verification gate.
+- Raw Gist JSON and text validation passed for route schema, PayPal URL, Gist URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product and root `git diff --check` passed with line-ending warnings only.
+
+Files added:
+- `fix-one-quiet-lead.json`
+- `fix-one-quiet-lead.txt`
+
+Commits and releases:
+- Product commit `a058ca3`: `Upgrade one-lead rescue checkout`.
+- Product commit `bd83b01`: `Add one-lead offers verification gate`.
+- Product release `v2.29.21`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.21`.
+- Product release `v2.29.22`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.22`.
+- Root commit `edeea72`: `Expose one-lead rescue from root hub`.
+- Root release `root-one-lead-rescue-v1`: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-lead-rescue-v1`.
+
+Public deploy validation:
+- Product Pages run `26436616207` completed successfully for commit `a058ca3`.
+- Root Pages run `26436615886` completed successfully for commit `edeea72`.
+- Product Pages run `26436699796` completed successfully for commit `bd83b01`.
+- Live validation passed for 22 URLs: product builder HTML/JSON/TXT, buyer index, product feed, offers, product plugin, product OpenAPI, product sitemap, product robots, root page, root `/ai/`, root AI JSON/TXT, root offer, well-known root offer, root plugin, root OpenAPI, root sitemap, root robots, and raw Gist JSON/TXT.
+
+Public distribution:
+- Gist: `https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759`.
+- Raw JSON: `https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json`.
+- Raw text: `https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt`.
+- IndexNow returned `status=200 urls=26`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541272722`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541272727`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Commerce Graph Buyer Action Evidence
 
 Local validation:
