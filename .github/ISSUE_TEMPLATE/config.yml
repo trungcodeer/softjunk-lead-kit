@@ -1,6 +1,17 @@
 blank_issues_enabled: false
 contact_links:
-  - name: GitHub-native Buy Now packet
+  - name: Roofing buyer-send packet
+    url: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+    about: One-read buyer route for one unanswered roofing estimate with exact 5 USD PayPal checkout, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+  - name: Pay exactly 5 USD on PayPal
+    url: https://paypal.me/softjunk/5USD
+    about: Direct PayPal.Me checkout for the SoftJunk 5 USD offer after the buyer has the rescue note.
+  - name: Roofing buyer-send JSON
+    url: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
+    about: Machine-readable buyer-agent checkout packet with PayPal URL, GitHub discussion route, privacy rule, and verification gate.
+  - name: Roofing buyer-send text
+    url: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt
+    about: Plain-text checkout packet for buyer-agents, assistants, and humans who need the shortest route to pay 5 USD.  - name: GitHub-native Buy Now packet
     url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
     about: Shortest GitHub-native route with pinned buyer issues, exact 5 USD PayPal checkout, order form, and verification gate.
   - name: Raw Buy Now JSON
