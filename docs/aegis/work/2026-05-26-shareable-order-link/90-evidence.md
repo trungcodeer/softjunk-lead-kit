@@ -79,6 +79,45 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Owned Repo Sponsor Route Propagation Evidence
+
+Repos changed:
+- Root repo `trungcodeer.github.io`: `.github/FUNDING.yml`, `.github/SUPPORT.md`, `README.md`, `llms.txt`, `root-offer.json`.
+- Profile repo `trungcodeer`: `.github/FUNDING.yml`, `.github/SUPPORT.md`, `README.md`, `llms.txt`, `softjunk-profile-offer.json`.
+- Quiet lead repo `quiet-lead-follow-up`: `.github/FUNDING.yml`, `.github/SUPPORT.md`, `README.md`, `llms.txt`, `buyer-route.json`.
+
+Commit and release refs:
+- Root commit: `deb0495 Put Sponsor button PayPal route first`.
+- Profile commit: `fe996f0 Put Sponsor button PayPal route first`.
+- Quiet lead commit: `fbc42b7 Put Sponsor button PayPal route first`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-paypal-route-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-sponsor-paypal-route-v1`.
+- Quiet lead release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-sponsor-paypal-route-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544868681`.
+
+Public funding configs:
+- Root funding: `https://github.com/trungcodeer/trungcodeer.github.io/blob/main/.github/FUNDING.yml`.
+- Profile funding: `https://github.com/trungcodeer/trungcodeer/blob/main/.github/FUNDING.yml`.
+- Quiet lead funding: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/.github/FUNDING.yml`.
+
+Local validation:
+- Root YAML/JSON validation passed: `root_validate_ok funding_first=https://paypal.me/softjunk/5USD`.
+- Profile YAML/JSON validation passed: `profile_validate_ok funding_first=https://paypal.me/softjunk/5USD`.
+- Quiet YAML/JSON validation passed: `quiet_validate_ok funding_first=https://paypal.me/softjunk/5USD`.
+- Marker coverage passed: `root_marker_ok`, `profile_marker_ok`, `quiet_marker_ok`.
+- `git diff --check` returned no whitespace errors in all three repos before commit.
+
+Public validation:
+- Raw GitHub root validation passed: `root_raw_ok first=https://paypal.me/softjunk/5USD`.
+- Raw GitHub profile validation passed: `profile_raw_ok first=https://paypal.me/softjunk/5USD`.
+- Raw GitHub quiet validation passed: `quiet_raw_ok first=https://paypal.me/softjunk/5USD`.
+- Release validation passed for root/profile/quiet: `release_ok`.
+- Issue comment validation passed: `issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544868681`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Latest Evidence Pointer
 
 - Latest conversion slice: Instant fulfillment packet.

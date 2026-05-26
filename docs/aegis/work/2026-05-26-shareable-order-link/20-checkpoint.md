@@ -2749,3 +2749,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses GitHub's native funding/Sponsor surface to route repository visitors to the exact PayPal checkout without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Owned Repo Sponsor Route Propagation Checkpoint
+
+Current todo:
+- Propagate the Sponsor/Funding PayPal route beyond the product repo to owned root, profile, and quiet-lead repositories.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Put `https://paypal.me/softjunk/5USD` first in `.github/FUNDING.yml` for root, profile, and quiet-lead repos, then link the Sponsor button buy route, PayPal note, and instant fulfillment packet in their README/support/manifest surfaces.
+
+Completed todos:
+- Updated root repo `trungcodeer.github.io` funding/support/README/llms/root-offer surfaces.
+- Updated profile repo `trungcodeer` funding/support/README/llms/profile-offer surfaces.
+- Updated quiet lead repo `quiet-lead-follow-up` funding/support/README/llms/buyer-route surfaces.
+- Validated local YAML/JSON structure and marker coverage for all three repos.
+- Committed and pushed root commit `deb0495`, profile commit `fe996f0`, and quiet commit `fbc42b7`.
+- Validated public raw GitHub funding first URL and sponsor-route markers for all three repos.
+- Created releases `root-sponsor-paypal-route-v1`, `profile-sponsor-paypal-route-v1`, and `quiet-sponsor-paypal-route-v1`.
+- Added a public product issue #5 comment for owned repo Sponsor/Funding propagation.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/deb0495`.
+- Profile commit: `https://github.com/trungcodeer/trungcodeer/commit/fe996f0`.
+- Quiet lead commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/fbc42b7`.
+- Root funding config: `https://github.com/trungcodeer/trungcodeer.github.io/blob/main/.github/FUNDING.yml`.
+- Profile funding config: `https://github.com/trungcodeer/trungcodeer/blob/main/.github/FUNDING.yml`.
+- Quiet lead funding config: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/.github/FUNDING.yml`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-paypal-route-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-sponsor-paypal-route-v1`.
+- Quiet lead release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-sponsor-paypal-route-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544868681`.
+- Local validation passed: `root_validate_ok`, `profile_validate_ok`, `quiet_validate_ok`, `root_marker_ok`, `profile_marker_ok`, `quiet_marker_ok`.
+- Public raw validation passed: `root_raw_ok first=https://paypal.me/softjunk/5USD`, `profile_raw_ok first=https://paypal.me/softjunk/5USD`, `quiet_raw_ok first=https://paypal.me/softjunk/5USD`.
+- Release validation passed for root/profile/quiet: `release_ok`.
+- Issue comment validation passed: `issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544868681`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it expands the GitHub-native payment route across owned repos without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: owned GitHub repos, public GitHub releases/issues/raw content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
