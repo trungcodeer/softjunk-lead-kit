@@ -74,6 +74,50 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Agent Buyer Catalog JSONL Evidence
+
+Product changes:
+- Added `agent-buyer-catalog.jsonl` as a retrieval-friendly feed for AI/RAG systems and buyer agents.
+- The JSONL feed contains 15 records covering catalog metadata, seller, fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers for missed calls, quiet estimates, price objections, no-shows, and quiet DMs.
+- Wired the feed into product homepage alternates, answer page alternates, `buyer-index.json`, `product-feed.json`, `answer-engine.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `llms.txt`, `robots.txt`, `sitemap.xml`, and README.
+
+Root changes:
+- Linked the product JSONL feed from root homepage alternates and public discovery copy.
+- Added the feed to `root-offer.json`, `ai.json`, `.well-known/softjunk-root-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, root `llms.txt`, and root `sitemap.xml`.
+
+Local validation:
+- `agent-buyer-catalog.jsonl` parsed line-by-line as JSON with 15 records.
+- Product JSON parse succeeded for `buyer-index.json`, `product-feed.json`, `answer-engine.json`, `.well-known/ai-plugin.json`, and `.well-known/softjunk-offer.json`.
+- Product `sitemap.xml` parsed as XML.
+- Product OpenAPI YAML parsed and confirmed `/agent-buyer-catalog.jsonl`.
+- Root JSON parse succeeded for `root-offer.json`, `ai.json`, `.well-known/ai-plugin.json`, and `.well-known/softjunk-root-offer.json`.
+- Root `sitemap.xml` parsed as XML.
+- Root OpenAPI YAML parsed and confirmed `/softjunk-lead-kit/agent-buyer-catalog.jsonl`.
+- `git diff --check` passed in both repos with only Windows line-ending warnings.
+- Chrome headless local DOM confirmed product/root references to `agent-buyer-catalog.jsonl`.
+
+Public deploy validation:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/d79b33e`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.13`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/393bb09`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agent-buyer-catalog-v1`.
+- Product Pages run `26431057887` completed successfully.
+- Root Pages run `26431071739` completed successfully.
+- Live JSONL parsed successfully from `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl?v=d79b33e` with 15 records.
+- Live product JSON checks confirmed `agent-buyer-catalog.jsonl` in buyer index, product feed, answer engine, AI plugin, and well-known offer.
+- Live product OpenAPI YAML, sitemap, `llms.txt`, and Chrome DOM confirmed the catalog route.
+- Live root JSON checks confirmed `agent-buyer-catalog.jsonl` in root offer, root AI JSON, root AI plugin, and well-known root offer.
+- Live root OpenAPI YAML, sitemap, `llms.txt`, and Chrome DOM confirmed the catalog route.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=19`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539821351`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539822372`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Root AI Checkout Discovery Evidence
 
 Root discovery changes:

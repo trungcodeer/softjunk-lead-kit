@@ -759,3 +759,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it turns the root host into an AI-readable checkout discovery layer without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Agent Buyer Catalog JSONL Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Add a retrieval-friendly JSONL buyer catalog so AI/RAG systems and buyer agents can ingest one record per fit rule, route, offer, checkout flow, payment intent, verification gate, and answer.
+
+Completed todos:
+- Added `agent-buyer-catalog.jsonl` with 15 newline-delimited buyer-agent records.
+- Wired the catalog into product homepage alternates, answer page alternates, buyer index, product feed, answer engine, well-known offer, AI plugin manifest, OpenAPI, `llms.txt`, `robots.txt`, sitemap, and README.
+- Wired the same catalog into the root homepage, root offer JSON, root AI route, well-known root offer, root AI plugin manifest, root OpenAPI, root `llms.txt`, and root sitemap.
+- Validated local JSONL parsing, product/root JSON, product/root XML, product/root OpenAPI YAML, whitespace, and Chrome headless DOM.
+- Committed and pushed product change `d79b33e`.
+- Created product release `v2.29.13`.
+- Committed and pushed root change `393bb09`.
+- Created root release `root-agent-buyer-catalog-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Verified live JSONL, product/root JSON, OpenAPI, sitemap, `llms.txt`, and Chrome DOM with cache-busting.
+- Submitted 19 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the JSONL buyer catalog update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/d79b33e`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.13`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/393bb09`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agent-buyer-catalog-v1`.
+- Live JSONL: `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl?v=d79b33e`.
+- Live JSONL parsed successfully with 15 records and includes the PayPal payment intent plus `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Live product/root OpenAPI YAML checks confirmed the catalog route exists.
+- Live product/root JSON, sitemap, `llms.txt`, and DOM checks confirmed `agent-buyer-catalog.jsonl` is discoverable.
+- IndexNow returned `status=200 urls=19`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539821351` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539822372`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it increases non-traditional AI retrieval and buyer-agent routing surface without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSONL/JSON/OpenAPI/llms discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
