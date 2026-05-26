@@ -2,9 +2,23 @@
 
 Pay exactly **5.00 USD** for the SoftJunk Lead Follow-Up Kit or custom 7-day lead follow-up sequence.
 
+Fastest one-lead rescue route:
+
+https://trungcodeer.github.io/rescue/
+
+Root rescue JSON:
+
+https://trungcodeer.github.io/rescue.json
+
+Root rescue text:
+
+https://trungcodeer.github.io/rescue.txt
+
 PayPal:
 
 https://paypal.me/softjunk/5USD
+
+If the buyer has one quiet lead, open the root one-lead rescue route before direct PayPal, copy the generated PayPal note, pay exactly **5.00 USD**, then use the one-lead order form after seller-side verification.
 
 If non-sensitive lead context is already ready and an AI assistant, VA, crawler, or operator needs a buyer decision plus PayPal note first, load:
 
@@ -41,6 +55,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 ## Buyer Routes
 
 - Root buyer hub: https://trungcodeer.github.io/
+- Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+- Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
+- Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
 - Root PayPal route: https://trungcodeer.github.io/paypal/
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
@@ -56,6 +73,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Agent offer: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+- One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Verification Gate
 
