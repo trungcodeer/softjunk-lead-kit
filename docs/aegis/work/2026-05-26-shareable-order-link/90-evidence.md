@@ -79,6 +79,47 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 MCP Checkout Server Evidence
+
+Artifacts:
+- Product `mcp-server-softjunk.js`, `package.json`, `MCP_CHECKOUT_SERVER.md`, `mcp-checkout-server.json`, and `.well-known/mcp-checkout-server.json`.
+- Product discovery updates: README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `robots.txt`, and `sitemap.xml`.
+- Root discovery updates: README, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+
+Callable MCP tools:
+- `route_softjunk_one_lead_rescue_checkout`.
+- `build_safe_paypal_note`.
+- `get_softjunk_checkout_routes`.
+- `get_paypal_verification_gate`.
+
+Public routes:
+- MCP checkout server brief: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md`.
+- MCP checkout manifest: `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json`.
+- Well-known MCP checkout manifest: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
+- MCP server source: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+
+Commits and releases:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/5f01da6`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/41235e3`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.50`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-mcp-checkout-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545731952`.
+
+Validation:
+- Local Node syntax check passed for `mcp-server-softjunk.js`.
+- Local MCP smoke test passed for `initialize`, `tools/list`, `build_safe_paypal_note`, `route_softjunk_one_lead_rescue_checkout`, and `get_paypal_verification_gate`.
+- Local product JSON passed for `package.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `agents-checkout.json`, `buy-now.json`, and `.well-known/softjunk-offer.json`.
+- Local root JSON passed for `root-offer.json` and `.well-known/softjunk-root-offer.json`.
+- Local product JSONL passed with `lines=31`.
+- Local product/root sitemap XML and OpenAPI YAML passed.
+- `git diff --check` returned no whitespace errors in product/root repos.
+- Public validation passed for raw MCP server, raw MCP manifest, raw MCP doc, Gist raw MCP manifest, Gist raw MCP server, Pages MCP manifest, Pages well-known MCP manifest, Pages MCP server, root offer MCP link, and both releases.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 AI Action Checkout Manifest Evidence
 
 Files changed:

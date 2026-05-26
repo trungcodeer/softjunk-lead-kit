@@ -3140,3 +3140,51 @@ DriftCheckDraft:
 - Current slice fit: yes, it adds A2A-style agent discovery at both root and product well-known paths without spam, deception, fake payment, unauthorized outreach, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 MCP Checkout Server Checkpoint
+
+Current todo:
+- Add a callable MCP stdio checkout server so AI clients can invoke a tool that returns the exact 5 USD PayPal handoff.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Publish a dependency-free local MCP stdio server, discovery manifests, Gist fallback, root hub pointers, releases, public validation, and issue evidence.
+
+Completed todos:
+- Added product `mcp-server-softjunk.js`, `package.json`, `MCP_CHECKOUT_SERVER.md`, `mcp-checkout-server.json`, and `.well-known/mcp-checkout-server.json`.
+- Added MCP links to product README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `robots.txt`, and `sitemap.xml`.
+- Added MCP links to root README, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+- Created and patched public MCP checkout Gist `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Validated local Node syntax, MCP JSON-RPC smoke output, JSON, JSONL, YAML, XML, and whitespace.
+- Committed and pushed product commit `5f01da6` and root commit `41235e3`.
+- Created product release `v2.29.50` and root release `root-mcp-checkout-v1`.
+- Validated public raw GitHub files, GitHub Pages manifest/source routes, Gist raw files, root link, and releases.
+- Added and validated public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/5f01da6`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/41235e3`.
+- MCP checkout server brief: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md`.
+- MCP checkout manifest: `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json`.
+- Well-known MCP checkout manifest: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
+- MCP server source: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js`.
+- Public MCP checkout Gist: `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.50`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-mcp-checkout-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545731952`.
+- Local validation passed: Node syntax check for `mcp-server-softjunk.js`; MCP smoke test for `initialize`, `tools/list`, `build_safe_paypal_note`, `route_softjunk_one_lead_rescue_checkout`, and `get_paypal_verification_gate`; product/root JSON; product JSONL `lines=31`; product/root OpenAPI YAML; product/root sitemap XML; and `git diff --check`.
+- Public validation passed: raw MCP server, raw MCP manifest, raw MCP doc, Gist raw MCP manifest, Gist raw MCP server, Pages MCP manifest, Pages well-known MCP manifest, Pages MCP server, root offer MCP link, and both releases.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel and AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a real callable MCP stdio tool surface for AI clients without falsely claiming a public remote MCP endpoint, payment, or fulfillment.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, local MCP stdio source, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
