@@ -1002,3 +1002,57 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Quiet Lead Root Rescue Evidence
+
+Repo recon:
+- `quiet-lead-follow-up` repo vitals: 9 commits, first/latest commit date 2026-05-26, 2 branches.
+- Hotspots before the slice: `buyer-route.json`, `llms.txt`, `sitemap.xml`, `README.md`, and `index.html`.
+- No bug-fix or revert/hotfix commits appeared in the small all-time history.
+
+Local validation:
+- `buyer-route.json` parsed with Node and exposed root rescue URLs plus `PAYPAL_PAYMENT_VERIFIED=true`.
+- `sitemap.xml` parsed as XML.
+- Seven HTML files parsed their JSON-LD blocks and contained `https://trungcodeer.github.io/rescue/`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`: `index.html`, `missed-call-follow-up.html`, `estimate-follow-up.html`, `quote-follow-up.html`, `no-show-follow-up.html`, `price-objection-reply.html`, and `quiet-dm-follow-up.html`.
+- `git diff --check` returned no whitespace errors.
+- Chrome headless `--dump-dom` on local `index.html` emitted `One-lead rescue`, `Open rescue route`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Files changed in quiet repo:
+- `README.md`
+- `buyer-route.json`
+- `estimate-follow-up.html`
+- `index.html`
+- `llms.txt`
+- `missed-call-follow-up.html`
+- `no-show-follow-up.html`
+- `pay-5-usd-paypal.md`
+- `price-objection-reply.html`
+- `quiet-dm-follow-up.html`
+- `quote-follow-up.html`
+- `sitemap.xml`
+
+Public Gist updates:
+- Quiet lead Gist `caeeb4b5aa7fc91a1b6f0e6d154f8a08` updated for `softjunk-buyer-route.json`, `quiet-lead-follow-up.md`, and `pay-5-usd-paypal.md`.
+- `gh gist view` confirmed the updated Gist exposes root rescue URLs, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Commit, release, metadata, and deploy:
+- Quiet repo commit: `5d14d94 Route quiet lead buyers to root rescue`.
+- Quiet repo release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-root-rescue-route-v1`.
+- Quiet repo metadata homepage set to `https://trungcodeer.github.io/rescue/`.
+- Quiet repo topics include `one-lead-rescue`.
+- Quiet GitHub Pages run `26440914256` completed with success.
+
+Live/raw/Gist validation:
+- `quiet_live_raw_gist_ok checks=15`.
+- Validated live quiet URLs: home, six intent pages, `buyer-route.json`, `llms.txt`, PayPal handoff, and sitemap.
+- Validated raw GitHub README.
+- Validated raw Gist buyer route JSON, quiet lead Markdown, and PayPal handoff Markdown.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=14` for root rescue plus quiet-lead URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542085226`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542088179`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

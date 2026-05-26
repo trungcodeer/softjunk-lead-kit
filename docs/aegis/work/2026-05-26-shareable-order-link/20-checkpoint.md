@@ -1368,3 +1368,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses public machine-readable discovery and buyer-agent routing rather than spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/JSONL/plugin/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Quiet Lead Root Rescue Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Move the high-intent `quiet-lead-follow-up` microsite and public Gist to the root one-lead rescue route first.
+
+Completed todos:
+- Rechecked product/root/profile/quiet worktree state and PayPal verifier status before the slice.
+- Reconned `quiet-lead-follow-up`: 9 commits, created/updated on 2026-05-26, latest surface still emphasized checkout/shareable order link over root rescue.
+- Updated quiet lead home page, six intent pages, buyer-route JSON, README, `llms.txt`, PayPal handoff Markdown, and sitemap to expose `https://trungcodeer.github.io/rescue/`, `rescue.json`, and `rescue.txt`.
+- Kept semantic links/buttons, skip links, focus handling, and existing copy interactions intact.
+- Validated local JSON, XML, HTML JSON-LD, marker coverage, whitespace, and Chrome headless DOM.
+- Committed and pushed quiet repo change `5d14d94`.
+- Updated quiet-lead Gist files for buyer route JSON, README Markdown, and PayPal handoff Markdown.
+- Updated quiet repo metadata homepage to `https://trungcodeer.github.io/rescue/` and topic set to include `one-lead-rescue`.
+- Created quiet repo release `quiet-root-rescue-route-v1`.
+- Confirmed quiet GitHub Pages deployment succeeded.
+- Validated 15 live/raw/Gist URLs for root rescue and PayPal or verification markers.
+- Submitted 14 root/quiet URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the quiet-lead owned-surface update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Quiet repo commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/5d14d94`.
+- Quiet repo release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-root-rescue-route-v1`.
+- GitHub Pages run: `26440914256`, success.
+- Quiet lead home: `https://trungcodeer.github.io/quiet-lead-follow-up/`.
+- Quiet buyer route JSON: `https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json`.
+- Quiet lead Gist: `https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08`.
+- Repo metadata homepage: `https://trungcodeer.github.io/rescue/`; topic includes `one-lead-rescue`.
+- Live/raw/Gist validation passed for 15 URLs, including all six intent pages, buyer-route JSON, `llms.txt`, PayPal handoff, sitemap, raw README, and three Gist files.
+- IndexNow returned `status=200 urls=14`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542085226` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542088179`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a high-intent owned microsite and public Gist without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, GitHub repo metadata, IndexNow discovery, JSON/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
