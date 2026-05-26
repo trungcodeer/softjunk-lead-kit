@@ -22,19 +22,21 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
 9. MCP checkout manifest:
    https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
-10. Agent checkout Gist:
+10. Send-to-buyer packet:
+   https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
+11. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-11. GitHub Sponsor button buy route:
+12. GitHub Sponsor button buy route:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-12. PayPal note first:
+13. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-13. What gets delivered after verified payment:
+14. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-14. Buyer-agent close contract:
+15. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-15. Direct PayPal checkout:
+16. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-16. After payment, submit non-sensitive order details if needed:
+17. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -81,6 +83,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Well-known MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
 - MCP checkout server source: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
 - MCP checkout Gist: https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
+- Send-to-buyer page: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
+- Send-to-buyer JSON: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json
+- Send-to-buyer Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
+- Send-to-buyer Gist: https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 - AI action checkout Gist: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 - Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md

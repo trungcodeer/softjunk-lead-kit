@@ -1,0 +1,38 @@
+{
+  "schema_version": "softjunk-send-to-buyer-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk Send This To One Buyer Packet",
+  "purpose": "Copy-ready buyer-facing messages for routing one fitting quiet-lead buyer to the exact 5 USD PayPal checkout without spam, private data, or false payment claims.",
+  "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html",
+  "markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md",
+  "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json",
+  "gist_url": "https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "paypal_note_template": "One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]",
+  "short_dm": "You have one lead that went quiet. If one recovered reply is worth more than $5, I can write the Day 0, 1, 3, 5, and 7 follow-up sequence for that one situation. Use only non-sensitive business context. Pay exactly $5 here: https://paypal.me/softjunk/5USD",
+  "email_subject": "$5 follow-up sequence for one quiet lead",
+  "email_body": "If you have one lead that stopped replying after a form, DM, call, quote, estimate, appointment, or referral, I can write the follow-up sequence for that one situation. You get Day 0, 1, 3, 5, and 7 messages, plus no-show and price-objection replies. Use only non-sensitive business context. Pay exactly $5 at https://paypal.me/softjunk/5USD, then submit non-sensitive order details at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml.",
+  "fit_rule": [
+    "Use only when a business owner has one real quiet lead.",
+    "Use only when one recovered conversation, quote, appointment, or job is plausibly worth more than 5 USD.",
+    "Use only non-sensitive business context."
+  ],
+  "do_not_use_when": [
+    "The recipient did not ask for help and the message would be spam.",
+    "The buyer asks for scraping, deception, fake reviews, or unauthorized outreach.",
+    "The order would require public customer names, phone numbers, emails, addresses, payment identifiers, or private PayPal details."
+  ],
+  "verification_gate": {
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "script_path": "scripts/verify-paypal-5usd.ps1",
+    "required_evidence": [
+      "Seller can see the 5 USD PayPal transaction",
+      "PayPal API verifier returns PAYPAL_PAYMENT_VERIFIED=true",
+      "Trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv"
+    ],
+    "rule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+  }
+}

@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Send This To One Buyer | SoftJunk</title>
+  <meta name="description" content="Copy-ready buyer message, email, PayPal note, and exact $5 checkout for one SoftJunk quiet-lead rescue.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html">
+  <meta name="robots" content="index,follow">
+  <meta property="og:title" content="Send This To One Buyer | SoftJunk">
+  <meta property="og:description" content="A direct packet for sending one fitting buyer to the exact $5 SoftJunk PayPal checkout.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Send This To One Buyer | SoftJunk">
+  <meta name="twitter:description" content="Copy the buyer message, PayPal note, and $5 checkout route.">
+  <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json" title="SoftJunk send-to-buyer JSON">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "name": "Send This To One Buyer",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html",
+          "description": "Copy-ready buyer message, email, PayPal note, and exact 5 USD checkout for one SoftJunk quiet-lead rescue."
+        },
+        {
+          "@type": "Offer",
+          "name": "SoftJunk One-Lead Rescue",
+          "price": "5.00",
+          "priceCurrency": "USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f6f7f2;
+      --paper: #ffffff;
+      --ink: #17211c;
+      --muted: #4c5c55;
+      --line: #d5ded8;
+      --accent: #0f766e;
+      --accent-dark: #0b5f59;
+      --pay: #064e8b;
+      --soft: #e7f3f1;
+      --focus: #9a5a00;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: -80px;
+      z-index: 10;
+      padding: 10px 14px;
+      background: var(--paper);
+      color: var(--ink);
+      border: 1px solid var(--line);
+      border-radius: 7px;
+    }
+
+    .skip-link:focus {
+      top: 16px;
+    }
+
+    header,
+    main,
+    footer {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 22px 0 12px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand,
+    nav a {
+      color: var(--ink);
+      font-weight: 700;
+      text-decoration: none;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+      gap: 28px;
+      align-items: center;
+      padding: 36px 0 28px;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.04;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.1;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    .lead {
+      font-size: 19px;
+      color: var(--muted);
+      max-width: 720px;
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .button,
+    button {
+      min-height: 44px;
+      border-radius: 7px;
+      border: 1px solid var(--line);
+      padding: 11px 16px;
+      font-weight: 800;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ink);
+      background: var(--paper);
+    }
+
+    .button.primary {
+      color: #ffffff;
+      background: var(--pay);
+      border-color: var(--pay);
+    }
+
+    .button.accent,
+    button.accent {
+      color: #ffffff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .qr {
+      width: min(260px, 100%);
+      aspect-ratio: 1 / 1;
+      display: block;
+      margin: 0 auto 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin: 18px 0 28px;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 180px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 7px;
+      padding: 12px;
+      font: 15px/1.45 Consolas, "Courier New", monospace;
+      color: var(--ink);
+      background: #fbfcfa;
+    }
+
+    .note {
+      background: var(--soft);
+      border: 1px solid #b9d9d4;
+      border-radius: 8px;
+      padding: 14px;
+      color: var(--accent-dark);
+      font-weight: 700;
+    }
+
+    .status {
+      min-height: 24px;
+      color: var(--accent-dark);
+      font-weight: 700;
+      margin-top: 8px;
+    }
+
+    footer {
+      padding: 24px 0 36px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .hero,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .button,
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <nav aria-label="Primary">
+      <a class="brand" href="https://trungcodeer.github.io/softjunk-lead-kit/">SoftJunk</a>
+      <div class="nav-links">
+        <a href="https://trungcodeer.github.io/softjunk-lead-kit/pay.html">Pay</a>
+        <a href="https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json">JSON</a>
+        <a href="https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md">Markdown</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div>
+        <h1 id="title">Send this to one buyer with one quiet lead.</h1>
+        <p class="lead">Copy a short DM or email that routes a fitting buyer to the exact $5 PayPal checkout. Use it only for a relevant buyer, not unsolicited spam.</p>
+        <div class="actions">
+          <a class="button primary" href="https://paypal.me/softjunk/5USD">Pay $5 on PayPal</a>
+          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml">Order form</a>
+        </div>
+      </div>
+      <aside class="panel" aria-label="Payment QR">
+        <img class="qr" src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
+        <p class="note">Fulfillment starts only after seller-side PayPal proof confirms the $5 payment.</p>
+      </aside>
+    </section>
+
+    <section class="grid" aria-label="Copyable buyer messages">
+      <article class="panel">
+        <h2>Short DM</h2>
+        <textarea id="dm" aria-label="Short DM text" readonly>You have one lead that went quiet. If one recovered reply is worth more than $5, I can write the Day 0, 1, 3, 5, and 7 follow-up sequence for that one situation.
+
+Use only non-sensitive business context. Pay exactly $5 here:
+https://paypal.me/softjunk/5USD
+
+PayPal note:
+One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
+
+After payment, send non-sensitive details here:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml</textarea>
+        <button class="accent" type="button" data-copy="dm">Copy DM</button>
+        <p class="status" id="dm-status" aria-live="polite"></p>
+      </article>
+
+      <article class="panel">
+        <h2>Email</h2>
+        <textarea id="email" aria-label="Email text" readonly>Subject: $5 follow-up sequence for one quiet lead
+
+Hi,
+
+If you have one lead that stopped replying after a form, DM, call, quote, estimate, appointment, or referral, I can write the follow-up sequence for that one situation.
+
+You get Day 0, 1, 3, 5, and 7 messages, plus no-show and price-objection replies. Use only non-sensitive business context.
+
+Pay exactly $5:
+https://paypal.me/softjunk/5USD
+
+PayPal note:
+One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
+
+After payment, submit non-sensitive order details:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml</textarea>
+        <button class="accent" type="button" data-copy="email">Copy Email</button>
+        <p class="status" id="email-status" aria-live="polite"></p>
+      </article>
+
+      <article class="panel wide">
+        <h2>PayPal Note</h2>
+        <textarea id="note" aria-label="PayPal note text" readonly>One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]</textarea>
+        <button class="accent" type="button" data-copy="note">Copy PayPal Note</button>
+        <p class="status" id="note-status" aria-live="polite"></p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    Do not post customer names, emails, phone numbers, addresses, payment identifiers, or private PayPal details in public URLs, issues, or Gists.
+  </footer>
+
+  <script>
+    async function copyText(id) {
+      var element = document.getElementById(id);
+      var status = document.getElementById(id + "-status");
+      try {
+        await navigator.clipboard.writeText(element.value);
+        status.textContent = "Copied.";
+      } catch (error) {
+        element.focus();
+        element.select();
+        document.execCommand("copy");
+        status.textContent = "Copied.";
+      }
+    }
+
+    document.querySelectorAll("[data-copy]").forEach(function (button) {
+      button.addEventListener("click", function () {
+        copyText(button.getAttribute("data-copy"));
+      });
+    });
+  </script>
+</body>
+</html>
