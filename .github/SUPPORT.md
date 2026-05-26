@@ -14,7 +14,10 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 - Direct PayPal.Me URL: https://paypal.me/softjunk/5USD
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - QR page: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
-- Public buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
+- Agent close rendered fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html
+- Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
+- Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
+- Public buyer route: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 
 ## Machine-Readable Payment Intent
 

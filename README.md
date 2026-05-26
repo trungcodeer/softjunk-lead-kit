@@ -15,8 +15,8 @@ Start here if you have one real quiet lead:
 5. Pay exactly 5 USD after the note is ready: https://paypal.me/softjunk/5USD
 6. After payment, submit the one-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml or use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
-Public GitHub buyer discussion:
-https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
+Public GitHub buyer route:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 
 PayPal notes:
 
@@ -36,6 +36,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
 - Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
 - Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
+- Agent close rendered fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html
+- Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
+- Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
+- Agent close public issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
@@ -172,6 +176,10 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
 - Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
 - Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
+- Agent close rendered fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html
+- Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
+- Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
+- Agent close public issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
