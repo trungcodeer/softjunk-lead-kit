@@ -3941,3 +3941,40 @@ DriftCheckDraft:
 - Current slice fit: yes, it keeps the most concrete buyer-facing roofing route visible in the repo's public issue surface without spam, deception, private data collection, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repo issue pins/comments, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Agent Checkout Card Comment Checkpoint
+
+Current todo:
+- Add a machine-readable buyer-agent checkout card directly to the public roofing buyer issue.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Publish a JSON checkout card comment on issue #7, validate the JSON and route markers, and rerun the PayPal verifier.
+
+Completed todos:
+- Read issue #7 body and current comments.
+- Added an `Agent-readable checkout card` comment to issue #7.
+- The card defines `softjunk.agent_checkout_card.v1`, offer id, qualification rules, exact 5 USD PayPal URL, PayPal note, free preview, buyer packet, short route, post-payment order form, fulfillment rule, privacy rule, and verification rule.
+- Validated the fenced JSON parses from the GitHub comment API.
+- Validated the comment contains the exact PayPal route, roofing order form, `PAYPAL_PAYMENT_VERIFIED=true` verification condition, and privacy rule.
+- Added public product issue #5 evidence comment for the checkout card.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Agent checkout card comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548232099`.
+- Validation returned `schema=softjunk.agent_checkout_card.v1`, `offer_id=roofing_estimate_rescue_day_0_1_3_5_7`, `amount=5`, `currency=USD`, `has_paypal=true`, `has_order_form=true`, `has_verification_rule=true`, and `has_privacy_rule=true`.
+- Issue #5 evidence validation returned `has_card_comment=true` and `has_gate=true`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sends a compact agent-readable checkout instruction to the public buyer issue so AI assistants can route qualified buyers to the exact PayPal checkout without scraping multiple pages or exposing private data.
+- Compatibility boundary: owned GitHub issue comments, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

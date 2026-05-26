@@ -79,6 +79,37 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Agent Checkout Card Comment Evidence
+
+Public buyer-agent comment:
+- Agent checkout card comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548232099`.
+
+Content sent:
+- Fenced JSON schema `softjunk.agent_checkout_card.v1`.
+- Offer id `roofing_estimate_rescue_day_0_1_3_5_7`.
+- Exact checkout amount `5 USD`.
+- Exact PayPal route `https://paypal.me/softjunk/5USD`.
+- Copyable PayPal note for a roofing estimate follow-up rescue.
+- Free preview, buyer packet, short root route, and dedicated post-payment order form.
+- Fulfillment, privacy, and seller-side verification rules.
+
+Validation:
+- `gh api repos/trungcodeer/softjunk-lead-kit/issues/comments/4548214384` returned the comment body.
+- The fenced JSON parsed with `ConvertFrom-Json`.
+- Validation returned `schema=softjunk.agent_checkout_card.v1`, `offer_id=roofing_estimate_rescue_day_0_1_3_5_7`, `amount=5`, `currency=USD`, `has_paypal=true`, `has_order_form=true`, `has_verification_rule=true`, and `has_privacy_rule=true`.
+- `gh api repos/trungcodeer/softjunk-lead-kit/issues/comments/4548232099` returned `has_card_comment=true` and `has_gate=true`.
+
+Accessibility and privacy guardrails:
+- The comment uses a text heading, a machine-readable JSON block, and a plain-language recommended action.
+- The card says it is not payment proof.
+- The privacy rule forbids homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, and PayPal details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Pinned Roofing Buyer Issue Evidence
 
 Public pinned route:
