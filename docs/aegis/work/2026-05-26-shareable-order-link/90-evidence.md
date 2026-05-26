@@ -79,6 +79,41 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Root Homepage Buyer Shortcut Evidence
+
+Baseline:
+- Root homepage already had PayPal and route buttons, but the first-screen copy did not expose `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root mobile screenshot clipped heading/lead text after the first edit and needed responsive CSS cleanup.
+
+Local validation:
+- Root `index.html` updated title/meta to `SoftJunk AI Deal Desk - 5 USD PayPal Handoff`.
+- Hero copy now says to open the AI Deal Desk, generate the PayPal note, then pay exactly 5 USD.
+- Hero actions prioritize `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `After-payment handoff`, and `GitHub buyer discussion`.
+- First-screen note now states digital/custom PayPal note rules and `PAYPAL_PAYMENT_VERIFIED=true`.
+- CSS now prevents mobile overflow with `overflow-x: hidden`, `min-width: 0`, wrap-safe buttons, overflow wrapping, and mobile width constraints.
+- `git diff --check` returned only Windows line-ending warnings and no whitespace errors.
+- JSON-LD parse returned `jsonld_ok`.
+- Local Chrome DOM emitted SoftJunk AI Deal Desk, Open AI Deal Desk, Pay 5 USD on PayPal, GitHub buyer discussion, discussion #4, and the verification gate.
+- Local desktop/mobile screenshots showed the buyer path in the first screen and no clipped text after the responsive fix.
+
+Public deploy validation:
+- Root commit: `bc7747f` in `https://github.com/trungcodeer/trungcodeer.github.io`.
+- GitHub Pages deployment completed successfully.
+- Live root homepage returned HTTP 200 and contained `SoftJunk AI Deal Desk - 5 USD PayPal Handoff`, `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `GitHub buyer discussion`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live Chrome DOM confirmed the same buyer actions and discussion #4 URL.
+- Live mobile screenshot showed `Open AI Deal Desk` and `Pay 5 USD on PayPal` in the first viewport without clipped text.
+- Live desktop screenshot showed the focused buyer actions and verification note.
+
+Release and discovery:
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-homepage-buyer-shortcut-v1`.
+- IndexNow returned `status=200 urls=5`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539322975`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539323066`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Product Homepage Buyer Shortcut Evidence
 
 Baseline:

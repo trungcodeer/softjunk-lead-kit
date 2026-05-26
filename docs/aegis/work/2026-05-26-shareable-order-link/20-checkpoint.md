@@ -515,3 +515,50 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the primary owned homepage conversion path without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Root Homepage Buyer Shortcut Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Improve the root homepage first screen so buyers entering through `https://trungcodeer.github.io/` see AI Deal Desk, exact 5 USD PayPal payment, after-payment handoff, public buyer discussion, and the verification gate before secondary routes.
+
+Completed todos:
+- Re-audited root homepage code and screenshots after the product homepage slice.
+- Updated root homepage title/meta to `SoftJunk AI Deal Desk - 5 USD PayPal Handoff`.
+- Replaced the root hero route list with focused buyer actions: AI Deal Desk, Pay 5 USD on PayPal, after-payment handoff, GitHub buyer discussion, short pay route, AI buyer route, scenario gallery, and preview sequence.
+- Added first-screen note with digital/custom PayPal note rules and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Fixed root mobile overflow by adding `overflow-x: hidden`, `min-width: 0`, wrap-safe buttons, overflow wrapping, and mobile width constraints.
+- Validated local JSON-LD, DOM output, desktop screenshot, and mobile screenshot.
+- Committed and pushed root change `bc7747f`.
+- Created root release `root-homepage-buyer-shortcut-v1`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified live root HTML and Chrome DOM expose title, AI Deal Desk, Pay 5 USD on PayPal, GitHub buyer discussion, and verification gate.
+- Captured live desktop/mobile screenshots showing the revised first screen.
+- Submitted 5 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the root homepage shortcut update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Live root homepage returned HTTP 200 and contained `SoftJunk AI Deal Desk - 5 USD PayPal Handoff`, `Open AI Deal Desk`, `Pay 5 USD on PayPal`, `GitHub buyer discussion`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live Chrome DOM confirmed the same buyer actions and discussion #4 URL.
+- Live mobile screenshot showed `Open AI Deal Desk` and `Pay 5 USD on PayPal` in the first viewport without clipped text.
+- Live desktop screenshot showed the focused buyer actions and verification note.
+- Release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-homepage-buyer-shortcut-v1`.
+- IndexNow returned `status=200 urls=5`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539322975` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539323066`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the shortest owned homepage path from discovery to AI Deal Desk and PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
