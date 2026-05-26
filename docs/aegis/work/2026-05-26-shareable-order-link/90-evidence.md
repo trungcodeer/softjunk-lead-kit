@@ -3239,3 +3239,18 @@ Payment gate:
 - Product Pages run `26480241239` and root Pages run `26480259284` completed successfully.
 - IndexNow accepted 9 related URLs with `status=200`.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-27 structured BuyAction buyer-send slice
+
+EvidenceBundleDraft:
+- Commit: e29535ec31c546e0910ed4bda491cdfd10f9f5b4 (Add roofing buyer-send structured BuyAction).
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.71
+- Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26481625549 (completed, success).
+- Gist mirror: https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549983663
+- Live validation: oofing-buyer-send.html, .json, .txt, and Gist JSON/TXT returned 200 and contain PayPal $5, Offer, BuyAction, potentialAction, and PAYPAL_PAYMENT_VERIFIED=true; JSON parses; HTML has one H1 and skip link.
+- IndexNow: status=200 urls=3 for GitHub Pages buyer-send URLs.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that structured commerce metadata is published and live.
+- Does not support claim that  has been received.

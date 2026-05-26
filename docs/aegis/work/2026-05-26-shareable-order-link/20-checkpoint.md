@@ -4458,3 +4458,18 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the buyer's immediate payment context on owned checkout pages without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repo files/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+## 2026-05-27 structured BuyAction buyer-send slice
+
+TodoCheckpointDraft:
+- Completed: added schema.org Offer + potentialAction/BuyAction metadata to oofing-buyer-send.html, oofing-buyer-send.json, and oofing-buyer-send.txt.
+- Completed: created release 2.29.71, updated Gist mirror 75cf486f79f6a5ab61b938ba786e0805, verified GitHub Pages deploy 26481625549 success, and submitted IndexNow for 3 Pages URLs.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549983663
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate buyer/agent conversion surfaces or verify seller-side PayPal evidence when credentials/CSV are available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, the slice improves the exact  buyer route without spam or fake payment.
+- Compatibility boundary: stayed within product buyer-send packet, Gist mirror, release, validation, and worklog.
+- New owner/fallback/branch: none.
+- Evidence growth: live HTML/JSON/TXT and Gist validation now proves the packet exposes machine-readable BuyAction and the PayPal verification stop gate.
