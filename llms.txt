@@ -356,6 +356,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png
 GitHub order issue forms:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 
+One-lead rescue order form:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
 Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 

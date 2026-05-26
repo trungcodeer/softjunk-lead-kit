@@ -189,7 +189,9 @@
       "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
       "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt",
       "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
-      "verification_rule": "Generate the reply and PayPal note first; claim payment only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+      "verification_rule": "Generate the reply and PayPal note first; claim payment only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+      "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+      "after_payment_handoff_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
     },
     {
       "name": "Free lead follow-up rewriter",
@@ -310,14 +312,16 @@
     "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
     "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
     "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
-    "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
+    "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt",
+    "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
     "custom_sequence": "Use the AI deal desk when non-sensitive lead context is ready, use the custom sequence gallery when the buyer wants a ready scenario, use the custom sequence preview when they want tailored copy before paying, or use the shareable order link when the order context is already ready. Copy the PayPal note and paste that note into PayPal before paying.",
     "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
     "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary.",
-    "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment; success signal is PAYPAL_PAYMENT_VERIFIED=true."
+    "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment; success signal is PAYPAL_PAYMENT_VERIFIED=true.",
+    "one_lead_rescue": "Use the Fix One Quiet Lead builder, copy the generated PayPal note, pay exactly 5 USD, then submit the one-lead rescue order form without private customer data."
   },
   "commerce_graph_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
   "commerce_graph_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",
@@ -337,5 +341,6 @@
   "gist_raw_fix_one_quiet_lead_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
   "gist_raw_fix_one_quiet_lead_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt",
   "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
-  "verification_rule": "Do not claim payment or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  "verification_rule": "Do not claim payment or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+  "one_lead_rescue_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
 }

@@ -24,6 +24,9 @@ Use when:
 Payment:
 https://paypal.me/softjunk/5USD
 
+One-lead rescue order form after payment:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
 PayPal note template:
 Fix One Quiet Lead | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Blocker: [blocker] | Next: [next step]
 

@@ -267,6 +267,7 @@
       <div class="actions">
         <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal $5</a>
         <a class="button" href="pay.html">Choose an option</a>
+        <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">One-lead order form</a>
         <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose" target="_blank" rel="noopener noreferrer">Order form</a>
       </div>
     </section>
@@ -304,14 +305,14 @@ Delivery: custom sequence written after the $5 PayPal payment is visible.</p>
 
     <section class="handoff" aria-labelledby="rule-title">
       <h2 id="rule-title">The rule that prevents confusion</h2>
-      <p>No file or custom writing is marked delivered until the $5 transaction is visible in PayPal. If the PayPal note is missing, fulfillment waits for the missing details.</p>
+      <p>No file or custom writing is marked delivered until the $5 transaction is visible in PayPal or the verifier returns <strong>PAYPAL_PAYMENT_VERIFIED=true</strong>. If the PayPal note is missing, fulfillment waits for the missing details.</p>
       <p class="note" id="buyer-summary">SoftJunk $5 order summary:
 1. Pay exactly $5 at https://paypal.me/softjunk/5USD
 2. Add the correct PayPal note.
 3. Delivery uses the email shown in the PayPal transaction.
-4. Optional order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
+4. Optional one-lead order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 5. Seller verifies the payment in PayPal before fulfillment.
-6. Fulfillment starts only after the payment appears in PayPal.</p>
+6. Fulfillment starts only after the payment appears in PayPal or PAYPAL_PAYMENT_VERIFIED=true.</p>
       <p>Seller verification script: <a href="https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md">PAYPAL_VERIFICATION.md</a>.</p>
       <div class="actions">
         <button class="button" type="button" data-copy="buyer-summary">Copy buyer summary</button>

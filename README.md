@@ -72,6 +72,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
+- One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose

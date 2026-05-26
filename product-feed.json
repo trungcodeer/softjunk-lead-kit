@@ -347,5 +347,6 @@
   "fix_one_quiet_lead_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
   "fix_one_quiet_lead_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
   "gist_raw_fix_one_quiet_lead_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
-  "gist_raw_fix_one_quiet_lead_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
+  "gist_raw_fix_one_quiet_lead_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt",
+  "one_lead_rescue_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
 }

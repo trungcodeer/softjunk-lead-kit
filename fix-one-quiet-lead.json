@@ -39,11 +39,14 @@
       "step": "verify",
       "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
       "instruction": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
-    }
+    },
+    "After paying, submit the one-lead rescue order form without private customer data: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
   ],
   "paypal_note_template": "Fix One Quiet Lead | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Blocker: [blocker] | Next: [next step]",
   "privacy_rule": "Use placeholders instead of private customer names, phone numbers, emails, payment IDs, or private PayPal details.",
   "gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
   "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
-  "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
+  "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt",
+  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "after_payment_handoff_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
 }
