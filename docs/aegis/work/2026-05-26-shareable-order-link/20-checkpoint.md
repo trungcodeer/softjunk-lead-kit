@@ -1275,3 +1275,50 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a non-traditional root-level AI-readable rescue route without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub Metadata and Profile Rescue Route Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Move GitHub-visible repo metadata and the public profile route toward the shortest `https://trungcodeer.github.io/rescue/` buyer path.
+
+Completed todos:
+- Rechecked product/root/profile worktrees and PayPal verifier status before the slice.
+- Audited GitHub repo descriptions, homepage URLs, and topics for product, root, and profile repos.
+- Updated profile `README.md`, `index.html`, `llms.txt`, `softjunk-profile-offer.json`, `sitemap.xml`, and `.github/FUNDING.yml` to expose the root one-lead rescue route, JSON, and text.
+- Validated profile JSON, YAML, XML, JSON-LD, Chrome DOM, and whitespace locally.
+- Committed and pushed profile change `3d66cd0`.
+- Created profile release `profile-one-lead-rescue-route-v1`.
+- Updated product, root, and profile GitHub repo metadata so homepage points to `https://trungcodeer.github.io/rescue/`, descriptions mention `5 USD one-lead rescue`, and topics include `one-lead-rescue`.
+- Confirmed profile GitHub Pages deployment succeeded.
+- Validated live profile Pages, `llms.txt`, profile offer JSON, sitemap, raw README, raw funding file, and GitHub repo metadata.
+- Submitted 7 profile/root rescue URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the profile and metadata update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Profile commit: `https://github.com/trungcodeer/trungcodeer/commit/3d66cd0`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-one-lead-rescue-route-v1`.
+- GitHub Pages run: `26439495809`, success.
+- Product/root/profile GitHub repo homepage metadata now points to `https://trungcodeer.github.io/rescue/`.
+- Product/root/profile GitHub repo topics include `one-lead-rescue`.
+- Live validation passed for `https://trungcodeer.github.io/trungcodeer/`, profile `llms.txt`, profile offer JSON, and profile sitemap.
+- Raw GitHub validation passed for profile `README.md` and `.github/FUNDING.yml`.
+- IndexNow returned `status=200 urls=7`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541778434` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541779846`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves GitHub-native discovery and profile conversion paths without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: GitHub repo metadata, GitHub Pages, public releases/issues, IndexNow discovery, JSON/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

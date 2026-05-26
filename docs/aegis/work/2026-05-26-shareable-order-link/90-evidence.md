@@ -186,6 +186,45 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub Metadata and Profile Rescue Route Evidence
+
+Local validation:
+- Profile JSON validation passed for `softjunk-profile-offer.json`.
+- Profile XML validation passed for `sitemap.xml`.
+- Profile YAML validation passed for `.github/FUNDING.yml` using PyYAML.
+- Profile `index.html` JSON-LD parsed successfully.
+- Chrome headless local DOM validation passed for profile `index.html`, confirming `https://trungcodeer.github.io/rescue/`, `https://trungcodeer.github.io/rescue.json`, `Fix one quiet lead`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Profile `git diff --check` and staged `git diff --cached --check` passed with line-ending warnings only.
+
+Files changed:
+- Profile `.github/FUNDING.yml`
+- Profile `README.md`
+- Profile `index.html`
+- Profile `llms.txt`
+- Profile `sitemap.xml`
+- Profile `softjunk-profile-offer.json`
+
+Commits, release, and metadata:
+- Profile commit `3d66cd0`: `Route profile buyers to one-lead rescue`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-one-lead-rescue-route-v1`.
+- Product repo metadata: homepage `https://trungcodeer.github.io/rescue/`, topic `one-lead-rescue`, description includes `5 USD one-lead rescue`.
+- Root repo metadata: homepage `https://trungcodeer.github.io/rescue/`, topic `one-lead-rescue`, description includes `5 USD one-lead rescue`.
+- Profile repo metadata: homepage `https://trungcodeer.github.io/rescue/`, topic `one-lead-rescue`, description includes `5 USD one-lead rescue`.
+
+Public deploy validation:
+- Profile Pages run `26439495809` completed successfully for commit `3d66cd0`.
+- Live profile validation passed for profile homepage, profile `llms.txt`, profile offer JSON, and profile sitemap.
+- Raw GitHub validation passed for profile `README.md` and profile `.github/FUNDING.yml`.
+
+Public distribution:
+- IndexNow returned `status=200 urls=7` for profile and root rescue URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541778434`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541779846`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Fix One Quiet Lead Evidence
 
 Local validation:
