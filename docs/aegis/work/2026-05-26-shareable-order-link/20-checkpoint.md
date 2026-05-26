@@ -3091,3 +3091,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a direct function-style buyer-agent contract that routes fitting buyers to the exact PayPal checkout and keeps paid/delivered claims behind seller-side verification.
 - Compatibility boundary: owned GitHub repo, public GitHub raw/blob content, public Gists, GitHub release/issue comment, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 A2A Agent Card Checkout Checkpoint
+
+Current todo:
+- Add an A2A-style agent-card checkout discovery route for buyer agents, VAs, crawlers, and AI assistants.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Publish root-domain and product-domain `agent-card.json` files, wire them into machine-readable discovery surfaces, create public Gist fallback, release both repos, and record public issue evidence.
+
+Completed todos:
+- Added product `A2A_AGENT_CARD.md`, `agent-card.json`, and `.well-known/agent-card.json`.
+- Added root `agent-card.json` and `.well-known/agent-card.json`.
+- Updated product README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `robots.txt`, and `sitemap.xml`.
+- Updated root README, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+- Created and patched public A2A agent-card Gist `https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a`.
+- Validated local JSON, JSONL, YAML, XML, and whitespace.
+- Committed and pushed product commit `755e295` and root commit `c925ab5`.
+- Created product release `v2.29.49` and root release `root-a2a-agent-card-v1`.
+- Validated public raw GitHub, GitHub Pages well-known routes, public Gist raw JSON, and releases.
+- Added and validated public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/755e295`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/c925ab5`.
+- Product A2A card: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json`.
+- Root A2A card: `https://trungcodeer.github.io/.well-known/agent-card.json`.
+- Product raw A2A card: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agent-card.json`.
+- A2A card brief: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md`.
+- Public A2A Gist: `https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.49`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-a2a-agent-card-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545621966`.
+- Local validation passed: product/root JSON cards and manifests, product JSONL `lines=30`, product/root OpenAPI YAML, product/root sitemap XML, and `git diff --check`.
+- Public validation passed: `product_raw_agent_card`, `product_raw_a2a_doc`, `root_raw_agent_card`, `gist_raw_agent_card`, `product_pages_well_known_agent_card`, `root_pages_well_known_agent_card`, and both releases.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel and AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds A2A-style agent discovery at both root and product well-known paths without spam, deception, fake payment, unauthorized outreach, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

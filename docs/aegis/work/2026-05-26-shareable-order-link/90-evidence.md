@@ -372,6 +372,42 @@ Payment gate:
 - Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
 - Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
+## 2026-05-26 A2A Agent Card Checkout Evidence
+
+Artifacts:
+- Product `A2A_AGENT_CARD.md`, `agent-card.json`, and `.well-known/agent-card.json`.
+- Root `agent-card.json` and `.well-known/agent-card.json`.
+- Product discovery updates: README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `robots.txt`, and `sitemap.xml`.
+- Root discovery updates: README, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+
+Public routes:
+- Root well-known A2A card: `https://trungcodeer.github.io/.well-known/agent-card.json`.
+- Root A2A card JSON: `https://trungcodeer.github.io/agent-card.json`.
+- Product well-known A2A card: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json`.
+- Product A2A card JSON: `https://trungcodeer.github.io/softjunk-lead-kit/agent-card.json`.
+- Product raw A2A card: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agent-card.json`.
+- A2A card brief: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a`.
+
+Commits and releases:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/755e295`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/c925ab5`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.49`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-a2a-agent-card-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545621966`.
+
+Validation:
+- Local product JSON passed for `agent-card.json`, `.well-known/agent-card.json`, `agents-checkout.json`, `buy-now.json`, and `.well-known/softjunk-offer.json`.
+- Local root JSON passed for `agent-card.json`, `.well-known/agent-card.json`, `root-offer.json`, and `.well-known/softjunk-root-offer.json`.
+- Local product JSONL passed with `lines=30`.
+- Local product/root sitemap XML and OpenAPI YAML passed.
+- `git diff --check` returned no whitespace errors in product/root repos.
+- Public validation passed for product raw A2A card, raw A2A brief, root raw A2A card, Gist raw A2A card, product Pages well-known A2A card, root Pages well-known A2A card, and both releases.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Sponsor Button PayPal Route Evidence
 
 Files changed in product repo:
