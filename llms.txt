@@ -83,6 +83,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-est
 Public roofing buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 
+Public roofing buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+
 Roofing estimate generator JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json
 
