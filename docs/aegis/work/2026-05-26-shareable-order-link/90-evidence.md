@@ -79,6 +79,45 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub-Native Agent Close Fallback Evidence
+
+Pages recovery attempt:
+- Product `.nojekyll` was normalized to an empty file and pushed in commit `458774d2f8f3986fce07925ab3af0ab972432589`.
+- Root `.nojekyll` was normalized to an empty file and pushed in commit `be01327edfb52b24845a58ce373934e1515d13fb`.
+- Product and root Pages rebuilds were manually queued with the GitHub Pages API after the `.nojekyll` normalization.
+- Product latest Pages build for `250289d83d76e34f1bbd1ea6d090684a4965bc6b` remained `building`.
+- Root latest Pages build for `be01327edfb52b24845a58ce373934e1515d13fb` remained `building`.
+- Live agent-close Pages checks still returned 404, so Pages agent-close routes were not counted as live.
+
+GitHub-native public routing:
+- Public buyer-agent issue created: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- GitHub-native fallback commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/250289d83d76e34f1bbd1ea6d090684a4965bc6b`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.35`.
+- Issue #5 update comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543836846`.
+
+Files changed in product repo:
+- `README.md`
+- `BUYER_INDEX.md`
+- `.github/SUPPORT.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+
+Validation:
+- Public URL validation returned HTTP 200 with expected markers for issue #5, RawGitHack HTML, and RawGitHack JSON.
+- YAML validation passed for `.github/ISSUE_TEMPLATE/config.yml`.
+- Marker validation passed for README, Buyer Index, Support, and issue contact config.
+- Stale `https://github.com/trungcodeer/softjunk-lead-kit/discussions/4` links were removed from the edited GitHub-native files.
+- Raw GitHub validation passed: `github_native_agent_close_raw_ok files=4 checks=16 commit=250289d`.
+
+Public fallbacks exposed:
+- Agent close rendered fallback: `https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html`.
+- Agent close JSON fallback: `https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json`.
+- Agent close public Gist: `https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158`.
+- Agent close public issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Agent Close Contract Fallback Evidence
 
 Local validation:

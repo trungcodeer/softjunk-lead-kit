@@ -1937,3 +1937,51 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a non-traditional one-read buyer-agent contract and distributes it through raw GitHub, Gist, releases, and issue comments without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages when available, raw GitHub content, public Gists/releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub-Native Agent Close Fallback Checkpoint
+
+Current todo:
+- Keep GitHub-native issue/release/raw routes as the active public fallback while GitHub Pages remains stuck.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Move the verified Agent Close Contract into GitHub-native buyer surfaces that render even when GitHub Pages agent-close routes are not live.
+
+Completed todos:
+- Normalized product and root `.nojekyll` files to empty files and pushed product commit `458774d` plus root commit `be01327`.
+- Manually queued product/root Pages rebuilds after the `.nojekyll` normalization.
+- Confirmed product/root latest Pages builds still remained `building` and live agent-close Pages URLs still returned 404.
+- Created public buyer-agent issue #5 for the Agent Close Contract.
+- Updated product `README.md`, `BUYER_INDEX.md`, `.github/SUPPORT.md`, and `.github/ISSUE_TEMPLATE/config.yml` to replace the stale `discussions/4` link and expose issue #5, RawGitHack fallback, Gist fallback, and the verification gate.
+- Validated GitHub issue #5, RawGitHack HTML/JSON, YAML, marker coverage, and raw GitHub content at commit `250289d`.
+- Created product release `v2.29.35`.
+- Commented issue #5 with the shipped GitHub-native routing update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product `.nojekyll` commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/458774d2f8f3986fce07925ab3af0ab972432589`.
+- Root `.nojekyll` commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/be01327edfb52b24845a58ce373934e1515d13fb`.
+- GitHub-native fallback commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/250289d83d76e34f1bbd1ea6d090684a4965bc6b`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.35`.
+- Public buyer-agent issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Issue #5 update comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543836846`.
+- Raw GitHub validation passed: `github_native_agent_close_raw_ok files=4 checks=16 commit=250289d`.
+- Public URL validation returned HTTP 200 with expected markers for issue #5, RawGitHack HTML, and RawGitHack JSON.
+- YAML validation passed for `.github/ISSUE_TEMPLATE/config.yml`.
+- Marker validation passed for README, Buyer Index, Support, and issue contact config; stale `discussions/4` was removed.
+- Product latest Pages build for `250289d83d76e34f1bbd1ea6d090684a4965bc6b` remained `building`.
+- Root latest Pages build for `be01327edfb52b24845a58ce373934e1515d13fb` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages agent-close routes still cannot be counted as live while latest builds remain `building` and live URLs return 404.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the verified buyer-agent close route into GitHub-native public issue, release, README, support, and contact-link surfaces without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, GitHub Pages if it recovers, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
