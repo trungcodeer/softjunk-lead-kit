@@ -471,6 +471,45 @@ Payment gate:
 - Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
 - Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
+## 2026-05-27 Roofing Estimate Follow-Up Answer Evidence
+
+Behavior added:
+- Added `roofing-estimate-follow-up.html`, `roofing-estimate-follow-up.json`, and `roofing-estimate-follow-up.txt` as a high-intent answer-engine route for buyers searching for roofing estimate follow-up texts.
+- The HTML page includes FAQ JSON-LD, copy-ready Day 0/1/3/5/7 messages, copy buttons, a PayPal note action, route to the roofing rescue offer, prefilled `send-to-buyer.html`, exact `$5` PayPal.Me URL, privacy language, accessibility markers, and seller-side verification gate text.
+- The JSON/TXT assets mirror the offer for agents, assistants, and search snippets without requiring private buyer data.
+
+Discovery and distribution:
+- Product discovery updated in `answer-engine.json`, `agent-buyer-catalog.jsonl`, `README.md`, `llms.txt`, `BUY_NOW.md`, `agents-checkout.json`, `buy-now.json`, `.well-known/softjunk-offer.json`, `sitemap.xml`, `feed.xml`, and `.well-known/openapi.yaml`.
+- Root discovery updated in `README.md`, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `sitemap.xml`, and `.well-known/openapi.yaml`.
+- Public Gist fallback created: `https://gist.github.com/trungcodeer/dc2a23fd197c91f166cc558495f61b10`.
+- Product issue #5 evidence comment added: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546823269`.
+
+Commits, releases, and public URLs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/7f7668b`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/5bdcd34`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.57`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-estimate-follow-up-v1`.
+- Page: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html`.
+- JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.json`.
+- Text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.txt`.
+
+Local validation:
+- Product JSON parse passed for `roofing-estimate-follow-up.json`, `answer-engine.json`, `buy-now.json`, `agents-checkout.json`, and `.well-known/softjunk-offer.json`.
+- Product JSONL parse passed for `agent-buyer-catalog.jsonl` with `lines=34`.
+- HTML check passed for JSON-LD parse, inline script syntax, skip link, `FAQPage`, copy button, `aria-live="polite"`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` marker.
+- Product XML parse passed for `sitemap.xml` and `feed.xml`.
+- Product OpenAPI YAML parse passed.
+- Root JSON, XML, and OpenAPI YAML parse passed.
+- Product and root `git diff --check` passed with only LF-to-CRLF warnings.
+
+Public validation:
+- Public checks passed for `pages_answer_html`, `pages_answer_faq`, `pages_answer_paypal`, `pages_answer_json`, `pages_answer_txt`, `raw_answer_json_gist_meta`, `gist_answer_json`, `root_offer_answer`, `root_openapi_answer`, `product_release`, and `root_release`.
+- IndexNow accepted 12 host-valid URLs with `indexnow_status=200 urls=12`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Roofing Estimate Rescue Funnel Evidence
 
 Files changed:
