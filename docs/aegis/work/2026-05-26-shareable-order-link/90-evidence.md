@@ -1278,3 +1278,40 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Commerce Graph Rescue-First Evidence
+
+Local validation:
+- JSON parse passed for `commerce-graph.json`.
+- HTML JSON-LD parse passed for `commerce-graph.html`.
+- Marker validation confirmed `https://trungcodeer.github.io/rescue/`, `https://trungcodeer.github.io/rescue.json`, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and `one-lead-rescue-order.yml` in the HTML, JSON, and text artifacts.
+- Chrome headless `--dump-dom` on local `commerce-graph.html` emitted one-lead rescue copy, root rescue URL, PayPal URL, order form, and verification gate.
+- Product `git diff --check` returned no whitespace errors.
+
+Files changed in product repo:
+- `commerce-graph.html`
+- `commerce-graph.json`
+- `commerce-graph.txt`
+
+Commit, release, and deploy:
+- Product commit: `0b1b13b Route commerce graph to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.30`.
+- Product GitHub Pages run `26444448631` completed with success.
+
+Public Gist updates:
+- Commerce graph Gist `844295134d4a7d721b7eec4963eae1db` updated for `commerce-graph.json` and `commerce-graph.txt`.
+
+Live/raw/Gist validation:
+- `commerce_graph_live_raw_gist_ok checks=7`.
+- Validated live GitHub Pages HTML/JSON/TXT for the commerce graph.
+- Validated raw GitHub JSON/TXT for the commerce graph.
+- Validated raw commerce graph Gist JSON/TXT.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=6` for the commerce graph and root rescue URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542930828`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542933358`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
