@@ -10,6 +10,8 @@ Allow: /commerce-graph.txt
 Allow: /commerce-graph.json
 Allow: /commerce-graph.html
 Allow: /agent-buyer-catalog.jsonl
+Allow: /agent-order.html
+Allow: /agent-offer.json
 Allow: /product-feed.json
 Allow: /PAYPAL_VERIFICATION.md
 Allow: /lead-follow-up-rewriter.html
@@ -54,5 +56,6 @@ Allow: /social-card-qr.png
 Allow: /.well-known/softjunk-offer.json
 Allow: /.well-known/openapi.yaml
 Allow: /.well-known/ai-plugin.json
+Allow: /.well-known/paypal-payment.json
 Allow: /aa82219152e573922c28c39ed0ad85ce.txt
 Sitemap: https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml

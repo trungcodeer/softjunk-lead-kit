@@ -243,8 +243,12 @@
       "name": "Custom 7-day lead follow-up sequence",
       "price": "5.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+      "root_one_lead_rescue_url": "https://trungcodeer.github.io/rescue/",
+      "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
       "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "payment_url": "https://paypal.me/softjunk/5USD",
+      "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+      "route_rule": "For one-lead buyers, open the root one-lead rescue route before PayPal.",
       "delivery": "Manual same-day delivery after PayPal payment appears",
       "includes": [
         "Day 0 follow-up",
@@ -334,7 +338,7 @@
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
-    "custom_sequence": "Use the AI deal desk when non-sensitive lead context is ready, use the custom sequence gallery when the buyer wants a ready scenario, use the custom sequence preview when they want tailored copy before paying, or use the shareable order link when the order context is already ready. Copy the PayPal note and paste that note into PayPal before paying.",
+    "custom_sequence": "Use the root one-lead rescue route first for one quiet lead, then use the AI deal desk, custom sequence gallery, custom sequence preview, shareable order link, or agent order path when non-sensitive context is ready. Copy the PayPal note, paste that note into PayPal, pay exactly 5 USD, and submit the one-lead rescue order form.",
     "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
     "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary.",
     "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment; success signal is PAYPAL_PAYMENT_VERIFIED=true.",

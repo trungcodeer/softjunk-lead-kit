@@ -102,6 +102,7 @@
   "examples_url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
   "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+  "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "paid_kit_proof_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
   "paid_kit_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
@@ -111,6 +112,13 @@
   "rss_feed_url": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
   "share_kit_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",
   "share_kit_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
+  "fastest_buyer_path": [
+    "Open root_one_lead_rescue_url first.",
+    "Use agent_order_url or agent_offer_url to generate a non-sensitive PayPal note.",
+    "Pay exactly 5 USD through payment_url.",
+    "Submit non-sensitive fulfillment details through one_lead_rescue_order_form_url.",
+    "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before treating the order as paid."
+  ],
   "offers": [
     {
       "name": "Custom 7-Day Lead Follow-Up Sequence",
@@ -119,11 +127,16 @@
       "payment_url": "https://paypal.me/softjunk/5USD",
       "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
       "checkout_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
+      "root_one_lead_rescue_url": "https://trungcodeer.github.io/rescue/",
+      "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+      "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
       "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "ai_deal_desk_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
       "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
       "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
       "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+      "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+      "route_rule": "For one-lead buyers, open the root one-lead rescue route before PayPal.",
       "delivery": "Manual same-day delivery after PayPal payment appears"
     },
     {

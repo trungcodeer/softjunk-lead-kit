@@ -12,6 +12,22 @@
     "url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
     "is_user_authenticated": false
   },
+  "x_softjunk_agent_routes": {
+    "fastest_buyer_path": [
+      "Open https://trungcodeer.github.io/rescue/ first.",
+      "Use https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html or https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json to build a non-sensitive PayPal note.",
+      "Pay exactly 5 USD through https://paypal.me/softjunk/5USD.",
+      "Submit non-sensitive fulfillment details through https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml.",
+      "Do not claim paid or delivered unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+    ],
+    "root_one_lead_rescue_url": "https://trungcodeer.github.io/rescue/",
+    "root_one_lead_rescue_json_url": "https://trungcodeer.github.io/rescue.json",
+    "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+    "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
+    "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
+  },
   "logo_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
   "contact_email": "trungcodeer@users.noreply.github.com",
   "legal_info_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"

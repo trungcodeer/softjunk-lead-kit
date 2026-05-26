@@ -13,6 +13,24 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://trungcodeer.github.io/rescue/</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/rescue.json</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/rescue.txt</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
@@ -218,7 +236,7 @@
   </url>
   <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>

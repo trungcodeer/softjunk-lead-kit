@@ -5,6 +5,14 @@ info:
   description: Static discovery endpoints for the $5 SoftJunk Lead Follow-Up Kit and custom sequence.
 servers:
   - url: https://trungcodeer.github.io/softjunk-lead-kit
+x-softjunk-fastest-buyer-path:
+  root_one_lead_rescue_url: https://trungcodeer.github.io/rescue/
+  root_one_lead_rescue_json_url: https://trungcodeer.github.io/rescue.json
+  agent_order_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+  agent_offer_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+  payment_url: https://paypal.me/softjunk/5USD
+  one_lead_rescue_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
   /buyer-agent-relay.html:
     get:
@@ -12,7 +20,7 @@ paths:
       summary: Open the SoftJunk buyer-agent prompt relay page.
       responses:
         "200":
-          description: Copy-ready relay prompt that qualifies fit, routes to the commerce graph, checkout note builder, exact PayPal URL, and verification gate.
+          description: Copy-ready relay prompt that qualifies fit, routes to the commerce graph, root one-lead rescue, exact PayPal URL, and verification gate.
           content:
             text/html:
               schema:
@@ -34,7 +42,7 @@ paths:
       summary: Get the SoftJunk buyer-agent relay text.
       responses:
         "200":
-          description: Plain-text copy-ready prompt for routing a relevant lead follow-up buyer to the exact 5 USD PayPal checkout.
+          description: Plain-text copy-ready prompt for routing a relevant lead follow-up buyer to root one-lead rescue before exact 5 USD PayPal payment.
           content:
             text/plain:
               schema:
@@ -45,7 +53,7 @@ paths:
       summary: Open the SoftJunk commerce graph page.
       responses:
         "200":
-          description: Human and crawler page exposing Product, Offer, BuyAction, PayPal, checkout, and verification nodes.
+          description: Human and crawler page exposing Product, Offer, BuyAction, root one-lead rescue, PayPal, order form, and verification nodes.
           content:
             text/html:
               schema:
@@ -56,7 +64,7 @@ paths:
       summary: Get the SoftJunk commerce graph JSON-LD.
       responses:
         "200":
-          description: JSON-LD graph with Product, Offer, BuyAction, checkout, PayPal, HowTo, and verification gate nodes.
+          description: JSON-LD graph with Product, Offer, BuyAction, root one-lead rescue, PayPal, HowTo, order form, and verification gate nodes.
           content:
             application/ld+json:
               schema:
@@ -67,7 +75,7 @@ paths:
       summary: Get the SoftJunk commerce graph text handoff.
       responses:
         "200":
-          description: Plain-text buyer-agent action path from relevant lead follow-up need to exact 5 USD PayPal payment.
+          description: Plain-text buyer-agent action path from relevant lead follow-up need to root one-lead rescue and exact 5 USD PayPal payment.
           content:
             text/plain:
               schema:
@@ -89,7 +97,7 @@ paths:
       summary: Get the SoftJunk agent buyer catalog JSONL.
       responses:
         "200":
-          description: Newline-delimited JSON records for AI retrieval, answer engines, and buyer agents routing qualified lead follow-up buyers to the 5 USD PayPal checkout.
+          description: Newline-delimited JSON records for AI retrieval, answer engines, and buyer agents routing qualified lead follow-up buyers to root one-lead rescue before the 5 USD PayPal checkout.
           content:
             application/x-ndjson:
               schema:
@@ -375,7 +383,7 @@ paths:
       summary: Open the AI buyer brief for the $5 follow-up offer.
       responses:
         "200":
-          description: Machine-readable buyer brief with PayPal URL, handoff copy, and verification gate.
+          description: Machine-readable buyer brief with root one-lead rescue route, PayPal URL, handoff copy, order form, and verification gate.
           content:
             text/html:
               schema:
@@ -541,7 +549,7 @@ paths:
       summary: Open the buyer-safe AI agent order path.
       responses:
         "200":
-          description: Order handoff page that creates a PayPal note.
+          description: Rescue-first order handoff page that opens root one-lead rescue, creates a PayPal note, points to exact 5 USD PayPal payment, and keeps delivery gated on PAYPAL_PAYMENT_VERIFIED=true.
           content:
             text/html:
               schema:
