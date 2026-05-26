@@ -3189,3 +3189,12 @@ Payment gate:
 - Raw profile funding validation: exact PayPal URL, buyer-send packet, and `PAYPAL_PAYMENT_VERIFIED=true` gate comment are present.
 - Profile repo metadata validation: description includes the roofing buyer-send packet, and topics include `roofing`, `roofing-estimates`, and `roofing-follow-up`.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-27 Pinned Issue Body Buyer-Send Evidence
+
+- Human checkout board #1: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Agent close contract #5: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Roofing buyer issue #7: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549535691`.
+- Issue #1, #5, and #7 bodies validated with buyer-send HTML, buyer-send JSON, buyer-send text, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy placeholder rule.
+- GitHub GraphQL pinned issue validation confirmed #1, #5, and #7 remain pinned and include `roofing-buyer-send`, PayPal, and the verification gate.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
