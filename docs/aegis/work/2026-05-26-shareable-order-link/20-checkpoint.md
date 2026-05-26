@@ -3188,3 +3188,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a real callable MCP stdio tool surface for AI clients without falsely claiming a public remote MCP endpoint, payment, or fulfillment.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, local MCP stdio source, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Checkout Discovery Distribution Checkpoint
+
+Current todo:
+- Distribute the newest MCP/A2A/AI checkout surfaces through legitimate owned/public discovery channels.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Refresh RSS feed, update GitHub repository descriptions/topics, create release, submit URLs to IndexNow, and record public evidence.
+
+Completed todos:
+- Fixed `feed.xml` ordering so channel metadata appears before items.
+- Added feed items for MCP checkout server, A2A agent-card checkout, and AI action checkout.
+- Updated product repo description and topics to include `mcp`, `mcp-server`, `a2a`, `agentic-commerce`, and `ai-checkout`.
+- Updated root repo description and topics to include the same AI checkout discovery terms.
+- Committed and pushed product feed commit `2412b1e`.
+- Created product release `v2.29.51`.
+- Validated public feed XML and release.
+- Validated product/root GitHub topics.
+- Submitted 9 owned GitHub Pages URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Feed commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/2412b1e`.
+- Public feed: `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.51`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545799621`.
+- Public feed validation passed: `public_feed_ok mcp_item=true`.
+- Release validation passed: `release_ok tag=v2.29.51`.
+- GitHub metadata validation passed: product/root topics include `mcp`, `mcp-server`, `a2a`, `agentic-commerce`, and `ai-checkout`.
+- IndexNow submission passed: `indexnow_status=200 urls=9`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel and AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it submits owned public checkout/discovery URLs and updates searchable repo metadata without spam, deception, fake payment, unauthorized outreach, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub metadata, RSS, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

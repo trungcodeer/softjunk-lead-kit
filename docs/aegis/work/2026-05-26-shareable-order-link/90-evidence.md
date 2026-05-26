@@ -79,6 +79,29 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 AI Checkout Discovery Distribution Evidence
+
+Artifacts and public state:
+- Updated `feed.xml` with valid channel ordering and new MCP/A2A/AI action checkout feed items.
+- Product repo metadata updated to description `MCP/A2A AI checkout for USD 5 SoftJunk one-lead rescue via PayPal`.
+- Root repo metadata updated to description `Root buyer hub for the USD 5 SoftJunk PayPal one-lead rescue with AI and MCP checkout routes`.
+- Product/root topics include `mcp`, `mcp-server`, `a2a`, `agentic-commerce`, and `ai-checkout`.
+
+Commits and release:
+- Feed commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/2412b1e`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.51`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545799621`.
+
+Validation and submission:
+- Public feed validation passed and contains `SoftJunk MCP Checkout Server`.
+- Release validation passed for `v2.29.51`.
+- Product/root GitHub metadata validation passed for AI/MCP checkout topics.
+- IndexNow accepted 9 URLs with `status=200`: feed, MCP manifest, well-known MCP manifest, MCP server source, A2A agent card, AI action checkout, agent buyer catalog JSONL, `llms.txt`, and sitemap.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 MCP Checkout Server Evidence
 
 Artifacts:
