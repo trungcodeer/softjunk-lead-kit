@@ -11,6 +11,11 @@
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
+  "sponsor_button_buy_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+  "sponsor_button_buy_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json",
+  "sponsor_button_buy_gist_url": "https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7",
+  "sponsor_button_buy_gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json",
+  "funding_config_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml",
   "paypal_note_first_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md",
   "paypal_note_first_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json",
   "paypal_note_first_gist_url": "https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a",
@@ -41,6 +46,11 @@
     "The context contains private customer data that would be posted publicly."
   ],
   "route_steps": [
+    {
+      "step": "sponsor_button_buy",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+      "instruction": "Use the repository Sponsor button route when the buyer is already inside GitHub."
+    },
     {
       "step": "copy_paypal_note",
       "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md",

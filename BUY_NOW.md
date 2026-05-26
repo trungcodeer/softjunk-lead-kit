@@ -6,15 +6,17 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
 
 1. Human buyer start-here board:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-2. PayPal note first:
+2. GitHub Sponsor button buy route:
+   https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+3. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-3. What gets delivered after verified payment:
+4. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-4. Buyer-agent close contract:
+5. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-5. Direct PayPal checkout:
+6. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-6. After payment, submit non-sensitive order details if needed:
+7. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -47,6 +49,11 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 
 - Canonical packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 - JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+- Sponsor button JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
+- Sponsor button Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
+- Sponsor button Gist JSON: https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json
+- Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 - Public Gist: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
 - Raw Gist Markdown: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md
 - Raw Gist JSON: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json

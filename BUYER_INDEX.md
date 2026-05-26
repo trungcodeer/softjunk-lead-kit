@@ -6,6 +6,11 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 
 - GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 - Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+- Sponsor button buy JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
+- Sponsor button buy Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
+- Sponsor button buy Gist JSON: https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json
+- Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 - PayPal note first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
 - PayPal note first JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json
 - PayPal note first Gist: https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a
@@ -77,6 +82,18 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 PayPal note first:
 
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+
+Sponsor button buy route:
+
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+
+Sponsor button buy JSON:
+
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
+
+Sponsor button buy Gist:
+
+https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
 
 PayPal note first Gist:
 
