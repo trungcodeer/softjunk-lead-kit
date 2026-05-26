@@ -4402,3 +4402,31 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the exact buyer-send packet into pinned comments on pinned GitHub issues without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub issues/repo files, GitHub Pages, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+## 2026-05-27 Buyer-Send Visible Titles Checkpoint
+
+Current todo:
+- Make pinned issue and Discussion list titles explicitly route buyers to the buyer-send checkout path.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Completed todos:
+- Renamed issue #1 to `Start here: $5 buyer-send checkout for SoftJunk rescue`.
+- Renamed issue #5 to `Agent Close Contract: $5 buyer-send checkout route`.
+- Renamed issue #7 to `Roofing buyer-send packet: $5 Day 0/1/3/5/7 rescue`.
+- Renamed Discussion #8 to `Roofing buyer-send packet: $5 Day 0/1/3/5/7 rescue`.
+- Added a direct PayPal checkout line immediately after the buyer-send packet section in Discussion #8.
+- Validated issue titles/bodies and Discussion #8 through GitHub API/GraphQL.
+- Product issue #5 evidence comment added: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549688589`.
+- PayPal verifier rerun and remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Local C: has 0 free bytes, so remote API commits are being used for small checkpoint/evidence updates.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves list-level GitHub discovery for the exact buyer-send checkout without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub issues/discussions/repo files, GitHub Pages, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
