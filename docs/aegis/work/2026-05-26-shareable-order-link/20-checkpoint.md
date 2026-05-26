@@ -2652,3 +2652,51 @@ DriftCheckDraft:
 - Current slice fit: yes, it makes the payment action shorter and clearer without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Instant Fulfillment Packet Checkpoint
+
+Current todo:
+- Convert the $5 route into a more concrete buyer decision by showing the post-verification delivery shell before payment.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add an instant fulfillment packet with Day 0, Day 1, Day 3, Day 5, Day 7, no-show, and price-objection shells, then mirror it through GitHub-native, raw GitHub, public Gist, release, and issue surfaces.
+
+Completed todos:
+- Added `INSTANT_FULFILLMENT_PACKET.md` as a public fulfillment shell and post-payment seller checklist.
+- Added `instant-fulfillment-packet.json` for buyer agents and crawlers.
+- Linked the packet from `BUY_NOW.md`, `buy-now.json`, `PAYPAL_NOTE_FIRST.md`, `paypal-note-first.json`, `README.md`, `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `llms.txt`.
+- Created and updated public Gist `b291f4850559d170ab8bcdd832e6d93d`.
+- Validated local JSON/JSONL structure and marker coverage.
+- Committed and pushed product commit `db3077d`.
+- Validated public raw GitHub files and raw Gist files.
+- Created release `v2.29.43`.
+- Added a public product issue #5 comment for the instant fulfillment packet route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/db3077d`.
+- Instant fulfillment packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md`.
+- Instant fulfillment JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json`.
+- Instant fulfillment Gist: `https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d`.
+- Instant fulfillment raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.43`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
+- Local validation passed: `json_ok instant-fulfillment-packet.json`, `json_ok buy-now.json`, `json_ok paypal-note-first.json`, `json_ok buyer-index.json`, `jsonl_ok lines=26`, `marker_ok checks=10`.
+- Public Gist validation passed: `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`.
+- Public raw GitHub validation passed: `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`.
+- Release validation passed: `release_ok tag=v2.29.43 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.43`.
+- Issue comment validation passed: `issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves buyer confidence by showing exactly what can be delivered after a verified payment without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

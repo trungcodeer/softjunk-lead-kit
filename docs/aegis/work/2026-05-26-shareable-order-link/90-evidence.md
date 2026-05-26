@@ -79,6 +79,60 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Latest Evidence Pointer
+
+- Latest conversion slice: Instant fulfillment packet.
+- Product commit: `db3077d Add instant fulfillment packet`.
+- Packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md`.
+- Raw JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json`.
+- Public Gist: `https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.43`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
+- Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
+- Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-26 Instant Fulfillment Packet Evidence
+
+Files changed in product repo:
+- `INSTANT_FULFILLMENT_PACKET.md`
+- `instant-fulfillment-packet.json`
+- `BUY_NOW.md`
+- `buy-now.json`
+- `PAYPAL_NOTE_FIRST.md`
+- `paypal-note-first.json`
+- `README.md`
+- `BUYER_INDEX.md`
+- `buyer-index.json`
+- `agent-buyer-catalog.jsonl`
+- `llms.txt`
+
+Commit, release, and issue:
+- Product commit: `db3077d Add instant fulfillment packet`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.43`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
+
+Public routes:
+- Packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md`.
+- Raw JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json`.
+- Public Gist: `https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json`.
+
+Local validation:
+- JSON parse passed for `instant-fulfillment-packet.json`, `buy-now.json`, `paypal-note-first.json`, and `buyer-index.json`.
+- JSONL parse passed for `agent-buyer-catalog.jsonl` with `lines=26`.
+- Marker validation passed for the packet route across Markdown, JSON, buyer index, catalog, and `llms.txt`: `marker_ok checks=10`.
+- `git diff --check` returned no whitespace errors before commit.
+
+Public validation:
+- Raw Gist validation passed: `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`.
+- Raw GitHub validation passed: `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`.
+- Release validation passed: `release_ok tag=v2.29.43 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.43`.
+- Issue comment validation passed: `issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 PayPal Note First Route Evidence
 
 Files changed in product repo:
@@ -1946,3 +2000,15 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Latest Evidence Pointer
+
+- Latest conversion slice: Instant fulfillment packet.
+- Product commit: `db3077d Add instant fulfillment packet`.
+- Packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md`.
+- Raw JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json`.
+- Public Gist: `https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.43`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
+- Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
+- Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
