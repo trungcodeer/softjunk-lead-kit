@@ -110,11 +110,17 @@ Public fallback distribution:
 - Product raw text: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.txt`.
 - Root raw JSON: `https://raw.githubusercontent.com/trungcodeer/trungcodeer.github.io/ca2ed8472fb180c0cd830a871478dbc5abc687fa/agent-close.json`.
 - Root raw text: `https://raw.githubusercontent.com/trungcodeer/trungcodeer.github.io/ca2ed8472fb180c0cd830a871478dbc5abc687fa/agent-close.txt`.
+- Product RawGitHack HTML: `https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html`.
+- Product RawGitHack JSON: `https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json`.
+- Root RawGitHack HTML: `https://raw.githack.com/trungcodeer/trungcodeer.github.io/ca2ed8472fb180c0cd830a871478dbc5abc687fa/agent-close/index.html`.
+- Root RawGitHack JSON: `https://raw.githack.com/trungcodeer/trungcodeer.github.io/ca2ed8472fb180c0cd830a871478dbc5abc687fa/agent-close.json`.
 
 Raw/Gist validation:
 - Raw GitHub validation passed: `agent_close_raw_github_ok files=4 checks=22 product_commit=3278b637c63edfc17cf54dfcdcf205fa5e325df4 root_commit=ca2ed8472fb180c0cd830a871478dbc5abc687fa`.
 - Gist raw validation passed: `agent_close_gist_raw_ok files=2 checks=10 gist=ecae8d461ddeba2fd5ad657dc0e2d158`.
 - Validated markers included root rescue, exact PayPal 5 USD URL, `PAYPAL_PAYMENT_VERIFIED=true`, and the one-lead rescue order form URL.
+- RawGitHack validation returned HTTP 200 with contract markers for product/root HTML and JSON.
+- jsDelivr validation returned HTTP 200 with contract markers for product/root HTML and JSON.
 
 Pages status:
 - Product GitHub Pages latest build for `e73c44945a9aeb7ccd51ffb78d9e2b0efc60f6a6` remained `building`.
@@ -125,6 +131,12 @@ Pages status:
 Public issue comments:
 - Tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543773021`.
 - Buyer examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543773033`.
+- CDN tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543791420`.
+- CDN buyer examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543791441`.
+
+Release note updates:
+- Product release `v2.29.34` now lists RawGitHack and Gist fallbacks.
+- Root release `root-agent-close-contract-v1` now lists RawGitHack and Gist fallbacks.
 
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

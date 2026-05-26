@@ -1901,7 +1901,10 @@ Completed todos:
 - Created root release `root-agent-close-contract-v1`.
 - Created public Gist fallback `https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158`.
 - Validated raw GitHub product/root agent-close JSON/TXT and public Gist JSON/TXT.
+- Validated immutable RawGitHack and jsDelivr CDN fallbacks for product/root agent-close HTML and JSON.
+- Updated product/root release notes with the CDN and Gist fallbacks.
 - Commented public issues #2 and #3 with the fallback route and payment-gate warning.
+- Commented public issues #2 and #3 again with the CDN render fallback after Pages remained stuck.
 - Reran the PayPal verifier.
 
 Evidence refs:
@@ -1913,10 +1916,13 @@ Evidence refs:
 - Public Gist fallback: `https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158`.
 - Raw GitHub validation passed: `agent_close_raw_github_ok files=4 checks=22 product_commit=3278b637c63edfc17cf54dfcdcf205fa5e325df4 root_commit=ca2ed8472fb180c0cd830a871478dbc5abc687fa`.
 - Gist raw validation passed: `agent_close_gist_raw_ok files=2 checks=10 gist=ecae8d461ddeba2fd5ad657dc0e2d158`.
+- RawGitHack validation returned HTTP 200 with contract markers for product/root HTML and JSON.
+- jsDelivr validation returned HTTP 200 with contract markers for product/root HTML and JSON.
 - Product Pages latest build for `e73c44945a9aeb7ccd51ffb78d9e2b0efc60f6a6` remained `building`; previous `3278b63` Pages builds returned `Page build failed`.
 - Root Pages latest build for `ca2ed8472fb180c0cd830a871478dbc5abc687fa` remained `building`.
 - Live Pages checks returned 404 for product/root agent-close HTML and JSON, so Pages agent-close routes were not counted as live.
 - Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543773021` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543773033`.
+- CDN issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543791420` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543791441`.
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Blocked-on items:
