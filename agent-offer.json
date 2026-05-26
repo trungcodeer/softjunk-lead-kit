@@ -51,6 +51,9 @@
   "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
   "custom_sequence_gallery_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
   "custom_sequence_gallery_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
+  "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+  "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+  "agent_commerce_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
   "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
   "paid_kit_proof_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
   "paid_kit_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
@@ -95,6 +98,7 @@
   ],
   "agent_instructions": [
     "Use buyer_index_url first when choosing the shortest path for a one-lead sample, weak-message rewrite, direct answer, custom sequence, QR handoff, or checkout.",
+    "Use agent_commerce_url or agent_commerce_json_url when an AI assistant, VA, crawler, or buyer needs the compact commerce contract before routing to PayPal.",
     "Use ai_follow_up_prompt_url when the buyer or VA wants a copyable prompt for ChatGPT, Claude, Gemini, or another assistant.",
     "Use agent_buyer_packet_url when another AI assistant, VA, or buyer needs a compact decision packet with the free audit path, exact PayPal URL, copyable prompt, and seller-side verification gate.",
     "Use public_buyer_thread_url when the buyer wants public examples for missed calls, quiet quotes, no-shows, or price objections before paying.",

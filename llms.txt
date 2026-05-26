@@ -29,6 +29,15 @@ https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 AI agent buyer packet JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 
+Agent commerce capsule:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+
+Agent commerce JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
+
+Agent commerce text:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
+
 AI follow-up prompt:
 https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 
@@ -268,6 +277,7 @@ Offers:
 - Free custom sequence gallery for $0: ready-to-open HVAC, roofing, dental, med spa, real estate, tutoring, plumbing, and agency preview links.
 - Public buyer examples thread for $0: missed call, quiet quote, and price-objection examples with the exact 5 USD PayPal path.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
+- Free agent commerce capsule for $0: compact commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
 - Free lead follow-up rewriter for $0: rewrites one weak follow-up message and creates a PayPal note.

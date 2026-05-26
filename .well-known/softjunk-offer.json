@@ -47,6 +47,9 @@
   "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
   "custom_sequence_gallery_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
   "custom_sequence_gallery_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
+  "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+  "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+  "agent_commerce_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
@@ -94,6 +97,7 @@
       "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
       "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
       "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+      "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
       "delivery": "Manual same-day delivery after PayPal payment appears"
     },
     {

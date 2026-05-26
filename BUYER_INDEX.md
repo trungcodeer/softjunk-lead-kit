@@ -10,6 +10,8 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+- Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+- Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - Public agent buyer packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
@@ -51,6 +53,10 @@ If the buyer wants a ready example, open the scenario gallery first:
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 
+If an AI assistant, VA, crawler, or buyer needs the compact commerce contract before routing to PayPal, open:
+
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+
 If the non-sensitive order context is already known, create a shareable order link and PayPal note here:
 
 https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
@@ -70,6 +76,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - Custom sequence gallery JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 - Custom sequence gallery text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
+- Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+- Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
+- Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt

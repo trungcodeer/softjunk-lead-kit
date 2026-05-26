@@ -9,6 +9,9 @@ contact_links:
   - name: Payment intent Gist
     url: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
     about: Public GitHub-native payment intent with exact amount, PayPal URL, buyer routes, and verification gate.
+  - name: Agent commerce capsule
+    url: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+    about: Compact AI/VA/crawler commerce contract with fit rules, PayPal route, payment note, and verification gate.
   - name: Fast checkout
     url: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
     about: Copy the correct PayPal note, open the $5 PayPal link, and review the after-payment handoff.

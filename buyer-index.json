@@ -20,6 +20,9 @@
   "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
   "custom_sequence_gallery_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
   "custom_sequence_gallery_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
+  "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+  "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+  "agent_commerce_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
@@ -103,6 +106,13 @@
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
       "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
       "why": "Provides an agent-safe decision path, copyable prompt, exact PayPal URL, payment note, and seller-side verification rule."
+    },
+    {
+      "use_when": "An AI assistant, VA, crawler, or buyer needs the most compact commerce contract before routing to PayPal.",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+      "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
+      "why": "Combines fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, payment note, privacy boundary, and verification gate in one compact capsule."
     },
     {
       "use_when": "The buyer has a weak follow-up, basic lead numbers, and needs a concrete recovery audit before paying.",
@@ -192,7 +202,7 @@
     "direct_buy_message": "Buy the $5 SoftJunk Lead Follow-Up Kit here: https://paypal.me/softjunk/5USD. Use PayPal note: Lead Follow-Up Kit. After payment, open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html.",
     "short_root_buy_message": "Short SoftJunk PayPal route: https://trungcodeer.github.io/paypal/. Direct PayPal: https://paypal.me/softjunk/5USD.",
     "shareable_order_link_message": "If you already know the business type, service, source, tone, value, and follow-up need, create a shareable SoftJunk order link here: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html. Copy the generated PayPal note, then pay exactly $5 at https://paypal.me/softjunk/5USD.",
-    "custom_sequence_message": "For a custom 7-day lead follow-up sequence, open https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html for a ready scenario or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when context is already ready, copy the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and paste the generated note into PayPal.",
+    "custom_sequence_message": "For a custom 7-day lead follow-up sequence, open https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html when an AI/VA needs the compact commerce contract, https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html for a ready scenario, or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when context is already ready. Copy the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and paste the generated note into PayPal.",
     "qr_message": "Scan or share this $5 PayPal QR page for SoftJunk: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html"
   },
   "buyer_fit": [
@@ -224,6 +234,7 @@
     "Shareable order link",
     "Custom sequence preview",
     "Custom sequence gallery",
+    "Agent commerce capsule",
     "OpenAPI discovery",
     "Well-known offer manifest",
     "IndexNow ping"
@@ -254,6 +265,9 @@
     "custom_sequence_gallery": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
     "custom_sequence_gallery_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
     "custom_sequence_gallery_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
+    "agent_commerce": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+    "agent_commerce_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+    "agent_commerce_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",

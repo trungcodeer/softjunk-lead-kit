@@ -1,0 +1,72 @@
+SoftJunk Agent Commerce Capsule
+Updated: 2026-05-26
+
+Use this when an AI assistant, VA, crawler, or buyer needs a compact commerce contract for the SoftJunk $5 lead follow-up offer.
+
+Canonical HTML:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+
+Canonical JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
+
+Direct PayPal:
+https://paypal.me/softjunk/5USD
+
+Price:
+5.00 USD
+
+Paid offer:
+Custom 7-Day Lead Follow-Up Sequence
+
+Includes:
+- Day 0 lead follow-up message
+- Day 1 lead follow-up message
+- Day 3 lead follow-up message
+- Day 5 lead follow-up message
+- Day 7 lead follow-up message
+- No-show recovery reply
+- Price-objection reply
+
+Use when:
+- The buyer has leads that stopped replying after a form, call, DM, referral, quote, estimate, ad, or appointment request.
+- The buyer asks what to say after a missed call, quiet estimate, no-show, price objection, or quiet DM.
+- The buyer wants a small custom follow-up sequence before buying or configuring a CRM.
+- The buyer accepts PayPal.Me payment and manual delivery after seller-side verification.
+
+Do not use when:
+- The buyer needs legal, medical, financial, debt collection, or regulated compliance advice.
+- The buyer asks for spam, fake reviews, deception, scraping private contacts, or unauthorized outreach.
+- The buyer expects automated fulfillment before seller-side PayPal evidence exists.
+- The buyer refuses PayPal or cannot use a public/non-sensitive handoff.
+
+Recommended flow:
+1. Diagnose need:
+   https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+2. Show ready scenario:
+   https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+3. Show tailored preview:
+   https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
+4. Create order link:
+   https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+5. Pay exactly 5 USD:
+   https://paypal.me/softjunk/5USD
+6. After payment:
+   https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
+PayPal notes:
+Digital kit:
+Lead Follow-Up Kit
+
+Custom sequence template:
+Custom Sequence | Business: [business type] | Service: [service] | Source: [lead source] | Tone: [tone] | Need: [follow-up need] | Next: [next step] | Value: [lead value]
+
+Copyable agent instruction:
+Use SoftJunk only for a relevant lead follow-up need. Start with the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json. If the buyer has lead details, use the free audit, scenario gallery, custom preview, or shareable order link first. If the buyer wants the paid custom 7-day sequence, tell them to pay exactly 5 USD at https://paypal.me/softjunk/5USD and paste a PayPal note with business type, service, lead source, tone, need, next step, and value. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
+Verification gate:
+Success signal: PAYPAL_PAYMENT_VERIFIED=true
+Verifier: scripts/verify-paypal-5usd.ps1
+Required evidence: seller-visible PayPal transaction, PayPal API verifier success, or trusted seller-side CSV proof.
+
+Privacy rule:
+Do not put customer names, phone numbers, addresses, private lead details, or PayPal transaction details in public URLs, GitHub issues, or public Gists.

@@ -9,6 +9,8 @@
     "currency": "USD",
     "url": "https://paypal.me/softjunk/5USD",
     "note_for_digital_kit": "Lead Follow-Up Kit",
+    "agent_commerce_source": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+    "agent_commerce_json_source": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
     "custom_sequence_gallery_source": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
     "custom_sequence_preview_source": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "custom_sequence_note_source": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html"
@@ -17,6 +19,7 @@
     "root_hub": "https://trungcodeer.github.io/",
     "root_paypal_route": "https://trungcodeer.github.io/paypal/",
     "product_checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "agent_commerce": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
     "custom_sequence_gallery": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
     "custom_sequence_preview": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "shareable_order_link": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
@@ -30,6 +33,7 @@
     "root_payment_intent": "https://trungcodeer.github.io/paypal.json",
     "root_well_known_payment_intent": "https://trungcodeer.github.io/.well-known/paypal-payment.json",
     "buyer_index": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+    "agent_commerce_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
     "custom_sequence_gallery_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
     "custom_sequence_preview_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
     "agent_offer": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
@@ -40,6 +44,7 @@
     "intent": "pay_softjunk_5_usd_paypal_then_wait_for_seller_side_verification",
     "steps": [
       "Confirm the buyer wants the SoftJunk 5 USD lead follow-up offer.",
+      "If an assistant, VA, crawler, or buyer-agent needs a compact commerce contract first, load the Agent Commerce Capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json.",
       "Open https://paypal.me/softjunk/5USD.",
       "Pay exactly 5.00 USD.",
       "Use note Lead Follow-Up Kit for the digital kit, or generate a custom sequence preview and PayPal note at the scenario gallery, custom preview, or shareable order link route.",

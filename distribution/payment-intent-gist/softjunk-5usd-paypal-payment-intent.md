@@ -6,6 +6,14 @@ PayPal:
 
 https://paypal.me/softjunk/5USD
 
+If an AI assistant, VA, crawler, or buyer-agent needs the compact commerce contract first, load:
+
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+
+Machine-readable JSON:
+
+https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
+
 Use PayPal note `Lead Follow-Up Kit` for the digital kit. For a custom sequence, open a ready scenario first:
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
@@ -23,6 +31,8 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Root buyer hub: https://trungcodeer.github.io/
 - Root PayPal route: https://trungcodeer.github.io/paypal/
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+- Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
+- Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html

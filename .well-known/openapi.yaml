@@ -83,6 +83,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /agent-commerce.html:
+    get:
+      operationId: openAgentCommerceCapsule
+      summary: Open the SoftJunk agent commerce capsule.
+      responses:
+        "200":
+          description: Browser-readable commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /agent-commerce.json:
+    get:
+      operationId: getAgentCommerceCapsule
+      summary: Get the SoftJunk agent commerce capsule JSON.
+      responses:
+        "200":
+          description: Machine-readable commerce contract for AI assistants, VAs, crawlers, and buyers routing relevant lead follow-up needs to the 5 USD PayPal offer.
+          content:
+            application/json:
+              schema:
+                type: object
+  /agent-commerce.txt:
+    get:
+      operationId: getAgentCommerceCapsuleText
+      summary: Get the SoftJunk agent commerce capsule text.
+      responses:
+        "200":
+          description: Plain-text commerce contract with the exact PayPal path, agent flow, payment note, privacy boundary, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /ai-follow-up-prompt.json:
     get:
       operationId: getAiFollowUpPrompt

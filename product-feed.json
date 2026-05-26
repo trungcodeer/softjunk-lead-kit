@@ -33,6 +33,8 @@
     "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+    "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+    "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
     "delivery": "Manual same-day delivery after PayPal payment appears",
@@ -68,6 +70,12 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
       "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c"
+    },
+    {
+      "name": "Agent Commerce Capsule",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt"
     },
     {
       "name": "Shareable Order Link",
@@ -167,6 +175,9 @@
     "agent_buyer_packet_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "agent_buyer_packet_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
     "gist_agent_buyer_packet": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
+    "agent_commerce": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
+    "agent_commerce_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+    "agent_commerce_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
     "ai_follow_up_prompt": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
     "ai_follow_up_prompt_text": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
     "ai_follow_up_prompt_json": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
