@@ -72,6 +72,38 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Exact-Intent Answer Pack Evidence
+
+Local validation:
+- Product validation passed for 9 JSON files, 16 JSONL records, 2 XML files, and 7 OpenAPI paths.
+- Root validation passed for 4 JSON files, root sitemap XML, and 5 root OpenAPI answer-pack paths.
+- `git diff --check` passed for product and root; warnings were CRLF-only.
+
+Commits and releases:
+- Product commit: `679dc17 Add exact-intent answer pack`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.15`.
+- Root commit: `a8992c2 Expose exact-intent answer pack from root`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-exact-intent-answer-pack-v1`.
+- Product Pages run `26432415271` completed with `success`.
+- Root Pages run `26432415252` completed with `success`.
+
+Live deploy validation:
+- `exact-intent-answer-pack.json` returned HTTP 200 and contained `softjunk-exact-intent-answer-pack-v1`.
+- `exact-intent-answer-pack.txt` returned HTTP 200 and contained `SoftJunk exact-intent answer pack`.
+- `price-objection-reply.txt`, `no-show-follow-up.txt`, and `quiet-dm-follow-up.txt` returned HTTP 200 and contained the target buyer questions.
+- Live decoded `agent-buyer-catalog.jsonl` contained `free_exact_intent_answer_pack`.
+- Live product checks confirmed `buyer-index.json` and product OpenAPI expose the answer-pack routes.
+- Live root checks confirmed `root-offer.json`, root `llms.txt`, root OpenAPI, and root sitemap expose the answer-pack routes.
+
+Public distribution:
+- IndexNow returned `status=200 urls=25`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540065198`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540065184`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Root Short Routes Agent Pay Evidence
 
 Root route changes:

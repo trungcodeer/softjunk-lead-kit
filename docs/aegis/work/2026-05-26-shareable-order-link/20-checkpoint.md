@@ -858,3 +858,54 @@ DriftCheckDraft:
 - Current slice fit: yes, it targets non-traditional AI/buyer-agent routing and high-intent exact-problem pages without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/JSONL/OpenAPI/llms discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Exact-Intent Answer Pack Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Add JSON and plain-text answer-pack routes for AI assistants, crawlers, VAs, and buyers to ingest exact follow-up answers without parsing HTML.
+
+Completed todos:
+- Added `exact-intent-answer-pack.json` and `exact-intent-answer-pack.txt`.
+- Added plain-text routes for missed call, estimate follow-up, price objection, no-show, and quiet DM follow-up.
+- Wired the pack and text routes into product answer engine, buyer index, offers, product feed, agent offer, agent buyer packet, agent buyer catalog JSONL, well-known offer, AI plugin manifest, OpenAPI, sitemap, robots, `llms.txt`, and README.
+- Wired root offer JSON, root AI route JSON, well-known root offer, root OpenAPI, root sitemap, and root `llms.txt` to expose the answer-pack routes.
+- Validated product/root JSON, product JSONL, product/root XML, product/root OpenAPI YAML, and whitespace locally.
+- Committed and pushed product change `679dc17`.
+- Created product release `v2.29.15`.
+- Committed and pushed root change `a8992c2`.
+- Created root release `root-exact-intent-answer-pack-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Verified live answer-pack JSON/text, individual text routes, product metadata, root metadata, and decoded JSONL catalog contents.
+- Submitted 25 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the answer-pack update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/679dc17`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.15`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/a8992c2`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-exact-intent-answer-pack-v1`.
+- Live answer pack: `https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json` and `https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt`.
+- GitHub Pages runs: product `26432415271`, root `26432415252`, both success.
+- Live checks confirmed the answer-pack routes and individual text routes returned HTTP 200 and contained the expected buyer questions/payment gate.
+- Live product checks confirmed buyer index, OpenAPI, and decoded JSONL expose `free_exact_intent_answer_pack`.
+- Live root checks confirmed `root-offer.json`, `llms.txt`, OpenAPI, and sitemap expose the answer-pack routes.
+- IndexNow returned `status=200 urls=25`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540065198` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540065184`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates non-traditional AI-ingestible buyer routing surfaces without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
