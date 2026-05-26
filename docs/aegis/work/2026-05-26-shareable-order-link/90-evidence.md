@@ -79,6 +79,36 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Owned Repos Buy Now Route Evidence
+
+Root repo:
+- Commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/a817b2f`.
+- Release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-buy-now-route-v1`.
+- Updated README, Funding, Support, and issue contact links to start with the product Buy Now packet, raw JSON, pinned issue #1, pinned issue #5, direct PayPal, and verification gate.
+- Repo homepage: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Validation: `root_buy_now_local_ok files=4 markers=6 yaml=2`, `root_buy_now_raw_ok files=4 markers=6 commit=a817b2f`, `root_buy_now_release_ok tag=root-buy-now-route-v1 url=https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-buy-now-route-v1 markers=6`.
+
+Profile repo:
+- Commit: `https://github.com/trungcodeer/trungcodeer/commit/9d54e60`.
+- Release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-buy-now-route-v1`.
+- Updated README, Funding, Support, and issue contact links to start with the product Buy Now packet, raw JSON, pinned issue #1, pinned issue #5, direct PayPal, and verification gate.
+- Repo homepage: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Validation: `profile_buy_now_local_ok files=4 markers=6 yaml=2`, `profile_buy_now_raw_ok files=4 markers=6 commit=9d54e60`, `profile_buy_now_release_ok tag=profile-buy-now-route-v1 url=https://github.com/trungcodeer/trungcodeer/releases/tag/profile-buy-now-route-v1 markers=6`.
+
+Quiet lead repo:
+- Commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/363aa19`.
+- Release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-buy-now-route-v1`.
+- Updated README, Funding, Support, and issue contact links to start with the product Buy Now packet, raw JSON, pinned issue #1, pinned issue #5, direct PayPal, and verification gate.
+- Repo homepage: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Validation: `quiet_buy_now_local_ok files=4 markers=6 yaml=2`, `quiet_buy_now_raw_ok files=4 markers=6 commit=363aa19`, `quiet_buy_now_release_ok tag=quiet-buy-now-route-v1 url=https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-buy-now-route-v1 markers=6`.
+
+Product hub:
+- Issue #5 route update comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544172542`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 GitHub-Native Buy Now Route Evidence
 
 Files changed in product repo:

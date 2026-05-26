@@ -2452,3 +2452,54 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the shortest owned public checkout path and validates the PayPal URL without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: product GitHub repo, public GitHub issues/releases/discussions/Funding/repo metadata, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Owned Repos Buy Now Route Checkpoint
+
+Current todo:
+- Keep all owned GitHub entry points pointed at the shortest GitHub-native Buy Now route.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Route the root Pages repo, profile repo, and quiet-lead repo to the product `BUY_NOW.md` packet and raw `buy-now.json`, then validate the public raw files, repo metadata, releases, and PayPal gate.
+
+Completed todos:
+- Updated root repo README, Funding, Support, and issue contact links to put Buy Now, raw JSON, issue #1, issue #5, and PayPal first.
+- Updated profile repo README, Funding, Support, and issue contact links the same way.
+- Updated quiet-lead repo README, Funding, Support, and issue contact links the same way.
+- Validated local marker coverage and YAML parsing in all three repos.
+- Committed and pushed root commit `a817b2f`.
+- Committed and pushed profile commit `9d54e60`.
+- Committed and pushed quiet-lead commit `363aa19`.
+- Updated root/profile/quiet repo homepages to the product Buy Now packet and descriptions to mention the Buy Now/PayPal route.
+- Validated public raw GitHub content for README, Funding, Support, and issue template config in all three repos.
+- Created and validated releases `root-buy-now-route-v1`, `profile-buy-now-route-v1`, and `quiet-buy-now-route-v1`.
+- Added a public product issue #5 comment recording the owned-channel Buy Now route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/a817b2f`.
+- Profile commit: `https://github.com/trungcodeer/trungcodeer/commit/9d54e60`.
+- Quiet commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/363aa19`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-buy-now-route-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-buy-now-route-v1`.
+- Quiet release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-buy-now-route-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544172542`.
+- Local validation passed: `root_buy_now_local_ok files=4 markers=6 yaml=2`, `profile_buy_now_local_ok files=4 markers=6 yaml=2`, `quiet_buy_now_local_ok files=4 markers=6 yaml=2`.
+- Public raw validation passed: `root_buy_now_raw_ok files=4 markers=6 commit=a817b2f`, `profile_buy_now_raw_ok files=4 markers=6 commit=9d54e60`, `quiet_buy_now_raw_ok files=4 markers=6 commit=363aa19`.
+- Release validation passed: `root_buy_now_release_ok tag=root-buy-now-route-v1`, `profile_buy_now_release_ok tag=profile-buy-now-route-v1`, `quiet_buy_now_release_ok tag=quiet-buy-now-route-v1`, each with `markers=6`.
+- Root repo metadata homepage is `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Profile repo metadata homepage is `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Quiet repo metadata homepage is `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it routes additional owned GitHub entry points to the strongest current checkout packet without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: root/profile/quiet/product GitHub repos, public GitHub metadata/releases/issues, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
