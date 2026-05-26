@@ -17,14 +17,16 @@ Start here if you have one real quiet lead:
 4. AI action checkout manifest: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
 5. A2A agent card: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
 6. Root A2A agent card: https://trungcodeer.github.io/.well-known/agent-card.json
-7. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-8. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-9. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-10. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-11. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-12. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-13. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-14. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+7. MCP checkout server: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
+8. MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
+9. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+10. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+11. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+12. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+13. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+14. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+15. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+16. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
@@ -64,6 +66,21 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md
 
 A2A agent card Gist:
 https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a
+
+MCP checkout server:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
+
+MCP checkout manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
+
+Well-known MCP checkout manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
+
+MCP checkout server source:
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
+
+MCP checkout Gist:
+https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 
 Agent checkout Gist:
 https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b

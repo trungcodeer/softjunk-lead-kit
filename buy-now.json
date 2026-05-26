@@ -21,6 +21,11 @@
   "a2a_agent_card_raw_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agent-card.json",
   "a2a_agent_card_human_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md",
   "a2a_agent_card_gist_url": "https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a",
+  "mcp_checkout_server_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md",
+  "mcp_checkout_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
+  "well_known_mcp_checkout_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
+  "mcp_checkout_server_raw_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js",
+  "mcp_checkout_gist_url": "https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d",
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
@@ -83,6 +88,11 @@
       "step": "a2a_agent_card",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json",
       "instruction": "Use the A2A-style agent card when a buyer-agent wants structured skills, supported static commerce interfaces, exact 5 USD PayPal URL, and verification gate."
+    },
+    {
+      "step": "mcp_checkout_server",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md",
+      "instruction": "Use the MCP stdio checkout server when an AI client can run local MCP tools and needs a callable checkout handoff that returns the PayPal note, exact 5 USD PayPal URL, order form, and verification gate."
     },
     {
       "step": "sponsor_button_buy",

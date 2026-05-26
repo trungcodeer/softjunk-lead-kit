@@ -18,6 +18,9 @@ x-softjunk-fastest-buyer-path:
   ai_action_checkout_gist_url: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
   a2a_agent_card_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
   root_a2a_agent_card_url: https://trungcodeer.github.io/.well-known/agent-card.json
+  mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
+  well_known_mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
+  mcp_checkout_server_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
   payment_url: https://paypal.me/softjunk/5USD
   one_lead_rescue_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
@@ -187,6 +190,39 @@ paths:
             application/json:
               schema:
                 type: object
+  /mcp-checkout-server.json:
+    get:
+      operationId: getMcpCheckoutServerManifest
+      summary: Get the SoftJunk MCP checkout server manifest.
+      responses:
+        "200":
+          description: Machine-readable manifest for the dependency-free MCP stdio checkout server with callable tools for PayPal note, exact 5 USD checkout, order form, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /.well-known/mcp-checkout-server.json:
+    get:
+      operationId: getWellKnownMcpCheckoutServerManifest
+      summary: Get the well-known SoftJunk MCP checkout server manifest.
+      responses:
+        "200":
+          description: Well-known manifest for AI clients that can run the local MCP stdio checkout server.
+          content:
+            application/json:
+              schema:
+                type: object
+  /mcp-server-softjunk.js:
+    get:
+      operationId: getMcpCheckoutServerSource
+      summary: Get the SoftJunk MCP checkout server source.
+      responses:
+        "200":
+          description: Dependency-free Node.js MCP stdio server source exposing checkout-only tools.
+          content:
+            application/javascript:
+              schema:
+                type: string
   /offers.json:
     get:
       operationId: getOffers

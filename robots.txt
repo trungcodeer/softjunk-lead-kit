@@ -17,6 +17,10 @@ Allow: /ai-action-checkout.json
 Allow: /.well-known/ai-action-checkout.json
 Allow: /agent-card.json
 Allow: /.well-known/agent-card.json
+Allow: /mcp-checkout-server.json
+Allow: /.well-known/mcp-checkout-server.json
+Allow: /mcp-server-softjunk.js
+Allow: /MCP_CHECKOUT_SERVER.md
 Allow: /agent-order.html
 Allow: /agent-offer.json
 Allow: /product-feed.json
