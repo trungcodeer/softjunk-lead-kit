@@ -9,6 +9,8 @@
   "payment": {
     "provider": "PayPal.Me",
     "url": "https://paypal.me/softjunk/5USD",
+    "buy_now_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md",
+    "buy_now_raw_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json",
     "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
     "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
     "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
@@ -17,6 +19,7 @@
     "qr_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
     "qr_svg_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg",
     "public_order_board_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
+    "buyer_agent_contract_issue_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
     "public_buyer_thread_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
     "github_order_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose",
     "verification_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",

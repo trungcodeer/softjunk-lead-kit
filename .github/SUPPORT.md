@@ -4,6 +4,11 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 
 ## Pay
 
+- GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+- Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+- Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+- Direct PayPal.Me URL: https://paypal.me/softjunk/5USD
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
@@ -11,7 +16,6 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 - Short PayPal route: https://trungcodeer.github.io/paypal/
-- Direct PayPal.Me URL: https://paypal.me/softjunk/5USD
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - QR page: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 - Agent close rendered fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html

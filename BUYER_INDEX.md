@@ -4,6 +4,11 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 
 ## Fast Route
 
+- GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+- Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+- Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+- Exact PayPal payment: https://paypal.me/softjunk/5USD
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
@@ -51,7 +56,19 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 
 ## Copy-Ready Recommendation
 
-If one lead has gone quiet, use the root one-lead rescue route first, then buy the $5 custom 7-day sequence if the lead is worth recovering:
+If one lead has gone quiet, use the GitHub-native Buy Now packet first, then buy the $5 custom one-lead rescue if the lead is worth recovering:
+
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+
+Pinned human checkout board:
+
+https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+
+Buyer-agent close contract:
+
+https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+
+Optional Pages route:
 
 https://trungcodeer.github.io/rescue/
 

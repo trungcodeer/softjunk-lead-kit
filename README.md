@@ -8,15 +8,21 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 Start here if you have one real quiet lead:
 
-1. Open the root one-lead rescue route: https://trungcodeer.github.io/rescue/
-2. If an assistant or buyer agent needs a compact handoff, open the agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-3. If more context is needed, open the AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-4. Generate the PayPal note for the one-lead rescue, digital kit, or custom 7-day sequence.
-5. Pay exactly 5 USD after the note is ready: https://paypal.me/softjunk/5USD
-6. After payment, submit the one-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml or use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+1. Open the GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+2. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+3. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+4. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+5. After payment, submit the one-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+6. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+
+Buy Now packet:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+
+Buy Now JSON:
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
 
 One-message buyer packet:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
@@ -33,6 +39,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 ![PayPal QR code for the $5 SoftJunk checkout](paypal-qr.svg)
 
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+- GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+- Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+- Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
 - Root buyer hub: https://trungcodeer.github.io/
