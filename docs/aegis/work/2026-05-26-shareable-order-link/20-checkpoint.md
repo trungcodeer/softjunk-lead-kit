@@ -960,3 +960,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it expands public GitHub-native, AI-ingestible distribution without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery for owned host URLs, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Inline Checkout Note Builder Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Remove ready-buyer friction by adding a checkout-local PayPal note builder and routing buyer-agents directly to that point.
+
+Completed todos:
+- Added an inline custom sequence note builder to `checkout.html` with labeled inputs, generated note output, copy action, and exact `$5` PayPal link.
+- Wired the checkout note builder into `checkout.json`, `checkout.txt`, `buyer-index.json`, `product-feed.json`, `offers.json`, product OpenAPI, product `llms.txt`, and README.
+- Wired root offer metadata, root AI metadata, root well-known offer, root AI plugin manifest, and root `llms.txt` to expose the checkout note builder URL.
+- Tightened `buyer-index.json` so the ready-to-pay buyer path routes directly to `checkout.html#quick-note-title`.
+- Validated product/root JSON, XML/YAML route metadata, checkout JavaScript parse, whitespace, and live Pages endpoints.
+- Committed and pushed product changes `3283098` and `6d91f6b`.
+- Created product releases `v2.29.17` and `v2.29.18`.
+- Committed and pushed root change `1705c46`.
+- Created root release `root-inline-checkout-note-builder-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Submitted 13 host-valid updated URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the inline checkout note builder update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commits: `https://github.com/trungcodeer/softjunk-lead-kit/commit/3283098` and `https://github.com/trungcodeer/softjunk-lead-kit/commit/6d91f6b`.
+- Product releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.17` and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.18`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/1705c46`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-inline-checkout-note-builder-v1`.
+- GitHub Pages runs: product `26433161008` and `26433276521`, root `26433161111`, all success.
+- Live checkout route: `https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title`.
+- Live checks confirmed checkout HTML contains `Custom sequence note builder`, `copy-custom-note`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live product metadata checks confirmed `checkout.json`, `checkout.txt`, `buyer-index.json`, `product-feed.json`, `offers.json`, OpenAPI, and `llms.txt` expose the inline note builder route.
+- Live root metadata checks confirmed `root-offer.json`, `ai.json`, `.well-known/softjunk-root-offer.json`, `.well-known/ai-plugin.json`, and `llms.txt` expose the note builder route.
+- IndexNow returned `status=200 urls=13`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540248946` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540248890`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses AI-readable buyer routing and checkout-local conversion work without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

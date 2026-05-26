@@ -38,6 +38,38 @@ Payment gate:
 - This slice still did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Inline Checkout Note Builder Evidence
+
+Local validation:
+- `buyer-index.json` parsed successfully after tightening the ready-to-pay route to `checkout.html#quick-note-title`.
+- Local checks confirmed `checkout.html` contains `quick-note-title`, `copy-custom-note`, `https://paypal.me/softjunk/5USD`, and the `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- The non-JSON-LD checkout script parsed successfully with Node.
+- Product and root `git diff --check` passed with line-ending warnings only.
+
+Commits and releases:
+- Product commit `3283098`: `Add inline checkout note builder`.
+- Product release `v2.29.17`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.17`.
+- Root commit `1705c46`: `Route root checkout to inline note builder`.
+- Root release `root-inline-checkout-note-builder-v1`: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-inline-checkout-note-builder-v1`.
+- Product commit `6d91f6b`: `Route buyer index to checkout note builder`.
+- Product release `v2.29.18`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.18`.
+
+Public deploy validation:
+- Product Pages runs `26433161008` and `26433276521` completed successfully.
+- Root Pages run `26433161111` completed successfully.
+- Live product checks returned expected content for `checkout.html`, `checkout.json`, `checkout.txt`, `buyer-index.json`, `product-feed.json`, `offers.json`, `.well-known/openapi.yaml`, and `llms.txt`.
+- Live checkout HTML contained `Custom sequence note builder`, `copy-custom-note`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live root checks returned expected note-builder metadata for `root-offer.json`, `ai.json`, `.well-known/softjunk-root-offer.json`, `.well-known/ai-plugin.json`, and `llms.txt`.
+
+Public distribution:
+- IndexNow returned `status=200 urls=13` for checkout, product metadata, and root metadata URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540248946`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540248890`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Product Exact-Intent Follow-Up Pages Evidence
 
 Local validation:
