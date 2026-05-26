@@ -2,7 +2,7 @@
   "name": "softjunk-mcp-checkout",
   "version": "0.1.0",
   "private": true,
-  "description": "Dependency-free MCP stdio checkout server for the SoftJunk 5 USD one-lead rescue PayPal handoff.",
+  "description": "Dependency-free MCP stdio checkout server and roofing estimate follow-up sequence tool for the SoftJunk 5 USD PayPal handoff.",
   "bin": {
     "softjunk-mcp-checkout": "./mcp-server-softjunk.js"
   },
@@ -14,4 +14,3 @@
   },
   "license": "MIT"
 }
-

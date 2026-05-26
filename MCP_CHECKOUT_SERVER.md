@@ -2,7 +2,7 @@
 
 This repository includes a dependency-free Model Context Protocol stdio server for AI clients that can run local MCP tools.
 
-It exposes checkout-only tools for the SoftJunk 5 USD one-lead rescue. It does not process payment and does not verify payment.
+It exposes checkout-only tools for the SoftJunk 5 USD one-lead rescue, plus a roofing estimate follow-up sequence builder for MCP-capable buyer agents. It does not process payment and does not verify payment.
 
 ## Run
 
@@ -31,6 +31,7 @@ For MCP clients that accept JSON config, use this shape and adjust the absolute 
 
 - `route_softjunk_one_lead_rescue_checkout`
 - `build_safe_paypal_note`
+- `build_roofing_estimate_follow_up_sequence`
 - `get_softjunk_checkout_routes`
 - `get_paypal_verification_gate`
 
@@ -39,6 +40,14 @@ The main checkout tool returns:
 - PayPal note
 - exact 5 USD payment URL: https://paypal.me/softjunk/5USD
 - order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+- verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
+
+The roofing estimate tool returns:
+
+- Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts
+- safe PayPal note
+- generator page: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+- exact 5 USD payment URL: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 
 ## Safety Gate

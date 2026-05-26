@@ -82,6 +82,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.
 MCP checkout server source:
 https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
 
+MCP roofing estimate tool:
+`build_roofing_estimate_follow_up_sequence`
+
 MCP checkout Gist:
 https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 

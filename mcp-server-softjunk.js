@@ -8,6 +8,14 @@ const ORDER_FORM_URL =
 const ROOT_RESCUE_URL = "https://trungcodeer.github.io/rescue/";
 const CHECKOUT_URL =
   "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title";
+const ROOFING_GENERATOR_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html";
+const ROOFING_GENERATOR_JSON_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json";
+const ROOFING_GENERATOR_TEXT_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt";
+const ROOFING_RESCUE_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html";
 const AGENTS_CHECKOUT_JSON =
   "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json";
 const AI_ACTION_CHECKOUT_JSON =
@@ -79,6 +87,65 @@ const tools = [
     }
   },
   {
+    name: "build_roofing_estimate_follow_up_sequence",
+    title: "Build roofing estimate follow-up sequence",
+    description:
+      "Generate Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts from non-sensitive context, plus the exact 5 USD PayPal rescue handoff.",
+    inputSchema: {
+      type: "object",
+      additionalProperties: false,
+      required: [
+        "project_type",
+        "likely_blocker",
+        "tone",
+        "next_step",
+        "value_reason"
+      ],
+      properties: {
+        business_type: {
+          type: "string",
+          description:
+            "Non-sensitive business category. Default: roofing contractor."
+        },
+        project_type: {
+          type: "string",
+          description:
+            "Non-sensitive roofing project type, such as roof replacement estimate."
+        },
+        likely_blocker: {
+          type: "string",
+          enum: [
+            "scope",
+            "timing",
+            "budget",
+            "insurance",
+            "comparison shopping",
+            "not sure"
+          ]
+        },
+        tone: {
+          type: "string",
+          enum: ["friendly", "professional", "direct", "calm"]
+        },
+        next_step: {
+          type: "string",
+          enum: [
+            "confirm the next step",
+            "answer one question",
+            "review the scope",
+            "show a smaller option",
+            "schedule a call"
+          ]
+        },
+        value_reason: {
+          type: "string",
+          description:
+            "Non-sensitive reason the recovery is worth testing, such as one recovered roof job is worth more than 5 USD."
+        }
+      }
+    }
+  },
+  {
     name: "build_safe_paypal_note",
     title: "Build safe SoftJunk PayPal note",
     description:
@@ -136,10 +203,34 @@ function sanitize(value) {
     .slice(0, 120);
 }
 
+function hasPrivateIdentifier(value) {
+  return (
+    /\S+@\S+\.\S+/.test(value) ||
+    /(?:\+?\d[\d\s().-]{6,}\d)/.test(value) ||
+    /\b\d{1,5}\s+[A-Za-z0-9.\s]{2,}\s+(?:street|st|avenue|ave|road|rd|lane|ln|drive|dr|blvd|boulevard|way|court|ct)\b/i.test(value) ||
+    /\b(?:paypal|transaction|invoice|claim|policy)\s*(?:id|email|number|no\.?)\b/i.test(value)
+  );
+}
+
 function requireString(args, name) {
   const value = sanitize(args[name]);
   if (!value) {
     throw new Error(`Missing required argument: ${name}`);
+  }
+  if (hasPrivateIdentifier(value)) {
+    throw new Error(
+      `Private identifier detected in ${name}; use non-sensitive business context only.`
+    );
+  }
+  return value;
+}
+
+function optionalString(args, name, fallback) {
+  const value = sanitize(args[name]) || fallback;
+  if (hasPrivateIdentifier(value)) {
+    throw new Error(
+      `Private identifier detected in ${name}; use non-sensitive business context only.`
+    );
   }
   return value;
 }
@@ -169,10 +260,64 @@ function verificationGate() {
   };
 }
 
+function buildRoofingEstimateSequence(args) {
+  const businessType = optionalString(
+    args,
+    "business_type",
+    "roofing contractor"
+  );
+  const projectType = requireString(args, "project_type");
+  const likelyBlocker = requireString(args, "likely_blocker");
+  const tone = requireString(args, "tone");
+  const nextStep = requireString(args, "next_step");
+  const valueReason = requireString(args, "value_reason");
+  const blockerLine =
+    likelyBlocker === "not sure"
+      ? "scope, timing, budget, insurance, or one line item"
+      : likelyBlocker;
+  const paypalNote = `One Lead Rescue | Business: ${businessType} | Service: ${projectType} | Source: estimate | Need: unanswered roofing estimate | Tone: ${tone} | Next: ${nextStep}`;
+  const sequence = {
+    day_0: `Hi, checking that you saw the ${projectType}. If the scope looks right, I can ${nextStep}. If ${blockerLine} is the blocker, reply with that and I will make the path clearer.`,
+    day_1: `Hi, quick follow-up on the ${projectType}. Do you want me to hold the current scope, show a smaller option, or answer one question first?`,
+    day_3:
+      "Hi, I know roofing decisions are not small. If you are comparing options, I can clarify what is included so the estimate is easier to judge.",
+    day_5: `Hi, should I keep this ${projectType} active? Reply yes and I will send the next step, or reply with the part you want adjusted.`,
+    day_7:
+      "Hi, I will close the loop for now so I do not keep bothering you. If the roof project comes back up, reply here and I can reopen the estimate path."
+  };
+
+  return {
+    fit_rule: [
+      "Use when the buyer is a roofing contractor, assistant, or VA with one unanswered roofing estimate.",
+      "Use only non-sensitive business context.",
+      "One recovered roof job should be worth more than 5 USD."
+    ],
+    privacy_rule:
+      "Do not enter homeowner names, emails, phone numbers, street addresses, insurance claim numbers, invoice IDs, transaction IDs, PayPal IDs, or private job details.",
+    project_type: projectType,
+    likely_blocker: likelyBlocker,
+    tone,
+    value_reason: valueReason,
+    sequence,
+    paypal_note: paypalNote,
+    buyer_message:
+      `Use this generated roofing estimate sequence. If a custom rescue is wanted, copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive order details at ${ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
+    roofing_estimate_generator_url: ROOFING_GENERATOR_URL,
+    roofing_estimate_generator_json_url: ROOFING_GENERATOR_JSON_URL,
+    roofing_estimate_generator_text_url: ROOFING_GENERATOR_TEXT_URL,
+    roofing_estimate_rescue_url: ROOFING_RESCUE_URL,
+    ...checkoutRoutes()
+  };
+}
+
 function checkoutRoutes() {
   return {
     root_rescue_url: ROOT_RESCUE_URL,
     checkout_url: CHECKOUT_URL,
+    roofing_estimate_generator_url: ROOFING_GENERATOR_URL,
+    roofing_estimate_generator_json_url: ROOFING_GENERATOR_JSON_URL,
+    roofing_estimate_generator_text_url: ROOFING_GENERATOR_TEXT_URL,
+    roofing_estimate_rescue_url: ROOFING_RESCUE_URL,
     payment_url: PAYMENT_URL,
     price: "5.00",
     currency: "USD",
@@ -232,10 +377,10 @@ function handleRequest(message) {
       },
       serverInfo: {
         name: "softjunk-mcp-checkout",
-        version: "2026.05.26"
+        version: "2026.05.27"
       },
       instructions:
-        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Never claim payment or fulfillment before seller-side PayPal verification."
+        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
     };
   }
 
@@ -253,6 +398,10 @@ function handleRequest(message) {
 
     if (params.name === "route_softjunk_one_lead_rescue_checkout") {
       return toolResult(routeCheckout(args));
+    }
+
+    if (params.name === "build_roofing_estimate_follow_up_sequence") {
+      return toolResult(buildRoofingEstimateSequence(args));
     }
 
     if (params.name === "build_safe_paypal_note") {
@@ -320,4 +469,3 @@ rl.on("line", (line) => {
     respondError(message.id, -32602, error.message);
   }
 });
-
