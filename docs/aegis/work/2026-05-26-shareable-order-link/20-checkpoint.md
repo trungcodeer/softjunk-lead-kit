@@ -714,3 +714,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves AI-agent discovery of the checkout/payment handoff without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Root AI Checkout Discovery Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Expose the product AI checkout handoff through root-level discovery so buyer agents entering at `https://trungcodeer.github.io/` can find checkout HTML, JSON, and text routes before the exact 5 USD PayPal payment.
+
+Completed todos:
+- Re-audited root OpenAPI, plugin manifest, root offer, PayPal intent, well-known root offer, root AI route, `llms.txt`, sitemap, and homepage discovery.
+- Updated root `.well-known/openapi.yaml` to describe checkout as an AI checkout handoff and expose product checkout HTML/JSON/text paths.
+- Updated root `.well-known/ai-plugin.json`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `paypal.json`, `.well-known/paypal-payment.json`, `ai.json`, `llms.txt`, `sitemap.xml`, and `index.html` with product checkout JSON/text routes.
+- Validated root JSON, XML, OpenAPI YAML, whitespace, and homepage DOM locally.
+- Committed and pushed root change `e37afe9`.
+- Created root release `root-ai-checkout-discovery-v1`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified live root discovery endpoints with cache-busting and confirmed checkout JSON/text are public.
+- Submitted 9 root discovery URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the root checkout discovery update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e37afe9`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-ai-checkout-discovery-v1`.
+- Local validation parsed root JSON, sitemap XML, and OpenAPI YAML successfully.
+- Local and live Chrome headless DOM emitted `AI checkout handoff`, `checkout JSON`, and `checkout text`.
+- GitHub Pages run `26430532793` completed successfully.
+- Live checks passed for root OpenAPI, AI plugin manifest, root offer, PayPal intent, well-known payment intent, well-known root offer, root AI JSON, `llms.txt`, and `sitemap.xml` with cache-buster `e37afe9`.
+- IndexNow returned `status=200 urls=9`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539735045` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539735770`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it turns the root host into an AI-readable checkout discovery layer without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

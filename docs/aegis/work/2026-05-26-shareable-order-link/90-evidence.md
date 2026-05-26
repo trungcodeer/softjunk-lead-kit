@@ -74,6 +74,38 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Root AI Checkout Discovery Evidence
+
+Root discovery changes:
+- Updated `trungcodeer/trungcodeer.github.io` root OpenAPI so `/softjunk-lead-kit/checkout.html` is described as an AI checkout handoff.
+- Added root OpenAPI paths for `/softjunk-lead-kit/checkout.json` and `/softjunk-lead-kit/checkout.txt`.
+- Updated root AI plugin, root offer, root AI route, PayPal intent, well-known payment intent, well-known root offer, `llms.txt`, sitemap, and homepage discovery with the product checkout handoff plus checkout JSON/text URLs.
+
+Local validation:
+- Root JSON parse succeeded for `root-offer.json`, `paypal.json`, `ai.json`, `.well-known/ai-plugin.json`, `.well-known/paypal-payment.json`, and `.well-known/softjunk-root-offer.json`.
+- Root `sitemap.xml` parsed as XML.
+- Root `.well-known/openapi.yaml` parsed with PyYAML and asserted `/softjunk-lead-kit/checkout.html`, `/softjunk-lead-kit/checkout.json`, and `/softjunk-lead-kit/checkout.txt`.
+- `git diff --check` passed with only Windows line-ending warnings.
+- Chrome headless local DOM emitted `AI checkout handoff`, `checkout JSON`, and `checkout text`.
+
+Public deploy validation:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e37afe9`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-ai-checkout-discovery-v1`.
+- GitHub Pages run `26430532793` completed successfully.
+- Live root JSON checks passed for `root-offer.json`, `paypal.json`, `ai.json`, `.well-known/ai-plugin.json`, `.well-known/paypal-payment.json`, and `.well-known/softjunk-root-offer.json` with cache-buster `e37afe9`.
+- Live root OpenAPI YAML parsed successfully and confirmed checkout HTML/JSON/text paths.
+- Live `llms.txt` and `sitemap.xml` checks confirmed checkout HTML/JSON/text discovery.
+- Live root Chrome DOM emitted `AI checkout handoff`, `checkout JSON`, and `checkout text`.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=9` for root discovery URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539735045`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539735770`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Well-Known AI Checkout Discovery Evidence
 
 Discovery changes:
