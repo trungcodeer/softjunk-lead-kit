@@ -13,6 +13,9 @@ x-softjunk-fastest-buyer-path:
   agent_close_text_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
   agent_order_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
   agent_offer_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+  ai_action_checkout_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
+  well_known_ai_action_checkout_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
+  ai_action_checkout_gist_url: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
   payment_url: https://paypal.me/softjunk/5USD
   one_lead_rescue_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
@@ -138,6 +141,28 @@ paths:
             application/x-ndjson:
               schema:
                 type: string
+  /ai-action-checkout.json:
+    get:
+      operationId: getAiActionCheckout
+      summary: Get the SoftJunk AI action checkout manifest.
+      responses:
+        "200":
+          description: Function-style checkout manifest with route_softjunk_one_lead_rescue_checkout, exact 5 USD PayPal handoff, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /.well-known/ai-action-checkout.json:
+    get:
+      operationId: getWellKnownAiActionCheckout
+      summary: Get the well-known SoftJunk AI action checkout manifest.
+      responses:
+        "200":
+          description: Well-known function-style checkout manifest for buyer agents and AI assistants routing qualified buyers to the exact PayPal checkout.
+          content:
+            application/json:
+              schema:
+                type: object
   /offers.json:
     get:
       operationId: getOffers

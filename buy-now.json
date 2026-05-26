@@ -12,6 +12,10 @@
   "agent_checkout_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json",
   "agent_checkout_gist_url": "https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b",
   "agent_checkout_gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/795587172ee240078c4377559b20b49b/raw/agents-checkout.json",
+  "ai_action_checkout_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json",
+  "well_known_ai_action_checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json",
+  "ai_action_checkout_gist_url": "https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888",
+  "ai_action_name": "route_softjunk_one_lead_rescue_checkout",
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
@@ -59,6 +63,16 @@
       "step": "agent_checkout_gist",
       "url": "https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b",
       "instruction": "Use the public Gist mirror when a buyer-agent needs a compact, raw-friendly checkout instruction fallback outside the main repo."
+    },
+    {
+      "step": "ai_action_checkout",
+      "url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json",
+      "instruction": "Use the function-style AI action checkout manifest when an assistant needs structured inputs, PayPal note output, exact 5 USD PayPal URL, order form, and verification gate."
+    },
+    {
+      "step": "ai_action_checkout_gist",
+      "url": "https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888",
+      "instruction": "Use the public Gist mirror when the main repo raw URL is less convenient for an AI assistant or crawler."
     },
     {
       "step": "sponsor_button_buy",

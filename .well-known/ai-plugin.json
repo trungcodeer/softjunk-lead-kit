@@ -29,6 +29,10 @@
     "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
     "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
     "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
+    "ai_action_checkout_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json",
+    "well_known_ai_action_checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json",
+    "ai_action_checkout_gist_url": "https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888",
+    "ai_action_name": "route_softjunk_one_lead_rescue_checkout",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
   },

@@ -10,19 +10,23 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
 3. Agent checkout JSON:
    https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
-4. Agent checkout Gist:
+4. AI action checkout manifest:
+   https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
+5. Well-known AI action checkout manifest:
+   https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
+6. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-5. GitHub Sponsor button buy route:
+7. GitHub Sponsor button buy route:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-6. PayPal note first:
+8. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-7. What gets delivered after verified payment:
+9. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-8. Buyer-agent close contract:
+10. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-9. Direct PayPal checkout:
+11. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-10. After payment, submit non-sensitive order details if needed:
+12. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -57,6 +61,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
 - AI/coding agent instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
 - Agent checkout JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
+- AI action checkout: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
+- AI action name: `route_softjunk_one_lead_rescue_checkout`
+- Well-known AI action checkout: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
+- AI action checkout Gist: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 - Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
 - Sponsor button JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
