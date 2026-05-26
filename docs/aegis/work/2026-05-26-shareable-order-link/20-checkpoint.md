@@ -4164,3 +4164,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it elevates the GitHub-native checkout-card discussion into root-owned agent discovery surfaces without spam, scraping, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repo files/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Roofing Buyer Send Packet Checkpoint
+
+Current todo:
+- Use non-traditional AI-native buyer discovery: a one-buyer packet that humans, crawlers, and agents can read, route, and pay from without private data exposure.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Active slice:
+- Added a dedicated `roofing-buyer-send` HTML/JSON/text packet with a direct $5 PayPal route, GitHub Discussion #8 routing, privacy boundaries, and `PAYPAL_PAYMENT_VERIFIED=true` fulfillment instructions for post-payment handling.
+- Mirrored the packet to a public Gist for raw agent access.
+- Wired the new packet into README, BUY_NOW, AGENTS, llms, buyer indexes, agent catalog, agent cards, AI plugin manifest, OpenAPI discovery, homepage, roofing rescue surfaces, robots, and sitemap.
+- Released, deployed, validated live, submitted IndexNow, published issue evidence, and reran the PayPal verifier.
+
+Completed todos:
+- Product commit `478434e15988e887c6501c00800c96cc6b14ea65` pushed to `origin/main`.
+- Product release `v2.29.67` created.
+- Product Pages run `26475955987` completed with success.
+- Public Gist mirror created: `https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805`.
+- Live validation passed for the send packet, discovery pages, agent/catalog files, OpenAPI/plugin files, sitemap, robots, and Gist raw mirrors.
+- IndexNow accepted 16 product URLs with `status=200`.
+- Product issue #5 evidence comment added.
+- PayPal verifier rerun after publishing.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/478434e15988e887c6501c00800c96cc6b14ea65`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.67`.
+- Live packet: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html`.
+- Machine JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json`.
+- Agent text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt`.
+- Public Gist: `https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549115283`.
+- IndexNow submission returned `status=200 urls=16`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a buyer-send packet optimized for agents and direct checkout without spam, scraping, deception, or premature fulfillment.
+- Compatibility boundary: owned GitHub repo files/Gists/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

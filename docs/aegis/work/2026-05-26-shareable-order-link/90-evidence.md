@@ -3146,3 +3146,19 @@ Payment gate:
 - Live validation with `?v=c3125fb`: 11 root URLs returned `status=200`, `issue7=True`, `discussion8=True`, `paypal=True`, and `gate=True`.
 - IndexNow accepted 11 root URLs with `status=200`.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-27 Roofing Buyer Send Packet Evidence
+
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/478434e15988e887c6501c00800c96cc6b14ea65`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.67`.
+- Product Pages run `26475955987` completed with success.
+- Live packet: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html`.
+- Machine JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json`.
+- Agent text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt`.
+- Public Gist mirror: `https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805`.
+- Public product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549115283`.
+- Local validation passed for JSON, JSONL, XML, HTML accessibility markers, buyer markers, raw Gist mirrors, and `git diff --check`.
+- Live validation passed for the send HTML/JSON/TXT, homepage, roofing rescue pages, `buy-now.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, agent cards, AI plugin, OpenAPI, sitemap, robots, and Gist raw mirrors.
+- Required buyer markers were present where expected: `roofing-buyer-send`, Discussion #8, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy/non-sensitive handling.
+- IndexNow returned `status=200 urls=16`.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
