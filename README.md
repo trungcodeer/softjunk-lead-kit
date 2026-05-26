@@ -4,6 +4,22 @@
 
 A $5 lead follow-up kit and same-price custom sequence for small businesses that get leads from forms, DMs, email, ads, referrals, quotes, appointments, or calls.
 
+## Buyer Shortcut
+
+Start here if you have one real quiet lead:
+
+1. Open the AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+2. Generate the PayPal note for the digital kit or custom 7-day sequence.
+3. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+4. After payment, use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
+PayPal notes:
+
+- Digital kit: `Lead Follow-Up Kit`
+- Custom sequence: use the AI Deal Desk note beginning with `Custom Sequence | Business:`
+
+Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+
 ## Buy
 
 ![PayPal QR code for the $5 SoftJunk checkout](paypal-qr.svg)
