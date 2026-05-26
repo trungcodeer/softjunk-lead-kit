@@ -471,6 +471,57 @@ Payment gate:
 - Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
 - Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
+## 2026-05-26 Send-To-Buyer Pitch Generator Evidence
+
+Files changed:
+- Product: `send-to-buyer.html`, `send-to-buyer.json`, `SEND_TO_BUYER.md`, `agent-buyer-catalog.jsonl`, `buy-now.json`, `README.md`, `BUY_NOW.md`, `llms.txt`, `.well-known/openapi.yaml`.
+- Root: `README.md`, `llms.txt`, `.well-known/openapi.yaml`.
+
+Behavior added:
+- `send-to-buyer.html` now includes a local-only `Buyer Pitch Generator`.
+- Inputs: business type, service/offer, value reason, lead source, lead problem, tone, and next step.
+- Outputs: generated short DM, generated email, generated PayPal note, and `mailto:` handoff.
+- Privacy warning disables copy/open-email if editable fields appear to include email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs.
+- Payment and fulfillment gate remains unchanged: no paid/started/delivered/complete claim without seller-side PayPal proof or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Local validation:
+- Product JSON parse passed for `send-to-buyer.json`, `buy-now.json`, `agents-checkout.json`, and `.well-known/softjunk-offer.json`.
+- Product JSONL parse passed for `agent-buyer-catalog.jsonl` with `lines=32`.
+- HTML script syntax check passed for `send-to-buyer.html`.
+- HTML script runtime mock passed: generated DM includes `https://paypal.me/softjunk/5USD`, generated note includes `One Lead Rescue | Business: local service business`, `mailto:` link is generated, and safe privacy status appears.
+- HTML privacy runtime mock passed: `buyer@example.com` triggers the private-identifier warning, disables copy buttons, and removes the active email link.
+- Product `git diff --check` passed with only line-ending warnings.
+- Root JSON parse passed for `root-offer.json` and `.well-known/softjunk-root-offer.json`.
+- Root `git diff --check` passed with only line-ending warnings.
+
+Public validation:
+- `pages_html_generator=ok`.
+- `pages_html_privacy=ok`.
+- `pages_json_v2=ok`.
+- `pages_json_generator=ok`.
+- `raw_markdown_generator=ok`.
+- `gist_json_v2=ok`.
+- `root_openapi_generator=ok`.
+- `product_release=ok`.
+- `root_release=ok`.
+
+Public refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/44b47cc`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/4914184`.
+- Send-to-buyer generator page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+- Send-to-buyer JSON v2: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+- Send-to-buyer Markdown: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.53`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send-to-buyer-generator-v1`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546211796`.
+
+Discovery:
+- IndexNow returned `status=200 urls=9` for updated product/root discovery URLs.
+
+Payment verifier:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
 ## 2026-05-26 A2A Agent Card Checkout Evidence
 
 Artifacts:

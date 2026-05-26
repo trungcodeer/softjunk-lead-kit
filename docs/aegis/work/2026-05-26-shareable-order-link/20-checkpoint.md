@@ -3283,3 +3283,55 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a directly sendable buyer packet that routes a fitting buyer to the exact 5 USD PayPal checkout without spam, deception, unauthorized outreach, private-data leakage, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, RSS, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Send-To-Buyer Pitch Generator Checkpoint
+
+Current todo:
+- Improve the send-to-buyer packet beyond static copy by adding a local-only generator that turns non-sensitive buyer context into a DM, email, PayPal note, and email-client handoff.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add a client-side pitch generator, privacy warning, machine-readable v2 metadata, root discovery labels, Gist refresh, releases, IndexNow submission, public issue evidence, and PayPal verifier rerun.
+
+Completed todos:
+- Added a `Buyer Pitch Generator` section to `send-to-buyer.html` with fields for business type, service/offer, value reason, lead source, lead problem, tone, and next step.
+- Generated the short DM, email, PayPal note, and `mailto:` link locally in the browser.
+- Added privacy-risk detection for email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, and transaction IDs; copy/open-email controls are disabled until private identifiers are removed.
+- Preserved accessibility markers: labelled inputs/selects, visible focus on form controls, semantic controls, `aria-live` status messages, and keyboard-reachable copy actions.
+- Updated `send-to-buyer.json` to `softjunk-send-to-buyer-v2` with local generator metadata.
+- Updated `SEND_TO_BUYER.md`, product README/BUY_NOW/llms/OpenAPI/buy-now/catalog metadata, and root README/llms/OpenAPI discovery labels.
+- Committed and pushed product commit `44b47cc` and root commit `4914184`.
+- Refreshed the public send-to-buyer Gist files.
+- Created product release `v2.29.53` and root release `root-send-to-buyer-generator-v1`.
+- Validated local JSON, JSONL, HTML script syntax/runtime, privacy-warning runtime, and whitespace.
+- Validated public Pages, raw GitHub, Gist raw JSON, root OpenAPI, and both releases.
+- Submitted 9 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/44b47cc`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/4914184`.
+- Send-to-buyer generator page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+- Send-to-buyer JSON v2: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+- Send-to-buyer Markdown: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.53`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send-to-buyer-generator-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546211796`.
+- Local validation passed: product JSON; product JSONL `lines=32`; HTML script syntax; HTML script runtime; HTML privacy runtime; product/root `git diff --check`.
+- Public validation passed: `pages_html_generator`, `pages_html_privacy`, `pages_json_v2`, `pages_json_generator`, `raw_markdown_generator`, `gist_json_v2`, `root_openapi_generator`, `product_release`, and `root_release`.
+- IndexNow submission passed: `indexnow_status=200 urls=9`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel and buyer-facing conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a real buyer-facing handoff by turning non-sensitive context into a personalized DM/email/PayPal note without spam, deception, private-data leakage, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
