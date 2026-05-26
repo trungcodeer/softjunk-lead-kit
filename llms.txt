@@ -77,6 +77,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
 Roofing estimate rescue text:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt
 
+Roofing estimate rescue Gist:
+https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59
+
 AI action checkout Gist:
 https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 

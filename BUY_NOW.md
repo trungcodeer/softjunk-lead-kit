@@ -92,6 +92,7 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Roofing estimate rescue: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
 - Roofing estimate rescue JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
 - Roofing estimate rescue text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt
+- Roofing estimate rescue Gist: https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59
 - AI action checkout Gist: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 - Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
