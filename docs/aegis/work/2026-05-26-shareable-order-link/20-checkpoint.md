@@ -3335,3 +3335,55 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves a real buyer-facing handoff by turning non-sensitive context into a personalized DM/email/PayPal note without spam, deception, private-data leakage, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Send-To-Buyer Prefilled Share Link Checkpoint
+
+Current todo:
+- Let an AI assistant, VA, or seller turn non-sensitive buyer context into a prefilled send-to-buyer URL that can be sent directly to one fitting buyer.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add URL parameter prefill, copy/open share link controls, share-link privacy gating, metadata for URL parameters, public validation, IndexNow, issue evidence, and PayPal verifier rerun.
+
+Completed todos:
+- Added URL parameter parsing for `business`, `service`, `value`, `source`, `need`, `tone`, and `next`.
+- Added `Copy Share Link` and `Open Share Link` controls to the local generator.
+- Built share links from current non-sensitive fields without submitting data to a backend.
+- Disabled copy/share/open-email controls when editable fields appear to contain private identifiers.
+- Updated `send-to-buyer.json` with `url_parameters` and `prefilled share link` output metadata.
+- Updated `SEND_TO_BUYER.md`, product OpenAPI/buy-now/catalog metadata, and root OpenAPI discovery.
+- Committed and pushed product commit `f732c31` and root commit `e22b78d`.
+- Refreshed the public send-to-buyer Gist files.
+- Created product release `v2.29.54` and root release `root-send-to-buyer-share-links-v1`.
+- Validated local prefill/share runtime, privacy runtime, JSON, JSONL, and diff checks.
+- Validated public Pages, raw GitHub, Gist raw HTML/JSON, root OpenAPI, and both releases.
+- Submitted 6 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/f732c31`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e22b78d`.
+- Send-to-buyer generator page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+- Example prefilled page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofer&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245`.
+- Send-to-buyer JSON v2: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.54`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send-to-buyer-share-links-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546317898`.
+- Local validation passed: `prefill_share_runtime_ok`, `share_privacy_runtime_ok`, `json_ok`, `jsonl_ok lines=32`, and product/root `git diff --check`.
+- Public validation passed: `pages_html_share_button`, `pages_html_url_params`, `pages_json_url_parameters`, `raw_markdown_share_link`, `gist_html_share_button`, `gist_json_url_parameters`, `root_openapi_share_links`, `product_release`, and `root_release`.
+- IndexNow submission passed: `indexnow_status=200 urls=6`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel and buyer-facing conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the buyer handoff directly shareable by AI/VA workflows while keeping context non-sensitive and refusing copy/share/open-email on likely private identifiers.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

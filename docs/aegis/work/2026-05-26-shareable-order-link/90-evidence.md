@@ -522,6 +522,54 @@ Discovery:
 Payment verifier:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
+## 2026-05-26 Send-To-Buyer Prefilled Share Link Evidence
+
+Files changed:
+- Product: `send-to-buyer.html`, `send-to-buyer.json`, `SEND_TO_BUYER.md`, `agent-buyer-catalog.jsonl`, `buy-now.json`, `.well-known/openapi.yaml`.
+- Root: `.well-known/openapi.yaml`.
+
+Behavior added:
+- `send-to-buyer.html` reads non-sensitive URL parameters for `business`, `service`, `value`, `source`, `need`, `tone`, and `next`.
+- The page can generate a prefilled share link from the current local fields.
+- The page can open the generated share link and copy it to the clipboard.
+- Privacy warning disables copy/share/open-email if editable fields appear to include email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs.
+- Payment and fulfillment gate remains unchanged: no paid/started/delivered/complete claim without seller-side PayPal proof or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Local validation:
+- `prefill_share_runtime_ok`: query params prefilled the generator, generated DM included the prefilled business, and generated share URL included encoded context.
+- `share_privacy_runtime_ok`: `buyer@example.com` triggered the private-identifier warning, disabled copy buttons, disabled the share button, and removed the active share link.
+- JSON parse passed for `send-to-buyer.json` and `buy-now.json`.
+- JSONL parse passed for `agent-buyer-catalog.jsonl` with `lines=32`.
+- Product and root `git diff --check` passed with only line-ending warnings.
+
+Public validation:
+- `pages_html_share_button=ok`.
+- `pages_html_url_params=ok`.
+- `pages_json_url_parameters=ok`.
+- `raw_markdown_share_link=ok`.
+- `gist_html_share_button=ok`.
+- `gist_json_url_parameters=ok`.
+- `root_openapi_share_links=ok`.
+- `product_release=ok`.
+- `root_release=ok`.
+
+Public refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/f732c31`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e22b78d`.
+- Send-to-buyer generator page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+- Example prefilled page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofer&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245`.
+- Send-to-buyer JSON v2: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.54`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send-to-buyer-share-links-v1`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4546317898`.
+
+Discovery:
+- IndexNow returned `status=200 urls=6` for updated product/root discovery URLs.
+
+Payment verifier:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
 ## 2026-05-26 A2A Agent Card Checkout Evidence
 
 Artifacts:
