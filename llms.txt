@@ -149,6 +149,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
 Fast checkout:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
+AI checkout JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.json
+
+AI checkout text:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt
+
 After-payment handoff:
 https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
@@ -312,6 +318,7 @@ PayPal notes:
 - Shareable order link: open https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html, generate the URL and PayPal note, then paste that note into PayPal before paying.
 - Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.
+- AI checkout: use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready for the exact AI Deal Desk -> PayPal -> after-payment handoff.
 
 Best-fit buyers:
 - Dental offices with new patient inquiries, treatment questions, missed calls, or consultation requests

@@ -1,0 +1,71 @@
+{
+  "schema_version": "softjunk-ai-checkout-handoff-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk AI Checkout Handoff",
+  "purpose": "A buyer-agent readable checkout contract for routing a qualified lead follow-up buyer to the exact 5 USD SoftJunk PayPal payment and after-payment handoff.",
+  "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
+  "html_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
+  "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "ai_deal_desk_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+  "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
+  "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+  "public_buyer_discussion_url": "https://github.com/trungcodeer/softjunk-lead-kit/discussions/4",
+  "payment": {
+    "provider": "PayPal.Me",
+    "url": "https://paypal.me/softjunk/5USD",
+    "amount": "5.00",
+    "currency": "USD",
+    "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json"
+  },
+  "paid_offers": [
+    {
+      "name": "7-Day Lead Follow-Up Kit",
+      "price": "5.00",
+      "currency": "USD",
+      "paypal_note": "Lead Follow-Up Kit",
+      "delivery": "Manual ZIP delivery after seller-side PayPal verification."
+    },
+    {
+      "name": "Custom 7-Day Lead Follow-Up Sequence",
+      "price": "5.00",
+      "currency": "USD",
+      "paypal_note_template": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
+      "delivery": "Manual same-day custom sequence delivery after seller-side PayPal verification."
+    }
+  ],
+  "agent_flow": [
+    {
+      "step": "prepare_note",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+      "instruction": "Open the AI Deal Desk when non-sensitive lead context exists, then generate the buyer decision and PayPal note."
+    },
+    {
+      "step": "pay",
+      "url": "https://paypal.me/softjunk/5USD",
+      "instruction": "Pay exactly 5.00 USD through PayPal.Me and paste the generated PayPal note."
+    },
+    {
+      "step": "after_payment",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+      "instruction": "Use the after-payment handoff for fulfillment instructions after payment."
+    },
+    {
+      "step": "verify",
+      "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+      "instruction": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+    }
+  ],
+  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. Open the AI checkout handoff at https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/checkout.json. If non-sensitive lead context exists, open the AI Deal Desk first, copy the generated PayPal note, then route the buyer to exactly 5 USD at https://paypal.me/softjunk/5USD. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim payment or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+  "verification_gate": {
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "script_path": "scripts/verify-paypal-5usd.ps1",
+    "required_evidence": [
+      "Seller can see the 5 USD PayPal transaction",
+      "PayPal API verifier returns PAYPAL_PAYMENT_VERIFIED=true",
+      "Trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv"
+    ],
+    "current_rule": "The checkout handoff is a payment request surface, not proof that money arrived."
+  },
+  "privacy_rule": "Do not put customer names, phone numbers, emails, street addresses, PayPal transaction IDs, or private lead details in public URLs, GitHub issues, or public Gists."
+}

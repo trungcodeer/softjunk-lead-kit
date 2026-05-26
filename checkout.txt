@@ -1,0 +1,29 @@
+SoftJunk AI checkout handoff
+
+Use this when a buyer, virtual assistant, or AI assistant is ready to pay 5 USD for the SoftJunk lead follow-up kit or custom 7-day sequence:
+
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+
+Machine-readable checkout JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.json
+
+Recommended flow:
+1. Open the AI Deal Desk if non-sensitive lead context exists:
+   https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+2. Copy the generated PayPal note.
+3. Pay exactly 5 USD:
+   https://paypal.me/softjunk/5USD
+4. Open the after-payment handoff:
+   https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
+Digital kit PayPal note:
+Lead Follow-Up Kit
+
+Custom sequence PayPal note template:
+Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]
+
+Verification gate:
+Do not claim the order is paid, started, delivered, or complete unless seller-side PayPal evidence exists, the verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.
+
+Privacy rule:
+Do not put customer names, phone numbers, emails, street addresses, PayPal transaction IDs, or private lead details in public URLs, GitHub issues, or public Gists.

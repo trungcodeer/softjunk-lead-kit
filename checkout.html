@@ -3,30 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Checkout $5 | SoftJunk Lead Kit</title>
-  <meta name="description" content="Fast checkout for the $5 SoftJunk Lead Follow-Up Kit or custom sequence through PayPal.Me.">
+  <title>AI Checkout Handoff $5 | SoftJunk Lead Kit</title>
+  <meta name="description" content="Agent-first checkout handoff for the $5 SoftJunk AI Deal Desk, exact PayPal payment, after-payment page, and seller-side verification gate.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.html">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Checkout $5 | SoftJunk Lead Kit">
-  <meta property="og:description" content="Pay $5 on PayPal for the SoftJunk lead follow-up kit or custom sequence.">
+  <meta property="og:title" content="AI Checkout Handoff $5 | SoftJunk Lead Kit">
+  <meta property="og:description" content="Open the AI Deal Desk, generate the PayPal note, pay exactly $5, then use the after-payment handoff.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/checkout.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Checkout $5 | SoftJunk Lead Kit">
-  <meta name="twitter:description" content="Pay $5 on PayPal for the SoftJunk lead follow-up kit or custom sequence.">
+  <meta name="twitter:title" content="AI Checkout Handoff $5 | SoftJunk Lead Kit">
+  <meta name="twitter:description" content="Agent-first checkout for SoftJunk: AI Deal Desk, exact $5 PayPal payment, and verification gate.">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.json" title="SoftJunk AI checkout intent JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt" title="SoftJunk AI checkout handoff text">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json" title="SoftJunk PayPal payment intent JSON">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
           "@type": "CheckoutPage",
-          "name": "SoftJunk $5 Checkout",
+          "name": "SoftJunk AI Checkout Handoff",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
-          "description": "Fast checkout page for the $5 SoftJunk Lead Follow-Up Kit or custom sequence."
+          "description": "Agent-first checkout page for the $5 SoftJunk AI Deal Desk, exact PayPal payment, after-payment handoff, and seller-side verification gate."
         },
         {
           "@type": "Offer",
@@ -74,6 +77,7 @@
       color: var(--ink);
       background: linear-gradient(90deg, var(--teal) 0, var(--teal) 14px, var(--bg) 14px);
       line-height: 1.5;
+      overflow-x: hidden;
     }
 
     a:focus-visible,
@@ -103,6 +107,7 @@
     footer {
       width: min(980px, calc(100% - 36px));
       margin: 0 auto;
+      min-width: 0;
     }
 
     header {
@@ -147,6 +152,10 @@
       padding: 56px 0 34px;
     }
 
+    .checkout > * {
+      min-width: 0;
+    }
+
     .eyebrow {
       margin: 0 0 10px;
       color: var(--teal);
@@ -186,6 +195,7 @@
       max-width: 650px;
       margin-bottom: 24px;
       font-size: 21px;
+      overflow-wrap: anywhere;
     }
 
     .actions {
@@ -211,6 +221,8 @@
       font-weight: 800;
       text-decoration: none;
       cursor: pointer;
+      text-align: center;
+      overflow-wrap: anywhere;
     }
 
     .button.primary {
@@ -274,6 +286,19 @@
       border-radius: 7px;
     }
 
+    .contract {
+      margin-top: 14px;
+      padding: 14px;
+      background: var(--soft);
+      border: 1px solid #b6d8d2;
+      border-radius: 8px;
+    }
+
+    .contract p {
+      margin-bottom: 8px;
+      overflow-wrap: anywhere;
+    }
+
     .proof p {
       margin-bottom: 8px;
     }
@@ -312,6 +337,12 @@
         min-height: 0;
       }
 
+      .checkout,
+      h1,
+      .lead {
+        max-width: calc(100vw - 36px);
+      }
+
       h1 {
         font-size: 40px;
       }
@@ -321,7 +352,9 @@
       header,
       main,
       footer {
-        width: min(100% - 28px, 980px);
+        width: min(340px, calc(100% - 50px));
+        margin-left: 28px;
+        margin-right: auto;
       }
 
       h1 {
@@ -342,6 +375,7 @@
     <nav aria-label="Primary">
       <a class="brand" href="./">SoftJunk Lead Kit</a>
       <div class="nav-links">
+        <a href="ai-deal-desk.html">AI Deal Desk</a>
         <a href="paid-kit-proof.html">Proof</a>
         <a href="pay.html">Full pay page</a>
         <a href="after-pay.html">After pay</a>
@@ -352,19 +386,26 @@
   <main id="main">
     <section class="checkout" aria-labelledby="page-title">
       <div>
-        <p class="eyebrow">Fast checkout</p>
-        <h1 id="page-title">Pay $5 for the SoftJunk kit.</h1>
-        <p class="lead">Use PayPal.Me for the digital lead follow-up ZIP or the same-price custom 7-day sequence. Delivery starts only after the seller can see the PayPal payment.</p>
+        <p class="eyebrow">AI checkout handoff</p>
+        <h1 id="page-title">AI checkout, $5.</h1>
+        <p class="lead">Open the AI Deal Desk, copy the generated PayPal note, pay exactly $5, then use the after-payment handoff. Delivery starts only after seller-side PayPal proof.</p>
         <div class="actions">
+          <a class="button primary" href="ai-deal-desk.html">Open AI Deal Desk</a>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 on PayPal</a>
+          <a class="button" href="after-pay.html">After-payment handoff</a>
+          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/discussions/4" target="_blank" rel="noopener noreferrer">GitHub buyer discussion</a>
           <button type="button" id="copy-note">Copy kit note</button>
-          <a class="button" href="ai-deal-desk.html">AI deal desk</a>
+          <a class="button" href="shareable-order-link.html">Create order link</a>
           <a class="button" href="free-sample-pack.html">Try free sample</a>
           <a class="button" href="paid-kit-proof.html">View proof</a>
         </div>
         <div class="note">
           <p>For the digital ZIP, paste this PayPal note:</p>
           <p><code id="paypal-note">Lead Follow-Up Kit</code></p>
+          <div class="contract">
+            <p><strong>Agent-first contract:</strong> AI Deal Desk note, exact <code>5.00 USD</code> PayPal payment, after-payment handoff, then seller-side verification.</p>
+            <p>Do not mark paid, started, delivered, or complete until the seller can see the PayPal transaction or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+          </div>
           <p class="status" id="copy-status" role="status" aria-live="polite"></p>
         </div>
       </div>
@@ -383,6 +424,7 @@
           <p>Paid ZIP proof is public; the ZIP itself is private.</p>
           <p><a href="paid-kit-manifest.json">Open manifest JSON</a></p>
           <p><a href="https://github.com/trungcodeer/softjunk-lead-kit/issues/1">Pinned public order board</a></p>
+          <p><a href="checkout.json">Open checkout JSON</a></p>
         </div>
         <div class="scan-pay" aria-labelledby="scan-pay-title">
           <h2 id="scan-pay-title">Scan to pay</h2>
