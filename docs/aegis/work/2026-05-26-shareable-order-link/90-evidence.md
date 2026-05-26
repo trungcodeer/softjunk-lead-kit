@@ -79,6 +79,28 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Roofing Buyer Sample Output Evidence
+
+Public buyer proof:
+- Sample output comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548046295`.
+
+Content added:
+- Example roofing context using placeholders only.
+- Day 0, Day 1, Day 3, Day 5, and Day 7 follow-up texts.
+- Exact payment route: `https://paypal.me/softjunk/5USD`.
+- Copyable PayPal note.
+- Dedicated roofing post-payment order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml`.
+- Privacy warning against homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details.
+
+Validation and issue evidence:
+- `gh issue view 7 --repo trungcodeer/softjunk-lead-kit --json comments,url,title` confirmed the sample comment is present.
+- Marker validation confirmed `Sample output before you buy`, `https://paypal.me/softjunk/5USD`, and `roofing-estimate-rescue-order.yml`.
+- Public product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548049473`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Public Roofing Buyer Issue Route Evidence
 
 Public buyer issue:
