@@ -1604,3 +1604,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves an AI-native commerce contract by making assistant, VA, crawler, and buyer-agent routes prioritize the one-lead rescue flow before direct PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Deal Desk Rescue-First Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert the interactive AI Deal Desk and its generated buyer handoff from shareable/direct-pay first to root one-lead-rescue first.
+
+Completed todos:
+- Rechecked all worktrees and PayPal verifier status before the slice.
+- Audited `ai-deal-desk.html`, `ai-deal-desk.json`, `ai-deal-desk.txt`, and the public AI Deal Desk Gist file list.
+- Updated HTML metadata, alternate links, structured data, navigation, hero actions, hard gate copy, generated route buttons, privacy copy, and generated JS handoff output to prioritize `https://trungcodeer.github.io/rescue/`.
+- Updated JSON schema version, root rescue fields, order form field, generated routes, `fastest_buyer_path`, public handoff URLs, and copyable instruction.
+- Updated text distribution with root rescue and rescue JSON before PayPal.
+- Validated JSON parse, HTML JSON-LD parse, inline script syntax, marker coverage, Chrome headless local DOM, and whitespace locally.
+- Committed and pushed product change `f3894d0`.
+- Updated the public AI Deal Desk Gist JSON and text files.
+- Created product release `v2.29.28`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated live GitHub Pages HTML/JSON/TXT, raw GitHub JSON/TXT, and raw Gist JSON/TXT.
+- Validated live generated handoff output with Chrome headless and query parameters.
+- Submitted 6 AI Deal Desk and rescue URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the AI Deal Desk rescue-first update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/f3894d0`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.28`.
+- Product Pages run: `26443521856`, success.
+- Public AI Deal Desk Gist: `https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844`.
+- Live/raw/Gist validation passed: `ai_deal_desk_live_raw_gist_ok checks=7`.
+- Live generated handoff validation confirmed rescue URL, PayPal URL, one-lead order form, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow returned `status=200 urls=6`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542726106` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542729308`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the interactive AI-native handoff used to generate buyer-specific PayPal notes and routes qualified buyers to the one-lead rescue flow before direct PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
