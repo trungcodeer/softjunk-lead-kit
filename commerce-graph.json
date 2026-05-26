@@ -9,6 +9,17 @@
       "email": "trungcodeer@users.noreply.github.com"
     },
     {
+      "@id": "https://trungcodeer.github.io/rescue/#one-lead-rescue",
+      "@type": "WebPage",
+      "name": "SoftJunk One-Lead Rescue",
+      "url": "https://trungcodeer.github.io/rescue/",
+      "description": "Fastest paid path for one quiet lead, including the exact PayPal note, 5 USD PayPal URL, non-sensitive order form, and seller-side verification gate.",
+      "sameAs": [
+        "https://trungcodeer.github.io/rescue.json",
+        "https://trungcodeer.github.io/rescue.txt"
+      ]
+    },
+    {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product",
       "@type": "Product",
       "name": "SoftJunk Lead Follow-Up Kit and Custom Sequence",
@@ -16,7 +27,7 @@
       "brand": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
       },
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
+      "url": "https://trungcodeer.github.io/rescue/",
       "image": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
       "offers": [
         {
@@ -37,7 +48,7 @@
       "price": "5.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+      "url": "https://trungcodeer.github.io/rescue/",
       "itemOffered": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
       },
@@ -48,7 +59,7 @@
         "@type": "PriceSpecification",
         "price": "5.00",
         "priceCurrency": "USD",
-        "description": "Pay exactly 5 USD through PayPal.Me."
+        "description": "Open the root one-lead rescue path, copy the PayPal note, then pay exactly 5 USD through PayPal.Me."
       }
     },
     {
@@ -58,7 +69,7 @@
       "price": "5.00",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "url": "https://paypal.me/softjunk/5USD",
+      "url": "https://trungcodeer.github.io/rescue/",
       "itemOffered": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
       },
@@ -69,12 +80,36 @@
     {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#buy-action",
       "@type": "BuyAction",
-      "name": "Buy SoftJunk for exactly 5 USD on PayPal",
+      "name": "Open SoftJunk one-lead rescue before the 5 USD PayPal payment",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://trungcodeer.github.io/rescue/",
+        "httpMethod": "GET",
+        "description": "Open the root one-lead rescue path before PayPal. The route contains the exact 5 USD PayPal.Me URL, PayPal note, order form, and verification gate."
+      },
+      "object": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
+      },
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "instrument": "One-lead rescue route plus PayPal.Me",
+      "recipient": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
+      },
+      "actionStatus": "https://schema.org/PotentialActionStatus",
+      "result": {
+        "@id": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
+      }
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#paypal-pay-action",
+      "@type": "PayAction",
+      "name": "Pay SoftJunk exactly 5 USD on PayPal",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://paypal.me/softjunk/5USD",
         "httpMethod": "GET",
-        "description": "Open the exact 5 USD PayPal.Me payment URL."
+        "description": "Exact PayPal.Me payment URL used after opening the one-lead rescue route."
       },
       "object": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
@@ -85,17 +120,14 @@
       "recipient": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
       },
-      "actionStatus": "https://schema.org/PotentialActionStatus",
-      "result": {
-        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html#handoff"
-      }
+      "actionStatus": "https://schema.org/PotentialActionStatus"
     },
     {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#checkout-api",
       "@type": "WebAPI",
       "name": "SoftJunk Checkout Handoff",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
-      "description": "Machine-readable checkout contract with inline PayPal note builder, exact 5 USD PayPal URL, after-payment handoff, and verification gate.",
+      "description": "Machine-readable checkout contract with root one-lead rescue route, inline PayPal note builder, exact 5 USD PayPal URL, after-payment handoff, and verification gate.",
       "provider": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
       },
@@ -105,7 +137,7 @@
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#how-to-buy",
       "@type": "HowTo",
       "name": "How to buy the 5 USD SoftJunk follow-up sequence",
-      "description": "Use only for a relevant lead follow-up need. Generate a PayPal note, pay exactly 5 USD, and wait for seller-side PayPal verification before fulfillment.",
+      "description": "Use only for a relevant lead follow-up need. Open the root one-lead rescue route, copy the PayPal note, pay exactly 5 USD, submit non-sensitive order details, and wait for seller-side PayPal verification before fulfillment.",
       "step": [
         {
           "@type": "HowToStep",
@@ -114,21 +146,21 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Generate the PayPal note",
-          "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
-          "text": "Open the inline checkout note builder and create a note with business type, service, source, tone, and follow-up need."
+          "name": "Open the one-lead rescue route",
+          "url": "https://trungcodeer.github.io/rescue/",
+          "text": "Open the root one-lead rescue route and copy the PayPal note for this one lead."
         },
         {
           "@type": "HowToStep",
           "name": "Pay exactly 5 USD",
           "url": "https://paypal.me/softjunk/5USD",
-          "text": "Open the exact PayPal.Me URL and paste the generated PayPal note before paying."
+          "text": "Open the exact PayPal.Me URL from the rescue route and paste the rescue PayPal note before paying."
         },
         {
           "@type": "HowToStep",
-          "name": "Use after-payment handoff",
-          "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
-          "text": "After payment, use the handoff page for non-sensitive fulfillment details."
+          "name": "Submit non-sensitive order details",
+          "url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+          "text": "After payment, submit only non-sensitive order details through the one-lead rescue order form."
         },
         {
           "@type": "HowToStep",

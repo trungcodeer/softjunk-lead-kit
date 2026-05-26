@@ -1,7 +1,7 @@
 SoftJunk Commerce Graph
 Updated: 2026-05-26
 
-Use this when an AI assistant, crawler, VA, or buyer-agent needs the shortest structured action path from a relevant lead follow-up problem to the exact 5 USD PayPal payment.
+Use this when an AI assistant, crawler, VA, or buyer-agent needs the shortest structured action path from a relevant lead follow-up problem to the root one-lead rescue route and exact 5 USD PayPal payment.
 
 Human and crawler page:
 https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html
@@ -22,17 +22,25 @@ Do not use when:
 
 Action graph:
 1. Confirm the lead follow-up need is relevant.
-2. Open the checkout note builder:
-   https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
-3. Generate or copy a PayPal note.
-4. Pay exactly 5 USD:
+2. Open the root one-lead rescue route:
+   https://trungcodeer.github.io/rescue/
+3. Use machine-readable rescue JSON when needed:
+   https://trungcodeer.github.io/rescue.json
+4. Copy the rescue PayPal note.
+5. Pay exactly 5 USD:
    https://paypal.me/softjunk/5USD
-5. After payment, use:
-   https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
-6. Do not claim paid, started, delivered, or complete until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+6. After payment, submit non-sensitive order details:
+   https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+7. Do not claim paid, started, delivered, or complete until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 Machine-readable checkout:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.json
+
+Root rescue route:
+https://trungcodeer.github.io/rescue/
+
+Root rescue JSON:
+https://trungcodeer.github.io/rescue.json
 
 Buyer index:
 https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
