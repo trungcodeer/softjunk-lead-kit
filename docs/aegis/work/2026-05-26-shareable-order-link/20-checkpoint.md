@@ -4430,3 +4430,31 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves list-level GitHub discovery for the exact buyer-send checkout without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub issues/discussions/repo files, GitHub Pages, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+## 2026-05-27 Payment Pages Buyer-Send Context Checkpoint
+
+Current todo:
+- Add buyer-send context to existing payment-adjacent pages so buyers do not hit PayPal/checkout/QR pages without the specific roofing offer context.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Completed todos:
+- Added buyer-send CTA/context to product `pay-qr.html`, `pay.html`, `checkout.html`, and `after-pay.html`.
+- Added buyer-send CTA/context to root `paypal/`, `pay/`, and `buy/` pages.
+- Created product release `v2.29.70` and root release `root-payment-buyer-send-v1`.
+- Raw and live validation passed for all 7 pages with one H1, skip link, buyer-send route, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and placeholder/privacy copy.
+- Product Pages run `26480241239` and root Pages run `26480259284` completed successfully.
+- IndexNow accepted 9 related URLs with `status=200`.
+- Product issue #5 evidence comment added: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549796802`.
+- PayPal verifier rerun and remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Local C: has 0 free bytes, so remote API commits are being used for small checkpoint/evidence updates.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the buyer's immediate payment context on owned checkout pages without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repo files/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
