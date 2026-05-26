@@ -285,3 +285,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a stronger AI-native conversion tool without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public Gists/issues/releases, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Profile AI Deal Desk Route Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert the GitHub profile and profile Pages microsite from a link directory into an AI-native buyer handoff surface for the existing SoftJunk AI Deal Desk.
+
+Completed todos:
+- Updated profile `README.md`, `index.html`, `llms.txt`, `sitemap.xml`, and `softjunk-profile-offer.json`.
+- Added a profile handoff generator that creates a custom-sequence PayPal note and query-parameter route into the AI Deal Desk.
+- Added AI Deal Desk, Agent Commerce, agent buyer packet, and verification-gate references to profile JSON/text discovery surfaces.
+- Validated profile JSON, sitemap XML, JSON-LD, inline JavaScript, and local Chrome headless DOM output.
+- Captured desktop/mobile Chrome headless screenshots and fixed mobile overflow before deploy.
+- Committed and pushed profile repo change `ac8b344`.
+- Confirmed GitHub Pages deployment run `26427652157` succeeded.
+- Verified live profile HTML, profile JSON, `llms.txt`, sitemap, and live Chrome DOM output.
+- Created profile release `profile-ai-deal-desk-v1`.
+- Submitted 12 profile/product/root URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the profile AI Deal Desk route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Live profile checks returned HTTP 200 and found `SoftJunk AI Deal Desk`, `profile-handoff-form`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live profile JSON returned primary buyer route `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`, payment URL `https://paypal.me/softjunk/5USD`, and gate `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live `llms.txt` exposed Primary AI Deal Desk, Agent Commerce JSON, the PayPal URL, and the verification gate.
+- Live sitemap exposed AI Deal Desk and Agent Commerce routes.
+- Chrome headless live DOM confirmed the generated default AI Deal Desk URL with query params.
+- Release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-ai-deal-desk-v1`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538985670` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538985671`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses the trusted GitHub profile surface as a non-traditional AI-native handoff path while avoiding spam, unauthorized outreach, and false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

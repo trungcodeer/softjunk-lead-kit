@@ -79,6 +79,35 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Profile AI Deal Desk Route Evidence
+
+Local validation:
+- Profile JSON parse: `softjunk-profile-offer.json` parsed with `ConvertFrom-Json` and exposed `primary_buyer_route`, `ai_deal_desk_url`, and `payment_url`.
+- Profile XML parse: `sitemap.xml` parsed as XML.
+- Profile JSON-LD parse: `index.html` offer JSON-LD parsed and returned `SoftJunk AI Deal Desk and Lead Follow-Up Kit`.
+- Profile inline script parse: the non-JSON-LD inline script parsed with Node `--check`.
+- Local Chrome headless DOM emitted `profile-handoff-form`, a generated AI Deal Desk URL with query parameters, `Custom Sequence`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Desktop and mobile Chrome headless screenshots were captured; mobile overflow was fixed before deploy.
+
+Public deploy validation:
+- Profile commit: `ac8b344` in `https://github.com/trungcodeer/trungcodeer`.
+- GitHub Pages run `26427652157` completed successfully.
+- Live profile HTML returned HTTP 200 and contained `SoftJunk AI Deal Desk`, `profile-handoff-form`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live profile JSON returned primary buyer route `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`, payment URL `https://paypal.me/softjunk/5USD`, and gate `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live profile `llms.txt` returned Primary AI Deal Desk, Agent Commerce JSON, the PayPal URL, and the verification gate.
+- Live profile sitemap returned AI Deal Desk and Agent Commerce route entries.
+- Live Chrome headless DOM confirmed the generated default route `ai-deal-desk.html?business=small+business&service=lead+follow-up&source=quiet+lead&tone=plain&need=stalled+reply&next=reply+today&value=unknown`.
+
+Release and discovery:
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-ai-deal-desk-v1`.
+- IndexNow returned `status=200 urls=12`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538985670`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538985671`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 AI Deal Desk Evidence
 
 Local validation:
