@@ -2329,3 +2329,36 @@ DriftCheckDraft:
 - Current slice fit: yes, pinning public checkout issues improves owned-channel conversion without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: product GitHub repo, public GitHub issues, raw GitHub content, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Checkout Release Route Checkpoint
+
+Current todo:
+- Keep the latest product release pointed at the shortest buy-now and buyer-agent routes.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Publish a GitHub release that routes watchers and public release viewers directly to the pinned checkout issues, one-message buyer packet, and exact PayPal checkout.
+
+Completed todos:
+- Audited current product repo topics and recent releases.
+- Kept topics unchanged because the repo already has 20 relevant discovery topics.
+- Created product release `v2.29.38` titled `Pinned $5 buyer-agent checkout route`.
+- Validated the release body contains issue #1, issue #5, the one-message buyer packet, direct PayPal checkout, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Reran the PayPal verifier after release publication.
+
+Evidence refs:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.38`.
+- Release validation passed: `checkout_release_ok tag=v2.29.38 target=main url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.38 markers=5`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, a release is an owned GitHub distribution surface that can notify watchers and expose the shortest checkout route without spam or false claims.
+- Compatibility boundary: product GitHub repo, public GitHub releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
