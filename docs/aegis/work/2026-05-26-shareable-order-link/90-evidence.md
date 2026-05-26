@@ -79,6 +79,46 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Dedicated Roofing Order Form Evidence
+
+Artifacts:
+- Product issue template `.github/ISSUE_TEMPLATE/roofing-estimate-rescue-order.yml`.
+- Product discovery updates: `.github/ISSUE_TEMPLATE/config.yml`, `roofing-estimate-generator.html`, `roofing-estimate-generator.json`, `roofing-estimate-generator.txt`, `roofing-estimate-rescue.html`, `roofing-estimate-rescue.json`, `roofing-estimate-rescue.txt`, README, `llms.txt`, MCP server, MCP manifests, checkout manifests, offer manifests, A2A cards, and agent buyer catalog JSONL.
+- Root discovery updates: `roofing/index.html`, `roofing.json`, `roofing.txt`, README, `llms.txt`, root offer manifests, and root A2A cards.
+
+Public routes:
+- Dedicated roofing order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml`.
+- Roofing generator: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html`.
+- Roofing rescue: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html`.
+- Root roofing route: `https://trungcodeer.github.io/roofing/`.
+- PayPal checkout: `https://paypal.me/softjunk/5USD`.
+
+Commits, releases, and Gists:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/4c9509b`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/9a2292f`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.60`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-dedicated-order-form-v1`.
+- MCP Gist fallback: `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Roofing generator Gist: `https://gist.github.com/trungcodeer/1d51e6552c5f3886b1f25bd612e705a3`.
+- Roofing rescue Gist: `https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59`.
+- Public product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547596164`.
+
+Validation:
+- Local product JSON parse passed for roofing generator/rescue JSON, checkout manifests, offer manifests, MCP manifests, and A2A cards.
+- Local product JSONL parse passed with `agent-buyer-catalog.jsonl` containing 36 lines.
+- Local product HTML JSON-LD and dedicated form markers passed for the roofing generator and rescue pages.
+- Local YAML parse passed for `.github/ISSUE_TEMPLATE/config.yml` and `.github/ISSUE_TEMPLATE/roofing-estimate-rescue-order.yml`.
+- `node --check mcp-server-softjunk.js` passed.
+- MCP smoke for `build_roofing_estimate_follow_up_sequence` returned `roofing_estimate_order_form_url` and a buyer message containing `roofing-estimate-rescue-order.yml`.
+- Local root JSON and `roofing/index.html` JSON-LD marker checks passed.
+- Product/root `git diff --check` passed with only CRLF warnings.
+- Public validation confirmed the dedicated order form route across raw GitHub, Pages generator/rescue JSON/TXT, product/root A2A cards, root roofing routes, MCP Gist, and both releases.
+- IndexNow accepted 21 owned URLs with `status=200`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 GitHub Repo Metadata Routing Evidence
 
 External metadata changed:

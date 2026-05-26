@@ -3686,3 +3686,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses GitHub's public search/API metadata to make the paid roofing estimate rescue easier for humans and AI agents to discover, without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repo metadata, GitHub issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Dedicated Roofing Order Form Checkpoint
+
+Current todo:
+- Give a qualified roofing estimate buyer a dedicated post-payment order path instead of a generic order form.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add and distribute a GitHub issue form specifically for the $5 roofing estimate rescue, wire human and agent surfaces to it, submit discovery pings, add public issue evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Added `.github/ISSUE_TEMPLATE/roofing-estimate-rescue-order.yml`.
+- Wired product generator/rescue pages, README, `llms.txt`, MCP server, MCP manifests, checkout JSON, offer JSON, A2A agent cards, and agent buyer catalog to the dedicated form.
+- Wired root `/roofing/`, `roofing.json`, `roofing.txt`, root offer JSON, root A2A cards, README, and `llms.txt` to the dedicated form.
+- Updated MCP, roofing generator, and roofing rescue public Gists.
+- Committed and pushed product commit `4c9509b`.
+- Committed and pushed root commit `9a2292f`.
+- Created product release `v2.29.60`.
+- Created root release `root-roofing-dedicated-order-form-v1`.
+- Validated local JSON, JSONL, YAML, HTML JSON-LD, Node syntax, MCP smoke output, and whitespace.
+- Validated public Pages/raw/Gist/release surfaces for the dedicated `roofing-estimate-rescue-order.yml` route.
+- Submitted 21 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Dedicated roofing order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml`.
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/4c9509b`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/9a2292f`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.60`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-dedicated-order-form-v1`.
+- MCP Gist fallback: `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Roofing generator Gist: `https://gist.github.com/trungcodeer/1d51e6552c5f3886b1f25bd612e705a3`.
+- Roofing rescue Gist: `https://gist.github.com/trungcodeer/3f6f5804dc8a5b95780076e57e9d0e59`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547596164`.
+- IndexNow submission returned `indexnow_status=200 urls=21`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer discovery/conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it narrows the order path to a high-intent roofing estimate buyer and exposes the route to MCP/A2A/agent-readable surfaces without spam, deception, private data leakage, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
