@@ -53,6 +53,12 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Agent buyer catalog JSONL: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
+- Commerce graph: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html
+- Commerce graph JSON-LD: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json
+- Commerce graph text: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt
+- Public commerce graph Gist: https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db
+- Raw commerce graph JSON: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json
+- Raw commerce graph text: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt
 - Fast checkout with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html

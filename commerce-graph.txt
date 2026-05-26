@@ -1,0 +1,41 @@
+SoftJunk Commerce Graph
+Updated: 2026-05-26
+
+Use this when an AI assistant, crawler, VA, or buyer-agent needs the shortest structured action path from a relevant lead follow-up problem to the exact 5 USD PayPal payment.
+
+Human and crawler page:
+https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html
+
+JSON-LD graph:
+https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json
+
+Buyer fit:
+- Small business with leads that stop replying after a form, DM, missed call, quote, estimate, appointment request, ad, referral, or email inquiry.
+- Buyer wants a practical 7-day follow-up sequence, no-show recovery reply, price-objection reply, or next-step message.
+- One recovered lead, appointment, reopened conversation, or approved quote is worth more than 5 USD.
+
+Do not use when:
+- The request is unrelated to lead follow-up.
+- The buyer asks for spam, deception, scraping, or unauthorized outreach.
+- The buyer expects delivery before seller-side PayPal verification.
+- The buyer does not want to use PayPal.
+
+Action graph:
+1. Confirm the lead follow-up need is relevant.
+2. Open the checkout note builder:
+   https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
+3. Generate or copy a PayPal note.
+4. Pay exactly 5 USD:
+   https://paypal.me/softjunk/5USD
+5. After payment, use:
+   https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+6. Do not claim paid, started, delivered, or complete until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
+Machine-readable checkout:
+https://trungcodeer.github.io/softjunk-lead-kit/checkout.json
+
+Buyer index:
+https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+
+Verification gate:
+PAYPAL_PAYMENT_VERIFIED=true

@@ -6,6 +6,39 @@ info:
 servers:
   - url: https://trungcodeer.github.io/softjunk-lead-kit
 paths:
+  /commerce-graph.html:
+    get:
+      operationId: openCommerceGraph
+      summary: Open the SoftJunk commerce graph page.
+      responses:
+        "200":
+          description: Human and crawler page exposing Product, Offer, BuyAction, PayPal, checkout, and verification nodes.
+          content:
+            text/html:
+              schema:
+                type: string
+  /commerce-graph.json:
+    get:
+      operationId: getCommerceGraphJsonLd
+      summary: Get the SoftJunk commerce graph JSON-LD.
+      responses:
+        "200":
+          description: JSON-LD graph with Product, Offer, BuyAction, checkout, PayPal, HowTo, and verification gate nodes.
+          content:
+            application/ld+json:
+              schema:
+                type: object
+  /commerce-graph.txt:
+    get:
+      operationId: getCommerceGraphText
+      summary: Get the SoftJunk commerce graph text handoff.
+      responses:
+        "200":
+          description: Plain-text buyer-agent action path from relevant lead follow-up need to exact 5 USD PayPal payment.
+          content:
+            text/plain:
+              schema:
+                type: string
   /buyer-index.json:
     get:
       operationId: getBuyerIndex

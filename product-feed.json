@@ -64,6 +64,13 @@
   },
   "free_tools": [
     {
+      "name": "Commerce Graph",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt",
+      "delivery": "Schema.org Product, Offer, BuyAction, checkout, PayPal, and verification graph for buyer agents"
+    },
+    {
       "name": "AI Follow-Up Prompt",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
@@ -249,7 +256,6 @@
     "custom_sequence_gallery_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
     "custom_sequence_gallery_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
-    "checkout": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "fix_one_quiet_lead": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "printable_paypal_flyer": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",
@@ -296,5 +302,11 @@
     "Local service businesses",
     "Businesses with missed calls or voicemails",
     "Businesses with sent estimates or quotes"
-  ]
+  ],
+  "commerce_graph_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
+  "commerce_graph_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",
+  "commerce_graph_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt",
+  "commerce_graph_gist_url": "https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db",
+  "gist_raw_commerce_graph_json_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json",
+  "gist_raw_commerce_graph_text_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt"
 }

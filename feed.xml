@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 07:58:00 +0700</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 12:18:00 +0700</lastBuildDate>
+    <item>
+      <title>SoftJunk Commerce Graph</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html</guid>
+      <description>Structured Product, Offer, BuyAction, checkout, PayPal, and verification graph for buyer-agent routing to the exact 5 USD PayPal payment.</description>
+      <pubDate>Tue, 26 May 2026 12:18:00 +0700</pubDate>
+    </item>
     <item>
       <title>AI Deal Desk</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html</link>

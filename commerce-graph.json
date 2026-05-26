@@ -1,0 +1,147 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller",
+      "@type": "Organization",
+      "name": "SoftJunk",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/",
+      "email": "trungcodeer@users.noreply.github.com"
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product",
+      "@type": "Product",
+      "name": "SoftJunk Lead Follow-Up Kit and Custom Sequence",
+      "description": "A 5 USD lead follow-up kit or custom 7-day sequence for small businesses with quiet leads, missed calls, estimates, no-shows, price objections, and DM follow-up gaps.",
+      "brand": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
+      },
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
+      "image": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
+      "offers": [
+        {
+          "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#custom-sequence-offer"
+        },
+        {
+          "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#kit-offer"
+        }
+      ],
+      "potentialAction": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#buy-action"
+      }
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#custom-sequence-offer",
+      "@type": "Offer",
+      "name": "Custom 7-Day Lead Follow-Up Sequence",
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+      "itemOffered": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
+      },
+      "seller": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
+      },
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "5.00",
+        "priceCurrency": "USD",
+        "description": "Pay exactly 5 USD through PayPal.Me."
+      }
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#kit-offer",
+      "@type": "Offer",
+      "name": "7-Day Lead Follow-Up Kit",
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://paypal.me/softjunk/5USD",
+      "itemOffered": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
+      },
+      "seller": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
+      }
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#buy-action",
+      "@type": "BuyAction",
+      "name": "Buy SoftJunk for exactly 5 USD on PayPal",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://paypal.me/softjunk/5USD",
+        "httpMethod": "GET",
+        "description": "Open the exact 5 USD PayPal.Me payment URL."
+      },
+      "object": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
+      },
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "instrument": "PayPal.Me",
+      "recipient": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
+      },
+      "actionStatus": "https://schema.org/PotentialActionStatus",
+      "result": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html#handoff"
+      }
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#checkout-api",
+      "@type": "WebAPI",
+      "name": "SoftJunk Checkout Handoff",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
+      "description": "Machine-readable checkout contract with inline PayPal note builder, exact 5 USD PayPal URL, after-payment handoff, and verification gate.",
+      "provider": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller"
+      },
+      "termsOfService": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#how-to-buy",
+      "@type": "HowTo",
+      "name": "How to buy the 5 USD SoftJunk follow-up sequence",
+      "description": "Use only for a relevant lead follow-up need. Generate a PayPal note, pay exactly 5 USD, and wait for seller-side PayPal verification before fulfillment.",
+      "step": [
+        {
+          "@type": "HowToStep",
+          "name": "Confirm fit",
+          "text": "Use SoftJunk only when a small business has a quiet lead, missed call, estimate follow-up, no-show, price objection, or DM follow-up problem."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Generate the PayPal note",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+          "text": "Open the inline checkout note builder and create a note with business type, service, source, tone, and follow-up need."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Pay exactly 5 USD",
+          "url": "https://paypal.me/softjunk/5USD",
+          "text": "Open the exact PayPal.Me URL and paste the generated PayPal note before paying."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Use after-payment handoff",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+          "text": "After payment, use the handoff page for non-sensitive fulfillment details."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Verify before fulfillment",
+          "text": "Do not claim paid, started, delivered, or complete until the seller can see the PayPal transaction or PAYPAL_PAYMENT_VERIFIED=true."
+        }
+      ]
+    },
+    {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#verification-gate",
+      "@type": "CreativeWork",
+      "name": "SoftJunk payment verification gate",
+      "text": "PAYPAL_PAYMENT_VERIFIED=true is required before claiming payment or delivery. A public route, note, graph, or checkout page is not proof that money arrived."
+    }
+  ]
+}

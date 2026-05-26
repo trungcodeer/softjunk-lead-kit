@@ -149,6 +149,24 @@ https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 Custom sequence gallery text:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
 
+Commerce graph:
+https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html
+
+Commerce graph JSON-LD:
+https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json
+
+Commerce graph text:
+https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt
+
+Public commerce graph Gist:
+https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db
+
+Raw commerce graph JSON:
+https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json
+
+Raw commerce graph text:
+https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt
+
 Fast checkout:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
@@ -336,6 +354,7 @@ PayPal notes:
 - Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.
 - Agent buyer catalog JSONL: use https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl for retrieval-friendly records covering fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers.
+- Commerce graph: use https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json when a buyer-agent needs Product, Offer, BuyAction, checkout, PayPal, and verification nodes before payment.
 - AI checkout: use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready to generate a PayPal note inline, pay exactly $5, and open the after-payment handoff.
 
 Best-fit buyers:

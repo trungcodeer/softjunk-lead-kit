@@ -135,5 +135,11 @@
       "zip_public": false
     }
   ],
-  "fulfillment_rule": "Do not mark the order paid or delivered unless the seller can see the 5 USD PayPal transaction or the PayPal verifier returns PAYPAL_PAYMENT_VERIFIED=true."
+  "fulfillment_rule": "Do not mark the order paid or delivered unless the seller can see the 5 USD PayPal transaction or the PayPal verifier returns PAYPAL_PAYMENT_VERIFIED=true.",
+  "commerce_graph_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
+  "commerce_graph_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",
+  "commerce_graph_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt",
+  "commerce_graph_gist_url": "https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db",
+  "gist_raw_commerce_graph_json_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json",
+  "gist_raw_commerce_graph_text_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt"
 }

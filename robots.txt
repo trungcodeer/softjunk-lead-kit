@@ -3,6 +3,9 @@ Allow: /
 Allow: /llms.txt
 Allow: /feed.xml
 Allow: /buyer-index.json
+Allow: /commerce-graph.txt
+Allow: /commerce-graph.json
+Allow: /commerce-graph.html
 Allow: /agent-buyer-catalog.jsonl
 Allow: /product-feed.json
 Allow: /PAYPAL_VERIFICATION.md
