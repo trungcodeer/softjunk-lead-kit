@@ -79,6 +79,51 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 AI Assistant Instruction Files Evidence
+
+Files added in each owned repo:
+- `.github/copilot-instructions.md`
+- `CLAUDE.md`
+- `GEMINI.md`
+- `CODEX.md`
+
+Commits:
+- Product commit: `8c31e51 Add AI assistant checkout instructions`.
+- Root commit: `8b87b15 Add AI assistant checkout instructions`.
+- Profile commit: `952f7f3 Add AI assistant checkout instructions`.
+- Quiet lead commit: `19b4b72 Add AI assistant checkout instructions`.
+
+Releases:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.47`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-ai-assistant-instructions-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-ai-assistant-instructions-v1`.
+- Quiet lead release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-ai-assistant-instructions-v1`.
+
+Public route evidence:
+- Product AGENTS: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md`.
+- Agent checkout JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json`.
+- Direct PayPal checkout: `https://paypal.me/softjunk/5USD`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545305048`.
+
+Local validation:
+- `product_instruction_ok .github/copilot-instructions.md`, `CLAUDE.md`, `GEMINI.md`, `CODEX.md`.
+- `root_instruction_ok .github/copilot-instructions.md`, `CLAUDE.md`, `GEMINI.md`, `CODEX.md`.
+- `profile_instruction_ok .github/copilot-instructions.md`, `CLAUDE.md`, `GEMINI.md`, `CODEX.md`.
+- `quiet_instruction_ok .github/copilot-instructions.md`, `CLAUDE.md`, `GEMINI.md`, `CODEX.md`.
+- `git diff --check` returned no whitespace errors in all four repos.
+
+Public validation:
+- `product_raw_instructions_ok files=4`.
+- `root_raw_instructions_ok files=4`.
+- `profile_raw_instructions_ok files=4`.
+- `quiet_raw_instructions_ok files=4`.
+- `release_instruction_ok` for product/root/profile/quiet releases.
+- `issue_ai_instruction_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545305048`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Owned Repo AGENTS Propagation Evidence
 
 Files changed outside product repo:
