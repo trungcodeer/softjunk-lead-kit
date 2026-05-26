@@ -79,6 +79,41 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Result-First Sample Route Evidence
+
+Files changed in product repo:
+- `RESULT_FIRST_SAMPLE.md`
+- `result-first-sample.json`
+- `BUY_NOW.md`
+- `buy-now.json`
+- `README.md`
+- `BUYER_INDEX.md`
+- `buyer-index.json`
+- `agent-buyer-catalog.jsonl`
+- `llms.txt`
+
+Public surfaces:
+- Commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/87ef41e`.
+- Result-first sample: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md`.
+- Result-first sample JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json`.
+- Gist: `https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json`.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.41`.
+- Issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544323172`.
+
+Validation:
+- `result_first_gist_structured_local_ok json=3 jsonl=1`.
+- `result_first_gist_local_markers_ok files=9 markers=7`.
+- `result_first_gist_raw_ok schema=softjunk-result-first-sample-v1 markers=7`.
+- `result_first_product_raw_ok schema=softjunk-result-first-sample-v1 markers=7`.
+- `result_first_catalog_raw_ok id=result_first_sample`.
+- `result_first_release_ok tag=v2.29.41 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.41 markers=6`.
+- `result_first_issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544323172 markers=6`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Buy Now Gist and Topic Route Evidence
 
 Public Gist:

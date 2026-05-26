@@ -2552,3 +2552,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it adds an additional public GitHub-native fallback and discovery topic for the existing $5 PayPal route without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: product/root/profile/quiet GitHub repos, public GitHub topics/releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Result-First Sample Route Checkpoint
+
+Current todo:
+- Improve conversion toward the real 5 USD PayPal payment by showing buyers a concrete sample before payment.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add a result-first proof-of-value route with a human-readable Markdown sample, machine-readable JSON, public Gist mirror, release, and product issue comment.
+
+Completed todos:
+- Added `RESULT_FIRST_SAMPLE.md` with three concrete free follow-up samples and the $5 Buy Now handoff.
+- Added `result-first-sample.json` for buyer agents and crawlers.
+- Linked the result-first sample from `BUY_NOW.md`, `buy-now.json`, `README.md`, `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `llms.txt`.
+- Created public result-first sample Gist `24f1f8dd3915e17ef6bb6c200ac2ce02`.
+- Updated the Gist contents after adding Gist metadata locally.
+- Validated local JSON/JSONL structure and marker coverage.
+- Validated public raw GitHub sample Markdown/JSON and agent buyer catalog.
+- Committed and pushed product commit `87ef41e`.
+- Created release `v2.29.41`.
+- Added a public product issue #5 comment for the result-first sample route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/87ef41e`.
+- Result-first sample: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md`.
+- Result-first sample JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json`.
+- Result-first sample Gist: `https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02`.
+- Result-first sample raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.41`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544323172`.
+- Local validation passed: `result_first_gist_structured_local_ok json=3 jsonl=1`, `result_first_gist_local_markers_ok files=9 markers=7`.
+- Public Gist validation passed: `result_first_gist_raw_ok schema=softjunk-result-first-sample-v1 markers=7`.
+- Public product raw validation passed: `result_first_product_raw_ok schema=softjunk-result-first-sample-v1 markers=7`.
+- Public catalog validation passed: `result_first_catalog_raw_ok id=result_first_sample`.
+- Release validation passed: `result_first_release_ok tag=v2.29.41 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.41 markers=6`.
+- Issue comment validation passed: `result_first_issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544323172 markers=6`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it gives buyers a concrete proof-of-value sample before the $5 PayPal route without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
