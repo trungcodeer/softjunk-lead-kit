@@ -51,6 +51,9 @@
   "social_card_url": "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
   "missed_call_follow_up_url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html",
   "estimate_follow_up_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
+  "price_objection_reply_url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
+  "no_show_follow_up_url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
+  "quiet_dm_follow_up_url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html",
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
   "examples_url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
   "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
@@ -248,7 +251,10 @@
     "https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html",
-    "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html"
+    "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html"
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",

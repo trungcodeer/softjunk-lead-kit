@@ -480,6 +480,39 @@ paths:
             text/html:
               schema:
                 type: string
+  /price-objection-reply.html:
+    get:
+      operationId: openPriceObjectionReplyTemplate
+      summary: Open the price-objection reply sample generator.
+      responses:
+        "200":
+          description: Browser page for price-objection reply samples and the $5 custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
+  /no-show-follow-up.html:
+    get:
+      operationId: openNoShowFollowUpTemplate
+      summary: Open the no-show follow-up sample generator.
+      responses:
+        "200":
+          description: Browser page for no-show recovery samples and the $5 custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
+  /quiet-dm-follow-up.html:
+    get:
+      operationId: openQuietDmFollowUpTemplate
+      summary: Open the quiet DM follow-up sample generator.
+      responses:
+        "200":
+          description: Browser page for quiet DM follow-up samples and the $5 custom sequence.
+          content:
+            text/html:
+              schema:
+                type: string
   /pay.html:
     get:
       operationId: openPaymentPage

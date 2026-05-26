@@ -107,6 +107,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Estimate follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+- Price-objection reply sample: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
+- No-show follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+- Quiet DM follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 
 ## Niche Pages
 

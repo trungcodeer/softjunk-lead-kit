@@ -159,6 +159,18 @@
     {
       "name": "Estimate Follow-Up Sample",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html"
+    },
+    {
+      "name": "Price Objection Reply Sample",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html"
+    },
+    {
+      "name": "No-Show Follow-Up Sample",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html"
+    },
+    {
+      "name": "Quiet DM Follow-Up Sample",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html"
     }
   ],
   "machine_readable": {
@@ -236,6 +248,9 @@
     "paid_kit_manifest": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
     "missed_call_follow_up": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html",
     "estimate_follow_up": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
+    "price_objection_reply": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
+    "no_show_follow_up": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
+    "quiet_dm_follow_up": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html",
     "template_library": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
     "examples": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
     "well_known_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",

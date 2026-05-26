@@ -106,6 +106,11 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 - Raw Gist payment intent JSON: https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
+- Product missed-call follow-up page: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Product estimate follow-up page: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+- Product price-objection reply page: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
+- Product no-show follow-up page: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+- Product quiet DM follow-up page: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 - Missed call follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/missed-call-follow-up.html
 - Estimate follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/estimate-follow-up.html
 - Quote follow-up page: https://trungcodeer.github.io/quiet-lead-follow-up/quote-follow-up.html

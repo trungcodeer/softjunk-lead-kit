@@ -30,6 +30,9 @@ Allow: /pay-qr.html
 Allow: /printable-paypal-flyer.html
 Allow: /missed-call-follow-up.html
 Allow: /estimate-follow-up-template.html
+Allow: /price-objection-reply.html
+Allow: /no-show-follow-up.html
+Allow: /quiet-dm-follow-up.html
 Allow: /paypal-qr.svg
 Allow: /social-card.png
 Allow: /social-card-qr.png

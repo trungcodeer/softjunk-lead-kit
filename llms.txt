@@ -269,6 +269,9 @@ Niche pages:
 - Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 - Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+- Price-objection reply template: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
+- No-show follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+- Quiet DM follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 
 Payment:
 https://paypal.me/softjunk/5USD

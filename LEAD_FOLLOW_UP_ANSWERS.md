@@ -27,35 +27,35 @@ https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json
 Hi [Name], sorry I missed your call about [service]. I can help. Do you want the fastest available time, or should I answer one quick question first?
 
 Exact page:
-https://trungcodeer.github.io/quiet-lead-follow-up/missed-call-follow-up.html
+https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 
 ### Estimate went quiet
 
 Hi [Name], checking that you saw the estimate for [project]. If the scope looks right, I can send the next step. If price or timing is the blocker, reply with that and I will adjust the path.
 
 Exact page:
-https://trungcodeer.github.io/quiet-lead-follow-up/estimate-follow-up.html
+https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 
 ### Price objection
 
 Totally fair to compare options. If budget is the main issue, I can show the smallest useful version first or explain what is included so you can decide.
 
 Exact page:
-https://trungcodeer.github.io/quiet-lead-follow-up/price-objection-reply.html
+https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
 
 ### No-show recovery
 
 Hi [Name], looks like today got busy. Do you want me to send another time for [service], or should I close this for now?
 
 Exact page:
-https://trungcodeer.github.io/quiet-lead-follow-up/no-show-follow-up.html
+https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
 
 ### Quiet DM
 
 Hi [Name], quick follow-up on [service]. If you are still interested, reply with "times" and I will send the easiest next step. If not, no problem.
 
 Exact page:
-https://trungcodeer.github.io/quiet-lead-follow-up/quiet-dm-follow-up.html
+https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 
 ## Paid $5 Option
 
