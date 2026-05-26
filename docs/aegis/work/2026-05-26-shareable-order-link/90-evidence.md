@@ -79,6 +79,35 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Buy Now Gist and Topic Route Evidence
+
+Public Gist:
+- Gist: `https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6`.
+- Raw Markdown: `https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md`.
+- Raw JSON: `https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json`.
+
+Product repo:
+- Commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/23fd1cc`.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.40`.
+- Issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544244898`.
+- Files updated: `BUY_NOW.md`, `buy-now.json`, `README.md`, `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `llms.txt`.
+
+Topics:
+- Added or confirmed `buy-now` topic on `trungcodeer/softjunk-lead-kit`, `trungcodeer/trungcodeer.github.io`, `trungcodeer/trungcodeer`, and `trungcodeer/quiet-lead-follow-up`.
+
+Validation:
+- `buy_now_gist_structured_local_ok json=2 jsonl=1`.
+- `buy_now_gist_local_markers_ok files=7 markers=5`.
+- `buy_now_gist_raw_ok schema=softjunk-buy-now-v1 markers=7`.
+- `buy_now_product_raw_gist_ok schema=softjunk-buy-now-v1 markers=5`.
+- `buy_now_gist_release_ok tag=v2.29.40 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.40 markers=7`.
+- `buy_now_gist_issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544244898 markers=4`.
+- `topic_buy_now_ok` passed for all four owned repos.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Owned Repos Buy Now Route Evidence
 
 Root repo:

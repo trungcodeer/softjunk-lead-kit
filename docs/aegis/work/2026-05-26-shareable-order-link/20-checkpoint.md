@@ -2503,3 +2503,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it routes additional owned GitHub entry points to the strongest current checkout packet without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: root/profile/quiet/product GitHub repos, public GitHub metadata/releases/issues, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Buy Now Gist and Topic Route Checkpoint
+
+Current todo:
+- Keep the shortest public route to the 5 USD PayPal checkout available across GitHub-native surfaces.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Publish a public Gist mirror for the Buy Now packet, add Gist fallback links to product discovery files, and add the `buy-now` topic across owned repos.
+
+Completed todos:
+- Created public Buy Now Gist `f2c1e3469c1f9313f135f612b229b0e6` with `BUY_NOW.md` and `buy-now.json`.
+- Validated raw Gist Markdown and JSON returned HTTP 200.
+- Added `buy-now` topics across product, root, profile, and quiet-lead repos.
+- Updated product `BUY_NOW.md`, `buy-now.json`, `README.md`, `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `llms.txt` with the public Gist and raw Gist JSON fallback.
+- Validated local JSON/JSONL structure and marker coverage.
+- Updated the public Gist contents after local metadata edits.
+- Committed and pushed product commit `23fd1cc`.
+- Created release `v2.29.40`.
+- Added a public issue #5 comment with the Buy Now Gist fallback.
+- Validated product raw GitHub, raw Gist, release, issue comment, and repo topics.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/23fd1cc`.
+- Public Buy Now Gist: `https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6`.
+- Raw Gist Markdown: `https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.40`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544244898`.
+- Local validation passed: `buy_now_gist_structured_local_ok json=2 jsonl=1`, `buy_now_gist_local_markers_ok files=7 markers=5`.
+- Public Gist validation passed: `buy_now_gist_raw_ok schema=softjunk-buy-now-v1 markers=7`.
+- Product raw validation passed: `buy_now_product_raw_gist_ok schema=softjunk-buy-now-v1 markers=5`.
+- Release validation passed: `buy_now_gist_release_ok tag=v2.29.40 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.40 markers=7`.
+- Issue comment validation passed: `buy_now_gist_issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544244898 markers=4`.
+- Topic validation passed for product, root, profile, and quiet repos: `topic_buy_now_ok`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds an additional public GitHub-native fallback and discovery topic for the existing $5 PayPal route without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: product/root/profile/quiet GitHub repos, public GitHub topics/releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
