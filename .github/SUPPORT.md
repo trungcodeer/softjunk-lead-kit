@@ -4,6 +4,7 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 
 ## Pay
 
+- AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 - Short PayPal route: https://trungcodeer.github.io/paypal/
 - Direct PayPal.Me URL: https://paypal.me/softjunk/5USD
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
@@ -19,7 +20,8 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 ## After Paying
 
 - Digital kit note: `Lead Follow-Up Kit`
-- Custom sequence note builder: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- AI Deal Desk note builder: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+- Legacy agent-order note builder: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 - Order forms: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 

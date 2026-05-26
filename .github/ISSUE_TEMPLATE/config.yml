@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: AI Deal Desk
+    url: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+    about: Generate a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
   - name: Pay $5 on PayPal
     url: https://trungcodeer.github.io/paypal/
     about: Short route with the exact 5 USD PayPal.Me link, QR fallback, and payment verification rule.
