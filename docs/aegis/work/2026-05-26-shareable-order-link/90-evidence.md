@@ -38,6 +38,47 @@ Payment gate:
 - This slice still did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Buyer-Agent Prompt Relay Evidence
+
+Local validation:
+- Product JSON parse passed for `buyer-agent-relay.json`, buyer index, product feed, offers, agent buyer packet, well-known offer, and AI plugin manifest.
+- Product JSONL parse passed for `agent-buyer-catalog.jsonl` and confirmed `free_buyer_agent_relay`.
+- Product XML parse passed for `sitemap.xml` and `feed.xml`.
+- Product JSON-LD parse passed for `buyer-agent-relay.html`.
+- Chrome headless local DOM validated `buyer-agent-relay.html` contains the relay title, Gist link, PayPal URL, copy prompt, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root JSON parse passed for root offer, AI route, well-known root offer, AI plugin manifest, PayPal intent, and well-known PayPal intent.
+- Root XML parse passed for `sitemap.xml`.
+- Root OpenAPI marker validation passed for the relay HTML/JSON/TXT paths.
+- Chrome headless local DOM validated root `index.html` and `/ai/` contain the buyer-agent relay, relay JSON, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check` passed for product and root.
+
+Files added:
+- `buyer-agent-relay.html`
+- `buyer-agent-relay.json`
+- `buyer-agent-relay.txt`
+
+Public distribution:
+- Buyer-agent relay Gist: `https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950`.
+- Raw relay JSON: `https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json`.
+- Raw relay text: `https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt`.
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/4cb9d2b`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.20`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/d600811`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-buyer-agent-relay-v1`.
+- Product Pages run `26435502886` completed successfully.
+- Root Pages run `26435501991` completed successfully.
+- IndexNow returned `HTTP/1.1 200 OK urls=27`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540933285` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540935625`.
+
+Live validation:
+- Product live validation passed for 15 URLs: relay HTML/JSON/TXT, buyer index, product feed, offers, agent packet, JSONL catalog, well-known offer, AI plugin, OpenAPI, `llms.txt`, robots, sitemap, and RSS.
+- Root live validation passed for 11 URLs: root page, `/ai/`, root offer, AI JSON/TXT, `llms.txt`, well-known root offer, AI plugin, OpenAPI, robots, and sitemap.
+- Live raw Gist validation confirmed `copyable_prompt`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Inline Checkout Note Builder Evidence
 
 Local validation:
