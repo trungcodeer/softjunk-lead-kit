@@ -1229,3 +1229,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the owned GitHub-native payment/fulfillment path without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, GitHub issue templates/funding, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Root One-Lead Rescue Short Route Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Add a root-level `/rescue/` route that gives buyer-agents and humans the shortest one-lead path to the builder, exact 5 USD PayPal payment, order form, and verification gate.
+
+Completed todos:
+- Rechecked root/product worktree state and PayPal verifier status before the slice.
+- Added root `rescue/index.html`, `rescue.json`, and `rescue.txt`.
+- Wired the route into root index, `/ai/`, root offer JSON, root AI JSON/TXT, well-known root offer, root AI plugin manifest, README, `llms.txt`, robots, sitemap, OpenAPI, and root funding links.
+- Validated local JSON, YAML, XML, JSON-LD, OpenAPI markers, DOM output, and whitespace.
+- Committed and pushed root change `e4e78e5`.
+- Created root release `root-one-lead-rescue-short-route-v1`.
+- Confirmed root GitHub Pages deployment succeeded.
+- Validated 14 live root endpoints for `/rescue/`, `rescue.json`, `rescue.txt`, root discovery, OpenAPI, sitemap, and robots.
+- Submitted 14 root URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the root rescue short route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e4e78e5`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-lead-rescue-short-route-v1`.
+- Root rescue route: `https://trungcodeer.github.io/rescue/`.
+- Root rescue JSON: `https://trungcodeer.github.io/rescue.json`.
+- Root rescue text: `https://trungcodeer.github.io/rescue.txt`.
+- GitHub Pages run: `26439074000`, success.
+- Live validation passed for `https://trungcodeer.github.io/rescue/`, `rescue.json`, `rescue.txt`, root page, `/ai/`, root offer JSON, AI JSON/TXT, `llms.txt`, well-known root offer, AI plugin, OpenAPI, sitemap, and robots.
+- IndexNow returned `status=200 urls=14`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541700017` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541701215`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a non-traditional root-level AI-readable rescue route without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

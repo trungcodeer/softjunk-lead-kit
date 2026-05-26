@@ -150,6 +150,42 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Root One-Lead Rescue Short Route Evidence
+
+Local validation:
+- Root JSON validation passed for `rescue.json`, `root-offer.json`, `ai.json`, `.well-known/softjunk-root-offer.json`, and `.well-known/ai-plugin.json`.
+- Root XML validation passed for `sitemap.xml`.
+- Root YAML validation passed for `.github/FUNDING.yml` using PyYAML.
+- Root OpenAPI marker validation passed for `/rescue/`, `/rescue.json`, and `/rescue.txt`.
+- `rescue/index.html` JSON-LD parsed successfully and exposed the PayPal URL, order form URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Chrome headless local DOM validation passed for root `rescue/index.html`, root `index.html`, and root `/ai/`, confirming `/rescue/`, `rescue.json`, the PayPal URL, and verification gate.
+- Root `git diff --check` and staged `git diff --cached --check` passed with line-ending warnings only.
+
+Files added:
+- Root `rescue/index.html`
+- Root `rescue.json`
+- Root `rescue.txt`
+
+Commits and release:
+- Root commit `e4e78e5`: `Add root one-lead rescue route`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-lead-rescue-short-route-v1`.
+
+Public deploy validation:
+- Root Pages run `26439074000` completed successfully for commit `e4e78e5`.
+- Live validation passed for 14 URLs: root rescue HTML/JSON/TXT, root page, `/ai/`, `root-offer.json`, `ai.json`, `ai.txt`, `llms.txt`, well-known root offer, AI plugin, OpenAPI, sitemap, and robots.
+- Live root rescue route: `https://trungcodeer.github.io/rescue/`.
+- Live root rescue JSON: `https://trungcodeer.github.io/rescue.json`.
+- Live root rescue text: `https://trungcodeer.github.io/rescue.txt`.
+
+Public distribution:
+- IndexNow returned `status=200 urls=14`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541700017`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541701215`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Fix One Quiet Lead Evidence
 
 Local validation:
