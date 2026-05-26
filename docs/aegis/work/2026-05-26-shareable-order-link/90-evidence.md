@@ -3208,3 +3208,11 @@ Payment gate:
 - Product Pages run `26478878784` completed successfully for `b60149845a3dfdd1d88e5252db5a9914cae115f2`.
 - IndexNow accepted 7 related URLs with `status=200`.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-27 Pinned Checkout Comments Buyer-Send Evidence
+
+- Issue #1 pinned checkout comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4549643181`.
+- Issue #5 pinned checkout comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549643900`.
+- Issue #7 pinned checkout comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549653649`.
+- GraphQL validation confirmed pinned comments on #1, #5, and #7 include `roofing-buyer-send`, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy language.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
