@@ -1792,3 +1792,46 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the primary AI agent order route and buyer brief by making qualified assistants open one-lead rescue before direct PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/HTML discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Discovery Rescue-First Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert the AI discovery and retrieval contracts to route buyer agents through root one-lead rescue before PayPal.
+
+Completed todos:
+- Rechecked goal state, product worktree, and PayPal verifier before the slice.
+- Audited `llms.txt`, `agent-buyer-catalog.jsonl`, `buyer-index.json`, `offers.json`, `product-feed.json`, `.well-known/ai-plugin.json`, `.well-known/softjunk-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+- Updated discovery surfaces to expose `https://trungcodeer.github.io/rescue/`, `https://trungcodeer.github.io/rescue.json`, `agent-order.html`, `agent-offer.json`, exact PayPal URL, one-lead order form, and `PAYPAL_PAYMENT_VERIFIED=true` as the shared buyer-agent contract.
+- Validated local JSON, JSONL, OpenAPI YAML, sitemap XML, marker coverage, and whitespace.
+- Committed and pushed product change `a6b5cc9`.
+- Created product release `v2.29.32`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated live GitHub Pages and raw GitHub content for 8 manifests plus sitemap and robots.
+- Submitted 13 discovery and rescue URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the AI discovery rescue-first update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/a6b5cc9`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.32`.
+- Product Pages run: `26446504925`, success.
+- Live/raw validation passed: `ai_discovery_live_raw_ok manifests=8 json=5 jsonl=1 sitemap=1 robots=1 sources=2`.
+- IndexNow returned `status=200 urls=13`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543363976` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543365950`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves AI/crawler discovery by making retrieval contracts, well-known manifests, OpenAPI, sitemap, robots, and product feeds all point to root one-lead rescue before PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/JSONL/YAML/XML/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

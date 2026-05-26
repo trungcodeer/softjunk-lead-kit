@@ -1349,3 +1349,43 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 AI Discovery Rescue-First Evidence
+
+Local validation:
+- JSON parse passed for `buyer-index.json`, `offers.json`, `product-feed.json`, `agent-offer.json`, `.well-known/ai-plugin.json`, and `.well-known/softjunk-offer.json`.
+- JSONL parse passed for `agent-buyer-catalog.jsonl`.
+- OpenAPI YAML parse passed for `.well-known/openapi.yaml`.
+- Sitemap XML parse passed for `sitemap.xml`.
+- Marker validation confirmed root rescue, rescue JSON, PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, one-lead order form, `agent-offer.json`, and `agent-order.html` across the updated manifests, with robots/sitemap checked using route-appropriate markers.
+- Product `git diff --check` returned no whitespace errors.
+
+Files changed in product repo:
+- `.well-known/ai-plugin.json`
+- `.well-known/openapi.yaml`
+- `.well-known/softjunk-offer.json`
+- `agent-buyer-catalog.jsonl`
+- `buyer-index.json`
+- `llms.txt`
+- `offers.json`
+- `product-feed.json`
+- `robots.txt`
+- `sitemap.xml`
+
+Commit, release, and deploy:
+- Product commit: `a6b5cc9 Route AI discovery contract to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.32`.
+- Product GitHub Pages run `26446504925` completed with success.
+
+Live/raw validation:
+- `ai_discovery_live_raw_ok manifests=8 json=5 jsonl=1 sitemap=1 robots=1 sources=2`.
+- Validated live GitHub Pages and raw GitHub content for `llms.txt`, `agent-buyer-catalog.jsonl`, `buyer-index.json`, `offers.json`, `product-feed.json`, `.well-known/ai-plugin.json`, `.well-known/softjunk-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=13` for the AI discovery and root rescue URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543363976`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543365950`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
