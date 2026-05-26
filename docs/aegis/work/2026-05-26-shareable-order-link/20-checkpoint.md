@@ -2602,3 +2602,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it gives buyers a concrete proof-of-value sample before the $5 PayPal route without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 PayPal Note First Route Checkpoint
+
+Current todo:
+- Reduce purchase friction for ready buyers by making the PayPal note copy-ready before payment.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add a PayPal-note-first checkout packet that lets a buyer copy one non-sensitive note, pay exactly 5 USD, and use the order form only if more context is needed.
+
+Completed todos:
+- Added `PAYPAL_NOTE_FIRST.md` with copyable notes for one quiet lead, digital kit, and custom sequence.
+- Added `paypal-note-first.json` for buyer agents and crawlers.
+- Linked the PayPal-note-first route from `BUY_NOW.md`, `buy-now.json`, `README.md`, `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `llms.txt`.
+- Created public PayPal-note-first Gist `fbd0764d1575076c27eaddb55042459a`.
+- Updated the Gist contents after adding Gist metadata locally.
+- Validated local JSON/JSONL structure and marker coverage.
+- Committed and pushed product commit `7c4e442`.
+- Validated public raw GitHub route, catalog entry, and raw Gist.
+- Created release `v2.29.42`.
+- Added a public product issue #5 comment for the PayPal-note-first route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/7c4e442`.
+- PayPal note first: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md`.
+- PayPal note first JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json`.
+- PayPal note first Gist: `https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a`.
+- PayPal note first raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/fbd0764d1575076c27eaddb55042459a/raw/paypal-note-first.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.42`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544421777`.
+- Local validation passed: `paypal_note_first_gist_structured_local_ok json=4 jsonl=1`, `paypal_note_first_gist_local_markers_ok files=9 markers=7 note_files=4`.
+- Public raw validation passed: `paypal_note_first_product_raw_ok schema=softjunk-paypal-note-first-v1 markers=8`.
+- Public catalog validation passed: `paypal_note_first_catalog_raw_ok id=paypal_note_first`.
+- Public Gist validation passed: `paypal_note_first_gist_raw_ok schema=softjunk-paypal-note-first-v1 markers=8`.
+- Release validation passed: `paypal_note_first_release_ok tag=v2.29.42 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.42 markers=6`.
+- Issue comment validation passed: `paypal_note_first_issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544421777 markers=5`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the payment action shorter and clearer without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

@@ -79,6 +79,41 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 PayPal Note First Route Evidence
+
+Files changed in product repo:
+- `PAYPAL_NOTE_FIRST.md`
+- `paypal-note-first.json`
+- `BUY_NOW.md`
+- `buy-now.json`
+- `README.md`
+- `BUYER_INDEX.md`
+- `buyer-index.json`
+- `agent-buyer-catalog.jsonl`
+- `llms.txt`
+
+Public surfaces:
+- Commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/7c4e442`.
+- PayPal note first: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md`.
+- PayPal note first JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json`.
+- Gist: `https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/fbd0764d1575076c27eaddb55042459a/raw/paypal-note-first.json`.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.42`.
+- Issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544421777`.
+
+Validation:
+- `paypal_note_first_gist_structured_local_ok json=4 jsonl=1`.
+- `paypal_note_first_gist_local_markers_ok files=9 markers=7 note_files=4`.
+- `paypal_note_first_product_raw_ok schema=softjunk-paypal-note-first-v1 markers=8`.
+- `paypal_note_first_catalog_raw_ok id=paypal_note_first`.
+- `paypal_note_first_gist_raw_ok schema=softjunk-paypal-note-first-v1 markers=8`.
+- `paypal_note_first_release_ok tag=v2.29.42 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.42 markers=6`.
+- `paypal_note_first_issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544421777 markers=5`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Result-First Sample Route Evidence
 
 Files changed in product repo:
