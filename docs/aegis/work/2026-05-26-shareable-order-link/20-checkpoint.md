@@ -4118,3 +4118,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the concrete roofing checkout path to the first visible human and agent surfaces, while preserving privacy and seller-side payment verification.
 - Compatibility boundary: owned GitHub repo files/Gists/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Root Hub Roofing Discussion Checkpoint
+
+Current todo:
+- Use AI-native owned discovery rather than broad/traditional outreach: make the $5 roofing estimate rescue path explicit to buyer-agents, crawlers, and humans on the root GitHub Pages hub.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add the dedicated roofing checkout-card discussion #8 to root Pages HTML, root roofing route, root JSON/text, root agent cards, AI plugin manifest, OpenAPI discovery, and root agent instruction docs.
+- Release, deploy, validate live, submit IndexNow, publish evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Added `https://github.com/trungcodeer/softjunk-lead-kit/discussions/8` to root homepage and roofing route.
+- Added the discussion URL to `roofing.json`, `roofing.txt`, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `README.md`, `AGENTS.md`, `CODEX.md`, `CLAUDE.md`, and `GEMINI.md`.
+- Committed and pushed root commits `c1c27bc` and `c3125fb`.
+- Created root release `v-root-roofing-discussion-1`.
+- Validated raw GitHub OpenAPI and live root Pages URLs.
+- Submitted 11 root URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/c1c27bca8014764925620c480d6a33edfb7fec8a`.
+- Root OpenAPI commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/c3125fb97a7d728abd64a92391c298fb06c29727`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/v-root-roofing-discussion-1`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548822740`.
+- Root Pages run `26474821140` completed with success for `c3125fb97a7d728abd64a92391c298fb06c29727`.
+- Local JSON parse passed for `roofing.json`, `root-offer.json`, `agent-card.json`, `.well-known/softjunk-root-offer.json`, `.well-known/agent-card.json`, and `.well-known/ai-plugin.json`.
+- Local HTML checks returned `h1=1`, `skip=True`, `issue7=True`, `discussion8=True`, `paypal=True`, and `privacy=True` for `index.html` and `roofing/index.html`.
+- Live marker checks returned `status=200`, `issue7=True`, `discussion8=True`, `paypal=True`, and `gate=True` for 11 root URLs including `/`, `/roofing/`, `/roofing.json`, `/roofing.txt`, `/llms.txt`, `/root-offer.json`, both agent cards, the AI plugin manifest, and OpenAPI discovery.
+- Live JSON parse passed for `roofing.json`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, `.well-known/agent-card.json`, and `.well-known/ai-plugin.json`.
+- Raw OpenAPI validation returned `issue7=True`, `discussion8=True`, and `paypal=True`.
+- IndexNow submission returned `status=200 urls=11`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it elevates the GitHub-native checkout-card discussion into root-owned agent discovery surfaces without spam, scraping, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repo files/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

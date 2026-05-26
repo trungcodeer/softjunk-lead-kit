@@ -3135,3 +3135,14 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+## 2026-05-27 Root Hub Roofing Discussion Evidence
+
+- Root commit `c1c27bc`: `https://github.com/trungcodeer/trungcodeer.github.io/commit/c1c27bca8014764925620c480d6a33edfb7fec8a`.
+- Root OpenAPI commit `c3125fb`: `https://github.com/trungcodeer/trungcodeer.github.io/commit/c3125fb97a7d728abd64a92391c298fb06c29727`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/v-root-roofing-discussion-1`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548822740`.
+- Root Pages run `26474821140` completed with success.
+- Local validation: JSON parse passed for root JSON/plugin/agent-card surfaces; root and roofing HTML each had one H1, skip link, issue #7, Discussion #8, PayPal URL, and privacy marker.
+- Live validation with `?v=c3125fb`: 11 root URLs returned `status=200`, `issue7=True`, `discussion8=True`, `paypal=True`, and `gate=True`.
+- IndexNow accepted 11 root URLs with `status=200`.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
