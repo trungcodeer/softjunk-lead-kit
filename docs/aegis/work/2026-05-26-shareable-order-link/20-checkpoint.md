@@ -2201,3 +2201,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the root GitHub repo's visible buyer surfaces toward the shortest PayPal route without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: root/product GitHub repos, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Profile GitHub-Native Buyer Packet Route Checkpoint
+
+Current todo:
+- Keep profile/root/product GitHub-native surfaces, one-message packet, issue #1/#5, Funding, repo homepage, RawGitHack, and Gist as active buyer routes.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Route the GitHub profile repo buyer surfaces to the one-message buyer packet and public Agent Close issue so buyers can reach PayPal from the profile.
+
+Completed todos:
+- Audited profile `README.md`, `.github/FUNDING.yml`, and profile repo metadata.
+- Updated profile README buyer shortcut to start with the one-message buyer packet, issue #5, Agent Close fallback, root rescue, exact PayPal URL, and order form.
+- Updated profile Funding links to prioritize issue #5, one-message packet, Agent Close fallback, root rescue, and exact PayPal.
+- Added profile `.github/SUPPORT.md`.
+- Added profile `.github/ISSUE_TEMPLATE/config.yml` contact links.
+- Updated profile repo homepage metadata to issue #5 and description to mention the buyer packet and PayPal checkout.
+- Validated profile YAML, marker coverage, raw GitHub files, and repo metadata.
+- Committed and pushed profile commit `25a8adf`.
+- Created profile release `profile-one-message-buyer-packet-v1`.
+- Commented product issue #5 with the profile route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Profile commit: `https://github.com/trungcodeer/trungcodeer/commit/25a8adf`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-one-message-buyer-packet-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543959331`.
+- Profile raw validation passed: `profile_github_native_raw_ok files=4 checks=20 commit=25a8adf`.
+- Profile repo metadata homepage is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Profile repo description is `Public profile buyer route for SoftJunk 5 USD one-lead rescue, buyer-agent packet, and PayPal checkout`.
+- Product latest Pages build for `c0898f099651086a5505160ae8a5d6ca1f3e0019` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages build infrastructure remains unreliable for new routes, so GitHub-native issue, one-message packet, RawGitHack, and Gist fallbacks remain the active route.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the GitHub profile's visible buyer surfaces toward the shortest PayPal route without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: profile/root/product GitHub repos, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
