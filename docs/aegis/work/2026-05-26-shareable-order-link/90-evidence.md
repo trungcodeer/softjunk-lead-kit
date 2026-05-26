@@ -79,6 +79,51 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub-Native Buy Now Route Evidence
+
+Files changed in product repo:
+- `BUY_NOW.md`
+- `buy-now.json`
+- `README.md`
+- `ONE_MESSAGE_BUYER_PACKET.md`
+- `BUYER_INDEX.md`
+- `.github/SUPPORT.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+- `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`
+- `buyer-index.json`
+- `agent-buyer-catalog.jsonl`
+- `llms.txt`
+- `offers.json`
+- `product-feed.json`
+- `agent-offer.json`
+- `.well-known/softjunk-offer.json`
+- `.github/FUNDING.yml`
+
+Commits and public surfaces:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/ec87442`.
+- Funding commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/2c89a2c`.
+- Buy Now packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Raw Buy Now JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.39`.
+- Product discussion #6 Buy Now comment: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17061875`.
+- Product repo homepage now points to `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Product repo description is `SoftJunk $5 one-lead rescue Buy Now route, PayPal checkout, and quiet-lead follow-up templates`.
+
+Validation:
+- `structured_validation_ok json=6 jsonl=1 yaml=2`.
+- `buy_now_local_markers_ok files=15 markers=6`.
+- `buy_now_raw_github_ok schema=softjunk-buy-now-v1 markers=6`.
+- `buy_now_release_ok tag=v2.29.39 target=main url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.39 markers=6`.
+- `buy_now_pinned_issue_bodies_ok issues=1,5 markers=6`.
+- `repo_buy_now_metadata_ok homepage=https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- `funding_buy_now_raw_ok markers=4`.
+- `discussion_buy_now_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17061875 markers=6`.
+- PayPal URL probe reached final HTTP `200` after redirects to `https://www.paypal.com/paypalme/softjunk/5USD`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Discussion Announcement Checkout Route Evidence
 
 GitHub Discussions:

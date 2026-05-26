@@ -2395,3 +2395,60 @@ DriftCheckDraft:
 - Current slice fit: yes, a repo Discussion announcement is an owned public distribution surface and does not involve spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: product GitHub repo, public GitHub discussions/issues/releases, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub-Native Buy Now Route Checkpoint
+
+Current todo:
+- Keep the shortest public route to the 5 USD PayPal checkout available without depending on GitHub Pages.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add a GitHub-native `BUY_NOW.md` and `buy-now.json` route, wire it into buyer-facing and machine-readable discovery surfaces, publish it through pinned issues, Funding, repo metadata, release, and discussion.
+
+Completed todos:
+- Added `BUY_NOW.md` as the shortest human-readable buy-now packet.
+- Added `buy-now.json` as a raw-GitHub-friendly machine-readable route.
+- Updated README, one-message buyer packet, buyer index markdown, Support, issue template contacts, one-lead rescue order form, buyer index JSON, agent buyer catalog JSONL, LLM text, offers, product feed, agent offer, and well-known offer metadata to put the Buy Now route first.
+- Committed and pushed product commit `ec87442`.
+- Updated `.github/FUNDING.yml` to prioritize Buy Now, issue #1, issue #5, and PayPal.
+- Updated product repo homepage to `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md` and fixed the repo description to include `$5`.
+- Committed and pushed funding commit `2c89a2c`.
+- Updated pinned issue #1 and #5 bodies with the Buy Now packet, raw JSON, pinned routes, PayPal URL, and verification gate.
+- Created release `v2.29.39` titled `GitHub-native $5 Buy Now route`.
+- Added a Buy Now update comment to discussion #6.
+- Validated local JSON, JSONL, and YAML structure.
+- Validated local marker coverage across 15 files.
+- Validated public raw GitHub `BUY_NOW.md` and `buy-now.json`.
+- Validated release, pinned issue bodies, discussion comment, funding raw content, and repo metadata.
+- Probed the PayPal.Me URL and confirmed it redirects to PayPal with final HTTP 200.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Buy Now commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/ec87442`.
+- Funding commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/2c89a2c`.
+- Buy Now packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Raw Buy Now JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.39`.
+- Discussion #6 Buy Now comment: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17061875`.
+- Local structure validation passed: `structured_validation_ok json=6 jsonl=1 yaml=2`.
+- Local marker validation passed: `buy_now_local_markers_ok files=15 markers=6`.
+- Public raw validation passed: `buy_now_raw_github_ok schema=softjunk-buy-now-v1 markers=6`.
+- Release validation passed: `buy_now_release_ok tag=v2.29.39 target=main url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.39 markers=6`.
+- Pinned issue body validation passed: `buy_now_pinned_issue_bodies_ok issues=1,5 markers=6`.
+- Repo metadata validation passed: `repo_buy_now_metadata_ok homepage=https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Funding validation passed: `funding_buy_now_raw_ok markers=4`.
+- Discussion comment validation passed: `discussion_buy_now_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17061875 markers=6`.
+- PayPal URL probe reached final HTTP `200` after redirects to `https://www.paypal.com/paypalme/softjunk/5USD`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the shortest owned public checkout path and validates the PayPal URL without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: product GitHub repo, public GitHub issues/releases/discussions/Funding/repo metadata, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
