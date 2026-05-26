@@ -6,6 +6,39 @@ info:
 servers:
   - url: https://trungcodeer.github.io/softjunk-lead-kit
 paths:
+  /buyer-agent-relay.html:
+    get:
+      operationId: openBuyerAgentRelay
+      summary: Open the SoftJunk buyer-agent prompt relay page.
+      responses:
+        "200":
+          description: Copy-ready relay prompt that qualifies fit, routes to the commerce graph, checkout note builder, exact PayPal URL, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /buyer-agent-relay.json:
+    get:
+      operationId: getBuyerAgentRelayJson
+      summary: Get the SoftJunk buyer-agent relay JSON.
+      responses:
+        "200":
+          description: Machine-readable prompt relay with fit rules, route steps, PayPal URL, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /buyer-agent-relay.txt:
+    get:
+      operationId: getBuyerAgentRelayText
+      summary: Get the SoftJunk buyer-agent relay text.
+      responses:
+        "200":
+          description: Plain-text copy-ready prompt for routing a relevant lead follow-up buyer to the exact 5 USD PayPal checkout.
+          content:
+            text/plain:
+              schema:
+                type: string
   /commerce-graph.html:
     get:
       operationId: openCommerceGraph

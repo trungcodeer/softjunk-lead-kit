@@ -64,6 +64,16 @@
   },
   "free_tools": [
     {
+      "name": "Buyer-Agent Prompt Relay",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
+      "delivery": "Copy-ready prompt and route packet for assistants qualifying a lead follow-up buyer before the 5 USD PayPal checkout",
+      "gist_url": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
+      "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
+      "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
+    },
+    {
       "name": "Commerce Graph",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",
@@ -286,7 +296,13 @@
     "share_kit": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",
     "share_kit_json": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
-    "rss_feed": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml"
+    "rss_feed": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
+    "buyer_agent_relay": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",
+    "buyer_agent_relay_json": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json",
+    "buyer_agent_relay_text": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
+    "buyer_agent_relay_gist": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
+    "gist_raw_buyer_agent_relay_json": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
+    "gist_raw_buyer_agent_relay_text": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
   },
   "best_fit": [
     "HVAC companies",
@@ -308,5 +324,11 @@
   "commerce_graph_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt",
   "commerce_graph_gist_url": "https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db",
   "gist_raw_commerce_graph_json_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json",
-  "gist_raw_commerce_graph_text_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt"
+  "gist_raw_commerce_graph_text_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt",
+  "buyer_agent_relay_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",
+  "buyer_agent_relay_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json",
+  "buyer_agent_relay_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
+  "buyer_agent_relay_gist_url": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
+  "gist_raw_buyer_agent_relay_json_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
+  "gist_raw_buyer_agent_relay_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
 }

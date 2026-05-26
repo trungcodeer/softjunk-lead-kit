@@ -3,6 +3,9 @@ Allow: /
 Allow: /llms.txt
 Allow: /feed.xml
 Allow: /buyer-index.json
+Allow: /buyer-agent-relay.txt
+Allow: /buyer-agent-relay.json
+Allow: /buyer-agent-relay.html
 Allow: /commerce-graph.txt
 Allow: /commerce-graph.json
 Allow: /commerce-graph.html

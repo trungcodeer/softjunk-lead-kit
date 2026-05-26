@@ -149,6 +149,24 @@ https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 Custom sequence gallery text:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
 
+Buyer-agent prompt relay:
+https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html
+
+Buyer-agent relay JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json
+
+Buyer-agent relay text:
+https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt
+
+Public buyer-agent relay Gist:
+https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950
+
+Raw buyer-agent relay JSON:
+https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json
+
+Raw buyer-agent relay text:
+https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt
+
 Commerce graph:
 https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html
 
@@ -354,6 +372,7 @@ PayPal notes:
 - Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.
 - Agent buyer catalog JSONL: use https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl for retrieval-friendly records covering fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers.
+- Buyer-agent prompt relay: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json or public Gist https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950 when an assistant needs one prompt to qualify fit, inspect the commerce graph, generate a PayPal note, and route a ready buyer to the 5 USD checkout.
 - Commerce graph: use https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json when a buyer-agent needs Product, Offer, BuyAction, checkout, PayPal, and verification nodes before payment.
 - AI checkout: use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready to generate a PayPal note inline, pay exactly $5, and open the after-payment handoff.
 

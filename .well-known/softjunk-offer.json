@@ -141,5 +141,11 @@
   "commerce_graph_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt",
   "commerce_graph_gist_url": "https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db",
   "gist_raw_commerce_graph_json_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json",
-  "gist_raw_commerce_graph_text_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt"
+  "gist_raw_commerce_graph_text_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt",
+  "buyer_agent_relay_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",
+  "buyer_agent_relay_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json",
+  "buyer_agent_relay_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
+  "buyer_agent_relay_gist_url": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
+  "gist_raw_buyer_agent_relay_json_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
+  "gist_raw_buyer_agent_relay_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
 }
