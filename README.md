@@ -13,6 +13,9 @@ Start here if you have one real quiet lead:
 3. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
 4. After payment, use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
+Public GitHub buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
+
 PayPal notes:
 
 - Digital kit: `Lead Follow-Up Kit`
