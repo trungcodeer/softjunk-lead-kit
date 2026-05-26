@@ -12,14 +12,16 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 Start here if you have one real quiet lead:
 
 1. Open the GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
-2. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-3. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-4. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-5. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-6. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-7. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-8. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-9. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+2. AI/coding agent instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
+3. Agent checkout JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
+4. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+5. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+6. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+7. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+8. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+9. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+10. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+11. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
@@ -29,6 +31,15 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 
 Buy Now JSON:
 https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+
+AI/coding agent instructions:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
+
+Agent checkout JSON:
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
+
+Agent checkout Gist:
+https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 
 Sponsor button buy route:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
@@ -83,6 +94,9 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 - Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- AI/coding agent instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
+- Agent checkout JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
+- Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
 - Sponsor button buy JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
 - Sponsor button buy Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
@@ -278,6 +292,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 - Raw Gist payment intent JSON: https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json
 - GitHub-readable buyer index: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md
+- AI/coding agent instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
+- Agent checkout JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
+- Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - GitHub profile offer: https://github.com/trungcodeer/trungcodeer
 - GitHub profile microsite: https://trungcodeer.github.io/trungcodeer/
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/

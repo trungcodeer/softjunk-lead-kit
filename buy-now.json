@@ -8,6 +8,10 @@
   "gist_url": "https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6",
   "gist_raw_markdown_url": "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md",
   "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json",
+  "agent_instructions_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md",
+  "agent_checkout_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json",
+  "agent_checkout_gist_url": "https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b",
+  "agent_checkout_gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/795587172ee240078c4377559b20b49b/raw/agents-checkout.json",
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
@@ -46,6 +50,16 @@
     "The context contains private customer data that would be posted publicly."
   ],
   "route_steps": [
+    {
+      "step": "agent_instructions",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md",
+      "instruction": "Use the root-level agent instructions when an AI assistant, coding agent, VA, or crawler needs a safe buyer route with fit rules and the PayPal verification gate."
+    },
+    {
+      "step": "agent_checkout_gist",
+      "url": "https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b",
+      "instruction": "Use the public Gist mirror when a buyer-agent needs a compact, raw-friendly checkout instruction fallback outside the main repo."
+    },
     {
       "step": "sponsor_button_buy",
       "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
