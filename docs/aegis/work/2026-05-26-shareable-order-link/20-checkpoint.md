@@ -467,3 +467,51 @@ DriftCheckDraft:
 - Current slice fit: yes, it adds a GitHub-native public buyer path inside the owned product repo without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: GitHub Discussions, GitHub default branch, public releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Product Homepage Buyer Shortcut Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Improve the product homepage first screen so mobile and desktop visitors see AI Deal Desk, exact 5 USD PayPal payment, after-payment handoff, public buyer discussion, and the verification gate before the longer tool list.
+
+Completed todos:
+- Audited live root, product, and profile homepages with content checks and screenshots.
+- Identified product homepage as the weakest first-screen conversion surface: PayPal was present but less prominent, and `PAYPAL_PAYMENT_VERIFIED=true` was not visible in first-screen copy.
+- Updated product homepage title/meta to `SoftJunk AI Deal Desk - $5 Lead Follow-Up Kit`.
+- Replaced the long product hero button list with focused buyer actions: AI Deal Desk, Pay $5 on PayPal, after-payment handoff, GitHub buyer discussion, recovery audit, custom preview, and inside view.
+- Simplified the product top nav so mobile visitors see key buyer routes sooner.
+- Added first-screen note with digital/custom PayPal note rules and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validated local HTML text, inline JavaScript, desktop screenshot, and mobile screenshot.
+- Committed and pushed product change `ca09fbb`.
+- Created release `v2.29.10`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified live HTML and Chrome DOM expose title, AI Deal Desk, Pay $5 on PayPal, GitHub buyer discussion, discussion #4, and the verification gate.
+- Captured live desktop/mobile screenshots showing the revised first screen.
+- Submitted 3 host-valid URLs to IndexNow successfully after a mixed-host payload was rejected.
+- Commented public issues #2 and #3 with the homepage shortcut update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Live product homepage returned HTTP 200 and contained `SoftJunk AI Deal Desk - $5 Lead Follow-Up Kit`, `Open AI Deal Desk`, `Pay $5 on PayPal`, `GitHub buyer discussion`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live Chrome DOM confirmed the same buyer actions and discussion #4 URL.
+- Live mobile screenshot showed `Open AI Deal Desk` and `Pay $5 on PayPal` in the first viewport.
+- Live desktop screenshot showed the focused buyer actions and shorter nav.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.10`.
+- IndexNow retry returned `status=200 urls=3`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539222817` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539222844`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the primary owned homepage conversion path without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

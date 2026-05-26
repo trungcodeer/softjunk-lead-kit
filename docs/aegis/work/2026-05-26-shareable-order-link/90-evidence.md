@@ -79,6 +79,43 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Product Homepage Buyer Shortcut Evidence
+
+Baseline:
+- Live root homepage returned HTTP 200 and PayPal was present; screenshot showed AI deal desk as a button but not uppercase text in the content check.
+- Live product homepage returned HTTP 200 and PayPal was present; screenshot showed a long hero action list with `Pay $5` below several other tool actions and no first-screen `PAYPAL_PAYMENT_VERIFIED=true` copy.
+- Live profile homepage returned HTTP 200 and contained AI Deal Desk, PayPal, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Local validation:
+- Product `index.html` updated title/meta to `SoftJunk AI Deal Desk - $5 Lead Follow-Up Kit`.
+- Hero copy now says to open the AI Deal Desk, generate the PayPal note, then pay exactly $5.
+- Hero actions now prioritize `Open AI Deal Desk`, `Pay $5 on PayPal`, `After-payment handoff`, and `GitHub buyer discussion`.
+- First-screen note now states digital/custom PayPal note rules and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Top navigation was simplified to buyer-critical routes.
+- `git diff --check` returned only Windows line-ending warnings and no whitespace errors.
+- Inline script parse returned `script_check_ok`.
+- Local Chrome DOM emitted SoftJunk AI Deal Desk, Open AI Deal Desk, Pay $5 on PayPal, GitHub buyer discussion, discussion #4, and the verification gate.
+- Local desktop/mobile screenshots showed the buyer path in the first screen and no mobile overflow.
+
+Public deploy validation:
+- Product commit: `ca09fbb` in `https://github.com/trungcodeer/softjunk-lead-kit`.
+- GitHub Pages deployment completed successfully.
+- Live product homepage returned HTTP 200 and contained `SoftJunk AI Deal Desk - $5 Lead Follow-Up Kit`, `Open AI Deal Desk`, `Pay $5 on PayPal`, `GitHub buyer discussion`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live Chrome DOM confirmed the same buyer actions and discussion #4 URL.
+- Live mobile screenshot showed `Open AI Deal Desk` and `Pay $5 on PayPal` in the first viewport.
+- Live desktop screenshot showed the focused buyer actions and shorter nav.
+
+Release and discovery:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.10`.
+- Initial IndexNow payload with GitHub URLs under `trungcodeer.github.io` was rejected with HTTP 422.
+- Host-correct IndexNow retry returned `status=200 urls=3`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539222817`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539222844`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 GitHub Discussion Buyer Path Evidence
 
 Pre-check:
