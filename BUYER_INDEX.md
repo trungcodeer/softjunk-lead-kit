@@ -7,6 +7,10 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
+- AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+- Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+- One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - One quiet lead builder: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
@@ -24,9 +28,9 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Weak message to rewrite: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Direct follow-up answer: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
-- Custom 7-day sequence: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
-- Ready to pay: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
-- Exact PayPal payment: https://paypal.me/softjunk/5USD
+- Custom 7-day sequence note builder: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- Ready to pay after copying note: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+- Exact PayPal payment after rescue note: https://paypal.me/softjunk/5USD
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
@@ -47,9 +51,9 @@ For the digital kit, pay $5 here and use PayPal note `Lead Follow-Up Kit`:
 
 https://paypal.me/softjunk/5USD
 
-For a custom sequence, create a shareable order link, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
+For a custom sequence, open the root rescue route first. If an assistant has enough non-sensitive context, generate the agent order note, pay exactly $5, and paste the generated note into PayPal:
 
-https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
 If the buyer wants tailored copy before paying, create a free custom sequence preview first:
 
@@ -59,11 +63,11 @@ If the buyer wants a ready example, open the scenario gallery first:
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 
-If non-sensitive lead context is already available, open the AI Deal Desk to generate a buyer decision, PayPal note, custom preview route, and shareable order link:
+If non-sensitive lead context is already available, open the AI Deal Desk after the root rescue route to generate a buyer decision, PayPal note, custom preview route, and shareable order link:
 
 https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 
-If an AI assistant, VA, crawler, or buyer needs the compact commerce contract before routing to PayPal, open:
+If an AI assistant, VA, crawler, or buyer needs the compact commerce contract before routing to PayPal, open the rescue-first commerce contract:
 
 https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 
@@ -71,12 +75,20 @@ If the non-sensitive order context is already known, create a shareable order li
 
 https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 
+After payment, submit the one-lead rescue order form:
+
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
 ## Machine-Readable Index
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
+- AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+- Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+- One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json

@@ -6,6 +6,8 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
+- AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 - Short PayPal route: https://trungcodeer.github.io/paypal/
@@ -26,7 +28,8 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 - One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - Digital kit note: `Lead Follow-Up Kit`
 - AI Deal Desk note builder: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-- Legacy agent-order note builder: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- Agent order note builder: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 - Order forms: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 

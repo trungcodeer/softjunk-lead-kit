@@ -3,21 +3,24 @@ contact_links:
   - name: Root one-lead rescue route
     url: https://trungcodeer.github.io/rescue/
     about: Shortest route from one quiet lead to generated reply, exact 5 USD PayPal payment, order form, and verification gate.
+  - name: AI agent order rescue path
+    url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+    about: Build a rescue-first PayPal note after opening the root one-lead route.
   - name: Fix one quiet lead
     url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
     about: Generate one stronger reply, PayPal note, shareable rescue link, and exact 5 USD PayPal handoff.
   - name: AI Deal Desk
     url: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-    about: Generate a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
+    about: Use after the root rescue route to generate a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
   - name: Public buyer discussion
     url: https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
     about: GitHub-native buyer path with AI Deal Desk, PayPal note, exact 5 USD PayPal route, and verification gate.
   - name: Pay $5 on PayPal
     url: https://trungcodeer.github.io/paypal/
-    about: Short route with the exact 5 USD PayPal.Me link, QR fallback, and payment verification rule.
+    about: Use after copying the rescue PayPal note; includes the exact 5 USD PayPal.Me link, QR fallback, and payment verification rule.
   - name: Direct PayPal.Me link
     url: https://paypal.me/softjunk/5USD
-    about: Direct payment URL for the exact SoftJunk 5 USD offer.
+    about: Direct payment URL for the exact SoftJunk 5 USD offer after the buyer has the rescue note.
   - name: Payment intent Gist
     url: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
     about: Public GitHub-native payment intent with exact amount, PayPal URL, buyer routes, and verification gate.
@@ -29,7 +32,7 @@ contact_links:
     about: Copy the correct PayPal note, open the $5 PayPal link, and review the after-payment handoff.
   - name: Create custom PayPal note
     url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-    about: Build the short PayPal note for a custom 7-day follow-up sequence before paying.
+    about: Start with the root rescue route, then build the short PayPal note for a custom 7-day follow-up sequence before paying.
   - name: Public order board
     url: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
     about: Public buyer handoff. Do not post private payment or customer details.

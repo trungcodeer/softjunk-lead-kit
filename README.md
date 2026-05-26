@@ -9,10 +9,11 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 Start here if you have one real quiet lead:
 
 1. Open the root one-lead rescue route: https://trungcodeer.github.io/rescue/
-2. If more context is needed, open the AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-3. Generate the PayPal note for the one-lead rescue, digital kit, or custom 7-day sequence.
-4. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
-5. After payment, use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+2. If an assistant or buyer agent needs a compact handoff, open the agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+3. If more context is needed, open the AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+4. Generate the PayPal note for the one-lead rescue, digital kit, or custom 7-day sequence.
+5. Pay exactly 5 USD after the note is ready: https://paypal.me/softjunk/5USD
+6. After payment, submit the one-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml or use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
 Public GitHub buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
@@ -28,11 +29,15 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 
 ![PayPal QR code for the $5 SoftJunk checkout](paypal-qr.svg)
 
-- Pay $5 on PayPal: https://paypal.me/softjunk/5USD
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
 - Root buyer hub: https://trungcodeer.github.io/
+- AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+- AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+- Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
+- One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+- Pay $5 on PayPal after copying the rescue note: https://paypal.me/softjunk/5USD
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
@@ -77,15 +82,13 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 - Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
 - PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
-- AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
-- One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
-Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For a custom sequence, open the free generator or AI agent order path and copy the generated PayPal note before paying.
+Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For one quiet lead, start at the root rescue route. For a custom sequence, use the AI agent order path or AI Deal Desk to copy the generated PayPal note before paying.
 
 ## What You Get
 

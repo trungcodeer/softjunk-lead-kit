@@ -8,8 +8,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        Pay first, then submit this form.
+        Start with the root rescue route or AI agent order path, pay after copying the generated note, then submit this form.
 
+        Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+        Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
+        AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+        Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
         Payment URL: https://paypal.me/softjunk/5USD
         Short PayPal route: https://trungcodeer.github.io/paypal/
         Payment intent: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
@@ -20,7 +24,7 @@ body:
     id: paypal-note
     attributes:
       label: PayPal note or transaction note
-      description: Paste the note you used in PayPal. If you used the agent order path, paste that note here.
+      description: Paste the rescue-first note you used in PayPal. If you used the agent order path, paste that note here.
       placeholder: "Custom Follow-Up | Business: HVAC company | Service: AC repair | Source: Website form | Tone: Professional | Concern: price | Next: schedule a service visit"
     validations:
       required: true
@@ -91,7 +95,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD or https://trungcodeer.github.io/paypal/ and understand fulfillment starts after the seller can see the PayPal payment.
+        - label: I started from https://trungcodeer.github.io/rescue/ or the AI agent order path, paid exactly $5 at https://paypal.me/softjunk/5USD or https://trungcodeer.github.io/paypal/, and understand fulfillment starts after the seller can see the PayPal payment.
           required: true
         - label: I did not include private customer, patient, or client data.
           required: true
