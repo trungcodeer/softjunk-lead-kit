@@ -79,6 +79,35 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Roofing Catalog Order Form Alignment Evidence
+
+Artifact changed:
+- `agent-buyer-catalog.jsonl`.
+
+Public routes:
+- Catalog: `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl`.
+- Dedicated roofing order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml`.
+- PayPal checkout: `https://paypal.me/softjunk/5USD`.
+
+Commit, release, and issue evidence:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/92496e6`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.61`.
+- Public product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547680595`.
+
+Validation:
+- Local JSONL parse passed with `lines=36`.
+- Catalog meta now has `updated=2026-05-27`.
+- Catalog meta exposes `roofing_estimate_order_form_url=https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml`.
+- Roofing-specific records checked with `roofing_generic_order_refs=0`.
+- Public raw GitHub catalog passed with `lines=36 roofing_records=4`.
+- Public Pages catalog passed with `lines=36 roofing_records=4`.
+- Release validation passed for `v2.29.61`.
+- IndexNow accepted 5 updated/discovery URLs with `status=200`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Dedicated Roofing Order Form Evidence
 
 Artifacts:
