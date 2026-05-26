@@ -1241,3 +1241,40 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Buyer-Agent Relay Rescue-First Evidence
+
+Local validation:
+- JSON parse passed for `buyer-agent-relay.json`.
+- HTML JSON-LD parse passed for `buyer-agent-relay.html`.
+- Marker validation confirmed `https://trungcodeer.github.io/rescue/`, `https://trungcodeer.github.io/rescue.json`, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and `one-lead-rescue-order.yml` in the HTML, JSON, and text artifacts.
+- Chrome headless `--dump-dom` on local `buyer-agent-relay.html` emitted one-lead rescue copy, root rescue URL, PayPal URL, order form, and verification gate.
+- Product `git diff --check` returned no whitespace errors.
+
+Files changed in product repo:
+- `buyer-agent-relay.html`
+- `buyer-agent-relay.json`
+- `buyer-agent-relay.txt`
+
+Commit, release, and deploy:
+- Product commit: `f6d6ffc Route buyer agent relay to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.29`.
+- Product GitHub Pages run `26444012400` completed with success.
+
+Public Gist updates:
+- Buyer-agent relay Gist `9d5583f2a5ded7d6757fda9f4828b950` updated for `buyer-agent-relay.json` and `buyer-agent-relay.txt`.
+
+Live/raw/Gist validation:
+- `buyer_agent_relay_live_raw_gist_ok checks=7`.
+- Validated live GitHub Pages HTML/JSON/TXT for the buyer-agent relay.
+- Validated raw GitHub JSON/TXT for the buyer-agent relay.
+- Validated raw buyer-agent relay Gist JSON/TXT.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=6` for the buyer-agent relay and root rescue URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542830570`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542833068`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

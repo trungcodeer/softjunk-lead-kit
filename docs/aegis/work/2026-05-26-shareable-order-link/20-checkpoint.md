@@ -1653,3 +1653,50 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the interactive AI-native handoff used to generate buyer-specific PayPal notes and routes qualified buyers to the one-lead rescue flow before direct PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Buyer-Agent Relay Rescue-First Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert the copy-ready buyer-agent prompt relay from checkout/direct-pay first to root one-lead-rescue first.
+
+Completed todos:
+- Rechecked all worktrees and PayPal verifier status before the slice.
+- Audited `buyer-agent-relay.html`, `buyer-agent-relay.json`, `buyer-agent-relay.txt`, and the public buyer-agent relay Gist file list.
+- Updated HTML metadata, alternate links, structured data copy, navigation, hero actions, relay steps, copyable prompt, and route cards to prioritize `https://trungcodeer.github.io/rescue/`.
+- Updated JSON schema version, root rescue fields, order form field, copyable prompt, `fastest_buyer_path`, and relay steps.
+- Updated text distribution with root rescue, rescue JSON, order form, and rescue-first prompt language before PayPal.
+- Validated JSON parse, HTML JSON-LD parse, marker coverage, Chrome headless local DOM, and whitespace locally.
+- Committed and pushed product change `f6d6ffc`.
+- Updated the public buyer-agent relay Gist JSON and text files.
+- Created product release `v2.29.29`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated live GitHub Pages HTML/JSON/TXT, raw GitHub JSON/TXT, and raw Gist JSON/TXT.
+- Submitted 6 buyer-agent relay and rescue URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the buyer-agent relay rescue-first update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/f6d6ffc`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.29`.
+- Product Pages run: `26444012400`, success.
+- Public buyer-agent relay Gist: `https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950`.
+- Live/raw/Gist validation passed: `buyer_agent_relay_live_raw_gist_ok checks=7`.
+- IndexNow returned `status=200 urls=6`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542830570` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542833068`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a copy-ready buyer-agent prompt and Gist route by making qualified assistants open the one-lead rescue flow before direct PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
