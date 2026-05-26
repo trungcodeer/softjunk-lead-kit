@@ -18,6 +18,7 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 - Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
 - Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
 - Public buyer route: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+- One-message buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 
 ## Machine-Readable Payment Intent
 

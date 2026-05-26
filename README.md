@@ -18,6 +18,9 @@ Start here if you have one real quiet lead:
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 
+One-message buyer packet:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
+
 PayPal notes:
 
 - Digital kit: `Lead Follow-Up Kit`

@@ -14,6 +14,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
 - Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
 - Agent close public issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+- One-message buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
@@ -62,6 +63,10 @@ If GitHub Pages is still rebuilding, use the immutable rendered fallback:
 
 https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html
 
+For a single copy-ready buyer-agent packet, open:
+
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
+
 For the digital kit, pay $5 here and use PayPal note `Lead Follow-Up Kit`:
 
 https://paypal.me/softjunk/5USD
@@ -107,6 +112,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
 - Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
 - Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
 - Agent close public issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+- One-message buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
