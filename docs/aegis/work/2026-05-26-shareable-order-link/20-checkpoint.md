@@ -1178,3 +1178,54 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a non-traditional AI-ingestible one-lead rescue and checkout surface without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 One-Lead Rescue Order Form Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Reduce post-payment friction by adding a GitHub-native issue form specifically for the one-lead rescue offer and wiring it into the builder, after-payment handoff, funding links, root hub, and machine-readable metadata.
+
+Completed todos:
+- Rechecked current product/root worktree state and PayPal verifier status.
+- Added `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml` with one-lead fields, privacy guardrails, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` fulfillment gate.
+- Added the one-lead builder to product and root `.github/FUNDING.yml` custom links.
+- Wired the new order form into product issue template config, support docs, `fix-one-quiet-lead.html`, `after-pay.html`, README, `llms.txt`, buyer index, product feed, offers, well-known offer, agent buyer packet, JSONL catalog, and `fix-one-quiet-lead.json`/`.txt`.
+- Wired the new order form into root page, `/ai/`, root offer JSON, root AI JSON, well-known root offer, root AI plugin manifest, root README, and root `llms.txt`.
+- Updated the Fix One Quiet Lead Gist JSON/TXT mirror.
+- Validated product/root JSON, product JSONL, YAML issue/funding files, local Chrome DOM, raw GitHub issue template/funding files, Gist mirror, whitespace, and live Pages endpoints.
+- Committed and pushed product change `1c056a9`.
+- Created product release `v2.29.23`.
+- Committed and pushed root change `a50d537`.
+- Created root release `root-one-lead-order-form-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Submitted 18 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the one-lead order form route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/1c056a9`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.23`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/a50d537`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-lead-order-form-v1`.
+- One-lead order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml`.
+- Raw issue template: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`.
+- GitHub Pages runs: product `26437479661`, root `26437479393`, both success.
+- Live validation passed for 21 product/root/raw GitHub URLs plus 5 raw issue/funding/Gist URLs.
+- IndexNow returned `status=200 urls=18`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541446303` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541446306`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the owned GitHub-native payment/fulfillment path without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, GitHub issue templates/funding, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

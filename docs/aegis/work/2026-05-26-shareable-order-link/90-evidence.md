@@ -111,6 +111,45 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 One-Lead Rescue Order Form Evidence
+
+Local validation:
+- Product JSON validation passed for `fix-one-quiet-lead.json`, buyer index, product feed, offers, well-known offer, and agent buyer packet.
+- Product JSONL validation passed for `agent-buyer-catalog.jsonl` and confirmed an `order_form_url` containing `one-lead-rescue-order.yml`.
+- Product YAML validation passed for issue template config, custom sequence order form, digital kit order form, one-lead rescue order form, and product funding file using PyYAML.
+- Root YAML validation passed for root funding file using PyYAML.
+- Root JSON validation passed for root offer, root AI JSON, well-known root offer, and root AI plugin manifest.
+- Chrome headless local DOM validation passed for product `fix-one-quiet-lead.html`, product `after-pay.html`, root `index.html`, and root `/ai/`, confirming the one-lead order form URL, PayPal URL, and verification gate.
+- Gist validation through `gh gist view --raw` confirmed the Fix One Quiet Lead JSON/TXT mirror contains the one-lead order form URL, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product and root `git diff --check` passed with line-ending warnings only.
+
+Files added:
+- `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`
+
+Commits and releases:
+- Product commit `1c056a9`: `Add one-lead rescue order form`.
+- Product release `v2.29.23`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.23`.
+- Root commit `a50d537`: `Expose one-lead order form from root`.
+- Root release `root-one-lead-order-form-v1`: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-lead-order-form-v1`.
+
+Public deploy validation:
+- Product Pages run `26437479661` completed successfully for commit `1c056a9`.
+- Root Pages run `26437479393` completed successfully for commit `a50d537`.
+- Live product/root validation covered builder HTML/JSON/TXT, after-payment handoff, buyer index, product feed, offers, well-known offer, agent buyer packet, JSONL catalog, product `llms.txt`, root page, root `/ai/`, root offer JSON, root AI JSON, root `llms.txt`, root well-known offer, and root AI plugin manifest.
+- Raw GitHub validation covered product issue form, product funding, and root funding files.
+- Raw Gist validation covered Fix One Quiet Lead JSON/TXT mirror.
+
+Public distribution:
+- One-lead order form URL: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml`.
+- Raw issue template: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`.
+- IndexNow returned `status=200 urls=18`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541446303`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541446306`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Fix One Quiet Lead Evidence
 
 Local validation:
