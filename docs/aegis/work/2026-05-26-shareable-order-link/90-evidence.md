@@ -2749,3 +2749,44 @@ Payment gate:
 - Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544540756`.
 - Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
 - Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-27 Root Roofing Short Route Evidence
+
+Local validation:
+- Parsed `roofing.json`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, `.well-known/agent-card.json`, and `.well-known/ai-plugin.json`.
+- Parsed `roofing/index.html` JSON-LD and confirmed one H1, skip link, image alt, PayPal URL, roofing generator URL, root JSON URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed `sitemap.xml`.
+- Parsed `.well-known/openapi.yaml`.
+- Root `git diff --check` returned no whitespace errors.
+
+Files changed in root repo:
+- `roofing/index.html`
+- `roofing.json`
+- `roofing.txt`
+- `README.md`
+- `llms.txt`
+- `root-offer.json`
+- `.well-known/softjunk-root-offer.json`
+- `.well-known/openapi.yaml`
+- `.well-known/ai-plugin.json`
+- `agent-card.json`
+- `.well-known/agent-card.json`
+- `sitemap.xml`
+
+Commit, release, and deploy:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/055b02b`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-short-route-v1`.
+- Root route: `https://trungcodeer.github.io/roofing/`.
+- Root route JSON: `https://trungcodeer.github.io/roofing.json`.
+- Root route text: `https://trungcodeer.github.io/roofing.txt`.
+
+Live validation:
+- `public_validation_ok pages_roofing_html,pages_roofing_json,pages_roofing_txt,root_offer_roofing,root_openapi_roofing,root_ai_plugin_roofing,root_agent_card_roofing,root_release`.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=11`.
+- Public product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547262850`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

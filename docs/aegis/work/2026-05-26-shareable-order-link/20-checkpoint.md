@@ -3602,3 +3602,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it exposes the niche roofing sequence and paid rescue path through a callable AI-client tool with privacy guard and verification gate, without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Root Roofing Short Route Checkpoint
+
+Current todo:
+- Reduce roofing buyer and buyer-agent friction with a short root URL, not only product subpaths.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add `https://trungcodeer.github.io/roofing/` plus JSON/TXT/OpenAPI/AI plugin/A2A discovery, publish a root release, submit IndexNow, add issue evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Added root route `roofing/index.html`.
+- Added machine routes `roofing.json` and `roofing.txt`.
+- The route points a roofing contractor with one unanswered estimate to the Day 0/1/3/5/7 generator, rescue packet, exact 5 USD PayPal URL, order form, privacy rule, and verification gate.
+- Wired root README, llms, root offer JSON, well-known root offer JSON, sitemap, OpenAPI, AI plugin manifest, root A2A agent card, and well-known A2A agent card.
+- Committed and pushed root commit `055b02b`.
+- Created root release `root-roofing-short-route-v1`.
+- Validated local root JSON, HTML JSON-LD/static markers/accessibility markers, XML, OpenAPI YAML, and whitespace.
+- Validated public Pages route, JSON, text, root offer, OpenAPI, AI plugin, A2A agent card, and release.
+- Submitted 11 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/055b02b`.
+- Root route: `https://trungcodeer.github.io/roofing/`.
+- Root route JSON: `https://trungcodeer.github.io/roofing.json`.
+- Root route text: `https://trungcodeer.github.io/roofing.txt`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-short-route-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547262850`.
+- Local validation passed: `root_json_html_ok json_files=6 jsonld=1 h1=1`, `root_xml_yaml_ok`, and root `git diff --check`.
+- Public validation passed: `pages_roofing_html`, `pages_roofing_json`, `pages_roofing_txt`, `root_offer_roofing`, `root_openapi_roofing`, `root_ai_plugin_roofing`, `root_agent_card_roofing`, and `root_release`.
+- IndexNow submission passed: `indexnow_status=200 urls=11`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate buyer-agent conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a shorter AI-readable roofing route and routes qualified roofing estimate buyers to the exact 5 USD PayPal checkout without spam, deception, private data leakage, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
