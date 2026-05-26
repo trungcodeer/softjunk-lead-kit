@@ -4063,3 +4063,58 @@ DriftCheckDraft:
 - Current slice fit: yes, it makes the exact machine-readable checkout card the pinned comment on the most concrete roofing buyer issue without spam, private data exposure, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub issue pins/comments, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Roofing Fast Path First-Screen Checkpoint
+
+Current todo:
+- Move the high-intent roofing estimate rescue route above generic checkout lists for humans and buyer-agents.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add a roofing buyer fast path to top-level human/agent files, update the Buy Now Gist, add a first-screen homepage section, release, validate raw/live/Gist surfaces, submit IndexNow, add public evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Added `Roofing Buyer Fast Path` near the top of `README.md`.
+- Added `Roofing Estimate Fast Path` near the top of `BUY_NOW.md`.
+- Added `Roofing Estimate Buyer First` near the top of `AGENTS.md`.
+- Added `Roofing estimate buyer fast path` near the top of `llms.txt`.
+- Added `roofing_buyer_fast_path` to `buy-now.json`.
+- Updated Buy Now Gist `f2c1e3469c1f9313f135f612b229b0e6` for `BUY_NOW.md` and `buy-now.json`.
+- Committed and pushed product commit `7a91262`.
+- Created product release `v2.29.65`.
+- Added `#roofing-fast-path` section to `index.html` with issue #7, Discussion #8, free preview, exact PayPal route, post-payment order form, and privacy warning.
+- Committed and pushed product commit `cd2a6a1`.
+- Created product release `v2.29.66`.
+- Validated local JSON, HTML JSON-LD, skip link, one H1, raw GitHub, live homepage, and Gist content.
+- Submitted 6 owned Pages URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Text/JSON fast path commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/7a91262`.
+- Homepage fast path commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/cd2a6a1`.
+- Product releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.65` and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.66`.
+- Buy Now Gist: `https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6`.
+- Live homepage: `https://trungcodeer.github.io/softjunk-lead-kit/`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548630651`.
+- Local validation returned `json_ok=true`, `has_fast_path=true`, `payment_url=https://paypal.me/softjunk/5USD`, and `discussion_url=https://github.com/trungcodeer/softjunk-lead-kit/discussions/8`.
+- Local marker validation confirmed README, `BUY_NOW.md`, `AGENTS.md`, `llms.txt`, `buy-now.json`, and `index.html` contain the roofing fast path, issue #7 or Discussion #8, and PayPal route.
+- Gist validation returned `gist_json_ok=true`, `gist_has_fast_path=true`, `gist_payment=https://paypal.me/softjunk/5USD`, `gist_md_has_fast_path=true`, `gist_md_has_discussion=true`, and `gist_md_has_paypal=true`.
+- Homepage validation returned `h1_count=1`, `has_skip_link=true`, `has_roofing_section=true`, `has_issue7=true`, `has_discussion8=true`, `has_paypal=true`, and `has_privacy=true`.
+- Live homepage validation returned `status=200`, `has_roofing_section=true`, `has_title=true`, `has_issue7=true`, `has_discussion8=true`, `has_paypal=true`, and `has_privacy=true`.
+- Product Pages run `26473873354` completed with success.
+- IndexNow submission returned `status=200 urls=6`.
+- Issue #5 evidence validation returned `has_homepage_commit=true`, `has_text_commit=true`, `has_indexnow=true`, and `has_gate=true`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the concrete roofing checkout path to the first visible human and agent surfaces, while preserving privacy and seller-side payment verification.
+- Compatibility boundary: owned GitHub repo files/Gists/releases/issues, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

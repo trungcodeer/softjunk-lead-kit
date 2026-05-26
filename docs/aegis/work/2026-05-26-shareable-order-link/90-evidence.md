@@ -79,6 +79,56 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Roofing Fast Path First-Screen Evidence
+
+Artifacts changed:
+- `README.md`.
+- `BUY_NOW.md`.
+- `AGENTS.md`.
+- `llms.txt`.
+- `buy-now.json`.
+- `index.html`.
+
+Public routes:
+- Live homepage: `https://trungcodeer.github.io/softjunk-lead-kit/`.
+- Buy Now packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md`.
+- Agent instructions: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md`.
+- Buy Now JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json`.
+- Buy Now Gist: `https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6`.
+
+Commits, releases, and issue evidence:
+- Text/JSON fast path commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/7a91262`.
+- Homepage fast path commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/cd2a6a1`.
+- Product releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.65` and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.66`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548630651`.
+
+Content added:
+- Roofing fast path at the top of README, Buy Now, AGENTS, and `llms.txt`.
+- `roofing_buyer_fast_path` object in `buy-now.json`.
+- Homepage `#roofing-fast-path` section immediately after the hero.
+- Routes point to issue #7, Discussion #8, free roofing preview, exact 5 USD PayPal checkout, and dedicated post-payment roofing order form.
+
+Validation:
+- Local JSON validation returned `json_ok=true`, `has_fast_path=true`, `payment_url=https://paypal.me/softjunk/5USD`, and `discussion_url=https://github.com/trungcodeer/softjunk-lead-kit/discussions/8`.
+- Local marker validation confirmed README, `BUY_NOW.md`, `AGENTS.md`, `llms.txt`, `buy-now.json`, and `index.html` expose the roofing fast path plus PayPal route.
+- `index.html` validation returned `html_ok=true`, `h1_count=1`, `has_skip_link=true`, `has_roofing_section=true`, `has_issue7=true`, `has_discussion8=true`, `has_paypal=true`, and `has_privacy=true`.
+- Raw GitHub validation confirmed README, `BUY_NOW.md`, `AGENTS.md`, `llms.txt`, and `buy-now.json` expose the roofing fast path plus PayPal route.
+- Buy Now Gist validation returned `gist_json_ok=true`, `gist_has_fast_path=true`, `gist_payment=https://paypal.me/softjunk/5USD`, `gist_md_has_fast_path=true`, `gist_md_has_discussion=true`, and `gist_md_has_paypal=true`.
+- Live homepage validation returned `status=200`, `has_roofing_section=true`, `has_title=true`, `has_issue7=true`, `has_discussion8=true`, `has_paypal=true`, and `has_privacy=true`.
+- Product Pages run `26473873354` completed with success.
+- Release validation confirmed `v2.29.65` targets `7a91262` and `v2.29.66` targets `cd2a6a1`.
+- IndexNow returned `status=200 urls=6`.
+- Issue #5 evidence validation returned `has_homepage_commit=true`, `has_text_commit=true`, `has_indexnow=true`, and `has_gate=true`.
+
+Accessibility and privacy guardrails:
+- Homepage still has one H1 and a skip link.
+- The new homepage section uses semantic headings, plain links, visible text labels, and native anchors.
+- The privacy warning forbids homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, and PayPal details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Pinned Roofing Checkout Card Evidence
 
 Public buyer surface:
