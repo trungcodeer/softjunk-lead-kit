@@ -79,6 +79,32 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Roofing Issue Chooser Route Evidence
+
+Artifact changed:
+- `.github/ISSUE_TEMPLATE/config.yml`.
+
+Public route:
+- Raw issue chooser config: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/.github/ISSUE_TEMPLATE/config.yml`.
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Dedicated roofing order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml`.
+- PayPal checkout: `https://paypal.me/softjunk/5USD`.
+
+Commit, release, and issue evidence:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/18e2ce8`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.63`.
+- Public product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548095253`.
+
+Validation:
+- Marker check passed for `Public roofing buyer issue` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- YAML parse passed with `contact_links=26`.
+- Raw GitHub config validation passed with `public_raw_config_ok issue7=true`.
+- Product `git diff --check` returned no whitespace errors beyond CRLF warnings.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Roofing Buyer Sample Output Evidence
 
 Public buyer proof:

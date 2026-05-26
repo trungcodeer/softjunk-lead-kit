@@ -3866,3 +3866,42 @@ DriftCheckDraft:
 - Current slice fit: yes, it uses AI writing strength to show real value before the buyer pays, without collecting private data, spamming, or claiming payment.
 - Compatibility boundary: owned GitHub issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Roofing Issue Chooser Route Checkpoint
+
+Current todo:
+- Make the GitHub New Issue chooser expose the public roofing buyer sample route before the post-payment form.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add issue #7 as a contact link in `.github/ISSUE_TEMPLATE/config.yml`, validate YAML/raw GitHub, release, add public evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Added `Public roofing buyer issue` contact link to `.github/ISSUE_TEMPLATE/config.yml`.
+- Committed and pushed product commit `18e2ce8`.
+- Created product release `v2.29.63`.
+- Validated YAML parse with 26 contact links.
+- Validated raw GitHub config contains issue #7.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/18e2ce8`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.63`.
+- Raw issue chooser config: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/.github/ISSUE_TEMPLATE/config.yml`.
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548095253`.
+- Validation: `yaml_ok contact_links=26`, `public_raw_config_ok issue7=true`, and product `git diff --check` passed with only CRLF warnings.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate buyer-facing proof/conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the GitHub-native buyer path by showing the roofing sample route in the chooser before the payment/order form.
+- Compatibility boundary: owned GitHub repo issue templates, GitHub release/evidence issue, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
