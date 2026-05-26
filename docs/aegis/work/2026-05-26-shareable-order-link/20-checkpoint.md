@@ -4376,3 +4376,29 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the exact buyer-send packet into the New Issue chooser without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repo files/issues/releases, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+## 2026-05-27 Pinned Checkout Comments Buyer-Send Checkpoint
+
+Current todo:
+- Put buyer-send checkout cards into pinned comments on the highest-intent pinned GitHub issues.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Completed todos:
+- Created and pinned buyer-send checkout-card comment on issue #1: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4549643181`.
+- Created and pinned buyer-send checkout-card comment on issue #5: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549643900`.
+- Confirmed issue #7 already has the pinned buyer-send checkout-card comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- GraphQL validation confirmed pinned comments on #1, #5, and #7 contain buyer-send route, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and privacy language.
+- Product issue #5 evidence comment added: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549653649`.
+- PayPal verifier rerun and remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Local C: has 0 free bytes, so remote API commits are being used for small checkpoint/evidence updates.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the exact buyer-send packet into pinned comments on pinned GitHub issues without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub issues/repo files, GitHub Pages, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
