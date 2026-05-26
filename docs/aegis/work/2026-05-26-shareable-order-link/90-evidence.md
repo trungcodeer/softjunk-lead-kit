@@ -79,6 +79,21 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Discussion Announcement Checkout Route Evidence
+
+GitHub Discussions:
+- Product discussion created in `Announcements`: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/6`.
+- Discussion title: `Pinned $5 SoftJunk buyer-agent checkout route`.
+- Discussion routes public viewers to issue #1, issue #5, the one-message buyer packet, and direct PayPal checkout.
+
+Validation:
+- `discussion_checkout_route_ok number=6 category=Announcements url=https://github.com/trungcodeer/softjunk-lead-kit/discussions/6 markers=5`.
+- Discussion marker validation checked `https://github.com/trungcodeer/softjunk-lead-kit/issues/1`, `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`, `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Checkout Release Route Evidence
 
 GitHub release:

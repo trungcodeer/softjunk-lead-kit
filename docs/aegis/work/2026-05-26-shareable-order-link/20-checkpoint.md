@@ -2362,3 +2362,36 @@ DriftCheckDraft:
 - Current slice fit: yes, a release is an owned GitHub distribution surface that can notify watchers and expose the shortest checkout route without spam or false claims.
 - Compatibility boundary: product GitHub repo, public GitHub releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Discussion Announcement Checkout Route Checkpoint
+
+Current todo:
+- Keep GitHub-native public distribution surfaces pointed at the shortest 5 USD checkout route.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Create a GitHub Discussions announcement for the current pinned buyer route so repo viewers and watchers have a public buy-now thread.
+
+Completed todos:
+- Confirmed Discussions are enabled on the product repo.
+- Found the `Announcements` discussion category.
+- Created discussion #6 titled `Pinned $5 SoftJunk buyer-agent checkout route`.
+- Validated the discussion body contains issue #1, issue #5, the one-message buyer packet, direct PayPal checkout, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Reran the PayPal verifier after discussion publication.
+
+Evidence refs:
+- Product discussion #6: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/6`.
+- Discussion validation passed: `discussion_checkout_route_ok number=6 category=Announcements url=https://github.com/trungcodeer/softjunk-lead-kit/discussions/6 markers=5`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, a repo Discussion announcement is an owned public distribution surface and does not involve spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: product GitHub repo, public GitHub discussions/issues/releases, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
