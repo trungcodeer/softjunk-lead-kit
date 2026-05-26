@@ -80,6 +80,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
 Roofing estimate rescue order form:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
 
+Public roofing buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+
 Roofing estimate generator JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json
 

@@ -57,6 +57,7 @@
   "roofing_estimate_generator_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json",
   "roofing_estimate_generator_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt",
   "roofing_estimate_rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+  "roofing_buyer_issue_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
   "price": "5.00",
   "currency": "USD",
   "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",

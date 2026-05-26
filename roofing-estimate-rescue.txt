@@ -8,6 +8,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
 Prefilled buyer link:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245
 
+Public roofing buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+
 Pay exactly 5 USD:
 https://paypal.me/softjunk/5USD
 
@@ -25,6 +28,9 @@ If one recovered roof job is worth more than $5, SoftJunk can write the Day 0, 1
 
 Open this prefilled buyer link:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245
+
+Public roofing buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 
 Pay exactly $5:
 https://paypal.me/softjunk/5USD
