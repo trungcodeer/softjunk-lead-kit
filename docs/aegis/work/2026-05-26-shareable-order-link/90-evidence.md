@@ -79,6 +79,30 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Pinned Order Board Agent Close Route Evidence
+
+Public order board update:
+- Issue #1 title is now `Start here: $5 SoftJunk one-lead rescue checkout`.
+- Issue #1 body now starts with the Agent Close buyer route, RawGitHack Agent Close HTML/JSON fallback, root rescue route, exact PayPal 5 USD URL, and one-lead rescue order form.
+- Free tools, PayPal note guidance, after-payment handoff, fulfillment gate, and privacy rule remain in the issue body.
+
+Public URLs:
+- Public order board: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Public buyer-agent route: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Agent Close rendered fallback: `https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html`.
+- Agent Close JSON fallback: `https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json`.
+
+Validation:
+- `gh issue view` confirmed issue #1 title and body.
+- Issue #1 marker validation passed: `issue_1_checkout_body_ok markers=6 url=https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Validated markers included issue #5, RawGitHack Agent Close fallback, exact PayPal URL, one-lead rescue order form, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product latest Pages build for `b81222310a90d4048dfa3fabc9ed8a79eadc5dc9` remained `building`.
+- Root latest Pages build for `be01327edfb52b24845a58ce373934e1515d13fb` remained `building`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Funding Button Agent Close Route Evidence
 
 GitHub Funding and repo metadata:

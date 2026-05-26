@@ -2028,3 +2028,41 @@ DriftCheckDraft:
 - Current slice fit: yes, it pushes the verified buyer-agent route into the GitHub Funding button and repo homepage surfaces that a buyer can encounter naturally, without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: GitHub Funding, repo metadata, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Pinned Order Board Agent Close Route Checkpoint
+
+Current todo:
+- Keep public GitHub issue #1 and issue #5 as the primary checkout surfaces while GitHub Pages remains stuck.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Convert the pinned public order board issue from a broad link list into a direct checkout handoff that starts with Agent Close issue #5, RawGitHack fallback, root rescue, exact PayPal, and order form.
+
+Completed todos:
+- Audited current issue #1 body and issue #5 body.
+- Updated issue #1 title to `Start here: $5 SoftJunk one-lead rescue checkout`.
+- Updated issue #1 body so the first route is issue #5, followed by RawGitHack Agent Close HTML/JSON, root rescue, exact PayPal URL, and the one-lead rescue order form.
+- Preserved free tools, PayPal note guidance, after-payment handoff, fulfillment gate, and privacy rule.
+- Validated issue #1 public body markers through `gh issue view`.
+
+Evidence refs:
+- Public order board: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Public buyer-agent route: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Issue #1 validation passed: `issue_1_checkout_body_ok markers=6 url=https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Validated markers included issue #5, RawGitHack Agent Close fallback, exact PayPal URL, one-lead rescue order form, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product latest Pages build for `b81222310a90d4048dfa3fabc9ed8a79eadc5dc9` remained `building`.
+- Root latest Pages build for `be01327edfb52b24845a58ce373934e1515d13fb` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages agent-close routes still cannot be counted as live while latest builds remain `building` and live URLs return 404.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it turns the most stable public checkout issue into a concise buyer handoff to PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: public GitHub issues, RawGitHack/Gist fallbacks, GitHub Pages if it recovers, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
