@@ -44,6 +44,9 @@
     "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
     "ai_deal_desk_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
     "ai_deal_desk_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
+    "agent_close_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html",
+    "agent_close_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
+    "agent_close_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt",
     "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
     "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
     "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
@@ -80,6 +83,13 @@
       "json_url": "https://trungcodeer.github.io/rescue.json",
       "text_url": "https://trungcodeer.github.io/rescue.txt",
       "delivery": "Shortest route from one quiet lead to generated reply, exact 5 USD PayPal payment, order form, and PAYPAL_PAYMENT_VERIFIED=true gate"
+    },
+    {
+      "name": "Agent Close Contract",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt",
+      "delivery": "One-read buyer-agent close contract with fit rules, root rescue, exact 5 USD PayPal URL, order form, privacy boundary, and verification gate"
     },
     {
       "name": "Buyer-Agent Prompt Relay",

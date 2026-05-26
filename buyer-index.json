@@ -10,6 +10,9 @@
   "root_rescue_url": "https://trungcodeer.github.io/rescue/",
   "root_rescue_json_url": "https://trungcodeer.github.io/rescue.json",
   "root_rescue_text_url": "https://trungcodeer.github.io/rescue.txt",
+  "agent_close_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html",
+  "agent_close_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
+  "agent_close_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
@@ -124,6 +127,16 @@
       "text_url": "https://trungcodeer.github.io/rescue.txt",
       "payment_url": "https://paypal.me/softjunk/5USD",
       "why": "Lowest-click public route that combines builder, PayPal, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate."
+    },
+    {
+      "use_when": "An AI assistant, VA, crawler, or buyer-agent needs a one-read close contract before recommending the 5 USD PayPal step for a qualified one-lead buyer.",
+      "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html",
+      "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt",
+      "root_rescue_url": "https://trungcodeer.github.io/rescue/",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+      "why": "Combines fit rules, do-not-use rules, root rescue, PayPal, order form, privacy boundary, and PAYPAL_PAYMENT_VERIFIED=true gate in one close-ready contract."
     },
     {
       "use_when": "An AI assistant, VA, crawler, or buyer-agent needs the machine-readable paid handoff after selecting the one-lead rescue route.",
@@ -348,6 +361,9 @@
   "machine_readable_sources": {
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
     "agent_buyer_catalog_jsonl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
+    "agent_close": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html",
+    "agent_close_json": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
+    "agent_close_text": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt",
     "ai_follow_up_prompt": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
     "ai_follow_up_prompt_text": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
     "ai_follow_up_prompt_json": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",

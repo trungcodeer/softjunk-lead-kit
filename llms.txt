@@ -41,6 +41,15 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl
 AI agent buyer packet JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 
+Agent close contract:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+
+Agent close contract JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
+
+Agent close contract text:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
+
 AI Deal Desk:
 https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 
@@ -407,6 +416,7 @@ PayPal notes:
 - AI Deal Desk: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready, generate the buyer decision and PayPal note, and paste that note into PayPal before paying.
 - Shareable order link: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when order context is ready, generate the URL and PayPal note, and paste that note into PayPal before paying.
 - Agent order: open https://trungcodeer.github.io/rescue/ first, then use the AI agent order path to generate the PayPal note, paste it into PayPal, pay exactly 5 USD, and submit the one-lead rescue order form.
+- Agent close contract: use https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json when an AI assistant needs a one-read fit rule, route, exact 5 USD PayPal URL, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate before recommending payment.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.
 - Agent buyer catalog JSONL: use https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl for retrieval-friendly records covering fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers.
 - Buyer-agent prompt relay: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json or public Gist https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950 when an assistant needs one prompt to qualify fit, inspect the commerce graph, generate a PayPal note, and route a ready buyer to the root one-lead rescue route before the 5 USD PayPal step.

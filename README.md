@@ -33,6 +33,9 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
 - Root buyer hub: https://trungcodeer.github.io/
+- Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+- Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
+- Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
@@ -166,6 +169,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
+- Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+- Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
+- Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html

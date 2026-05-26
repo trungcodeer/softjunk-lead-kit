@@ -6,6 +6,9 @@ Allow: /buyer-index.json
 Allow: /buyer-agent-relay.txt
 Allow: /buyer-agent-relay.json
 Allow: /buyer-agent-relay.html
+Allow: /agent-close.html
+Allow: /agent-close.json
+Allow: /agent-close.txt
 Allow: /commerce-graph.txt
 Allow: /commerce-graph.json
 Allow: /commerce-graph.html

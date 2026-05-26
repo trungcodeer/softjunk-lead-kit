@@ -7,6 +7,9 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
+- Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+- Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
+- Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
@@ -47,6 +50,10 @@ If one lead has gone quiet, use the root one-lead rescue route first, then buy t
 
 https://trungcodeer.github.io/rescue/
 
+If an AI assistant needs a one-read close contract before recommending payment, open:
+
+https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+
 For the digital kit, pay $5 here and use PayPal note `Lead Follow-Up Kit`:
 
 https://paypal.me/softjunk/5USD
@@ -85,6 +92,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
+- Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+- Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
+- Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
 - Agent offer manifest: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json

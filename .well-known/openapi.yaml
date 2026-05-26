@@ -8,12 +8,48 @@ servers:
 x-softjunk-fastest-buyer-path:
   root_one_lead_rescue_url: https://trungcodeer.github.io/rescue/
   root_one_lead_rescue_json_url: https://trungcodeer.github.io/rescue.json
+  agent_close_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
+  agent_close_json_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
+  agent_close_text_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
   agent_order_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
   agent_offer_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
   payment_url: https://paypal.me/softjunk/5USD
   one_lead_rescue_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
+  /agent-close.html:
+    get:
+      operationId: openAgentCloseContract
+      summary: Open the SoftJunk agent close contract.
+      responses:
+        "200":
+          description: One-read buyer-agent close contract with fit rules, root rescue route, PayPal URL, order form, privacy boundary, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /agent-close.json:
+    get:
+      operationId: getAgentCloseContractJson
+      summary: Get the SoftJunk agent close contract JSON.
+      responses:
+        "200":
+          description: Machine-readable close contract for routing a qualified quiet-lead buyer to root rescue before exact 5 USD PayPal payment.
+          content:
+            application/json:
+              schema:
+                type: object
+  /agent-close.txt:
+    get:
+      operationId: getAgentCloseContractText
+      summary: Get the SoftJunk agent close contract text.
+      responses:
+        "200":
+          description: Plain-text buyer-agent instruction with fit rules, root rescue, PayPal, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /buyer-agent-relay.html:
     get:
       operationId: openBuyerAgentRelay
