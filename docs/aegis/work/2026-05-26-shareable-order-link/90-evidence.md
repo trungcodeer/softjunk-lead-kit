@@ -1170,3 +1170,36 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Agent Commerce Rescue-First Evidence
+
+Local validation:
+- JSON parse passed for `agent-commerce.json`.
+- HTML JSON-LD parse and inline script syntax check passed for `agent-commerce.html`.
+- Marker validation confirmed `https://trungcodeer.github.io/rescue/`, `https://trungcodeer.github.io/rescue.json`, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and `one-lead-rescue-order.yml` in the HTML, JSON, and text artifacts.
+- Chrome headless `--dump-dom` on local `agent-commerce.html` emitted one-lead rescue copy, `https://trungcodeer.github.io/rescue/`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product `git diff --check` returned no whitespace errors.
+
+Files changed in product repo:
+- `agent-commerce.html`
+- `agent-commerce.json`
+- `agent-commerce.txt`
+
+Commit, release, and deploy:
+- Product commit: `7025c4c Route agent commerce capsule to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.27`.
+- Product GitHub Pages run `26443142998` completed with success.
+
+Live/raw validation:
+- `agent_commerce_live_raw_ok checks=6`.
+- Validated live GitHub Pages HTML/JSON/TXT for the agent commerce capsule.
+- Validated raw GitHub HTML/JSON/TXT for the agent commerce capsule.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=6` for the agent commerce and root rescue URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542616676`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542618989`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
