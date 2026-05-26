@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
+    <title>SoftJunk Lead Follow-Up Kit</title>
+    <link>https://trungcodeer.github.io/softjunk-lead-kit/</link>
+    <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
+    <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 May 2026 22:50:00 +0700</lastBuildDate>
+    <item>
+      <title>SoftJunk MCP Checkout Server</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json</guid>
+      <pubDate>Tue, 26 May 2026 22:50:00 +0700</pubDate>
+      <description>Dependency-free MCP stdio checkout server for AI clients. It returns a PayPal note, exact 5 USD PayPal URL, order form, and seller-side verification gate.</description>
+    </item>
+    <item>
+      <title>SoftJunk A2A Agent Card Checkout</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json</guid>
+      <pubDate>Tue, 26 May 2026 22:35:00 +0700</pubDate>
+      <description>A2A-style agent card for buyer agents routing one real quiet lead to the exact 5 USD SoftJunk PayPal checkout and verification gate.</description>
+    </item>
+    <item>
+      <title>SoftJunk AI Action Checkout</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json</guid>
+      <pubDate>Tue, 26 May 2026 22:20:00 +0700</pubDate>
+      <description>Function-style checkout manifest for AI assistants routing qualified buyers to the exact 5 USD PayPal handoff without claiming payment before verification.</description>
+    </item>
     <item>
       <title>SoftJunk Fix One Quiet Lead Builder</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html</link>
@@ -8,12 +35,6 @@
       <pubDate>Tue, 26 May 2026 13:25:00 +0700</pubDate>
       <description>Generate one stronger follow-up, copy the PayPal note, and pay exactly 5 USD for the custom 7-day sequence. Payment URL: https://paypal.me/softjunk/5USD</description>
     </item>
-    <title>SoftJunk Lead Follow-Up Kit</title>
-    <link>https://trungcodeer.github.io/softjunk-lead-kit/</link>
-    <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
-    <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 26 May 2026 13:25:00 +0700</lastBuildDate>
     <item>
       <title>SoftJunk Buyer-Agent Prompt Relay</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html</link>
