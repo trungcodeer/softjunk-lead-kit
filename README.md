@@ -27,6 +27,12 @@ https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.jso
 Buy Now public Gist:
 https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
 
+Result-first sample:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
+
+Result-first sample Gist:
+https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
+
 One-message buyer packet:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 
@@ -46,6 +52,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
 - Public Buy Now Gist: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
 - Raw Buy Now Gist JSON: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json
+- Result-first sample: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
+- Result-first sample JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
+- Result-first sample Gist: https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
+- Result-first sample Gist JSON: https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json

@@ -8,6 +8,10 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
 - Public Buy Now Gist: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
 - Raw Buy Now Gist JSON: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json
+- Result-first sample: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
+- Result-first sample JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
+- Result-first sample Gist: https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
+- Result-first sample Gist JSON: https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
@@ -65,6 +69,14 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 Public Gist fallback:
 
 https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
+
+Proof-of-value sample:
+
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
+
+Proof-of-value Gist:
+
+https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
 
 Pinned human checkout board:
 

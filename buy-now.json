@@ -11,6 +11,10 @@
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
+  "result_first_sample_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md",
+  "result_first_sample_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json",
+  "result_first_sample_gist_url": "https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02",
+  "result_first_sample_gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
   "price": "5.00",
@@ -28,6 +32,11 @@
     "The context contains private customer data that would be posted publicly."
   ],
   "route_steps": [
+    {
+      "step": "inspect_sample",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md",
+      "instruction": "Open the result-first sample if the buyer needs proof of style before paying."
+    },
     {
       "step": "human_start",
       "url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",

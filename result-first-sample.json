@@ -1,0 +1,72 @@
+{
+  "schema_version": "softjunk-result-first-sample-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk Result-First Sample",
+  "purpose": "A short proof-of-value route for buyers and buyer agents evaluating the 5 USD SoftJunk one-lead rescue before payment.",
+  "canonical_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md",
+  "raw_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json",
+  "gist_url": "https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02",
+  "gist_raw_markdown_url": "https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/RESULT_FIRST_SAMPLE.md",
+  "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json",
+  "buy_now_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md",
+  "buy_now_raw_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "price": "5.00",
+  "currency": "USD",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "paid_deliverable": [
+    "Day 0 follow-up message",
+    "Day 1 follow-up message",
+    "Day 3 follow-up message",
+    "Day 5 follow-up message",
+    "Day 7 follow-up message",
+    "No-show recovery reply",
+    "Price-objection reply",
+    "Short edit rationale"
+  ],
+  "free_sample": {
+    "weak_follow_up": "Hi, just checking in to see if you are still interested.",
+    "missed_call_lead": "Hi [Name], sorry I missed your call about [service]. I can help. Do you want the fastest available time, or should I answer one quick question first?",
+    "estimate_lead": "Hi [Name], checking that you saw the estimate for [project]. If the scope looks right, I can send the next step. If price or timing is the blocker, reply with that and I will adjust the path.",
+    "quiet_dm_lead": "Hi [Name], quick follow-up on [service]. If you are still interested, reply with times and I will send the easiest next step. If not, no problem."
+  },
+  "fit_rule": [
+    "The buyer has one real quiet lead.",
+    "One recovered conversation, appointment, quote, or job is worth more than 5 USD.",
+    "The buyer wants practical follow-up copy."
+  ],
+  "do_not_use_when": [
+    "The buyer asks for spam, deception, scraping, fake reviews, or unauthorized outreach.",
+    "The buyer expects delivery before seller-side PayPal verification.",
+    "The context contains private customer data that would be posted publicly."
+  ],
+  "route_steps": [
+    {
+      "step": "inspect_sample",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md",
+      "instruction": "Use the free sample to verify the buyer wants this style of practical follow-up copy."
+    },
+    {
+      "step": "open_buy_now",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md",
+      "instruction": "Open the Buy Now packet for the shortest payment and order route."
+    },
+    {
+      "step": "pay",
+      "url": "https://paypal.me/softjunk/5USD",
+      "instruction": "Pay exactly 5 USD through PayPal.Me."
+    },
+    {
+      "step": "submit_order_form",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+      "instruction": "Submit non-sensitive order details after payment."
+    },
+    {
+      "step": "verify",
+      "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+      "instruction": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+    }
+  ],
+  "payment_verification_rule": "Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+}

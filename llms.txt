@@ -23,6 +23,18 @@ https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
 Raw Buy Now Gist JSON:
 https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json
 
+Result-first sample:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
+
+Result-first sample JSON:
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
+
+Result-first sample Gist:
+https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
+
+Result-first sample Gist JSON:
+https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
+
 Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
