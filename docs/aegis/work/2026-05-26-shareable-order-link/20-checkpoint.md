@@ -192,3 +192,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it shipped and publicized the non-traditional scenario-gallery funnel while preserving the PayPal verification gate.
 - Compatibility boundary: static GitHub Pages, public Gists/issues/releases, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Agent Commerce Capsule Deploy Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Post-deploy verification and public discovery for an AI-native Agent Commerce Capsule that assistants, VAs, crawlers, and buyer-agents can read before routing a qualified buyer to PayPal.
+
+Completed todos:
+- Added `agent-commerce.html`, `agent-commerce.json`, and `agent-commerce.txt`.
+- Wired the capsule into product homepage, buyer index, agent packet, agent offer, payment intent, product/offers/share manifests, `llms.txt`, RSS, sitemap, OpenAPI, well-known manifests, README, and issue template contact links.
+- Wired root hub, `/ai/`, root JSON/text/payment manifests, root `llms.txt`, OpenAPI, sitemap, and README to the product capsule.
+- Updated payment-intent and agent-buyer-packet Gists from local sources.
+- Parsed product/root JSON and XML successfully after edits.
+- Parsed affected inline JavaScript with Node while skipping JSON-LD scripts.
+- Verified the local and live `agent-commerce.html` DOM with Chrome headless.
+- Committed product change `f3f9970` and root change `eae42ce`.
+- Pushed both repos and confirmed GitHub Pages deployments succeeded.
+- Created product release `v2.29.5` and root release `root-agent-commerce-v1`.
+- Verified live product/root URLs with cache-busting content checks.
+- Submitted 31 URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the new agent commerce route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product live checks covered `agent-commerce.html`, `agent-commerce.json`, `agent-commerce.txt`, buyer index, agent packet/offer, payment intent, offers/product feed, `llms.txt`, sitemap, and RSS.
+- Root live checks returned `root_live_ok=11` across root, `/ai/`, root JSON/text/payment manifests, OpenAPI, `llms.txt`, and sitemap.
+- Chrome headless live DOM dump included `Agent Commerce Capsule`, `agent-commerce.json`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, `Lead Recovery Audit`, and `shareable order link`.
+- Gist raw checks confirmed `agent-commerce`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED` in payment-intent and agent-buyer-packet Gists.
+- Releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.5` and `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agent-commerce-v1`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538506401` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538507691`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it builds a non-traditional AI-native commerce contract instead of manual posting or outreach while preserving buyer consent and the PayPal verification gate.
+- Compatibility boundary: static GitHub Pages, public Gists/issues/releases, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
