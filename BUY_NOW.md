@@ -26,19 +26,21 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 11. Roofing estimate rescue packet:
    https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
-12. Agent checkout Gist:
+12. Roofing estimate follow-up generator:
+   https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+13. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-13. GitHub Sponsor button buy route:
+14. GitHub Sponsor button buy route:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-14. PayPal note first:
+15. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-15. What gets delivered after verified payment:
+16. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-16. Buyer-agent close contract:
+17. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-17. Direct PayPal checkout:
+18. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-18. After payment, submit non-sensitive order details if needed:
+19. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -90,6 +92,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Send-to-buyer Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
 - Send-to-buyer Gist: https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 - Roofing estimate rescue: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+- Roofing estimate follow-up generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+- Roofing estimate generator JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json
+- Roofing estimate generator text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt
+- Roofing estimate generator Gist: https://gist.github.com/trungcodeer/1d51e6552c5f3886b1f25bd612e705a3
 - Roofing estimate follow-up answer: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
 - Roofing estimate follow-up JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.json
 - Roofing estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.txt

@@ -643,6 +643,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>

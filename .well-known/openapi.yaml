@@ -785,6 +785,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /roofing-estimate-generator.html:
+    get:
+      operationId: openRoofingEstimateGenerator
+      summary: Open the roofing estimate follow-up generator.
+      responses:
+        "200":
+          description: Local-only browser generator for Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, PayPal note, share link, privacy guard, and 5 USD custom rescue route.
+          content:
+            text/html:
+              schema:
+                type: string
+  /roofing-estimate-generator.json:
+    get:
+      operationId: getRoofingEstimateGenerator
+      summary: Get the roofing estimate follow-up generator JSON.
+      responses:
+        "200":
+          description: Machine-readable generator metadata with query parameters, default sequence, payment route, privacy rule, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /roofing-estimate-generator.txt:
+    get:
+      operationId: getRoofingEstimateGeneratorText
+      summary: Get the roofing estimate follow-up generator text.
+      responses:
+        "200":
+          description: Plain-text generator handoff with default sequence, PayPal note, payment route, privacy rule, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /price-objection-reply.html:
     get:
       operationId: openPriceObjectionReplyTemplate

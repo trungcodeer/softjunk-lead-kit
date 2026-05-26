@@ -1,0 +1,37 @@
+{
+  "schema_version": "softjunk-roofing-estimate-generator-v1",
+  "updated": "2026-05-27",
+  "name": "Roofing Estimate Follow-Up Generator",
+  "purpose": "Generate Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts from non-sensitive context, then route a fitting buyer to the exact 5 USD custom rescue.",
+  "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
+  "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt",
+  "answer_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
+  "rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "query_parameters": [
+    "business",
+    "project",
+    "blocker",
+    "tone",
+    "next",
+    "value"
+  ],
+  "default_paypal_note": "One Lead Rescue | Business: roofing contractor | Service: roof replacement estimate | Source: estimate | Need: unanswered roofing estimate | Tone: professional | Next: confirm the next step",
+  "default_sequence": [
+    "Day 0: Hi, checking that you saw the roof replacement estimate. If the scope looks right, I can confirm the next step. If scope, timing, budget, insurance, or one line item is the blocker, reply with that and I will make the path clearer.",
+    "Day 1: Hi, quick follow-up on the roof replacement estimate. Do you want me to hold the current scope, show a smaller option, or answer one question first?",
+    "Day 3: Hi, I know roofing decisions are not small. If you are comparing options, I can clarify what is included so the estimate is easier to judge.",
+    "Day 5: Hi, should I keep this roof replacement estimate active? Reply yes and I will send the next step, or reply with the part you want adjusted.",
+    "Day 7: Hi, I will close the loop for now so I do not keep bothering you. If the roof project comes back up, reply here and I can reopen the estimate path."
+  ],
+  "privacy_rule": "Use non-sensitive business context only. Do not enter homeowner names, emails, phone numbers, street addresses, insurance claim numbers, invoice IDs, transaction IDs, PayPal IDs, or private job details.",
+  "verification_gate": {
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "script_path": "scripts/verify-paypal-5usd.ps1",
+    "rule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true."
+  },
+  "buyer_agent_instruction": "Use this generator when the buyer is a roofing contractor or assistant trying to recover one unanswered roofing estimate. Build the sequence from non-sensitive context, copy the PayPal note, pay exactly 5 USD at https://paypal.me/softjunk/5USD only if a custom rescue is wanted, then wait for seller-side verification before treating the order as paid."
+}
