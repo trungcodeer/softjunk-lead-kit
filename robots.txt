@@ -15,6 +15,8 @@ Allow: /commerce-graph.html
 Allow: /agent-buyer-catalog.jsonl
 Allow: /ai-action-checkout.json
 Allow: /.well-known/ai-action-checkout.json
+Allow: /agent-card.json
+Allow: /.well-known/agent-card.json
 Allow: /agent-order.html
 Allow: /agent-offer.json
 Allow: /product-feed.json

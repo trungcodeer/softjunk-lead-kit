@@ -16,6 +16,8 @@ x-softjunk-fastest-buyer-path:
   ai_action_checkout_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
   well_known_ai_action_checkout_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
   ai_action_checkout_gist_url: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
+  a2a_agent_card_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+  root_a2a_agent_card_url: https://trungcodeer.github.io/.well-known/agent-card.json
   payment_url: https://paypal.me/softjunk/5USD
   one_lead_rescue_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
@@ -159,6 +161,28 @@ paths:
       responses:
         "200":
           description: Well-known function-style checkout manifest for buyer agents and AI assistants routing qualified buyers to the exact PayPal checkout.
+          content:
+            application/json:
+              schema:
+                type: object
+  /agent-card.json:
+    get:
+      operationId: getA2aAgentCard
+      summary: Get the SoftJunk A2A-style agent card.
+      responses:
+        "200":
+          description: Static A2A-style agent card with buyer-agent skills, supported commerce handoff interfaces, exact PayPal URL, order form, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /.well-known/agent-card.json:
+    get:
+      operationId: getWellKnownA2aAgentCard
+      summary: Get the well-known SoftJunk A2A-style agent card.
+      responses:
+        "200":
+          description: Well-known static agent card for A2A-style discovery by buyer agents, VAs, crawlers, and AI assistants.
           content:
             application/json:
               schema:

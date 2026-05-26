@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "a2a-agent-card-v1",
+  "protocolVersion": "0.3",
+  "name": "SoftJunk Lead Rescue Checkout Agent",
+  "description": "Static buyer-agent handoff for one real quiet lead, the exact 5 USD PayPal checkout, and a strict seller-side verification gate.",
+  "provider": {
+    "organization": "SoftJunk",
+    "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+  },
+  "version": "2026-05-26",
+  "url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json",
+  "documentationUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md",
+  "gistUrl": "https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a",
+  "supportedInterfaces": [
+    {
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-card.json",
+      "protocolBinding": "https://trungcodeer.github.io/softjunk-lead-kit/bindings/static-a2a-commerce-handoff/v1",
+      "protocolVersion": "1.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json",
+      "protocolBinding": "https://trungcodeer.github.io/softjunk-lead-kit/bindings/static-checkout-json/v1",
+      "protocolVersion": "1.0"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json",
+      "protocolBinding": "https://trungcodeer.github.io/softjunk-lead-kit/bindings/static-ai-action-checkout/v1",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "defaultOutputModes": [
+    "text/plain",
+    "application/json"
+  ],
+  "skills": [
+    {
+      "id": "route_softjunk_one_lead_rescue_checkout",
+      "name": "Route one-lead rescue checkout",
+      "description": "Qualify one quiet-lead follow-up problem and return the exact SoftJunk 5 USD PayPal handoff plus order form.",
+      "tags": [
+        "lead-follow-up",
+        "checkout",
+        "paypal",
+        "agentic-commerce"
+      ],
+      "examples": [
+        "A local contractor has one estimate lead that stopped replying. Build the PayPal note and route to checkout.",
+        "A med spa has one no-show lead and wants a custom recovery message before paying 5 USD."
+      ]
+    },
+    {
+      "id": "build_safe_paypal_note",
+      "name": "Build safe PayPal note",
+      "description": "Create a non-sensitive PayPal note using business type, service, lead source, tone, and needed next step.",
+      "tags": [
+        "paypal-note",
+        "privacy",
+        "order-handoff"
+      ]
+    },
+    {
+      "id": "enforce_paypal_verification_gate",
+      "name": "Enforce PayPal verification gate",
+      "description": "Prevent paid, started, delivered, or complete claims unless seller-side PayPal proof exists or PAYPAL_PAYMENT_VERIFIED=true.",
+      "tags": [
+        "verification",
+        "fulfillment",
+        "paypal"
+      ]
+    }
+  ],
+  "softjunkCommerce": {
+    "offerName": "SoftJunk one-lead rescue",
+    "price": "5.00",
+    "currency": "USD",
+    "paymentUrl": "https://paypal.me/softjunk/5USD",
+    "rootRescueUrl": "https://trungcodeer.github.io/rescue/",
+    "checkoutUrl": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+    "aiActionCheckoutUrl": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json",
+    "agentCheckoutJsonUrl": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json",
+    "gistUrl": "https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a",
+    "orderFormUrl": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+    "successSignal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "privacyRule": "Use only non-sensitive business context. Do not place customer names, emails, phone numbers, addresses, payment identifiers, or private PayPal details in public URLs, issues, or Gists.",
+    "fulfillmentRule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export verifies the 5 USD transaction."
+  }
+}

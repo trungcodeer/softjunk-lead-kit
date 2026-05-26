@@ -14,19 +14,23 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
 5. Well-known AI action checkout manifest:
    https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
-6. Agent checkout Gist:
+6. A2A agent card:
+   https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+7. Root A2A agent card:
+   https://trungcodeer.github.io/.well-known/agent-card.json
+8. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-7. GitHub Sponsor button buy route:
+9. GitHub Sponsor button buy route:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-8. PayPal note first:
+10. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-9. What gets delivered after verified payment:
+11. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-10. Buyer-agent close contract:
+12. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-11. Direct PayPal checkout:
+13. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-12. After payment, submit non-sensitive order details if needed:
+14. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -64,6 +68,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - AI action checkout: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
 - AI action name: `route_softjunk_one_lead_rescue_checkout`
 - Well-known AI action checkout: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
+- A2A agent card: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+- Root A2A agent card: https://trungcodeer.github.io/.well-known/agent-card.json
+- A2A agent card brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md
+- A2A agent card Gist: https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a
 - AI action checkout Gist: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 - Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md

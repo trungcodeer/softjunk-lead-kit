@@ -15,14 +15,16 @@ Start here if you have one real quiet lead:
 2. AI/coding agent instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
 3. Agent checkout JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
 4. AI action checkout manifest: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json
-5. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-6. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-7. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-8. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-9. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-10. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-11. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-12. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+5. A2A agent card: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+6. Root A2A agent card: https://trungcodeer.github.io/.well-known/agent-card.json
+7. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+8. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+9. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+10. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+11. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+12. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+13. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+14. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
@@ -50,6 +52,18 @@ https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.j
 
 AI action checkout Gist:
 https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
+
+A2A agent card:
+https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+
+Root A2A agent card:
+https://trungcodeer.github.io/.well-known/agent-card.json
+
+A2A agent card brief:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md
+
+A2A agent card Gist:
+https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a
 
 Agent checkout Gist:
 https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
