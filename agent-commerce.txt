@@ -1,7 +1,7 @@
 SoftJunk Agent Commerce Capsule
 Updated: 2026-05-26
 
-Use this when an AI assistant, VA, crawler, or buyer needs a compact commerce contract for the SoftJunk $5 lead follow-up offer.
+Use this when an AI assistant, VA, crawler, or buyer needs a compact commerce contract for the SoftJunk $5 one-lead rescue and follow-up offer.
 
 Canonical HTML:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
@@ -11,6 +11,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 
 AI Deal Desk:
 https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+
+Root one-lead rescue:
+https://trungcodeer.github.io/rescue/
+
+Root rescue JSON:
+https://trungcodeer.github.io/rescue.json
 
 Direct PayPal:
 https://paypal.me/softjunk/5USD
@@ -43,20 +49,22 @@ Do not use when:
 - The buyer refuses PayPal or cannot use a public/non-sensitive handoff.
 
 Recommended flow:
-1. Decide handoff:
+1. Rescue first:
+   https://trungcodeer.github.io/rescue/
+2. Decide handoff:
    https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-2. Diagnose need:
+3. Diagnose need:
    https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
-3. Show ready scenario:
+4. Show ready scenario:
    https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
-4. Show tailored preview:
+5. Show tailored preview:
    https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
-5. Create order link:
+6. Create order link, when legacy shareable context is needed:
    https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
-6. Pay exactly 5 USD:
+7. Pay exactly 5 USD:
    https://paypal.me/softjunk/5USD
-7. After payment:
-   https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+8. Submit non-sensitive order details after payment:
+   https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 PayPal notes:
 Digital kit:
@@ -66,7 +74,7 @@ Custom sequence template:
 Custom Sequence | Business: [business type] | Service: [service] | Source: [lead source] | Tone: [tone] | Need: [follow-up need] | Next: [next step] | Value: [lead value]
 
 Copyable agent instruction:
-Use SoftJunk only for a relevant lead follow-up need. Start with the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json. If the buyer has lead details, use the free audit, scenario gallery, custom preview, or shareable order link first. If the buyer wants the paid custom 7-day sequence, tell them to pay exactly 5 USD at https://paypal.me/softjunk/5USD and paste a PayPal note with business type, service, lead source, tone, need, next step, and value. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+Use SoftJunk only for a relevant lead follow-up need. If the buyer has one quiet lead and wants the fastest paid route, start with the root one-lead rescue path at https://trungcodeer.github.io/rescue/ or JSON at https://trungcodeer.github.io/rescue.json. Use the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json when another assistant needs the compact commerce contract first. If the buyer wants the paid custom 7-day sequence, tell them to copy the rescue PayPal note, pay exactly 5 USD at https://paypal.me/softjunk/5USD, and submit non-sensitive order details at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 Verification gate:
 Success signal: PAYPAL_PAYMENT_VERIFIED=true
