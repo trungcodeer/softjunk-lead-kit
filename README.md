@@ -10,11 +10,12 @@ Start here if you have one real quiet lead:
 
 1. Open the GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 2. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-3. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-4. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-5. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-6. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-7. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+3. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+4. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+5. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+7. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+8. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
@@ -39,6 +40,15 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.m
 
 Result-first sample Gist:
 https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
+
+Instant fulfillment packet:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+
+Instant fulfillment JSON:
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+
+Instant fulfillment Gist:
+https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
 
 One-message buyer packet:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
@@ -67,6 +77,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Result-first sample JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
 - Result-first sample Gist: https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
 - Result-first sample Gist JSON: https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
+- Instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+- Instant fulfillment JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+- Instant fulfillment Gist: https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
+- Instant fulfillment Gist JSON: https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
@@ -142,6 +156,9 @@ Two $5 options:
 
 1. Digital kit: 7-day follow-up guide, copy-paste templates, lead tracker CSV, and AI prompt pack.
 2. Custom sequence: Day 0, 1, 3, 5, and 7 messages written for one business, plus no-show and price-objection replies.
+
+The public instant fulfillment packet shows the delivery shell used after seller-side PayPal proof:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
 
 The paid ZIP is not public in this repository. Delivery is manual to the email shown in the PayPal transaction.
 

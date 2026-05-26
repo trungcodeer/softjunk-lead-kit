@@ -36,6 +36,12 @@ If the PayPal note is too short, submit non-sensitive order details after paymen
 
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
+## What Gets Sent
+
+The instant fulfillment packet shows the Day 0, Day 1, Day 3, Day 5, Day 7, no-show, and price-objection reply shell used after verified payment:
+
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+
 ## Fulfillment Gate
 
 Delivery starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.
@@ -49,6 +55,14 @@ https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note
 Buy Now packet:
 
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+
+Instant fulfillment JSON:
+
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+
+Instant fulfillment Gist:
+
+https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
 
 Public Gist:
 

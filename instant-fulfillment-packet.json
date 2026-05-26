@@ -1,0 +1,72 @@
+{
+  "schema_version": "softjunk-instant-fulfillment-packet-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk Instant Fulfillment Packet",
+  "purpose": "A public fulfillment shell and copy bank that shows what can be sent after seller-side PayPal proof confirms the 5 USD one-lead rescue payment.",
+  "canonical_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md",
+  "raw_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json",
+  "gist_url": "https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d",
+  "gist_raw_markdown_url": "https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/INSTANT_FULFILLMENT_PACKET.md",
+  "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json",
+  "buy_now_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md",
+  "paypal_note_first_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "paypal_note_template": "One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]",
+  "inputs": [
+    "business type",
+    "service",
+    "source",
+    "need",
+    "tone",
+    "next step"
+  ],
+  "deliverables": [
+    {
+      "id": "day_0",
+      "label": "Day 0",
+      "message": "Hi [Name], quick follow-up on [service]. If this is still open, I can help with [next]. Reply with one word: time, price, or later, and I will send the easiest next step."
+    },
+    {
+      "id": "day_1",
+      "label": "Day 1",
+      "message": "Hi [Name], checking once more on [service]. If timing is the blocker, I can send the next available option. If price or scope is the blocker, reply with that and I will keep it simple."
+    },
+    {
+      "id": "day_3",
+      "label": "Day 3",
+      "message": "Hi [Name], I do not want to crowd your inbox. Should I close this out for now, or would you still like help with [service]? A one-word reply is fine."
+    },
+    {
+      "id": "day_5",
+      "label": "Day 5",
+      "message": "Hi [Name], last practical check-in on [service]. If this is still useful, I can send [next]. If not, no problem and I will stop here."
+    },
+    {
+      "id": "day_7",
+      "label": "Day 7",
+      "message": "Hi [Name], closing the loop on [service]. If the timing changes, reply here and I can restart from the best next step."
+    },
+    {
+      "id": "no_show_recovery",
+      "label": "No-show recovery",
+      "message": "Hi [Name], looks like today got busy. Do you want another time for [service], or should I close this out for now?"
+    },
+    {
+      "id": "price_objection_reply",
+      "label": "Price-objection reply",
+      "message": "That makes sense. If budget is the main issue, I can show the smallest useful version first or explain what is included so you can decide without pressure."
+    }
+  ],
+  "seller_delivery_checklist": [
+    "Confirm seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.",
+    "Replace bracketed placeholders using only non-sensitive PayPal note or order-form context.",
+    "Send the final sequence through the PayPal email or another buyer-requested safe channel.",
+    "Do not post private customer or payment details publicly.",
+    "Record only non-sensitive evidence in the public worklog."
+  ],
+  "privacy_rule": "Do not include customer names, emails, phone numbers, addresses, transaction IDs, patient data, or private lead details in public issues, URLs, Gists, or notes.",
+  "payment_verification_rule": "This packet is not proof of payment. Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+}

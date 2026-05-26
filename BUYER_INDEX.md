@@ -16,6 +16,10 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Result-first sample JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
 - Result-first sample Gist: https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
 - Result-first sample Gist JSON: https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
+- Instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+- Instant fulfillment JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+- Instant fulfillment Gist: https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
+- Instant fulfillment Gist JSON: https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
@@ -89,6 +93,18 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.m
 Proof-of-value Gist:
 
 https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
+
+Instant fulfillment packet:
+
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+
+Instant fulfillment JSON:
+
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+
+Instant fulfillment Gist:
+
+https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
 
 Pinned human checkout board:
 

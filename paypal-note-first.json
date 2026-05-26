@@ -10,6 +10,10 @@
   "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/fbd0764d1575076c27eaddb55042459a/raw/paypal-note-first.json",
   "buy_now_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md",
   "result_first_sample_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md",
+  "instant_fulfillment_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md",
+  "instant_fulfillment_packet_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json",
+  "instant_fulfillment_packet_gist_url": "https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d",
+  "instant_fulfillment_packet_gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
   "price": "5.00",
@@ -34,6 +38,11 @@
       "step": "optional_order_form",
       "url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
       "instruction": "Use the order form only if the PayPal note is too short; keep details non-sensitive."
+    },
+    {
+      "step": "inspect_fulfillment_packet",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md",
+      "instruction": "Open the instant fulfillment packet to see the post-verification delivery shell."
     },
     {
       "step": "verify",

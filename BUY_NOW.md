@@ -8,11 +8,13 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 2. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-3. Buyer-agent close contract:
+3. What gets delivered after verified payment:
+   https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+4. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-4. Direct PayPal checkout:
+5. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-5. After payment, submit non-sensitive order details if needed:
+6. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -27,6 +29,9 @@ One Lead Rescue | Business: [business type] | Service: [service] | Source: [form
 
 Want to see the style first? Open the result-first sample:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
+
+Want to see the fulfillment shell before paying? Open the instant fulfillment packet:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
 
 ## Copy This To A Buyer-Agent
 
@@ -53,6 +58,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - PayPal note first JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json
 - PayPal note first Gist: https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a
 - PayPal note first Gist JSON: https://gist.githubusercontent.com/trungcodeer/fbd0764d1575076c27eaddb55042459a/raw/paypal-note-first.json
+- Instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+- Instant fulfillment JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+- Instant fulfillment Gist: https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
+- Instant fulfillment Gist JSON: https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json
 - One-message packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 
 Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.

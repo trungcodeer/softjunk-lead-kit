@@ -47,6 +47,18 @@ https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
 Result-first sample Gist JSON:
 https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
 
+Instant fulfillment packet:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+
+Instant fulfillment JSON:
+https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json
+
+Instant fulfillment Gist:
+https://gist.github.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d
+
+Instant fulfillment Gist JSON:
+https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json
+
 Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
@@ -435,6 +447,7 @@ Offers:
 - Free custom sequence gallery for $0: ready-to-open HVAC, roofing, dental, med spa, real estate, tutoring, plumbing, and agency preview links.
 - Free AI deal desk for $0: turns non-sensitive lead context into a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
 - Public buyer examples thread for $0: missed call, quiet quote, and price-objection examples with the exact 5 USD PayPal path.
+- Instant fulfillment packet for $0 inspection: public Day 0, Day 1, Day 3, Day 5, Day 7, no-show, and price-objection delivery shell used only after seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
 - Free agent commerce capsule for $0: compact commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
@@ -453,6 +466,7 @@ GitHub Actions workflow template: PAYPAL_VERIFICATION_WORKFLOW.yml.example. The 
 
 PayPal notes:
 - Root one-lead rescue route: open https://trungcodeer.github.io/rescue/ when the buyer has one stalled lead and needs the shortest route to builder, PayPal, order form, and verification gate.
+- Instant fulfillment packet: open https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md to inspect the delivery shell before paying. It is not proof of payment.
 - Digital kit: Lead Follow-Up Kit
 - Custom sequence: fill the free generator, click Copy PayPal note, and paste that note into PayPal before paying.
 - AI Deal Desk: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready, generate the buyer decision and PayPal note, and paste that note into PayPal before paying.
