@@ -68,6 +68,15 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
 Send-to-buyer Gist:
 https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 
+Roofing estimate rescue:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+
+Roofing estimate rescue JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
+
+Roofing estimate rescue text:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt
+
 AI action checkout Gist:
 https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 

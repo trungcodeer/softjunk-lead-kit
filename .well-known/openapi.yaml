@@ -245,6 +245,39 @@ paths:
             application/json:
               schema:
                 type: object
+  /roofing-estimate-rescue.html:
+    get:
+      operationId: openRoofingEstimateRescue
+      summary: Open the SoftJunk roofing estimate rescue packet.
+      responses:
+        "200":
+          description: Buyer-facing page for a roofing contractor with one unanswered estimate, copy-ready message, PayPal note, prefilled send-to-buyer link, exact 5 USD PayPal URL, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /roofing-estimate-rescue.json:
+    get:
+      operationId: getRoofingEstimateRescue
+      summary: Get the SoftJunk roofing estimate rescue JSON.
+      responses:
+        "200":
+          description: Machine-readable one-message funnel for a roofing estimate that went quiet.
+          content:
+            application/json:
+              schema:
+                type: object
+  /roofing-estimate-rescue.txt:
+    get:
+      operationId: getRoofingEstimateRescueText
+      summary: Get the SoftJunk roofing estimate rescue text packet.
+      responses:
+        "200":
+          description: Plain-text one-message funnel for a roofing estimate that went quiet.
+          content:
+            text/plain:
+              schema:
+                type: string
   /offers.json:
     get:
       operationId: getOffers

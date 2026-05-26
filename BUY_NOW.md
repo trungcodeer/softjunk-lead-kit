@@ -24,19 +24,21 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
    https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 10. Send-to-buyer generator packet:
    https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
-11. Agent checkout Gist:
+11. Roofing estimate rescue packet:
+   https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+12. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-12. GitHub Sponsor button buy route:
+13. GitHub Sponsor button buy route:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-13. PayPal note first:
+14. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-14. What gets delivered after verified payment:
+15. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-15. Buyer-agent close contract:
+16. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-16. Direct PayPal checkout:
+17. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-17. After payment, submit non-sensitive order details if needed:
+18. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
@@ -87,6 +89,9 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Send-to-buyer JSON: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json
 - Send-to-buyer Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
 - Send-to-buyer Gist: https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
+- Roofing estimate rescue: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+- Roofing estimate rescue JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
+- Roofing estimate rescue text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt
 - AI action checkout Gist: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 - Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 - Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md

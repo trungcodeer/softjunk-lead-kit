@@ -30,6 +30,9 @@
   "send_to_buyer_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json",
   "send_to_buyer_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md",
   "send_to_buyer_gist_url": "https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683",
+  "roofing_estimate_rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+  "roofing_estimate_rescue_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json",
+  "roofing_estimate_rescue_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.txt",
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "one_message_packet_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md",
@@ -102,6 +105,11 @@
       "step": "send_to_buyer",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html",
       "instruction": "Use the local-only send-to-buyer generator when a seller, assistant, or VA needs one buyer-specific DM, email, PayPal note, or prefilled share link for a fitting buyer who already has one real quiet lead."
+    },
+    {
+      "step": "roofing_estimate_rescue",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+      "instruction": "Use the roofing estimate rescue packet when the fitting buyer is a roofing contractor with one unanswered estimate and one recovered roof job is worth more than 5 USD."
     },
     {
       "step": "sponsor_button_buy",
