@@ -3042,3 +3042,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it targets AI assistants directly through their native repo instruction files and preserves the exact PayPal route plus verification gate.
 - Compatibility boundary: owned GitHub repos, public GitHub raw/blob content, GitHub releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Action Checkout Manifest Checkpoint
+
+Current todo:
+- Add a function-style AI action checkout manifest that buyer agents can parse into a concrete checkout handoff.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add `AI_ACTION_CHECKOUT.md`, `ai-action-checkout.json`, and `.well-known/ai-action-checkout.json`, then wire the manifest into README/Buy Now/llms, agent checkout JSON, Buy Now JSON, catalog JSONL, OpenAPI, plugin metadata, offer metadata, robots, sitemap, public Gist, release, and issue evidence.
+
+Completed todos:
+- Added human-readable AI action checkout brief with `route_softjunk_one_lead_rescue_checkout`.
+- Added root and well-known machine-readable AI action checkout JSON manifests.
+- Created public AI action checkout Gist `https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888`.
+- Updated README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `.well-known/softjunk-offer.json`, `robots.txt`, and `sitemap.xml`.
+- Validated local JSON, JSONL, YAML, XML, marker coverage, and whitespace.
+- Committed and pushed product commit `ccf02dc`.
+- Validated public raw GitHub files for root and well-known AI action checkout manifests, OpenAPI, and catalog JSONL.
+- Validated public Gist Markdown and JSON.
+- Created release `v2.29.48`.
+- Added and validated public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/ccf02dc`.
+- AI action checkout JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json`.
+- Well-known AI action checkout JSON: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json`.
+- Human-readable AI action checkout brief: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AI_ACTION_CHECKOUT.md`.
+- Public AI action checkout Gist: `https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.48`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545449711`.
+- Local validation passed: `json_ok ai-action-checkout.json`, `json_ok .well-known/ai-action-checkout.json`, `json_ok agents-checkout.json`, `json_ok buy-now.json`, `json_ok .well-known/ai-plugin.json`, `json_ok .well-known/softjunk-offer.json`, `jsonl_ok lines=29`, `yaml_xml_ok paths=76`, route marker checks, and `git diff --check`.
+- Public raw validation passed: `ai_action_raw_ok`, `well_known_ai_action_raw_ok`, `openapi_raw_ok`, `catalog_raw_ok`.
+- Public Gist validation passed: `ai_action_gist_md_ok`, `ai_action_gist_json_ok`.
+- Release validation passed: `release_ai_action_ok tag=v2.29.48`.
+- Issue comment validation passed: `issue_ai_action_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545449711`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a direct function-style buyer-agent contract that routes fitting buyers to the exact PayPal checkout and keeps paid/delivered claims behind seller-side verification.
+- Compatibility boundary: owned GitHub repo, public GitHub raw/blob content, public Gists, GitHub release/issue comment, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

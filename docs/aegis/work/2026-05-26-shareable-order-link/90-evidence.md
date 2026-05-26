@@ -79,6 +79,59 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 AI Action Checkout Manifest Evidence
+
+Files changed:
+- `AI_ACTION_CHECKOUT.md`
+- `ai-action-checkout.json`
+- `.well-known/ai-action-checkout.json`
+- `README.md`
+- `BUY_NOW.md`
+- `llms.txt`
+- `agents-checkout.json`
+- `buy-now.json`
+- `agent-buyer-catalog.jsonl`
+- `.well-known/openapi.yaml`
+- `.well-known/ai-plugin.json`
+- `.well-known/softjunk-offer.json`
+- `robots.txt`
+- `sitemap.xml`
+
+Commit, Gist, release, and issue evidence:
+- Product commit: `ccf02dc Add AI action checkout manifest`.
+- AI action checkout JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json`.
+- Well-known AI action checkout JSON: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json`.
+- Human-readable brief: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AI_ACTION_CHECKOUT.md`.
+- Public Gist: `https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.48`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545449711`.
+
+Local validation:
+- `json_ok ai-action-checkout.json`.
+- `json_ok .well-known/ai-action-checkout.json`.
+- `json_ok agents-checkout.json`.
+- `json_ok buy-now.json`.
+- `json_ok .well-known/ai-plugin.json`.
+- `json_ok .well-known/softjunk-offer.json`.
+- `jsonl_ok lines=29`.
+- `yaml_xml_ok paths=76`.
+- Route marker validation confirmed `route_softjunk_one_lead_rescue_checkout`, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, `ai-action-checkout`, and the public Gist across the strict discovery files.
+- `git diff --check` returned no whitespace errors.
+
+Public validation:
+- `ai_action_raw_ok bytes=5028`.
+- `well_known_ai_action_raw_ok bytes=5028`.
+- `openapi_raw_ok bytes=30835`.
+- `catalog_raw_ok bytes=26577`.
+- `ai_action_gist_md_ok chars=1472`.
+- `ai_action_gist_json_ok chars=5027`.
+- `release_ai_action_ok tag=v2.29.48 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.48`.
+- `issue_ai_action_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545449711`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 AI Assistant Instruction Files Evidence
 
 Files added in each owned repo:
