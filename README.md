@@ -7,6 +7,18 @@
 
 A $5 lead follow-up kit and same-price custom sequence for small businesses that get leads from forms, DMs, email, ads, referrals, quotes, appointments, or calls.
 
+## Roofing Buyer Fast Path
+
+Use this first when the lead is an unanswered roofing estimate:
+
+1. See the public sample and pinned agent checkout card: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+2. Read the buyer Discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+3. Generate a free preview: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+4. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+5. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
+
+Do not post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
 ## Buyer Shortcut
 
 Start here if you have one real quiet lead:

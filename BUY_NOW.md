@@ -2,6 +2,23 @@
 
 Use this when one real lead has gone quiet and one recovered reply, quote, appointment, or job is worth more than 5 USD.
 
+## Roofing Estimate Fast Path
+
+Use this before the generic route when the buyer has one unanswered roofing estimate:
+
+1. Public sample and pinned agent checkout card:
+   https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+2. GitHub Discussion buyer route:
+   https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+3. Free roofing follow-up generator:
+   https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+4. Pay exactly 5 USD through PayPal:
+   https://paypal.me/softjunk/5USD
+5. After payment, submit non-sensitive roofing context:
+   https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
+
+Do not post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
 ## Fastest Route
 
 1. Human buyer start-here board:

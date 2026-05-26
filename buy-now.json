@@ -8,6 +8,16 @@
   "gist_url": "https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6",
   "gist_raw_markdown_url": "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md",
   "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json",
+  "roofing_buyer_fast_path": {
+    "use_when": "The buyer has one unanswered roofing estimate and one recovered roof job is worth more than 5 USD.",
+    "public_issue_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
+    "public_discussion_url": "https://github.com/trungcodeer/softjunk-lead-kit/discussions/8",
+    "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "post_payment_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
+    "privacy_rule": "Do not post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details.",
+    "verification_rule": "Delivery starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  },
   "agent_instructions_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md",
   "agent_checkout_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json",
   "agent_checkout_gist_url": "https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b",
