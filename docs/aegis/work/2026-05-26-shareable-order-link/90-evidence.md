@@ -3227,3 +3227,15 @@ Payment gate:
 - Validation confirmed issues #1, #5, and #7 titles contain `buyer-send` and bodies contain `roofing-buyer-send`, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
 - Validation confirmed Discussion #8 title/body contain buyer-send route, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and the direct PayPal checkout line.
 - PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-27 Payment Pages Buyer-Send Context Evidence
+
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/7ae6af065bdc9ba1a43a22cbdc35ed298312b48d`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/b026f63d8942a40cfae7ce1cca0c245459609fc0`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.70`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-payment-buyer-send-v1`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549796802`.
+- Raw/live validation passed for product `pay-qr.html`, `pay.html`, `checkout.html`, `after-pay.html`, and root `paypal/`, `pay/`, `buy/` pages.
+- Validation confirmed one H1, skip link, buyer-send route, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and placeholder/privacy copy on all 7 pages.
+- Product Pages run `26480241239` and root Pages run `26480259284` completed successfully.
+- IndexNow accepted 9 related URLs with `status=200`.
+- PayPal verifier remained negative: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
