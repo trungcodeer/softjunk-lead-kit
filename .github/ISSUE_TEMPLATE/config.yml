@@ -27,6 +27,9 @@ contact_links:
   - name: Root roofing estimate rescue route
     url: https://trungcodeer.github.io/roofing/
     about: Shortest route from one unanswered roofing estimate to generator, exact 5 USD PayPal payment, roofing order form, and verification gate.
+  - name: Public roofing buyer issue
+    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+    about: Read the roofing sample sequence, copy the PayPal note, pay exactly 5 USD, then use the dedicated roofing order form after payment.
   - name: Roofing estimate rescue order form
     url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
     about: Submit non-sensitive roofing estimate rescue details after paying exactly 5 USD.
