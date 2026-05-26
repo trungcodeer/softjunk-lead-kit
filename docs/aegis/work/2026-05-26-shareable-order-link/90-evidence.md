@@ -79,6 +79,36 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Quiet Lead GitHub-Native Buyer Packet Route Evidence
+
+Quiet repo files changed:
+- `README.md`
+- `.github/FUNDING.yml`
+- `.github/SUPPORT.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+
+Quiet repo metadata:
+- Quiet repo homepage metadata is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Quiet repo description is `Quiet lead follow-up templates routed to a 5 USD buyer-agent packet and PayPal checkout path`.
+
+Commit and release:
+- Quiet commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/da2c093`.
+- Quiet release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-one-message-buyer-packet-v1`.
+
+Public comment:
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543983064`.
+
+Validation:
+- Quiet YAML validation passed for Funding and issue contact config.
+- Quiet marker validation passed for README, Funding, Support, and issue contact config.
+- Quiet raw GitHub validation passed: `quiet_github_native_raw_ok files=4 checks=20 commit=da2c093`.
+- Validated markers included one-message packet, issue #5, RawGitHack Agent Close fallback, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Quiet latest Pages build for `da2c0939da085b5d0e4184e55f9e4416df5066e5` remained `building`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Profile GitHub-Native Buyer Packet Route Evidence
 
 Profile files changed:

@@ -2246,3 +2246,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the GitHub profile's visible buyer surfaces toward the shortest PayPal route without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: profile/root/product GitHub repos, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Quiet Lead GitHub-Native Buyer Packet Route Checkpoint
+
+Current todo:
+- Keep quiet/profile/root/product GitHub-native surfaces, one-message packet, issue #1/#5, Funding, repo homepage, RawGitHack, and Gist as active buyer routes.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Route the `quiet-lead-follow-up` repo buyer surfaces to the one-message buyer packet and public Agent Close issue because that repo matches the quiet-lead buyer intent directly.
+
+Completed todos:
+- Audited quiet repo `README.md`, `.github/FUNDING.yml`, `.github/SUPPORT.md`, `.github/ISSUE_TEMPLATE/config.yml`, and repo metadata.
+- Updated quiet README to expose one-message buyer packet, issue #5, Agent Close fallback, root rescue, exact PayPal URL, and order form.
+- Updated quiet Funding links to prioritize issue #5, one-message packet, Agent Close fallback, root rescue, and exact PayPal.
+- Updated quiet Support and issue contact links with the same route and verification gate.
+- Updated quiet repo homepage metadata to issue #5 and description to mention the buyer-agent packet and PayPal checkout path.
+- Validated quiet YAML, marker coverage, raw GitHub files, and repo metadata.
+- Committed and pushed quiet commit `da2c093`.
+- Created quiet release `quiet-one-message-buyer-packet-v1`.
+- Commented product issue #5 with the quiet route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Quiet commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/da2c093`.
+- Quiet release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-one-message-buyer-packet-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543983064`.
+- Quiet raw validation passed: `quiet_github_native_raw_ok files=4 checks=20 commit=da2c093`.
+- Quiet repo metadata homepage is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Quiet repo description is `Quiet lead follow-up templates routed to a 5 USD buyer-agent packet and PayPal checkout path`.
+- Quiet latest Pages build for `da2c0939da085b5d0e4184e55f9e4416df5066e5` remained `building`.
+- Product latest Pages build for `e58d6d4f70db38f50a6a2aa9670fb08eec763def` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root/quiet GitHub Pages build infrastructure remains unreliable for new routes, so GitHub-native issue, one-message packet, RawGitHack, and Gist fallbacks remain the active route.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it routes a high-intent quiet-lead-owned repo toward the shortest PayPal route without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: quiet/profile/root/product GitHub repos, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
