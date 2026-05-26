@@ -29,6 +29,18 @@ https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 AI agent buyer packet JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 
+AI Deal Desk:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+
+AI Deal Desk JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json
+
+AI Deal Desk text:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt
+
+AI Deal Desk public Gist:
+https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
+
 Agent commerce capsule:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 
@@ -275,6 +287,7 @@ Offers:
 - Free shareable order link for $0: creates a URL, PayPal note, and buyer handoff when non-sensitive order context is already known.
 - Free custom sequence preview for $0: creates Day 0, Day 1, Day 3 preview copy, a PayPal note, and a shareable order link before the buyer pays.
 - Free custom sequence gallery for $0: ready-to-open HVAC, roofing, dental, med spa, real estate, tutoring, plumbing, and agency preview links.
+- Free AI deal desk for $0: turns non-sensitive lead context into a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
 - Public buyer examples thread for $0: missed call, quiet quote, and price-objection examples with the exact 5 USD PayPal path.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
 - Free agent commerce capsule for $0: compact commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
@@ -295,6 +308,7 @@ GitHub Actions workflow template: PAYPAL_VERIFICATION_WORKFLOW.yml.example. The 
 PayPal notes:
 - Digital kit: Lead Follow-Up Kit
 - Custom sequence: fill the free generator, click Copy PayPal note, and paste that note into PayPal before paying.
+- AI Deal Desk: open https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready, generate the buyer decision and PayPal note, then paste that note into PayPal before paying.
 - Shareable order link: open https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html, generate the URL and PayPal note, then paste that note into PayPal before paying.
 - Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.

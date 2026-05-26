@@ -12,6 +12,9 @@
   "custom_sequence_gallery_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
   "custom_sequence_gallery_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
   "custom_sequence_gallery_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
+  "ai_deal_desk_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+  "ai_deal_desk_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
+  "ai_deal_desk_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt",
   "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
   "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
   "agent_commerce_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
@@ -85,6 +88,15 @@
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
       "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
       "delivery": "Agent-readable decision packet with lead audit path, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule"
+    },
+    {
+      "name": "Free AI deal desk",
+      "price": "0.00",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844",
+      "delivery": "Browser-generated buyer decision, PayPal note, custom preview route, and shareable order link for qualified 5 USD custom sequence handoffs"
     },
     {
       "name": "Free agent commerce capsule",
@@ -214,6 +226,9 @@
     "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+    "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
+    "https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844",
     "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
     "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
@@ -237,7 +252,7 @@
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
-    "custom_sequence": "Use the custom sequence gallery when the buyer wants a ready scenario, use the custom sequence preview when they want tailored copy before paying, or use the shareable order link when the order context is already ready. Copy the PayPal note and paste that note into PayPal before paying.",
+    "custom_sequence": "Use the AI deal desk when non-sensitive lead context is ready, use the custom sequence gallery when the buyer wants a ready scenario, use the custom sequence preview when they want tailored copy before paying, or use the shareable order link when the order context is already ready. Copy the PayPal note and paste that note into PayPal before paying.",
     "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
     "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary.",
     "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment."

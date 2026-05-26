@@ -31,6 +31,9 @@
     "root_short_pay_url": "https://trungcodeer.github.io/pay/",
     "root_short_buy_url": "https://trungcodeer.github.io/buy/",
     "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "ai_deal_desk_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+    "ai_deal_desk_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
+    "ai_deal_desk_gist_url": "https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844",
     "agent_commerce_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
     "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
     "custom_sequence_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
@@ -50,8 +53,9 @@
       "Open https://paypal.me/softjunk/5USD.",
       "Pay exactly 5.00 USD.",
       "Use PayPal note Lead Follow-Up Kit for the digital kit.",
+      "Use https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready and the buyer needs a decision, PayPal note, custom preview route, and shareable order link before paying.",
       "Use https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html when an assistant, VA, crawler, or buyer needs the compact commerce contract before paying.",
-      "Use the generated note from https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html, https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html, or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html for a custom sequence.",
+      "Use the generated note from https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html, https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html, https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html, or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html for a custom sequence.",
       "Open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html after payment.",
       "Do not claim payment or delivery until seller-side PayPal verification succeeds."
     ]

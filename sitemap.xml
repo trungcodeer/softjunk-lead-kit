@@ -109,6 +109,24 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt</loc>
+    <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json</loc>
     <lastmod>2026-05-26</lastmod>
     <changefreq>weekly</changefreq>

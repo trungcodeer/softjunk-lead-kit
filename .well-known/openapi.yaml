@@ -83,6 +83,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /ai-deal-desk.html:
+    get:
+      operationId: openAiDealDesk
+      summary: Open the SoftJunk AI Deal Desk.
+      responses:
+        "200":
+          description: Browser tool that turns non-sensitive lead context into a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
+          content:
+            text/html:
+              schema:
+                type: string
+  /ai-deal-desk.json:
+    get:
+      operationId: getAiDealDesk
+      summary: Get the SoftJunk AI Deal Desk JSON.
+      responses:
+        "200":
+          description: Machine-readable AI deal desk packet with inputs, decision rule, generated routes, PayPal note template, privacy rule, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /ai-deal-desk.txt:
+    get:
+      operationId: getAiDealDeskText
+      summary: Get the SoftJunk AI Deal Desk text packet.
+      responses:
+        "200":
+          description: Plain-text AI deal desk instructions with payment URL, generated routes, PayPal note template, privacy rule, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /agent-commerce.html:
     get:
       operationId: openAgentCommerceCapsule

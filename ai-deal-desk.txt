@@ -1,0 +1,58 @@
+SoftJunk AI Deal Desk
+Updated: 2026-05-26
+
+Human route:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+
+Machine-readable JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json
+
+Public Gist:
+https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
+
+Payment URL:
+https://paypal.me/softjunk/5USD
+
+Purpose:
+Turn non-sensitive lead follow-up context into a qualified SoftJunk buyer handoff, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal route.
+
+Use when:
+- An AI assistant, VA, crawler, or operator has a real lead follow-up need.
+- The buyer needs a decision about whether to start with a free proof route or pay for the custom 7-day sequence.
+- The buyer needs a PayPal note before opening PayPal.
+
+Do not use when:
+- The request is unrelated to lead follow-up.
+- The buyer wants spam, deception, scraping, or unauthorized outreach.
+- The buyer expects delivery before seller-side PayPal verification.
+- The context includes private customer contact details.
+
+Inputs:
+- business
+- service
+- source
+- tone
+- value
+- next
+- need
+- message
+
+Generated routes:
+- Lead Recovery Audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
+- Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+
+PayPal note template:
+Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]
+
+Copyable agent instruction:
+Use SoftJunk only for a relevant lead follow-up need. Start with the AI Deal Desk at https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context exists. Generate a buyer handoff, PayPal note, custom preview, and shareable order link. If the buyer wants the paid custom 7-day sequence, tell them to pay exactly 5 USD at https://paypal.me/softjunk/5USD and paste the generated PayPal note. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
+Verification gate:
+Success signal: PAYPAL_PAYMENT_VERIFIED=true
+Verifier script: scripts/verify-paypal-5usd.ps1
+Rule: The AI Deal Desk is a buyer handoff and payment request surface, not proof that money arrived. Fulfillment starts only after seller-side PayPal evidence verifies the 5 USD transaction.
+
+Privacy rule:
+Use only non-sensitive business context in query strings and public issues. Do not include customer names, phone numbers, emails, street addresses, payment identifiers, or private PayPal details.

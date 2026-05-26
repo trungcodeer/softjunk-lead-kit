@@ -16,6 +16,9 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+- AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+- AI Deal Desk JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json
+- AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
@@ -59,6 +62,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+- AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+- AI Deal Desk text: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt
+- AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html

@@ -10,6 +10,9 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
+- AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+- AI Deal Desk JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json
+- AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
@@ -53,6 +56,10 @@ If the buyer wants a ready example, open the scenario gallery first:
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 
+If non-sensitive lead context is already available, open the AI Deal Desk to generate a buyer decision, PayPal note, custom preview route, and shareable order link:
+
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+
 If an AI assistant, VA, crawler, or buyer needs the compact commerce contract before routing to PayPal, open:
 
 https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
@@ -76,6 +83,10 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - Custom sequence gallery JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 - Custom sequence gallery text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
+- AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+- AI Deal Desk JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json
+- AI Deal Desk text: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt
+- AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt

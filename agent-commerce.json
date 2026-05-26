@@ -7,6 +7,9 @@
   "html_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "ai_deal_desk_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+  "ai_deal_desk_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
+  "ai_deal_desk_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
@@ -48,6 +51,12 @@
   ],
   "agent_flow": [
     {
+      "step": "decide_handoff",
+      "preferred_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
+      "when": "Non-sensitive lead context is already known and the buyer or agent needs a decision, PayPal note, custom preview route, and shareable order link before payment.",
+      "result": "Qualified buyer handoff with exact 5 USD PayPal route."
+    },
+    {
       "step": "diagnose_need",
       "preferred_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
       "when": "The buyer has a weak message, rough lead value, or lead-volume numbers.",
@@ -88,7 +97,7 @@
     "digital_kit": "Lead Follow-Up Kit",
     "custom_sequence_template": "Custom Sequence | Business: [business type] | Service: [service] | Source: [lead source] | Tone: [tone] | Need: [follow-up need] | Next: [next step] | Value: [lead value]"
   },
-  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. Start with the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json. If the buyer has lead details, use the free audit, scenario gallery, custom preview, or shareable order link first. If the buyer wants the paid custom 7-day sequence, tell them to pay exactly 5 USD at https://paypal.me/softjunk/5USD and paste a PayPal note with business type, service, lead source, tone, need, next step, and value. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. Start with the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json. If non-sensitive lead context is ready, use the AI Deal Desk at https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html to generate the buyer decision, PayPal note, custom preview route, and shareable order link. If the buyer has lead details, use the free audit, scenario gallery, custom preview, or shareable order link first. If the buyer wants the paid custom 7-day sequence, tell them to pay exactly 5 USD at https://paypal.me/softjunk/5USD and paste a PayPal note with business type, service, lead source, tone, need, next step, and value. After payment, send them to https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
   "verification_gate": {
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "script_path": "scripts/verify-paypal-5usd.ps1",

@@ -9,6 +9,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 Canonical JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 
+AI Deal Desk:
+https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+
 Direct PayPal:
 https://paypal.me/softjunk/5USD
 
@@ -40,17 +43,19 @@ Do not use when:
 - The buyer refuses PayPal or cannot use a public/non-sensitive handoff.
 
 Recommended flow:
-1. Diagnose need:
+1. Decide handoff:
+   https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+2. Diagnose need:
    https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
-2. Show ready scenario:
+3. Show ready scenario:
    https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
-3. Show tailored preview:
+4. Show tailored preview:
    https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
-4. Create order link:
+5. Create order link:
    https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
-5. Pay exactly 5 USD:
+6. Pay exactly 5 USD:
    https://paypal.me/softjunk/5USD
-6. After payment:
+7. After payment:
    https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
 PayPal notes:
