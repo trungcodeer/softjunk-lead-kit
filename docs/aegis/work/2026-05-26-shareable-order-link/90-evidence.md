@@ -74,6 +74,45 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Well-Known AI Checkout Discovery Evidence
+
+Discovery changes:
+- Updated `.well-known/openapi.yaml` so `/checkout.html` is described as the AI checkout handoff, not a minimal checkout.
+- Added OpenAPI paths for `/checkout.json` and `/checkout.txt`.
+- Updated `.well-known/ai-plugin.json` to route ready buyers to the AI checkout handoff and machine-readable checkout JSON/text.
+- Updated `.well-known/softjunk-offer.json` with `checkout_json_url`, `checkout_text_url`, and offer-level checkout links.
+- Updated `.well-known/paypal-payment.json` with checkout HTML/JSON/text URLs.
+
+Local validation:
+- All product root `*.json`, `.well-known/*.json`, and `distribution/**/*.json` parsed with `ConvertFrom-Json`.
+- `sitemap.xml` and `feed.xml` parsed as XML.
+- `git diff --check` passed.
+- OpenAPI YAML parsed with PyYAML and asserted `/checkout.html`, `/checkout.json`, and `/checkout.txt` paths are present.
+- `rg` confirmed checkout JSON/text and `PAYPAL_PAYMENT_VERIFIED=true` are present in the updated `.well-known` files.
+
+Live validation:
+- GitHub Pages run `26430214095` completed successfully.
+- `Invoke-WebRequest` returned HTTP 200 and `checkout_discovery_ok=True` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml?v=4889c75`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-plugin.json?v=4889c75`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json?v=4889c75`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json?v=4889c75`
+- Live AI plugin JSON parse confirmed `description_for_model` contains `checkout.json`.
+- Live offer manifest confirmed `checkout_json_url=https://trungcodeer.github.io/softjunk-lead-kit/checkout.json`.
+- Live PayPal alias confirmed `checkout_json_url=https://trungcodeer.github.io/softjunk-lead-kit/checkout.json` and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Live OpenAPI YAML parsed with PyYAML and confirmed checkout HTML/JSON/text paths.
+
+Release and discovery:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/4889c75`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.12`.
+- IndexNow returned `status=200 urls=6`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539681606`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539681750`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 AI Checkout Handoff Evidence
 
 Product checkout changes:

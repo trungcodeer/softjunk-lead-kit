@@ -660,3 +660,57 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves the product checkout path closest to the payment decision without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Well-Known AI Checkout Discovery Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Expose the AI checkout handoff through `.well-known` discovery so AI agents and crawlers can route ready buyers to `checkout.html`, `checkout.json`, and `checkout.txt` before the exact 5 USD PayPal payment.
+
+Completed todos:
+- Re-audited `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `.well-known/softjunk-offer.json`, and `.well-known/paypal-payment.json`.
+- Found OpenAPI still described checkout as a minimal checkout and did not expose `/checkout.json` or `/checkout.txt`.
+- Updated OpenAPI checkout description and added `/checkout.json` plus `/checkout.txt` operations.
+- Updated `ai-plugin.json` so the model instruction explicitly routes ready buyers to the AI checkout handoff and checkout JSON/text.
+- Updated `.well-known/softjunk-offer.json` with checkout JSON/text URLs and offer-level checkout links.
+- Updated `.well-known/paypal-payment.json` with checkout HTML/JSON/text URLs.
+- Validated all JSON files, XML files, and OpenAPI YAML locally.
+- Committed and pushed product change `4889c75`.
+- Created release `v2.29.12`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified live `.well-known` endpoints returned HTTP 200 and exposed checkout JSON/text.
+- Parsed live OpenAPI YAML and confirmed `/checkout.html`, `/checkout.json`, and `/checkout.txt` paths exist.
+- Submitted 6 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the well-known discovery update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/4889c75`.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.12`.
+- Live OpenAPI: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml?v=4889c75`.
+- Live AI plugin: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-plugin.json?v=4889c75`.
+- Live offer manifest: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json?v=4889c75`.
+- Live PayPal alias: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json?v=4889c75`.
+- Live checks returned HTTP 200 and `checkout_discovery_ok=True` for all four `.well-known` endpoints.
+- Live AI plugin parse confirmed `checkout.json` appears in `description_for_model`.
+- Live offer and PayPal alias parse confirmed `checkout_json_url=https://trungcodeer.github.io/softjunk-lead-kit/checkout.json`.
+- Live PayPal alias retained `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Live OpenAPI YAML parsed successfully with `/checkout.html`, `/checkout.json`, and `/checkout.txt`.
+- IndexNow returned `status=200 urls=6`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539681606` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539681750`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves AI-agent discovery of the checkout/payment handoff without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
