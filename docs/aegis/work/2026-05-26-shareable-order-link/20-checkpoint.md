@@ -238,3 +238,50 @@ DriftCheckDraft:
 - Current slice fit: yes, it builds a non-traditional AI-native commerce contract instead of manual posting or outreach while preserving buyer consent and the PayPal verification gate.
 - Compatibility boundary: static GitHub Pages, public Gists/issues/releases, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Deal Desk Deploy Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Ship an AI Deal Desk that turns non-sensitive lead context into a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
+
+Completed todos:
+- Added `ai-deal-desk.html`, `ai-deal-desk.json`, and `ai-deal-desk.txt`.
+- Created public AI Deal Desk Gist `https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844`.
+- Wired the deal desk into product homepage, buyer index, agent packet, agent commerce capsule, agent offer, payment intent, product/offers/share manifests, checkout/pay pages, `llms.txt`, RSS, sitemap, OpenAPI, well-known manifests, README, and local Gist source files.
+- Wired root hub, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, root JSON/text/payment manifests, root `llms.txt`, OpenAPI, sitemap, README, and root AI plugin manifest to the deal desk.
+- Parsed product/root JSON and XML successfully after edits.
+- Parsed affected inline JavaScript with Node while skipping JSON-LD scripts.
+- Verified local and live AI Deal Desk DOM with Chrome headless and query parameters.
+- Committed product change `4e020df` and root change `e172f9f`.
+- Pushed both repos and confirmed GitHub Pages deployments succeeded.
+- Created product release `v2.29.6` and root release `root-ai-deal-desk-v1`.
+- Updated AI Deal Desk, payment-intent, and agent-buyer-packet Gists from local sources.
+- Verified live product/root URLs with cache-busting content checks.
+- Submitted 39 URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the new AI Deal Desk route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product live checks returned `product_live_ok=11` across AI Deal Desk HTML/JSON/TXT and key discovery/payment manifests.
+- Root live checks returned `root_live_ok=13` across root, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, root manifests, OpenAPI, `llms.txt`, and sitemap.
+- Chrome headless live DOM dump included `AI Deal Desk`, `Buyer handoff generated`, `Custom Sequence`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, `shareable-order-link`, `custom-sequence-preview`, and `Lead Recovery Audit`.
+- Gist raw checks confirmed `ai-deal-desk`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, and `16d6861c14de82187946861e4c448844`.
+- Releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.6` and `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-ai-deal-desk-v1`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538806320` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538807844`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a stronger AI-native conversion tool without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public Gists/issues/releases, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

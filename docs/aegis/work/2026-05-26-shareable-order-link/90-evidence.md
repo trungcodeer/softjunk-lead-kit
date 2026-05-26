@@ -79,6 +79,48 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 AI Deal Desk Evidence
+
+Local validation:
+- Product JSON parse returned `product_json_ok=20` for product root JSON, `.well-known` JSON, and `distribution/**/*.json`.
+- Product XML parse returned `product_xml_ok=2` for `sitemap.xml` and `feed.xml`.
+- Root JSON parse returned `root_json_ok=6` for root and `.well-known` JSON.
+- Root XML parse returned `root_xml_ok=1` for root `sitemap.xml`.
+- Product script parse returned `ai-deal-desk.html js_scripts=1 ok`, `agent-commerce.html js_scripts=1 ok`, `index.html js_scripts=1 ok`, `pay.html js_scripts=1 ok`, and `checkout.html js_scripts=1 ok`.
+- Root script parse returned `index.html js_scripts=0 ok`, `ai/index.html js_scripts=0 ok`, `pay/index.html js_scripts=1 ok`, `paypal/index.html js_scripts=1 ok`, and `buy/index.html js_scripts=0 ok`.
+- Local Chrome headless `--dump-dom` on `ai-deal-desk.html` with sample query params emitted `AI Deal Desk`, `Buyer handoff generated`, `Custom Sequence`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, `shareable-order-link`, `custom-sequence-preview`, and `Lead Recovery Audit`.
+
+Files added:
+- `ai-deal-desk.html`
+- `ai-deal-desk.json`
+- `ai-deal-desk.txt`
+
+Commits and deploy:
+- Product commit: `4e020df Add AI deal desk buyer handoff`.
+- Root commit: `e172f9f Route root buyers to AI deal desk`.
+- Product Pages run `26426888734` completed with `success`.
+- Root Pages run `26426888525` completed with `success`.
+
+Live deploy validation:
+- Product route checks returned `product_live_ok=11` for AI Deal Desk HTML/JSON/TXT, buyer index, agent packet, payment intent, offers/product feed, `llms.txt`, sitemap, and RSS.
+- Root route checks returned `root_live_ok=13` for root, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, root JSON/text/payment manifests, OpenAPI, `llms.txt`, and sitemap.
+- Live Chrome headless `--dump-dom` on `ai-deal-desk.html` with sample query params emitted `AI Deal Desk`, `Buyer handoff generated`, `Custom Sequence`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, `shareable-order-link`, `custom-sequence-preview`, and `Lead Recovery Audit`.
+
+Public distribution:
+- AI Deal Desk Gist: `https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.6`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-ai-deal-desk-v1`.
+- Payment-intent Gist `167d3dc5f8696bf9edb04d3db6c53a02` updated from local distribution sources.
+- Agent buyer packet Gist `85b6eef2cd6deb244d0bfbe18e744a3c` updated from local packet files.
+- `gh gist view --raw` confirmed the AI Deal Desk, payment-intent, and agent-buyer-packet Gists expose `ai-deal-desk`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED`.
+- IndexNow returned success for 39 submitted URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538806320`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538807844`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Custom Sequence Gallery Deploy Evidence
 
 Live deploy validation:
