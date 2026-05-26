@@ -351,7 +351,7 @@
 
     <section class="panel" aria-labelledby="builder-title">
       <h2 id="builder-title">Buyer Pitch Generator</h2>
-      <p class="hint">Local-only fields. Do not enter customer names, phone numbers, email addresses, street addresses, PayPal IDs, invoice IDs, or transaction IDs.</p>
+      <p class="hint">Local-only fields. Share links include field values in the URL, so do not enter customer names, phone numbers, email addresses, street addresses, PayPal IDs, invoice IDs, or transaction IDs.</p>
       <form class="builder" id="pitch-form" novalidate>
         <div class="field">
           <label for="business">Business type</label>
@@ -409,6 +409,11 @@
           </select>
         </div>
       </form>
+      <div class="inline-actions">
+        <button class="accent" type="button" id="copy-share-link">Copy Share Link</button>
+        <a class="button" id="open-share-link" href="https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html">Open Share Link</a>
+      </div>
+      <p class="status" id="share-status" aria-live="polite"></p>
       <p class="status" id="privacy-status" aria-live="polite"></p>
     </section>
 
@@ -488,6 +493,33 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
         || /\b(?:paypal|transaction|invoice)\s*(?:id|email|number)\b/i.test(value);
     }
 
+    function setFieldsFromUrl() {
+      var params = new URLSearchParams(window.location.search);
+      fieldIds.forEach(function (id) {
+        if (!params.has(id)) return;
+        var element = document.getElementById(id);
+        var value = params.get(id).trim().replace(/\s+/g, " ").replace(/[|<>]/g, " ").slice(0, 110);
+        if (element.tagName === "SELECT") {
+          var options = Array.prototype.map.call(element.options, function (option) {
+            return option.value || option.textContent;
+          });
+          if (options.indexOf(value) !== -1) element.value = value;
+        } else {
+          element.value = value;
+        }
+      });
+    }
+
+    function buildShareUrl() {
+      var url = new URL(window.location.href);
+      url.search = "";
+      url.hash = "";
+      fieldIds.forEach(function (id) {
+        url.searchParams.set(id, cleanField(id, ""));
+      });
+      return url.toString();
+    }
+
     function buildPayload() {
       var business = cleanField("business", "local service business");
       var service = cleanField("service", "estimate or appointment");
@@ -538,25 +570,35 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
       var privacyStatus = document.getElementById("privacy-status");
       var copyButtons = document.querySelectorAll("[data-copy]");
       var emailClient = document.getElementById("email-client");
+      var shareButton = document.getElementById("copy-share-link");
+      var openShareLink = document.getElementById("open-share-link");
 
       if (privacyRisk) {
-        privacyStatus.textContent = "Remove private identifiers before copying or opening email.";
+        privacyStatus.textContent = "Remove private identifiers before copying, sharing, or opening email.";
         privacyStatus.classList.add("warning");
         copyButtons.forEach(function (button) {
           button.disabled = true;
         });
+        shareButton.disabled = true;
         emailClient.removeAttribute("href");
         emailClient.setAttribute("aria-disabled", "true");
         emailClient.tabIndex = -1;
+        openShareLink.removeAttribute("href");
+        openShareLink.setAttribute("aria-disabled", "true");
+        openShareLink.tabIndex = -1;
       } else {
         privacyStatus.textContent = "No private identifiers detected in the editable fields.";
         privacyStatus.classList.remove("warning");
         copyButtons.forEach(function (button) {
           button.disabled = false;
         });
+        shareButton.disabled = false;
         emailClient.href = "mailto:?subject=" + encodeURIComponent(payload.subject) + "&body=" + encodeURIComponent(payload.body);
         emailClient.removeAttribute("aria-disabled");
         emailClient.removeAttribute("tabindex");
+        openShareLink.href = buildShareUrl();
+        openShareLink.removeAttribute("aria-disabled");
+        openShareLink.removeAttribute("tabindex");
       }
     }
 
@@ -578,11 +620,27 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
       }
     }
 
+    async function copyShareLink() {
+      var status = document.getElementById("share-status");
+      if (privacyRisk) {
+        status.textContent = "Remove private identifiers before copying a share link.";
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(buildShareUrl());
+        status.textContent = "Share link copied.";
+      } catch (error) {
+        status.textContent = "Open the share link, then copy the browser address.";
+      }
+    }
+
     document.querySelectorAll("[data-copy]").forEach(function (button) {
       button.addEventListener("click", function () {
         copyText(button.getAttribute("data-copy"));
       });
     });
+
+    document.getElementById("copy-share-link").addEventListener("click", copyShareLink);
 
     fieldIds.forEach(function (id) {
       var element = document.getElementById(id);
@@ -590,6 +648,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
       element.addEventListener("change", updateGeneratedText);
     });
 
+    setFieldsFromUrl();
     updateGeneratedText();
   </script>
 </body>

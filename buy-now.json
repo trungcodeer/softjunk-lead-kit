@@ -101,7 +101,7 @@
     {
       "step": "send_to_buyer",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html",
-      "instruction": "Use the local-only send-to-buyer generator when a seller, assistant, or VA needs one buyer-specific DM, email, or PayPal note for a fitting buyer who already has one real quiet lead."
+      "instruction": "Use the local-only send-to-buyer generator when a seller, assistant, or VA needs one buyer-specific DM, email, PayPal note, or prefilled share link for a fitting buyer who already has one real quiet lead."
     },
     {
       "step": "sponsor_button_buy",

@@ -27,9 +27,19 @@
       "generated short DM",
       "generated email",
       "generated PayPal note",
-      "mailto link"
+      "mailto link",
+      "prefilled share link"
     ],
-    "privacy_rule": "The browser-side generator does not submit data and warns before copying if editable fields appear to contain email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs."
+    "url_parameters": [
+      "business",
+      "service",
+      "value",
+      "source",
+      "need",
+      "tone",
+      "next"
+    ],
+    "privacy_rule": "The browser-side generator does not submit data. Prefilled share links place field values in the URL, so only non-sensitive context should be used. The page warns and disables copy/share/open-email controls if editable fields appear to contain email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs."
   },
   "paypal_note_template": "One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]",
   "short_dm": "You have one lead that went quiet. If one recovered reply is worth more than $5, I can write the Day 0, 1, 3, 5, and 7 follow-up sequence for that one situation. Use only non-sensitive business context. Pay exactly $5 here: https://paypal.me/softjunk/5USD",

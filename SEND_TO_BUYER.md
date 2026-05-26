@@ -26,7 +26,7 @@ The public page includes a local-only generator for:
 - Tone
 - Best next step
 
-It outputs a buyer-specific short DM, email, PayPal note, and `mailto:` link. It does not submit field values, and it warns before copying if editable fields appear to contain email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs.
+It outputs a buyer-specific short DM, email, PayPal note, `mailto:` link, and prefilled share link. It does not submit field values. Share links place field values in the URL, so only non-sensitive context should be used. The page warns before copying/sharing if editable fields appear to contain email addresses, phone numbers, street addresses, PayPal IDs, invoice IDs, or transaction IDs.
 
 ## Short DM
 
