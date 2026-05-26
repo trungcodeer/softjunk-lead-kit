@@ -1,0 +1,25 @@
+SoftJunk missed call follow-up answer
+
+Buyer question:
+What should I text a lead after a missed call?
+
+Short answer:
+Name the missed call, offer help, and ask for one easy next step.
+
+Sample:
+Hi [Name], sorry I missed your call about [service]. I can help. Do you want the fastest available time, or should I answer one quick question first?
+
+Product page:
+https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+
+Paid upgrade:
+Custom 7-day missed-call recovery sequence for one business and one service.
+
+Payment:
+https://paypal.me/softjunk/5USD
+
+Payment note:
+Custom Sequence | Business: [business type] | Service: [service] | Source: missed call | Tone: [tone] | Need: missed-call follow-up
+
+Fulfillment rule:
+Do not claim paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

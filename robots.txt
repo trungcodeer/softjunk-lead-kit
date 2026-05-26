@@ -9,6 +9,8 @@ Allow: /PAYPAL_VERIFICATION.md
 Allow: /lead-follow-up-rewriter.html
 Allow: /lead-follow-up-answers.html
 Allow: /answer-engine.json
+Allow: /exact-intent-answer-pack.json
+Allow: /exact-intent-answer-pack.txt
 Allow: /fix-one-quiet-lead.html
 Allow: /lead-follow-up-templates.html
 Allow: /follow-up-examples.html
@@ -29,10 +31,15 @@ Allow: /paid-kit-manifest.json
 Allow: /pay-qr.html
 Allow: /printable-paypal-flyer.html
 Allow: /missed-call-follow-up.html
+Allow: /missed-call-follow-up.txt
 Allow: /estimate-follow-up-template.html
+Allow: /estimate-follow-up-template.txt
 Allow: /price-objection-reply.html
+Allow: /price-objection-reply.txt
 Allow: /no-show-follow-up.html
+Allow: /no-show-follow-up.txt
 Allow: /quiet-dm-follow-up.html
+Allow: /quiet-dm-follow-up.txt
 Allow: /paypal-qr.svg
 Allow: /social-card.png
 Allow: /social-card-qr.png

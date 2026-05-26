@@ -258,6 +258,8 @@ Niche pages:
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
+- Exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json
+- Exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt
 - Lead follow-up before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
@@ -268,10 +270,15 @@ Niche pages:
 - Real estate lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 - Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
 - Estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+- Estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt
 - Price-objection reply template: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
+- Price-objection reply text: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt
 - No-show follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+- No-show follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt
 - Quiet DM follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
+- Quiet DM follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt
 
 Payment:
 https://paypal.me/softjunk/5USD

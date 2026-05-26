@@ -1,0 +1,25 @@
+SoftJunk no-show follow-up answer
+
+Buyer question:
+What should I send after a no-show?
+
+Short answer:
+Keep the tone neutral and make rescheduling easy.
+
+Sample:
+Hi [Name], looks like today got busy. Do you want me to send another time for [service], or should I close this for now?
+
+Product page:
+https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+
+Paid upgrade:
+Custom no-show recovery and close-the-loop sequence for one business and one service.
+
+Payment:
+https://paypal.me/softjunk/5USD
+
+Payment note:
+Custom Sequence | Business: [business type] | Service: [appointment/service] | Source: no-show appointment | Tone: [tone] | Need: no-show follow-up
+
+Fulfillment rule:
+Do not claim paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

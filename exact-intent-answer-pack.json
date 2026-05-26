@@ -1,0 +1,62 @@
+{
+  "schema_version": "softjunk-exact-intent-answer-pack-v1",
+  "updated": "2026-05-26",
+  "name": "SoftJunk Exact-Intent Answer Pack",
+  "purpose": "Buyer-agent packet for exact lead follow-up questions with copy-ready answers, product routes, text routes, payment handoff, and verification gate.",
+  "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt",
+  "payment": {
+    "provider": "PayPal.Me",
+    "amount": "5.00",
+    "currency": "USD",
+    "url": "https://paypal.me/softjunk/5USD"
+  },
+  "answers": [
+    {
+      "id": "missed_call_recovery",
+      "question": "What should I text a lead after a missed call?",
+      "short_answer": "Name the missed call, offer help, and ask for one easy next step.",
+      "sample": "Hi [Name], sorry I missed your call about [service]. I can help. Do you want the fastest available time, or should I answer one quick question first?",
+      "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt",
+      "payment_note": "Custom Sequence | Business: [business type] | Service: [service] | Source: missed call | Tone: [tone] | Need: missed-call follow-up"
+    },
+    {
+      "id": "estimate_follow_up",
+      "question": "How do I follow up after sending an estimate?",
+      "short_answer": "Reference the estimate, remove friction, and ask whether price, timing, or scope is blocking the decision.",
+      "sample": "Hi [Name], checking that you saw the estimate for [project]. If the scope looks right, I can send the next step. If price or timing is the blocker, reply with that and I will adjust the path.",
+      "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt",
+      "payment_note": "Custom Sequence | Business: [business type] | Service: [estimate/project] | Source: estimate sent | Tone: [tone] | Need: estimate follow-up"
+    },
+    {
+      "id": "price_objection_reply",
+      "question": "How do I reply when a lead says the price is too high?",
+      "short_answer": "Acknowledge the concern and offer a smaller or clearer next step instead of arguing.",
+      "sample": "Totally fair to compare options. If budget is the main issue, I can show the smallest useful version first or explain what is included so you can decide.",
+      "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt",
+      "payment_note": "Custom Sequence | Business: [business type] | Service: [service] | Source: price objection | Tone: [tone] | Need: price-objection follow-up"
+    },
+    {
+      "id": "no_show_follow_up",
+      "question": "What should I send after a no-show?",
+      "short_answer": "Keep the tone neutral and make rescheduling easy.",
+      "sample": "Hi [Name], looks like today got busy. Do you want me to send another time for [service], or should I close this for now?",
+      "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt",
+      "payment_note": "Custom Sequence | Business: [business type] | Service: [appointment/service] | Source: no-show appointment | Tone: [tone] | Need: no-show follow-up"
+    },
+    {
+      "id": "quiet_dm_follow_up",
+      "question": "How do I follow up with a quiet DM lead?",
+      "short_answer": "Use a low-pressure reply with a one-word response option.",
+      "sample": "Hi [Name], quick follow-up on [service]. If you are still interested, reply with \"times\" and I will send the easiest next step. If not, no problem.",
+      "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt",
+      "payment_note": "Custom Sequence | Business: [business type] | Service: [service] | Source: quiet DM | Tone: [tone] | Need: quiet DM follow-up"
+    }
+  ],
+  "fulfillment_rule": "Do not claim the order is paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+}

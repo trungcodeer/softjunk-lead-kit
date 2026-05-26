@@ -513,6 +513,83 @@ paths:
             text/html:
               schema:
                 type: string
+  /exact-intent-answer-pack.json:
+    get:
+      operationId: getExactIntentAnswerPack
+      summary: Get the exact-intent lead follow-up answer pack.
+      responses:
+        "200":
+          description: JSON buyer-agent packet for exact follow-up questions, text routes, payment handoff, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /exact-intent-answer-pack.txt:
+    get:
+      operationId: getExactIntentAnswerPackText
+      summary: Get the exact-intent answer pack as plain text.
+      responses:
+        "200":
+          description: Plain-text answer pack for AI assistants, crawlers, VAs, and buyers.
+          content:
+            text/plain:
+              schema:
+                type: string
+  /missed-call-follow-up.txt:
+    get:
+      operationId: getMissedCallFollowUpText
+      summary: Get the missed-call follow-up answer as plain text.
+      responses:
+        "200":
+          description: Plain-text missed-call answer, sample, payment route, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
+  /estimate-follow-up-template.txt:
+    get:
+      operationId: getEstimateFollowUpTemplateText
+      summary: Get the estimate follow-up answer as plain text.
+      responses:
+        "200":
+          description: Plain-text estimate follow-up answer, sample, payment route, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
+  /price-objection-reply.txt:
+    get:
+      operationId: getPriceObjectionReplyText
+      summary: Get the price-objection reply answer as plain text.
+      responses:
+        "200":
+          description: Plain-text price-objection answer, sample, payment route, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
+  /no-show-follow-up.txt:
+    get:
+      operationId: getNoShowFollowUpText
+      summary: Get the no-show follow-up answer as plain text.
+      responses:
+        "200":
+          description: Plain-text no-show answer, sample, payment route, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
+  /quiet-dm-follow-up.txt:
+    get:
+      operationId: getQuietDmFollowUpText
+      summary: Get the quiet DM follow-up answer as plain text.
+      responses:
+        "200":
+          description: Plain-text quiet DM answer, sample, payment route, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /pay.html:
     get:
       operationId: openPaymentPage

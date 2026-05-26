@@ -98,6 +98,8 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
+- Exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json
+- Exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
@@ -106,10 +108,15 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
 - Estimate follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+- Estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt
 - Price-objection reply sample: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
+- Price-objection reply text: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt
 - No-show follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+- No-show follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt
 - Quiet DM follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
+- Quiet DM follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt
 
 ## Niche Pages
 

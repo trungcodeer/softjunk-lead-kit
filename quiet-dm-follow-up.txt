@@ -1,0 +1,25 @@
+SoftJunk quiet DM follow-up answer
+
+Buyer question:
+How do I follow up with a quiet DM lead?
+
+Short answer:
+Use a low-pressure reply with a one-word response option.
+
+Sample:
+Hi [Name], quick follow-up on [service]. If you are still interested, reply with "times" and I will send the easiest next step. If not, no problem.
+
+Product page:
+https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
+
+Paid upgrade:
+Custom DM follow-up sequence for one business and one service.
+
+Payment:
+https://paypal.me/softjunk/5USD
+
+Payment note:
+Custom Sequence | Business: [business type] | Service: [service] | Source: quiet DM | Tone: [tone] | Need: quiet DM follow-up
+
+Fulfillment rule:
+Do not claim paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

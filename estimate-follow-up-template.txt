@@ -1,0 +1,25 @@
+SoftJunk estimate follow-up answer
+
+Buyer question:
+How do I follow up after sending an estimate?
+
+Short answer:
+Reference the estimate, remove friction, and ask whether price, timing, or scope is blocking the decision.
+
+Sample:
+Hi [Name], checking that you saw the estimate for [project]. If the scope looks right, I can send the next step. If price or timing is the blocker, reply with that and I will adjust the path.
+
+Product page:
+https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+
+Paid upgrade:
+Custom 7-day estimate follow-up sequence with objection handling.
+
+Payment:
+https://paypal.me/softjunk/5USD
+
+Payment note:
+Custom Sequence | Business: [business type] | Service: [estimate/project] | Source: estimate sent | Tone: [tone] | Need: estimate follow-up
+
+Fulfillment rule:
+Do not claim paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

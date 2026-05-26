@@ -1,0 +1,44 @@
+SoftJunk exact-intent answer pack
+
+Purpose:
+Plain-text buyer-agent packet for exact lead follow-up questions. Use this when an AI assistant, crawler, VA, or buyer needs copy-ready answers plus the direct product route before the 5 USD PayPal handoff.
+
+Payment:
+https://paypal.me/softjunk/5USD
+
+Verification gate:
+Do not claim paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.
+
+Routes:
+- Missed call: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Missed call text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
+- Estimate follow-up: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
+- Estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt
+- Price objection: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html
+- Price objection text: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt
+- No-show: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
+- No-show text: https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt
+- Quiet DM: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
+- Quiet DM text: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt
+
+Answers:
+
+Question: What should I text a lead after a missed call?
+Answer: Name the missed call, offer help, and ask for one easy next step.
+Sample: Hi [Name], sorry I missed your call about [service]. I can help. Do you want the fastest available time, or should I answer one quick question first?
+
+Question: How do I follow up after sending an estimate?
+Answer: Reference the estimate, remove friction, and ask whether price, timing, or scope is blocking the decision.
+Sample: Hi [Name], checking that you saw the estimate for [project]. If the scope looks right, I can send the next step. If price or timing is the blocker, reply with that and I will adjust the path.
+
+Question: How do I reply when a lead says the price is too high?
+Answer: Acknowledge the concern and offer a smaller or clearer next step instead of arguing.
+Sample: Totally fair to compare options. If budget is the main issue, I can show the smallest useful version first or explain what is included so you can decide.
+
+Question: What should I send after a no-show?
+Answer: Keep the tone neutral and make rescheduling easy.
+Sample: Hi [Name], looks like today got busy. Do you want me to send another time for [service], or should I close this for now?
+
+Question: How do I follow up with a quiet DM lead?
+Answer: Use a low-pressure reply with a one-word response option.
+Sample: Hi [Name], quick follow-up on [service]. If you are still interested, reply with "times" and I will send the easiest next step. If not, no problem.

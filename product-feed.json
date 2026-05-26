@@ -136,6 +136,11 @@
       "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json"
     },
     {
+      "name": "Exact-Intent Answer Pack",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt"
+    },
+    {
       "name": "Free Follow-Up Preview",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html"
     },
@@ -154,28 +159,35 @@
     },
     {
       "name": "Missed Call Follow-Up Sample",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html"
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt"
     },
     {
       "name": "Estimate Follow-Up Sample",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html"
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt"
     },
     {
       "name": "Price Objection Reply Sample",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html"
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt"
     },
     {
       "name": "No-Show Follow-Up Sample",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html"
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt"
     },
     {
       "name": "Quiet DM Follow-Up Sample",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html"
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt"
     }
   ],
   "machine_readable": {
     "buyer_index_json": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
     "agent_buyer_catalog_jsonl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
+    "exact_intent_answer_pack": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
+    "exact_intent_answer_pack_text": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt",
     "root_hub": "https://trungcodeer.github.io/",
     "root_offer_json": "https://trungcodeer.github.io/root-offer.json",
     "payment_intent_json": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
@@ -251,6 +263,11 @@
     "price_objection_reply": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
     "no_show_follow_up": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
     "quiet_dm_follow_up": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html",
+    "missed_call_follow_up_text": "https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt",
+    "estimate_follow_up_text": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt",
+    "price_objection_reply_text": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt",
+    "no_show_follow_up_text": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt",
+    "quiet_dm_follow_up_text": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt",
     "template_library": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
     "examples": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
     "well_known_offer_json": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
