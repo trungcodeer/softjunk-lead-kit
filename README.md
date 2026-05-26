@@ -8,10 +8,11 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 Start here if you have one real quiet lead:
 
-1. Open the AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-2. Generate the PayPal note for the digital kit or custom 7-day sequence.
-3. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
-4. After payment, use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+1. Open the root one-lead rescue route: https://trungcodeer.github.io/rescue/
+2. If more context is needed, open the AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
+3. Generate the PayPal note for the one-lead rescue, digital kit, or custom 7-day sequence.
+4. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+5. After payment, use the handoff page: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
 Public GitHub buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
@@ -28,11 +29,17 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 ![PayPal QR code for the $5 SoftJunk checkout](paypal-qr.svg)
 
 - Pay $5 on PayPal: https://paypal.me/softjunk/5USD
+- Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+- Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
+- Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
+- Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+- Fix one quiet lead JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+- Fix one quiet lead text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
@@ -108,9 +115,6 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
-- Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-- Fix one quiet lead JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
-- Fix one quiet lead text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
 - Public fix-one quiet lead Gist: https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html

@@ -25,6 +25,13 @@
     "currency": "USD",
     "proof_required": "Fulfillment starts only after the seller can see the PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
   },
+  "root_one_lead_rescue": {
+    "url": "https://trungcodeer.github.io/rescue/",
+    "json_url": "https://trungcodeer.github.io/rescue.json",
+    "text_url": "https://trungcodeer.github.io/rescue.txt",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "delivery": "Root-level short route from one quiet lead to builder, PayPal, order form, privacy rule, and verification gate"
+  },
   "primary_offer": {
     "name": "Custom 7-Day Lead Follow-Up Sequence",
     "price": "5.00",
@@ -63,6 +70,13 @@
     "zip_public": false
   },
   "free_tools": [
+    {
+      "name": "Root One-Lead Rescue Route",
+      "url": "https://trungcodeer.github.io/rescue/",
+      "json_url": "https://trungcodeer.github.io/rescue.json",
+      "text_url": "https://trungcodeer.github.io/rescue.txt",
+      "delivery": "Shortest route from one quiet lead to generated reply, exact 5 USD PayPal payment, order form, and PAYPAL_PAYMENT_VERIFIED=true gate"
+    },
     {
       "name": "Buyer-Agent Prompt Relay",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",
@@ -217,6 +231,9 @@
     "gist_raw_exact_intent_answer_pack_json": "https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.json",
     "gist_raw_exact_intent_answer_pack_text": "https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.txt",
     "root_hub": "https://trungcodeer.github.io/",
+    "root_one_lead_rescue": "https://trungcodeer.github.io/rescue/",
+    "root_one_lead_rescue_json": "https://trungcodeer.github.io/rescue.json",
+    "root_one_lead_rescue_text": "https://trungcodeer.github.io/rescue.txt",
     "root_offer_json": "https://trungcodeer.github.io/root-offer.json",
     "payment_intent_json": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
     "well_known_payment_intent_json": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",

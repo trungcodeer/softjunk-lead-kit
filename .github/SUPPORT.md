@@ -4,6 +4,8 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 
 ## Pay
 
+- Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+- Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - AI Deal Desk: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 - Short PayPal route: https://trungcodeer.github.io/paypal/

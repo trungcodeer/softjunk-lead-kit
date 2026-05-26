@@ -61,6 +61,18 @@ https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 
 If the free answer is close but not specific enough, buy the custom 7-day follow-up sequence for one business.
 
+Root one-lead rescue route:
+
+https://trungcodeer.github.io/rescue/
+
+Root one-lead rescue JSON:
+
+https://trungcodeer.github.io/rescue.json
+
+Root one-lead rescue text:
+
+https://trungcodeer.github.io/rescue.txt
+
 Payment:
 
 https://paypal.me/softjunk/5USD

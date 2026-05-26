@@ -3,6 +3,9 @@
   "updated": "2026-05-26",
   "currency": "USD",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "root_one_lead_rescue_url": "https://trungcodeer.github.io/rescue/",
+  "root_one_lead_rescue_json_url": "https://trungcodeer.github.io/rescue.json",
+  "root_one_lead_rescue_text_url": "https://trungcodeer.github.io/rescue.txt",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "github_buyer_index_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUYER_INDEX.md",
   "lead_recovery_audit_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
@@ -86,6 +89,17 @@
   "well_known_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json",
   "openapi_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
   "offers": [
+    {
+      "name": "Root one-lead rescue route",
+      "price": "0.00",
+      "currency": "USD",
+      "url": "https://trungcodeer.github.io/rescue/",
+      "json_url": "https://trungcodeer.github.io/rescue.json",
+      "text_url": "https://trungcodeer.github.io/rescue.txt",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "delivery": "Shortest public route from one quiet lead to generated reply, exact 5 USD PayPal payment, order form, and verification gate",
+      "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
+    },
     {
       "name": "Free buyer-agent prompt relay",
       "price": "0.00",
@@ -266,6 +280,9 @@
     "Businesses with sent estimates or quotes"
   ],
   "niche_pages": [
+    "https://trungcodeer.github.io/rescue/",
+    "https://trungcodeer.github.io/rescue.json",
+    "https://trungcodeer.github.io/rescue.txt",
     "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
     "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
@@ -321,7 +338,7 @@
     "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
     "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary.",
     "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment; success signal is PAYPAL_PAYMENT_VERIFIED=true.",
-    "one_lead_rescue": "Use the Fix One Quiet Lead builder, copy the generated PayPal note, pay exactly 5 USD, then submit the one-lead rescue order form without private customer data."
+    "one_lead_rescue": "Use the root one-lead rescue route at https://trungcodeer.github.io/rescue/, copy the generated PayPal note, pay exactly 5 USD, then submit the one-lead rescue order form without private customer data."
   },
   "commerce_graph_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
   "commerce_graph_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",

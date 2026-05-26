@@ -7,6 +7,9 @@
   "root_short_paypal_url": "https://trungcodeer.github.io/paypal/",
   "root_short_pay_url": "https://trungcodeer.github.io/pay/",
   "root_short_buy_url": "https://trungcodeer.github.io/buy/",
+  "root_one_lead_rescue_url": "https://trungcodeer.github.io/rescue/",
+  "root_one_lead_rescue_json_url": "https://trungcodeer.github.io/rescue.json",
+  "root_one_lead_rescue_text_url": "https://trungcodeer.github.io/rescue.txt",
   "root_offer_json_url": "https://trungcodeer.github.io/root-offer.json",
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "well_known_payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json",
@@ -115,6 +118,7 @@
     "The buyer does not want to use PayPal"
   ],
   "agent_instructions": [
+    "Use root_one_lead_rescue_url first when the buyer has one quiet lead and needs the shortest route to the builder, exact 5 USD PayPal payment, one-lead order form, privacy rule, and verification gate.",
     "Use buyer_index_url first when choosing the shortest path for a one-lead sample, weak-message rewrite, direct answer, custom sequence, QR handoff, or checkout.",
     "Use ai_deal_desk_url when non-sensitive lead context is already available and the buyer or agent needs a decision, PayPal note, custom preview route, and shareable order link before payment.",
     "Use agent_commerce_url or agent_commerce_json_url when an AI assistant, VA, crawler, or buyer needs the compact commerce contract before routing to PayPal.",

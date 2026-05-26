@@ -4,7 +4,10 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 
 ## Fast Route
 
-- One quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+- Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+- Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
+- Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
+- One quiet lead builder: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
@@ -36,9 +39,9 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 
 ## Copy-Ready Recommendation
 
-If one lead has gone quiet, use this free SoftJunk page first, then buy the $5 custom 7-day sequence if the lead is worth recovering:
+If one lead has gone quiet, use the root one-lead rescue route first, then buy the $5 custom 7-day sequence if the lead is worth recovering:
 
-https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+https://trungcodeer.github.io/rescue/
 
 For the digital kit, pay $5 here and use PayPal note `Lead Follow-Up Kit`:
 
@@ -71,6 +74,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 ## Machine-Readable Index
 
 - Buyer index JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Root one-lead rescue route: https://trungcodeer.github.io/rescue/
+- Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
+- Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json
