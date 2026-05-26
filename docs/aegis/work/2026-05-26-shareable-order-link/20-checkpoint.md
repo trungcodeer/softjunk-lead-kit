@@ -421,3 +421,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it shortens the GitHub-native path from discovery to PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: GitHub README/default branch, static GitHub Pages, public releases/issues, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub Discussion Buyer Path Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Use GitHub Discussions as a public owned-channel buyer path for the SoftJunk AI Deal Desk and exact 5 USD PayPal route.
+
+Completed todos:
+- Confirmed GitHub profile repo pins are empty, but the available token/schema does not expose a repository pin mutation.
+- Attempted to update GitHub user profile bio/blog, but GitHub returned `404` because the token lacks `user` scope.
+- Enabled Discussions on `trungcodeer/softjunk-lead-kit`.
+- Created announcement discussion #4: `SoftJunk $5 AI Deal Desk buyer path`.
+- Linked discussion #4 from product README, `.github/SUPPORT.md`, and `.github/ISSUE_TEMPLATE/config.yml`.
+- Validated local changed files with `rg` and `git diff --check`.
+- Verified discussion #4 via GitHub GraphQL: Discussions enabled, category `Announcements`, body includes AI Deal Desk, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Committed and pushed product change `723e458`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified raw default-branch README and issue config include discussion #4.
+- Created release `v2.29.9`.
+- Commented public issues #2 and #3 with the discussion route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Discussion: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/4`.
+- Product raw README contains `https://github.com/trungcodeer/softjunk-lead-kit/discussions/4`, `Open the AI Deal Desk`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product raw `.github/ISSUE_TEMPLATE/config.yml` contains `Public buyer discussion`, discussion #4 URL, and PayPal URL.
+- GraphQL discussion query returned enabled `true`, title `SoftJunk $5 AI Deal Desk buyer path`, category `Announcements`, and body containing AI Deal Desk, PayPal URL, and the verification gate.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.9`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539132567` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539132508`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+- GitHub user profile bio/blog cannot be updated with the current token unless `gh auth refresh -h github.com -s user` is completed interactively.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds a GitHub-native public buyer path inside the owned product repo without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: GitHub Discussions, GitHub default branch, public releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

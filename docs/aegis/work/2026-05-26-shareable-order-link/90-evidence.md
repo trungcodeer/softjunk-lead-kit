@@ -79,6 +79,43 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub Discussion Buyer Path Evidence
+
+Pre-check:
+- GitHub viewer `trungcodeer` had `pinnedItems.totalCount=0`.
+- GraphQL mutation schema exposed `pinEnvironment`, `pinIssue`, `pinIssueComment`, `unpinIssue`, and `unpinIssueComment`, but no repository pin mutation.
+- GitHub user profile `bio` was `null` and `blog` was empty, but `gh api user -X PATCH` returned `404` with required action `gh auth refresh -h github.com -s user`, so user profile metadata could not be updated with the current token.
+
+Discussion creation:
+- `gh repo edit trungcodeer/softjunk-lead-kit --enable-discussions` succeeded.
+- GraphQL category query returned Discussions enabled and categories including `Announcements`.
+- `createDiscussion` created discussion #4 with title `SoftJunk $5 AI Deal Desk buyer path`.
+- Discussion URL: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/4`.
+- Discussion category: `Announcements`.
+- Discussion body includes AI Deal Desk, exact PayPal route `https://paypal.me/softjunk/5USD`, after-payment handoff, digital/custom PayPal note rules, privacy warning, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+
+Local validation:
+- Product README contains discussion #4, AI Deal Desk, PayPal URL, and verification gate.
+- `.github/SUPPORT.md` contains discussion #4, AI Deal Desk, PayPal URL, and verification gate.
+- `.github/ISSUE_TEMPLATE/config.yml` contains `Public buyer discussion`, discussion #4, and PayPal URL.
+- `git diff --check` returned only Windows line-ending warnings and no whitespace errors before commit.
+
+Public deploy validation:
+- Product commit: `723e458` in `https://github.com/trungcodeer/softjunk-lead-kit`.
+- GitHub Pages deployment completed successfully.
+- Raw product README from default branch contains discussion #4, AI Deal Desk, PayPal URL, and verification gate.
+- Raw product issue config from default branch contains `Public buyer discussion`, discussion #4 URL, and PayPal URL.
+- GraphQL discussion query confirmed Discussions enabled, title, URL, category, AI Deal Desk, PayPal URL, and verification gate.
+
+Release and discovery:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.9`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539132567`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539132508`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 README Buyer Shortcut Evidence
 
 Local validation:
