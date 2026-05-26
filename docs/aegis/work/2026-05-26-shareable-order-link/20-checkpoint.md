@@ -3648,3 +3648,41 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a shorter AI-readable roofing route and routes qualified roofing estimate buyers to the exact 5 USD PayPal checkout without spam, deception, private data leakage, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 GitHub Repo Metadata Routing Checkpoint
+
+Current todo:
+- Make GitHub's own repo metadata expose the high-intent roofing estimate buyer path, not only files inside the repos.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Update product/root GitHub repo descriptions and topics for roofing estimate follow-up rescue discovery, validate via GitHub API, add public issue evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Updated product repo description to `USD 5 PayPal roofing estimate follow-up rescue with MCP/A2A AI checkout`.
+- Updated root repo description to `Root hub for USD 5 PayPal roofing estimate rescue and AI/MCP checkout routes`.
+- Added or preserved product topics: `roofing`, `roofing-estimates`, `estimate-follow-up`, `paypal`, `paypal-checkout`, `paypal-me`, `mcp`, `mcp-server`, `a2a`, `agentic-commerce`, `ai-checkout`, `agent-commerce`, `lead-recovery`, and related buyer-route topics.
+- Added or preserved root topics: `roofing`, `roofing-estimates`, `estimate-follow-up`, `quote-follow-up`, `paypal`, `paypal-checkout`, `paypal-me`, `mcp`, `mcp-server`, `a2a`, `agentic-commerce`, `ai-checkout`, `agent-commerce`, `lead-recovery`, and related buyer-route topics.
+- Validated metadata through `gh repo view`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product repo metadata: `https://github.com/trungcodeer/softjunk-lead-kit`.
+- Root repo metadata: `https://github.com/trungcodeer/trungcodeer.github.io`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547348019`.
+- `gh repo view trungcodeer/softjunk-lead-kit --json description,homepageUrl,repositoryTopics,url` confirmed the new description and roofing topics.
+- `gh repo view trungcodeer/trungcodeer.github.io --json description,homepageUrl,repositoryTopics,url` confirmed the new description and roofing topics.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate buyer-agent conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses GitHub's public search/API metadata to make the paid roofing estimate rescue easier for humans and AI agents to discover, without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repo metadata, GitHub issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

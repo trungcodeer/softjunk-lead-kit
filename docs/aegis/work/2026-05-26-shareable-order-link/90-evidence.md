@@ -79,6 +79,26 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 GitHub Repo Metadata Routing Evidence
+
+External metadata changed:
+- Product repo description: `USD 5 PayPal roofing estimate follow-up rescue with MCP/A2A AI checkout`.
+- Root repo description: `Root hub for USD 5 PayPal roofing estimate rescue and AI/MCP checkout routes`.
+- Product repo topics now include `roofing`, `roofing-estimates`, and `estimate-follow-up`.
+- Root repo topics now include `roofing`, `roofing-estimates`, `estimate-follow-up`, and `quote-follow-up`.
+- Existing PayPal, MCP, A2A, agent-commerce, AI checkout, and lead recovery topics remain present.
+
+Validation:
+- `gh repo view trungcodeer/softjunk-lead-kit --json description,homepageUrl,repositoryTopics,url` confirmed the product description, PayPal homepage, and roofing topics.
+- `gh repo view trungcodeer/trungcodeer.github.io --json description,homepageUrl,repositoryTopics,url` confirmed the root description, PayPal homepage, and roofing topics.
+
+Release and discovery:
+- Public product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547348019`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Send-To-Buyer Checkout Packet Evidence
 
 Artifacts:
