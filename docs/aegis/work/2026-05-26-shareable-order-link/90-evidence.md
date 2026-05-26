@@ -510,6 +510,46 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Roofing Estimate Generator Evidence
+
+Behavior added:
+- Added `roofing-estimate-generator.html`, `roofing-estimate-generator.json`, and `roofing-estimate-generator.txt`.
+- The HTML page generates Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts from non-sensitive context, plus a PayPal note for the 5 USD custom rescue.
+- The page includes copy sequence, copy PayPal note, copy share link, open share link, JSON/TXT routes, PayPal CTA, order form CTA, `aria-live` statuses, labels, skip link, FAQ/WebApplication JSON-LD, and seller-side verification gate text.
+- The privacy guard blocks copy/share actions when editable fields look like emails, phone numbers, street addresses, claim/policy/invoice/transaction/PayPal identifiers, or private payment context.
+
+Discovery and distribution:
+- Product discovery updated in README, BUY_NOW, llms, `answer-engine.json`, `agent-buyer-catalog.jsonl`, `buy-now.json`, `agents-checkout.json`, `.well-known/softjunk-offer.json`, `.well-known/openapi.yaml`, `sitemap.xml`, and `feed.xml`.
+- Root discovery updated in README, llms, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, and `sitemap.xml`.
+- Public Gist fallback created: `https://gist.github.com/trungcodeer/1d51e6552c5f3886b1f25bd612e705a3`.
+- Product issue #5 evidence comment added: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547017342`.
+
+Commits, releases, and public URLs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/799669b`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/f587ca8`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.58`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-estimate-generator-v1`.
+- Page: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html`.
+- JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json`.
+- Text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt`.
+
+Local validation:
+- Product JSON parse passed for `roofing-estimate-generator.json`, `answer-engine.json`, `buy-now.json`, `agents-checkout.json`, and `.well-known/softjunk-offer.json`.
+- Product JSONL parse passed for `agent-buyer-catalog.jsonl` with `jsonl_lines=35`.
+- HTML check passed for JSON-LD parse, inline script syntax, skip link, form, copy buttons, `aria-live`, privacy guard, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` marker.
+- Product XML parse passed for `sitemap.xml` and `feed.xml`.
+- Product and root OpenAPI YAML parse passed.
+- Root JSON and XML parse passed.
+- Product and root `git diff --check` passed with only LF-to-CRLF warnings.
+
+Public validation:
+- Public checks passed for `pages_generator_html`, `pages_generator_json`, `pages_generator_txt`, `raw_generator_json`, `gist_generator_json`, `root_offer_generator`, `root_openapi_generator`, `product_release`, and `root_release`.
+- IndexNow accepted 14 host-valid URLs with `indexnow_status=200 urls=14`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Roofing Estimate Rescue Funnel Evidence
 
 Files changed:

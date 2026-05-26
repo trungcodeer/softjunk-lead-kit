@@ -3494,3 +3494,57 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a useful high-intent answer page for a specific buyer search path and routes qualified roofing estimate buyers to the exact 5 USD PayPal rescue without spam, deception, private data leakage, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Roofing Estimate Generator Checkpoint
+
+Current todo:
+- Create a utility page that generates roofing estimate follow-up texts from non-sensitive context, not only a static answer page.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add a local-only roofing estimate follow-up generator with HTML/JSON/TXT, privacy guard, copy/share controls, Gist fallback, product/root discovery wiring, releases, IndexNow, issue evidence, and PayPal verifier rerun.
+
+Completed todos:
+- Added `roofing-estimate-generator.html`, `roofing-estimate-generator.json`, and `roofing-estimate-generator.txt`.
+- The page generates Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts plus a PayPal note from non-sensitive context.
+- Added privacy detection for likely emails, phone numbers, street addresses, claim/policy/invoice/transaction/PayPal identifiers before copy/share actions.
+- Added copy sequence, copy PayPal note, copy share link, open share link, JSON/TXT links, PayPal $5 CTA, order form CTA, accessibility markers, and seller-side verification gate.
+- Created public Gist `https://gist.github.com/trungcodeer/1d51e6552c5f3886b1f25bd612e705a3`.
+- Wired product README, BUY_NOW, llms, answer-engine JSON, buy-now JSON, agents-checkout JSON, well-known offer JSON, sitemap, feed, OpenAPI, and agent-buyer catalog JSONL.
+- Wired root README, llms, root-offer JSON, well-known root offer JSON, root OpenAPI, and root sitemap.
+- Committed and pushed product commit `799669b`.
+- Committed and pushed root commit `f587ca8`.
+- Created product release `v2.29.58` and root release `root-roofing-estimate-generator-v1`.
+- Validated local product JSON, JSONL, XML, OpenAPI YAML, HTML JSON-LD/script/static markers, accessibility markers, and whitespace.
+- Validated local root JSON, XML, OpenAPI YAML, and whitespace.
+- Validated public Pages, raw GitHub, Gist raw JSON, root offer, root OpenAPI, and releases.
+- Submitted 14 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/799669b`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/f587ca8`.
+- Roofing estimate generator page: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html`.
+- Roofing estimate generator JSON: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json`.
+- Roofing estimate generator text: `https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/1d51e6552c5f3886b1f25bd612e705a3`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.58`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-estimate-generator-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547017342`.
+- Local validation passed: `product_json_ok jsonl_lines=35`, `roofing_generator_html_ok`, `product_xml_ok`, `root_json_ok`, `root_xml_ok`, `yaml_ok`, and product/root `git diff --check`.
+- Public validation passed: `pages_generator_html`, `pages_generator_json`, `pages_generator_txt`, `raw_generator_json`, `gist_generator_json`, `root_offer_generator`, `root_openapi_generator`, `product_release`, and `root_release`.
+- IndexNow submission passed: `indexnow_status=200 urls=14`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate inbound/discovery and buyer-facing conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a usable buyer tool rather than just metadata, and routes qualified roofing estimate buyers to the exact 5 USD PayPal rescue without spam, deception, private data leakage, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
