@@ -909,3 +909,54 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates non-traditional AI-ingestible buyer routing surfaces without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Exact-Intent Answer Pack Gist Mirror Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Mirror the exact-intent answer pack into a public GitHub Gist and wire the Gist/raw URLs into product and root discovery surfaces.
+
+Completed todos:
+- Created public Gist `https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35` with `exact-intent-answer-pack.json` and `exact-intent-answer-pack.txt`.
+- Wired the Gist/raw URLs into product answer engine, buyer index, offers, product feed, agent offer, agent buyer packet, agent buyer catalog JSONL, well-known offer, AI plugin manifest, `llms.txt`, and README.
+- Wired the Gist/raw URLs into root offer JSON, root AI route JSON, well-known root offer, root AI plugin manifest, and root `llms.txt`.
+- Validated product/root JSON, product JSONL, product/root XML, product/root OpenAPI YAML, raw Gist JSON/TXT, and whitespace locally.
+- Committed and pushed product change `de08e57`.
+- Created product release `v2.29.16`.
+- Committed and pushed root change `3f51235`.
+- Created root release `root-exact-intent-answer-pack-gist-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Verified live product/root endpoints expose the Gist ID and live raw Gist includes the PayPal URL.
+- Submitted 16 host-valid updated URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the Gist mirror update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Gist: `https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.json`.
+- Raw Gist text: `https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.txt`.
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/de08e57`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.16`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/3f51235`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-exact-intent-answer-pack-gist-v1`.
+- GitHub Pages runs: product `26432748768`, root `26432748736`, both success.
+- Live checks confirmed product buyer index, answer engine, exact-intent answer pack, product AI plugin, root offer, root AI JSON, root AI plugin, and root `llms.txt` expose the Gist ID.
+- Live raw Gist check confirmed `https://paypal.me/softjunk/5USD` is present.
+- IndexNow returned `status=200 urls=16`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540136058` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540136067`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it expands public GitHub-native, AI-ingestible distribution without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery for owned host URLs, JSON/JSONL/OpenAPI/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

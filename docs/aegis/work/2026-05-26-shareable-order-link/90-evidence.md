@@ -72,6 +72,39 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Exact-Intent Answer Pack Gist Mirror Evidence
+
+Local validation:
+- Product validation passed for 9 JSON files, 16 JSONL records, product sitemap/feed XML, and product OpenAPI.
+- Root validation passed for 4 JSON files, root sitemap XML, and root OpenAPI.
+- Raw Gist JSON returned `softjunk-exact-intent-answer-pack-v1`.
+- Raw Gist text returned `SoftJunk exact-intent answer pack`.
+- `git diff --check` passed for product and root; warnings were CRLF-only.
+
+Commits and releases:
+- Product commit: `de08e57 Mirror exact-intent answer pack to Gist`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.16`.
+- Root commit: `3f51235 Expose exact-intent answer pack Gist from root`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-exact-intent-answer-pack-gist-v1`.
+- Product Pages run `26432748768` completed with `success`.
+- Root Pages run `26432748736` completed with `success`.
+
+Live deploy validation:
+- Product buyer index, answer engine, exact-intent answer pack JSON, product AI plugin, root offer, root AI JSON, root AI plugin, and root `llms.txt` returned HTTP 200 and exposed Gist ID `a40d54d6e66cdb58f861f2f9637a3e35`.
+- Live raw Gist JSON contained `https://paypal.me/softjunk/5USD`.
+
+Public distribution:
+- Gist: `https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35`.
+- Raw JSON: `https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.json`.
+- Raw text: `https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.txt`.
+- IndexNow returned `status=200 urls=16` for updated `trungcodeer.github.io` URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4540136058`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4540136067`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Exact-Intent Answer Pack Evidence
 
 Local validation:
