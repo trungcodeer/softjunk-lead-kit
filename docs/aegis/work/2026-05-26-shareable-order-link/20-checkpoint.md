@@ -808,3 +808,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it increases non-traditional AI retrieval and buyer-agent routing surface without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSONL/JSON/OpenAPI/llms discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Product Exact-Intent Follow-Up Pages Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Add product-owned, high-intent buyer pages for price objection, no-show, and quiet DM follow-up searches, then expose them through product and root discovery surfaces before the exact 5 USD PayPal handoff.
+
+Completed todos:
+- Added `price-objection-reply.html`, `no-show-follow-up.html`, and `quiet-dm-follow-up.html` with sample generators, copyable PayPal notes, direct `https://paypal.me/softjunk/5USD` links, after-payment handoff, and seller-side verification gate text.
+- Wired the pages into product homepage cards, sitemap, RSS feed, robots, OpenAPI, AI plugin manifest, offer manifests, buyer index, product feed, answer engine, agent buyer packet, agent offer, agent buyer catalog JSONL, README, `llms.txt`, and answer docs.
+- Updated the root hub, root offer JSON, root AI route JSON, well-known root offer, root AI plugin manifest, root OpenAPI, root sitemap, and root `llms.txt` to prefer product-owned exact-intent routes.
+- Validated local product/root JSON, JSONL, XML, OpenAPI YAML, whitespace, Chrome headless DOM, and inline JavaScript syntax.
+- Committed and pushed product change `8bfbd32`.
+- Created product release `v2.29.14`.
+- Committed and pushed root change `637135f`.
+- Created root release `root-product-exact-intent-v1`.
+- Confirmed product and root GitHub Pages deployments succeeded.
+- Verified live product pages and product/root discovery endpoints with cache-busting.
+- Submitted 26 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the exact-intent product route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/8bfbd32`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.14`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/637135f`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-product-exact-intent-v1`.
+- Live pages: `https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html`, `https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html`, and `https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html`.
+- GitHub Pages runs: product `26431833434`, root `26431833428`, both success.
+- Live checks confirmed the three pages returned HTTP 200 and included the PayPal URL plus `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live product checks confirmed `answer-engine.json`, `buyer-index.json`, `product-feed.json`, `offers.json`, OpenAPI, sitemap, and `llms.txt` expose the new routes.
+- Live root checks confirmed homepage, `root-offer.json`, `ai.json`, `llms.txt`, OpenAPI, and sitemap expose product exact-intent routes.
+- IndexNow returned `status=200 urls=26`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539974286` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539974275`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it targets non-traditional AI/buyer-agent routing and high-intent exact-problem pages without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, JSON/JSONL/OpenAPI/llms discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

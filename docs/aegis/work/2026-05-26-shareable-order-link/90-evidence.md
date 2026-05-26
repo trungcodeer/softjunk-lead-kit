@@ -38,6 +38,40 @@ Payment gate:
 - This slice still did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Product Exact-Intent Follow-Up Pages Evidence
+
+Local validation:
+- Product structured validation passed for 8 JSON files, 15 JSONL records, 2 XML files, and 3 product OpenAPI paths.
+- Root structured validation passed for 4 JSON files, root sitemap XML, and 5 root OpenAPI product exact-intent paths.
+- `git diff --check` passed for product and root; warnings were CRLF-only.
+- Chrome headless loaded `price-objection-reply.html`, `no-show-follow-up.html`, and `quiet-dm-follow-up.html` locally with PayPal URL and verification gate present.
+- Node `--check` passed for one inline JavaScript block in each new product page.
+
+Commits and releases:
+- Product commit: `8bfbd32 Add product exact-intent follow-up pages`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.14`.
+- Root commit: `637135f Route root hub to product exact-intent pages`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-product-exact-intent-v1`.
+- Product Pages run `26431833434` completed with `success`.
+- Root Pages run `26431833428` completed with `success`.
+
+Live deploy validation:
+- Product pages returned HTTP 200 and contained page intent text, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html`
+- Live product discovery checks passed for `answer-engine.json`, `buyer-index.json`, `product-feed.json`, `offers.json`, `.well-known/openapi.yaml`, `sitemap.xml`, and `llms.txt`.
+- Live root discovery checks passed for `/`, `root-offer.json`, `ai.json`, `llms.txt`, `.well-known/openapi.yaml`, and `sitemap.xml`.
+
+Public distribution:
+- IndexNow returned `status=200 urls=26`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539974286`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539974275`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Root Short Routes Agent Pay Evidence
 
 Root route changes:
