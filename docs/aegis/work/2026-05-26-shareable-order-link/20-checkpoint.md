@@ -2291,3 +2291,41 @@ DriftCheckDraft:
 - Current slice fit: yes, it routes a high-intent quiet-lead-owned repo toward the shortest PayPal route without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: quiet/profile/root/product GitHub repos, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Pinned Checkout Issues Checkpoint
+
+Current todo:
+- Keep the shortest buyer routes pinned and visible in the product repo.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Pin the highest-value GitHub-native checkout issues so human buyers and buyer agents land on the shortest public path to the 5 USD PayPal route.
+
+Completed todos:
+- Ran `gh issue pin 5 --repo trungcodeer/softjunk-lead-kit`; issue #5 was pinned successfully.
+- Ran `gh issue pin 1 --repo trungcodeer/softjunk-lead-kit`; GitHub reported issue #1 was already pinned.
+- Validated pinned issues through GitHub GraphQL; pinned issue numbers are `1,5`.
+- Validated issue #1 still contains the PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, and `one-lead-rescue-order.yml`.
+- Validated issue #5 still contains the PayPal URL and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Added a public issue #5 comment recording the pinned checkout route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Pinned issue #1: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Pinned issue #5: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Public pinned route comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544012122`.
+- Pin validation passed: `pinned_checkout_issues_ok pinned=1,5 issue1_markers=3 issue5_markers=2 comment=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544012122`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- GitHub Pages remains unreliable for newer route builds, so pinned GitHub issues, one-message packet, RawGitHack, Gist, and raw GitHub remain the active route.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, pinning public checkout issues improves owned-channel conversion without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: product GitHub repo, public GitHub issues, raw GitHub content, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

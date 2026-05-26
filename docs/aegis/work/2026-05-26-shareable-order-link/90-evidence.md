@@ -79,6 +79,23 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Pinned Checkout Issues Evidence
+
+GitHub-native routing:
+- `gh issue pin 5 --repo trungcodeer/softjunk-lead-kit` returned `Pinned issue trungcodeer/softjunk-lead-kit#5`.
+- `gh issue pin 1 --repo trungcodeer/softjunk-lead-kit` returned `Issue trungcodeer/softjunk-lead-kit#1 is already pinned`.
+- GitHub GraphQL returned pinned issue #1 (`Start here: $5 SoftJunk one-lead rescue checkout`) and issue #5 (`Agent Close Contract: $5 one-lead rescue buyer-agent route`).
+- Product issue #5 pinned route comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544012122`.
+
+Validation:
+- `pinned_checkout_issues_ok pinned=1,5 issue1_markers=3 issue5_markers=2 comment=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544012122`.
+- Issue #1 marker validation checked `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, and `one-lead-rescue-order.yml`.
+- Issue #5 marker validation checked `https://paypal.me/softjunk/5USD` and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Quiet Lead GitHub-Native Buyer Packet Route Evidence
 
 Quiet repo files changed:
