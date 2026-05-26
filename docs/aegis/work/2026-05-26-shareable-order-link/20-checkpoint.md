@@ -4338,3 +4338,41 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the exact buyer-send packet into the most visible pinned GitHub issue bodies without spam, deception, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub issues/repo files/releases/issues, GitHub Pages, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+## 2026-05-27 Issue Chooser Buyer-Send Checkpoint
+
+Current todo:
+- Put the current roofing buyer-send packet at the top of the GitHub New Issue chooser contact links.
+- Keep the completion gate closed until seller-side PayPal evidence proves the $5 arrived.
+
+Active slice:
+- Updated `.github/ISSUE_TEMPLATE/config.yml` so the first contact links are the roofing buyer-send packet, direct 5 USD PayPal link, buyer-send JSON, and buyer-send text.
+- Released, validated raw config and Pages run, submitted IndexNow, published issue evidence, and reran the PayPal verifier.
+
+Completed todos:
+- Product commit `b60149845a3dfdd1d88e5252db5a9914cae115f2` pushed to `main` via Git Data API.
+- Product release `v2.29.69` created.
+- Raw config validation confirmed first contact link is `Roofing buyer-send packet` and config contains buyer-send HTML/JSON/text, PayPal, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product Pages run `26478878784` completed successfully.
+- IndexNow accepted 7 related URLs with `status=200`.
+- Product issue #5 evidence comment added.
+- PayPal verifier rerun after the issue chooser update.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/b60149845a3dfdd1d88e5252db5a9914cae115f2`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.69`.
+- Issue chooser config: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/ISSUE_TEMPLATE/config.yml`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549579774`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Local C: has 0 free bytes, so remote API commits are being used for small checkpoint/evidence updates.
+
+Next step:
+- Continue legitimate AI-native conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the exact buyer-send packet into the New Issue chooser without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repo files/issues/releases, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
