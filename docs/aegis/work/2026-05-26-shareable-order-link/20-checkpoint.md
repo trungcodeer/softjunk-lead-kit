@@ -3233,3 +3233,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it submits owned public checkout/discovery URLs and updates searchable repo metadata without spam, deception, fake payment, unauthorized outreach, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub metadata, RSS, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Send-To-Buyer Checkout Packet Checkpoint
+
+Current todo:
+- Create a buyer-facing packet that can be sent to one fitting buyer with one real quiet lead.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add copy-ready DM/email, PayPal note, QR/checkout route, JSON, Markdown, Gist fallback, root links, releases, IndexNow submission, and public evidence.
+
+Completed todos:
+- Added product `SEND_TO_BUYER.md`, `send-to-buyer.html`, and `send-to-buyer.json`.
+- Added send-to-buyer links to product README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `robots.txt`, `sitemap.xml`, and `feed.xml`.
+- Added send-to-buyer links to root README, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+- Created and patched public Gist `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- Used accessibility guidance for the page: skip link, semantic buttons/links, visible focus, labelled textareas, image alt text, and `aria-live` status messages.
+- Validated local JSON, JSONL, XML, OpenAPI YAML, HTML JSON-LD, accessibility markers, and whitespace.
+- Committed and pushed product commit `3d1ce74` and root commit `af99e05`.
+- Created product release `v2.29.52` and root release `root-send-to-buyer-v1`.
+- Validated public Pages, raw GitHub, Gist raw, root offer link, feed item, and releases.
+- Submitted 8 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/3d1ce74`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/af99e05`.
+- Send-to-buyer page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+- Send-to-buyer JSON: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+- Markdown packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.52`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send-to-buyer-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545934413`.
+- Local validation passed: product/root JSON; product JSONL `lines=32`; product/root OpenAPI YAML; product/root sitemap XML; product feed XML; HTML JSON-LD and accessibility markers; and `git diff --check`.
+- Public validation passed: `pages_send_html`, `pages_send_json`, `raw_send_md`, `raw_send_json`, `gist_send_json`, `root_offer_send_link`, `public_feed_send_item`, and both releases.
+- IndexNow submission passed: `indexnow_status=200 urls=8`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel and buyer-facing conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a directly sendable buyer packet that routes a fitting buyer to the exact 5 USD PayPal checkout without spam, deception, unauthorized outreach, private-data leakage, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, RSS, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

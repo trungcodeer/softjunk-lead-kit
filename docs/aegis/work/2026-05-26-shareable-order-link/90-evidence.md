@@ -79,6 +79,41 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Send-To-Buyer Checkout Packet Evidence
+
+Artifacts:
+- Product `SEND_TO_BUYER.md`, `send-to-buyer.html`, and `send-to-buyer.json`.
+- Product discovery updates: README, `BUY_NOW.md`, `llms.txt`, `agents-checkout.json`, `buy-now.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `robots.txt`, `sitemap.xml`, and `feed.xml`.
+- Root discovery updates: README, `llms.txt`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `robots.txt`, and `sitemap.xml`.
+
+Public routes:
+- Send-to-buyer page: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+- Send-to-buyer JSON: `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+- Markdown packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+
+Commits and releases:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/3d1ce74`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/af99e05`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.52`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send-to-buyer-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545934413`.
+
+Validation:
+- Local product JSON passed for `send-to-buyer.json`, `agents-checkout.json`, `buy-now.json`, and `.well-known/softjunk-offer.json`.
+- Local root JSON passed for `root-offer.json` and `.well-known/softjunk-root-offer.json`.
+- Local product JSONL passed with `lines=32`.
+- Local product/root sitemap XML and OpenAPI YAML passed.
+- Local feed XML passed.
+- Local `send-to-buyer.html` JSON-LD and accessibility marker checks passed.
+- `git diff --check` returned no whitespace errors in product/root repos.
+- Public validation passed for Pages send HTML/JSON, raw Markdown/JSON, Gist raw JSON, root offer link, feed item, and both releases.
+- IndexNow accepted 8 URLs with `status=200`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 AI Checkout Discovery Distribution Evidence
 
 Artifacts and public state:
