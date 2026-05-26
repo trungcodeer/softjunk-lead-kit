@@ -10,11 +10,13 @@ Use this before the generic route when the buyer has one unanswered roofing esti
    https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 2. GitHub Discussion buyer route:
    https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
-3. Free roofing follow-up generator:
+3. Copy-ready one-buyer send packet:
+   https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+4. Free roofing follow-up generator:
    https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
-4. Pay exactly 5 USD through PayPal:
+5. Pay exactly 5 USD through PayPal:
    https://paypal.me/softjunk/5USD
-5. After payment, submit non-sensitive roofing context:
+6. After payment, submit non-sensitive roofing context:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
@@ -41,23 +43,25 @@ Do not post homeowner names, phone numbers, emails, street addresses, insurance 
    https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 10. Send-to-buyer generator packet:
    https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
-11. Roofing estimate rescue packet:
+11. Roofing buyer send packet:
+   https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+12. Roofing estimate rescue packet:
    https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
-12. Roofing estimate follow-up generator:
+13. Roofing estimate follow-up generator:
    https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
-13. Agent checkout Gist:
+14. Agent checkout Gist:
    https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-14. GitHub Sponsor button buy route:
+15. GitHub Sponsor button buy route:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-15. PayPal note first:
+16. PayPal note first:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-16. What gets delivered after verified payment:
+17. What gets delivered after verified payment:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-17. Buyer-agent close contract:
+18. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-18. Direct PayPal checkout:
+19. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-19. After payment, submit non-sensitive order details if needed:
+20. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer

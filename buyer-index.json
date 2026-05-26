@@ -1,6 +1,6 @@
 {
   "schema_version": "softjunk-buyer-index-v1",
-  "updated": "2026-05-26",
+  "updated": "2026-05-27",
   "name": "SoftJunk Buyer Index",
   "purpose": "A single decision packet for AI assistants, crawlers, virtual assistants, and small-business buyers to choose the right SoftJunk $5 lead follow-up path without guessing.",
   "root_hub_url": "https://trungcodeer.github.io/",
@@ -63,6 +63,10 @@
   "agent_commerce_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
   "agent_commerce_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
   "agent_buyer_catalog_jsonl_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
+  "roofing_buyer_send_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+  "roofing_buyer_send_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
+  "roofing_buyer_send_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt",
+  "roofing_buyer_send_gist_url": "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
   "exact_intent_answer_pack_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",

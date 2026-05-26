@@ -10,11 +10,13 @@ Use this before the generic route when the buyer has one unanswered roofing esti
    https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 2. Open the roofing buyer Discussion:
    https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
-3. Show the free preview generator:
+3. If the assistant needs copy-ready outreach for one known buyer, open the send packet:
+   https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+4. Show the free preview generator:
    https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
-4. Send the exact PayPal URL:
+5. Send the exact PayPal URL:
    https://paypal.me/softjunk/5USD
-5. After payment, send the dedicated roofing order form:
+6. After payment, send the dedicated roofing order form:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
 
 Do not ask the buyer to post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.

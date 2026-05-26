@@ -12,6 +12,10 @@
     "use_when": "The buyer has one unanswered roofing estimate and one recovered roof job is worth more than 5 USD.",
     "public_issue_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
     "public_discussion_url": "https://github.com/trungcodeer/softjunk-lead-kit/discussions/8",
+    "one_buyer_send_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+    "one_buyer_send_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
+    "one_buyer_send_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt",
+    "one_buyer_send_packet_gist_url": "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
     "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "post_payment_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
@@ -41,6 +45,10 @@
   "send_to_buyer_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json",
   "send_to_buyer_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md",
   "send_to_buyer_gist_url": "https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683",
+  "roofing_buyer_send_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+  "roofing_buyer_send_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
+  "roofing_buyer_send_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt",
+  "roofing_buyer_send_gist_url": "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
   "roofing_estimate_rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
   "roofing_estimate_generator_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
   "roofing_estimate_generator_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json",
@@ -127,6 +135,11 @@
       "step": "send_to_buyer",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html",
       "instruction": "Use the local-only send-to-buyer generator when a seller, assistant, or VA needs one buyer-specific DM, email, PayPal note, or prefilled share link for a fitting buyer who already has one real quiet lead."
+    },
+    {
+      "step": "roofing_buyer_send_packet",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+      "instruction": "Use the roofing buyer send packet when a seller, VA, or buyer-agent has one known fitting roofing contractor and needs a copy-ready DM, email, PayPal note, and exact checkout path without spam or private data."
     },
     {
       "step": "roofing_estimate_rescue",

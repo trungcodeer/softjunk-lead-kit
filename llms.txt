@@ -7,11 +7,15 @@ Roofing estimate buyer fast path:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 2. GitHub Discussion buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
-3. Free roofing preview generator:
+3. Copy-ready one-buyer send packet:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+4. Roofing buyer send packet JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
+5. Free roofing preview generator:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
-4. Pay exactly 5 USD:
+6. Pay exactly 5 USD:
 https://paypal.me/softjunk/5USD
-5. Post-payment roofing order form:
+7. Post-payment roofing order form:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
 
 Privacy rule: do not post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Fulfillment starts only after seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
@@ -84,6 +88,18 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md
 
 Send-to-buyer Gist:
 https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
+
+Roofing buyer send packet:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+
+Roofing buyer send JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
+
+Roofing buyer send text:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt
+
+Roofing buyer send Gist:
+https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805
 
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html

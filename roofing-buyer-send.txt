@@ -1,0 +1,72 @@
+SoftJunk Roofing Buyer Send Packet
+Updated: 2026-05-27
+
+Use this only for one known fitting buyer:
+A roofing contractor with one estimate or quote that went quiet.
+
+Do not send this to scraped lists or strangers.
+Do not include homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details.
+
+Page:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+
+JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
+
+Public Gist:
+https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805
+
+Raw Gist JSON:
+https://gist.githubusercontent.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805/raw/roofing-buyer-send.json
+
+Root roofing route:
+https://trungcodeer.github.io/roofing/
+
+Free roofing preview:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+
+Public buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+
+Checkout-card discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+
+Pay exactly 5 USD:
+https://paypal.me/softjunk/5USD
+
+Roofing order form after payment:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
+
+PayPal note:
+Roofing estimate rescue | Business: [business] | Service: roof estimate | Estimate status: unanswered | Tone: direct
+
+Short DM:
+One roofing estimate went quiet? If one recovered roof job is worth more than $5, this $5 SoftJunk rescue gives you Day 0/1/3/5/7 follow-ups for that exact estimate situation. Preview first: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html Buyer route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8 Pay exactly $5 only if it fits: https://paypal.me/softjunk/5USD
+
+Email subject:
+Recover one unanswered roofing estimate for $5
+
+Email body:
+One roofing estimate went quiet?
+
+If one recovered roof job is worth more than $5, this SoftJunk rescue gives you Day 0, 1, 3, 5, and 7 follow-up messages for that exact estimate situation.
+
+Preview the writing style:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+
+Public buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+
+Checkout-card discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+
+Pay exactly $5 only if it fits:
+https://paypal.me/softjunk/5USD
+
+After payment, submit non-sensitive order details here:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
+
+Use business context only. Do not post homeowner names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
+
+Verification gate:
+Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

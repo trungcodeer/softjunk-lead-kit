@@ -87,6 +87,20 @@
       ]
     },
     {
+      "id": "send_one_roofing_buyer_packet",
+      "name": "Send one roofing buyer packet",
+      "description": "Return the copy-ready DM, email, PayPal note, free preview, checkout-card discussion, exact 5 USD PayPal route, and roofing order form for one known fitting roofing buyer.",
+      "tags": [
+        "roofing",
+        "buyer-agent",
+        "send-packet",
+        "paypal"
+      ],
+      "examples": [
+        "Send a known roofing contractor a non-spam one-buyer packet for one unanswered estimate."
+      ]
+    },
+    {
       "id": "enforce_paypal_verification_gate",
       "name": "Enforce PayPal verification gate",
       "description": "Prevent paid, started, delivered, or complete claims unless seller-side PayPal proof exists or PAYPAL_PAYMENT_VERIFIED=true.",
@@ -104,6 +118,9 @@
     "paymentUrl": "https://paypal.me/softjunk/5USD",
     "rootRescueUrl": "https://trungcodeer.github.io/rescue/",
     "checkoutUrl": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+    "roofingBuyerSendUrl": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+    "roofingBuyerSendJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
+    "roofingBuyerSendGistUrl": "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
     "roofingEstimateGeneratorUrl": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
     "roofingBuyerIssueUrl": "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
     "roofingEstimateOrderFormUrl": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",

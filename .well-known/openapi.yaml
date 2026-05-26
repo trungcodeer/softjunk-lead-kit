@@ -245,6 +245,39 @@ paths:
             application/json:
               schema:
                 type: object
+  /roofing-buyer-send.html:
+    get:
+      operationId: openRoofingBuyerSendPacket
+      summary: Open the SoftJunk roofing buyer send packet.
+      responses:
+        "200":
+          description: Copy-ready one-buyer DM, email, PayPal note, free preview, checkout-card discussion, exact 5 USD PayPal URL, roofing order form, privacy rule, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /roofing-buyer-send.json:
+    get:
+      operationId: getRoofingBuyerSendPacket
+      summary: Get the SoftJunk roofing buyer send packet JSON.
+      responses:
+        "200":
+          description: Machine-readable one-buyer send packet for a known fitting roofing contractor with one unanswered estimate, including DM, email, PayPal note, checkout-card discussion, payment URL, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /roofing-buyer-send.txt:
+    get:
+      operationId: getRoofingBuyerSendPacketText
+      summary: Get the SoftJunk roofing buyer send packet text.
+      responses:
+        "200":
+          description: Plain-text one-buyer send packet with DM, email, PayPal note, checkout-card discussion, payment URL, order form, privacy rule, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /roofing-estimate-rescue.html:
     get:
       operationId: openRoofingEstimateRescue

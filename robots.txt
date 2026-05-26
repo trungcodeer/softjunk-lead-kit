@@ -24,6 +24,9 @@ Allow: /MCP_CHECKOUT_SERVER.md
 Allow: /SEND_TO_BUYER.md
 Allow: /send-to-buyer.html
 Allow: /send-to-buyer.json
+Allow: /roofing-buyer-send.html
+Allow: /roofing-buyer-send.json
+Allow: /roofing-buyer-send.txt
 Allow: /agent-order.html
 Allow: /agent-offer.json
 Allow: /product-feed.json

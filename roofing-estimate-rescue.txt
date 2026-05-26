@@ -11,6 +11,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roof
 Public roofing buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 
+Checkout-card discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+
+Roofing buyer send packet:
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+
 Pay exactly 5 USD:
 https://paypal.me/softjunk/5USD
 
