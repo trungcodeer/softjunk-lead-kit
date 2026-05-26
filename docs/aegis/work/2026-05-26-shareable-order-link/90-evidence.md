@@ -79,6 +79,38 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Public Roofing Buyer Issue Route Evidence
+
+Public buyer issue:
+- `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+
+Artifacts changed:
+- Product repo: roofing rescue/generator HTML/JSON/TXT, MCP server, MCP manifests, buy-now JSON, agents-checkout JSON, offer JSON, A2A cards, README, `llms.txt`, and agent buyer catalog.
+- Root repo: `roofing/index.html`, `roofing.json`, `roofing.txt`, root offer JSON, root A2A cards, README, and `llms.txt`.
+- Gists: MCP checkout server `76b4b70a3b13bfec62c5f66c3ebec30d`, roofing generator `1d51e6552c5f3886b1f25bd612e705a3`, and roofing rescue `3f6f5804dc8a5b95780076e57e9d0e59`.
+
+Commit, release, and issue evidence:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/8700bd7`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/57db440`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.62`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-public-buyer-issue-v1`.
+- Public product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548013762`.
+
+Validation:
+- Local JSON parse passed for 9 product JSON files with issue #7 markers.
+- Local JSONL parse passed with 36 lines and 5 roofing issue records.
+- Local HTML marker/accessibility checks passed for product roofing generator/rescue and root roofing route: skip link present and one H1.
+- `node --check mcp-server-softjunk.js` passed.
+- MCP smoke returned `roofing_buyer_issue_url` and issue #7.
+- Root JSON/HTML marker checks passed for 5 JSON files plus root roofing HTML.
+- Product/root `git diff --check` returned no whitespace errors beyond CRLF warnings.
+- Public validation passed for issue #7, raw rescue/generator JSON, raw MCP server, Pages rescue/generator HTML, Pages MCP manifest, Pages catalog, root roofing HTML/JSON, root offer, Gist mirrors, and both releases.
+- IndexNow accepted 20 updated/discovery URLs with `status=200`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Roofing Catalog Order Form Alignment Evidence
 
 Artifact changed:

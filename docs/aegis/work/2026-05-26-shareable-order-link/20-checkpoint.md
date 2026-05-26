@@ -3780,3 +3780,54 @@ DriftCheckDraft:
 - Current slice fit: yes, it removes a machine-readable routing mismatch that could send a roofing buyer-agent to the wrong after-payment form.
 - Compatibility boundary: owned GitHub repo, GitHub Pages, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Public Roofing Buyer Issue Route Checkpoint
+
+Current todo:
+- Give roofing buyers a direct public GitHub issue with a title and body that match their problem, not only an agent-contract issue.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Create a dedicated public roofing buyer issue, wire product/root human and agent-readable surfaces to it, update Gist mirrors, release, validate public content, submit IndexNow, add issue evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Created public roofing buyer issue #7: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Wired product roofing rescue/generator HTML, JSON, and text routes to issue #7.
+- Wired product MCP server, MCP manifests, buy-now JSON, agents-checkout JSON, offer JSON, A2A cards, README, `llms.txt`, and agent buyer catalog to issue #7.
+- Wired root `/roofing/`, `roofing.json`, `roofing.txt`, root offer JSON, root A2A cards, README, and `llms.txt` to issue #7.
+- Updated MCP, roofing generator, and roofing rescue Gist mirrors.
+- Committed and pushed product commit `8700bd7`.
+- Committed and pushed root commit `57db440`.
+- Created product release `v2.29.62`.
+- Created root release `root-roofing-public-buyer-issue-v1`.
+- Validated local product JSON, JSONL, HTML markers/accessibility markers, Node syntax, MCP smoke output, and whitespace.
+- Validated local root JSON and root roofing HTML markers/accessibility markers.
+- Validated public raw GitHub, Pages, Gist, issue, and release surfaces.
+- Submitted 20 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/8700bd7`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/57db440`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.62`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-roofing-public-buyer-issue-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548013762`.
+- Gist mirrors updated: MCP `76b4b70a3b13bfec62c5f66c3ebec30d`, generator `1d51e6552c5f3886b1f25bd612e705a3`, rescue `3f6f5804dc8a5b95780076e57e9d0e59`.
+- Local validation: `product_json_ok files=9 jsonl_lines=36 roofing_issue_records=5`, `product_html_markers_ok files=2`, `root_json_html_ok files=5`, `mcp_smoke_ok issue7=true`, and product/root `git diff --check`.
+- Public validation passed for issue #7, raw rescue/generator JSON, raw MCP server, Pages rescue/generator HTML, Pages MCP manifest, Pages catalog, root roofing HTML/JSON, root offer, Gist mirrors, and both releases.
+- IndexNow submission returned `indexnow_status=200 urls=20`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer discovery/conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the buyer-facing GitHub path match a concrete paid niche problem, while preserving consent, privacy, exact 5 USD PayPal checkout, and seller-side verification.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub issues/releases/raw content, public Gists, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
