@@ -1322,3 +1322,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves GitHub-native discovery and profile conversion paths without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: GitHub repo metadata, GitHub Pages, public releases/issues, IndexNow discovery, JSON/llms/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Product Discovery Root Rescue Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Move product-owned discovery surfaces and public packet Gists to the root one-lead rescue route first.
+
+Completed todos:
+- Rechecked product worktree state and PayPal verifier status before the slice.
+- Updated product README, support, issue contact links, funding links, `llms.txt`, buyer index, agent packet JSON/TXT, agent catalog JSONL, agent offer, product feed, offers, well-known offer, plugin manifest, buyer index Markdown, and answer brief to expose `https://trungcodeer.github.io/rescue/`, `rescue.json`, and `rescue.txt`.
+- Updated public Gists for agent buyer packet JSON/TXT and `LEAD_FOLLOW_UP_ANSWERS.md`.
+- Validated local JSON, JSONL, YAML, root rescue markers, PayPal markers, verification markers, and whitespace.
+- Committed and pushed product change `d48bdc6`.
+- Created product release `v2.29.24`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated 19 live/raw/Gist URLs for root rescue and PayPal or verification markers.
+- Submitted 13 root/product URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the product discovery update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/d48bdc6`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.24`.
+- GitHub Pages run: `26440214712`, success.
+- Root rescue route: `https://trungcodeer.github.io/rescue/`.
+- Root rescue JSON: `https://trungcodeer.github.io/rescue.json`.
+- Root rescue text: `https://trungcodeer.github.io/rescue.txt`.
+- Live/raw/Gist validation passed for 19 URLs, including product Pages JSON/TXT/JSONL manifests, raw README/support/funding/issue config/Markdown briefs, and packet/answer Gists.
+- IndexNow returned `status=200 urls=13`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541928344` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541930331`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses public machine-readable discovery and buyer-agent routing rather than spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/JSONL/plugin/llms/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

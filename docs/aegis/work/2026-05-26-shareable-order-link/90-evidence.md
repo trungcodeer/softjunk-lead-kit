@@ -949,3 +949,56 @@ Public Gist updates:
 Payment gate:
 - This slice still did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Product Discovery Root Rescue Evidence
+
+Local validation:
+- JSON parse passed for 7 files: `buyer-index.json`, `agent-buyer-packet.json`, `product-feed.json`, `offers.json`, `.well-known/softjunk-offer.json`, `agent-offer.json`, and `.well-known/ai-plugin.json`.
+- JSONL parse passed for `agent-buyer-catalog.jsonl` with 20 lines.
+- YAML parse passed for `.github/FUNDING.yml` and `.github/ISSUE_TEMPLATE/config.yml`.
+- `git diff --check` returned no whitespace errors.
+- Marker scan confirmed `https://trungcodeer.github.io/rescue/`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true` remained present across the updated discovery surfaces.
+- No `package.json` exists, so there was no package test script to run.
+
+Files changed in product repo:
+- `.github/FUNDING.yml`
+- `.github/ISSUE_TEMPLATE/config.yml`
+- `.github/SUPPORT.md`
+- `.well-known/ai-plugin.json`
+- `.well-known/softjunk-offer.json`
+- `BUYER_INDEX.md`
+- `LEAD_FOLLOW_UP_ANSWERS.md`
+- `README.md`
+- `agent-buyer-catalog.jsonl`
+- `agent-buyer-packet.json`
+- `agent-buyer-packet.txt`
+- `agent-offer.json`
+- `buyer-index.json`
+- `llms.txt`
+- `offers.json`
+- `product-feed.json`
+
+Public Gist updates:
+- Agent buyer packet Gist `85b6eef2cd6deb244d0bfbe18e744a3c` updated for `agent-buyer-packet.json` and `agent-buyer-packet.txt`.
+- Answer brief Gist `78f709d9550e952dc6c0595660ca643a` updated for `LEAD_FOLLOW_UP_ANSWERS.md`.
+- `gh gist view` confirmed the updated Gists expose `https://trungcodeer.github.io/rescue/`, `rescue.json`, `rescue.txt`, and the PayPal verification gate.
+
+Commit, release, and deploy:
+- Product commit: `d48bdc6 Route product discovery to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.24`.
+- Product GitHub Pages run `26440214712` completed with success.
+
+Live/raw/Gist validation:
+- `live_raw_gist_ok checks=19`.
+- Validated live product Pages URLs: `llms.txt`, `buyer-index.json`, `agent-buyer-packet.json`, `agent-buyer-packet.txt`, `agent-buyer-catalog.jsonl`, `product-feed.json`, `offers.json`, `.well-known/softjunk-offer.json`, `agent-offer.json`, and `.well-known/ai-plugin.json`.
+- Validated raw GitHub URLs: `README.md`, `.github/SUPPORT.md`, `.github/ISSUE_TEMPLATE/config.yml`, `.github/FUNDING.yml`, `BUYER_INDEX.md`, and `LEAD_FOLLOW_UP_ANSWERS.md`.
+- Validated raw Gist URLs: agent buyer packet JSON, agent buyer packet text, and answer brief Markdown.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=13` for root rescue plus product feed/catalog/manifest URLs.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4541928344`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4541930331`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
