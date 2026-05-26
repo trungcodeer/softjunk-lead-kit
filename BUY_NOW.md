@@ -6,16 +6,24 @@ Use this when one real lead has gone quiet and one recovered reply, quote, appoi
 
 1. Human buyer start-here board:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-2. Buyer-agent close contract:
+2. PayPal note first:
+   https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+3. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-3. Direct PayPal checkout:
+4. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
-4. After payment, submit non-sensitive order details:
+5. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 ## Copy This To A Buyer
 
-If you have one quiet lead and one recovered conversation is worth more than $5, buy the SoftJunk one-lead rescue here: https://paypal.me/softjunk/5USD. Use non-sensitive business context only. After payment, submit the order form at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml. Delivery starts only after seller-side PayPal proof confirms the payment.
+If you have one quiet lead and one recovered conversation is worth more than $5, copy the safe PayPal note here: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md, then pay exactly 5 USD at https://paypal.me/softjunk/5USD. Use non-sensitive business context only. If the PayPal note is too short, submit the order form at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml after payment. Delivery starts only after seller-side PayPal proof confirms the payment.
+
+Fast note:
+
+```text
+One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
+```
 
 Want to see the style first? Open the result-first sample:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
@@ -41,6 +49,10 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 - Result-first sample JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
 - Result-first sample Gist: https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
 - Result-first sample Gist JSON: https://gist.githubusercontent.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02/raw/result-first-sample.json
+- PayPal note first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+- PayPal note first JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json
+- PayPal note first Gist: https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a
+- PayPal note first Gist JSON: https://gist.githubusercontent.com/trungcodeer/fbd0764d1575076c27eaddb55042459a/raw/paypal-note-first.json
 - One-message packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 
 Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.

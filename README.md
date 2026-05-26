@@ -9,11 +9,12 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 Start here if you have one real quiet lead:
 
 1. Open the GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
-2. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-3. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-4. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-5. After payment, submit the one-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-6. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+2. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+3. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+4. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+5. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+6. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+7. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
@@ -26,6 +27,12 @@ https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.jso
 
 Buy Now public Gist:
 https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
+
+PayPal note first:
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+
+PayPal note first Gist:
+https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a
 
 Result-first sample:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
@@ -52,6 +59,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
 - Public Buy Now Gist: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
 - Raw Buy Now Gist JSON: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json
+- PayPal note first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+- PayPal note first JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json
+- PayPal note first Gist: https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a
+- PayPal note first Gist JSON: https://gist.githubusercontent.com/trungcodeer/fbd0764d1575076c27eaddb55042459a/raw/paypal-note-first.json
 - Result-first sample: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RESULT_FIRST_SAMPLE.md
 - Result-first sample JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/result-first-sample.json
 - Result-first sample Gist: https://gist.github.com/trungcodeer/24f1f8dd3915e17ef6bb6c200ac2ce02
