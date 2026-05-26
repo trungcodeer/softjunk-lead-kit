@@ -31,6 +31,9 @@ Do not use it for spam, deception, scraping, fake reviews, unauthorized outreach
 
 - Canonical packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 - JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
+- Public Gist: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
+- Raw Gist Markdown: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md
+- Raw Gist JSON: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json
 - One-message packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md
 
 Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.
