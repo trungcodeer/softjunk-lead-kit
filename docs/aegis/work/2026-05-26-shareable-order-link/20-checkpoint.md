@@ -2110,3 +2110,49 @@ DriftCheckDraft:
 - Current slice fit: yes, it tested a web route recovery path while preserving live checkout pages and without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: public GitHub Pages source config, candidate branch, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 One-Message Buyer Packet Checkpoint
+
+Current todo:
+- Keep the one-message packet, issue #1, issue #5, Funding, repo homepage, RawGitHack, and Gist as active buyer routes.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Create a compact copy-ready buyer packet that does not depend on GitHub Pages and can be read directly by a human or buyer agent.
+
+Completed todos:
+- Added `ONE_MESSAGE_BUYER_PACKET.md` with the shortest buyer route: issue #5, Agent Close fallback, root rescue, exact PayPal, order form, privacy rule, and verification gate.
+- Linked the packet from `README.md`, `BUYER_INDEX.md`, and `.github/SUPPORT.md`.
+- Validated local marker coverage and whitespace.
+- Committed and pushed product commit `6697331`.
+- Created public Gist `https://gist.github.com/trungcodeer/1feb4ad4287e64c1e88d7f6c53f66c0d`.
+- Created product release `v2.29.37`.
+- Commented public order board issue #1 and buyer-agent issue #5 with the packet link.
+- Validated raw GitHub and raw Gist packet markers.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/66973315e8d67ac33dcf5125346c92d576d68747`.
+- One-message packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md`.
+- Raw one-message packet: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/6697331/ONE_MESSAGE_BUYER_PACKET.md`.
+- Public Gist: `https://gist.github.com/trungcodeer/1feb4ad4287e64c1e88d7f6c53f66c0d`.
+- Raw Gist validation passed: `one_message_packet_gist_raw_ok gist=1feb4ad4287e64c1e88d7f6c53f66c0d`.
+- Raw GitHub validation passed: `one_message_packet_raw_github_ok files=4 checks=20 commit=6697331`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.37`.
+- Public order board comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4543912504`.
+- Agent Close issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543912501`.
+- Product latest Pages build for `66973315e8d67ac33dcf5125346c92d576d68747` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages build infrastructure remains unreliable for new `agent-close` routes, so GitHub-native issue, one-message packet, RawGitHack, and Gist fallbacks remain the active route.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates the shortest copy-ready buyer-agent packet to move a qualified buyer to PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: raw GitHub content, public GitHub issues/releases, public Gists, RawGitHack fallback, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

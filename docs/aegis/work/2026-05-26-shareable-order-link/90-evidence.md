@@ -79,6 +79,38 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 One-Message Buyer Packet Evidence
+
+Files changed:
+- Added `ONE_MESSAGE_BUYER_PACKET.md`.
+- Updated `README.md`.
+- Updated `BUYER_INDEX.md`.
+- Updated `.github/SUPPORT.md`.
+
+Commit and release:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/66973315e8d67ac33dcf5125346c92d576d68747`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.37`.
+
+Public packet distribution:
+- GitHub packet: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/ONE_MESSAGE_BUYER_PACKET.md`.
+- Raw packet: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/6697331/ONE_MESSAGE_BUYER_PACKET.md`.
+- Public Gist: `https://gist.github.com/trungcodeer/1feb4ad4287e64c1e88d7f6c53f66c0d`.
+- Raw Gist packet: `https://gist.githubusercontent.com/trungcodeer/1feb4ad4287e64c1e88d7f6c53f66c0d/raw/ONE_MESSAGE_BUYER_PACKET.md`.
+
+Validation:
+- Local marker validation passed: `one_message_buyer_packet_local_ok files=4`.
+- Raw GitHub validation passed: `one_message_packet_raw_github_ok files=4 checks=20 commit=6697331`.
+- Raw Gist validation passed: `one_message_packet_gist_raw_ok gist=1feb4ad4287e64c1e88d7f6c53f66c0d`.
+- Validated markers included issue #5, RawGitHack Agent Close fallback, exact PayPal URL, one-lead rescue order form, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Public issue comments:
+- Public order board comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4543912504`.
+- Agent Close issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543912501`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Pages Candidate Agent Close Evidence
 
 Candidate branch attempt:
