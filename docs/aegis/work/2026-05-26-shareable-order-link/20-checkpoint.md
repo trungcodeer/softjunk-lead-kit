@@ -4026,3 +4026,40 @@ DriftCheckDraft:
 - Current slice fit: yes, it sends the concrete roofing buyer route into a GitHub-native Discussion and connects it to human and machine-readable discovery without spam, private data exposure, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub discussions/issues/repo files/releases, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Pinned Roofing Checkout Card Checkpoint
+
+Current todo:
+- Keep the machine-readable checkout card visible at the top of the high-intent roofing buyer issue.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Pin the agent-readable checkout-card comment on issue #7, validate the pinned comment through GitHub GraphQL, add public issue evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Confirmed GitHub GraphQL exposes `pinIssueComment`.
+- Pinned issue #7 comment `4548214384`, the `softjunk.agent_checkout_card.v1` checkout card.
+- Validated issue #7 is pinned and `pinnedIssueComment.issueComment.url` points to the checkout-card comment.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Pinned checkout-card comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548435938`.
+- GraphQL validation returned `issue(number: 7).isPinned=true`, `pinnedIssueComment.pinnedAt=2026-05-26T20:15:16Z`, and `pinnedIssueComment.issueComment.url=https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- Pinned comment body contains `softjunk.agent_checkout_card.v1`, `https://paypal.me/softjunk/5USD`, `roofing-estimate-rescue-order.yml`, `not payment proof`, privacy rule, and seller-side verification rule.
+- Issue #5 evidence validation returned `has_pinned_comment=true`, `has_gate=true`, and `has_privacy=true`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the exact machine-readable checkout card the pinned comment on the most concrete roofing buyer issue without spam, private data exposure, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub issue pins/comments, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

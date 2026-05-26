@@ -79,6 +79,33 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Pinned Roofing Checkout Card Evidence
+
+Public buyer surface:
+- Public roofing buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Pinned checkout-card comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548435938`.
+
+Pin action:
+- Used GitHub GraphQL `pinIssueComment` with issue comment id `IC_kwDOSnIQIc8AAAABDxg-cA`.
+- The pinned comment is the `Agent-readable checkout card` comment, not a payment claim.
+
+Validation:
+- GitHub GraphQL returned `issue(number: 7).isPinned=true`.
+- GitHub GraphQL returned `pinnedIssueComment.pinnedAt=2026-05-26T20:15:16Z`.
+- GitHub GraphQL returned `pinnedIssueComment.issueComment.url=https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384`.
+- The pinned comment body contains `softjunk.agent_checkout_card.v1`, exact PayPal route `https://paypal.me/softjunk/5USD`, dedicated roofing order form `roofing-estimate-rescue-order.yml`, `not payment proof`, privacy rule, and seller-side verification rule.
+- Issue #5 evidence validation returned `has_pinned_comment=true`, `has_gate=true`, and `has_privacy=true`.
+
+Accessibility and privacy guardrails:
+- The pinned comment uses a plain text heading and fenced JSON.
+- The card states it is not payment proof.
+- The privacy rule forbids homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, and PayPal details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Roofing Buyer Discussion Discovery Evidence
 
 Public buyer surface:
