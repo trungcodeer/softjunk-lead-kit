@@ -31,10 +31,57 @@
         {
           "@type": "Offer",
           "name": "SoftJunk Roofing Estimate Rescue",
+          "description": "Day 0/1/3/5/7 follow-up rescue packet for one known roofing estimate that went quiet.",
           "price": "5.00",
           "priceCurrency": "USD",
           "url": "https://paypal.me/softjunk/5USD",
-          "availability": "https://schema.org/InStock"
+          "availability": "https://schema.org/InStock",
+          "seller": {
+            "@type": "Organization",
+            "name": "SoftJunk",
+            "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+          },
+          "itemOffered": {
+            "@type": "DigitalDocument",
+            "name": "SoftJunk Roofing Buyer Send Packet",
+            "url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
+            "encodingFormat": "application/json"
+          },
+          "potentialAction": {
+            "@type": "BuyAction",
+            "name": "Pay exactly 5 USD for the roofing estimate rescue",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://paypal.me/softjunk/5USD",
+              "httpMethod": "GET",
+              "actionPlatform": [
+                "https://schema.org/DesktopWebPlatform",
+                "https://schema.org/MobileWebPlatform"
+              ]
+            },
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": "5.00",
+              "priceCurrency": "USD"
+            },
+            "result": {
+              "@type": "DigitalDocument",
+              "name": "Delivered roofing follow-up rescue after seller-side PayPal verification",
+              "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "stop_gate",
+                "value": "Stop only when seller-side evidence prints PAYPAL_PAYMENT_VERIFIED=true."
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "privacy_gate",
+                "value": "Send placeholders only; replace private customer details inside the buyer CRM."
+              }
+            ]
+          }
         }
       ]
     }
