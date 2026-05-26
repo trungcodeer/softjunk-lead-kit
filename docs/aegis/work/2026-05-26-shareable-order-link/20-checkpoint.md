@@ -2700,3 +2700,52 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves buyer confidence by showing exactly what can be delivered after a verified payment without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Sponsor Button PayPal Route Checkpoint
+
+Current todo:
+- Improve the GitHub-native path from repository visitors to the exact 5 USD PayPal checkout.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Reorder `.github/FUNDING.yml` so the first custom funding URL is `https://paypal.me/softjunk/5USD`, then add a Sponsor button buy packet, JSON route, Gist mirror, release, and issue comment.
+
+Completed todos:
+- Updated `.github/FUNDING.yml` with PayPal first, followed by the Sponsor button route, PayPal note route, and instant fulfillment packet.
+- Added `SPONSOR_BUTTON_BUY.md` and `sponsor-button-buy.json`.
+- Linked the Sponsor button route from `BUY_NOW.md`, `buy-now.json`, `README.md`, `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `llms.txt`, and `.github/SUPPORT.md`.
+- Created and updated public Gist `8f30064ad27d3f9f71ae152fe46703a7`.
+- Validated local funding YAML, JSON, JSONL, marker coverage, and whitespace.
+- Committed and pushed product commit `4ee6168`.
+- Validated public raw GitHub `FUNDING.yml`, Sponsor button Markdown/JSON, Buy Now JSON, and catalog JSONL.
+- Created release `v2.29.44`.
+- Added a public product issue #5 comment for the Sponsor button PayPal route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/4ee6168`.
+- Funding config: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml`.
+- Sponsor button route: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md`.
+- Sponsor button JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json`.
+- Sponsor button Gist: `https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7`.
+- Sponsor button raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.44`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544718803`.
+- Local validation passed: `funding_yaml_ok first=https://paypal.me/softjunk/5USD count=4`, `json_ok sponsor-button-buy.json`, `jsonl_ok lines=27`, `marker_ok checks=11`.
+- Public raw validation passed: `funding_raw_ok first=https://paypal.me/softjunk/5USD`, `sponsor_json_raw_ok schema=softjunk-sponsor-button-buy-v1`, `sponsor_md_raw_ok`, `catalog_raw_ok`, `buy_now_raw_ok`.
+- Public Gist validation passed: `gist_raw_ok schema=softjunk-sponsor-button-buy-v1`.
+- Release validation passed: `release_ok tag=v2.29.44 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.44`.
+- Issue comment validation passed: `issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544718803`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses GitHub's native funding/Sponsor surface to route repository visitors to the exact PayPal checkout without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: product GitHub repo, public GitHub releases/issues/Gists, raw GitHub content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

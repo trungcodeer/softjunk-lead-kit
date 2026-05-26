@@ -91,6 +91,54 @@ Payment gate:
 - Validations passed: `json_ok`, `jsonl_ok lines=26`, `marker_ok checks=10`, `gist_raw_ok schema=softjunk-instant-fulfillment-packet-v1`, `raw_github_ok schema=softjunk-instant-fulfillment-packet-v1 urls=4`, `release_ok tag=v2.29.43`, `issue_comment_ok`.
 - Payment gate remains closed: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
+## 2026-05-26 Sponsor Button PayPal Route Evidence
+
+Files changed in product repo:
+- `.github/FUNDING.yml`
+- `.github/SUPPORT.md`
+- `SPONSOR_BUTTON_BUY.md`
+- `sponsor-button-buy.json`
+- `BUY_NOW.md`
+- `buy-now.json`
+- `README.md`
+- `BUYER_INDEX.md`
+- `buyer-index.json`
+- `agent-buyer-catalog.jsonl`
+- `llms.txt`
+
+Commit, release, and issue:
+- Product commit: `4ee6168 Route Sponsor button to PayPal checkout`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.44`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544718803`.
+
+Public routes:
+- Funding config: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml`.
+- Sponsor button route: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md`.
+- Raw JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json`.
+- Public Gist: `https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7`.
+- Raw Gist JSON: `https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json`.
+
+Local validation:
+- Funding YAML parse passed and first custom URL is `https://paypal.me/softjunk/5USD`: `funding_yaml_ok first=https://paypal.me/softjunk/5USD count=4`.
+- JSON parse passed for `sponsor-button-buy.json`, `buy-now.json`, `buyer-index.json`, `instant-fulfillment-packet.json`, and `paypal-note-first.json`.
+- JSONL parse passed for `agent-buyer-catalog.jsonl` with `lines=27`.
+- Marker validation passed across funding, Sponsor button route, support, README, Buy Now, Buyer Index, JSON manifests, JSONL catalog, and `llms.txt`: `marker_ok checks=11`.
+- `git diff --check` returned no whitespace errors before commit.
+
+Public validation:
+- Raw GitHub funding validation passed: `funding_raw_ok first=https://paypal.me/softjunk/5USD`.
+- Raw GitHub Sponsor button JSON validation passed: `sponsor_json_raw_ok schema=softjunk-sponsor-button-buy-v1`.
+- Raw GitHub Sponsor button Markdown validation passed: `sponsor_md_raw_ok`.
+- Raw GitHub catalog validation passed: `catalog_raw_ok`.
+- Raw GitHub Buy Now JSON validation passed: `buy_now_raw_ok`.
+- Raw Gist validation passed: `gist_raw_ok schema=softjunk-sponsor-button-buy-v1`.
+- Release validation passed: `release_ok tag=v2.29.44 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.44`.
+- Issue comment validation passed: `issue_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544718803`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Instant Fulfillment Packet Evidence
 
 Files changed in product repo:
