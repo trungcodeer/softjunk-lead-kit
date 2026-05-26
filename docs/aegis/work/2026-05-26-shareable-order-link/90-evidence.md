@@ -38,6 +38,25 @@ Payment gate:
 - This slice still did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Custom Sequence Gallery Deploy Evidence
+
+Live deploy validation:
+- Product route checks returned HTTP 200 for `custom-sequence-gallery.html`, `custom-sequence-gallery.json`, `custom-sequence-gallery.txt`, `custom-sequence-preview.html`, `buyer-index.json`, `agent-buyer-packet.json`, `agent-offer.json`, `paypal-payment-intent.json`, `offers.json`, `product-feed.json`, `share-kit.html`, `llms.txt`, `sitemap.xml`, and `feed.xml`.
+- Root route checks returned HTTP 200 for `/`, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, `ai.json`, `ai.txt`, `root-offer.json`, `paypal.json`, `.well-known/paypal-payment.json`, `.well-known/softjunk-root-offer.json`, `.well-known/openapi.yaml`, `llms.txt`, and `sitemap.xml`.
+- Chrome headless `--dump-dom` on the live gallery emitted `Custom Sequence Gallery`, `HVAC repair form lead`, `custom-sequence-preview.html`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED`.
+- Chrome headless `--dump-dom` on the live HVAC prefilled preview emitted `Preview generated`, `Custom Sequence Preview`, `HVAC company`, `shareable-order-link.html`, and `paypal.me/softjunk/5USD`.
+
+Release and discovery:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.4`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-custom-sequence-gallery-v1`.
+- IndexNow returned `status=200 urls=39`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538232839`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538232732`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Custom Sequence Gallery Evidence
 
 Local validation:

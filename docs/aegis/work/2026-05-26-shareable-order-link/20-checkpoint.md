@@ -150,3 +150,45 @@ DriftCheckDraft:
 - Current slice fit: yes, it reduces buyer friction by turning likely lead problems into direct preview/payment paths without spam or false payment claims.
 - Compatibility boundary: static GitHub Pages, public Gists, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Custom Sequence Gallery Deploy Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue with ethical owned-channel conversion improvements only if no payment evidence exists.
+
+Active slice:
+- Post-deploy verification and public release/discovery for the custom sequence scenario gallery.
+
+Completed todos:
+- Verified product and root worktrees were clean after the gallery commits.
+- Verified product/root GitHub Pages routes returned HTTP 200 with cache-busting.
+- Verified live DOM rendering for the gallery and HVAC prefilled preview through Chrome headless.
+- Created product release `v2.29.4`.
+- Created root release `root-custom-sequence-gallery-v1`.
+- Submitted 39 URLs to IndexNow successfully.
+- Commented public issue #2 with deployment/checkpoint evidence.
+- Commented public issue #3 with the ready scenario gallery examples.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product live checks returned HTTP 200 for gallery HTML/JSON/TXT, preview, buyer index, agent packet/offer, payment intent, offer/product feed, share kit, `llms.txt`, sitemap, and RSS.
+- Root live checks returned HTTP 200 for root, `/ai/`, `/pay/`, `/paypal/`, `/buy/`, root JSON/text/payment manifests, OpenAPI, `llms.txt`, and sitemap.
+- Chrome headless DOM dump included `Custom Sequence Gallery`, `HVAC repair form lead`, `custom-sequence-preview.html`, `paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED`, `Preview generated`, and `shareable-order-link.html`.
+- `gh release create` returned `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.4`.
+- `gh release create` returned `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-custom-sequence-gallery-v1`.
+- IndexNow returned `status=200 urls=39`.
+- Issue comments were posted at `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4538232839` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4538232732`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it shipped and publicized the non-traditional scenario-gallery funnel while preserving the PayPal verification gate.
+- Compatibility boundary: static GitHub Pages, public Gists/issues/releases, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
