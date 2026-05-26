@@ -26,6 +26,9 @@ https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/
 Buyer index:
 https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 
+Agent buyer catalog JSONL:
+https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl
+
 AI agent buyer packet JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 
@@ -318,6 +321,7 @@ PayPal notes:
 - Shareable order link: open https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html, generate the URL and PayPal note, then paste that note into PayPal before paying.
 - Agent order: open the AI agent order path, generate the PayPal note, and paste it into PayPal before paying.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.
+- Agent buyer catalog JSONL: use https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl for retrieval-friendly records covering fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers.
 - AI checkout: use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready for the exact AI Deal Desk -> PayPal -> after-payment handoff.
 
 Best-fit buyers:

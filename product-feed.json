@@ -163,6 +163,7 @@
   ],
   "machine_readable": {
     "buyer_index_json": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+    "agent_buyer_catalog_jsonl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
     "root_hub": "https://trungcodeer.github.io/",
     "root_offer_json": "https://trungcodeer.github.io/root-offer.json",
     "payment_intent_json": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",

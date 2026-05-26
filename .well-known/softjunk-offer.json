@@ -56,6 +56,7 @@
   "agent_commerce_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
   "agent_buyer_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
   "agent_buyer_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
+  "agent_buyer_catalog_jsonl_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
   "gist_agent_buyer_packet_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
   "public_buyer_thread_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
   "ai_follow_up_prompt_url": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",

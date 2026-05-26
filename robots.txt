@@ -3,6 +3,7 @@ Allow: /
 Allow: /llms.txt
 Allow: /feed.xml
 Allow: /buyer-index.json
+Allow: /agent-buyer-catalog.jsonl
 Allow: /product-feed.json
 Allow: /PAYPAL_VERIFICATION.md
 Allow: /lead-follow-up-rewriter.html

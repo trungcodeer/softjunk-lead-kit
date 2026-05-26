@@ -50,6 +50,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Root payment intent JSON: https://trungcodeer.github.io/paypal.json
 - Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Agent buyer catalog JSONL: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl
 - Quiet lead microsite: https://trungcodeer.github.io/quiet-lead-follow-up/
 - Quiet lead public Gist: https://gist.github.com/trungcodeer/caeeb4b5aa7fc91a1b6f0e6d154f8a08
 - Fast checkout: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html

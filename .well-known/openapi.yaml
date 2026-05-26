@@ -17,6 +17,17 @@ paths:
             application/json:
               schema:
                 type: object
+  /agent-buyer-catalog.jsonl:
+    get:
+      operationId: getAgentBuyerCatalogJsonl
+      summary: Get the SoftJunk agent buyer catalog JSONL.
+      responses:
+        "200":
+          description: Newline-delimited JSON records for AI retrieval, answer engines, and buyer agents routing qualified lead follow-up buyers to the 5 USD PayPal checkout.
+          content:
+            application/x-ndjson:
+              schema:
+                type: string
   /offers.json:
     get:
       operationId: getOffers

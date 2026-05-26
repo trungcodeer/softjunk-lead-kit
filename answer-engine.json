@@ -6,6 +6,7 @@
   "human_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
   "canonical_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "agent_buyer_catalog_jsonl_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
   "github_answer_brief_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md",
   "gist_answer_brief_url": "https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a",
   "payment": {
