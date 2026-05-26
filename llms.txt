@@ -260,6 +260,7 @@ Niche pages:
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json
 - Exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt
+- Exact-intent answer pack Gist: https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35
 - Lead follow-up before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html

@@ -138,7 +138,8 @@
     {
       "name": "Exact-Intent Answer Pack",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
-      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt"
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt",
+      "gist_url": "https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35"
     },
     {
       "name": "Free Follow-Up Preview",
@@ -188,6 +189,9 @@
     "agent_buyer_catalog_jsonl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl",
     "exact_intent_answer_pack": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
     "exact_intent_answer_pack_text": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt",
+    "exact_intent_answer_pack_gist": "https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35",
+    "gist_raw_exact_intent_answer_pack_json": "https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.json",
+    "gist_raw_exact_intent_answer_pack_text": "https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.txt",
     "root_hub": "https://trungcodeer.github.io/",
     "root_offer_json": "https://trungcodeer.github.io/root-offer.json",
     "payment_intent_json": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",

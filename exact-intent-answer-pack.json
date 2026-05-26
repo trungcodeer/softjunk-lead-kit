@@ -5,6 +5,9 @@
   "purpose": "Buyer-agent packet for exact lead follow-up questions with copy-ready answers, product routes, text routes, payment handoff, and verification gate.",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt",
+  "gist_url": "https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35",
+  "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.json",
+  "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35/raw/exact-intent-answer-pack.txt",
   "payment": {
     "provider": "PayPal.Me",
     "amount": "5.00",

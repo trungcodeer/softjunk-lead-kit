@@ -100,6 +100,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - Exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json
 - Exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt
+- Exact-intent answer pack Gist: https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
