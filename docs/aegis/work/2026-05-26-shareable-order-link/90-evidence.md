@@ -79,6 +79,29 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 GitHub Repo Metadata PayPal Route Evidence
+
+Metadata updates:
+- `trungcodeer/softjunk-lead-kit` homepage set to `https://paypal.me/softjunk/5USD`.
+- `trungcodeer/trungcodeer.github.io` homepage set to `https://paypal.me/softjunk/5USD`.
+- `trungcodeer/trungcodeer` homepage set to `https://paypal.me/softjunk/5USD`.
+- `trungcodeer/quiet-lead-follow-up` homepage set to `https://paypal.me/softjunk/5USD`.
+- Descriptions now use `USD 5` and `PayPal` wording to avoid PowerShell `$5` expansion and keep the purchase route explicit in GitHub metadata.
+
+Public validation:
+- `softjunk-lead-kit_metadata_ok homepage=https://paypal.me/softjunk/5USD description=Pay USD 5 on PayPal for SoftJunk one-lead rescue and instant fulfillment packet`.
+- `trungcodeer.github.io_metadata_ok homepage=https://paypal.me/softjunk/5USD description=Pay USD 5 on PayPal for the SoftJunk one-lead rescue buyer route`.
+- `trungcodeer_metadata_ok homepage=https://paypal.me/softjunk/5USD description=Pay USD 5 on PayPal for the SoftJunk one-lead rescue from this profile route`.
+- `quiet-lead-follow-up_metadata_ok homepage=https://paypal.me/softjunk/5USD description=Pay USD 5 on PayPal for quiet-lead follow-up templates and one-lead rescue`.
+
+Public evidence comment:
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545056876`.
+- Issue comment validation passed: `issue_metadata_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545056876`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 README PayPal Badge Evidence
 
 Files changed:

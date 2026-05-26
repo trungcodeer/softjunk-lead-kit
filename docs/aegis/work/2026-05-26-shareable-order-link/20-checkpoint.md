@@ -2848,3 +2848,45 @@ DriftCheckDraft:
 - Current slice fit: yes, it puts the exact PayPal checkout into the first visible README area across owned repos without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: owned GitHub repos, public GitHub releases/issues/API content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 GitHub Repo Metadata PayPal Route Checkpoint
+
+Current todo:
+- Make the GitHub-native About/Website metadata route point directly to the exact USD 5 PayPal checkout across owned repos.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Update GitHub repo descriptions and homepage URLs for product, root, profile, and quiet-lead repos so the visible repository metadata names the USD 5 PayPal route and links directly to `https://paypal.me/softjunk/5USD`.
+
+Completed todos:
+- Updated `trungcodeer/softjunk-lead-kit` description and homepage metadata.
+- Updated `trungcodeer/trungcodeer.github.io` description and homepage metadata.
+- Updated `trungcodeer/trungcodeer` description and homepage metadata.
+- Updated `trungcodeer/quiet-lead-follow-up` description and homepage metadata.
+- Corrected the initial PowerShell `$5` shell-expansion issue by using `USD 5` in descriptions.
+- Validated all four public GitHub repo metadata records through `gh repo view`.
+- Added a public product issue #5 comment for the metadata PayPal route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product repo metadata: `https://github.com/trungcodeer/softjunk-lead-kit`.
+- Root repo metadata: `https://github.com/trungcodeer/trungcodeer.github.io`.
+- Profile repo metadata: `https://github.com/trungcodeer/trungcodeer`.
+- Quiet lead repo metadata: `https://github.com/trungcodeer/quiet-lead-follow-up`.
+- Direct PayPal homepage URL set on all four repos: `https://paypal.me/softjunk/5USD`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545056876`.
+- Metadata validation passed: `softjunk-lead-kit_metadata_ok`, `trungcodeer.github.io_metadata_ok`, `trungcodeer_metadata_ok`, `quiet-lead-follow-up_metadata_ok`.
+- Issue comment validation passed: `issue_metadata_comment_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4545056876`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses public GitHub repository metadata to put the exact PayPal checkout in a high-visibility owned surface without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: owned GitHub repos, public GitHub metadata/API, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
