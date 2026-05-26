@@ -608,3 +608,55 @@ DriftCheckDraft:
 - Current slice fit: yes, it converts the shortest root payment URLs into AI/buyer-agent-friendly payment contracts without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Checkout Handoff Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert the product `checkout.html` page from a traditional checkout into an AI/buyer-agent handoff that directly exposes AI Deal Desk, exact $5 PayPal payment, after-payment handoff, public buyer discussion, and the verification gate.
+
+Completed todos:
+- Re-audited product checkout and found it had PayPal coverage but did not put AI Deal Desk, GitHub buyer discussion, and `PAYPAL_PAYMENT_VERIFIED=true` in the first-screen payment contract.
+- Updated `checkout.html` title/meta, first-screen copy, CTAs, mobile wrapping, and checkout summary links.
+- Added `checkout.json` as a machine-readable checkout contract for buyer-agents.
+- Added `checkout.txt` as a plain-text checkout handoff.
+- Linked checkout JSON/text from `checkout.html`, `buyer-index.json`, `product-feed.json`, `llms.txt`, `sitemap.xml`, and `feed.xml`.
+- Validated all root, `.well-known`, and distribution JSON files.
+- Validated `sitemap.xml` and `feed.xml` as XML.
+- Validated checkout JSON-LD and inline JavaScript.
+- Validated local and live Chrome DOM for AI checkout content, PayPal $5 action, after-payment handoff, GitHub buyer discussion, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Captured local desktop/mobile screenshots and fixed mobile clipping by shortening the H1 and constraining mobile content width.
+- Committed and pushed product change `040def0`.
+- Created release `v2.29.11`.
+- Confirmed GitHub Pages deployment succeeded.
+- Verified live `checkout.html`, `checkout.json`, `checkout.txt`, `buyer-index.json`, `product-feed.json`, `llms.txt`, `sitemap.xml`, and `feed.xml` returned HTTP 200.
+- Submitted 8 host-valid URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the AI checkout update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/040def0`.
+- Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.11`.
+- Live checkout: `https://trungcodeer.github.io/softjunk-lead-kit/checkout.html?v=040def0`.
+- Live checkout JSON: `https://trungcodeer.github.io/softjunk-lead-kit/checkout.json?v=040def0`.
+- Live checkout text: `https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt?v=040def0`.
+- `checkout.json` live parse returned schema `softjunk-ai-checkout-handoff-v1`, payment `https://paypal.me/softjunk/5USD`, and gate `PAYPAL_PAYMENT_VERIFIED=true`.
+- Chrome headless DOM on live checkout emitted `AI checkout, $5`, `Open AI Deal Desk`, `Pay $5 on PayPal`, `After-payment handoff`, `GitHub buyer discussion`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow returned `status=200 urls=8`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539633602` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539633749`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the product checkout path closest to the payment decision without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues, IndexNow discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

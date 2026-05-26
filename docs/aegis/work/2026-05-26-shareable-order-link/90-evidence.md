@@ -74,6 +74,49 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 AI Checkout Handoff Evidence
+
+Product checkout changes:
+- Updated `checkout.html` to present an agent-first payment path in the first screen: `Open AI Deal Desk`, `Pay $5 on PayPal`, `After-payment handoff`, `GitHub buyer discussion`, `Copy kit note`, and `Create order link`.
+- Added first-screen contract copy requiring AI Deal Desk note, exact `5.00 USD` PayPal payment, after-payment handoff, and seller-side verification before fulfillment.
+- Added `checkout.json` as a buyer-agent readable checkout contract.
+- Added `checkout.txt` as a plain-text checkout handoff.
+- Linked checkout JSON/text from `checkout.html`, `buyer-index.json`, `product-feed.json`, `llms.txt`, `sitemap.xml`, and `feed.xml`.
+
+Local validation:
+- All product root `*.json`, `.well-known/*.json`, and `distribution/**/*.json` parsed with `ConvertFrom-Json`.
+- `sitemap.xml` and `feed.xml` parsed as XML.
+- `checkout.html` JSON-LD parsed successfully.
+- `checkout.html` inline script passed `node --check`.
+- `git diff --check` passed.
+- Chrome headless local DOM emitted `AI checkout, $5`, `Open AI Deal Desk`, `Pay $5 on PayPal`, `After-payment handoff`, `GitHub buyer discussion`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Chrome headless desktop/mobile screenshots were generated; mobile clipping was fixed before commit.
+
+Live validation:
+- GitHub Pages run `26429983647` completed successfully.
+- `Invoke-WebRequest` returned HTTP 200 for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.html?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.json?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml?v=040def0`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml?v=040def0`
+- Live `checkout.json` parsed as schema `softjunk-ai-checkout-handoff-v1` with payment URL `https://paypal.me/softjunk/5USD` and gate `PAYPAL_PAYMENT_VERIFIED=true`.
+- Chrome headless `--dump-dom` on live checkout emitted the AI checkout H1, AI Deal Desk action, PayPal $5 action, after-payment handoff, GitHub buyer discussion, and verification gate.
+
+Release and discovery:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/040def0`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.11`.
+- IndexNow returned `status=200 urls=8`.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4539633602`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4539633749`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Agent Commerce Capsule Evidence
 
 Local validation:
