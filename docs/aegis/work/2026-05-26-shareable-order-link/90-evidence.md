@@ -79,6 +79,54 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Roofing Buyer Discussion Discovery Evidence
+
+Public buyer surface:
+- Roofing buyer Discussion: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/8`.
+- Issue #7 linkback comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548287349`.
+
+Artifacts changed:
+- `README.md`.
+- `llms.txt`.
+- `agent-buyer-catalog.jsonl`.
+
+Commit, release, and issue evidence:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/a30a4b5`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.64`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548364857`.
+
+Discussion content:
+- Exact checkout amount: `5 USD`.
+- Exact PayPal route: `https://paypal.me/softjunk/5USD`.
+- Public sample/proof issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7`.
+- Free generator and rescue packet routes.
+- Dedicated roofing post-payment order form.
+- Fenced JSON schema `softjunk.github_discussion_checkout_card.v1`.
+- Privacy and seller-side verification rules.
+
+Validation:
+- GitHub GraphQL confirmed Discussion #8 in Announcements.
+- The Discussion's fenced JSON parsed with `ConvertFrom-Json`.
+- GraphQL/JSON validation returned `schema=softjunk.github_discussion_checkout_card.v1`, `amount=5`, `currency=USD`, `has_paypal=true`, `has_issue7=true`, `has_order_form=true`, `has_verification_rule=true`, and `has_privacy_rule=true`.
+- Issue #7 linkback comment validation returned `has_discussion8=true` and `has_paypal_gate=true`.
+- Local JSONL validation returned `jsonl_ok=true`, `lines=36`, and `discussion_records=5`.
+- README/llms local marker validation returned `readme_has_discussion=true`, `llms_has_discussion=true`, `readme_has_paypal=true`, and `llms_has_paypal=true`.
+- Raw GitHub validation confirmed README, `llms.txt`, and `agent-buyer-catalog.jsonl` contain Discussion #8 plus PayPal route.
+- GitHub Pages validation confirmed README, `llms.txt`, and `agent-buyer-catalog.jsonl` contain Discussion #8 plus PayPal route.
+- Product Pages run `26472273020` completed with success.
+- Release validation confirmed `v2.29.64` targets commit `a30a4b5`.
+- IndexNow returned `status=200 urls=3`.
+- Issue #5 evidence validation returned `has_discussion8=true`, `has_commit=true`, and `has_gate=true`.
+
+Accessibility and privacy guardrails:
+- The Discussion uses text headings, explicit numbered checkout steps, plain URLs, a copyable PayPal note, and a fenced JSON block.
+- The Discussion says it is not payment proof.
+- The privacy rule forbids homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, and PayPal details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Agent Checkout Card Comment Evidence
 
 Public buyer-agent comment:

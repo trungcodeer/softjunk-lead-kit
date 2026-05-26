@@ -3978,3 +3978,51 @@ DriftCheckDraft:
 - Current slice fit: yes, it sends a compact agent-readable checkout instruction to the public buyer issue so AI assistants can route qualified buyers to the exact PayPal checkout without scraping multiple pages or exposing private data.
 - Compatibility boundary: owned GitHub issue comments, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 Roofing Buyer Discussion Discovery Checkpoint
+
+Current todo:
+- Put the high-intent roofing estimate rescue into a GitHub Discussion and wire that discussion into machine-readable discovery.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Create a dedicated roofing buyer Discussion, link it from issue #7, wire it into README/llms/catalog discovery, release, validate raw/Pages/GraphQL surfaces, submit IndexNow, add public evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Created GitHub Discussion #8 in Announcements: `Roofing estimate went quiet? $5 Day 0/1/3/5/7 rescue`.
+- Included exact 5 USD PayPal URL, PayPal note, free proof routes, dedicated roofing order form, privacy rule, and a fenced JSON checkout card in the Discussion body.
+- Linked Discussion #8 from public buyer issue #7.
+- Added Discussion #8 to `README.md`, `llms.txt`, and `agent-buyer-catalog.jsonl`.
+- Committed and pushed product commit `a30a4b5`.
+- Created product release `v2.29.64`.
+- Validated Discussion #8 via GitHub GraphQL and parsed its fenced JSON checkout card.
+- Validated raw GitHub and GitHub Pages README/llms/catalog content contains Discussion #8 plus the PayPal route.
+- Submitted 3 owned Pages URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Roofing buyer Discussion: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/8`.
+- Issue #7 linkback comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548287349`.
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/a30a4b5`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.64`.
+- Product issue #5 evidence comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4548364857`.
+- GraphQL validation returned `schema=softjunk.github_discussion_checkout_card.v1`, `amount=5`, `currency=USD`, `has_paypal=true`, `has_issue7=true`, `has_order_form=true`, `has_verification_rule=true`, and `has_privacy_rule=true`.
+- Local JSONL validation returned `jsonl_ok=true`, `lines=36`, and `discussion_records=5`.
+- Raw GitHub validation confirmed README, `llms.txt`, and `agent-buyer-catalog.jsonl` contain Discussion #8 plus PayPal route.
+- Pages validation confirmed README, `llms.txt`, and `agent-buyer-catalog.jsonl` contain Discussion #8 plus PayPal route.
+- IndexNow submission returned `status=200 urls=3`.
+- Issue #5 evidence validation returned `has_discussion8=true`, `has_commit=true`, and `has_gate=true`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate AI-native buyer conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sends the concrete roofing buyer route into a GitHub-native Discussion and connects it to human and machine-readable discovery without spam, private data exposure, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub discussions/issues/repo files/releases, GitHub Pages, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
