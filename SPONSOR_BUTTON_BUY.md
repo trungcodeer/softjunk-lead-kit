@@ -12,19 +12,24 @@ The first custom funding URL is the exact PayPal checkout:
 
 https://paypal.me/softjunk/5USD
 
-The other custom URLs explain the order note, delivery shell, and Buy Now route.
+The second custom funding URL is the one-read roofing buyer-send packet:
+
+https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+
+The remaining custom URLs explain the Sponsor button route and safe PayPal note.
 
 ## Buyer Steps
 
-1. Click the repository Sponsor button, or open the PayPal URL directly.
-2. Pay exactly 5 USD at https://paypal.me/softjunk/5USD.
-3. Use this PayPal note if buying one quiet-lead rescue:
+1. Click the repository Sponsor button, open the buyer-send packet, or open the PayPal URL directly.
+2. If buying the roofing estimate rescue, load the buyer-send packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+3. Pay exactly 5 USD at https://paypal.me/softjunk/5USD.
+4. Use this PayPal note if buying one quiet-lead rescue:
 
 ```text
 One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
 ```
 
-4. If the PayPal note is too short, submit non-sensitive order context after payment:
+5. If the PayPal note is too short, submit non-sensitive order context after payment:
 
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
@@ -47,6 +52,10 @@ Do not claim paid, started, delivered, or complete unless the seller can see the
 - Sponsor button Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
 - Sponsor button Gist JSON: https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json
 - Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
+- Roofing buyer-send packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+- Roofing buyer-send JSON: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
+- Roofing buyer-send text: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt
+- Roofing buyer-send Gist: https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805
 - Direct PayPal checkout: https://paypal.me/softjunk/5USD
 - PayPal note first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
 - Instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
