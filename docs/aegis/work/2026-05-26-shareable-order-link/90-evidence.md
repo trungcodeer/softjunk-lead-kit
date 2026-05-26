@@ -550,6 +550,43 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 MCP Roofing Estimate Tool Evidence
+
+Behavior added:
+- Added MCP tool `build_roofing_estimate_follow_up_sequence` to `mcp-server-softjunk.js`.
+- The new tool returns Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, a safe PayPal note, roofing generator/rescue URLs, exact 5 USD PayPal URL, order form, and verification gate.
+- Added private-identifier detection for likely emails, phone numbers, street addresses, claim/policy/invoice/transaction/PayPal identifiers before note or sequence generation.
+
+Discovery and distribution:
+- Product discovery updated in `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `MCP_CHECKOUT_SERVER.md`, `package.json`, README, llms, `buy-now.json`, `agents-checkout.json`, `.well-known/softjunk-offer.json`, `agent-buyer-catalog.jsonl`, `agent-card.json`, and `.well-known/agent-card.json`.
+- Root discovery updated in README, llms, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, and `.well-known/agent-card.json`.
+- MCP Gist fallback updated: `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Product issue #5 evidence comment added: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547146441`.
+
+Commits, releases, and public URLs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/e2ec949`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e99d630`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.59`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-mcp-roofing-estimate-tool-v1`.
+- Raw MCP source: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js`.
+- MCP manifest: `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json`.
+- Well-known MCP manifest: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
+
+Local validation:
+- `node --check mcp-server-softjunk.js` passed.
+- MCP JSON-RPC smoke test passed for `initialize`, `tools/list`, `build_roofing_estimate_follow_up_sequence`, `build_safe_paypal_note`, and privacy-guard rejection.
+- Product/root JSON parse passed.
+- Product JSONL parse passed with `jsonl_lines=35`.
+- Product and root `git diff --check` passed with only LF-to-CRLF warnings.
+
+Public validation:
+- Public checks passed for `raw_mcp_server`, `pages_mcp_manifest`, `pages_well_known_mcp`, `pages_agent_card`, `root_agent_card`, `root_offer_mcp_tool`, `gist_mcp_server`, `gist_mcp_manifest`, `product_release`, and `root_release`.
+- IndexNow accepted 15 owned URLs with `indexnow_status=200 urls=15`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Roofing Estimate Rescue Funnel Evidence
 
 Files changed:

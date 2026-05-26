@@ -3548,3 +3548,57 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates a usable buyer tool rather than just metadata, and routes qualified roofing estimate buyers to the exact 5 USD PayPal rescue without spam, deception, private data leakage, fake payment, or false fulfillment claims.
 - Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-27 MCP Roofing Estimate Tool Checkpoint
+
+Current todo:
+- Make the roofing estimate follow-up offer callable by MCP-capable AI clients, not only browsable by humans.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add `build_roofing_estimate_follow_up_sequence` to the dependency-free MCP checkout server, update manifests/docs/A2A cards/root discovery/Gist/release/IndexNow/evidence, and rerun the PayPal verifier.
+
+Completed todos:
+- Added MCP tool `build_roofing_estimate_follow_up_sequence`.
+- The tool returns Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, a safe PayPal note, generator/rescue URLs, exact 5 USD PayPal URL, order form, and verification gate.
+- Added private-identifier guard for likely emails, phone numbers, street addresses, claim/policy/invoice/transaction/PayPal identifiers before building notes or roofing sequences.
+- Updated product MCP source, package metadata, MCP manifest, well-known MCP manifest, MCP docs, README, llms, buy-now JSON, agents-checkout JSON, well-known offer JSON, agent buyer catalog JSONL, and product A2A agent cards.
+- Updated root README, llms, root offer JSON, well-known root offer JSON, and root A2A agent cards.
+- Updated MCP Gist fallback `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Committed and pushed product commit `e2ec949`.
+- Committed and pushed root commit `e99d630`.
+- Created product release `v2.29.59` and root release `root-mcp-roofing-estimate-tool-v1`.
+- Validated local Node syntax, MCP JSON-RPC smoke test, product/root JSON, product JSONL, and whitespace.
+- Validated public raw GitHub, Pages MCP manifests, product/root agent cards, root offer, Gist raw files, and releases.
+- Submitted 15 owned URLs to IndexNow with `status=200`.
+- Added public product issue #5 evidence comment.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/e2ec949`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/e99d630`.
+- Raw MCP source: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js`.
+- MCP manifest: `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json`.
+- Well-known MCP manifest: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
+- Product agent card: `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json`.
+- Root agent card: `https://trungcodeer.github.io/.well-known/agent-card.json`.
+- MCP Gist fallback: `https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.59`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-mcp-roofing-estimate-tool-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4547146441`.
+- Local validation passed: `node --check`, `json_ok jsonl_lines=35`, `mcp_smoke_ok`, product/root `git diff --check`.
+- Public validation passed: `raw_mcp_server`, `pages_mcp_manifest`, `pages_well_known_mcp`, `pages_agent_card`, `root_agent_card`, `root_offer_mcp_tool`, `gist_mcp_server`, `gist_mcp_manifest`, `product_release`, and `root_release`.
+- IndexNow submission passed: `indexnow_status=200 urls=15`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate buyer-agent conversion work, or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it exposes the niche roofing sequence and paid rescue path through a callable AI-client tool with privacy guard and verification gate, without spam, deception, fake payment, or false fulfillment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, public GitHub raw/blob content, public Gists, GitHub releases/issues, IndexNow, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
