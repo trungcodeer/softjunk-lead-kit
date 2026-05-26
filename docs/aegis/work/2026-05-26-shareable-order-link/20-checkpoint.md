@@ -1511,3 +1511,50 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves high-intent owned payment routes before direct PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 AI Follow-Up Prompt Rescue-First Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert the copyable AI follow-up prompt from direct/shareable payment first to root one-lead-rescue first.
+
+Completed todos:
+- Rechecked the product worktree and PayPal verifier status before the slice.
+- Audited `ai-follow-up-prompt.html`, `ai-follow-up-prompt.json`, `ai-follow-up-prompt.txt`, and the public AI prompt Gist file list.
+- Updated the prompt HTML metadata, navigation, hero actions, structured data, and prompt body so `https://trungcodeer.github.io/rescue/` is the first buyer route before PayPal.
+- Updated the prompt JSON with root rescue, rescue JSON/text, order form, and `fastest_buyer_path` fields.
+- Updated the prompt text distribution to match the HTML prompt.
+- Validated JSON parse, HTML JSON-LD parse, inline script syntax, marker coverage, Chrome headless DOM, and whitespace locally.
+- Committed and pushed product change `f493ea5`.
+- Updated the public AI prompt Gist JSON and text files.
+- Created product release `v2.29.26`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated live GitHub Pages HTML/JSON/TXT, raw GitHub JSON/TXT, and raw Gist JSON/TXT.
+- Submitted 6 AI prompt and rescue URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the AI prompt rescue-first update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/f493ea5`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.26`.
+- Product Pages run: `26442639568`, success.
+- Public AI prompt Gist: `https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1`.
+- Live/raw/Gist validation passed: `ai_prompt_live_raw_gist_ok checks=7`.
+- IndexNow returned `status=200 urls=6`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542491388` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542494292`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an AI-native buyer path by making the public prompt route to the one-lead rescue flow before direct PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
