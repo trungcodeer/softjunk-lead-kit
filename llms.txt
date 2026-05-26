@@ -209,6 +209,21 @@ https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 Fix one quiet lead:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
+Fix one quiet lead JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+
+Fix one quiet lead text:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
+
+Public fix-one quiet lead Gist:
+https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759
+
+Raw fix-one quiet lead JSON:
+https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json
+
+Raw fix-one quiet lead text:
+https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt
+
 Free preview builder:
 https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 
@@ -292,6 +307,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
 
 Niche pages:
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+- Fix one quiet lead JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+- Fix one quiet lead text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
+- Public fix-one quiet lead Gist: https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759
 - Lead follow-up template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html

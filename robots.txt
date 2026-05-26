@@ -18,6 +18,8 @@ Allow: /answer-engine.json
 Allow: /exact-intent-answer-pack.json
 Allow: /exact-intent-answer-pack.txt
 Allow: /fix-one-quiet-lead.html
+Allow: /fix-one-quiet-lead.txt
+Allow: /fix-one-quiet-lead.json
 Allow: /lead-follow-up-templates.html
 Allow: /follow-up-examples.html
 Allow: /free-sample-pack.html

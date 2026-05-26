@@ -24,7 +24,10 @@ body {
 }
 
 a:focus-visible,
-button:focus-visible {
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: 3px solid var(--focus);
   outline-offset: 3px;
 }
@@ -210,7 +213,8 @@ section {
 }
 
 .field input,
-.field select {
+.field select,
+.field textarea {
   min-height: 46px;
   width: 100%;
   border: 1px solid var(--line);
@@ -219,6 +223,16 @@ section {
   font: inherit;
   color: var(--ink);
   background: #fff;
+}
+
+.field textarea {
+  min-height: 118px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+
+.field.full {
+  grid-column: 1 / -1;
 }
 
 .status {
@@ -288,6 +302,10 @@ footer {
   .tool-grid,
   .note-panel {
     grid-template-columns: 1fr;
+  }
+
+  .field.full {
+    grid-column: auto;
   }
 }
 

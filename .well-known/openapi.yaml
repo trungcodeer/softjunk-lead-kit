@@ -441,9 +441,31 @@ paths:
       summary: Open the shortest one-lead follow-up offer.
       responses:
         "200":
-          description: Short page with one free follow-up message and the $5 custom sequence checkout path.
+          description: One-screen builder with a generated follow-up message, PayPal note, shareable rescue link, and 5 USD checkout path.
           content:
             text/html:
+              schema:
+                type: string
+  /fix-one-quiet-lead.json:
+    get:
+      operationId: getFixOneQuietLead
+      summary: Get the one-lead rescue builder JSON.
+      responses:
+        "200":
+          description: Machine-readable one-lead route with PayPal note template, payment URL, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /fix-one-quiet-lead.txt:
+    get:
+      operationId: getFixOneQuietLeadText
+      summary: Get the one-lead rescue builder text.
+      responses:
+        "200":
+          description: Plain-text one-lead route with PayPal URL and verification gate.
+          content:
+            text/plain:
               schema:
                 type: string
   /lead-follow-up-rewriter.html:

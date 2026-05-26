@@ -1,0 +1,33 @@
+SoftJunk Fix One Quiet Lead
+Updated: 2026-05-26
+
+One-screen buyer route:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+
+Public Gist:
+https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759
+
+Raw JSON:
+https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json
+
+Raw text:
+https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt
+
+Use when:
+- A small business has one quiet lead worth recovering.
+- The buyer wants one stronger next message before buying the custom 7-day sequence.
+- The buyer needs a PayPal note that identifies the business, service, source, tone, blocker, and next step.
+
+Payment:
+https://paypal.me/softjunk/5USD
+
+PayPal note template:
+Fix One Quiet Lead | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Blocker: [blocker] | Next: [next step]
+
+Verification gate:
+PAYPAL_PAYMENT_VERIFIED=true
+
+This page is a payment request and buyer handoff, not proof that money arrived.

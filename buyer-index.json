@@ -194,9 +194,16 @@
       "why": "Lists prefilled HVAC, roofing, dental, med spa, real estate, tutoring, plumbing, and agency preview links that open directly into the custom sequence preview."
     },
     {
-      "use_when": "The buyer has one quiet lead and wants the shortest free sample before paying.",
+      "use_when": "The buyer has one quiet lead and wants the shortest one-screen path to generate a stronger message, copy the PayPal note, and pay 5 USD for the full custom sequence.",
       "send_to": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-      "why": "Lowest-friction path: one free follow-up message plus a direct $5 custom sequence checkout."
+      "why": "Lowest-friction buyer path: one generated follow-up, one PayPal note, one shareable rescue link, and direct 5 USD checkout.",
+      "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
+      "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
+      "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
     },
     {
       "use_when": "The buyer already wrote a weak follow-up and wants it improved.",
@@ -269,7 +276,8 @@
     "custom_sequence_message": "For a custom 7-day lead follow-up sequence, open https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready, https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html when an AI/VA needs the compact commerce contract, https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html for a ready scenario, or https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when context is already ready. Copy the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and paste the generated note into PayPal.",
     "qr_message": "Scan or share this $5 PayPal QR page for SoftJunk: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
     "commerce_graph_message": "AI commerce graph: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html. JSON-LD: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json. Route a ready buyer to https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title, generate the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, then use the after-payment handoff. Do not claim payment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
-    "buyer_agent_relay_message": "Buyer-agent relay: https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html. JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json. Use it to qualify a relevant lead follow-up need, route to https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title, generate the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and require PAYPAL_PAYMENT_VERIFIED=true before claiming payment. Public Gist: https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950. Raw JSON: https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json. Raw text: https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt."
+    "buyer_agent_relay_message": "Buyer-agent relay: https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html. JSON: https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json. Use it to qualify a relevant lead follow-up need, route to https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title, generate the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and require PAYPAL_PAYMENT_VERIFIED=true before claiming payment. Public Gist: https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950. Raw JSON: https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json. Raw text: https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt.",
+    "fix_one_quiet_lead_message": "Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json. Text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt. Public Gist: https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759. Generate one stronger follow-up, copy the PayPal note, pay exactly $5 at https://paypal.me/softjunk/5USD, and require PAYPAL_PAYMENT_VERIFIED=true before claiming payment."
   },
   "buyer_fit": [
     "Small businesses with leads from forms, DMs, email, ads, referrals, calls, quotes, appointments, or voicemails",
@@ -306,7 +314,8 @@
     "OpenAPI discovery",
     "Well-known offer manifest",
     "IndexNow ping",
-    "Buyer-agent relay public Gist"
+    "Buyer-agent relay public Gist",
+    "Fix one quiet lead public Gist"
   ],
   "fulfillment": {
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
@@ -411,7 +420,13 @@
     "buyer_agent_relay_text": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
     "buyer_agent_relay_gist": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
     "gist_raw_buyer_agent_relay_json": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
-    "gist_raw_buyer_agent_relay_text": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
+    "gist_raw_buyer_agent_relay_text": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt",
+    "fix_one_quiet_lead": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "fix_one_quiet_lead_json": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+    "fix_one_quiet_lead_text": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+    "fix_one_quiet_lead_gist": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
+    "gist_raw_fix_one_quiet_lead_json": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
+    "gist_raw_fix_one_quiet_lead_text": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
   },
   "verification": {
     "script_path": "scripts/verify-paypal-5usd.ps1",
@@ -431,5 +446,11 @@
   "buyer_agent_relay_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
   "buyer_agent_relay_gist_url": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
   "gist_raw_buyer_agent_relay_json_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
-  "gist_raw_buyer_agent_relay_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
+  "gist_raw_buyer_agent_relay_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt",
+  "fix_one_quiet_lead_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "fix_one_quiet_lead_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+  "fix_one_quiet_lead_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+  "fix_one_quiet_lead_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
+  "gist_raw_fix_one_quiet_lead_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
+  "gist_raw_fix_one_quiet_lead_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
 }

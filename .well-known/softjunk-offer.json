@@ -147,5 +147,10 @@
   "buyer_agent_relay_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt",
   "buyer_agent_relay_gist_url": "https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950",
   "gist_raw_buyer_agent_relay_json_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.json",
-  "gist_raw_buyer_agent_relay_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt"
+  "gist_raw_buyer_agent_relay_text_url": "https://gist.githubusercontent.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950/raw/buyer-agent-relay.txt",
+  "fix_one_quiet_lead_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+  "fix_one_quiet_lead_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+  "fix_one_quiet_lead_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
+  "gist_raw_fix_one_quiet_lead_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
+  "gist_raw_fix_one_quiet_lead_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
 }

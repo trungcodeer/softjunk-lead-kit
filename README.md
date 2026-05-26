@@ -108,6 +108,9 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
 - Lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+- Fix one quiet lead JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+- Fix one quiet lead text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
+- Public fix-one quiet lead Gist: https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759
 - Lead follow-up rewriter: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Lead follow-up answers: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - Exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json

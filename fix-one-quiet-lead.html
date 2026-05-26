@@ -3,31 +3,40 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fix One Quiet Lead for $5 | SoftJunk</title>
-  <meta name="description" content="Use one free follow-up message for a quiet lead, then buy a $5 custom 7-day sequence through PayPal if the lead is worth recovering.">
+  <title>Fix One Quiet Lead in 5 Minutes | SoftJunk $5</title>
+  <meta name="description" content="Generate a stronger follow-up for one quiet lead, copy the PayPal note, and pay $5 for the full custom SoftJunk 7-day sequence.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
   <link rel="stylesheet" href="niche-page.css">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json" title="Fix one quiet lead JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt" title="Fix one quiet lead text">
+  <link rel="alternate" type="application/json" href="https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json" title="Fix one quiet lead raw Gist JSON">
   <meta name="robots" content="index,follow">
-  <meta property="og:title" content="Fix One Quiet Lead for $5">
-  <meta property="og:description" content="A short follow-up message, a QR checkout, and a $5 custom sequence path for one quiet lead.">
+  <meta property="og:title" content="Fix One Quiet Lead in 5 Minutes">
+  <meta property="og:description" content="Generate one stronger follow-up, copy the PayPal note, and pay $5 for a custom 7-day sequence.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fix One Quiet Lead for $5">
-  <meta name="twitter:description" content="One free follow-up message and a $5 custom sequence path.">
+  <meta name="twitter:title" content="Fix One Quiet Lead in 5 Minutes">
+  <meta name="twitter:description" content="One quiet lead rescue flow with an exact $5 PayPal handoff.">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "WebPage",
-          "name": "Fix One Quiet Lead for $5",
+          "@type": "WebApplication",
+          "name": "Fix One Quiet Lead",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Any",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-          "description": "A short follow-up offer for recovering one quiet lead with a $5 custom sequence option."
+          "offers": {
+            "@type": "Offer",
+            "price": "0.00",
+            "priceCurrency": "USD"
+          }
         },
         {
           "@type": "Offer",
@@ -36,6 +45,15 @@
           "priceCurrency": "USD",
           "url": "https://paypal.me/softjunk/5USD",
           "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "HowTo",
+          "name": "Fix one quiet lead with SoftJunk",
+          "step": [
+            {"@type": "HowToStep", "text": "Generate one stronger follow-up message with non-sensitive lead context."},
+            {"@type": "HowToStep", "text": "Copy the PayPal note for the 5 USD custom sequence."},
+            {"@type": "HowToStep", "text": "Pay exactly 5 USD at the PayPal.Me URL."}
+          ]
         }
       ]
     }
@@ -47,10 +65,11 @@
     <nav aria-label="Primary">
       <a class="brand" href="./">SoftJunk Lead Kit</a>
       <div class="nav-links">
+        <a href="buyer-agent-relay.html">Buyer-agent relay</a>
+        <a href="checkout.html#quick-note-title">Checkout note</a>
+        <a href="https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759">Public Gist</a>
         <a href="lead-follow-up-answers.html">Answers</a>
-        <a href="lead-follow-up-rewriter.html">Rewriter</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="printable-paypal-flyer.html">Flyer</a>
+        <a href="pay-qr.html">QR</a>
       </div>
     </nav>
   </header>
@@ -58,28 +77,86 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div>
-        <h1 id="page-title">If one quiet lead is worth more than $5, fix the follow-up.</h1>
-        <p class="lead">Use the free message below now. If the lead matters, buy the $5 custom 7-day sequence for that business, service, source, tone, and next step.</p>
+        <h1 id="page-title">Fix one quiet lead before it disappears.</h1>
+        <p class="lead">Generate a better next message, copy the PayPal note, and pay exactly $5 for the full custom 7-day sequence when the lead is worth recovering.</p>
         <div class="actions">
+          <a class="button primary" href="#rescue-tool">Generate rescue</a>
+          <button class="button" type="button" id="hero-copy-note">Copy PayPal note</button>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 on PayPal</a>
-          <a class="button" href="agent-order.html">Create PayPal note</a>
-          <button class="button" type="button" id="copy-message">Copy free message</button>
         </div>
-        <p class="status" id="status" aria-live="polite"></p>
+        <p class="status" id="hero-status" aria-live="polite"></p>
       </div>
-      <a class="qr-mini" href="pay-qr.html" aria-label="Open PayPal QR page">
-        <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
-        Scan $5
+      <a class="preview" href="pay-qr.html" aria-label="Open PayPal QR page">
+        <img src="social-card-qr.png" alt="SoftJunk lead follow-up offer card with PayPal QR code">
       </a>
     </section>
 
-    <section aria-labelledby="message-title">
-      <h2 id="message-title">Free message to send now</h2>
-      <p class="sample" id="free-message">Hi [Name], just checking if you still want help with [service].
-
-If price, timing, or fit is the main question, reply with that and I will answer it first.
-
-If you want the next step, reply "yes" and I will send it over.</p>
+    <section class="tool" id="rescue-tool" aria-labelledby="tool-title">
+      <h2 id="tool-title">One-lead rescue builder</h2>
+      <form id="rescue-form" aria-describedby="privacy-note">
+        <p id="privacy-note">Use placeholders instead of private customer names, phone numbers, emails, or payment details.</p>
+        <div class="actions" aria-label="Preset examples">
+          <button class="button" type="button" data-preset="service">Local service</button>
+          <button class="button" type="button" data-preset="estimate">Estimate follow-up</button>
+          <button class="button" type="button" data-preset="dm">Quiet DM</button>
+        </div>
+        <div class="tool-grid">
+          <div class="field">
+            <label for="business">Business type</label>
+            <input id="business" name="business" value="local service business" required>
+          </div>
+          <div class="field">
+            <label for="service">Service</label>
+            <input id="service" name="service" value="estimate or appointment" required>
+          </div>
+          <div class="field">
+            <label for="source">Lead source</label>
+            <select id="source" name="source">
+              <option>Website form</option>
+              <option>Phone call</option>
+              <option>Instagram DM</option>
+              <option>Facebook message</option>
+              <option>Email</option>
+              <option>Referral</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="tone">Tone</label>
+            <select id="tone" name="tone">
+              <option>Friendly</option>
+              <option>Professional</option>
+              <option>Direct</option>
+              <option>Premium</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="blocker">Likely blocker</label>
+            <input id="blocker" name="blocker" value="price or timing" required>
+          </div>
+          <div class="field">
+            <label for="next">Desired next step</label>
+            <input id="next" name="next" value="book a quick call" required>
+          </div>
+          <div class="field full">
+            <label for="current">Current weak follow-up</label>
+            <textarea id="current" name="current" required>Hi [Name], just following up. Let me know if you are still interested.</textarea>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="button primary" type="submit">Generate message</button>
+          <button class="button" type="button" id="copy-message">Copy message</button>
+          <button class="button" type="button" id="copy-link">Copy rescue link</button>
+        </div>
+      </form>
+      <p class="sample" id="free-message" aria-live="polite">Fill the fields or choose a preset to generate the next message.</p>
+      <p class="sample" id="payment-note">PayPal note appears here.</p>
+      <div class="actions">
+        <button class="button" type="button" id="copy-note">Copy PayPal note</button>
+        <a class="button" href="checkout.html#quick-note-title">Checkout note builder</a>
+        <a class="button" href="https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759">Public Gist</a>
+        <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 after copying note</a>
+      </div>
+      <p class="status" id="status" aria-live="polite"></p>
     </section>
 
     <section aria-labelledby="paid-title">
@@ -87,15 +164,15 @@ If you want the next step, reply "yes" and I will send it over.</p>
       <div class="grid">
         <article class="card">
           <h3>Full week</h3>
-          <p>Day 0, 1, 3, 5, and 7 messages for one business and one lead situation.</p>
+          <p>Day 0, 1, 3, 5, and 7 messages for one business, one service, one source, one tone, and one next step.</p>
         </article>
         <article class="card">
-          <h3>Recovery replies</h3>
-          <p>No-show and price-objection replies matched to the same service and next step.</p>
+          <h3>Objection replies</h3>
+          <p>No-show recovery and price-objection replies matched to the same lead situation.</p>
         </article>
         <article class="card">
           <h3>Clean handoff</h3>
-          <p>Use the generated PayPal note so payment can be matched to the right custom sequence.</p>
+          <p>The copied PayPal note tells the seller which custom sequence to write after payment is verified.</p>
         </article>
       </div>
     </section>
@@ -104,37 +181,144 @@ If you want the next step, reply "yes" and I will send it over.</p>
       <div class="note-panel">
         <div>
           <h2 id="pay-title">Pay exactly $5</h2>
-          <p>For the digital kit, use PayPal note "Lead Follow-Up Kit." For a custom sequence, create the PayPal note first.</p>
+          <p>Payment URL: <a href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">https://paypal.me/softjunk/5USD</a>. Fulfillment starts only after seller-side PayPal evidence exists.</p>
         </div>
         <a class="qr-mini" href="pay-qr.html">
           <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
           QR checkout
         </a>
         <div class="actions">
-          <a class="button" href="checkout.html">Fast checkout</a>
-          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+          <a class="button" href="after-pay.html">After-payment handoff</a>
+          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>Fulfillment starts only after the seller can see the $5 PayPal transaction or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.</p>
+    <p>Public routes are payment requests and buyer handoffs, not proof that money arrived. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or <strong>PAYPAL_PAYMENT_VERIFIED=true</strong>.</p>
   </footer>
 
   <script>
-    const copyButton = document.querySelector('#copy-message');
-    const message = document.querySelector('#free-message');
-    const statusMessage = document.querySelector('#status');
+    const form = document.querySelector('#rescue-form');
+    const messageEl = document.querySelector('#free-message');
+    const noteEl = document.querySelector('#payment-note');
+    const statusEl = document.querySelector('#status');
+    const heroStatus = document.querySelector('#hero-status');
 
-    copyButton.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(message.textContent.trim());
-        statusMessage.textContent = 'Message copied.';
-      } catch {
-        statusMessage.textContent = 'Copy failed. Select the message and copy it manually.';
+    const presets = {
+      service: {
+        business: 'HVAC company',
+        service: 'AC repair estimate',
+        source: 'Website form',
+        tone: 'Professional',
+        blocker: 'price or timing',
+        next: 'schedule a service visit',
+        current: 'Hi [Name], just checking if you still need help with the AC estimate.'
+      },
+      estimate: {
+        business: 'roofing company',
+        service: 'roof replacement quote',
+        source: 'Email',
+        tone: 'Direct',
+        blocker: 'budget or project timing',
+        next: 'schedule a roof inspection',
+        current: 'Hi [Name], following up on the quote. Let me know what you think.'
+      },
+      dm: {
+        business: 'med spa',
+        service: 'consultation',
+        source: 'Instagram DM',
+        tone: 'Friendly',
+        blocker: 'questions about fit or availability',
+        next: 'choose a consultation time',
+        current: 'Hey [Name], just following up from our DM.'
       }
+    };
+
+    function field(name) {
+      return String(new FormData(form).get(name) || '').trim();
+    }
+
+    function safe(text, fallback) {
+      return String(text || '').replace(/\s+/g, ' ').trim() || fallback;
+    }
+
+    function setField(name, value) {
+      if (form.elements[name]) form.elements[name].value = value;
+    }
+
+    function message() {
+      const service = safe(field('service'), 'your request');
+      const blocker = safe(field('blocker'), 'timing');
+      const next = safe(field('next'), 'take the next step');
+      const tone = field('tone');
+      const open = tone === 'Direct' ? 'Quick follow-up' : 'Hi [Name], quick follow-up';
+      return `${open} on ${service}.
+
+If ${blocker} is the main question, reply with that and I will answer it first.
+
+If you want to move forward, reply "yes" and I will send the easiest next step to ${next}.`;
+    }
+
+    function note() {
+      return `Fix One Quiet Lead | Business: ${safe(field('business'), 'business')} | Service: ${safe(field('service'), 'service')} | Source: ${field('source')} | Tone: ${field('tone')} | Blocker: ${safe(field('blocker'), 'blocker')} | Next: ${safe(field('next'), 'next step')}`;
+    }
+
+    function shareUrl() {
+      const params = new URLSearchParams();
+      ['business', 'service', 'source', 'tone', 'blocker', 'next'].forEach((name) => params.set(name, field(name)));
+      params.set('autogen', '1');
+      return `${window.location.origin}${window.location.pathname}?${params.toString()}#rescue-tool`;
+    }
+
+    function render() {
+      if (!form.reportValidity()) return false;
+      messageEl.textContent = message();
+      noteEl.textContent = `PayPal note:\n${note()}\n\nPay exactly $5:\nhttps://paypal.me/softjunk/5USD`;
+      statusEl.textContent = 'Message and PayPal note generated.';
+      return true;
+    }
+
+    async function copyText(text, ok, target = statusEl) {
+      try {
+        await navigator.clipboard.writeText(text);
+        target.textContent = ok;
+      } catch {
+        target.textContent = 'Copy failed. Select the text and copy it manually.';
+      }
+    }
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      render();
     });
+
+    document.querySelectorAll('[data-preset]').forEach((button) => {
+      button.addEventListener('click', () => {
+        Object.entries(presets[button.dataset.preset] || {}).forEach(([key, value]) => setField(key, value));
+        render();
+      });
+    });
+
+    document.querySelector('#copy-message').addEventListener('click', () => {
+      if (render()) copyText(message(), 'Message copied.');
+    });
+    document.querySelector('#copy-note').addEventListener('click', () => {
+      if (render()) copyText(note(), 'PayPal note copied.');
+    });
+    document.querySelector('#hero-copy-note').addEventListener('click', () => {
+      if (render()) copyText(note(), 'PayPal note copied.', heroStatus);
+    });
+    document.querySelector('#copy-link').addEventListener('click', () => {
+      if (render()) copyText(shareUrl(), 'Rescue link copied.');
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    ['business', 'service', 'source', 'tone', 'blocker', 'next'].forEach((name) => {
+      if (params.has(name)) setField(name, params.get(name));
+    });
+    if (params.get('autogen') === '1') render();
   </script>
 </body>
 </html>

@@ -1,0 +1,49 @@
+{
+  "schema_version": "softjunk-fix-one-quiet-lead-v1",
+  "updated": "2026-05-26",
+  "name": "Fix One Quiet Lead",
+  "purpose": "One-screen buyer route that generates a stronger follow-up message, PayPal note, shareable rescue link, and exact 5 USD PayPal checkout for one real quiet lead.",
+  "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "amount": "5.00",
+  "currency": "USD",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "use_when": [
+    "A small business has one quiet lead worth recovering.",
+    "The buyer wants one stronger next message before buying a custom 7-day sequence.",
+    "The buyer needs a PayPal note that identifies the business, service, source, tone, blocker, and next step."
+  ],
+  "do_not_use_when": [
+    "The request is unrelated to lead follow-up.",
+    "The buyer asks for spam, scraping, deception, or unauthorized outreach.",
+    "The buyer wants fulfillment before seller-side PayPal verification."
+  ],
+  "route_steps": [
+    {
+      "step": "generate_message",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html#rescue-tool",
+      "instruction": "Use non-sensitive details to generate one stronger follow-up message."
+    },
+    {
+      "step": "copy_note",
+      "instruction": "Copy the generated PayPal note before payment."
+    },
+    {
+      "step": "pay",
+      "url": "https://paypal.me/softjunk/5USD",
+      "instruction": "Pay exactly 5 USD through PayPal.Me."
+    },
+    {
+      "step": "verify",
+      "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+      "instruction": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+    }
+  ],
+  "paypal_note_template": "Fix One Quiet Lead | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Blocker: [blocker] | Next: [next step]",
+  "privacy_rule": "Use placeholders instead of private customer names, phone numbers, emails, payment IDs, or private PayPal details.",
+  "gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
+  "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
+  "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
+}
