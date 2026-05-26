@@ -79,6 +79,57 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Agent Close Contract Fallback Evidence
+
+Local validation:
+- Product `agent-close.html`, `agent-close.json`, and `agent-close.txt` were validated before commit for JSON parse, JSON-LD parse, marker coverage, Chrome headless DOM markers, and whitespace.
+- Root `/agent-close/`, `agent-close.json`, and `agent-close.txt` were validated before commit for JSON parse, JSON-LD parse, marker coverage, Chrome headless DOM markers, sitemap XML, OpenAPI YAML, and whitespace.
+
+Files added in product repo:
+- `agent-close.html`
+- `agent-close.json`
+- `agent-close.txt`
+
+Files added in root repo:
+- `agent-close/index.html`
+- `agent-close.json`
+- `agent-close.txt`
+
+Commits and releases:
+- Product commit `3278b63`: `https://github.com/trungcodeer/softjunk-lead-kit/commit/3278b637c63edfc17cf54dfcdcf205fa5e325df4`.
+- Product retry commit `e73c449`: `https://github.com/trungcodeer/softjunk-lead-kit/commit/e73c44945a9aeb7ccd51ffb78d9e2b0efc60f6a6`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.34`.
+- Root commit `ca2ed84`: `https://github.com/trungcodeer/trungcodeer.github.io/commit/ca2ed8472fb180c0cd830a871478dbc5abc687fa`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agent-close-contract-v1`.
+
+Public fallback distribution:
+- Public Gist: `https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158`.
+- Gist raw JSON: `https://gist.githubusercontent.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158/raw/agent-close.json`.
+- Gist raw text: `https://gist.githubusercontent.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158/raw/agent-close.txt`.
+- Product raw JSON: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json`.
+- Product raw text: `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.txt`.
+- Root raw JSON: `https://raw.githubusercontent.com/trungcodeer/trungcodeer.github.io/ca2ed8472fb180c0cd830a871478dbc5abc687fa/agent-close.json`.
+- Root raw text: `https://raw.githubusercontent.com/trungcodeer/trungcodeer.github.io/ca2ed8472fb180c0cd830a871478dbc5abc687fa/agent-close.txt`.
+
+Raw/Gist validation:
+- Raw GitHub validation passed: `agent_close_raw_github_ok files=4 checks=22 product_commit=3278b637c63edfc17cf54dfcdcf205fa5e325df4 root_commit=ca2ed8472fb180c0cd830a871478dbc5abc687fa`.
+- Gist raw validation passed: `agent_close_gist_raw_ok files=2 checks=10 gist=ecae8d461ddeba2fd5ad657dc0e2d158`.
+- Validated markers included root rescue, exact PayPal 5 USD URL, `PAYPAL_PAYMENT_VERIFIED=true`, and the one-lead rescue order form URL.
+
+Pages status:
+- Product GitHub Pages latest build for `e73c44945a9aeb7ccd51ffb78d9e2b0efc60f6a6` remained `building`.
+- Earlier product Pages builds for `3278b637c63edfc17cf54dfcdcf205fa5e325df4` returned `Page build failed`.
+- Root GitHub Pages latest build for `ca2ed8472fb180c0cd830a871478dbc5abc687fa` remained `building`.
+- Live Pages checks returned 404 for product/root agent-close HTML and JSON, so Pages agent-close routes were not counted as live in this evidence.
+
+Public issue comments:
+- Tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543773021`.
+- Buyer examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543773033`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 GitHub Native Rescue-First Evidence
 
 Local validation:

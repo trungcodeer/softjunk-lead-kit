@@ -1879,3 +1879,55 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves GitHub-native buyer and buyer-agent entry points by making README, Buyer Index, Funding, Support, and issue templates start from one-lead rescue before direct PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: static GitHub Pages, raw GitHub content, public releases/issues, IndexNow discovery, GitHub issue forms, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Agent Close Contract Fallback Checkpoint
+
+Current todo:
+- Wait for product/root GitHub Pages agent-close builds to either finish or fail clearly.
+- Keep raw GitHub and public Gist as the active agent-readable fallback.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Publish and validate a one-read Agent Close Contract that buyer agents can use without relying on the currently stuck Pages builds.
+
+Completed todos:
+- Added product `agent-close.html`, `agent-close.json`, and `agent-close.txt`; wired them into product discovery manifests and feeds.
+- Added root `/agent-close/`, `agent-close.json`, and `agent-close.txt`; wired them into root discovery manifests.
+- Validated product/root agent-close files locally before commit.
+- Committed and pushed product agent-close route `3278b63`.
+- Created product release `v2.29.34`.
+- Pushed product retry commit `e73c449` after Pages build errors.
+- Committed and pushed root agent-close route `ca2ed84`.
+- Created root release `root-agent-close-contract-v1`.
+- Created public Gist fallback `https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158`.
+- Validated raw GitHub product/root agent-close JSON/TXT and public Gist JSON/TXT.
+- Commented public issues #2 and #3 with the fallback route and payment-gate warning.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/3278b637c63edfc17cf54dfcdcf205fa5e325df4`.
+- Product retry commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/e73c44945a9aeb7ccd51ffb78d9e2b0efc60f6a6`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.34`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/ca2ed8472fb180c0cd830a871478dbc5abc687fa`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-agent-close-contract-v1`.
+- Public Gist fallback: `https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158`.
+- Raw GitHub validation passed: `agent_close_raw_github_ok files=4 checks=22 product_commit=3278b637c63edfc17cf54dfcdcf205fa5e325df4 root_commit=ca2ed8472fb180c0cd830a871478dbc5abc687fa`.
+- Gist raw validation passed: `agent_close_gist_raw_ok files=2 checks=10 gist=ecae8d461ddeba2fd5ad657dc0e2d158`.
+- Product Pages latest build for `e73c44945a9aeb7ccd51ffb78d9e2b0efc60f6a6` remained `building`; previous `3278b63` Pages builds returned `Page build failed`.
+- Root Pages latest build for `ca2ed8472fb180c0cd830a871478dbc5abc687fa` remained `building`.
+- Live Pages checks returned 404 for product/root agent-close HTML and JSON, so Pages agent-close routes were not counted as live.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4543773021` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4543773033`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages agent-close routes are not live while latest builds are stuck/building and live URLs return 404.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a non-traditional one-read buyer-agent contract and distributes it through raw GitHub, Gist, releases, and issue comments without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages when available, raw GitHub content, public Gists/releases/issues, PayPal.Me, manual fulfillment gate.
+- Decision: continue.
