@@ -1985,3 +1985,46 @@ DriftCheckDraft:
 - Current slice fit: yes, it moves the verified buyer-agent close route into GitHub-native public issue, release, README, support, and contact-link surfaces without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, GitHub Pages if it recovers, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Funding Button Agent Close Route Checkpoint
+
+Current todo:
+- Keep GitHub Funding, repo homepage, issue #5, release notes, and raw fallbacks as active buyer routes while GitHub Pages remains stuck.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Move the GitHub Funding button and product repo homepage toward the verified Agent Close buyer issue and exact PayPal route.
+
+Completed todos:
+- Audited product/root/quiet repo metadata and product `.github/FUNDING.yml`.
+- Updated product `.github/FUNDING.yml` so custom funding links prioritize issue #5, RawGitHack Agent Close fallback, root rescue, and exact PayPal.
+- Updated product repo homepage metadata to `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Updated product repo description to mention the $5 one-lead rescue buyer-agent route and PayPal checkout.
+- Validated Funding YAML locally and raw GitHub content at commit `c2edbb9`.
+- Created product release `v2.29.36`.
+- Commented public order board issue #1 and buyer-agent issue #5 with the Funding/homepage update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Funding route commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/c2edbb9aaa361fad253c973ea0177bb8242bf1fd`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.36`.
+- Public order board comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4543857998`.
+- Agent Close issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543857987`.
+- Raw Funding validation passed: `funding_raw_ok commit=c2edbb9`.
+- `gh repo view` confirmed product homepage is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- `gh repo view` confirmed product description is `SoftJunk $5 one-lead rescue buyer-agent route, PayPal checkout, and quiet-lead follow-up templates`.
+- Product latest Pages build for `c2edbb9aaa361fad253c973ea0177bb8242bf1fd` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages agent-close routes still cannot be counted as live while latest builds remain `building` and live URLs return 404.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it pushes the verified buyer-agent route into the GitHub Funding button and repo homepage surfaces that a buyer can encounter naturally, without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: GitHub Funding, repo metadata, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

@@ -79,6 +79,34 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Funding Button Agent Close Route Evidence
+
+GitHub Funding and repo metadata:
+- Product `.github/FUNDING.yml` now prioritizes the public Agent Close buyer issue, RawGitHack Agent Close fallback, root rescue route, and exact PayPal.Me URL.
+- Product repo homepage metadata is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Product repo description is `SoftJunk $5 one-lead rescue buyer-agent route, PayPal checkout, and quiet-lead follow-up templates`.
+
+Files changed:
+- `.github/FUNDING.yml`
+
+Commit and release:
+- Funding route commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/c2edbb9aaa361fad253c973ea0177bb8242bf1fd`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.36`.
+
+Public comments:
+- Public order board comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4543857998`.
+- Agent Close issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543857987`.
+
+Validation:
+- Local Funding YAML validation passed.
+- Raw Funding validation passed: `funding_raw_ok commit=c2edbb9`.
+- `gh repo view` confirmed the product homepage and description metadata.
+- Product latest Pages build for `c2edbb9aaa361fad253c973ea0177bb8242bf1fd` remained `building`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 GitHub-Native Agent Close Fallback Evidence
 
 Pages recovery attempt:
