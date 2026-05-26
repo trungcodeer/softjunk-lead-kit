@@ -2156,3 +2156,48 @@ DriftCheckDraft:
 - Current slice fit: yes, it creates the shortest copy-ready buyer-agent packet to move a qualified buyer to PayPal without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: raw GitHub content, public GitHub issues/releases, public Gists, RawGitHack fallback, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Root GitHub-Native Buyer Packet Route Checkpoint
+
+Current todo:
+- Keep root/product GitHub-native surfaces, one-message packet, issue #1/#5, Funding, repo homepage, RawGitHack, and Gist as active buyer routes.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Route the root GitHub repo buyer surfaces to the one-message buyer packet and public Agent Close issue so buyers can reach PayPal without relying on Pages.
+
+Completed todos:
+- Audited root `README.md`, `.github/FUNDING.yml`, and repo metadata.
+- Updated root README buyer shortcut to start with the one-message buyer packet, issue #5, Agent Close fallback, root rescue, exact PayPal URL, and order form.
+- Updated root Funding links to prioritize issue #5, one-message packet, Agent Close fallback, root rescue, and exact PayPal.
+- Added root `.github/SUPPORT.md`.
+- Added root `.github/ISSUE_TEMPLATE/config.yml` contact links.
+- Updated root repo homepage metadata to issue #5 and description to mention the buyer packet and PayPal checkout.
+- Validated root YAML, marker coverage, raw GitHub files, and repo metadata.
+- Committed and pushed root commit `2809363`.
+- Created root release `root-one-message-buyer-packet-v1`.
+- Commented product issue #5 with the root route update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/2809363f6a631f53e0ccf91923bf90a4fd6e1a9b`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-message-buyer-packet-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543936696`.
+- Root raw validation passed: `root_github_native_raw_ok files=4 checks=20 commit=2809363`.
+- Root repo metadata homepage is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Root repo description is `SoftJunk root buyer route for 5 USD one-lead rescue, buyer-agent packet, and PayPal checkout`.
+- Root latest Pages build for `2809363f6a631f53e0ccf91923bf90a4fd6e1a9b` remained `building`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+- Product/root GitHub Pages build infrastructure remains unreliable for new routes, so GitHub-native issue, one-message packet, RawGitHack, and Gist fallbacks remain the active route.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the root GitHub repo's visible buyer surfaces toward the shortest PayPal route without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: root/product GitHub repos, raw GitHub content, public GitHub issues/releases, RawGitHack/Gist fallbacks, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

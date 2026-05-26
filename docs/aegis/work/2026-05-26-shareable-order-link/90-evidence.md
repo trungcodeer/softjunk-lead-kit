@@ -79,6 +79,36 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 Root GitHub-Native Buyer Packet Route Evidence
+
+Root files changed:
+- `README.md`
+- `.github/FUNDING.yml`
+- `.github/SUPPORT.md`
+- `.github/ISSUE_TEMPLATE/config.yml`
+
+Root metadata:
+- Root repo homepage metadata is `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+- Root repo description is `SoftJunk root buyer route for 5 USD one-lead rescue, buyer-agent packet, and PayPal checkout`.
+
+Commit and release:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/2809363f6a631f53e0ccf91923bf90a4fd6e1a9b`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-message-buyer-packet-v1`.
+
+Public comment:
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4543936696`.
+
+Validation:
+- Root YAML validation passed for Funding and issue contact config.
+- Root marker validation passed for README, Funding, Support, and issue contact config.
+- Root raw GitHub validation passed: `root_github_native_raw_ok files=4 checks=20 commit=2809363`.
+- Validated markers included one-message packet, issue #5, RawGitHack Agent Close fallback, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root latest Pages build for `2809363f6a631f53e0ccf91923bf90a4fd6e1a9b` remained `building`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 One-Message Buyer Packet Evidence
 
 Files changed:
