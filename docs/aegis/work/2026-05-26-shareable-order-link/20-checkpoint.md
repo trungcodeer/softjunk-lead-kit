@@ -2798,3 +2798,53 @@ DriftCheckDraft:
 - Current slice fit: yes, it expands the GitHub-native payment route across owned repos without spam, unauthorized outreach, fake payment, or false completion claims.
 - Compatibility boundary: owned GitHub repos, public GitHub releases/issues/raw content, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 README PayPal Badge Checkpoint
+
+Current todo:
+- Make the exact 5 USD PayPal action visible in the first viewport of each owned repo README.
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+
+Active slice:
+- Add PayPal and Sponsor route badges under the README title in product, root, profile, and quiet-lead repos.
+
+Completed todos:
+- Added top-of-README PayPal and Sponsor route badges to `softjunk-lead-kit`, `trungcodeer.github.io`, `trungcodeer`, and `quiet-lead-follow-up`.
+- Validated local badge markers and whitespace in all four repos.
+- Committed and pushed product commit `d2176d5`, root commit `1aa1d14`, profile commit `e729443`, and quiet commit `e1a3fad`.
+- Validated GitHub API contents for all four README files after push.
+- Created releases `v2.29.45`, `root-readme-paypal-badges-v1`, `profile-readme-paypal-badges-v1`, and `quiet-readme-paypal-badges-v1`.
+- Added a public product issue #5 comment for the README badge route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/d2176d5`.
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/1aa1d14`.
+- Profile commit: `https://github.com/trungcodeer/trungcodeer/commit/e729443`.
+- Quiet lead commit: `https://github.com/trungcodeer/quiet-lead-follow-up/commit/e1a3fad`.
+- Product README: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/README.md`.
+- Root README: `https://github.com/trungcodeer/trungcodeer.github.io/blob/main/README.md`.
+- Profile README: `https://github.com/trungcodeer/trungcodeer/blob/main/README.md`.
+- Quiet lead README: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/README.md`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.45`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-paypal-badges-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-readme-paypal-badges-v1`.
+- Quiet release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-readme-paypal-badges-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544973857`.
+- Local validation passed: `product_badge_ok`, `root_badge_ok`, `profile_badge_ok`, `quiet_badge_ok`.
+- GitHub API validation passed: `product_api_badge_ok`, `root_api_badge_ok`, `profile_api_badge_ok`, `quiet_api_badge_ok`.
+- Release validation passed: `release_badge_ok` for all four releases.
+- Issue comment validation passed: `issue_badge_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544973857`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Continue legitimate owned-channel conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it puts the exact PayPal checkout into the first visible README area across owned repos without spam, unauthorized outreach, fake payment, or false completion claims.
+- Compatibility boundary: owned GitHub repos, public GitHub releases/issues/API content, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

@@ -79,6 +79,38 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-26 README PayPal Badge Evidence
+
+Files changed:
+- Product repo `softjunk-lead-kit`: `README.md`.
+- Root repo `trungcodeer.github.io`: `README.md`.
+- Profile repo `trungcodeer`: `README.md`.
+- Quiet lead repo `quiet-lead-follow-up`: `README.md`.
+
+Commit and release refs:
+- Product commit: `d2176d5 Add PayPal checkout badges to README`.
+- Root commit: `1aa1d14 Add PayPal checkout badges to README`.
+- Profile commit: `e729443 Add PayPal checkout badges to README`.
+- Quiet lead commit: `e1a3fad Add PayPal checkout badges to README`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.45`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-paypal-badges-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-readme-paypal-badges-v1`.
+- Quiet release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-readme-paypal-badges-v1`.
+- Product issue #5 comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544973857`.
+
+Local validation:
+- README badge marker validation passed: `product_badge_ok`, `root_badge_ok`, `profile_badge_ok`, `quiet_badge_ok`.
+- `git diff --check` returned no whitespace errors in all four repos before commit.
+
+Public validation:
+- GitHub API README validation passed: `product_api_badge_ok`, `root_api_badge_ok`, `profile_api_badge_ok`, `quiet_api_badge_ok`.
+- Release validation passed: `release_badge_ok repo=trungcodeer/softjunk-lead-kit tag=v2.29.45`, `release_badge_ok repo=trungcodeer/trungcodeer.github.io tag=root-readme-paypal-badges-v1`, `release_badge_ok repo=trungcodeer/trungcodeer tag=profile-readme-paypal-badges-v1`, `release_badge_ok repo=trungcodeer/quiet-lead-follow-up tag=quiet-readme-paypal-badges-v1`.
+- Issue comment validation passed: `issue_badge_ok url=https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4544973857`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-26 Owned Repo Sponsor Route Propagation Evidence
 
 Repos changed:
