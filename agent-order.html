@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Agent Order Path | SoftJunk Lead Kit</title>
-  <meta name="description" content="A $5 PayPal order path for AI assistants, VAs, and operators buying a custom lead follow-up sequence for one small business.">
+  <meta name="description" content="A $5 one-lead rescue order path for AI assistants, VAs, and operators buying a custom lead follow-up sequence for one small business.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="AI Agent Order Path">
-  <meta property="og:description" content="Build a clean PayPal note for a $5 custom lead follow-up sequence.">
+  <meta property="og:description" content="Build a clean PayPal note and route one-lead buyers through the rescue path before the $5 PayPal step.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -16,7 +16,8 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AI Agent Order Path | SoftJunk Lead Kit">
-  <meta name="twitter:description" content="Build a clean PayPal note for a $5 custom lead follow-up sequence.">
+  <meta name="twitter:description" content="Build a clean PayPal note and one-lead rescue handoff for a $5 custom lead follow-up sequence.">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/rescue.json" title="Root one-lead rescue JSON">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <script type="application/ld+json">
     {
@@ -26,7 +27,7 @@
           "@type": "WebPage",
           "name": "AI Agent Order Path",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
-          "description": "A machine-friendly order page for buying a $5 custom lead follow-up sequence through PayPal."
+          "description": "A machine-friendly order page for buying a $5 custom lead follow-up sequence through the one-lead rescue route and PayPal."
         },
         {
           "@type": "Service",
@@ -40,7 +41,7 @@
             "@type": "Offer",
             "price": "5.00",
             "priceCurrency": "USD",
-            "url": "https://paypal.me/softjunk/5USD",
+            "url": "https://trungcodeer.github.io/rescue/",
             "availability": "https://schema.org/InStock"
           }
         }
@@ -333,6 +334,7 @@
       <a class="brand" href="./">SoftJunk Lead Kit</a>
       <div class="nav-links">
         <a href="./">Main</a>
+        <a href="https://trungcodeer.github.io/rescue/">One-lead rescue</a>
         <a href="shareable-order-link.html">Order link</a>
         <a href="free-preview.html">Free preview</a>
         <a href="offers.json">Offers JSON</a>
@@ -343,11 +345,12 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
-      <h1 id="page-title">A $5 order path an AI assistant can hand to a buyer.</h1>
-      <p class="lead">Use this page when a small business, VA, or operator needs a custom lead follow-up sequence and wants a clean PayPal note for fulfillment.</p>
+      <h1 id="page-title">A $5 one-lead rescue path an AI assistant can hand to a buyer.</h1>
+      <p class="lead">Use this page when a small business, VA, or operator needs a custom lead follow-up sequence and wants a clean PayPal note from the one-lead rescue path before paying.</p>
       <div class="actions">
-        <a class="button primary" href="#order-tool">Build order note</a>
-        <a class="button" href="shareable-order-link.html">Create shareable link</a>
+        <a class="button primary" href="https://trungcodeer.github.io/rescue/">Open one-lead rescue</a>
+        <a class="button" href="#order-tool">Build order note</a>
+        <a class="button" href="https://trungcodeer.github.io/rescue.json">Rescue JSON</a>
         <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
         <a class="button" href="agent-offer.json">Read agent manifest</a>
       </div>
@@ -360,18 +363,18 @@
       </article>
       <article class="card">
         <h2>What it costs</h2>
-        <p>The custom sequence price is exactly $5 USD. Payment goes through PayPal.Me at the SoftJunk link.</p>
+        <p>The custom sequence price is exactly $5 USD. The buyer opens the one-lead rescue route first, then pays through PayPal.Me.</p>
       </article>
       <article class="card">
         <h2>When delivery starts</h2>
-        <p>Do not mark the order paid or delivered until the seller can see the $5 PayPal transaction.</p>
+        <p>Do not mark the order paid or delivered until the seller can see the $5 PayPal transaction or the verifier returns <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
       </article>
     </section>
 
     <section class="tool" id="order-tool" aria-labelledby="tool-title">
       <form class="panel" id="order-form" aria-describedby="tool-hint">
-        <h2 id="tool-title">Build the PayPal note</h2>
-        <p id="tool-hint">Keep the note short enough for PayPal. Put the most important context in the fields below.</p>
+        <h2 id="tool-title">Build the rescue PayPal note</h2>
+        <p id="tool-hint">Keep the note short enough for PayPal. Put only non-sensitive business context in the fields below.</p>
 
         <div class="field-grid">
           <div class="field">
@@ -421,15 +424,16 @@
         <p class="status" id="status" aria-live="polite"></p>
         <div class="actions">
           <button class="button" type="button" id="copy-handoff">Copy buyer handoff</button>
+          <a class="button primary" href="https://trungcodeer.github.io/rescue/" target="_blank" rel="noopener noreferrer">Open rescue</a>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal</a>
-          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose" target="_blank" rel="noopener noreferrer">Order form</a>
+          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">Order form</a>
         </div>
       </div>
     </section>
 
     <section aria-labelledby="manifest-title">
       <h2 id="manifest-title">Machine-readable handoff</h2>
-      <p class="manifest">Agent manifest: <a href="agent-offer.json">https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json</a>. Shareable order link: <a href="shareable-order-link.html">https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html</a>. General offers: <a href="offers.json">https://trungcodeer.github.io/softjunk-lead-kit/offers.json</a>. Free preview: <a href="free-preview.html">https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html</a>.</p>
+      <p class="manifest">Root one-lead rescue: <a href="https://trungcodeer.github.io/rescue/">https://trungcodeer.github.io/rescue/</a>. Rescue JSON: <a href="https://trungcodeer.github.io/rescue.json">https://trungcodeer.github.io/rescue.json</a>. Agent manifest: <a href="agent-offer.json">https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json</a>. Shareable order link: <a href="shareable-order-link.html">https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html</a>. General offers: <a href="offers.json">https://trungcodeer.github.io/softjunk-lead-kit/offers.json</a>. Free preview: <a href="free-preview.html">https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html</a>.</p>
     </section>
   </main>
 
@@ -443,8 +447,9 @@
     const statusMessage = document.querySelector('#status');
     const copyNote = document.querySelector('#copy-note');
     const copyHandoff = document.querySelector('#copy-handoff');
+    const rescueUrl = 'https://trungcodeer.github.io/rescue/';
     const paymentUrl = 'https://paypal.me/softjunk/5USD';
-    const orderFormUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose';
+    const orderFormUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml';
 
     function value(name) {
       return String(new FormData(form).get(name) || '').trim();
@@ -456,7 +461,10 @@
     }
 
     function makeHandoff() {
-      return `Use this $5 SoftJunk order path for a custom lead follow-up sequence.
+      return `Use this $5 SoftJunk one-lead rescue path for a custom lead follow-up sequence.
+
+Start here:
+${rescueUrl}
 
 Payment URL:
 ${paymentUrl}
@@ -473,13 +481,13 @@ What the $5 custom sequence includes:
 - Price-objection reply
 
 Important:
-Delivery starts only after the seller can see the $5 PayPal transaction.`;
+Delivery starts only after the seller can see the $5 PayPal transaction or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.`;
     }
 
     function generate() {
       if (!form.reportValidity()) return;
       output.textContent = makeHandoff();
-      statusMessage.textContent = 'Agent order handoff generated. Copy the PayPal note before paying.';
+      statusMessage.textContent = 'Agent order handoff generated. Open one-lead rescue first, then copy the PayPal note before paying.';
     }
 
     async function copyText(text, success) {
