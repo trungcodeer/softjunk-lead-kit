@@ -1459,3 +1459,55 @@ DriftCheckDraft:
 - Current slice fit: yes, it improves GitHub-native discovery and support routing for an owned high-intent repo without spam, unauthorized outreach, or false payment claims.
 - Compatibility boundary: GitHub funding/support/issue config, public releases/issues, GitHub Pages deployment, PayPal.Me, manual fulfillment gate.
 - Decision: continue.
+
+## 2026-05-26 Root Short Pay Rescue-First Checkpoint
+
+Current todo:
+- Wait for a real buyer payment or provide seller-side PayPal credentials/CSV evidence.
+- Continue only with ethical owned-channel conversion improvements if no payment evidence exists.
+
+Active slice:
+- Convert root short payment routes `/pay/`, `/paypal/`, and `/buy/` from direct-pay first to one-lead-rescue first.
+
+Completed todos:
+- Rechecked all worktrees and PayPal verifier status before the slice.
+- Audited root short payment pages and root PayPal payment-intent JSON.
+- Updated `pay/index.html`, `paypal/index.html`, and `buy/index.html` so the first CTA is `https://trungcodeer.github.io/rescue/`, followed by rescue JSON, exact PayPal, and one-lead order form.
+- Updated `paypal.json` and `.well-known/paypal-payment.json` with root rescue URLs, one-lead order form, and `fastest_buyer_path`.
+- Validated root JSON, HTML JSON-LD, inline JS, marker coverage, Chrome headless DOM, and whitespace locally.
+- Committed and pushed root change `4c17461`.
+- Created root release `root-short-pay-rescue-first-v1`.
+- Confirmed root GitHub Pages deployment succeeded.
+- Updated payment-intent Gist JSON and Markdown from product distribution sources to include root rescue first.
+- Committed and pushed product distribution change `95f6022`.
+- Created product release `v2.29.25`.
+- Confirmed product GitHub Pages deployment succeeded.
+- Validated root live pages, root payment-intent JSON, well-known payment JSON, raw product distribution files, and raw payment-intent Gist files.
+- Submitted 8 root short-pay/payment-intent URLs to IndexNow successfully.
+- Commented public issues #2 and #3 with the root short-pay update.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Root commit: `https://github.com/trungcodeer/trungcodeer.github.io/commit/4c17461`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-short-pay-rescue-first-v1`.
+- Root Pages run: `26441764477`, success.
+- Product distribution commit: `https://github.com/trungcodeer/softjunk-lead-kit/commit/95f6022`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.25`.
+- Product Pages run: `26441926091`, success.
+- Root live/Gist validation passed for 7 URLs: `/pay/`, `/paypal/`, `/buy/`, `paypal.json`, `.well-known/paypal-payment.json`, payment-intent Gist JSON, and payment-intent Gist Markdown.
+- Product raw validation passed for 2 payment-intent distribution source files.
+- IndexNow returned `status=200 urls=8`.
+- Issue comments: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542295894` and `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542300258`.
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- PayPal seller-side credentials, verifier token, visible seller-side PayPal payment, or trusted PayPal CSV proof are still required to verify actual payment.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate buyer-conversion work or verify payment if credentials/evidence become available.
+
+DriftCheckDraft:
+- Original task intent: earn $5 ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves high-intent owned payment routes before direct PayPal without spam, unauthorized outreach, or false payment claims.
+- Compatibility boundary: static GitHub Pages, public releases/issues/Gists, IndexNow discovery, JSON/text discovery, PayPal.Me, manual fulfillment gate.
+- Decision: continue.

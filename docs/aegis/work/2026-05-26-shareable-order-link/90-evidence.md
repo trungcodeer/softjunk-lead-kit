@@ -1085,3 +1085,51 @@ Release and discovery:
 Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-26 Root Short Pay Rescue-First Evidence
+
+Local validation:
+- Root JSON parse passed for `paypal.json` and `.well-known/paypal-payment.json`.
+- Root HTML JSON-LD, inline script, and marker validation passed for `pay/index.html`, `paypal/index.html`, and `buy/index.html`.
+- Chrome headless `--dump-dom` on local `/pay/`, `/paypal/`, and `/buy/` emitted one-lead rescue copy, `https://trungcodeer.github.io/rescue/`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Root `git diff --check` returned no whitespace errors.
+- Product payment-intent distribution validation passed for JSON parse and Markdown marker coverage.
+- Product `git diff --check` returned no whitespace errors.
+
+Files changed in root repo:
+- `pay/index.html`
+- `paypal/index.html`
+- `buy/index.html`
+- `paypal.json`
+- `.well-known/paypal-payment.json`
+
+Files changed in product repo:
+- `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.json`
+- `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.md`
+
+Commit, release, and deploy:
+- Root commit: `4c17461 Route short pay pages to one-lead rescue`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-short-pay-rescue-first-v1`.
+- Root GitHub Pages run `26441764477` completed with success.
+- Product commit: `95f6022 Route payment intent gist to root rescue`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.25`.
+- Product GitHub Pages run `26441926091` completed with success.
+
+Public Gist updates:
+- Payment-intent Gist `167d3dc5f8696bf9edb04d3db6c53a02` updated for `softjunk-5usd-paypal-payment-intent.json` and `softjunk-5usd-paypal-payment-intent.md`.
+
+Live/raw/Gist validation:
+- `root_short_pay_gist_ok checks=7`.
+- Validated live root `/pay/`, `/paypal/`, `/buy/`, `paypal.json`, and `.well-known/paypal-payment.json`.
+- Validated raw payment-intent Gist JSON and Markdown.
+- `payment_intent_raw_sources_ok checks=2`.
+- Validated raw product distribution source JSON and Markdown.
+
+Release and discovery:
+- IndexNow returned `status=200 urls=8` for root rescue, short payment routes, and root payment-intent JSON.
+- Public tracking issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/2#issuecomment-4542295894`.
+- Public examples issue comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/3#issuecomment-4542300258`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
