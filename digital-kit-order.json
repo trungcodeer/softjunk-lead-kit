@@ -59,5 +59,8 @@
                          "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
                      }
                  ],
-    "copyable_agent_prompt":  "Use the SoftJunk digital kit order contract only for a buyer who wants the ready $5 lead follow-up kit. Open the proof page, manifest, and sample ZIP first. If the buyer wants it, route exactly 5 USD to https://paypal.me/softjunk/5USD with PayPal note Lead Follow-Up Kit, then use the digital kit order form. Never claim payment or delivery unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+    "copyable_agent_prompt":  "Use the SoftJunk digital kit order contract only for a buyer who wants the ready $5 lead follow-up kit. Open the proof page, manifest, and sample ZIP first. If the buyer wants it, route exactly 5 USD to https://paypal.me/softjunk/5USD with PayPal note Lead Follow-Up Kit, then use the digital kit order form. Never claim payment or delivery unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
+    "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
+    "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt"
 }
