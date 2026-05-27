@@ -4765,3 +4765,29 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 product openapi root usd5 route slice
+
+TodoCheckpointDraft:
+- Completed: added root /5/, /5.json, and /5.txt paths to product .well-known/openapi.yaml.
+- Completed: added operation IDs openRootUsd5BuyerCard, getRootUsd5BuyerCard, and getRootUsd5BuyerCardText for buyer-agent route discovery.
+- Completed: validated live OpenAPI contains root 5 USD routes, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: published release v2.29.85 and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550977128.
+- Active slice: continue legitimate owned-channel conversion/discovery improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Product OpenAPI commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/c3fe04d03a6cea925e419815a825c4ac20d88606
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.85
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550977128
+- Live OpenAPI: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by making product OpenAPI route buyer agents to the shortest root checkout card.
+- Compatibility: no fulfillment gate was weakened; OpenAPI descriptions still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
