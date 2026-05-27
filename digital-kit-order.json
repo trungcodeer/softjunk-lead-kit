@@ -1,0 +1,63 @@
+{
+    "schema_version":  "softjunk-digital-kit-order-v1",
+    "updated":  "2026-05-27",
+    "name":  "SoftJunk $5 Digital Lead Follow-Up Kit",
+    "purpose":  "Agent-readable order contract for the ready digital lead follow-up kit. Use it when the buyer wants the packaged kit rather than a custom one-lead rescue.",
+    "price":  "5.00",
+    "currency":  "USD",
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "required_paypal_note":  "Lead Follow-Up Kit",
+    "proof_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
+    "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
+    "sample_zip_url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
+    "sample_zip_sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba",
+    "order_board_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/9",
+    "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "privacy_rule":  "Do not post PayPal transaction IDs, invoice IDs, payer email, customer contact details, or private lead details in public issues.",
+    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.",
+    "fulfillment_rule":  "Private ZIP delivery starts only after the seller can see the exact 5 USD PayPal transaction, the API verifier succeeds, or a trusted seller-side PayPal CSV export verifies the payment.",
+    "use_when":  [
+                     "The buyer wants a ready lead follow-up kit with templates, tracker, examples, and prompts.",
+                     "The buyer wants proof that the paid private ZIP exists before paying.",
+                     "An AI assistant, VA, crawler, or buyer agent needs one machine-readable route from proof to PayPal to a privacy-safe order form."
+                 ],
+    "do_not_use_when":  [
+                            "The buyer needs legal, medical, financial, regulated, or compliance-specific advice.",
+                            "The buyer wants automated delivery before seller-side PayPal verification.",
+                            "The buyer does not want to use PayPal.",
+                            "The route would be used for spam, scraping, fake reviews, deception, or unauthorized outreach."
+                        ],
+    "buy_flow":  [
+                     {
+                         "step":  "inspect_proof",
+                         "action":  "Open the proof page and manifest before recommending payment.",
+                         "url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
+                         "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json"
+                     },
+                     {
+                         "step":  "check_sample",
+                         "action":  "Download the public sample ZIP if the buyer wants a no-payment preview.",
+                         "url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
+                         "sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba"
+                     },
+                     {
+                         "step":  "pay",
+                         "action":  "If the buyer wants the ready kit, pay exactly 5 USD on PayPal and paste the required note.",
+                         "url":  "https://paypal.me/softjunk/5USD",
+                         "paypal_note":  "Lead Follow-Up Kit"
+                     },
+                     {
+                         "step":  "submit_order_form",
+                         "action":  "After payment, submit only non-sensitive fulfillment details through the GitHub issue form.",
+                         "url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
+                         "board_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/9"
+                     },
+                     {
+                         "step":  "verify",
+                         "action":  "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before claiming fulfillment.",
+                         "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                     }
+                 ],
+    "copyable_agent_prompt":  "Use the SoftJunk digital kit order contract only for a buyer who wants the ready $5 lead follow-up kit. Open the proof page, manifest, and sample ZIP first. If the buyer wants it, route exactly 5 USD to https://paypal.me/softjunk/5USD with PayPal note Lead Follow-Up Kit, then use the digital kit order form. Never claim payment or delivery unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+}
