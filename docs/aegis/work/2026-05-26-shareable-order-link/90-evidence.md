@@ -4943,3 +4943,24 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Feed and Issue No-Clone Buyer-Agent Signal Evidence
+
+Artifacts updated:
+- Product RSS feed: `feed.xml`.
+- Public issue #1 canonical comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4557399523.
+
+Published commits:
+- `fe4bb9e736b6f9f39e93b9d695801caed03e200f` added the no-clone buyer-agent checkout RSS item.
+- `ab4dd0b18b3187e6dc76b3fc05dfb40779732a62` converted the RSS feed to UTF-8 for cleaner agent/crawler consumption.
+
+Validation:
+- Local XML validation parsed `feed.xml`; the first item is `No-Clone Buyer-Agent PayPal Command` and includes the no-clone command, direct PayPal URL, verified release URL, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live feed validation for `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml` returned UTF-8 XML, first bytes `3C 3F 78 6D`, first title `No-Clone Buyer-Agent PayPal Command`, `guid isPermaLink=false`, and all required markers.
+- `gh issue view 1 --repo trungcodeer/softjunk-lead-kit --comments` validation confirmed issue comments contain the no-clone command, direct PayPal URL, verified release URL, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

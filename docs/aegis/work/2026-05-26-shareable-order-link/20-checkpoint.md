@@ -6738,3 +6738,46 @@ DriftCheckDraft:
 - Compatibility boundary: public Gist, GitHub Pages distribution copy, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; the Gist remains a discovery/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Feed and Issue No-Clone Buyer-Agent Signal Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Put the verified no-clone release-tarball PayPal command into agent-readable RSS and the canonical public "start here" issue so buyer agents can discover the exact $5 route without cloning the repo or waiting for npm registry publish.
+
+Completed todos:
+- Audited product RSS/sitemap surfaces and found `feed.xml` did not expose the no-clone `npm exec --package <release-tarball>` command.
+- Audited open issue #1 and found neither the body nor comments contained the current no-clone command, release SHA, and seller-side verification gate.
+- Added a new first RSS item titled `No-Clone Buyer-Agent PayPal Command` containing the command, direct PayPal URL, verified release `v2.29.119`, SHA-256, Gist link, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Converted `feed.xml` from UTF-16 to UTF-8 so crawler/agent tooling can read it as ordinary text without null-byte decoding issues.
+- Pushed product commits `fe4bb9e736b6f9f39e93b9d695801caed03e200f` and `ab4dd0b18b3187e6dc76b3fc05dfb40779732a62`.
+- Added canonical issue #1 comment `https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4557399523`.
+- Validated live `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml` returned UTF-8 XML with the no-clone command, PayPal URL, release URL, SHA-256, and verification gate.
+- Validated issue #1 comments contain the no-clone command, PayPal URL, release URL, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Submitted `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml` to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commits: `fe4bb9e736b6f9f39e93b9d695801caed03e200f`, `ab4dd0b18b3187e6dc76b3fc05dfb40779732a62`.
+- Live feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml.
+- Issue #1 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4557399523.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves public machine-readable discovery and GitHub-native buyer-agent handoff without spam, scraping, deception, fake payment claims, or weakening fulfillment gates.
+- Compatibility boundary: GitHub Pages RSS, public GitHub issues, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; RSS and issue comments are discovery/payment-intent surfaces, not payment proof.
+- Decision: continue.
