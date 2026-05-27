@@ -132,7 +132,7 @@
       <h1 id="page-title">Pay 5 USD. Get one quiet-lead rescue.</h1>
       <p class="lead">Use this card when one real lead, quote, appointment, missed call, quiet DM, or unanswered estimate is worth more than 5 USD. Pay exactly 5 USD on PayPal; fulfillment starts only after seller-side PayPal evidence or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
       <div class="actions" aria-label="Primary actions">
-        <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay 5 USD on PayPal</a>
+        <a id="paypal-payment-link" class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay 5 USD on PayPal</a>
         <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">Order form after payment</a>
         <a class="button" href="paypal-buy-action.json">Buyer-agent BuyAction</a>
       </div>
@@ -147,6 +147,7 @@
       <p id="paypal-note" class="note">One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]</p>
       <div class="note-actions">
         <button id="copy-paypal-note" class="button" type="button">Copy PayPal note</button>
+        <button id="copy-paypal-link" class="button" type="button">Copy PayPal link</button>
         <span id="copy-status" class="status" role="status" aria-live="polite"></span>
       </div>
     </section>
@@ -154,23 +155,34 @@
   <footer><p>Payment URL: https://paypal.me/softjunk/5USD. Do not mark paid or delivered until seller-side evidence verifies the 5 USD payment.</p></footer>
   <script>
     (function () {
-      var button = document.getElementById('copy-paypal-note');
+      var noteButton = document.getElementById('copy-paypal-note');
+      var linkButton = document.getElementById('copy-paypal-link');
       var note = document.getElementById('paypal-note');
+      var paymentLink = document.getElementById('paypal-payment-link');
       var status = document.getElementById('copy-status');
-      if (!button || !note || !status) return;
-      button.addEventListener('click', function () {
-        var text = note.textContent.trim();
+      if (!status) return;
+      function copyText(text, successMessage, fallbackMessage) {
         function done(message) { status.textContent = message; }
         if (navigator.clipboard && window.isSecureContext) {
           navigator.clipboard.writeText(text).then(function () {
-            done('PayPal note copied.');
+            done(successMessage);
           }).catch(function () {
-            done('Copy failed. Select the note text manually.');
+            done(fallbackMessage);
           });
         } else {
-          done('Select the note text manually to copy it.');
+          done(fallbackMessage);
         }
-      });
+      }
+      if (noteButton && note) {
+        noteButton.addEventListener('click', function () {
+          copyText(note.textContent.trim(), 'PayPal note copied.', 'Select the note text manually to copy it.');
+        });
+      }
+      if (linkButton && paymentLink) {
+        linkButton.addEventListener('click', function () {
+          copyText(paymentLink.href, 'PayPal link copied.', 'Select or open the PayPal link manually.');
+        });
+      }
     }());
   </script></body>
 </html>
