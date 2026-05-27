@@ -1,0 +1,346 @@
+#!/usr/bin/env node
+'use strict';
+
+const CONSTANTS = Object.freeze({
+  name: 'softjunk-lead-kit',
+  version: '0.2.0',
+  paymentUrl: 'https://paypal.me/softjunk/5USD',
+  amount: '5.00',
+  currency: 'USD',
+  successSignal: 'PAYPAL_PAYMENT_VERIFIED=true',
+  rootBuyerCard: 'https://trungcodeer.github.io/5/',
+  rootBuyerJson: 'https://trungcodeer.github.io/5.json',
+  productUrl: 'https://trungcodeer.github.io/softjunk-lead-kit/',
+  digitalKitContractJson: 'https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json',
+  digitalKitContractText: 'https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt',
+  digitalKitProof: 'https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html',
+  digitalKitManifest: 'https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json',
+  digitalKitSample: 'https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip',
+  digitalKitSampleSha256: '57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba',
+  digitalKitBoard: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/9',
+  digitalKitOrderForm: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml',
+  customOrderForm: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml',
+  roofingOrderForm: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml',
+  afterPayUrl: 'https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html',
+  privacyRule: 'Use placeholders only. Do not post customer names, phone numbers, emails, addresses, invoice IDs, transaction IDs, payer email, or private lead details in public issues.',
+  verificationGate: 'Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.'
+});
+
+const HELP = `SoftJunk Lead Kit CLI
+
+Usage:
+  softjunk-lead-kit doctor [--json] [--live]
+  softjunk-lead-kit rescue --business <type> --service <service> --source <source> --need <need> [--tone <tone>] [--next <action>] [--value <value>] [--json]
+  softjunk-lead-kit send --business <type> --service <service> --source <source> --need <need> [--tone <tone>] [--next <action>] [--value <value>] [--json]
+  softjunk-lead-kit kit [--json]
+  softjunk-lead-kit pay [--mode custom|kit] [--json]
+
+Examples:
+  softjunk-lead-kit rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote
+  softjunk-lead-kit send --business "med spa" --service "consultation" --source DM --need "quiet inquiry" --json
+  softjunk-lead-kit kit --json
+
+This CLI is local-only. It generates safe follow-up copy, PayPal notes, and checkout handoffs; it does not collect lead data or verify PayPal payment.`;
+
+function parseArgs(argv) {
+  const args = [];
+  const options = {};
+  for (let i = 0; i < argv.length; i += 1) {
+    const item = argv[i];
+    if (!item.startsWith('--')) {
+      args.push(item);
+      continue;
+    }
+    const eq = item.indexOf('=');
+    if (eq !== -1) {
+      const key = item.slice(2, eq);
+      options[key] = item.slice(eq + 1);
+      continue;
+    }
+    const key = item.slice(2);
+    const next = argv[i + 1];
+    if (next && !next.startsWith('--')) {
+      options[key] = next;
+      i += 1;
+    } else {
+      options[key] = true;
+    }
+  }
+  return { command: args[0] || 'help', args: args.slice(1), options };
+}
+
+function clean(value, fallback) {
+  const text = String(value || '').replace(/[\r\n\t]+/g, ' ').replace(/\s+/g, ' ').trim();
+  return text || fallback;
+}
+
+function fail(message, options, code = 1) {
+  const payload = { ok: false, error: { message, code: 'softjunk_cli_error' } };
+  if (options.json) {
+    console.error(JSON.stringify(payload, null, 2));
+  } else {
+    console.error(`Error: ${message}\n\n${HELP}`);
+  }
+  process.exitCode = code;
+}
+
+function requireOptions(options, names) {
+  const missing = names.filter((name) => !clean(options[name], ''));
+  if (missing.length) {
+    throw new Error(`Missing required option(s): ${missing.map((name) => `--${name}`).join(', ')}`);
+  }
+}
+
+function paypalNoteFor(mode, input = {}) {
+  if (mode === 'kit') return 'Lead Follow-Up Kit';
+  const business = clean(input.business, '[business type]');
+  const service = clean(input.service, '[service]');
+  const source = clean(input.source, '[form/DM/call/email/referral]');
+  const need = clean(input.need, '[missed call/estimate/no-show/quiet DM/price]');
+  const tone = clean(input.tone, '[friendly/professional/direct]');
+  const next = clean(input.next, '[book/reply/quote/call]');
+  return `One Lead Rescue | Business: ${business} | Service: ${service} | Source: ${source} | Need: ${need} | Tone: ${tone} | Next: ${next}`;
+}
+
+function buildMessages(input) {
+  const business = clean(input.business, 'small business');
+  const service = clean(input.service, 'your request');
+  const source = clean(input.source, 'inquiry');
+  const need = clean(input.need, 'quiet lead');
+  const tone = clean(input.tone, 'friendly');
+  const next = clean(input.next, 'reply');
+  const value = clean(input.value, 'one recovered conversation');
+
+  const opener = tone.toLowerCase().includes('direct')
+    ? `Hi [Name], quick follow-up on ${service}. Do you still want help with this?`
+    : `Hi [Name], just checking back on ${service}. Happy to help if this is still useful.`;
+
+  return {
+    day_0: `${opener} Reply with one word: time, price, or later, and I will send the easiest next step.`,
+    day_1: `Hi [Name], should I send the next step for ${service}, or close the loop for now? A quick reply is enough.`,
+    day_3: `Last check from me on ${service}. If ${next} still makes sense, reply yes and I will make it simple.`,
+    context_summary: `${business} lead from ${source}; need: ${need}; value signal: ${value}.`
+  };
+}
+
+function buildRescue(input) {
+  const messages = buildMessages(input);
+  return {
+    ok: true,
+    command: 'rescue',
+    local_only: true,
+    generated_at: new Date().toISOString(),
+    input: {
+      business: clean(input.business, 'small business'),
+      service: clean(input.service, 'service'),
+      source: clean(input.source, 'lead source'),
+      need: clean(input.need, 'follow-up need'),
+      tone: clean(input.tone, 'friendly'),
+      next: clean(input.next, 'reply'),
+      value: clean(input.value, 'one recovered conversation')
+    },
+    preview_messages: messages,
+    paid_upgrade: {
+      name: 'SoftJunk One-Lead Rescue',
+      price: CONSTANTS.amount,
+      currency: CONSTANTS.currency,
+      payment_url: CONSTANTS.paymentUrl,
+      paypal_note: paypalNoteFor('custom', input),
+      order_form_url: CONSTANTS.customOrderForm,
+      after_payment_url: CONSTANTS.afterPayUrl,
+      one_rewrite_included: true
+    },
+    privacy_rule: CONSTANTS.privacyRule,
+    verification_gate: CONSTANTS.verificationGate,
+    success_signal: CONSTANTS.successSignal
+  };
+}
+
+function buildSend(input) {
+  const rescue = buildRescue(input);
+  const buyerMessage = [
+    'I made a safe preview for one quiet lead:',
+    '',
+    rescue.preview_messages.day_0,
+    '',
+    `If one recovered reply is worth more than $${CONSTANTS.amount}, the $5 custom one-lead rescue is here:`,
+    CONSTANTS.paymentUrl,
+    '',
+    'Paste this PayPal note:',
+    rescue.paid_upgrade.paypal_note,
+    '',
+    'After payment, submit placeholders only:',
+    CONSTANTS.customOrderForm,
+    '',
+    `Rule: ${CONSTANTS.verificationGate}`
+  ].join('\n');
+  return {
+    ok: true,
+    command: 'send',
+    local_only: true,
+    buyer_handoff_message: buyerMessage,
+    preview: rescue.preview_messages,
+    paid_upgrade: rescue.paid_upgrade,
+    privacy_rule: CONSTANTS.privacyRule,
+    verification_gate: CONSTANTS.verificationGate,
+    success_signal: CONSTANTS.successSignal
+  };
+}
+
+function buildKit() {
+  return {
+    ok: true,
+    command: 'kit',
+    name: 'SoftJunk $5 Digital Lead Follow-Up Kit',
+    price: CONSTANTS.amount,
+    currency: CONSTANTS.currency,
+    order_contract_json_url: CONSTANTS.digitalKitContractJson,
+    order_contract_text_url: CONSTANTS.digitalKitContractText,
+    proof_url: CONSTANTS.digitalKitProof,
+    manifest_url: CONSTANTS.digitalKitManifest,
+    sample_zip_url: CONSTANTS.digitalKitSample,
+    sample_zip_sha256: CONSTANTS.digitalKitSampleSha256,
+    order_board_url: CONSTANTS.digitalKitBoard,
+    order_form_url: CONSTANTS.digitalKitOrderForm,
+    payment_url: CONSTANTS.paymentUrl,
+    required_paypal_note: paypalNoteFor('kit'),
+    privacy_rule: CONSTANTS.privacyRule,
+    verification_gate: CONSTANTS.verificationGate,
+    success_signal: CONSTANTS.successSignal
+  };
+}
+
+function buildPay(options) {
+  const mode = clean(options.mode, 'custom').toLowerCase() === 'kit' ? 'kit' : 'custom';
+  return {
+    ok: true,
+    command: 'pay',
+    mode,
+    amount: CONSTANTS.amount,
+    currency: CONSTANTS.currency,
+    payment_url: CONSTANTS.paymentUrl,
+    paypal_note: paypalNoteFor(mode, options),
+    order_form_url: mode === 'kit' ? CONSTANTS.digitalKitOrderForm : CONSTANTS.customOrderForm,
+    proof_url: mode === 'kit' ? CONSTANTS.digitalKitProof : CONSTANTS.rootBuyerCard,
+    privacy_rule: CONSTANTS.privacyRule,
+    verification_gate: CONSTANTS.verificationGate,
+    success_signal: CONSTANTS.successSignal
+  };
+}
+
+async function checkUrl(url) {
+  try {
+    const response = await fetch(url, { method: 'HEAD', redirect: 'follow' });
+    return { url, ok: response.ok, status: response.status };
+  } catch (error) {
+    return { url, ok: false, error: error.message };
+  }
+}
+
+async function buildDoctor(options) {
+  const payload = {
+    ok: true,
+    command: 'doctor',
+    name: CONSTANTS.name,
+    version: CONSTANTS.version,
+    node_version: process.version,
+    local_only: true,
+    auth_required: false,
+    payment_url: CONSTANTS.paymentUrl,
+    success_signal: CONSTANTS.successSignal,
+    verification_gate: CONSTANTS.verificationGate,
+    commands: ['doctor', 'rescue', 'send', 'kit', 'pay'],
+    install: {
+      after_clone: 'node bin/softjunk-lead-kit.js doctor --json',
+      npm_exec_from_github: 'npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json'
+    }
+  };
+  if (options.live) {
+    payload.live_checks = await Promise.all([
+      checkUrl(CONSTANTS.paymentUrl),
+      checkUrl(CONSTANTS.rootBuyerJson),
+      checkUrl(CONSTANTS.digitalKitContractJson),
+      checkUrl(CONSTANTS.digitalKitProof)
+    ]);
+  }
+  return payload;
+}
+
+function printText(payload) {
+  if (payload.command === 'doctor') {
+    console.log(`SoftJunk Lead Kit CLI ${payload.version}`);
+    console.log(`Node: ${payload.node_version}`);
+    console.log(`Local-only: ${payload.local_only}`);
+    console.log(`PayPal: ${payload.payment_url}`);
+    console.log(`Gate: ${payload.success_signal}`);
+    if (payload.live_checks) payload.live_checks.forEach((check) => console.log(`Live ${check.ok ? 'ok' : 'fail'} ${check.status || ''} ${check.url}`));
+    return;
+  }
+  if (payload.command === 'rescue') {
+    console.log('Preview follow-up messages:\n');
+    console.log(`Day 0: ${payload.preview_messages.day_0}`);
+    console.log(`Day 1: ${payload.preview_messages.day_1}`);
+    console.log(`Day 3: ${payload.preview_messages.day_3}`);
+    console.log('\nPaid upgrade:');
+    console.log(`Pay exactly ${payload.paid_upgrade.currency} ${payload.paid_upgrade.price}: ${payload.paid_upgrade.payment_url}`);
+    console.log(`PayPal note: ${payload.paid_upgrade.paypal_note}`);
+    console.log(`Order form: ${payload.paid_upgrade.order_form_url}`);
+    console.log(`Gate: ${payload.success_signal}`);
+    return;
+  }
+  if (payload.command === 'send') {
+    console.log(payload.buyer_handoff_message);
+    return;
+  }
+  if (payload.command === 'kit') {
+    console.log('SoftJunk $5 Digital Lead Follow-Up Kit');
+    console.log(`Proof: ${payload.proof_url}`);
+    console.log(`Manifest: ${payload.manifest_url}`);
+    console.log(`Sample ZIP: ${payload.sample_zip_url}`);
+    console.log(`Sample SHA-256: ${payload.sample_zip_sha256}`);
+    console.log(`Pay exactly ${payload.currency} ${payload.price}: ${payload.payment_url}`);
+    console.log(`PayPal note: ${payload.required_paypal_note}`);
+    console.log(`Order form: ${payload.order_form_url}`);
+    console.log(`Gate: ${payload.success_signal}`);
+    return;
+  }
+  if (payload.command === 'pay') {
+    console.log(`Pay exactly ${payload.currency} ${payload.amount}: ${payload.payment_url}`);
+    console.log(`PayPal note: ${payload.paypal_note}`);
+    console.log(`Order form: ${payload.order_form_url}`);
+    console.log(`Gate: ${payload.success_signal}`);
+    return;
+  }
+  console.log(JSON.stringify(payload, null, 2));
+}
+
+function output(payload, options) {
+  if (options.json) console.log(JSON.stringify(payload, null, 2));
+  else printText(payload);
+}
+
+async function main() {
+  const { command, options } = parseArgs(process.argv.slice(2));
+  if (options.help || command === 'help' || command === '--help' || command === '-h') {
+    console.log(HELP);
+    return;
+  }
+  try {
+    if (command === 'doctor') return output(await buildDoctor(options), options);
+    if (command === 'rescue') {
+      requireOptions(options, ['business', 'service', 'source', 'need']);
+      return output(buildRescue(options), options);
+    }
+    if (command === 'send') {
+      requireOptions(options, ['business', 'service', 'source', 'need']);
+      return output(buildSend(options), options);
+    }
+    if (command === 'kit') return output(buildKit(), options);
+    if (command === 'pay') return output(buildPay(options), options);
+    return fail(`Unknown command: ${command}`, options);
+  } catch (error) {
+    return fail(error.message, options);
+  }
+}
+
+main();
