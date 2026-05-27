@@ -22,6 +22,35 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Digital Kit Order No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `digital-kit-order.json`
+- `digital-kit-order.txt`
+- `after-pay.html`
+
+Published commit and release:
+- Product commit: `d8ade0b55aeb1802db76c20a285634483bfa10f0`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.147.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `digital-kit-order.json` after the edit.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- digital-kit-order.json digital-kit-order.txt after-pay.html` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `after-pay.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `d8ade0b55aeb1802db76c20a285634483bfa10f0`.
+- Live Pages validation returned HTTP 200 for `digital-kit-order.json`, `digital-kit-order.txt`, and `after-pay.html`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `digital-kit-order.json`, `digital-kit-order.txt`, and `after-pay.html`; all included the same required markers and the JSON parsed where applicable.
+- Edge headless DOM dump for live `after-pay.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.147` is public, non-draft, non-prerelease, targets `d8ade0b55aeb1802db76c20a285634483bfa10f0`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `digital-kit-order.json`, `digital-kit-order.txt`, and `after-pay.html`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Paid Kit No-Clone Checkout Proof Evidence
 
 Artifacts updated:
