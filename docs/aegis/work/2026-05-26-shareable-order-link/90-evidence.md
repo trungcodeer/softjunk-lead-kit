@@ -3412,3 +3412,23 @@ Payment verification:
 
 Conclusion:
 - Conversion/discovery surfaces were improved for a real  purchase, but the goal is not complete because seller-side payment verification is still missing.
+## Evidence: 2026-05-27 usd5 buyer-card preview release slice
+
+Updated and released:
+- Product buyer-card preview metadata: https://github.com/trungcodeer/softjunk-lead-kit/commit/63c19a5298382e71a4cf1abefef19650e1bcc4e9
+- Root /5/ preview metadata: https://github.com/trungcodeer/trungcodeer.github.io/commit/4cbd135783e926a03dd66dab73c9956606801ac1
+- Gist mirror: https://gist.github.com/trungcodeer/4507ec1fc5f1b009924dfdaa235859e8
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.80
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-usd5-buyer-card-preview-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550701129
+
+Live validation:
+- Product URL https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html?check=usd5preview returned status 200, title SoftJunk USD 5 Buyer Card, og:title SoftJunk USD 5 Buyer Card, PayPal URL present, and PAYPAL_PAYMENT_VERIFIED=true present.
+- Root URL https://trungcodeer.github.io/5/?check=usd5preview returned status 200, title SoftJunk USD 5 Buyer Card, og:title SoftJunk USD 5 Buyer Card, PayPal URL present, and PAYPAL_PAYMENT_VERIFIED=true present.
+- Gist HTML mirror contains SoftJunk USD 5 Buyer Card, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- The public checkout preview/distribution layer improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
