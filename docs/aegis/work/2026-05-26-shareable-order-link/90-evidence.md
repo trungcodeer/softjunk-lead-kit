@@ -3474,3 +3474,25 @@ Payment verification:
 
 Conclusion:
 - Crawlable feed visibility improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 discussion six fast usd5 route slice
+
+Updated and released:
+- Discussion #6: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6
+- Product llms.txt: https://github.com/trungcodeer/softjunk-lead-kit/commit/78ef57efda23c8d5cbaf44cbf6fffe7944e8bd16
+- Product uyer-index.json: https://github.com/trungcodeer/softjunk-lead-kit/commit/3e43057c4b455c5323f98e3c21698d4081141454
+- Product product-feed.json: https://github.com/trungcodeer/softjunk-lead-kit/commit/90b6cc8cc2d504307d249bc10bdf1550b17c771b
+- Product gent-buyer-catalog.jsonl: https://github.com/trungcodeer/softjunk-lead-kit/commit/1b243e398ca262d22388170acc7353daa426c31a
+- Product eed.xml: https://github.com/trungcodeer/softjunk-lead-kit/commit/f7d11278570cffc2904c2caa1254030a829c70b9
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.83
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550890961
+
+Live validation:
+- GraphQL validated Discussion #6 title/body with /5/, /5.json, /5.txt, product buyer card, PayPal URL, one_rewrite_included, and PAYPAL_PAYMENT_VERIFIED=true.
+- https://trungcodeer.github.io/softjunk-lead-kit/llms.txt?check=discussion6 contains Discussion #6, /5/, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- uyer-index.json, product-feed.json, gent-buyer-catalog.jsonl, and eed.xml live checks all reference Discussion #6 plus /5/ and verification gate.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- GitHub-native buyer-agent checkout discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
