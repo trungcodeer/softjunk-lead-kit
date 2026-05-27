@@ -162,6 +162,18 @@ https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt
 Roofing buyer send Gist:
 https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805
 
+Plumbing buyer send packet:
+https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html
+
+Plumbing buyer send JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
+
+Plumbing buyer send text:
+https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
+
+Plumbing buyer fit:
+Use for one known plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
+
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
 

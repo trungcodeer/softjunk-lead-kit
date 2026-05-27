@@ -319,6 +319,20 @@
                               "rule":  "Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
                           },
     "mcp_npm_funding_tool_name":  "get_softjunk_npm_funding_route",
+    "plumbing_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html",
+    "plumbing_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json",
+    "plumbing_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt",
+    "plumbing_buyer_send_route":  {
+                                      "name":  "SoftJunk Plumbing Buyer Send Packet",
+                                      "page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html",
+                                      "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json",
+                                      "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt",
+                                      "payment_url":  "https://paypal.me/softjunk/5USD",
+                                      "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+                                      "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                      "use_when":  "One known plumbing company has one missed emergency call, urgent repair inquiry, or quiet estimate lead and one booked repair job is worth more than 5 USD.",
+                                      "rule":  "Send only to one known fitting buyer; do not use scraped lists, cold spam, private homeowner data, private PayPal data, or fake payment claims."
+                                  },
     "one_buyer_share_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
     "one_buyer_share_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
     "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",

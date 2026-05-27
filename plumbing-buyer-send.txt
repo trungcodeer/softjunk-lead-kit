@@ -1,0 +1,60 @@
+SoftJunk Plumbing Buyer Send Packet
+Updated: 2026-05-27
+
+Use this only for one known fitting buyer:
+A plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead.
+
+Do not send this to scraped lists or strangers.
+Do not include homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data.
+
+Page:
+https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html
+
+JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
+
+Plumbing sample:
+https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
+
+Free plumbing preview:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+
+One-buyer share route:
+https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html?buyer=plumbing%20company&problem=missed%20emergency%20call&service=emergency%20repair&value=one%20booked%20repair%20job%20is%20worth%20more%20than%20%245&tone=direct&ready=1
+
+Pay exactly 5 USD:
+https://paypal.me/softjunk/5USD
+
+Order form after payment:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+PayPal note:
+Plumbing emergency lead rescue | Business: [business] | Service: emergency repair | Lead status: missed call or quiet urgent inquiry | Tone: direct
+
+Short DM:
+One plumbing lead went quiet after an urgent call or repair inquiry? If one booked job is worth more than $5, this $5 SoftJunk rescue gives you Day 0/1/3/5/7 follow-ups for that exact plumbing situation. Preview first: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool Pay exactly $5 only if it fits: https://paypal.me/softjunk/5USD
+
+Email subject:
+Recover one missed plumbing emergency lead for $5
+
+Email body:
+One plumbing emergency lead went quiet?
+
+If one booked repair job is worth more than $5, this SoftJunk rescue gives you Day 0, 1, 3, 5, and 7 follow-up messages for that exact missed-call or urgent-repair situation.
+
+Preview the writing style:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+
+One-buyer share route:
+https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html?buyer=plumbing%20company&problem=missed%20emergency%20call&service=emergency%20repair&value=one%20booked%20repair%20job%20is%20worth%20more%20than%20%245&tone=direct&ready=1
+
+Pay exactly $5 only if it fits:
+https://paypal.me/softjunk/5USD
+
+After payment, submit non-sensitive context here:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+Use business context only. Do not post homeowner names, phone numbers, emails, addresses, invoice IDs, transaction IDs, or PayPal details.
+
+Verification gate:
+Do not claim paid, started, delivered, fulfilled, complete, or stop unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

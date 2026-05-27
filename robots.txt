@@ -34,6 +34,9 @@ Allow: /one-buyer-share.txt
 Allow: /roofing-buyer-send.html
 Allow: /roofing-buyer-send.json
 Allow: /roofing-buyer-send.txt
+Allow: /plumbing-buyer-send.html
+Allow: /plumbing-buyer-send.json
+Allow: /plumbing-buyer-send.txt
 Allow: /agent-order.html
 Allow: /agent-offer.json
 Allow: /product-feed.json

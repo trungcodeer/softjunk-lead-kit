@@ -486,6 +486,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /plumbing-buyer-send.html:
+    get:
+      operationId: openPlumbingBuyerSendPacket
+      summary: Open the SoftJunk plumbing buyer send packet.
+      responses:
+        "200":
+          description: Copy-ready one-buyer DM, email, PayPal note, free plumbing preview, one-buyer share route, exact 5 USD PayPal URL, order form, privacy rule, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /plumbing-buyer-send.json:
+    get:
+      operationId: getPlumbingBuyerSendPacket
+      summary: Get the SoftJunk plumbing buyer send packet JSON.
+      responses:
+        "200":
+          description: Machine-readable one-buyer send packet for a known fitting plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead.
+          content:
+            application/json:
+              schema:
+                type: object
+  /plumbing-buyer-send.txt:
+    get:
+      operationId: getPlumbingBuyerSendPacketText
+      summary: Get the SoftJunk plumbing buyer send packet text.
+      responses:
+        "200":
+          description: Plain-text one-buyer plumbing send packet with DM, email, PayPal note, preview route, payment URL, order form, privacy rule, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /roofing-estimate-rescue.html:
     get:
       operationId: openRoofingEstimateRescue
