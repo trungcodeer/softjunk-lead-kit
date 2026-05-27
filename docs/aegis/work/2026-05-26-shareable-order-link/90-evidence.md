@@ -3496,3 +3496,22 @@ Payment verification:
 
 Conclusion:
 - GitHub-native buyer-agent checkout discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 copy paypal note buyer cards slice
+
+Updated and released:
+- Root /5/ buyer card: https://github.com/trungcodeer/trungcodeer.github.io/commit/a5af2c7d6fcaaeac3e2e921342a23523f3023242
+- Product buyer card: https://github.com/trungcodeer/softjunk-lead-kit/commit/d90bd9e3d2fdf74b9d3fab823858c8d114175f80
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.84
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-copy-paypal-note-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550932094
+
+Live validation:
+- https://trungcodeer.github.io/5/?check=copy-note returned HTML containing copy-paypal-note, 
+avigator.clipboard, ria-live=\"polite\", PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html?check=copy-note returned the same required markers.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Checkout friction was reduced on the direct buyer cards, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
