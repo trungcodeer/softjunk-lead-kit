@@ -14,6 +14,8 @@ body:
         Roofing generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
         Roofing rescue packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
         Payment URL: https://paypal.me/softjunk/5USD
+        General Send-5 handoff: https://trungcodeer.github.io/send-5/
+        Root 5 USD buyer card: https://trungcodeer.github.io/5/
 
         Fulfillment starts only after the $5 PayPal transaction is visible to the seller or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -117,7 +119,7 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD.
+        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD after using the roofing route, Send-5 handoff, or root 5 USD buyer card.
           required: true
         - label: I understand fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
           required: true
