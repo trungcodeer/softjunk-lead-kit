@@ -22,6 +22,11 @@ x-softjunk-fastest-buyer-path:
   well_known_mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
   mcp_checkout_server_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
   payment_url: https://paypal.me/softjunk/5USD
+  clone_cli_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
+  clone_cli_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md
+  clone_cli_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js
+  clone_cli_run_after_clone: node bin/softjunk-lead-kit.js doctor --json
+  clone_cli_run_from_github_package: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
   one_lead_rescue_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
   digital_kit_order_contract_url: https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json
   digital_kit_order_contract_text_url: https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt
@@ -32,7 +37,39 @@ x-softjunk-fastest-buyer-path:
   digital_kit_order_board_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
   digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
-  /agent-close.html:
+  /clone-cli.json:
+    get:
+      operationId: getCloneCliManifest
+      summary: Get the SoftJunk clone CLI manifest.
+      responses:
+        "200":
+          description: Machine-readable local CLI manifest for converting repository clones into safe follow-up previews, buyer handoffs, PayPal notes, and exact 5 USD checkout routes without collecting private lead data.
+          content:
+            application/json:
+              schema:
+                type: object
+  /CLONE_CLI.md:
+    get:
+      operationId: getCloneCliMarkdown
+      summary: Get the SoftJunk clone CLI instructions.
+      responses:
+        "200":
+          description: Markdown instructions for running the local SoftJunk Lead Kit CLI after clone or through npm exec from GitHub.
+          content:
+            text/markdown:
+              schema:
+                type: string
+  /bin/softjunk-lead-kit.js:
+    get:
+      operationId: getSoftjunkLeadKitCliSource
+      summary: Get the dependency-free SoftJunk Lead Kit CLI source.
+      responses:
+        "200":
+          description: Node.js CLI source exposing doctor, rescue, send, kit, and pay commands with JSON output and the PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/javascript:
+              schema:
+                type: string  /agent-close.html:
     get:
       operationId: openAgentCloseContract
       summary: Open the SoftJunk agent close contract.
