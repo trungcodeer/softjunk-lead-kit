@@ -22,6 +22,33 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 NPM Publish-Ready Funding Metadata Evidence
+
+Public distribution:
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118`.
+- Live package metadata: `https://trungcodeer.github.io/softjunk-lead-kit/package.json`.
+- Live npm funding contract: `https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json`.
+
+Commit:
+- Product metadata commit: `c5a161d9186a967c216ddcad039979613c4f9000`.
+
+Validation:
+- `npm whoami` returned `ENEEDAUTH`; real npm publish is not available without npm login.
+- `npm view softjunk-lead-kit name version homepage funding repository --json` returned `E404`, indicating the public registry did not have this package name.
+- `npm pkg get name version private homepage funding.url publishConfig.access` returned `version=0.2.1`, `private=false`, `homepage=https://paypal.me/softjunk/5USD`, `funding.url=https://paypal.me/softjunk/5USD`, and `publishConfig.access=public`.
+- `npm fund` printed `https://paypal.me/softjunk/5USD` for `softjunk-lead-kit@0.2.1`.
+- `npm pack --dry-run --json` built `softjunk-lead-kit-0.2.1.tgz`.
+- `npm publish --dry-run --json` reached public publish dry-run and reported that real publish still requires npm login.
+- GitHub Pages latest build returned `built` for commit `c5a161d9186a967c216ddcad039979613c4f9000`.
+- Live Pages and raw GitHub validation for `package.json` and `npm-funding.json` found `https://paypal.me/softjunk/5USD`, version `0.2.1`, `private=false` in package metadata, and `publish_ready=true` in the funding contract.
+- Release `v2.29.118` validation returned `isDraft=false`, `isPrerelease=false`, `has_paypal=true`, `has_publish_ready=true`, and `has_gate=true`.
+- IndexNow POST submitted three updated Pages URLs and returned `200`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Product README First-View Direct Checkout Evidence
 
 Public distribution:

@@ -6402,3 +6402,51 @@ DriftCheckDraft:
 - Compatibility boundary: product README, GitHub Release feed, GitHub links, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; updated README first-view copy and release notice only.
 - Decision: continue.
+
+## 2026-05-27 NPM Publish-Ready Funding Metadata Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Turn the package metadata from GitHub-package-only funding into a public npm publish-ready funding route so `npm fund`, npm package pages, and package-aware buyer-agents can surface the exact 5 USD PayPal URL.
+
+Completed todos:
+- Confirmed product repo was clean at `01cfe6cafc838c554914e3ffcd762f4b12cf7746`.
+- Checked npm auth; `npm whoami` returned `ENEEDAUTH`, so real npm publish cannot be performed from this machine.
+- Checked npm registry; `npm view softjunk-lead-kit` returned `E404`, so the package name was not found on the public registry.
+- Changed `package.json` to version `0.2.1`, `private=false`, direct PayPal homepage, existing PayPal funding URL, and `publishConfig.access=public`.
+- Updated `npm-funding.json` with package version `0.2.1`, `publish_ready=true`, public-package wording, and direct PayPal homepage.
+- Ran `npm pkg fix` so npm publish no longer auto-corrects bin metadata.
+- Validated `package.json` and `npm-funding.json` parse as JSON.
+- Validated `npm pkg get` returns `private=false`, `homepage=https://paypal.me/softjunk/5USD`, `funding.url=https://paypal.me/softjunk/5USD`, and `publishConfig.access=public`.
+- Validated `npm fund` prints `https://paypal.me/softjunk/5USD` for `softjunk-lead-kit@0.2.1`.
+- Validated `npm pack --dry-run --json` builds `softjunk-lead-kit-0.2.1.tgz`.
+- Validated `npm publish --dry-run --json` reaches public publish dry-run, but still notes real publish requires npm login.
+- Committed and pushed product commit `c5a161d9186a967c216ddcad039979613c4f9000`.
+- Created product release `v2.29.118`.
+- Waited for GitHub Pages to build commit `c5a161d9186a967c216ddcad039979613c4f9000`.
+- Verified live Pages and raw GitHub `package.json`/`npm-funding.json` expose version `0.2.1`, direct PayPal URL, `private=false`, and `publish_ready=true` where applicable.
+- Submitted three updated Pages URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118.
+- Live package metadata: https://trungcodeer.github.io/softjunk-lead-kit/package.json.
+- Live npm funding contract: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish is blocked by missing npm login on this machine.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it prepares a public npm funding/payment metadata route and validates package publish readiness without spam, deception, private data, or fake payment claims.
+- Compatibility boundary: package metadata, npm dry-run, GitHub Pages metadata, GitHub Release feed, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added npm publish-ready metadata, but real npm publish still requires npm auth.
+- Decision: continue.
