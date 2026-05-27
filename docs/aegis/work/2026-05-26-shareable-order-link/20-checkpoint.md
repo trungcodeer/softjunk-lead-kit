@@ -7490,3 +7490,56 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; AI Deal Desk remains a checkout/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Fix One Quiet Lead No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the one-lead rescue buyer surface so assistants, VAs, crawlers, and buyer-agents can generate a quiet-lead follow-up, copy a PayPal note, verify the executable no-clone checkout route, inspect verified release notes, compare SHA-256, open the PayPal URL, and respect the payment-proof gate.
+
+Completed todos:
+- Audited `fix-one-quiet-lead.html`, `fix-one-quiet-lead.json`, and `fix-one-quiet-lead.txt`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated `fix-one-quiet-lead.html` with no-clone proof in metadata, JSON-LD, navigation, hero actions, visible proof panel, generated PayPal-note output, copyable proof text, and payment-proof boundary language.
+- Updated `fix-one-quiet-lead.json` to schema version `softjunk-fix-one-quiet-lead-v2` with top-level no-clone checkout proof fields, expected checkout details, and copyable buyer-agent instruction.
+- Updated `fix-one-quiet-lead.txt` with no-clone checkout proof, verified release URL, release tarball URL, SHA-256, expected checkout, and expanded buyer-agent instruction.
+- Validated `fix-one-quiet-lead.json` parses locally.
+- Validated all three changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `fix-one-quiet-lead.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live `fix-one-quiet-lead.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `3dadab53eba3ece5055eefc2b21fa693a0db0c3c`.
+- Refreshed public Fix One Quiet Lead Gist `7c25ec12b4c0f58506efe66bfbef6759` for `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`.
+- Created public product release `v2.29.137`.
+- Confirmed GitHub Pages latest build was `built` for commit `3dadab53eba3ece5055eefc2b21fa693a0db0c3c`.
+- Validated live Pages `fix-one-quiet-lead.html`, `fix-one-quiet-lead.json`, and `fix-one-quiet-lead.txt` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub and raw Gist copies of `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt` include the same required markers; JSON parsed.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `3dadab53eba3ece5055eefc2b21fa693a0db0c3c`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.137.
+- Live Fix One Quiet Lead page: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.
+- Live Fix One Quiet Lead JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json.
+- Live Fix One Quiet Lead text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt.
+- Fix One Quiet Lead Gist: https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining public PayPal surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a concrete one-lead rescue route that helps a buyer-agent decide, verify, and pay without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; Fix One Quiet Lead remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.

@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Fix One Quiet Lead No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `fix-one-quiet-lead.html`
+- `fix-one-quiet-lead.json`
+- `fix-one-quiet-lead.txt`
+- Public Gist `7c25ec12b4c0f58506efe66bfbef6759`: `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`
+
+Published commit and release:
+- Product commit: `3dadab53eba3ece5055eefc2b21fa693a0db0c3c`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.137.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `fix-one-quiet-lead.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `fix-one-quiet-lead.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- fix-one-quiet-lead.html fix-one-quiet-lead.json fix-one-quiet-lead.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `fix-one-quiet-lead.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`.
+- `gh gist edit` refreshed public Gist `7c25ec12b4c0f58506efe66bfbef6759` from local `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`.
+- GitHub Pages latest build API returned `built` for commit `3dadab53eba3ece5055eefc2b21fa693a0db0c3c`.
+- Live Pages validation returned HTTP 200 for `fix-one-quiet-lead.html`, `fix-one-quiet-lead.json`, and `fix-one-quiet-lead.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`; both included the same required markers and the JSON parsed.
+- Raw Gist validation returned HTTP 200 for `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`; both included the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `fix-one-quiet-lead.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`.
+- Product release `v2.29.137` is public, non-draft, non-prerelease, targets `3dadab53eba3ece5055eefc2b21fa693a0db0c3c`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `fix-one-quiet-lead.html`, `fix-one-quiet-lead.json`, and `fix-one-quiet-lead.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 AI Deal Desk No-Clone Checkout Proof Evidence
 
 Artifacts updated:
