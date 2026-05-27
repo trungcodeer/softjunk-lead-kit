@@ -4524,3 +4524,21 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: checkout pages and JSON/Gist mirrors now expose PayPal $5, BuyAction, verification gate, and one-rewrite signal.
+## 2026-05-27 GitHub-facing one-rewrite CTA slice
+
+TodoCheckpointDraft:
+- Completed: added PayPal $5, BuyAction manifest, seller-side verification gate, and one rewrite included CTA to product README.md, BUY_NOW.md, PAYPAL_NOTE_FIRST.md, and SPONSOR_BUTTON_BUY.md.
+- Completed: added one_rewrite_included, uyer_risk_reversal, and paypal_buy_action_manifest_url to sponsor-button-buy.json.
+- Completed: added the same GitHub-first CTA to root README and profile README.
+- Completed: updated product/root/profile repo descriptions and topic sets to include one-rewrite, uyaction, and isk-reversal.
+- Completed: updated Buy Now and Sponsor Gist mirrors and created releases 2.29.75, 2.29.76, oot-readme-one-rewrite-v1, and profile-one-rewrite-cta-v1.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550349139
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, it improves the first GitHub-facing path to the exact  PayPal payment.
+- Compatibility boundary: stayed within owned GitHub repositories, Gists, metadata, and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: README/docs/Gist/metadata now expose PayPal $5, BuyAction manifest, verification gate, and one-rewrite trust signal.

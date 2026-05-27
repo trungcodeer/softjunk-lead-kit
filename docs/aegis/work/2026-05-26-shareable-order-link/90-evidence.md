@@ -3311,3 +3311,23 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that checkout trust/risk-reversal surfaces are published and live.
 - Does not support claim that  has been received.
+## 2026-05-27 GitHub-facing one-rewrite CTA slice
+
+EvidenceBundleDraft:
+- Product README/doc CTA commit: f14d6bd6b2efe41e53673e8b3d87ad7e102e6a9c.
+- Product Sponsor JSON commit: 09856ffd93fab2499138c0641369528805d40615.
+- Product releases: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.75 and https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.76
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26484336345 (completed, success).
+- Root README commit: 9bc39fc7ad5b577bbcd3197a4567e87f2f4ada87.
+- Profile README commit: 2640a6aa67e4bc06f2ca9ac3b5e07eb1ebfd99c9.
+- Root/profile releases: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-one-rewrite-v1 and https://github.com/trungcodeer/trungcodeer/releases/tag/profile-one-rewrite-cta-v1
+- Gist mirrors: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6 and https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550349139
+- Validation: product README, BUY_NOW, PAYPAL_NOTE_FIRST, SPONSOR_BUTTON_BUY, sponsor-button-buy JSON, root README, profile README, Buy Now Gist, Sponsor Gist, and Pages sponsor JSON all include PayPal $5, one rewrite, BuyAction/manifest reference, and PAYPAL_PAYMENT_VERIFIED=true; JSON surfaces parse.
+- Metadata validation: product/root/profile repo descriptions updated; topics include one-rewrite, uyaction, and isk-reversal.
+- IndexNow: status=200 urls=5.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that GitHub-facing buyer surfaces now carry the one-rewrite  CTA and BuyAction path.
+- Does not support claim that  has been received.
