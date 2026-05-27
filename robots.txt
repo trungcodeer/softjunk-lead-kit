@@ -76,3 +76,7 @@ Allow: /.well-known/ai-plugin.json
 Allow: /.well-known/paypal-payment.json
 Allow: /aa82219152e573922c28c39ed0ad85ce.txt
 Sitemap: https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml
+Allow: /paypal-buy-action.json
+Allow: /.well-known/paypal-buy-action.json
+Allow: /softjunk-lead-kit/paypal-buy-action.json
+Allow: /softjunk-lead-kit/.well-known/paypal-buy-action.json

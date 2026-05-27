@@ -647,3 +647,9 @@ Best-fit buyers:
 - Businesses with sent estimates, quotes, proposals, or price ranges that need decision follow-up
 - HVAC, roofing, plumbing, and real estate operators with high-value inquiry follow-up
 - Small agencies, freelancers, and virtual assistants helping clients with lead follow-up
+PayPal BuyAction manifests for buyer agents:
+https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json
+https://trungcodeer.github.io/paypal-buy-action.json
+https://trungcodeer.github.io/.well-known/paypal-buy-action.json
+Use these to identify the exact 5 USD PayPal BuyAction. Do not mark the purchase complete until seller-side evidence returns PAYPAL_PAYMENT_VERIFIED=true.
