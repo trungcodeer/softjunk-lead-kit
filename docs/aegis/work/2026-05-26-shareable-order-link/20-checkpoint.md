@@ -6247,3 +6247,41 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub issue bodies, GitHub Releases, GitHub Pages route links, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; updated pinned issue body copy only.
 - Decision: continue.
+
+## 2026-05-27 Owned Repo Website Direct Checkout Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Remove one more click from owned GitHub entry points by making every related repository Website metadata point directly to the exact 5 USD PayPal checkout.
+
+Completed todos:
+- Confirmed repo was clean at `ebbb4d32e1cd8c0f38fe1509c7cd879462dbe0e4`.
+- Audited GitHub repo metadata for `softjunk-lead-kit`, `trungcodeer.github.io`, `trungcodeer`, and `quiet-lead-follow-up`.
+- Found `softjunk-lead-kit` already direct, while `trungcodeer.github.io`, `trungcodeer`, and `quiet-lead-follow-up` still pointed to intermediate Pages routes.
+- Updated the Website metadata for `trungcodeer.github.io`, `trungcodeer`, and `quiet-lead-follow-up` to `https://paypal.me/softjunk/5USD`.
+- Verified all four owned repo Website metadata values now point to `https://paypal.me/softjunk/5USD`.
+- Verified `https://paypal.me/softjunk/5USD` redirects to PayPal and returns HTTP 200.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Product repo: https://github.com/trungcodeer/softjunk-lead-kit.
+- Root repo: https://github.com/trungcodeer/trungcodeer.github.io.
+- Profile repo: https://github.com/trungcodeer/trungcodeer.
+- Quiet repo: https://github.com/trungcodeer/quiet-lead-follow-up.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it routes GitHub visitors and buyer-agents from owned repo metadata directly to checkout without unsolicited outreach, scraped lists, private data, or fake payment claims.
+- Compatibility boundary: GitHub repository metadata, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; updated repo Website metadata only.
+- Decision: continue.

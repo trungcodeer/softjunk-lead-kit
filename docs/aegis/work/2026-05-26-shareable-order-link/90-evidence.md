@@ -22,6 +22,23 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Owned Repo Website Direct Checkout Evidence
+
+Public metadata updated:
+- `trungcodeer/softjunk-lead-kit` Website: `https://paypal.me/softjunk/5USD`.
+- `trungcodeer/trungcodeer.github.io` Website: `https://paypal.me/softjunk/5USD`.
+- `trungcodeer/trungcodeer` Website: `https://paypal.me/softjunk/5USD`.
+- `trungcodeer/quiet-lead-follow-up` Website: `https://paypal.me/softjunk/5USD`.
+
+Validation:
+- `gh repo view` over all four repositories returned `homepageUrl=https://paypal.me/softjunk/5USD`.
+- `curl.exe -I -L --max-time 30 https://paypal.me/softjunk/5USD` returned two 301 redirects and a final `HTTP/1.1 200 OK` for `https://www.paypal.com/paypalme/softjunk/5USD`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Pinned Issue Body Direct Checkout Evidence
 
 Public distribution:
