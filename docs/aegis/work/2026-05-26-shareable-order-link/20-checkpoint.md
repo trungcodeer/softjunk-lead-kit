@@ -4849,3 +4849,33 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 paypal url health evidence slice
+
+TodoCheckpointDraft:
+- Completed: checked https://paypal.me/softjunk/5USD with curl -I -L; it exited 0 and resolved through status chain 301 -> 301 -> 200 to https://www.paypal.com/paypalme/softjunk/5USD.
+- Completed: published product and root paypal-url-health.json files with URL health data and explicit not-payment-proof rule.
+- Completed: linked health JSON from product/root llms.txt, obots.txt, and sitemap.xml.
+- Completed: validated live health JSON and discovery links.
+- Completed: published releases v2.29.87 and root-paypal-url-health-v1.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551150169.
+- Active slice: continue legitimate owned-channel conversion/trust improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Product health JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json
+- Root health JSON: https://trungcodeer.github.io/paypal-url-health.json
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.87
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-paypal-url-health-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551150169
+- PayPal URL health: curl exit 0; status chain 301 -> 301 -> 200; final URL https://www.paypal.com/paypalme/softjunk/5USD.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by adding machine-readable trust evidence for the payment URL.
+- Compatibility: health JSON explicitly says URL health is not payment proof and keeps PAYPAL_PAYMENT_VERIFIED=true as completion/fulfillment gate.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
