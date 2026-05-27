@@ -3811,3 +3811,30 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Quiet-Lead Exact PayPal Handoff Evidence
+
+Artifacts added:
+- `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html`.
+- `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.json`.
+
+Artifacts wired:
+- Quiet microsite `README.md`, `llms.txt`, `robots.txt`, `sitemap.xml`, and `buyer-route.json`.
+- Root `llms.txt`, `robots.txt`, and `sitemap.xml`.
+- Product `buyer-index.json` and `llms.txt`.
+
+Validation:
+- Quiet API validation parsed `pay-5-usd-paypal.json`, `buyer-route.json`, and `sitemap.xml`.
+- Quiet API HTML marker validation confirmed `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, `aria-live="polite"`, `button:focus-visible`, `pay-5-usd-paypal.json`, `One-lead custom rescue`, and `Lead Follow-Up Kit`.
+- Inline JavaScript passed `node --check`.
+- Root API validation confirmed the quiet handoff URLs in `llms.txt`, `robots.txt`, and `sitemap.xml`.
+- Product API validation parsed `buyer-index.json` and confirmed quiet handoff fields plus product `llms.txt` markers.
+- GitHub Pages latest build API returned `built` for quiet commit `a9cd9ce47fa0cc8b5becb15f93013cbfd712ef43`, root commit `e5532fc739ec1a86f1d564c996b2f6e809be0407`, and product commit `5d8b4325da4691c101c75e409530cb9a378354eb`.
+- Live `curl.exe` validation passed for quiet handoff HTML/JSON, buyer-route JSON, quiet `llms.txt`, `robots.txt`, `sitemap.xml`, root `llms.txt`/robots/sitemap, product `buyer-index.json`, and product `llms.txt`.
+- Releases created: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-paypal-handoff-v1`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-quiet-paypal-handoff-v1`, and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.94`.
+- IndexNow submission for 9 owned URLs returned `HTTP/1.1 200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
