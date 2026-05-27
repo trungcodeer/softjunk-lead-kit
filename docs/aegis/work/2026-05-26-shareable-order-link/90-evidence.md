@@ -22,6 +22,34 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Cross-Repo README First-View Direct Checkout Evidence
+
+Public distribution:
+- Root README: `https://github.com/trungcodeer/trungcodeer.github.io/blob/main/README.md`.
+- Profile README: `https://github.com/trungcodeer/trungcodeer/blob/main/README.md`.
+- Quiet README: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/README.md`.
+
+Commits:
+- Root README commit: `76508a039d141b2638da2688dec66ed16ecc6dba`.
+- Profile README commit: `0ab2e8a6f7b21fe21424f858b837116856bcf55a`.
+- Quiet README commit: `223a29bef56443eb5fae376a228cf99c5b46d074`.
+
+Validation:
+- Root README validation returned `has_direct=true`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+- Profile README validation returned `has_direct=true`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+- Quiet README validation returned `has_direct=true`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+- All three worktrees were clean after push.
+
+Accessibility and privacy guardrails:
+- The edited README sections use plain Markdown headings, ordered lists, and explicit link text.
+- The sections keep seller-side verification as the fulfillment gate.
+- The sections preserve private-data warnings or route only to non-sensitive order details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Owned Repo Website Direct Checkout Evidence
 
 Public metadata updated:

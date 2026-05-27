@@ -6285,3 +6285,45 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repository metadata, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; updated repo Website metadata only.
 - Decision: continue.
+
+## 2026-05-27 Cross-Repo README First-View Direct Checkout Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Put direct PayPal checkout in the first visible README section of the root, profile, and quiet-lead owned repos so GitHub visitors and buyer-agents do not need to traverse intermediate routes before seeing the 5 USD payment action.
+
+Completed todos:
+- Confirmed the product repo was clean at `1fc978d2aaa0dd2315ed25a6db88600160ff4636`.
+- Read the first 80 lines of the root, profile, and quiet-lead READMEs.
+- Found root README opened with the root BuyAction manifest before PayPal, profile README opened with the one-buyer share route before PayPal, and quiet README opened with templates/free tools before the paid path.
+- Updated root README so `Direct PayPal checkout` is the first buyer section and PayPal is step 1.
+- Updated profile README so `Direct PayPal checkout` is the first buyer section and PayPal is step 1.
+- Updated quiet README so `Direct PayPal checkout` appears before the free template section and PayPal is step 1.
+- Validated all three READMEs include direct checkout heading, `https://paypal.me/softjunk/5USD`, release `v2.29.116`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Committed and pushed root commit `76508a039d141b2638da2688dec66ed16ecc6dba`.
+- Committed and pushed profile commit `0ab2e8a6f7b21fe21424f858b837116856bcf55a`.
+- Committed and pushed quiet commit `223a29bef56443eb5fae376a228cf99c5b46d074`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Root README: https://github.com/trungcodeer/trungcodeer.github.io/blob/main/README.md.
+- Profile README: https://github.com/trungcodeer/trungcodeer/blob/main/README.md.
+- Quiet README: https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/README.md.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Direct checkout release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the payment action first-view in owned GitHub READMEs without unsolicited outreach, scraped lists, private data, or fake payment claims.
+- Compatibility boundary: GitHub README copy, GitHub links, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; updated README first-view copy only.
+- Decision: continue.
