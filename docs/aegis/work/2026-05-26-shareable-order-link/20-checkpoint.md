@@ -5424,3 +5424,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo/package, GitHub Pages, public JSON/text/YAML, public issue/order forms, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added npm/GitHub package execution as an owned clone/install route.
 - Decision: continue.
+
+## 2026-05-27 Run-This-First Clone Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Strengthen the clone-to-cash path by giving repo cloners one obvious first command, value-first try commands, exact pay commands, and a privacy-safe post-payment order form.
+
+Completed todos:
+- Reran PayPal verifier at slice start; it still returned missing credentials.
+- Re-read checkpoint/evidence and audited clone/install surfaces.
+- Found missing run-first artifacts and a README code-fence/control-character issue from earlier PowerShell markdown generation.
+- Added `RUN_THIS_FIRST.md`, `TRY_NOW.md`, `run-this-first.json`, and `try-now.json`.
+- Added package scripts `npm start`, `npm run try:rescue`, `npm run try:send`, `npm run pay:custom`, and `npm run pay:kit`.
+- Added `.github/ISSUE_TEMPLATE/clone-cli-order.yml` and linked it from issue template config.
+- Fixed README clone CLI fences and wired the run-first route into AGENTS, clone-cli manifest, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+- Validated API JSON/JSONL, no README control char, package install/run scripts, npm exec, Pages builds, live URLs, releases, and IndexNow.
+- Created releases `v2.29.99`, `root-run-first-clone-route-v1`, and `quiet-run-first-clone-route-v1`.
+- Reran PayPal verifier after release/indexing.
+
+Evidence refs:
+- Run-first guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RUN_THIS_FIRST.md.
+- Run-first JSON: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json.
+- Try-now guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/TRY_NOW.md.
+- Try-now JSON: https://trungcodeer.github.io/softjunk-lead-kit/try-now.json.
+- Clone CLI paid order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.99, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-run-first-clone-route-v1, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-run-first-clone-route-v1.
+- Public issue evidence comment records validation, IndexNow, and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, especially surfaces that turn clone/package execution into buyer action, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the observed clone path more likely to produce a real buyer action while preserving privacy and the PayPal verification gate.
+- Compatibility boundary: GitHub repo/package, GitHub Pages, public JSON/text/YAML, public issue/order forms, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added run-first npm script route and clone CLI order form on owned GitHub surfaces.
+- Decision: continue.
