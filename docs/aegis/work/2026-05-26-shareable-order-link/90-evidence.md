@@ -5100,3 +5100,32 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Checkout Handoff No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `checkout.html`
+- `checkout.json`
+- `checkout.txt`
+
+Published commit and release:
+- Product commit: `68912749b83ff71d9ba0cc65ffa22bf45ab3040f`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.128.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `checkout.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `checkout.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- checkout.html checkout.json checkout.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for the local `checkout.html` included the no-clone command, PayPal URL, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `68912749b83ff71d9ba0cc65ffa22bf45ab3040f`.
+- Product release `v2.29.128` is public, non-draft, non-prerelease, targets `68912749b83ff71d9ba0cc65ffa22bf45ab3040f`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Initial batch live validation timed out on a Pages request, then individual live validation returned HTTP 200 for `checkout.html`, `checkout.json`, and `checkout.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Edge headless DOM dump for the live `checkout.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `checkout.html`, `checkout.json`, and `checkout.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
