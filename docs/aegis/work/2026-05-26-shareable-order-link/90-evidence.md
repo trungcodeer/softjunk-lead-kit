@@ -3903,6 +3903,52 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Dental Buyer Send Route Evidence
+
+Artifacts added:
+- `dental-buyer-send.html`.
+- `dental-buyer-send.json`.
+- `dental-buyer-send.txt`.
+
+Artifacts wired:
+- README and AGENTS dental new-patient fast paths.
+- `agents-checkout.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `llms.txt`, `robots.txt`, and `sitemap.xml`.
+- Public dental buyer issue #12 after issue creation.
+
+Public routes:
+- Dental buyer send page: `https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html`.
+- Dental buyer send JSON: `https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json`.
+- Dental buyer send text: `https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt`.
+- Public dental buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/12`.
+
+Commits and releases:
+- Initial dental route commit: `ae393c8ef1fd352a227c2e3268e4d716e76b1b37`.
+- Initial dental route release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.110`.
+- Issue wiring commit: `49d86b10d9cc0c9fdffcdd94fb87a431a35062da`.
+- Issue wiring release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.111`.
+
+Validation:
+- `ConvertFrom-Json` parsed `dental-buyer-send.json`, `agents-checkout.json`, `buyer-index.json`, and `.well-known/ai-plugin.json`.
+- Every line of `agent-buyer-catalog.jsonl` parsed as JSON.
+- XML parse confirmed `sitemap.xml` includes the dental buyer send routes.
+- Python/PyYAML parsed `.well-known/openapi.yaml` and confirmed `/dental-buyer-send.html`, `/dental-buyer-send.json`, and `/dental-buyer-send.txt`.
+- Node parsed the non-JSON-LD inline script in `dental-buyer-send.html`.
+- `git diff --check` returned only line-ending warnings.
+- Playwright/Edge desktop and mobile checks passed locally and live.
+- Live page title was `Send One Dental Buyer The $5 Rescue | SoftJunk`.
+- Live H1 was `Send one dental buyer the $5 new-patient lead rescue.`
+- Live checks confirmed 3 PayPal links, JSON link present, no horizontal overflow, mailto draft present, PayPal note contains Dental, and copy status updates to `Copied. Send only to one known relevant dental buyer.`
+- Live HTTP marker validation returned 200 for `dental-buyer-send.html`, `.json`, `.txt`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `llms.txt`, `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `sitemap.xml`, and `robots.txt`.
+- GitHub issue #12 validation confirmed the title, dental route, exact PayPal URL, verification gate, and patient-data privacy rule.
+
+Distribution:
+- IndexNow POST submitted 10 owned URLs and returned `200`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Profile AI Discovery Contract Evidence
 
 Artifacts added/updated in `trungcodeer/trungcodeer`:

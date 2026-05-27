@@ -5863,3 +5863,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added an HVAC-specific buyer route and public issue as owned discovery surfaces.
 - Decision: continue.
+
+## 2026-05-27 Dental Buyer Send Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add a high-intent dental new-patient/missed-call one-buyer send packet that gives copy-ready DM, email, PayPal note, preview route, one-buyer share route, exact 5 USD PayPal checkout, and verification gate while forbidding patient/health/insurance data.
+
+Completed todos:
+- Added `dental-buyer-send.html`, `dental-buyer-send.json`, and `dental-buyer-send.txt`.
+- Wired the dental route into README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI, ai-plugin, llms, robots, and sitemap.
+- Validated JSON, JSONL, XML, OpenAPI YAML, markers, inline script parsing, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `ae393c8ef1fd352a227c2e3268e4d716e76b1b37` and release `v2.29.110`.
+- Created owned public dental buyer issue #12.
+- Wired issue #12 back into dental JSON/text, README, AGENTS, llms, agents-checkout, buyer-index, and agent-buyer-catalog.
+- Pushed commit `49d86b10d9cc0c9fdffcdd94fb87a431a35062da` and release `v2.29.111`.
+- Validated live GitHub Pages HTML/JSON/TXT and discovery surfaces; all returned HTTP 200 and contained dental route/payment/gate/privacy markers.
+- Submitted 10 dental route and discovery URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Dental buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html.
+- Dental buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json.
+- Dental buyer send text: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt.
+- Public dental buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/12.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.110 and https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.111.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a legitimate one-buyer send packet and owned public issue for a high-intent dental new-patient lead recovery case without spam, scraping, deception, unauthorized outreach, private patient data, or fake payment claims.
+- Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added a dental-specific buyer route and public issue as owned discovery surfaces.
+- Decision: continue.
