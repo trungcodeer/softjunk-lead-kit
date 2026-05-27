@@ -64,11 +64,13 @@ Use this before the generic route when the buyer is an HVAC company with one mis
    https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
 2. Use the JSON packet when an agent needs copy-ready DM, email, PayPal note, and fit rules:
    https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
-3. Show the free HVAC preview:
+3. Open the public HVAC buyer issue:
+   https://github.com/trungcodeer/softjunk-lead-kit/issues/11
+4. Show the free HVAC preview:
    https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-4. Send the exact PayPal URL only after fit is confirmed:
+5. Send the exact PayPal URL only after fit is confirmed:
    https://paypal.me/softjunk/5USD
-5. After payment, send the one-lead order form:
+6. After payment, send the one-lead order form:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not ask the buyer to post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Do not claim paid, started, delivered, fulfilled, complete, or stop unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.

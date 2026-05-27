@@ -115,9 +115,10 @@ Use this first when the buyer is an HVAC company with one missed no-cool call, n
 1. Send one fitting buyer this copy-ready packet: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
 2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
-4. Open the free HVAC preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-5. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-6. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+4. Public HVAC buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/11
+5. Open the free HVAC preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -279,6 +280,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
 
 HVAC buyer send text:
 https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
+
+Public HVAC buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 
 Roofing estimate rescue JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
