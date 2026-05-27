@@ -10,6 +10,12 @@ const ROOFING_ORDER_FORM_URL =
 const ROOFING_BUYER_ISSUE_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/issues/7";
 const ROOT_RESCUE_URL = "https://trungcodeer.github.io/rescue/";
+const ONE_BUYER_SHARE_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html";
+const ONE_BUYER_SHARE_JSON =
+  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json";
+const ONE_BUYER_SHARE_TEXT =
+  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt";
 const CHECKOUT_URL =
   "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title";
 const ROOFING_GENERATOR_URL =
@@ -336,6 +342,9 @@ function buildRoofingEstimateSequence(args) {
 function checkoutRoutes() {
   return {
     root_rescue_url: ROOT_RESCUE_URL,
+    one_buyer_share_url: ONE_BUYER_SHARE_URL,
+    one_buyer_share_json_url: ONE_BUYER_SHARE_JSON,
+    one_buyer_share_text_url: ONE_BUYER_SHARE_TEXT,
     checkout_url: CHECKOUT_URL,
     roofing_estimate_generator_url: ROOFING_GENERATOR_URL,
     roofing_estimate_generator_json_url: ROOFING_GENERATOR_JSON_URL,

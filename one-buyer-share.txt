@@ -1,0 +1,31 @@
+SoftJunk One Buyer Share Route
+
+Page:
+https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html
+
+JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json
+
+Use when:
+One known relevant buyer has one real quiet lead problem and one recovered reply, quote, appointment, or job is worth more than 5 USD.
+
+Share actions:
+- Native share sheet
+- Email
+- SMS
+- WhatsApp
+- Copy buyer message
+- Copy PayPal note
+- Copy share URL
+
+Pay exactly 5 USD:
+https://paypal.me/softjunk/5USD
+
+After payment, submit non-sensitive order details:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+Privacy rule:
+Do not enter or send customer names, phone numbers, email addresses, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data.
+
+Verification gate:
+Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.

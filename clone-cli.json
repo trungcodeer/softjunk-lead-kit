@@ -73,5 +73,8 @@
     "npm_run_fund_kit_command":  "npm run fund:kit",
     "mcp_npm_funding_tool_name":  "get_softjunk_npm_funding_route",
     "mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
-    "well_known_mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json"
+    "well_known_mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
+    "one_buyer_share_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
+    "one_buyer_share_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
+    "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt"
 }

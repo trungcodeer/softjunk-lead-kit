@@ -107,20 +107,21 @@ Start here if you have one real quiet lead:
 7. MCP checkout server: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
 8. MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 9. Send-to-buyer generator packet: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
-10. Roofing buyer send packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
-11. Roofing estimate rescue packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
-12. Roofing estimate follow-up generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
-13. Public roofing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
-14. Public roofing buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
-15. Roofing estimate rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
-16. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-17. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-18. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-19. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-20. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-21. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-22. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-23. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+10. One-buyer share action: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html
+11. Roofing buyer send packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
+12. Roofing estimate rescue packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+13. Roofing estimate follow-up generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+14. Public roofing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+15. Public roofing buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+16. Roofing estimate rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
+17. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+18. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+19. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+20. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+21. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+22. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+23. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+24. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5

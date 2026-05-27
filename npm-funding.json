@@ -93,5 +93,28 @@
                      "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
                      "well_known_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
                      "purpose":  "Return this npm funding route through an MCP tools/call response."
-                 }
+                 },
+    "one_buyer_share_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
+    "one_buyer_share_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
+    "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
+    "one_buyer_share_route":  {
+                                  "name":  "SoftJunk One Buyer Share Route",
+                                  "page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
+                                  "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
+                                  "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
+                                  "payment_url":  "https://paypal.me/softjunk/5USD",
+                                  "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+                                  "share_actions":  [
+                                                        "native share",
+                                                        "email",
+                                                        "SMS",
+                                                        "WhatsApp",
+                                                        "copy buyer message",
+                                                        "copy PayPal note",
+                                                        "copy share URL"
+                                                    ],
+                                  "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                  "use_when":  "One known relevant buyer has one real quiet lead problem and should receive a user-initiated share action, not a scraped-list or cold-spam batch.",
+                                  "rule":  "Payment route only; do not claim paid or fulfilled unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+                              }
 }

@@ -1,0 +1,54 @@
+{
+  "schema_version": "softjunk-one-buyer-share-v1",
+  "updated": "2026-05-27",
+  "name": "SoftJunk One Buyer Share Route",
+  "purpose": "A browser-only share action surface for sending one relevant buyer a safe SoftJunk 5 USD one-lead rescue handoff through email, SMS, WhatsApp, native share, or copy/paste without scraping, spam, private data, or false payment claims.",
+  "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
+  "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "share_actions": [
+    "native share sheet",
+    "mailto link",
+    "sms link",
+    "WhatsApp share link",
+    "copy buyer message",
+    "copy PayPal note",
+    "copy share URL"
+  ],
+  "inputs": [
+    "buyer type",
+    "lead problem",
+    "service or offer",
+    "why 5 USD is reasonable",
+    "tone",
+    "one known relevant buyer confirmation"
+  ],
+  "outputs": [
+    "buyer-safe message",
+    "PayPal note",
+    "prefilled share URL",
+    "PayPal checkout URL",
+    "post-payment order form",
+    "verification gate"
+  ],
+  "fit_rules": [
+    "Use only when there is one known relevant buyer with one real quiet lead problem.",
+    "Use when one recovered conversation, quote, appointment, or job is worth more than 5 USD.",
+    "Use placeholders and generic business context only."
+  ],
+  "do_not_use_when": [
+    "The recipient is from a scraped list or cold spam batch.",
+    "The buyer asks for spam, deception, fake reviews, scraping, or unauthorized outreach.",
+    "The message would include customer names, phone numbers, emails, addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data.",
+    "The buyer expects fulfillment before seller-side PayPal verification."
+  ],
+  "privacy_rule": "The browser-side generator does not submit data. Prefilled share links place field values in the URL, so only non-sensitive context should be used. Share actions stay disabled until the sender confirms this is one known relevant buyer and no private identifier is detected.",
+  "verification_gate": "This route is a payment path, not payment proof. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+  "copyable_buyer_message_template": "If one [lead problem] is sitting quiet and [value reason], this is the smallest useful test I found. SoftJunk builds one practical follow-up rescue for $5. Pay exactly $5 at https://paypal.me/softjunk/5USD, use the generated PayPal note, then submit non-sensitive context at the order form. Fulfillment starts only after seller-side PayPal verification.",
+  "paypal_note_template": "One Lead Rescue | Business: [buyer type] | Service: [service] | Source: one-buyer-share | Need: [lead problem] | Tone: [tone] | Next: reply"
+}

@@ -8,6 +8,9 @@ servers:
 x-softjunk-fastest-buyer-path:
   root_one_lead_rescue_url: https://trungcodeer.github.io/rescue/
   root_one_lead_rescue_json_url: https://trungcodeer.github.io/rescue.json
+  one_buyer_share_url: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html
+  one_buyer_share_json_url: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json
+  one_buyer_share_text_url: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt
   agent_close_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
   agent_close_json_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
   agent_close_text_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
@@ -417,6 +420,39 @@ paths:
             application/json:
               schema:
                 type: object
+  /one-buyer-share.html:
+    get:
+      operationId: openOneBuyerShareRoute
+      summary: Open the SoftJunk one-buyer share route.
+      responses:
+        "200":
+          description: Buyer-facing page with email, SMS, WhatsApp, native share, copyable buyer message, PayPal note, exact 5 USD PayPal URL, order form, privacy guard, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /one-buyer-share.json:
+    get:
+      operationId: getOneBuyerShareRoute
+      summary: Get the SoftJunk one-buyer share JSON.
+      responses:
+        "200":
+          description: Machine-readable one-buyer share route with fit rules, share actions, payment URL, order form, privacy rule, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /one-buyer-share.txt:
+    get:
+      operationId: getOneBuyerShareText
+      summary: Get the SoftJunk one-buyer share text.
+      responses:
+        "200":
+          description: Plain-text one-buyer share route with share actions, PayPal URL, order form, privacy rule, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /roofing-buyer-send.html:
     get:
       operationId: openRoofingBuyerSendPacket

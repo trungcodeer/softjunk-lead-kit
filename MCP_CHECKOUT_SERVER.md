@@ -40,6 +40,7 @@ The main checkout tool returns:
 
 - PayPal note
 - exact 5 USD payment URL: https://paypal.me/softjunk/5USD
+- one-buyer share route: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html
 - order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 
