@@ -5552,3 +5552,42 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub FUNDING/Sponsor button, GitHub Pages, public JSON/text/YAML, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; refreshed Sponsor/FUNDING route on owned GitHub surfaces.
 - Decision: continue.
+
+## 2026-05-27 NPM/Package Funding Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Make the 5 USD PayPal route discoverable through `package.json` funding metadata, `npm fund`, npm scripts, and machine-readable package manifests for repo cloners, dependency scanners, and coding agents.
+
+Completed todos:
+- Reran PayPal verifier at slice start and after release/indexing; it still returned missing credentials.
+- Added `funding.url`, repository/homepage/bugs/keywords, `npm run fund`, and `npm run fund:kit` to `package.json`.
+- Added `NPM_FUNDING.md` and `npm-funding.json`.
+- Updated CLI doctor output with npm funding fields and package commands.
+- Fixed damaged code fences/control characters in `DEV_AGENT_START.md`, `.github/copilot-instructions.md`, and AGENTS clone CLI instructions.
+- Wired the npm funding route into README, AGENTS, run-first/dev-agent/clone/sponsor manifests, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, quiet llms, devcontainer env, and VS Code tasks.
+- Validated local JSON/JSONL/YAML, control-character checks, npm fund, package install funding, CLI smoke, GitHub package execution, Pages builds, live URLs, releases, and IndexNow.
+- Created releases `v2.29.102`, `root-npm-funding-route-v1`, and `quiet-npm-funding-route-v1`.
+
+Evidence refs:
+- NPM funding JSON: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json.
+- NPM funding guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md.
+- Package metadata: https://trungcodeer.github.io/softjunk-lead-kit/package.json.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.102, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-npm-funding-route-v1, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-npm-funding-route-v1.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553135714.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses package metadata and npm-native discovery to route exact PayPal checkout without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub package metadata, npm fund, GitHub Pages, public JSON/text/YAML, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added npm/package funding route on owned GitHub repo and Pages surfaces.
+- Decision: continue.

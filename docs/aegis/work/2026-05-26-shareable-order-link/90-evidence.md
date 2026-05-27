@@ -3812,6 +3812,37 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 NPM/Package Funding Route Evidence
+
+Artifacts added/updated:
+- `package.json` funding metadata, repository/homepage/bugs/keywords, `npm run fund`, and `npm run fund:kit`.
+- `NPM_FUNDING.md`.
+- `npm-funding.json`.
+- CLI doctor npm funding metadata in `bin/softjunk-lead-kit.js`.
+- Fixed dev-agent/Copilot/AGENTS code-fence/control-character artifacts.
+- Discovery wiring in README, AGENTS, run-first/dev-agent/clone/sponsor manifests, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, quiet llms, devcontainer env, and VS Code tasks.
+
+Validation:
+- Local JSON validation parsed package, npm-funding, run-first, dev-agent, clone-cli, sponsor, agents-checkout, buyer-index, ai-plugin, devcontainer, and VS Code tasks.
+- Agent catalog JSONL parsed 45 records.
+- OpenAPI YAML parsed and included `/npm-funding.json`.
+- Control-character checks passed for dev-agent, Copilot, AGENTS, README, RUN_THIS_FIRST, CLI source, and OpenAPI.
+- `npm fund` in the repo printed `https://paypal.me/softjunk/5USD`.
+- A fresh temp project installed the package and `npm fund --prefix <project>` printed the same PayPal funding URL for `softjunk-lead-kit@0.2.0`.
+- `npm run cli:smoke --silent`, `npm run fund --silent`, and `npm run fund:kit --silent` returned valid JSON handoffs with the exact PayPal URL and verification gate.
+- Raw GitHub validation returned HTTP 200 for package, npm funding JSON, NPM funding markdown, and CLI source with npm/PayPal markers.
+- `npm exec --yes --package github:trungcodeer/softjunk-lead-kit#main -- softjunk-lead-kit doctor --json` returned npm funding fields from GitHub package execution.
+- GitHub Pages latest build API returned `built` for product commit `75f60336d8ebb80a1bb224829d27af0eae27fd17`, root commit `91639352b8437715c9d00698c95cc414a159651c`, and quiet commit `75b085ea6dccdcb9f2ac55708d8c23e748aadad5`.
+- Live validation returned HTTP 200 for npm funding JSON/markdown, package metadata, OpenAPI, ai-plugin, product llms, root llms, and quiet llms, with npm funding and PayPal markers.
+- IndexNow POST submitted 15 owned URLs and returned `200`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.102`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-npm-funding-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-npm-funding-route-v1`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553135714.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-27 Quiet-Lead Exact PayPal Handoff Evidence
 
 Artifacts added:
