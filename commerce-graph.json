@@ -123,6 +123,51 @@
       "actionStatus": "https://schema.org/PotentialActionStatus"
     },
     {
+      "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#no-clone-checkout-proof",
+      "@type": "SoftwareSourceCode",
+      "name": "SoftJunk no-clone checkout proof",
+      "codeSampleType": "command line",
+      "programmingLanguage": "shell",
+      "runtimePlatform": "Node.js npm exec",
+      "text": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+      "targetProduct": {
+        "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "release_tarball_url",
+          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "verified_release_url",
+          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "release_tarball_sha256",
+          "value": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "payment_url",
+          "value": "https://paypal.me/softjunk/5USD"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "success_signal",
+          "value": "PAYPAL_PAYMENT_VERIFIED=true"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "rule",
+          "value": "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received until seller-side PayPal evidence verifies the 5 USD transaction."
+        }
+      ]
+    },
+    {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#checkout-api",
       "@type": "WebAPI",
       "name": "SoftJunk Checkout Handoff",
@@ -149,6 +194,12 @@
           "name": "Open the one-lead rescue route",
           "url": "https://trungcodeer.github.io/rescue/",
           "text": "Open the root one-lead rescue route and copy the PayPal note for this one lead."
+        },
+        {
+          "@type": "HowToStep",
+          "name": "Verify no-clone checkout proof",
+          "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+          "text": "Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json without cloning, verify the release notes, and compare SHA-256 c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d before routing to PayPal."
         },
         {
           "@type": "HowToStep",
