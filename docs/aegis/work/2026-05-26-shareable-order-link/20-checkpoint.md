@@ -5289,3 +5289,52 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo metadata, issue templates, public issues, GitHub Pages, public JSON, PayPal.Me, manual fulfillment gate.
 - New owner/branch/fallback: none.
 - Decision: continue.
+
+## 2026-05-27 Digital Kit Proof And Order Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials or trusted CSV proof are available.
+
+Active slice:
+- Strengthen the $5 digital kit offer by making the proof, sample ZIP, order board, privacy gate, and delivery contract concrete before payment.
+
+Completed todos:
+- Re-read continuation and accessibility guidance.
+- Ran PayPal verifier at slice start; it still returned missing credentials.
+- Inspected paid kit proof, manifest, sample ZIP, instant fulfillment packet, checkout, after-pay page, product-feed, buyer-index, README, issue template, sitemap, and robots.
+- Confirmed `pay.html`, `PAYPAL_VERIFICATION.md`, `paid-kit-proof.html`, and `paid-kit-manifest.json` are live.
+- Calculated live public sample ZIP SHA-256: `57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba`.
+- Created digital kit order board `https://github.com/trungcodeer/softjunk-lead-kit/issues/9`.
+- Hardened `.github/ISSUE_TEMPLATE/digital-kit-order.yml` to avoid public PayPal transaction details.
+- Updated `paid-kit-manifest.json` to schema `softjunk-paid-kit-proof-v2`.
+- Updated `paid-kit-proof.html` with order board/form, sample ZIP, sample hash, and privacy gate.
+- Wired the route into product `README.md`, `llms.txt`, `buyer-index.json`, `product-feed.json`, root `llms.txt`, and quiet-lead `llms.txt`.
+- Validated API JSON/HTML/JS and live URLs.
+- Confirmed GitHub Pages builds were built for product commit `a9b3c0c604e6151ebfbe302c4d8e2fa6894314c1`, root commit `f42b9ec9dd1aa9b9341ae49bec9bb23ca55a842c`, and quiet commit `10adc1de390da2eaaa337f87dc4658c865574401`.
+- Created releases `v2.29.96`, `root-digital-kit-proof-route-v1`, and `quiet-digital-kit-proof-route-v1`.
+- Submitted 8 owned URLs to IndexNow and received `HTTP/1.1 200 OK`.
+- Reran PayPal verifier.
+
+Evidence refs:
+- Digital kit order board: `https://github.com/trungcodeer/softjunk-lead-kit/issues/9`.
+- Digital kit order form: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml`.
+- Paid kit proof page: `https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html`.
+- Paid kit manifest v2: `https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json`.
+- Public sample ZIP: `https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip`.
+- Product/root/quiet discovery: `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`, `https://trungcodeer.github.io/llms.txt`, and `https://trungcodeer.github.io/quiet-lead-follow-up/llms.txt`.
+- Releases: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.96`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-digital-kit-proof-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-digital-kit-proof-route-v1`.
+- Public issue evidence comment records validation and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the $5 digital kit more credible with manifest v2, sample ZIP hash, and a privacy-safe order route.
+- Compatibility boundary: GitHub Pages, public JSON, public issue board, PayPal.Me, manual private delivery after seller-side verification.
+- New owner/branch/fallback: none.
+- Decision: continue.
