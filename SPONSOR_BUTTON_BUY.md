@@ -1,5 +1,11 @@
 # SoftJunk Sponsor Button Buy Route
 
+## One rewrite included after verified payment
+
+The 5 USD custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Buyer-agent BuyAction manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+
 Use this route when a buyer is already inside the GitHub repository and wants the native GitHub Sponsor button to lead to the 5 USD PayPal checkout.
 
 ## What The Button Points To

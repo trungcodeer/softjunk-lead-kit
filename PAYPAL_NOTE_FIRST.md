@@ -1,5 +1,11 @@
 # SoftJunk PayPal Note First
 
+## One rewrite included
+
+After the 5 USD PayPal payment is seller-side verified, a custom sequence includes one rewrite if the first draft is not usable. Use only non-sensitive business context and placeholders.
+
+Buyer-agent BuyAction manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+
 Use this when the buyer is ready to pay and wants the shortest path: copy one safe note, pay 5 USD, and let the seller fulfill from the PayPal transaction.
 
 ## Copy One Note

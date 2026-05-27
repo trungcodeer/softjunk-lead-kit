@@ -1,5 +1,13 @@
 # SoftJunk $5 Buy Now
 
+## Pay 5 USD: one rewrite included
+
+Buyer-agent manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+
+Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+
+After seller-side PayPal verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+
 Use this when one real lead has gone quiet and one recovered reply, quote, appointment, or job is worth more than 5 USD.
 
 ## Roofing Estimate Fast Path
