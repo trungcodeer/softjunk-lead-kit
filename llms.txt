@@ -4,9 +4,10 @@ Fastest USD 5 buyer route:
 1. Shortest page: https://trungcodeer.github.io/5/
 2. Buyer-agent JSON: https://trungcodeer.github.io/5.json
 3. Text route: https://trungcodeer.github.io/5.txt
-4. Product buyer card: https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
-5. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
-6. Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+4. GitHub discussion route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6
+5. Product buyer card: https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
+6. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+7. Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 One rewrite is included after verified payment if the first custom sequence is not usable and the buyer supplies non-sensitive business context. Use placeholders only; do not post customer or PayPal details in public forms.
 SoftJunk Lead Kit is a $5 lead follow-up offer for small businesses that get leads from forms, DMs, email, ads, referrals, or calls.
