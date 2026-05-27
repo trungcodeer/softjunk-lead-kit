@@ -7277,3 +7277,57 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/Markdown/JSON, GitHub Pages HTML/Markdown/JSON, raw GitHub Markdown/JSON, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; send-to-buyer remains a buyer handoff/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Agent Order Path No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the first-read AI agent order path and buyer packet so an assistant, VA, crawler, or buyer-agent can route a fitting buyer through the one-lead rescue, executable no-clone checkout proof, verified release notes, SHA-256, PayPal URL, and payment-proof gate.
+
+Completed todos:
+- Audited `agent-order.html`, `agent-offer.json`, `agent-buyer-packet.json`, and `agent-buyer-packet.txt`; all had PayPal and the verification gate but lacked complete no-clone checkout proof markers.
+- Updated `agent-order.html` with a visible No-clone checkout proof panel, verified-release links, and browser-generated handoff text that includes the release-tarball command, release URL, tarball URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Updated `agent-offer.json` and `agent-buyer-packet.json` to schema versions v3/v2 with top-level no-clone checkout proof fields and agent decision/instruction entries.
+- Updated `agent-buyer-packet.txt` with a copyable no-clone checkout proof block and expanded agent instruction.
+- Validated both JSON files parse locally.
+- Validated all four changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `agent-order.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live `agent-order.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `d36e619ff80ea5ec6ab54379486f60c492333044`.
+- Refreshed public Agent Buyer Packet Gist `85b6eef2cd6deb244d0bfbe18e744a3c` for `agent-buyer-packet.json` and `agent-buyer-packet.txt`.
+- Created public product release `v2.29.133`.
+- Confirmed GitHub Pages latest build was `built` for commit `d36e619ff80ea5ec6ab54379486f60c492333044`.
+- Validated live Pages `agent-order.html`, `agent-offer.json`, `agent-buyer-packet.json`, and `agent-buyer-packet.txt` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub copies of `agent-offer.json`, `agent-buyer-packet.json`, and `agent-buyer-packet.txt`, plus raw Gist copies of the agent buyer packet files, include the same required markers; JSON parsed.
+- Submitted the four updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `d36e619ff80ea5ec6ab54379486f60c492333044`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.133.
+- Live agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html.
+- Live agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json.
+- Live agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json.
+- Live agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt.
+- Agent Buyer Packet Gist: https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining public PayPal surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a first-read buyer-agent route to the exact checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; agent order path remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.
