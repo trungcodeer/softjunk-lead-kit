@@ -5017,3 +5017,43 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - Profile discovery and IndexNow submission improve legitimate conversion/discovery but do not prove buyer action or payment.
+
+## Checkpoint: 2026-05-27 sponsor button send5 funding route slice
+
+TodoCheckpointDraft:
+- Completed: updated product, profile, and root `.github/FUNDING.yml` files so GitHub Sponsor custom URLs are PayPal first, Send-5 second, root /5/ third, and Sponsor route contract fourth.
+- Completed: updated `SPONSOR_BUTTON_BUY.md` and `sponsor-button-buy.json` to align with the actual funding URLs.
+- Completed: updated product `buyer-index.json` and `llms.txt` to expose the Sponsor button Send-5 route.
+- Completed: synchronized public Sponsor button Gist https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7.
+- Completed: validated funding files, sponsor JSON, sponsor Markdown, buyer-index JSON, llms markers, and Gist contents.
+- Completed: verified product/profile/root Pages deploys succeeded after affected commits.
+- Completed: verified live product buyer-index and llms URLs returned HTTP 200 and included Sponsor button, Send-5, and PAYPAL_PAYMENT_VERIFIED=true.
+- Completed: submitted 7 owned URLs to IndexNow; response HTTP 200.
+- Completed: published releases v2.29.90, profile-sponsor-send5-route-v1, root-sponsor-send5-route-v1, and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551431503.
+- Active slice: continue legitimate GitHub-native conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.90
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-sponsor-send5-route-v1
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-send5-route-v1
+- Sponsor route Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+- Sponsor route JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
+- Sponsor route Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
+- Product buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26491566775
+- Profile Pages run: https://github.com/trungcodeer/trungcodeer/actions/runs/26491502402
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26491504339
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551431503
+- IndexNow response: HTTP 200; URL count 7; response body empty.
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by improving GitHub-native Sponsor button routes that can directly lead to the exact PayPal checkout and Send-5 handoff.
+- Compatibility: no payment or fulfillment gate was weakened; all updated surfaces keep seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true as the stop/fulfillment rule.
+- New owners/adapters: GitHub Sponsor/Funding custom URLs now include Send-5 as the second route.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- Sponsor/funding route updates improve legitimate conversion but do not prove buyer action or payment.
