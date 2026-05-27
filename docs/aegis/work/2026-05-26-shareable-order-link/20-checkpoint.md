@@ -5118,3 +5118,34 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - Current GitHub traffic baseline is 0, so metadata updates are discovery positioning, not buyer/payment evidence.
+
+## Checkpoint: 2026-05-27 buyer-intent PayPal Gist bundle slice
+
+TodoCheckpointDraft:
+- Completed: created public Gist https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9 with missed-call, estimate-follow-up, no-show, price-objection, and JSON index files.
+- Completed: each Gist file includes a short public sample, Send-5 route, PayPal 5 USD URL, order form, privacy rule, do-not-use-for-spam rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: added the Gist to product `buyer-index.json` and `llms.txt`.
+- Completed: validated Gist files and Gist JSON, remote buyer-index JSON, remote llms markers, product Pages deploy, live buyer-index/llms curl checks, and IndexNow submission.
+- Completed: published release v2.29.92 and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551590288.
+- Active slice: continue legitimate owned-channel buyer-intent discovery/conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Buyer-intent Gist: https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9
+- Product buyer-index live URL: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Product llms live URL: https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.92
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26492362239
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551590288
+- IndexNow response: HTTP 200; URL count 6.
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by creating public buyer-intent answer surfaces for specific high-fit problems and routing qualified buyers to Send-5/PayPal.
+- Compatibility: no payment or fulfillment gate was weakened; all Gist and index surfaces preserve seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: public Gist as a buyer-intent discovery surface.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- Public Gist discovery improves reachable buyer-intent coverage but does not prove buyer action or payment.
