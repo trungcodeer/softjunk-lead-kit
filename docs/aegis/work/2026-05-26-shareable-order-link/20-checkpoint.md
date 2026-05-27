@@ -4679,3 +4679,29 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 rss product feed usd5 route slice
+
+TodoCheckpointDraft:
+- Completed: added a newest RSS item Fastest USD 5 Buyer Route to eed.xml pointing at https://trungcodeer.github.io/5/.
+- Completed: added astest_usd5_buyer_route to product-feed.json with /5/, /5.json, /5.txt, product buyer card, PayPal URL, USD 5 price, one rewrite, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: published release v2.29.82 for feed visibility.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550812219.
+- Active slice: continue legitimate owned-channel conversion/discovery improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- RSS feed commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/7cf5271b9cbba73dc24a1f79cf9d0207db03b108
+- Product feed commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/d0c05b8607bf3087e769bb2906fe0b720b7cc8c5
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.82
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550812219
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original  PayPal objective by making crawlable feed surfaces announce the shortest real checkout route.
+- Compatibility: no fulfillment gate was weakened; feeds still state seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true is required.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
