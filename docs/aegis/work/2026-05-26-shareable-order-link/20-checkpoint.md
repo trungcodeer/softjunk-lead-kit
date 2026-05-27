@@ -6594,3 +6594,52 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages, GitHub Releases, owned repo README/llms/JSON files, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; adjacent owned repos now point back to the same product release and PayPal gate.
 - Decision: continue.
+
+## 2026-05-28 Quiet Well-Known Agent Discovery Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add project-site `.well-known` agent discovery to `quiet-lead-follow-up` so assistant/crawler buyers can find the exact 5 USD PayPal route from the quiet-lead repo itself.
+
+Completed todos:
+- Confirmed product/root/profile/quiet worktrees were clean before the slice and PayPal verifier still returned missing credentials.
+- Inspected existing funding and GitHub repo metadata; all public repos already had PayPal homepage/topics and FUNDING files, so no metadata churn was needed there.
+- Added quiet `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, and `.well-known/paypal-buy-action.json`.
+- Wired those endpoints into quiet `index.html`, `robots.txt`, `sitemap.xml`, `README.md`, `llms.txt`, and `buyer-route.json`.
+- Added `.nojekyll` after live validation showed GitHub Pages did not serve the `.well-known` directory without it.
+- Validated local JSON for `buyer-route.json`, `pay-5-usd-paypal.json`, `.well-known/ai-plugin.json`, and `.well-known/paypal-buy-action.json`.
+- Validated `sitemap.xml` parses as XML and `git diff --check` passed.
+- Pushed quiet commits `edf7dcaeca646c5eb7f04f8c735700cec14cf03c` and `35644d8d26a9f5005221433b47c60ab41943ad23`.
+- Confirmed GitHub Pages latest build was `built` for quiet commit `35644d8d26a9f5005221433b47c60ab41943ad23`.
+- Validated 9 live quiet URLs returned HTTP 200 and included the no-clone command, PayPal URL, verification gate, release URL, SHA-256, or `.well-known` markers as applicable.
+- Created public release `quiet-well-known-agent-discovery-v1`.
+- Submitted 9 quiet URLs to IndexNow; API returned `200 OK`.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Quiet commits: `edf7dcaeca646c5eb7f04f8c735700cec14cf03c`, `35644d8d26a9f5005221433b47c60ab41943ad23`.
+- Quiet release: https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-well-known-agent-discovery-v1.
+- Quiet AI plugin manifest: https://trungcodeer.github.io/quiet-lead-follow-up/.well-known/ai-plugin.json.
+- Quiet OpenAPI discovery: https://trungcodeer.github.io/quiet-lead-follow-up/.well-known/openapi.yaml.
+- Quiet PayPal BuyAction manifest: https://trungcodeer.github.io/quiet-lead-follow-up/.well-known/paypal-buy-action.json.
+- Verified product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds machine-readable agent discovery to an owned quiet-lead repo and points agents to the exact 5 USD PayPal route without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub Pages, `.well-known` discovery, OpenAPI/AI plugin manifests, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; quiet repo now has its own agent discovery but still points to the same product release and PayPal gate.
+- Decision: continue.

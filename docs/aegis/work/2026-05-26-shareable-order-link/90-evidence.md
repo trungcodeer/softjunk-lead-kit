@@ -22,6 +22,46 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Quiet Well-Known Agent Discovery Evidence
+
+Artifacts added/updated in `quiet-lead-follow-up`:
+- `.well-known/ai-plugin.json`.
+- `.well-known/openapi.yaml`.
+- `.well-known/paypal-buy-action.json`.
+- `.nojekyll` to make GitHub Pages serve the `.well-known` directory.
+- `index.html`, `robots.txt`, `sitemap.xml`, `README.md`, `llms.txt`, and `buyer-route.json`.
+
+Published commits:
+- Agent discovery files and wiring: `edf7dcaeca646c5eb7f04f8c735700cec14cf03c`.
+- `.nojekyll` Pages serving fix: `35644d8d26a9f5005221433b47c60ab41943ad23`.
+
+Release:
+- https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-well-known-agent-discovery-v1.
+
+Validation:
+- Local JSON validation parsed `buyer-route.json`, `pay-5-usd-paypal.json`, `.well-known/ai-plugin.json`, and `.well-known/paypal-buy-action.json`.
+- Local XML validation parsed `sitemap.xml`.
+- Local marker validation confirmed the no-clone release-tarball command, PayPal URL, release URL, SHA-256, `PAYPAL_PAYMENT_VERIFIED=true` gate, and `.well-known` URLs across the changed quiet files.
+- `git diff --check` passed with only CRLF normalization warnings where reported.
+- Initial live validation showed the `.well-known` files returned 404 from GitHub Pages; adding `.nojekyll` fixed this.
+- GitHub Pages latest build API returned `built` for quiet commit `35644d8d26a9f5005221433b47c60ab41943ad23`.
+- Final live validation returned HTTP 200 and required markers for:
+  - https://trungcodeer.github.io/quiet-lead-follow-up/
+  - https://trungcodeer.github.io/quiet-lead-follow-up/README.md
+  - https://trungcodeer.github.io/quiet-lead-follow-up/llms.txt
+  - https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
+  - https://trungcodeer.github.io/quiet-lead-follow-up/robots.txt
+  - https://trungcodeer.github.io/quiet-lead-follow-up/sitemap.xml
+  - https://trungcodeer.github.io/quiet-lead-follow-up/.well-known/ai-plugin.json
+  - https://trungcodeer.github.io/quiet-lead-follow-up/.well-known/openapi.yaml
+  - https://trungcodeer.github.io/quiet-lead-follow-up/.well-known/paypal-buy-action.json
+- IndexNow POST submitted the 9 quiet URLs above and returned `200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 No-Clone Buyer-Agent Command Surface Evidence
 
 Artifacts updated:
