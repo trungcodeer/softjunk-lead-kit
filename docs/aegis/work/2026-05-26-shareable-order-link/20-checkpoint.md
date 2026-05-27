@@ -5149,3 +5149,48 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - Public Gist discovery improves reachable buyer-intent coverage but does not prove buyer action or payment.
+
+## 2026-05-27 Intent-5 Buyer Preview Checkpoint
+
+Current todo:
+- Keep discovery/conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials or trusted CSV proof are available.
+
+Active slice:
+- Create a non-traditional buyer-intent preview artifact that exposes useful public samples before asking a qualified buyer or agent to pay exactly 5 USD.
+
+Completed todos:
+- Re-read continuation and accessibility guidance.
+- Created root `intent-5/index.html`, `intent-5.json`, and `intent-5.txt`.
+- Wired Intent-5 into root `llms.txt`, `robots.txt`, `sitemap.xml`, `/send-5/`, and `/5/`.
+- Wired Intent-5 into product `buyer-index.json` and `llms.txt`.
+- Validated root API JSON/XML and HTML markers.
+- Validated product API buyer-index and llms markers.
+- Confirmed GitHub Pages builds were built for root commit `1d6f0b0364fad82fc38495d5ddc4cfc7ee27041a` and product commit `c22a79966f1d53f1aacc10ebb116bdfb89a1d512`.
+- Validated live root/product URLs with `curl.exe`.
+- Created releases `root-intent-five-preview-v1` and `v2.29.93`.
+- Submitted 9 owned URLs to IndexNow and received `HTTP/1.1 200 OK`.
+- Reran PayPal verifier.
+
+Evidence refs:
+- Root live Intent-5 page: `https://trungcodeer.github.io/intent-5/`.
+- Root live Intent-5 JSON: `https://trungcodeer.github.io/intent-5.json`.
+- Root live Intent-5 text: `https://trungcodeer.github.io/intent-5.txt`.
+- Product buyer index: `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+- Buyer-intent Gist bundle: `https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9`.
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-intent-five-preview-v1`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.93`.
+- Public issue evidence comment records live/API validation and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds a higher-value buyer-intent preview rather than cold outreach or spam.
+- Compatibility boundary: static GitHub Pages, GitHub discovery surfaces, public Gists, PayPal.Me, manual fulfillment gate.
+- New owner/branch/fallback: none.
+- Decision: continue.
