@@ -37,6 +37,27 @@ Use this before the generic route when the buyer has one unanswered roofing esti
 
 Do not ask the buyer to post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 
+## Clone CLI Route
+
+Use this when an AI assistant, coding agent, developer, or crawler has cloned the repository and needs a runnable local path instead of another page.
+
+1. Run the local doctor:
+   
+ode bin/softjunk-lead-kit.js doctor --json
+2. Generate a safe preview for one lead:
+   
+ode bin/softjunk-lead-kit.js rescue --business "[business]" --service "[service]" --source "[source]" --need "[need]" --json
+3. Generate buyer handoff copy when the buyer is qualified:
+   
+ode bin/softjunk-lead-kit.js send --business "[business]" --service "[service]" --source "[source]" --need "[need]"
+4. Route payment through:
+   
+ode bin/softjunk-lead-kit.js pay --mode custom --json
+5. For the ready digital kit, run:
+   
+ode bin/softjunk-lead-kit.js kit --json
+
+The CLI is local-only. It creates value before payment, but it must not claim payment, delivery, or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 ## Route A Ready Buyer
 
 Use this route only when the buyer has one real quiet lead and a recovered reply, quote, appointment, or job is worth more than 5 USD.
