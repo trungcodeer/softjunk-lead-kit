@@ -5944,3 +5944,45 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added a med-spa-specific buyer route and public issue as owned discovery surfaces.
 - Decision: continue.
+
+## 2026-05-27 Med Spa Buyer Discussion Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Turn the med spa buyer packet into a GitHub-native buyer discussion and link it back into agent-readable discovery so there is an actual public send route, not only a static page.
+
+Completed todos:
+- Confirmed repo was clean at `97a9d9cfd03cd6b63715bc37345d6f040871a6a7` and PayPal verifier still returned missing credentials at slice start.
+- Inspected existing issue #1 and #5 comments to avoid duplicating the generic one-buyer route.
+- Confirmed Discussions are enabled through GitHub GraphQL and selected the Announcements category.
+- Created public Discussion #14: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/14`.
+- Wired Discussion #14 into `med-spa-buyer-send.html`, `med-spa-buyer-send.json`, `med-spa-buyer-send.txt`, README, AGENTS, buyer-index, agents-checkout, agent-buyer-catalog, ai-plugin, and `llms.txt`.
+- Validated local JSON/JSONL, inline script parsing, `git diff --check`, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `92657c8f4d86d248c71e68081ee7707b3eb0e5af` and release tag `v2.29.113`.
+- Waited for GitHub Pages to build the commit and validated live discussion markers across updated Pages/discovery files.
+- Posted linkback comments to issue #13 and the agent board issue #5.
+- Submitted 7 updated Pages URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Public med spa buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/14.
+- Issue #13 linkback comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/13#issuecomment-4555542936.
+- Agent board #5 launch note: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4555542879.
+- Med spa buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html.
+- Release ref: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it publishes the med spa offer through owned GitHub Discussions and issue comments while preserving one-buyer, no-spam, no-private-data, and no-fake-payment rules.
+- Compatibility boundary: owned GitHub repo, GitHub Discussions/issues, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added a GitHub-native discussion route and linkback comments as owned public distribution surfaces.
+- Decision: continue.

@@ -22,6 +22,41 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Med Spa Buyer Discussion Route Evidence
+
+Public distribution:
+- GitHub Discussion #14: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/14`.
+- Issue #13 linkback comment: `https://github.com/trungcodeer/softjunk-lead-kit/issues/13#issuecomment-4555542936`.
+- Agent board issue #5 launch note: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4555542879`.
+
+Artifacts updated:
+- `med-spa-buyer-send.html`.
+- `med-spa-buyer-send.json`.
+- `med-spa-buyer-send.txt`.
+- README, AGENTS, buyer-index, agents-checkout, agent-buyer-catalog, ai-plugin, and `llms.txt`.
+
+Validation:
+- GitHub GraphQL confirmed Discussion #14 is in the Announcements category and contains the buyer packet links, exact PayPal URL, copyable PayPal note, JSON checkout card, privacy rule, and verification gate.
+- Local JSON validation parsed `med-spa-buyer-send.json`, `agents-checkout.json`, `buyer-index.json`, and `.well-known/ai-plugin.json`.
+- Local JSONL validation parsed 51 `agent-buyer-catalog.jsonl` records.
+- Inline JavaScript parsing confirmed `med-spa-buyer-send.html` remains valid and includes Discussion #14.
+- `git diff --check` returned no whitespace errors beyond CRLF normalization warnings.
+- Playwright/Edge local desktop and mobile checks confirmed Discussion #14 link, PayPal links, no horizontal overflow, and copy status behavior.
+- Commit `92657c8f4d86d248c71e68081ee7707b3eb0e5af` pushed to `main`; release tag `v2.29.113` pushed.
+- GitHub Pages latest build API returned `built` for commit `92657c8f4d86d248c71e68081ee7707b3eb0e5af`.
+- Live validation returned HTTP 200 for med spa HTML/JSON/TXT, buyer-index, agent-buyer-catalog, ai-plugin, and `llms.txt` with Discussion #14 markers.
+- Playwright/Edge live desktop and mobile checks confirmed the Discussion #14 link and copy status behavior.
+- IndexNow POST submitted 7 updated owned URLs and returned `200`.
+
+Accessibility and privacy guardrails:
+- The med spa page still uses a skip link, one H1, native anchors/buttons, textarea labels, visible focus styling, an `aria-live` status region, and responsive desktop/mobile layout without horizontal overflow.
+- Discussion #14 and the linkback comments state that the route is not payment proof and forbid scraped lists, cold spam, private client/treatment data, private PayPal data, and fake payment claims.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-26 Funnel Alignment Evidence
 
 Local validation:
