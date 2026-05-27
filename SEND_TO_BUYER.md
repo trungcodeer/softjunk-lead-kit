@@ -14,6 +14,18 @@ https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 PayPal checkout:
 https://paypal.me/softjunk/5USD
 
+No-clone checkout proof:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Verified release notes:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+
+Release asset SHA-256:
+`c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+
 ## Local Buyer Pitch Generator
 
 The public page includes a local-only generator for:
@@ -36,6 +48,15 @@ You have one lead that went quiet. If one recovered reply is worth more than $5,
 Use only non-sensitive business context. Pay exactly $5 here:
 https://paypal.me/softjunk/5USD
 
+No-clone checkout proof:
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+
+Verified release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+
+Release SHA-256:
+c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d
+
 PayPal note:
 One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
 
@@ -56,6 +77,15 @@ You get Day 0, 1, 3, 5, and 7 messages, plus no-show and price-objection replies
 
 Pay exactly $5:
 https://paypal.me/softjunk/5USD
+
+No-clone checkout proof:
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+
+Verified release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+
+Release SHA-256:
+c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d
 
 PayPal note:
 One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
