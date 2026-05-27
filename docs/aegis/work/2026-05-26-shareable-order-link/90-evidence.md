@@ -3785,3 +3785,29 @@ Boundary:
 - This is buyer-intent discovery/conversion work.
 - It does not prove buyer action or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## 2026-05-27 Intent-5 Buyer Preview Evidence
+
+Artifacts added:
+- `https://trungcodeer.github.io/intent-5/`.
+- `https://trungcodeer.github.io/intent-5.json`.
+- `https://trungcodeer.github.io/intent-5.txt`.
+
+Artifacts wired:
+- Root `llms.txt`, `robots.txt`, `sitemap.xml`, `/send-5/`, and `/5/`.
+- Product `buyer-index.json` and `llms.txt`.
+
+Validation:
+- Root API validation parsed `intent-5.json` with `ConvertFrom-Json` and `sitemap.xml` as XML.
+- Root API HTML marker validation confirmed `PAYPAL_PAYMENT_VERIFIED=true`, `https://paypal.me/softjunk/5USD`, `https://trungcodeer.github.io/send-5/`, Gist ID `772adccebfba963f6550238b401a72a9`, `button:focus-visible`, `aria-live="polite"`, and all four public intent labels.
+- Product API validation parsed `buyer-index.json` and confirmed Intent-5 fields plus product `llms.txt` markers.
+- GitHub Pages latest build API returned `built` for root commit `1d6f0b0364fad82fc38495d5ddc4cfc7ee27041a` and product commit `c22a79966f1d53f1aacc10ebb116bdfb89a1d512`.
+- Live `curl.exe` validation passed for root Intent-5 HTML/JSON/TXT, root `llms.txt`, `robots.txt`, `sitemap.xml`, `/send-5/`, `/5/`, product `buyer-index.json`, and product `llms.txt`.
+- Root release created: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-intent-five-preview-v1`.
+- Product release created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.93`.
+- IndexNow submission for 9 owned URLs returned `HTTP/1.1 200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
