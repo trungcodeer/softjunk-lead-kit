@@ -104,11 +104,13 @@ Use this before the generic route when the buyer is a med spa with one missed co
    https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json
 3. Open the public med spa buyer issue:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/13
-4. Show the free med spa preview:
+4. Open the public med spa buyer discussion:
+   https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
+5. Show the free med spa preview:
    https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-5. Send the exact PayPal URL only after fit is confirmed:
+6. Send the exact PayPal URL only after fit is confirmed:
    https://paypal.me/softjunk/5USD
-6. After payment, send the one-lead order form:
+7. After payment, send the one-lead order form:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not ask the buyer to post client names, phone numbers, emails, appointment dates, treatment details, health details, before/after photos, financing IDs, transaction IDs, payer email, PayPal details, or private lead data. Do not claim paid, started, delivered, fulfilled, complete, or stop unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.

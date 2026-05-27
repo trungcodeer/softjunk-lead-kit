@@ -50,7 +50,8 @@
                                     "dental_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt",
                                     "med_spa_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html",
                                     "med_spa_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json",
-                                    "med_spa_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt"
+                                    "med_spa_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt",
+                                    "med_spa_buyer_discussion_url":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/14"
                                 },
     "logo_url":  "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
     "contact_email":  "trungcodeer@users.noreply.github.com",
@@ -147,6 +148,7 @@
     "med_spa_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html",
     "med_spa_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json",
     "med_spa_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt",
+    "med_spa_buyer_discussion_url":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/14",
     "one_buyer_share_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
     "one_buyer_share_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
     "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt"
