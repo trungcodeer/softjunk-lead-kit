@@ -122,6 +122,19 @@ Use this first when the buyer is an HVAC company with one missed no-cool call, n
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
+## Dental New-Patient Buyer Fast Path
+
+Use this first when the buyer is a dental office with one missed new-patient call, urgent inquiry, implant consult request, or quiet appointment lead:
+
+1. Send one fitting buyer this copy-ready packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
+2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json
+3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
+4. Open the free dental preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+5. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+6. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+Do not post patient names, phone numbers, emails, appointment dates, dental symptoms, treatment details, insurance IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
 ## Buyer Shortcut
 
 Start here if you have one real quiet lead:
@@ -141,19 +154,21 @@ Start here if you have one real quiet lead:
 13. Plumbing buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
 14. HVAC buyer send packet: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
 15. HVAC buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
-16. Roofing estimate rescue packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
-17. Roofing estimate follow-up generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
-18. Public roofing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
-19. Public roofing buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
-20. Roofing estimate rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
-21. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-22. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-23. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
-24. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-25. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-26. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-27. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-28. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
+16. Dental buyer send packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
+17. Dental buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json
+18. Roofing estimate rescue packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+19. Roofing estimate follow-up generator: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+20. Public roofing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+21. Public roofing buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+22. Roofing estimate rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
+23. Use the GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+24. Copy a safe PayPal note: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
+25. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
+26. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+27. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+28. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+29. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+30. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
 Public GitHub buyer route:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/5
@@ -283,6 +298,15 @@ https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
 
 Public HVAC buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/11
+
+Dental buyer send packet:
+https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
+
+Dental buyer send JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json
+
+Dental buyer send text:
+https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
 
 Roofing estimate rescue JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json

@@ -40,6 +40,9 @@ Allow: /plumbing-buyer-send.txt
 Allow: /hvac-buyer-send.html
 Allow: /hvac-buyer-send.json
 Allow: /hvac-buyer-send.txt
+Allow: /dental-buyer-send.html
+Allow: /dental-buyer-send.json
+Allow: /dental-buyer-send.txt
 Allow: /agent-order.html
 Allow: /agent-offer.json
 Allow: /product-feed.json
