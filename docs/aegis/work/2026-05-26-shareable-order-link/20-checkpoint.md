@@ -7704,3 +7704,49 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo JSON/Markdown, GitHub Pages JSON/Markdown, raw GitHub files, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; central catalogs remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 PayPal URL Health No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the PayPal URL health manifest so assistants, buyer-agents, crawlers, and health checks can verify both the public PayPal URL resolution and the executable no-clone checkout route before opening PayPal, while preserving the payment-proof boundary.
+
+Completed todos:
+- Audited `paypal-payment-intent.json`, `.well-known/paypal-payment.json`, `checkout.json`, `checkout.txt`, `paypal-buy-action.json`, `.well-known/paypal-buy-action.json`, and `paypal-url-health.json`; all but `paypal-url-health.json` already had no-clone checkout proof.
+- Ran a fresh PayPal URL health check with `curl.exe -I -L`; it returned final URL `https://www.paypal.com/paypalme/softjunk/5USD`, HTTP status `200`, redirects `2`, and exit `0`.
+- Updated `paypal-url-health.json` to schema version `softjunk-paypal-url-health-v2`, refreshed `checked_at_utc`, added the curl summary, no-clone checkout proof block, verified release URL, release tarball URL, SHA-256, release-tarball command, and expanded verification boundary.
+- Validated `paypal-url-health.json` parses locally.
+- Validated `paypal-url-health.json` contains the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Pushed product commit `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`.
+- Created public product release `v2.29.141`.
+- Confirmed GitHub Pages latest build was `built` for commit `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`.
+- Validated live Pages `paypal-url-health.json` and raw GitHub `paypal-url-health.json` returned HTTP 200, included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`, and parsed as JSON.
+- Validated product release `v2.29.141` is public, non-draft, non-prerelease, targets commit `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`, and includes the same required markers.
+- Submitted the updated Pages URL to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.141.
+- Live PayPal URL health manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining payment-adjacent surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the PayPal URL health surface closest to the payment handoff without claiming payment or performing unauthorized outreach.
+- Compatibility boundary: GitHub repo JSON, GitHub Pages JSON, raw GitHub files, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal URL health remains URL/checkout proof, not payment proof.
+- Decision: continue.

@@ -22,6 +22,32 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 PayPal URL Health No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `paypal-url-health.json`
+
+Published commit and release:
+- Product commit: `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.141.
+
+Validation:
+- PayPal URL health command returned final URL `https://www.paypal.com/paypalme/softjunk/5USD`, HTTP status `200`, redirects `2`, and exit `0`.
+- Local JSON validation parsed `paypal-url-health.json` after the edit.
+- Local marker validation confirmed `paypal-url-health.json` includes the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- paypal-url-health.json` passed.
+- GitHub Pages latest build API returned `built` for commit `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`.
+- Live Pages validation returned HTTP 200 for `paypal-url-health.json`; it included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `paypal-url-health.json`; it included the same required markers and parsed as JSON.
+- Product release `v2.29.141` is public, non-draft, non-prerelease, targets `4c3cf6f020dc56992a55d7b2977b0783b898c6aa`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `paypal-url-health.json`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Central Catalog No-Clone Checkout Proof Evidence
 
 Artifacts updated:
