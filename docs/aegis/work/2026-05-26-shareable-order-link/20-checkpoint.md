@@ -7120,3 +7120,53 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; one-buyer share remains a share/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Agent Brief Surfaces No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the remaining agent-facing brief/action surfaces so buyer-agents, A2A readers, coding agents, VAs, and crawlers can discover the executable no-clone $5 checkout packet, verified release notes, SHA-256, PayPal URL, and payment-proof gate from their first-read artifacts.
+
+Completed todos:
+- Audited `agent-buy-brief.html`, `A2A_AGENT_CARD.md`, and `AI_ACTION_CHECKOUT.md`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated all three files with the no-clone release-tarball command, verified release URL, SHA-256, direct PayPal URL, and stricter payment-proof language.
+- Validated all three changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `agent-buy-brief.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered the local and live `agent-buy-brief.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `2b3513387b327232b991565f215393093c405654`.
+- Created public product release `v2.29.130`.
+- Confirmed GitHub Pages latest build was `built` for commit `2b3513387b327232b991565f215393093c405654`.
+- Validated live Pages `agent-buy-brief.html`, `A2A_AGENT_CARD.md`, and `AI_ACTION_CHECKOUT.md` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validated raw GitHub `A2A_AGENT_CARD.md` and `AI_ACTION_CHECKOUT.md` returned HTTP 200 and included the same required markers.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `2b3513387b327232b991565f215393093c405654`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.130.
+- Live agent buy brief HTML: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html.
+- Live A2A agent card Markdown: https://trungcodeer.github.io/softjunk-lead-kit/A2A_AGENT_CARD.md.
+- Live AI action checkout Markdown: https://trungcodeer.github.io/softjunk-lead-kit/AI_ACTION_CHECKOUT.md.
+- Raw A2A agent card Markdown: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/A2A_AGENT_CARD.md.
+- Raw AI action checkout Markdown: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/AI_ACTION_CHECKOUT.md.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Audit remaining public PayPal surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the remaining first-read agent brief/action surfaces and routes ready agents to the exact checkout handoff without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/Markdown, GitHub Pages HTML/Markdown, raw GitHub Markdown, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; agent brief/action surfaces remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.

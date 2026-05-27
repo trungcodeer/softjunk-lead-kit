@@ -5158,3 +5158,32 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Agent Brief Surfaces No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `agent-buy-brief.html`
+- `A2A_AGENT_CARD.md`
+- `AI_ACTION_CHECKOUT.md`
+
+Published commit and release:
+- Product commit: `2b3513387b327232b991565f215393093c405654`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.130.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `agent-buy-brief.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- agent-buy-brief.html A2A_AGENT_CARD.md AI_ACTION_CHECKOUT.md` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for the local `agent-buy-brief.html` included the no-clone command, PayPal URL, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `2b3513387b327232b991565f215393093c405654`.
+- Live Pages validation returned HTTP 200 for `agent-buy-brief.html`, `A2A_AGENT_CARD.md`, and `AI_ACTION_CHECKOUT.md`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Raw GitHub validation returned HTTP 200 for `A2A_AGENT_CARD.md` and `AI_ACTION_CHECKOUT.md`; both included the same required markers.
+- Edge headless DOM dump for the live `agent-buy-brief.html` included `No-clone checkout`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.130` is public, non-draft, non-prerelease, targets `2b3513387b327232b991565f215393093c405654`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `agent-buy-brief.html`, `A2A_AGENT_CARD.md`, and `AI_ACTION_CHECKOUT.md`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
