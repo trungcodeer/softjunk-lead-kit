@@ -3694,3 +3694,28 @@ Boundary:
 - This is owned-profile discovery and a consent-based buyer handoff.
 - It does not prove indexing, buyer action, or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## Evidence: 2026-05-27 Sponsor button Send-5 funding route
+
+What changed:
+- Updated product/profile/root `.github/FUNDING.yml` custom funding URLs to list PayPal first and Send-5 second.
+- Aligned `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.json`, product `buyer-index.json`, product `llms.txt`, and the public Sponsor button Gist.
+
+Verification:
+- Funding files in all three repos each contain exactly four custom URLs.
+- Sponsor route JSON parses and includes Send-5, PayPal, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Sponsor Markdown includes the current four custom funding URLs and verification gate.
+- Public Sponsor button Gist includes the same Markdown/JSON route.
+- Live product buyer-index and llms checks returned HTTP 200 and include Sponsor button + Send-5 + verification gate.
+- IndexNow accepted 7 owned URLs with HTTP 200.
+
+Public refs:
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.90
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-sponsor-send5-route-v1
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-send5-route-v1
+- Public tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551431503
+
+Boundary:
+- This is a GitHub-native payment-route improvement.
+- It does not prove buyer action or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
