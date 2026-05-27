@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Med Spa Buyer Release Route Evidence
+
+Public distribution:
+- GitHub Release `v2.29.113`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113`.
+
+Artifacts updated:
+- `med-spa-buyer-send.html`.
+- `med-spa-buyer-send.json`.
+- `med-spa-buyer-send.txt`.
+- README, AGENTS, buyer-index, agents-checkout, agent-buyer-catalog, ai-plugin, and `llms.txt`.
+
+Validation:
+- `gh release view v2.29.113` confirmed the release is public, non-draft, non-prerelease, and includes the buyer packet links, Discussion #14, issue #13, exact PayPal URL, copyable PayPal note, privacy rules, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Local JSON validation parsed `med-spa-buyer-send.json`, `agents-checkout.json`, `buyer-index.json`, and `.well-known/ai-plugin.json`.
+- Local JSONL validation parsed 51 `agent-buyer-catalog.jsonl` records.
+- Inline JavaScript parsing confirmed `med-spa-buyer-send.html` remains valid and includes the release URL.
+- `git diff --check` returned no whitespace errors beyond CRLF normalization warnings.
+- Playwright/Edge local desktop and mobile checks confirmed the release URL, Discussion #14 link, PayPal links, no horizontal overflow, minimum 44px targets, and copy status behavior.
+- Commit `c8587f6310d82315bcc40dd0b5e4c15459cb5a0b` pushed to `main`; tag `v2.29.114` pushed.
+- GitHub Pages latest build API returned `built` for commit `c8587f6310d82315bcc40dd0b5e4c15459cb5a0b`.
+- Live validation returned HTTP 200 for med spa HTML/JSON/TXT, buyer-index, agent-buyer-catalog, ai-plugin, and `llms.txt` with release URL markers.
+- Playwright/Edge live desktop and mobile checks confirmed the release URL and copy status behavior.
+- IndexNow POST submitted 7 updated owned URLs and returned `200`.
+
+Accessibility and privacy guardrails:
+- The med spa page still uses a skip link, one H1, native anchors/buttons, textarea labels, visible focus styling, an `aria-live` status region, and responsive desktop/mobile layout without horizontal overflow.
+- The release states that the route is not payment proof and forbids scraped lists, cold spam, private client/treatment data, private PayPal data, and fake payment claims.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Med Spa Buyer Discussion Route Evidence
 
 Public distribution:

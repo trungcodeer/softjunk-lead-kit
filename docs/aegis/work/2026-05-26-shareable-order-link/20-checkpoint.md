@@ -5986,3 +5986,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Discussions/issues, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added a GitHub-native discussion route and linkback comments as owned public distribution surfaces.
 - Decision: continue.
+
+## 2026-05-27 Med Spa Buyer Release Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Convert the `v2.29.113` med spa buyer tag into a buyer-facing GitHub Release and wire the release URL into agent-readable discovery.
+
+Completed todos:
+- Confirmed repo was clean at `e273aec0d40ee17f61420fed8c026f495ec96ee4` and PayPal verifier still returned missing credentials at slice start.
+- Confirmed tag `v2.29.113` existed and no GitHub Release existed for it.
+- Created release `v2.29.113` with buyer packet, agent JSON, plain text, Discussion #14, issue #13, free preview, exact 5 USD PayPal URL, copyable PayPal note, privacy rules, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Wired the release URL into `med-spa-buyer-send.html`, `med-spa-buyer-send.json`, `med-spa-buyer-send.txt`, README, AGENTS, buyer-index, agents-checkout, agent-buyer-catalog, ai-plugin, and `llms.txt`.
+- Validated local JSON/JSONL, inline script parsing, `git diff --check`, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `c8587f6310d82315bcc40dd0b5e4c15459cb5a0b` and release tag `v2.29.114`.
+- Waited for GitHub Pages to build the commit and validated live release markers across updated Pages/discovery files.
+- Validated the GitHub Release remains public, non-draft, non-prerelease, and contains the PayPal route and verification gate.
+- Submitted 7 updated Pages URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Buyer-facing GitHub Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113.
+- Med spa buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html.
+- Med spa buyer JSON: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json.
+- Discovery wiring commit: `c8587f6310d82315bcc40dd0b5e4c15459cb5a0b`.
+- Deployment tag: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.114.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds a GitHub Release notification/discovery surface for the med spa buyer route without spam, scraping, deception, private data, or false payment claims.
+- Compatibility boundary: owned GitHub repo, GitHub Releases, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added a release route and wired it into owned public discovery.
+- Decision: continue.
