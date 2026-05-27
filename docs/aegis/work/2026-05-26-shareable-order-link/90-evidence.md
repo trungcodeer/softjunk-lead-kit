@@ -3812,6 +3812,35 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 Profile AI Discovery Contract Evidence
+
+Artifacts added/updated in `trungcodeer/trungcodeer`:
+- `.nojekyll` to ensure GitHub Pages serves dot-path discovery files.
+- `.well-known/ai-plugin.json` with the one-buyer share URL, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` success signal.
+- `.well-known/openapi.yaml` with profile offer, llms, one-buyer share JSON, and one-buyer share HTML operations.
+- README, profile HTML, `llms.txt`, `softjunk-profile-offer.json`, `robots.txt`, `sitemap.xml`, `AGENTS.md`, `CODEX.md`, `CLAUDE.md`, and `GEMINI.md` wired to the profile AI discovery URLs.
+
+Validation:
+- `ConvertFrom-Json` parsed `.well-known/ai-plugin.json` and `softjunk-profile-offer.json`.
+- XML parse confirmed `sitemap.xml` includes the profile AI plugin and OpenAPI URLs.
+- Python/PyYAML parsed `.well-known/openapi.yaml` and confirmed OpenAPI version `3.1.0`, the `/softjunk-lead-kit/one-buyer-share.json` operation, and payment URL constant `https://paypal.me/softjunk/5USD`.
+- Local static server returned HTTP 200 for `/`, `/.well-known/ai-plugin.json`, and `/.well-known/openapi.yaml` with discovery markers.
+- Profile repo commit pushed: `25517e7efa8cccc1c1a31547b895ac06bc95d23e`.
+- Profile release created: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-ai-discovery-contract-v1.
+- Live GitHub Pages validation returned HTTP 200 and expected markers for:
+  - `https://trungcodeer.github.io/trungcodeer/.well-known/ai-plugin.json`
+  - `https://trungcodeer.github.io/trungcodeer/.well-known/openapi.yaml`
+  - `https://trungcodeer.github.io/trungcodeer/`
+  - `https://trungcodeer.github.io/trungcodeer/robots.txt`
+  - `https://trungcodeer.github.io/trungcodeer/sitemap.xml`
+- IndexNow POST submitted seven profile AI discovery URLs and returned `200 OK`.
+- Public issue evidence comment posted: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553839280.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-27 Profile One-Buyer Route Evidence
 
 Artifacts added/updated in `trungcodeer/trungcodeer`:

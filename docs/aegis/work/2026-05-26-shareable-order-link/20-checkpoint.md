@@ -5738,3 +5738,42 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub profile repo, GitHub Pages, public JSON/text/XML, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; used the existing profile repo as an owned public discovery surface.
 - Decision: continue.
+
+## 2026-05-27 Profile AI Discovery Contract Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add profile-level `.well-known` AI discovery so agents can read a compact OpenAPI/ai-plugin contract for the one-buyer $5 route without parsing prose first.
+
+Completed todos:
+- Added `.nojekyll`, `.well-known/ai-plugin.json`, and `.well-known/openapi.yaml` to `trungcodeer/trungcodeer`.
+- Wired the profile AI discovery URLs into README, profile HTML alternates, `llms.txt`, `softjunk-profile-offer.json`, `robots.txt`, `sitemap.xml`, and agent-specific files (`AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GEMINI.md`).
+- Validated JSON, XML, OpenAPI YAML, markers, and local static serving.
+- Pushed profile commit `25517e7efa8cccc1c1a31547b895ac06bc95d23e` and created release `profile-ai-discovery-contract-v1`.
+- Validated live GitHub Pages `.well-known` AI plugin and OpenAPI URLs; both returned HTTP 200 with the expected one-buyer/payment/gate markers.
+- Submitted profile AI discovery URLs to IndexNow; API returned `200 OK`.
+- Posted a public owned-channel evidence comment to issue #5.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Profile AI plugin manifest: https://trungcodeer.github.io/trungcodeer/.well-known/ai-plugin.json.
+- Profile OpenAPI route: https://trungcodeer.github.io/trungcodeer/.well-known/openapi.yaml.
+- Profile commit: https://github.com/trungcodeer/trungcodeer/commit/25517e7efa8cccc1c1a31547b895ac06bc95d23e.
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-ai-discovery-contract-v1.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553839280.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates agent-readable profile discovery for the one-buyer route without spam, scraping, deception, unauthorized outreach, or fake payment claims.
+- Compatibility boundary: owned GitHub profile repo, GitHub Pages `.well-known`, OpenAPI/ai-plugin JSON/YAML, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added profile-level agent discovery as another owned public route.
+- Decision: continue.
