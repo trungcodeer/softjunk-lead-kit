@@ -2,6 +2,22 @@
 
 This file is for AI assistants, coding agents, VAs, and crawlers that inspect this repository and need the shortest ethical route to the SoftJunk 5 USD one-lead rescue.
 
+## Fastest USD 5 Buyer Route
+
+Use this first when the buyer has one real quiet lead and wants the shortest checkout path.
+
+1. Open the one-screen buyer card:
+   https://trungcodeer.github.io/5/
+2. If machine-readable data is needed, load:
+   https://trungcodeer.github.io/5.json
+3. For GitHub-native routing, use Discussion #6:
+   https://github.com/trungcodeer/softjunk-lead-kit/discussions/6
+4. Pay exactly 5 USD:
+   https://paypal.me/softjunk/5USD
+5. After payment, submit placeholders only:
+   https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+One rewrite is included after verified payment if the first custom sequence is not usable and the buyer supplies non-sensitive business context. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 ## Roofing Estimate Buyer First
 
 Use this before the generic route when the buyer has one unanswered roofing estimate and one recovered roof job is worth more than 5 USD.
