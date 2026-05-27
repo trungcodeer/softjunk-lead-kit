@@ -3546,3 +3546,21 @@ Payment verification:
 
 Conclusion:
 - Agent/plugin manifest discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 root short routes usd5 buyer card slice
+
+Updated and released:
+- /paypal/: https://github.com/trungcodeer/trungcodeer.github.io/commit/c51c9264e48a93ecab02ccf32b379a0e4aa247b1
+- /pay/: https://github.com/trungcodeer/trungcodeer.github.io/commit/7d5063fdb2c8f7d7c27ba8b1fcf93a7153d2448e
+- /buy/: https://github.com/trungcodeer/trungcodeer.github.io/commit/5662ddc2288b13c0d09cd6e21e85f60fe47a774b
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-short-routes-usd5-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551075224
+
+Live validation:
+- https://trungcodeer.github.io/paypal/?check=short5, https://trungcodeer.github.io/pay/?check=short5, and https://trungcodeer.github.io/buy/?check=short5 returned status 200 and contain /5/, /5.json, Discussion #6, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- /buy/ also contains copy-paypal-note.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Root short payment routes now prioritize the direct buyer card, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
