@@ -5088,3 +5088,33 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - Issue chooser improvements do not prove buyer action or payment.
+
+## Checkpoint: 2026-05-27 repo metadata send5 discovery slice
+
+TodoCheckpointDraft:
+- Completed: checked GitHub traffic for product/profile/root repos before changing metadata; all reported 0 views, 0 uniques, 0 popular paths, and 0 referrers for the current traffic window.
+- Completed: updated product/profile/root repository descriptions to include Send-5, USD 5, PayPal, and one-lead rescue language.
+- Completed: updated product/profile/root repository homepage URLs to https://trungcodeer.github.io/send-5/.
+- Completed: updated topics across product/profile/root repos to buyer-intent keywords including send5, missed-call, estimate-follow-up, no-show-follow-up, price-objection, follow-up-templates, paypal-checkout, one-lead-rescue, and verified-payment.
+- Completed: verified metadata through `gh repo view` for all three repos.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551530739.
+- Active slice: continue legitimate owned-channel discovery/conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Product repo metadata verified: homepage https://trungcodeer.github.io/send-5/ and description `Send-5 buyer handoff and USD 5 PayPal one-lead rescue for missed calls, estimates, no-shows, quiet leads`.
+- Profile repo metadata verified: homepage https://trungcodeer.github.io/send-5/ and description `Send-5 route to pay USD 5 on PayPal for SoftJunk one-lead rescue; one rewrite after verification`.
+- Root repo metadata verified: homepage https://trungcodeer.github.io/send-5/ and description `Root hub for Send-5 USD 5 PayPal one-lead rescue, buyer card, and agent checkout`.
+- Shared buyer-intent topics verified: send5, missed-call, estimate-follow-up, no-show-follow-up, price-objection, paypal-checkout.
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551530739
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by making GitHub search/repo cards route to the Send-5 buyer handoff instead of a less contextual destination.
+- Compatibility: no payment or fulfillment gate was weakened; metadata points to an existing verification-gated buyer route.
+- New owners/adapters: GitHub repository metadata/topics now act as discovery adapters for Send-5.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- Current GitHub traffic baseline is 0, so metadata updates are discovery positioning, not buyer/payment evidence.
