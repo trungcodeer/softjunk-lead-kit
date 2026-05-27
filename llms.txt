@@ -174,6 +174,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
 Public plumbing buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/10
 
+Public plumbing buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
+
 Plumbing buyer fit:
 Use for one known plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
 
@@ -189,6 +192,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
 Public HVAC buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 
+Public HVAC buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
+
 HVAC buyer fit:
 Use for one known HVAC company with one missed no-cool call, no-heat call, urgent repair inquiry, or quiet replacement estimate. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
 
@@ -203,6 +209,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
 
 Public dental buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/12
+
+Public dental buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
 
 Dental buyer fit:
 Use for one known dental office with one missed new-patient call, urgent inquiry, implant consult request, or quiet appointment lead. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists. Do not include patient, health, insurance, or PayPal details.

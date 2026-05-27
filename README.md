@@ -102,9 +102,10 @@ Use this first when the buyer is a plumbing company with one missed emergency ca
 2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
 4. Public plumbing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/10
-5. Open the free plumbing preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+5. Public plumbing buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
+6. Open the free plumbing preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+7. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+8. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -116,9 +117,10 @@ Use this first when the buyer is an HVAC company with one missed no-cool call, n
 2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
 4. Public HVAC buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/11
-5. Open the free HVAC preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+5. Public HVAC buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
+6. Open the free HVAC preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+7. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+8. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -130,9 +132,10 @@ Use this first when the buyer is a dental office with one missed new-patient cal
 2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
 4. Public dental buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/12
-5. Open the free dental preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+5. Public dental buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
+6. Open the free dental preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+7. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+8. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post patient names, phone numbers, emails, appointment dates, dental symptoms, treatment details, insurance IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -306,6 +309,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
 Public plumbing buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/10
 
+Public plumbing buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
+
 HVAC buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
 
@@ -318,6 +324,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
 Public HVAC buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 
+Public HVAC buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
+
 Dental buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
 
@@ -329,6 +338,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
 
 Public dental buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/12
+
+Public dental buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
 
 Med spa buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html

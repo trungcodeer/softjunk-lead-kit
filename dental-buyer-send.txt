@@ -19,6 +19,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
 Public dental buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/12
 
+Public dental buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
+
 Free dental preview:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 

@@ -19,6 +19,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html
 Public HVAC buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 
+Public HVAC buyer discussion:
+https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
+
 Free HVAC preview:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 
