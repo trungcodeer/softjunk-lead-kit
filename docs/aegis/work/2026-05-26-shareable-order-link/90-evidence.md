@@ -22,6 +22,34 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Central Catalog No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `product-feed.json`
+- `offers.json`
+- `buyer-index.json`
+- `BUYER_INDEX.md`
+
+Published commit and release:
+- Product commit: `b6277d579de1699ed996c47bb5a68cee5c597675`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.140.
+
+Validation:
+- Local marker validation confirmed all four updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `product-feed.json`, `offers.json`, and `buyer-index.json` after the edit.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- product-feed.json offers.json buyer-index.json BUYER_INDEX.md` passed with only CRLF normalization warnings.
+- GitHub Pages latest build API returned `built` for commit `b6277d579de1699ed996c47bb5a68cee5c597675`.
+- Live Pages validation returned HTTP 200 for `product-feed.json`, `offers.json`, `buyer-index.json`, and `BUYER_INDEX.md`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed where applicable.
+- Raw GitHub validation returned HTTP 200 for all four changed files; all included the same required markers and JSON parsed where applicable.
+- Product release `v2.29.140` is public, non-draft, non-prerelease, targets `b6277d579de1699ed996c47bb5a68cee5c597675`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `product-feed.json`, `offers.json`, `buyer-index.json`, and `BUYER_INDEX.md`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Answer Engine No-Clone Checkout Proof Evidence
 
 Artifacts updated:
