@@ -3838,3 +3838,28 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Quiet-Lead GitHub-Native Order Route Evidence
+
+Artifacts added:
+- Public order board: `https://github.com/trungcodeer/quiet-lead-follow-up/issues/1`.
+- Paid order form: `https://github.com/trungcodeer/quiet-lead-follow-up/issues/new?template=paid-quiet-lead-rescue.yml`.
+- Issue template: `.github/ISSUE_TEMPLATE/paid-quiet-lead-rescue.yml`.
+
+Artifacts wired:
+- Quiet repo metadata, labels, `README.md`, `AGENTS.md`, `CODEX.md`, `.github/ISSUE_TEMPLATE/config.yml`, `llms.txt`, and `buyer-route.json`.
+- Root `llms.txt`.
+- Product `llms.txt` and `buyer-index.json`.
+
+Validation:
+- API validation confirmed quiet repo homepage, `github-order-form` topic, issue template content markers, config contact links, README/AGENTS/CODEX/llms markers, buyer-route JSON fields, issue #1 body, and labels.
+- Root/product API validation confirmed new quiet-lead order route markers in root/product `llms.txt` and product `buyer-index.json`.
+- GitHub Pages latest build API returned `built` for quiet commit `e510d7731231d97c4887f6226f0f6233245c1a96`, root commit `d82f8afba99de7a0124f93e1738ff833b93e26af`, and product commit `740fd968a82d458a63391fe5492e3aa869dec7e1`.
+- Live/raw `curl.exe` validation passed for quiet raw README/AGENTS/template, quiet live buyer-route JSON and `llms.txt`, root live `llms.txt`, product live `buyer-index.json`, and product live `llms.txt`.
+- Releases created: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-github-order-route-v1`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-quiet-github-order-route-v1`, and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.95`.
+- IndexNow submission for 8 owned URLs returned `HTTP/1.1 200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
