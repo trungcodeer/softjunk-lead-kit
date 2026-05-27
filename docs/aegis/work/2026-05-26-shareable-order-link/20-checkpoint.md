@@ -5194,3 +5194,50 @@ DriftCheckDraft:
 - Compatibility boundary: static GitHub Pages, GitHub discovery surfaces, public Gists, PayPal.Me, manual fulfillment gate.
 - New owner/branch/fallback: none.
 - Decision: continue.
+
+## 2026-05-27 Quiet-Lead Exact PayPal Handoff Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials or trusted CSV proof are available.
+
+Active slice:
+- Remove a direct checkout leak by creating the missing quiet-lead `pay-5-usd-paypal.html` handoff page that was already referenced by discovery surfaces.
+
+Completed todos:
+- Re-read continuation and accessibility guidance.
+- Inspected current remote state for root, product, and `quiet-lead-follow-up` repo.
+- Confirmed `quiet-lead-follow-up` Pages was enabled and `pay-5-usd-paypal.html` was referenced but missing.
+- Added `pay-5-usd-paypal.html` with a copy-safe PayPal note builder, exact 5 USD PayPal link, privacy guard, and `PAYPAL_PAYMENT_VERIFIED=true` stop rule.
+- Added `pay-5-usd-paypal.json` as a machine-readable handoff.
+- Updated quiet `README.md`, `llms.txt`, `robots.txt`, `sitemap.xml`, and `buyer-route.json`.
+- Updated root `llms.txt`, `robots.txt`, and `sitemap.xml`.
+- Updated product `buyer-index.json` and `llms.txt`.
+- Validated API JSON/XML/HTML markers and inline JavaScript.
+- Confirmed GitHub Pages builds were built for quiet commit `a9cd9ce47fa0cc8b5becb15f93013cbfd712ef43`, root commit `e5532fc739ec1a86f1d564c996b2f6e809be0407`, and product commit `5d8b4325da4691c101c75e409530cb9a378354eb`.
+- Validated live public URLs with `curl.exe`.
+- Created releases `quiet-paypal-handoff-v1`, `root-quiet-paypal-handoff-v1`, and `v2.29.94`.
+- Submitted 9 owned URLs to IndexNow and received `HTTP/1.1 200 OK`.
+- Reran PayPal verifier.
+
+Evidence refs:
+- Quiet live PayPal handoff: `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html`.
+- Quiet live PayPal handoff JSON: `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.json`.
+- Quiet buyer route JSON: `https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json`.
+- Root discovery: `https://trungcodeer.github.io/llms.txt` and `https://trungcodeer.github.io/sitemap.xml`.
+- Product buyer index: `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+- Releases: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-paypal-handoff-v1`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-quiet-paypal-handoff-v1`, and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.94`.
+- Public issue evidence comment records live/API validation and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it fixes a broken exact checkout handoff that could otherwise lose a qualified buyer immediately before PayPal.
+- Compatibility boundary: static GitHub Pages, GitHub discovery surfaces, public JSON, PayPal.Me, manual fulfillment gate.
+- New owner/branch/fallback: none.
+- Decision: continue.
