@@ -2,6 +2,8 @@ SoftJunk  Digital Kit Order Contract
 
 Use when the buyer wants the ready lead follow-up kit rather than a custom one-lead rescue.
 
+Order contract JSON: https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json
+Order contract text: https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt
 Proof page: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
 Manifest JSON: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 Public sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
