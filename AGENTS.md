@@ -37,6 +37,10 @@ Use this before the generic route when the buyer has one unanswered roofing esti
 
 Do not ask the buyer to post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 
+## Run-First Clone Route
+
+When the repo has been cloned, open RUN_THIS_FIRST first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RUN_THIS_FIRST.md. Machine-readable route: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json. Use npm start, npm run try:rescue, then npm run pay:custom or npm run pay:kit. Keep the PAYPAL_PAYMENT_VERIFIED=true gate.
+
 ## Clone CLI Route
 
 Use this when an AI assistant, coding agent, developer, or crawler has cloned the repository and needs a runnable local path instead of another page.
