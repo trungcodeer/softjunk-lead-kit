@@ -101,9 +101,10 @@ Use this first when the buyer is a plumbing company with one missed emergency ca
 1. Send one fitting buyer this copy-ready packet: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html
 2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
-4. Open the free plumbing preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-5. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-6. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+4. Public plumbing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/10
+5. Open the free plumbing preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -251,6 +252,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
 
 Plumbing buyer send text:
 https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
+
+Public plumbing buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/10
 
 Roofing estimate rescue JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json

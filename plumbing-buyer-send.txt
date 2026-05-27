@@ -16,6 +16,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
 Plumbing sample:
 https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 
+Public plumbing buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/10
+
 Free plumbing preview:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 

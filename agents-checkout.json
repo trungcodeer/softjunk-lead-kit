@@ -327,6 +327,7 @@
                                       "page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html",
                                       "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json",
                                       "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt",
+                                      "buyer_issue_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/10",
                                       "payment_url":  "https://paypal.me/softjunk/5USD",
                                       "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
                                       "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
