@@ -6062,3 +6062,50 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo metadata/topics/description, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; updated repo-level discovery metadata only.
 - Decision: continue.
+
+## 2026-05-27 Niche Buyer Discussions Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Publish GitHub-native buyer discussions for existing plumbing, HVAC, and dental one-buyer packets and wire them into discovery.
+
+Completed todos:
+- Confirmed repo was clean at `8c95367a9ebbd9550aef1c84dc95e718d06e17d3` and PayPal verifier still returned missing credentials at slice start.
+- Confirmed existing Discussions only covered generic, roofing, and med spa buyer routes.
+- Created public Discussion #15 for plumbing emergency lead rescue.
+- Created public Discussion #16 for HVAC urgent service lead rescue.
+- Created public Discussion #17 for dental new-patient lead rescue.
+- Wired the discussion URLs into each matching HTML, JSON, and TXT packet plus README, AGENTS, buyer-index, agents-checkout, agent-buyer-catalog, ai-plugin, and `llms.txt`.
+- Validated local JSON/JSONL, inline script parsing, `git diff --check`, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `5030251b6d72b647e639194ce8bdbad47b4018c5` and release tag `v2.29.115`.
+- Waited for GitHub Pages to build the commit and validated live discussion markers across updated Pages/discovery files.
+- Confirmed Discussion #15/#16/#17 bodies via GraphQL and verified they include PayPal route, buyer packets, privacy guards, and verification gates.
+- Posted linkback comments to issues #10, #11, #12, and agent board issue #5.
+- Submitted 13 updated Pages URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Plumbing discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/15.
+- HVAC discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16.
+- Dental discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/17.
+- Plumbing issue linkback: https://github.com/trungcodeer/softjunk-lead-kit/issues/10#issuecomment-4555995215.
+- HVAC issue linkback: https://github.com/trungcodeer/softjunk-lead-kit/issues/11#issuecomment-4555995184.
+- Dental issue linkback: https://github.com/trungcodeer/softjunk-lead-kit/issues/12#issuecomment-4555995188.
+- Agent board note: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4555995206.
+- Deployment tag: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.115.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds GitHub-native public buyer routes for three high-intent niches without spam, scraping, deception, private data, or false payment claims.
+- Compatibility boundary: owned GitHub repo, GitHub Discussions/issues, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added plumbing, HVAC, and dental discussion routes and linkback comments as owned public distribution surfaces.
+- Decision: continue.

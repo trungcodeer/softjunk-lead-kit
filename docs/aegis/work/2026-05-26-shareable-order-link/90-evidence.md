@@ -22,6 +22,42 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Niche Buyer Discussions Evidence
+
+Public distribution:
+- Plumbing buyer discussion: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/15`.
+- HVAC buyer discussion: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/16`.
+- Dental buyer discussion: `https://github.com/trungcodeer/softjunk-lead-kit/discussions/17`.
+- Plumbing issue linkback: `https://github.com/trungcodeer/softjunk-lead-kit/issues/10#issuecomment-4555995215`.
+- HVAC issue linkback: `https://github.com/trungcodeer/softjunk-lead-kit/issues/11#issuecomment-4555995184`.
+- Dental issue linkback: `https://github.com/trungcodeer/softjunk-lead-kit/issues/12#issuecomment-4555995188`.
+- Agent board note: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4555995206`.
+
+Artifacts updated:
+- Plumbing, HVAC, and dental buyer HTML/JSON/TXT packets.
+- README, AGENTS, buyer-index, agents-checkout, agent-buyer-catalog, ai-plugin, and `llms.txt`.
+
+Validation:
+- GitHub GraphQL confirmed Discussion #15/#16/#17 are in the Announcements category and contain buyer packet links, exact PayPal URL, one-buyer share route, privacy rule, and verification gate.
+- Local JSON validation parsed plumbing/HVAC/dental buyer JSON, agents-checkout, buyer-index, and `.well-known/ai-plugin.json`.
+- Local JSONL validation parsed 51 `agent-buyer-catalog.jsonl` records.
+- Inline JavaScript parsing confirmed all three buyer-send pages remain valid and include their discussion URLs.
+- `git diff --check` returned no whitespace errors beyond CRLF normalization warnings.
+- Playwright/Edge local desktop and mobile checks confirmed discussion links, PayPal links, no horizontal overflow, minimum 44px targets, and copy status behavior on all three pages.
+- Commit `5030251b6d72b647e639194ce8bdbad47b4018c5` pushed to `main`; tag `v2.29.115` pushed.
+- GitHub Pages latest build API returned `built` for commit `5030251b6d72b647e639194ce8bdbad47b4018c5`.
+- Live validation returned HTTP 200 for the three buyer-send HTML/JSON/TXT routes plus buyer-index, agent-buyer-catalog, ai-plugin, and `llms.txt` with discussion URL markers.
+- IndexNow POST submitted 13 updated owned URLs and returned `200`.
+
+Accessibility and privacy guardrails:
+- The updated buyer pages only add native anchor links inside the existing route group; existing skip links, one-H1 structure, visible focus styling, button target sizing, textarea labels, and `aria-live` status regions remain intact.
+- Each discussion and linkback comment states that the route is not payment proof and forbids scraped lists, cold spam, private lead/payment data, and fake payment claims.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Repo Topic Discovery Evidence
 
 Public metadata updated:
