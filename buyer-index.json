@@ -832,5 +832,10 @@
     "clone_cli_raw_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js",
     "clone_cli_pages_url":  "https://trungcodeer.github.io/softjunk-lead-kit/bin/softjunk-lead-kit.js",
     "clone_cli_run_after_clone":  "node bin/softjunk-lead-kit.js doctor --json",
-    "clone_cli_run_from_github_package":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json"
+    "clone_cli_run_from_github_package":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json",
+    "run_this_first_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md",
+    "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+    "try_now_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
+    "try_now_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/try-now.json",
+    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml"
 }
