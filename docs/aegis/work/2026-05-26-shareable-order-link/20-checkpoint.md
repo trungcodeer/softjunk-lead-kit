@@ -6176,3 +6176,37 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, GitHub repo metadata, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added a release/feed distribution surface only.
 - Decision: continue.
+
+## 2026-05-27 Direct PayPal Issue Feed Send Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Send the new direct PayPal release through the pinned buyer-agent issue board so watchers/feed readers and buyer-agents have a short public checkout-card route.
+
+Completed todos:
+- Confirmed repo was clean at `f34a1f8a86c96b31a3e8b870906b06c98a40209a`.
+- Read issue #5 and release `v2.29.116` to avoid duplicating the same release-send note.
+- Posted a public issue #5 comment linking release `v2.29.116`, repo website metadata, and direct PayPal checkout.
+- Verified the last issue #5 comment URL and body through `gh issue view`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Issue feed checkout-card comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4556176878.
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds an owned issue-feed send for the direct checkout route without unsolicited outreach, scraped lists, private data, or fake payment claims.
+- Compatibility boundary: GitHub issues/feed, GitHub Releases, GitHub repo metadata, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added an issue-feed comment distribution surface only.
+- Decision: continue.
