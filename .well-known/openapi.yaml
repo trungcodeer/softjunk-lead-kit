@@ -597,13 +597,34 @@ paths:
             text/html:
               schema:
                 type: string
-  /paid-kit-proof.html:
+  /digital-kit-order.json:
+    get:
+      operationId: getDigitalKitOrderContract
+      summary: Get the digital kit proof and order contract.
+      responses:
+        "200":
+          description: Machine-readable order contract with proof page, paid ZIP manifest, sample ZIP SHA-256, GitHub order board/form, exact 5 USD PayPal URL, required note, privacy rule, and seller-side verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /digital-kit-order.txt:
+    get:
+      operationId: getDigitalKitOrderText
+      summary: Get the plain-text digital kit proof and order contract.
+      responses:
+        "200":
+          description: Plain-text route from paid kit proof to exact 5 USD PayPal payment, required note, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            text/plain:
+              schema:
+                type: string  /paid-kit-proof.html:
     get:
       operationId: openPaidKitProof
       summary: Open public proof that the paid ZIP is packaged.
       responses:
         "200":
-          description: Public paid kit proof page with ZIP hash, file manifest, price, and fulfillment gate.
+          description: Public paid kit proof page with ZIP hash, file manifest, sample ZIP hash, GitHub order board/form, price, required PayPal note, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -614,7 +635,7 @@ paths:
       summary: Get the paid ZIP manifest without exposing the private ZIP.
       responses:
         "200":
-          description: JSON manifest with ZIP byte size, SHA-256, file list, and fulfillment rule.
+          description: JSON manifest with ZIP byte size, SHA-256, file list, public sample route, order board/form context, and fulfillment rule.
           content:
             application/json:
               schema:
@@ -724,7 +745,7 @@ paths:
       summary: Download the free lead follow-up sample ZIP.
       responses:
         "200":
-          description: ZIP containing sample templates, tracker preview, and AI prompt samples.
+          description: ZIP containing public sample templates, tracker preview, and AI prompt samples; verify SHA-256 before using it as proof-adjacent preview material.
           content:
             application/zip:
               schema:
