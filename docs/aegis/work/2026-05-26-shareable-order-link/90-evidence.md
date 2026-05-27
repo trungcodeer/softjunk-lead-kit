@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Buyer-Agent Relay No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `buyer-agent-relay.html`
+- `buyer-agent-relay.json`
+- `buyer-agent-relay.txt`
+- Public Gist `9d5583f2a5ded7d6757fda9f4828b950`: `buyer-agent-relay.json` and `buyer-agent-relay.txt`
+
+Published commit and release:
+- Product commit: `550b93a281a7f75130e554b36c279cc8dfe066b1`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.134.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `buyer-agent-relay.json` after the edit.
+- Non-JSON-LD inline JavaScript validation found zero runtime scripts in `buyer-agent-relay.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- buyer-agent-relay.html buyer-agent-relay.json buyer-agent-relay.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `buyer-agent-relay.html` included `No-clone checkout proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh gist edit` refreshed public Gist `9d5583f2a5ded7d6757fda9f4828b950` from local `buyer-agent-relay.json` and `buyer-agent-relay.txt`.
+- GitHub Pages latest build API returned `built` for commit `550b93a281a7f75130e554b36c279cc8dfe066b1`.
+- Live Pages validation returned HTTP 200 for `buyer-agent-relay.html`, `buyer-agent-relay.json`, and `buyer-agent-relay.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `buyer-agent-relay.json` and `buyer-agent-relay.txt`; both included the same required markers and the JSON parsed.
+- Raw Gist validation confirmed `buyer-agent-relay.json` and `buyer-agent-relay.txt` include the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `buyer-agent-relay.html` included `No-clone checkout proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.134` is public, non-draft, non-prerelease, and targets `550b93a281a7f75130e554b36c279cc8dfe066b1`.
+- IndexNow POST submitted `buyer-agent-relay.html`, `buyer-agent-relay.json`, and `buyer-agent-relay.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Agent Order Path No-Clone Checkout Proof Evidence
 
 Artifacts updated:
