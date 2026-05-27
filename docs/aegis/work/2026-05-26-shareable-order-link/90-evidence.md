@@ -22,6 +22,20 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Direct PayPal Release Send Evidence
+
+Public distribution:
+- GitHub Release `v2.29.116`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116`.
+
+Validation:
+- `gh release view v2.29.116 --json tagName,name,url,isDraft,isPrerelease,targetCommitish,body` confirmed the release is public, non-draft, and non-prerelease.
+- The release body includes `https://paypal.me/softjunk/5USD`, the seller-side verification gate, and privacy/no-spam guardrails.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Niche Buyer Discussions Evidence
 
 Public distribution:

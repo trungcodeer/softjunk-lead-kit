@@ -6143,3 +6143,36 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo metadata, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; changed repo homepage metadata only.
 - Decision: continue.
+
+## 2026-05-27 Direct PayPal Release Send Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Use an owned GitHub Release as a public send/feed surface for the direct 5 USD PayPal checkout route.
+
+Completed todos:
+- Created public GitHub Release `v2.29.116` titled `Direct 5 USD PayPal checkout route`.
+- Release body routes buyers and buyer-agents directly to `https://paypal.me/softjunk/5USD`.
+- Release body keeps fulfillment gated on seller-side PayPal verification and forbids private lead/payment data, scraped lists, and cold-spam targets.
+- Verified the release is public, non-draft, and non-prerelease through `gh release view`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sends the offer through an owned GitHub Release/feed route without unsolicited outreach or fake payment claims.
+- Compatibility boundary: GitHub Releases, GitHub repo metadata, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added a release/feed distribution surface only.
+- Decision: continue.
