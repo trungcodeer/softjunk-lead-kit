@@ -1,16 +1,18 @@
 {
-  "name": "softjunk-mcp-checkout",
-  "version": "0.1.0",
-  "private": true,
-  "description": "Dependency-free MCP stdio checkout server and roofing estimate follow-up sequence tool for the SoftJunk 5 USD PayPal handoff.",
-  "bin": {
-    "softjunk-mcp-checkout": "./mcp-server-softjunk.js"
-  },
-  "scripts": {
-    "mcp:smoke": "node mcp-server-softjunk.js"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "license": "MIT"
+    "name":  "softjunk-lead-kit",
+    "version":  "0.2.0",
+    "private":  true,
+    "description":  "Dependency-free local CLI and MCP checkout tools for the SoftJunk 5 USD PayPal lead follow-up handoff.",
+    "bin":  {
+                "softjunk-lead-kit":  "./bin/softjunk-lead-kit.js",
+                "softjunk-mcp-checkout":  "./mcp-server-softjunk.js"
+            },
+    "scripts":  {
+                    "cli:smoke":  "node bin/softjunk-lead-kit.js doctor --json \u0026\u0026 node bin/softjunk-lead-kit.js kit --json \u0026\u0026 node bin/softjunk-lead-kit.js pay --mode kit --json",
+                    "mcp:smoke":  "node mcp-server-softjunk.js"
+                },
+    "engines":  {
+                    "node":  "\u003e=18"
+                },
+    "license":  "MIT"
 }
