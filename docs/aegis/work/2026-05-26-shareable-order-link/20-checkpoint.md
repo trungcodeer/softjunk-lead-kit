@@ -5241,3 +5241,51 @@ DriftCheckDraft:
 - Compatibility boundary: static GitHub Pages, GitHub discovery surfaces, public JSON, PayPal.Me, manual fulfillment gate.
 - New owner/branch/fallback: none.
 - Decision: continue.
+
+## 2026-05-27 Quiet-Lead GitHub-Native Order Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials or trusted CSV proof are available.
+
+Active slice:
+- Add a GitHub-native paid order route in the keyword-focused `quiet-lead-follow-up` repo to reduce friction for buyers already inside GitHub.
+
+Completed todos:
+- Re-read continuation and accessibility guidance.
+- Inspected quiet repo metadata, issue settings, current issue templates, funding, support docs, AGENTS/CODEX, README, buyer-route JSON, and issue list.
+- Created/updated labels `paypal-5`, `quiet-lead-order`, and `pending-paypal-verification`.
+- Updated repo homepage to `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html` and description/topics for GitHub-native order discovery.
+- Added `.github/ISSUE_TEMPLATE/paid-quiet-lead-rescue.yml` with required privacy and verification confirmations.
+- Updated `.github/ISSUE_TEMPLATE/config.yml` contact links for exact PayPal handoff and JSON handoff.
+- Created public order board `https://github.com/trungcodeer/quiet-lead-follow-up/issues/1`.
+- Wired the route into quiet README, AGENTS, CODEX, `llms.txt`, and `buyer-route.json`.
+- Wired the route into root `llms.txt` and product `llms.txt`/`buyer-index.json`.
+- Validated API and live/raw markers.
+- Confirmed GitHub Pages builds were built for quiet commit `e510d7731231d97c4887f6226f0f6233245c1a96`, root commit `d82f8afba99de7a0124f93e1738ff833b93e26af`, and product commit `740fd968a82d458a63391fe5492e3aa869dec7e1`.
+- Created releases `quiet-github-order-route-v1`, `root-quiet-github-order-route-v1`, and `v2.29.95`.
+- Submitted 8 owned URLs to IndexNow and received `HTTP/1.1 200 OK`.
+- Reran PayPal verifier.
+
+Evidence refs:
+- Public order board: `https://github.com/trungcodeer/quiet-lead-follow-up/issues/1`.
+- Paid order form after PayPal: `https://github.com/trungcodeer/quiet-lead-follow-up/issues/new?template=paid-quiet-lead-rescue.yml`.
+- Issue template source: `https://github.com/trungcodeer/quiet-lead-follow-up/blob/main/.github/ISSUE_TEMPLATE/paid-quiet-lead-rescue.yml`.
+- Exact PayPal handoff: `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html`.
+- Buyer route JSON: `https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json`.
+- Root/product discovery: `https://trungcodeer.github.io/llms.txt`, `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`, `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+- Releases: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-github-order-route-v1`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-quiet-github-order-route-v1`, and `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.95`.
+- Public issue evidence comment records validation and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it gives GitHub-native buyers a paid order board and form tied to the exact 5 USD PayPal handoff.
+- Compatibility boundary: GitHub repo metadata, issue templates, public issues, GitHub Pages, public JSON, PayPal.Me, manual fulfillment gate.
+- New owner/branch/fallback: none.
+- Decision: continue.
