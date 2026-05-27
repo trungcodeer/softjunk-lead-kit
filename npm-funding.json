@@ -2,8 +2,10 @@
     "schema_version":  "softjunk-npm-funding-v1",
     "updated":  "2026-05-27",
     "name":  "SoftJunk NPM Funding Route",
-    "purpose":  "Expose the exact 5 USD PayPal checkout through package metadata, npm fund, and machine-readable agent manifests for GitHub package installs and repo clones.",
+    "purpose":  "Expose the exact 5 USD PayPal checkout through public package metadata, npm fund, and machine-readable agent manifests for npm/GitHub package installs and repo clones.",
     "package_name":  "softjunk-lead-kit",
+    "package_version":  "0.2.1",
+    "publish_ready":  true,
     "package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
     "funding_type":  "custom",
     "funding_url":  "https://paypal.me/softjunk/5USD",
@@ -13,7 +15,7 @@
     "markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
     "pages_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
     "repository_url":  "https://github.com/trungcodeer/softjunk-lead-kit",
-    "homepage_url":  "https://trungcodeer.github.io/softjunk-lead-kit/",
+    "homepage_url":  "https://paypal.me/softjunk/5USD",
     "npm_commands":  [
                          {
                              "command":  "npm fund",

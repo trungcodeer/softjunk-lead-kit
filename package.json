@@ -1,61 +1,64 @@
 {
-    "name":  "softjunk-lead-kit",
-    "version":  "0.2.0",
-    "private":  true,
-    "description":  "Dependency-free local CLI and MCP checkout tools for the SoftJunk 5 USD PayPal lead follow-up handoff.",
-    "homepage":  "https://trungcodeer.github.io/softjunk-lead-kit/",
-    "repository":  {
-                       "type":  "git",
-                       "url":  "git+https://github.com/trungcodeer/softjunk-lead-kit.git"
-                   },
-    "bugs":  {
-                 "url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues"
-             },
-    "keywords":  [
-                     "lead-follow-up",
-                     "paypal",
-                     "buyer-agent",
-                     "npm-fund",
-                     "softjunk"
-                 ],
-    "funding":  {
-                    "type":  "custom",
-                    "url":  "https://paypal.me/softjunk/5USD"
-                },
-    "bin":  {
-                "softjunk-lead-kit":  "./bin/softjunk-lead-kit.js",
-                "softjunk-mcp-checkout":  "./mcp-server-softjunk.js"
-            },
-    "scripts":  {
-                    "cli:smoke":  "node bin/softjunk-lead-kit.js doctor --json \u0026\u0026 node bin/softjunk-lead-kit.js kit --json \u0026\u0026 node bin/softjunk-lead-kit.js pay --mode kit --json",
-                    "mcp:smoke":  "node mcp-server-softjunk.js",
-                    "start":  "node bin/softjunk-lead-kit.js doctor --json",
-                    "try:rescue":  "node bin/softjunk-lead-kit.js rescue --business \"roofing contractor\" --service \"roof estimate\" --source estimate --need \"unanswered estimate\" --tone direct --next quote --json",
-                    "try:send":  "node bin/softjunk-lead-kit.js send --business \"med spa\" --service consultation --source DM --need \"quiet inquiry\"",
-                    "pay:custom":  "node bin/softjunk-lead-kit.js pay --mode custom --json",
-                    "pay:kit":  "node bin/softjunk-lead-kit.js pay --mode kit --json",
-                    "fund":  "node bin/softjunk-lead-kit.js pay --mode custom --json",
-                    "fund:kit":  "node bin/softjunk-lead-kit.js pay --mode kit --json",
-                    "dev:first":  "npm start",
-                    "agent:first":  "npm start",
-                    "agent:preview":  "npm run try:rescue",
-                    "agent:pay":  "npm run pay:custom",
-                    "codespaces:first":  "npm start"
-                },
-    "engines":  {
-                    "node":  "\u003e=18"
-                },
-    "license":  "MIT",
-    "softjunk":  {
-                     "run_this_first_url":  "https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md",
-                     "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
-                     "dev_agent_start_url":  "https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md",
-                     "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
-                     "try_now_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
-                     "payment_url":  "https://paypal.me/softjunk/5USD",
-                     "npm_funding_url":  "https://paypal.me/softjunk/5USD",
-                     "npm_funding_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
-                     "npm_funding_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
-                     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
-                 }
+    "name": "softjunk-lead-kit",
+    "version": "0.2.1",
+    "private": false,
+    "description": "Dependency-free local CLI and MCP checkout tools for the SoftJunk 5 USD PayPal lead follow-up handoff.",
+    "homepage": "https://paypal.me/softjunk/5USD",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/trungcodeer/softjunk-lead-kit.git"
+    },
+    "bugs": {
+        "url": "https://github.com/trungcodeer/softjunk-lead-kit/issues"
+    },
+    "keywords": [
+        "lead-follow-up",
+        "paypal",
+        "buyer-agent",
+        "npm-fund",
+        "softjunk"
+    ],
+    "funding": {
+        "type": "custom",
+        "url": "https://paypal.me/softjunk/5USD"
+    },
+    "bin": {
+        "softjunk-lead-kit": "bin/softjunk-lead-kit.js",
+        "softjunk-mcp-checkout": "mcp-server-softjunk.js"
+    },
+    "scripts": {
+        "cli:smoke": "node bin/softjunk-lead-kit.js doctor --json && node bin/softjunk-lead-kit.js kit --json && node bin/softjunk-lead-kit.js pay --mode kit --json",
+        "mcp:smoke": "node mcp-server-softjunk.js",
+        "start": "node bin/softjunk-lead-kit.js doctor --json",
+        "try:rescue": "node bin/softjunk-lead-kit.js rescue --business \"roofing contractor\" --service \"roof estimate\" --source estimate --need \"unanswered estimate\" --tone direct --next quote --json",
+        "try:send": "node bin/softjunk-lead-kit.js send --business \"med spa\" --service consultation --source DM --need \"quiet inquiry\"",
+        "pay:custom": "node bin/softjunk-lead-kit.js pay --mode custom --json",
+        "pay:kit": "node bin/softjunk-lead-kit.js pay --mode kit --json",
+        "fund": "node bin/softjunk-lead-kit.js pay --mode custom --json",
+        "fund:kit": "node bin/softjunk-lead-kit.js pay --mode kit --json",
+        "dev:first": "npm start",
+        "agent:first": "npm start",
+        "agent:preview": "npm run try:rescue",
+        "agent:pay": "npm run pay:custom",
+        "codespaces:first": "npm start"
+    },
+    "engines": {
+        "node": ">=18"
+    },
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
+    },
+    "softjunk": {
+        "run_this_first_url": "https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md",
+        "run_this_first_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+        "dev_agent_start_url": "https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md",
+        "dev_agent_start_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+        "try_now_url": "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
+        "payment_url": "https://paypal.me/softjunk/5USD",
+        "npm_funding_url": "https://paypal.me/softjunk/5USD",
+        "npm_funding_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+        "npm_funding_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+        "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
+    }
 }
