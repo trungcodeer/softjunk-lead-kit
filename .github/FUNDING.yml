@@ -1,3 +1,4 @@
+# GitHub Sponsor button custom URLs for the SoftJunk 5 USD checkout.
 # Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 custom:
   - https://paypal.me/softjunk/5USD
