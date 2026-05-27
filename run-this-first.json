@@ -27,5 +27,12 @@
     "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
     "copilot_instructions_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md",
     "devcontainer_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json",
-    "vscode_tasks_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json"
+    "vscode_tasks_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json",
+    "npm_funding_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+    "npm_funding_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+    "npm_package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+    "npm_funding_url":  "https://paypal.me/softjunk/5USD",
+    "npm_fund_command":  "npm fund",
+    "npm_run_fund_command":  "npm run fund",
+    "npm_run_fund_kit_command":  "npm run fund:kit"
 }

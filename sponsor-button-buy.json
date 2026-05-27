@@ -91,6 +91,31 @@
                                    "name":  "clone_cli",
                                    "url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
                                    "command":  "npm run try:rescue"
+                               },
+                               {
+                                   "name":  "npm_funding",
+                                   "url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+                                   "command":  "npm fund"
                                }
-                           ]
+                           ],
+    "npm_funding_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+    "npm_funding_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+    "npm_package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+    "npm_funding_url":  "https://paypal.me/softjunk/5USD",
+    "npm_fund_command":  "npm fund",
+    "npm_run_fund_command":  "npm run fund",
+    "npm_run_fund_kit_command":  "npm run fund:kit",
+    "npm_funding_route":  {
+                              "name":  "NPM funding route",
+                              "url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+                              "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+                              "package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+                              "commands":  [
+                                               "npm fund",
+                                               "npm run fund",
+                                               "npm run fund:kit"
+                                           ],
+                              "payment_url":  "https://paypal.me/softjunk/5USD",
+                              "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                          }
 }

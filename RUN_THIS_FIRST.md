@@ -34,19 +34,30 @@ node bin/softjunk-lead-kit.js send --business "med spa" --service consultation -
 
 ## Pay Exactly 5 USD
 
+NPM funding metadata:
+
+```bash
+npm fund
+```
+
 Custom one-lead rescue:
 
 ```bash
+npm run fund
 node bin/softjunk-lead-kit.js pay --mode custom --json
 ```
 
 Ready digital kit:
 
 ```bash
+npm run fund:kit
 node bin/softjunk-lead-kit.js pay --mode kit --json
 ```
 
 PayPal URL: https://paypal.me/softjunk/5USD
+
+Machine-readable NPM funding route:
+https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
 
 After payment, use the clone CLI order form with placeholders only:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml

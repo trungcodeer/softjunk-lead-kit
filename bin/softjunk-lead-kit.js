@@ -11,6 +11,8 @@ const CONSTANTS = Object.freeze({
   rootBuyerCard: 'https://trungcodeer.github.io/5/',
   rootBuyerJson: 'https://trungcodeer.github.io/5.json',
   productUrl: 'https://trungcodeer.github.io/softjunk-lead-kit/',
+  npmFundingJson: 'https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json',
+  npmFundingMarkdown: 'https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md',
   digitalKitContractJson: 'https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json',
   digitalKitContractText: 'https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt',
   digitalKitProof: 'https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html',
@@ -34,6 +36,8 @@ Usage:
   softjunk-lead-kit send --business <type> --service <service> --source <source> --need <need> [--tone <tone>] [--next <action>] [--value <value>] [--json]
   softjunk-lead-kit kit [--json]
   softjunk-lead-kit pay [--mode custom|kit] [--json]
+  npm fund
+  npm run fund
 
 Examples:
   softjunk-lead-kit rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote
@@ -247,9 +251,14 @@ async function buildDoctor(options) {
     local_only: true,
     auth_required: false,
     payment_url: CONSTANTS.paymentUrl,
+    npm_funding_url: CONSTANTS.paymentUrl,
+    npm_funding_json_url: CONSTANTS.npmFundingJson,
+    npm_funding_markdown_url: CONSTANTS.npmFundingMarkdown,
+    npm_fund_command: 'npm fund',
     success_signal: CONSTANTS.successSignal,
     verification_gate: CONSTANTS.verificationGate,
     commands: ['doctor', 'rescue', 'send', 'kit', 'pay'],
+    package_commands: ['npm fund', 'npm run fund', 'npm run fund:kit'],
     install: {
       after_clone: 'node bin/softjunk-lead-kit.js doctor --json',
       npm_exec_from_github: 'npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json'

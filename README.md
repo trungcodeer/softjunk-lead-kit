@@ -13,6 +13,7 @@ Privacy rule: use placeholders only. Do not post customer names, phone numbers, 
 
 [![Pay $5 on PayPal](https://img.shields.io/badge/PayPal-Pay%20%245-0070ba?logo=paypal)](https://paypal.me/softjunk/5USD)
 [![GitHub Sponsor route](https://img.shields.io/badge/GitHub-Sponsor%20route-24292f?logo=github)](https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md)
+[![npm fund route](https://img.shields.io/badge/npm-fund%20route-cb3837?logo=npm)](https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json)
 
 ![SoftJunk Lead Kit $5 PayPal offer](social-card-qr.png)
 
@@ -20,6 +21,20 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 Sponsor button JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
 Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
+NPM funding route: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
+NPM funding guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
+
+## NPM Fund / Package Metadata
+
+When this repo is installed as a GitHub package or opened after clone, the package metadata points to the exact 5 USD PayPal route:
+
+```bash
+npm fund
+npm run fund
+npm run fund:kit
+```
+
+The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 ## Dev Agent / Codespaces Start
 
@@ -28,6 +43,7 @@ When this repo opens in VS Code, Codespaces, Copilot, or a coding-agent workspac
 ```bash
 npm start
 npm run try:rescue
+npm fund
 npm run pay:custom
 ```
 
@@ -45,6 +61,7 @@ This repo receives clone traffic, so the useful path after cloning is local-firs
 ```bash
 npm start
 npm run try:rescue
+npm fund
 npm run pay:kit
 ```
 

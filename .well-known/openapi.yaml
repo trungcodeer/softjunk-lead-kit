@@ -22,6 +22,9 @@ x-softjunk-fastest-buyer-path:
   well_known_mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
   mcp_checkout_server_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
   payment_url: https://paypal.me/softjunk/5USD
+  npm_funding_json_url: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
+  npm_funding_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
+  npm_fund_command: npm fund
   funding_config_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
   sponsor_button_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
   sponsor_button_json_url: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
@@ -48,7 +51,8 @@ x-softjunk-fastest-buyer-path:
   digital_kit_sample_zip_url: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
   digital_kit_sample_zip_sha256: 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba
   digital_kit_order_board_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
-  digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml  success_signal: PAYPAL_PAYMENT_VERIFIED=true
+  digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml
+  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
   /sponsor-button-buy.json:
     get:
@@ -71,7 +75,30 @@ paths:
           content:
             text/markdown:
               schema:
-                type: string  /dev-agent-start.json:
+                type: string
+  /npm-funding.json:
+    get:
+      operationId: getNpmFundingRoute
+      summary: Get the SoftJunk npm funding route.
+      responses:
+        "200":
+          description: Machine-readable package funding route for npm fund, exact 5 USD PayPal checkout, value-first commands, order forms, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /NPM_FUNDING.md:
+    get:
+      operationId: getNpmFundingMarkdown
+      summary: Get the SoftJunk npm funding guide.
+      responses:
+        "200":
+          description: Markdown guide for using package metadata, npm fund, npm run fund, and npm run fund:kit to reach the exact 5 USD PayPal checkout.
+          content:
+            text/markdown:
+              schema:
+                type: string
+  /dev-agent-start.json:
     get:
       operationId: getDevAgentStartRoute
       summary: Get the SoftJunk dev-agent start route.
@@ -92,7 +119,8 @@ paths:
           content:
             text/markdown:
               schema:
-                type: string  /run-this-first.json:
+                type: string
+  /run-this-first.json:
     get:
       operationId: getRunThisFirstCloneRoute
       summary: Get the SoftJunk run-this-first clone route.
@@ -135,7 +163,8 @@ paths:
           content:
             text/markdown:
               schema:
-                type: string  /clone-cli.json:
+                type: string
+  /clone-cli.json:
     get:
       operationId: getCloneCliManifest
       summary: Get the SoftJunk clone CLI manifest.
@@ -167,7 +196,8 @@ paths:
           content:
             application/javascript:
               schema:
-                type: string  /agent-close.html:
+                type: string
+  /agent-close.html:
     get:
       operationId: openAgentCloseContract
       summary: Open the SoftJunk agent close contract.
@@ -760,7 +790,8 @@ paths:
           content:
             text/plain:
               schema:
-                type: string  /paid-kit-proof.html:
+                type: string
+  /paid-kit-proof.html:
     get:
       operationId: openPaidKitProof
       summary: Open public proof that the paid ZIP is packaged.
@@ -1266,7 +1297,8 @@ paths:
           content:
             text/plain:
               schema:
-                type: string  /five-dollar-buyer-card.html:
+                type: string
+  /five-dollar-buyer-card.html:
     get:
       operationId: openFiveDollarBuyerCard
       summary: Open the one-screen 5 USD buyer card.

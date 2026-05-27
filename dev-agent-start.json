@@ -19,5 +19,12 @@
     "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml",
     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
     "privacy_rule":  "Use placeholders only. Do not put customer or PayPal details into public issues, URLs, logs, or prompts.",
-    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "npm_funding_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+    "npm_funding_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+    "npm_package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+    "npm_funding_url":  "https://paypal.me/softjunk/5USD",
+    "npm_fund_command":  "npm fund",
+    "npm_run_fund_command":  "npm run fund",
+    "npm_run_fund_kit_command":  "npm run fund:kit"
 }

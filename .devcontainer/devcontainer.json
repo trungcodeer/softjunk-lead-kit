@@ -18,6 +18,7 @@
                       "SOFTJUNK_PAYMENT_URL":  "https://paypal.me/softjunk/5USD",
                       "SOFTJUNK_SUCCESS_SIGNAL":  "PAYPAL_PAYMENT_VERIFIED=true",
                       "SOFTJUNK_RUN_FIRST_JSON":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
-                      "SOFTJUNK_DEV_AGENT_START_JSON":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json"
+                      "SOFTJUNK_DEV_AGENT_START_JSON":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+                      "SOFTJUNK_NPM_FUNDING_JSON":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json"
                   }
 }

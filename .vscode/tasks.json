@@ -70,6 +70,20 @@
                                            "panel":  "dedicated",
                                            "clear":  true
                                        }
+                  },
+                  {
+                      "label":  "SoftJunk: NPM funding route",
+                      "type":  "shell",
+                      "command":  "npm fund",
+                      "detail":  "Package funding metadata points to https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+                      "problemMatcher":  [
+
+                                         ],
+                      "presentation":  {
+                                           "reveal":  "always",
+                                           "panel":  "dedicated",
+                                           "clear":  true
+                                       }
                   }
               ]
 }
