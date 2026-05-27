@@ -3812,6 +3812,31 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 MCP NPM Funding Tool Evidence
+
+Artifacts added/updated:
+- `mcp-server-softjunk.js` tool `get_softjunk_npm_funding_route`.
+- `MCP_CHECKOUT_SERVER.md`.
+- `mcp-checkout-server.json` and `.well-known/mcp-checkout-server.json`.
+- Wiring in `npm-funding.json`, `agents-checkout.json`, `buyer-index.json`, `.well-known/ai-plugin.json`, `clone-cli.json`, `agent-buyer-catalog.jsonl`, README, product llms, root llms, and quiet llms.
+
+Validation:
+- `node --check mcp-server-softjunk.js` passed.
+- JSON validation parsed MCP manifests, agents-checkout, buyer-index, ai-plugin, npm-funding, and clone-cli with the MCP npm funding tool marker.
+- Agent catalog JSONL parsed 46 records.
+- Control-character checks passed for MCP source, MCP docs, README, and product llms.
+- JSON-RPC stdio validation called `initialize`, `tools/list`, and `tools/call` for `get_softjunk_npm_funding_route`; the response included `https://paypal.me/softjunk/5USD`, `npm fund`, `npm run fund`, `npm run fund:kit`, the order form, and the verification gate.
+- GitHub Pages latest build API returned `built` for product commit `04ab4f87729a06434c002bb0ec558810531b8cde`, root commit `f7558b7925fecc0ebea9492878fc62daec8358ed`, and quiet commit `a407407310679294de40b802b0905c1b74b7ce34`.
+- Live/raw validation returned HTTP 200 for MCP source/docs/manifests, npm-funding JSON, product llms, root llms, and quiet llms with the MCP tool marker and exact PayPal URL.
+- IndexNow POST submitted 12 owned URLs and returned `200`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.103`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-mcp-npm-funding-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-mcp-npm-funding-route-v1`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553246336.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-27 NPM/Package Funding Route Evidence
 
 Artifacts added/updated:

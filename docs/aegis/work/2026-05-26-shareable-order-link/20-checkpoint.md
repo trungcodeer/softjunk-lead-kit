@@ -5591,3 +5591,40 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub package metadata, npm fund, GitHub Pages, public JSON/text/YAML, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added npm/package funding route on owned GitHub repo and Pages surfaces.
 - Decision: continue.
+
+## 2026-05-27 MCP NPM Funding Tool Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Extend the npm/package funding route into the local MCP checkout server so MCP-capable agents can call a tool and receive the exact 5 USD PayPal route, npm commands, order form, and verification gate.
+
+Completed todos:
+- Added MCP tool `get_softjunk_npm_funding_route` to `mcp-server-softjunk.js`.
+- Updated MCP docs and both MCP manifests.
+- Wired the MCP tool into npm funding JSON, agents-checkout, buyer-index, ai-plugin, clone-cli, agent-buyer-catalog, README, product llms, root llms, and quiet llms.
+- Validated MCP source syntax, JSON manifests, JSONL catalog, control characters, JSON-RPC `tools/list`, and JSON-RPC `tools/call`.
+- Validated Pages builds, live/raw URLs, releases, IndexNow, and final PayPal verifier.
+- Created releases `v2.29.103`, `root-mcp-npm-funding-route-v1`, and `quiet-mcp-npm-funding-route-v1`.
+
+Evidence refs:
+- MCP manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json.
+- Well-known MCP manifest: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json.
+- MCP docs: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.103, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-mcp-npm-funding-route-v1, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-mcp-npm-funding-route-v1.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553246336.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes package-native checkout discoverable via a local MCP tool without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: local MCP stdio server, GitHub package metadata, npm fund, GitHub Pages, public JSON/text/YAML, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added MCP tool route on owned GitHub repo and Pages surfaces.
+- Decision: continue.
