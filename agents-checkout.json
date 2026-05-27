@@ -280,6 +280,10 @@
     "clone_cli_pages_url":  "https://trungcodeer.github.io/softjunk-lead-kit/bin/softjunk-lead-kit.js",
     "clone_cli_run_after_clone":  "node bin/softjunk-lead-kit.js doctor --json",
     "clone_cli_run_from_github_package":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json",
+    "clone_cli_verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+    "clone_cli_release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+    "clone_cli_release_tarball_sha256":  "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+    "clone_cli_run_from_release_tarball_pay_custom":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
     "clone_cli_commands":  [
                                "doctor",
                                "rescue",

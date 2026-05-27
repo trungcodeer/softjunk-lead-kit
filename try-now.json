@@ -1,12 +1,17 @@
 {
     "schema_version":  "softjunk-try-now-v1",
-    "updated":  "2026-05-27",
+    "updated":  "2026-05-28",
     "name":  "SoftJunk Try Now",
     "purpose":  "A value-first route for cloners: generate follow-up preview and buyer handoff copy locally before payment.",
     "markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
     "github_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/TRY_NOW.md",
     "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
     "clone_cli_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
+    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+    "release_tarball_sha256":  "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+    "run_from_release_tarball_doctor":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit doctor --json",
+    "run_from_release_tarball_pay_custom":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
     "commands":  [
                      {
                          "name":  "try_rescue",
@@ -21,6 +26,10 @@
                          "command":  "npm run pay:custom"
                      },
                      {
+                         "name":  "no_clone_pay_custom",
+                         "command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json"
+                     },
+                     {
                          "name":  "pay_kit",
                          "command":  "npm run pay:kit"
                      }
@@ -28,5 +37,6 @@
     "payment_url":  "https://paypal.me/softjunk/5USD",
     "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml",
     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_gate":  "This is a checkout route, not payment proof. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
     "privacy_rule":  "Use placeholders only; no private customer or payment details in public."
 }
