@@ -2,7 +2,7 @@
     "schema_version":  "softjunk-sponsor-button-buy-v1",
     "updated":  "2026-05-27",
     "name":  "SoftJunk Sponsor Button Buy Route",
-    "purpose":  "A GitHub-native funding route that makes the repository Sponsor button point first to the exact 5 USD PayPal checkout and second to the one-read roofing buyer-send packet while preserving the payment verification gate.",
+    "purpose":  "A GitHub-native funding route that makes repository Sponsor buttons point first to the exact 5 USD PayPal checkout and second to the Send-5 copy-ready buyer handoff while preserving the payment verification gate.",
     "canonical_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
     "raw_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json",
     "gist_url":  "https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7",
@@ -12,23 +12,37 @@
     "payment_url":  "https://paypal.me/softjunk/5USD",
     "price":  "5.00",
     "currency":  "USD",
+    "send_five_buyer_handoff_url":  "https://trungcodeer.github.io/send-5/",
+    "send_five_buyer_handoff_json_url":  "https://trungcodeer.github.io/send-5.json",
+    "root_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/5/",
     "paypal_note_template":  "One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]",
     "funding_custom_urls":  [
                                 "https://paypal.me/softjunk/5USD",
-                                "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
-                                "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
-                                "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md"
+                                "https://trungcodeer.github.io/send-5/",
+                                "https://trungcodeer.github.io/5/",
+                                "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md"
                             ],
+    "sponsor_button_custom_urls":  [
+                                       "https://paypal.me/softjunk/5USD",
+                                       "https://trungcodeer.github.io/send-5/",
+                                       "https://trungcodeer.github.io/5/",
+                                       "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md"
+                                   ],
     "route_steps":  [
-                        {
-                            "step":  "open_buyer_send_packet",
-                            "url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
-                            "instruction":  "Use the buyer-send packet when the buyer has one unanswered roofing estimate and needs the shortest route to the exact 5 USD checkout."
-                        },
                         {
                             "step":  "open_sponsor_button_or_payment_url",
                             "url":  "https://paypal.me/softjunk/5USD",
                             "instruction":  "Use the repository Sponsor button or direct PayPal URL for the exact 5 USD checkout."
+                        },
+                        {
+                            "step":  "copy_send_five_handoff",
+                            "url":  "https://trungcodeer.github.io/send-5/",
+                            "instruction":  "Use Send-5 when a buyer-facing message is needed for a qualified one-lead buyer. Do not use it for cold spam."
+                        },
+                        {
+                            "step":  "open_root_buyer_card",
+                            "url":  "https://trungcodeer.github.io/5/",
+                            "instruction":  "Use the root buyer card when the buyer needs the shortest page with PayPal, note copy, one rewrite, privacy rule, and verification gate."
                         },
                         {
                             "step":  "paste_paypal_note",
@@ -36,22 +50,13 @@
                             "instruction":  "Use the safe one-lead rescue PayPal note with non-sensitive business context only."
                         },
                         {
-                            "step":  "inspect_fulfillment_shell",
-                            "url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md",
-                            "instruction":  "Inspect the public post-verification delivery shell before or after payment."
-                        },
-                        {
                             "step":  "verify",
                             "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
-                            "instruction":  "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+                            "instruction":  "Do not claim paid, started, delivered, complete, or stop unless seller-side PayPal evidence exists."
                         }
                     ],
     "privacy_rule":  "Use only non-sensitive business context in PayPal notes and public GitHub forms. Do not post customer names, emails, phone numbers, addresses, transaction IDs, patient data, or private lead details.",
     "payment_verification_rule":  "This route is a payment path, not payment proof. Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.",
-    "buyer_send_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
-    "buyer_send_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
-    "buyer_send_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt",
-    "buyer_send_packet_gist_url":  "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
     "buyer_risk_reversal":  {
                                 "name":  "one_rewrite_included",
                                 "applies_to":  "Custom 7-day follow-up sequence after seller-side PayPal verification.",
@@ -60,15 +65,7 @@
                                 "buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json"
                             },
     "paypal_buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
-    "sponsor_button_custom_urls":  [
-                                       "https://paypal.me/softjunk/5USD",
-                                       "https://trungcodeer.github.io/5/",
-                                       "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
-                                       "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md"
-                                   ],
-    "root_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/5/",
-    "product_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
-    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/5/",
+    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/send-5/",
     "one_rewrite_included":  true,
     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
 }
