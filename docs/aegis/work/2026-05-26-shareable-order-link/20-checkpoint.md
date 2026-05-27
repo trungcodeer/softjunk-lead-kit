@@ -4791,3 +4791,32 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 fastest usd5 agent manifests slice
+
+TodoCheckpointDraft:
+- Completed: added structured x_fastest_usd5_buyer_route to product AI plugin, product agent cards, product agents-checkout, root AI plugin, and root agent cards.
+- Completed: added Fastest USD 5 Buyer Route sections to product/root AGENTS.md.
+- Completed: updated product AI plugin astest_buyer_path to start with https://trungcodeer.github.io/5/.
+- Completed: validated live product/root manifests include /5/, Discussion #6, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- Completed: published releases v2.29.86 and root-fastest-agent-manifests-v1.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551025017.
+- Active slice: continue legitimate owned-channel buyer-agent conversion improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.86
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-fastest-agent-manifests-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551025017
+- Product manifest commits: f569d81efd8e91bbc7c17cd65669e6c770b6311d, d7862c7664693999d9f9cc525a345633b6cdcd09, 4e7d9085c5d34d11cacc6c08d34b36b5916e902f, 122fe758540498fbb5dcc53216c74318192b8f5e, 0d947d835bfb1eea781f8d5dbc94327921d0fca1.
+- Root manifest commits: 15d38f7add68a7a9e99054f9e62b6a20d591f6ad, 84016cb6e1f29bb28a4a76d6bfc453d4fd2289a8, c8e36dcb4797dc5f88babfa9524203f60615bd99, ec4b1adaa0e175d5caa0feb898c76952f3689c22.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by making agent/plugin manifests route buyer agents to the shortest checkout path.
+- Compatibility: no fulfillment gate was weakened; manifests still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
