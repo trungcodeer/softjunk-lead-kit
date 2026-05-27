@@ -3,6 +3,13 @@
 PayPal URL health evidence (not payment proof):
 https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json
 
+Intent-5 buyer preview:
+- Root page: https://trungcodeer.github.io/intent-5/
+- Root JSON: https://trungcodeer.github.io/intent-5.json
+- Root text: https://trungcodeer.github.io/intent-5.txt
+- Buyer-intent Gist bundle: https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9
+- Use for one missed call, estimate follow-up, no-show, or price objection. Pay exactly 5 USD at https://paypal.me/softjunk/5USD. Fulfillment starts only after seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
+
 Fastest USD 5 buyer route:
 1. Shortest page: https://trungcodeer.github.io/5/
 2. Buyer-agent JSON: https://trungcodeer.github.io/5.json
