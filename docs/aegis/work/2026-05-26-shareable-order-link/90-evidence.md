@@ -3964,3 +3964,28 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Dev-Agent Start Route Evidence
+
+Artifacts added/updated:
+- `DEV_AGENT_START.md` and `dev-agent-start.json`.
+- `.devcontainer/devcontainer.json`.
+- `.vscode/tasks.json`.
+- `.github/copilot-instructions.md`.
+- `package.json` scripts: `dev:first`, `agent:first`, `agent:preview`, `agent:pay`, and `codespaces:first`.
+- Discovery wiring in package metadata, README, AGENTS, run-first manifest, clone CLI manifest, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+
+Validation:
+- API validation parsed dev-agent JSON, devcontainer JSON, VS Code tasks JSON, package JSON, plugin JSON, and every JSONL record.
+- Installed the GitHub package in a temp project and ran `npm run dev:first`, `npm run agent:first`, `npm run agent:preview`, `npm run agent:pay`, and `npm run codespaces:first`; each returned valid JSON.
+- GitHub Pages latest build API returned `built` for product commit `ff86ade06d1eab15474829c9cdbf23a6972a9063`, root commit `5078ea3b4bf76850bb7efba1bcbbe5e4e460992c`, and quiet commit `f05e0514827926e4fd56c27e47c7c52f257405a5`.
+- Live `curl.exe` validation returned HTTP 200 for dev-agent guide/JSON, package metadata, README, AGENTS, run-first manifest, clone CLI manifest, agents-checkout, buyer-index, catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+- Raw GitHub validation returned HTTP 200 for `.devcontainer/devcontainer.json`, `.vscode/tasks.json`, and `.github/copilot-instructions.md` with PayPal and verification gate markers.
+- IndexNow POST submitted 15 owned URLs and returned `200`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.100`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-dev-agent-start-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-dev-agent-start-route-v1`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4552618339.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
