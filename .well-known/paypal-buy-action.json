@@ -1,206 +1,210 @@
 {
-    "schema_version":  "softjunk-paypal-buy-action-v1",
-    "updated":  "2026-05-27",
-    "name":  "SoftJunk PayPal BuyAction Manifest",
-    "purpose":  "Machine-readable exact $5 PayPal purchase action for buyer agents, assistants, crawlers, and humans routing a fitting one-lead rescue buyer without claiming payment before verification.",
-    "canonical_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
-    "well_known_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json",
-    "root_canonical_url":  "https://trungcodeer.github.io/paypal-buy-action.json",
-    "root_well_known_url":  "https://trungcodeer.github.io/.well-known/paypal-buy-action.json",
-    "payment_url":  "https://paypal.me/softjunk/5USD",
-    "price":  "5.00",
-    "currency":  "USD",
-    "seller":  "SoftJunk",
-    "buyer_index_url":  "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
-    "roofing_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
-    "after_payment_url":  "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
-    "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
-    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
-    "verification_gate":  "Stop only after seller-side PayPal evidence verifies the 5 USD payment.",
-    "privacy_gate":  "Use placeholders only in public order surfaces; keep customer names, phones, emails, addresses, claim numbers, invoice IDs, transaction IDs, and PayPal details out of public text.",
-    "schema_org_offer":  {
-                             "@context":  "https://schema.org",
-                             "@type":  "Offer",
-                             "name":  "SoftJunk One-Lead Rescue",
-                             "description":  "A 5 USD buyer-agent-readable checkout for one real quiet lead follow-up rescue, including roofing buyer-send routing when relevant.",
-                             "price":  "5.00",
-                             "priceCurrency":  "USD",
-                             "availability":  "https://schema.org/InStock",
-                             "url":  "https://paypal.me/softjunk/5USD",
-                             "seller":  {
-                                            "@type":  "Organization",
-                                            "name":  "SoftJunk",
-                                            "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
-                                        },
-                             "itemOffered":  {
-                                                 "@type":  "DigitalDocument",
-                                                 "name":  "SoftJunk checkout and buyer-send packets",
-                                                 "url":  "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
-                                                 "encodingFormat":  "application/json"
-                                             },
-                             "potentialAction":  {
-                                                     "@context":  "https://schema.org",
-                                                     "@type":  "BuyAction",
-                                                     "name":  "Pay exactly 5 USD to SoftJunk on PayPal",
-                                                     "target":  {
-                                                                    "@type":  "EntryPoint",
-                                                                    "urlTemplate":  "https://paypal.me/softjunk/5USD",
-                                                                    "httpMethod":  "GET",
-                                                                    "actionPlatform":  [
-                                                                                           "https://schema.org/DesktopWebPlatform",
-                                                                                           "https://schema.org/MobileWebPlatform"
-                                                                                       ]
-                                                                },
-                                                     "priceSpecification":  {
-                                                                                "@type":  "PriceSpecification",
-                                                                                "price":  "5.00",
-                                                                                "priceCurrency":  "USD"
-                                                                            },
-                                                     "seller":  {
-                                                                    "@type":  "Organization",
-                                                                    "name":  "SoftJunk",
-                                                                    "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
-                                                                },
-                                                     "object":  {
-                                                                    "@type":  "DigitalDocument",
-                                                                    "name":  "SoftJunk one-lead rescue checkout manifest",
-                                                                    "url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
-                                                                    "encodingFormat":  "application/json"
-                                                                },
-                                                     "result":  {
-                                                                    "@type":  "DigitalDocument",
-                                                                    "name":  "Delivered one-lead follow-up rescue after seller-side PayPal verification",
-                                                                    "url":  "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
-                                                                },
-                                                     "additionalProperty":  [
-                                                                                {
-                                                                                    "@type":  "PropertyValue",
-                                                                                    "name":  "success_signal",
-                                                                                    "value":  "PAYPAL_PAYMENT_VERIFIED=true"
-                                                                                },
-                                                                                {
-                                                                                    "@type":  "PropertyValue",
-                                                                                    "name":  "verification_gate",
-                                                                                    "value":  "Do not claim payment, fulfillment, or completion until seller-side PayPal evidence verifies the 5 USD transaction."
-                                                                                },
-                                                                                {
-                                                                                    "@type":  "PropertyValue",
-                                                                                    "name":  "privacy_gate",
-                                                                                    "value":  "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
-                                                                                }
-                                                                            ]
-                                                 }
-                         },
-    "potentialAction":  {
-                            "@context":  "https://schema.org",
-                            "@type":  "BuyAction",
-                            "name":  "Pay exactly 5 USD to SoftJunk on PayPal",
-                            "target":  {
-                                           "@type":  "EntryPoint",
-                                           "urlTemplate":  "https://paypal.me/softjunk/5USD",
-                                           "httpMethod":  "GET",
-                                           "actionPlatform":  [
-                                                                  "https://schema.org/DesktopWebPlatform",
-                                                                  "https://schema.org/MobileWebPlatform"
-                                                              ]
-                                       },
-                            "priceSpecification":  {
-                                                       "@type":  "PriceSpecification",
-                                                       "price":  "5.00",
-                                                       "priceCurrency":  "USD"
-                                                   },
-                            "seller":  {
-                                           "@type":  "Organization",
-                                           "name":  "SoftJunk",
-                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
-                                       },
-                            "object":  {
-                                           "@type":  "DigitalDocument",
-                                           "name":  "SoftJunk one-lead rescue checkout manifest",
-                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
-                                           "encodingFormat":  "application/json"
-                                       },
-                            "result":  {
-                                           "@type":  "DigitalDocument",
-                                           "name":  "Delivered one-lead follow-up rescue after seller-side PayPal verification",
-                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
-                                       },
-                            "additionalProperty":  [
-                                                       {
-                                                           "@type":  "PropertyValue",
-                                                           "name":  "success_signal",
-                                                           "value":  "PAYPAL_PAYMENT_VERIFIED=true"
-                                                       },
-                                                       {
-                                                           "@type":  "PropertyValue",
-                                                           "name":  "verification_gate",
-                                                           "value":  "Do not claim payment, fulfillment, or completion until seller-side PayPal evidence verifies the 5 USD transaction."
-                                                       },
-                                                       {
-                                                           "@type":  "PropertyValue",
-                                                           "name":  "privacy_gate",
-                                                           "value":  "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
-                                                       }
-                                                   ]
-                        },
-    "buyAction":  {
-                      "@context":  "https://schema.org",
-                      "@type":  "BuyAction",
-                      "name":  "Pay exactly 5 USD to SoftJunk on PayPal",
-                      "target":  {
-                                     "@type":  "EntryPoint",
-                                     "urlTemplate":  "https://paypal.me/softjunk/5USD",
-                                     "httpMethod":  "GET",
-                                     "actionPlatform":  [
-                                                            "https://schema.org/DesktopWebPlatform",
-                                                            "https://schema.org/MobileWebPlatform"
-                                                        ]
-                                 },
-                      "priceSpecification":  {
-                                                 "@type":  "PriceSpecification",
-                                                 "price":  "5.00",
-                                                 "priceCurrency":  "USD"
-                                             },
-                      "seller":  {
-                                     "@type":  "Organization",
-                                     "name":  "SoftJunk",
-                                     "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
-                                 },
-                      "object":  {
-                                     "@type":  "DigitalDocument",
-                                     "name":  "SoftJunk one-lead rescue checkout manifest",
-                                     "url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
-                                     "encodingFormat":  "application/json"
-                                 },
-                      "result":  {
-                                     "@type":  "DigitalDocument",
-                                     "name":  "Delivered one-lead follow-up rescue after seller-side PayPal verification",
-                                     "url":  "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
-                                 },
-                      "additionalProperty":  [
-                                                 {
-                                                     "@type":  "PropertyValue",
-                                                     "name":  "success_signal",
-                                                     "value":  "PAYPAL_PAYMENT_VERIFIED=true"
-                                                 },
-                                                 {
-                                                     "@type":  "PropertyValue",
-                                                     "name":  "verification_gate",
-                                                     "value":  "Do not claim payment, fulfillment, or completion until seller-side PayPal evidence verifies the 5 USD transaction."
-                                                 },
-                                                 {
-                                                     "@type":  "PropertyValue",
-                                                     "name":  "privacy_gate",
-                                                     "value":  "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
-                                                 }
-                                             ]
-                  },
-    "buyer_risk_reversal":  {
-                                "name":  "one_rewrite_included",
-                                "applies_to":  "Custom 7-day follow-up sequence after seller-side PayPal verification.",
-                                "value":  "One rewrite is included if the first custom sequence is not usable and the buyer supplies non-sensitive business context.",
-                                "privacy_rule":  "Use placeholders only; do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
-                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true"
-                            },
-    "one_rewrite_included":  true
+  "schema_version": "softjunk-paypal-buy-action-v1",
+  "updated": "2026-05-28",
+  "name": "SoftJunk PayPal BuyAction Manifest",
+  "purpose": "Machine-readable exact $5 PayPal purchase action for buyer agents, assistants, crawlers, and humans routing a fitting one-lead rescue buyer without claiming payment before verification.",
+  "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
+  "well_known_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json",
+  "root_canonical_url": "https://trungcodeer.github.io/paypal-buy-action.json",
+  "root_well_known_url": "https://trungcodeer.github.io/.well-known/paypal-buy-action.json",
+  "payment_url": "https://paypal.me/softjunk/5USD",
+  "price": "5.00",
+  "currency": "USD",
+  "seller": "SoftJunk",
+  "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+  "roofing_buyer_send_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+  "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "verification_gate": "Stop only after seller-side PayPal evidence verifies the 5 USD payment.",
+  "privacy_gate": "Use placeholders only in public order surfaces; keep customer names, phones, emails, addresses, claim numbers, invoice IDs, transaction IDs, and PayPal details out of public text.",
+  "schema_org_offer": {
+    "@context": "https://schema.org",
+    "@type": "Offer",
+    "name": "SoftJunk One-Lead Rescue",
+    "description": "A 5 USD buyer-agent-readable checkout for one real quiet lead follow-up rescue, including roofing buyer-send routing when relevant.",
+    "price": "5.00",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://paypal.me/softjunk/5USD",
+    "seller": {
+      "@type": "Organization",
+      "name": "SoftJunk",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+    },
+    "itemOffered": {
+      "@type": "DigitalDocument",
+      "name": "SoftJunk checkout and buyer-send packets",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
+      "encodingFormat": "application/json"
+    },
+    "potentialAction": {
+      "@context": "https://schema.org",
+      "@type": "BuyAction",
+      "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://paypal.me/softjunk/5USD",
+        "httpMethod": "GET",
+        "actionPlatform": [
+          "https://schema.org/DesktopWebPlatform",
+          "https://schema.org/MobileWebPlatform"
+        ]
+      },
+      "priceSpecification": {
+        "@type": "PriceSpecification",
+        "price": "5.00",
+        "priceCurrency": "USD"
+      },
+      "seller": {
+        "@type": "Organization",
+        "name": "SoftJunk",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+      },
+      "object": {
+        "@type": "DigitalDocument",
+        "name": "SoftJunk one-lead rescue checkout manifest",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
+        "encodingFormat": "application/json"
+      },
+      "result": {
+        "@type": "DigitalDocument",
+        "name": "Delivered one-lead follow-up rescue after seller-side PayPal verification",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+      },
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "success_signal",
+          "value": "PAYPAL_PAYMENT_VERIFIED=true"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "verification_gate",
+          "value": "Do not claim payment, fulfillment, or completion until seller-side PayPal evidence verifies the 5 USD transaction."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "privacy_gate",
+          "value": "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
+        }
+      ]
+    }
+  },
+  "potentialAction": {
+    "@context": "https://schema.org",
+    "@type": "BuyAction",
+    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://paypal.me/softjunk/5USD",
+      "httpMethod": "GET",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
+    },
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "5.00",
+      "priceCurrency": "USD"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "SoftJunk",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+    },
+    "object": {
+      "@type": "DigitalDocument",
+      "name": "SoftJunk one-lead rescue checkout manifest",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
+      "encodingFormat": "application/json"
+    },
+    "result": {
+      "@type": "DigitalDocument",
+      "name": "Delivered one-lead follow-up rescue after seller-side PayPal verification",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "success_signal",
+        "value": "PAYPAL_PAYMENT_VERIFIED=true"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "verification_gate",
+        "value": "Do not claim payment, fulfillment, or completion until seller-side PayPal evidence verifies the 5 USD transaction."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "privacy_gate",
+        "value": "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
+      }
+    ]
+  },
+  "buyAction": {
+    "@context": "https://schema.org",
+    "@type": "BuyAction",
+    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://paypal.me/softjunk/5USD",
+      "httpMethod": "GET",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
+    },
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "5.00",
+      "priceCurrency": "USD"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "SoftJunk",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+    },
+    "object": {
+      "@type": "DigitalDocument",
+      "name": "SoftJunk one-lead rescue checkout manifest",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
+      "encodingFormat": "application/json"
+    },
+    "result": {
+      "@type": "DigitalDocument",
+      "name": "Delivered one-lead follow-up rescue after seller-side PayPal verification",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "success_signal",
+        "value": "PAYPAL_PAYMENT_VERIFIED=true"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "verification_gate",
+        "value": "Do not claim payment, fulfillment, or completion until seller-side PayPal evidence verifies the 5 USD transaction."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "privacy_gate",
+        "value": "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
+      }
+    ]
+  },
+  "buyer_risk_reversal": {
+    "name": "one_rewrite_included",
+    "applies_to": "Custom 7-day follow-up sequence after seller-side PayPal verification.",
+    "value": "One rewrite is included if the first custom sequence is not usable and the buyer supplies non-sensitive business context.",
+    "privacy_rule": "Use placeholders only; do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
+    "verification_gate": "PAYPAL_PAYMENT_VERIFIED=true"
+  },
+  "one_rewrite_included": true,
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+  "release_tarball_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json"
 }

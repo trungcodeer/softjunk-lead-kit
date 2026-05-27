@@ -5,6 +5,13 @@ info:
   description: Static discovery endpoints for the $5 SoftJunk Lead Follow-Up Kit, custom sequence, and one-screen five-dollar buyer card.
 servers:
   - url: https://trungcodeer.github.io/softjunk-lead-kit
+x-softjunk-no-clone-release:
+  verified_release_url: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+  release_tarball_url: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz
+  release_tarball_sha256: c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d
+  run_from_release_tarball_pay_custom: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+  payment_url: https://paypal.me/softjunk/5USD
+  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 x-softjunk-fastest-buyer-path:
   root_one_lead_rescue_url: https://trungcodeer.github.io/rescue/
   root_one_lead_rescue_json_url: https://trungcodeer.github.io/rescue.json
