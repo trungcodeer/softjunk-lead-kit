@@ -21,7 +21,8 @@
                                      "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                                      "verification_gate":  "Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
                                      "privacy_gate":  "Use placeholders only; do not post customer, payment, transaction, address, phone, email, invoice, or PayPal details in public forms.",
-                                     "use_when":  "A buyer, buyer-agent, RSS reader, crawler, or assistant needs the shortest public checkout route for one SoftJunk quiet-lead rescue."
+                                     "use_when":  "A buyer, buyer-agent, RSS reader, crawler, or assistant needs the shortest public checkout route for one SoftJunk quiet-lead rescue.",
+                                     "discussion_url":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/6"
                                  },
     "payment":  {
                     "provider":  "PayPal.Me",
