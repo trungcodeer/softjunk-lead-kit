@@ -3671,3 +3671,26 @@ Boundary:
 - Send-5 is a consent-based buyer handoff, not a cold-spam instruction.
 - It does not prove indexing, buyer action, or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## Evidence: 2026-05-27 Profile Send-5 buyer handoff
+
+What changed:
+- Featured Send-5 on the GitHub profile README and profile microsite.
+- Updated profile offer JSON, profile llms.txt, and profile sitemap with Send-5 URLs and the existing PayPal verification gate.
+
+Verification:
+- Remote profile offer JSON parsed successfully and includes `send_five_buyer_handoff_url`, Send-5 URLs, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Remote profile sitemap parsed successfully as XML and includes Send-5 page, JSON, and text URLs.
+- Remote profile HTML includes Send-5 alternate links, Copy buyer handoff CTA, visible button focus style, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live checks returned HTTP 200 for profile microsite, profile llms.txt, profile offer JSON, and profile sitemap.
+- IndexNow accepted 10 owned URLs with HTTP 200.
+
+Public refs:
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-send5-buyer-handoff-v1
+- Profile Pages run: https://github.com/trungcodeer/trungcodeer/actions/runs/26491261595
+- Public tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551383947
+
+Boundary:
+- This is owned-profile discovery and a consent-based buyer handoff.
+- It does not prove indexing, buyer action, or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
