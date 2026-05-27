@@ -811,5 +811,9 @@
                                                "send_five_url":  "https://trungcodeer.github.io/send-5/",
                                                "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
                                            }
-                                       ]
+                                       ],
+    "root_intent_five_preview_url":  "https://trungcodeer.github.io/intent-5/",
+    "root_intent_five_preview_json_url":  "https://trungcodeer.github.io/intent-5.json",
+    "root_intent_five_preview_text_url":  "https://trungcodeer.github.io/intent-5.txt",
+    "buyer_intent_gist_url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9"
 }
