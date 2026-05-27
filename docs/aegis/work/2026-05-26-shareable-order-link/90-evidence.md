@@ -3889,3 +3889,26 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Digital Kit Agent Discovery Contract Evidence
+
+Artifacts added/updated:
+- Digital kit order contract JSON: `https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json`.
+- Digital kit order contract text: `https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt`.
+- Product discovery: `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `agent-buyer-catalog.jsonl`, `agent-buyer-packet.json`, and `llms.txt`.
+- Root discovery: `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `llms.txt`, and public IndexNow key files.
+- Quiet discovery: `buyer-route.json` and `llms.txt`.
+
+Validation:
+- API validation parsed all JSON files and every JSONL record; marker checks confirmed digital-kit contract, issue #9/order form, and exact PayPal URL.
+- GitHub Pages latest build API returned `built` for product commit `6d292c990e49a9b8def69de30c8549c2aacb9748`, root commit `4d2c327bdbffdf90bef283bb7f0d5ec81fd832d3`, and quiet commit `cfb582c6f81ae02d9a29c7f49a9facde7bba9474`.
+- Live `curl.exe` validation returned HTTP 200 for product contract JSON/text, product OpenAPI/plugin/catalog/packet/llms, root OpenAPI/plugin/llms, and quiet buyer-route/llms.
+- Live marker checks confirmed `digital-kit-order.json`, issue #9/order form, and `https://paypal.me/softjunk/5USD` across the discovery surfaces.
+- IndexNow POST submitted 12 owned URLs and returned `202`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.97`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-digital-kit-agent-discovery-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-digital-kit-agent-discovery-v1`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4552168754.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
