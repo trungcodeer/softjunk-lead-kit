@@ -4981,3 +4981,39 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - The handoff and IndexNow submission improve legitimate conversion/discovery but do not prove buyer action or payment.
+
+## Checkpoint: 2026-05-27 profile send5 buyer handoff slice
+
+TodoCheckpointDraft:
+- Completed: updated the GitHub profile README to feature the Send-5 buyer handoff before older buyer routes.
+- Completed: updated the profile microsite to include Send-5 alternate links, a primary Copy buyer handoff CTA, and a route card while preserving accessible semantic links/buttons and visible focus styling.
+- Completed: updated profile `softjunk-profile-offer.json`, `llms.txt`, and `sitemap.xml` with Send-5 page/JSON/text URLs, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: validated remote profile JSON, HTML markers, README, llms, and sitemap XML.
+- Completed: verified profile Pages deploy succeeded and live profile URLs returned HTTP 200 with Send-5 markers.
+- Completed: submitted 10 owned profile/Send-5 URLs to IndexNow; response HTTP 200.
+- Completed: published profile release profile-send5-buyer-handoff-v1 and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551383947.
+- Active slice: continue legitimate owned-channel conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Profile repo: https://github.com/trungcodeer/trungcodeer
+- Profile microsite: https://trungcodeer.github.io/trungcodeer/
+- Profile offer JSON: https://trungcodeer.github.io/trungcodeer/softjunk-profile-offer.json
+- Profile llms.txt: https://trungcodeer.github.io/trungcodeer/llms.txt
+- Send-5 handoff: https://trungcodeer.github.io/send-5/
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-send5-buyer-handoff-v1
+- Profile Pages run: https://github.com/trungcodeer/trungcodeer/actions/runs/26491261595
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551383947
+- IndexNow response: HTTP 200; URL count 10; response body empty.
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by moving the copy-ready Send-5 buyer handoff onto the public GitHub profile and profile Pages surfaces.
+- Compatibility: no payment or fulfillment gate was weakened; all changed profile surfaces keep seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true as the stop/fulfillment rule.
+- Accessibility: profile microsite uses semantic anchors, existing focus-visible styles for links/buttons, and no mouse-only controls were introduced.
+- New owners/adapters: profile README/profile Pages now route to Send-5.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- Profile discovery and IndexNow submission improve legitimate conversion/discovery but do not prove buyer action or payment.
