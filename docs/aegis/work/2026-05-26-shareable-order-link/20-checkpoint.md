@@ -6643,3 +6643,50 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages, `.well-known` discovery, OpenAPI/AI plugin manifests, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; quiet repo now has its own agent discovery but still points to the same product release and PayPal gate.
 - Decision: continue.
+
+## 2026-05-28 Root/Product Well-Known No-Clone Manifest Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Close the remaining root/product `.well-known` discovery gap by making every root and product agent-facing manifest include the verified no-clone release-tarball PayPal command, release URL, tarball URL, SHA-256, PayPal URL, and verification gate.
+
+Completed todos:
+- Confirmed product/root/profile/quiet worktrees were clean before the slice.
+- Reran PayPal verifier before work; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Checked npm publish readiness; `npm whoami` returned `ENEEDAUTH`, and `npm view softjunk-lead-kit` returned `E404 Not Found`, so real npm publish remains unavailable on this machine.
+- Audited root and product `.well-known` manifests; root/product payment, BuyAction, agent-card, and several discovery manifests had PayPal/gate markers but lacked the verified no-clone command and release SHA.
+- Updated root repo `trungcodeer.github.io`: `paypal-buy-action.json`, `paypal.json`, `agent-card.json`, `.well-known/paypal-buy-action.json`, `.well-known/paypal-payment.json`, `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/softjunk-root-offer.json`, and `.well-known/openapi.yaml`; pushed commit `772678ab13e4af4338384ba6d19a0e9ca99c1b4d`.
+- Updated product repo `softjunk-lead-kit`: `paypal-buy-action.json`, `paypal-payment-intent.json`, `agent-card.json`, `ai-action-checkout.json`, `mcp-checkout-server.json`, `.well-known/paypal-buy-action.json`, `.well-known/paypal-payment.json`, `.well-known/agent-card.json`, `.well-known/ai-action-checkout.json`, `.well-known/ai-plugin.json`, `.well-known/mcp-checkout-server.json`, `.well-known/openapi.yaml`, and `.well-known/softjunk-offer.json`; pushed commits `4405144c4cfac0ce54bd95f166ad63f74d49fd86` and `db78ef524cfde2c959aaad95f1e609a3aa816ad9`.
+- Fixed a root OpenAPI formatting defect where `success_signal` had been joined to `paths:`.
+- Created public releases `root-well-known-no-clone-v1`, `v2.29.120`, and final product release `v2.29.121`.
+- Confirmed GitHub Pages latest builds were `built` for root commit `772678ab13e4af4338384ba6d19a0e9ca99c1b4d` and product commit `db78ef524cfde2c959aaad95f1e609a3aa816ad9`.
+- Validated 22 live root/product manifest URLs returned HTTP 200, parsed JSON where applicable, did not contain the `truepaths:` OpenAPI defect, and included the no-clone command, PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, verified release URL, and release SHA.
+- Submitted the 22 live root/product manifest URLs to IndexNow; API returned `200 OK`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Root commit: `772678ab13e4af4338384ba6d19a0e9ca99c1b4d`.
+- Product commits: `4405144c4cfac0ce54bd95f166ad63f74d49fd86`, `db78ef524cfde2c959aaad95f1e609a3aa816ad9`.
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-well-known-no-clone-v1.
+- Final product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.121.
+- Verified product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; registry check still reports `softjunk-lead-kit` as not found.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes root/product agent manifests more directly executable by buyer agents through a verified no-clone command while preserving strict payment verification.
+- Compatibility boundary: GitHub Pages, `.well-known` discovery, OpenAPI/AI plugin/A2A/MCP/BuyAction manifests, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; root and product manifests now point to the same verified release tarball and PayPal gate.
+- Decision: continue.

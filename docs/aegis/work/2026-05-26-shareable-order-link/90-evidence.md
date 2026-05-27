@@ -22,6 +22,84 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Root/Product Well-Known No-Clone Manifest Evidence
+
+Artifacts updated in root repo `trungcodeer.github.io`:
+- `paypal-buy-action.json`.
+- `paypal.json`.
+- `agent-card.json`.
+- `.well-known/paypal-buy-action.json`.
+- `.well-known/paypal-payment.json`.
+- `.well-known/agent-card.json`.
+- `.well-known/ai-plugin.json`.
+- `.well-known/softjunk-root-offer.json`.
+- `.well-known/openapi.yaml`.
+
+Artifacts updated in product repo `softjunk-lead-kit`:
+- `paypal-buy-action.json`.
+- `paypal-payment-intent.json`.
+- `agent-card.json`.
+- `ai-action-checkout.json`.
+- `mcp-checkout-server.json`.
+- `.well-known/paypal-buy-action.json`.
+- `.well-known/paypal-payment.json`.
+- `.well-known/agent-card.json`.
+- `.well-known/ai-action-checkout.json`.
+- `.well-known/ai-plugin.json`.
+- `.well-known/mcp-checkout-server.json`.
+- `.well-known/openapi.yaml`.
+- `.well-known/softjunk-offer.json`.
+
+Published commits:
+- Root: `772678ab13e4af4338384ba6d19a0e9ca99c1b4d`.
+- Product: `4405144c4cfac0ce54bd95f166ad63f74d49fd86`, then release URL follow-up `db78ef524cfde2c959aaad95f1e609a3aa816ad9`.
+
+Releases:
+- Root: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-well-known-no-clone-v1.
+- Product intermediate: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.120.
+- Product final: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.121.
+
+Validation:
+- `npm whoami` returned `ENEEDAUTH`, so this machine still cannot publish to npm.
+- `npm view softjunk-lead-kit name version --json` returned `E404 Not Found`, so the package is still absent from the public npm registry.
+- Local JSON validation parsed root `paypal-buy-action.json`, `paypal.json`, `agent-card.json`, `.well-known/paypal-buy-action.json`, `.well-known/paypal-payment.json`, `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, and `.well-known/softjunk-root-offer.json`.
+- Local JSON validation parsed product `paypal-buy-action.json`, `paypal-payment-intent.json`, `agent-card.json`, `ai-action-checkout.json`, `mcp-checkout-server.json`, `.well-known/paypal-buy-action.json`, `.well-known/paypal-payment.json`, `.well-known/agent-card.json`, `.well-known/ai-action-checkout.json`, `.well-known/ai-plugin.json`, `.well-known/mcp-checkout-server.json`, and `.well-known/softjunk-offer.json`.
+- Local marker validation confirmed every root `.well-known` JSON/YAML manifest includes the no-clone release-tarball command, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, verified release URL, and release SHA.
+- Local marker validation confirmed every product `.well-known` JSON/YAML manifest includes the no-clone release-tarball command, exact PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, verified release URL, and release SHA.
+- Root OpenAPI was corrected so `success_signal` is no longer joined to `paths:`.
+- `git diff --check` passed for root and product with only CRLF normalization warnings where reported.
+- GitHub Pages latest build API returned `built` for root commit `772678ab13e4af4338384ba6d19a0e9ca99c1b4d` and product commit `db78ef524cfde2c959aaad95f1e609a3aa816ad9`.
+- Final live validation returned HTTP 200 and required markers for:
+  - https://trungcodeer.github.io/paypal-buy-action.json
+  - https://trungcodeer.github.io/paypal.json
+  - https://trungcodeer.github.io/agent-card.json
+  - https://trungcodeer.github.io/.well-known/paypal-buy-action.json
+  - https://trungcodeer.github.io/.well-known/paypal-payment.json
+  - https://trungcodeer.github.io/.well-known/agent-card.json
+  - https://trungcodeer.github.io/.well-known/ai-plugin.json
+  - https://trungcodeer.github.io/.well-known/softjunk-root-offer.json
+  - https://trungcodeer.github.io/.well-known/openapi.yaml
+  - https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/agent-card.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/ai-action-checkout.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-plugin.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
+  - https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
+- The live validation parsed JSON for `.json` endpoints and checked OpenAPI endpoints did not contain the old `truepaths:` join defect.
+- IndexNow POST submitted the 22 root/product manifest URLs above and returned `200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Quiet Well-Known Agent Discovery Evidence
 
 Artifacts added/updated in `quiet-lead-follow-up`:
