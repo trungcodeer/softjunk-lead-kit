@@ -1,0 +1,5 @@
+private-delivery/
+docs/aegis/
+page-*.png
+*.log
+.DS_Store
