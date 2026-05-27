@@ -1,0 +1,30 @@
+{
+    "schema_version":  "softjunk-paypal-url-health-v1",
+    "checked_at_utc":  "2026-05-27T04:00:04Z",
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "expected_amount":  "5.00",
+    "expected_currency":  "USD",
+    "http_health":  {
+                        "curl_exit":  0,
+                        "status_chain":  [
+                                             "HTTP/1.1 301 Moved Permanently",
+                                             "HTTP/1.1 301 Moved Permanently",
+                                             "HTTP/1.1 200 OK"
+                                         ],
+                        "redirect_chain":  [
+                                               "https://www.paypal.me/softjunk/5USD",
+                                               "https://www.paypal.com/paypalme/softjunk/5USD"
+                                           ],
+                        "final_status":  "HTTP/1.1 200 OK",
+                        "final_url":  "https://www.paypal.com/paypalme/softjunk/5USD"
+                    },
+    "buyer_routes":  {
+                         "shortest_buyer_card":  "https://trungcodeer.github.io/5/",
+                         "buyer_card_json":  "https://trungcodeer.github.io/5.json",
+                         "github_discussion":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/6",
+                         "product_buyer_card":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html"
+                     },
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_rule":  "This file proves only that the public PayPal URL resolved during the stated check. It is not proof of payment. Do not claim paid, started, delivered, complete, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "privacy_rule":  "Do not publish PayPal account, buyer, transaction, customer, phone, email, address, invoice, or claim details in public text."
+}
