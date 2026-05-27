@@ -3584,3 +3584,22 @@ Payment verification:
 
 Conclusion:
 - PayPal URL health/trust evidence improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 copy paypal link buyer cards slice
+
+Updated and released:
+- Root /5/ buyer card: https://github.com/trungcodeer/trungcodeer.github.io/commit/85be0d1fc9acc1eac3de7d3c423c79ac888ad72c
+- Product buyer card: https://github.com/trungcodeer/softjunk-lead-kit/commit/52942cac59975e329300d039a967db0c58504126
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.88
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-copy-paypal-link-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551196212
+
+Live validation:
+- https://trungcodeer.github.io/5/?check=copy-paypal-link returned HTML containing paypal-payment-link, copy-paypal-link, copy-paypal-note, 
+avigator.clipboard, ria-live=\"polite\", PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html?check=copy-paypal-link returned the same required markers.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Checkout friction was reduced on the direct buyer cards, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
