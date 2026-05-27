@@ -5057,3 +5057,34 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - Sponsor/funding route updates improve legitimate conversion but do not prove buyer action or payment.
+
+## Checkpoint: 2026-05-27 issue chooser send5 paypal route slice
+
+TodoCheckpointDraft:
+- Completed: repaired malformed `.github/ISSUE_TEMPLATE/config.yml` contact links and prioritized Send-5, PayPal, root /5/, Sponsor route, and verification instructions at the top of GitHub issue chooser.
+- Completed: updated `one-lead-rescue-order.yml` to use Send-5 -> root /5/ -> PayPal -> order form as the fast path.
+- Completed: updated `roofing-estimate-rescue-order.yml` with Send-5/root /5/ fallback before paid roofing order submission.
+- Completed: validated all three issue templates with PyYAML and remote marker checks for Send-5, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- Completed: verified product Pages deployment succeeded after template changes.
+- Completed: published release v2.29.91 and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551466944.
+- Active slice: continue legitimate GitHub-native conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Issue chooser: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.91
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26491881729
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551466944
+- PyYAML parse succeeded for `.github/ISSUE_TEMPLATE/config.yml`, `one-lead-rescue-order.yml`, and `roofing-estimate-rescue-order.yml`.
+- Remote marker checks found https://trungcodeer.github.io/send-5/, https://paypal.me/softjunk/5USD, and PAYPAL_PAYMENT_VERIFIED=true in all three files.
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by tightening the GitHub-native order submission path around payment first, Send-5 handoff, and verification gate.
+- Compatibility: no payment or fulfillment gate was weakened; all order surfaces still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: GitHub issue chooser contact links now act as a checkout preflight surface.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- Issue chooser improvements do not prove buyer action or payment.
