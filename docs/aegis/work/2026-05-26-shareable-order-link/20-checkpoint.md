@@ -4940,3 +4940,44 @@ DriftCheckDraft:
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
 - IndexNow HTTP 202 means the URL set was accepted and key validation is pending; it does not guarantee indexing, ranking, traffic, buyer action, or payment.
+
+## Checkpoint: 2026-05-27 send5 buyer handoff slice
+
+TodoCheckpointDraft:
+- Completed: added root Send-5 buyer handoff page, JSON, and text routes at https://trungcodeer.github.io/send-5/, https://trungcodeer.github.io/send-5.json, and https://trungcodeer.github.io/send-5.txt.
+- Completed: updated root /5/ buyer card to expose a copy-ready buyer handoff, copy button, Send-5 links, and keyboard focus styling for buttons.
+- Completed: updated root /5.json and /5.txt with the buyer_handoff_message and Send-5 URLs.
+- Completed: updated root llms.txt, robots.txt, sitemap.xml, and product llms.txt to expose Send-5.
+- Completed: validated remote JSON, sitemap XML, and required HTML markers before deploy.
+- Completed: verified root and product GitHub Pages deploys succeeded.
+- Completed: verified live HTML/JSON/TXT/llms/sitemap URLs returned HTTP 200 and included Send-5, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: submitted 10 owned URLs to IndexNow; response HTTP 200.
+- Completed: published root release root-send5-buyer-handoff-v1, product release v2.29.89, and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551346593.
+- Active slice: continue legitimate buyer-agent conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Send-5 page: https://trungcodeer.github.io/send-5/
+- Send-5 JSON: https://trungcodeer.github.io/send-5.json
+- Send-5 text: https://trungcodeer.github.io/send-5.txt
+- Root /5/ updated commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/81ff12f4714241464c4cbbb893a80369bdc1fd51
+- Root sitemap commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/d51e81669331998749b4aed4d98ae46355070dd8
+- Product llms commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/252c9d8e179355e78f2ea918ce7270fdc38e1c8b
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send5-buyer-handoff-v1
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.89
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26490997090
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26491003468
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551346593
+- IndexNow response: HTTP 200; URL count 10; response body empty.
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by turning discovery into a consent-based copy-ready buyer handoff that routes a qualified buyer to the exact 5 USD PayPal payment.
+- Compatibility: no payment or fulfillment gate was weakened; Send-5 explicitly forbids cold spam and requires seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- Accessibility: used semantic links/buttons, visible focus style for buttons, skip link, and aria-live polite status for copy feedback.
+- New owners/adapters: root Send-5 route and structured JSON/TXT handoff surfaces.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- The handoff and IndexNow submission improve legitimate conversion/discovery but do not prove buyer action or payment.
