@@ -4542,3 +4542,20 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub repositories, Gists, metadata, and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: README/docs/Gist/metadata now expose PayPal $5, BuyAction manifest, verification gate, and one-rewrite trust signal.
+## 2026-05-27 one-screen 5 USD buyer card slice
+
+TodoCheckpointDraft:
+- Completed: added product one-screen buyer card ive-dollar-buyer-card.html/json/txt with PayPal $5, BuyAction, one-rewrite trust signal, privacy gate, and PAYPAL_PAYMENT_VERIFIED=true verification gate.
+- Completed: added root short buyer card /5/, 5.json, and 5.txt with the same payment and verification signals.
+- Completed: wired product/root discovery through homepage links, sitemap, robots, llms, buyer-index, and root-offer.
+- Completed: created Gist mirror 4507ec1fc5f1b009924dfdaa235859e8, releases 2.29.77 and oot-five-dollar-buyer-card-v1, and validated Pages deploys.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550429480
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, it reduces buyer friction for the exact  PayPal payment.
+- Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: shortest root /5/ route and product buyer card are live, indexed, and verified for PayPal/BuyAction/one-rewrite/payment gate signals.

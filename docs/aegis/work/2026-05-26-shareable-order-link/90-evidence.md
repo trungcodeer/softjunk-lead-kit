@@ -3331,3 +3331,24 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that GitHub-facing buyer surfaces now carry the one-rewrite  CTA and BuyAction path.
 - Does not support claim that  has been received.
+## 2026-05-27 one-screen 5 USD buyer card slice
+
+EvidenceBundleDraft:
+- Product commit: 2f8444597c622b627d720f6dc325232a9ff4245b.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.77
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26484748073 (completed, success).
+- Root commit: da790a964d633488f43a9b595e276a77b43d53ad.
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-five-dollar-buyer-card-v1
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26484826853 (completed, success).
+- Gist mirror: https://gist.github.com/trungcodeer/4507ec1fc5f1b009924dfdaa235859e8
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550429480
+- Live validation: product card HTML/JSON/TXT and root /5/, 5.json, 5.txt returned 200; JSON parses; HTML pages have one H1 and skip link.
+- Discovery validation: product/root homepage, sitemap, robots, llms, buyer-index, and root-offer expose the new card route.
+- Gist validation: raw HTML/JSON/TXT returned 200; JSON parses.
+- Signal validation: all checked card and JSON/TXT surfaces include PayPal $5, BuyAction or BuyAction manifest, one-rewrite signal, and PAYPAL_PAYMENT_VERIFIED=true.
+- IndexNow: status=200 urls=8.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that a lower-friction  buyer route is published, discoverable, and live.
+- Does not support claim that  has been received.
