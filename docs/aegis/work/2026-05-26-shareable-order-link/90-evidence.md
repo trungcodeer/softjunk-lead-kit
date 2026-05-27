@@ -3392,3 +3392,23 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that GitHub Sponsor routes now expose the lowest-friction  buyer card.
 - Does not support claim that  has been received.
+## Evidence: 2026-05-27 pinned issue five-dollar route slice
+
+Public surfaces updated:
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4549643181
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4549643900
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/7#issuecomment-4548214384
+- https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550599562
+
+GitHub API validation:
+- REST issue bodies: root /5 route present, product buyer card present, PayPal  URL present, one-rewrite offer present, PAYPAL_PAYMENT_VERIFIED=true gate present.
+- GraphQL issue comments: expected comment IDs found, isPinned=true, pinnedAt populated, and bodies contain /5/, five-dollar-buyer-card.html, paypal.me/softjunk/5USD, one_rewrite_included, and PAYPAL_PAYMENT_VERIFIED=true.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Conversion/discovery surfaces were improved for a real  purchase, but the goal is not complete because seller-side payment verification is still missing.
