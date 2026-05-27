@@ -77,6 +77,32 @@ Payment:
 
 https://paypal.me/softjunk/5USD
 
+No-clone checkout proof:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Verified release:
+
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+
+Release tarball:
+
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz
+
+Release tarball SHA-256:
+
+`c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+
+Expected checkout:
+
+- Amount: 5.00 USD
+- Payment URL: https://paypal.me/softjunk/5USD
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`
+
+This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+
 Fast checkout:
 
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
@@ -109,7 +135,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 
 ## Fulfillment Rule
 
-Do not mark any order as paid or delivered until the seller can see the 5 USD PayPal transaction, the API verifier returns `PAYPAL_PAYMENT_VERIFIED=true`, or a trusted seller-side PayPal CSV export returns `PAYPAL_PAYMENT_VERIFIED=true source=csv`.
+Do not mark any order as paid, started, delivered, fulfilled, complete, or received until the seller can see the 5 USD PayPal transaction, the API verifier returns `PAYPAL_PAYMENT_VERIFIED=true`, or a trusted seller-side PayPal CSV export returns `PAYPAL_PAYMENT_VERIFIED=true source=csv`.
 
 ## Privacy Rule
 
