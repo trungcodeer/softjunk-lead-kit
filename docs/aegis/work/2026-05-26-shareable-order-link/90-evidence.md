@@ -3912,3 +3912,30 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Clone CLI Route Evidence
+
+Artifacts added/updated:
+- `bin/softjunk-lead-kit.js` dependency-free Node CLI.
+- `CLONE_CLI.md` usage docs.
+- `clone-cli.json` machine-readable CLI manifest.
+- `package.json` bin command `softjunk-lead-kit`.
+- `.npmignore` for clean GitHub package execution.
+- Discovery wiring in README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+
+Validation:
+- Local `node --check` passed for the CLI.
+- Local CLI smoke tests parsed JSON output for `doctor`, `rescue`, `send`, `kit`, and `pay`.
+- Raw GitHub CLI smoke test passed from `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js`.
+- `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json` succeeded with zero npm warnings after `.npmignore` was added.
+- API validation parsed `clone-cli.json`, `package.json`, agents-checkout, buyer-index, plugin JSON, and every agent-buyer-catalog JSONL record.
+- GitHub Pages latest build API returned `built` for product commit `52c8d85973a7b642a0c224dfedd52b7cdc00b11a`, root commit `c10cac218e3750766371b0236af2b6a4a15022c6`, and quiet commit `68ad22e6236acaa9c0e84f0430a3d8ecfa577513`.
+- Live `curl.exe` validation returned HTTP 200 for CLI manifest/docs/source, package metadata, OpenAPI, plugin manifest, catalog, buyer index, agents checkout, product llms, root llms, and quiet llms.
+- IndexNow POST submitted 14 owned URLs and returned `200`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.98`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-clone-cli-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-clone-cli-route-v1`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4552354434.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
