@@ -4705,3 +4705,33 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 discussion six fast usd5 route slice
+
+TodoCheckpointDraft:
+- Completed: updated GitHub Discussion #6 to become Fastest USD 5 SoftJunk buyer-agent checkout route with /5/, /5.json, /5.txt, product buyer card, PayPal USD 5 checkout, one rewrite, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: linked Discussion #6 from product llms.txt, uyer-index.json, product-feed.json, gent-buyer-catalog.jsonl, and eed.xml.
+- Completed: validated live discovery/feed URLs contain Discussion #6, root /5/, PayPal URL, and verification gate.
+- Completed: published release v2.29.83 and public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550890961.
+- Active slice: continue legitimate owned-channel conversion/discovery improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Discussion #6: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6
+- llms commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/78ef57efda23c8d5cbaf44cbf6fffe7944e8bd16
+- buyer-index commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/3e43057c4b455c5323f98e3c21698d4081141454
+- product-feed commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/90b6cc8cc2d504307d249bc10bdf1550b17c771b
+- catalog commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/1b243e398ca262d22388170acc7353daa426c31a
+- feed commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/f7d11278570cffc2904c2caa1254030a829c70b9
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.83
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550890961
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by making the existing GitHub-native buyer-agent discussion a current direct checkout route.
+- Compatibility: no fulfillment gate was weakened; Discussion and discovery surfaces still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
