@@ -67,5 +67,30 @@
     "paypal_buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
     "lowest_friction_buyer_route":  "https://trungcodeer.github.io/send-5/",
     "one_rewrite_included":  true,
-    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "sponsor_button_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+    "sponsor_button_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json",
+    "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+    "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+    "clone_cli_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
+    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml",
+    "digital_kit_order_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
+    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "value_first_routes":  [
+                               {
+                                   "name":  "run_this_first",
+                                   "url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+                                   "command":  "npm start"
+                               },
+                               {
+                                   "name":  "dev_agent_start",
+                                   "url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+                                   "command":  "npm run dev:first"
+                               },
+                               {
+                                   "name":  "clone_cli",
+                                   "url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
+                                   "command":  "npm run try:rescue"
+                               }
+                           ]
 }
