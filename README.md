@@ -22,20 +22,22 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 This repo receives clone traffic, so the useful path after cloning is local-first:
 
-`ash
-node bin/softjunk-lead-kit.js doctor --json
-node bin/softjunk-lead-kit.js rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote --json
-node bin/softjunk-lead-kit.js pay --mode kit --json
-`
+```bash
+npm start
+npm run try:rescue
+npm run pay:kit
+```
 
 Run without cloning:
 
-`ash
+```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
-`
+```
 
-Machine-readable CLI manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
-CLI docs: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md
+Run-first guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RUN_THIS_FIRST.md
+Run-first JSON: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
+Try-now guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/TRY_NOW.md
+CLI manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
 Raw CLI: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js
 
 The CLI generates safe preview copy, buyer handoff text, PayPal notes, and proof-to-payment routes. It does not collect lead data and it does not verify PayPal payment. Fulfillment still requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
