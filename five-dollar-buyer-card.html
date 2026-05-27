@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SoftJunk  Buyer Card</title>
+  <meta name="description" content="One-screen SoftJunk buyer card: pay exactly 5 USD on PayPal for one quiet-lead rescue, with one rewrite included after seller-side verification.">
+  <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html">
+  <meta name="robots" content="index,follow">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json" title="SoftJunk five-dollar buyer card JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt" title="SoftJunk five-dollar buyer card text">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
+  <meta property="og:title" content="SoftJunk  Buyer Card">
+  <meta property="og:description" content="Pay exactly 5 USD on PayPal for one quiet-lead rescue. One rewrite included after verified payment.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html">
+  <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
+  <script type="application/ld+json">
+{
+    "@context":  "https://schema.org",
+    "@type":  "Offer",
+    "name":  "SoftJunk 5 USD One-Lead Rescue",
+    "description":  "One-screen 5 USD PayPal checkout card for a quiet lead follow-up rescue, with one rewrite included after seller-side verification.",
+    "price":  "5.00",
+    "priceCurrency":  "USD",
+    "availability":  "https://schema.org/InStock",
+    "url":  "https://paypal.me/softjunk/5USD",
+    "seller":  {
+                   "@type":  "Organization",
+                   "name":  "SoftJunk",
+                   "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
+               },
+    "itemOffered":  {
+                        "@type":  "DigitalDocument",
+                        "name":  "SoftJunk 5 USD buyer card",
+                        "url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
+                        "encodingFormat":  "application/json"
+                    },
+    "potentialAction":  {
+                            "@context":  "https://schema.org",
+                            "@type":  "BuyAction",
+                            "name":  "Pay exactly 5 USD to SoftJunk on PayPal",
+                            "target":  {
+                                           "@type":  "EntryPoint",
+                                           "urlTemplate":  "https://paypal.me/softjunk/5USD",
+                                           "httpMethod":  "GET",
+                                           "actionPlatform":  [
+                                                                  "https://schema.org/DesktopWebPlatform",
+                                                                  "https://schema.org/MobileWebPlatform"
+                                                              ]
+                                       },
+                            "priceSpecification":  {
+                                                       "@type":  "PriceSpecification",
+                                                       "price":  "5.00",
+                                                       "priceCurrency":  "USD"
+                                                   },
+                            "seller":  {
+                                           "@type":  "Organization",
+                                           "name":  "SoftJunk",
+                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
+                                       },
+                            "object":  {
+                                           "@type":  "DigitalDocument",
+                                           "name":  "SoftJunk 5 USD buyer card",
+                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+                                           "encodingFormat":  "text/html"
+                                       },
+                            "result":  {
+                                           "@type":  "DigitalDocument",
+                                           "name":  "One-lead follow-up rescue after seller-side PayPal verification",
+                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+                                       },
+                            "additionalProperty":  [
+                                                       {
+                                                           "@type":  "PropertyValue",
+                                                           "name":  "success_signal",
+                                                           "value":  "PAYPAL_PAYMENT_VERIFIED=true"
+                                                       },
+                                                       {
+                                                           "@type":  "PropertyValue",
+                                                           "name":  "one_rewrite_included",
+                                                           "value":  "One rewrite is included for a custom sequence after verified payment when the buyer supplies non-sensitive context."
+                                                       },
+                                                       {
+                                                           "@type":  "PropertyValue",
+                                                           "name":  "privacy_gate",
+                                                           "value":  "Use placeholders only; do not post customer or PayPal details in public forms."
+                                                       }
+                                                   ]
+                        }
+}
+  </script>
+  <style>
+    :root { color-scheme: light; --bg:#f7faf8; --ink:#13201a; --muted:#4c5f56; --line:#d7e1dc; --paper:#ffffff; --accent:#0f6959; --accent-dark:#0a4f43; --focus:#b45f00; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .skip-link { position:absolute; left:16px; top:-80px; z-index:10; padding:10px 14px; background:var(--paper); border:1px solid var(--line); border-radius:7px; color:var(--ink); }
+    .skip-link:focus { top:16px; }
+    header, main, footer { width:min(920px, calc(100% - 32px)); margin:0 auto; }
+    header { padding:18px 0 8px; }
+    nav { display:flex; gap:12px; flex-wrap:wrap; }
+    nav a { color:var(--accent-dark); font-weight:700; }
+    .hero { padding:38px 0 28px; display:grid; gap:18px; }
+    h1 { margin:0; font-size:clamp(2rem, 6vw, 4rem); line-height:1.02; letter-spacing:0; }
+    h2 { margin-top:0; }
+    .lead { margin:0; max-width:760px; font-size:1.15rem; color:var(--muted); }
+    .panel { background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:18px; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; }
+    .button { min-height:44px; display:inline-flex; align-items:center; justify-content:center; padding:12px 16px; border-radius:7px; border:1px solid var(--accent); color:var(--accent-dark); text-decoration:none; font-weight:700; }
+    .button.primary { background:var(--accent); color:#fff; border-color:var(--accent); }
+    .grid { display:grid; gap:14px; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); }
+    code, .note { background:#edf6f3; border:1px solid #c8ded7; border-radius:7px; padding:10px; display:block; overflow-wrap:anywhere; }
+    footer { padding:28px 0 36px; color:var(--muted); }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <nav aria-label="Buyer routes">
+      <a href="./">SoftJunk</a>
+      <a href="pay.html">Pay</a>
+      <a href="after-pay.html">After paying</a>
+      <a href="five-dollar-buyer-card.json">JSON</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="page-title">
+      <h1 id="page-title">Pay 5 USD. Get one quiet-lead rescue.</h1>
+      <p class="lead">Use this card when one real lead, quote, appointment, missed call, quiet DM, or unanswered estimate is worth more than 5 USD. Pay exactly 5 USD on PayPal; fulfillment starts only after seller-side PayPal evidence or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+      <div class="actions" aria-label="Primary actions">
+        <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay 5 USD on PayPal</a>
+        <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">Order form after payment</a>
+        <a class="button" href="paypal-buy-action.json">Buyer-agent BuyAction</a>
+      </div>
+    </section>
+    <section class="grid" aria-label="Buyer promise">
+      <article class="panel"><h2>What you get</h2><p>Day 0/1/3/5/7 follow-up messages for one quiet-lead situation, plus a no-show or price-objection reply when relevant.</p></article>
+      <article class="panel"><h2>One rewrite included</h2><p>If the first custom sequence is not usable after verified payment, one rewrite is included when you provide non-sensitive business context.</p></article>
+      <article class="panel"><h2>Safe handoff</h2><p>Use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.</p></article>
+    </section>
+    <section class="panel" aria-labelledby="copy-title">
+      <h2 id="copy-title">Copy-safe PayPal note</h2>
+      <p class="note">One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]</p>
+    </section>
+  </main>
+  <footer><p>Payment URL: https://paypal.me/softjunk/5USD. Do not mark paid or delivered until seller-side evidence verifies the 5 USD payment.</p></footer>
+</body>
+</html>

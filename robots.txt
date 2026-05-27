@@ -80,3 +80,6 @@ Allow: /paypal-buy-action.json
 Allow: /.well-known/paypal-buy-action.json
 Allow: /softjunk-lead-kit/paypal-buy-action.json
 Allow: /softjunk-lead-kit/.well-known/paypal-buy-action.json
+Allow: /five-dollar-buyer-card.html
+Allow: /five-dollar-buyer-card.json
+Allow: /five-dollar-buyer-card.txt

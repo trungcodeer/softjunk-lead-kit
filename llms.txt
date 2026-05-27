@@ -653,3 +653,8 @@ https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.js
 https://trungcodeer.github.io/paypal-buy-action.json
 https://trungcodeer.github.io/.well-known/paypal-buy-action.json
 Use these to identify the exact 5 USD PayPal BuyAction. Do not mark the purchase complete until seller-side evidence returns PAYPAL_PAYMENT_VERIFIED=true.
+5 USD Buyer Card:
+https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
+https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json
+https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt
+Use this as the lowest-friction buyer route. It points to https://paypal.me/softjunk/5USD, includes one rewrite after verified payment, and requires PAYPAL_PAYMENT_VERIFIED=true before fulfillment.

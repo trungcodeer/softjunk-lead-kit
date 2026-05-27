@@ -1,0 +1,23 @@
+SoftJunk 5 USD Buyer Card
+Updated: 2026-05-27
+
+Pay exactly 5 USD:
+https://paypal.me/softjunk/5USD
+
+Buyer-agent BuyAction manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+
+What you get:
+Day 0/1/3/5/7 follow-up messages for one quiet-lead situation, plus a no-show or price-objection reply when relevant.
+
+One rewrite included:
+After seller-side PayPal verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
+
+Verification gate:
+Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
+Privacy gate:
+Use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
+
+Order form after payment:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml

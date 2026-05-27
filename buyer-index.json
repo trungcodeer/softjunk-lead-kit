@@ -746,5 +746,8 @@
                                 "privacy_rule":  "Use placeholders only; do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
                                 "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true"
                             },
-    "one_rewrite_included":  true
+    "one_rewrite_included":  true,
+    "five_dollar_buyer_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+    "five_dollar_buyer_card_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
+    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html"
 }
