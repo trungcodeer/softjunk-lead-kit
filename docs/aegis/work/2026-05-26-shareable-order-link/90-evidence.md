@@ -3645,3 +3645,29 @@ Boundary:
 - This is search discovery evidence only.
 - It does not prove indexing, ranking, buyer action, or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## Evidence: 2026-05-27 Send-5 buyer handoff route
+
+What changed:
+- Added a root copy-ready buyer handoff route for AI assistants, VAs, and humans: `send-5/`, `send-5.json`, and `send-5.txt`.
+- Updated root `/5/`, `/5.json`, `/5.txt`, root `llms.txt`, root `robots.txt`, root `sitemap.xml`, and product `llms.txt` to expose Send-5.
+
+Verification:
+- Remote `send-5.json` and `5.json` parsed successfully with `ConvertFrom-Json`.
+- Remote root `sitemap.xml` parsed successfully as XML and includes Send-5 routes.
+- Remote HTML markers confirmed `copy-buyer-handoff`, `button:focus-visible`, `PAYPAL_PAYMENT_VERIFIED=true`, and the PayPal URL.
+- Live checks returned HTTP 200 for `send-5/`, `/5/`, `send-5.json`, `5.json`, `send-5.txt`, `5.txt`, root `llms.txt`, product `llms.txt`, and root `sitemap.xml`.
+- IndexNow accepted 10 owned URLs with HTTP 200.
+
+Public refs:
+- Send-5 page: https://trungcodeer.github.io/send-5/
+- Send-5 JSON: https://trungcodeer.github.io/send-5.json
+- Send-5 text: https://trungcodeer.github.io/send-5.txt
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-send5-buyer-handoff-v1
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.89
+- Public tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551346593
+
+Boundary:
+- Send-5 is a consent-based buyer handoff, not a cold-spam instruction.
+- It does not prove indexing, buyer action, or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
