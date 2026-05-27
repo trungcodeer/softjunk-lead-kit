@@ -36,3 +36,6 @@ contact_links:
   - name: Payment verification instructions
     url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md
     about: Verifier and CSV workflow for proving the 5 USD PayPal payment before fulfillment starts.
+  - name: Clone CLI paid order form
+    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
+    about: Submit non-sensitive details after using the clone CLI and paying exactly 5 USD. Do not post private payment or customer details.
