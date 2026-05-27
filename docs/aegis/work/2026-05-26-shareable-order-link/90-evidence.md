@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 AI Deal Desk No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `ai-deal-desk.html`
+- `ai-deal-desk.json`
+- `ai-deal-desk.txt`
+- Public Gist `16d6861c14de82187946861e4c448844`: `ai-deal-desk.json` and `ai-deal-desk.txt`
+
+Published commit and release:
+- Product commit: `82bfefa40cc4ea9a3d987f7972cb8e3a2e6b3916`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.136.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `ai-deal-desk.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `ai-deal-desk.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- ai-deal-desk.html ai-deal-desk.json ai-deal-desk.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `ai-deal-desk.html` included `No-clone checkout proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh gist edit` refreshed public Gist `16d6861c14de82187946861e4c448844` from local `ai-deal-desk.json` and `ai-deal-desk.txt`.
+- GitHub Pages latest build API returned `built` for commit `82bfefa40cc4ea9a3d987f7972cb8e3a2e6b3916`.
+- Live Pages validation returned HTTP 200 for `ai-deal-desk.html`, `ai-deal-desk.json`, and `ai-deal-desk.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `ai-deal-desk.json` and `ai-deal-desk.txt`; both included the same required markers and the JSON parsed.
+- Raw Gist validation confirmed `ai-deal-desk.json` and `ai-deal-desk.txt` include the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `ai-deal-desk.html` included `No-clone checkout proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.136` is public, non-draft, non-prerelease, and targets `82bfefa40cc4ea9a3d987f7972cb8e3a2e6b3916`.
+- IndexNow POST submitted `ai-deal-desk.html`, `ai-deal-desk.json`, and `ai-deal-desk.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Commerce Graph No-Clone Checkout Proof Evidence
 
 Artifacts updated:

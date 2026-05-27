@@ -7437,3 +7437,56 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; commerce graph remains a checkout/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 AI Deal Desk No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the AI Deal Desk so assistants, VAs, crawlers, and buyer-agents can turn non-sensitive lead context into a buyer decision, PayPal note, one-lead rescue handoff, executable no-clone checkout proof, verified release notes, SHA-256, PayPal URL, and the payment-proof gate.
+
+Completed todos:
+- Audited `ai-deal-desk.html`, `ai-deal-desk.json`, and `ai-deal-desk.txt`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated `ai-deal-desk.html` with no-clone proof in metadata, navigation, hero actions, visible proof section, initial copyable agent instruction, generated JS instruction, privacy warning, and payment-proof language.
+- Updated `ai-deal-desk.json` to schema version `softjunk-ai-deal-desk-v3` with top-level no-clone checkout proof fields and updated fastest path/copyable agent instruction.
+- Updated `ai-deal-desk.txt` with no-clone checkout proof, verified release URL, release tarball URL, SHA-256, and expanded copyable agent instruction.
+- Validated `ai-deal-desk.json` parses locally.
+- Validated all three changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `ai-deal-desk.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live `ai-deal-desk.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `82bfefa40cc4ea9a3d987f7972cb8e3a2e6b3916`.
+- Refreshed public AI Deal Desk Gist `16d6861c14de82187946861e4c448844` for `ai-deal-desk.json` and `ai-deal-desk.txt`.
+- Created public product release `v2.29.136`.
+- Confirmed GitHub Pages latest build was `built` for commit `82bfefa40cc4ea9a3d987f7972cb8e3a2e6b3916`.
+- Validated live Pages `ai-deal-desk.html`, `ai-deal-desk.json`, and `ai-deal-desk.txt` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub and raw Gist copies of `ai-deal-desk.json` and `ai-deal-desk.txt` include the same required markers; JSON parsed.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `82bfefa40cc4ea9a3d987f7972cb8e3a2e6b3916`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.136.
+- Live AI Deal Desk page: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html.
+- Live AI Deal Desk JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json.
+- Live AI Deal Desk text: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt.
+- AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining public PayPal surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the AI-native deal desk that creates buyer decisions and handoffs before routing a fitting buyer to the exact checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; AI Deal Desk remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.
