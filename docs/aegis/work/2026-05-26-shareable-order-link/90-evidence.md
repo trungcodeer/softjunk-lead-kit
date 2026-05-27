@@ -3372,3 +3372,23 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that AI/coding-agent discovery now points to the lowest-friction  buyer card.
 - Does not support claim that  has been received.
+## 2026-05-27 Sponsor button five-dollar route slice
+
+EvidenceBundleDraft:
+- Product commit: e1dbf5f628873e16466f0e418cf1466bbe2cc206.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.79
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26485763268 (completed, success).
+- Root commit: 023b91378e06ff4b05206db6aeac4bd2487bbdbd.
+- Profile commit: bf330027678cc0bbb09c380b0e481f66704b29bd.
+- Root/profile releases: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-five-dollar-route-v1 and https://github.com/trungcodeer/trungcodeer/releases/tag/profile-sponsor-five-dollar-route-v1
+- Root/profile Actions runs: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26485781557 and https://github.com/trungcodeer/trungcodeer/actions/runs/26485786844 (completed, success).
+- Sponsor Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550546464
+- Validation: product/root/profile FUNDING files each contain exactly 4 custom URLs, with PayPal first, /5/ second, product buyer card third, Sponsor route fourth, plus PAYPAL_PAYMENT_VERIFIED=true comment.
+- Live validation: sponsor-button-buy.json and Sponsor Gist raw markdown/JSON returned 200; JSON parses; surfaces include PayPal $5, /5/, product buyer card, one-rewrite, and verification gate.
+- IndexNow: status=200 urls=3.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that GitHub Sponsor routes now expose the lowest-friction  buyer card.
+- Does not support claim that  has been received.

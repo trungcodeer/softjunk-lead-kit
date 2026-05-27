@@ -4576,3 +4576,20 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: product/root agent-facing surfaces now expose the lowest-friction buyer card with PayPal/BuyAction/one-rewrite/verification-gate signals.
+## 2026-05-27 Sponsor button five-dollar route slice
+
+TodoCheckpointDraft:
+- Completed: updated product .github/FUNDING.yml so Sponsor custom URLs are PayPal first, /5/ second, product five-dollar buyer card third, Sponsor route fourth.
+- Completed: updated product SPONSOR_BUTTON_BUY.md and sponsor-button-buy.json with the same /5/ route and one-rewrite/verification signals.
+- Completed: updated root/profile .github/FUNDING.yml with the same four custom URLs.
+- Completed: updated Sponsor Gist mirror and created product/root/profile releases.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550546464
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion/discovery improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, it improves the native GitHub Sponsor CTA toward the exact  PayPal payment.
+- Compatibility boundary: stayed within owned GitHub repositories, Gist mirrors, and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: Sponsor button configuration now exposes PayPal and /5/ route across product/root/profile.
