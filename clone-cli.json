@@ -1,0 +1,45 @@
+{
+    "schema_version":  "softjunk-clone-cli-v1",
+    "updated":  "2026-05-27",
+    "name":  "SoftJunk Lead Kit Clone CLI",
+    "purpose":  "Convert repository clones into useful local follow-up previews, buyer handoff copy, PayPal notes, and exact 5 USD checkout routes without collecting private lead data.",
+    "raw_cli_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js",
+    "pages_cli_url":  "https://trungcodeer.github.io/softjunk-lead-kit/bin/softjunk-lead-kit.js",
+    "markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md",
+    "package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+    "run_after_clone":  "node bin/softjunk-lead-kit.js doctor --json",
+    "run_from_github_package":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json",
+    "commands":  [
+                     {
+                         "name":  "doctor",
+                         "usage":  "softjunk-lead-kit doctor --json",
+                         "purpose":  "Verify CLI, local-only mode, commands, payment URL, and verification gate."
+                     },
+                     {
+                         "name":  "rescue",
+                         "usage":  "softjunk-lead-kit rescue --business \"roofing contractor\" --service \"roof estimate\" --source estimate --need \"unanswered estimate\" --tone direct --next quote --json",
+                         "purpose":  "Generate local follow-up preview messages and a PayPal note for a custom one-lead rescue."
+                     },
+                     {
+                         "name":  "send",
+                         "usage":  "softjunk-lead-kit send --business \"med spa\" --service consultation --source DM --need \"quiet inquiry\" --json",
+                         "purpose":  "Generate copyable buyer handoff text for one qualified buyer."
+                     },
+                     {
+                         "name":  "kit",
+                         "usage":  "softjunk-lead-kit kit --json",
+                         "purpose":  "Print the proof-to-payment contract for the ready digital kit."
+                     },
+                     {
+                         "name":  "pay",
+                         "usage":  "softjunk-lead-kit pay --mode kit --json",
+                         "purpose":  "Print the exact 5 USD PayPal URL, required note, order form, and verification gate."
+                     }
+                 ],
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "custom_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+    "digital_kit_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "privacy_rule":  "Use placeholders only. Do not put customer or PayPal details into public issues, URLs, logs, or prompts.",
+    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+}
