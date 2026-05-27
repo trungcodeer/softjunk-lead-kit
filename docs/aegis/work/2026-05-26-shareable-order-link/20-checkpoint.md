@@ -7750,3 +7750,50 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo JSON, GitHub Pages JSON, raw GitHub files, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal URL health remains URL/checkout proof, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Lead Recovery Tools No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the free value-before-payment `lead-recovery-audit.html` and `lead-loss-calculator.html` tools so human buyers, assistants, and buyer-agents can estimate lead value leakage, copy a relevant PayPal note/report, verify the executable no-clone checkout route, inspect verified release notes, compare SHA-256, open the PayPal URL, and respect the payment-proof gate.
+
+Completed todos:
+- Audited the remaining value-before-payment HTML tools and identified `lead-recovery-audit.html` and `lead-loss-calculator.html` as high-value public surfaces that had PayPal links but lacked no-clone checkout proof.
+- Updated both HTML pages with no-clone checkout proof in metadata, JSON-LD, navigation, hero actions, visible proof sections, copyable proof command buttons, generated report/audit output, and payment-proof boundary language.
+- Validated both files contain the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed both files' non-JSON-LD inline JavaScript and JSON-LD locally.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live versions of both pages with Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `aa72f4ba8b61031e15b1a17c04334684174e4fb7`.
+- Created public product release `v2.29.142`.
+- Confirmed GitHub Pages latest build was `built` for commit `aa72f4ba8b61031e15b1a17c04334684174e4fb7`.
+- Validated live Pages and raw GitHub copies of both updated HTML files returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validated product release `v2.29.142` is public, non-draft, non-prerelease, targets commit `aa72f4ba8b61031e15b1a17c04334684174e4fb7`, and includes the same required markers.
+- Submitted the two updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `aa72f4ba8b61031e15b1a17c04334684174e4fb7`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.142.
+- Live lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html.
+- Live lead loss calculator: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining free preview/rewrite/payment-adjacent surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens free value-before-payment tools that can create buyer value and route relevant users through a verifiable checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML, GitHub Pages HTML, raw GitHub HTML, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; lead recovery tools remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.

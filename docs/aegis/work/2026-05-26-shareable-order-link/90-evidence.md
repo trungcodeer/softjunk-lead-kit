@@ -22,6 +22,35 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Lead Recovery Tools No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `lead-recovery-audit.html`
+- `lead-loss-calculator.html`
+
+Published commit and release:
+- Product commit: `aa72f4ba8b61031e15b1a17c04334684174e4fb7`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.142.
+
+Validation:
+- Local marker validation confirmed both updated HTML files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in each updated HTML file.
+- JSON-LD validation parsed the structured data block in each updated HTML file.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- lead-recovery-audit.html lead-loss-calculator.html` passed with only CRLF normalization warnings.
+- Edge headless DOM dumps for local `lead-recovery-audit.html` and `lead-loss-calculator.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`.
+- GitHub Pages latest build API returned `built` for commit `aa72f4ba8b61031e15b1a17c04334684174e4fb7`.
+- Live Pages validation returned HTTP 200 for `lead-recovery-audit.html` and `lead-loss-calculator.html`; both included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Raw GitHub validation returned HTTP 200 for both updated HTML files and included the same required markers.
+- Edge headless DOM dumps for live `lead-recovery-audit.html` and `lead-loss-calculator.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`.
+- Product release `v2.29.142` is public, non-draft, non-prerelease, targets `aa72f4ba8b61031e15b1a17c04334684174e4fb7`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `lead-recovery-audit.html` and `lead-loss-calculator.html`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 PayPal URL Health No-Clone Checkout Proof Evidence
 
 Artifacts updated:
