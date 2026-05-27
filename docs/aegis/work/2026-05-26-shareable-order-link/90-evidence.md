@@ -3603,3 +3603,45 @@ Payment verification:
 
 Conclusion:
 - Checkout friction was reduced on the direct buyer cards, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+
+## Evidence: 2026-05-27 IndexNow owned URL submission
+
+What changed:
+- Published the IndexNow key file `f0ab0655388d4f72b77f826b39a518ab.txt` on the owned root GitHub Pages host.
+- Submitted 18 owned `trungcodeer.github.io` buyer/discovery URLs to `https://api.indexnow.org/indexnow`.
+
+Verification:
+- Live key URL: https://trungcodeer.github.io/f0ab0655388d4f72b77f826b39a518ab.txt returned HTTP 200 and exact key content.
+- IndexNow response: HTTP 202 Accepted / key validation pending.
+- Response body: empty.
+- Official docs referenced: https://www.indexnow.org/documentation
+
+Submitted URLs:
+- https://trungcodeer.github.io/5/
+- https://trungcodeer.github.io/5.json
+- https://trungcodeer.github.io/5.txt
+- https://trungcodeer.github.io/paypal/
+- https://trungcodeer.github.io/pay/
+- https://trungcodeer.github.io/buy/
+- https://trungcodeer.github.io/paypal-url-health.json
+- https://trungcodeer.github.io/llms.txt
+- https://trungcodeer.github.io/sitemap.xml
+- https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
+- https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json
+- https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt
+- https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json
+- https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-plugin.json
+- https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
+- https://trungcodeer.github.io/softjunk-lead-kit/llms.txt
+- https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
+- https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json
+
+Public refs:
+- Root key commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/7db33ba5426c1c937f139d8b4273f03090f8eeac
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-indexnow-usd5-submit-v1
+- Public tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551242167
+
+Boundary:
+- This is search discovery evidence only.
+- It does not prove indexing, ranking, buyer action, or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
