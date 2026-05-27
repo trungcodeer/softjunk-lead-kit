@@ -8048,3 +8048,58 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/TXT/JSON, GitHub Pages HTML/TXT/JSON, raw GitHub HTML/TXT/JSON, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; digital-kit order and after-pay surfaces remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Vertical Buyer-Send No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade plumbing, HVAC, dental, med-spa, and roofing `*-buyer-send.*` packets so a human buyer, VA, or buyer-agent can send one relevant packet, verify the executable no-clone checkout route, compare release/SHA proof, open PayPal, and preserve the seller-side payment gate.
+
+Completed todos:
+- Audited vertical buyer-send surfaces with PayPal links and missing no-clone command/release/SHA proof.
+- Updated 15 buyer-send files: `plumbing-buyer-send.*`, `hvac-buyer-send.*`, `dental-buyer-send.*`, `med-spa-buyer-send.*`, and `roofing-buyer-send.*`.
+- Added no-clone checkout proof to HTML metadata, JSON-LD, navigation/hero actions, visible proof sections, JSON schema version `v2` fields, TXT handoff packets, verification gates, and agent instructions where applicable.
+- Updated public roofing buyer-send Gist `75cf486f79f6a5ab61b938ba786e0805` from local `roofing-buyer-send.json` and `roofing-buyer-send.txt`.
+- Validated all 15 files contain the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed all five buyer-send JSON files locally.
+- Parsed all buyer-send HTML JSON-LD blocks and runtime scripts locally.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live versions of all five buyer-send HTML pages with Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Validated raw Gist copies of `roofing-buyer-send.json` and `roofing-buyer-send.txt` returned HTTP 200, included the required markers, and JSON parsed where applicable.
+- Pushed product commit `53166cc1aad61ac2bdb6be421a47ccd9382420a8`.
+- Created public product release `v2.29.148`.
+- Confirmed GitHub Pages latest build was `built` for commit `53166cc1aad61ac2bdb6be421a47ccd9382420a8`.
+- Validated live Pages and raw GitHub copies of all 15 updated files returned HTTP 200 and included the required markers; JSON parsed where applicable.
+- Validated product release `v2.29.148` is public, non-draft, non-prerelease, targets commit `53166cc1aad61ac2bdb6be421a47ccd9382420a8`, and includes the same required markers.
+- Submitted the 15 updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `53166cc1aad61ac2bdb6be421a47ccd9382420a8`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.148.
+- Live plumbing buyer-send page: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html.
+- Live HVAC buyer-send page: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html.
+- Live dental buyer-send page: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html.
+- Live med-spa buyer-send page: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html.
+- Live roofing buyer-send page: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html.
+- Roofing buyer-send Gist: https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving owned public/package-native buyer surfaces while waiting for actual PayPal proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens one-buyer send packets that can be shared with a known relevant buyer without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/TXT/JSON, GitHub Pages HTML/TXT/JSON, raw GitHub HTML/TXT/JSON, public Gist for roofing buyer-send JSON/TXT, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; vertical buyer-send packets remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.

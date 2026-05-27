@@ -22,6 +22,51 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Vertical Buyer-Send No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `plumbing-buyer-send.html`
+- `plumbing-buyer-send.json`
+- `plumbing-buyer-send.txt`
+- `hvac-buyer-send.html`
+- `hvac-buyer-send.json`
+- `hvac-buyer-send.txt`
+- `dental-buyer-send.html`
+- `dental-buyer-send.json`
+- `dental-buyer-send.txt`
+- `med-spa-buyer-send.html`
+- `med-spa-buyer-send.json`
+- `med-spa-buyer-send.txt`
+- `roofing-buyer-send.html`
+- `roofing-buyer-send.json`
+- `roofing-buyer-send.txt`
+- Public Gist `75cf486f79f6a5ab61b938ba786e0805`: `roofing-buyer-send.json` and `roofing-buyer-send.txt`
+
+Published commit and release:
+- Product commit: `53166cc1aad61ac2bdb6be421a47ccd9382420a8`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.148.
+
+Validation:
+- Local marker validation confirmed all 15 updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `plumbing-buyer-send.json`, `hvac-buyer-send.json`, `dental-buyer-send.json`, `med-spa-buyer-send.json`, and `roofing-buyer-send.json` after the edit.
+- Local HTML validation parsed all buyer-send JSON-LD blocks and runtime scripts.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check --` on the 15 updated buyer-send files passed with only CRLF normalization warnings.
+- Edge headless DOM dumps for local `plumbing-buyer-send.html`, `hvac-buyer-send.html`, `dental-buyer-send.html`, `med-spa-buyer-send.html`, and `roofing-buyer-send.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh gist edit` refreshed public Gist `75cf486f79f6a5ab61b938ba786e0805` from local `roofing-buyer-send.json` and `roofing-buyer-send.txt`.
+- Raw Gist validation returned HTTP 200 for `roofing-buyer-send.json` and `roofing-buyer-send.txt`; both included the required markers and the JSON parsed where applicable.
+- GitHub Pages latest build API returned `built` for commit `53166cc1aad61ac2bdb6be421a47ccd9382420a8`.
+- Live Pages validation returned HTTP 200 for all 15 updated buyer-send files; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed where applicable.
+- Raw GitHub validation returned HTTP 200 for all 15 updated buyer-send files; all included the same required markers and JSON parsed where applicable.
+- Edge headless DOM dumps for all five live buyer-send HTML pages included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.148` is public, non-draft, non-prerelease, targets `53166cc1aad61ac2bdb6be421a47ccd9382420a8`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted all 15 buyer-send Pages URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Digital Kit Order No-Clone Checkout Proof Evidence
 
 Artifacts updated:
