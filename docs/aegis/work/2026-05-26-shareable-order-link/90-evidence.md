@@ -3863,3 +3863,29 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Digital Kit Proof And Order Route Evidence
+
+Artifacts added/updated:
+- Digital kit order board: `https://github.com/trungcodeer/softjunk-lead-kit/issues/9`.
+- Digital kit order form: `.github/ISSUE_TEMPLATE/digital-kit-order.yml`.
+- Paid kit proof page: `https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html`.
+- Paid kit manifest v2: `https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json`.
+- Public sample ZIP: `https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip`.
+
+Validation:
+- API validation parsed paid kit manifest v2, buyer-index, and product-feed JSON.
+- Proof page marker validation confirmed board #9, digital kit order form, sample ZIP, sample ZIP SHA-256, required PayPal note, `PAYPAL_PAYMENT_VERIFIED=true`, privacy copy, and live region.
+- Digital kit order form marker validation confirmed payment URL, required note, privacy rule, and verification gate.
+- Inline proof-page JavaScript passed `node --check`.
+- Root and quiet-lead API validation confirmed discovery markers in `llms.txt`.
+- GitHub Pages latest build API returned `built` for product commit `a9b3c0c604e6151ebfbe302c4d8e2fa6894314c1`, root commit `f42b9ec9dd1aa9b9341ae49bec9bb23ca55a842c`, and quiet commit `10adc1de390da2eaaa337f87dc4658c865574401`.
+- Live `curl.exe` validation passed for proof page, manifest v2, buyer-index, product-feed, product/root/quiet `llms.txt`, issue #9, and sample ZIP contents.
+- Sample ZIP live SHA-256 matched `57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba` and contained `README.txt`, `sample-guide.html`, `sample-templates.txt`, `sample-tracker.csv`, and `sample-ai-prompts.txt`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.96`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-digital-kit-proof-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-digital-kit-proof-route-v1`.
+- IndexNow submission for 8 owned URLs returned `HTTP/1.1 200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
