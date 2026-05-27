@@ -291,5 +291,10 @@
     "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
     "try_now_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
     "try_now_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/try-now.json",
-    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml"
+    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml",
+    "dev_agent_start_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md",
+    "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+    "copilot_instructions_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md",
+    "devcontainer_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json",
+    "vscode_tasks_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json"
 }
