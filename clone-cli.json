@@ -41,5 +41,15 @@
     "digital_kit_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
     "privacy_rule":  "Use placeholders only. Do not put customer or PayPal details into public issues, URLs, logs, or prompts.",
-    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "run_this_first_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md",
+    "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+    "try_now_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
+    "try_now_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/try-now.json",
+    "npm_start_command":  "npm start",
+    "npm_try_rescue_command":  "npm run try:rescue",
+    "npm_try_send_command":  "npm run try:send",
+    "npm_pay_custom_command":  "npm run pay:custom",
+    "npm_pay_kit_command":  "npm run pay:kit",
+    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml"
 }
