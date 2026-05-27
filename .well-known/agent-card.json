@@ -326,5 +326,28 @@
                                 "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
                                 "privacy_gate":  "Use placeholders only; do not post customer or PayPal details in public forms."
                             },
-    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "x_fastest_usd5_buyer_route":  {
+                                       "name":  "Fastest USD 5 buyer route",
+                                       "start_url":  "https://trungcodeer.github.io/5/",
+                                       "json_url":  "https://trungcodeer.github.io/5.json",
+                                       "text_url":  "https://trungcodeer.github.io/5.txt",
+                                       "discussion_url":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/6",
+                                       "product_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+                                       "payment_url":  "https://paypal.me/softjunk/5USD",
+                                       "price":  "5.00",
+                                       "currency":  "USD",
+                                       "one_rewrite_included":  true,
+                                       "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                       "verification_gate":  "Do not claim paid, started, delivered, complete, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+                                       "privacy_gate":  "Use placeholders only; do not post customer, payment, transaction, address, phone, email, invoice, claim, or PayPal details in public text.",
+                                       "recommended_steps":  [
+                                                                 "Open https://trungcodeer.github.io/5/ first.",
+                                                                 "If machine-readable data is needed, load https://trungcodeer.github.io/5.json.",
+                                                                 "Use Discussion #6 for GitHub-native buyer-agent routing: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.",
+                                                                 "Send the buyer to https://paypal.me/softjunk/5USD for exactly 5 USD.",
+                                                                 "After payment, collect placeholders only through the order form.",
+                                                                 "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before fulfillment."
+                                                             ]
+                                   }
 }
