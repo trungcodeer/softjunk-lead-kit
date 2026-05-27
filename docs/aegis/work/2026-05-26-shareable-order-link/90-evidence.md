@@ -3719,3 +3719,25 @@ Boundary:
 - This is a GitHub-native payment-route improvement.
 - It does not prove buyer action or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## Evidence: 2026-05-27 Issue chooser Send-5 PayPal route
+
+What changed:
+- Fixed and simplified GitHub issue chooser contact links.
+- Put Send-5, direct PayPal, root /5/, Sponsor route, and verification instructions before order submission.
+- Updated one-lead and roofing paid order forms to point to Send-5/PayPal and keep the verification gate explicit.
+
+Verification:
+- PyYAML parsed all three issue template files successfully.
+- Remote marker checks found Send-5, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` in all three files.
+- Product Pages run succeeded after changes.
+
+Public refs:
+- Issue chooser: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.91
+- Public tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551466944
+
+Boundary:
+- This is a GitHub-native checkout improvement.
+- It does not prove buyer action or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
