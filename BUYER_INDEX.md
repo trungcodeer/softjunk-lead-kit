@@ -28,6 +28,11 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
+- No-clone checkout proof: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json`
+- Verified release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz
+- Release tarball SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+- Expected checkout: 5.00 USD at https://paypal.me/softjunk/5USD with success signal `PAYPAL_PAYMENT_VERIFIED=true`
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - Root one-lead rescue text: https://trungcodeer.github.io/rescue.txt
@@ -256,6 +261,6 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
 
 ## Verification Gate
 
-Do not claim an order is paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns `PAYPAL_PAYMENT_VERIFIED=true`, or a trusted seller-side PayPal CSV export returns `PAYPAL_PAYMENT_VERIFIED=true source=csv`.
+Do not claim an order is paid, started, delivered, fulfilled, complete, received, or stopped unless the seller can see the 5 USD PayPal transaction, the API verifier returns `PAYPAL_PAYMENT_VERIFIED=true`, or a trusted seller-side PayPal CSV export returns `PAYPAL_PAYMENT_VERIFIED=true source=csv`.
 
 Fulfillment uses the email shown in the PayPal transaction. Do not post private lead details, customer contact information, or PayPal transaction details publicly.
