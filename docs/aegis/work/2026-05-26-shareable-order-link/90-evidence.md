@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 NPM Release Asset Version Alignment Evidence
+
+Artifacts updated:
+- `bin/softjunk-lead-kit.js` version constant aligned to `0.2.1`.
+- Product commit pushed: `e465f4339ccba069add6c688dd00508015af43c1`.
+- Release asset replaced on `v2.29.118`: `softjunk-lead-kit-0.2.1.tgz`.
+- Release notes corrected to use `npm exec --yes --package <tarball-url> -- softjunk-lead-kit ...`.
+
+Public routes:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118.
+- Tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Validation:
+- `node --check bin/softjunk-lead-kit.js` passed.
+- `node bin/softjunk-lead-kit.js doctor --json` returned `ok=true`, version `0.2.1`, payment URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `node bin/softjunk-lead-kit.js pay --mode custom --json` returned `ok=true`, amount `5.00`, currency `USD`, payment URL `https://paypal.me/softjunk/5USD`, and the verification gate.
+- `npm pack --json` built `softjunk-lead-kit-0.2.1.tgz`, size `421821`, npm shasum `207ed67c9c32072e372e4ebe111aa400b290cbf1`, and integrity `sha512-Drb4OOWAcg1zleGIISm2wIiInGNxbjukTD0y3/f5B/c2PRFbdtO3scxr9th3B3XS6VHIip5exTTzwM/6PyVU2Q==`.
+- Local SHA-256 for the tarball was `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Tarball inspection confirmed `package/package.json`, `package/npm-funding.json`, and `package/bin/softjunk-lead-kit.js`.
+- Tarball package metadata confirmed version `0.2.1`, `private=false`, homepage `https://paypal.me/softjunk/5USD`, funding URL `https://paypal.me/softjunk/5USD`, and `publishConfig.access=public`.
+- Tarball CLI inspection confirmed version `0.2.1`, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh release view v2.29.118 --json assets,body,url` confirmed the asset digest `sha256:c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`, size `421821`, corrected `npm exec --package` command, no invalid old `npm exec` command, new SHA, and the verification gate.
+- `npm exec --cache D:\codex-tmp\npm-cache-softjunk-doctor-20260527-1655 --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit doctor --json` returned `ok=true`, version `0.2.1`, PayPal URL, and gate.
+- `npm exec --cache D:\codex-tmp\npm-cache-softjunk-pay-20260527-1655 --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json` returned `ok=true`, amount `5.00`, currency `USD`, PayPal URL, and gate.
+- Temporary install metadata at `D:\codex-tmp\softjunk-release-fund-check-20260527-1655\node_modules\softjunk-lead-kit\package.json` confirmed package version `0.2.1`, homepage `https://paypal.me/softjunk/5USD`, and funding URL `https://paypal.me/softjunk/5USD`.
+- The generated local tarball was removed; `git status --short --branch` returned clean at `e465f4339ccba069add6c688dd00508015af43c1`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 NPM Publish-Ready Funding Metadata Evidence
 
 Public distribution:

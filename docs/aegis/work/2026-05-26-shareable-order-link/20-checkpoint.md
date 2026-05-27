@@ -6450,3 +6450,56 @@ DriftCheckDraft:
 - Compatibility boundary: package metadata, npm dry-run, GitHub Pages metadata, GitHub Release feed, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added npm publish-ready metadata, but real npm publish still requires npm auth.
 - Decision: continue.
+
+## 2026-05-27 NPM Release Asset Version Alignment Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Replace the `v2.29.118` release tarball with an installable package whose CLI version matches package metadata, and correct the public release install commands to use `npm exec --package`.
+
+Completed todos:
+- Confirmed the product repo was clean at `21b50a284727fe0e8e5271342302c308c3a4b18f`.
+- Re-read task intent and the latest checkpoint before editing.
+- Ran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Found the stale CLI constant in `bin/softjunk-lead-kit.js`: package metadata was `0.2.1`, but `doctor` reported `0.2.0`.
+- Updated the CLI constant to `0.2.1`.
+- Validated `node --check bin/softjunk-lead-kit.js`.
+- Validated local `doctor --json` reports version `0.2.1`, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validated local `pay --mode custom --json` returns amount `5.00`, currency `USD`, PayPal URL `https://paypal.me/softjunk/5USD`, and the verification gate.
+- Committed and pushed product commit `e465f4339ccba069add6c688dd00508015af43c1`.
+- Ran `npm pack --json`; it built `softjunk-lead-kit-0.2.1.tgz` with npm shasum `207ed67c9c32072e372e4ebe111aa400b290cbf1`.
+- Verified the tarball contains `package/package.json`, `package/npm-funding.json`, and `package/bin/softjunk-lead-kit.js`.
+- Verified tarball package metadata exposes version `0.2.1`, `private=false`, homepage `https://paypal.me/softjunk/5USD`, funding URL `https://paypal.me/softjunk/5USD`, and `publishConfig.access=public`.
+- Verified tarball CLI contains version `0.2.1`, the PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Uploaded the tarball to release `v2.29.118` with `gh release upload --clobber`.
+- Corrected release notes to remove the invalid `npm exec --yes <tarball-url> -- ...` command and use `npm exec --yes --package <tarball-url> -- ...`.
+- Verified the release asset is `softjunk-lead-kit-0.2.1.tgz`, size `421821`, digest `sha256:c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`, and the release notes include the correct command and gate.
+- Validated `npm exec --cache <isolated-cache> --yes --package <release-tarball-url> -- softjunk-lead-kit doctor --json`; it returned `ok=true`, version `0.2.1`, and the PayPal URL.
+- Validated `npm exec --cache <isolated-cache> --yes --package <release-tarball-url> -- softjunk-lead-kit pay --mode custom --json`; it returned `ok=true`, amount `5.00`, currency `USD`, PayPal URL, and the verification gate.
+- Installed the release tarball into a temporary project and confirmed `node_modules/softjunk-lead-kit/package.json` contains funding URL `https://paypal.me/softjunk/5USD`.
+- Removed the local tarball and confirmed the worktree was clean at `e465f4339ccba069add6c688dd00508015af43c1`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Version alignment commit: `e465f4339ccba069add6c688dd00508015af43c1`.
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118.
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish is still blocked by missing npm login on this machine.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the package-native release artifact installable by buyer agents and routes them to the exact 5 USD PayPal action without unsolicited outreach, deception, or fake payment claims.
+- Compatibility boundary: package metadata, GitHub Release asset, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; release asset is a fallback while real npm publish still requires npm auth.
+- Decision: continue.
