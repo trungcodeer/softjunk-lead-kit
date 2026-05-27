@@ -6210,3 +6210,40 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub issues/feed, GitHub Releases, GitHub repo metadata, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added an issue-feed comment distribution surface only.
 - Decision: continue.
+
+## 2026-05-27 Pinned Issue Body Direct Checkout Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Move direct PayPal checkout and the latest direct-checkout release into the first visible body section of the pinned human and buyer-agent issue boards.
+
+Completed todos:
+- Confirmed repo was clean at `0a6b54011c06de890edc0ddcecabfc44549b70bd`.
+- Read the current bodies of issue #1 and issue #5.
+- Updated issue #1 body into a concise human checkout board with direct PayPal, release `v2.29.116`, buyer card, order route, niche packets, payment gate, and privacy rule.
+- Updated issue #5 body into a concise buyer-agent checkout contract with direct PayPal, release `v2.29.116`, buyer-agent JSON, agent decision rule, machine-readable routes, niche JSON packets, and payment gate.
+- Fixed a multiline formatting problem from the first prepend attempt by replacing both issue bodies with clear Markdown headings and lists.
+- Validated both issue bodies through the GitHub CLI.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Human checkout board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1.
+- Buyer-agent checkout contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5.
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves first-view conversion on owned pinned issue boards without unsolicited outreach, scraped lists, private data, or fake payment claims.
+- Compatibility boundary: GitHub issue bodies, GitHub Releases, GitHub Pages route links, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; updated pinned issue body copy only.
+- Decision: continue.

@@ -22,6 +22,27 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Pinned Issue Body Direct Checkout Evidence
+
+Public distribution:
+- Human checkout board issue #1: `https://github.com/trungcodeer/softjunk-lead-kit/issues/1`.
+- Buyer-agent checkout contract issue #5: `https://github.com/trungcodeer/softjunk-lead-kit/issues/5`.
+
+Validation:
+- Issue #1 body validation returned `has_direct=true`, `has_paypal=true`, `has_release=true`, `has_gate=true`, and `has_private_rule=true`.
+- Issue #5 body validation returned `has_direct=true`, `has_paypal=true`, `has_release=true`, `has_gate=true`, `has_agent_rule=true`, and `has_machine_routes=true`.
+- Both bodies now put `https://paypal.me/softjunk/5USD` and release `v2.29.116` in the first visible section.
+
+Accessibility and privacy guardrails:
+- The edited issue bodies use plain Markdown headings, ordered lists, and bullet lists rather than a long collapsed paragraph.
+- The bodies state they are checkout routes, not payment proof.
+- The bodies forbid public private lead, customer, patient, phone, email, address, PayPal, transaction, invoice, insurance, and similar sensitive details.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Direct PayPal Issue Feed Send Evidence
 
 Public distribution:
