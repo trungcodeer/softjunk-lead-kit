@@ -7949,3 +7949,52 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON, GitHub Pages HTML/JSON, raw GitHub HTML/JSON, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; sample/share surfaces remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Paid Kit No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade `paid-kit-proof.html` and `paid-kit-manifest.json` so buyers and assistants can inspect paid ZIP proof, verify the executable no-clone checkout route, compare SHA-256, open the PayPal URL, and preserve the payment-proof gate.
+
+Completed todos:
+- Audited paid-kit proof surfaces with PayPal links and missing no-clone command/release/SHA proof.
+- Updated `paid-kit-proof.html` with no-clone checkout proof in metadata, JSON-LD, navigation, hero action, visible proof section, and payment-proof boundary language.
+- Updated `paid-kit-manifest.json` to schema version `softjunk-paid-kit-proof-v3` with top-level verified release URL, release tarball URL, SHA-256, success signal, no-clone checkout proof block, buyer-agent instruction, and stronger payment boundary.
+- Validated both files contain the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed `paid-kit-manifest.json` locally.
+- Parsed the `paid-kit-proof.html` runtime JavaScript and JSON-LD locally.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live `paid-kit-proof.html` with Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `f1e05ec0468b3fdf423c06d76c8f5c19cea34bdb`.
+- Created public product release `v2.29.146`.
+- Confirmed GitHub Pages latest build was `built` for commit `f1e05ec0468b3fdf423c06d76c8f5c19cea34bdb`.
+- Validated live Pages and raw GitHub copies of both updated files returned HTTP 200 and included the required markers; JSON parsed where applicable.
+- Validated product release `v2.29.146` is public, non-draft, non-prerelease, targets commit `f1e05ec0468b3fdf423c06d76c8f5c19cea34bdb`, and includes the same required markers.
+- Submitted the two updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `f1e05ec0468b3fdf423c06d76c8f5c19cea34bdb`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.146.
+- Live paid kit proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html.
+- Live paid kit manifest: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining digital-kit order/after-pay/payment-adjacent surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens paid-kit proof surfaces closest to a buyer decision while preserving manual fulfillment and PayPal evidence as the only completion gate.
+- Compatibility boundary: GitHub repo HTML/JSON, GitHub Pages HTML/JSON, raw GitHub HTML/JSON, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; paid-kit proof surfaces remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.
