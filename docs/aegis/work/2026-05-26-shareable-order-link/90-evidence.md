@@ -3530,3 +3530,19 @@ Payment verification:
 
 Conclusion:
 - Product OpenAPI discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 fastest usd5 agent manifests slice
+
+Updated and released:
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.86
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-fastest-agent-manifests-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551025017
+
+Live validation:
+- Product .well-known/ai-plugin.json, gent-card.json, .well-known/agent-card.json, gents-checkout.json, and AGENTS.md contain x_fastest_usd5_buyer_route or Fastest USD 5 Buyer Route, /5/, Discussion #6, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- Root .well-known/ai-plugin.json, gent-card.json, .well-known/agent-card.json, and AGENTS.md contain the same route markers.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Agent/plugin manifest discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
