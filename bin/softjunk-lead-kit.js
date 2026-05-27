@@ -3,7 +3,7 @@
 
 const CONSTANTS = Object.freeze({
   name: 'softjunk-lead-kit',
-  version: '0.2.0',
+  version: '0.2.1',
   paymentUrl: 'https://paypal.me/softjunk/5USD',
   amount: '5.00',
   currency: 'USD',
