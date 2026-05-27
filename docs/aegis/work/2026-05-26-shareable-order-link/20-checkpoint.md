@@ -4820,3 +4820,32 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 root short routes usd5 buyer card slice
+
+TodoCheckpointDraft:
+- Completed: updated root /paypal/, /pay/, and /buy/ to link to the one-screen /5/ buyer card, /5.json, and Discussion #6 before longer funnels.
+- Completed: added copy-safe PayPal note action to root /buy/.
+- Completed: validated live /paypal/, /pay/, /buy/ contain /5/, /5.json, Discussion #6, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true; /buy/ also contains copy-paypal-note.
+- Completed: published root release root-short-routes-usd5-v1.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551075224.
+- Active slice: continue legitimate owned-channel conversion improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Root /paypal/ commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/c51c9264e48a93ecab02ccf32b379a0e4aa247b1
+- Root /pay/ commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/7d5063fdb2c8f7d7c27ba8b1fcf93a7153d2448e
+- Root /buy/ commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/5662ddc2288b13c0d09cd6e21e85f60fe47a774b
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-short-routes-usd5-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551075224
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by reducing friction on root short payment routes.
+- Compatibility: no fulfillment gate was weakened; short routes still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- Accessibility: /buy/ copy action uses a native button and accessible status pattern already used on buyer cards.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
