@@ -3515,3 +3515,18 @@ Payment verification:
 
 Conclusion:
 - Checkout friction was reduced on the direct buyer cards, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 product openapi root usd5 route slice
+
+Updated and released:
+- Product OpenAPI: https://github.com/trungcodeer/softjunk-lead-kit/commit/c3fe04d03a6cea925e419815a825c4ac20d88606
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.85
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550977128
+
+Live validation:
+- https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml?check=root-usd5-openapi returned content containing /5/, /5.json, /5.txt, operationId: openRootUsd5BuyerCard, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Product OpenAPI discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
