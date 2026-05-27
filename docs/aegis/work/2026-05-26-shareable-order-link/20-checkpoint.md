@@ -7071,3 +7071,52 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; checkout remains a checkout/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 One Buyer Share No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the one-buyer share route so a sender or buyer-agent can open a safe one-recipient share page, generate one buyer message, include executable no-clone $5 checkout proof, verify release notes and SHA-256, then route the buyer to PayPal without cloning the repository.
+
+Completed todos:
+- Audited `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated all three one-buyer share files with the no-clone release-tarball command, verified release URL, SHA-256, direct PayPal URL, and stricter no-false-payment language.
+- Added the checkout proof to the browser-generated buyer message and to a copyable checkout proof textarea while preserving the one-known-buyer confirmation and no-auto-send safety boundary.
+- Validated `one-buyer-share.json` parses locally.
+- Validated all three changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `one-buyer-share.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered the local and live `one-buyer-share.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `98ede03ca640b0000c9b4227df23c6de9f15d672`.
+- Created public product release `v2.29.129`.
+- Confirmed GitHub Pages latest build was `built` for commit `98ede03ca640b0000c9b4227df23c6de9f15d672`.
+- Validated live `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `98ede03ca640b0000c9b4227df23c6de9f15d672`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.129.
+- Live one-buyer share HTML: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html.
+- Live one-buyer share JSON: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json.
+- Live one-buyer share text: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work on remaining high-intent surfaces such as `agent-buy-brief.html`, `A2A_AGENT_CARD.md`, and `AI_ACTION_CHECKOUT.md`; publish to npm when npm auth is available; or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the one-recipient share path and routes a known fitting buyer to the exact checkout handoff without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; one-buyer share remains a share/payment-intent surface, not payment proof.
+- Decision: continue.

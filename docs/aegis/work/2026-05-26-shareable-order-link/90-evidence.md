@@ -5129,3 +5129,32 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 One Buyer Share No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `one-buyer-share.html`
+- `one-buyer-share.json`
+- `one-buyer-share.txt`
+
+Published commit and release:
+- Product commit: `98ede03ca640b0000c9b4227df23c6de9f15d672`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.129.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `one-buyer-share.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `one-buyer-share.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- one-buyer-share.html one-buyer-share.json one-buyer-share.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for the local `one-buyer-share.html` with safe query params included the no-clone command, PayPal URL, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `98ede03ca640b0000c9b4227df23c6de9f15d672`.
+- Live validation returned HTTP 200 for `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Edge headless DOM dump for the live `one-buyer-share.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.129` is public, non-draft, non-prerelease, targets `98ede03ca640b0000c9b4227df23c6de9f15d672`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
