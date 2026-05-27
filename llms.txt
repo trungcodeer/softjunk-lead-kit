@@ -1,5 +1,8 @@
 # SoftJunk Lead Kit
 
+PayPal URL health evidence (not payment proof):
+https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json
+
 Fastest USD 5 buyer route:
 1. Shortest page: https://trungcodeer.github.io/5/
 2. Buyer-agent JSON: https://trungcodeer.github.io/5.json
