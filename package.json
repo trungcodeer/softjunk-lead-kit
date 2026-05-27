@@ -9,10 +9,22 @@
             },
     "scripts":  {
                     "cli:smoke":  "node bin/softjunk-lead-kit.js doctor --json \u0026\u0026 node bin/softjunk-lead-kit.js kit --json \u0026\u0026 node bin/softjunk-lead-kit.js pay --mode kit --json",
-                    "mcp:smoke":  "node mcp-server-softjunk.js"
+                    "mcp:smoke":  "node mcp-server-softjunk.js",
+                    "start":  "node bin/softjunk-lead-kit.js doctor --json",
+                    "try:rescue":  "node bin/softjunk-lead-kit.js rescue --business \"roofing contractor\" --service \"roof estimate\" --source estimate --need \"unanswered estimate\" --tone direct --next quote --json",
+                    "try:send":  "node bin/softjunk-lead-kit.js send --business \"med spa\" --service consultation --source DM --need \"quiet inquiry\"",
+                    "pay:custom":  "node bin/softjunk-lead-kit.js pay --mode custom --json",
+                    "pay:kit":  "node bin/softjunk-lead-kit.js pay --mode kit --json"
                 },
     "engines":  {
                     "node":  "\u003e=18"
                 },
-    "license":  "MIT"
+    "license":  "MIT",
+    "softjunk":  {
+                     "run_this_first_url":  "https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md",
+                     "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+                     "try_now_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
+                     "payment_url":  "https://paypal.me/softjunk/5USD",
+                     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                 }
 }
