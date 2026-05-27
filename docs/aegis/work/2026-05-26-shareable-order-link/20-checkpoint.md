@@ -5818,3 +5818,48 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added a plumbing-specific buyer route and public issue as owned discovery surfaces.
 - Decision: continue.
+
+## 2026-05-27 HVAC Buyer Send Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add a high-intent HVAC no-cool/no-heat/missed-call one-buyer send packet that gives copy-ready DM, email, PayPal note, preview route, one-buyer share route, exact 5 USD PayPal checkout, and verification gate.
+
+Completed todos:
+- Reran PayPal verifier at slice start and after release/indexing; it still returned missing credentials.
+- Added `hvac-buyer-send.html`, `hvac-buyer-send.json`, and `hvac-buyer-send.txt`.
+- Wired the HVAC route into README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI, ai-plugin, llms, robots, and sitemap.
+- Validated JSON, JSONL, XML, OpenAPI YAML, markers, inline script parsing, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `bc6aa947cf859d6ef8e317a6d1aff578865395d4` and release `v2.29.107`.
+- Created owned public HVAC buyer issue #11 and corrected the title to use `5 USD` after PowerShell expanded `$5` during issue creation.
+- Wired issue #11 back into HVAC JSON/text, README, AGENTS, llms, agents-checkout, buyer-index, and agent-buyer-catalog.
+- Pushed commit `389211e730061c11cc69dfba08f9d631bdd9b346` and release `v2.29.108`.
+- Added a copy fallback for the HVAC page status region when Clipboard API access is unavailable.
+- GitHub rejected a normal `git push` for the copy-fallback commit with `remote: fatal error in commit_refs`; verified the update was a fast-forward and advanced `main` through the GitHub API with `force=false`.
+- Recreated release `v2.29.109` so its tag points at `1aef6c6870c75a21653099066c89f0374c840165`.
+- Validated live GitHub Pages HTML/JSON/TXT and discovery surfaces; all returned HTTP 200 and contained HVAC route/payment/gate markers.
+- Submitted 10 HVAC route and discovery URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- HVAC buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html.
+- HVAC buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json.
+- HVAC buyer send text: https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt.
+- Public HVAC buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/11.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.107, https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.108, and https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.109.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a legitimate one-buyer send packet and owned public issue for a high-intent HVAC urgent-service lead recovery case without spam, scraping, deception, unauthorized outreach, or fake payment claims.
+- Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added an HVAC-specific buyer route and public issue as owned discovery surfaces.
+- Decision: continue.

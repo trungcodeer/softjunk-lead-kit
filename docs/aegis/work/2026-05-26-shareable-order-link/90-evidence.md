@@ -3846,6 +3846,63 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 HVAC Buyer Send Route Evidence
+
+Artifacts added:
+- `hvac-buyer-send.html`.
+- `hvac-buyer-send.json`.
+- `hvac-buyer-send.txt`.
+
+Artifacts wired:
+- README and AGENTS HVAC urgent-service fast paths.
+- `agents-checkout.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `llms.txt`, `robots.txt`, and `sitemap.xml`.
+- Public HVAC buyer issue #11 after issue creation.
+
+Public routes:
+- HVAC buyer send page: `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html`.
+- HVAC buyer send JSON: `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json`.
+- HVAC buyer send text: `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt`.
+- Public HVAC buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/11`.
+
+Commits and releases:
+- Initial HVAC route commit: `bc6aa947cf859d6ef8e317a6d1aff578865395d4`.
+- Initial HVAC route release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.107`.
+- Issue wiring commit: `389211e730061c11cc69dfba08f9d631bdd9b346`.
+- Issue wiring release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.108`.
+- Copy fallback commit: `1aef6c6870c75a21653099066c89f0374c840165`.
+- Copy fallback release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.109`.
+
+Local validation:
+- `ConvertFrom-Json` parsed `hvac-buyer-send.json`, `agents-checkout.json`, `buyer-index.json`, and `.well-known/ai-plugin.json`.
+- Every line of `agent-buyer-catalog.jsonl` parsed as JSON.
+- XML parse confirmed `sitemap.xml` includes the HVAC buyer send routes.
+- Python/PyYAML parsed `.well-known/openapi.yaml` and confirmed `/hvac-buyer-send.html`, `/hvac-buyer-send.json`, and `/hvac-buyer-send.txt`.
+- Node parsed the non-JSON-LD inline script in `hvac-buyer-send.html`.
+- `git diff --check` returned only line-ending warnings.
+
+Browser validation:
+- Playwright/Edge local validation passed for desktop and mobile.
+- Playwright/Edge live validation passed for desktop and mobile at `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html?v=v2.29.109`.
+- Live page title was `Send One HVAC Buyer The $5 Rescue | SoftJunk`.
+- Live H1 was `Send one HVAC buyer the $5 urgent service rescue.`
+- Live checks confirmed 3 PayPal links, JSON link present, no horizontal overflow, mailto draft present, PayPal note contains HVAC, and copy status updates to `Copied. Send only to one known relevant HVAC buyer.`
+
+Live validation:
+- GitHub Pages latest build returned `built` for commit `1aef6c6870c75a21653099066c89f0374c840165`.
+- Live HTTP marker validation returned 200 for `hvac-buyer-send.html`, `.json`, `.txt`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `llms.txt`, `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `sitemap.xml`, and `robots.txt`.
+- Live markers covered `hvac-buyer-send`, issue #11, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true` where relevant.
+- GitHub issue #11 validation confirmed the title, HVAC route, exact PayPal URL, and verification gate.
+
+Distribution:
+- IndexNow POST submitted 10 owned URLs and returned `200`.
+- Normal `git push` for `1aef6c6` failed twice with `remote: fatal error in commit_refs`; the branch update was verified as a fast-forward and applied through GitHub API with `force=false`.
+- Release `v2.29.109` was recreated so the tag points to `1aef6c6870c75a21653099066c89f0374c840165`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Profile AI Discovery Contract Evidence
 
 Artifacts added/updated in `trungcodeer/trungcodeer`:
