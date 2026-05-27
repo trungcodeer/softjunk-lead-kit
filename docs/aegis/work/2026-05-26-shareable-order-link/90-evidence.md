@@ -3564,3 +3564,23 @@ Payment verification:
 
 Conclusion:
 - Root short payment routes now prioritize the direct buyer card, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 paypal url health evidence slice
+
+Updated and released:
+- Product health JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json
+- Root health JSON: https://trungcodeer.github.io/paypal-url-health.json
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.87
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-paypal-url-health-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551150169
+
+Validation:
+- curl -I -L https://paypal.me/softjunk/5USD exited 0 with status chain 301 -> 301 -> 200 and final URL https://www.paypal.com/paypalme/softjunk/5USD.
+- Product/root health JSON returned status 200 and include inal_status=HTTP/1.1 200 OK, payment URL, success signal, and explicit 
+ot proof of payment rule.
+- Product/root llms.txt, obots.txt, and sitemap.xml expose paypal-url-health.json.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- PayPal URL health/trust evidence improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
