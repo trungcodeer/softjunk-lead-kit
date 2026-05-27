@@ -51,5 +51,12 @@
     "npm_try_send_command":  "npm run try:send",
     "npm_pay_custom_command":  "npm run pay:custom",
     "npm_pay_kit_command":  "npm run pay:kit",
-    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml"
+    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml",
+    "dev_agent_start_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md",
+    "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+    "copilot_instructions_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md",
+    "devcontainer_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json",
+    "vscode_tasks_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json",
+    "npm_agent_first_command":  "npm run agent:first",
+    "npm_codespaces_first_command":  "npm run codespaces:first"
 }
