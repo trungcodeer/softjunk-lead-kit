@@ -3741,3 +3741,25 @@ Boundary:
 - This is a GitHub-native checkout improvement.
 - It does not prove buyer action or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## Evidence: 2026-05-27 Repo metadata Send-5 discovery
+
+What changed:
+- Set product/profile/root repo homepage URLs to https://trungcodeer.github.io/send-5/.
+- Updated repo descriptions around Send-5, USD 5, PayPal, and one-lead rescue language.
+- Replaced topic sets with buyer-intent discovery keywords.
+
+Verification:
+- `gh repo view` confirmed homepage, description, and topics for all three repos.
+- GitHub traffic baseline before/after this slice showed 0 views, 0 uniques, 0 popular paths, and 0 referrers for product/profile/root repos.
+
+Public refs:
+- Product repo: https://github.com/trungcodeer/softjunk-lead-kit
+- Profile repo: https://github.com/trungcodeer/trungcodeer
+- Root repo: https://github.com/trungcodeer/trungcodeer.github.io
+- Tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551530739
+
+Boundary:
+- This is GitHub metadata/search positioning.
+- It does not prove buyer action or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
