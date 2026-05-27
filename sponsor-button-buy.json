@@ -52,5 +52,14 @@
     "buyer_send_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
     "buyer_send_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json",
     "buyer_send_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt",
-    "buyer_send_packet_gist_url":  "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805"
+    "buyer_send_packet_gist_url":  "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
+    "buyer_risk_reversal":  {
+                                "name":  "one_rewrite_included",
+                                "applies_to":  "Custom 7-day follow-up sequence after seller-side PayPal verification.",
+                                "value":  "One rewrite is included if the first custom sequence is not usable and the buyer supplies non-sensitive business context.",
+                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                "buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json"
+                            },
+    "one_rewrite_included":  true,
+    "paypal_buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json"
 }
