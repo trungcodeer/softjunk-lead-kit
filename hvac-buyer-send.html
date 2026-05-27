@@ -426,15 +426,35 @@ Use business context only. Do not post homeowner names, phone numbers, emails, a
       var emailLink = document.getElementById('email-link');
       emailLink.href = 'mailto:?subject=' + encodeURIComponent('Recover one missed HVAC urgent service lead for $5') + '&body=' + encodeURIComponent(emailBody);
 
+      function setCopyStatus(ok) {
+        status.textContent = ok
+          ? 'Copied. Send only to one known relevant HVAC buyer.'
+          : 'Copy failed. Select the text manually.';
+      }
+
+      function fallbackCopy(field) {
+        var ok = false;
+        try {
+          ok = document.execCommand('copy');
+        } catch (error) {
+          ok = false;
+        }
+        setCopyStatus(ok);
+      }
+
       function copy(id) {
         var field = document.getElementById(id);
         field.focus();
         field.select();
-        navigator.clipboard.writeText(field.value).then(function () {
-          status.textContent = 'Copied. Send only to one known relevant HVAC buyer.';
-        }).catch(function () {
-          status.textContent = 'Copy failed. Select the text manually.';
-        });
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(field.value).then(function () {
+            setCopyStatus(true);
+          }).catch(function () {
+            fallbackCopy(field);
+          });
+          return;
+        }
+        fallbackCopy(field);
       }
 
       Array.prototype.forEach.call(document.querySelectorAll('[data-copy]'), function (button) {
