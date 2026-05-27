@@ -22,5 +22,10 @@
     "digital_kit_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
     "privacy_rule":  "Use placeholders only. Do not put customer or PayPal details into public issues, URLs, logs, or prompts.",
-    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+    "verification_gate":  "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "dev_agent_start_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md",
+    "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+    "copilot_instructions_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md",
+    "devcontainer_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json",
+    "vscode_tasks_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json"
 }
