@@ -1,3 +1,13 @@
+Dev-agent start route:
+- Markdown: https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md
+- JSON: https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json
+- Copilot instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md
+- Devcontainer: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json
+- VS Code tasks: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json
+- Commands: npm start, npm run try:rescue, npm run try:send, npm run pay:custom, npm run pay:kit.
+- PayPal: https://paypal.me/softjunk/5USD
+- Gate: PAYPAL_PAYMENT_VERIFIED=true
+
 Run-this-first clone route:
 - Markdown: https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md
 - JSON: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
