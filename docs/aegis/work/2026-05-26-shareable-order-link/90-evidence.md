@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Answer Engine No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `answer-engine.json`
+- `exact-intent-answer-pack.json`
+- `exact-intent-answer-pack.txt`
+- `LEAD_FOLLOW_UP_ANSWERS.md`
+- Public Gist `a40d54d6e66cdb58f861f2f9637a3e35`: `exact-intent-answer-pack.json` and `exact-intent-answer-pack.txt`
+- Public Gist `78f709d9550e952dc6c0595660ca643a`: `LEAD_FOLLOW_UP_ANSWERS.md`
+
+Published commit and release:
+- Product commit: `31eabca04bc1ad2082cc559f75337776d54a3871`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.139.
+
+Validation:
+- Local marker validation confirmed all four updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `answer-engine.json` and `exact-intent-answer-pack.json` after the edit.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- answer-engine.json exact-intent-answer-pack.json exact-intent-answer-pack.txt LEAD_FOLLOW_UP_ANSWERS.md` passed with only CRLF normalization warnings.
+- `gh gist edit` refreshed public Gist `a40d54d6e66cdb58f861f2f9637a3e35` from local `exact-intent-answer-pack.json` and `exact-intent-answer-pack.txt`.
+- `gh gist edit` refreshed public Gist `78f709d9550e952dc6c0595660ca643a` from local `LEAD_FOLLOW_UP_ANSWERS.md`.
+- GitHub Pages latest build API returned `built` for commit `31eabca04bc1ad2082cc559f75337776d54a3871`.
+- Live Pages validation returned HTTP 200 for `answer-engine.json`, `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, and `LEAD_FOLLOW_UP_ANSWERS.md`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed where applicable.
+- Raw GitHub validation returned HTTP 200 for all four changed files; all included the same required markers and JSON parsed where applicable.
+- Raw Gist validation returned HTTP 200 for `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, and `LEAD_FOLLOW_UP_ANSWERS.md`; all included the same required markers and JSON parsed where applicable.
+- Product release `v2.29.139` is public, non-draft, non-prerelease, targets `31eabca04bc1ad2082cc559f75337776d54a3871`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `answer-engine.json`, `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, and `LEAD_FOLLOW_UP_ANSWERS.md`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 AI Follow-Up Prompt No-Clone Checkout Proof Evidence
 
 Artifacts updated:

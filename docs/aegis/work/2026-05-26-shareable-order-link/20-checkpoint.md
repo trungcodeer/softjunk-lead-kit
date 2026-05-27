@@ -7596,3 +7596,59 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; AI Follow-Up Prompt remains a checkout/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Answer Engine No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the answer-engine and exact-intent answer-pack surfaces so LLM answer engines, crawlers, VAs, and buyer-agents can answer high-intent lead follow-up questions with free samples first, then verify the executable no-clone checkout route, inspect verified release notes, compare SHA-256, open the PayPal URL, and respect the payment-proof gate.
+
+Completed todos:
+- Audited `answer-engine.json`, `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, and `LEAD_FOLLOW_UP_ANSWERS.md`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated `answer-engine.json` to schema version `softjunk-answer-engine-v2` with no-clone checkout proof, payment success signal, verified release metadata, ready-to-pay verification step, and copyable buyer-agent instruction.
+- Updated `exact-intent-answer-pack.json` to schema version `softjunk-exact-intent-answer-pack-v2` with no-clone checkout proof, fastest buyer path, expected checkout details, and expanded fulfillment rule.
+- Updated `exact-intent-answer-pack.txt` with no-clone checkout proof, verified release URL, release tarball URL, SHA-256, expected checkout, and buyer-agent instruction.
+- Updated `LEAD_FOLLOW_UP_ANSWERS.md` with no-clone checkout proof, verified release URL, release tarball URL, SHA-256, expected checkout, and stronger fulfillment boundary language.
+- Validated both JSON files parse locally.
+- Validated all four changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Pushed product commit `31eabca04bc1ad2082cc559f75337776d54a3871`.
+- Refreshed public Exact-Intent Answer Pack Gist `a40d54d6e66cdb58f861f2f9637a3e35` for `exact-intent-answer-pack.json` and `exact-intent-answer-pack.txt`.
+- Refreshed public Lead Follow-Up Answers Gist `78f709d9550e952dc6c0595660ca643a` for `LEAD_FOLLOW_UP_ANSWERS.md`.
+- Created public product release `v2.29.139`.
+- Confirmed GitHub Pages latest build was `built` for commit `31eabca04bc1ad2082cc559f75337776d54a3871`.
+- Validated live Pages `answer-engine.json`, `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, and `LEAD_FOLLOW_UP_ANSWERS.md` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub copies of all four changed files include the same required markers; JSON parsed.
+- Validated raw Gist copies of `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, and `LEAD_FOLLOW_UP_ANSWERS.md` include the same required markers; JSON parsed where applicable.
+- Submitted the four updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `31eabca04bc1ad2082cc559f75337776d54a3871`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.139.
+- Live answer engine: https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json.
+- Live exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json.
+- Live exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt.
+- Live Lead Follow-Up Answers brief: https://trungcodeer.github.io/softjunk-lead-kit/LEAD_FOLLOW_UP_ANSWERS.md.
+- Exact-Intent Answer Pack Gist: https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35.
+- Lead Follow-Up Answers Gist: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining central AI/buyer-agent catalog surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves answer-engine surfaces that can answer exact buyer questions and route only relevant buyers through a verifiable checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo JSON/text/Markdown, GitHub Pages JSON/text/Markdown, raw GitHub files, public Gists, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; Answer Engine remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.
