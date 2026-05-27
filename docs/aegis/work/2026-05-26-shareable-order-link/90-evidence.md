@@ -3989,3 +3989,26 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Sponsor/FUNDING Route Refresh Evidence
+
+Artifacts added/updated:
+- `.github/FUNDING.yml`.
+- `SPONSOR_BUTTON_BUY.md`.
+- `sponsor-button-buy.json`.
+- README Sponsor/dev-agent section.
+- Discovery wiring in buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+
+Validation:
+- GitHub API validation parsed sponsor JSON, buyer-index JSON, plugin JSON, and every agent-buyer-catalog JSONL record.
+- Control-character checks passed for Sponsor markdown, README, discovery files, and live fetched content.
+- GitHub Pages latest build API returned `built` for product commit `c81974841251e40a6e599d0ac7f52fe01f2b3fb5`, root commit `2209c9066369973c3d3c7f023044df6ae1af5ae8`, and quiet commit `cf9dda63b9beaedfaf09ed402296222cc523e8dc`.
+- Live/raw validation returned HTTP 200 for `.github/FUNDING.yml`, `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.json`, README, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+- IndexNow POST submitted 9 owned URLs and returned `200`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.101`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-button-route-v2`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-sponsor-button-route-v2`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4552791533.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
