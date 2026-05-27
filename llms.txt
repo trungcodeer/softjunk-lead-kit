@@ -689,3 +689,10 @@ https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9
 Raw buyer-intent JSON:
 https://gist.githubusercontent.com/trungcodeer/772adccebfba963f6550238b401a72a9/raw/softjunk-buyer-intent-paypal-5usd.json
 Use this public Gist for missed-call follow-up, estimate follow-up, no-show follow-up, and price-objection reply intent searches. It provides a free public sample, then routes qualified buyers to https://trungcodeer.github.io/send-5/ and https://paypal.me/softjunk/5USD. Do not claim payment unless PAYPAL_PAYMENT_VERIFIED=true.
+
+Quiet lead exact PayPal handoff:
+- Page: https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html
+- JSON: https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.json
+- Buyer route: https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
+- Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+- Completion still requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
