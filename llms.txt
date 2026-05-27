@@ -522,6 +522,12 @@ https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
 Paid kit manifest:
 https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 
+Digital kit order contract:
+https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json
+
+Digital kit order text:
+https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt
+
 Machine-readable offers:
 https://trungcodeer.github.io/softjunk-lead-kit/offers.json
 
