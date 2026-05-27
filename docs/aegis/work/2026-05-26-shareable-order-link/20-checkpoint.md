@@ -4909,3 +4909,34 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+
+## Checkpoint: 2026-05-27 indexnow owned url submission slice
+
+TodoCheckpointDraft:
+- Completed: published IndexNow ownership key file on the owned root GitHub Pages host: https://trungcodeer.github.io/f0ab0655388d4f72b77f826b39a518ab.txt.
+- Completed: verified the live key URL returned HTTP 200 and exact key content before submission.
+- Completed: submitted 18 owned `trungcodeer.github.io` buyer/discovery URLs to IndexNow, including `/5/`, `/5.json`, `/5.txt`, root short payment routes, product buyer card files, AI plugin, OpenAPI, llms, feed, and product feed.
+- Completed: IndexNow returned HTTP 202 Accepted / key validation pending.
+- Completed: published root release root-indexnow-usd5-submit-v1 and public issue evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551242167.
+- Active slice: continue legitimate owned-channel discovery/conversion work while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Official protocol reference used: https://www.indexnow.org/documentation
+- Root key commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/7db33ba5426c1c937f139d8b4273f03090f8eeac
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-indexnow-usd5-submit-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551242167
+- Live key check: HTTP 200; body matched f0ab0655388d4f72b77f826b39a518ab.
+- IndexNow response: HTTP 202; URL count 18; response body empty.
+- Submitted host: trungcodeer.github.io.
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by pushing the shortest buyer route and machine-readable discovery surfaces into an official search-engine URL notification protocol.
+- Compatibility: no payment or fulfillment gate was weakened; IndexNow submission is discovery evidence only, not proof of indexing/ranking/payment.
+- New owners/adapters: IndexNow search-engine URL notification for owned URLs only.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
+- IndexNow HTTP 202 means the URL set was accepted and key validation is pending; it does not guarantee indexing, ranking, traffic, buyer action, or payment.
