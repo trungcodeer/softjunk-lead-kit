@@ -1,6 +1,6 @@
 {
   "schema_version": "softjunk-gist-paypal-payment-intent-v1",
-  "updated": "2026-05-26",
+  "updated": "2026-05-28",
   "name": "SoftJunk 5 USD PayPal Payment Intent",
   "summary": "Pay exactly 5.00 USD via PayPal.Me for the SoftJunk Lead Follow-Up Kit or custom 7-day sequence.",
   "payment": {
@@ -76,5 +76,11 @@
     "instructions": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
     "rule": "This Gist is a payment request and discovery surface, not proof that money arrived. Fulfillment starts only after seller-side PayPal evidence verifies the 5 USD transaction.",
     "fastest_buyer_path": "https://trungcodeer.github.io/rescue/"
-  }
+  },
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+  "release_tarball_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "raw_gist_json_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
+  "raw_gist_markdown_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.md"
 }
