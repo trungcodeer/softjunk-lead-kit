@@ -18,6 +18,7 @@ Public distribution:
 - Raw text: `https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.txt`
 
 Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
@@ -4307,3 +4308,42 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-27 Med Spa Buyer Send Route Evidence
+
+Artifacts added/updated:
+- `med-spa-buyer-send.html`.
+- `med-spa-buyer-send.json`.
+- `med-spa-buyer-send.txt`.
+- Discovery wiring in README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, robots, and sitemap.
+- Public owned buyer issue: `https://github.com/trungcodeer/softjunk-lead-kit/issues/13`.
+
+Validation:
+- Local JSON validation parsed `med-spa-buyer-send.json`, `agents-checkout.json`, `buyer-index.json`, and `.well-known/ai-plugin.json`.
+- Local JSONL validation parsed 51 `agent-buyer-catalog.jsonl` records.
+- Local XML validation parsed `sitemap.xml`.
+- Local OpenAPI YAML validation confirmed `/med-spa-buyer-send.html`, `/med-spa-buyer-send.json`, and `/med-spa-buyer-send.txt`.
+- Inline JavaScript and JSON-LD parsing passed for `med-spa-buyer-send.html`.
+- `git diff --check` returned no whitespace errors beyond CRLF normalization warnings.
+- Playwright/Edge local desktop and mobile checks confirmed the H1, PayPal links, JSON/TXT links, one-buyer share route, live status region, minimum 44px button targets, and copy fallback status text.
+- Pushed commit `69dcc430faa846bcbcf92476aec236275912b49d` and tag `v2.29.112`.
+- GitHub Pages latest build API returned `built` for product commit `69dcc430faa846bcbcf92476aec236275912b49d`.
+- Live validation returned HTTP 200 for med spa HTML/JSON/TXT, buyer-index, agent-buyer-catalog, OpenAPI, ai-plugin, robots, and sitemap with med spa markers.
+- Playwright/Edge live desktop and mobile checks confirmed route behavior and copy status text.
+- `gh issue view 13` confirmed the public issue is open and includes packet links, exact PayPal URL, privacy guard, and verification gate.
+- IndexNow POST submitted 10 owned URLs and returned `200`.
+
+Public routes:
+- Med spa buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html.
+- Med spa buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json.
+- Med spa buyer send text: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt.
+- Public med spa buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/13.
+- Product release tag: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.112.
+
+Accessibility and privacy guardrails:
+- The page has a skip link, one H1, native anchors/buttons, labels for textareas, visible focus styling, an `aria-live` copy status region, and responsive desktop/mobile layout without horizontal overflow.
+- The packet forbids scraped lists, spam, deception, unauthorized outreach, fake payment claims, private client data, health/treatment details, before/after photos, financing IDs, transaction IDs, payer email, and PayPal details.
+
+Payment gate:
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

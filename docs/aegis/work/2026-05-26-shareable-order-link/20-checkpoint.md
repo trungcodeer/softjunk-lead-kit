@@ -5904,3 +5904,43 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added a dental-specific buyer route and public issue as owned discovery surfaces.
 - Decision: continue.
+
+## 2026-05-27 Med Spa Buyer Send Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add a high-intent med spa consult/no-show/quiet-inquiry one-buyer send packet that gives copy-ready DM, email, PayPal note, preview route, one-buyer share route, exact 5 USD PayPal checkout, and verification gate while forbidding private client, health, treatment, photo, financing, and PayPal data.
+
+Completed todos:
+- Reran PayPal verifier at slice start; it still returned missing credentials.
+- Added `med-spa-buyer-send.html`, `med-spa-buyer-send.json`, and `med-spa-buyer-send.txt`.
+- Wired the med spa route into README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI, ai-plugin, llms, robots, and sitemap.
+- Validated JSON, JSONL, XML, OpenAPI YAML, markers, inline script parsing, JSON-LD parsing, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `69dcc430faa846bcbcf92476aec236275912b49d` and release tag `v2.29.112`.
+- Created owned public med spa buyer issue #13.
+- Validated live GitHub Pages HTML/JSON/TXT and discovery surfaces; all returned HTTP 200 and contained med spa route/payment/gate/privacy markers.
+- Submitted 10 med spa route and discovery URLs to IndexNow; API returned `200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Med spa buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html.
+- Med spa buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json.
+- Med spa buyer send text: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt.
+- Public med spa buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/13.
+- Release ref: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.112.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a legitimate one-buyer send packet and owned public issue for a high-intent med spa consult lead recovery case without spam, scraping, deception, unauthorized outreach, private client/treatment data, or fake payment claims.
+- Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added a med-spa-specific buyer route and public issue as owned discovery surfaces.
+- Decision: continue.
