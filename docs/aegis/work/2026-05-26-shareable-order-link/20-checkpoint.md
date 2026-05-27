@@ -6551,3 +6551,46 @@ DriftCheckDraft:
 - Compatibility boundary: package metadata, GitHub Pages, raw GitHub content, GitHub Release feed, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; the release tarball remains a fallback while real npm publish still requires npm auth.
 - Decision: continue.
+
+## 2026-05-28 Owned Entry No-Clone Buyer-Agent Command Surface Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Spread the already validated no-clone release-tarball payment command from the product repo into adjacent owned public entrypoints: root homepage, profile repo, and quiet lead follow-up repo.
+
+Completed todos:
+- Added the verified no-clone buyer-agent command, product release `v2.29.119`, release tarball URL, SHA-256, exact PayPal URL, and verification gate to root, profile, and quiet owned surfaces.
+- Updated root repo `trungcodeer.github.io`: `README.md`, `index.html`, `llms.txt`, and `root-offer.json`; pushed commits `a4ca1d9aab9c20172521943a5497200a2c21157b` and `c8330883418d37b74790232fabe4457aa0338fc2`.
+- Updated profile repo `trungcodeer`: `README.md`, `index.html`, `llms.txt`, and `softjunk-profile-offer.json`; pushed commits `0944261a12b9dd3ccaee89bacb0c181182fbbdda`, `7433713afe57a6f53d70096bef08a4fb291bc956`, and `f0fd4ea1b58161987a422ff423963a0c5ba6a8f5`.
+- Updated quiet repo `quiet-lead-follow-up`: `README.md`, `buyer-route.json`, `index.html`, `llms.txt`, and `pay-5-usd-paypal.json`; pushed commits `f59a250988aca00b0ddcc96a223f4564e4bdf9e9` and `a21ccdbce641ec1d0f4f372f96efabb8aeac1945`.
+- Created final public releases `root-no-clone-buyer-command-v2`, `profile-no-clone-buyer-command-v2`, and `quiet-no-clone-buyer-command-v2`.
+- Confirmed GitHub Pages latest builds were `built` for root commit `c8330883418d37b74790232fabe4457aa0338fc2`, profile commit `f0fd4ea1b58161987a422ff423963a0c5ba6a8f5`, and quiet commit `a21ccdbce641ec1d0f4f372f96efabb8aeac1945`.
+- Validated 13 live owned URLs returned HTTP 200 and included the release-tarball command, PayPal URL, verification gate, release URL, and SHA-256 as applicable.
+- Submitted the 13 owned URLs to IndexNow; API returned `200 OK`.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-no-clone-buyer-command-v2.
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-no-clone-buyer-command-v2.
+- Quiet release: https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-no-clone-buyer-command-v2.
+- Verified product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it puts the no-clone package payment command on owned public root/profile/quiet surfaces that a buyer-agent or developer can discover without scraping, spam, or false payment claims.
+- Compatibility boundary: GitHub Pages, GitHub Releases, owned repo README/llms/JSON files, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; adjacent owned repos now point back to the same product release and PayPal gate.
+- Decision: continue.

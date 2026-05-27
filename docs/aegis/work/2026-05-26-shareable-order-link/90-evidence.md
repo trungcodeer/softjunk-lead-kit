@@ -4744,3 +4744,46 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Owned Entry No-Clone Buyer-Agent Command Surface Evidence
+
+Artifacts updated:
+- Root repo `trungcodeer.github.io`: `README.md`, `index.html`, `llms.txt`, and `root-offer.json`.
+- Profile repo `trungcodeer`: `README.md`, `index.html`, `llms.txt`, and `softjunk-profile-offer.json`.
+- Quiet repo `quiet-lead-follow-up`: `README.md`, `buyer-route.json`, `index.html`, `llms.txt`, and `pay-5-usd-paypal.json`.
+
+Published commits:
+- Root: `a4ca1d9aab9c20172521943a5497200a2c21157b`, then checksum follow-up `c8330883418d37b74790232fabe4457aa0338fc2`.
+- Profile: `0944261a12b9dd3ccaee89bacb0c181182fbbdda`, checksum follow-up `7433713afe57a6f53d70096bef08a4fb291bc956`, then README checksum follow-up `f0fd4ea1b58161987a422ff423963a0c5ba6a8f5`.
+- Quiet: `f59a250988aca00b0ddcc96a223f4564e4bdf9e9`, then README checksum follow-up `a21ccdbce641ec1d0f4f372f96efabb8aeac1945`.
+
+Releases:
+- Root: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-no-clone-buyer-command-v2.
+- Profile: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-no-clone-buyer-command-v2.
+- Quiet: https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-no-clone-buyer-command-v2.
+
+Validation:
+- Local JSON validation parsed `root-offer.json`, `softjunk-profile-offer.json`, `buyer-route.json`, and `pay-5-usd-paypal.json`.
+- Local marker validation confirmed the no-clone release-tarball command, PayPal URL, release URL, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true` gate across edited root/profile/quiet surfaces.
+- `git diff --check` passed for root, profile, and quiet worktrees with only CRLF normalization warnings where reported.
+- GitHub Pages latest build API returned `built` for root commit `c8330883418d37b74790232fabe4457aa0338fc2`, profile commit `f0fd4ea1b58161987a422ff423963a0c5ba6a8f5`, and quiet commit `a21ccdbce641ec1d0f4f372f96efabb8aeac1945`.
+- Live validation returned HTTP 200 and required markers for:
+  - https://trungcodeer.github.io/
+  - https://trungcodeer.github.io/README.md
+  - https://trungcodeer.github.io/llms.txt
+  - https://trungcodeer.github.io/root-offer.json
+  - https://trungcodeer.github.io/trungcodeer/
+  - https://trungcodeer.github.io/trungcodeer/README.md
+  - https://trungcodeer.github.io/trungcodeer/llms.txt
+  - https://trungcodeer.github.io/trungcodeer/softjunk-profile-offer.json
+  - https://trungcodeer.github.io/quiet-lead-follow-up/
+  - https://trungcodeer.github.io/quiet-lead-follow-up/README.md
+  - https://trungcodeer.github.io/quiet-lead-follow-up/llms.txt
+  - https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json
+  - https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.json
+- IndexNow POST submitted the 13 owned URLs above and returned `200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
