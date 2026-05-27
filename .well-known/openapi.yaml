@@ -25,6 +25,11 @@ x-softjunk-fastest-buyer-path:
   clone_cli_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
   run_this_first_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md
   run_this_first_json_url: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
+  dev_agent_start_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md
+  dev_agent_start_json_url: https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json
+  copilot_instructions_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md
+  devcontainer_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json
+  vscode_tasks_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json
   try_now_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md
   try_now_json_url: https://trungcodeer.github.io/softjunk-lead-kit/try-now.json
   clone_cli_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
@@ -42,7 +47,28 @@ x-softjunk-fastest-buyer-path:
   digital_kit_order_board_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
   digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
-  /run-this-first.json:
+  /dev-agent-start.json:
+    get:
+      operationId: getDevAgentStartRoute
+      summary: Get the SoftJunk dev-agent start route.
+      responses:
+        "200":
+          description: Machine-readable route for Codespaces, VS Code, Copilot, and coding agents to run npm start, generate local preview, route exact 5 USD PayPal checkout, use the clone order form, and keep PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /DEV_AGENT_START.md:
+    get:
+      operationId: getDevAgentStartMarkdown
+      summary: Get the SoftJunk dev-agent start markdown guide.
+      responses:
+        "200":
+          description: Markdown guide for developer and coding-agent environments with first command, try commands, PayPal route, order form, privacy rule, and verification gate.
+          content:
+            text/markdown:
+              schema:
+                type: string  /run-this-first.json:
     get:
       operationId: getRunThisFirstCloneRoute
       summary: Get the SoftJunk run-this-first clone route.
