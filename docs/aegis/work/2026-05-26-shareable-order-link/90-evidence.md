@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Send-To-Buyer No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `SEND_TO_BUYER.md`
+- `send-to-buyer.html`
+- `send-to-buyer.json`
+- Public Gist `2cb79cccf1e0e5d0efdfa4ae6d15f683`: `SEND_TO_BUYER.md`, `send-to-buyer.html`, and `send-to-buyer.json`
+
+Published commit and release:
+- Product commit: `d9e847f0b473da1064856171658d5f7ad61b8c4e`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.132.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `send-to-buyer.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `send-to-buyer.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- SEND_TO_BUYER.md send-to-buyer.html send-to-buyer.json` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `send-to-buyer.html` included `No-clone Checkout Proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh gist edit` refreshed public Gist `2cb79cccf1e0e5d0efdfa4ae6d15f683` from local `SEND_TO_BUYER.md`, `send-to-buyer.html`, and `send-to-buyer.json`.
+- GitHub Pages latest build API returned `built` for commit `d9e847f0b473da1064856171658d5f7ad61b8c4e`.
+- Live Pages validation returned HTTP 200 for `send-to-buyer.html`, `send-to-buyer.json`, and `SEND_TO_BUYER.md`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `SEND_TO_BUYER.md` and `send-to-buyer.json`; both included the same required markers and the JSON parsed.
+- Raw Gist validation confirmed `SEND_TO_BUYER.md`, `send-to-buyer.html`, and `send-to-buyer.json` include the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `send-to-buyer.html` included `No-clone Checkout Proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.132` is public and targets `d9e847f0b473da1064856171658d5f7ad61b8c4e`.
+- IndexNow POST submitted `send-to-buyer.html`, `send-to-buyer.json`, and `SEND_TO_BUYER.md`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Canonical Payment Intent Gist No-Clone Evidence
 
 Artifacts updated:
