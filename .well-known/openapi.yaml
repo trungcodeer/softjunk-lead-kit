@@ -519,6 +519,39 @@ paths:
             text/plain:
               schema:
                 type: string
+  /hvac-buyer-send.html:
+    get:
+      operationId: openHvacBuyerSendPacket
+      summary: Open the SoftJunk HVAC buyer send packet.
+      responses:
+        "200":
+          description: Copy-ready one-buyer DM, email, PayPal note, free HVAC preview, one-buyer share route, exact 5 USD PayPal URL, order form, privacy rule, and verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /hvac-buyer-send.json:
+    get:
+      operationId: getHvacBuyerSendPacket
+      summary: Get the SoftJunk HVAC buyer send packet JSON.
+      responses:
+        "200":
+          description: Machine-readable one-buyer send packet for a known fitting HVAC company with one missed no-cool call, no-heat call, urgent repair inquiry, or quiet replacement estimate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /hvac-buyer-send.txt:
+    get:
+      operationId: getHvacBuyerSendPacketText
+      summary: Get the SoftJunk HVAC buyer send packet text.
+      responses:
+        "200":
+          description: Plain-text one-buyer HVAC send packet with DM, email, PayPal note, preview route, payment URL, order form, privacy rule, and verification gate.
+          content:
+            text/plain:
+              schema:
+                type: string
   /roofing-estimate-rescue.html:
     get:
       operationId: openRoofingEstimateRescue

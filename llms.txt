@@ -177,6 +177,18 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/10
 Plumbing buyer fit:
 Use for one known plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
 
+HVAC buyer send packet:
+https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
+
+HVAC buyer send JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
+
+HVAC buyer send text:
+https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
+
+HVAC buyer fit:
+Use for one known HVAC company with one missed no-cool call, no-heat call, urgent repair inquiry, or quiet replacement estimate. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
+
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
 

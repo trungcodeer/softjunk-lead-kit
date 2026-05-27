@@ -41,7 +41,10 @@
                                     "mcp_npm_funding_tool_name":  "get_softjunk_npm_funding_route",
                                     "one_buyer_share_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
                                     "one_buyer_share_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
-                                    "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt"
+                                    "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
+                                    "hvac_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html",
+                                    "hvac_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json",
+                                    "hvac_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt"
                                 },
     "logo_url":  "https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png",
     "contact_email":  "trungcodeer@users.noreply.github.com",
@@ -129,6 +132,9 @@
     "plumbing_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html",
     "plumbing_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json",
     "plumbing_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt",
+    "hvac_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html",
+    "hvac_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json",
+    "hvac_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt",
     "one_buyer_share_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
     "one_buyer_share_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
     "one_buyer_share_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt"
