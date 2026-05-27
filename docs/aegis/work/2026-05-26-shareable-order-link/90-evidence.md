@@ -3457,3 +3457,20 @@ Payment verification:
 
 Conclusion:
 - AI-readable checkout discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 rss product feed usd5 route slice
+
+Updated and released:
+- RSS feed: https://github.com/trungcodeer/softjunk-lead-kit/commit/7cf5271b9cbba73dc24a1f79cf9d0207db03b108
+- Product feed: https://github.com/trungcodeer/softjunk-lead-kit/commit/d0c05b8607bf3087e769bb2906fe0b720b7cc8c5
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.82
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550812219
+
+Live validation:
+- eed.xml has newest item Fastest USD 5 Buyer Route with link/guid https://trungcodeer.github.io/5/ and description containing PAYPAL_PAYMENT_VERIFIED=true.
+- product-feed.json has astest_usd5_buyer_route with /5/, /5.json, /5.txt, product buyer card, https://paypal.me/softjunk/5USD, price=5.00, currency=USD, one_rewrite_included=true, and PAYPAL_PAYMENT_VERIFIED=true.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- Crawlable feed visibility improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
