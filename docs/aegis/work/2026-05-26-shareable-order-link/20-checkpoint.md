@@ -4490,3 +4490,20 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: live validation covers 21 JSON endpoints with PayPal $5, Offer, BuyAction, potentialAction, and PAYPAL_PAYMENT_VERIFIED=true.
+## 2026-05-27 BuyAction discovery surfaces slice
+
+TodoCheckpointDraft:
+- Completed: exposed paypal-buy-action in product sitemap, robots, llms, buyer-index, buy-now JSON, agent-buyer catalog JSONL, and homepage alternate links.
+- Completed: exposed root/product paypal-buy-action in root sitemap, robots, llms, and homepage alternate links.
+- Completed: created releases 2.29.73 and oot-buy-action-discovery-v1; both Pages deploys succeeded.
+- Completed: updated Buy Now Gist mirror 2c1e3469c1f9313f135f612b229b0e6 for uy-now.json.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550156935
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion/discovery improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, the slice makes the exact  PayPal BuyAction easier for crawlers, LLMs, and buyer agents to find.
+- Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: discovery surfaces now point to live product/root PayPal BuyAction manifests and IndexNow accepted 15 URLs.

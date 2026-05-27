@@ -3272,3 +3272,21 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that product/root machine-readable checkout action manifests are published and live.
 - Does not support claim that  has been received.
+## 2026-05-27 BuyAction discovery surfaces slice
+
+EvidenceBundleDraft:
+- Product commit: 731b433af5475235a3c5089660af06be30da876b (Expose PayPal BuyAction in discovery surfaces).
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.73
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26482756668 (completed, success).
+- Root commit: dc082e9448ddd6dd0ef7bf16785a7a15f6b9f7f4 (Expose root PayPal BuyAction in discovery surfaces).
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-buy-action-discovery-v1
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26482798409 (completed, success).
+- Buy Now Gist mirror: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550156935
+- Live validation: 11 discovery URLs returned 200; sitemaps parse as XML and include paypal-buy-action; llms/robots/homepages include paypal-buy-action; buyer-index and buy-now parse as JSON and contain PayPal $5, BuyAction, and PAYPAL_PAYMENT_VERIFIED=true; JSONL has 38 parseable records and includes the BuyAction manifest record.
+- IndexNow: status=200 urls=15.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that PayPal BuyAction discovery surfaces are published, indexed, and live.
+- Does not support claim that  has been received.
