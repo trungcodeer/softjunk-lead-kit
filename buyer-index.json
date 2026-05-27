@@ -817,5 +817,8 @@
     "root_intent_five_preview_text_url":  "https://trungcodeer.github.io/intent-5.txt",
     "buyer_intent_gist_url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9",
     "quiet_lead_paypal_handoff_json_url":  "https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.json",
-    "quiet_lead_buyer_route_json_url":  "https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json"
+    "quiet_lead_buyer_route_json_url":  "https://trungcodeer.github.io/quiet-lead-follow-up/buyer-route.json",
+    "quiet_lead_public_order_board_url":  "https://github.com/trungcodeer/quiet-lead-follow-up/issues/1",
+    "quiet_lead_paid_order_form_url":  "https://github.com/trungcodeer/quiet-lead-follow-up/issues/new?template=paid-quiet-lead-rescue.yml",
+    "quiet_lead_paid_order_template_path":  ".github/ISSUE_TEMPLATE/paid-quiet-lead-rescue.yml"
 }
