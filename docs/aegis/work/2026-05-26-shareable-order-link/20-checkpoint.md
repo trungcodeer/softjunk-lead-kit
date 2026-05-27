@@ -4559,3 +4559,20 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: shortest root /5/ route and product buyer card are live, indexed, and verified for PayPal/BuyAction/one-rewrite/payment gate signals.
+## 2026-05-27 five-dollar buyer card agent discovery slice
+
+TodoCheckpointDraft:
+- Completed: exposed the product five-dollar buyer card to AI plugin, OpenAPI, A2A agent card, AI action checkout, and MCP checkout manifests.
+- Completed: exposed the root /5/, 5.json, and 5.txt route to root AI plugin, OpenAPI, A2A agent card, PayPal payment manifests, and root offer.
+- Completed: updated Gist mirrors for A2A agent cards, AI action checkout, and MCP checkout server.
+- Completed: created releases 2.29.78 and oot-five-dollar-agent-discovery-v1; both Pages deploys succeeded.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550508226
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion/discovery improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, it routes AI/coding agents to the exact  PayPal buyer card.
+- Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: product/root agent-facing surfaces now expose the lowest-friction buyer card with PayPal/BuyAction/one-rewrite/verification-gate signals.

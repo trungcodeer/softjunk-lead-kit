@@ -3352,3 +3352,23 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that a lower-friction  buyer route is published, discoverable, and live.
 - Does not support claim that  has been received.
+## 2026-05-27 five-dollar buyer card agent discovery slice
+
+EvidenceBundleDraft:
+- Product commit: 1ca803f69a74ec899ebcd8890f7f0c5dee1e7cfb.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.78
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26485299703 (completed, success).
+- Root commit: 6befbbb457c5adc18a07fd4c52c7d8be8ac17c9d.
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-five-dollar-agent-discovery-v1
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26485353762 (completed, success).
+- Gist mirrors: https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a, https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888, https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550508226
+- Live validation: product AI plugin/OpenAPI/A2A/MCP surfaces returned 200 and include the five-dollar route, PayPal $5, one-rewrite signal, BuyAction/manifest, and PAYPAL_PAYMENT_VERIFIED=true; JSON surfaces parse.
+- Root validation: root AI plugin/OpenAPI/A2A/PayPal surfaces returned 200 and include /5/ or 5.json, PayPal $5, one-rewrite signal, BuyAction/manifest, and PAYPAL_PAYMENT_VERIFIED=true; JSON surfaces parse.
+- Gist validation: raw agent-card, root-agent-card, ai-action-checkout, and mcp-checkout-server JSON returned 200, parse, and include the same signals.
+- IndexNow: status=200 urls=15.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that AI/coding-agent discovery now points to the lowest-friction  buyer card.
+- Does not support claim that  has been received.
