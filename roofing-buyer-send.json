@@ -180,5 +180,14 @@
                                                      "value":  "Send placeholders only; replace private customer details inside the buyer CRM."
                                                  }
                                              ]
-                  }
+                  },
+    "buyer_risk_reversal":  {
+                                "name":  "one_rewrite_included",
+                                "applies_to":  "Roofing estimate rescue custom sequence after seller-side PayPal verification.",
+                                "value":  "One rewrite is included if the first roofing estimate rescue sequence is not usable and the buyer supplies non-sensitive business context.",
+                                "privacy_rule":  "Use placeholders only; do not post homeowner names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
+                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true"
+                            },
+    "one_rewrite_included":  true,
+    "paypal_buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json"
 }
