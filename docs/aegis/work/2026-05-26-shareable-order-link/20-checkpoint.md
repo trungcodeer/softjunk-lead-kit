@@ -4593,3 +4593,27 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub repositories, Gist mirrors, and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: Sponsor button configuration now exposes PayPal and /5/ route across product/root/profile.
+## Checkpoint: 2026-05-27 pinned issue five-dollar route slice
+
+TodoCheckpointDraft:
+- Completed: updated public issue bodies #1, #5, and #7 to point buyers to https://trungcodeer.github.io/5/ and https://paypal.me/softjunk/5USD.
+- Completed: updated pinned comments 4549643181, 4549643900, and 4548214384 with the fast  buyer-card JSON payload.
+- Completed: validated issue bodies through GitHub REST and validated pinned comments through GitHub GraphQL comments with isPinned=true.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550599562.
+- Active slice: keep owned GitHub/GitHub Pages/Gist surfaces optimized for an actual  buyer while preserving the seller-side PayPal verification gate.
+- Next step: wait for buyer payment or obtain PayPal credentials/evidence, then rerun scripts/verify-paypal-5usd.ps1.
+
+Evidence:
+- REST issue body check: #1, #5, #7 contain /5/, five-dollar buyer card, PayPal  URL, one-rewrite wording, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- GraphQL comment check: 4549643181, 4549643900, 4548214384 are isPinned=true and contain /5/, product card, PayPal  URL, one_rewrite_included, and PAYPAL_PAYMENT_VERIFIED=true.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+DriftCheckDraft:
+- Scope: continued the requested nontraditional owned-channel conversion route; no spam, scraping, deception, or fake payment.
+- Compatibility: no product contract was weakened; fulfillment still starts only after seller-side payment verification.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal proof.
+- Decision: continue.
+
+Risk / Unknown:
+- PayPal API credentials are still unavailable in this environment, so payment receipt cannot be verified from the seller side here.
