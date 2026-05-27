@@ -482,3 +482,23 @@ Or verify a seller-side PayPal activity CSV export:
 See [PAYPAL_VERIFICATION.md](PAYPAL_VERIFICATION.md) for required PayPal API credentials and stricter note filters.
 
 The included `PAYPAL_VERIFICATION_WORKFLOW.yml.example` can be copied into `.github/workflows/` after adding PayPal API credentials as repository secrets.
+
+## Digital Kit Proof And Order Route
+
+Paid kit proof page:
+https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
+
+Paid kit manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
+
+Public sample ZIP:
+https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
+SHA-256: 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba
+
+Digital kit order board:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/9
+
+Digital kit order form after PayPal:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml
+
+Use PayPal note Lead Follow-Up Kit. Do not post PayPal transaction IDs, invoice IDs, payer email, customer contact details, or private lead details in public issues.
