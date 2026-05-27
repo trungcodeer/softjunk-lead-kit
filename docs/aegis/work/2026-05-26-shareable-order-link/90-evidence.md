@@ -4489,3 +4489,19 @@ Accessibility and privacy guardrails:
 Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-27 Direct PayPal Homepage Metadata Evidence
+
+Public metadata updated:
+- Repository: `https://github.com/trungcodeer/softjunk-lead-kit`.
+- Homepage metadata: `https://paypal.me/softjunk/5USD`.
+- Description remains: `USD 5 PayPal lead follow-up rescue and AI buyer routes for missed calls, estimates, no-shows, quiet leads, med spa, dental, HVAC, plumbing`.
+
+Validation:
+- `gh repo view trungcodeer/softjunk-lead-kit --json nameWithOwner,description,homepageUrl,url` returned `homepageUrl=https://paypal.me/softjunk/5USD`.
+- `curl.exe -I -L --max-time 30 https://paypal.me/softjunk/5USD` returned two 301 redirects and a final `HTTP/1.1 200 OK` for `https://www.paypal.com/paypalme/softjunk/5USD`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

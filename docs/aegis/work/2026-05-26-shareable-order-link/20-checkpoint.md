@@ -6109,3 +6109,37 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Discussions/issues, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added plumbing, HVAC, and dental discussion routes and linkback comments as owned public distribution surfaces.
 - Decision: continue.
+
+## 2026-05-27 Direct PayPal Homepage Metadata Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Reduce buyer-agent and search-result friction by changing the repository homepage metadata from an intermediate site route to the exact 5 USD PayPal checkout.
+
+Completed todos:
+- Confirmed repo was clean at `69618a1ea50dd414f3d26e61fc80afa62e37b95a`.
+- Updated `trungcodeer/softjunk-lead-kit` repository homepage metadata to `https://paypal.me/softjunk/5USD`.
+- Verified the repository metadata through `gh repo view`.
+- Verified `https://paypal.me/softjunk/5USD` redirects to `https://www.paypal.com/paypalme/softjunk/5USD` and returns HTTP 200.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Repo: https://github.com/trungcodeer/softjunk-lead-kit.
+- Homepage metadata: https://paypal.me/softjunk/5USD.
+- PayPal resolved checkout: https://www.paypal.com/paypalme/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses owned GitHub metadata to route buyer-agents/searchers directly to the exact checkout without spam, scraping, deception, private data, or fake payment claims.
+- Compatibility boundary: GitHub repo metadata, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; changed repo homepage metadata only.
+- Decision: continue.
