@@ -43,6 +43,9 @@ Allow: /hvac-buyer-send.txt
 Allow: /dental-buyer-send.html
 Allow: /dental-buyer-send.json
 Allow: /dental-buyer-send.txt
+Allow: /med-spa-buyer-send.html
+Allow: /med-spa-buyer-send.json
+Allow: /med-spa-buyer-send.txt
 Allow: /agent-order.html
 Allow: /agent-offer.json
 Allow: /product-feed.json

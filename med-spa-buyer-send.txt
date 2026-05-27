@@ -1,0 +1,63 @@
+SoftJunk Med Spa Buyer Send Packet
+Updated: 2026-05-27
+
+Use this only for one known fitting buyer:
+A med spa with one missed consult request, no-show consult, aesthetic treatment inquiry, or quiet membership lead.
+
+Do not send this to scraped lists or strangers.
+Do not include client names, phone numbers, emails, appointment dates, treatment details, health details, before/after photos, financing IDs, transaction IDs, payer email, PayPal details, or private lead data.
+
+Page:
+https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html
+
+JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json
+
+Med spa sample:
+https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
+
+Public med spa buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/13
+
+Free med spa preview:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+
+One-buyer share route:
+https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html?buyer=med%20spa&problem=missed%20consult%20request&service=consultation&value=one%20booked%20consult%20or%20package%20is%20worth%20more%20than%20%245&tone=warm&ready=1
+
+Pay exactly 5 USD:
+https://paypal.me/softjunk/5USD
+
+Order form after payment:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+PayPal note:
+Med spa consult lead rescue | Business: [business] | Service: consultation | Lead status: missed consult request or quiet inquiry | Tone: warm
+
+Short DM:
+One med spa consult lead went quiet after a missed request, no-show consult, or pricing question? If one booked consult or package is worth more than $5, this $5 SoftJunk rescue gives you Day 0/1/3/5/7 follow-ups for that exact med spa situation. Preview first: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool Pay exactly $5 only if it fits: https://paypal.me/softjunk/5USD
+
+Email subject:
+Recover one missed med spa consult lead for $5
+
+Email body:
+One med spa consult lead went quiet?
+
+If one booked consult, package, or membership is worth more than $5, this SoftJunk rescue gives you Day 0, 1, 3, 5, and 7 follow-up messages for that exact missed-consult or quiet-inquiry situation.
+
+Preview the writing style:
+https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+
+One-buyer share route:
+https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html?buyer=med%20spa&problem=missed%20consult%20request&service=consultation&value=one%20booked%20consult%20or%20package%20is%20worth%20more%20than%20%245&tone=warm&ready=1
+
+Pay exactly $5 only if it fits:
+https://paypal.me/softjunk/5USD
+
+After payment, submit non-sensitive business context here:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+
+Use business context only. Do not post client names, phone numbers, emails, appointment dates, treatment details, health details, before/after photos, financing IDs, transaction IDs, or PayPal details.
+
+Verification gate:
+Do not claim paid, started, delivered, fulfilled, complete, or stop unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.
