@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Allow: /5/
+Allow: /5.json
+Allow: /5.txt
 Allow: /llms.txt
 Allow: /feed.xml
 Allow: /buyer-index.json
