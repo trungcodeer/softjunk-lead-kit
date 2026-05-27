@@ -273,5 +273,18 @@
                                                                  "After payment, collect placeholders only through the order form.",
                                                                  "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before fulfillment."
                                                              ]
-                                   }
+                                   },
+    "clone_cli_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
+    "clone_cli_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md",
+    "clone_cli_raw_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js",
+    "clone_cli_pages_url":  "https://trungcodeer.github.io/softjunk-lead-kit/bin/softjunk-lead-kit.js",
+    "clone_cli_run_after_clone":  "node bin/softjunk-lead-kit.js doctor --json",
+    "clone_cli_run_from_github_package":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json",
+    "clone_cli_commands":  [
+                               "doctor",
+                               "rescue",
+                               "send",
+                               "kit",
+                               "pay"
+                           ]
 }
