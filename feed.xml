@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-16"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SoftJunk Lead Follow-Up Kit</title>
@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 May 2026 01:10:00 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 02:45:00 +0700</lastBuildDate>
+    <item>
+      <title>Fastest USD 5 Buyer Route</title>
+      <link>https://trungcodeer.github.io/5/</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/5/</guid>
+      <pubDate>Wed, 27 May 2026 02:45:00 +0700</pubDate>
+      <description>Shortest buyer route for the SoftJunk USD 5 one-lead rescue: open /5, pay exactly 5 USD on PayPal, use one rewrite after verified payment, and do not claim fulfillment until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</description>
+    </item>
     <item>
       <title>Roofing Estimate Follow-Up Generator</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html</link>
