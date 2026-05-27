@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 AI Follow-Up Prompt No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `ai-follow-up-prompt.html`
+- `ai-follow-up-prompt.json`
+- `ai-follow-up-prompt.txt`
+- Public Gist `9536e55f193f941e05651ac8cd5139b1`: `ai-follow-up-prompt.json` and `ai-follow-up-prompt.txt`
+
+Published commit and release:
+- Product commit: `6403ef07dda9ab3f66e18fe17bac1887077f2fdb`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.138.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `ai-follow-up-prompt.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `ai-follow-up-prompt.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- ai-follow-up-prompt.html ai-follow-up-prompt.json ai-follow-up-prompt.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `ai-follow-up-prompt.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`.
+- `gh gist edit` refreshed public Gist `9536e55f193f941e05651ac8cd5139b1` from local `ai-follow-up-prompt.json` and `ai-follow-up-prompt.txt`.
+- GitHub Pages latest build API returned `built` for commit `6403ef07dda9ab3f66e18fe17bac1887077f2fdb`.
+- Live Pages validation returned HTTP 200 for `ai-follow-up-prompt.html`, `ai-follow-up-prompt.json`, and `ai-follow-up-prompt.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `ai-follow-up-prompt.json` and `ai-follow-up-prompt.txt`; both included the same required markers and the JSON parsed.
+- Raw Gist validation returned HTTP 200 for `ai-follow-up-prompt.json` and `ai-follow-up-prompt.txt`; both included the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `ai-follow-up-prompt.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`.
+- Product release `v2.29.138` is public, non-draft, non-prerelease, targets `6403ef07dda9ab3f66e18fe17bac1887077f2fdb`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `ai-follow-up-prompt.html`, `ai-follow-up-prompt.json`, and `ai-follow-up-prompt.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Fix One Quiet Lead No-Clone Checkout Proof Evidence
 
 Artifacts updated:

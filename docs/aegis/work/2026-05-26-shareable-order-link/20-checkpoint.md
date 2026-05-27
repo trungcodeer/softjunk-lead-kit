@@ -7543,3 +7543,56 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; Fix One Quiet Lead remains a checkout/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 AI Follow-Up Prompt No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the AI follow-up prompt so ChatGPT/Claude/Gemini/VA users and buyer-agents can give a useful free lead-recovery answer first, then verify the executable no-clone checkout route, inspect verified release notes, compare SHA-256, open the PayPal URL, and respect the payment-proof gate before routing a fitting buyer.
+
+Completed todos:
+- Audited `ai-follow-up-prompt.html`, `ai-follow-up-prompt.json`, and `ai-follow-up-prompt.txt`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated `ai-follow-up-prompt.html` with no-clone proof in metadata, JSON-LD, navigation, hero actions, visible proof block, prompt text, copyable proof text, and payment-proof boundary language.
+- Updated `ai-follow-up-prompt.json` to schema version `softjunk-ai-follow-up-prompt-v3` with top-level no-clone checkout proof fields, expected checkout details, fastest path updates, and copyable buyer-agent instruction.
+- Updated `ai-follow-up-prompt.txt` with no-clone checkout proof, verified release URL, release tarball URL, SHA-256, expected checkout, and expanded verification rule.
+- Validated `ai-follow-up-prompt.json` parses locally.
+- Validated all three changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `ai-follow-up-prompt.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live `ai-follow-up-prompt.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `6403ef07dda9ab3f66e18fe17bac1887077f2fdb`.
+- Refreshed public AI Follow-Up Prompt Gist `9536e55f193f941e05651ac8cd5139b1` for `ai-follow-up-prompt.json` and `ai-follow-up-prompt.txt`.
+- Created public product release `v2.29.138`.
+- Confirmed GitHub Pages latest build was `built` for commit `6403ef07dda9ab3f66e18fe17bac1887077f2fdb`.
+- Validated live Pages `ai-follow-up-prompt.html`, `ai-follow-up-prompt.json`, and `ai-follow-up-prompt.txt` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub and raw Gist copies of `ai-follow-up-prompt.json` and `ai-follow-up-prompt.txt` include the same required markers; JSON parsed.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `6403ef07dda9ab3f66e18fe17bac1887077f2fdb`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.138.
+- Live AI Follow-Up Prompt page: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html.
+- Live AI Follow-Up Prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json.
+- Live AI Follow-Up Prompt text: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt.
+- AI Follow-Up Prompt Gist: https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining AI/buyer-agent surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an AI prompt surface that gives value first and only routes relevant buyers through a verifiable checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; AI Follow-Up Prompt remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.
