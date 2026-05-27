@@ -1,0 +1,32 @@
+{
+    "schema_version":  "softjunk-try-now-v1",
+    "updated":  "2026-05-27",
+    "name":  "SoftJunk Try Now",
+    "purpose":  "A value-first route for cloners: generate follow-up preview and buyer handoff copy locally before payment.",
+    "markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
+    "github_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/TRY_NOW.md",
+    "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+    "clone_cli_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
+    "commands":  [
+                     {
+                         "name":  "try_rescue",
+                         "command":  "npm run try:rescue"
+                     },
+                     {
+                         "name":  "try_send",
+                         "command":  "npm run try:send"
+                     },
+                     {
+                         "name":  "pay_custom",
+                         "command":  "npm run pay:custom"
+                     },
+                     {
+                         "name":  "pay_kit",
+                         "command":  "npm run pay:kit"
+                     }
+                 ],
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "clone_cli_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml",
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "privacy_rule":  "Use placeholders only; no private customer or payment details in public."
+}
