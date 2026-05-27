@@ -66,3 +66,13 @@ Do not claim paid, started, delivered, or complete unless the seller can see the
 - PayPal note first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
 - Instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
 - Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
+## Current Sponsor Button URLs
+
+The visible GitHub Sponsor button should route a buyer through these four URLs, in order:
+
+1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
+2. Open the shortest buyer card: https://trungcodeer.github.io/5/
+3. Open the product buyer card: https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
+4. Read this Sponsor button route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+
+The `/5/` card explains the one-rewrite included promise, the privacy rule, and the `PAYPAL_PAYMENT_VERIFIED=true` fulfillment gate.

@@ -12,7 +12,6 @@
     "payment_url":  "https://paypal.me/softjunk/5USD",
     "price":  "5.00",
     "currency":  "USD",
-    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
     "paypal_note_template":  "One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]",
     "funding_custom_urls":  [
                                 "https://paypal.me/softjunk/5USD",
@@ -60,6 +59,16 @@
                                 "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
                                 "buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json"
                             },
+    "paypal_buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
+    "sponsor_button_custom_urls":  [
+                                       "https://paypal.me/softjunk/5USD",
+                                       "https://trungcodeer.github.io/5/",
+                                       "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+                                       "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md"
+                                   ],
+    "root_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/5/",
+    "product_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/5/",
     "one_rewrite_included":  true,
-    "paypal_buy_action_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json"
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
 }
