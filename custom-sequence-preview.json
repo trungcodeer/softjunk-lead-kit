@@ -1,6 +1,6 @@
 {
-  "schema_version": "softjunk-custom-sequence-preview-v1",
-  "updated": "2026-05-26",
+  "schema_version": "softjunk-custom-sequence-preview-v2",
+  "updated": "2026-05-28",
   "name": "SoftJunk Custom Sequence Preview",
   "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
@@ -12,6 +12,22 @@
   "payment_url": "https://paypal.me/softjunk/5USD",
   "price": "5.00",
   "currency": "USD",
+  "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+  "release_asset_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+  "no_clone_checkout_proof": {
+    "label": "No-clone checkout proof",
+    "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "expected_amount": "5.00",
+    "expected_currency": "USD",
+    "expected_payment_url": "https://paypal.me/softjunk/5USD",
+    "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
+    "release_asset_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "payment_boundary": "This proves the executable checkout route only. Do not claim paid, started, delivered, fulfilled, complete, received, or stopped unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true."
+  },
   "purpose": "Generate a free custom lead follow-up preview, a shareable order link, and a PayPal note before the buyer pays for the full 7-day sequence.",
   "query_parameters": [
     "business",
@@ -41,5 +57,6 @@
   ],
   "paypal_note_template": "Custom Sequence Preview | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [blocker] | Next: [next] | Value: [value]",
   "privacy_rule": "Do not put customer names, phone numbers, addresses, private customer details, or PayPal transaction details in public URLs.",
-  "fulfillment_rule": "Do not mark the order paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+  "buyer_agent_instruction": "Generate the free preview first. If the buyer wants the full custom sequence, run the no-clone checkout command, compare the release SHA-256, verify the payment URL is https://paypal.me/softjunk/5USD for 5.00 USD, then open PayPal. Do not claim payment or fulfillment until PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal proof exists.",
+  "fulfillment_rule": "Do not mark the order paid, started, delivered, fulfilled, complete, received, or stopped unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
 }
