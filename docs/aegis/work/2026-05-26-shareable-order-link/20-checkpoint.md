@@ -4735,3 +4735,33 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 copy paypal note buyer cards slice
+
+TodoCheckpointDraft:
+- Completed: added native Copy PayPal note action to root /5/ buyer card with clipboard support and accessible ria-live status.
+- Completed: added the same copy action to product ive-dollar-buyer-card.html.
+- Completed: validated live root/product buyer cards contain copy-paypal-note, 
+avigator.clipboard, ria-live=polite, PayPal USD 5 URL, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: published releases v2.29.84 and root-copy-paypal-note-v1.
+- Completed: posted public evidence comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550932094.
+- Active slice: continue legitimate owned-channel conversion improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Root /5/ commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/a5af2c7d6fcaaeac3e2e921342a23523f3023242
+- Product buyer card commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/d90bd9e3d2fdf74b9d3fab823858c8d114175f80
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.84
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-copy-paypal-note-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550932094
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original 5 USD PayPal objective by reducing checkout friction on the actual buyer cards.
+- Compatibility: no fulfillment gate was weakened; buyer cards still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- Accessibility: used a native button and role=status aria-live polite for copy feedback.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
