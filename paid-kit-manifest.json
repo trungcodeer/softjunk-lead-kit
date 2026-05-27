@@ -1,44 +1,64 @@
 {
-  "schema_version": "softjunk-paid-kit-proof-v1",
-  "updated": "2026-05-25",
-  "name": "SoftJunk Lead Follow-Up Kit paid ZIP",
-  "price": "5.00",
-  "currency": "USD",
-  "payment_url": "https://paypal.me/softjunk/5USD",
-  "payment_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
-  "proof_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
-  "zip_public": false,
-  "zip_public_reason": "The paid ZIP is delivered manually after the 5 USD PayPal transaction is visible or verified.",
-  "zip_bytes": 5377,
-  "zip_sha256": "ddfc19a8237fc5962816c9f60197d8df6136db6404ffe205d45dceae81c5d6f1",
-  "zip_built_at": "2026-05-25T21:55:30+07:00",
-  "file_manifest": [
-    {
-      "path": "README.txt",
-      "purpose": "buyer start note and delivery rule"
-    },
-    {
-      "path": "guide.html",
-      "purpose": "browser guide for the follow-up workflow"
-    },
-    {
-      "path": "lead-tracker.csv",
-      "purpose": "spreadsheet tracker for open leads and next actions"
-    },
-    {
-      "path": "templates.txt",
-      "purpose": "copy-paste follow-up templates for common lead situations"
-    },
-    {
-      "path": "ai-prompts.txt",
-      "purpose": "prompts for adapting sequences by business type, channel, concern, and tone"
-    },
-    {
-      "path": "delivery-email-template.txt",
-      "purpose": "seller-side fulfillment email template"
-    }
-  ],
-  "delivery_rule": "Send the paid ZIP only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.",
-  "verification_url": "https://trungcodeer.github.io/softjunk-lead-kit/PAYPAL_VERIFICATION.md",
-  "verifier_command": ".\\scripts\\verify-paypal-5usd.ps1"
+    "schema_version":  "softjunk-paid-kit-proof-v2",
+    "updated":  "2026-05-27",
+    "name":  "SoftJunk Lead Follow-Up Kit paid ZIP",
+    "price":  "5.00",
+    "currency":  "USD",
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "required_paypal_note":  "Lead Follow-Up Kit",
+    "payment_page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
+    "checkout_url":  "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
+    "proof_page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
+    "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
+    "digital_kit_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
+    "digital_kit_public_order_board_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/9",
+    "zip_public":  false,
+    "zip_public_reason":  "The paid ZIP is delivered manually after the 5 USD PayPal transaction is visible or verified.",
+    "zip_bytes":  5377,
+    "zip_sha256":  "ddfc19a8237fc5962816c9f60197d8df6136db6404ffe205d45dceae81c5d6f1",
+    "zip_built_at":  "2026-05-25T21:55:30+07:00",
+    "file_manifest":  [
+                          {
+                              "path":  "README.txt",
+                              "purpose":  "buyer start note and delivery rule"
+                          },
+                          {
+                              "path":  "guide.html",
+                              "purpose":  "browser guide for the follow-up workflow"
+                          },
+                          {
+                              "path":  "lead-tracker.csv",
+                              "purpose":  "spreadsheet tracker for open leads and next actions"
+                          },
+                          {
+                              "path":  "templates.txt",
+                              "purpose":  "copy-paste follow-up templates for common lead situations"
+                          },
+                          {
+                              "path":  "ai-prompts.txt",
+                              "purpose":  "prompts for adapting sequences by business type, channel, concern, and tone"
+                          },
+                          {
+                              "path":  "delivery-email-template.txt",
+                              "purpose":  "seller-side fulfillment email template"
+                          }
+                      ],
+    "public_sample_zip":  {
+                              "url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
+                              "bytes":  3303,
+                              "sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba",
+                              "files":  [
+                                            "README.txt",
+                                            "sample-guide.html",
+                                            "sample-templates.txt",
+                                            "sample-tracker.csv",
+                                            "sample-ai-prompts.txt"
+                                        ]
+                          },
+    "privacy_rule":  "Do not post PayPal transaction IDs, invoice IDs, payer email, customer contact details, or private lead details in public issues.",
+    "delivery_rule":  "Send the paid ZIP only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.",
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
+    "verification_pages_url":  "https://trungcodeer.github.io/softjunk-lead-kit/PAYPAL_VERIFICATION.md",
+    "verifier_command":  ".\\scripts\\verify-paypal-5usd.ps1"
 }
