@@ -7170,3 +7170,56 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/Markdown, GitHub Pages HTML/Markdown, raw GitHub Markdown, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; agent brief/action surfaces remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Direct Payment Surfaces No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade direct payment and PayPal-note-first surfaces so buyers and buyer-agents can get executable no-clone $5 checkout proof, verified release notes, SHA-256, PayPal URL, and payment-proof gate directly from payment pages and note packets.
+
+Completed todos:
+- Audited direct payment surfaces and found `pay.html`, `pay-qr.html`, `printable-paypal-flyer.html`, `PAYPAL_NOTE_FIRST.md`, and `paypal-note-first.json` had PayPal but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated all five files with the no-clone release-tarball command, verified release URL, SHA-256, direct PayPal URL, and payment-proof gate.
+- Validated `paypal-note-first.json` parses locally.
+- Validated all five changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed the non-JSON-LD inline JavaScript in `pay.html`, `pay-qr.html`, and `printable-paypal-flyer.html`.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live payment HTML through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `5c6668dcc40b74e0f3816c182baafbb52c3058fa`.
+- Refreshed public PayPal Note First Gist `fbd0764d1575076c27eaddb55042459a` for `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json`.
+- Created public product release `v2.29.131`.
+- Confirmed GitHub Pages latest build was `built` for commit `5c6668dcc40b74e0f3816c182baafbb52c3058fa`.
+- Validated live Pages `pay.html`, `pay-qr.html`, `printable-paypal-flyer.html`, `PAYPAL_NOTE_FIRST.md`, and `paypal-note-first.json` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub and raw Gist copies of `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json` returned HTTP 200 and included the same required markers.
+- Submitted the five updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `5c6668dcc40b74e0f3816c182baafbb52c3058fa`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.131.
+- Live pay page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html.
+- Live QR pay page: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html.
+- Live printable PayPal flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html.
+- Live PayPal Note First Markdown: https://trungcodeer.github.io/softjunk-lead-kit/PAYPAL_NOTE_FIRST.md.
+- Live PayPal Note First JSON: https://trungcodeer.github.io/softjunk-lead-kit/paypal-note-first.json.
+- PayPal Note First Gist: https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining public PayPal surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves direct payment and note-first surfaces so ready buyers and agents can reach the exact checkout handoff without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/Markdown/JSON, GitHub Pages HTML/Markdown/JSON, raw GitHub Markdown/JSON, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; direct payment surfaces remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.

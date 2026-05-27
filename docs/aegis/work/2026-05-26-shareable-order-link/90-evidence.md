@@ -5187,3 +5187,38 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Direct Payment Surfaces No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `pay.html`
+- `pay-qr.html`
+- `printable-paypal-flyer.html`
+- `PAYPAL_NOTE_FIRST.md`
+- `paypal-note-first.json`
+- Public Gist `fbd0764d1575076c27eaddb55042459a`: `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json`
+
+Published commit and release:
+- Product commit: `5c6668dcc40b74e0f3816c182baafbb52c3058fa`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.131.
+
+Validation:
+- Local marker validation confirmed all five updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `paypal-note-first.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed `pay.html`, `pay-qr.html`, and `printable-paypal-flyer.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- pay.html pay-qr.html printable-paypal-flyer.html paypal-note-first.json PAYPAL_NOTE_FIRST.md` passed with only CRLF normalization warnings.
+- Edge headless DOM dumps for local `pay.html`, `pay-qr.html`, and `printable-paypal-flyer.html` included no-clone command, PayPal URL, `Verified release`, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true` where applicable.
+- `gh gist edit` refreshed public Gist `fbd0764d1575076c27eaddb55042459a` from local `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json`.
+- GitHub Pages latest build API returned `built` for commit `5c6668dcc40b74e0f3816c182baafbb52c3058fa`.
+- Live Pages validation returned HTTP 200 for `pay.html`, `pay-qr.html`, `printable-paypal-flyer.html`, `PAYPAL_NOTE_FIRST.md`, and `paypal-note-first.json`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json`; both included the same required markers.
+- Raw Gist validation returned HTTP 200 for `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json`; both included the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `pay.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.131` is public, non-draft, non-prerelease, targets `5c6668dcc40b74e0f3816c182baafbb52c3058fa`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `pay.html`, `pay-qr.html`, `printable-paypal-flyer.html`, `PAYPAL_NOTE_FIRST.md`, and `paypal-note-first.json`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
