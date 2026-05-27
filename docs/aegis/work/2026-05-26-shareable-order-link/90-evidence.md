@@ -4989,3 +4989,29 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Buy Now No-Clone Checkout Route Evidence
+
+Artifacts updated:
+- `BUY_NOW.md`
+- `buy-now.json`
+- Public Gist `f2c1e3469c1f9313f135f612b229b0e6`: `BUY_NOW.md` and `buy-now.json`.
+
+Published commit and release:
+- Product commit: `39281b86cccbfac85d01842a0c2af726039f858f`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.124.
+
+Validation:
+- Local marker validation confirmed `BUY_NOW.md` and `buy-now.json` include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `buy-now.json` after the edit.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check` passed.
+- Raw Gist validation returned HTTP 200 for `BUY_NOW.md` and `buy-now.json`; the JSON parsed and both raw Gist files contained all required markers.
+- GitHub Pages latest build API returned `built` for commit `39281b86cccbfac85d01842a0c2af726039f858f`.
+- Raw GitHub, GitHub Pages, and raw Gist validation returned HTTP 200 for all six Buy Now URLs; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON copies parsed.
+- IndexNow POST submitted `https://trungcodeer.github.io/softjunk-lead-kit/BUY_NOW.md` and `https://trungcodeer.github.io/softjunk-lead-kit/buy-now.json`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

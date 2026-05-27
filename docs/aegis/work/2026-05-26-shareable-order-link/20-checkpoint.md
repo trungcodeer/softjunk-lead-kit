@@ -6827,3 +6827,53 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages markdown/JSON, GitHub Release tarball, public GitHub release notes, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; Try Now remains a discovery/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Buy Now No-Clone Checkout Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the GitHub-native Buy Now packet and Gist mirror so human buyers, buyer-agents, crawlers, and VAs can discover the exact executable $5 checkout route without relying on GitHub Pages alone.
+
+Completed todos:
+- Scanned public PayPal surfaces and found `BUY_NOW.md` and `buy-now.json` were high-intent checkout surfaces missing the verified no-clone release-tarball command and SHA-256.
+- Updated `BUY_NOW.md` with the release-tarball `npm exec` command, verified release notes URL, SHA-256, PayPal URL, and payment-proof gate.
+- Updated `buy-now.json` with `verified_release_url`, `release_tarball_url`, `release_tarball_sha256`, `run_from_release_tarball_doctor`, `run_from_release_tarball_pay_custom`, and a `no_clone_checkout_command` route step.
+- Verified the actual release-tarball command returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Refreshed public Buy Now Gist `f2c1e3469c1f9313f135f612b229b0e6` for both `BUY_NOW.md` and `buy-now.json`.
+- Pushed product commit `39281b86cccbfac85d01842a0c2af726039f858f`.
+- Created public product release `v2.29.124`.
+- Confirmed GitHub Pages latest build was `built` for commit `39281b86cccbfac85d01842a0c2af726039f858f`.
+- Validated raw GitHub, GitHub Pages, and raw Gist copies of `BUY_NOW.md` and `buy-now.json` returned HTTP 200 and included the no-clone command, release tarball, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON copies parsed.
+- Submitted the two updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `39281b86cccbfac85d01842a0c2af726039f858f`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.124.
+- Buy Now markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md.
+- Raw Buy Now JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json.
+- Pages Buy Now markdown: https://trungcodeer.github.io/softjunk-lead-kit/BUY_NOW.md.
+- Pages Buy Now JSON: https://trungcodeer.github.io/softjunk-lead-kit/buy-now.json.
+- Buy Now Gist: https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6.
+- Raw Buy Now Gist Markdown: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md.
+- Raw Buy Now Gist JSON: https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the most direct GitHub-native Buy Now surface and its raw Gist fallback so agents can execute the exact checkout handoff without spam, scraping, deception, or false payment claims.
+- Compatibility boundary: GitHub repo markdown/JSON, GitHub Pages markdown/JSON, public Gist mirror, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; Buy Now remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.
