@@ -4507,3 +4507,20 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
 - New owner/fallback/branch: none.
 - Evidence growth: discovery surfaces now point to live product/root PayPal BuyAction manifests and IndexNow accepted 15 URLs.
+## 2026-05-27 one-rewrite checkout guarantee slice
+
+TodoCheckpointDraft:
+- Completed: added One rewrite included trust signal to product checkout.html, pay.html, pay-qr.html, fter-pay.html, and oofing-buyer-send.html.
+- Completed: added uyer_risk_reversal / one_rewrite_included to product BuyAction/payment JSON and roofing buyer JSON/TXT, then updated related Gist mirrors.
+- Completed: added the same trust signal and BuyAction metadata to root /paypal/, /pay/, /buy/ and root payment manifests.
+- Completed: created releases 2.29.74 and oot-one-rewrite-guarantee-v1; both Pages deploys succeeded.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550285959
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, the slice reduces buyer risk for the exact  purchase without deception or spam.
+- Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: checkout pages and JSON/Gist mirrors now expose PayPal $5, BuyAction, verification gate, and one-rewrite signal.

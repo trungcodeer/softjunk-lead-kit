@@ -3290,3 +3290,24 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that PayPal BuyAction discovery surfaces are published, indexed, and live.
 - Does not support claim that  has been received.
+## 2026-05-27 one-rewrite checkout guarantee slice
+
+EvidenceBundleDraft:
+- Product checkout guarantee commit: 36c0ed840dffc67db77a5f64f83f8cd479174f3b.
+- Product roofing JSON consistency commit: 25e3ddb13c1be01f118087e7530eaaebd93de65d.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.74
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26483553838 (completed, success).
+- Root commit: f7e8efd4b2fab1bfef5c715d5286f241597000a2.
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-rewrite-guarantee-v1
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26483525565 (completed, success).
+- Updated Gist mirrors: roofing buyer-send, buy-now, and PayPal payment intent.
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550285959
+- Live validation: 5 product HTML checkout pages and 3 root short checkout pages returned 200, keep one H1 and skip link, and include PayPal $5, BuyAction, PAYPAL_PAYMENT_VERIFIED=true, one rewrite included, and PayPal BuyAction alternate links.
+- Live JSON validation: 9 product/root JSON manifests returned 200, parse as JSON, and include PayPal $5, BuyAction, PAYPAL_PAYMENT_VERIFIED=true, and one_rewrite_included.
+- Gist validation: 4 raw Gist URLs returned 200; JSON mirrors parse and all include PayPal $5, BuyAction, PAYPAL_PAYMENT_VERIFIED=true, and the one-rewrite signal.
+- IndexNow: status=200 urls=17.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that checkout trust/risk-reversal surfaces are published and live.
+- Does not support claim that  has been received.
