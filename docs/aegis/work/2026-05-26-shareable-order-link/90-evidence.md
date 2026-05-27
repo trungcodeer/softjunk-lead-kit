@@ -22,6 +22,44 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Canonical Payment Intent Gist No-Clone Evidence
+
+Artifacts updated:
+- Public Gist `167d3dc5f8696bf9edb04d3db6c53a02`.
+- Gist file `softjunk-5usd-paypal-payment-intent.json`.
+- Gist file `softjunk-5usd-paypal-payment-intent.md`.
+- Local source file `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.json`.
+- Local source file `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.md`.
+
+Published commit:
+- Product: `7670053cafd341e6db022b064c92b3d5e54716d8`.
+
+Release:
+- https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.122.
+
+Validation:
+- `gh gist list --limit 100` confirmed Gist `167d3dc5f8696bf9edb04d3db6c53a02` exists as the public "SoftJunk 5 USD PayPal payment intent for agents and buyers" Gist.
+- `gh gist view 167d3dc5f8696bf9edb04d3db6c53a02 --files` returned `softjunk-5usd-paypal-payment-intent.json` and `softjunk-5usd-paypal-payment-intent.md`.
+- Local JSON validation parsed `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.json`.
+- Local marker validation confirmed the local JSON and Markdown include the no-clone release-tarball command, PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, verified release URL, and release SHA.
+- `git diff --check` passed for the two local Gist source files with only CRLF normalization warnings where reported.
+- `gh gist edit` updated both public Gist files from the local source files.
+- Raw Gist validation returned HTTP 200 and required markers for:
+  - https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json
+  - https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.md
+- GitHub Pages latest build API returned `built` for product commit `7670053cafd341e6db022b064c92b3d5e54716d8`.
+- Pages distribution validation returned HTTP 200 and required markers for:
+  - https://trungcodeer.github.io/softjunk-lead-kit/distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.md
+- IndexNow POST submitted the 2 Pages distribution URLs above and returned `200 OK`.
+- `npm whoami` returned `ENEEDAUTH`, so this machine still cannot publish to npm.
+- `npm view softjunk-lead-kit name version --json` returned `E404 Not Found`, so the package is still absent from the public npm registry.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Root/Product Well-Known No-Clone Manifest Evidence
 
 Artifacts updated in root repo `trungcodeer.github.io`:

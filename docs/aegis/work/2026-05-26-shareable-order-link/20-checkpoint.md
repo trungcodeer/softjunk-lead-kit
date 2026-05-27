@@ -6690,3 +6690,51 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages, `.well-known` discovery, OpenAPI/AI plugin/A2A/MCP/BuyAction manifests, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; root and product manifests now point to the same verified release tarball and PayPal gate.
 - Decision: continue.
+
+## 2026-05-28 Canonical Payment Intent Gist No-Clone Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Refresh the canonical public payment-intent Gist so raw Gist consumers see the verified no-clone release-tarball PayPal command, release URL, SHA-256, exact PayPal URL, and verification gate.
+
+Completed todos:
+- Audited public Gists and found the canonical payment intent Gist `167d3dc5f8696bf9edb04d3db6c53a02` was already heavily linked from root/product/profile/quiet surfaces but did not include the no-clone release-tarball command.
+- Updated local Gist source files `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.json` and `distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.md`.
+- Updated public Gist files `softjunk-5usd-paypal-payment-intent.json` and `softjunk-5usd-paypal-payment-intent.md` using `gh gist edit`.
+- Validated raw Gist JSON and Markdown returned HTTP 200 and included the no-clone command, PayPal URL, `PAYPAL_PAYMENT_VERIFIED=true`, verified release URL, and release SHA.
+- Committed and pushed product commit `7670053cafd341e6db022b064c92b3d5e54716d8`.
+- Confirmed GitHub Pages latest build was `built` for product commit `7670053cafd341e6db022b064c92b3d5e54716d8`.
+- Created public product release `v2.29.122`.
+- Validated the Pages-hosted distribution JSON and Markdown returned HTTP 200 and included the same required markers.
+- Submitted the 2 Pages-hosted distribution URLs to IndexNow; API returned `200 OK`.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Rechecked npm status; `npm whoami` returned `ENEEDAUTH`, and `npm view softjunk-lead-kit` returned `E404 Not Found`.
+
+Evidence refs:
+- Product commit: `7670053cafd341e6db022b064c92b3d5e54716d8`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.122.
+- Payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02.
+- Raw Gist JSON: https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json.
+- Raw Gist Markdown: https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.md.
+- Pages distribution JSON: https://trungcodeer.github.io/softjunk-lead-kit/distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.json.
+- Pages distribution Markdown: https://trungcodeer.github.io/softjunk-lead-kit/distribution/payment-intent-gist/softjunk-5usd-paypal-payment-intent.md.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; registry check still reports `softjunk-lead-kit` as not found.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it upgrades an already-linked canonical payment intent Gist so raw Gist consumers can execute the verified no-clone route without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: public Gist, GitHub Pages distribution copy, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; the Gist remains a discovery/payment-intent surface, not payment proof.
+- Decision: continue.
