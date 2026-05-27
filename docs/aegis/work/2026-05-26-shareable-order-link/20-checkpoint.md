@@ -5628,3 +5628,39 @@ DriftCheckDraft:
 - Compatibility boundary: local MCP stdio server, GitHub package metadata, npm fund, GitHub Pages, public JSON/text/YAML, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added MCP tool route on owned GitHub repo and Pages surfaces.
 - Decision: continue.
+
+## 2026-05-27 One-Buyer Share Action Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add a user-initiated one-buyer share route that opens email, SMS, WhatsApp, native share, copyable buyer message, PayPal note, and share URL for exactly one known relevant buyer.
+
+Completed todos:
+- Added `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt`.
+- Added browser-only one-buyer confirmation and private identifier guard before share actions enable.
+- Wired the route into README, AGENTS, send-to-buyer, buyer-index, agents-checkout, agent-buyer-catalog, OpenAPI, ai-plugin, MCP checkout routes/manifests, npm-funding, robots, sitemap, product llms, root llms, and quiet llms.
+- Validated JSON/JSONL/YAML/XML, control characters, Playwright/Edge desktop/mobile UI behavior, Pages builds, live URLs, releases, IndexNow, and final PayPal verifier.
+- Created releases `v2.29.104`, `root-one-buyer-share-route-v1`, and `quiet-one-buyer-share-route-v1`.
+
+Evidence refs:
+- One-buyer share page: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html.
+- One-buyer share JSON: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json.
+- One-buyer share text: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.104, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-buyer-share-route-v1, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-one-buyer-share-route-v1.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553514215.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a legitimate user-initiated send/share route for one relevant buyer without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub Pages, static browser-only share actions, public JSON/text/YAML/XML, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added one-buyer share route on owned GitHub repo and Pages surfaces.
+- Decision: continue.

@@ -3812,6 +3812,33 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 One-Buyer Share Action Evidence
+
+Artifacts added/updated:
+- `one-buyer-share.html`.
+- `one-buyer-share.json`.
+- `one-buyer-share.txt`.
+- Wiring in README, AGENTS, send-to-buyer page/JSON, buyer-index, agents-checkout, agent-buyer-catalog, OpenAPI, ai-plugin, MCP checkout routes/manifests, npm-funding route, robots, sitemap, product llms, root llms, and quiet llms.
+
+Validation:
+- JSON validation parsed one-buyer-share, buyer-index, agents-checkout, send-to-buyer, MCP manifests, ai-plugin, npm-funding, clone-cli, and every agent-buyer-catalog JSONL record.
+- Agent catalog JSONL parsed 47 records.
+- OpenAPI YAML parsed and included `/one-buyer-share.html`, `/one-buyer-share.json`, and `/one-buyer-share.txt`.
+- Sitemap XML parsed.
+- Control-character checks passed for one-buyer-share HTML/text, README, AGENTS, send-to-buyer, MCP source/docs, product llms, and OpenAPI.
+- Playwright/Edge UI validation passed: QR image loaded, share disabled by default, share enabled after one-buyer confirmation, buyer message included PayPal URL, email/SMS/WhatsApp links were populated, private phone-like data disabled share, desktop screenshot captured, and mobile viewport had no horizontal overflow.
+- GitHub Pages latest build API returned `built` for product commit `c87f9b376cbab356b98c0c0aeb59a5813815367d`, root commit `526172b6232f335a63d8ecd0928bb5457a3d09c6`, and quiet commit `2569b36430c0fbb74f217c6595b075eb735f6671`.
+- Live validation returned HTTP 200 for one-buyer-share HTML/JSON/text, send-to-buyer, buyer-index, agents-checkout, OpenAPI, ai-plugin, MCP manifest, product llms, root llms, and quiet llms with one-buyer-share and PayPal markers.
+- Live agent-buyer-catalog JSONL decoded as UTF-8 and contained `softjunk_one_buyer_share_action`, `one-buyer-share`, and `https://paypal.me/softjunk/5USD`.
+- IndexNow POST submitted 13 owned URLs and returned `200`.
+- Releases created: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.104`, `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-one-buyer-share-route-v1`, and `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-one-buyer-share-route-v1`.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553514215.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-27 MCP NPM Funding Tool Evidence
 
 Artifacts added/updated:
