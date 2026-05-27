@@ -14,7 +14,12 @@
                     "try:rescue":  "node bin/softjunk-lead-kit.js rescue --business \"roofing contractor\" --service \"roof estimate\" --source estimate --need \"unanswered estimate\" --tone direct --next quote --json",
                     "try:send":  "node bin/softjunk-lead-kit.js send --business \"med spa\" --service consultation --source DM --need \"quiet inquiry\"",
                     "pay:custom":  "node bin/softjunk-lead-kit.js pay --mode custom --json",
-                    "pay:kit":  "node bin/softjunk-lead-kit.js pay --mode kit --json"
+                    "pay:kit":  "node bin/softjunk-lead-kit.js pay --mode kit --json",
+                    "dev:first":  "npm start",
+                    "agent:first":  "npm start",
+                    "agent:preview":  "npm run try:rescue",
+                    "agent:pay":  "npm run pay:custom",
+                    "codespaces:first":  "npm start"
                 },
     "engines":  {
                     "node":  "\u003e=18"
@@ -23,6 +28,8 @@
     "softjunk":  {
                      "run_this_first_url":  "https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md",
                      "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
+                     "dev_agent_start_url":  "https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md",
+                     "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
                      "try_now_url":  "https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md",
                      "payment_url":  "https://paypal.me/softjunk/5USD",
                      "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
