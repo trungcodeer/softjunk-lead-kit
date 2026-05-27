@@ -5511,3 +5511,44 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo/package, GitHub Pages, public JSON/text/YAML, VS Code/Codespaces configs, Copilot instructions, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added dev-agent/IDE surfaces on owned GitHub repo.
 - Decision: continue.
+
+## 2026-05-27 Sponsor/FUNDING Route Refresh Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Improve the GitHub-native Sponsor/FUNDING payment surface for repo cloners and GitHub UI users.
+
+Completed todos:
+- Reran PayPal verifier at slice start; it still returned missing credentials.
+- Audited `.github/FUNDING.yml`, `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.json`, README, buyer-index, catalog, OpenAPI/plugin, and llms surfaces.
+- Rewrote `SPONSOR_BUTTON_BUY.md` to remove damaged code fences/control characters and include run-first/dev-agent/clone order/digital kit routes.
+- Refreshed `.github/FUNDING.yml` custom URLs.
+- Updated `sponsor-button-buy.json` with run-first, dev-agent, clone CLI, clone order form, and digital kit fields.
+- Fixed README Sponsor/dev-agent markdown control-character issue and exposed Sponsor button JSON/FUNDING routes.
+- Wired Sponsor route into buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+- Validated API JSON/JSONL, raw/live URLs, control-character checks, Pages builds, releases, and IndexNow.
+- Created releases `v2.29.101`, `root-sponsor-button-route-v2`, and `quiet-sponsor-button-route-v2`.
+- Reran PayPal verifier after release/indexing.
+
+Evidence refs:
+- Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml.
+- Sponsor markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md.
+- Sponsor JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.101, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-sponsor-button-route-v2, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-sponsor-button-route-v2.
+- Public issue evidence comment records validation, IndexNow, and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a GitHub-native checkout surface without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub FUNDING/Sponsor button, GitHub Pages, public JSON/text/YAML, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; refreshed Sponsor/FUNDING route on owned GitHub surfaces.
+- Decision: continue.
