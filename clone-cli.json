@@ -70,5 +70,8 @@
     "npm_funding_url":  "https://paypal.me/softjunk/5USD",
     "npm_fund_command":  "npm fund",
     "npm_run_fund_command":  "npm run fund",
-    "npm_run_fund_kit_command":  "npm run fund:kit"
+    "npm_run_fund_kit_command":  "npm run fund:kit",
+    "mcp_npm_funding_tool_name":  "get_softjunk_npm_funding_route",
+    "mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
+    "well_known_mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json"
 }

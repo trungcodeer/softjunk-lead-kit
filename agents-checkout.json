@@ -317,5 +317,6 @@
                               "payment_url":  "https://paypal.me/softjunk/5USD",
                               "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                               "rule":  "Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
-                          }
+                          },
+    "mcp_npm_funding_tool_name":  "get_softjunk_npm_funding_route"
 }

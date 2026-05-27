@@ -3,7 +3,7 @@
     "updated":  "2026-05-27",
     "name":  "softjunk-mcp-checkout",
     "title":  "SoftJunk MCP Checkout Server",
-    "description":  "Dependency-free MCP stdio server that exposes checkout-only tools and a roofing estimate follow-up sequence tool for routing a qualified buyer to the exact 5 USD PayPal handoff without claiming payment before seller-side verification. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and product card https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment.",
+    "description":  "Dependency-free MCP stdio server that exposes checkout-only tools and a roofing estimate follow-up sequence tool for routing a qualified buyer to the exact 5 USD PayPal handoff without claiming payment before seller-side verification. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and product card https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment. Includes an npm funding tool so agents can discover the exact 5 USD PayPal checkout through package metadata and npm fund.",
     "protocol":  "Model Context Protocol",
     "transport":  "stdio",
     "source_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/mcp-server-softjunk.js",
@@ -50,6 +50,10 @@
                   {
                       "name":  "get_paypal_verification_gate",
                       "description":  "Return seller-side evidence required before claiming paid, started, delivered, or complete."
+                  },
+                  {
+                      "name":  "get_softjunk_npm_funding_route",
+                      "description":  "Return package metadata, npm fund commands, exact 5 USD PayPal URL, order form, and verification gate for GitHub package installs and repo cloners."
                   }
               ],
     "roofing_estimate_generator_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
@@ -265,5 +269,12 @@
                                 "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
                                 "privacy_gate":  "Use placeholders only; do not post customer or PayPal details in public forms."
                             },
-    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+    "npm_funding_tool_name":  "get_softjunk_npm_funding_route",
+    "npm_funding_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
+    "npm_funding_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+    "package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+    "npm_fund_command":  "npm fund",
+    "npm_run_fund_command":  "npm run fund",
+    "npm_run_fund_kit_command":  "npm run fund:kit"
 }

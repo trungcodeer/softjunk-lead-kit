@@ -735,6 +735,7 @@ NPM package funding route:
 - Markdown guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
 - Package metadata: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json
 - Commands: npm fund; npm run fund; npm run fund:kit
+- MCP tool: get_softjunk_npm_funding_route in https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 - Exact PayPal URL: https://paypal.me/softjunk/5USD
 - Completion requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
 

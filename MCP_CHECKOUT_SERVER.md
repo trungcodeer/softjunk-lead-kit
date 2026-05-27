@@ -33,6 +33,7 @@ For MCP clients that accept JSON config, use this shape and adjust the absolute 
 - `build_safe_paypal_note`
 - `build_roofing_estimate_follow_up_sequence`
 - `get_softjunk_checkout_routes`
+- `get_softjunk_npm_funding_route`
 - `get_paypal_verification_gate`
 
 The main checkout tool returns:
@@ -47,6 +48,14 @@ The roofing estimate tool returns:
 - Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts
 - safe PayPal note
 - generator page: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
+- exact 5 USD payment URL: https://paypal.me/softjunk/5USD
+- verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
+
+The npm funding tool returns:
+
+- package metadata URL: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json
+- npm funding contract: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
+- commands: `npm fund`, `npm run fund`, `npm run fund:kit`
 - exact 5 USD payment URL: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 

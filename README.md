@@ -36,6 +36,9 @@ npm run fund:kit
 
 The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
+MCP-capable agents can call `get_softjunk_npm_funding_route` from the local checkout server manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
+
 ## Dev Agent / Codespaces Start
 
 When this repo opens in VS Code, Codespaces, Copilot, or a coding-agent workspace, start here:

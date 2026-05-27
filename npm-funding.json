@@ -84,5 +84,14 @@
                             "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                             "instruction":  "Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
                         }
-                    ]
+                    ],
+    "mcp_npm_funding_tool_name":  "get_softjunk_npm_funding_route",
+    "mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
+    "well_known_mcp_checkout_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
+    "mcp_tool":  {
+                     "name":  "get_softjunk_npm_funding_route",
+                     "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
+                     "well_known_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
+                     "purpose":  "Return this npm funding route through an MCP tools/call response."
+                 }
 }

@@ -24,6 +24,12 @@ const AGENTS_CHECKOUT_JSON =
   "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json";
 const AI_ACTION_CHECKOUT_JSON =
   "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json";
+const PACKAGE_JSON_URL =
+  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json";
+const NPM_FUNDING_JSON =
+  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json";
+const NPM_FUNDING_MARKDOWN =
+  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md";
 
 const tools = [
   {
@@ -187,6 +193,17 @@ const tools = [
     }
   },
   {
+    name: "get_softjunk_npm_funding_route",
+    title: "Get SoftJunk npm funding route",
+    description:
+      "Return package metadata, npm fund commands, exact 5 USD PayPal URL, order form, and verification gate for GitHub package installs and repo cloners.",
+    inputSchema: {
+      type: "object",
+      additionalProperties: false,
+      properties: {}
+    }
+  },
+  {
     name: "get_paypal_verification_gate",
     title: "Get PayPal verification gate",
     description:
@@ -332,11 +349,50 @@ function checkoutRoutes() {
     roofing_estimate_order_form_url: ROOFING_ORDER_FORM_URL,
     agents_checkout_json_url: AGENTS_CHECKOUT_JSON,
     ai_action_checkout_json_url: AI_ACTION_CHECKOUT_JSON,
+    npm_funding_json_url: NPM_FUNDING_JSON,
+    npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
+    package_json_url: PACKAGE_JSON_URL,
+    npm_fund_command: "npm fund",
+    npm_run_fund_command: "npm run fund",
+    npm_run_fund_kit_command: "npm run fund:kit",
     a2a_agent_card_url:
       "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json",
     mcp_checkout_manifest_url:
       "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
     verification_gate: verificationGate()
+  };
+}
+
+function npmFundingRoute() {
+  return {
+    package_name: "softjunk-lead-kit",
+    package_json_url: PACKAGE_JSON_URL,
+    funding_type: "custom",
+    funding_url: PAYMENT_URL,
+    npm_funding_json_url: NPM_FUNDING_JSON,
+    npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
+    commands: [
+      {
+        command: "npm fund",
+        purpose: "Read package funding metadata and surface the exact PayPal URL."
+      },
+      {
+        command: "npm run fund",
+        purpose: "Print the custom one-lead rescue PayPal handoff JSON."
+      },
+      {
+        command: "npm run fund:kit",
+        purpose: "Print the ready digital kit PayPal handoff JSON."
+      }
+    ],
+    value_first_commands: ["npm start", "npm run try:rescue", "npm run try:send"],
+    payment_url: PAYMENT_URL,
+    price: "5.00",
+    currency: "USD",
+    order_form_url: ORDER_FORM_URL,
+    verification_gate: verificationGate(),
+    route_rule:
+      "This is a payment route, not payment proof. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
   };
 }
 
@@ -388,7 +444,7 @@ function handleRequest(message) {
         version: "2026.05.27"
       },
       instructions:
-        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
+        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
     };
   }
 
@@ -422,6 +478,10 @@ function handleRequest(message) {
 
     if (params.name === "get_softjunk_checkout_routes") {
       return toolResult(checkoutRoutes());
+    }
+
+    if (params.name === "get_softjunk_npm_funding_route") {
+      return toolResult(npmFundingRoute());
     }
 
     if (params.name === "get_paypal_verification_gate") {
