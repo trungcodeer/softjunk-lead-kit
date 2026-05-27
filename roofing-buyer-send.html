@@ -7,6 +7,8 @@
   <meta name="description" content="Copy-ready DM, email, PayPal note, free preview, and exact 5 USD PayPal route for one known roofing contractor with an unanswered estimate.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html">
   <meta name="robots" content="index,follow">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json" title="SoftJunk well-known PayPal BuyAction manifest">
   <meta property="og:title" content="Send One Roofing Buyer The $5 Rescue">
   <meta property="og:description" content="A one-buyer send packet for a roofing contractor with one estimate that went quiet.">
   <meta property="og:type" content="website">
@@ -312,7 +314,55 @@
       }
     }
   </style>
-</head>
+  <script type="application/ld+json" data-softjunk-buy-action>
+    {
+      "@context": "https://schema.org",
+      "@type": "Offer",
+      "name": "SoftJunk One-Lead Rescue",
+      "description": "Exact 5 USD PayPal checkout for one real quiet-lead follow-up rescue. One rewrite is included for custom sequences after seller-side PayPal verification.",
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "url": "https://paypal.me/softjunk/5USD",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "SoftJunk",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+      },
+      "itemOffered": {
+        "@type": "DigitalDocument",
+        "name": "SoftJunk roofing buyer-send packet",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html",
+        "encodingFormat": "text/html"
+      },
+      "potentialAction": {
+        "@type": "BuyAction",
+        "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://paypal.me/softjunk/5USD",
+          "httpMethod": "GET"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "5.00",
+          "priceCurrency": "USD"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "success_signal",
+            "value": "PAYPAL_PAYMENT_VERIFIED=true"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_rewrite_included",
+            "value": "One rewrite is included for a custom sequence after verified payment when the buyer supplies non-sensitive context."
+          }
+        ]
+      }
+    }
+  </script></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header>

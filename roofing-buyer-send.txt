@@ -81,3 +81,8 @@ Result after verified payment: https://trungcodeer.github.io/softjunk-lead-kit/a
 Stop gate: stop only when seller-side evidence prints PAYPAL_PAYMENT_VERIFIED=true.
 Privacy gate: send placeholders only; replace private customer details inside the buyer CRM.
 Machine-readable offer: schema_org_offer, potentialAction, and buyAction fields in the JSON packet.
+One rewrite included:
+After the $5 payment is seller-side verified, a custom sequence includes one rewrite if the first draft is not usable. Use placeholders and non-sensitive business context only; do not post private customer or PayPal details.
+
+PayPal BuyAction manifest:
+https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json

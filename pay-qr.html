@@ -7,6 +7,8 @@
   <meta name="description" content="Scan or open the PayPal QR link to pay $5 for SoftJunk Lead Kit or a custom follow-up sequence.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html">
   <meta name="robots" content="index,follow">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json" title="SoftJunk well-known PayPal BuyAction manifest">
   <meta property="og:title" content="PayPal QR | SoftJunk Lead Kit">
   <meta property="og:description" content="Scan or open the PayPal QR link to pay $5.">
   <meta property="og:type" content="website">
@@ -239,7 +241,55 @@
       }
     }
   </style>
-</head>
+  <script type="application/ld+json" data-softjunk-buy-action>
+    {
+      "@context": "https://schema.org",
+      "@type": "Offer",
+      "name": "SoftJunk One-Lead Rescue",
+      "description": "Exact 5 USD PayPal checkout for one real quiet-lead follow-up rescue. One rewrite is included for custom sequences after seller-side PayPal verification.",
+      "price": "5.00",
+      "priceCurrency": "USD",
+      "url": "https://paypal.me/softjunk/5USD",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "SoftJunk",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+      },
+      "itemOffered": {
+        "@type": "DigitalDocument",
+        "name": "SoftJunk PayPal QR page",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
+        "encodingFormat": "text/html"
+      },
+      "potentialAction": {
+        "@type": "BuyAction",
+        "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://paypal.me/softjunk/5USD",
+          "httpMethod": "GET"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "5.00",
+          "priceCurrency": "USD"
+        },
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "success_signal",
+            "value": "PAYPAL_PAYMENT_VERIFIED=true"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "one_rewrite_included",
+            "value": "One rewrite is included for a custom sequence after verified payment when the buyer supplies non-sensitive context."
+          }
+        ]
+      }
+    }
+  </script></head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 

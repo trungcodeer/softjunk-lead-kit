@@ -258,5 +258,13 @@
                                                      "value":  "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
                                                  }
                                              ]
-                  }
+                  },
+    "buyer_risk_reversal":  {
+                                "name":  "one_rewrite_included",
+                                "applies_to":  "Custom 7-day follow-up sequence after seller-side PayPal verification.",
+                                "value":  "One rewrite is included if the first custom sequence is not usable and the buyer supplies non-sensitive business context.",
+                                "privacy_rule":  "Use placeholders only; do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
+                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true"
+                            },
+    "one_rewrite_included":  true
 }
