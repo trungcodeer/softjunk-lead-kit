@@ -36,6 +36,16 @@ const NPM_FUNDING_JSON =
   "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json";
 const NPM_FUNDING_MARKDOWN =
   "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md";
+const RELEASE_URL =
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118";
+const RELEASE_TARBALL_URL =
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz";
+const RELEASE_TARBALL_SHA256 =
+  "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d";
+const RELEASE_TARBALL_DOCTOR_COMMAND =
+  `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit doctor --json`;
+const RELEASE_TARBALL_PAY_CUSTOM_COMMAND =
+  `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit pay --mode custom --json`;
 
 const tools = [
   {
@@ -361,6 +371,11 @@ function checkoutRoutes() {
     npm_funding_json_url: NPM_FUNDING_JSON,
     npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
     package_json_url: PACKAGE_JSON_URL,
+    release_url: RELEASE_URL,
+    release_tarball_url: RELEASE_TARBALL_URL,
+    release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
+    run_from_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     npm_fund_command: "npm fund",
     npm_run_fund_command: "npm run fund",
     npm_run_fund_kit_command: "npm run fund:kit",
@@ -380,6 +395,11 @@ function npmFundingRoute() {
     funding_url: PAYMENT_URL,
     npm_funding_json_url: NPM_FUNDING_JSON,
     npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
+    release_url: RELEASE_URL,
+    release_tarball_url: RELEASE_TARBALL_URL,
+    release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
+    run_from_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     commands: [
       {
         command: "npm fund",

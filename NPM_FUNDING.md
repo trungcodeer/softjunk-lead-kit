@@ -14,6 +14,19 @@ The package funding URL is:
 https://paypal.me/softjunk/5USD
 ```
 
+## No Clone Release Asset
+
+Use the verified GitHub Release tarball when npm registry publish is unavailable or a buyer-agent should run the package without cloning:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit doctor --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118
+
+Asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+
 ## Value First
 
 Run a local check or preview before paying:

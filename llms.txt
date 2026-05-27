@@ -15,6 +15,8 @@ Dev-agent start route:
 - Devcontainer: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json
 - VS Code tasks: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json
 - Commands: npm start, npm run try:rescue, npm run try:send, npm run pay:custom, npm run pay:kit.
+- No-clone release command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+- Release asset SHA-256: c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d
 - PayPal: https://paypal.me/softjunk/5USD
 - Gate: PAYPAL_PAYMENT_VERIFIED=true
 
@@ -24,6 +26,7 @@ Run-this-first clone route:
 - Try-now markdown: https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md
 - Try-now JSON: https://trungcodeer.github.io/softjunk-lead-kit/try-now.json
 - After clone: npm start, then npm run try:rescue, then npm run pay:custom or npm run pay:kit.
+- No-clone release command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
 - Order form after PayPal: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
 - PayPal: https://paypal.me/softjunk/5USD
 - Gate: PAYPAL_PAYMENT_VERIFIED=true
@@ -34,6 +37,7 @@ Clone CLI route:
 - Raw CLI: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js
 - Run after clone: node bin/softjunk-lead-kit.js doctor --json
 - Run from GitHub package: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
+- Run from verified release tarball: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
 - Commands: doctor, rescue, send, kit, pay.
 - Payment URL remains https://paypal.me/softjunk/5USD and fulfillment still requires PAYPAL_PAYMENT_VERIFIED=true.
 

@@ -5,11 +5,17 @@
 Best current checkout route:
 
 1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
-2. Latest direct-checkout release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116
-3. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
-4. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
-5. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
-6. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+2. Run the verified no-clone buyer-agent command:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+3. Verified npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118
+4. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
+5. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+6. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
+7. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Privacy rule: use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
 
@@ -27,6 +33,13 @@ NPM funding route: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.j
 NPM funding guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
 
 ## NPM Fund / Package Metadata
+
+No clone and no npm login required:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit doctor --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
 
 When this repo is installed as a GitHub package or opened after clone, the package metadata points to the exact 5 USD PayPal route:
 
@@ -73,6 +86,7 @@ npm run pay:kit
 Run without cloning:
 
 ```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
 ```
 

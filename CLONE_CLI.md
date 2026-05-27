@@ -4,40 +4,48 @@ This repo gets clone traffic, so the fastest path after cloning is a local CLI t
 
 Run after clone:
 
-`ash
+```bash
 node bin/softjunk-lead-kit.js doctor --json
-`
+```
 
 Run from GitHub without cloning:
 
-`ash
+```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
-`
+```
+
+Run from the verified release tarball without cloning:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
 
 Generate a one-lead rescue preview:
 
-`ash
+```bash
 node bin/softjunk-lead-kit.js rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote --json
-`
+```
 
 Generate buyer handoff copy:
 
-`ash
+```bash
 node bin/softjunk-lead-kit.js send --business "med spa" --service consultation --source DM --need "quiet inquiry"
-`
+```
 
 Show the ready digital kit proof route:
 
-`ash
+```bash
 node bin/softjunk-lead-kit.js kit --json
-`
+```
 
 Payment route:
 
-`ash
+```bash
 node bin/softjunk-lead-kit.js pay --mode custom --json
 node bin/softjunk-lead-kit.js pay --mode kit --json
-`
+```
 
 Rules:
 
