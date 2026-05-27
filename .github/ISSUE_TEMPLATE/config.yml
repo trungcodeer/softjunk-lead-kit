@@ -1,91 +1,38 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Send-5 buyer handoff
+    url: https://trungcodeer.github.io/send-5/
+    about: Copy one buyer-facing message for a qualified one-lead buyer, then route to the exact 5 USD PayPal checkout without claiming payment before verification.
+  - name: Pay exactly 5 USD on PayPal
+    url: https://paypal.me/softjunk/5USD
+    about: Direct PayPal.Me checkout for the SoftJunk 5 USD one-lead rescue after the buyer has the safe note.
+  - name: Root 5 USD buyer card
+    url: https://trungcodeer.github.io/5/
+    about: Shortest buyer card with PayPal link, copy-safe PayPal note, one rewrite included, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+  - name: Sponsor button buy route
+    url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+    about: GitHub-native Sponsor/funding route with PayPal first, Send-5 second, root buyer card third, and verification gate.
+  - name: One-lead rescue route
+    url: https://trungcodeer.github.io/rescue/
+    about: Generate one stronger reply and a PayPal note before paying exactly 5 USD and submitting the order form.
+  - name: Buyer-agent JSON
+    url: https://trungcodeer.github.io/5.json
+    about: Machine-readable buyer card with exact PayPal URL, price, one rewrite, privacy boundary, and verification gate.
+  - name: Send-5 JSON
+    url: https://trungcodeer.github.io/send-5.json
+    about: Machine-readable buyer handoff for AI assistants, VAs, crawlers, and buyer agents.
+  - name: Pinned buyer-agent close contract
+    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+    about: Public buyer-agent contract with fit rules, PayPal route, order form, privacy boundary, and verification gate.
+  - name: Pinned public order board
+    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+    about: Human-readable checkout board for the 5 USD one-lead rescue route. Do not post private payment or customer details.
   - name: Roofing buyer-send packet
     url: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
     about: One-read buyer route for one unanswered roofing estimate with exact 5 USD PayPal checkout, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
-  - name: Pay exactly 5 USD on PayPal
-    url: https://paypal.me/softjunk/5USD
-    about: Direct PayPal.Me checkout for the SoftJunk 5 USD offer after the buyer has the rescue note.
-  - name: Roofing buyer-send JSON
-    url: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
-    about: Machine-readable buyer-agent checkout packet with PayPal URL, GitHub discussion route, privacy rule, and verification gate.
-  - name: Roofing buyer-send text
-    url: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt
-    about: Plain-text checkout packet for buyer-agents, assistants, and humans who need the shortest route to pay 5 USD.  - name: GitHub-native Buy Now packet
-    url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
-    about: Shortest GitHub-native route with pinned buyer issues, exact 5 USD PayPal checkout, order form, and verification gate.
-  - name: Raw Buy Now JSON
-    url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json
-    about: Machine-readable buy-now route for assistants, buyer agents, crawlers, and VAs.
-  - name: AI/coding agent instructions
-    url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/AGENTS.md
-    about: Root-level buyer-agent instructions with fit rules, exact 5 USD PayPal route, order form, and verification gate.
-  - name: Agent checkout JSON
-    url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/agents-checkout.json
-    about: Machine-readable checkout instructions for AI assistants, coding agents, VAs, crawlers, and buyer agents.
-  - name: Agent checkout Gist
-    url: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-    about: Public Gist mirror of the root AGENTS.md checkout route and machine-readable JSON.
-  - name: Pinned public order board
-    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-    about: Human-readable checkout board for the 5 USD one-lead rescue route.
-  - name: Pinned buyer-agent close contract
-    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-    about: Buyer-agent contract with fit rules, PayPal route, order form, privacy boundary, and verification gate.
-  - name: Root one-lead rescue route
-    url: https://trungcodeer.github.io/rescue/
-    about: Shortest route from one quiet lead to generated reply, exact 5 USD PayPal payment, order form, and verification gate.
-  - name: Root roofing estimate rescue route
-    url: https://trungcodeer.github.io/roofing/
-    about: Shortest route from one unanswered roofing estimate to generator, exact 5 USD PayPal payment, roofing order form, and verification gate.
-  - name: Public roofing buyer issue
-    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
-    about: Read the roofing sample sequence, copy the PayPal note, pay exactly 5 USD, then use the dedicated roofing order form after payment.
   - name: Roofing estimate rescue order form
     url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
     about: Submit non-sensitive roofing estimate rescue details after paying exactly 5 USD.
-  - name: AI agent order rescue path
-    url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-    about: Build a rescue-first PayPal note after opening the root one-lead route.
-  - name: Fix one quiet lead
-    url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-    about: Generate one stronger reply, PayPal note, shareable rescue link, and exact 5 USD PayPal handoff.
-  - name: AI Deal Desk
-    url: https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-    about: Use after the root rescue route to generate a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
-  - name: Agent close contract fallback
-    url: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html
-    about: GitHub-native buyer-agent path with root rescue, exact 5 USD PayPal route, order form, and verification gate.
-  - name: Agent close public Gist
-    url: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
-    about: Public machine-readable Agent Close Contract mirror with PAYPAL_PAYMENT_VERIFIED=true as the paid/start/complete gate.
-  - name: Public buyer route
-    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-    about: Public buyer-agent issue with immutable contract fallbacks, PayPal route, and verification gate.
-  - name: Pay $5 on PayPal
-    url: https://trungcodeer.github.io/paypal/
-    about: Use after copying the rescue PayPal note; includes the exact 5 USD PayPal.Me link, QR fallback, and payment verification rule.
-  - name: Direct PayPal.Me link
-    url: https://paypal.me/softjunk/5USD
-    about: Direct payment URL for the exact SoftJunk 5 USD offer after the buyer has the rescue note.
-  - name: Payment intent Gist
-    url: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
-    about: Public GitHub-native payment intent with exact amount, PayPal URL, buyer routes, and verification gate.
-  - name: Agent commerce capsule
-    url: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
-    about: Compact AI/VA/crawler commerce contract with fit rules, PayPal route, payment note, and verification gate.
-  - name: Fast checkout
-    url: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
-    about: Copy the correct PayPal note, open the $5 PayPal link, and review the after-payment handoff.
-  - name: Create custom PayPal note
-    url: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-    about: Start with the root rescue route, then build the short PayPal note for a custom 7-day follow-up sequence before paying.
-  - name: Public order board
-    url: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
-    about: Public buyer handoff. Do not post private payment or customer details.
-  - name: Lead loss calculator
-    url: https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html
-    about: Estimate missed lead value before buying.
-  - name: PayPal QR page
-    url: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
-    about: Scan or open the QR payment page.
+  - name: Payment verification instructions
+    url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md
+    about: Verifier and CSV workflow for proving the 5 USD PayPal payment before fulfillment starts.
