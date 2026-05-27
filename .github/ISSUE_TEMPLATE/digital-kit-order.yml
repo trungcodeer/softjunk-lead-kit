@@ -1,33 +1,26 @@
 name: Digital $5 kit order
-description: Use this after paying $5 for the digital Lead Follow-Up Kit ZIP.
-title: "Digital kit order"
+about: Use this after paying exactly 5 USD for the digital Lead Follow-Up Kit ZIP. Do not include PayPal transaction details.
+title: "Digital kit order: [buyer type]"
 labels:
   - digital-kit
   - paid-order
+  - pending-paypal-verification
 body:
   - type: markdown
     attributes:
       value: |
-        For one quiet lead, start at the root rescue route. For the digital ZIP, pay after using the exact kit note, then submit this form if you want to leave a fulfillment trail in GitHub.
+        For the digital ZIP, inspect the proof page and manifest first:
+        https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
+        https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 
-        Root one-lead rescue route: https://trungcodeer.github.io/rescue/
         Payment URL: https://paypal.me/softjunk/5USD
-        Short PayPal route: https://trungcodeer.github.io/paypal/
-        Payment intent: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
-        Public payment intent Gist: https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
+        Required PayPal note: `Lead Follow-Up Kit`
 
-        Use PayPal note: `Lead Follow-Up Kit`
+        Privacy rule: do not post PayPal transaction IDs, invoice IDs, payer email, customer contact details, or private lead details in this public issue.
 
-        The ZIP is not public. Delivery starts only after the $5 PayPal transaction is visible to the seller.
-  - type: input
-    id: paypal-note
-    attributes:
-      label: PayPal note or transaction note
-      placeholder: "Lead Follow-Up Kit"
-    validations:
-      required: true
+        The paid ZIP is delivered manually to the email shown in the PayPal transaction after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
   - type: dropdown
-    id: buyer-type
+    id: buyer_type
     attributes:
       label: Buyer type
       options:
@@ -39,12 +32,24 @@ body:
         - Other
     validations:
       required: true
-  - type: textarea
-    id: delivery-notes
+  - type: dropdown
+    id: main_need
     attributes:
-      label: Delivery notes
-      description: Do not post private customer data. Delivery uses the email shown in the PayPal transaction.
-      placeholder: "Optional: I mainly need the tracker and templates."
+      label: Main use case
+      options:
+        - Lead follow-up templates
+        - Lead tracker CSV
+        - AI prompt pack
+        - Full kit
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: delivery_notes
+    attributes:
+      label: Non-sensitive delivery notes
+      description: Optional. Use broad context only; do not include customer or PayPal details.
+      placeholder: "Optional: I mainly need the tracker and templates for a local service business."
     validations:
       required: false
   - type: checkboxes
@@ -52,7 +57,9 @@ body:
     attributes:
       label: Confirmation
       options:
-        - label: I paid exactly $5 at https://paypal.me/softjunk/5USD or https://trungcodeer.github.io/paypal/ with PayPal note `Lead Follow-Up Kit`.
+        - label: I paid exactly 5 USD at https://paypal.me/softjunk/5USD with PayPal note `Lead Follow-Up Kit`.
           required: true
-        - label: I understand the ZIP is delivered manually after the seller can see the PayPal payment.
+        - label: I did not include PayPal transaction IDs, invoice IDs, payer email, customer contact details, or private lead details in this public issue.
+          required: true
+        - label: I understand delivery starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
           required: true
