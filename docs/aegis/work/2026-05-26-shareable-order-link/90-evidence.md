@@ -22,6 +22,40 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Custom Sequence Preview/Gallery No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `custom-sequence-preview.html`
+- `custom-sequence-preview.json`
+- `custom-sequence-preview.txt`
+- `custom-sequence-gallery.html`
+- `custom-sequence-gallery.json`
+- `custom-sequence-gallery.txt`
+
+Published commit and release:
+- Product commit: `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.143.
+
+Validation:
+- Local marker validation confirmed all six updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `custom-sequence-preview.json` and `custom-sequence-gallery.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `custom-sequence-preview.html`; `custom-sequence-gallery.html` has no runtime script.
+- JSON-LD validation parsed the structured data block in both updated HTML files.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- custom-sequence-preview.html custom-sequence-preview.json custom-sequence-preview.txt custom-sequence-gallery.html custom-sequence-gallery.json custom-sequence-gallery.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dumps for local `custom-sequence-preview.html` and `custom-sequence-gallery.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`; the preview DOM also included a generated HVAC preview.
+- GitHub Pages latest build API returned `built` for commit `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`.
+- Live Pages validation returned HTTP 200 for all six updated files; each included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed where applicable.
+- Raw GitHub validation returned HTTP 200 for all six updated files and included the same required markers; JSON parsed where applicable.
+- Edge headless DOM dumps for live `custom-sequence-preview.html` and `custom-sequence-gallery.html` included `No-clone checkout proof`, `npm exec --yes --package`, `PAYPAL_PAYMENT_VERIFIED=true`, and `https://paypal.me/softjunk/5USD`; the preview DOM also included a generated HVAC preview.
+- Product release `v2.29.143` is public, non-draft, non-prerelease, targets `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted the six updated Pages URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Lead Recovery Tools No-Clone Checkout Proof Evidence
 
 Artifacts updated:

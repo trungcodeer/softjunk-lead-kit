@@ -7797,3 +7797,57 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML, GitHub Pages HTML, raw GitHub HTML, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; lead recovery tools remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Custom Sequence Preview/Gallery No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade `custom-sequence-preview.html/json/txt` and `custom-sequence-gallery.html/json/txt` so buyer-agents can open a tailored preview or ready scenario, verify the executable no-clone checkout route, compare SHA-256, open the PayPal URL, and preserve the payment-proof gate.
+
+Completed todos:
+- Audited public surfaces with PayPal links and missing no-clone proof; selected the custom sequence preview/gallery because central buyer-agent catalogs and scenario routes send high-intent users there before payment.
+- Updated both HTML pages with no-clone checkout proof in metadata, JSON-LD, navigation, hero actions, visible proof sections, and payment-proof boundary language.
+- Updated `custom-sequence-preview.html` generated preview output with the command, verified release, tarball, SHA-256, expected checkout, and stop condition.
+- Updated `custom-sequence-preview.json`, `custom-sequence-preview.txt`, `custom-sequence-gallery.json`, and `custom-sequence-gallery.txt` with no-clone checkout proof fields/text and stronger fulfillment boundaries.
+- Validated all six files contain the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed both JSON files locally.
+- Parsed the preview page runtime JavaScript and both pages' JSON-LD locally.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live versions of both HTML pages with Edge headless DOM dumps and confirmed no-clone checkout markers appear; the preview page also generated a prefilled HVAC preview.
+- Pushed product commit `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`.
+- Created public product release `v2.29.143`.
+- Confirmed GitHub Pages latest build was `built` for commit `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`.
+- Validated live Pages and raw GitHub copies of all six updated files returned HTTP 200 and included the required markers; JSON parsed where applicable.
+- Validated product release `v2.29.143` is public, non-draft, non-prerelease, targets commit `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`, and includes the same required markers.
+- Submitted the six updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `b6e712839beb2805d89b1ac1e7a0ed42e7b973d2`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.143.
+- Live custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html.
+- Live custom sequence preview JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json.
+- Live custom sequence preview text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt.
+- Live custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html.
+- Live custom sequence gallery JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json.
+- Live custom sequence gallery text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining free preview/rewrite/sample-kit/payment-adjacent surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens AI-native preview/gallery routes that create buyer value before payment and route relevant users through a verifiable checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub HTML/JSON/text, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; custom sequence preview/gallery remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.
