@@ -5697,3 +5697,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub issues, GitHub Pages, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; used existing public buyer/order and agent close boards.
 - Decision: continue.
+
+## 2026-05-27 Profile One-Buyer Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Put the one-buyer share action on the public GitHub profile and profile Pages surfaces so a buyer, assistant, or crawler sees the newest guarded $5 route immediately.
+
+Completed todos:
+- Updated `trungcodeer/trungcodeer` README to lead with the one-buyer $5 share action and fixed broken `$5` headings.
+- Updated profile `index.html` title/meta/hero/actions/generated handoff links/routes section to point to `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt`.
+- Updated profile `softjunk-profile-offer.json`, `llms.txt`, and `sitemap.xml` with the one-buyer route and verification gate.
+- Validated JSON/XML markers and Playwright/Edge desktop/mobile behavior; the profile page had no horizontal overflow and generated a one-buyer share URL with non-sensitive context.
+- Pushed profile commit `762e6c7cb8e0a49389ce237a7d9208dd0290605c` and created release `profile-one-buyer-share-route-v1`.
+- Validated live GitHub Pages profile HTML, JSON, llms, and sitemap; all returned HTTP 200 and contained `one-buyer-share`.
+- Submitted profile Pages URLs to IndexNow; API returned `200 OK`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Profile Pages: https://trungcodeer.github.io/trungcodeer/.
+- Profile offer JSON: https://trungcodeer.github.io/trungcodeer/softjunk-profile-offer.json.
+- Profile llms: https://trungcodeer.github.io/trungcodeer/llms.txt.
+- Profile sitemap: https://trungcodeer.github.io/trungcodeer/sitemap.xml.
+- Profile commit: https://github.com/trungcodeer/trungcodeer/commit/762e6c7cb8e0a49389ce237a7d9208dd0290605c.
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-one-buyer-share-route-v1.
+- Public issue evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553738871.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it raises the newest one-buyer share route onto the public GitHub profile and profile Pages without spam, scraping, deception, unauthorized outreach, or fake payment claims.
+- Compatibility boundary: owned GitHub profile repo, GitHub Pages, public JSON/text/XML, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; used the existing profile repo as an owned public discovery surface.
+- Decision: continue.
