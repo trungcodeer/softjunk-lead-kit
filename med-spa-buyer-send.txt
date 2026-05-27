@@ -22,6 +22,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/13
 Public med spa buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
 
+Public med spa buyer release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
+
 Free med spa preview:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 

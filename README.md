@@ -145,9 +145,10 @@ Use this first when the buyer is a med spa with one missed consult request, no-s
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt
 4. Public med spa buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/13
 5. Public med spa buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
-6. Open the free med spa preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-7. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-8. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+6. Public med spa buyer release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
+7. Open the free med spa preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+8. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+9. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post client names, phone numbers, emails, appointment dates, treatment details, health details, before/after photos, financing IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -343,6 +344,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/13
 
 Public med spa buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
+
+Public med spa buyer release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
 
 Roofing estimate rescue JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json

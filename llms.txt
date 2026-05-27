@@ -222,6 +222,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/13
 Public med spa buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
 
+Public med spa buyer release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
+
 Med spa buyer fit:
 Use for one known med spa with one missed consult request, no-show consult, aesthetic treatment inquiry, or quiet membership lead. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists. Do not include client, health, treatment, photo, financing, or PayPal details.
 
