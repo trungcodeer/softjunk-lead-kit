@@ -826,5 +826,11 @@
     "digital_kit_sample_zip_url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
     "digital_kit_sample_zip_sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba",
     "digital_kit_public_order_board_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/9",
-    "digital_kit_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml"
+    "digital_kit_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
+    "clone_cli_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
+    "clone_cli_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md",
+    "clone_cli_raw_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js",
+    "clone_cli_pages_url":  "https://trungcodeer.github.io/softjunk-lead-kit/bin/softjunk-lead-kit.js",
+    "clone_cli_run_after_clone":  "node bin/softjunk-lead-kit.js doctor --json",
+    "clone_cli_run_from_github_package":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json"
 }
