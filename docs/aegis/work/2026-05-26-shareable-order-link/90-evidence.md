@@ -3432,3 +3432,28 @@ Payment verification:
 
 Conclusion:
 - The public checkout preview/distribution layer improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
+## Evidence: 2026-05-27 fastest usd5 ai discovery slice
+
+Updated and released:
+- Product llms.txt: https://github.com/trungcodeer/softjunk-lead-kit/commit/382670d84afd7279d6351340d7b70ef5cc061433
+- Root llms.txt: https://github.com/trungcodeer/trungcodeer.github.io/commit/61950a52f2213350bca1d1f741c8517ea71dbbbd
+- Product uyer-index.json: https://github.com/trungcodeer/softjunk-lead-kit/commit/19827136caeba9114f2cc2be7c0019ab1cb12a9c
+- Product gent-buyer-catalog.jsonl: https://github.com/trungcodeer/softjunk-lead-kit/commit/6945e2edca4c755a22999275214c981ae1247649
+- Product obots.txt: https://github.com/trungcodeer/softjunk-lead-kit/commit/24050d176c7d6f4b80903e37e6cc93182de03e78
+- Product sitemap.xml: https://github.com/trungcodeer/softjunk-lead-kit/commit/71bd6b148a76b794c8a0474e1a75384c4e117322
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.81
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-fast-five-llms-v1
+- Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550751885
+
+Live validation:
+- https://trungcodeer.github.io/softjunk-lead-kit/llms.txt?check=fast5 returned status 200 and starts with Fastest USD 5 buyer route, /5/, /5.json, /5.txt, product buyer card, PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
+- https://trungcodeer.github.io/llms.txt?check=fast5 returned status 200 and starts with the same route.
+- https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json?check=fast5 returned status 200 and exposes root/product five-dollar buyer-card URLs, PayPal URL, and verification gate.
+- https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl?cachebust=202605270231 returned status 200; after UTF-8 decoding, it contains id=root_five_dollar_buyer_card, /5/, PayPal URL, one_rewrite_included=true, and PAYPAL_PAYMENT_VERIFIED=true.
+- Product robots/sitemap live checks returned status 200 and expose /5/, /5.json, and /5.txt.
+
+Payment verification:
+- PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+Conclusion:
+- AI-readable checkout discovery improved, but the goal is not complete because actual seller-side PayPal receipt is still unverified.
