@@ -1,3 +1,12 @@
+Clone CLI route:
+- Manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
+- Docs: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md
+- Raw CLI: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js
+- Run after clone: node bin/softjunk-lead-kit.js doctor --json
+- Run from GitHub package: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
+- Commands: doctor, rescue, send, kit, pay.
+- Payment URL remains https://paypal.me/softjunk/5USD and fulfillment still requires PAYPAL_PAYMENT_VERIFIED=true.
+
 # SoftJunk Lead Kit
 
 PayPal URL health evidence (not payment proof):
