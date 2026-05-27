@@ -18,6 +18,27 @@ Privacy rule: use placeholders only. Do not post customer names, phone numbers, 
 
 A $5 lead follow-up kit and same-price custom sequence for small businesses that get leads from forms, DMs, email, ads, referrals, quotes, appointments, or calls.
 
+## Clone CLI Fast Path
+
+This repo receives clone traffic, so the useful path after cloning is local-first:
+
+`ash
+node bin/softjunk-lead-kit.js doctor --json
+node bin/softjunk-lead-kit.js rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote --json
+node bin/softjunk-lead-kit.js pay --mode kit --json
+`
+
+Run without cloning:
+
+`ash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
+`
+
+Machine-readable CLI manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
+CLI docs: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md
+Raw CLI: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js
+
+The CLI generates safe preview copy, buyer handoff text, PayPal notes, and proof-to-payment routes. It does not collect lead data and it does not verify PayPal payment. Fulfillment still requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
 ## Roofing Buyer Fast Path
 
 Use this first when the lead is an unanswered roofing estimate:
