@@ -8103,3 +8103,58 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/TXT/JSON, GitHub Pages HTML/TXT/JSON, raw GitHub HTML/TXT/JSON, public Gist for roofing buyer-send JSON/TXT, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; vertical buyer-send packets remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Niche Follow-Up No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade niche/intent follow-up pages so search visitors can try a free sample, verify the executable no-clone checkout route, compare release/SHA proof, open PayPal, and preserve seller-side PayPal evidence as the only completion gate.
+
+Completed todos:
+- Audited niche follow-up pages with PayPal links and missing no-clone command/release/SHA proof.
+- Updated `appointment-setting-follow-up.html`, `dental-follow-up.html`, `hvac-lead-follow-up.html`, `plumbing-lead-follow-up.html`, `med-spa-follow-up.html`, `real-estate-lead-follow-up.html`, and `tutoring-follow-up.html`.
+- Updated shared `niche-page.css` with proof-command/proof-list styles and corrected selector placement before validation.
+- Added no-clone checkout proof to metadata, JSON-LD, hero actions, visible proof sections, and payment boundary copy.
+- Validated all seven HTML pages contain the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed all seven pages' JSON-LD blocks locally.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live versions of all seven niche follow-up pages with Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`.
+- Created public product release `v2.29.149`.
+- Confirmed GitHub Pages latest build was `built` for commit `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`.
+- Validated live Pages and raw GitHub copies of all seven updated HTML pages returned HTTP 200 and included the required markers.
+- Validated live `niche-page.css` returned HTTP 200 and includes restored `header, main, footer` selector coverage plus proof styles.
+- Validated product release `v2.29.149` is public, non-draft, non-prerelease, targets commit `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`, and includes the same required markers.
+- Submitted the seven updated Pages URLs plus `niche-page.css` to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.149.
+- Live appointment-setting page: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html.
+- Live dental page: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html.
+- Live HVAC page: https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html.
+- Live plumbing page: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html.
+- Live med-spa page: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html.
+- Live real-estate page: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html.
+- Live tutoring page: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving owned public/package-native buyer surfaces while waiting for actual PayPal proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens search/intent pages that can convert a relevant visitor from a free sample to a verifiable $5 checkout without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/CSS, GitHub Pages HTML/CSS, raw GitHub HTML, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; niche follow-up pages remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.

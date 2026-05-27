@@ -22,6 +22,42 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Niche Follow-Up No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `appointment-setting-follow-up.html`
+- `dental-follow-up.html`
+- `hvac-lead-follow-up.html`
+- `plumbing-lead-follow-up.html`
+- `med-spa-follow-up.html`
+- `real-estate-lead-follow-up.html`
+- `tutoring-follow-up.html`
+- `niche-page.css`
+
+Published commit and release:
+- Product commit: `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.149.
+
+Validation:
+- Local marker validation confirmed all seven updated HTML pages include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local HTML validation parsed all JSON-LD blocks in the seven pages.
+- Local CSS validation confirmed `niche-page.css` includes restored `header, main, footer` selector coverage plus proof styles.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check --` on the seven updated pages plus `niche-page.css` passed with only CRLF normalization warnings.
+- Edge headless DOM dumps for all seven local pages included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`.
+- Live Pages validation returned HTTP 200 for all seven updated niche pages; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Raw GitHub validation returned HTTP 200 for all seven updated niche pages; all included the same required markers.
+- Live `niche-page.css` validation returned HTTP 200 and included restored selector coverage plus proof styles.
+- Edge headless DOM dumps for all seven live niche pages included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.149` is public, non-draft, non-prerelease, targets `5c8f735a93923e4e53fa8cb1a29b78c10f975e57`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted the seven updated Pages URLs plus `niche-page.css`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Vertical Buyer-Send No-Clone Checkout Proof Evidence
 
 Artifacts updated:
