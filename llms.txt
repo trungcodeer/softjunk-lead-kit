@@ -619,7 +619,7 @@ Offers:
 - Free AI deal desk for $0: turns non-sensitive lead context into a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
 - Public buyer examples thread for $0: missed call, quiet quote, and price-objection examples with the exact 5 USD PayPal path.
 - Instant fulfillment packet for $0 inspection: public Day 0, Day 1, Day 3, Day 5, Day 7, no-show, and price-objection delivery shell used only after seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
-- GitHub Sponsor button buy route: repository funding config lists https://paypal.me/softjunk/5USD first, with SPONSOR_BUTTON_BUY.md and sponsor-button-buy.json as the route contract.
+- GitHub Sponsor button buy route: repository funding config lists https://paypal.me/softjunk/5USD first and https://trungcodeer.github.io/send-5/ second, with SPONSOR_BUTTON_BUY.md and sponsor-button-buy.json as the route contract.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
 - Free agent commerce capsule for $0: compact commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
@@ -675,3 +675,5 @@ https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt
 Use this as the lowest-friction buyer route. It points to https://paypal.me/softjunk/5USD, includes one rewrite after verified payment, and requires PAYPAL_PAYMENT_VERIFIED=true before fulfillment.
 
 Send-5 buyer handoff action: use https://trungcodeer.github.io/send-5/ or https://trungcodeer.github.io/send-5.json when an AI assistant or VA needs one copy-ready message to send only to a qualified buyer with one quiet lead. Do not use it for cold spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD and do not claim payment unless PAYPAL_PAYMENT_VERIFIED=true.
+
+Sponsor button Send-5 action: use .github/FUNDING.yml or https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md when a GitHub-native buyer needs the Sponsor button route. It lists PayPal first, Send-5 second, root /5/ third, and preserves PAYPAL_PAYMENT_VERIFIED=true as the stop rule.
