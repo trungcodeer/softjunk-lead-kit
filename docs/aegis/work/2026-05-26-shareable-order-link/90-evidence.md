@@ -5015,3 +5015,30 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Agent Instructions No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `AGENTS.md`
+- `agent-buyer-catalog.jsonl`
+
+Published commit and release:
+- Product commit: `3d1ade776cd747ed5c29580cfa8a96207c5a3c1f`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.125.
+
+Validation:
+- Local marker validation confirmed `AGENTS.md` and `agent-buyer-catalog.jsonl` include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSONL validation parsed all 51 `agent-buyer-catalog.jsonl` records.
+- The `root_agents_checkout` catalog record contains `verified_release_url`, `release_tarball_url`, `release_tarball_sha256`, `run_from_release_tarball_pay_custom`, `payment_url=https://paypal.me/softjunk/5USD`, `success_signal=PAYPAL_PAYMENT_VERIFIED=true`, and a payment-proof rule.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check` passed.
+- GitHub Pages latest build API returned `built` for commit `3d1ade776cd747ed5c29580cfa8a96207c5a3c1f`.
+- Raw GitHub and GitHub Pages validation returned HTTP 200 for `AGENTS.md` and found all required markers.
+- Raw GitHub `agent-buyer-catalog.jsonl` validation returned HTTP 200 and confirmed the `root_agents_checkout` record has release URL, SHA-256, no-clone command, PayPal URL, and gate.
+- GitHub Pages `agent-buyer-catalog.jsonl` validation used byte-level UTF-8 decoding because the response is `application/octet-stream`; all 51 JSONL records parsed and required markers were present.
+- IndexNow POST submitted `https://trungcodeer.github.io/softjunk-lead-kit/AGENTS.md` and `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
