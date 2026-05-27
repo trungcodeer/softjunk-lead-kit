@@ -4646,3 +4646,36 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - No seller-side PayPal credential/evidence is available in this environment yet.
+## Checkpoint: 2026-05-27 fastest usd5 ai discovery slice
+
+TodoCheckpointDraft:
+- Completed: product llms.txt now starts with Fastest USD 5 buyer route and includes /5/, /5.json, /5.txt, product buyer card, PayPal URL, one rewrite, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Completed: root llms.txt now starts with the same shortest USD 5 buyer route.
+- Completed: product uyer-index.json now exposes root/product five-dollar buyer-card fields.
+- Completed: product gent-buyer-catalog.jsonl now includes oot_five_dollar_buyer_card checkout-flow record.
+- Completed: product robots/sitemap expose root /5/, /5.json, and /5.txt discovery routes.
+- Completed: published releases v2.29.81 and root-fast-five-llms-v1.
+- Active slice: continue legitimate owned-channel conversion improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: keep verifier as the stop condition; if still false, continue only with lawful owned-channel improvements or wait for seller-side payment evidence.
+
+Evidence:
+- Product llms commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/382670d84afd7279d6351340d7b70ef5cc061433
+- Root llms commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/61950a52f2213350bca1d1f741c8517ea71dbbbd
+- Buyer index commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/19827136caeba9114f2cc2be7c0019ab1cb12a9c
+- Catalog commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/6945e2edca4c755a22999275214c981ae1247649
+- Robots commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/24050d176c7d6f4b80903e37e6cc93182de03e78
+- Sitemap commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/71bd6b148a76b794c8a0474e1a75384c4e117322
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.81
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-fast-five-llms-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550751885
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original  PayPal objective by putting the shortest legitimate checkout route first for AI/buyer-agent discovery.
+- Compatibility: no payment or fulfillment gate was weakened; pages still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual 5 USD PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
