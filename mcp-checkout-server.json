@@ -3,7 +3,7 @@
     "updated":  "2026-05-27",
     "name":  "softjunk-mcp-checkout",
     "title":  "SoftJunk MCP Checkout Server",
-    "description":  "Dependency-free MCP stdio server that exposes checkout-only tools and a roofing estimate follow-up sequence tool for routing a qualified buyer to the exact 5 USD PayPal handoff without claiming payment before seller-side verification.",
+    "description":  "Dependency-free MCP stdio server that exposes checkout-only tools and a roofing estimate follow-up sequence tool for routing a qualified buyer to the exact 5 USD PayPal handoff without claiming payment before seller-side verification. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and product card https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment.",
     "protocol":  "Model Context Protocol",
     "transport":  "stdio",
     "source_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/mcp-server-softjunk.js",
@@ -52,7 +52,6 @@
                       "description":  "Return seller-side evidence required before claiming paid, started, delivered, or complete."
                   }
               ],
-    "payment_url":  "https://paypal.me/softjunk/5USD",
     "roofing_estimate_generator_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
     "roofing_estimate_generator_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json",
     "roofing_estimate_generator_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt",
@@ -251,5 +250,20 @@
                                                      "value":  "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
                                                  }
                                              ]
-                  }
+                  },
+    "five_dollar_buyer_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+    "five_dollar_buyer_card_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
+    "five_dollar_buyer_card_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt",
+    "root_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/5/",
+    "gist_five_dollar_buyer_card_url":  "https://gist.github.com/trungcodeer/4507ec1fc5f1b009924dfdaa235859e8",
+    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/5/",
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "one_rewrite_included":  true,
+    "buyer_risk_reversal":  {
+                                "name":  "one_rewrite_included",
+                                "value":  "One rewrite is included if the first custom sequence is not usable after seller-side PayPal verification and the buyer supplies non-sensitive business context.",
+                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                "privacy_gate":  "Use placeholders only; do not post customer or PayPal details in public forms."
+                            },
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
 }

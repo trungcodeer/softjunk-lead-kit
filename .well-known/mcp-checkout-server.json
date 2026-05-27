@@ -1,76 +1,90 @@
 {
-  "schema_version": "softjunk-mcp-checkout-server-v1",
-  "updated": "2026-05-27",
-  "name": "softjunk-mcp-checkout",
-  "title": "SoftJunk MCP Checkout Server",
-  "description": "Dependency-free MCP stdio server that exposes checkout-only tools and a roofing estimate follow-up sequence tool for routing a qualified buyer to the exact 5 USD PayPal handoff without claiming payment before seller-side verification.",
-  "protocol": "Model Context Protocol",
-  "transport": "stdio",
-  "source_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/mcp-server-softjunk.js",
-  "raw_source_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js",
-  "documentation_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md",
-  "gist_url": "https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d",
-  "manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
-  "well_known_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
-  "official_mcp_lifecycle_reference": "https://modelcontextprotocol.io/specification/latest/basic/lifecycle",
-  "official_mcp_remote_registry_reference": "https://modelcontextprotocol.io/registry/remote-servers",
-  "install": {
-    "command": "node",
-    "args": [
-      "mcp-server-softjunk.js"
-    ],
-    "client_config_example": {
-      "mcpServers": {
-        "softjunk-checkout": {
-          "command": "node",
-          "args": [
-            "C:/path/to/softjunk-lead-kit/mcp-server-softjunk.js"
-          ]
-        }
-      }
-    }
-  },
-  "tools": [
-    {
-      "name": "route_softjunk_one_lead_rescue_checkout",
-      "description": "Qualify one quiet-lead follow-up problem and return PayPal note, exact 5 USD PayPal URL, order form, and verification gate."
-    },
-    {
-      "name": "build_safe_paypal_note",
-      "description": "Build a non-sensitive PayPal note for the 5 USD one-lead rescue checkout."
-    },
-    {
-      "name": "build_roofing_estimate_follow_up_sequence",
-      "description": "Generate Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts plus the 5 USD PayPal rescue handoff from non-sensitive context."
-    },
-    {
-      "name": "get_softjunk_checkout_routes",
-      "description": "Return public checkout, PayPal, order form, and discovery manifest routes."
-    },
-    {
-      "name": "get_paypal_verification_gate",
-      "description": "Return seller-side evidence required before claiming paid, started, delivered, or complete."
-    }
-  ],
-  "payment_url": "https://paypal.me/softjunk/5USD",
-  "roofing_estimate_generator_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
-  "roofing_estimate_generator_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json",
-  "roofing_estimate_generator_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt",
-  "roofing_estimate_rescue_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
-  "roofing_buyer_issue_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
-  "price": "5.00",
-  "currency": "USD",
-  "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
-  "roofing_estimate_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
-  "verification_gate": {
-    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
-    "script_path": "scripts/verify-paypal-5usd.ps1",
-    "required_evidence": [
-      "Seller can see the 5 USD PayPal transaction",
-      "PayPal API verifier returns PAYPAL_PAYMENT_VERIFIED=true",
-      "Trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv"
-    ],
-    "rule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
-  },
-  "registry_note": "This is a local stdio MCP server source and install manifest, not an official remote MCP Registry server.json. It intentionally does not claim a public remote MCP endpoint."
+    "schema_version":  "softjunk-mcp-checkout-server-v1",
+    "updated":  "2026-05-27",
+    "name":  "softjunk-mcp-checkout",
+    "title":  "SoftJunk MCP Checkout Server",
+    "description":  "Dependency-free MCP stdio server that exposes checkout-only tools and a roofing estimate follow-up sequence tool for routing a qualified buyer to the exact 5 USD PayPal handoff without claiming payment before seller-side verification. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and product card https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment.",
+    "protocol":  "Model Context Protocol",
+    "transport":  "stdio",
+    "source_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/mcp-server-softjunk.js",
+    "raw_source_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js",
+    "documentation_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md",
+    "gist_url":  "https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d",
+    "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
+    "well_known_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
+    "official_mcp_lifecycle_reference":  "https://modelcontextprotocol.io/specification/latest/basic/lifecycle",
+    "official_mcp_remote_registry_reference":  "https://modelcontextprotocol.io/registry/remote-servers",
+    "install":  {
+                    "command":  "node",
+                    "args":  [
+                                 "mcp-server-softjunk.js"
+                             ],
+                    "client_config_example":  {
+                                                  "mcpServers":  {
+                                                                     "softjunk-checkout":  {
+                                                                                               "command":  "node",
+                                                                                               "args":  [
+                                                                                                            "C:/path/to/softjunk-lead-kit/mcp-server-softjunk.js"
+                                                                                                        ]
+                                                                                           }
+                                                                 }
+                                              }
+                },
+    "tools":  [
+                  {
+                      "name":  "route_softjunk_one_lead_rescue_checkout",
+                      "description":  "Qualify one quiet-lead follow-up problem and return PayPal note, exact 5 USD PayPal URL, order form, and verification gate."
+                  },
+                  {
+                      "name":  "build_safe_paypal_note",
+                      "description":  "Build a non-sensitive PayPal note for the 5 USD one-lead rescue checkout."
+                  },
+                  {
+                      "name":  "build_roofing_estimate_follow_up_sequence",
+                      "description":  "Generate Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts plus the 5 USD PayPal rescue handoff from non-sensitive context."
+                  },
+                  {
+                      "name":  "get_softjunk_checkout_routes",
+                      "description":  "Return public checkout, PayPal, order form, and discovery manifest routes."
+                  },
+                  {
+                      "name":  "get_paypal_verification_gate",
+                      "description":  "Return seller-side evidence required before claiming paid, started, delivered, or complete."
+                  }
+              ],
+    "roofing_estimate_generator_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
+    "roofing_estimate_generator_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.json",
+    "roofing_estimate_generator_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.txt",
+    "roofing_estimate_rescue_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html",
+    "roofing_buyer_issue_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
+    "price":  "5.00",
+    "currency":  "USD",
+    "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+    "roofing_estimate_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
+    "verification_gate":  {
+                              "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
+                              "script_path":  "scripts/verify-paypal-5usd.ps1",
+                              "required_evidence":  [
+                                                        "Seller can see the 5 USD PayPal transaction",
+                                                        "PayPal API verifier returns PAYPAL_PAYMENT_VERIFIED=true",
+                                                        "Trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv"
+                                                    ],
+                              "rule":  "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+                          },
+    "registry_note":  "This is a local stdio MCP server source and install manifest, not an official remote MCP Registry server.json. It intentionally does not claim a public remote MCP endpoint.",
+    "five_dollar_buyer_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+    "five_dollar_buyer_card_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
+    "five_dollar_buyer_card_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt",
+    "root_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/5/",
+    "gist_five_dollar_buyer_card_url":  "https://gist.github.com/trungcodeer/4507ec1fc5f1b009924dfdaa235859e8",
+    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/5/",
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "one_rewrite_included":  true,
+    "buyer_risk_reversal":  {
+                                "name":  "one_rewrite_included",
+                                "value":  "One rewrite is included if the first custom sequence is not usable after seller-side PayPal verification and the buyer supplies non-sensitive business context.",
+                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                "privacy_gate":  "Use placeholders only; do not post customer or PayPal details in public forms."
+                            },
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
 }

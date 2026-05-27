@@ -2,7 +2,7 @@ openapi: 3.1.0
 info:
   title: SoftJunk Lead Kit Discovery
   version: "1.0.0"
-  description: Static discovery endpoints for the $5 SoftJunk Lead Follow-Up Kit and custom sequence.
+  description: Static discovery endpoints for the $5 SoftJunk Lead Follow-Up Kit, custom sequence, and one-screen five-dollar buyer card.
 servers:
   - url: https://trungcodeer.github.io/softjunk-lead-kit
 x-softjunk-fastest-buyer-path:
@@ -1069,5 +1069,38 @@ paths:
           description: RSS feed for SoftJunk offer pages.
           content:
             application/rss+xml:
+              schema:
+                type: string
+  /five-dollar-buyer-card.html:
+    get:
+      operationId: openFiveDollarBuyerCard
+      summary: Open the one-screen 5 USD buyer card.
+      responses:
+        "200":
+          description: Lowest-friction buyer card with exact 5 USD PayPal URL, BuyAction manifest, one rewrite included, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /five-dollar-buyer-card.json:
+    get:
+      operationId: getFiveDollarBuyerCard
+      summary: Get the one-screen 5 USD buyer card JSON.
+      responses:
+        "200":
+          description: Machine-readable buyer card with PayPal 5 USD URL, BuyAction, one-rewrite risk reversal, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /five-dollar-buyer-card.txt:
+    get:
+      operationId: getFiveDollarBuyerCardText
+      summary: Get the one-screen 5 USD buyer card text.
+      responses:
+        "200":
+          description: Plain-text buyer card for routing a buyer to PayPal 5 USD with one rewrite included after verified payment.
+          content:
+            text/plain:
               schema:
                 type: string

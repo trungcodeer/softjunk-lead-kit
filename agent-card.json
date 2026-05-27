@@ -2,7 +2,7 @@
     "schemaVersion":  "a2a-agent-card-v1",
     "protocolVersion":  "0.3",
     "name":  "SoftJunk Lead Rescue Checkout Agent",
-    "description":  "Static buyer-agent handoff for one real quiet lead, the exact 5 USD PayPal checkout, and a strict seller-side verification gate.",
+    "description":  "Static buyer-agent handoff for one real quiet lead, the exact 5 USD PayPal checkout, and a strict seller-side verification gate. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and product card https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment.",
     "provider":  {
                      "organization":  "SoftJunk",
                      "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
@@ -311,5 +311,20 @@
                                                      "value":  "Use placeholders only; do not submit private customer data in public GitHub or PayPal notes."
                                                  }
                                              ]
-                  }
+                  },
+    "five_dollar_buyer_card_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+    "five_dollar_buyer_card_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
+    "five_dollar_buyer_card_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt",
+    "root_five_dollar_buyer_card_url":  "https://trungcodeer.github.io/5/",
+    "gist_five_dollar_buyer_card_url":  "https://gist.github.com/trungcodeer/4507ec1fc5f1b009924dfdaa235859e8",
+    "lowest_friction_buyer_route":  "https://trungcodeer.github.io/5/",
+    "payment_url":  "https://paypal.me/softjunk/5USD",
+    "one_rewrite_included":  true,
+    "buyer_risk_reversal":  {
+                                "name":  "one_rewrite_included",
+                                "value":  "One rewrite is included if the first custom sequence is not usable after seller-side PayPal verification and the buyer supplies non-sensitive business context.",
+                                "verification_gate":  "PAYPAL_PAYMENT_VERIFIED=true",
+                                "privacy_gate":  "Use placeholders only; do not post customer or PayPal details in public forms."
+                            },
+    "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
 }
