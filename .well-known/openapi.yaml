@@ -22,6 +22,9 @@ x-softjunk-fastest-buyer-path:
   well_known_mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
   mcp_checkout_server_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
   payment_url: https://paypal.me/softjunk/5USD
+  funding_config_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
+  sponsor_button_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+  sponsor_button_json_url: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
   clone_cli_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
   run_this_first_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md
   run_this_first_json_url: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
@@ -47,7 +50,28 @@ x-softjunk-fastest-buyer-path:
   digital_kit_order_board_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
   digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
-  /dev-agent-start.json:
+  /sponsor-button-buy.json:
+    get:
+      operationId: getSponsorButtonBuyRoute
+      summary: Get the SoftJunk GitHub Sponsor button buy route.
+      responses:
+        "200":
+          description: Machine-readable GitHub Sponsor/FUNDING route with exact 5 USD PayPal URL, Send-5 handoff, root buyer card, run-first/dev-agent routes, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /SPONSOR_BUTTON_BUY.md:
+    get:
+      operationId: getSponsorButtonBuyMarkdown
+      summary: Get the SoftJunk Sponsor button buy instructions.
+      responses:
+        "200":
+          description: Markdown instructions for the GitHub Sponsor button checkout path, PayPal note, order form, privacy rule, and verification gate.
+          content:
+            text/markdown:
+              schema:
+                type: string  /dev-agent-start.json:
     get:
       operationId: getDevAgentStartRoute
       summary: Get the SoftJunk dev-agent start route.
