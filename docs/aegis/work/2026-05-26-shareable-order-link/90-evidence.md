@@ -3763,3 +3763,25 @@ Boundary:
 - This is GitHub metadata/search positioning.
 - It does not prove buyer action or PayPal receipt.
 - Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+## Evidence: 2026-05-27 Buyer-intent PayPal Gist bundle
+
+What changed:
+- Published public Gist https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9 with specific intent files for missed call follow-up, estimate follow-up, no-show follow-up, and price-objection reply.
+- Wired the Gist into product buyer-index and llms surfaces.
+
+Verification:
+- Gist files include Send-5, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Gist JSON parses.
+- Remote buyer-index JSON parses and includes the Gist ID.
+- Live curl checks returned HTTP 200 for buyer-index and llms with Gist/Send-5/payment markers.
+- IndexNow accepted 6 owned URLs with HTTP 200.
+
+Public refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.92
+- Tracking comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551590288
+
+Boundary:
+- This is buyer-intent discovery/conversion work.
+- It does not prove buyer action or PayPal receipt.
+- Goal completion and fulfillment still require seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
