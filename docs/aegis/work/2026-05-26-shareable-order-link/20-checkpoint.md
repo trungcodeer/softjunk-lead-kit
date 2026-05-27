@@ -4473,3 +4473,20 @@ DriftCheckDraft:
 - Compatibility boundary: stayed within product buyer-send packet, Gist mirror, release, validation, and worklog.
 - New owner/fallback/branch: none.
 - Evidence growth: live HTML/JSON/TXT and Gist validation now proves the packet exposes machine-readable BuyAction and the PayPal verification stop gate.
+## 2026-05-27 PayPal BuyAction manifest discovery slice
+
+TodoCheckpointDraft:
+- Completed: published product paypal-buy-action.json and .well-known/paypal-buy-action.json, then embedded schema_org_offer, potentialAction, and uyAction in product agent/checkout manifests.
+- Completed: published root paypal-buy-action.json and .well-known/paypal-buy-action.json, then embedded the same action metadata in root agent/payment/offer manifests.
+- Completed: created product release 2.29.72 and root release oot-paypal-buy-action-v1; both Pages deploys succeeded.
+- Completed: updated Gist mirrors for agent-card, ai-action-checkout, agents-checkout, PayPal payment intent, and MCP checkout server.
+- Evidence: public issue comment https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550095367
+- Payment state: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials; goal is not complete.
+- Next step: continue legitimate conversion/discovery improvements or verify seller-side PayPal proof when credentials/CSV become available.
+
+DriftCheckDraft:
+- Decision: continue.
+- Still serves original intent: yes, it makes the exact  PayPal purchase action more discoverable and machine-readable.
+- Compatibility boundary: stayed within owned GitHub Pages/Gist/manifest surfaces and public evidence logs.
+- New owner/fallback/branch: none.
+- Evidence growth: live validation covers 21 JSON endpoints with PayPal $5, Offer, BuyAction, potentialAction, and PAYPAL_PAYMENT_VERIFIED=true.

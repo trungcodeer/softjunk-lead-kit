@@ -3254,3 +3254,21 @@ EvidenceBundleDraft:
 Evidence judgment:
 - Supports claim that structured commerce metadata is published and live.
 - Does not support claim that  has been received.
+## 2026-05-27 PayPal BuyAction manifest discovery slice
+
+EvidenceBundleDraft:
+- Product commit: 5c0a364123649544e90372a89eabd37ecbc27e6c (Publish PayPal BuyAction manifest for agents).
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.72
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26482203347 (completed, success).
+- Root commit: 8b39890293baf112a5891c53221c890fa4b4ca8f (Publish root PayPal BuyAction manifest for agents).
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-paypal-buy-action-v1
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26482273382 (completed, success).
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550095367
+- Gist mirrors updated: agent-card, ai-action-checkout, agents-checkout, PayPal payment intent, MCP checkout server.
+- Live validation: 21 product/root JSON URLs returned 200, parsed as JSON, and contain PayPal $5, schema.org Offer, BuyAction, potentialAction, and PAYPAL_PAYMENT_VERIFIED=true.
+- IndexNow: status=200 urls=21.
+- PayPal verifier: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET.
+
+Evidence judgment:
+- Supports claim that product/root machine-readable checkout action manifests are published and live.
+- Does not support claim that  has been received.
