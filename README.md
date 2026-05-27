@@ -1,13 +1,15 @@
 # SoftJunk Lead Kit
 
-## Pay 5 USD: one rewrite included
+## Direct PayPal checkout
 
 Best current checkout route:
 
-1. Open the buyer-agent BuyAction manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
-2. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
-3. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
-4. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
+2. Latest direct-checkout release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.116
+3. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
+4. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+5. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
+6. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Privacy rule: use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
 
