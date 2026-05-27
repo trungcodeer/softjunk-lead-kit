@@ -779,5 +779,37 @@
                                            "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                                            "verification_gate":  "Do not claim paid, started, delivered, complete, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
                                            "privacy_gate":  "Use placeholders only; do not post customer, payment, transaction, address, phone, email, invoice, claim, or PayPal details in public text."
-                                       }
+                                       },
+    "buyer_intent_paypal_5usd_gist_url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9",
+    "buyer_intent_paypal_5usd_gist_raw_json_url":  "https://gist.githubusercontent.com/trungcodeer/772adccebfba963f6550238b401a72a9/raw/softjunk-buyer-intent-paypal-5usd.json",
+    "buyer_intent_paypal_5usd_files":  [
+                                           {
+                                               "intent":  "missed_call_follow_up",
+                                               "url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9#file-missed-call-follow-up-paypal-5usd-md",
+                                               "payment_url":  "https://paypal.me/softjunk/5USD",
+                                               "send_five_url":  "https://trungcodeer.github.io/send-5/",
+                                               "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                                           },
+                                           {
+                                               "intent":  "estimate_follow_up",
+                                               "url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9#file-estimate-follow-up-paypal-5usd-md",
+                                               "payment_url":  "https://paypal.me/softjunk/5USD",
+                                               "send_five_url":  "https://trungcodeer.github.io/send-5/",
+                                               "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                                           },
+                                           {
+                                               "intent":  "no_show_follow_up",
+                                               "url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9#file-no-show-follow-up-paypal-5usd-md",
+                                               "payment_url":  "https://paypal.me/softjunk/5USD",
+                                               "send_five_url":  "https://trungcodeer.github.io/send-5/",
+                                               "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                                           },
+                                           {
+                                               "intent":  "price_objection_reply",
+                                               "url":  "https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9#file-price-objection-reply-paypal-5usd-md",
+                                               "payment_url":  "https://paypal.me/softjunk/5USD",
+                                               "send_five_url":  "https://trungcodeer.github.io/send-5/",
+                                               "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                                           }
+                                       ]
 }
