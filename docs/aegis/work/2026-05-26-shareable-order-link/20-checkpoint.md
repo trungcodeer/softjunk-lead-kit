@@ -4617,3 +4617,32 @@ DriftCheckDraft:
 
 Risk / Unknown:
 - PayPal API credentials are still unavailable in this environment, so payment receipt cannot be verified from the seller side here.
+## Checkpoint: 2026-05-27 usd5 buyer-card preview release slice
+
+TodoCheckpointDraft:
+- Completed: fixed buyer-card <title> and og:title metadata to say SoftJunk USD 5 Buyer Card on the product buyer card.
+- Completed: fixed root /5/ buyer-card <title> and og:title metadata to say SoftJunk USD 5 Buyer Card.
+- Completed: updated the five-dollar buyer-card Gist mirror with the same preview metadata.
+- Completed: published GitHub releases v2.29.80 and root-usd5-buyer-card-preview-v1 to create public release-feed visibility for the USD 5 checkout route.
+- Completed: validated live Pages routes and Gist mirror contain PayPal URL and PAYPAL_PAYMENT_VERIFIED=true gate.
+- Active slice: continue owned-channel conversion improvements while preserving no-claim-before-PayPal-verification rule.
+- Next step: rerun PayPal verifier and continue only if payment remains unverified.
+
+Evidence:
+- Product commit: https://github.com/trungcodeer/softjunk-lead-kit/commit/63c19a5298382e71a4cf1abefef19650e1bcc4e9
+- Root commit: https://github.com/trungcodeer/trungcodeer.github.io/commit/4cbd135783e926a03dd66dab73c9956606801ac1
+- Gist mirror: https://gist.github.com/trungcodeer/4507ec1fc5f1b009924dfdaa235859e8
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.80
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-usd5-buyer-card-preview-v1
+- Public evidence comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550701129
+- PayPal verifier before final slice check: PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET
+
+DriftCheckDraft:
+- Scope: aligned with the original  PayPal objective by making buyer-facing previews clearer and sending the update through owned GitHub release feeds.
+- Compatibility: no fulfillment gate removed; pages still require seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+- New owners/adapters: none.
+- Retirement track: completion remains gated by actual  PayPal verification.
+- Decision: continue.
+
+Risk / Unknown:
+- No seller-side PayPal credential/evidence is available in this environment yet.
