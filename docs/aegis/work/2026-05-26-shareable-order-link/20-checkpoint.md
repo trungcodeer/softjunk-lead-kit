@@ -5338,3 +5338,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages, public JSON, public issue board, PayPal.Me, manual private delivery after seller-side verification.
 - New owner/branch/fallback: none.
 - Decision: continue.
+
+## 2026-05-27 Digital Kit Agent Discovery Contract Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel discovery and conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Move beyond basic link posting by creating an AI-native digital kit order contract that buyer agents can parse end-to-end: proof, manifest, sample hash, PayPal note, order form, privacy rule, and verification gate.
+
+Completed todos:
+- Re-read continuation guidance and latest worklog state before editing.
+- Audited high-intent live routes and agent discovery files; identified missing digital kit board/form references in agent-readable surfaces.
+- Added `digital-kit-order.json` and `digital-kit-order.txt`.
+- Updated product `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `agent-buyer-catalog.jsonl`, `agent-buyer-packet.json`, and `llms.txt`.
+- Updated root `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, and `llms.txt`.
+- Updated quiet-lead `buyer-route.json` and `llms.txt`.
+- Added root IndexNow key files and submitted 12 owned URLs to IndexNow; response was `202`.
+- Confirmed GitHub Pages built product, root, and quiet commits for this slice.
+- Validated live URLs returned 200 and contained digital-kit contract, issue #9/order form, and PayPal markers.
+- Created releases `v2.29.97`, `root-digital-kit-agent-discovery-v1`, and `quiet-digital-kit-agent-discovery-v1`.
+- Reran PayPal verifier.
+
+Evidence refs:
+- Digital kit order contract JSON: https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json.
+- Digital kit order contract text: https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt.
+- Product OpenAPI/plugin/catalog/packet/llms discovery surfaces are live.
+- Root OpenAPI/plugin/llms discovery surfaces are live.
+- Quiet buyer route and llms discovery surfaces are live.
+- Evidence issue comment records validation, releases, IndexNow status, and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates AI-native proof-to-payment routing without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub Pages, public JSON/text/YAML, public GitHub issue board/form, PayPal.Me, manual private delivery after seller-side verification.
+- New owner/branch/fallback: added IndexNow key files on owned root Pages host; no new fulfillment owner.
+- Decision: continue.
