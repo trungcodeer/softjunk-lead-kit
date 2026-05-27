@@ -85,6 +85,7 @@
     "dental_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html",
     "dental_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json",
     "dental_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt",
+    "dental_buyer_issue_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/12",
     "agent_buyer_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json",
     "agent_buyer_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt",
     "exact_intent_answer_pack_url":  "https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json",

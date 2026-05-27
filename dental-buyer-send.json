@@ -7,7 +7,7 @@
   "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt",
   "dental_sample_url": "https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html",
-  "buyer_issue_url": "",
+  "buyer_issue_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/12",
   "free_preview_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool",
   "one_buyer_share_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html?buyer=dental%20office&problem=missed%20new-patient%20call&service=new%20patient%20appointment&value=one%20booked%20dental%20visit%20is%20worth%20more%20than%20%245&tone=reassuring&ready=1",
   "payment_url": "https://paypal.me/softjunk/5USD",

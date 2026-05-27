@@ -129,9 +129,10 @@ Use this first when the buyer is a dental office with one missed new-patient cal
 1. Send one fitting buyer this copy-ready packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
 2. Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json
 3. Plain-text packet: https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
-4. Open the free dental preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-5. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-6. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+4. Public dental buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/12
+5. Open the free dental preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
+6. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post patient names, phone numbers, emails, appointment dates, dental symptoms, treatment details, insurance IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -307,6 +308,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json
 
 Dental buyer send text:
 https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt
+
+Public dental buyer issue:
+https://github.com/trungcodeer/softjunk-lead-kit/issues/12
 
 Roofing estimate rescue JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
