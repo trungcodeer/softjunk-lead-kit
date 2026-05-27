@@ -1071,7 +1071,39 @@ paths:
             application/rss+xml:
               schema:
                 type: string
-  /five-dollar-buyer-card.html:
+  /5/:
+    get:
+      operationId: openRootUsd5BuyerCard
+      summary: Open the shortest root USD 5 buyer card.
+      responses:
+        "200":
+          description: Root one-screen buyer card with exact 5 USD PayPal URL, copy-safe PayPal note, one rewrite included after verified payment, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            text/html:
+              schema:
+                type: string
+  /5.json:
+    get:
+      operationId: getRootUsd5BuyerCard
+      summary: Get the shortest root USD 5 buyer card JSON.
+      responses:
+        "200":
+          description: Machine-readable root buyer card with /5 route, PayPal 5 USD URL, one-rewrite risk reversal, order form, privacy rule, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /5.txt:
+    get:
+      operationId: getRootUsd5BuyerCardText
+      summary: Get the shortest root USD 5 buyer card text.
+      responses:
+        "200":
+          description: Plain-text root buyer card for routing a buyer to PayPal 5 USD with one rewrite included after verified payment.
+          content:
+            text/plain:
+              schema:
+                type: string  /five-dollar-buyer-card.html:
     get:
       operationId: openFiveDollarBuyerCard
       summary: Open the one-screen 5 USD buyer card.
