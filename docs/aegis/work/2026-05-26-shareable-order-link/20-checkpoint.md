@@ -6027,3 +6027,38 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo, GitHub Releases, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added a release route and wired it into owned public discovery.
 - Decision: continue.
+
+## 2026-05-27 Repo Topic Discovery Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Tune GitHub repository metadata so GitHub search, topic pages, crawlers, and buyer-agents see the strongest current $5 buyer routes.
+
+Completed todos:
+- Confirmed repo was clean at `85989dd3dc830dbf934ed7a4bc3b8108875b7d9e` and PayPal verifier still returned missing credentials at slice start.
+- Read current repo metadata and found the topic set was already full but lacked med spa, dental, HVAC, and plumbing route topics.
+- Replaced lower-intent topics with buyer/niche topics: `med-spa`, `dental-office`, `hvac-service`, and `plumbing-service`, while preserving PayPal, AI buyer route, and follow-up intent topics.
+- Updated the repo description to mention `USD 5 PayPal`, missed calls, estimates, no-shows, quiet leads, med spa, dental, HVAC, and plumbing.
+- Verified repo metadata through `gh repo view` and the GitHub topics API.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Repo: https://github.com/trungcodeer/softjunk-lead-kit.
+- Homepage metadata remains: https://trungcodeer.github.io/send-5/.
+- Topics verified: `lead-follow-up`, `small-business`, `paypal-checkout`, `paypal-me`, `quiet-lead`, `ai-buyer-route`, `lead-recovery`, `agent-commerce`, `one-lead-rescue`, `ai-checkout`, `follow-up-templates`, `missed-call`, `no-show-follow-up`, `price-objection`, `roofing-estimates`, `send5`, `dental-office`, `med-spa`, `hvac-service`, `plumbing-service`.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned GitHub discovery for high-intent buyer routes without contacting strangers or making payment claims.
+- Compatibility boundary: GitHub repo metadata/topics/description, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; updated repo-level discovery metadata only.
+- Decision: continue.

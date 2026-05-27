@@ -22,6 +22,44 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Repo Topic Discovery Evidence
+
+Public metadata updated:
+- Repository: `https://github.com/trungcodeer/softjunk-lead-kit`.
+- Description: `USD 5 PayPal lead follow-up rescue and AI buyer routes for missed calls, estimates, no-shows, quiet leads, med spa, dental, HVAC, plumbing`.
+- Homepage: `https://trungcodeer.github.io/send-5/`.
+
+Topics set:
+- `lead-follow-up`
+- `small-business`
+- `paypal-checkout`
+- `paypal-me`
+- `quiet-lead`
+- `ai-buyer-route`
+- `lead-recovery`
+- `agent-commerce`
+- `one-lead-rescue`
+- `ai-checkout`
+- `follow-up-templates`
+- `missed-call`
+- `no-show-follow-up`
+- `price-objection`
+- `roofing-estimates`
+- `send5`
+- `dental-office`
+- `med-spa`
+- `hvac-service`
+- `plumbing-service`
+
+Validation:
+- `gh repo view trungcodeer/softjunk-lead-kit --json nameWithOwner,description,homepageUrl,repositoryTopics,url` returned the updated description and all 20 topics.
+- `gh api repos/trungcodeer/softjunk-lead-kit/topics` returned the same 20-topic set.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Med Spa Buyer Release Route Evidence
 
 Public distribution:
