@@ -5071,3 +5071,32 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Agent Commerce No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `agent-commerce.html`
+- `agent-commerce.json`
+- `agent-commerce.txt`
+
+Published commit and release:
+- Product commit: `f71da4e9675f8ee643dda629330be7895e2a75ff`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.127.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `agent-commerce.json` after the edit.
+- Non-JSON-LD inline JavaScript validation parsed the single runtime script in `agent-commerce.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- agent-commerce.html agent-commerce.json agent-commerce.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for the local `agent-commerce.html` included the no-clone command, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `f71da4e9675f8ee643dda629330be7895e2a75ff`.
+- Live validation returned HTTP 200 for `agent-commerce.html`, `agent-commerce.json`, and `agent-commerce.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; the JSON parsed.
+- Edge headless DOM dump for the live `agent-commerce.html` included `No-clone checkout command`, `npm exec --yes --package`, `Verified release`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.127` is public, non-draft, non-prerelease, targets `f71da4e9675f8ee643dda629330be7895e2a75ff`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted `agent-commerce.html`, `agent-commerce.json`, and `agent-commerce.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
