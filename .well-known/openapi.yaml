@@ -23,6 +23,11 @@ x-softjunk-fastest-buyer-path:
   mcp_checkout_server_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
   payment_url: https://paypal.me/softjunk/5USD
   clone_cli_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json
+  run_this_first_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/RUN_THIS_FIRST.md
+  run_this_first_json_url: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
+  try_now_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md
+  try_now_json_url: https://trungcodeer.github.io/softjunk-lead-kit/try-now.json
+  clone_cli_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
   clone_cli_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md
   clone_cli_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js
   clone_cli_run_after_clone: node bin/softjunk-lead-kit.js doctor --json
@@ -37,7 +42,50 @@ x-softjunk-fastest-buyer-path:
   digital_kit_order_board_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
   digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml  success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
-  /clone-cli.json:
+  /run-this-first.json:
+    get:
+      operationId: getRunThisFirstCloneRoute
+      summary: Get the SoftJunk run-this-first clone route.
+      responses:
+        "200":
+          description: Machine-readable route from repo clone to npm start, local preview, PayPal note, exact 5 USD checkout, clone CLI order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          content:
+            application/json:
+              schema:
+                type: object
+  /RUN_THIS_FIRST.md:
+    get:
+      operationId: getRunThisFirstMarkdown
+      summary: Get the SoftJunk run-this-first markdown guide.
+      responses:
+        "200":
+          description: Markdown guide for cloners that starts with npm start and routes to preview, PayPal, and order form without private data.
+          content:
+            text/markdown:
+              schema:
+                type: string
+  /try-now.json:
+    get:
+      operationId: getTryNowCloneRoute
+      summary: Get the SoftJunk try-now route.
+      responses:
+        "200":
+          description: Machine-readable value-first route for running local preview commands before payment.
+          content:
+            application/json:
+              schema:
+                type: object
+  /TRY_NOW.md:
+    get:
+      operationId: getTryNowMarkdown
+      summary: Get the SoftJunk try-now markdown guide.
+      responses:
+        "200":
+          description: Markdown guide for trying local preview and buyer handoff commands before exact 5 USD PayPal payment.
+          content:
+            text/markdown:
+              schema:
+                type: string  /clone-cli.json:
     get:
       operationId: getCloneCliManifest
       summary: Get the SoftJunk clone CLI manifest.
