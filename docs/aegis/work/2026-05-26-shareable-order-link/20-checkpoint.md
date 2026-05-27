@@ -6503,3 +6503,51 @@ DriftCheckDraft:
 - Compatibility boundary: package metadata, GitHub Release asset, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; release asset is a fallback while real npm publish still requires npm auth.
 - Decision: continue.
+
+## 2026-05-27 No-Clone Buyer-Agent Command Surface Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Put the already validated release-tarball `npm exec` payment command into the first-view and machine-readable buyer-agent surfaces so a coding agent, package scanner, VA, or buyer assistant can print the exact 5 USD PayPal handoff without cloning or npm registry publish.
+
+Completed todos:
+- Confirmed product repo was clean at `b35597ace7222bb8dfcbe34d3b6961a0a50e6600`.
+- Ran the PayPal verifier before editing; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Added the verified no-clone command to `README.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, `CLONE_CLI.md`, `NPM_FUNDING.md`, `MCP_CHECKOUT_SERVER.md`, `AGENTS.md`, `llms.txt`, `package.json`, `run-this-first.json`, `dev-agent-start.json`, `clone-cli.json`, `npm-funding.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `.well-known/ai-plugin.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `mcp-server-softjunk.js`.
+- Corrected broken fenced code blocks in `CLONE_CLI.md` while adding the release-tarball command.
+- Validated JSON files parse: `package.json`, `run-this-first.json`, `dev-agent-start.json`, `npm-funding.json`, `clone-cli.json`, `buyer-index.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `.well-known/ai-plugin.json`.
+- Validated all 51 `agent-buyer-catalog.jsonl` records parse.
+- Validated `node --check mcp-server-softjunk.js` and `node --check bin/softjunk-lead-kit.js`.
+- Validated `npm pack --dry-run --json` still builds `softjunk-lead-kit@0.2.1`.
+- Validated the MCP `get_softjunk_npm_funding_route` tool response includes `release_tarball_url`, `run_from_release_tarball_pay_custom`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Validated the release-tarball command with an isolated npm cache; it returned `ok=true`, amount `5.00`, currency `USD`, PayPal URL `https://paypal.me/softjunk/5USD`, and the verification gate.
+- Committed and pushed product commit `01ead14213610f0609028573f94dbb4b0b32a50c`.
+- Created public product release `v2.29.119` and corrected its notes to include a valid fenced `npm exec --package` command, PayPal route, release asset URL, SHA-256, and payment-proof warning.
+- Confirmed GitHub Pages latest build is `built` for commit `01ead14213610f0609028573f94dbb4b0b32a50c`.
+- Validated live/raw `README.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, `CLONE_CLI.md`, `NPM_FUNDING.md`, `run-this-first.json`, `dev-agent-start.json`, `clone-cli.json`, `npm-funding.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `llms.txt`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `.well-known/ai-plugin.json` return HTTP 200 and include the release-tarball command or linked route, PayPal URL, and verification gate as applicable.
+- Submitted 15 updated owned Pages URLs to IndexNow; API returned `status=200`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Product commit: `01ead14213610f0609028573f94dbb4b0b32a50c`.
+- Public release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the verified no-clone package command into human, LLM, package, and MCP entrypoints so qualified buyer-agents can reach the exact 5 USD PayPal handoff without spam, scraping, or false payment claims.
+- Compatibility boundary: package metadata, GitHub Pages, raw GitHub content, GitHub Release feed, IndexNow discovery, npm exec installation, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; the release tarball remains a fallback while real npm publish still requires npm auth.
+- Decision: continue.

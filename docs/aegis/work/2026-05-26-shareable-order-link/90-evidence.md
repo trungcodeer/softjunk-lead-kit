@@ -22,6 +22,46 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 No-Clone Buyer-Agent Command Surface Evidence
+
+Artifacts updated:
+- Human entrypoints: `README.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, `CLONE_CLI.md`, `NPM_FUNDING.md`, `MCP_CHECKOUT_SERVER.md`, and `AGENTS.md`.
+- Agent/package manifests: `package.json`, `run-this-first.json`, `dev-agent-start.json`, `clone-cli.json`, `npm-funding.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `llms.txt`, `.well-known/ai-plugin.json`, `mcp-checkout-server.json`, and `.well-known/mcp-checkout-server.json`.
+- Runtime MCP source: `mcp-server-softjunk.js`.
+- Product commit pushed: `01ead14213610f0609028573f94dbb4b0b32a50c`.
+- Public release created: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119.
+
+Public no-clone command:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Validation:
+- Local JSON validation parsed `package.json`, `run-this-first.json`, `dev-agent-start.json`, `npm-funding.json`, `clone-cli.json`, `buyer-index.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `.well-known/ai-plugin.json`.
+- Local JSONL validation parsed all 51 `agent-buyer-catalog.jsonl` records.
+- `node --check mcp-server-softjunk.js` and `node --check bin/softjunk-lead-kit.js` passed.
+- `npm pack --dry-run --json` built `softjunk-lead-kit@0.2.1`, filename `softjunk-lead-kit-0.2.1.tgz`, size `424545`, npm shasum `44b23fcfa6aa29cb040f9dfa176c48a649cc6d54`, and integrity `sha512-H/Bqr6LwXp1FP1heEKfhri1wLGWl3l/+LaAV2/cqr5WwyoT0rNStRKGpzHhkxuGNT2tUV5304GcdDNrOOkqqCQ==`.
+- MCP JSON-RPC `tools/call` for `get_softjunk_npm_funding_route` returned the release tarball URL, `run_from_release_tarball_pay_custom`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- The release-tarball command ran with isolated cache `D:\codex-tmp\npm-cache-softjunk-pay-doc-surface-20260527` and returned `ok=true`, amount `5.00`, currency `USD`, PayPal URL, order form, and verification gate.
+- Release `v2.29.119` is public, non-draft, non-prerelease, and its body contains the valid fenced command, PayPal route, release asset URL, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build returned `status=built` for commit `01ead14213610f0609028573f94dbb4b0b32a50c`.
+- Live/raw validation returned HTTP 200 for `README.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, `CLONE_CLI.md`, `NPM_FUNDING.md`, `run-this-first.json`, `dev-agent-start.json`, `clone-cli.json`, `npm-funding.json`, `buyer-index.json`, decoded `agent-buyer-catalog.jsonl`, `llms.txt`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `.well-known/ai-plugin.json`.
+- Live/raw marker validation confirmed the release command or linked route, PayPal URL, and verification gate across the checked surfaces; SHA-256 appears on the dedicated route/manifest surfaces.
+- IndexNow accepted 15 updated owned Pages URLs with `status=200`.
+
+Public routes:
+- Public release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119.
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- NPM funding contract: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json.
+- MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 NPM Release Asset Version Alignment Evidence
 
 Artifacts updated:
