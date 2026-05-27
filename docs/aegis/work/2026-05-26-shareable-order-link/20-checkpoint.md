@@ -5664,3 +5664,36 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages, static browser-only share actions, public JSON/text/YAML/XML, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added one-buyer share route on owned GitHub repo and Pages surfaces.
 - Decision: continue.
+
+## 2026-05-27 One-Buyer Launch Notes Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Send buyer-facing and agent-facing launch notes through owned GitHub channels for the one-buyer share action route.
+
+Completed todos:
+- Rechecked PayPal verifier at slice start; it still returned missing credentials.
+- Read current issue #1, issue #5, and issue #9 context to avoid posting the custom one-lead share route into the digital-kit-specific board.
+- Posted a buyer-facing one-buyer share route launch note to issue #1.
+- Posted an agent-facing one-buyer share action launch note to issue #5.
+- Kept both comments explicit that the route is not payment proof and must not be used for scraped lists, cold spam batches, deception, fake reviews, unauthorized outreach, or private data.
+
+Evidence refs:
+- Buyer-facing launch note: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4553561042.
+- Agent-facing launch note: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553564404.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it turns the one-buyer share route into actual owned-channel buyer/agent notifications without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: owned GitHub issues, GitHub Pages, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; used existing public buyer/order and agent close boards.
+- Decision: continue.

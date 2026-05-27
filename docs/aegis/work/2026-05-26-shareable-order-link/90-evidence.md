@@ -3812,6 +3812,23 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 One-Buyer Launch Notes Evidence
+
+Artifacts/actions:
+- Buyer-facing launch note posted to the public start-here/order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4553561042.
+- Agent-facing launch note posted to the agent close contract board: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4553564404.
+
+Validation:
+- Issue #1 was confirmed open and appropriate for human buyer/order routing.
+- Issue #5 was confirmed open and appropriate for buyer-agent routing.
+- Issue #9 was checked and not used because it is specific to the digital kit ZIP, while the one-buyer share route is for custom one-lead rescue.
+- Both posted comments include the one-buyer share URL, exact PayPal URL, verification gate, and anti-spam/private-data constraints.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- These launch notes are owned-channel notifications, not proof of payment.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-27 One-Buyer Share Action Evidence
 
 Artifacts added/updated:
