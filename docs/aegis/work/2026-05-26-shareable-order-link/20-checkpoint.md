@@ -6364,3 +6364,41 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, GitHub README links, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added release/feed notices only.
 - Decision: continue.
+
+## 2026-05-27 Product README First-View Direct Checkout Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Make the main product repository README put the exact 5 USD PayPal checkout before the buyer-agent manifest, then publish a product release/feed notice for that first-view change.
+
+Completed todos:
+- Confirmed product repo was clean at `a00e699850abc695b4d98de73ab40aef69125986`.
+- Read the top of `README.md` and found the first buyer step was the buyer-agent BuyAction manifest, with PayPal as step 2.
+- Updated `README.md` so `Direct PayPal checkout` is the first section and `https://paypal.me/softjunk/5USD` is step 1.
+- Kept release `v2.29.116`, the buyer card, the agent manifest, the one-rewrite statement, privacy rule, and seller-side PayPal verification gate.
+- Validated the README includes direct checkout heading, PayPal URL, `v2.29.116`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Committed and pushed product commit `a38691f23cc971c2a77ec6524114daad80322227`.
+- Created product release `v2.29.117`.
+- Verified release `v2.29.117` is public, non-draft, non-prerelease, and includes the PayPal URL and verification gate.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Product README: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/README.md.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.117.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the payment action first-view in the primary product README and publishes it through an owned release feed without unsolicited outreach, scraped lists, private data, or fake payment claims.
+- Compatibility boundary: product README, GitHub Release feed, GitHub links, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; updated README first-view copy and release notice only.
+- Decision: continue.

@@ -22,6 +22,29 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Product README First-View Direct Checkout Evidence
+
+Public distribution:
+- Product README: `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/README.md`.
+- Product release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.117`.
+
+Commit:
+- Product README commit: `a38691f23cc971c2a77ec6524114daad80322227`.
+
+Validation:
+- README validation returned `has_direct=true`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+- `gh release view v2.29.117` returned `isDraft=false`, `isPrerelease=false`, `has_paypal=true`, and `has_gate=true`.
+
+Accessibility and privacy guardrails:
+- The edited README section uses a plain Markdown heading and ordered list with explicit link text.
+- The section keeps seller-side PayPal verification as the fulfillment gate.
+- The README and release both state or preserve private-data warnings and do not claim payment arrived.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Cross-Repo README Direct Checkout Release Evidence
 
 Public distribution:
