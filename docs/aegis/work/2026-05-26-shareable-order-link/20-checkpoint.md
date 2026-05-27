@@ -5467,3 +5467,47 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo/package, GitHub Pages, public JSON/text/YAML, public issue/order forms, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added run-first npm script route and clone CLI order form on owned GitHub surfaces.
 - Decision: continue.
+
+## 2026-05-27 Dev-Agent Start Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Extend clone-to-cash into developer-agent contexts: Codespaces, VS Code task runner, Copilot instructions, and coding-agent manifests.
+
+Completed todos:
+- Reran PayPal verifier at slice start; it still returned missing credentials.
+- Audited repo for `.devcontainer/devcontainer.json`, `.vscode/tasks.json`, `DEV_AGENT_START.md`, `dev-agent-start.json`, and current Copilot instructions.
+- Added `DEV_AGENT_START.md` and `dev-agent-start.json`.
+- Added `.devcontainer/devcontainer.json` with run-first commands and environment markers.
+- Added `.vscode/tasks.json` tasks for run-first, preview, handoff, custom pay route, and kit pay route.
+- Updated `.github/copilot-instructions.md` to point at dev-agent/run-first/clone CLI routes.
+- Added npm scripts `dev:first`, `agent:first`, `agent:preview`, `agent:pay`, and `codespaces:first`.
+- Wired the dev-agent route into package metadata, README, AGENTS, run-first manifest, clone CLI manifest, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+- Validated API JSON/JSONL, package install/run scripts, Pages builds, live URLs, raw dot-directory files, releases, and IndexNow.
+- Created releases `v2.29.100`, `root-dev-agent-start-route-v1`, and `quiet-dev-agent-start-route-v1`.
+- Reran PayPal verifier after release/indexing.
+
+Evidence refs:
+- Dev-agent guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/DEV_AGENT_START.md.
+- Dev-agent JSON: https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json.
+- Copilot instructions: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/copilot-instructions.md.
+- Devcontainer: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json.
+- VS Code tasks: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.100, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-dev-agent-start-route-v1, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-dev-agent-start-route-v1.
+- Public issue evidence comment records validation, IndexNow, and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses coding-agent and developer environments to produce local value and route exact PayPal checkout without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub repo/package, GitHub Pages, public JSON/text/YAML, VS Code/Codespaces configs, Copilot instructions, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added dev-agent/IDE surfaces on owned GitHub repo.
+- Decision: continue.
