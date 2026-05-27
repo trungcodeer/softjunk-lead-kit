@@ -22,6 +22,28 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-27 Cross-Repo README Direct Checkout Release Evidence
+
+Public distribution:
+- Root release: `https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-direct-paypal-v1`.
+- Profile release: `https://github.com/trungcodeer/trungcodeer/releases/tag/profile-readme-direct-paypal-v1`.
+- Quiet release: `https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-readme-direct-paypal-v1`.
+
+Validation:
+- Root release validation returned `isDraft=false`, `isPrerelease=false`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+- Profile release validation returned `isDraft=false`, `isPrerelease=false`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+- Quiet release validation returned `isDraft=false`, `isPrerelease=false`, `has_paypal=true`, `has_release=true`, and `has_gate=true`.
+
+Privacy and payment guardrails:
+- Each release states it is a checkout/feed notice, not payment proof.
+- Each release keeps seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true` as the fulfillment gate.
+- Each release forbids or avoids private customer, lead, PayPal, transaction, invoice, phone, email, and address data.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-27 Cross-Repo README First-View Direct Checkout Evidence
 
 Public distribution:

@@ -6327,3 +6327,40 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub README copy, GitHub links, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; updated README first-view copy only.
 - Decision: continue.
+
+## 2026-05-27 Cross-Repo README Direct Checkout Release Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Publish GitHub Release/feed notices for the root, profile, and quiet-lead README direct-checkout updates so watchers, crawlers, and buyer-agents can discover the new first-view 5 USD PayPal route.
+
+Completed todos:
+- Confirmed product repo was clean at `add6cd35624ba0111c63f70a0170416c635d0716`.
+- Confirmed release tags `root-readme-direct-paypal-v1`, `profile-readme-direct-paypal-v1`, and `quiet-readme-direct-paypal-v1` were missing before creation.
+- Created root release `root-readme-direct-paypal-v1`.
+- Created profile release `profile-readme-direct-paypal-v1`.
+- Created quiet release `quiet-readme-direct-paypal-v1`.
+- Verified all three releases are public, non-draft, non-prerelease, and include `https://paypal.me/softjunk/5USD`, product release `v2.29.116`, and the `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Root release: https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-readme-direct-paypal-v1.
+- Profile release: https://github.com/trungcodeer/trungcodeer/releases/tag/profile-readme-direct-paypal-v1.
+- Quiet release: https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-readme-direct-paypal-v1.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sends the first-view checkout update through owned GitHub Release feeds without unsolicited outreach, scraped lists, private data, or fake payment claims.
+- Compatibility boundary: GitHub Releases, GitHub README links, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added release/feed notices only.
+- Decision: continue.
