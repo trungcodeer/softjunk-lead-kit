@@ -4964,3 +4964,28 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Try Now No-Clone Checkout Route Evidence
+
+Artifacts updated:
+- `TRY_NOW.md`
+- `try-now.json`
+- `agents-checkout.json`
+
+Published commit and release:
+- Product commit: `02660a486e9a7d964e24eab6eeb50bf94d822880`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.123.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON validation parsed `try-now.json` and `agents-checkout.json` after the edit.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check` passed.
+- GitHub Pages latest build API returned `built` for commit `02660a486e9a7d964e24eab6eeb50bf94d822880`.
+- Live validation returned HTTP 200 for `TRY_NOW.md`, `try-now.json`, and `agents-checkout.json`; the two JSON files parsed and all three live URLs contained the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted the three updated Pages URLs and returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

@@ -6781,3 +6781,49 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages RSS, public GitHub issues, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; RSS and issue comments are discovery/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Try Now No-Clone Checkout Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the value-first `TRY_NOW` route so a buyer-agent can move from preview intent to the exact $5 PayPal handoff without cloning the repo, waiting for npm registry publish, or relying on stale GitHub package behavior.
+
+Completed todos:
+- Audited top-level package/agent surfaces and found `try-now.json` and `TRY_NOW.md` did not expose the verified no-clone release-tarball command or SHA-256.
+- Updated `TRY_NOW.md` with the release-tarball `npm exec` command, verified release notes URL, SHA-256, PayPal URL, and payment-proof gate.
+- Updated `try-now.json` with `verified_release_url`, `release_tarball_url`, `release_tarball_sha256`, `run_from_release_tarball_doctor`, `run_from_release_tarball_pay_custom`, a `no_clone_pay_custom` command entry, and a stricter verification gate.
+- Updated `agents-checkout.json` with the same release-tarball no-clone route for buyer-agent checkout readers.
+- Verified the actual release-tarball command returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Pushed product commit `02660a486e9a7d964e24eab6eeb50bf94d822880`.
+- Created public product release `v2.29.123`.
+- Confirmed GitHub Pages latest build was `built` for commit `02660a486e9a7d964e24eab6eeb50bf94d822880`.
+- Validated live `TRY_NOW.md`, `try-now.json`, and `agents-checkout.json` returned HTTP 200 and included the no-clone command, release tarball, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; both JSON files parsed.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `02660a486e9a7d964e24eab6eeb50bf94d822880`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.123.
+- Live Try Now markdown: https://trungcodeer.github.io/softjunk-lead-kit/TRY_NOW.md.
+- Live Try Now JSON: https://trungcodeer.github.io/softjunk-lead-kit/try-now.json.
+- Live agents checkout JSON: https://trungcodeer.github.io/softjunk-lead-kit/agents-checkout.json.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an intent-rich "try before paying" path so agents can generate local value and then route to exact $5 PayPal checkout without spam, scraping, deception, or false payment claims.
+- Compatibility boundary: GitHub Pages markdown/JSON, GitHub Release tarball, public GitHub release notes, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; Try Now remains a discovery/payment-intent surface, not payment proof.
+- Decision: continue.
