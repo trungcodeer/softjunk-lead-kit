@@ -7384,3 +7384,56 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; buyer-agent relay remains a checkout/payment-intent surface, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Commerce Graph No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the structured commerce graph so assistants, crawlers, VAs, and buyer-agents can inspect Product/Offer/BuyAction/PayAction nodes plus executable no-clone checkout proof, verified release notes, SHA-256, PayPal URL, and the payment-proof gate.
+
+Completed todos:
+- Audited `commerce-graph.html`, `commerce-graph.json`, and `commerce-graph.txt`; all had PayPal and the verification gate but lacked the release-tarball no-clone command, verified release URL, and SHA-256.
+- Updated `commerce-graph.html` with no-clone proof in metadata, hero actions, action graph, visible proof section, copyable agent instruction, and footer safety language.
+- Updated `commerce-graph.json` with a `SoftwareSourceCode` no-clone checkout proof node and a HowTo step that includes the command, verified release URL, release tarball URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Updated `commerce-graph.txt` with no-clone checkout proof steps.
+- Validated `commerce-graph.json` parses locally and exposes the no-clone checkout proof node.
+- Validated all three changed files contain the command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed non-JSON-LD inline JavaScript in `commerce-graph.html`; there were zero runtime scripts.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live `commerce-graph.html` through Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `ebf601616ab2335f02be00c608a7183fa4971131`.
+- Refreshed public Commerce Graph Gist `844295134d4a7d721b7eec4963eae1db` for `commerce-graph.json` and `commerce-graph.txt`.
+- Created public product release `v2.29.135`.
+- Confirmed GitHub Pages latest build was `built` for commit `ebf601616ab2335f02be00c608a7183fa4971131`.
+- Validated live Pages `commerce-graph.html`, `commerce-graph.json`, and `commerce-graph.txt` returned HTTP 200 and included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Validated raw GitHub and raw Gist copies of `commerce-graph.json` and `commerce-graph.txt` include the same required markers; JSON parsed.
+- Submitted the three updated Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `ebf601616ab2335f02be00c608a7183fa4971131`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.135.
+- Live commerce graph page: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html.
+- Live commerce graph JSON-LD: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json.
+- Live commerce graph text: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt.
+- Commerce Graph Gist: https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue auditing remaining public PayPal surfaces for missing no-clone checkout proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the structured commerce graph that buyer-agents use before routing a fitting buyer to the exact checkout without spam, scraping, deception, auto-sending, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/text, GitHub Pages HTML/JSON/text, raw GitHub JSON/text, public Gist, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; commerce graph remains a checkout/payment-intent surface, not payment proof.
+- Decision: continue.

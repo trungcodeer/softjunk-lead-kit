@@ -22,6 +22,39 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Commerce Graph No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `commerce-graph.html`
+- `commerce-graph.json`
+- `commerce-graph.txt`
+- Public Gist `844295134d4a7d721b7eec4963eae1db`: `commerce-graph.json` and `commerce-graph.txt`
+
+Published commit and release:
+- Product commit: `ebf601616ab2335f02be00c608a7183fa4971131`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.135.
+
+Validation:
+- Local marker validation confirmed all three updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local JSON-LD validation parsed `commerce-graph.json` after the edit and found the no-clone checkout proof node.
+- Non-JSON-LD inline JavaScript validation found zero runtime scripts in `commerce-graph.html`.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- commerce-graph.html commerce-graph.json commerce-graph.txt` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `commerce-graph.html` included `No-clone checkout proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh gist edit` refreshed public Gist `844295134d4a7d721b7eec4963eae1db` from local `commerce-graph.json` and `commerce-graph.txt`.
+- GitHub Pages latest build API returned `built` for commit `ebf601616ab2335f02be00c608a7183fa4971131`.
+- Live Pages validation returned HTTP 200 for `commerce-graph.html`, `commerce-graph.json`, and `commerce-graph.txt`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`; JSON parsed.
+- Raw GitHub validation returned HTTP 200 for `commerce-graph.json` and `commerce-graph.txt`; both included the same required markers and the JSON parsed.
+- Raw Gist validation confirmed `commerce-graph.json` and `commerce-graph.txt` include the same required markers and the JSON parsed.
+- Edge headless DOM dump for live `commerce-graph.html` included `No-clone checkout proof`, `npm exec --yes --package`, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.135` is public, non-draft, non-prerelease, and targets `ebf601616ab2335f02be00c608a7183fa4971131`.
+- IndexNow POST submitted `commerce-graph.html`, `commerce-graph.json`, and `commerce-graph.txt`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Buyer-Agent Relay No-Clone Checkout Proof Evidence
 
 Artifacts updated:
