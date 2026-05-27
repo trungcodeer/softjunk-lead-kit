@@ -5381,3 +5381,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages, public JSON/text/YAML, public GitHub issue board/form, PayPal.Me, manual private delivery after seller-side verification.
 - New owner/branch/fallback: added IndexNow key files on owned root Pages host; no new fulfillment owner.
 - Decision: continue.
+
+## 2026-05-27 Clone CLI Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Use observed clone traffic by adding a local-first CLI that turns a clone or GitHub package run into immediate useful follow-up copy, buyer handoff copy, PayPal notes, and exact 5 USD checkout routes.
+
+Completed todos:
+- Re-read continuation guidance and current worklog state.
+- Reran PayPal verifier at slice start; it still returned missing credentials.
+- Checked GitHub traffic; product/root/quiet views were 0 while clone counts were nonzero, making clone/install surfaces the highest-leverage owned channel.
+- Used the CLI creator workflow to choose Node, matching the existing dependency-free package/MCP setup.
+- Added `bin/softjunk-lead-kit.js` with `doctor`, `rescue`, `send`, `kit`, and `pay` commands and stable `--json` output.
+- Added `CLONE_CLI.md`, `clone-cli.json`, package bin metadata, and `.npmignore`.
+- Wired clone CLI route into README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI/plugin/llms, root llms, and quiet llms.
+- Validated local CLI, raw GitHub CLI, npm exec from GitHub package, API JSON/JSONL, live Pages URLs, and GitHub Pages builds.
+- Created releases `v2.29.98`, `root-clone-cli-route-v1`, and `quiet-clone-cli-route-v1`.
+- Submitted 14 owned URLs to IndexNow; response was `200`.
+- Reran PayPal verifier after release/indexing.
+
+Evidence refs:
+- CLI manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json.
+- CLI docs: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/CLONE_CLI.md.
+- Raw CLI: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/bin/softjunk-lead-kit.js.
+- GitHub package command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json`.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.98, https://github.com/trungcodeer/trungcodeer.github.io/releases/tag/root-clone-cli-route-v1, and https://github.com/trungcodeer/quiet-lead-follow-up/releases/tag/quiet-clone-cli-route-v1.
+- Public issue evidence comment records validation, IndexNow, and payment gate status.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, especially surfaces that turn clone/package execution into buyer action, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it targets observed clone traffic with a runnable local tool that creates value and routes exact PayPal payment without spam, scraping, deception, or fake payment claims.
+- Compatibility boundary: GitHub repo/package, GitHub Pages, public JSON/text/YAML, public issue/order forms, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added npm/GitHub package execution as an owned clone/install route.
+- Decision: continue.
