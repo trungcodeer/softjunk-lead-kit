@@ -1,3 +1,13 @@
+GitHub Sponsor button route:
+- Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
+- Sponsor markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+- Sponsor JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
+- Sponsor custom URLs: https://paypal.me/softjunk/5USD, https://trungcodeer.github.io/send-5/, https://trungcodeer.github.io/5/, https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+- Run-first JSON: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
+- Dev-agent JSON: https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json
+- Order form after PayPal: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
+- Gate: PAYPAL_PAYMENT_VERIFIED=true
+
 Dev-agent start route:
 - Markdown: https://trungcodeer.github.io/softjunk-lead-kit/DEV_AGENT_START.md
 - JSON: https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json
