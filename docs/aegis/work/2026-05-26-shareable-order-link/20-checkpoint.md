@@ -5777,3 +5777,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub profile repo, GitHub Pages `.well-known`, OpenAPI/ai-plugin JSON/YAML, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; added profile-level agent discovery as another owned public route.
 - Decision: continue.
+
+## 2026-05-27 Plumbing Buyer Send Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Add a high-intent plumbing emergency/missed-call one-buyer send packet that gives copy-ready DM, email, PayPal note, preview route, one-buyer share route, exact 5 USD PayPal checkout, and verification gate.
+
+Completed todos:
+- Added `plumbing-buyer-send.html`, `plumbing-buyer-send.json`, and `plumbing-buyer-send.txt`.
+- Wired the plumbing route into README, AGENTS, agents-checkout, buyer-index, agent-buyer-catalog, product OpenAPI, ai-plugin, llms, robots, and sitemap.
+- Validated JSON, JSONL, XML, OpenAPI YAML, markers, and Playwright/Edge desktop/mobile behavior.
+- Pushed commit `4db1c37944faf81658c003a4af64076ae24289b0` and release `v2.29.105`.
+- Created owned public buyer issue #10 for the plumbing route.
+- Wired issue #10 back into plumbing JSON/text, README, AGENTS, llms, agents-checkout, buyer-index, and agent-buyer-catalog.
+- Pushed commit `015c0c4ae9ab018f464263991e5500861ba8990e` and release `v2.29.106`.
+- Validated live GitHub Pages HTML/JSON/TXT and discovery surfaces; all returned HTTP 200 and contained plumbing route/payment/gate markers.
+- Submitted plumbing route URLs to IndexNow; API returned `200 OK`.
+- Reran the PayPal verifier; it still returned missing credentials.
+
+Evidence refs:
+- Plumbing buyer send page: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html.
+- Plumbing buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json.
+- Plumbing buyer send text: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt.
+- Public plumbing buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/10.
+- Release refs: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.105 and https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.106.
+
+Blocked-on items:
+- Actual payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue legitimate owned-channel conversion/discovery work, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a legitimate one-buyer send packet and owned public issue for a high-intent plumbing lead recovery case without spam, scraping, deception, unauthorized outreach, or fake payment claims.
+- Compatibility boundary: owned GitHub repo, GitHub Pages, JSON/TXT/YAML/XML discovery, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; added a plumbing-specific buyer route and public issue as owned discovery surfaces.
+- Decision: continue.

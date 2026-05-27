@@ -3812,6 +3812,40 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-27 Plumbing Buyer Send Route Evidence
+
+Artifacts added/updated:
+- `plumbing-buyer-send.html`: accessible one-buyer page with copy-ready DM, email draft link, PayPal note, free plumbing preview route, one-buyer share route, exact 5 USD PayPal URL, and verification gate.
+- `plumbing-buyer-send.json`: machine-readable plumbing buyer send packet with fit rules, copy, issue URL, payment URL, order form, and verification gate.
+- `plumbing-buyer-send.txt`: plain-text plumbing buyer send packet.
+- README and AGENTS plumbing fast-path sections.
+- Discovery wiring in `agents-checkout.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, `.well-known/openapi.yaml`, `.well-known/ai-plugin.json`, `llms.txt`, `robots.txt`, and `sitemap.xml`.
+- Owned public buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/10.
+
+Validation:
+- `ConvertFrom-Json` parsed `plumbing-buyer-send.json`, `agents-checkout.json`, `buyer-index.json`, and `.well-known/ai-plugin.json`.
+- Every line of `agent-buyer-catalog.jsonl` parsed as JSON.
+- XML parse confirmed `sitemap.xml` includes `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html`.
+- Python/PyYAML parsed `.well-known/openapi.yaml` and confirmed `/plumbing-buyer-send.html`, `/plumbing-buyer-send.json`, and `/plumbing-buyer-send.txt` paths.
+- Playwright/Edge desktop and mobile checks loaded `plumbing-buyer-send.html`, confirmed title, H1, 3 PayPal links, JSON link, no horizontal overflow, mailto draft generation, PayPal note content, and copy-button status.
+- Releases created: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.105 and https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.106.
+- Live GitHub Pages validation returned HTTP 200 and expected markers for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/robots.txt`
+- IndexNow POST submitted plumbing route and discovery URLs and returned `200 OK`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-27 Profile AI Discovery Contract Evidence
 
 Artifacts added/updated in `trungcodeer/trungcodeer`:
