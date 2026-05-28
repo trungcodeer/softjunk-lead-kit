@@ -7559,3 +7559,14 @@ Latest adjacent-discovery refresh:
 - Live verification returned `live_send_route_ok urls=6 product_commit=473bd676825f17e23aef695e750ba60fd29390de root_commit=04d736fc4e994adf4c75f0c1ece90251f2c2ef9a`.
 - IndexNow returned `indexnow_send_route_ok status=200 urls=6 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 AI Action Manifest Package Route Refresh Evidence
+
+- Product commit `cfcc7032b63d1f469408f4ac64e10515ee9c6741` refreshed `.well-known/agent-card.json`, `.well-known/ai-action-checkout.json`, `.well-known/ai-plugin.json`, `.well-known/mcp-checkout-server.json`, `.well-known/openapi.yaml`, `.well-known/paypal-buy-action.json`, `.well-known/paypal-payment.json`, `.well-known/softjunk-offer.json`, `AI_ACTION_CHECKOUT.md`, `agent-card.json`, `ai-action-checkout.json`, `mcp-checkout-server.json`, and `paypal-buy-action.json`.
+- Root commit `fb101782736003a922cdbf6e84be2e77b499fe4c` refreshed `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `.well-known/paypal-buy-action.json`, `.well-known/paypal-payment.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, `ai.json`, `paypal-buy-action.json`, and `root-offer.json`.
+- Public Gist `044280811978a796652e72a7b4228888` was refreshed with `ai-action-checkout.json`, `AI_ACTION_CHECKOUT.md`, and `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`; verification returned `gist_ai_action_route_ok files=3 id=044280811978a796652e72a7b4228888`.
+- Validation passed: product JSON/OpenAPI/diff check returned `product_action_manifest_local_ok json=11 yaml=1 diff_check=ok`; root returned `root_action_manifest_local_ok json=9 yaml=1 diff_check=ok`; `npm pack --dry-run --json` returned `product_pack_dry_run_ok entryCount=213`.
+- Pages runs completed: product `26575972883` and root `26575972845`.
+- Live verification returned `live_action_manifest_route_ok product_urls=12 root_urls=10 product_commit=cfcc7032b63d1f469408f4ac64e10515ee9c6741 root_commit=fb101782736003a922cdbf6e84be2e77b499fe4c`.
+- IndexNow returned `indexnow_action_manifest_route_ok status=200 urls=22 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

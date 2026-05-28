@@ -10165,3 +10165,46 @@ DriftCheckDraft:
 - Compatibility boundary: product/root GitHub Pages, GitHub package execution, MCP relay metadata, owned public Gist, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package execution is primary and `v2.29.151` remains an explicitly labeled fallback tarball only.
 - Decision: continue.
+
+## 2026-05-28 AI Action Manifest Package Route Refresh Checkpoint
+
+Current todo:
+- Keep AI/action/plugin/OpenAPI manifests aligned with the current GitHub package and MCP relay checkout route.
+- Mirror the route to the existing AI action public Gist.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Refresh product/root `.well-known`, top-level action manifests, OpenAPI metadata, and the AI action Gist so the current `v2.29.161` GitHub package checkout route is primary and the old release tarball remains fallback only.
+
+Completed todos:
+- Re-read the latest intent/checkpoint/evidence, goal state, and product/root worktrees after context compaction.
+- Updated product AI/action/agent/MCP/PayPal manifests and `AI_ACTION_CHECKOUT.md` with the current GitHub package checkout command, agent relay command, MCP tool `get_softjunk_agent_relay`, release `v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, PayPal URL, and seller-side verification gate.
+- Updated root `.well-known` and top-level AI/PayPal/root offer manifests with the same current route.
+- Refreshed public Gist `044280811978a796652e72a7b4228888` files `ai-action-checkout.json`, `AI_ACTION_CHECKOUT.md`, and `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`.
+- Validated JSON, OpenAPI YAML, `git diff --check`, Gist markers, and `npm pack --dry-run --json`.
+- Committed and pushed product commit `cfcc7032b63d1f469408f4ac64e10515ee9c6741` and root commit `fb101782736003a922cdbf6e84be2e77b499fe4c`.
+- Waited for product Pages run `26575972883` and root Pages run `26575972845`; both completed successfully.
+- Verified 22 live product/root action manifest URLs with cache busting.
+- Submitted the 22 owned Pages URLs to IndexNow.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Public Gist verification returned `gist_ai_action_route_ok files=3 id=044280811978a796652e72a7b4228888`.
+- Local validation returned `product_action_manifest_local_ok json=11 yaml=1 diff_check=ok`, `root_action_manifest_local_ok json=9 yaml=1 diff_check=ok`, and `product_pack_dry_run_ok entryCount=213`.
+- Live Pages verification returned `live_action_manifest_route_ok product_urls=12 root_urls=10 product_commit=cfcc7032b63d1f469408f4ac64e10515ee9c6741 root_commit=fb101782736003a922cdbf6e84be2e77b499fe4c`.
+- IndexNow returned `indexnow_action_manifest_route_ok status=200 urls=22 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens AI/action/plugin/OpenAPI and Gist-discoverable checkout routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product/root GitHub Pages, GitHub package execution, MCP relay metadata, owned public Gist, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package execution remains primary, MCP exposes `get_softjunk_agent_relay`, and `v2.29.151` remains fallback only where explicitly labeled.
+- Decision: continue.
