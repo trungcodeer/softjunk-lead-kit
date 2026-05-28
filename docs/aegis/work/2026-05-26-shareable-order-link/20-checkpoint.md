@@ -8158,3 +8158,54 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/CSS, GitHub Pages HTML/CSS, raw GitHub HTML, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; niche follow-up pages remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Entry Surface No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the root homepage and AI-agent entry docs so both human buyers and coding/model agents see the executable no-clone checkout proof before the PayPal route.
+
+Completed todos:
+- Audited root and agent entry surfaces for PayPal links with missing no-clone command/release/SHA proof.
+- Updated `index.html`, `CODEX.md`, `CLAUDE.md`, and `GEMINI.md`.
+- Added no-clone checkout proof to root homepage metadata, JSON-LD, navigation, hero action, visible proof section, and payment boundary copy.
+- Added no-clone checkout proof, verified release URL, release tarball URL, and SHA-256 to Codex, Claude, and Gemini buyer-agent quickstart docs.
+- Validated all four files contain the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Parsed root homepage JSON-LD and runtime JavaScript locally.
+- Ran the actual release-tarball checkout command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Rendered local and live root homepage with Edge headless DOM dumps and confirmed no-clone checkout markers appear.
+- Pushed product commit `d972bd6ab0ca2702f20f2c22a72faca54fe360da`.
+- Created public product release `v2.29.150`.
+- Confirmed GitHub Pages latest build was `built` for commit `d972bd6ab0ca2702f20f2c22a72faca54fe360da`.
+- Validated live Pages and raw GitHub copies of `index.html`, `CODEX.md`, `CLAUDE.md`, and `GEMINI.md` returned HTTP 200 and included the required markers.
+- Validated product release `v2.29.150` is public, non-draft, non-prerelease, targets commit `d972bd6ab0ca2702f20f2c22a72faca54fe360da`, and includes the same required markers.
+- Submitted the root homepage and three agent-doc Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `d972bd6ab0ca2702f20f2c22a72faca54fe360da`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.150.
+- Live root homepage: https://trungcodeer.github.io/softjunk-lead-kit/.
+- Live Codex instructions: https://trungcodeer.github.io/softjunk-lead-kit/CODEX.md.
+- Live Claude instructions: https://trungcodeer.github.io/softjunk-lead-kit/CLAUDE.md.
+- Live Gemini instructions: https://trungcodeer.github.io/softjunk-lead-kit/GEMINI.md.
+- Verified release tarball route: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz.
+- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm publish remains blocked by missing npm login on this machine; the no-clone release tarball route remains the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving owned public/package-native buyer surfaces while waiting for actual PayPal proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens the primary human entry point and model-specific agent entry docs without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/Markdown, GitHub Pages HTML/Markdown, raw GitHub HTML/Markdown, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; entry surfaces remain checkout/payment-intent surfaces, not payment proof.
+- Decision: continue.

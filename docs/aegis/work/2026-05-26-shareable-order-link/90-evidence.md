@@ -22,6 +22,36 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Entry Surface No-Clone Checkout Proof Evidence
+
+Artifacts updated:
+- `index.html`
+- `CODEX.md`
+- `CLAUDE.md`
+- `GEMINI.md`
+
+Published commit and release:
+- Product commit: `d972bd6ab0ca2702f20f2c22a72faca54fe360da`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.150.
+
+Validation:
+- Local marker validation confirmed all four updated files include the no-clone `npm exec --yes --package` command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Local HTML validation parsed both root homepage JSON-LD blocks and the runtime JavaScript.
+- Release-tarball command validation returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `git diff --check -- index.html CODEX.md CLAUDE.md GEMINI.md` passed with only CRLF normalization warnings.
+- Edge headless DOM dump for local `index.html` included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, PayPal URL, `Verify checkout`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages latest build API returned `built` for commit `d972bd6ab0ca2702f20f2c22a72faca54fe360da`.
+- Live Pages validation returned HTTP 200 for the root homepage plus `CODEX.md`, `CLAUDE.md`, and `GEMINI.md`; all included the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Raw GitHub validation returned HTTP 200 for `index.html`, `CODEX.md`, `CLAUDE.md`, and `GEMINI.md`; all included the same required markers.
+- Edge headless DOM dump for the live root homepage included `No-clone checkout proof`, `npm exec --yes --package`, `Verified release`, `Verify checkout`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.150` is public, non-draft, non-prerelease, targets `d972bd6ab0ca2702f20f2c22a72faca54fe360da`, and its body includes the no-clone command, release tarball URL, verified release URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow POST submitted the root homepage plus `CODEX.md`, `CLAUDE.md`, and `GEMINI.md`; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Niche Follow-Up No-Clone Checkout Proof Evidence
 
 Artifacts updated:
