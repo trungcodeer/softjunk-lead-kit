@@ -6566,3 +6566,29 @@ Latest local slice:
 - Local validation passed: JSON parse 63 files, JSONL parse 53 records, XML parse, OpenAPI YAML parse, marker audit zero-missing, `npm run cli:smoke`, `npm pack --dry-run --json` with `entryCount=204`, and `git diff --check` with only CRLF warnings.
 - Full artifact and marker details are in the earlier `2026-05-28 Public Gist Checkout Index Evidence` section.
 - Payment is still not verified; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Public Gist Checkout Index Deploy Evidence
+
+Published commit:
+- Commit: `9954abf940856323fea0d415cb8d763b04351622`.
+- Message: `Add public Gist checkout index`.
+- GitHub Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26555446210.
+- Pages conclusion: `success`.
+
+Live verification:
+- Initial live batch confirmed HTTP 200 and zero missing markers for `public-gist-checkout-index.json`, `public-gist-checkout-index.md`, `public-gist-checkout-index.txt`, `README.md`, `llms.txt`, and `feed.xml`.
+- Follow-up live batch confirmed HTTP 200 and zero missing markers for `buyer-index.json`, `agent-offer.json`, `product-feed.json`, `npm-publish-status.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `agent-buyer-catalog.jsonl`, `20-checkpoint.md`, and `90-evidence.md`.
+- Live sitemap and robots route checks confirmed the three public Gist checkout index URLs are present.
+- Live index checks confirmed all eight public Gist IDs are present in the JSON, Markdown, and text index variants.
+- Live JSON parse confirmed `public_gists=8` in `public-gist-checkout-index.json`.
+- Live JSON parse confirmed `publish_readiness.entry_count=204` in `npm-publish-status.json`.
+
+Discovery submission:
+- IndexNow POST returned `status=200`.
+- Submitted URL count: `18`.
+- Key location: https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

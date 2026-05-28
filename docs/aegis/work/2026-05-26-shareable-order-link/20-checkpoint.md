@@ -9081,3 +9081,41 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Pages JSON/Markdown/text/XML/YAML, owned public Gists, IndexNow for owned Pages URLs, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; the public Gist index is a discovery aggregator only, while npmjs remains owner-auth gated and executable checkout remains the verified release tarball/GitHub package route.
 - Decision: continue.
+
+## 2026-05-28 Public Gist Checkout Index Deploy Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Post-push Pages deployment, live verification, IndexNow submission, and PayPal verifier check for the public Gist checkout index.
+
+Completed todos:
+- Committed and pushed `9954abf940856323fea0d415cb8d763b04351622` (`Add public Gist checkout index`) to `main`.
+- Confirmed GitHub Pages run `26555446210` completed with conclusion `success`.
+- Live-verified the new index files, changed manifests, sitemap/robots route entries, docs, and live JSON parsing with cache-busting.
+- Submitted 18 changed owned Pages URLs to IndexNow; the API returned HTTP 200.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26555446210.
+- Live verification returned HTTP 200 and zero missing markers for the new index files, README, `llms.txt`, `feed.xml`, buyer/agent/product manifests, `npm-publish-status.json`, `.well-known` manifests, OpenAPI, JSONL catalog, checkpoint docs, sitemap, and robots.
+- Live `public-gist-checkout-index.json` parsed with `public_gists=8`.
+- Live `npm-publish-status.json` parsed with `publish_readiness.entry_count=204`.
+- IndexNow response: `status=200`, `urls=18`, key location `https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it deployed and verified the AI-native Gist checkout index while preserving the PayPal proof gate.
+- Compatibility boundary: GitHub repo files, GitHub Pages, owned public Gists, IndexNow for owned Pages URLs, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; payment verification remains seller-side only.
+- Decision: continue.
