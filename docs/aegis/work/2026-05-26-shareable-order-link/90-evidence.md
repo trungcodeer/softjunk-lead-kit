@@ -84,6 +84,24 @@ Payment gate after publish:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Latest Release NPM Status Promotion Evidence
+
+Release published:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156.
+- Title: `v2.29.156 npm publish-ready checkout route`.
+- Target commit: `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- Published at: `2026-05-28T03:57:31Z`.
+
+Validation:
+- `gh release view v2.29.156 --json tagName,name,url,isDraft,isPrerelease,publishedAt,targetCommitish,body` returned the release body and confirmed `isDraft=false`, `isPrerelease=false`, and target `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- Marker validation for release `v2.29.156` returned no missing markers across: `v2.29.156`, target commit, `npm-publish-status.json`, `npm-funding.json`, `NPM_PUBLISH_WORKFLOW.yml.example`, `E404`, `ENEEDAUTH`, no-clone checkout command, `v2.29.155`, verified tarball URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh release list --limit 3 --json tagName,name,isDraft,isPrerelease,isLatest,publishedAt` returned `v2.29.156` with `isLatest=true`, `isDraft=false`, and `isPrerelease=false`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 GitHub-Native Current Proof Evidence
 
 Artifacts updated:

@@ -8915,3 +8915,43 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Pages JSON/text/XML, local CLI/MCP surfaces, GitHub Actions manual workflow, npmjs publish only after owner auth, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; npmjs publish is explicitly owner-auth gated, while the current fallback remains the verified GitHub release tarball and GitHub package route.
 - Decision: continue.
+
+## 2026-05-28 Latest Release NPM Status Promotion Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Promote the new npm publish-readiness status and PayPal checkout proof into the latest GitHub Release so GitHub-native visitors and buyer-agents see the current route without reading repository files first.
+
+Completed todos:
+- Re-read the latest checkpoint, evidence, product worktree state, latest release state, and PayPal verifier state.
+- Confirmed worktree started clean at commit `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- Confirmed latest release before this slice was `v2.29.155`, targeting an older commit before the npm publish-status slice.
+- Created release `v2.29.156` titled `v2.29.156 npm publish-ready checkout route`, targeting `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- Included the npm publish status URL, npm funding URL, workflow template URL, `E404`, `ENEEDAUTH`, no-clone checkout command, canonical proof release `v2.29.155`, verified tarball URL, SHA-256, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` gate in the release body.
+- Verified `v2.29.156` is public, non-draft, non-prerelease, targets `afde34591ce5cdac053d97029c5adfcb1acb5b8b`, and has no missing required markers.
+- Verified `gh release list --limit 3` reports `v2.29.156` as `isLatest=true`.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Latest release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156.
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces, owner-auth npm publish if credentials become available, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the current package-readiness and checkout proof onto the highest-signal GitHub release surface without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Releases, GitHub repo/Pages JSON, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; latest release now points to the npm status slice while executable checkout still uses the verified `v2.29.151` tarball and canonical proof release `v2.29.155`.
+- Decision: continue.
