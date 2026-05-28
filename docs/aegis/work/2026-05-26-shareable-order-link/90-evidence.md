@@ -65,6 +65,12 @@ Local validation:
 - `npm pack --dry-run --json` passed with `entryCount=201`.
 - `git diff --check` passed with only CRLF normalization warnings.
 
+Published commit and live verification:
+- Commit: `3148a62bb1367ad16b26770fc142f7758f62cc97`.
+- GitHub Pages run: `26554460529`, `pages build and deployment`, conclusion `success`.
+- Live Pages validation returned HTTP 200 and `missingCount=0` for 20 checked surfaces: `agent-offer.json`, `buyer-index.json`, `product-feed.json`, `answer-engine.json`, `agents-checkout.json`, `ai-action-checkout.json`, `.well-known/ai-action-checkout.json`, `agent-card.json`, `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `.well-known/softjunk-offer.json`, `commerce-graph.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `llms.txt`, `README.md`, `agent-buyer-catalog.jsonl`, `20-checkpoint.md`, and `90-evidence.md`.
+- The live validator UTF-8 decoded byte responses for `agent-buyer-catalog.jsonl` before marker checks.
+
 Payment gate:
 - This slice has not verified a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
@@ -6464,5 +6470,5 @@ Payment gate:
 Latest local slice:
 - Central agent-native surfaces now include release `v2.29.156`, `npm-publish-status.json`, `NPM_PUBLISH_WORKFLOW.yml.example`, npmjs `E404`, local npm auth `ENEEDAUTH`, https://paypal.me/softjunk/5USD, and `PAYPAL_PAYMENT_VERIFIED=true`.
 - Updated files are listed in the earlier `Central Agent-Native Latest Release Status Propagation Evidence` section in this file.
-- Local validation passed: marker audit `missingCount=0`, JSON parse 62 files, JSONL parse 52 records, OpenAPI YAML parse, `node --check` for CLI/MCP, `npm run cli:smoke`, `npm pack --dry-run --json`, and `git diff --check`.
+- Local and live validation passed: marker audit `missingCount=0`, JSON parse 62 files, JSONL parse 52 records, OpenAPI YAML parse, `node --check` for CLI/MCP, `npm run cli:smoke`, `npm pack --dry-run --json`, `git diff --check`, Pages run `26554460529`, and live marker checks for 20 public surfaces.
 - Payment is still not verified; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

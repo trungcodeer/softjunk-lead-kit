@@ -8971,6 +8971,9 @@ Completed todos:
 - Audited central agent/native checkout surfaces for missing latest-release/npm/payment markers.
 - Added latest release status metadata to agent offer, buyer index, product feed, answer engine, agents checkout, AI action checkout, A2A agent cards, AI plugin manifest, commerce graph, MCP manifests, OpenAPI, well-known offer, README, `llms.txt`, and the agent buyer catalog JSONL.
 - Validated JSON, JSONL, OpenAPI YAML, marker coverage, CLI syntax, MCP syntax, CLI smoke output, npm pack dry-run, and diff whitespace.
+- Published commit `3148a62bb1367ad16b26770fc142f7758f62cc97` to `main`.
+- GitHub Pages run `26554460529` completed successfully for the propagation commit.
+- Live-verified 20 public Pages surfaces with cache-busting and UTF-8 byte decoding where needed; all returned HTTP 200 and `missingCount=0` for the latest release/npm/payment markers.
 
 Evidence refs:
 - Marker audit returned `missingCount=0` for all checked central files.
@@ -8981,13 +8984,15 @@ Evidence refs:
 - `npm run cli:smoke` passed.
 - `npm pack --dry-run --json` passed with `entryCount=201`.
 - `git diff --check` passed with only CRLF normalization warnings.
+- Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26554460529.
+- Live checked surfaces included agent manifests, AI plugin, OpenAPI, commerce graph, MCP manifests, README, `llms.txt`, `agent-buyer-catalog.jsonl`, and Aegis checkpoint/evidence docs.
 
 Blocked-on items:
 - Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
 - Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
 
 Next step:
-- Commit and push the propagation slice, wait for GitHub Pages, live-check the updated surfaces, and rerun the PayPal verifier.
+- Rerun the PayPal verifier. Do not mark the goal complete unless seller-side PayPal evidence exists or the verifier returns true.
 
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
