@@ -9625,3 +9625,42 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Issues, product/root GitHub Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; Issue #1 and #5 are owned public checkout surfaces, GitHub package checkout remains preferred, and the pinned tarball remains fallback while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Stale GitHub Issue Body Checkout Refresh Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/GitHub-native conversion surfaces available while waiting for actual PayPal evidence.
+- Remove stale checkout-proof body text from public buyer/order issues so current readers and agents do not prefer the older tarball-first route.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Refresh existing public GitHub issue bodies that still advertised `v2.29.155` checkout proof so they point to the current `v2.29.159` GitHub-package route.
+
+Completed todos:
+- Re-read current product/root worktree state, latest checkpoint, PayPal verifier output, and public GitHub issue bodies before editing external state.
+- Audited Issues #1, #3, #5, #7, #9, #10, #11, #12, and #13 for stale/current checkout markers.
+- Confirmed #1 and #5 were already current after the previous slice.
+- Updated stale issue bodies #3, #7, #9, #10, #11, #12, and #13 by replacing only the `Current no-clone checkout proof` body section with the current `v2.29.159` package-native checkout route.
+- Did not create additional comments for the seven stale issues, to avoid duplicate notifications.
+- Verified all nine relevant issue bodies through GitHub CLI/API output.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Issues refreshed: https://github.com/trungcodeer/softjunk-lead-kit/issues/3, https://github.com/trungcodeer/softjunk-lead-kit/issues/7, https://github.com/trungcodeer/softjunk-lead-kit/issues/9, https://github.com/trungcodeer/softjunk-lead-kit/issues/10, https://github.com/trungcodeer/softjunk-lead-kit/issues/11, https://github.com/trungcodeer/softjunk-lead-kit/issues/12, and https://github.com/trungcodeer/softjunk-lead-kit/issues/13.
+- Verification returned `issue_bodies_live_ok=9 stale_v229155=0 latest=v2.29.159`.
+- Verification confirmed all nine issue bodies include `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it prevents central and niche public buyer/order issue bodies from routing agents to stale checkout proof without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Issues, product/root GitHub Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; public issue bodies now prefer the GitHub package checkout route, with pinned tarball fallback retained, while payment verification remains seller-side only.
+- Decision: continue.
