@@ -10753,3 +10753,10 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Pages text files, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; fallback semantics remain explicit.
 - Decision: continue.
+
+Live verification update:
+- Quiet commit `24b6499f395f3156224a1855736ac5811394186d` pushed and Pages run `26593383689` completed successfully.
+- Product commit `dd0b2c1da0ab2e32e713dc453be64097f2cc7291` pushed and Pages run `26593397464` completed successfully.
+- Live `llms.txt` verification returned `live_llms_current_tarball_ok product=dd0b2c1 quiet=24b6499`.
+- IndexNow returned `indexnow_llms_current_tarball_ok status=200 urls=2`.
+- PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

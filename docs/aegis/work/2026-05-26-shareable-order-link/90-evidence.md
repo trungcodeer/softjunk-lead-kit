@@ -7845,4 +7845,9 @@ Latest adjacent-discovery refresh:
   - `Stable release-tarball fallback`.
 - Post-audit verified quiet `llms.txt` has current tarball lines at release-command positions and product `llms.txt` has current tarball primary/fallback wording.
 - `git diff --check` passed for product; quiet returned only a line-ending normalization warning for `llms.txt`.
+- Quiet commit `24b6499f395f3156224a1855736ac5811394186d` pushed and Pages run `26593383689` completed successfully.
+- Product commit `dd0b2c1da0ab2e32e713dc453be64097f2cc7291` pushed and Pages run `26593397464` completed successfully.
+- Live verification returned `live_llms_current_tarball_ok product=dd0b2c1 quiet=24b6499`.
+- IndexNow accepted both updated `llms.txt` URLs: `indexnow_llms_current_tarball_ok status=200 urls=2`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
