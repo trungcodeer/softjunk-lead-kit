@@ -8404,3 +8404,51 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Pages HTML/JSON/YAML/text/Markdown, IndexNow discovery for owned Pages URLs, GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; root Pages now mirrors the product tarball fallback at `v2.29.151`.
 - Decision: continue.
+
+## 2026-05-28 Public PayPal Surface Proof Coverage Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Make every public file in the product repo that contains the exact PayPal `$5` URL also contain the current no-clone package command, verified tarball URL, SHA-256, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+
+Completed todos:
+- Audited public HTML, JSON, JSONL, Markdown, text, YAML, and JS files outside `docs/aegis` for `paypal.me/softjunk/5USD` surfaces missing the current proof markers.
+- Found 49 PayPal `$5` surfaces missing at least one required marker.
+- Replaced package-native placeholder SHA text in `bin/softjunk-lead-kit.js`, `mcp-server-softjunk.js`, `package.json`, `AGENTS.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, and `NPM_FUNDING.md`.
+- Added `no_clone_checkout_proof` blocks to buyer-card, shareable-order, sponsor-button, instant-fulfillment, result-first, roofing, and quiet-lead JSON surfaces.
+- Added visible or text no-clone checkout proof to buyer-card, shareable-order, free-sample, exact-intent answer, roofing, follow-up answer, sponsor, result-first, instant-fulfillment, one-message buyer packet, README, MCP, and quiet-lead Gist source surfaces.
+- Refreshed 5 owned public Gists: `423bb45dd4b98d552f4db6ed11f399fb`, `8f30064ad27d3f9f71ae152fe46703a7`, `b291f4850559d170ab8bcdd832e6d93d`, `24f1f8dd3915e17ef6bb6c200ac2ce02`, and `caeeb4b5aa7fc91a1b6f0e6d154f8a08`.
+- Validated the post-edit audit found zero public PayPal `$5` surfaces missing the current tarball, SHA-256, PayPal URL, or verification gate markers.
+- Parsed 10 changed JSON files and 23 inline scripts across 14 changed HTML files.
+- Ran `npm run cli:smoke` successfully.
+- Validated the MCP funding route returns the current SHA-256.
+- Pushed product commit `e36c9dccd64f7e80ec2b5163048e1ce5b427e87c`.
+- Created public product release `v2.29.154`.
+- Confirmed GitHub Pages deployment completed successfully.
+- Validated 49 changed Pages URLs returned HTTP 200 and included the current proof markers.
+- Validated 11 refreshed raw Gist URLs returned HTTP 200 and included the current proof markers.
+- Submitted 49 changed Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `e36c9dccd64f7e80ec2b5163048e1ce5b427e87c`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.154.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it removes proof gaps from public checkout surfaces without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/Markdown/text/JS, GitHub Pages, owned public Gists, GitHub Release notes, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` remains the executable no-clone fallback while `v2.29.154` records proof coverage propagation.
+- Decision: continue.
