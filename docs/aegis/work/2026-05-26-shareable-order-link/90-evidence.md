@@ -6472,3 +6472,32 @@ Latest local slice:
 - Updated files are listed in the earlier `Central Agent-Native Latest Release Status Propagation Evidence` section in this file.
 - Local and live validation passed: marker audit `missingCount=0`, JSON parse 62 files, JSONL parse 52 records, OpenAPI YAML parse, `node --check` for CLI/MCP, `npm run cli:smoke`, `npm pack --dry-run --json`, `git diff --check`, Pages run `26554460529`, and live marker checks for 20 public surfaces.
 - Payment is still not verified; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Public Gist Latest Release Status Propagation Evidence
+
+Artifacts updated:
+- Public Gist `82e9935979596bbe2330db46dc9bc58a`: refreshed `agent-card.json` and added `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `044280811978a796652e72a7b4228888`: refreshed `ai-action-checkout.json` and added `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `795587172ee240078c4377559b20b49b`: refreshed `agents-checkout.json` and added `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `76b4b70a3b13bfec62c5f66c3ebec30d`: refreshed `mcp-checkout-server.json` and added `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `844295134d4a7d721b7eec4963eae1db`: refreshed `commerce-graph.json` and added `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gists `167d3dc5f8696bf9edb04d3db6c53a02`, `85b6eef2cd6deb244d0bfbe18e744a3c`, and `423bb45dd4b98d552f4db6ed11f399fb`: added `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+
+Proof markers propagated:
+- Latest release: `v2.29.156`.
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example.
+- npmjs status: `E404`.
+- Local npm auth status: `ENEEDAUTH`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Pre-update audit found all eight central Gists missing five latest release/npm status markers.
+- Post-update GitHub Gist API audit returned `missingCount=0` for all eight Gists and confirmed `CURRENT_LATEST_RELEASE_NPM_STATUS.md` exists in each.
+- Raw Gist validation returned HTTP 200 and `missingCount=0` for `CURRENT_LATEST_RELEASE_NPM_STATUS.md`, `ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, and `commerce-graph.json`.
+- IndexNow POST submitted 20 owned `trungcodeer.github.io` Pages URLs related to the updated manifests and returned `status=200`.
+
+Payment gate:
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

@@ -9000,3 +9000,42 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Pages JSON/text/YAML, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; npmjs remains owner-auth gated and executable checkout remains the verified release tarball/GitHub package route.
 - Decision: continue.
+
+## 2026-05-28 Public Gist Latest Release Status Propagation Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Update owned public Gist mirrors so buyer-agents reading Gist/raw Gist see the same latest release `v2.29.156`, npm publish status, owner-auth publish workflow template, npmjs `E404`, local npm auth `ENEEDAUTH`, PayPal URL, and verification gate.
+
+Completed todos:
+- Re-read current worktree state, latest checkpoint/evidence, and PayPal verifier output.
+- Audited eight central public Gists tied to agent/native checkout surfaces.
+- Found all eight Gists were missing the latest release/npm status markers even though they already had PayPal and verification markers.
+- Refreshed five primary Gist JSON files from local repo files: A2A agent card, AI action checkout, buyer-agent checkout instructions, MCP checkout manifest, and commerce graph.
+- Added `CURRENT_LATEST_RELEASE_NPM_STATUS.md` to eight owned public Gists.
+- Validated all eight Gists through the GitHub Gist API: each has the status file and `missingCount=0`.
+- Validated six representative raw Gist URLs over HTTPS: all returned HTTP 200 and `missingCount=0`.
+- Submitted 20 related `trungcodeer.github.io` Pages URLs to IndexNow; API returned HTTP 200.
+
+Evidence refs:
+- Updated Gists: `82e9935979596bbe2330db46dc9bc58a`, `044280811978a796652e72a7b4228888`, `795587172ee240078c4377559b20b49b`, `76b4b70a3b13bfec62c5f66c3ebec30d`, `844295134d4a7d721b7eec4963eae1db`, `167d3dc5f8696bf9edb04d3db6c53a02`, `85b6eef2cd6deb244d0bfbe18e744a3c`, and `423bb45dd4b98d552f4db6ed11f399fb`.
+- GitHub API audit returned `missingCount=0` for all eight Gists across `v2.29.156`, `npm-publish-status.json`, `NPM_PUBLISH_WORKFLOW.yml.example`, `E404`, `ENEEDAUTH`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Raw Gist checks covered status file plus refreshed AI action, agents checkout, MCP checkout, and commerce graph JSON files.
+- IndexNow response: `status=200`, `urls=20`, key location `https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit evidence, publish the checkpoint docs, then rerun the PayPal verifier. Do not mark the goal complete unless seller-side PayPal evidence exists or the verifier returns true.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned public Gist mirrors used by buyer-agents without spam, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned public GitHub Gists, GitHub Pages discovery URLs, IndexNow for owned Pages host only, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; Gists now mirror the latest release/npm status while npmjs remains owner-auth gated and executable checkout remains the verified release tarball/GitHub package route.
+- Decision: continue.
