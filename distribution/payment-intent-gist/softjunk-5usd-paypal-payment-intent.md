@@ -44,6 +44,16 @@ Current release target:
 
 `b8c335e6cfac3045155497b41e5532e1dfefae10`
 
+Current release tarball command:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Current release tarball SHA-256 file:
+
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
+
 Stable fallback release tarball command:
 
 ```bash

@@ -27,6 +27,9 @@ Output:
 - MCP relay tool: `get_softjunk_agent_relay`
 - Current release marker: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 - Current release target: `b8c335e6cfac3045155497b41e5532e1dfefae10`
+- Current release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz
+- Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
+- Current release tarball command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
 - Stable fallback tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
 - Stable fallback tarball SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 - Exact payment URL: https://paypal.me/softjunk/5USD
