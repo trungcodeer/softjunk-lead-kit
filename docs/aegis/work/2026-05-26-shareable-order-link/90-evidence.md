@@ -7320,3 +7320,51 @@ Latest GitHub-native comment refresh:
 - Issue #1 comment, Issue #5 comment, and Discussion #6 comment now advertise `v2.29.160` and target `996541ac6009ee9c455116429e5685870218d6ef`.
 - The preferred no-clone checkout command remains `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 AI-Agent Relay Checkout Command Evidence
+
+Implementation:
+- Added `softjunk-lead-kit agent --json` in `bin/softjunk-lead-kit.js`.
+- Added `scripts/agent-relay-smoke.js` and wired it into `npm run cli:smoke`.
+- Added package scripts `agent`, `agent:relay`, and `agent:smoke`.
+- Added public relay surfaces `AGENT_RELAY.md`, `agent-relay.json`, and `agent-relay.txt`.
+- Linked the relay from `README.md`, `RUN_THIS_FIRST.md`, `run-this-first.json`, `buyer-index.json`, `package.json`, `agent-buyer-catalog.jsonl`, and `sitemap.xml`.
+- Added `run_from_github_package_pay_custom` to `buyer-index.json` after the first live verification found the relay command there but not the checkout command.
+
+TDD:
+- RED: `node scripts/agent-relay-smoke.js` failed before implementation with `Unknown command: agent`.
+- GREEN: `node scripts/agent-relay-smoke.js` returned `agent_relay_smoke_ok`.
+
+Validation:
+- `npm run cli:smoke` passed and includes `scripts/agent-relay-smoke.js`.
+- `node --check bin/softjunk-lead-kit.js` passed.
+- `node --check scripts/agent-relay-smoke.js` passed.
+- JSON parse returned `json_ok`.
+- JSONL parse returned `jsonl_ok lines=57`.
+- Sitemap XML parse returned `xml_ok`.
+- `git diff --check` returned exit code 0.
+- `npm pack --dry-run --json` passed with `entryCount=211`, including the new relay files and smoke script.
+
+External verification:
+- Code commit: `43045751f85aa8e16a3fb2687ee6cd7bd3167cfa` (`Add AI agent relay checkout command`).
+- Buyer-index fix commit: `9681b8786f1780e414b5f7072c436b871a8bd6b3` (`Add agent relay checkout command to buyer index`).
+- Remote GitHub package command passed:
+  `npm exec --yes --package github:trungcodeer/softjunk-lead-kit#main -- softjunk-lead-kit agent --json`.
+- Remote output included `ok=true`, `command=agent`, `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, `success_signal=PAYPAL_PAYMENT_VERIFIED=true`, and preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Product Pages run `26565796095` for commit `43045751f85aa8e16a3fb2687ee6cd7bd3167cfa` completed with conclusion `success`.
+- Product Pages run `26565919409` for commit `9681b8786f1780e414b5f7072c436b871a8bd6b3` completed with conclusion `success`.
+- Live Pages verification returned `agent_relay_pages_live_ok=8 urls=8 commit=9681b8786f1780e414b5f7072c436b871a8bd6b3` for `AGENT_RELAY.md`, `agent-relay.json`, `agent-relay.txt`, `README.md`, `RUN_THIS_FIRST.md`, `run-this-first.json`, `buyer-index.json`, and `agent-buyer-catalog.jsonl`.
+- IndexNow returned `indexnow_agent_relay_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 AI-Agent Relay Checkout Command Latest Note
+
+Latest code-led relay slice:
+- Buyer-agents can now run `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json` to get a fit-check packet, PayPal URL, checkout command, order form, privacy rule, and seller-side verification gate.
+- The actual checkout command remains `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Public relay surfaces are live at `https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json`, `https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt`, and `https://trungcodeer.github.io/softjunk-lead-kit/AGENT_RELAY.md`.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

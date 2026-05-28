@@ -9884,3 +9884,52 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Issue comments, GitHub Discussion comments, GitHub Releases, product/root Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; owned comments now match `v2.29.160`, GitHub package execution remains preferred, and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 AI-Agent Relay Checkout Command Checkpoint
+
+Current todo:
+- Add a less-traditional, code-led buyer route that an AI assistant, VA, crawler, or coding agent can execute without cloning the repo.
+- Keep the route bounded to relevant one-lead follow-up needs and seller-side PayPal verification.
+- Publish the route through package-native and owned public Pages surfaces.
+
+Active slice:
+- Add `softjunk-lead-kit agent --json` as an executable AI-agent relay packet that returns fit checks, the preferred GitHub package no-clone checkout command, PayPal URL, order form, privacy rule, and the `PAYPAL_PAYMENT_VERIFIED=true` gate.
+
+Completed todos:
+- Used TDD for the new CLI behavior.
+- Added `scripts/agent-relay-smoke.js` before implementation.
+- Verified RED: `node scripts/agent-relay-smoke.js` failed with `Unknown command: agent`.
+- Implemented `buildAgentRelay()` and wired the `agent` command into CLI help, JSON output, text output, doctor command list, package scripts, package metadata, and package smoke coverage.
+- Added public relay surfaces: `AGENT_RELAY.md`, `agent-relay.json`, and `agent-relay.txt`.
+- Linked the relay from `README.md`, `RUN_THIS_FIRST.md`, `run-this-first.json`, `buyer-index.json`, `package.json`, `agent-buyer-catalog.jsonl`, and `sitemap.xml`.
+- Added the missing GitHub package checkout command to `buyer-index.json` after the first live check found the relay command but not the pay command there.
+- Pushed code commits `43045751f85aa8e16a3fb2687ee6cd7bd3167cfa` and `9681b8786f1780e414b5f7072c436b871a8bd6b3`.
+- Verified local smoke, syntax, JSON, JSONL, XML, package dry-run, remote GitHub package execution, Pages, IndexNow, and PayPal verifier.
+
+Evidence refs:
+- RED test result: `node scripts/agent-relay-smoke.js` failed before implementation with `Unknown command: agent`.
+- GREEN local result: `node scripts/agent-relay-smoke.js` returned `agent_relay_smoke_ok`.
+- Local `npm run cli:smoke` passed and now includes `scripts/agent-relay-smoke.js`.
+- Local `node --check bin/softjunk-lead-kit.js` and `node --check scripts/agent-relay-smoke.js` passed.
+- Local JSON parse returned `json_ok`; JSONL parse returned `jsonl_ok lines=57`; sitemap XML parse returned `xml_ok`.
+- Local `npm pack --dry-run --json` passed with `entryCount=211` including `AGENT_RELAY.md`, `agent-relay.json`, `agent-relay.txt`, and `scripts/agent-relay-smoke.js`.
+- Remote GitHub package execution passed: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit#main -- softjunk-lead-kit agent --json` returned `ok=true`, `command=agent`, `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and the preferred no-clone command.
+- Product Pages run `26565796095` for commit `43045751f85aa8e16a3fb2687ee6cd7bd3167cfa` completed with conclusion `success`.
+- Product Pages run `26565919409` for commit `9681b8786f1780e414b5f7072c436b871a8bd6b3` completed with conclusion `success`.
+- Live Pages verification returned `agent_relay_pages_live_ok=8 urls=8 commit=9681b8786f1780e414b5f7072c436b871a8bd6b3`.
+- IndexNow returned `indexnow_agent_relay_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses code and package-native execution to give buyer-agents an executable relay packet without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: CLI, package metadata, GitHub package execution, GitHub Pages, sitemap, IndexNow, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; the GitHub package `agent --json` route is an additional relay surface, the `pay --mode custom --json` route remains the checkout command, and the release tarball remains fallback only.
+- Decision: continue.
