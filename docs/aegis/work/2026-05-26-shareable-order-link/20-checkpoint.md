@@ -10030,3 +10030,48 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, GitHub package execution, MCP stdio server, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.161` is now current, GitHub package execution remains the preferred no-clone route, MCP exposes `get_softjunk_agent_relay`, and the release tarball remains fallback only.
 - Decision: continue.
+
+## 2026-05-28 GitHub-Native v2.29.161 Refresh Checkpoint
+
+Current todo:
+- Keep owned GitHub-native buyer surfaces aligned with the current `v2.29.161` release and MCP agent relay route.
+- Edit only existing owned stale bodies/comments; do not create duplicate comments.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Refresh GitHub Issue bodies, Issue comments, Discussion bodies, and Discussion comments that still advertised `v2.29.160` / `996541ac6009ee9c455116429e5685870218d6ef`.
+
+Completed todos:
+- Re-read current worktree state, latest checkpoint, authenticated GitHub user, current PayPal verifier output, and current C:/D: disk state.
+- Found stale owned Issue bodies #1, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Found stale owned Issue comments `4561744602` and `4561745192`.
+- Found stale owned Discussion bodies #4, #6, #8, #14, #15, #16, and #17.
+- Found stale owned Discussion comment `DC_kwDOSnIQIc4BBLbw`.
+- Updated all stale bodies/comments from `v2.29.160` / `996541ac6009ee9c455116429e5685870218d6ef` to `v2.29.161` / `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Did not create new comments and did not edit non-owned comments.
+- Verified updated Issue bodies/comments and Discussion bodies/comment through GitHub API/GraphQL.
+- Reran the PayPal verifier.
+- C: was again at 0 bytes free at resume; locked Temp files could not be moved, so nine installer/archive files were moved to `D:\codex-tmp\c-drive-relief\user-files-moved-20260528-01` to restore working space without deleting them.
+
+Evidence refs:
+- Issue body verification returned `issues_v229161_live_ok=9 numbers=1,3,5,7,9,10,11,12,13`.
+- Issue comment verification returned `issue_comments_v229161_live_ok=2 ids=4561745192,4561744602`.
+- Discussion body verification returned `discussions_v229161_live_ok=7 numbers=4,6,8,14,15,16,17`.
+- Discussion comment verification returned `discussion_comment_v229161_live_ok id=DC_kwDOSnIQIc4BBLbw`.
+- Global Issue audit returned `issue_surfaces_old_v229160_absent`.
+- Global Discussion audit returned `discussion_surfaces_old_v229160_absent`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it keeps existing owned GitHub-native buyer surfaces aligned with the current package/MCP checkout route without scraped outreach, spam, deception, automated fulfillment, duplicate comments, or false payment claims.
+- Compatibility boundary: GitHub Issues, GitHub Issue comments, GitHub Discussions, GitHub Discussion comments, GitHub Releases, product/root Pages, package metadata, MCP stdio server, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; Issue/Discussion bodies/comments now match `v2.29.161`, GitHub package execution remains preferred, MCP exposes `get_softjunk_agent_relay`, and payment verification remains seller-side only.
+- Decision: continue.

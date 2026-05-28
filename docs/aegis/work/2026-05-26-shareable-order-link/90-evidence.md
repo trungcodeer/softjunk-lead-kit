@@ -7462,3 +7462,45 @@ Latest release/status slice:
 - `v2.29.161` is now the current GitHub Release and targets `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
 - Product/root Pages, public Gist mirrors, package metadata, GitHub package execution, and MCP relay discovery now advertise the current MCP agent relay checkout route.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 GitHub-Native v2.29.161 Refresh Evidence
+
+External public surfaces updated:
+- Issues: #1, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Issue comments: #1 comment `4561744602` and #5 comment `4561745192`.
+- Discussions: #4, #6, #8, #14, #15, #16, and #17.
+- Discussion comment: #6 comment `DC_kwDOSnIQIc4BBLbw`.
+
+Change made:
+- Replaced stale references to `v2.29.160` with `v2.29.161`.
+- Replaced stale references to target `996541ac6009ee9c455116429e5685870218d6ef` with `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Preserved the preferred no-clone command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Did not add new comments.
+- Did not edit non-owned comments.
+
+Validation:
+- Pre-edit Issue audit found stale owned Issue bodies #1, #3, #5, #7, #9, #10, #11, #12, and #13, plus stale owned Issue comments `4561744602` and `4561745192`.
+- Pre-edit Discussion audit found stale owned Discussion bodies #4, #6, #8, #14, #15, #16, and #17, plus stale owned Discussion comment `DC_kwDOSnIQIc4BBLbw`.
+- GitHub Issue body verification returned `issues_v229161_live_ok=9 numbers=1,3,5,7,9,10,11,12,13`.
+- GitHub Issue comment verification returned `issue_comments_v229161_live_ok=2 ids=4561745192,4561744602`.
+- GitHub Discussion body verification returned `discussions_v229161_live_ok=7 numbers=4,6,8,14,15,16,17`.
+- GitHub Discussion comment verification returned `discussion_comment_v229161_live_ok id=DC_kwDOSnIQIc4BBLbw`.
+- Global Issue audit returned `issue_surfaces_old_v229160_absent`.
+- Global Discussion audit returned `discussion_surfaces_old_v229160_absent`.
+- Verification confirmed the edited surfaces include `v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, PayPal URL `https://paypal.me/softjunk/5USD`, and the preferred GitHub package no-clone command.
+
+Environment note:
+- At resume, C: had 0 bytes free. Locked files under `C:\Users\minglucky\AppData\Local\Temp` could not be moved.
+- To keep the workspace writable, nine installer/archive files were moved, not deleted, to `D:\codex-tmp\c-drive-relief\user-files-moved-20260528-01`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 GitHub-Native v2.29.161 Refresh Latest Note
+
+Latest GitHub-native refresh:
+- Full details are in the `2026-05-28 GitHub-Native v2.29.161 Refresh Evidence` section above.
+- All tracked Issue bodies, Issue comments, Discussion bodies, and the tracked Discussion comment now advertise `v2.29.161` and target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
