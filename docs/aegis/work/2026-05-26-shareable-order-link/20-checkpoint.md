@@ -9119,3 +9119,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Pages, owned public Gists, IndexNow for owned Pages URLs, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Agent Checkout Router Checkpoint
+
+Current todo:
+- Publish the agent checkout router to GitHub Pages.
+- Live-verify the router URLs and changed discovery surfaces.
+- Submit owned Pages URLs to IndexNow.
+- Rerun the PayPal verifier and keep the goal open unless seller-side payment evidence exists.
+
+Active slice:
+- Add a compact decision router that maps buyer-agent context to the shortest legitimate owned checkout route, exact 5 USD PayPal handoff, and payment-proof boundary.
+
+Completed todos:
+- Re-read latest checkpoint/evidence, current worktree state, and PayPal verifier output.
+- Audited for an existing checkout router and found no `agent-checkout-router` or ranked route file.
+- Added `agent-checkout-router.json`, `agent-checkout-router.md`, and `agent-checkout-router.txt`.
+- Wired the router into `README.md`, `llms.txt`, `sitemap.xml`, `robots.txt`, `feed.xml`, `buyer-index.json`, `agent-offer.json`, `product-feed.json`, `package.json`, `npm-publish-status.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, and `agent-buyer-catalog.jsonl`.
+- Updated `npm-publish-status.json` so the pack dry-run entry count is current at `207`.
+- Validated JSON, JSONL, XML, OpenAPI YAML, marker coverage, CLI smoke, npm pack dry-run, and diff whitespace.
+
+Evidence refs:
+- JSON parse passed for 64 JSON files.
+- JSONL parse passed for 54 `agent-buyer-catalog.jsonl` records.
+- XML parse passed for `sitemap.xml` and `feed.xml`.
+- `npx --yes js-yaml .well-known/openapi.yaml` parsed successfully.
+- Marker audit returned zero missing markers across 15 core surfaces and sitemap/robots route entries.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` passed with `entryCount=207` and included the three new agent checkout router files.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the router slice, wait for GitHub Pages, live-verify the new URLs and changed manifests, submit IndexNow, then rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes buyer-agent route selection more direct without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo files, GitHub Pages JSON/Markdown/text/XML/YAML, package metadata, owned public discovery surfaces, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; the router is discovery only and payment verification remains seller-side only.
+- Decision: continue.

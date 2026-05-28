@@ -20,6 +20,13 @@
                                       "payment_url":  "https://paypal.me/softjunk/5USD",
                                       "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
                                   },
+    "agent_checkout_router":  {
+                                  "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
+                                  "markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
+                                  "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
+                                  "payment_url":  "https://paypal.me/softjunk/5USD",
+                                  "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                              },
     "seller":  {
                    "name":  "SoftJunk",
                    "site_url":  "https://trungcodeer.github.io/softjunk-lead-kit/",

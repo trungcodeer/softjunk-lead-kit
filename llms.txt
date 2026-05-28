@@ -154,6 +154,19 @@ Public Gist checkout index:
 - PayPal: https://paypal.me/softjunk/5USD
 - Gate: PAYPAL_PAYMENT_VERIFIED=true
 
+Agent checkout router:
+- JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
+- Markdown: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md
+- Text: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt
+- Use when an assistant, crawler, VA, or buyer-agent needs the shortest legitimate path from buyer context to the exact 5 USD PayPal handoff.
+- Latest release: v2.29.156
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
+- Current npmjs status: E404
+- Current local npm auth status: ENEEDAUTH
+- PayPal: https://paypal.me/softjunk/5USD
+- Gate: PAYPAL_PAYMENT_VERIFIED=true
+
 Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 

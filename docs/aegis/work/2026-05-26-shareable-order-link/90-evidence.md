@@ -22,6 +22,62 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Agent Checkout Router Evidence
+
+Artifacts added:
+- `agent-checkout-router.json`.
+- `agent-checkout-router.md`.
+- `agent-checkout-router.txt`.
+
+Artifacts updated:
+- `README.md`.
+- `llms.txt`.
+- `sitemap.xml`.
+- `robots.txt`.
+- `feed.xml`.
+- `buyer-index.json`.
+- `agent-offer.json`.
+- `product-feed.json`.
+- `package.json`.
+- `npm-publish-status.json`.
+- `.well-known/softjunk-offer.json`.
+- `.well-known/ai-plugin.json`.
+- `.well-known/openapi.yaml`.
+- `agent-buyer-catalog.jsonl`.
+
+Proof markers propagated:
+- Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json.
+- Latest release: `v2.29.156`.
+- Latest release target: `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example.
+- npmjs status: `E404`.
+- Local npm auth status: `ENEEDAUTH`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Router routes:
+- Ready buyer fastest path: https://trungcodeer.github.io/5/.
+- Agent checkout contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json.
+- One known buyer send path: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html.
+- No-clone package checkout command against the verified `v2.29.151` release tarball.
+- Public Gist checkout mirrors: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json.
+- Free preview first: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html.
+
+Local validation:
+- JSON parse passed for 64 JSON files.
+- JSONL parse passed for 54 `agent-buyer-catalog.jsonl` records.
+- XML parse passed for `sitemap.xml` and `feed.xml`.
+- `npx --yes js-yaml .well-known/openapi.yaml` returned `yaml_parse_ok .well-known/openapi.yaml`.
+- Marker audit returned zero missing markers across 15 core surfaces and sitemap/robots route entries.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` returned `entryCount=207` and included `agent-checkout-router.json`, `agent-checkout-router.md`, `agent-checkout-router.txt`, `npm-publish-status.json`, and `NPM_PUBLISH_WORKFLOW.yml.example`.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Payment gate:
+- This slice has not verified a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Central Agent-Native Latest Release Status Propagation Evidence
 
 Artifacts updated:

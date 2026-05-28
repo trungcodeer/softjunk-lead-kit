@@ -98,6 +98,9 @@ Allow: /aa82219152e573922c28c39ed0ad85ce.txt
 Allow: /public-gist-checkout-index.json
 Allow: /public-gist-checkout-index.md
 Allow: /public-gist-checkout-index.txt
+Allow: /agent-checkout-router.json
+Allow: /agent-checkout-router.md
+Allow: /agent-checkout-router.txt
 Sitemap: https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml
 Allow: /paypal-buy-action.json
 Allow: /.well-known/paypal-buy-action.json

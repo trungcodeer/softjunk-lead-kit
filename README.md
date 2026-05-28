@@ -35,6 +35,7 @@ NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-
 Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156 targets `afde34591ce5cdac053d97029c5adfcb1acb5b8b`
 Owner-auth npm publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
 Public Gist checkout index: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
+Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
 
 ## NPM Fund / Package Metadata
 

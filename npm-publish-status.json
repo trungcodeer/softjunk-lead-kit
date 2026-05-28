@@ -1,7 +1,7 @@
 {
   "schema_version": "softjunk-npm-publish-status-v1",
   "updated": "2026-05-28",
-  "checked_at_local": "2026-05-28T11:47:08+07:00",
+  "checked_at_local": "2026-05-28T12:03:41+07:00",
   "package_name": "softjunk-lead-kit",
   "package_version": "0.2.2",
   "status_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
@@ -29,11 +29,16 @@
     "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
     "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt"
   },
+  "agent_checkout_router": {
+    "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
+    "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
+    "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt"
+  },
   "publish_readiness": {
     "npm_pack_dry_run": "passed",
     "command": "npm pack --dry-run --json",
     "filename": "softjunk-lead-kit-0.2.2.tgz",
-    "entry_count": 204,
+    "entry_count": 207,
     "contains_publish_status_manifest": true,
     "workflow_excluded_from_package_by_npmignore": true,
     "contains_workflow_template_example": true,

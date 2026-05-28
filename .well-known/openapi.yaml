@@ -45,6 +45,9 @@ x-softjunk-fastest-buyer-path:
   public_gist_checkout_index_json_url: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
   public_gist_checkout_index_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md
   public_gist_checkout_index_text_url: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt
+  agent_checkout_router_json_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
+  agent_checkout_router_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md
+  agent_checkout_router_text_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt
   payment_url: https://paypal.me/softjunk/5USD
   npm_funding_json_url: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
   npm_funding_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
@@ -78,6 +81,17 @@ x-softjunk-fastest-buyer-path:
   digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
+  /agent-checkout-router.json:
+    get:
+      operationId: getAgentCheckoutRouter
+      summary: Get the compact agent checkout router for shortest-path buyer-agent routing.
+      responses:
+        "200":
+          description: Machine-readable decision router with ranked checkout routes, latest release, npm status, exact 5 USD PayPal URL, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
   /public-gist-checkout-index.json:
     get:
       operationId: getPublicGistCheckoutIndex

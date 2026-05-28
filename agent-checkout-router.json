@@ -1,0 +1,114 @@
+{
+  "schema_version": "softjunk-agent-checkout-router-v1",
+  "updated": "2026-05-28",
+  "name": "SoftJunk Agent Checkout Router",
+  "purpose": "A compact machine-readable decision router for assistants, crawlers, VAs, and buyer-agents that need the shortest legitimate path from buyer context to the exact 5 USD PayPal handoff.",
+  "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
+  "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
+  "latest_release_status": {
+    "latest_release_tag": "v2.29.156",
+    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156",
+    "latest_release_target": "afde34591ce5cdac053d97029c5adfcb1acb5b8b",
+    "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
+    "npm_publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
+    "npmjs_package_status": "E404",
+    "local_npm_auth_status": "ENEEDAUTH"
+  },
+  "payment": {
+    "amount": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_gate": "Do not claim paid, received, started, fulfilled, complete, or stopped unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  },
+  "default_route": {
+    "route_id": "ready_buyer_fastest_usd5",
+    "use_when": "A qualified buyer or buyer-agent is ready to inspect the offer and pay exactly 5 USD.",
+    "open_first": "https://trungcodeer.github.io/5/",
+    "machine_readable": "https://trungcodeer.github.io/5.json",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "after_payment": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
+  },
+  "ranked_routes": [
+    {
+      "rank": 1,
+      "route_id": "ready_buyer_fastest_usd5",
+      "use_when": "The buyer already understands the 5 USD one-lead rescue and wants the fewest clicks.",
+      "open_first": "https://trungcodeer.github.io/5/",
+      "json_url": "https://trungcodeer.github.io/5.json",
+      "text_url": "https://trungcodeer.github.io/5.txt",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 2,
+      "route_id": "agent_needs_checkout_contract",
+      "use_when": "An assistant or buyer-agent needs a one-read contract before recommending payment.",
+      "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
+      "alternate_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 3,
+      "route_id": "known_single_buyer_send",
+      "use_when": "A sender has exactly one known fitting buyer and needs one copy-ready message, not a scraped list.",
+      "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 4,
+      "route_id": "no_clone_package_checkout",
+      "use_when": "A coding agent wants to verify the checkout route without cloning or waiting for npmjs publish.",
+      "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+      "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+      "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 5,
+      "route_id": "public_gist_preferred",
+      "use_when": "A buyer-agent, crawler, or VA prefers public Gist or raw Gist checkout mirrors.",
+      "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
+      "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 6,
+      "route_id": "needs_free_preview_first",
+      "use_when": "The buyer is not ready to pay and needs a useful preview from non-sensitive context first.",
+      "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
+      "preview_builder_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    }
+  ],
+  "vertical_shortcuts": [
+    {
+      "buyer_type": "plumbing",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json",
+      "use_when": "One known plumbing company has a missed emergency call, urgent repair inquiry, or quiet estimate lead."
+    },
+    {
+      "buyer_type": "hvac",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json",
+      "use_when": "One known HVAC company has a missed no-cool call, no-heat call, urgent repair inquiry, or quiet replacement estimate."
+    },
+    {
+      "buyer_type": "dental",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json",
+      "use_when": "One known dental office has a missed new-patient call, urgent inquiry, implant consult request, or quiet appointment lead."
+    },
+    {
+      "buyer_type": "med_spa",
+      "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json",
+      "use_when": "One known med spa has a missed consult request, no-show consult, aesthetic treatment inquiry, or quiet membership lead."
+    }
+  ],
+  "safety_rules": [
+    "Use only owned public surfaces or one known fitting buyer context.",
+    "Do not use scraped lists, spam, deception, unauthorized outreach, fake payment claims, or private customer/payment data.",
+    "Use placeholders only in public forms.",
+    "Treat this router as checkout discovery only; it is not proof of payment."
+  ],
+  "rule": "Route qualified buyers to a useful preview or exact PayPal checkout, then stop only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+}
