@@ -9464,6 +9464,7 @@ Current todo:
 
 Active slice:
 - Promote the current GitHub main package checkout command as the best no-clone route so coding agents can execute a fresh `$5` PayPal handoff without cloning, waiting for npmjs publish, or using an older release tarball.
+- Preferred command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
 
 Completed todos:
 - Re-read the latest checkpoint, task intent, and product worktree state before resuming.
