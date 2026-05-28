@@ -78,6 +78,42 @@ Payment gate:
 - This slice has not verified a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Agent Router Release Deploy Evidence
+
+Published commits and release:
+- Propagation commit: `3bb016e222f1354ded49223a1c5eebe32465aae8`.
+- Primary manifest router-link commit: `6a526056a86c3c3a80e1178d606a99ff0f428457`.
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157.
+- Release title: `v2.29.157 agent checkout router`.
+- Release target: `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`.
+
+Release validation:
+- `gh release view v2.29.157` confirmed `isDraft=false`, `isPrerelease=false`, target `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`, and zero missing markers across `v2.29.157`, `agent-checkout-router.json`, `npm-publish-status.json`, `NPM_PUBLISH_WORKFLOW.yml.example`, `E404`, `ENEEDAUTH`, `entryCount=207`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- `gh release list --limit 3` returned `v2.29.157` with `isLatest=true`.
+
+Published Pages:
+- Pages run for propagation commit: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26556368985.
+- Pages run for primary manifest router links: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26556551126.
+
+Public Gist validation:
+- Five primary public Gist JSON files were refreshed from local manifests: `agent-card.json`, `ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, and `commerce-graph.json`.
+- Eight public Gist status files were refreshed with `CURRENT_LATEST_RELEASE_NPM_STATUS.md` for `v2.29.157`.
+- Gist API audit returned zero missing markers across the eight public Gists.
+- Cache-busted raw Gist audit returned HTTP 200 and zero missing markers for the five primary Gist JSON files.
+
+Live Pages validation:
+- Live Pages audit returned HTTP 200 and zero missing markers for `agent-checkout-router.json`, `agent-card.json`, `.well-known/agent-card.json`, `ai-action-checkout.json`, `.well-known/ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `commerce-graph.json`, `buyer-index.json`, `agent-offer.json`, `product-feed.json`, `npm-publish-status.json`, `package.json`, `llms.txt`, `README.md`, and `feed.xml`.
+
+Discovery submission:
+- IndexNow POST returned `status=200`.
+- Submitted URL count: `23`.
+- Key location: https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Agent Checkout Router Evidence
 
 Artifacts added:

@@ -9243,3 +9243,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Releases, GitHub Pages, package metadata, owned discovery surfaces, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; latest release is checkout discovery only and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Agent Router Release Deploy Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Publish and verify release `v2.29.157`, refresh public Gist mirrors, verify live Pages, submit IndexNow, and rerun the PayPal verifier.
+
+Completed todos:
+- Committed and pushed `3bb016e222f1354ded49223a1c5eebe32465aae8` (`Promote agent router release status`).
+- Created release `v2.29.157` titled `v2.29.157 agent checkout router`, targeting `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`.
+- Verified release `v2.29.157` is public, non-draft, non-prerelease, latest, and has zero missing router/npm/PayPal markers.
+- Committed and pushed `6a526056a86c3c3a80e1178d606a99ff0f428457` (`Link agent router from primary agent manifests`).
+- Refreshed five primary public Gist JSON files from the updated local manifests.
+- Refreshed `CURRENT_LATEST_RELEASE_NPM_STATUS.md` in eight public Gists for `v2.29.157`.
+- Verified raw Gist primary files and live Pages latest-release surfaces with cache-busting.
+- Submitted 23 changed owned Pages URLs to IndexNow; the API returned HTTP 200.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157.
+- Pages run for propagation commit: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26556368985.
+- Pages run for primary manifest router links: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26556551126.
+- Raw Gist audit returned HTTP 200 and zero missing markers for `agent-card.json`, `ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, and `commerce-graph.json`.
+- Live Pages audit returned HTTP 200 and zero missing markers for 17 checked router/latest-release surfaces.
+- IndexNow response: `status=200`, `urls=23`, key location `https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it published the agent router through the latest GitHub release and Gist/Page discovery surfaces while preserving the PayPal proof gate.
+- Compatibility boundary: GitHub Releases, GitHub repo files, GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; payment verification remains seller-side only.
+- Decision: continue.
