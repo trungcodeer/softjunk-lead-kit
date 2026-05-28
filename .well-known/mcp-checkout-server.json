@@ -12,6 +12,17 @@
   "gist_url": "https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d",
   "manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
   "well_known_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
+  "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
+  "npm_registry_status": {
+    "npmjs_package": "not_published_on_npmjs_as_of_2026-05-28",
+    "npm_view_result": "E404",
+    "local_publish_auth": "missing_npm_auth",
+    "npm_whoami_result": "ENEEDAUTH",
+    "npm_pack_dry_run": "passed",
+    "current_no_auth_route": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
+    "required_secret": "NPM_TOKEN"
+  },
   "official_mcp_lifecycle_reference": "https://modelcontextprotocol.io/specification/latest/basic/lifecycle",
   "official_mcp_remote_registry_reference": "https://modelcontextprotocol.io/registry/remote-servers",
   "install": {

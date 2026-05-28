@@ -36,6 +36,8 @@ const NPM_FUNDING_JSON =
   "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json";
 const NPM_FUNDING_MARKDOWN =
   "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md";
+const NPM_PUBLISH_STATUS_JSON =
+  "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json";
 const RELEASE_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
 const RELEASE_TARBALL_URL =
@@ -370,6 +372,7 @@ function checkoutRoutes() {
     ai_action_checkout_json_url: AI_ACTION_CHECKOUT_JSON,
     npm_funding_json_url: NPM_FUNDING_JSON,
     npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
+    npm_publish_status_json_url: NPM_PUBLISH_STATUS_JSON,
     package_json_url: PACKAGE_JSON_URL,
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
@@ -395,6 +398,14 @@ function npmFundingRoute() {
     funding_url: PAYMENT_URL,
     npm_funding_json_url: NPM_FUNDING_JSON,
     npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
+    npm_publish_status_json_url: NPM_PUBLISH_STATUS_JSON,
+    npm_registry_status: {
+      npmjs_package: "not_published_on_npmjs_as_of_2026-05-28",
+      npm_view_result: "E404",
+      local_publish_auth: "missing_npm_auth",
+      npm_whoami_result: "ENEEDAUTH",
+      current_no_auth_route: RELEASE_TARBALL_PAY_CUSTOM_COMMAND
+    },
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
     release_tarball_sha256: RELEASE_TARBALL_SHA256,

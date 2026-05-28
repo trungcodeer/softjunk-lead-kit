@@ -8864,3 +8864,47 @@ DriftCheckDraft:
 - Compatibility boundary: owned public GitHub release notes, GitHub Release tarball, PayPal.Me, seller-side payment verification, manual fulfillment after verification.
 - New owner/branch/fallback: no new fulfillment owner; historical release notes now point to current proof markers while executable checkout still uses the verified `v2.29.151` tarball.
 - Decision: continue.
+
+## 2026-05-28 NPM Publish Status and Funding Route Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Make the npm funding route honest and actionable for buyer-agents by exposing the real npmjs publish status, dry-run package readiness, current no-auth release-tarball fallback, and owner-auth publish workflow.
+
+Completed todos:
+- Re-read the latest checkpoint and confirmed the worktree started clean at commit `523f197`.
+- Ran `npm view softjunk-lead-kit --json`; npmjs returned `E404`, so the package is not live on the public npmjs registry from this machine.
+- Ran `npm whoami`; npm returned `ENEEDAUTH`, so this machine cannot publish to npmjs without owner login or `NPM_TOKEN` / `NODE_AUTH_TOKEN`.
+- Checked token presence without printing values; `NPM_TOKEN`, `NODE_AUTH_TOKEN`, `GITHUB_TOKEN`, and `GH_TOKEN` were not present in the environment.
+- Added `npm-publish-status.json` with machine-readable npmjs status, auth requirement, publish-ready state, live no-auth fallback routes, exact PayPal URL, and payment-proof boundary.
+- Initially added `.github/workflows/npm-publish.yml`, but GitHub rejected the push because the current token lacks `workflow` scope.
+- Converted the workflow into `NPM_PUBLISH_WORKFLOW.yml.example`, a manual owner-gated npm publish workflow template that dry-runs first and only publishes when `publish=true` and `NPM_TOKEN` is configured.
+- Kept `.npmignore` excluding `.github/workflows/` so any future active workflow is not packed into the npm tarball.
+- Wired the new status URL into `package.json`, CLI doctor output, MCP server tool output, `npm-funding.json`, `NPM_FUNDING.md`, `README.md`, `llms.txt`, `robots.txt`, `sitemap.xml`, `feed.xml`, `mcp-checkout-server.json`, and `.well-known/mcp-checkout-server.json`.
+- Validated JSON files, XML files, JS syntax, CLI smoke, MCP npm funding route output, and npm pack dry-run.
+- Confirmed `npm pack --dry-run --json` reports `entryCount=201`, includes `npm-publish-status.json` and `NPM_PUBLISH_WORKFLOW.yml.example`, and excludes `.github/workflows/*`.
+
+Evidence refs:
+- NPM publish status manifest: `npm-publish-status.json`.
+- Manual publish workflow template: `NPM_PUBLISH_WORKFLOW.yml.example`.
+- NPM funding manifest: `npm-funding.json`.
+- MCP manifest: `mcp-checkout-server.json` and `.well-known/mcp-checkout-server.json`.
+- CLI surfaces: `bin/softjunk-lead-kit.js` and `package.json`.
+- Discovery surfaces: `README.md`, `NPM_FUNDING.md`, `llms.txt`, `robots.txt`, `sitemap.xml`, and `feed.xml`.
+
+Blocked-on items:
+- Actual npmjs publish requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Amend and push the npm publish-status slice without an active workflow file, verify GitHub Pages exposes `npm-publish-status.json`, verify the workflow template is public, and rerun the PayPal verifier. Do not mark the goal complete unless PayPal verification succeeds.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it turns a high-value package-native channel into a truthful buyer-agent surface without falsely claiming npmjs availability or payment.
+- Compatibility boundary: GitHub repo files, GitHub Pages JSON/text/XML, local CLI/MCP surfaces, GitHub Actions manual workflow, npmjs publish only after owner auth, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; npmjs publish is explicitly owner-auth gated, while the current fallback remains the verified GitHub release tarball and GitHub package route.
+- Decision: continue.

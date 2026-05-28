@@ -1,5 +1,6 @@
 private-delivery/
 docs/aegis/
+.github/workflows/
 page-*.png
 *.log
 .DS_Store

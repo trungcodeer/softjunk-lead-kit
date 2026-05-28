@@ -1,0 +1,52 @@
+{
+  "schema_version": "softjunk-npm-publish-status-v1",
+  "updated": "2026-05-28",
+  "checked_at_local": "2026-05-28T10:35:28+07:00",
+  "package_name": "softjunk-lead-kit",
+  "package_version": "0.2.2",
+  "npmjs_registry": "https://registry.npmjs.org/",
+  "npm_registry_package_url": "https://www.npmjs.com/package/softjunk-lead-kit",
+  "npm_view_status": {
+    "command": "npm view softjunk-lead-kit --json",
+    "status": "not_published_on_npmjs",
+    "result_code": "E404",
+    "summary": "Package name is not currently present on the public npmjs registry from this machine."
+  },
+  "local_publish_auth_status": {
+    "command": "npm whoami",
+    "status": "missing_npm_auth",
+    "result_code": "ENEEDAUTH",
+    "required": "Login with npm adduser or provide NPM_TOKEN/NODE_AUTH_TOKEN before npmjs publish."
+  },
+  "publish_readiness": {
+    "npm_pack_dry_run": "passed",
+    "command": "npm pack --dry-run --json",
+    "filename": "softjunk-lead-kit-0.2.2.tgz",
+    "entry_count": 201,
+    "contains_publish_status_manifest": true,
+    "workflow_excluded_from_package_by_npmignore": true,
+    "contains_workflow_template_example": true,
+    "note": "Size, shasum, and integrity are intentionally omitted because editing this manifest changes the dry-run tarball digest."
+  },
+  "publish_when_auth_exists": {
+    "manual_command": "npm publish --access public",
+    "workflow_template_file": "NPM_PUBLISH_WORKFLOW.yml.example",
+    "workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
+    "required_secret": "NPM_TOKEN",
+    "publish_rule": "Only publish from an authorized owner account. The current GitHub token cannot create an active workflow without workflow scope, so this repo ships a workflow template instead. Do not claim npmjs availability until npm view softjunk-lead-kit returns a real package record."
+  },
+  "current_live_no_auth_routes": {
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+    "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+    "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "run_from_github_package": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json"
+  },
+  "payment": {
+    "amount": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_gate": "This status proves package publish readiness only. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  }
+}

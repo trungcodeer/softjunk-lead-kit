@@ -63,6 +63,7 @@
         "npm_funding_url": "https://paypal.me/softjunk/5USD",
         "npm_funding_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
         "npm_funding_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
+        "npm_publish_status_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
         "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
     }
 }

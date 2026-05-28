@@ -22,6 +22,47 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 NPM Publish Status and Funding Route Evidence
+
+Artifacts updated:
+- `npm-publish-status.json`
+- `NPM_PUBLISH_WORKFLOW.yml.example`
+- `.npmignore`
+- `package.json`
+- `bin/softjunk-lead-kit.js`
+- `mcp-server-softjunk.js`
+- `npm-funding.json`
+- `NPM_FUNDING.md`
+- `README.md`
+- `llms.txt`
+- `robots.txt`
+- `sitemap.xml`
+- `feed.xml`
+- `mcp-checkout-server.json`
+- `.well-known/mcp-checkout-server.json`
+
+Current npmjs/auth checks:
+- `npm view softjunk-lead-kit --json` returned `E404`; the package is not currently live on public npmjs from this machine.
+- `npm whoami` returned `ENEEDAUTH`; this machine cannot publish to npmjs without owner login or `NPM_TOKEN` / `NODE_AUTH_TOKEN`.
+- Safe environment presence check showed `NPM_TOKEN=false`, `NODE_AUTH_TOKEN=false`, `GITHUB_TOKEN=false`, and `GH_TOKEN=false` without printing secret values.
+
+Validation:
+- `node --check bin\softjunk-lead-kit.js` passed.
+- `node --check mcp-server-softjunk.js` passed.
+- PowerShell JSON parse validation passed for 62 JSON files.
+- XML parse validation passed for `sitemap.xml` and `feed.xml`.
+- `node bin\softjunk-lead-kit.js doctor --json` returned the new `npm_publish_status_json_url`, npmjs `E404`, local auth `ENEEDAUTH`, current no-auth release-tarball route, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- `npm run cli:smoke` passed for doctor, kit, and pay JSON outputs.
+- MCP `tools/call` for `get_softjunk_npm_funding_route` returned `npm_publish_status_json_url`, npmjs `E404`, local auth `ENEEDAUTH`, release tarball URL, PayPal URL, and verification gate.
+- `npm pack --dry-run --json` passed.
+- Pack audit returned `entryCount=201`, `hasPublishStatus=true`, `hasWorkflow=false`, and `hasWorkflowExample=true`.
+- `git diff --check` passed with only CRLF normalization warnings.
+- First push attempt was rejected by GitHub because the current token cannot create or update `.github/workflows/npm-publish.yml` without `workflow` scope; the active workflow was converted into `NPM_PUBLISH_WORKFLOW.yml.example`.
+
+Payment gate:
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 GitHub-Native Current Proof Evidence
 
 Artifacts updated:

@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>$5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2026 01:20:00 +0700</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 10:35:00 +0700</lastBuildDate>
+    <item>
+      <title>NPM Publish Status and Funding Route</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json</link>
+      <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json</guid>
+      <pubDate>Thu, 28 May 2026 10:35:00 +0700</pubDate>
+      <description>Current npmjs status for softjunk-lead-kit: npm view returns E404, npm whoami returns ENEEDAUTH, npm pack dry-run passes, and the live no-auth checkout remains the verified GitHub release tarball command. Pay exactly 5 USD at https://paypal.me/softjunk/5USD. Do not claim paid or delivered unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</description>
+    </item>
     <item>
       <title>No-Clone Buyer-Agent PayPal Command</title>
       <link>https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02</link>

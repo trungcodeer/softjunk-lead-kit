@@ -16,6 +16,7 @@ const CONSTANTS = Object.freeze({
   productUrl: 'https://trungcodeer.github.io/softjunk-lead-kit/',
   npmFundingJson: 'https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json',
   npmFundingMarkdown: 'https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md',
+  npmPublishStatusJson: 'https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json',
   digitalKitContractJson: 'https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json',
   digitalKitContractText: 'https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt',
   digitalKitProof: 'https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html',
@@ -281,6 +282,14 @@ async function buildDoctor(options) {
     npm_funding_url: CONSTANTS.paymentUrl,
     npm_funding_json_url: CONSTANTS.npmFundingJson,
     npm_funding_markdown_url: CONSTANTS.npmFundingMarkdown,
+    npm_publish_status_json_url: CONSTANTS.npmPublishStatusJson,
+    npm_registry_status: {
+      npmjs_package: 'not_published_on_npmjs_as_of_2026-05-28',
+      npm_view_result: 'E404',
+      local_publish_auth: 'missing_npm_auth',
+      npm_whoami_result: 'ENEEDAUTH',
+      current_no_auth_route: NO_CLONE_CHECKOUT_COMMAND
+    },
     release_url: CONSTANTS.releaseUrl,
     release_tarball_url: CONSTANTS.releaseTarballUrl,
     release_tarball_sha256: CONSTANTS.releaseTarballSha256,

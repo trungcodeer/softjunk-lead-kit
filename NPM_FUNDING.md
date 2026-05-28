@@ -14,6 +14,40 @@ The package funding URL is:
 https://paypal.me/softjunk/5USD
 ```
 
+## Current npmjs Publish Status
+
+As of 2026-05-28 from this machine:
+
+```bash
+npm view softjunk-lead-kit --json
+```
+
+returns `E404`, so the package name is not live on the public npmjs registry yet.
+
+```bash
+npm whoami
+```
+
+returns `ENEEDAUTH`, so npmjs publish cannot be completed from this machine until an owner logs in or provides `NPM_TOKEN` / `NODE_AUTH_TOKEN`.
+
+The package is still publish-ready: `npm pack --dry-run --json` passed for `softjunk-lead-kit-0.2.2.tgz`. Machine-readable status:
+
+```text
+https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
+```
+
+Manual publish path after owner auth:
+
+```bash
+npm publish --access public
+```
+
+GitHub Actions publish template after adding `NPM_TOKEN` and pushing with a GitHub token that has `workflow` scope:
+
+```text
+https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
+```
+
 ## No Clone Release Asset
 
 Use the verified GitHub Release tarball when npm registry publish is unavailable or a buyer-agent should run the package without cloning:
