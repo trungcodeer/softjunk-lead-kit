@@ -30,6 +30,21 @@
     "payment_url": "https://paypal.me/softjunk/5USD",
     "after_payment": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
   },
+  "root_fast_pay_routes": {
+    "buyer_card_url": "https://trungcodeer.github.io/5/",
+    "buyer_card_json_url": "https://trungcodeer.github.io/5.json",
+    "buyer_card_text_url": "https://trungcodeer.github.io/5.txt",
+    "send_five_url": "https://trungcodeer.github.io/send-5/",
+    "send_five_json_url": "https://trungcodeer.github.io/send-5.json",
+    "send_five_text_url": "https://trungcodeer.github.io/send-5.txt",
+    "intent_five_url": "https://trungcodeer.github.io/intent-5/",
+    "intent_five_json_url": "https://trungcodeer.github.io/intent-5.json",
+    "intent_five_text_url": "https://trungcodeer.github.io/intent-5.txt",
+    "paypal_url_health_url": "https://trungcodeer.github.io/paypal-url-health.json",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "rule": "Use these root fast-pay routes only for a qualified one-lead buyer. Do not claim payment, fulfillment, or completion before seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true."
+  },
   "ranked_routes": [
     {
       "rank": 1,
@@ -42,6 +57,24 @@
     },
     {
       "rank": 2,
+      "route_id": "qualified_buyer_needs_copy_ready_handoff",
+      "use_when": "A human, VA, or assistant has one known fitting buyer and needs one copy-ready handoff message without cold spam.",
+      "open_first": "https://trungcodeer.github.io/send-5/",
+      "json_url": "https://trungcodeer.github.io/send-5.json",
+      "text_url": "https://trungcodeer.github.io/send-5.txt",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 3,
+      "route_id": "buyer_needs_intent_match_before_payment",
+      "use_when": "The buyer or buyer-agent needs a public missed-call, estimate, no-show, or price-objection sample before paying.",
+      "open_first": "https://trungcodeer.github.io/intent-5/",
+      "json_url": "https://trungcodeer.github.io/intent-5.json",
+      "text_url": "https://trungcodeer.github.io/intent-5.txt",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 4,
       "route_id": "agent_needs_checkout_contract",
       "use_when": "An assistant or buyer-agent needs a one-read contract before recommending payment.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json",
@@ -49,7 +82,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 3,
+      "rank": 5,
       "route_id": "known_single_buyer_send",
       "use_when": "A sender has exactly one known fitting buyer and needs one copy-ready message, not a scraped list.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
@@ -57,7 +90,17 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 4,
+      "rank": 6,
+      "route_id": "digital_kit_proof_order",
+      "use_when": "The buyer wants proof of the digital kit payload, sample ZIP hash, order contract, and paid-kit order form before paying.",
+      "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt",
+      "proof_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
+      "manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 7,
       "route_id": "no_clone_package_checkout",
       "use_when": "A coding agent wants to verify the checkout route without cloning or waiting for npmjs publish.",
       "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
@@ -66,7 +109,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "route_id": "public_gist_preferred",
       "use_when": "A buyer-agent, crawler, or VA prefers public Gist or raw Gist checkout mirrors.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
@@ -74,11 +117,19 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "route_id": "needs_free_preview_first",
       "use_when": "The buyer is not ready to pay and needs a useful preview from non-sensitive context first.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
       "preview_builder_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 10,
+      "route_id": "verify_paypal_url_health_before_handoff",
+      "use_when": "An agent needs a public route-health manifest before sending a buyer to PayPal.",
+      "open_first": "https://trungcodeer.github.io/paypal-url-health.json",
+      "product_health_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-url-health.json",
       "payment_url": "https://paypal.me/softjunk/5USD"
     }
   ],
