@@ -176,6 +176,35 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 GitHub Release and Gist Proof Coverage Evidence
+
+Artifacts updated:
+- Release `v2.29.155`: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- 29 public PayPal-bearing Gists now include `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`.
+
+Proof markers added where missing:
+- Proof release tag: `v2.29.155`.
+- Proof release URL: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Executable package asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Release API audit found 192 releases, 82 PayPal-bearing release bodies, and canonical release `v2.29.155`.
+- Release `v2.29.155` body initially missed only the literal `v2.29.155` marker; after edit it contained all proof markers.
+- Gist API audit found 29 public PayPal-bearing Gists.
+- Initial Gist API audit found 11 Gists missing core no-clone proof markers and 29 missing the `v2.29.155` release tag marker.
+- Patch loop added or updated `CURRENT_NO_CLONE_CHECKOUT_PROOF.md` in 29 Gists.
+- Post-update Gist API audit returned `badCount=0` across all 29 PayPal-bearing Gists.
+- Raw Gist validation for `423bb45dd4b98d552f4db6ed11f399fb` returned `CURRENT_NO_CLONE_CHECKOUT_PROOF.md` with release tag, release URL, tarball URL, SHA-256, no-clone command, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Final Owned Repo Proof Gap Evidence
 
 Artifacts updated:
