@@ -8495,3 +8495,49 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/Markdown/text/YAML, GitHub Pages, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; `quiet-lead-follow-up` now mirrors the product tarball fallback at `v2.29.151`.
 - Decision: continue.
+
+## 2026-05-28 Profile and Default Funding Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the public GitHub profile repo `trungcodeer/trungcodeer` and default funding repo `trungcodeer/.github` so profile, funding, and GitHub UI discovery surfaces expose the current no-clone package checkout proof.
+
+Completed todos:
+- Cloned and audited `trungcodeer/trungcodeer` and `trungcodeer/.github`.
+- Found 14 profile PayPal `$5` files; all 14 missed at least one current proof marker and 4 still had stale release/tarball/SHA markers.
+- Found 2 default `.github` PayPal `$5` files; both missed at least one current proof marker.
+- Replaced profile stale markers with the current `v2.29.151` / `softjunk-lead-kit-0.2.2.tgz` / SHA-256 proof.
+- Added structured `no_clone_checkout_proof` to profile JSON and AI plugin surfaces.
+- Added visible/text proof to the profile homepage, README, LLM text, agent docs, support docs, funding config, issue-template config, and OpenAPI discovery.
+- Added proof to default `.github` `README.md` and `FUNDING.yml`.
+- Validated profile audit returned `paypal_files=14`, `missing_proof=0`, and `stale_files=0`.
+- Validated default `.github` audit returned `paypal_files=2`, `missing_proof=0`, and `stale_files=0`.
+- Parsed profile JSON, HTML scripts/JSON-LD, and YAML successfully; parsed default `.github` funding YAML successfully.
+- Pushed profile commit `39d7bf8e1dff0d1736da0a59c84deb9c852e777a` and default `.github` commit `c2ff259cf309b74eb2c266df96dc30bcf5762e8f`.
+- Confirmed profile GitHub Pages deployment completed successfully.
+- Validated 16 live/raw profile and default funding URLs returned HTTP 200, included current PayPal/tarball/SHA/gate markers, and did not include stale markers.
+- Submitted 10 profile Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Profile repo commit: `39d7bf8e1dff0d1736da0a59c84deb9c852e777a`.
+- Default `.github` commit: `c2ff259cf309b74eb2c266df96dc30bcf5762e8f`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens GitHub profile and funding discovery paths without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub profile Markdown/HTML/JSON/text/YAML, default GitHub funding metadata, GitHub Pages, raw GitHub, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; profile and default funding now mirror the product tarball fallback at `v2.29.151`.
+- Decision: continue.

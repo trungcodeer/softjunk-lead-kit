@@ -22,6 +22,36 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Profile and Default Funding Proof Evidence
+
+Artifacts updated:
+- `trungcodeer/trungcodeer`: 14 public PayPal `$5` surfaces across profile README, homepage, LLM text, agent docs, support docs, funding config, issue-template config, AI plugin, OpenAPI, and profile offer JSON.
+- `trungcodeer/.github`: default `README.md` and `FUNDING.yml`.
+
+Published commits:
+- Profile repo commit: `39d7bf8e1dff0d1736da0a59c84deb9c852e777a`.
+- Default `.github` commit: `c2ff259cf309b74eb2c266df96dc30bcf5762e8f`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+
+Validation:
+- Profile hidden-inclusive local audit returned `paypal_files=14`, `missing_proof=0`, and `stale_files=0`.
+- Default `.github` local audit returned `paypal_files=2`, `missing_proof=0`, and `stale_files=0`.
+- Profile JSON validation parsed `softjunk-profile-offer.json` and `.well-known/ai-plugin.json`.
+- Profile HTML validation parsed 2 inline JavaScript/JSON-LD blocks in `index.html`.
+- Profile YAML validation parsed `.well-known/openapi.yaml`, `.github/FUNDING.yml`, and `.github/ISSUE_TEMPLATE/config.yml`.
+- Default `.github` YAML validation parsed `FUNDING.yml`.
+- `git diff --check` passed for both repos; only CRLF normalization warnings were reported.
+- Profile GitHub Pages deployment for commit `39d7bf8e1dff0d1736da0a59c84deb9c852e777a` completed with `success`.
+- Live/raw validation returned HTTP 200 for 16 URLs across profile Pages, raw profile `.github` files, and raw default `.github` files.
+- Each live/raw URL included the PayPal URL, `softjunk-lead-kit-0.2.2.tgz`, SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`, and `PAYPAL_PAYMENT_VERIFIED=true`; none included stale markers.
+- IndexNow POST submitted 10 profile Pages URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Quiet Lead Follow-Up Public Repo Proof Evidence
 
 Artifacts updated in `trungcodeer/quiet-lead-follow-up`:
