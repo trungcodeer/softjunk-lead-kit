@@ -9840,3 +9840,47 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Issues, GitHub Discussions, GitHub Releases, product/root Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; Issue/Discussion bodies now match `v2.29.160`, GitHub package execution remains preferred, and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 GitHub Owned Comment v2.29.160 Refresh Checkpoint
+
+Current todo:
+- Keep owned public GitHub comment links aligned to the current `v2.29.160` release and preferred GitHub package no-clone checkout route.
+- Edit only owned stale comments; do not create duplicate comments.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Refresh owned issue/discussion comments that still advertised `v2.29.159` / `7500a0d27253c76be4979396c6f4b91abb690d15` after the body refresh.
+
+Completed todos:
+- Re-read current product/root worktree state, latest checkpoint, authenticated GitHub user, and PayPal verifier output.
+- Audited comments on Issues #1, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Audited comments on Discussions #4, #6, #8, #14, #15, #16, and #17.
+- Found three stale owned comments: Issue #1 comment `4561744602`, Issue #5 comment `4561745192`, and Discussion #6 comment `DC_kwDOSnIQIc4BBLbw`.
+- Updated those three existing comment bodies from `v2.29.159` / `7500a0d27253c76be4979396c6f4b91abb690d15` to `v2.29.160` / `996541ac6009ee9c455116429e5685870218d6ef`.
+- Did not create new comments and did not edit non-owned comments.
+- Verified all three edited comments through GitHub API/GraphQL.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Issue #1 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4561744602.
+- Issue #5 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4561745192.
+- Discussion #6 comment: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17086192.
+- GitHub issue comment verification returned `issue_comments_v2160_live_ok=2 ids=4561744602,4561745192`.
+- GitHub discussion comment verification returned `discussion_comment_v2160_live_ok=1 id=DC_kwDOSnIQIc4BBLbw`.
+- Verification confirmed the edited comments no longer contain `v2.29.159` or `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- Verification confirmed the edited comments contain `v2.29.160`, target `996541ac6009ee9c455116429e5685870218d6ef`, PayPal URL `https://paypal.me/softjunk/5USD`, and preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it corrects owned public GitHub-native comment links so buyer-agents see the latest release and preferred no-clone command without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Issue comments, GitHub Discussion comments, GitHub Releases, product/root Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; owned comments now match `v2.29.160`, GitHub package execution remains preferred, and payment verification remains seller-side only.
+- Decision: continue.

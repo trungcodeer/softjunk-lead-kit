@@ -7286,3 +7286,37 @@ Latest GitHub-native body refresh:
 - All tracked issue and discussion bodies now advertise `v2.29.160` and target `996541ac6009ee9c455116429e5685870218d6ef`.
 - The preferred no-clone checkout command remains `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 GitHub Owned Comment v2.29.160 Refresh Evidence
+
+External public comments updated:
+- Issue #1 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4561744602.
+- Issue #5 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4561745192.
+- Discussion #6 comment: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17086192.
+
+Change made:
+- Replaced stale comment references to `v2.29.159` with `v2.29.160`.
+- Replaced stale comment references to target `7500a0d27253c76be4979396c6f4b91abb690d15` with `996541ac6009ee9c455116429e5685870218d6ef`.
+- Preserved the preferred no-clone command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Did not add new comments.
+- Did not edit non-owned comments.
+
+Validation:
+- Pre-edit audit found three stale owned comments and no stale non-owned comments in the tracked issue/discussion set.
+- GitHub issue comment verification returned `issue_comments_v2160_live_ok=2 ids=4561744602,4561745192`.
+- GitHub discussion comment verification returned `discussion_comment_v2160_live_ok=1 id=DC_kwDOSnIQIc4BBLbw`.
+- Verification confirmed all edited comments include `v2.29.160`, target `996541ac6009ee9c455116429e5685870218d6ef`, PayPal URL `https://paypal.me/softjunk/5USD`, and the preferred GitHub package no-clone command.
+- Verification confirmed edited comments no longer include the older `v2.29.159` release marker or target `7500a0d27253c76be4979396c6f4b91abb690d15`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 GitHub Owned Comment v2.29.160 Refresh Latest Note
+
+Latest GitHub-native comment refresh:
+- Full details are in the `2026-05-28 GitHub Owned Comment v2.29.160 Refresh Evidence` section above.
+- Issue #1 comment, Issue #5 comment, and Discussion #6 comment now advertise `v2.29.160` and target `996541ac6009ee9c455116429e5685870218d6ef`.
+- The preferred no-clone checkout command remains `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
