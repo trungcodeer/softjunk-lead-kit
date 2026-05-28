@@ -3,9 +3,9 @@
     "updated":  "2026-05-27",
     "name":  "SoftJunk Buyer-Agent Checkout Instructions",
     "latest_release_status":  {
-                                  "latest_release_tag":  "v2.29.157",
-                                  "latest_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157",
-                                  "latest_release_target":  "5a7f76bb6a0b8cea6a87e676a228624cd13aabad",
+                                  "latest_release_tag":  "v2.29.158",
+                                  "latest_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158",
+                                  "latest_release_target":  "d5382d53f9066156ffabaa82836f0a081f73d74f",
                                   "npm_publish_status_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
                                   "npm_publish_workflow_template_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
                                   "npmjs_package_status":  "E404",
