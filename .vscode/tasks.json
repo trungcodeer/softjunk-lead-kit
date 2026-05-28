@@ -1,89 +1,101 @@
 {
-    "version":  "2.0.0",
-    "tasks":  [
-                  {
-                      "label":  "SoftJunk: Run this first",
-                      "type":  "shell",
-                      "command":  "npm start",
-                      "detail":  "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
-                      "problemMatcher":  [
-
-                                         ],
-                      "presentation":  {
-                                           "reveal":  "always",
-                                           "panel":  "dedicated",
-                                           "clear":  true
-                                       }
-                  },
-                  {
-                      "label":  "SoftJunk: Try rescue preview",
-                      "type":  "shell",
-                      "command":  "npm run try:rescue",
-                      "detail":  "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
-                      "problemMatcher":  [
-
-                                         ],
-                      "presentation":  {
-                                           "reveal":  "always",
-                                           "panel":  "dedicated",
-                                           "clear":  true
-                                       }
-                  },
-                  {
-                      "label":  "SoftJunk: Send buyer handoff",
-                      "type":  "shell",
-                      "command":  "npm run try:send",
-                      "detail":  "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
-                      "problemMatcher":  [
-
-                                         ],
-                      "presentation":  {
-                                           "reveal":  "always",
-                                           "panel":  "dedicated",
-                                           "clear":  true
-                                       }
-                  },
-                  {
-                      "label":  "SoftJunk: Pay custom route",
-                      "type":  "shell",
-                      "command":  "npm run pay:custom",
-                      "detail":  "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
-                      "problemMatcher":  [
-
-                                         ],
-                      "presentation":  {
-                                           "reveal":  "always",
-                                           "panel":  "dedicated",
-                                           "clear":  true
-                                       }
-                  },
-                  {
-                      "label":  "SoftJunk: Pay kit route",
-                      "type":  "shell",
-                      "command":  "npm run pay:kit",
-                      "detail":  "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
-                      "problemMatcher":  [
-
-                                         ],
-                      "presentation":  {
-                                           "reveal":  "always",
-                                           "panel":  "dedicated",
-                                           "clear":  true
-                                       }
-                  },
-                  {
-                      "label":  "SoftJunk: NPM funding route",
-                      "type":  "shell",
-                      "command":  "npm fund",
-                      "detail":  "Package funding metadata points to https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
-                      "problemMatcher":  [
-
-                                         ],
-                      "presentation":  {
-                                           "reveal":  "always",
-                                           "panel":  "dedicated",
-                                           "clear":  true
-                                       }
-                  }
-              ]
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "SoftJunk: Run this first",
+      "type": "shell",
+      "command": "npm start",
+      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "SoftJunk: Try rescue preview",
+      "type": "shell",
+      "command": "npm run try:rescue",
+      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "SoftJunk: Send buyer handoff",
+      "type": "shell",
+      "command": "npm run try:send",
+      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "SoftJunk: Pay custom route",
+      "type": "shell",
+      "command": "npm run pay:custom",
+      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "SoftJunk: Pay kit route",
+      "type": "shell",
+      "command": "npm run pay:kit",
+      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "SoftJunk: NPM funding route",
+      "type": "shell",
+      "command": "npm fund",
+      "detail": "Package funding metadata points to https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "SoftJunk: No-clone checkout proof",
+      "type": "shell",
+      "command": "npm",
+      "args": [
+        "exec",
+        "--yes",
+        "--package",
+        "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+        "--",
+        "softjunk-lead-kit",
+        "pay",
+        "--mode",
+        "custom",
+        "--json"
+      ],
+      "detail": "Release https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151; SHA-256 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c; payment https://paypal.me/softjunk/5USD; success PAYPAL_PAYMENT_VERIFIED=true. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.",
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      }
+    }
+  ]
 }
