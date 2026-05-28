@@ -333,7 +333,7 @@
       <div class="nav-links">
         <a href="https://trungcodeer.github.io/softjunk-lead-kit/pay.html">Pay</a>
         <a href="https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html">One-buyer share</a>
-        <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151">Verified release</a>
+        <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161">Current release</a>
         <a href="https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json">JSON</a>
         <a href="https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md">Markdown</a>
       </div>
@@ -348,7 +348,7 @@
         <div class="actions">
           <a class="button primary" href="https://paypal.me/softjunk/5USD">Pay $5 on PayPal</a>
           <a class="button" href="https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html">Open one-buyer share</a>
-          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151">Verify release</a>
+          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161">Current release</a>
           <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml">Order form</a>
         </div>
       </div>
@@ -431,15 +431,15 @@
         <h2>No-clone Checkout Proof</h2>
         <p class="hint">A buyer or assistant can run this without cloning the repo, verify the release, and then use the PayPal URL. This is checkout proof only; payment is not proven until seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true exists.</p>
         <textarea id="proof" aria-label="No-clone checkout proof text" readonly>Run without cloning:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
-Verified release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Current release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
 
-Release tarball:
+Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
 
-Release SHA-256:
+Stable fallback tarball SHA-256:
 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 
 PayPal checkout:
@@ -451,7 +451,7 @@ PAYPAL_PAYMENT_VERIFIED=true
 Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence verifies the 5 USD transaction.</textarea>
         <div class="inline-actions">
           <button class="accent" type="button" data-copy="proof">Copy Proof</button>
-          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151">Open Verified Release</a>
+          <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161">Open Current Release</a>
         </div>
         <p class="status" id="proof-status" aria-live="polite"></p>
       </article>
@@ -464,12 +464,12 @@ Use only non-sensitive business context. Pay exactly $5 here:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
-Verified release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Current release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
 
-Release SHA-256:
+Stable fallback tarball SHA-256:
 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 
 PayPal note:
@@ -497,12 +497,12 @@ Pay exactly $5:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
-Verified release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Current release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
 
-Release SHA-256:
+Stable fallback tarball SHA-256:
 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 
 PayPal note:
@@ -534,8 +534,8 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
     var fieldIds = ["business", "service", "value", "source", "need", "tone", "next"];
     var inputIds = ["business", "service", "value"];
     var privacyRisk = false;
-    var checkoutCommand = "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json";
-    var verifiedReleaseUrl = "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
+    var checkoutCommand = "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json";
+    var verifiedReleaseUrl = "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161";
     var releaseTarballUrl = "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz";
     var releaseSha256 = "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c";
     var paymentUrl = "https://paypal.me/softjunk/5USD";
@@ -591,9 +591,9 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-re
       var next = cleanField("next", "book");
       var note = "One Lead Rescue | Business: " + business + " | Service: " + service + " | Source: " + source + " | Need: " + need + " | Tone: " + tone + " | Next: " + next;
       var checkoutProof = "No-clone checkout proof:\n" + checkoutCommand + "\n\n"
-        + "Verified release:\n" + verifiedReleaseUrl + "\n\n"
-        + "Release tarball:\n" + releaseTarballUrl + "\n\n"
-        + "Release SHA-256:\n" + releaseSha256 + "\n\n"
+        + "Current release:\n" + verifiedReleaseUrl + "\n\n"
+        + "Stable fallback tarball:\n" + releaseTarballUrl + "\n\n"
+        + "Stable fallback tarball SHA-256:\n" + releaseSha256 + "\n\n"
         + "PayPal checkout:\n" + paymentUrl + "\n\n"
         + "Success gate:\nPAYPAL_PAYMENT_VERIFIED=true\n\n"
         + "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence verifies the 5 USD transaction.";

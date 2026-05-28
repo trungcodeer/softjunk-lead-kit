@@ -17,13 +17,16 @@ https://paypal.me/softjunk/5USD
 No-clone checkout proof:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Verified release notes:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Current release marker:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
 
-Release asset SHA-256:
+Stable fallback tarball:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
+
+Stable fallback tarball SHA-256:
 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 
 ## Local Buyer Pitch Generator
@@ -49,12 +52,15 @@ Use only non-sensitive business context. Pay exactly $5 here:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
-Verified release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Current release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
 
-Release SHA-256:
+Stable fallback tarball:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
+
+Stable fallback tarball SHA-256:
 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 
 PayPal note:
@@ -79,12 +85,15 @@ Pay exactly $5:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
-Verified release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Current release:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
 
-Release SHA-256:
+Stable fallback tarball:
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
+
+Stable fallback tarball SHA-256:
 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 
 PayPal note:
