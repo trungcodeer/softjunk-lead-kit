@@ -8955,3 +8955,43 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, GitHub repo/Pages JSON, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; latest release now points to the npm status slice while executable checkout still uses the verified `v2.29.151` tarball and canonical proof release `v2.29.155`.
 - Decision: continue.
+
+## 2026-05-28 Central Agent-Native Latest Release Status Propagation Checkpoint
+
+Current todo:
+- Publish the latest release/npm status propagation commit to GitHub Pages.
+- Live-verify the updated central manifest and docs surfaces.
+- Rerun the PayPal verifier and keep the goal open unless seller-side payment evidence exists.
+
+Active slice:
+- Propagate the current latest release `v2.29.156`, npm publish-status URL, owner-auth publish workflow template, npmjs `E404`, local npm auth `ENEEDAUTH`, exact PayPal URL, and payment-proof rule into central agent-native discovery surfaces.
+
+Completed todos:
+- Re-read the actual Aegis work record, current diff, release status, and PayPal verification boundary after resume.
+- Audited central agent/native checkout surfaces for missing latest-release/npm/payment markers.
+- Added latest release status metadata to agent offer, buyer index, product feed, answer engine, agents checkout, AI action checkout, A2A agent cards, AI plugin manifest, commerce graph, MCP manifests, OpenAPI, well-known offer, README, `llms.txt`, and the agent buyer catalog JSONL.
+- Validated JSON, JSONL, OpenAPI YAML, marker coverage, CLI syntax, MCP syntax, CLI smoke output, npm pack dry-run, and diff whitespace.
+
+Evidence refs:
+- Marker audit returned `missingCount=0` for all checked central files.
+- JSON parse passed for 62 JSON files.
+- JSONL parse passed for 52 `agent-buyer-catalog.jsonl` records.
+- `npx --yes js-yaml .well-known/openapi.yaml` parsed successfully.
+- `node --check bin\softjunk-lead-kit.js` and `node --check mcp-server-softjunk.js` passed.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` passed with `entryCount=201`.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the propagation slice, wait for GitHub Pages, live-check the updated surfaces, and rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it increases AI-native buyer-agent discovery of the current release/npm/payment route without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo files, GitHub Pages JSON/text/YAML, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; npmjs remains owner-auth gated and executable checkout remains the verified release tarball/GitHub package route.
+- Decision: continue.

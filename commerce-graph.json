@@ -1,5 +1,18 @@
 {
   "@context": "https://schema.org",
+  "softjunkLatestReleaseStatus": {
+    "@type": "CreativeWork",
+    "name": "SoftJunk latest release and npm publish status",
+    "latestReleaseTag": "v2.29.156",
+    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156",
+    "latestReleaseTarget": "afde34591ce5cdac053d97029c5adfcb1acb5b8b",
+    "npmPublishStatusUrl": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
+    "npmPublishWorkflowTemplateUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
+    "npmjsPackageStatus": "E404",
+    "localNpmAuthStatus": "ENEEDAUTH",
+    "paymentUrl": "https://paypal.me/softjunk/5USD",
+    "successSignal": "PAYPAL_PAYMENT_VERIFIED=true"
+  },
   "@graph": [
     {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller",

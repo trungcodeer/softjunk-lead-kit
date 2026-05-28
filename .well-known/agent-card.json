@@ -8,6 +8,18 @@
     "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
   },
   "version": "2026-05-28",
+  "latestReleaseStatus": {
+    "latestReleaseTag": "v2.29.156",
+    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156",
+    "latestReleaseTarget": "afde34591ce5cdac053d97029c5adfcb1acb5b8b",
+    "npmPublishStatusJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
+    "npmPublishWorkflowTemplateUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
+    "npmjsPackageStatus": "E404",
+    "localNpmAuthStatus": "ENEEDAUTH",
+    "paymentUrl": "https://paypal.me/softjunk/5USD",
+    "successSignal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "rule": "Use the verified GitHub release tarball or GitHub package route while npmjs returns E404. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  },
   "url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json",
   "documentationUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md",
   "gistUrl": "https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a",

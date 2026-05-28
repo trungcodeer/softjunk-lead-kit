@@ -22,6 +22,53 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Central Agent-Native Latest Release Status Propagation Evidence
+
+Artifacts updated:
+- `.well-known/agent-card.json`
+- `.well-known/ai-action-checkout.json`
+- `.well-known/ai-plugin.json`
+- `.well-known/mcp-checkout-server.json`
+- `.well-known/openapi.yaml`
+- `.well-known/softjunk-offer.json`
+- `README.md`
+- `agent-buyer-catalog.jsonl`
+- `agent-card.json`
+- `agent-offer.json`
+- `agents-checkout.json`
+- `ai-action-checkout.json`
+- `answer-engine.json`
+- `buyer-index.json`
+- `commerce-graph.json`
+- `llms.txt`
+- `mcp-checkout-server.json`
+- `product-feed.json`
+
+Proof markers propagated:
+- Latest release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156.
+- Latest release target: `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example.
+- npmjs status: `E404`.
+- Local npm auth status: `ENEEDAUTH`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Local validation:
+- Marker audit returned `missingCount=0` for all checked central files.
+- PowerShell JSON parse validation passed for 62 JSON files.
+- PowerShell JSONL parse validation passed for 52 `agent-buyer-catalog.jsonl` records.
+- `npx --yes js-yaml .well-known/openapi.yaml` returned `yaml_parse_ok .well-known/openapi.yaml`.
+- `node --check bin\softjunk-lead-kit.js` passed.
+- `node --check mcp-server-softjunk.js` passed.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` passed with `entryCount=201`.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Payment gate:
+- This slice has not verified a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 NPM Publish Status and Funding Route Evidence
 
 Artifacts updated:
@@ -6411,3 +6458,11 @@ Payment gate:
 - `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Central Agent-Native Latest Release Status Propagation Tail Note
+
+Latest local slice:
+- Central agent-native surfaces now include release `v2.29.156`, `npm-publish-status.json`, `NPM_PUBLISH_WORKFLOW.yml.example`, npmjs `E404`, local npm auth `ENEEDAUTH`, https://paypal.me/softjunk/5USD, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Updated files are listed in the earlier `Central Agent-Native Latest Release Status Propagation Evidence` section in this file.
+- Local validation passed: marker audit `missingCount=0`, JSON parse 62 files, JSONL parse 52 records, OpenAPI YAML parse, `node --check` for CLI/MCP, `npm run cli:smoke`, `npm pack --dry-run --json`, and `git diff --check`.
+- Payment is still not verified; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
