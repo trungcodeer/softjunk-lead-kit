@@ -7126,3 +7126,45 @@ Latest external-state slice:
 - Refreshed current issue bodies for #3, #7, #9, #10, #11, #12, and #13 without adding duplicate comments.
 - GitHub issue verification returned `issue_bodies_live_ok=9 stale_v229155=0 latest=v2.29.159` across #1, #3, #5, #7, #9, #10, #11, #12, and #13.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Stale GitHub Discussion Body Checkout Refresh Evidence
+
+External public surfaces updated:
+- Discussion #4: https://github.com/trungcodeer/softjunk-lead-kit/discussions/4.
+- Discussion #8: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8.
+- Discussion #14: https://github.com/trungcodeer/softjunk-lead-kit/discussions/14.
+- Discussion #15: https://github.com/trungcodeer/softjunk-lead-kit/discussions/15.
+- Discussion #16: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16.
+- Discussion #17: https://github.com/trungcodeer/softjunk-lead-kit/discussions/17.
+
+Change made:
+- Replaced the stale `Current no-clone checkout proof` section in each discussion body with the current package-native checkout route.
+- No additional comments were created for these six discussions; the slice corrected the public body text only.
+
+Broadcast content:
+- Latest release: `v2.29.159`.
+- Release target: `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- Agent router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json.
+- Ranked routes: `11`.
+- Preferred no-clone command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Stable fallback command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Exact checkout: `https://paypal.me/softjunk/5USD`.
+- Verification gate: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- GitHub discussion body audit before editing showed #4, #8, #14, #15, #16, and #17 still had `v2.29.155` and did not have the GitHub-package checkout command.
+- GitHub discussion verification after editing returned `discussion_bodies_live_ok=7 numbers=4,6,8,14,15,16,17 stale_v229155=0 latest=v2.29.159`.
+- The post-edit verification covered Discussions #4, #6, #8, #14, #15, #16, and #17 and confirmed every current discussion body includes `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, the GitHub-package command, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Stale GitHub Discussion Body Checkout Refresh Latest Note
+
+Latest external-state slice:
+- Full details are in the `2026-05-28 Stale GitHub Discussion Body Checkout Refresh Evidence` section above.
+- Refreshed current discussion bodies for #4, #8, #14, #15, #16, and #17 without adding duplicate comments.
+- GitHub discussion verification returned `discussion_bodies_live_ok=7 numbers=4,6,8,14,15,16,17 stale_v229155=0 latest=v2.29.159`.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
