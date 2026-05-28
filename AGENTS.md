@@ -22,7 +22,7 @@ Use this first when the buyer has one real quiet lead and wants the shortest che
 6. Verified release notes:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
 7. Release asset SHA-256:
-   Published in the `v2.29.151` release notes after the tarball asset is uploaded.
+   `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 8. After payment, submit placeholders only:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
@@ -225,7 +225,7 @@ Use this route only when the buyer has one real quiet lead and a recovered reply
 6. Verified release notes:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
 7. Release asset SHA-256:
-   Published in the `v2.29.151` release notes after the tarball asset is uploaded.
+   `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 8. After payment, submit non-sensitive order details if needed:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 

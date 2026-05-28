@@ -24,7 +24,7 @@ npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releas
 
 Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
 
-Release asset SHA-256: published in the `v2.29.151` release notes after the tarball asset is uploaded.
+Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
 
 ## Try One Real Use Case Locally
 

@@ -10,7 +10,7 @@ const CONSTANTS = Object.freeze({
   successSignal: 'PAYPAL_PAYMENT_VERIFIED=true',
   releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151',
   releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz',
-  releaseTarballSha256: 'Published in the v2.29.151 release notes after the tarball asset is uploaded.',
+  releaseTarballSha256: '1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c',
   rootBuyerCard: 'https://trungcodeer.github.io/5/',
   rootBuyerJson: 'https://trungcodeer.github.io/5.json',
   productUrl: 'https://trungcodeer.github.io/softjunk-lead-kit/',

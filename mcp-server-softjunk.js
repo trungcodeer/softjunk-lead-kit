@@ -41,7 +41,7 @@ const RELEASE_URL =
 const RELEASE_TARBALL_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz";
 const RELEASE_TARBALL_SHA256 =
-  "Published in the v2.29.151 release notes after the tarball asset is uploaded.";
+  "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c";
 const RELEASE_TARBALL_DOCTOR_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit doctor --json`;
 const RELEASE_TARBALL_PAY_CUSTOM_COMMAND =

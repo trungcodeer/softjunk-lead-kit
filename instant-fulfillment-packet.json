@@ -1,6 +1,6 @@
 {
   "schema_version": "softjunk-instant-fulfillment-packet-v1",
-  "updated": "2026-05-26",
+  "updated": "2026-05-28",
   "name": "SoftJunk Instant Fulfillment Packet",
   "purpose": "A public fulfillment shell and copy bank that shows what can be sent after seller-side PayPal proof confirms the 5 USD one-lead rescue payment.",
   "canonical_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md",
@@ -68,5 +68,20 @@
     "Record only non-sensitive evidence in the public worklog."
   ],
   "privacy_rule": "Do not include customer names, emails, phone numbers, addresses, transaction IDs, patient data, or private lead details in public issues, URLs, Gists, or notes.",
-  "payment_verification_rule": "This packet is not proof of payment. Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
+  "payment_verification_rule": "This packet is not proof of payment. Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.",
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+  "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "no_clone_checkout_proof": {
+    "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "expected_amount": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+    "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "payment_boundary": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment."
+  }
 }

@@ -1,6 +1,6 @@
 {
   "schema_version": "softjunk-shareable-order-link-v1",
-  "updated": "2026-05-26",
+  "updated": "2026-05-28",
   "name": "Shareable SoftJunk Order Link",
   "url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt",
@@ -35,5 +35,20 @@
     "ai_follow_up_prompt": "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "payment_intent": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json"
+  },
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+  "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "no_clone_checkout_proof": {
+    "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "expected_amount": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+    "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "payment_boundary": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment."
   }
 }

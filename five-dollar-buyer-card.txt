@@ -1,5 +1,5 @@
 SoftJunk 5 USD Buyer Card
-Updated: 2026-05-27
+Updated: 2026-05-28
 
 Pay exactly 5 USD:
 https://paypal.me/softjunk/5USD
@@ -15,6 +15,12 @@ After seller-side PayPal verification, a custom sequence includes one rewrite if
 
 Verification gate:
 Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
+No-clone checkout proof:
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Tarball SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
+Stop only after seller-side PayPal proof, PayPal API verification, trusted seller-side CSV proof, or PAYPAL_PAYMENT_VERIFIED=true.
 
 Privacy gate:
 Use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.

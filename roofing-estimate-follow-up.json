@@ -1,6 +1,6 @@
 {
   "schema_version": "softjunk-roofing-estimate-follow-up-answer-v1",
-  "updated": "2026-05-27",
+  "updated": "2026-05-28",
   "name": "Roofing Estimate Follow-Up Texts",
   "purpose": "Answer-engine and SEO-friendly page for roofing contractors who need copy-ready follow-up texts after a roof estimate goes quiet, with a direct 5 USD custom rescue path.",
   "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html",
@@ -30,5 +30,20 @@
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "script_path": "scripts/verify-paypal-5usd.ps1",
     "rule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists."
+  },
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+  "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "no_clone_checkout_proof": {
+    "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "expected_amount": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+    "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "payment_boundary": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment."
   }
 }

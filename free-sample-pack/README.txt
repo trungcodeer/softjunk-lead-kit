@@ -22,3 +22,10 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Privacy note:
 Do not paste private customer, patient, payment, or lead details into public issues or public AI tools.
+
+No-clone checkout proof:
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Tarball SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
+Success signal: PAYPAL_PAYMENT_VERIFIED=true
+Stop only after seller-side PayPal proof, PayPal API verification, trusted seller-side CSV proof, or PAYPAL_PAYMENT_VERIFIED=true.

@@ -555,6 +555,11 @@
         <p class="warning">Verification gate: do not mark paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.</p>
       </div>
     </section>
+    <section class="panel" aria-labelledby="proof-title">
+      <h2 id="proof-title">No-clone checkout proof</h2>
+      <p class="note">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json</p>
+      <p>Release: <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151">v2.29.151</a>. Tarball SHA-256: <code>1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c</code>. Do not claim paid, started, delivered, fulfilled, or complete unless seller-side PayPal evidence exists or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+    </section>
   </main>
 
   <footer>
@@ -639,6 +644,11 @@ ${afterPayUrl}
 
 Optional order form:
 ${orderFormUrl}
+
+No-clone checkout proof:
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Tarball SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 
 Delivery starts only after the seller can see the PayPal payment. Do not post private customer details in public.`;
     }

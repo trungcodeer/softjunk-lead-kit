@@ -78,3 +78,17 @@ Do not claim paid, started, delivered, or complete unless one of these is true:
 - Public Gist fallback: https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 
 The official MCP Registry `server.json` format supports package and remote server declarations. This repo does not claim a public remote MCP endpoint because GitHub Pages cannot serve a live JSON-RPC `POST /mcp` transport.
+
+## No-Clone Checkout Proof
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+
+Tarball SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
+
+Success signal: `PAYPAL_PAYMENT_VERIFIED=true`
+
+Stop only after seller-side PayPal proof, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
