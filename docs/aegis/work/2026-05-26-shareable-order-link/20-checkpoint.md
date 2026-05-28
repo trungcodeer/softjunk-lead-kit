@@ -8264,3 +8264,50 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo JS/Markdown/JSON, GitHub Pages JS/Markdown/JSON, raw GitHub JS/Markdown/JSON, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` is the current no-clone executable fallback while npm registry publish remains unavailable.
 - Decision: continue.
+
+## 2026-05-28 Manifest Tarball Metadata Propagation Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Propagate the verified `v2.29.151` no-clone package tarball metadata into public machine-readable agent, MCP, `.well-known`, JSON, JSONL, text, and markdown surfaces so agents/crawlers do not discover stale `v2.29.118` checkout proof first.
+
+Completed todos:
+- Replaced stale `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, and old SHA references across 85 public route files outside evidence docs.
+- Updated core manifests: `run-this-first.json`, `dev-agent-start.json`, `npm-funding.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `llms.txt`, `answer-engine.json`, and `agent-buyer-catalog.jsonl`.
+- Updated `npm-funding.json` package metadata to `package_version=0.2.2` and `updated=2026-05-28`.
+- Validated no stale release/tarball/SHA markers remain outside evidence docs, including hidden `.well-known` files.
+- Parsed 50 changed JSON/JSONL files successfully.
+- Ran `npm run cli:smoke` successfully.
+- Ran local `node bin/softjunk-lead-kit.js pay --mode custom --json` successfully.
+- Ran no-clone release asset commands from `v2.29.151` for `doctor --json` and `pay --mode custom --json`; both returned the expected PayPal URL and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Pushed product commit `253a94c287bd1f0a3c0946792e9dcd3507d18fea`.
+- Created public product release `v2.29.152`.
+- Confirmed GitHub Pages build completed successfully for commit `253a94c287bd1f0a3c0946792e9dcd3507d18fea`.
+- Validated 14 public raw/Pages URLs returned HTTP 200, included the new tarball URL and SHA, and did not include stale markers.
+- Submitted 85 changed Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `253a94c287bd1f0a3c0946792e9dcd3507d18fea`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.152.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone checkout command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm registry publish remains blocked by missing npm login on this machine; the GitHub Release tarball route is the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving owned public/package-native buyer surfaces while waiting for actual PayPal proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it removes stale machine-readable checkout proof and strengthens agent/package discovery without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo Markdown/JSON/JSONL/YAML/text, GitHub Pages, raw GitHub, GitHub Release notes, existing GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` remains the current no-clone executable fallback while `v2.29.152` records manifest propagation.
+- Decision: continue.

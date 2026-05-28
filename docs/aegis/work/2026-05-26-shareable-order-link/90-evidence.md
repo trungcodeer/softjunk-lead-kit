@@ -22,6 +22,49 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Manifest Tarball Metadata Propagation Evidence
+
+Artifacts updated:
+- 85 public route files containing stale release/tarball metadata, including `.well-known/*`, `run-this-first.json`, `dev-agent-start.json`, `npm-funding.json`, `mcp-checkout-server.json`, `llms.txt`, `answer-engine.json`, and `agent-buyer-catalog.jsonl`.
+
+Published commit and release:
+- Product commit: `253a94c287bd1f0a3c0946792e9dcd3507d18fea`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.152.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+
+Validation:
+- Hidden-inclusive stale marker search found no `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, or old SHA references outside evidence docs.
+- 50 changed JSON/JSONL files parsed successfully.
+- `git diff --check` passed with only CRLF normalization warnings.
+- `npm run cli:smoke` passed.
+- Local `node bin/softjunk-lead-kit.js pay --mode custom --json` returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json` returned version `0.2.2`, PayPal URL, tarball URL, and verification gate.
+- `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json` returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Product release `v2.29.152` is public, non-draft, non-prerelease, and targets `253a94c287bd1f0a3c0946792e9dcd3507d18fea`.
+- GitHub Pages build completed successfully for commit `253a94c287bd1f0a3c0946792e9dcd3507d18fea`.
+- Live/raw validation returned HTTP 200 and required new markers for:
+  - `raw.githubusercontent.com/.../run-this-first.json`
+  - `raw.githubusercontent.com/.../dev-agent-start.json`
+  - `raw.githubusercontent.com/.../npm-funding.json`
+  - `raw.githubusercontent.com/.../mcp-checkout-server.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-plugin.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json`
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl`
+- IndexNow POST submitted 85 changed Pages URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Package-Native No-Clone Tarball Evidence
 
 Artifacts updated:
