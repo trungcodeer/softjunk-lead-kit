@@ -116,6 +116,63 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Public Gist Checkout Index Evidence
+
+Artifacts added:
+- `public-gist-checkout-index.json`.
+- `public-gist-checkout-index.md`.
+- `public-gist-checkout-index.txt`.
+
+Artifacts updated:
+- `README.md`.
+- `llms.txt`.
+- `sitemap.xml`.
+- `robots.txt`.
+- `feed.xml`.
+- `buyer-index.json`.
+- `agent-offer.json`.
+- `product-feed.json`.
+- `npm-publish-status.json`.
+- `.well-known/softjunk-offer.json`.
+- `.well-known/ai-plugin.json`.
+- `.well-known/openapi.yaml`.
+- `agent-buyer-catalog.jsonl`.
+
+Proof markers propagated:
+- Public Gist checkout index: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json.
+- Latest release: `v2.29.156`.
+- Latest release target: `afde34591ce5cdac053d97029c5adfcb1acb5b8b`.
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example.
+- npmjs status: `E404`.
+- Local npm auth status: `ENEEDAUTH`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Indexed public Gists:
+- `82e9935979596bbe2330db46dc9bc58a`.
+- `044280811978a796652e72a7b4228888`.
+- `795587172ee240078c4377559b20b49b`.
+- `76b4b70a3b13bfec62c5f66c3ebec30d`.
+- `844295134d4a7d721b7eec4963eae1db`.
+- `167d3dc5f8696bf9edb04d3db6c53a02`.
+- `85b6eef2cd6deb244d0bfbe18e744a3c`.
+- `423bb45dd4b98d552f4db6ed11f399fb`.
+
+Local validation:
+- JSON parse passed for 63 JSON files.
+- JSONL parse passed for 53 `agent-buyer-catalog.jsonl` records.
+- XML parse passed for `sitemap.xml` and `feed.xml`.
+- `npx --yes js-yaml .well-known/openapi.yaml` returned `yaml_parse_ok .well-known/openapi.yaml`.
+- Marker audit returned zero missing markers across 14 core surfaces, sitemap/robots route entries, and the three index files with all eight Gist IDs.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` returned `entryCount=204` and included `public-gist-checkout-index.json`, `public-gist-checkout-index.md`, `public-gist-checkout-index.txt`, `npm-publish-status.json`, and `NPM_PUBLISH_WORKFLOW.yml.example`.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Payment gate:
+- This slice has not verified a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 Published commit and live verification:
 - Commit: `0aecb1c88ae87a4f79c129142e29877240d5366d`.
 - Pages run: `26553414546`, `pages build and deployment`, conclusion `success`.
@@ -6501,3 +6558,11 @@ Validation:
 Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Public Gist Checkout Index Tail Note
+
+Latest local slice:
+- Added `public-gist-checkout-index.json`, `public-gist-checkout-index.md`, and `public-gist-checkout-index.txt`, then wired them into central discovery surfaces and `npm-publish-status.json`.
+- Local validation passed: JSON parse 63 files, JSONL parse 53 records, XML parse, OpenAPI YAML parse, marker audit zero-missing, `npm run cli:smoke`, `npm pack --dry-run --json` with `entryCount=204`, and `git diff --check` with only CRLF warnings.
+- Full artifact and marker details are in the earlier `2026-05-28 Public Gist Checkout Index Evidence` section.
+- Payment is still not verified; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

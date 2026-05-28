@@ -9039,3 +9039,45 @@ DriftCheckDraft:
 - Compatibility boundary: owned public GitHub Gists, GitHub Pages discovery URLs, IndexNow for owned Pages host only, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; Gists now mirror the latest release/npm status while npmjs remains owner-auth gated and executable checkout remains the verified release tarball/GitHub package route.
 - Decision: continue.
+
+## 2026-05-28 Public Gist Checkout Index Checkpoint
+
+Current todo:
+- Publish the public Gist checkout index and updated discovery surfaces to GitHub Pages.
+- Live-verify the new index URLs and changed manifests after deployment.
+- Submit owned Pages URLs to IndexNow.
+- Rerun the PayPal verifier and keep the goal open unless seller-side payment evidence exists.
+
+Active slice:
+- Add one canonical machine-readable Pages index that points buyer-agents to the eight updated public Gist checkout mirrors with the current latest release, npm status, PayPal URL, and payment-proof boundary.
+
+Completed todos:
+- Re-read the latest Aegis checkpoint/evidence, current worktree state, and `npm-publish-status.json`.
+- Added `public-gist-checkout-index.json`, `public-gist-checkout-index.md`, and `public-gist-checkout-index.txt`.
+- Wired the new index into `README.md`, `llms.txt`, `sitemap.xml`, `robots.txt`, `feed.xml`, `buyer-index.json`, `agent-offer.json`, `product-feed.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, and `agent-buyer-catalog.jsonl`.
+- Updated `npm-publish-status.json` so the pack dry-run entry count is current at `204` and so package-status readers can reach the latest release and public Gist checkout index.
+- Validated JSON, JSONL, XML, OpenAPI YAML, marker coverage, CLI smoke, npm pack dry-run, and diff whitespace.
+
+Evidence refs:
+- JSON parse passed for 63 JSON files.
+- JSONL parse passed for 53 `agent-buyer-catalog.jsonl` records.
+- XML parse passed for `sitemap.xml` and `feed.xml`.
+- `npx --yes js-yaml .well-known/openapi.yaml` parsed successfully.
+- Marker audit returned zero missing markers across 14 core surfaces, the sitemap/robots route entries, and the three index files with all eight Gist IDs.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` passed with `entryCount=204` and included the three new public Gist checkout index files.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the index slice, wait for GitHub Pages, live-verify the new URLs and changed manifests, submit IndexNow, then rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a single AI-native public index over the Gist checkout mirrors without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo files, GitHub Pages JSON/Markdown/text/XML/YAML, owned public Gists, IndexNow for owned Pages URLs, GitHub Release tarball fallback, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; the public Gist index is a discovery aggregator only, while npmjs remains owner-auth gated and executable checkout remains the verified release tarball/GitHub package route.
+- Decision: continue.

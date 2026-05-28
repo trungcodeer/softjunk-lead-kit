@@ -15,6 +15,9 @@
                                   "rule":  "Use the verified GitHub release tarball or GitHub package route while npmjs returns E404. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
                               },
     "purpose":  "A single decision packet for AI assistants, crawlers, virtual assistants, and small-business buyers to choose the right SoftJunk $5 lead follow-up path without guessing.",
+    "public_gist_checkout_index_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
+    "public_gist_checkout_index_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
+    "public_gist_checkout_index_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt",
     "root_hub_url":  "https://trungcodeer.github.io/",
     "root_short_paypal_url":  "https://trungcodeer.github.io/paypal/",
     "root_short_pay_url":  "https://trungcodeer.github.io/pay/",

@@ -142,6 +142,18 @@ build_roofing_estimate_follow_up_sequence
 MCP checkout Gist:
 https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 
+Public Gist checkout index:
+- JSON: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
+- Markdown: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md
+- Text: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt
+- Latest release: v2.29.156
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
+- Current npmjs status: E404
+- Current local npm auth status: ENEEDAUTH
+- PayPal: https://paypal.me/softjunk/5USD
+- Gate: PAYPAL_PAYMENT_VERIFIED=true
+
 Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
 

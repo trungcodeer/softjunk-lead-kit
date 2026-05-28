@@ -42,6 +42,9 @@ x-softjunk-fastest-buyer-path:
   mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
   well_known_mcp_checkout_manifest_url: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
   mcp_checkout_server_raw_url: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/mcp-server-softjunk.js
+  public_gist_checkout_index_json_url: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
+  public_gist_checkout_index_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md
+  public_gist_checkout_index_text_url: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt
   payment_url: https://paypal.me/softjunk/5USD
   npm_funding_json_url: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
   npm_funding_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
@@ -75,6 +78,17 @@ x-softjunk-fastest-buyer-path:
   digital_kit_order_form_url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
 paths:
+  /public-gist-checkout-index.json:
+    get:
+      operationId: getPublicGistCheckoutIndex
+      summary: Get the public Gist checkout index for buyer-agent discovery.
+      responses:
+        "200":
+          description: Machine-readable owned public Gist checkout index with latest release, npm status, exact 5 USD PayPal URL, and verification gate.
+          content:
+            application/json:
+              schema:
+                type: object
   /sponsor-button-buy.json:
     get:
       operationId: getSponsorButtonBuyRoute

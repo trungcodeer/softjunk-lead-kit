@@ -13,6 +13,13 @@
                                   "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                                   "rule":  "Use the verified GitHub release tarball or GitHub package route while npmjs returns E404. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
                               },
+    "public_gist_checkout_index":  {
+                                      "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
+                                      "markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
+                                      "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt",
+                                      "payment_url":  "https://paypal.me/softjunk/5USD",
+                                      "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
+                                  },
     "seller":  {
                    "name":  "SoftJunk",
                    "site_url":  "https://trungcodeer.github.io/softjunk-lead-kit/",

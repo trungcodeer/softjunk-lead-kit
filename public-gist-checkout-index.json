@@ -1,0 +1,93 @@
+{
+  "schema_version": "softjunk-public-gist-checkout-index-v1",
+  "updated": "2026-05-28",
+  "name": "SoftJunk Public Gist Checkout Index",
+  "purpose": "Single machine-readable index for buyer-agents, crawlers, assistants, and VAs that prefer public Gist/raw Gist checkout surfaces before routing a qualified buyer to the exact 5 USD PayPal handoff.",
+  "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
+  "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
+  "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt",
+  "latest_release_status": {
+    "latest_release_tag": "v2.29.156",
+    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156",
+    "latest_release_target": "afde34591ce5cdac053d97029c5adfcb1acb5b8b",
+    "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
+    "npm_publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
+    "npmjs_package_status": "E404",
+    "local_npm_auth_status": "ENEEDAUTH"
+  },
+  "payment": {
+    "amount": "5.00",
+    "currency": "USD",
+    "payment_url": "https://paypal.me/softjunk/5USD",
+    "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+    "verification_gate": "Do not claim paid, received, started, fulfilled, complete, or stopped unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+  },
+  "status_file_name": "CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+  "public_gists": [
+    {
+      "id": "82e9935979596bbe2330db46dc9bc58a",
+      "name": "SoftJunk A2A agent card checkout route",
+      "gist_url": "https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a/raw/agent-card.json",
+      "use_when": "An A2A-style buyer-agent needs the agent card checkout route."
+    },
+    {
+      "id": "044280811978a796652e72a7b4228888",
+      "name": "SoftJunk AI action checkout manifest",
+      "gist_url": "https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/044280811978a796652e72a7b4228888/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/044280811978a796652e72a7b4228888/raw/ai-action-checkout.json",
+      "use_when": "An AI assistant needs a function-style checkout manifest."
+    },
+    {
+      "id": "795587172ee240078c4377559b20b49b",
+      "name": "SoftJunk buyer-agent checkout instructions",
+      "gist_url": "https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/795587172ee240078c4377559b20b49b/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/795587172ee240078c4377559b20b49b/raw/agents-checkout.json",
+      "use_when": "A coding agent, crawler, VA, or buyer-agent reads checkout instructions outside the repo."
+    },
+    {
+      "id": "76b4b70a3b13bfec62c5f66c3ebec30d",
+      "name": "SoftJunk MCP checkout server",
+      "gist_url": "https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d/raw/mcp-checkout-server.json",
+      "use_when": "An MCP-capable client needs the checkout server manifest."
+    },
+    {
+      "id": "844295134d4a7d721b7eec4963eae1db",
+      "name": "SoftJunk commerce graph",
+      "gist_url": "https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json",
+      "use_when": "A buyer-agent wants Product, Offer, BuyAction, PayPal, and verification nodes."
+    },
+    {
+      "id": "167d3dc5f8696bf9edb04d3db6c53a02",
+      "name": "SoftJunk 5 USD PayPal payment intent",
+      "gist_url": "https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02/raw/softjunk-5usd-paypal-payment-intent.json",
+      "use_when": "A buyer or agent needs the exact PayPal payment intent."
+    },
+    {
+      "id": "85b6eef2cd6deb244d0bfbe18e744a3c",
+      "name": "SoftJunk AI agent buyer packet",
+      "gist_url": "https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c/raw/agent-buyer-packet.json",
+      "use_when": "Another assistant, VA, or buyer needs a compact decision packet."
+    },
+    {
+      "id": "423bb45dd4b98d552f4db6ed11f399fb",
+      "name": "SoftJunk shareable order link",
+      "gist_url": "https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb",
+      "raw_status_url": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/CURRENT_LATEST_RELEASE_NPM_STATUS.md",
+      "primary_raw_url": "https://gist.githubusercontent.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb/raw/shareable-order-link.json",
+      "use_when": "Non-sensitive order context is already known and the buyer needs a URL, PayPal note, and handoff."
+    }
+  ],
+  "rule": "Use these owned public Gists as discovery mirrors only. They are not payment proof. Do not use them for scraped lists, spam, deception, unauthorized outreach, fake payment claims, or private customer/payment data."
+}

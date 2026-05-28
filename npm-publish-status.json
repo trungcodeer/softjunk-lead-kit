@@ -1,9 +1,10 @@
 {
   "schema_version": "softjunk-npm-publish-status-v1",
   "updated": "2026-05-28",
-  "checked_at_local": "2026-05-28T10:35:28+07:00",
+  "checked_at_local": "2026-05-28T11:47:08+07:00",
   "package_name": "softjunk-lead-kit",
   "package_version": "0.2.2",
+  "status_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
   "npmjs_registry": "https://registry.npmjs.org/",
   "npm_registry_package_url": "https://www.npmjs.com/package/softjunk-lead-kit",
   "npm_view_status": {
@@ -18,11 +19,21 @@
     "result_code": "ENEEDAUTH",
     "required": "Login with npm adduser or provide NPM_TOKEN/NODE_AUTH_TOKEN before npmjs publish."
   },
+  "latest_release_status": {
+    "tag": "v2.29.156",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.156",
+    "target_commit": "afde34591ce5cdac053d97029c5adfcb1acb5b8b"
+  },
+  "public_gist_checkout_index": {
+    "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
+    "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
+    "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt"
+  },
   "publish_readiness": {
     "npm_pack_dry_run": "passed",
     "command": "npm pack --dry-run --json",
     "filename": "softjunk-lead-kit-0.2.2.tgz",
-    "entry_count": 201,
+    "entry_count": 204,
     "contains_publish_status_manifest": true,
     "workflow_excluded_from_package_by_npmignore": true,
     "contains_workflow_template_example": true,
