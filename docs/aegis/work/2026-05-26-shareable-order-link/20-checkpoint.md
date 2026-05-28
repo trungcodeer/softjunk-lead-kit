@@ -9200,3 +9200,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Pages, package metadata, owned discovery surfaces, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Agent Router Latest Release Status Promotion Checkpoint
+
+Current todo:
+- Commit and push latest release status propagation for `v2.29.157`.
+- Create GitHub Release `v2.29.157` targeting the deployed agent checkout router commit.
+- Live-verify the release and updated Pages surfaces.
+- Submit changed owned Pages URLs to IndexNow.
+- Rerun the PayPal verifier and keep the goal open unless seller-side payment evidence exists.
+
+Active slice:
+- Promote the deployed agent checkout router into the latest release status across owned public/package-native discovery surfaces.
+
+Completed todos:
+- Re-read latest checkpoint/evidence, current worktree state, current release list, release `v2.29.156`, router JSON, and PayPal verifier output.
+- Confirmed current latest release was `v2.29.156`, published before the agent checkout router.
+- Updated owned discovery surfaces from latest release `v2.29.156` targeting `afde34591ce5cdac053d97029c5adfcb1acb5b8b` to `v2.29.157` targeting deployed router commit `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`.
+- Validated JSON, JSONL, XML, OpenAPI YAML, marker coverage, CLI smoke, npm pack dry-run, and diff whitespace.
+
+Evidence refs:
+- JSON parse passed for 64 JSON files.
+- JSONL parse passed for 54 `agent-buyer-catalog.jsonl` records.
+- XML parse passed for `sitemap.xml` and `feed.xml`.
+- `npx --yes js-yaml .well-known/openapi.yaml` parsed successfully.
+- Marker audit returned zero missing markers across 26 latest-release surfaces and zero stale `v2.29.156`/old-target refs outside historical Aegis docs.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` passed with `entryCount=207`.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Blocked-on items:
+- GitHub Release `v2.29.157` is not created until after the propagation commit is pushed.
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit/push propagation, create release `v2.29.157`, validate release body, wait for Pages, live-verify, submit IndexNow, rerun PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it moves the highest-signal GitHub-native release surface to the newly deployed checkout router without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo files, GitHub Releases, GitHub Pages, package metadata, owned discovery surfaces, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; latest release is checkout discovery only and payment verification remains seller-side only.
+- Decision: continue.

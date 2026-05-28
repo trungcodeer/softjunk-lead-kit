@@ -22,6 +22,62 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Agent Router Latest Release Status Promotion Evidence
+
+Artifacts updated:
+- `.well-known/agent-card.json`.
+- `.well-known/ai-action-checkout.json`.
+- `.well-known/ai-plugin.json`.
+- `.well-known/mcp-checkout-server.json`.
+- `.well-known/openapi.yaml`.
+- `.well-known/softjunk-offer.json`.
+- `README.md`.
+- `agent-buyer-catalog.jsonl`.
+- `agent-card.json`.
+- `agent-checkout-router.json`.
+- `agent-checkout-router.md`.
+- `agent-checkout-router.txt`.
+- `agent-offer.json`.
+- `agents-checkout.json`.
+- `ai-action-checkout.json`.
+- `answer-engine.json`.
+- `buyer-index.json`.
+- `commerce-graph.json`.
+- `feed.xml`.
+- `llms.txt`.
+- `mcp-checkout-server.json`.
+- `npm-publish-status.json`.
+- `package.json`.
+- `product-feed.json`.
+- `public-gist-checkout-index.json`.
+- `public-gist-checkout-index.md`.
+- `public-gist-checkout-index.txt`.
+
+Proof markers propagated:
+- Latest release: `v2.29.157`.
+- Latest release URL: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157.
+- Latest release target: `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`.
+- NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Owner-auth publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example.
+- npmjs status: `E404`.
+- Local npm auth status: `ENEEDAUTH`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Local validation:
+- JSON parse passed for 64 JSON files.
+- JSONL parse passed for 54 `agent-buyer-catalog.jsonl` records.
+- XML parse passed for `sitemap.xml` and `feed.xml`.
+- `npx --yes js-yaml .well-known/openapi.yaml` returned `yaml_parse_ok .well-known/openapi.yaml`.
+- Marker audit returned zero missing markers across 26 latest-release surfaces and zero stale `v2.29.156`/old-target refs outside historical Aegis docs.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` returned `entryCount=207`.
+- `git diff --check` passed with only CRLF normalization warnings.
+
+Payment gate:
+- This slice has not verified a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Agent Checkout Router Evidence
 
 Artifacts added:

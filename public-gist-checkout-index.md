@@ -4,7 +4,9 @@ Machine-readable JSON: https://trungcodeer.github.io/softjunk-lead-kit/public-gi
 
 Plain text: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.txt
 
-Latest release: v2.29.156
+Latest release: v2.29.157
+
+Latest release target: 5a7f76bb6a0b8cea6a87e676a228624cd13aabad
 
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
 
