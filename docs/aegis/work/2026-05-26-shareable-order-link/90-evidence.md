@@ -7758,3 +7758,33 @@ Latest adjacent-discovery refresh:
 - IndexNow accepted the changed owned Pages URLs: `indexnow_current_tarball_sweep_ok status=200 urls=190 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Adjacent Current Tarball Evidence
+
+- Adjacent owned repos were audited after product/root/Gist current-tarball promotion:
+  - `D:\codex-tmp\softjunk-adjacent-repos-20260528\trungcodeer`.
+  - `D:\codex-tmp\softjunk-adjacent-repos-20260528\quiet-lead-follow-up`.
+- Profile repo commit `fbf5494bdc4474ca93af980b2d745d8067f79e58` promoted current tarball route in profile Pages AI/plugin/OpenAPI/README surfaces.
+- Quiet-lead repo commit `9a10aff07a71505a57407278680dd2c2eb7cb0db` promoted current tarball route in quiet-lead Pages AI/plugin/OpenAPI/PayPal handoff surfaces.
+- Profile validation passed:
+  - `profile_fallback_current_mislabel_absent`.
+  - `profile_nonfallback_v151_absent`.
+  - `profile_stale_primary_remaining_ok`.
+  - `profile_json_ok files=2`.
+  - `profile_yaml_ok files=1`.
+  - `git diff --check`.
+- Quiet-lead validation passed:
+  - `quiet_fallback_current_mislabel_absent`.
+  - `quiet_nonfallback_v151_absent`.
+  - `quiet_stale_primary_remaining_ok`.
+  - `quiet_json_ok files=4`.
+  - `quiet_yaml_ok files=1`.
+  - `git diff --check`.
+- Profile Pages run `26592203680` and quiet-lead Pages run `26592204092` completed successfully.
+- Live verification returned:
+  - `profile_live_current_tarball_ok urls=9 fallback_mentions=1 commit=fbf5494bdc4474ca93af980b2d745d8067f79e58`.
+  - `quiet_live_current_tarball_ok urls=12 fallback_mentions=1 commit=9a10aff07a71505a57407278680dd2c2eb7cb0db`.
+- IndexNow accepted adjacent changed Pages URLs: `indexnow_adjacent_current_tarball_ok status=200 urls=21 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- NPM status remains externally blocked: `npm whoami` returned `ENEEDAUTH`, and `npm view softjunk-lead-kit --json` returned `E404`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

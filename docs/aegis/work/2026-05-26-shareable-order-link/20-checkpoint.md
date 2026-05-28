@@ -10594,3 +10594,46 @@ DriftCheckDraft:
 - Compatibility boundary: product/root GitHub Pages, hidden `.well-known` manifests, GitHub Release tarball, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.162` is primary current tarball and `v2.29.151` remains the explicit stable fallback.
 - Decision: continue.
+
+## 2026-05-29 Adjacent Current Tarball Checkpoint
+
+Current todo:
+- Promote the current `v2.29.162` release tarball route through remaining owned adjacent Pages/profile/quiet-lead surfaces.
+- Keep `v2.29.151` only where a field or line explicitly means stable fallback.
+- Rerun PayPal verification and keep the goal active unless seller-side PayPal evidence proves the 5 USD payment.
+
+Active slice:
+- Update profile Pages and quiet-lead Pages repositories so their AI/plugin/OpenAPI/README buyer-agent surfaces do not use the old tarball as the primary route.
+
+Completed todos:
+- Audited adjacent repos `trungcodeer` and `quiet-lead-follow-up`.
+- Patched profile repo primary tarball references and kept stable fallback semantics intact.
+- Patched quiet-lead repo primary tarball references and kept stable fallback semantics intact.
+- Validated profile/quiet JSON, OpenAPI YAML, stale-primary audits, fallback/current mislabel audits, and `git diff --check`.
+- Pushed profile commit `fbf5494bdc4474ca93af980b2d745d8067f79e58`.
+- Pushed quiet-lead commit `9a10aff07a71505a57407278680dd2c2eb7cb0db`.
+- Waited for profile Pages run `26592203680` and quiet-lead Pages run `26592204092`.
+- Live-verified 9 profile URLs and 12 quiet-lead URLs.
+- Submitted 21 adjacent Pages URLs to IndexNow.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Profile validation returned `profile_fallback_current_mislabel_absent`, `profile_nonfallback_v151_absent`, `profile_stale_primary_remaining_ok`, `profile_json_ok files=2`, `profile_yaml_ok files=1`, and `git diff --check`.
+- Quiet validation returned `quiet_fallback_current_mislabel_absent`, `quiet_nonfallback_v151_absent`, `quiet_stale_primary_remaining_ok`, `quiet_json_ok files=4`, `quiet_yaml_ok files=1`, and `git diff --check`.
+- Live verification returned `profile_live_current_tarball_ok urls=9 fallback_mentions=1 commit=fbf5494bdc4474ca93af980b2d745d8067f79e58` and `quiet_live_current_tarball_ok urls=12 fallback_mentions=1 commit=9a10aff07a71505a57407278680dd2c2eb7cb0db`.
+- IndexNow returned `indexnow_adjacent_current_tarball_ok status=200 urls=21 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`; current check returned `npm whoami` `ENEEDAUTH` and `npm view softjunk-lead-kit` `E404`.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it removes stale primary checkout routes from owned profile/quiet-lead discovery surfaces without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, `.well-known` manifests, IndexNow for owned Pages URLs, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.162` is primary current tarball and `v2.29.151` remains explicit stable fallback.
+- Decision: continue.
