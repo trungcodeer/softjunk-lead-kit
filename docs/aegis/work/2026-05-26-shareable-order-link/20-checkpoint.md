@@ -10508,3 +10508,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned public Gists, GitHub API, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; no new Gists or public comments were created.
 - Decision: continue.
+
+## 2026-05-28 Current Release Tarball Asset Checkpoint
+
+Current todo:
+- Keep buyer-agent checkout routes discoverable on owned public/package-native/Gist surfaces.
+- Preserve the seller-side PayPal verification gate as the only completion condition.
+- Continue only with legitimate owned surfaces or rerun PayPal verification when seller-side credentials/evidence are available.
+
+Active slice:
+- Attach and verify a current `v2.29.162` GitHub Release `.tgz` asset that runs the exact 5 USD PayPal checkout command, then broadcast that route through product Pages, `.well-known` manifests, docs, and owned public Gists.
+
+Completed todos:
+- Added current release tarball command, tarball URL, and SHA-256 URL to CLI/MCP output, package metadata, primary manifests, `.well-known` mirrors, agent router JSON/Markdown/text, README, and payment-intent surfaces.
+- Fixed agent checkout route ranks so routes are unique from 1 through 12.
+- Validated JSON, JSONL, XML, JS syntax, `git diff --check`, `npm run cli:smoke`, `npm run mcp:smoke`, and `npm pack --dry-run --json`.
+- Pushed product commits `52dfcc820505200810753ec3685ceee0387b6df8`, `6bde2158c8075fe18819a3a031350fdb913fc780`, and `3979669c827bf18456e9cd0281d46d968f7b4d33`.
+- Uploaded `softjunk-lead-kit-0.2.2.tgz` and `softjunk-lead-kit-0.2.2.tgz.sha256` to Release `v2.29.162`, with final tarball SHA-256 `d2630dd4cacbfde240edfb8e0c8900ff3c769055c13b766f5942dd6628e94712`.
+- Verified remote `npm exec --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json` returns the exact `5.00 USD` PayPal route.
+- Verified live Pages docs/manifests, updated 9 owned public Gists, submitted 29 Pages URLs to IndexNow, and reran the PayPal verifier.
+
+Evidence refs:
+- Release asset verification returned `release_body_clean_final_ok hash=d2630dd4cacbfde240edfb8e0c8900ff3c769055c13b766f5942dd6628e94712 target=b8c335e6cfac3045155497b41e5532e1dfefae10`.
+- Remote release asset verification returned `release_final3_sha256_url_ok` and the `pay --mode custom --json` output included `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- Pages verification returned `live_product_current_tarball_ok urls=22 commit=6bde2158c8075fe18819a3a031350fdb913fc780` and `live_docs_current_tarball_ok urls=8 commit=3979669c827bf18456e9cd0281d46d968f7b4d33`.
+- Gist API verification returned `gist_current_tarball_verify_ok count=9`.
+- IndexNow returned `indexnow_current_tarball_ok status=200 urls=29`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves AI/agent-native no-clone checkout by giving buyer-agents a pinned release asset and verifiable SHA file without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Release assets, product GitHub Pages, GitHub package execution, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.151` remains the stable fallback while `v2.29.162` explicit release asset is the current pinned route.
+- Decision: continue.

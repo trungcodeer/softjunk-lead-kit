@@ -7690,3 +7690,50 @@ Latest adjacent-discovery refresh:
 - Global Gist audit returned `gist_global_v229162_old_markers_absent count=29`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Current Release Tarball Asset Evidence
+
+- Product commit `52dfcc820505200810753ec3685ceee0387b6df8` added the current `v2.29.162` release tarball checkout route to CLI/MCP output, package metadata, primary JSON manifests, `.well-known` mirrors, agent router, README, and payment-intent surfaces.
+- Product commit `6bde2158c8075fe18819a3a031350fdb913fc780` added the current release tarball SHA-256 URL to `README.md`, `agent-checkout-router.md`, and `agent-checkout-router.txt`.
+- Product commit `3979669c827bf18456e9cd0281d46d968f7b4d33` refreshed agent/Gist-facing docs so `v2.29.162` is the current pinned tarball route and `v2.29.151` remains only a stable fallback.
+- Local validation passed:
+  - JSON parse over repository JSON.
+  - JSONL parse for `agent-buyer-catalog.jsonl`.
+  - XML parse for repository XML.
+  - `node --check bin/softjunk-lead-kit.js`.
+  - `node --check mcp-server-softjunk.js`.
+  - unique `agent-checkout-router.json` route ranks 1 through 12.
+  - `git diff --check`.
+  - `npm run cli:smoke`.
+  - `npm run mcp:smoke`.
+  - `npm pack --dry-run --json` with `entryCount=213`.
+- Release `v2.29.162` was uploaded with explicit assets:
+  - `softjunk-lead-kit-0.2.2.tgz`.
+  - `softjunk-lead-kit-0.2.2.tgz.sha256`.
+  - final tarball SHA-256 `d2630dd4cacbfde240edfb8e0c8900ff3c769055c13b766f5942dd6628e94712`.
+- Release verification returned `release_body_clean_final_ok hash=d2630dd4cacbfde240edfb8e0c8900ff3c769055c13b766f5942dd6628e94712 target=b8c335e6cfac3045155497b41e5532e1dfefae10`.
+- Remote release asset command passed:
+  - `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+  - Output included `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- SHA-256 URL verification returned `release_final3_sha256_url_ok`.
+- Product Pages runs completed successfully:
+  - `26588184511` for `52dfcc820505200810753ec3685ceee0387b6df8`.
+  - `26588643811` for `6bde2158c8075fe18819a3a031350fdb913fc780`.
+  - `26588911349` for `3979669c827bf18456e9cd0281d46d968f7b4d33`.
+- Live Pages verification returned:
+  - `live_product_current_tarball_ok urls=22 commit=6bde2158c8075fe18819a3a031350fdb913fc780`.
+  - `live_docs_current_tarball_ok urls=8 commit=3979669c827bf18456e9cd0281d46d968f7b4d33`.
+- Updated 9 owned public Gists with current tarball route, SHA URL, final SHA-256, and verification boundary:
+  - `044280811978a796652e72a7b4228888`.
+  - `167d3dc5f8696bf9edb04d3db6c53a02`.
+  - `76b4b70a3b13bfec62c5f66c3ebec30d`.
+  - `82e9935979596bbe2330db46dc9bc58a`.
+  - `795587172ee240078c4377559b20b49b`.
+  - `2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+  - `423bb45dd4b98d552f4db6ed11f399fb`.
+  - `844295134d4a7d721b7eec4963eae1db`.
+  - `85b6eef2cd6deb244d0bfbe18e744a3c`.
+- Gist API verification returned `gist_current_tarball_verify_ok count=9`.
+- IndexNow returned `indexnow_current_tarball_ok status=200 urls=29`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
