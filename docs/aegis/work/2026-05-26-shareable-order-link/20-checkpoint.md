@@ -10380,3 +10380,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Release, product GitHub Pages, GitHub package execution, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.151` remains a stable fallback tarball, while GitHub package execution and root `/pay-qr/` are the current primary route.
 - Decision: continue.
+
+## 2026-05-28 GitHub-Native v2.29.162 Broadcast Checkpoint
+
+Current todo:
+- Update existing owned GitHub-native public surfaces from `v2.29.161` to `v2.29.162`.
+- Avoid new comments and avoid editing non-owned content.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Replace stale `v2.29.161` and `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe` markers with `v2.29.162` and `b8c335e6cfac3045155497b41e5532e1dfefae10` in existing owned Issue bodies, Issue comments, Discussion bodies, and one Discussion comment.
+
+Completed todos:
+- Audited owned Issues and found 10 stale Issue bodies plus 2 stale owned Issue comments.
+- Audited owned Discussions and found 7 stale Discussion bodies plus 1 stale owned Discussion comment.
+- Updated existing owned Issue bodies #1, #2, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Updated existing owned Issue comments `4561745192` and `4561744602`.
+- Updated existing owned Discussion bodies #4, #6, #8, #14, #15, #16, and #17.
+- Updated existing owned Discussion comment `DC_kwDOSnIQIc4BBLbw`.
+- Did not create new comments and did not edit non-owned content.
+- Re-verified Issue and Discussion bodies/comments through GitHub REST and GraphQL.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Pre-edit Issue audit returned `issue_stale_audit bodies=10 numbers=13,12,11,10,9,7,5,3,2,1 comments=2 ids=5:4561745192,1:4561744602`.
+- Issue update returned `issues_v229162_updated bodies=10 numbers=13,12,11,10,9,7,5,3,2,1 comments=2 ids=5:4561745192,1:4561744602`.
+- Pre-edit Discussion audit returned `discussion_post_failed_update_stale bodies=7 nodes=4:D_kwDOSnIQIc4AmqEe,6:D_kwDOSnIQIc4Amqq9,8:D_kwDOSnIQIc4AmrPr,14:D_kwDOSnIQIc4AmsWB,15:D_kwDOSnIQIc4Amsae,16:D_kwDOSnIQIc4Amsaf,17:D_kwDOSnIQIc4Amsag comments=1 ids=6:DC_kwDOSnIQIc4BBLbw`.
+- Discussion update returned `discussions_v229162_updated_retry bodies=7 nodes=4:D_kwDOSnIQIc4AmqEe,6:D_kwDOSnIQIc4Amqq9,8:D_kwDOSnIQIc4AmrPr,14:D_kwDOSnIQIc4AmsWB,15:D_kwDOSnIQIc4Amsae,16:D_kwDOSnIQIc4Amsaf,17:D_kwDOSnIQIc4Amsag comments=1 ids=6:DC_kwDOSnIQIc4BBLbw`.
+- Verification returned `issues_v229162_live_ok bodies=10 comments=2` and `discussions_v229162_live_ok bodies=7 comments=1`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it refreshes existing owned GitHub-native discovery bodies/comments without scraped outreach, spam, deception, automated fulfillment, duplicate comments, or false payment claims.
+- Compatibility boundary: owned GitHub Issues/Discussions/comments, current GitHub Release, GitHub package execution, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; no new public comments were created.
+- Decision: continue.
