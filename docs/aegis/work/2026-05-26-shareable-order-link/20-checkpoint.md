@@ -9796,3 +9796,47 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.160` is now latest, GitHub package execution remains the preferred no-clone route, and the verified release tarball remains fallback while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 GitHub Issue and Discussion Body v2.29.160 Refresh Checkpoint
+
+Current todo:
+- Keep owned public GitHub-native checkout bodies aligned to the current `v2.29.160` release and preferred GitHub package no-clone checkout route.
+- Avoid duplicate issue/discussion comments while correcting stale body text.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Refresh existing GitHub Issue and Discussion bodies that still advertised `v2.29.159` / `7500a0d27253c76be4979396c6f4b91abb690d15` after release `v2.29.160`.
+
+Completed todos:
+- Re-read current product/root worktree state, latest checkpoint, release state, and PayPal verifier output.
+- Audited Issue bodies #1, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Audited Discussion bodies #4, #6, #8, #14, #15, #16, and #17.
+- Confirmed all 9 tracked issue bodies and all 7 tracked discussion bodies still had the older release marker before editing.
+- Updated the 9 issue bodies by replacing `v2.29.159` with `v2.29.160` and `7500a0d27253c76be4979396c6f4b91abb690d15` with `996541ac6009ee9c455116429e5685870218d6ef`.
+- Updated the 7 discussion bodies with the same body-only replacement through GraphQL JSON input.
+- Did not add duplicate comments.
+- Verified all edited issue and discussion bodies through GitHub API/GraphQL.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Issues refreshed: https://github.com/trungcodeer/softjunk-lead-kit/issues/1, https://github.com/trungcodeer/softjunk-lead-kit/issues/3, https://github.com/trungcodeer/softjunk-lead-kit/issues/5, https://github.com/trungcodeer/softjunk-lead-kit/issues/7, https://github.com/trungcodeer/softjunk-lead-kit/issues/9, https://github.com/trungcodeer/softjunk-lead-kit/issues/10, https://github.com/trungcodeer/softjunk-lead-kit/issues/11, https://github.com/trungcodeer/softjunk-lead-kit/issues/12, and https://github.com/trungcodeer/softjunk-lead-kit/issues/13.
+- Discussions refreshed: https://github.com/trungcodeer/softjunk-lead-kit/discussions/4, https://github.com/trungcodeer/softjunk-lead-kit/discussions/6, https://github.com/trungcodeer/softjunk-lead-kit/discussions/8, https://github.com/trungcodeer/softjunk-lead-kit/discussions/14, https://github.com/trungcodeer/softjunk-lead-kit/discussions/15, https://github.com/trungcodeer/softjunk-lead-kit/discussions/16, and https://github.com/trungcodeer/softjunk-lead-kit/discussions/17.
+- GitHub issue body verification returned `issues_v2160_live_ok=9 numbers=1,3,5,7,9,10,11,12,13`.
+- GitHub discussion body verification returned `discussions_v2160_live_ok=7 numbers=4,6,8,14,15,16,17`.
+- Verification confirmed the edited bodies no longer contain `v2.29.159` or `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- Verification confirmed the edited bodies contain `v2.29.160`, target `996541ac6009ee9c455116429e5685870218d6ef`, PayPal URL `https://paypal.me/softjunk/5USD`, and preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it corrects owned public GitHub-native checkout bodies so buyer-agents see the latest release and preferred no-clone command without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Issues, GitHub Discussions, GitHub Releases, product/root Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; Issue/Discussion bodies now match `v2.29.160`, GitHub package execution remains preferred, and payment verification remains seller-side only.
+- Decision: continue.

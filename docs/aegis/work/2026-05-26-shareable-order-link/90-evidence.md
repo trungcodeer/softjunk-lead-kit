@@ -7254,3 +7254,35 @@ Latest release/status slice:
 - `v2.29.160` is now the latest GitHub Release and targets `996541ac6009ee9c455116429e5685870218d6ef`.
 - Product/root Pages, public Gist mirrors, package metadata, and the remote GitHub package route now advertise `v2.29.160` with the preferred no-clone checkout command.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 GitHub Issue and Discussion Body v2.29.160 Refresh Evidence
+
+External public surfaces updated:
+- Issues: #1, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Discussions: #4, #6, #8, #14, #15, #16, and #17.
+
+Change made:
+- Replaced stale body references to `v2.29.159` with `v2.29.160`.
+- Replaced stale body references to target `7500a0d27253c76be4979396c6f4b91abb690d15` with `996541ac6009ee9c455116429e5685870218d6ef`.
+- Preserved the preferred no-clone command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Did not add new comments.
+
+Validation:
+- Pre-edit audit showed all 9 tracked issue bodies and all 7 tracked discussion bodies still had `v2.29.159` / `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- GitHub issue body verification returned `issues_v2160_live_ok=9 numbers=1,3,5,7,9,10,11,12,13`.
+- GitHub discussion body verification returned `discussions_v2160_live_ok=7 numbers=4,6,8,14,15,16,17`.
+- Verification confirmed all edited bodies include `v2.29.160`, target `996541ac6009ee9c455116429e5685870218d6ef`, PayPal URL `https://paypal.me/softjunk/5USD`, and the preferred GitHub package no-clone command.
+- Verification confirmed edited bodies no longer include the older `v2.29.159` release marker or target `7500a0d27253c76be4979396c6f4b91abb690d15`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 GitHub Issue and Discussion Body v2.29.160 Refresh Latest Note
+
+Latest GitHub-native body refresh:
+- Full details are in the `2026-05-28 GitHub Issue and Discussion Body v2.29.160 Refresh Evidence` section above.
+- All tracked issue and discussion bodies now advertise `v2.29.160` and target `996541ac6009ee9c455116429e5685870218d6ef`.
+- The preferred no-clone checkout command remains `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
