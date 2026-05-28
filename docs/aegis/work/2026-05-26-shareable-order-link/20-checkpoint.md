@@ -8886,6 +8886,13 @@ Completed todos:
 - Wired the new status URL into `package.json`, CLI doctor output, MCP server tool output, `npm-funding.json`, `NPM_FUNDING.md`, `README.md`, `llms.txt`, `robots.txt`, `sitemap.xml`, `feed.xml`, `mcp-checkout-server.json`, and `.well-known/mcp-checkout-server.json`.
 - Validated JSON files, XML files, JS syntax, CLI smoke, MCP npm funding route output, and npm pack dry-run.
 - Confirmed `npm pack --dry-run --json` reports `entryCount=201`, includes `npm-publish-status.json` and `NPM_PUBLISH_WORKFLOW.yml.example`, and excludes `.github/workflows/*`.
+- Published commit `0aecb1c88ae87a4f79c129142e29877240d5366d`; GitHub Pages run `26553414546` completed successfully for that commit.
+- Live-verified `npm-publish-status.json`, `npm-funding.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `llms.txt`, `feed.xml`, and `sitemap.xml` on GitHub Pages with cache-busted URLs.
+- Live-verified the checkpoint and evidence docs include the npm publish-status section, `E404`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Verified the raw GitHub workflow template URL returns HTTP 200 and includes `workflow_dispatch`, `npm publish --access public`, and `secrets.NPM_TOKEN`.
+- Reran `npm view softjunk-lead-kit --json`; it still returned `E404`.
+- Reran `npm whoami`; it still returned `ENEEDAUTH`.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Evidence refs:
 - NPM publish status manifest: `npm-publish-status.json`.
@@ -8900,7 +8907,7 @@ Blocked-on items:
 - Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
 
 Next step:
-- Amend and push the npm publish-status slice without an active workflow file, verify GitHub Pages exposes `npm-publish-status.json`, verify the workflow template is public, and rerun the PayPal verifier. Do not mark the goal complete unless PayPal verification succeeds.
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces, owner-auth npm publish if credentials become available, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
 
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.

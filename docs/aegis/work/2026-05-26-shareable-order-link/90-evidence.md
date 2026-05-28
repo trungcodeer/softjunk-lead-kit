@@ -63,6 +63,27 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+Published commit and live verification:
+- Commit: `0aecb1c88ae87a4f79c129142e29877240d5366d`.
+- Pages run: `26553414546`, `pages build and deployment`, conclusion `success`.
+- GitHub Pages API returned `status=built`, public Pages enabled, source `main` at `/`.
+- Live Pages validation returned all true for:
+  - `npm-publish-status.json`: npm view `E404`, local auth `ENEEDAUTH`, pack entry count `201`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+  - `npm-funding.json`: npm registry `E404` and `ENEEDAUTH`.
+  - `mcp-checkout-server.json` and `.well-known/mcp-checkout-server.json`: npm registry `E404` and required secret `NPM_TOKEN`.
+  - `llms.txt`: publish-status URL, `E404`, `ENEEDAUTH`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+  - `feed.xml`: npm publish-status item, `E404`, `ENEEDAUTH`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+  - `sitemap.xml`: `npm-publish-status.json` URL present.
+- Live docs validation returned HTTP 200 for `20-checkpoint.md` and `90-evidence.md` with the npm publish-status section, `E404`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Raw GitHub validation returned HTTP 200 for `NPM_PUBLISH_WORKFLOW.yml.example` and confirmed `workflow_dispatch`, `npm publish --access public`, and `secrets.NPM_TOKEN`.
+- Rerun `npm view softjunk-lead-kit --json` still returned `E404`.
+- Rerun `npm whoami` still returned `ENEEDAUTH`.
+
+Payment gate after publish:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 GitHub-Native Current Proof Evidence
 
 Artifacts updated:
