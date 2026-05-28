@@ -25,6 +25,7 @@
     "agent_relay_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json",
     "agent_relay_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt",
     "run_from_github_package_agent":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json",
+    "run_from_github_package_pay_custom":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
     "root_hub_url":  "https://trungcodeer.github.io/",
     "root_short_paypal_url":  "https://trungcodeer.github.io/paypal/",
     "root_short_pay_url":  "https://trungcodeer.github.io/pay/",
