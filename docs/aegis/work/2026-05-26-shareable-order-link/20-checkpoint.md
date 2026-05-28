@@ -8743,3 +8743,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned public GitHub issue bodies, GitHub Release tarball, PayPal.Me, seller-side payment verification, manual fulfillment after verification.
 - New owner/branch/fallback: no new fulfillment owner; all current GitHub issue bodies with the PayPal checkout route now point to release `v2.29.155` while executable checkout still uses the verified `v2.29.151` tarball.
 - Decision: continue.
+
+## 2026-05-28 GitHub Issue Comment Proof Coverage Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Close the remaining GitHub issue comment proof gap by editing historical PayPal-bearing comments in place instead of posting new comments.
+
+Completed todos:
+- Re-read task intent, latest checkpoint, current product worktree state, and PayPal verifier state.
+- Audited all 10 product issues and their comments through REST pagination.
+- Found 112 PayPal-bearing issue comments; 111 were missing at least one current proof marker.
+- Updated all 111 incomplete comments in place through the GitHub REST API.
+- Did not create any new issue comments.
+- Re-ran the issue body/comment audit and confirmed 122 PayPal-bearing issue surfaces now have zero missing proof markers: 10 issue bodies and 112 issue comments.
+- Searched GitHub issues for stale release, old tarball, and old SHA markers; no issue results were found.
+- Searched GitHub issues for `v2.29.155`; the 10 PayPal issue threads were returned.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Updated comments by issue: issue #1 had 3 comments updated; issue #2 had 27; issue #3 had 27; issue #5 had 52; issue #7 had 2.
+- Issue threads: https://github.com/trungcodeer/softjunk-lead-kit/issues/1, https://github.com/trungcodeer/softjunk-lead-kit/issues/2, https://github.com/trungcodeer/softjunk-lead-kit/issues/3, https://github.com/trungcodeer/softjunk-lead-kit/issues/5, and https://github.com/trungcodeer/softjunk-lead-kit/issues/7.
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it removes the residual GitHub issue comment proof gap without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned public GitHub issue comments, GitHub Release tarball, PayPal.Me, seller-side payment verification, manual fulfillment after verification.
+- New owner/branch/fallback: no new fulfillment owner; all current GitHub issue comments with the PayPal checkout route now point to release `v2.29.155` while executable checkout still uses the verified `v2.29.151` tarball.
+- Decision: continue.

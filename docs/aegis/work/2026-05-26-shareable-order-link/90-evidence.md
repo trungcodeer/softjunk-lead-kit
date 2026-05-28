@@ -140,6 +140,42 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 GitHub Issue Comment Proof Coverage Evidence
+
+Artifacts updated:
+- 111 existing issue comments were edited in place.
+- No new issue comments were created.
+
+Updated comments by issue:
+- Issue #1: 3 comments.
+- Issue #2: 27 comments.
+- Issue #3: 27 comments.
+- Issue #5: 52 comments.
+- Issue #7: 2 comments.
+
+Proof markers added where missing:
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Executable package asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Initial REST-paginated audit found 112 PayPal-bearing issue comments; 111 comments were missing at least one current proof marker.
+- GitHub REST API patch loop updated 111 comments with `failedCount=0`.
+- Post-update REST-paginated audit found 122 PayPal-bearing issue surfaces: 10 issue bodies and 112 issue comments.
+- Post-update audit returned `badCount=0` across all 122 PayPal-bearing issue surfaces.
+- `gh search issues "v2.29.118" --repo trungcodeer/softjunk-lead-kit` returned no results.
+- `gh search issues "softjunk-lead-kit-0.2.1.tgz" --repo trungcodeer/softjunk-lead-kit` returned no results.
+- `gh search issues "c9ca809f" --repo trungcodeer/softjunk-lead-kit` returned no results.
+- `gh search issues "v2.29.155" --repo trungcodeer/softjunk-lead-kit` returned the 10 PayPal issue threads.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Final Owned Repo Proof Gap Evidence
 
 Artifacts updated:
