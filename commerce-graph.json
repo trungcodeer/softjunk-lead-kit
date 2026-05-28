@@ -3,9 +3,9 @@
   "softjunkLatestReleaseStatus": {
     "@type": "CreativeWork",
     "name": "SoftJunk latest release and npm publish status",
-    "latestReleaseTag": "v2.29.159",
-    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159",
-    "latestReleaseTarget": "7500a0d27253c76be4979396c6f4b91abb690d15",
+    "latestReleaseTag": "v2.29.160",
+    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.160",
+    "latestReleaseTarget": "996541ac6009ee9c455116429e5685870218d6ef",
     "npmPublishStatusUrl": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
     "npmPublishWorkflowTemplateUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
     "npmjsPackageStatus": "E404",

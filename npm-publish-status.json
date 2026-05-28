@@ -20,9 +20,9 @@
     "required": "Login with npm adduser or provide NPM_TOKEN/NODE_AUTH_TOKEN before npmjs publish."
   },
   "latest_release_status": {
-    "tag": "v2.29.159",
-    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159",
-    "target_commit": "7500a0d27253c76be4979396c6f4b91abb690d15"
+    "tag": "v2.29.160",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.160",
+    "target_commit": "996541ac6009ee9c455116429e5685870218d6ef"
   },
   "public_gist_checkout_index": {
     "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
