@@ -20,9 +20,9 @@
   "agent_relay_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json",
   "agent_relay_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt",
   "latest_release_status": {
-    "latest_release_tag": "v2.29.160",
-    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.160",
-    "latest_release_target": "996541ac6009ee9c455116429e5685870218d6ef"
+    "latest_release_tag": "v2.29.161",
+    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161",
+    "latest_release_target": "b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe"
   },
   "npm_registry_status": {
     "npmjs_package": "not_published_on_npmjs_as_of_2026-05-28",
