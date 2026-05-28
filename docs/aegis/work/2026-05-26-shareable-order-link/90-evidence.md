@@ -7548,3 +7548,14 @@ Latest adjacent-discovery refresh:
 - Full details are in the `2026-05-28 Adjacent Profile and Quiet-Lead v2.29.161 Refresh Evidence` section above.
 - Profile and quiet-lead GitHub/Pages surfaces now advertise the current GitHub package and MCP relay checkout route instead of using the `v2.29.151` tarball as the primary route.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+## 2026-05-28 Send-to-Buyer GitHub Package Route Refresh Evidence
+
+- Product commit `473bd676825f17e23aef695e750ba60fd29390de` updated `SEND_TO_BUYER.md`, `send-to-buyer.html`, `send-to-buyer.json`, and added `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`.
+- Root commit `04d736fc4e994adf4c75f0c1ece90251f2c2ef9a` updated `send-5.json`, `send-5.txt`, and `send-5/index.html`.
+- Public Gist `2cb79cccf1e0e5d0efdfa4ae6d15f683` was refreshed with the current GitHub package checkout route, `v2.29.161`, `get_softjunk_agent_relay`, PayPal URL, and verification gate where applicable.
+- Validation passed: product/root `git diff --check`; JSON parse without BOM for `send-to-buyer.json` and `send-5.json`; marker checks for product/root HTML; `npm pack --dry-run --json` returned `entryCount=213`.
+- Remote package commands passed: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json` and `agent --json` returned the exact `5.00 USD` PayPal route and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Pages runs completed: product `26574213800` and root `26574224209`.
+- Live verification returned `live_send_route_ok urls=6 product_commit=473bd676825f17e23aef695e750ba60fd29390de root_commit=04d736fc4e994adf4c75f0c1ece90251f2c2ef9a`.
+- IndexNow returned `indexnow_send_route_ok status=200 urls=6 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

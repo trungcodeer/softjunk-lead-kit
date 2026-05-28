@@ -10119,3 +10119,49 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repos, GitHub repo metadata/topics/descriptions, GitHub Pages, raw GitHub files, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; adjacent repos now point to the current GitHub package and MCP relay route, with the old release tarball retained only as stable fallback where named.
 - Decision: continue.
+
+## 2026-05-28 Send-to-Buyer GitHub Package Route Refresh Checkpoint
+
+Current todo:
+- Refresh the owned "send this to one buyer" handoff surfaces so the current GitHub package command is the primary no-clone checkout route.
+- Keep the old `v2.29.151` tarball only as a stable fallback where it is explicitly labeled as fallback.
+- Mirror the current route to the existing public Gist and keep the PayPal verification gate unchanged.
+
+Active slice:
+- Update product `send-to-buyer` surfaces, root `send-5` surfaces, and the send-to-buyer Gist mirror from stale primary tarball language to the current `v2.29.161` GitHub package/agent/MCP route.
+
+Completed todos:
+- Re-read the latest intent/checkpoint, checked all four worktrees, reran PayPal verification, and checked npm auth.
+- Recovered working disk space by moving large media/model/text files from `C:\Users\minglucky` into `D:\codex-tmp\c-drive-relief\media-moved-20260528-03` without deleting them.
+- Updated product files `SEND_TO_BUYER.md`, `send-to-buyer.html`, and `send-to-buyer.json` so the primary no-clone checkout proof is `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Added `CURRENT_NO_CLONE_CHECKOUT_PROOF.md` with current release `v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, agent relay command, MCP tool `get_softjunk_agent_relay`, PayPal URL, and seller-side verification gate.
+- Updated root files `send-5.json`, `send-5.txt`, and `send-5/index.html` with the same current GitHub package route and explicit fallback tarball labeling.
+- Updated public Gist `2cb79cccf1e0e5d0efdfa4ae6d15f683` files `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, `SEND_TO_BUYER.md`, `send-to-buyer.json`, and `send-to-buyer.html`, plus its description.
+- Committed and pushed product commit `473bd676825f17e23aef695e750ba60fd29390de` and root commit `04d736fc4e994adf4c75f0c1ece90251f2c2ef9a`.
+- Waited for product Pages run `26574213800` and root Pages run `26574224209`; both completed successfully.
+- Verified six live Pages URLs, the public Gist content, IndexNow, package-native `pay` and `agent` commands, and PayPal verifier.
+
+Evidence refs:
+- Product commit: `473bd676825f17e23aef695e750ba60fd29390de` (`Refresh send-to-buyer agent checkout route`).
+- Root commit: `04d736fc4e994adf4c75f0c1ece90251f2c2ef9a` (`Refresh send-5 agent checkout route`).
+- Local validation passed: product/root `git diff --check`, JSON parse without BOM, HTML content marker checks, public Gist API checks, and `npm pack --dry-run --json` with `entryCount=213`.
+- Remote GitHub package verification returned correct `pay --mode custom --json` output for `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, current release `v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Remote GitHub package `agent --json` verification returned the agent relay packet with the preferred command, PayPal URL, current release marker, and seller-side verification gate.
+- Live Pages verification returned `live_send_route_ok urls=6 product_commit=473bd676825f17e23aef695e750ba60fd29390de root_commit=04d736fc4e994adf4c75f0c1ece90251f2c2ef9a`.
+- Public Gist verification returned `gist_send_route_ok files=4 id=2cb79cccf1e0e5d0efdfa4ae6d15f683`.
+- IndexNow returned `indexnow_send_route_ok status=200 urls=6 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`; current `npm whoami` returns `ENEEDAUTH`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens an owned buyer handoff route and Gist mirror without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product/root GitHub Pages, GitHub package execution, MCP relay metadata, owned public Gist, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package execution is primary and `v2.29.151` remains an explicitly labeled fallback tarball only.
+- Decision: continue.
