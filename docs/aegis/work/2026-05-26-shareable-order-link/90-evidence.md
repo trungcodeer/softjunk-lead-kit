@@ -43,6 +43,31 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 GitHub Discussion Current Proof Evidence
+
+Artifacts updated:
+- Discussion #6 body: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.
+
+Proof markers added:
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Executable package asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- GitHub GraphQL returned Discussion #6 body with release `v2.29.155`, tarball URL, SHA-256, no-clone command, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub GraphQL discussion search for the stale release marker returned no results.
+- GitHub GraphQL discussion search for the stale tarball marker returned no results.
+- GitHub GraphQL discussion search for the stale SHA marker returned no results.
+- GitHub GraphQL discussion search for `v2.29.155` returned Discussion #6.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Final Owned Repo Proof Gap Evidence
 
 Artifacts updated:

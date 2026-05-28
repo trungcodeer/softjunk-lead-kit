@@ -8623,3 +8623,41 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub releases, owned public issue body/comment, GitHub issue/discussion search, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; release `v2.29.155` is the current GitHub-native proof checkpoint while executable checkout still uses the verified `v2.29.151` tarball.
 - Decision: continue.
+
+## 2026-05-28 GitHub Discussion Current Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade Discussion #6, the shortest GitHub-native buyer-agent checkout route, so it carries the current no-clone package proof instead of only the PayPal route.
+
+Completed todos:
+- Re-read task intent, latest checkpoint, current product worktree state, and PayPal verifier state.
+- Inspected Discussion #6 and confirmed it had PayPal route and success gate but not the current proof release, tarball URL, SHA-256, or no-clone command.
+- Updated Discussion #6 body in place through GitHub GraphQL instead of adding a duplicate comment.
+- Added release `v2.29.155`, the verified executable tarball URL, SHA-256, no-clone `npm exec` command, direct PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` success gate.
+- Validated Discussion #6 body through GitHub GraphQL after the update.
+- Searched GitHub discussions for stale release, old tarball, and old SHA markers; no discussion results were found.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Updated discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens an existing GitHub-native buyer-agent route without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned public GitHub Discussion, GitHub Release tarball, PayPal.Me, seller-side payment verification, manual fulfillment after verification.
+- New owner/branch/fallback: no new fulfillment owner; Discussion #6 now points to release `v2.29.155` while executable checkout still uses the verified `v2.29.151` tarball.
+- Decision: continue.
