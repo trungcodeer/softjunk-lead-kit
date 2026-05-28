@@ -78,6 +78,30 @@ Payment gate:
 - This slice has not verified a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Agent Checkout Router Deploy Evidence
+
+Published commit:
+- Commit: `1c92584a34be000b7c81edc6be3f1a8e4be1ac0c`.
+- Message: `Add agent checkout router`.
+- GitHub Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26556031735.
+- Pages conclusion: `success`.
+
+Live verification:
+- Live verification confirmed HTTP 200 and zero missing markers for `agent-checkout-router.json`, `agent-checkout-router.md`, `agent-checkout-router.txt`, `README.md`, `llms.txt`, `feed.xml`, `buyer-index.json`, `agent-offer.json`, `product-feed.json`, `npm-publish-status.json`, `package.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `agent-buyer-catalog.jsonl`, `20-checkpoint.md`, and `90-evidence.md`.
+- Live sitemap and robots route checks confirmed the three agent checkout router URLs are present.
+- Live JSON parse confirmed `ranked_routes=6` in `agent-checkout-router.json`.
+- Live JSON parse confirmed `publish_readiness.entry_count=207` in `npm-publish-status.json`.
+
+Discovery submission:
+- IndexNow POST returned `status=200`.
+- Submitted URL count: `19`.
+- Key location: https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Central Agent-Native Latest Release Status Propagation Evidence
 
 Artifacts updated:

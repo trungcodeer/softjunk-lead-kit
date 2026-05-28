@@ -9162,3 +9162,41 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo files, GitHub Pages JSON/Markdown/text/XML/YAML, package metadata, owned public discovery surfaces, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; the router is discovery only and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Agent Checkout Router Deploy Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Post-push Pages deployment, live verification, IndexNow submission, and PayPal verifier check for the agent checkout router.
+
+Completed todos:
+- Committed and pushed `1c92584a34be000b7c81edc6be3f1a8e4be1ac0c` (`Add agent checkout router`) to `main`.
+- Confirmed GitHub Pages run `26556031735` completed with conclusion `success`.
+- Live-verified the new router files, changed manifests, sitemap/robots route entries, docs, and live JSON parsing with cache-busting.
+- Submitted 19 changed owned Pages URLs to IndexNow; the API returned HTTP 200.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26556031735.
+- Live verification returned HTTP 200 and zero missing markers for the router files, README, `llms.txt`, `feed.xml`, buyer/agent/product manifests, `npm-publish-status.json`, `package.json`, `.well-known` manifests, OpenAPI, JSONL catalog, checkpoint docs, sitemap, and robots.
+- Live `agent-checkout-router.json` parsed with `ranked_routes=6`.
+- Live `npm-publish-status.json` parsed with `publish_readiness.entry_count=207`.
+- IndexNow response: `status=200`, `urls=19`, key location `https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it deployed and verified the AI-native checkout router while preserving the PayPal proof gate.
+- Compatibility boundary: GitHub repo files, GitHub Pages, package metadata, owned discovery surfaces, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; payment verification remains seller-side only.
+- Decision: continue.
