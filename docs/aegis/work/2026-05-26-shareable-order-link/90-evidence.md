@@ -22,6 +22,35 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Root Pages No-Clone Checkout Proof Evidence
+
+Artifacts updated in `trungcodeer/trungcodeer.github.io`:
+- Root human routes: `/`, `/5/`, `/rescue/`, `/send-5/`.
+- Root text routes: `5.txt`, `rescue.txt`, `send-5.txt`.
+- Root JSON and discovery manifests: `5.json`, `rescue.json`, `send-5.json`, `paypal-buy-action.json`, `.well-known/paypal-buy-action.json`, `paypal.json`, `.well-known/paypal-payment.json`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `README.md`, and `llms.txt`.
+
+Published commit:
+- Root Pages commit: `94f9c0329ebc9537ce87f2428fd11cdd5aff83d2`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+
+Validation:
+- Hidden-inclusive stale marker search found no `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, or old SHA references in root public HTML/JSON/YAML/Markdown/text/JS surfaces.
+- 12 changed JSON manifests parsed successfully.
+- 7 inline scripts and JSON-LD blocks across 4 changed HTML files parsed successfully.
+- `.well-known/openapi.yaml` parsed successfully after fixing two path lines that had been joined onto previous schema lines.
+- `git diff --check` passed; only CRLF normalization warnings were reported.
+- `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json` returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages deployment for root commit `94f9c0329ebc9537ce87f2428fd11cdd5aff83d2` completed with `success`.
+- Live root validation returned HTTP 200 for 15 URLs: `/`, `/5/`, `/5.json`, `/5.txt`, `/rescue/`, `/rescue.json`, `/rescue.txt`, `/send-5/`, `/send-5.json`, `/send-5.txt`, `/paypal-buy-action.json`, `/.well-known/paypal-buy-action.json`, `/root-offer.json`, `/.well-known/softjunk-root-offer.json`, and `/.well-known/openapi.yaml`.
+- Each live URL included the current `v2.29.151` release marker, `softjunk-lead-kit-0.2.2.tgz`, SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`, and `PAYPAL_PAYMENT_VERIFIED=true`; none included stale markers.
+- IndexNow POST submitted the 15 root URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 HTML and Gist Checkout Proof Metadata Evidence
 
 Artifacts updated:

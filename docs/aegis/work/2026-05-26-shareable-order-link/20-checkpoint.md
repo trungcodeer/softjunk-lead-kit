@@ -8361,3 +8361,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML, GitHub Pages HTML, owned public Gists, GitHub Release notes, existing GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` remains the current no-clone executable fallback while `v2.29.153` records HTML/Gist metadata propagation.
 - Decision: continue.
+
+## 2026-05-28 Root Pages No-Clone Checkout Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the root `trungcodeer.github.io` entry points so `/`, `/5/`, `/rescue/`, `/send-5/`, root PayPal manifests, OpenAPI, and `.well-known` discovery expose the current executable `v2.29.151` no-clone checkout proof instead of stale tarball metadata.
+
+Completed todos:
+- Audited the root Pages repo for stale `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, and old SHA markers.
+- Replaced stale release/tarball/SHA markers across root public HTML, JSON, Markdown, text, and OpenAPI discovery files.
+- Added `no_clone_checkout_proof` to root JSON manifests including `5.json`, `rescue.json`, `send-5.json`, `paypal-buy-action.json`, `.well-known/paypal-buy-action.json`, `paypal.json`, `.well-known/paypal-payment.json`, `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, `.well-known/agent-card.json`, and `.well-known/ai-plugin.json`.
+- Added visible no-clone checkout proof to `/`, `/5/`, `/rescue/`, `/send-5/`, `5.txt`, `rescue.txt`, and `send-5.txt`.
+- Fixed two malformed OpenAPI path line joins while validating `.well-known/openapi.yaml`.
+- Parsed 12 changed JSON files, validated 7 inline scripts across 4 changed HTML files, and parsed OpenAPI YAML.
+- Ran the actual no-clone release asset command and confirmed it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Pushed root Pages commit `94f9c0329ebc9537ce87f2428fd11cdd5aff83d2`.
+- Confirmed GitHub Pages deployment completed successfully.
+- Validated 15 live root URLs returned HTTP 200, included the current tarball/SHA/payment gate markers, and did not include stale markers.
+- Submitted the 15 root URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Root Pages commit: `94f9c0329ebc9537ce87f2428fd11cdd5aff83d2`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone checkout command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it upgrades the shortest root buyer-agent and human routes without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Pages HTML/JSON/YAML/text/Markdown, IndexNow discovery for owned Pages URLs, GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; root Pages now mirrors the product tarball fallback at `v2.29.151`.
+- Decision: continue.
