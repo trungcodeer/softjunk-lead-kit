@@ -239,7 +239,7 @@
       <nav aria-label="Related SoftJunk routes">
         <a href="send-to-buyer.html">Send generator</a>
         <a href="one-buyer-share.json">JSON</a>
-        <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151">Verified release</a>
+        <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162">Current release</a>
         <a href="https://paypal.me/softjunk/5USD">PayPal $5</a>
       </nav>
       <h1>Send one fitting buyer.</h1>
@@ -342,10 +342,10 @@
 
         <div>
           <h3>No-clone checkout proof</h3>
-          <textarea id="checkout-proof" readonly aria-label="Verified no-clone checkout command">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+          <textarea id="checkout-proof" readonly aria-label="Verified no-clone checkout command">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 
-Verified release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
-Release asset SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c</textarea>
+Current release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256</textarea>
           <div class="actions">
             <button type="button" data-copy="checkout-proof">Copy checkout proof</button>
           </div>
@@ -373,9 +373,9 @@ Release asset SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf44
     const paymentUrl = "https://paypal.me/softjunk/5USD";
     const orderFormUrl = "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml";
     const pageUrl = "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html";
-    const checkoutCommand = "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json";
-    const verifiedReleaseUrl = "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
-    const releaseSha256 = "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c";
+    const checkoutCommand = "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json";
+    const verifiedReleaseUrl = "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162";
+    const releaseSha256 = "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256";
     const fields = Array.from(document.querySelectorAll("#share-form input:not([type=checkbox]), #share-form select"));
     const fitConfirm = document.querySelector("#fit-confirm");
     const buyerMessage = document.querySelector("#buyer-message");
@@ -421,7 +421,7 @@ Release asset SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf44
         + "PayPal: " + paymentUrl + "\n"
         + "PayPal note: " + note + "\n"
         + "No-clone checkout proof: " + checkoutCommand + "\n"
-        + "Verified release: " + verifiedReleaseUrl + "\n"
+        + "Current release: " + verifiedReleaseUrl + "\n"
         + "Release SHA-256: " + releaseSha256 + "\n"
         + "After payment: " + orderFormUrl + "\n\n"
         + "Do not send customer names, phone numbers, email addresses, street addresses, transaction IDs, or PayPal details. Fulfillment starts only after seller-side PayPal verification.";

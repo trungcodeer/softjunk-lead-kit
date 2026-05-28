@@ -40,9 +40,9 @@ Fulfillment starts only after the seller can see the 5 USD PayPal transaction, t
 No-clone checkout proof:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 
-Tarball SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
+Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`

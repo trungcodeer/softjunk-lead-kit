@@ -10,12 +10,12 @@ Route only when the buyer has one real quiet lead and wants practical follow-up 
 - No-clone checkout proof:
 
   ```bash
-  npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+  npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
   ```
 
-- Verified release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
-- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
-- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
+- Current release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz
+- Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`
 - Direct PayPal checkout: https://paypal.me/softjunk/5USD
 - Post-payment order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 

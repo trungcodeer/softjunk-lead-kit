@@ -33,9 +33,9 @@ Action graph:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
    target b8c335e6cfac3045155497b41e5532e1dfefae10
 7. Compare release tarball:
-   https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
+   https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz
 8. Compare release SHA-256:
-   1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
+   https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
 9. Pay exactly 5 USD:
    https://paypal.me/softjunk/5USD
 Current agent relay command:
