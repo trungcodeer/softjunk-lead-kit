@@ -37,11 +37,11 @@ const NPM_FUNDING_JSON =
 const NPM_FUNDING_MARKDOWN =
   "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md";
 const RELEASE_URL =
-  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.118";
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
 const RELEASE_TARBALL_URL =
-  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz";
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz";
 const RELEASE_TARBALL_SHA256 =
-  "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d";
+  "Published in the v2.29.151 release notes after the tarball asset is uploaded.";
 const RELEASE_TARBALL_DOCTOR_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit doctor --json`;
 const RELEASE_TARBALL_PAY_CUSTOM_COMMAND =
@@ -470,7 +470,7 @@ function handleRequest(message) {
       },
       serverInfo: {
         name: "softjunk-mcp-checkout",
-        version: "2026.05.27"
+        version: "2026.05.28"
       },
       instructions:
         "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."

@@ -3,11 +3,14 @@
 
 const CONSTANTS = Object.freeze({
   name: 'softjunk-lead-kit',
-  version: '0.2.1',
+  version: '0.2.2',
   paymentUrl: 'https://paypal.me/softjunk/5USD',
   amount: '5.00',
   currency: 'USD',
   successSignal: 'PAYPAL_PAYMENT_VERIFIED=true',
+  releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151',
+  releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz',
+  releaseTarballSha256: 'Published in the v2.29.151 release notes after the tarball asset is uploaded.',
   rootBuyerCard: 'https://trungcodeer.github.io/5/',
   rootBuyerJson: 'https://trungcodeer.github.io/5.json',
   productUrl: 'https://trungcodeer.github.io/softjunk-lead-kit/',
@@ -28,6 +31,22 @@ const CONSTANTS = Object.freeze({
   verificationGate: 'Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.'
 });
 
+const NO_CLONE_CHECKOUT_COMMAND = `npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
+
+function noCloneCheckoutProof() {
+  return {
+    command: NO_CLONE_CHECKOUT_COMMAND,
+    expected_amount: CONSTANTS.amount,
+    currency: CONSTANTS.currency,
+    payment_url: CONSTANTS.paymentUrl,
+    release_url: CONSTANTS.releaseUrl,
+    release_tarball_url: CONSTANTS.releaseTarballUrl,
+    release_tarball_sha256: CONSTANTS.releaseTarballSha256,
+    success_signal: CONSTANTS.successSignal,
+    payment_boundary: CONSTANTS.verificationGate
+  };
+}
+
 const HELP = `SoftJunk Lead Kit CLI
 
 Usage:
@@ -38,6 +57,7 @@ Usage:
   softjunk-lead-kit pay [--mode custom|kit] [--json]
   npm fund
   npm run fund
+  npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json
 
 Examples:
   softjunk-lead-kit rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote
@@ -152,7 +172,8 @@ function buildRescue(input) {
       paypal_note: paypalNoteFor('custom', input),
       order_form_url: CONSTANTS.customOrderForm,
       after_payment_url: CONSTANTS.afterPayUrl,
-      one_rewrite_included: true
+      one_rewrite_included: true,
+      no_clone_checkout_proof: noCloneCheckoutProof()
     },
     privacy_rule: CONSTANTS.privacyRule,
     verification_gate: CONSTANTS.verificationGate,
@@ -173,6 +194,9 @@ function buildSend(input) {
     'Paste this PayPal note:',
     rescue.paid_upgrade.paypal_note,
     '',
+    'Optional no-clone checkout proof:',
+    NO_CLONE_CHECKOUT_COMMAND,
+    '',
     'After payment, submit placeholders only:',
     CONSTANTS.customOrderForm,
     '',
@@ -185,6 +209,7 @@ function buildSend(input) {
     buyer_handoff_message: buyerMessage,
     preview: rescue.preview_messages,
     paid_upgrade: rescue.paid_upgrade,
+    no_clone_checkout_proof: noCloneCheckoutProof(),
     privacy_rule: CONSTANTS.privacyRule,
     verification_gate: CONSTANTS.verificationGate,
     success_signal: CONSTANTS.successSignal
@@ -208,6 +233,7 @@ function buildKit() {
     order_form_url: CONSTANTS.digitalKitOrderForm,
     payment_url: CONSTANTS.paymentUrl,
     required_paypal_note: paypalNoteFor('kit'),
+    no_clone_checkout_proof: noCloneCheckoutProof(),
     privacy_rule: CONSTANTS.privacyRule,
     verification_gate: CONSTANTS.verificationGate,
     success_signal: CONSTANTS.successSignal
@@ -226,6 +252,7 @@ function buildPay(options) {
     paypal_note: paypalNoteFor(mode, options),
     order_form_url: mode === 'kit' ? CONSTANTS.digitalKitOrderForm : CONSTANTS.customOrderForm,
     proof_url: mode === 'kit' ? CONSTANTS.digitalKitProof : CONSTANTS.rootBuyerCard,
+    no_clone_checkout_proof: noCloneCheckoutProof(),
     privacy_rule: CONSTANTS.privacyRule,
     verification_gate: CONSTANTS.verificationGate,
     success_signal: CONSTANTS.successSignal
@@ -254,6 +281,11 @@ async function buildDoctor(options) {
     npm_funding_url: CONSTANTS.paymentUrl,
     npm_funding_json_url: CONSTANTS.npmFundingJson,
     npm_funding_markdown_url: CONSTANTS.npmFundingMarkdown,
+    release_url: CONSTANTS.releaseUrl,
+    release_tarball_url: CONSTANTS.releaseTarballUrl,
+    release_tarball_sha256: CONSTANTS.releaseTarballSha256,
+    run_from_release_tarball_pay_custom: NO_CLONE_CHECKOUT_COMMAND,
+    no_clone_checkout_proof: noCloneCheckoutProof(),
     npm_fund_command: 'npm fund',
     success_signal: CONSTANTS.successSignal,
     verification_gate: CONSTANTS.verificationGate,
@@ -261,7 +293,8 @@ async function buildDoctor(options) {
     package_commands: ['npm fund', 'npm run fund', 'npm run fund:kit'],
     install: {
       after_clone: 'node bin/softjunk-lead-kit.js doctor --json',
-      npm_exec_from_github: 'npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json'
+      npm_exec_from_github: 'npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json',
+      npm_exec_from_release_tarball: NO_CLONE_CHECKOUT_COMMAND
     }
   };
   if (options.live) {
@@ -281,6 +314,7 @@ function printText(payload) {
     console.log(`Node: ${payload.node_version}`);
     console.log(`Local-only: ${payload.local_only}`);
     console.log(`PayPal: ${payload.payment_url}`);
+    console.log(`No-clone checkout: ${payload.run_from_release_tarball_pay_custom}`);
     console.log(`Gate: ${payload.success_signal}`);
     if (payload.live_checks) payload.live_checks.forEach((check) => console.log(`Live ${check.ok ? 'ok' : 'fail'} ${check.status || ''} ${check.url}`));
     return;
@@ -295,6 +329,7 @@ function printText(payload) {
     console.log(`PayPal note: ${payload.paid_upgrade.paypal_note}`);
     console.log(`Order form: ${payload.paid_upgrade.order_form_url}`);
     console.log(`Gate: ${payload.success_signal}`);
+    console.log(`No-clone checkout: ${payload.paid_upgrade.no_clone_checkout_proof.command}`);
     return;
   }
   if (payload.command === 'send') {
@@ -311,6 +346,7 @@ function printText(payload) {
     console.log(`PayPal note: ${payload.required_paypal_note}`);
     console.log(`Order form: ${payload.order_form_url}`);
     console.log(`Gate: ${payload.success_signal}`);
+    console.log(`No-clone checkout: ${payload.no_clone_checkout_proof.command}`);
     return;
   }
   if (payload.command === 'pay') {
@@ -318,6 +354,7 @@ function printText(payload) {
     console.log(`PayPal note: ${payload.paypal_note}`);
     console.log(`Order form: ${payload.order_form_url}`);
     console.log(`Gate: ${payload.success_signal}`);
+    console.log(`No-clone checkout: ${payload.no_clone_checkout_proof.command}`);
     return;
   }
   console.log(JSON.stringify(payload, null, 2));
