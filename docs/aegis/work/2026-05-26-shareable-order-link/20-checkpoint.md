@@ -10471,3 +10471,40 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repos, GitHub Pages, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; root was updated from a D: clone only because the C: worktree had no free space.
 - Decision: continue.
+
+## 2026-05-28 Public Gist Stale Marker Cleanup Checkpoint
+
+Current todo:
+- Audit existing owned public Gists for stale `v2.29.161` and target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe` markers.
+- Patch stale owned Gist content only; do not create new Gists or outreach.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Check all owned public Gists, replace the one remaining stale `root-agent-card.json` mirror with the current root `agent-card.json`, verify all owned public Gists are free of the old release marker, and rerun the PayPal verifier.
+
+Completed todos:
+- Audited 29 owned public Gists through the GitHub API.
+- Found one stale file: `root-agent-card.json` in Gist `82e9935979596bbe2330db46dc9bc58a`.
+- Updated `root-agent-card.json` from the current root Pages `agent-card.json` content.
+- Verified the updated Gist file contains `v2.29.162`, target `b8c335e6cfac3045155497b41e5532e1dfefae10`, exact PayPal URL, current GitHub package checkout command, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Re-ran the global Gist stale-marker audit.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Initial Gist audit found `82e9935979596bbe2330db46dc9bc58a root-agent-card.json`.
+- Gist verification returned `gist_root_agent_card_v229162_ok id=82e9935979596bbe2330db46dc9bc58a`.
+- Global Gist audit returned `gist_global_v229162_old_markers_absent count=29`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it cleans stale owned public Gist discovery mirrors without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned public Gists, GitHub API, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; no new Gists or public comments were created.
+- Decision: continue.

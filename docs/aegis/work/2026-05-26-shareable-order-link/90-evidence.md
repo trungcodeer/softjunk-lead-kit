@@ -7680,3 +7680,13 @@ Latest adjacent-discovery refresh:
 - Repository metadata check confirmed all four owned repos advertise USD 5 PayPal AI/MCP buyer-agent checkout and include the `ai-agent`, `mcp-server`, and `model-context-protocol` topics.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Public Gist Stale Marker Cleanup Evidence
+
+- Audited 29 owned public Gists through the GitHub API for `v2.29.161` and `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Initial audit found one stale file: `root-agent-card.json` in Gist `82e9935979596bbe2330db46dc9bc58a`.
+- Updated `root-agent-card.json` from the current root `agent-card.json`.
+- Verification returned `gist_root_agent_card_v229162_ok id=82e9935979596bbe2330db46dc9bc58a`.
+- Global Gist audit returned `gist_global_v229162_old_markers_absent count=29`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
