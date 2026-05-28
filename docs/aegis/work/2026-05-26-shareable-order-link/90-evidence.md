@@ -68,6 +68,40 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 All GitHub Discussions Proof Coverage Evidence
+
+Artifacts updated:
+- Discussion #4: https://github.com/trungcodeer/softjunk-lead-kit/discussions/4.
+- Discussion #8: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8.
+- Discussion #14: https://github.com/trungcodeer/softjunk-lead-kit/discussions/14.
+- Discussion #15: https://github.com/trungcodeer/softjunk-lead-kit/discussions/15.
+- Discussion #16: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16.
+- Discussion #17: https://github.com/trungcodeer/softjunk-lead-kit/discussions/17.
+
+Already current:
+- Discussion #6: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.
+
+Proof markers added where missing:
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Executable package asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Initial GraphQL audit found 7 discussions with `https://paypal.me/softjunk/5USD`; #4, #8, #14, #15, #16, and #17 were missing 4 current proof markers.
+- Post-update GraphQL audit found all 7 PayPal discussions have `missingProofCount=0` and no stale markers.
+- GitHub GraphQL discussion search for `v2.29.118` returned no results.
+- GitHub GraphQL discussion search for `softjunk-lead-kit-0.2.1.tgz` returned no results.
+- GitHub GraphQL discussion search for `c9ca809f` returned no results.
+- GitHub GraphQL discussion search for `v2.29.155` returned discussions #4, #6, #8, #14, #15, #16, and #17.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Final Owned Repo Proof Gap Evidence
 
 Artifacts updated:
