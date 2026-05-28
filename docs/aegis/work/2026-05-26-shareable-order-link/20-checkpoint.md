@@ -9564,6 +9564,8 @@ Completed todos:
 Evidence refs:
 - Discussion #6: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.
 - New discussion comment: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17086192.
+- Discussion GraphQL ID: `D_kwDOSnIQIc4Amqq9`.
+- Comment GraphQL ID: `DC_kwDOSnIQIc4BBLbw`.
 - Discussion update timestamp from GraphQL: `2026-05-28T07:20:56Z`.
 - GraphQL verification confirmed the body and new comment include `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, `ranked_routes=11` / `Ranked routes: 11`, the preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
