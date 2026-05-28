@@ -9286,3 +9286,41 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, GitHub repo files, GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Root Hub Agent Router Propagation Checkpoint
+
+Current todo:
+- Keep the root GitHub Pages hub aligned with the product agent checkout router while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Propagate the deployed agent checkout router and release `v2.29.157` into the root Pages hub, root machine-readable manifests, payment intents, OpenAPI, robots, sitemap, README, and AGENTS guidance.
+
+Completed todos:
+- Re-read the latest checkpoint, intent, root worktree state, and root discovery baseline before editing.
+- Added root references to `agent-checkout-router.json`, `.md`, `.txt`, release `v2.29.157`, target `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`, `npm-publish-status.json`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Rebased over 68 newer root commits and resolved conflicts by preserving the newer root `/5/`, no-clone, and digital-kit proof surfaces while retaining the new agent checkout router markers.
+- Committed and pushed root commit `67714548f376fa2bdb1f266553b422de59b33d86` (`Link root hub to agent checkout router`).
+- Confirmed root GitHub Pages run `26557406528` completed successfully.
+- Live-verified root Pages URLs with cache-busting, submitted IndexNow, and reran the PayPal verifier.
+
+Evidence refs:
+- Root local validation passed: JSON parse `json_ok=17`, sitemap XML parse `sitemap_xml_ok=110`, OpenAPI YAML parse, marker audit `files=16`, and `git diff --check` with only CRLF warnings.
+- Root live verification returned `root_live_ok=16`, `json_ok=8`, `sitemap_urls=110`, and zero missing router/release/PayPal markers.
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26557406528.
+- IndexNow response: `status=200`, `urls=21`, key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens owned root discovery and buyer-agent checkout routing without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: root GitHub Pages, product GitHub Pages, package metadata, owned discovery manifests, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; root now points to the product router while payment verification remains seller-side only.
+- Decision: continue.

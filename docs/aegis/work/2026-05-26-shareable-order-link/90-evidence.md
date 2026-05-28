@@ -22,6 +22,46 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Root Hub Agent Router Propagation Evidence
+
+Published root commit:
+- Repository: `trungcodeer/trungcodeer.github.io`.
+- Commit: `67714548f376fa2bdb1f266553b422de59b33d86`.
+- Message: `Link root hub to agent checkout router`.
+- Rebase note: commit was rebased over 68 newer root commits and preserved the newer `/5/`, no-clone, and digital-kit proof surfaces.
+
+Root surfaces updated:
+- `index.html`, `llms.txt`, `ai.json`, `ai.txt`, `root-offer.json`, `agent-card.json`, `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `.well-known/softjunk-root-offer.json`, `paypal.json`, `.well-known/paypal-payment.json`, `README.md`, `AGENTS.md`, `robots.txt`, and `sitemap.xml`.
+
+Proof markers propagated:
+- Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json.
+- Router Markdown/text: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md and https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt.
+- Latest release: `v2.29.157`.
+- Latest release URL: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157.
+- Release target commit: `5a7f76bb6a0b8cea6a87e676a228624cd13aabad`.
+- NPM/package status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json.
+- Direct PayPal checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Local root JSON parse passed with `json_ok=17`.
+- Local root sitemap XML parse passed with `sitemap_xml_ok=110`.
+- Local root OpenAPI YAML parse passed with `npx --yes js-yaml .well-known/openapi.yaml`.
+- Local root marker audit passed across 16 files with zero missing router/release/PayPal markers.
+- `git diff --check` passed with only CRLF normalization warnings.
+- GitHub Pages run `26557406528` completed successfully: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26557406528.
+- Live root verification returned `root_live_ok=16`, `json_ok=8`, `sitemap_urls=110`, and zero missing router/release/PayPal markers.
+
+Discovery submission:
+- IndexNow POST returned `status=200`.
+- Submitted URL count: `21`.
+- Key location: https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Agent Router Latest Release Status Promotion Evidence
 
 Artifacts updated:
