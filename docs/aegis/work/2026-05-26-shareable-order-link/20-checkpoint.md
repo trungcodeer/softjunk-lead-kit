@@ -9495,3 +9495,50 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub Pages, raw GitHub source, package metadata, JSON/Markdown/text/JSONL discovery surfaces, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package route is now preferred and the pinned release tarball remains fallback while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Latest Package Checkout Release Broadcast Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/Gist conversion surfaces available while waiting for actual PayPal evidence.
+- Use public release feeds, machine-readable manifests, and package-native checkout routes instead of spam, scraped outreach, or false payment claims.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Broadcast the current GitHub-package checkout route through a new latest GitHub Release, product/root Pages discovery, public Gist mirrors, and IndexNow so agents see the 11-route checkout router instead of the older 10-route release.
+
+Completed todos:
+- Re-read the latest checkpoint, task intent, product/root worktrees, current PayPal verifier output, and latest release state before editing.
+- Created public GitHub Release `v2.29.159` targeting `7500a0d27253c76be4979396c6f4b91abb690d15` with the preferred no-clone checkout command.
+- Updated 27 product discovery/status surfaces to `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, and 11-route wording where applicable.
+- Updated 14 root hub discovery/status surfaces to `v2.29.159` and target `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- Refreshed five primary public Gist JSON files and all eight public Gist `CURRENT_LATEST_RELEASE_NPM_STATUS.md` files for `v2.29.159`, `ranked routes: 11`, the GitHub package checkout command, the fallback tarball command, PayPal URL, and payment verification boundary.
+- Rechecked npmjs state: `npm view softjunk-lead-kit --json` returned `E404`, `npm whoami` returned `ENEEDAUTH`, and `npm-publish-status.json` was updated to `checked_at_local=2026-05-28T14:08:35+07:00`.
+- Validated product/root locally, committed and pushed product commit `29b656c079cbd818c74f0b812c25358be9c69ddb` and root commit `e762967e442d4487478a6c8fa464bbf04e3b218e`.
+- Confirmed product Pages run `26560238857` and root Pages run `26560249309` completed successfully.
+- Live-verified product/root Pages with cache-busting, validated release/Gists, submitted IndexNow for 41 Pages URLs, and reran the PayPal verifier.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159.
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26560238857.
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26560249309.
+- Product local validation passed: JSON parse `json_ok=64`, JSONL parse `jsonl_ok=56`, XML parse `xml_ok=2`, OpenAPI YAML parse `openapi_yaml_ok=1`, marker audit `marker_ok=latest_release_v2.29.159 ranked_routes=11 stale=0`, `node --check` for CLI/MCP, `npm run cli:smoke`, `npm pack --dry-run --json` with `entryCount=207`, GitHub-package checkout command, and `git diff --check`.
+- Root local validation passed: `root_json_ok=17`, sitemap XML parse, OpenAPI YAML parse `root_openapi_yaml_ok=1`, marker audit `root_marker_ok=latest_release_v2.29.159 stale=0`, and `git diff --check`.
+- Gist validation returned `gist_live_ok=8 primary_json_ok=5 status=v2.29.159 ranked_routes=11`.
+- Product live verification returned `product_live_ok urls=27 jsonl=56 ranked_routes=11 latest=v2.29.159`.
+- Root live verification returned `root_live_ok urls=14 latest=v2.29.159`.
+- IndexNow response: `status=200`, `urls=41`, key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it broadcasts the strongest current checkout route through public release/feed/manifest channels that agents can read without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.159` is the latest release/feed marker, GitHub package checkout remains preferred, and the pinned tarball remains fallback while payment verification remains seller-side only.
+- Decision: continue.

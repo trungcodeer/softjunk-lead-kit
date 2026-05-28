@@ -6983,3 +6983,35 @@ Latest local/live slice:
 - Local validation passed: `json_ok=64`, `jsonl_ok=56`, `xml_ok=2`, `openapi_yaml_ok=1`, CLI/MCP `node --check`, `npm run cli:smoke`, `npm pack --dry-run --json`, direct GitHub-package checkout command, and `git diff --check`.
 - GitHub Pages run `26559496678` succeeded, live verification returned `product_live_ok urls=13 jsonl=56 ranked_routes=11`, and IndexNow retry returned `status=200 urls=11`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Latest Package Checkout Release Broadcast Evidence
+
+Published release:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159.
+- Target commit: `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- Release body includes the preferred no-clone checkout command, `amount=5.00`, `currency=USD`, `https://paypal.me/softjunk/5USD`, `PAYPAL_PAYMENT_VERIFIED=true`, `Ranked router: 11 routes`, and the boundary that payment/fulfillment/completion still require seller-side PayPal evidence or verifier success.
+
+Artifacts updated:
+- Product commit: `29b656c079cbd818c74f0b812c25358be9c69ddb` (`Promote latest package checkout release status`).
+- Root commit: `e762967e442d4487478a6c8fa464bbf04e3b218e` (`Promote root hub latest package checkout release`).
+- Product surfaces: 27 public product discovery/status files including router, catalog, latest release status, public Gist index, feed, README, llms, central JSON manifests, `.well-known` manifests, and package metadata.
+- Root surfaces: 14 public root hub discovery/status files including index, root offer, PayPal JSON, AI route, README, AGENTS, llms, and `.well-known` manifests.
+- Public Gists: five primary JSON Gists refreshed from local files and eight `CURRENT_LATEST_RELEASE_NPM_STATUS.md` files refreshed for `v2.29.159`.
+
+Validation:
+- Product local validation returned `json_ok=64`, `jsonl_ok=56`, `marker_ok=latest_release_v2.29.159 ranked_routes=11 stale=0`, `xml_ok=2`, and `openapi_yaml_ok=1`.
+- Product CLI checks passed: `node --check bin/softjunk-lead-kit.js`, `node --check mcp-server-softjunk.js`, `npm run cli:smoke`, and `npm pack --dry-run --json` with `entryCount=207`.
+- GitHub-package checkout command returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, order form URL, proof URL, privacy rule, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Root local validation returned `root_json_ok=17`, `root_marker_ok=latest_release_v2.29.159 stale=0`, `root_sitemap_xml_ok=1`, and `root_openapi_yaml_ok=1`.
+- Rechecked npm state from this machine at `2026-05-28T14:08:35+07:00`: `npm view softjunk-lead-kit --json` returned `E404`, and `npm whoami` returned `ENEEDAUTH`.
+- Gist API/raw validation returned `gist_live_ok=8 primary_json_ok=5 status=v2.29.159 ranked_routes=11`.
+- Product Pages run `26560238857` completed with conclusion `success`.
+- Root Pages run `26560249309` completed with conclusion `success`.
+- Product live verification returned `product_live_ok urls=27 jsonl=56 ranked_routes=11 latest=v2.29.159`.
+- Root live verification returned `root_live_ok urls=14 latest=v2.29.159`.
+- IndexNow POST returned `status=200` for `urls=41` with key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
