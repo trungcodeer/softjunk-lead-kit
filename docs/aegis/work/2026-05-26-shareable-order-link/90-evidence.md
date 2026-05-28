@@ -7504,3 +7504,47 @@ Latest GitHub-native refresh:
 - Full details are in the `2026-05-28 GitHub-Native v2.29.161 Refresh Evidence` section above.
 - All tracked Issue bodies, Issue comments, Discussion bodies, and the tracked Discussion comment now advertise `v2.29.161` and target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Adjacent Profile and Quiet-Lead v2.29.161 Refresh Evidence
+
+External public surfaces updated:
+- Profile repo: https://github.com/trungcodeer/trungcodeer.
+- Quiet-lead repo: https://github.com/trungcodeer/quiet-lead-follow-up.
+- Product repo metadata: https://github.com/trungcodeer/softjunk-lead-kit.
+- Root Pages repo metadata: https://github.com/trungcodeer/trungcodeer.github.io.
+
+Change made:
+- Updated profile and quiet-lead README files to present the current GitHub package checkout command:
+  `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Added the agent relay command to those README files:
+  `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`.
+- Added the MCP relay tool name `get_softjunk_agent_relay`.
+- Added current release `v2.29.161` and target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Refreshed profile and quiet-lead HTML, JSON, llms, and agent docs so their current package route points to the GitHub package command and release `v2.29.161`.
+- Retained the old `v2.29.151` release tarball only where it is explicitly the stable fallback tarball.
+- Updated repository descriptions and topics for `softjunk-lead-kit`, `trungcodeer.github.io`, `trungcodeer`, and `quiet-lead-follow-up` to include AI/MCP buyer-agent checkout discovery.
+
+Validation:
+- Profile commit `dcffdbc1823abd54276af206c79d115af533ce29` refreshed the README; profile commit `24c4a91202d2fb2f954391dea488262bf9ee9f8c` refreshed the wider profile Pages route.
+- Quiet-lead commit `e17a1e5a9ce19ead1b87b176deaf7b1884eef3a2` refreshed the README; quiet-lead commit `72784f835810633c04579b56d9853274ccf5b1a2` refreshed the wider quiet-lead Pages route.
+- Profile local JSON parse returned `profile_json_ok count=2`.
+- Quiet-lead local JSON parse returned `quiet_json_ok count=4`.
+- Profile raw GitHub verification returned `profile_raw_route_v229161_ok`.
+- Quiet-lead raw GitHub verification returned `quiet_raw_route_v229161_ok`.
+- Profile Pages run `26572529252` completed with conclusion `success` for commit `24c4a91202d2fb2f954391dea488262bf9ee9f8c`.
+- Quiet-lead Pages run `26572528492` completed with conclusion `success` for commit `72784f835810633c04579b56d9853274ccf5b1a2`.
+- Adjacent Pages live verification returned `adjacent_pages_route_v229161_ok urls=12 profile_commit=24c4a91202d2fb2f954391dea488262bf9ee9f8c quiet_commit=72784f835810633c04579b56d9853274ccf5b1a2`.
+- IndexNow returned `indexnow_adjacent_v229161_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- Repository metadata verification confirmed all four owned public repos include descriptions for AI/MCP buyer-agent checkout and topics `ai-agent`, `mcp-server`, and `model-context-protocol`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Adjacent Profile and Quiet-Lead v2.29.161 Refresh Latest Note
+
+Latest adjacent-discovery refresh:
+- Full details are in the `2026-05-28 Adjacent Profile and Quiet-Lead v2.29.161 Refresh Evidence` section above.
+- Profile and quiet-lead GitHub/Pages surfaces now advertise the current GitHub package and MCP relay checkout route instead of using the `v2.29.151` tarball as the primary route.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

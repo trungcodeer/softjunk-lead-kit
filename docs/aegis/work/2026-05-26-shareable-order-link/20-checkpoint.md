@@ -10075,3 +10075,47 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Issues, GitHub Issue comments, GitHub Discussions, GitHub Discussion comments, GitHub Releases, product/root Pages, package metadata, MCP stdio server, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; Issue/Discussion bodies/comments now match `v2.29.161`, GitHub package execution remains preferred, MCP exposes `get_softjunk_agent_relay`, and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Adjacent Profile and Quiet-Lead v2.29.161 Refresh Checkpoint
+
+Current todo:
+- Keep adjacent owned profile and quiet-lead GitHub/Pages discovery surfaces aligned with the current GitHub package and MCP agent relay checkout route.
+- Avoid unsolicited outreach; only update owned public discovery surfaces.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Refresh the `trungcodeer/trungcodeer` profile repo and `trungcodeer/quiet-lead-follow-up` repo so README, Pages, llms, JSON, HTML, agent docs, repo descriptions, and topics promote `v2.29.161` as the current route instead of treating the old `v2.29.151` tarball as primary.
+
+Completed todos:
+- Cloned the two adjacent owned repos under `D:\codex-tmp\softjunk-adjacent-repos-20260528`.
+- Updated profile README and quiet-lead README with the GitHub package checkout command, `agent --json` relay command, MCP `get_softjunk_agent_relay` route, current release `v2.29.161`, and target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Updated profile repo docs/Pages metadata files: `.github/SUPPORT.md`, `.github/copilot-instructions.md`, `.well-known/ai-plugin.json`, `AGENTS.md`, `CLAUDE.md`, `CODEX.md`, `GEMINI.md`, `index.html`, `llms.txt`, and `softjunk-profile-offer.json`.
+- Updated quiet-lead repo docs/Pages metadata files: `.github/SUPPORT.md`, `.github/copilot-instructions.md`, `.well-known/ai-plugin.json`, `.well-known/paypal-buy-action.json`, `AGENTS.md`, `CLAUDE.md`, `CODEX.md`, `GEMINI.md`, `buyer-route.json`, intent HTML pages, `index.html`, `llms.txt`, `pay-5-usd-paypal.html`, `pay-5-usd-paypal.json`, and `pay-5-usd-paypal.md`.
+- Updated repository descriptions and topics for `softjunk-lead-kit`, `trungcodeer.github.io`, `trungcodeer`, and `quiet-lead-follow-up` to include AI/MCP buyer-agent checkout discovery.
+- Committed and pushed profile commits `dcffdbc1823abd54276af206c79d115af533ce29` and `24c4a91202d2fb2f954391dea488262bf9ee9f8c`.
+- Committed and pushed quiet-lead commits `e17a1e5a9ce19ead1b87b176deaf7b1884eef3a2` and `72784f835810633c04579b56d9853274ccf5b1a2`.
+- Verified JSON parsing, repo metadata, raw GitHub URLs, Pages runs, live Pages URLs, IndexNow, and PayPal verifier.
+
+Evidence refs:
+- Profile raw verification returned `profile_raw_route_v229161_ok`.
+- Quiet-lead raw verification returned `quiet_raw_route_v229161_ok`.
+- Profile Pages run `26572529252` for commit `24c4a91202d2fb2f954391dea488262bf9ee9f8c` completed with conclusion `success`.
+- Quiet-lead Pages run `26572528492` for commit `72784f835810633c04579b56d9853274ccf5b1a2` completed with conclusion `success`.
+- Adjacent Pages verification returned `adjacent_pages_route_v229161_ok urls=12 profile_commit=24c4a91202d2fb2f954391dea488262bf9ee9f8c quiet_commit=72784f835810633c04579b56d9853274ccf5b1a2`.
+- IndexNow returned `indexnow_adjacent_v229161_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- Repository metadata verification confirmed descriptions include AI/MCP buyer-agent checkout and topics include `ai-agent`, `mcp-server`, and `model-context-protocol` for the four owned public repos.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves public owned profile and quiet-lead discovery for the current executable AI/MCP checkout route without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub repos, GitHub repo metadata/topics/descriptions, GitHub Pages, raw GitHub files, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; adjacent repos now point to the current GitHub package and MCP relay route, with the old release tarball retained only as stable fallback where named.
+- Decision: continue.
