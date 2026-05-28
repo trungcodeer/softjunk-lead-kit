@@ -8452,3 +8452,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/JSON/Markdown/text/JS, GitHub Pages, owned public Gists, GitHub Release notes, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` remains the executable no-clone fallback while `v2.29.154` records proof coverage propagation.
 - Decision: continue.
+
+## 2026-05-28 Quiet Lead Follow-Up Public Repo Proof Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade the separate `trungcodeer/quiet-lead-follow-up` public repo so every exact PayPal `$5` surface exposes the current executable no-clone package checkout proof.
+
+Completed todos:
+- Cloned and audited `quiet-lead-follow-up` including hidden `.github` and `.well-known` files.
+- Found 25 public files containing `paypal.me/softjunk/5USD`; all 25 initially missed at least one current proof marker.
+- Replaced stale `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, and old SHA markers with the current `v2.29.151` / `softjunk-lead-kit-0.2.2.tgz` / SHA-256 proof.
+- Added structured `no_clone_checkout_proof` blocks to buyer-route, PayPal handoff, AI plugin, and PayPal BuyAction JSON.
+- Added visible/text no-clone checkout proof to quiet-lead HTML, Markdown, text, YAML, issue-template, support, agent-instruction, and OpenAPI discovery surfaces.
+- Validated local audit returned `paypal_files=25` and `missing_proof=0`.
+- Parsed 4 changed JSON files, 10 inline HTML script/JSON-LD blocks, and 4 YAML files successfully.
+- Ran the no-clone release asset command and confirmed it returns the exact 5 USD PayPal route and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- Pushed quiet repo commit `cd089bd7e4ce457b60841538b17ff1f8fc14ea30`.
+- Confirmed GitHub Pages deployment completed successfully.
+- Validated 14 live quiet-lead Pages URLs returned HTTP 200, included current PayPal/tarball/SHA/gate markers, and did not include stale markers.
+- Submitted 14 quiet-lead Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Quiet repo commit: `cd089bd7e4ce457b60841538b17ff1f8fc14ea30`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens a separate owned public repo and its machine-readable discovery paths without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo HTML/JSON/Markdown/text/YAML, GitHub Pages, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; `quiet-lead-follow-up` now mirrors the product tarball fallback at `v2.29.151`.
+- Decision: continue.

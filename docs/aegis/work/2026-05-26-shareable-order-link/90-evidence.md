@@ -22,6 +22,35 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Quiet Lead Follow-Up Public Repo Proof Evidence
+
+Artifacts updated in `trungcodeer/quiet-lead-follow-up`:
+- 25 public PayPal `$5` surfaces across README, agent instructions, support docs, HTML pages, text routes, JSON manifests, OpenAPI, `.well-known` manifests, funding config, and issue templates.
+- Key machine-readable files: `buyer-route.json`, `pay-5-usd-paypal.json`, `.well-known/ai-plugin.json`, `.well-known/paypal-buy-action.json`, and `.well-known/openapi.yaml`.
+
+Published commit:
+- Quiet repo commit: `cd089bd7e4ce457b60841538b17ff1f8fc14ea30`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+
+Validation:
+- Hidden-inclusive local audit returned `paypal_files=25` and `missing_proof=0`.
+- Hidden-inclusive stale marker search found no `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, or old SHA references.
+- 4 changed JSON files parsed successfully.
+- 10 inline JavaScript and JSON-LD blocks across 8 changed HTML files parsed successfully.
+- 4 YAML files parsed successfully with `js-yaml`.
+- `git diff --check` passed; only CRLF normalization warnings were reported.
+- `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json` returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub Pages deployment for quiet repo commit `cd089bd7e4ce457b60841538b17ff1f8fc14ea30` completed with `success`.
+- Live validation returned HTTP 200 for 14 quiet-lead URLs including `/`, `buyer-route.json`, `pay-5-usd-paypal.html`, `pay-5-usd-paypal.json`, `llms.txt`, six intent pages, `.well-known/ai-plugin.json`, `.well-known/paypal-buy-action.json`, and `.well-known/openapi.yaml`.
+- Each live URL included the PayPal URL, `softjunk-lead-kit-0.2.2.tgz`, SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`, and `PAYPAL_PAYMENT_VERIFIED=true`; none included stale markers.
+- IndexNow POST submitted 14 quiet-lead Pages URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Public PayPal Surface Proof Coverage Evidence
 
 Artifacts updated:
