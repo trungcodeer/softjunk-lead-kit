@@ -9454,3 +9454,43 @@ DriftCheckDraft:
 - Compatibility boundary: product/root GitHub Pages, `.well-known` JSON/YAML manifests, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; hidden manifests are discovery/status surfaces only and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Latest GitHub Package Checkout Route Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native buyer-agent conversion surfaces available while waiting for actual PayPal evidence.
+- Prefer non-traditional, AI-native package and machine-readable routes over manual outreach or basic posting.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Promote the current GitHub main package checkout command as the best no-clone route so coding agents can execute a fresh `$5` PayPal handoff without cloning, waiting for npmjs publish, or using an older release tarball.
+
+Completed todos:
+- Re-read the latest checkpoint, task intent, and product worktree state before resuming.
+- Updated `agent-checkout-router.json`, `agent-checkout-router.md`, `agent-checkout-router.txt`, `agent-buyer-catalog.jsonl`, `README.md`, `llms.txt`, `npm-publish-status.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `npm-funding.json`, `package.json`, `bin/softjunk-lead-kit.js`, and `mcp-server-softjunk.js`.
+- Added ranked route `latest_github_package_checkout` before the stable release-tarball fallback.
+- Validated local JSON/JSONL, XML, OpenAPI YAML, CLI syntax, CLI smoke, npm pack dry-run, diff whitespace, and the GitHub-package no-clone checkout command.
+- Committed and pushed product commit `7e367fed2e3fe2d7e0d0cae450af443a2d190cd0` (`Promote latest GitHub package checkout route`).
+- Confirmed GitHub Pages run `26559496678` completed successfully.
+- Live-verified updated product Pages and raw GitHub surfaces with cache-busting, submitted IndexNow for the Pages URLs, and reran the PayPal verifier.
+
+Evidence refs:
+- Local validation passed: JSON parse `json_ok=64`, JSONL parse `jsonl_ok=56`, XML parse `xml_ok=2`, OpenAPI YAML parse `openapi_yaml_ok=1`, `node --check` for CLI/MCP, `npm run cli:smoke`, `npm pack --dry-run --json` with `entryCount=207`, GitHub-package checkout command returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `git diff --check` with only CRLF warnings.
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26559496678.
+- Live verification returned `product_live_ok urls=13 jsonl=56 ranked_routes=11`, `github_package_checkout_live=true`, PayPal URL `https://paypal.me/softjunk/5USD`, and `success_signal_marker=PAYPAL_PAYMENT_VERIFIED=true`.
+- IndexNow first mixed-host attempt returned `422`; retry with only `trungcodeer.github.io` URLs returned `status=200`, `urls=11`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the route a coding agent is most likely to execute directly into the exact 5 USD PayPal handoff without spam, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub Pages, raw GitHub source, package metadata, JSON/Markdown/text/JSONL discovery surfaces, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package route is now preferred and the pinned release tarball remains fallback while payment verification remains seller-side only.
+- Decision: continue.
