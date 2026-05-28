@@ -13,6 +13,14 @@
     "paymentUrl": "https://paypal.me/softjunk/5USD",
     "successSignal": "PAYPAL_PAYMENT_VERIFIED=true"
   },
+  "softjunkAgentCheckoutRouter": {
+    "@type": "CreativeWork",
+    "name": "SoftJunk Agent Checkout Router",
+    "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
+    "encodingFormat": "application/json",
+    "paymentUrl": "https://paypal.me/softjunk/5USD",
+    "successSignal": "PAYPAL_PAYMENT_VERIFIED=true"
+  },
   "@graph": [
     {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/#seller",

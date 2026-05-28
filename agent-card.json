@@ -20,6 +20,9 @@
     "successSignal": "PAYPAL_PAYMENT_VERIFIED=true",
     "rule": "Use the verified GitHub release tarball or GitHub package route while npmjs returns E404. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
   },
+  "agentCheckoutRouterUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
+  "agentCheckoutRouterMarkdownUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
+  "agentCheckoutRouterTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
   "url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json",
   "documentationUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/A2A_AGENT_CARD.md",
   "gistUrl": "https://gist.github.com/trungcodeer/82e9935979596bbe2330db46dc9bc58a",

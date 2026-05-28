@@ -13,6 +13,9 @@
   "manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
   "well_known_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json",
   "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
+  "agent_checkout_router_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
+  "agent_checkout_router_markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
+  "agent_checkout_router_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
   "latest_release_status": {
     "latest_release_tag": "v2.29.157",
     "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157",
