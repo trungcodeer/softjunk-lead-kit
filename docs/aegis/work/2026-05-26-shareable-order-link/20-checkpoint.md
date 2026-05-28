@@ -10254,3 +10254,47 @@ DriftCheckDraft:
 - Compatibility boundary: product/root GitHub Pages, GitHub package execution, MCP relay metadata, owned public Gist, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package execution remains primary, root `/pay-qr/` is an additional owned payment handoff route, and `v2.29.151` remains fallback only where explicitly labeled.
 - Decision: continue.
+
+## 2026-05-28 GitHub-Native Root QR Route Broadcast Checkpoint
+
+Current todo:
+- Propagate the new root `/pay-qr/` checkout handoff through existing owned GitHub-native public surfaces.
+- Avoid duplicate comments or unsolicited outreach; edit owned bodies only.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Update existing owned GitHub Issue and Discussion bodies so public GitHub buyer-agent routes mention the root QR route, current GitHub package checkout command, agent relay command, MCP relay tool, exact PayPal URL, release marker, and seller-side verification gate.
+
+Completed todos:
+- Re-read current goal state, clean worktrees, latest checkpoint, disk state, and PayPal verifier output.
+- Audited owned Issues and found 10 Issue bodies missing the new root QR route.
+- Audited owned Discussions and found 7 Discussion bodies missing the new root QR route.
+- Updated existing owned Issue bodies #1, #2, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Updated existing owned Discussion bodies #4, #6, #8, #14, #15, #16, and #17.
+- Did not create new comments and did not edit non-owned content.
+- Re-verified Issue and Discussion bodies through GitHub API/GraphQL.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Issue audit before editing returned `owned_issues=10 missing_qr=10 numbers=13,12,11,10,9,7,5,3,2,1`.
+- Discussion audit before editing returned `owned_discussions=7 missing_qr=7 numbers=17,16,15,14,8,6,4`.
+- Issue update returned `issues_qr_route_updated count=10 numbers=13,12,11,10,9,7,5,3,2,1`.
+- Discussion update returned `discussions_qr_route_updated count=7 numbers=17,16,15,14,8,6,4`.
+- Issue verification returned `issues_qr_route_live_ok count=10 numbers=13,12,11,10,9,7,5,3,2,1`.
+- Discussion verification returned `discussions_qr_route_live_ok count=7 numbers=4,6,8,14,15,16,17`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- C: is at 0 bytes free again; avoid C: repo edits until space is recovered or work only on D:/external surfaces.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it broadcasts the lower-friction root QR route through existing owned GitHub surfaces without scraped outreach, spam, deception, automated fulfillment, duplicate comments, or false payment claims.
+- Compatibility boundary: owned GitHub Issues/Discussions, product/root Pages routes, GitHub package execution, MCP relay metadata, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; root `/pay-qr/` is an additional owned payment handoff route and GitHub package execution remains primary.
+- Decision: continue.

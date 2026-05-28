@@ -7582,3 +7582,15 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_qr_route_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
 - C: reached 0 bytes free during root route creation. Locked temp files could not be moved. To keep the workspace writable, user files were moved, not deleted, to `D:\codex-tmp\c-drive-relief\user-files-moved-20260528-05`, and Codex temp/cache folders were moved, not deleted, to `D:\codex-tmp\c-drive-relief\codex-tmp-moved-20260528-06` and `D:\codex-tmp\c-drive-relief\codex-tmp-moved-20260528-07`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 GitHub-Native Root QR Route Broadcast Evidence
+
+- Existing owned GitHub Issue bodies updated: #1, #2, #3, #5, #7, #9, #10, #11, #12, and #13.
+- Existing owned GitHub Discussion bodies updated: #4, #6, #8, #14, #15, #16, and #17.
+- The added section advertises the human scan route `https://trungcodeer.github.io/pay-qr/`, JSON/text mirrors, the current GitHub package checkout command, agent relay command, MCP relay tool `get_softjunk_agent_relay`, current release `v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- No new comments were created and no non-owned content was edited.
+- Pre-edit issue audit returned `owned_issues=10 missing_qr=10 numbers=13,12,11,10,9,7,5,3,2,1`.
+- Pre-edit discussion audit returned `owned_discussions=7 missing_qr=7 numbers=17,16,15,14,8,6,4`.
+- Update commands returned `issues_qr_route_updated count=10 numbers=13,12,11,10,9,7,5,3,2,1` and `discussions_qr_route_updated count=7 numbers=17,16,15,14,8,6,4`.
+- Verification returned `issues_qr_route_live_ok count=10 numbers=13,12,11,10,9,7,5,3,2,1` and `discussions_qr_route_live_ok count=7 numbers=4,6,8,14,15,16,17`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
