@@ -7652,3 +7652,31 @@ Latest adjacent-discovery refresh:
 - Verification returned `issues_v229162_live_ok bodies=10 comments=2` and `discussions_v229162_live_ok bodies=7 comments=1`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Root Profile Quiet v2.29.162 Refresh Evidence
+
+- Product audit found no stale non-doc `v2.29.161` or `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe` markers.
+- Root updates were done from D: clone `D:\codex-tmp\root-v229162-refresh-20260528` because C: had 0 bytes free.
+- Root commits pushed:
+  - `75d6c2d9d54e7a72618020f369de25ed2648b398` (`Promote root checkout route v2.29.162`).
+  - `31c9f97af0f96b9bdb6a51ba465a84248bdca5f6` (`Add current package command to root AI text`).
+- Profile commits pushed:
+  - `f812f98f16060746b45033d2ca4703123b0b4856` (`Promote profile checkout route v2.29.162`).
+  - `19fe5f58cd05a978023a9cbc72e86823b92fe884` (`Add current release target to profile offer`).
+- Quiet-lead commits pushed:
+  - `19964a79e08885d2de2cf658d8b493bd1c62bf5c` (`Promote quiet checkout route v2.29.162`).
+  - `54e8b5bae17a2e86a7277c456b60fe33b5ffb88a` (`Add current release target to quiet routes`).
+- Local validation passed:
+  - `root_old_markers_absent`, `root_json_ok count=18`, `root_xml_ok count=1`.
+  - `profile_old_markers_absent`, `profile_json_ok count=2`.
+  - `quiet_old_markers_absent`, `quiet_json_ok count=4`.
+  - `root_ai_txt_marker_ok`, `profile_offer_json_marker_ok`, `quiet_json_marker_ok files=2`.
+- Pages runs completed successfully:
+  - Root `26586147569`.
+  - Profile `26586145863`.
+  - Quiet-lead `26586145338`.
+- Live Pages verification returned `adjacent_live_v229162_ok root=14 profile=5 quiet=6 root_commit=31c9f97af0f96b9bdb6a51ba465a84248bdca5f6 profile_commit=19fe5f58cd05a978023a9cbc72e86823b92fe884 quiet_commit=54e8b5bae17a2e86a7277c456b60fe33b5ffb88a`.
+- IndexNow returned `indexnow_adjacent_v229162_ok status=200 urls=25 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- Repository metadata check confirmed all four owned repos advertise USD 5 PayPal AI/MCP buyer-agent checkout and include the `ai-agent`, `mcp-server`, and `model-context-protocol` topics.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

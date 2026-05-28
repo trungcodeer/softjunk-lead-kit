@@ -10423,3 +10423,51 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Issues/Discussions/comments, current GitHub Release, GitHub package execution, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; no new public comments were created.
 - Decision: continue.
+
+## 2026-05-28 Root Profile Quiet v2.29.162 Refresh Checkpoint
+
+Current todo:
+- Refresh owned root/profile/quiet-lead discovery surfaces that still pointed to `v2.29.161`.
+- Avoid C: writes because C: has 0 bytes free.
+- Verify live Pages, submit IndexNow, and rerun PayPal verification.
+
+Active slice:
+- Update root Pages, profile Pages, and quiet-lead Pages surfaces to advertise `v2.29.162`, target `b8c335e6cfac3045155497b41e5532e1dfefae10`, the GitHub package checkout command, exact PayPal URL, and seller-side verification gate.
+
+Completed todos:
+- Audited product/root/profile/quiet worktrees. Product had no stale non-doc markers; root/profile/quiet still had `v2.29.161` markers.
+- Avoided the C: root worktree and cloned root Pages to `D:\codex-tmp\root-v229162-refresh-20260528`.
+- Mechanically replaced `v2.29.161` and `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe` in root/profile/quiet owned surfaces.
+- Added missing direct checkout command and target markers to root `ai.txt`, profile `softjunk-profile-offer.json`, quiet `buyer-route.json`, and quiet `pay-5-usd-paypal.json`.
+- Validated local old-marker absence, JSON/XML parsing, marker coverage, and `git diff --check`.
+- Pushed root commits `75d6c2d9d54e7a72618020f369de25ed2648b398` and `31c9f97af0f96b9bdb6a51ba465a84248bdca5f6`.
+- Pushed profile commits `f812f98f16060746b45033d2ca4703123b0b4856` and `19fe5f58cd05a978023a9cbc72e86823b92fe884`.
+- Pushed quiet-lead commits `19964a79e08885d2de2cf658d8b493bd1c62bf5c` and `54e8b5bae17a2e86a7277c456b60fe33b5ffb88a`.
+- Waited for root/profile/quiet Pages runs to complete successfully.
+- Verified 25 live root/profile/quiet Pages URLs and submitted those URLs to IndexNow.
+- Checked repo metadata for the four owned repos; descriptions/topics were aligned with AI/MCP buyer-agent checkout and had no stale release marker.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Local validation returned `root_old_markers_absent`, `root_json_ok count=18`, `root_xml_ok count=1`, `profile_old_markers_absent`, `profile_json_ok count=2`, `quiet_old_markers_absent`, and `quiet_json_ok count=4`.
+- Target/command patch validation returned `root_ai_txt_marker_ok`, `profile_offer_json_marker_ok`, and `quiet_json_marker_ok files=2`.
+- Pages runs completed successfully: root `26586147569`, profile `26586145863`, quiet `26586145338`.
+- Live Pages verification returned `adjacent_live_v229162_ok root=14 profile=5 quiet=6 root_commit=31c9f97af0f96b9bdb6a51ba465a84248bdca5f6 profile_commit=19fe5f58cd05a978023a9cbc72e86823b92fe884 quiet_commit=54e8b5bae17a2e86a7277c456b60fe33b5ffb88a`.
+- IndexNow returned `indexnow_adjacent_v229162_ok status=200 urls=25 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- Repo metadata check confirmed all four owned public repos describe USD 5 PayPal AI/MCP buyer-agent checkout with topics including `ai-agent`, `mcp-server`, and `model-context-protocol`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- C: has 0 bytes free; root updates were done through a D: clone.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it updates owned root/profile/quiet discovery routes so buyer-agents see the current checkout route without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; root was updated from a D: clone only because the C: worktree had no free space.
+- Decision: continue.
