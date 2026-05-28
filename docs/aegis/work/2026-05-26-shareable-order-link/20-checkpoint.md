@@ -10298,3 +10298,41 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Issues/Discussions, product/root Pages routes, GitHub package execution, MCP relay metadata, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; root `/pay-qr/` is an additional owned payment handoff route and GitHub package execution remains primary.
 - Decision: continue.
+
+## 2026-05-28 Release v2.29.161 Root QR Route Checkpoint
+
+Current todo:
+- Keep the current package-native release surface aligned with the new root QR checkout handoff.
+- Edit only the existing owned GitHub Release body.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Update GitHub Release `v2.29.161` so buyers and buyer-agents landing on the package release can see the root QR route, QR JSON/text, current GitHub package checkout command, agent relay command, MCP relay tool, exact PayPal URL, release target, and seller-side verification gate.
+
+Completed todos:
+- Re-read current goal state, clean worktrees, latest checkpoint, disk state, and PayPal verifier output.
+- Audited GitHub Release `v2.29.161` and found the current package/MCP proof present but the root QR route and QR JSON absent.
+- Appended a root PayPal QR route section to the existing Release body.
+- Verified the Release body through the GitHub API.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Release audit returned `release_v229161_audit id=330758658 tag=v2.29.161 target=b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe missing=2 markers=https://trungcodeer.github.io/pay-qr/ | https://trungcodeer.github.io/pay-qr.json`.
+- Release update returned `release_v229161_qr_route_updated id=330758658`.
+- Release verification returned `release_v229161_qr_route_live_ok id=330758658 tag=v2.29.161 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- C: is at 0 bytes free again; avoid C: repo edits until space is recovered or work only on D:/external surfaces.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds the lower-friction root QR route to the current package-native Release surface without scraped outreach, spam, deception, automated fulfillment, duplicate comments, or false payment claims.
+- Compatibility boundary: owned GitHub Release, product/root Pages routes, GitHub package execution, MCP relay metadata, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; root `/pay-qr/` is an additional owned payment handoff route and GitHub package execution remains primary.
+- Decision: continue.

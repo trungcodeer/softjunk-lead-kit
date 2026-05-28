@@ -7594,3 +7594,13 @@ Latest adjacent-discovery refresh:
 - Update commands returned `issues_qr_route_updated count=10 numbers=13,12,11,10,9,7,5,3,2,1` and `discussions_qr_route_updated count=7 numbers=17,16,15,14,8,6,4`.
 - Verification returned `issues_qr_route_live_ok count=10 numbers=13,12,11,10,9,7,5,3,2,1` and `discussions_qr_route_live_ok count=7 numbers=4,6,8,14,15,16,17`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Release v2.29.161 Root QR Route Evidence
+
+- Existing GitHub Release updated: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161.
+- Release audit before editing returned `release_v229161_audit id=330758658 tag=v2.29.161 target=b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe missing=2 markers=https://trungcodeer.github.io/pay-qr/ | https://trungcodeer.github.io/pay-qr.json`.
+- The added Release section advertises the human scan route `https://trungcodeer.github.io/pay-qr/`, QR JSON/text mirrors, the current GitHub package checkout command, agent relay command, MCP relay tool `get_softjunk_agent_relay`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, exact PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true` gate.
+- No new Release was created; the existing owned `v2.29.161` Release body was updated.
+- Update returned `release_v229161_qr_route_updated id=330758658`.
+- Verification returned `release_v229161_qr_route_live_ok id=330758658 tag=v2.29.161 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
