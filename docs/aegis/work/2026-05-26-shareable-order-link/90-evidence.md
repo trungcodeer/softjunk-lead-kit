@@ -7788,3 +7788,20 @@ Latest adjacent-discovery refresh:
 - NPM status remains externally blocked: `npm whoami` returned `ENEEDAUTH`, and `npm view softjunk-lead-kit --json` returned `E404`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 GitHub-Native Current Tarball Evidence
+
+- Audited existing owned GitHub-native surfaces in `trungcodeer/softjunk-lead-kit` for content containing the stable tarball URL `v2.29.151` without the current tarball URL `v2.29.162`.
+- Pre-edit Issue audit returned:
+  - `issue_stale_tarball_audit bodies=10 numbers=13,12,11,10,9,7,5,3,2,1 comments=112`.
+- Pre-edit Discussion audit returned:
+  - `discussion_stale_tarball_audit bodies=7 nodes=17:D_kwDOSnIQIc4Amsag,16:D_kwDOSnIQIc4Amsaf,15:D_kwDOSnIQIc4Amsae,14:D_kwDOSnIQIc4AmsWB,8:D_kwDOSnIQIc4AmrPr,6:D_kwDOSnIQIc4Amqq9,4:D_kwDOSnIQIc4AmqEe comments=0`.
+- Updated existing owned content only:
+  - `issues_current_tarball_updated bodies=10 numbers=13,12,11,10,9,7,5,3,2,1 comments=112`.
+  - `discussions_current_tarball_updated bodies=7 nodes=17:D_kwDOSnIQIc4Amsag,16:D_kwDOSnIQIc4Amsaf,15:D_kwDOSnIQIc4Amsae,14:D_kwDOSnIQIc4AmsWB,8:D_kwDOSnIQIc4AmrPr,6:D_kwDOSnIQIc4Amqq9,4:D_kwDOSnIQIc4AmqEe`.
+- No new comments were created and no non-owned content was edited.
+- Post-edit verification returned:
+  - `issues_current_tarball_live_ok bodies_checked=11`.
+  - `discussions_current_tarball_live_ok discussions_checked=7`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

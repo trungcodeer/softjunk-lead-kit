@@ -10637,3 +10637,43 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repos, GitHub Pages, `.well-known` manifests, IndexNow for owned Pages URLs, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.162` is primary current tarball and `v2.29.151` remains explicit stable fallback.
 - Decision: continue.
+
+## 2026-05-29 GitHub-Native Current Tarball Checkpoint
+
+Current todo:
+- Refresh existing owned GitHub-native public surfaces so buyer-agents see the current `v2.29.162` tarball route instead of stale primary `v2.29.151`.
+- Edit existing owned content only; do not create new comments or outreach.
+- Rerun PayPal verification and keep the goal active unless seller-side PayPal evidence proves the 5 USD payment.
+
+Active slice:
+- Patch owned Issue bodies, owned Issue comments, and owned Discussion bodies in `trungcodeer/softjunk-lead-kit` that contained the `v2.29.151` tarball without the current `v2.29.162` tarball.
+
+Completed todos:
+- Audited existing Issues, Issue comments, Discussions, and Discussion comments via GitHub API/GraphQL.
+- Updated 10 owned Issue bodies.
+- Updated 112 owned Issue comments.
+- Updated 7 owned Discussion bodies.
+- Created no new comments and did not edit non-owned content.
+- Verified Issues and Discussions through GitHub API/GraphQL after edits.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Pre-edit Issue audit returned `issue_stale_tarball_audit bodies=10 numbers=13,12,11,10,9,7,5,3,2,1 comments=112`.
+- Pre-edit Discussion audit returned `discussion_stale_tarball_audit bodies=7 nodes=17,16,15,14,8,6,4 comments=0`.
+- Issue update returned `issues_current_tarball_updated bodies=10 numbers=13,12,11,10,9,7,5,3,2,1 comments=112`.
+- Discussion update returned `discussions_current_tarball_updated bodies=7 nodes=17:D_kwDOSnIQIc4Amsag,16:D_kwDOSnIQIc4Amsaf,15:D_kwDOSnIQIc4Amsae,14:D_kwDOSnIQIc4AmsWB,8:D_kwDOSnIQIc4AmrPr,6:D_kwDOSnIQIc4Amqq9,4:D_kwDOSnIQIc4AmqEe`.
+- Post-edit verification returned `issues_current_tarball_live_ok bodies_checked=11` and `discussions_current_tarball_live_ok discussions_checked=7`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it refreshes existing owned GitHub-native checkout surfaces without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Issues/Discussions/comments, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; no new public comments were created.
+- Decision: continue.
