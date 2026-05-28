@@ -16,6 +16,12 @@ node bin/softjunk-lead-kit.js doctor --json
 
 ## No Clone Buyer-Agent Command
 
+Use the AI-agent relay when an assistant needs the full fit check, route packet, and checkout boundary before PayPal:
+
+```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
+```
+
 Use the current GitHub package route when a coding agent, VA, or buyer assistant should print the exact PayPal handoff without cloning the repo:
 
 ```bash
