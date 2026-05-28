@@ -48,6 +48,10 @@ const RELEASE_TARBALL_DOCTOR_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit doctor --json`;
 const RELEASE_TARBALL_PAY_CUSTOM_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit pay --mode custom --json`;
+const GITHUB_PACKAGE_DOCTOR_COMMAND =
+  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json";
+const GITHUB_PACKAGE_PAY_CUSTOM_COMMAND =
+  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json";
 
 const tools = [
   {
@@ -377,6 +381,8 @@ function checkoutRoutes() {
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
     release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    run_from_github_package_doctor: GITHUB_PACKAGE_DOCTOR_COMMAND,
+    run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
     run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
     run_from_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     npm_fund_command: "npm fund",
@@ -404,11 +410,14 @@ function npmFundingRoute() {
       npm_view_result: "E404",
       local_publish_auth: "missing_npm_auth",
       npm_whoami_result: "ENEEDAUTH",
-      current_no_auth_route: RELEASE_TARBALL_PAY_CUSTOM_COMMAND
+      current_no_auth_route: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
+      fallback_release_tarball_route: RELEASE_TARBALL_PAY_CUSTOM_COMMAND
     },
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
     release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    run_from_github_package_doctor: GITHUB_PACKAGE_DOCTOR_COMMAND,
+    run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
     run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
     run_from_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     commands: [

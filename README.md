@@ -5,17 +5,23 @@
 Best current checkout route:
 
 1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
-2. Run the verified no-clone buyer-agent command:
+2. Run the latest GitHub package no-clone buyer-agent command:
+
+```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
+```
+
+3. Use the pinned release-tarball fallback if GitHub package install is unavailable:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-3. Verified npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
-4. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
-5. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
-6. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
-7. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+4. Verified npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+5. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
+6. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+7. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
+8. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Privacy rule: use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
 
@@ -42,6 +48,8 @@ Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-che
 No clone and no npm login required:
 
 ```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```

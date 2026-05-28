@@ -27,7 +27,8 @@
     "local_publish_auth": "missing_npm_auth",
     "npm_whoami_result": "ENEEDAUTH",
     "npm_pack_dry_run": "passed",
-    "current_no_auth_route": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "current_no_auth_route": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
+    "fallback_release_tarball_route": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
     "required_secret": "NPM_TOKEN"
   },
@@ -117,6 +118,8 @@
   "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
   "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
   "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+  "run_from_github_package_doctor": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json",
+  "run_from_github_package_pay_custom": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
   "run_from_release_tarball_doctor": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json",
   "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
   "npm_fund_command": "npm fund",
