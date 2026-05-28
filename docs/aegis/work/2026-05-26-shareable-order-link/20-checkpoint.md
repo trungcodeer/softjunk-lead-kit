@@ -9583,3 +9583,45 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Discussions, product/root GitHub Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; Discussion #6 is an owned public broadcast thread, GitHub package checkout remains preferred, and the pinned tarball remains fallback while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Central GitHub Issues Checkout Broadcast Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/GitHub-native conversion surfaces available while waiting for actual PayPal evidence.
+- Update central public buyer issues when they still advertise stale checkout proof, without rewriting historical comments or creating duplicate issues.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Update central GitHub Issues #1 and #5 so the human start-here board and buyer-agent close contract advertise the current `v2.29.159` GitHub-package checkout route instead of the older `v2.29.155` tarball-first proof.
+
+Completed todos:
+- Re-read current product/root worktree state, latest checkpoint, PayPal verifier output, and GitHub Issues #1, #5, and #9.
+- Confirmed Issue #1 and Issue #5 bodies still pointed to older `v2.29.155` / release-tarball-first checkout proof.
+- Updated Issue #1 body with the current release, target, agent router, buyer card, GitHub-package command, fallback tarball command, PayPal URL, and seller-side verification boundary.
+- Updated Issue #5 body with the current release, target, buyer-agent router, GitHub-package command, fallback tarball command, machine-readable routes, PayPal URL, and seller-side verification boundary.
+- Added one public update comment to Issue #1 and one public update comment to Issue #5 with the current package-native route.
+- Verified both issue bodies and both new comments through GitHub CLI/API output.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Issue #1: https://github.com/trungcodeer/softjunk-lead-kit/issues/1.
+- Issue #1 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4561744602.
+- Issue #5: https://github.com/trungcodeer/softjunk-lead-kit/issues/5.
+- Issue #5 comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4561745192.
+- GitHub verification returned `issues_live_ok=2 comments_ok=2 latest=v2.29.159`.
+- Verification confirmed both issue bodies and new comments include `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, the preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sends the current checkout route through existing central owned public GitHub issues without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Issues, product/root GitHub Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; Issue #1 and #5 are owned public checkout surfaces, GitHub package checkout remains preferred, and the pinned tarball remains fallback while payment verification remains seller-side only.
+- Decision: continue.

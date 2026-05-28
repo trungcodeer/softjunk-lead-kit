@@ -7054,3 +7054,32 @@ Latest external-send slice:
 - New public comment: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17086192.
 - GitHub GraphQL verified `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, `Ranked routes: 11`, the GitHub-package no-clone command, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true` in the body/comment.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Central GitHub Issues Checkout Broadcast Evidence
+
+External public surfaces updated:
+- Issue #1: https://github.com/trungcodeer/softjunk-lead-kit/issues/1.
+- Issue #1 new comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/1#issuecomment-4561744602.
+- Issue #5: https://github.com/trungcodeer/softjunk-lead-kit/issues/5.
+- Issue #5 new comment: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4561745192.
+
+Broadcast content:
+- Latest release: `v2.29.159`.
+- Release target: `7500a0d27253c76be4979396c6f4b91abb690d15`.
+- Agent router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json.
+- Ranked routes: `11`.
+- Preferred no-clone command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Stable fallback command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Exact checkout: `https://paypal.me/softjunk/5USD`.
+- Verification gate: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- GitHub issue verification returned `issues_live_ok=2 comments_ok=2 latest=v2.29.159`.
+- Verification confirmed Issue #1 body and new comment include the current release, target, preferred command, PayPal URL, and verification gate.
+- Verification confirmed Issue #5 body and new comment include the current release, target, preferred command, PayPal URL, and verification gate.
+- Issue body verification also confirmed the stale `v2.29.155` marker was removed from both issue bodies. Historical comments were not rewritten.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
