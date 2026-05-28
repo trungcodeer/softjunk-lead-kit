@@ -10336,3 +10336,47 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Release, product/root Pages routes, GitHub package execution, MCP relay metadata, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; root `/pay-qr/` is an additional owned payment handoff route and GitHub package execution remains primary.
 - Decision: continue.
+
+## 2026-05-28 Release v2.29.162 Agent-Native Mirror Checkpoint
+
+Current todo:
+- Promote the current package-native checkout route through a new latest release, product Pages agent mirrors, and owned public Gists.
+- Keep root QR and GitHub package execution as the fastest ethical buyer-agent path.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Create and verify GitHub Release `v2.29.162`, promote product release/status markers, add direct checkout commands to Gist index and primary agent mirror JSON/text files, refresh high-signal public Gists, submit updated Pages URLs to IndexNow, and rerun the PayPal verifier.
+
+Completed todos:
+- Created GitHub Release `v2.29.162` and corrected its release body so the release target is `b8c335e6cfac3045155497b41e5532e1dfefae10` instead of the literal `$head`.
+- Promoted product-side current release/status markers to `v2.29.162` and target `b8c335e6cfac3045155497b41e5532e1dfefae10`.
+- Added direct GitHub package checkout and agent relay commands to `public-gist-checkout-index.*`, `agent-buyer-catalog.jsonl`, `commerce-graph.*`, `agent-buyer-packet.*`, `agents-checkout.json`, and `shareable-order-link.*`.
+- Refreshed 9 owned public Gists with `v2.29.162`, the GitHub package checkout command, PayPal URL, and seller-side verification gate.
+- Validated local JSON/JSONL, `git diff --check`, `npm pack --dry-run --json`, and `npm run cli:smoke`.
+- Pushed product commits `80123950cd037cca30d7c7749d7bd57ae27524bb`, `2303c3391a20fe381e9cfdb5c77ad47560b2fe2c`, and `93c0d873ead9abd50169365982f58e22f6f06a27`.
+- Waited for product Pages run `26583832353` for commit `93c0d873ead9abd50169365982f58e22f6f06a27`; it completed successfully.
+- Verified 19 live product Pages URLs with cache-busting, the corrected Release body, remote GitHub package `pay` and `agent` commands, Gist API content, IndexNow, and the PayPal verifier.
+
+Evidence refs:
+- Release verification returned `release_v229162_ok tag=v2.29.162 target=b8c335e6cfac3045155497b41e5532e1dfefae10 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162`.
+- Local validation returned `json_ok files=4`, `jsonl_ok lines=58`, `marker_ok files=7`, `pack_ok entryCount=213`, and `npm run cli:smoke` passed.
+- Pages verification returned `live_product_v229162_ok urls=19 commit=93c0d873ead9abd50169365982f58e22f6f06a27`.
+- Public Gist API verification returned `gist_v229162_api_ok count=9`.
+- Remote package verification returned `remote_pay_route_ok tag=v2.29.162 target=b8c335e6cfac3045155497b41e5532e1dfefae10` and `remote_agent_route_ok tag=v2.29.162 target=b8c335e6cfac3045155497b41e5532e1dfefae10`.
+- IndexNow returned `indexnow_v229162_agent_mirrors_ok status=200 urls=19 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- C: remains risky/low-space; this slice avoided root repo writes and used D: for package cache/temp.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves AI/agent-native discovery and no-clone checkout handoff without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Release, product GitHub Pages, GitHub package execution, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.151` remains a stable fallback tarball, while GitHub package execution and root `/pay-qr/` are the current primary route.
+- Decision: continue.

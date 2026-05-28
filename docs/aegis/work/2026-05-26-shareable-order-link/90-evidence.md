@@ -7604,3 +7604,35 @@ Latest adjacent-discovery refresh:
 - Update returned `release_v229161_qr_route_updated id=330758658`.
 - Verification returned `release_v229161_qr_route_live_ok id=330758658 tag=v2.29.161 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Release v2.29.162 Agent-Native Mirror Evidence
+
+- GitHub Release created and corrected: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162.
+- Release id: `330901715`.
+- Release target: `b8c335e6cfac3045155497b41e5532e1dfefae10`.
+- Product commits pushed:
+  - `80123950cd037cca30d7c7749d7bd57ae27524bb` (`Promote release v2.29.162 status`).
+  - `2303c3391a20fe381e9cfdb5c77ad47560b2fe2c` (`Add direct checkout command to Gist index`).
+  - `93c0d873ead9abd50169365982f58e22f6f06a27` (`Expose current checkout command in agent mirrors`).
+- Updated product agent-native files include `public-gist-checkout-index.*`, `agent-buyer-catalog.jsonl`, `commerce-graph.*`, `agent-buyer-packet.*`, `agents-checkout.json`, and `shareable-order-link.*`.
+- Refreshed 9 owned public Gists:
+  - `167d3dc5f8696bf9edb04d3db6c53a02`
+  - `044280811978a796652e72a7b4228888`
+  - `2cb79cccf1e0e5d0efdfa4ae6d15f683`
+  - `82e9935979596bbe2330db46dc9bc58a`
+  - `76b4b70a3b13bfec62c5f66c3ebec30d`
+  - `844295134d4a7d721b7eec4963eae1db`
+  - `85b6eef2cd6deb244d0bfbe18e744a3c`
+  - `795587172ee240078c4377559b20b49b`
+  - `423bb45dd4b98d552f4db6ed11f399fb`
+- Local validation passed: `json_ok files=4`, `jsonl_ok lines=58`, `marker_ok files=7`, `git diff --check`, `npm pack --dry-run --json` with `entryCount=213`, and `npm run cli:smoke`.
+- Product Pages run `26583832353` completed successfully for commit `93c0d873ead9abd50169365982f58e22f6f06a27`.
+- Live product verification returned `live_product_v229162_ok urls=19 commit=93c0d873ead9abd50169365982f58e22f6f06a27`.
+- Gist API verification returned `gist_v229162_api_ok count=9`.
+- Release verification returned `release_v229162_ok tag=v2.29.162 target=b8c335e6cfac3045155497b41e5532e1dfefae10 url=https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162`.
+- Remote GitHub package verification returned:
+  - `remote_pay_route_ok tag=v2.29.162 target=b8c335e6cfac3045155497b41e5532e1dfefae10`.
+  - `remote_agent_route_ok tag=v2.29.162 target=b8c335e6cfac3045155497b41e5532e1dfefae10`.
+- IndexNow returned `indexnow_v229162_agent_mirrors_ok status=200 urls=19 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
