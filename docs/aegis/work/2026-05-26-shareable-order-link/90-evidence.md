@@ -22,6 +22,45 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Agent Router Fast-Pay Route Expansion Evidence
+
+Published commit:
+- Commit: `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Message: `Expand agent router fast-pay routes`.
+- Files changed: `agent-checkout-router.json`, `agent-checkout-router.md`, `agent-checkout-router.txt`, and `agent-buyer-catalog.jsonl`.
+
+Router changes:
+- Expanded `ranked_routes` from 6 to 10 entries.
+- Added root fast-pay route selector fields for:
+  - https://trungcodeer.github.io/5/
+  - https://trungcodeer.github.io/send-5/
+  - https://trungcodeer.github.io/intent-5/
+  - https://trungcodeer.github.io/paypal-url-health.json
+  - https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json
+- Added JSONL record `softjunk_root_fast_pay_route_selector`.
+
+Validation:
+- Local JSON parse passed with `json_ok=62`.
+- Local JSONL parse passed with `jsonl_ok=55`.
+- Local XML parse passed for `sitemap.xml` and `feed.xml`.
+- Local OpenAPI YAML parse passed with `npx --yes js-yaml .well-known/openapi.yaml`.
+- `npm run cli:smoke` passed.
+- `npm pack --dry-run --json` passed with `files=207`.
+- `git diff --check` passed with only CRLF normalization warnings.
+- GitHub Pages run `26557781259` completed successfully: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26557781259.
+- Live router verification returned HTTP 200, `ranked_routes=10`, and zero missing markers for `send-5`, `intent-5`, `digital-kit-order`, `paypal-url-health`, https://paypal.me/softjunk/5USD, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live `agent-buyer-catalog.jsonl` decoded from `application/octet-stream`, parsed as `lines=55`, and included the new route selector markers.
+
+Discovery submission:
+- Initial IndexNow POST returned 422 because the batch mixed root URLs with the product key location.
+- Retry used `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` and returned `status=200`.
+- Submitted URL count on successful retry: `12`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Root Hub Agent Router Propagation Evidence
 
 Published root commit:

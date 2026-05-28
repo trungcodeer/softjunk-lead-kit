@@ -9324,3 +9324,43 @@ DriftCheckDraft:
 - Compatibility boundary: root GitHub Pages, product GitHub Pages, package metadata, owned discovery manifests, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; root now points to the product router while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Agent Router Fast-Pay Route Expansion Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Expand the product `agent-checkout-router` so buyer-agents can choose between root `/5/`, `send-5`, `intent-5`, digital-kit proof/order, no-clone package checkout, Gist mirrors, free preview, and PayPal URL health before routing a qualified buyer to the exact 5 USD PayPal handoff.
+
+Completed todos:
+- Re-read current checkpoint, product/root worktree state, root `/5.json`, `send-5.json`, and `intent-5.json`.
+- Updated `agent-checkout-router.json`, `agent-checkout-router.md`, and `agent-checkout-router.txt` from 6 ranked routes to 10 ranked routes.
+- Added JSONL record `softjunk_root_fast_pay_route_selector` to `agent-buyer-catalog.jsonl`.
+- Validated JSON, JSONL, XML, OpenAPI YAML, CLI smoke, npm pack dry-run, and diff whitespace.
+- Committed and pushed `d5382d53f9066156ffabaa82836f0a081f73d74f` (`Expand agent router fast-pay routes`).
+- Confirmed GitHub Pages run `26557781259` completed successfully.
+- Live-verified the updated router files and catalog with cache-busting, submitted IndexNow, and reran the PayPal verifier.
+
+Evidence refs:
+- Local validation passed: JSON parse `json_ok=62`, JSONL parse `jsonl_ok=55`, XML parse for `sitemap.xml` and `feed.xml`, OpenAPI YAML parse, `npm run cli:smoke`, `npm pack --dry-run --json` with `files=207`, and `git diff --check` with only CRLF warnings.
+- Live router verification returned HTTP 200 with `ranked_routes=10` and included `send-5`, `intent-5`, `digital-kit-order`, `paypal-url-health`, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Live `agent-buyer-catalog.jsonl` decoded as UTF-8, parsed as `lines=55`, and included the new root fast-pay selector markers.
+- Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26557781259.
+- IndexNow response: first mixed key-location attempt returned 422; retry with root key location returned `status=200`, `urls=12`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves buyer-agent route selection toward the exact 5 USD PayPal handoff without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub Pages, root GitHub Pages, JSON/Markdown/text/JSONL discovery surfaces, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; router now points to existing owned root/product fallback routes while payment verification remains seller-side only.
+- Decision: continue.
