@@ -10677,3 +10677,42 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Issues/Discussions/comments, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; no new public comments were created.
 - Decision: continue.
+
+## 2026-05-29 Quiet Issue Agent Checkout Checkpoint
+
+Current todo:
+- Keep owned public/package-native/GitHub-native checkout surfaces aligned on the current `v2.29.162` release tarball.
+- Avoid outbound messaging, scraped outreach, new public comments, fake payment, or fulfillment claims.
+- Keep the goal active until seller-side PayPal evidence verifies the 5 USD payment.
+
+Active slice:
+- Add the current no-clone package checkout route to the existing owned `trungcodeer/quiet-lead-follow-up` Issue #1 order board because it already contained PayPal/softjunk buyer intent but lacked the current tarball command.
+
+Completed todos:
+- Audited adjacent GitHub Issue surfaces in `trungcodeer/trungcodeer.github.io`, `trungcodeer/trungcodeer`, and `trungcodeer/quiet-lead-follow-up`.
+- Confirmed adjacent Discussions were unavailable/disabled for those repos.
+- Updated existing owned Issue #1 in `trungcodeer/quiet-lead-follow-up`; no new comments were created and no non-owned content was edited.
+- Verified the issue through the GitHub API.
+- Verified the current release tarball checkout command still returns the exact 5 USD PayPal route.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Adjacent Issue audit returned only one actionable gap: `repo=trungcodeer/quiet-lead-follow-up ... missing_current_bodies=1 numbers=1`.
+- Discussion audit returned unavailable/disabled for `trungcodeer/trungcodeer.github.io`, `trungcodeer/trungcodeer`, and `trungcodeer/quiet-lead-follow-up`.
+- Update command returned `quiet_issue_current_tarball_updated number=1`.
+- GitHub API verification returned `quiet_issue_live_current_tarball_ok number=1` and `quiet_issue_missing_current_audit_ok`.
+- Remote package command returned `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an existing owned quiet-lead order board with a no-clone checkout command without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Issue body, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; no new public comments were created.
+- Decision: continue.

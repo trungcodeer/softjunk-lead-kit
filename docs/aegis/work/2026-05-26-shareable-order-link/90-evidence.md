@@ -7805,3 +7805,24 @@ Latest adjacent-discovery refresh:
   - `discussions_current_tarball_live_ok discussions_checked=7`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Quiet Issue Agent Checkout Evidence
+
+- Audited adjacent owned Issue surfaces for missing current tarball checkout routes:
+  - `trungcodeer/trungcodeer.github.io`: no stale or missing current Issue bodies/comments found.
+  - `trungcodeer/trungcodeer`: no stale or missing current Issue bodies/comments found.
+  - `trungcodeer/quiet-lead-follow-up`: one owned Issue body with PayPal/softjunk buyer intent lacked the current tarball route, Issue #1.
+- Adjacent Discussion audit returned unavailable/disabled for `trungcodeer/trungcodeer.github.io`, `trungcodeer/trungcodeer`, and `trungcodeer/quiet-lead-follow-up`.
+- Updated existing owned `trungcodeer/quiet-lead-follow-up` Issue #1 with the current no-clone checkout command:
+  - `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+  - SHA URL: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`.
+  - PayPal route: `https://paypal.me/softjunk/5USD`.
+- No new comments were created and no non-owned content was edited.
+- GitHub API verification returned `quiet_issue_live_current_tarball_ok number=1` and `quiet_issue_missing_current_audit_ok`.
+- Remote package verification returned JSON with:
+  - `amount`: `5.00`.
+  - `currency`: `USD`.
+  - `payment_url`: `https://paypal.me/softjunk/5USD`.
+  - `current_release_tarball_url`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
