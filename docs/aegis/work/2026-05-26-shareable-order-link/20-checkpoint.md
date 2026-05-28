@@ -8702,3 +8702,44 @@ DriftCheckDraft:
 - Compatibility boundary: owned public GitHub Discussions, GitHub Release tarball, PayPal.Me, seller-side payment verification, manual fulfillment after verification.
 - New owner/branch/fallback: no new fulfillment owner; all current GitHub Discussions with the PayPal checkout route now point to release `v2.29.155` while executable checkout still uses the verified `v2.29.151` tarball.
 - Decision: continue.
+
+## 2026-05-28 GitHub Issue Body Proof Coverage Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Upgrade canonical GitHub issue bodies that contain the PayPal checkout route so buyer-agents see current no-clone proof before historical comment threads.
+
+Completed todos:
+- Audited all 10 product issues and the first 100 comments per issue through GitHub GraphQL.
+- Found 122 PayPal-bearing issue/comment surfaces; 120 historical comment/body surfaces were missing at least one current proof marker.
+- Chose a low-noise canonical update boundary: edit issue bodies in place, not hundreds of historical comments.
+- Updated issue #2, #3, #5, #7, #9, #10, #11, #12, and #13 bodies in place through GitHub GraphQL.
+- Issue #1 body already had the current proof markers.
+- Re-ran the issue body audit and confirmed all 10 PayPal issue bodies now have zero missing proof markers.
+- Searched GitHub issues for stale release, old tarball, and old SHA markers; no issue results were found.
+- Searched GitHub issues for `v2.29.155`; all 10 PayPal issue bodies were returned.
+
+Evidence refs:
+- Updated issue bodies: https://github.com/trungcodeer/softjunk-lead-kit/issues/2, https://github.com/trungcodeer/softjunk-lead-kit/issues/3, https://github.com/trungcodeer/softjunk-lead-kit/issues/5, https://github.com/trungcodeer/softjunk-lead-kit/issues/7, https://github.com/trungcodeer/softjunk-lead-kit/issues/9, https://github.com/trungcodeer/softjunk-lead-kit/issues/10, https://github.com/trungcodeer/softjunk-lead-kit/issues/11, https://github.com/trungcodeer/softjunk-lead-kit/issues/12, and https://github.com/trungcodeer/softjunk-lead-kit/issues/13.
+- Already-current issue body: https://github.com/trungcodeer/softjunk-lead-kit/issues/1.
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- Historical issue comments were not fully rewritten in this slice; they remain a residual low-priority surface because canonical issue bodies now carry the current proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native buyer surfaces or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it strengthens canonical GitHub issue checkout surfaces without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned public GitHub issue bodies, GitHub Release tarball, PayPal.Me, seller-side payment verification, manual fulfillment after verification.
+- New owner/branch/fallback: no new fulfillment owner; all current GitHub issue bodies with the PayPal checkout route now point to release `v2.29.155` while executable checkout still uses the verified `v2.29.151` tarball.
+- Decision: continue.

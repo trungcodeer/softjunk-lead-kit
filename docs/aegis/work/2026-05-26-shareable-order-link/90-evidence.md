@@ -102,6 +102,44 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 GitHub Issue Body Proof Coverage Evidence
+
+Artifacts updated:
+- Issue #2: https://github.com/trungcodeer/softjunk-lead-kit/issues/2.
+- Issue #3: https://github.com/trungcodeer/softjunk-lead-kit/issues/3.
+- Issue #5: https://github.com/trungcodeer/softjunk-lead-kit/issues/5.
+- Issue #7: https://github.com/trungcodeer/softjunk-lead-kit/issues/7.
+- Issue #9: https://github.com/trungcodeer/softjunk-lead-kit/issues/9.
+- Issue #10: https://github.com/trungcodeer/softjunk-lead-kit/issues/10.
+- Issue #11: https://github.com/trungcodeer/softjunk-lead-kit/issues/11.
+- Issue #12: https://github.com/trungcodeer/softjunk-lead-kit/issues/12.
+- Issue #13: https://github.com/trungcodeer/softjunk-lead-kit/issues/13.
+
+Already current:
+- Issue #1: https://github.com/trungcodeer/softjunk-lead-kit/issues/1.
+
+Proof markers added where missing:
+- Proof release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.155.
+- Executable package asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Initial GraphQL audit found 10 issues and 122 PayPal-bearing issue/comment surfaces; 120 historical body/comment surfaces were missing at least one current proof marker.
+- The low-noise update boundary was issue bodies only; historical issue comments were not fully rewritten in this slice.
+- Post-update GraphQL audit found all 10 PayPal issue bodies have zero missing proof markers.
+- `gh search issues "v2.29.118" --repo trungcodeer/softjunk-lead-kit` returned no results.
+- `gh search issues "softjunk-lead-kit-0.2.1.tgz" --repo trungcodeer/softjunk-lead-kit` returned no results.
+- `gh search issues "c9ca809f" --repo trungcodeer/softjunk-lead-kit` returned no results.
+- `gh search issues "v2.29.155" --repo trungcodeer/softjunk-lead-kit` returned issues #1, #2, #3, #5, #7, #9, #10, #11, #12, and #13.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Final Owned Repo Proof Gap Evidence
 
 Artifacts updated:
