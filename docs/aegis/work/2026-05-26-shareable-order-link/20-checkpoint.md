@@ -9364,3 +9364,51 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub Pages, root GitHub Pages, JSON/Markdown/text/JSONL discovery surfaces, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; router now points to existing owned root/product fallback routes while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Fast-Pay Router Latest Release Promotion Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/Gist conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Promote the 10-route fast-pay agent checkout router into latest GitHub Release status, product/root Pages discovery surfaces, public Gist mirrors, and IndexNow.
+
+Completed todos:
+- Re-read current checkpoint, task intent, product/root worktree state, latest release list, release `v2.29.157`, router commit `d5382d53f9066156ffabaa82836f0a081f73d74f`, and PayPal verifier output.
+- Created GitHub Release `v2.29.158` titled `v2.29.158 fast-pay router expansion`, targeting `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Updated product latest-release/status surfaces from `v2.29.157` and target `5a7f76bb6a0b8cea6a87e676a228624cd13aabad` to `v2.29.158` and target `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Updated root hub latest agent-router release surfaces to `v2.29.158` and target `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Validated product JSON, JSONL, XML, OpenAPI YAML, latest-release marker coverage, CLI smoke, npm pack dry-run, and diff whitespace.
+- Validated root JSON, sitemap XML, OpenAPI YAML, latest-release marker coverage, and diff whitespace.
+- Committed and pushed product commit `61c793f4631ba0a49f1e22f17fd068b4948fec9c` (`Promote fast-pay router release status`).
+- Committed and pushed root commit `5f6edcd4918083424ab6fcf4944e0ae1105a3b75` (`Promote root hub fast-pay router release`).
+- Refreshed five primary public Gist JSON files and `CURRENT_LATEST_RELEASE_NPM_STATUS.md` in eight public Gists for `v2.29.158`.
+- Confirmed product/root GitHub Pages runs completed successfully, live-verified updated Pages surfaces with cache-busting, submitted IndexNow, and reran the PayPal verifier.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158.
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26558178790.
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26558177481.
+- Product local validation passed: JSON parse `json_ok=62`, JSONL parse `jsonl_ok=55`, XML parse `xml_ok=2`, OpenAPI YAML parse, marker audit `ranked_routes=10 stale=0`, `npm run cli:smoke`, `npm pack --dry-run --json` with `files=207`, and `git diff --check` with only CRLF warnings.
+- Root local validation passed: JSON parse `json_ok=17`, sitemap XML parse, OpenAPI YAML parse, marker audit `stale=0`, and `git diff --check` with only CRLF warnings.
+- Raw Gist validation confirmed eight `CURRENT_LATEST_RELEASE_NPM_STATUS.md` files include `v2.29.158`, target `d5382d53f9066156ffabaa82836f0a081f73d74f`, `ranked routes: 10`, and the current PayPal verifier boundary.
+- Raw Gist primary validation confirmed `agent-card.json`, `ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, and `commerce-graph.json` parse as JSON and include the latest release, PayPal URL, and verification markers.
+- Product live verification returned `product_live_ok urls=18 jsonl=55 ranked_routes=10 public_gists=8`.
+- Root live verification returned `root_live_ok urls=9 sitemap_xml_ok latest=v2.29.158`.
+- IndexNow response: `status=200`, `urls=31`, key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it promotes the strongest current 10-route fast-pay router through latest release, root/product discovery, Gist mirrors, and IndexNow without outreach, scraping, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; latest release and Gists are discovery/status surfaces only and payment verification remains seller-side only.
+- Decision: continue.

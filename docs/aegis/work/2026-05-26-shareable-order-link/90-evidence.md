@@ -22,6 +22,44 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Fast-Pay Router Latest Release Promotion Evidence
+
+Published release:
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158.
+- Title: `v2.29.158 fast-pay router expansion`.
+- Target commit: `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Release body includes `agent-checkout-router.json`, `ranked routes: 10`, root `/5/`, `send-5`, `intent-5`, `digital-kit-order`, `paypal-url-health`, `agent-buyer-catalog.jsonl`, npm status `E404`, local auth `ENEEDAUTH`, `NPM_PUBLISH_WORKFLOW.yml.example`, `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Published commits:
+- Product commit: `61c793f4631ba0a49f1e22f17fd068b4948fec9c` (`Promote fast-pay router release status`).
+- Root commit: `5f6edcd4918083424ab6fcf4944e0ae1105a3b75` (`Promote root hub fast-pay router release`).
+
+Artifacts updated:
+- Product latest-release/status surfaces across `README.md`, `llms.txt`, `feed.xml`, `package.json`, `npm-publish-status.json`, `agent-checkout-router.*`, `public-gist-checkout-index.*`, central agent JSON manifests, and `agent-buyer-catalog.jsonl`.
+- Root latest agent-router release surfaces across `index.html`, `README.md`, `AGENTS.md`, `llms.txt`, `ai.json`, `ai.txt`, `paypal.json`, `agent-card.json`, and `root-offer.json`.
+- Public Gist `82e9935979596bbe2330db46dc9bc58a`: refreshed `agent-card.json` and `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `044280811978a796652e72a7b4228888`: refreshed `ai-action-checkout.json` and `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `795587172ee240078c4377559b20b49b`: refreshed `agents-checkout.json` and `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `76b4b70a3b13bfec62c5f66c3ebec30d`: refreshed `mcp-checkout-server.json` and `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gist `844295134d4a7d721b7eec4963eae1db`: refreshed `commerce-graph.json` and `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+- Public Gists `167d3dc5f8696bf9edb04d3db6c53a02`, `85b6eef2cd6deb244d0bfbe18e744a3c`, and `423bb45dd4b98d552f4db6ed11f399fb`: refreshed `CURRENT_LATEST_RELEASE_NPM_STATUS.md`.
+
+Validation:
+- Product local validation: JSON parse `json_ok=62`, JSONL parse `jsonl_ok=55`, XML parse `xml_ok=2`, OpenAPI YAML parse, marker audit `marker_ok=latest_release_v2.29.158 ranked_routes=10 stale=0`, `npm run cli:smoke`, `npm pack --dry-run --json` with `files=207`, and `git diff --check`.
+- Root local validation: JSON parse `json_ok=17`, sitemap XML parse, OpenAPI YAML parse, marker audit `marker_ok=latest_release_v2.29.158 stale=0`, and `git diff --check`.
+- Raw Gist status validation confirmed all eight `CURRENT_LATEST_RELEASE_NPM_STATUS.md` files include `v2.29.158`, target `d5382d53f9066156ffabaa82836f0a081f73d74f`, `ranked routes: 10`, and the PayPal verifier boundary.
+- Raw Gist primary validation confirmed `agent-card.json`, `ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, and `commerce-graph.json` include `v2.29.158`, target `d5382d53f9066156ffabaa82836f0a081f73d74f`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED`; all five parsed as JSON.
+- Product GitHub Pages run `26558178790` completed with conclusion `success`.
+- Root GitHub Pages run `26558177481` completed with conclusion `success`.
+- Product live verification returned `product_live_ok urls=18 jsonl=55 ranked_routes=10 public_gists=8`.
+- Root live verification returned `root_live_ok urls=9 sitemap_xml_ok latest=v2.29.158`.
+- IndexNow POST submitted 31 owned Pages URLs and returned `status=200` with key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Agent Router Fast-Pay Route Expansion Evidence
 
 Published commit:
