@@ -1,7 +1,7 @@
 {
   "schema_version": "softjunk-npm-publish-status-v1",
   "updated": "2026-05-28",
-  "checked_at_local": "2026-05-28T13:40:45+07:00",
+  "checked_at_local": "2026-05-28T14:08:35+07:00",
   "package_name": "softjunk-lead-kit",
   "package_version": "0.2.2",
   "status_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
@@ -20,9 +20,9 @@
     "required": "Login with npm adduser or provide NPM_TOKEN/NODE_AUTH_TOKEN before npmjs publish."
   },
   "latest_release_status": {
-    "tag": "v2.29.158",
-    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158",
-    "target_commit": "d5382d53f9066156ffabaa82836f0a081f73d74f"
+    "tag": "v2.29.159",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159",
+    "target_commit": "7500a0d27253c76be4979396c6f4b91abb690d15"
   },
   "public_gist_checkout_index": {
     "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",

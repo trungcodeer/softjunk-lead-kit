@@ -3,9 +3,9 @@
     "updated":  "2026-05-28",
     "name":  "SoftJunk Buyer Index",
     "latest_release_status":  {
-                                  "latest_release_tag":  "v2.29.158",
-                                  "latest_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158",
-                                  "latest_release_target":  "d5382d53f9066156ffabaa82836f0a081f73d74f",
+                                  "latest_release_tag":  "v2.29.159",
+                                  "latest_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159",
+                                  "latest_release_target":  "7500a0d27253c76be4979396c6f4b91abb690d15",
                                   "npm_publish_status_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
                                   "npm_publish_workflow_template_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
                                   "npmjs_package_status":  "E404",

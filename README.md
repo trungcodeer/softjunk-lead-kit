@@ -38,7 +38,7 @@ Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.gith
 NPM funding route: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
 NPM funding guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
-Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158 targets `d5382d53f9066156ffabaa82836f0a081f73d74f`
+Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159 targets `7500a0d27253c76be4979396c6f4b91abb690d15`
 Owner-auth npm publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
 Public Gist checkout index: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
 Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
@@ -64,7 +64,7 @@ npm run fund:kit
 
 The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
-Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.158` records this status. Until an owner publishes with npm auth, use the GitHub release tarball or GitHub package route above; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
+Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.159` records this status. Until an owner publishes with npm auth, use the GitHub package route above first, or the release tarball fallback if GitHub package install is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
 
 MCP-capable agents can call `get_softjunk_npm_funding_route` from the local checkout server manifest:
 https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
