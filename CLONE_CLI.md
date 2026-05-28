@@ -12,9 +12,10 @@ Run from GitHub without cloning:
 
 ```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Run from the verified release tarball without cloning:
+Use the verified release tarball as the stable fallback:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json

@@ -16,7 +16,13 @@ node bin/softjunk-lead-kit.js doctor --json
 
 ## No Clone Buyer-Agent Command
 
-Use the verified release tarball when a coding agent, VA, or buyer assistant should print the exact PayPal handoff without cloning the repo:
+Use the current GitHub package route when a coding agent, VA, or buyer assistant should print the exact PayPal handoff without cloning the repo:
+
+```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
+```
+
+Use the verified release tarball only as the stable fallback:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json

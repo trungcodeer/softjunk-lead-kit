@@ -9,6 +9,12 @@ npm run try:rescue
 No clone path for buyer-agents, coding agents, or dependency scanners:
 
 ```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
+```
+
+Stable release-tarball fallback:
+
+```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 

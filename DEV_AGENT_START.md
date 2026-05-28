@@ -12,7 +12,14 @@ This runs the local CLI doctor and prints the exact payment gate. It does not co
 
 ## No Clone Buyer-Agent Command
 
-When the agent should route a buyer from a verified release asset instead of a local clone:
+When the agent should route a buyer without a local clone, use the current GitHub package first:
+
+```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
+```
+
+Use the verified release asset only as the stable fallback:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json

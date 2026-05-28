@@ -8,6 +8,9 @@ const CONSTANTS = Object.freeze({
   amount: '5.00',
   currency: 'USD',
   successSignal: 'PAYPAL_PAYMENT_VERIFIED=true',
+  latestReleaseTag: 'v2.29.159',
+  latestReleaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.159',
+  latestReleaseTarget: '7500a0d27253c76be4979396c6f4b91abb690d15',
   releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151',
   releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz',
   releaseTarballSha256: '1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c',
@@ -34,17 +37,23 @@ const CONSTANTS = Object.freeze({
   verificationGate: 'Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.'
 });
 
-const NO_CLONE_CHECKOUT_COMMAND = `npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
+const NO_CLONE_CHECKOUT_COMMAND = CONSTANTS.githubPackagePayCustomCommand;
+const RELEASE_TARBALL_FALLBACK_COMMAND = `npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
 
 function noCloneCheckoutProof() {
   return {
     command: NO_CLONE_CHECKOUT_COMMAND,
+    preferred_command: NO_CLONE_CHECKOUT_COMMAND,
     expected_amount: CONSTANTS.amount,
     currency: CONSTANTS.currency,
     payment_url: CONSTANTS.paymentUrl,
-    release_url: CONSTANTS.releaseUrl,
-    release_tarball_url: CONSTANTS.releaseTarballUrl,
-    release_tarball_sha256: CONSTANTS.releaseTarballSha256,
+    latest_release_tag: CONSTANTS.latestReleaseTag,
+    latest_release_url: CONSTANTS.latestReleaseUrl,
+    latest_release_target: CONSTANTS.latestReleaseTarget,
+    fallback_release_tarball_command: RELEASE_TARBALL_FALLBACK_COMMAND,
+    fallback_release_url: CONSTANTS.releaseUrl,
+    fallback_release_tarball_url: CONSTANTS.releaseTarballUrl,
+    fallback_release_tarball_sha256: CONSTANTS.releaseTarballSha256,
     success_signal: CONSTANTS.successSignal,
     payment_boundary: CONSTANTS.verificationGate
   };
@@ -201,7 +210,7 @@ function buildSend(input) {
     'Optional no-clone checkout proof:',
     CONSTANTS.githubPackagePayCustomCommand,
     'Stable release-tarball fallback:',
-    NO_CLONE_CHECKOUT_COMMAND,
+    RELEASE_TARBALL_FALLBACK_COMMAND,
     '',
     'After payment, submit placeholders only:',
     CONSTANTS.customOrderForm,
@@ -294,14 +303,17 @@ async function buildDoctor(options) {
       local_publish_auth: 'missing_npm_auth',
       npm_whoami_result: 'ENEEDAUTH',
       current_no_auth_route: CONSTANTS.githubPackagePayCustomCommand,
-      fallback_release_tarball_route: NO_CLONE_CHECKOUT_COMMAND
+      fallback_release_tarball_route: RELEASE_TARBALL_FALLBACK_COMMAND
     },
+    latest_release_tag: CONSTANTS.latestReleaseTag,
+    latest_release_url: CONSTANTS.latestReleaseUrl,
+    latest_release_target: CONSTANTS.latestReleaseTarget,
     release_url: CONSTANTS.releaseUrl,
     release_tarball_url: CONSTANTS.releaseTarballUrl,
     release_tarball_sha256: CONSTANTS.releaseTarballSha256,
     run_from_github_package_doctor: CONSTANTS.githubPackageDoctorCommand,
     run_from_github_package_pay_custom: CONSTANTS.githubPackagePayCustomCommand,
-    run_from_release_tarball_pay_custom: NO_CLONE_CHECKOUT_COMMAND,
+    run_from_release_tarball_pay_custom: RELEASE_TARBALL_FALLBACK_COMMAND,
     no_clone_checkout_proof: noCloneCheckoutProof(),
     npm_fund_command: 'npm fund',
     success_signal: CONSTANTS.successSignal,
@@ -312,7 +324,7 @@ async function buildDoctor(options) {
       after_clone: 'node bin/softjunk-lead-kit.js doctor --json',
       npm_exec_from_github: CONSTANTS.githubPackageDoctorCommand,
       npm_exec_from_github_pay_custom: CONSTANTS.githubPackagePayCustomCommand,
-      npm_exec_from_release_tarball: NO_CLONE_CHECKOUT_COMMAND
+      npm_exec_from_release_tarball: RELEASE_TARBALL_FALLBACK_COMMAND
     }
   };
   if (options.live) {
