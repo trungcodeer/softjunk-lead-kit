@@ -9703,3 +9703,46 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Discussions, product/root GitHub Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; public discussion bodies now prefer the GitHub package checkout route, with pinned tarball fallback retained, while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Preferred GitHub Package No-Clone Checkout Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/GitHub-native conversion routes aligned to the fastest current 5 USD PayPal handoff.
+- Remove remaining first-run friction where repo cloners or buyer-agents could still treat the older release tarball as the primary no-clone route.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Make the GitHub package command the preferred no-clone checkout proof in the CLI and first-run discovery files, while preserving the release tarball as the stable fallback.
+
+Completed todos:
+- Re-read current worktree state, latest checkpoint/evidence, PayPal verifier output, CLI behavior, first-run markdown, and first-run JSON manifests.
+- Identified that `node bin/softjunk-lead-kit.js pay --mode custom --json` still returned the release tarball as `no_clone_checkout_proof.command`.
+- Updated `bin/softjunk-lead-kit.js` so `no_clone_checkout_proof.command` and `preferred_command` are `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
+- Kept the release tarball route as `fallback_release_tarball_command`.
+- Updated `RUN_THIS_FIRST.md`, `CLONE_CLI.md`, `DEV_AGENT_START.md`, `TRY_NOW.md`, `README.md`, `run-this-first.json`, `clone-cli.json`, `dev-agent-start.json`, and `try-now.json` so public first-run paths prefer the GitHub package no-clone checkout.
+- Validated local CLI syntax, JSON parsing, CLI smoke output, package dry-run, remote raw CLI, remote GitHub package execution, live Pages files, and IndexNow.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product commit: `aace0194b6bf99b506b081d42328381390e8e403` (`Prefer GitHub package no-clone checkout`).
+- GitHub package command verified from remote main: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit#main -- softjunk-lead-kit pay --mode custom --json`.
+- Remote GitHub package output returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `no_clone_checkout_proof.command` equal to the GitHub package checkout command.
+- Local validation passed: `node --check bin/softjunk-lead-kit.js`, `node --check mcp-server-softjunk.js`, JSON parse for all repository JSON files, `npm run cli:smoke`, `git diff --check`, and `npm pack --dry-run --json` with `entryCount=207`.
+- Product Pages run `26562610416` completed with conclusion `success`.
+- Live Pages verification returned `live_preferred_no_clone_checkout_ok=10 commit=aace0194b6bf99b506b081d42328381390e8e403`.
+- IndexNow returned `status=200` for `urls=10` with key location `https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the package-native checkout route that buyer-agents can execute directly, without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, GitHub package execution, product GitHub Pages markdown/JSON/JS, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package execution is now the preferred no-clone route, and the verified release tarball remains fallback while payment verification remains seller-side only.
+- Decision: continue.

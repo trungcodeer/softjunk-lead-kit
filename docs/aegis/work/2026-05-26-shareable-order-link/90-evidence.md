@@ -7168,3 +7168,43 @@ Latest external-state slice:
 - Refreshed current discussion bodies for #4, #8, #14, #15, #16, and #17 without adding duplicate comments.
 - GitHub discussion verification returned `discussion_bodies_live_ok=7 numbers=4,6,8,14,15,16,17 stale_v229155=0 latest=v2.29.159`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Preferred GitHub Package No-Clone Checkout Evidence
+
+Files updated:
+- `bin/softjunk-lead-kit.js`.
+- `RUN_THIS_FIRST.md`, `CLONE_CLI.md`, `DEV_AGENT_START.md`, `TRY_NOW.md`, and `README.md`.
+- `run-this-first.json`, `clone-cli.json`, `dev-agent-start.json`, and `try-now.json`.
+
+Change made:
+- The CLI now returns the GitHub package checkout command as `no_clone_checkout_proof.command` and `preferred_command`.
+- The older `v2.29.151` release tarball remains available as `fallback_release_tarball_command`.
+- First-run markdown and JSON files now present `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json` as the preferred no-clone checkout route.
+
+Validation:
+- Local `node --check bin/softjunk-lead-kit.js` passed.
+- Local `node --check mcp-server-softjunk.js` passed.
+- Local JSON parse for all repository JSON files returned `json_ok`.
+- Local `node bin/softjunk-lead-kit.js pay --mode custom --json` returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `no_clone_checkout_proof.command` equal to the GitHub package command.
+- Local `npm run cli:smoke` passed and showed the same preferred GitHub package no-clone proof for doctor, kit, and pay output.
+- Local `git diff --check` returned exit code 0.
+- Local `npm pack --dry-run --json` passed with `entryCount=207`.
+- Product commit `aace0194b6bf99b506b081d42328381390e8e403` was pushed to `main`.
+- Remote raw CLI verification returned `raw_cli_ok preferred_no_clone_github_package=true`.
+- Remote GitHub package execution returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `no_clone_checkout_proof.command` equal to the GitHub package command.
+- Product Pages run `26562610416` completed with conclusion `success`.
+- Live Pages verification returned `live_preferred_no_clone_checkout_ok=10 commit=aace0194b6bf99b506b081d42328381390e8e403` for `RUN_THIS_FIRST.md`, `CLONE_CLI.md`, `DEV_AGENT_START.md`, `TRY_NOW.md`, `README.md`, `run-this-first.json`, `clone-cli.json`, `dev-agent-start.json`, `try-now.json`, and `bin/softjunk-lead-kit.js`.
+- IndexNow returned `indexnow_preferred_no_clone_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Preferred GitHub Package No-Clone Checkout Latest Note
+
+Latest package-native slice:
+- Full details are in the `2026-05-28 Preferred GitHub Package No-Clone Checkout Evidence` section above.
+- Public first-run surfaces and the CLI now prefer `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json` for no-clone checkout.
+- The release tarball route remains a stable fallback only.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
