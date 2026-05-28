@@ -22,6 +22,41 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Final Owned Repo Proof Gap Evidence
+
+Artifacts updated:
+- Product repo: 13 real changed files covering `.devcontainer/devcontainer.json`, `.vscode/tasks.json`, GitHub funding/support/issue-template metadata, `feed.xml`, and `llms.txt`.
+- Root Pages repo: 24 real changed files covering agent-close, AI, buy, intent-5, pay, PayPal, roofing, root agent docs, and root GitHub metadata.
+- Audited but unchanged because no checkout surface was present: `hedera-invoice-settlement-agent` and `AI-agent2`.
+
+Published commits:
+- Product gap-fix commit: `8eb6473224b112b21b6cd4cfb7c904cd5826598d`.
+- Root gap-fix commit: `a822f7016609b9c4f361ae2f4b0c34388bbddce9`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+
+Validation:
+- Product audit returned `paypalFiles=183`, `missingProof=0`, and `staleFiles=0` outside `docs/aegis`.
+- Root audit returned `paypalFiles=46`, `missingProof=0`, and `staleFiles=0`.
+- Final seven-repo audit returned zero missing proof and zero stale marker files for product, root, quiet-lead, profile, default `.github`, `hedera-invoice-settlement-agent`, and `AI-agent2`.
+- Product JSON validation parsed `.devcontainer/devcontainer.json` and `.vscode/tasks.json`.
+- Product YAML validation parsed 7 funding/issue-template YAML files.
+- Product RSS validation parsed `feed.xml` as XML.
+- Root JSON validation parsed 5 changed JSON files.
+- Root HTML validation parsed 15 inline JavaScript/JSON-LD blocks across 7 changed HTML routes.
+- Root YAML validation parsed 3 YAML files.
+- `git diff --check` passed for product and root; only CRLF normalization warnings were reported.
+- Product `npm run cli:smoke` passed.
+- The no-clone release asset command returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Product and root GitHub Pages deployments completed with `success`.
+- Live/raw validation returned HTTP 200 for 39 product/root URLs; each included PayPal URL, `softjunk-lead-kit-0.2.2.tgz`, SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`, and `PAYPAL_PAYMENT_VERIFIED=true`; none included stale markers.
+- IndexNow POST submitted 22 product/root Pages URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Profile and Default Funding Proof Evidence
 
 Artifacts updated:

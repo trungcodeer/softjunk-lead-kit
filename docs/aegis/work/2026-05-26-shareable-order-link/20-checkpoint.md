@@ -8541,3 +8541,45 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub profile Markdown/HTML/JSON/text/YAML, default GitHub funding metadata, GitHub Pages, raw GitHub, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; profile and default funding now mirror the product tarball fallback at `v2.29.151`.
 - Decision: continue.
+
+## 2026-05-28 Final Owned Repo Proof Gap Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Close the remaining proof gaps found by a cross-repo audit across all public `trungcodeer` repositories.
+
+Completed todos:
+- Ran a hidden-inclusive cross-repo audit across product, root Pages, quiet-lead, profile, default `.github`, `hedera-invoice-settlement-agent`, and `AI-agent2`.
+- Found remaining gaps in product hidden/config/feed surfaces and root Pages route surfaces; the two non-SoftJunk repos contained no PayPal/SoftJunk checkout surface.
+- Updated product commit `8eb6473224b112b21b6cd4cfb7c904cd5826598d` to cover 13 real changed files including devcontainer, VS Code tasks, GitHub funding/support/issue templates, `feed.xml`, and `llms.txt`.
+- Updated root Pages commit `a822f7016609b9c4f361ae2f4b0c34388bbddce9` to cover 24 real changed files including agent-close, AI, buy, intent-5, pay, PayPal, roofing, profile-style agent docs, and root GitHub metadata.
+- Validated product JSON/YAML/RSS XML and root JSON/HTML/YAML successfully.
+- Ran product `npm run cli:smoke` successfully and ran the no-clone release asset command successfully.
+- Confirmed product and root GitHub Pages deployments completed successfully.
+- Validated 39 live/raw product and root URLs returned HTTP 200, included current PayPal/tarball/SHA/gate markers, and did not include stale markers.
+- Submitted 22 product/root Pages URLs to IndexNow; API returned HTTP 200.
+- Final cross-repo audit returned zero missing proof and zero stale marker files across all seven public repos.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product gap-fix commit: `8eb6473224b112b21b6cd4cfb7c904cd5826598d`.
+- Root gap-fix commit: `a822f7016609b9c4f361ae2f4b0c34388bbddce9`.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it closes remaining owned public checkout proof gaps without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo config/Markdown/HTML/JSON/text/YAML/XML, GitHub Pages, raw GitHub, IndexNow discovery for owned Pages URLs, existing GitHub Release tarball, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; all public owned PayPal `$5` surfaces found in the audit now mirror the product tarball fallback at `v2.29.151`.
+- Decision: continue.
