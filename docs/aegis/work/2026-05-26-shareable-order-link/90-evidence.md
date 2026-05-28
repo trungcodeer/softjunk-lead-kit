@@ -7570,3 +7570,15 @@ Latest adjacent-discovery refresh:
 - Live verification returned `live_action_manifest_route_ok product_urls=12 root_urls=10 product_commit=cfcc7032b63d1f469408f4ac64e10515ee9c6741 root_commit=fb101782736003a922cdbf6e84be2e77b499fe4c`.
 - IndexNow returned `indexnow_action_manifest_route_ok status=200 urls=22 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Root PayPal QR Package Route Evidence
+
+- Product commit `5074031ff93b865ebab831041963240927ccc09a` refreshed `pay-qr.html`, `paypal-payment-intent.json`, `.well-known/paypal-payment.json`, and the local payment-intent Gist source files.
+- Root commit `fe94f0c35e4892be95ad7338b91d73fafd564ec8` added `pay-qr/`, `pay-qr.json`, and `pay-qr.txt`, and wired them into root homepage, README, llms, robots, sitemap, PayPal manifests, AI JSON, root offer JSON, and well-known manifests.
+- Public Gist `167d3dc5f8696bf9edb04d3db6c53a02` was refreshed with the current GitHub package checkout route, root QR route, `v2.29.161`, `get_softjunk_agent_relay`, PayPal URL, and verification gate; verification returned `gist_payment_intent_qr_route_ok files=2 id=167d3dc5f8696bf9edb04d3db6c53a02`.
+- Validation passed: `product_qr_route_local_ok json=3 markers=4 diff_check=ok`; `root_qr_route_local_ok json=8 xml=1 markers=15 diff_check=ok`; `npm pack --dry-run --json` returned `product_pack_dry_run_ok entryCount=213`.
+- Pages runs completed: product `26578974087` and root `26578974097`.
+- Live verification returned `live_qr_route_ok product_urls=3 root_urls=11 product_commit=5074031ff93b865ebab831041963240927ccc09a root_commit=fe94f0c35e4892be95ad7338b91d73fafd564ec8`.
+- IndexNow returned `indexnow_qr_route_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- C: reached 0 bytes free during root route creation. Locked temp files could not be moved. To keep the workspace writable, user files were moved, not deleted, to `D:\codex-tmp\c-drive-relief\user-files-moved-20260528-05`, and Codex temp/cache folders were moved, not deleted, to `D:\codex-tmp\c-drive-relief\codex-tmp-moved-20260528-06` and `D:\codex-tmp\c-drive-relief\codex-tmp-moved-20260528-07`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

@@ -10208,3 +10208,49 @@ DriftCheckDraft:
 - Compatibility boundary: product/root GitHub Pages, GitHub package execution, MCP relay metadata, owned public Gist, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package execution remains primary, MCP exposes `get_softjunk_agent_relay`, and `v2.29.151` remains fallback only where explicitly labeled.
 - Decision: continue.
+
+## 2026-05-28 Root PayPal QR Package Route Checkpoint
+
+Current todo:
+- Reduce mobile/human payment friction while keeping the current GitHub package and MCP relay checkout route primary.
+- Mirror the updated payment intent to the existing public Gist.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Refresh product QR/payment-intent surfaces and add a root `/pay-qr/` route with JSON/text mirrors so a human can scan the exact PayPal link and an agent can read the current no-clone proof in one short route.
+
+Completed todos:
+- Re-read current goal, worktree state, latest checkpoint, and PayPal verifier output.
+- Updated product `pay-qr.html`, `paypal-payment-intent.json`, `.well-known/paypal-payment.json`, and payment-intent Gist source files from stale primary tarball language to the current GitHub package checkout command.
+- Added root `pay-qr/`, `pay-qr.json`, and `pay-qr.txt` with exact PayPal URL, current release `v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, agent relay command, MCP tool `get_softjunk_agent_relay`, and seller-side verification gate.
+- Wired the root QR route into root homepage, README, llms, robots, sitemap, PayPal manifests, AI JSON, root offer JSON, and well-known manifests.
+- Refreshed public payment-intent Gist `167d3dc5f8696bf9edb04d3db6c53a02` with the current package command and root QR route.
+- Recovered from C: reaching 0 bytes free by moving user files to `D:\codex-tmp\c-drive-relief\user-files-moved-20260528-05` and Codex temp/cache directories to `D:\codex-tmp\c-drive-relief\codex-tmp-moved-20260528-06` / `codex-tmp-moved-20260528-07`, without deleting them.
+- Validated product/root JSON, root sitemap XML, route markers, `git diff --check`, and `npm pack --dry-run --json`.
+- Committed and pushed product commit `5074031ff93b865ebab831041963240927ccc09a` and root commit `fe94f0c35e4892be95ad7338b91d73fafd564ec8`.
+- Waited for product Pages run `26578974087` and root Pages run `26578974097`; both completed successfully.
+- Verified 14 live product/root QR/payment URLs plus root sitemap/robots with cache busting.
+- Submitted 15 owned Pages URLs to IndexNow.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Gist verification returned `gist_payment_intent_qr_route_ok files=2 id=167d3dc5f8696bf9edb04d3db6c53a02`.
+- Local validation returned `product_qr_route_local_ok json=3 markers=4 diff_check=ok`, `root_qr_route_local_ok json=8 xml=1 markers=15 diff_check=ok`, and `product_pack_dry_run_ok entryCount=213`.
+- Pages run checks returned `product_pages_run_ok id=26578974087 commit=5074031ff93b865ebab831041963240927ccc09a` and `root_pages_run_ok id=26578974097 commit=fe94f0c35e4892be95ad7338b91d73fafd564ec8`.
+- Live verification returned `live_qr_route_ok product_urls=3 root_urls=11 product_commit=5074031ff93b865ebab831041963240927ccc09a root_commit=fe94f0c35e4892be95ad7338b91d73fafd564ec8`.
+- IndexNow returned `indexnow_qr_route_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it adds a shorter owned QR payment route and keeps machine-readable package/MCP proof aligned without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product/root GitHub Pages, GitHub package execution, MCP relay metadata, owned public Gist, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package execution remains primary, root `/pay-qr/` is an additional owned payment handoff route, and `v2.29.151` remains fallback only where explicitly labeled.
+- Decision: continue.
