@@ -8209,3 +8209,58 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo HTML/Markdown, GitHub Pages HTML/Markdown, raw GitHub HTML/Markdown, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; entry surfaces remain checkout/payment-intent surfaces, not payment proof.
 - Decision: continue.
+
+## 2026-05-28 Package-Native No-Clone Tarball Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Create a fresh package-native no-clone checkout tarball so coding agents, package scanners, repo cloners, and MCP clients can run a verified GitHub Release asset directly and get the exact 5 USD PayPal handoff.
+
+Completed todos:
+- Upgraded `package.json` and CLI version metadata to `0.2.2`.
+- Updated `bin/softjunk-lead-kit.js` to expose `no_clone_checkout_proof` in `doctor`, `pay`, `kit`, `send`, and paid-upgrade JSON/text outputs.
+- Updated `mcp-server-softjunk.js` package-native constants to `v2.29.151`, tarball `softjunk-lead-kit-0.2.2.tgz`, and server version `2026.05.28`.
+- Updated `NPM_FUNDING.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, `README.md`, and `AGENTS.md` to point package-native/no-clone routes at `v2.29.151`.
+- Validated source markers and JSON parsing locally.
+- Ran local CLI smoke checks: `doctor`, `pay`, `kit`, `send`, `npm run cli:smoke`.
+- Validated MCP `get_softjunk_npm_funding_route` returns the new release URL, tarball URL, no-clone command, PayPal URL, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Packed `softjunk-lead-kit-0.2.2.tgz` with `npm pack`.
+- Validated the local tarball with `npm exec --yes --package <local-tgz> -- softjunk-lead-kit pay --mode custom --json`.
+- Pushed product commit `f5421f183a82ddb4097b92e81e193a31d627011d`.
+- Created public product release `v2.29.151` with uploaded asset `softjunk-lead-kit-0.2.2.tgz`.
+- Computed and published release asset SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Validated the downloaded release asset has the expected SHA-256 and size `447962` bytes.
+- Ran the actual no-clone release asset commands:
+  - `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json`
+  - `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
+- Confirmed the no-clone release asset returns `version=0.2.2`, `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, release URL, tarball URL, no-clone proof block, verification gate, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- Confirmed GitHub Pages latest build was `built` for commit `f5421f183a82ddb4097b92e81e193a31d627011d`.
+- Validated live Pages and raw GitHub copies of `package.json`, `NPM_FUNDING.md`, `RUN_THIS_FIRST.md`, `DEV_AGENT_START.md`, `README.md`, `AGENTS.md`, and `mcp-server-softjunk.js` returned HTTP 200 and included the required markers.
+- Confirmed npm registry publish remains unavailable on this machine: `npm whoami` returned `ENEEDAUTH`.
+- Submitted seven package-native Pages URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `f5421f183a82ddb4097b92e81e193a31d627011d`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151.
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone checkout command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm registry publish remains blocked by missing npm login on this machine; the GitHub Release tarball route is the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving owned public/package-native buyer surfaces while waiting for actual PayPal proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it creates a runnable package artifact that prints the exact 5 USD checkout and verification gate without requiring clone, npm registry auth, scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo JS/Markdown/JSON, GitHub Pages JS/Markdown/JSON, raw GitHub JS/Markdown/JSON, GitHub Release notes, GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` is the current no-clone executable fallback while npm registry publish remains unavailable.
+- Decision: continue.
