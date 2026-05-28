@@ -7410,3 +7410,55 @@ Latest MCP relay slice:
 - MCP-capable agents can now call `get_softjunk_agent_relay` from the local stdio server to retrieve fit checks, `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`, the checkout command, PayPal URL, order form, and seller-side verification gate.
 - Public MCP manifests are live at `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json` and `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Release v2.29.161 MCP Relay Promotion Evidence
+
+Release:
+- Created release `v2.29.161`: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161.
+- Release target: `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Release title: `SoftJunk v2.29.161 MCP agent relay`.
+- Published at: `2026-05-28T09:46:48Z`.
+
+Files and public surfaces updated:
+- Product commit: `aa588c041497745d05d588fd21d79037a77d77d2` (`Promote release v2.29.161 status`).
+- Root commit: `baef87dc1bcb08a7f7aa549a0c32d686e5966d4b` (`Promote root release v2.29.161 status`).
+- Product current release/status files updated: 29 files including `.well-known` manifests, `README.md`, `llms.txt`, `feed.xml`, package metadata, CLI constants, agent checkout router, agent relay, MCP manifest, buyer index, commerce graph, product feed, and public Gist checkout index files.
+- Root current release/status files updated: 14 files including root offer, AI route, PayPal route, `llms.txt`, README, AGENTS, index, root A2A card, and `.well-known` manifests.
+- Eight owned public Gist mirrors refreshed with `CURRENT_LATEST_RELEASE_NPM_STATUS.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, descriptions showing `v2.29.161`, and primary mirror files where applicable.
+- During root hidden-file editing, C: reached 0 bytes free. Two installer files were moved to `D:\codex-tmp\c-drive-relief\`, `.well-known/softjunk-root-offer.json` was restored from `HEAD`, and the intended `v2.29.161` replacement was re-applied.
+
+Validation:
+- Local product/root `git diff --check` returned exit code 0.
+- Product old marker audit returned `product_old_markers_absent`.
+- Root old marker audit returned `root_old_markers_absent`.
+- Product JSON parse returned `product_json_ok count=65`.
+- Root JSON parse returned `root_json_ok count=17`.
+- Product XML parse returned `product_xml_ok files=2`.
+- Local syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `npm run cli:smoke` passed and reported `latest_release_tag=v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, and PayPal URL `https://paypal.me/softjunk/5USD`.
+- `npm run mcp:smoke` passed with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed with `entryCount=212`.
+- Release verification returned `tagName=v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, and the release URL above.
+- Product Pages run `26568090454` for commit `aa588c041497745d05d588fd21d79037a77d77d2` completed with conclusion `success`.
+- Root Pages run `26568090004` for commit `baef87dc1bcb08a7f7aa549a0c32d686e5966d4b` completed with conclusion `success`.
+- Product live verification returned `product_release_v229161_live_ok urls=10 commit=aa588c041497745d05d588fd21d79037a77d77d2`.
+- Root live verification returned `root_release_v229161_live_ok urls=9 commit=baef87dc1bcb08a7f7aa549a0c32d686e5966d4b`.
+- Public Gist API verification returned `gist_api_status_primary_ok=8`.
+- Public Gist raw status/proof verification returned `gist_raw_status_proof_ok=8`.
+- Remote GitHub package `agent --json` verification returned `remote_agent_route_ok tag=v2.29.161 target=b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Remote GitHub package `pay --mode custom --json` verification returned `remote_pay_route_ok tag=v2.29.161 target=b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Remote MCP stdio verification returned `remote_mcp_agent_relay_ok tool=get_softjunk_agent_relay payment_url=https://paypal.me/softjunk/5USD`.
+- IndexNow accepted 21 product/root Pages URLs with `status=200` and key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Release v2.29.161 MCP Relay Promotion Latest Note
+
+Latest release/status slice:
+- Full details are in the `2026-05-28 Release v2.29.161 MCP Relay Promotion Evidence` section above.
+- `v2.29.161` is now the current GitHub Release and targets `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Product/root Pages, public Gist mirrors, package metadata, GitHub package execution, and MCP relay discovery now advertise the current MCP agent relay checkout route.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

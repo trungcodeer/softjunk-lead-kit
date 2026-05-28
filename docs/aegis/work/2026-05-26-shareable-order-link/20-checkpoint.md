@@ -9981,3 +9981,52 @@ DriftCheckDraft:
 - Compatibility boundary: MCP stdio server, package metadata, GitHub package execution, GitHub Pages manifests, IndexNow, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; MCP now has an additional `get_softjunk_agent_relay` tool, while `pay --mode custom --json` remains the checkout command and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Release v2.29.161 MCP Relay Promotion Checkpoint
+
+Current todo:
+- Promote the MCP agent relay state through the current GitHub Release, package-native metadata, root discovery surfaces, public Gist mirrors, Pages, and IndexNow.
+- Keep the strongest buyer-agent route executable through GitHub package commands and MCP.
+- Rerun PayPal verification and keep the goal active until seller-side PayPal evidence exists.
+
+Active slice:
+- Publish and promote `v2.29.161` as the current release/status marker for the MCP agent relay work.
+
+Completed todos:
+- Created GitHub Release `v2.29.161` targeting `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Updated 29 product release/status files from `v2.29.160` / `996541ac6009ee9c455116429e5685870218d6ef` to `v2.29.161` / `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Updated 14 root release/status files with the same current release marker.
+- Recovered from a full C: drive during root hidden-file editing by moving two installer files to `D:\codex-tmp\c-drive-relief\`, restored `.well-known/softjunk-root-offer.json`, and re-applied the intended release-marker replacement.
+- Validated product/root metadata locally, then committed and pushed product commit `aa588c041497745d05d588fd21d79037a77d77d2` and root commit `baef87dc1bcb08a7f7aa549a0c32d686e5966d4b`.
+- Waited for product Pages run `26568090454` and root Pages run `26568090004`; both completed successfully.
+- Refreshed eight owned public Gist mirrors with `CURRENT_LATEST_RELEASE_NPM_STATUS.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, descriptions, and primary mirror files where applicable.
+- Verified product/root live Pages URLs, public Gist API/raw content, remote GitHub package `agent` and `pay` routes, remote MCP stdio `get_softjunk_agent_relay`, IndexNow, and PayPal verifier.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161.
+- Product commit: `aa588c041497745d05d588fd21d79037a77d77d2` (`Promote release v2.29.161 status`).
+- Root commit: `baef87dc1bcb08a7f7aa549a0c32d686e5966d4b` (`Promote root release v2.29.161 status`).
+- Local validation passed: product/root `git diff --check`, product/root old marker absence checks, product/root JSON parse, product XML parse, `node --check bin/softjunk-lead-kit.js`, `node --check mcp-server-softjunk.js`, `npm run cli:smoke`, `npm run mcp:smoke`, and `npm pack --dry-run --json` with `entryCount=212`.
+- Release verification returned `tagName=v2.29.161`, target `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`, and published URL above.
+- Product live verification returned `product_release_v229161_live_ok urls=10 commit=aa588c041497745d05d588fd21d79037a77d77d2`.
+- Root live verification returned `root_release_v229161_live_ok urls=9 commit=baef87dc1bcb08a7f7aa549a0c32d686e5966d4b`.
+- Public Gist API verification returned `gist_api_status_primary_ok=8`.
+- Public Gist raw verification returned `gist_raw_status_proof_ok=8`.
+- Remote GitHub package verification returned `remote_agent_route_ok tag=v2.29.161 target=b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe` and `remote_pay_route_ok tag=v2.29.161 target=b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`.
+- Remote MCP stdio verification returned `remote_mcp_agent_relay_ok tool=get_softjunk_agent_relay payment_url=https://paypal.me/softjunk/5USD`.
+- IndexNow returned `indexnow_v229161_ok status=200 urls=21 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it promotes the MCP relay and no-clone package checkout route through owned public and package-native surfaces without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, GitHub package execution, MCP stdio server, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.161` is now current, GitHub package execution remains the preferred no-clone route, MCP exposes `get_softjunk_agent_relay`, and the release tarball remains fallback only.
+- Decision: continue.
