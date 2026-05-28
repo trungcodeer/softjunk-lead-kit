@@ -10,6 +10,8 @@
     "latest_release_tag": "v2.29.162",
     "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
     "latest_release_target": "b8c335e6cfac3045155497b41e5532e1dfefae10",
+    "current_release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz",
+    "current_release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
     "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
     "npm_publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
     "npmjs_package_status": "E404",
@@ -56,6 +58,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD",
       "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
     },
+    "current_release_tarball_command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "fallback_tarball_command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "verification_gate": "This proves the package checkout route only. Do not claim payment, fulfillment, or completion before seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true."
@@ -125,6 +128,15 @@
     },
     {
       "rank": 8,
+      "route_id": "current_release_tarball_checkout",
+      "use_when": "A coding agent wants the pinned current release tarball checkout route rather than GitHub main.",
+      "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+      "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
+      "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
+      "payment_url": "https://paypal.me/softjunk/5USD"
+    },
+    {
+      "rank": 9,
       "route_id": "stable_release_tarball_checkout_fallback",
       "use_when": "A coding agent wants the pinned release-tarball fallback checkout route when GitHub package install is unavailable.",
       "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
@@ -133,7 +145,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 9,
+      "rank": 10,
       "route_id": "public_gist_preferred",
       "use_when": "A buyer-agent, crawler, or VA prefers public Gist or raw Gist checkout mirrors.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
@@ -141,7 +153,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 10,
+      "rank": 11,
       "route_id": "needs_free_preview_first",
       "use_when": "The buyer is not ready to pay and needs a useful preview from non-sensitive context first.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
@@ -149,7 +161,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
-      "rank": 11,
+      "rank": 12,
       "route_id": "verify_paypal_url_health_before_handoff",
       "use_when": "An agent needs a public route-health manifest before sending a buyer to PayPal.",
       "open_first": "https://trungcodeer.github.io/paypal-url-health.json",

@@ -11,9 +11,12 @@ const CONSTANTS = Object.freeze({
   latestReleaseTag: 'v2.29.162',
   latestReleaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162',
   latestReleaseTarget: 'b8c335e6cfac3045155497b41e5532e1dfefae10',
-  releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151',
-  releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz',
-  releaseTarballSha256: '1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c',
+  releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162',
+  releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz',
+  releaseTarballSha256Url: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256',
+  stableFallbackReleaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151',
+  stableFallbackReleaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz',
+  stableFallbackReleaseTarballSha256: '1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c',
   githubPackageDoctorCommand: 'npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json',
   githubPackagePayCustomCommand: 'npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json',
   rootBuyerCard: 'https://trungcodeer.github.io/5/',
@@ -47,7 +50,8 @@ const CONSTANTS = Object.freeze({
 });
 
 const NO_CLONE_CHECKOUT_COMMAND = CONSTANTS.githubPackagePayCustomCommand;
-const RELEASE_TARBALL_FALLBACK_COMMAND = `npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
+const CURRENT_RELEASE_TARBALL_COMMAND = `npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
+const RELEASE_TARBALL_FALLBACK_COMMAND = `npm exec --yes --package ${CONSTANTS.stableFallbackReleaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
 
 function noCloneCheckoutProof() {
   return {
@@ -59,10 +63,13 @@ function noCloneCheckoutProof() {
     latest_release_tag: CONSTANTS.latestReleaseTag,
     latest_release_url: CONSTANTS.latestReleaseUrl,
     latest_release_target: CONSTANTS.latestReleaseTarget,
+    current_release_tarball_command: CURRENT_RELEASE_TARBALL_COMMAND,
+    current_release_tarball_url: CONSTANTS.releaseTarballUrl,
+    current_release_tarball_sha256_url: CONSTANTS.releaseTarballSha256Url,
     fallback_release_tarball_command: RELEASE_TARBALL_FALLBACK_COMMAND,
-    fallback_release_url: CONSTANTS.releaseUrl,
-    fallback_release_tarball_url: CONSTANTS.releaseTarballUrl,
-    fallback_release_tarball_sha256: CONSTANTS.releaseTarballSha256,
+    fallback_release_url: CONSTANTS.stableFallbackReleaseUrl,
+    fallback_release_tarball_url: CONSTANTS.stableFallbackReleaseTarballUrl,
+    fallback_release_tarball_sha256: CONSTANTS.stableFallbackReleaseTarballSha256,
     success_signal: CONSTANTS.successSignal,
     payment_boundary: CONSTANTS.verificationGate
   };
@@ -376,6 +383,7 @@ async function buildDoctor(options) {
       local_publish_auth: 'missing_npm_auth',
       npm_whoami_result: 'ENEEDAUTH',
       current_no_auth_route: CONSTANTS.githubPackagePayCustomCommand,
+      current_release_tarball_route: CURRENT_RELEASE_TARBALL_COMMAND,
       fallback_release_tarball_route: RELEASE_TARBALL_FALLBACK_COMMAND
     },
     latest_release_tag: CONSTANTS.latestReleaseTag,
@@ -383,10 +391,14 @@ async function buildDoctor(options) {
     latest_release_target: CONSTANTS.latestReleaseTarget,
     release_url: CONSTANTS.releaseUrl,
     release_tarball_url: CONSTANTS.releaseTarballUrl,
-    release_tarball_sha256: CONSTANTS.releaseTarballSha256,
+    release_tarball_sha256_url: CONSTANTS.releaseTarballSha256Url,
     run_from_github_package_doctor: CONSTANTS.githubPackageDoctorCommand,
     run_from_github_package_pay_custom: CONSTANTS.githubPackagePayCustomCommand,
-    run_from_release_tarball_pay_custom: RELEASE_TARBALL_FALLBACK_COMMAND,
+    run_from_release_tarball_pay_custom: CURRENT_RELEASE_TARBALL_COMMAND,
+    stable_fallback_release_url: CONSTANTS.stableFallbackReleaseUrl,
+    stable_fallback_release_tarball_url: CONSTANTS.stableFallbackReleaseTarballUrl,
+    stable_fallback_release_tarball_sha256: CONSTANTS.stableFallbackReleaseTarballSha256,
+    stable_fallback_release_tarball_pay_custom: RELEASE_TARBALL_FALLBACK_COMMAND,
     no_clone_checkout_proof: noCloneCheckoutProof(),
     npm_fund_command: 'npm fund',
     success_signal: CONSTANTS.successSignal,
@@ -397,7 +409,8 @@ async function buildDoctor(options) {
       after_clone: 'node bin/softjunk-lead-kit.js doctor --json',
       npm_exec_from_github: CONSTANTS.githubPackageDoctorCommand,
       npm_exec_from_github_pay_custom: CONSTANTS.githubPackagePayCustomCommand,
-      npm_exec_from_release_tarball: RELEASE_TARBALL_FALLBACK_COMMAND
+      npm_exec_from_release_tarball: CURRENT_RELEASE_TARBALL_COMMAND,
+      npm_exec_from_stable_fallback_tarball: RELEASE_TARBALL_FALLBACK_COMMAND
     }
   };
   if (options.live) {
@@ -418,7 +431,8 @@ function printText(payload) {
     console.log(`Local-only: ${payload.local_only}`);
     console.log(`PayPal: ${payload.payment_url}`);
     console.log(`No-clone checkout: ${payload.run_from_github_package_pay_custom}`);
-    console.log(`Fallback tarball: ${payload.run_from_release_tarball_pay_custom}`);
+    console.log(`Current release tarball: ${payload.run_from_release_tarball_pay_custom}`);
+    console.log(`Stable fallback tarball: ${payload.stable_fallback_release_tarball_pay_custom}`);
     console.log(`Gate: ${payload.success_signal}`);
     if (payload.live_checks) payload.live_checks.forEach((check) => console.log(`Live ${check.ok ? 'ok' : 'fail'} ${check.status || ''} ${check.url}`));
     return;

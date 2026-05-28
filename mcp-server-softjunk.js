@@ -45,15 +45,23 @@ const AGENT_RELAY_JSON =
 const AGENT_RELAY_TEXT =
   "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt";
 const RELEASE_URL =
-  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162";
 const RELEASE_TARBALL_URL =
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz";
+const RELEASE_TARBALL_SHA256_URL =
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256";
+const STABLE_FALLBACK_RELEASE_URL =
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
+const STABLE_FALLBACK_RELEASE_TARBALL_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz";
-const RELEASE_TARBALL_SHA256 =
+const STABLE_FALLBACK_RELEASE_TARBALL_SHA256 =
   "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c";
 const RELEASE_TARBALL_DOCTOR_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit doctor --json`;
 const RELEASE_TARBALL_PAY_CUSTOM_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit pay --mode custom --json`;
+const STABLE_FALLBACK_RELEASE_TARBALL_PAY_CUSTOM_COMMAND =
+  `npm exec --yes --package ${STABLE_FALLBACK_RELEASE_TARBALL_URL} -- softjunk-lead-kit pay --mode custom --json`;
 const GITHUB_PACKAGE_DOCTOR_COMMAND =
   "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json";
 const GITHUB_PACKAGE_AGENT_COMMAND =
@@ -402,12 +410,16 @@ function checkoutRoutes() {
     package_json_url: PACKAGE_JSON_URL,
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
-    release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    release_tarball_sha256_url: RELEASE_TARBALL_SHA256_URL,
     run_from_github_package_agent: GITHUB_PACKAGE_AGENT_COMMAND,
     run_from_github_package_doctor: GITHUB_PACKAGE_DOCTOR_COMMAND,
     run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
     run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
     run_from_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
+    stable_fallback_release_url: STABLE_FALLBACK_RELEASE_URL,
+    stable_fallback_release_tarball_url: STABLE_FALLBACK_RELEASE_TARBALL_URL,
+    stable_fallback_release_tarball_sha256: STABLE_FALLBACK_RELEASE_TARBALL_SHA256,
+    stable_fallback_release_tarball_pay_custom: STABLE_FALLBACK_RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     npm_fund_command: "npm fund",
     npm_run_fund_command: "npm run fund",
     npm_run_fund_kit_command: "npm run fund:kit",
@@ -429,7 +441,8 @@ function agentRelayRoute() {
     agent_relay_text_url: AGENT_RELAY_TEXT,
     run_from_github_package_agent: GITHUB_PACKAGE_AGENT_COMMAND,
     run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
-    fallback_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
+    run_from_current_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
+    fallback_release_tarball_pay_custom: STABLE_FALLBACK_RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     amount: "5.00",
     currency: "USD",
     payment_url: PAYMENT_URL,
@@ -476,16 +489,21 @@ function npmFundingRoute() {
       local_publish_auth: "missing_npm_auth",
       npm_whoami_result: "ENEEDAUTH",
       current_no_auth_route: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
-      fallback_release_tarball_route: RELEASE_TARBALL_PAY_CUSTOM_COMMAND
+      current_release_tarball_route: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
+      fallback_release_tarball_route: STABLE_FALLBACK_RELEASE_TARBALL_PAY_CUSTOM_COMMAND
     },
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
-    release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    release_tarball_sha256_url: RELEASE_TARBALL_SHA256_URL,
     run_from_github_package_agent: GITHUB_PACKAGE_AGENT_COMMAND,
     run_from_github_package_doctor: GITHUB_PACKAGE_DOCTOR_COMMAND,
     run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
     run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
     run_from_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
+    stable_fallback_release_url: STABLE_FALLBACK_RELEASE_URL,
+    stable_fallback_release_tarball_url: STABLE_FALLBACK_RELEASE_TARBALL_URL,
+    stable_fallback_release_tarball_sha256: STABLE_FALLBACK_RELEASE_TARBALL_SHA256,
+    stable_fallback_release_tarball_pay_custom: STABLE_FALLBACK_RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     commands: [
       {
         command: "npm fund",

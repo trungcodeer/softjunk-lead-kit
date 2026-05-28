@@ -11,13 +11,13 @@ Best current checkout route:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-3. Use the pinned release-tarball fallback if GitHub package install is unavailable:
+3. Use the current pinned release-tarball route if GitHub package install is unavailable:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-4. Verified npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+4. Current npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 5. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
 6. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
 7. Use the executable AI-agent relay when an assistant needs the full fit check, route packet, and checkout boundary:
@@ -58,8 +58,8 @@ No clone and no npm login required:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 When this repo is installed as a GitHub package or opened after clone, the package metadata points to the exact 5 USD PayPal route:
@@ -72,7 +72,7 @@ npm run fund:kit
 
 The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
-Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.162` records this status. Until an owner publishes with npm auth, use the GitHub package route above first, or the release tarball fallback if GitHub package install is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
+Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.162` records this status. Until an owner publishes with npm auth, use the GitHub package route above first, or the current release tarball if GitHub package install is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
 
 MCP-capable agents can call `get_softjunk_agent_relay` for the fit-check and checkout packet, or `get_softjunk_npm_funding_route` for package funding metadata, from the local checkout server manifest:
 https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
@@ -111,7 +111,7 @@ Run without cloning:
 ```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 Run-first guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/RUN_THIS_FIRST.md
