@@ -22,6 +22,48 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 HTML and Gist Checkout Proof Metadata Evidence
+
+Artifacts updated:
+- 38 public HTML files with stale no-clone checkout proof metadata.
+- 13 owned public Gists:
+  - https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805
+  - https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
+  - https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35
+  - https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1
+  - https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759
+  - https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
+  - https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db
+  - https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950
+  - https://gist.github.com/trungcodeer/85b6eef2cd6deb244d0bfbe18e744a3c
+  - https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
+  - https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a
+  - https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6
+  - https://gist.github.com/trungcodeer/167d3dc5f8696bf9edb04d3db6c53a02
+
+Published commit and release:
+- Product commit: `2e908bbee1b4844a0e0eb3f6f35bb6ca61dfd3de`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.153.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+
+Validation:
+- Hidden-inclusive stale marker search found no `v2.29.118`, `v2.29.119`, `softjunk-lead-kit-0.2.1.tgz`, or old SHA references in public HTML/JSON/Markdown/text/JS surfaces outside evidence docs.
+- Inline JavaScript and JSON-LD validation passed for all 38 changed HTML files.
+- `git diff --check` passed with only CRLF normalization warnings.
+- `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json` returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub API Gist audit found zero owned public Gists containing the stale checkout proof markers after refresh.
+- The 13 refreshed Gists all contain `softjunk-lead-kit-0.2.2.tgz` and SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Product release `v2.29.153` is public, non-draft, non-prerelease, and targets `2e908bbee1b4844a0e0eb3f6f35bb6ca61dfd3de`.
+- GitHub Pages build completed successfully for commit `2e908bbee1b4844a0e0eb3f6f35bb6ca61dfd3de`.
+- Live Pages validation returned HTTP 200 for all 38 changed HTML URLs; each included the new tarball URL and SHA and did not include stale markers.
+- IndexNow POST submitted all 38 changed Pages HTML URLs; API returned HTTP 200.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Manifest Tarball Metadata Propagation Evidence
 
 Artifacts updated:

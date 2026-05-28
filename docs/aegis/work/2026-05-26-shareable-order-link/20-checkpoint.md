@@ -8311,3 +8311,53 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub repo Markdown/JSON/JSONL/YAML/text, GitHub Pages, raw GitHub, GitHub Release notes, existing GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` remains the current no-clone executable fallback while `v2.29.152` records manifest propagation.
 - Decision: continue.
+
+## 2026-05-28 HTML and Gist Checkout Proof Metadata Checkpoint
+
+Current todo:
+- Keep legitimate owned-channel/package-native conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Remove stale checkout proof metadata from public HTML surfaces and owned public Gists so buyers, crawlers, and agents do not discover the old `v2.29.118` tarball before the verified `v2.29.151` tarball.
+
+Completed todos:
+- Audited owned/referenced public Gists through GitHub API.
+- Found 13 owned public Gists with stale `v2.29.118` / `softjunk-lead-kit-0.2.1.tgz` / old SHA metadata.
+- Found 38 local public HTML pages with stale no-clone checkout proof metadata.
+- Updated all 38 stale HTML files to the current `v2.29.151` release URL, `softjunk-lead-kit-0.2.2.tgz` tarball URL, and SHA-256 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- Refreshed 13 owned public Gists from corrected local files:
+  `75cf486f79f6a5ab61b938ba786e0805`, `78f709d9550e952dc6c0595660ca643a`, `a40d54d6e66cdb58f861f2f9637a3e35`, `9536e55f193f941e05651ac8cd5139b1`, `7c25ec12b4c0f58506efe66bfbef6759`, `16d6861c14de82187946861e4c448844`, `844295134d4a7d721b7eec4963eae1db`, `9d5583f2a5ded7d6757fda9f4828b950`, `85b6eef2cd6deb244d0bfbe18e744a3c`, `2cb79cccf1e0e5d0efdfa4ae6d15f683`, `fbd0764d1575076c27eaddb55042459a`, `f2c1e3469c1f9313f135f612b229b0e6`, and `167d3dc5f8696bf9edb04d3db6c53a02`.
+- Validated no stale release/tarball/SHA markers remain in repo public HTML/JSON/Markdown/text/JS surfaces outside evidence docs.
+- Validated inline scripts and JSON-LD in all 38 changed HTML files.
+- Ran `git diff --check`; only CRLF normalization warnings were reported.
+- Ran the no-clone release asset command from `v2.29.151`; it returned `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+- GitHub API Gist audit confirmed no owned public Gist still contains the stale checkout proof markers; the 13 refreshed Gists now include the new tarball and SHA.
+- Pushed product commit `2e908bbee1b4844a0e0eb3f6f35bb6ca61dfd3de`.
+- Created public product release `v2.29.153`.
+- Confirmed GitHub Pages build completed successfully for commit `2e908bbee1b4844a0e0eb3f6f35bb6ca61dfd3de`.
+- Validated all 38 updated Pages HTML URLs returned HTTP 200, included the new tarball URL and SHA, and did not include stale markers.
+- Submitted the 38 updated Pages HTML URLs to IndexNow; API returned HTTP 200.
+- Reran the PayPal verifier; it returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- Product commit: `2e908bbee1b4844a0e0eb3f6f35bb6ca61dfd3de`.
+- Product release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.153.
+- Verified executable tarball remains: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone checkout command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+
+Blocked-on items:
+- Actual npm registry publish remains blocked by missing npm login on this machine; the GitHub Release tarball route is the executable package fallback.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving owned public/package-native buyer surfaces while waiting for actual PayPal proof, publish to npm when npm auth is available, or rerun the PayPal verifier immediately when credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it removes stale public checkout proof from HTML and Gist discovery paths without scraping, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub repo HTML, GitHub Pages HTML, owned public Gists, GitHub Release notes, existing GitHub Release tarball, IndexNow discovery for owned Pages URLs, PayPal.Me, manual fulfillment after seller-side verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub Release tarball `v2.29.151` remains the current no-clone executable fallback while `v2.29.153` records HTML/Gist metadata propagation.
+- Decision: continue.
