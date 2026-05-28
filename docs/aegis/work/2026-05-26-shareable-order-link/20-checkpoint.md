@@ -9412,3 +9412,45 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; latest release and Gists are discovery/status surfaces only and payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Hidden Well-Known Release Status Refresh Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/Gist conversion surfaces available while waiting for actual PayPal evidence.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Fix hidden `.well-known` agent/crawler discovery surfaces that still advertised release `v2.29.157` after visible latest-release surfaces had moved to `v2.29.158`.
+
+Completed todos:
+- Re-audited product and root repos with `rg --hidden` instead of default `rg`, because default search skipped `.well-known`.
+- Updated product `.well-known/agent-card.json`, `.well-known/ai-action-checkout.json`, `.well-known/ai-plugin.json`, `.well-known/mcp-checkout-server.json`, `.well-known/openapi.yaml`, and `.well-known/softjunk-offer.json` to release `v2.29.158` and target `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Updated root `.well-known/agent-card.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, `.well-known/paypal-payment.json`, and `.well-known/softjunk-root-offer.json` to release `v2.29.158` and target `d5382d53f9066156ffabaa82836f0a081f73d74f`.
+- Validated product and root JSON/YAML/XML including hidden files.
+- Committed and pushed product commit `2e9a6d8568a75f87e068bee4fbb647ede14ed7bb` (`Refresh hidden well-known release status`).
+- Committed and pushed root commit `029daedc7bb38ba8bdc95b6f434a9f9e6705cb8f` (`Refresh root well-known release status`).
+- Confirmed product/root GitHub Pages runs completed successfully, live-verified all changed `.well-known` endpoints with cache-busting, submitted IndexNow, and reran the PayPal verifier.
+
+Evidence refs:
+- Product Pages run: https://github.com/trungcodeer/softjunk-lead-kit/actions/runs/26558650340.
+- Root Pages run: https://github.com/trungcodeer/trungcodeer.github.io/actions/runs/26558649771.
+- Product local validation passed: forced JSON parse `json_ok_force=62`, JSONL parse `jsonl_ok=55`, XML parse `xml_ok=2`, OpenAPI YAML parse, hidden stale-marker audit `marker_ok_hidden_stale=0`, and `git diff --check`.
+- Root local validation passed: forced JSON parse `json_ok_force=17`, sitemap XML parse, OpenAPI YAML parse, hidden stale-marker audit `marker_ok_hidden_stale=0`, and `git diff --check`.
+- Product live `.well-known` verification returned `product_well_known_live_ok=6`.
+- Root live `.well-known` verification returned `root_well_known_live_ok=5`.
+- IndexNow response: `status=200`, `urls=11`, key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it corrects crawler/agent-readable `.well-known` discovery so buyer agents see the current 10-route fast-pay router release instead of stale release metadata.
+- Compatibility boundary: product/root GitHub Pages, `.well-known` JSON/YAML manifests, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; hidden manifests are discovery/status surfaces only and payment verification remains seller-side only.
+- Decision: continue.

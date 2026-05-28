@@ -22,6 +22,40 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Hidden Well-Known Release Status Refresh Evidence
+
+Published commits:
+- Product commit: `2e9a6d8568a75f87e068bee4fbb647ede14ed7bb` (`Refresh hidden well-known release status`).
+- Root commit: `029daedc7bb38ba8bdc95b6f434a9f9e6705cb8f` (`Refresh root well-known release status`).
+
+Artifacts updated:
+- Product `.well-known/agent-card.json`
+- Product `.well-known/ai-action-checkout.json`
+- Product `.well-known/ai-plugin.json`
+- Product `.well-known/mcp-checkout-server.json`
+- Product `.well-known/openapi.yaml`
+- Product `.well-known/softjunk-offer.json`
+- Root `.well-known/agent-card.json`
+- Root `.well-known/ai-plugin.json`
+- Root `.well-known/openapi.yaml`
+- Root `.well-known/paypal-payment.json`
+- Root `.well-known/softjunk-root-offer.json`
+
+Validation:
+- Re-audit used `rg --hidden` because default `rg` excludes `.well-known` and had missed stale `v2.29.157` metadata.
+- Product local validation passed: forced JSON parse `json_ok_force=62`, JSONL parse `jsonl_ok=55`, XML parse `xml_ok=2`, OpenAPI YAML parse, hidden stale-marker audit `marker_ok_hidden_stale=0`, and `git diff --check`.
+- Root local validation passed: forced JSON parse `json_ok_force=17`, sitemap XML parse, OpenAPI YAML parse, hidden stale-marker audit `marker_ok_hidden_stale=0`, and `git diff --check`.
+- Product GitHub Pages run `26558650340` completed with conclusion `success`.
+- Root GitHub Pages run `26558649771` completed with conclusion `success`.
+- Product live `.well-known` verification returned `product_well_known_live_ok=6`; all checked endpoints included `v2.29.158`, target `d5382d53f9066156ffabaa82836f0a081f73d74f`, `paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED`, and contained no stale `v2.29.157`, old target, or `v2.29.156` marker.
+- Root live `.well-known` verification returned `root_well_known_live_ok=5` with the same latest-release and stale-marker checks.
+- IndexNow POST submitted 11 changed `.well-known` URLs and returned `status=200` with key location `https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Fast-Pay Router Latest Release Promotion Evidence
 
 Published release:
