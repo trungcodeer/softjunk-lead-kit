@@ -18,6 +18,7 @@ npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releas
 ```
 
 4. Current npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+   SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
 5. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
 6. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
 7. Use the executable AI-agent relay when an assistant needs the full fit check, route packet, and checkout boundary:
