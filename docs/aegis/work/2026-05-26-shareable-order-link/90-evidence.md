@@ -7737,3 +7737,24 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_current_tarball_ok status=200 urls=29`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Current Tarball Primary Sweep Evidence
+
+- Product commit `8a9118e456a6d21d7c0b67576308f7c20057b062` promoted the current `v2.29.162` release tarball route across 150 product buyer-agent surfaces while keeping `v2.29.151` only as stable fallback.
+- Product validation passed: JSON parse (`files=56`), JSONL parse (`lines=58`), XML parse (`files=2`), fallback/current mislabel audits, stale-primary audit, `git diff --check`, `npm run cli:smoke`, and `npm pack --dry-run --json` (`entryCount=213`, `size=472399`).
+- Product Pages run `26590470920` completed successfully.
+- Product live verification returned `live_product_current_tarball_sweep_ok urls=16 fallback_mentions=5 commit=8a9118e456a6d21d7c0b67576308f7c20057b062`.
+- Root commits pushed:
+  - `d5d9045bee2b6710c3170aed7ab3c0eac2e27c62` (`Promote root current tarball route`).
+  - `d50ca54f8e1508f154a63c4384991648a94072bb` (`Promote hidden root tarball mirrors`).
+- Root validation passed: hidden fallback/current mislabel audit, hidden nonfallback `v2.29.151` audit, hidden stale-primary audit, JSON parse (`files=18`), and `git diff --check`.
+- Root Pages runs `26591582737` and `26591676795` completed successfully.
+- Root live verification returned `root_live_current_tarball_sweep_ok urls=16 fallback_mentions=12 commit=d50ca54f8e1508f154a63c4384991648a94072bb`.
+- Public Gist mirrors updated:
+  - 24 Gists / 49 route files updated from local source files changed by product commit `8a9118e`.
+  - `CURRENT_NO_CLONE_CHECKOUT_PROOF.md` updated across 29 Gists.
+  - `root-agent-card.json` updated from the root Pages source `agent-card.json`.
+- Gist API/raw verification returned `gist_current_tarball_sweep_verify_ok gists=29 files=106 current_files=100`.
+- IndexNow accepted the changed owned Pages URLs: `indexnow_current_tarball_sweep_ok status=200 urls=190 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

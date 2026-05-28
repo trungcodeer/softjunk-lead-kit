@@ -10549,3 +10549,48 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Release assets, product GitHub Pages, GitHub package execution, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.151` remains the stable fallback while `v2.29.162` explicit release asset is the current pinned route.
 - Decision: continue.
+
+## 2026-05-29 Current Tarball Primary Sweep Checkpoint
+
+Current todo:
+- Keep the current `v2.29.162` release tarball as the primary pinned no-clone route on owned Pages and Gist mirrors.
+- Preserve `v2.29.151` only where a field or line explicitly means stable fallback.
+- Keep the goal active until seller-side PayPal evidence verifies the 5 USD payment.
+
+Active slice:
+- Promote the already verified `v2.29.162` `.tgz` asset across product, root, `.well-known`, and Gist buyer-agent surfaces while keeping fallback semantics explicit.
+
+Completed todos:
+- Patched product Pages source so 150 buyer-agent and product discovery files use the current `v2.29.162` release tarball as primary route.
+- Fixed fallback mislabels so stable/fallback fields and lines keep `v2.29.151`.
+- Validated product JSON, JSONL, XML, whitespace, CLI smoke, package dry-run, hidden stale-primary audit, and fallback/current audit.
+- Pushed product commit `8a9118e456a6d21d7c0b67576308f7c20057b062`.
+- Waited for product Pages run `26590470920` and verified 16 live product URLs with current tarball and SHA URL.
+- Updated 24 owned public Gists covering 49 route mirror files, then updated `CURRENT_NO_CLONE_CHECKOUT_PROOF.md` across 29 Gists and `root-agent-card.json`.
+- Patched root Pages primary tarball route in visible and hidden `.well-known` manifests.
+- Pushed root commits `d5d9045bee2b6710c3170aed7ab3c0eac2e27c62` and `d50ca54f8e1508f154a63c4384991648a94072bb`.
+- Waited for root Pages runs `26591582737` and `26591676795`; verified 16 live root URLs with current tarball and SHA URL.
+- Submitted 190 changed owned Pages URLs to IndexNow.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Product validation returned `json_ok files=56`, `jsonl_ok lines=58`, `xml_ok files=2`, `fallback_v229162_mislabel_absent`, `fallback_current_tarball_mislabel_absent`, `stale_primary_remaining_ok`, `npm run cli:smoke` passed, and `pack_ok entryCount=213 size=472399`.
+- Product live verification returned `live_product_current_tarball_sweep_ok urls=16 fallback_mentions=5 commit=8a9118e456a6d21d7c0b67576308f7c20057b062`.
+- Root validation returned `root_hidden_fallback_current_mislabel_absent`, `root_hidden_nonfallback_v151_absent`, `root_hidden_stale_primary_remaining_ok`, `root_hidden_json_ok files=18`, and `git diff --check`.
+- Root live verification returned `root_live_current_tarball_sweep_ok urls=16 fallback_mentions=12 commit=d50ca54f8e1508f154a63c4384991648a94072bb`.
+- Gist verification returned `gist_current_tarball_sweep_verify_ok gists=29 files=106 current_files=100`.
+- IndexNow returned `indexnow_current_tarball_sweep_ok status=200 urls=190`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces, or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it increases buyer-agent clarity for the strongest current no-clone checkout route without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product/root GitHub Pages, hidden `.well-known` manifests, GitHub Release tarball, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.162` is primary current tarball and `v2.29.151` remains the explicit stable fallback.
+- Decision: continue.
