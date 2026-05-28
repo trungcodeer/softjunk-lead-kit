@@ -9746,3 +9746,53 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, GitHub package execution, product GitHub Pages markdown/JSON/JS, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package execution is now the preferred no-clone route, and the verified release tarball remains fallback while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 Release v2.29.160 Checkout Status Promotion Checkpoint
+
+Current todo:
+- Keep release/status discovery aligned with the current GitHub package no-clone checkout route.
+- Ensure buyer-agents reading GitHub Releases, product/root Pages, public Gists, or package metadata see `v2.29.160` instead of the older `v2.29.159` target.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Publish `v2.29.160` and propagate it through owned public/package-native status surfaces so the latest release includes the preferred no-clone checkout fix.
+
+Completed todos:
+- Re-read current worktree state, latest checkpoint, current release state, latest release list, and PayPal verifier output before editing.
+- Confirmed `v2.29.159` was still the latest release and targeted `7500a0d27253c76be4979396c6f4b91abb690d15`, before the CLI no-clone preference fix.
+- Created GitHub Release `v2.29.160` targeting `996541ac6009ee9c455116429e5685870218d6ef`.
+- Updated 28 current product release/status files from `v2.29.159` / `7500a0d27253c76be4979396c6f4b91abb690d15` to `v2.29.160` / `996541ac6009ee9c455116429e5685870218d6ef`, excluding historical Aegis evidence.
+- Updated 14 current root release/status files with the same release tag and target.
+- Validated product/root JSON and XML, product CLI syntax/smoke, package dry-run, release state, product/root Pages, public Gists, IndexNow, and remote GitHub package execution.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.160.
+- Release target: `996541ac6009ee9c455116429e5685870218d6ef`.
+- Product status commit: `101aeebb0c5b740a26c3cd9fd9642e821e325127` (`Promote release v2.29.160 status`).
+- Root status commit: `ceebf53ac62e6a100a96237e6216c2cc430bd46b` (`Promote root release v2.29.160 status`).
+- Local validation passed: product/root `git diff --check`, product/root JSON parse, product/root XML parse, `node --check bin/softjunk-lead-kit.js`, `node --check mcp-server-softjunk.js`, `npm run cli:smoke`, and `npm pack --dry-run --json` with `entryCount=207`.
+- Product Pages run `26563310862` completed with conclusion `success`.
+- Root Pages run `26563310533` completed with conclusion `success`.
+- Product live verification returned `product_release_v2160_live_ok=10`.
+- Root live verification returned `root_release_v2160_live_ok=9`.
+- GitHub release verification returned `release_live_ok tag=v2.29.160 target=996541ac6009ee9c455116429e5685870218d6ef`.
+- Public Gist status/proof verification returned `gist_status_ok` for eight owned Gists, and primary raw verification returned `gist_primary_ok` for eight primary JSON files.
+- Gist descriptions now show `v2.29.160` for the eight checkout mirror Gists.
+- IndexNow returned `indexnow_v2160_ok status=200 urls=42 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- Remote GitHub package execution returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, `latest_release_tag=v2.29.160`, `latest_release_target=996541ac6009ee9c455116429e5685870218d6ef`, and the preferred GitHub package no-clone command.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it promotes the strongest current no-clone checkout route through the latest GitHub Release, product/root Pages, public Gist mirrors, and IndexNow without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `v2.29.160` is now latest, GitHub package execution remains the preferred no-clone route, and the verified release tarball remains fallback while payment verification remains seller-side only.
+- Decision: continue.

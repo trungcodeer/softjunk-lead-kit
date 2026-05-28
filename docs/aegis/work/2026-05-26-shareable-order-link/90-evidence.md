@@ -7208,3 +7208,49 @@ Latest package-native slice:
 - Public first-run surfaces and the CLI now prefer `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json` for no-clone checkout.
 - The release tarball route remains a stable fallback only.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 Release v2.29.160 Checkout Status Promotion Evidence
+
+Release:
+- Created release `v2.29.160`: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.160.
+- Release target: `996541ac6009ee9c455116429e5685870218d6ef`.
+- Release body includes the preferred no-clone checkout command, PayPal URL `https://paypal.me/softjunk/5USD`, and the boundary that payment/fulfillment/completion still require seller-side PayPal evidence or verifier success.
+
+Files and public surfaces updated:
+- Product commit: `101aeebb0c5b740a26c3cd9fd9642e821e325127` (`Promote release v2.29.160 status`).
+- Root commit: `ceebf53ac62e6a100a96237e6216c2cc430bd46b` (`Promote root release v2.29.160 status`).
+- Product current release/status files updated: 28 files including agent checkout router, npm publish status, package metadata, README, feed, llms, product feed, buyer index, public Gist checkout index, `.well-known` manifests, and CLI constants.
+- Root current release/status files updated: 14 files including root offer, AI route, PayPal route, llms, README, AGENTS, root index, root A2A card, and `.well-known` manifests.
+- Eight owned public Gist mirrors refreshed with `CURRENT_LATEST_RELEASE_NPM_STATUS.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, primary JSON files, and descriptions showing `v2.29.160`.
+
+Validation:
+- Local product/root `git diff --check` returned exit code 0.
+- Local product JSON parse returned `product_json_ok`.
+- Local root JSON parse returned `root_json_ok`.
+- Local product XML parse returned `product_xml_ok`.
+- Local root XML parse returned `root_xml_ok`.
+- Local product CLI checks passed: `node --check bin/softjunk-lead-kit.js`, `node --check mcp-server-softjunk.js`, and `npm run cli:smoke`.
+- Local `npm pack --dry-run --json` passed with `entryCount=207`.
+- GitHub release verification returned `release_live_ok tag=v2.29.160 target=996541ac6009ee9c455116429e5685870218d6ef`.
+- Product Pages run `26563310862` completed with conclusion `success`.
+- Root Pages run `26563310533` completed with conclusion `success`.
+- Product live verification returned `product_release_v2160_live_ok=10`.
+- Root live verification returned `root_release_v2160_live_ok=9`.
+- Public Gist raw status/proof verification returned `gist_status_ok` for all eight indexed Gists.
+- Public Gist primary raw verification returned `gist_primary_ok` for `agent-card.json`, `ai-action-checkout.json`, `agents-checkout.json`, `mcp-checkout-server.json`, `commerce-graph.json`, `softjunk-5usd-paypal-payment-intent.json`, `agent-buyer-packet.json`, and `shareable-order-link.json`.
+- `gh gist list` verified the eight relevant Gist descriptions now show `v2.29.160`.
+- IndexNow returned `indexnow_v2160_ok status=200 urls=42 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- Remote GitHub package execution returned checkout JSON with `amount=5.00`, `currency=USD`, `payment_url=https://paypal.me/softjunk/5USD`, `latest_release_tag=v2.29.160`, `latest_release_target=996541ac6009ee9c455116429e5685870218d6ef`, and the preferred GitHub package no-clone command.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 Release v2.29.160 Checkout Status Promotion Latest Note
+
+Latest release/status slice:
+- Full details are in the `2026-05-28 Release v2.29.160 Checkout Status Promotion Evidence` section above.
+- `v2.29.160` is now the latest GitHub Release and targets `996541ac6009ee9c455116429e5685870218d6ef`.
+- Product/root Pages, public Gist mirrors, package metadata, and the remote GitHub package route now advertise `v2.29.160` with the preferred no-clone checkout command.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
