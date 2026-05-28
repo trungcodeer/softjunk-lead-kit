@@ -9,9 +9,9 @@
   },
   "version": "2026-05-28",
   "latestReleaseStatus": {
-    "latestReleaseTag": "v2.29.157",
-    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.157",
-    "latestReleaseTarget": "5a7f76bb6a0b8cea6a87e676a228624cd13aabad",
+    "latestReleaseTag": "v2.29.158",
+    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.158",
+    "latestReleaseTarget": "d5382d53f9066156ffabaa82836f0a081f73d74f",
     "npmPublishStatusJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
     "npmPublishWorkflowTemplateUrl": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
     "npmjsPackageStatus": "E404",
