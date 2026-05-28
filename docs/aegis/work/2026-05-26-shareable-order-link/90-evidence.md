@@ -205,6 +205,32 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-28 Historical Release Notes Proof Coverage Evidence
+
+Artifacts updated:
+- 80 historical GitHub release bodies containing the PayPal checkout route.
+
+Proof markers normalized:
+- Executable package asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz.
+- SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`.
+- No-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Direct checkout: https://paypal.me/softjunk/5USD.
+- Success signal: `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Validation:
+- Initial release audit found 192 releases and 82 PayPal-bearing release bodies.
+- Initial audit found 80 PayPal-bearing release bodies missing proof markers or containing stale asset/checksum markers.
+- GitHub Release API patch loop updated 80 release bodies with `failedCount=0`.
+- A second pass replaced 24 remaining shortened `c9ca809f...` checksum markers.
+- Post-update release audit returned `paypalReleaseBodies=82` and `badCount=0`.
+- Sample release `v2.29.150` has the current proof block, current SHA, and no old SHA marker.
+- `gh search issues "c9ca809f" --repo trungcodeer/softjunk-lead-kit` returned no issue results.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-28 Final Owned Repo Proof Gap Evidence
 
 Artifacts updated:
