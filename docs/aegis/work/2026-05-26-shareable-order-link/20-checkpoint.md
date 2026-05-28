@@ -10716,3 +10716,40 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Issue body, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; no new public comments were created.
 - Decision: continue.
+
+## 2026-05-29 LLM Text Current Tarball Checkpoint
+
+Current todo:
+- Make LLM-readable owned surfaces prefer the current verified `v2.29.162` release tarball checkout.
+- Keep `github:` package install and `v2.29.151` only as explicit fallback routes.
+- Preserve the PayPal verifier as the only completion gate.
+
+Active slice:
+- Patch `llms.txt` in the product repo and quiet-lead repo so buyer agents reading the text contract see the current `.tgz` command before fallback commands.
+
+Completed todos:
+- Rechecked `llms.txt`, `ai.txt`, robots, sitemap, and agent/offer/checkout files across product, root, and quiet repos.
+- Patched `D:\codex-tmp\softjunk-adjacent-repos-20260528\quiet-lead-follow-up\llms.txt` so three "release command" lines point to the current `v2.29.162` tarball instead of `github:trungcodeer/softjunk-lead-kit`.
+- Patched product `llms.txt` NPM package funding route so the current release tarball is primary, the GitHub package command is fallback, and the stable `v2.29.151` tarball remains explicit fallback.
+- Verified the targeted stale/mislabel patterns are absent from quiet `llms.txt` and absent from product `llms.txt` outside historical evidence records.
+- Ran `git diff --check` in both repos.
+
+Evidence refs:
+- Quiet pre-audit found three `llms.txt` lines where a "release command" or "verified release tarball" label pointed to `github:trungcodeer/softjunk-lead-kit`.
+- Product pre-audit found `llms.txt` still describing the GitHub package command as the latest package checkout in the NPM funding route.
+- Quiet post-audit returned only current `v2.29.162` tarball and SHA-256 lines for `No-clone release command` and `Run from verified release tarball`.
+- Product post-audit returned `Current release-tarball checkout`, `Current release-tarball SHA-256 file`, and `GitHub package checkout fallback`.
+- `git diff --check` passed for product; quiet returned only the existing line-ending warning that `llms.txt` will be normalized from LF to CRLF when Git touches it.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the product and quiet `llms.txt` updates, wait for Pages where applicable, verify live `llms.txt`, then rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sharpens LLM-readable checkout contracts without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Pages text files, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; fallback semantics remain explicit.
+- Decision: continue.

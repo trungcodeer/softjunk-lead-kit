@@ -851,13 +851,15 @@ NPM package funding route:
 - Owner-auth npm publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
 - Package metadata: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json
 - Commands: npm fund; npm run fund; npm run fund:kit
-- Latest GitHub package checkout: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
+- Current release-tarball checkout: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+- Current release-tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
+- GitHub package checkout fallback: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 - Stable release-tarball fallback: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 - MCP tool: get_softjunk_npm_funding_route in https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 - Exact PayPal URL: https://paypal.me/softjunk/5USD
 - Completion requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
 - NPM publish status rule: as of 2026-05-28, `npm view softjunk-lead-kit --json` returns E404 and `npm whoami` returns ENEEDAUTH from this machine; `npm pack --dry-run --json` passes. Latest release v2.29.162 and NPM_PUBLISH_WORKFLOW.yml.example record the owner-auth publish route.
-- Until an authorized owner publishes to npmjs, use the GitHub package checkout command first, or the stable release-tarball fallback if GitHub package install is unavailable, and then open https://paypal.me/softjunk/5USD. Do not claim npmjs availability, payment, fulfillment, or completion unless the relevant verifier proves it.
+- Until an authorized owner publishes to npmjs, use the current release-tarball checkout first, the GitHub package checkout fallback second, or the stable release-tarball fallback if current package install is unavailable, and then open https://paypal.me/softjunk/5USD. Do not claim npmjs availability, payment, fulfillment, or completion unless the relevant verifier proves it.
 
 Buyer-intent PayPal Gist:
 https://gist.github.com/trungcodeer/772adccebfba963f6550238b401a72a9

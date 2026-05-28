@@ -7826,3 +7826,23 @@ Latest adjacent-discovery refresh:
   - `current_release_tarball_url`: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 LLM Text Current Tarball Evidence
+
+- Audited LLM-readable text surfaces after the quiet Issue update.
+- Quiet-lead pre-audit found three `llms.txt` lines where a release-labeled checkout command still used `github:trungcodeer/softjunk-lead-kit` instead of the pinned current tarball:
+  - `No-clone release command`.
+  - `No-clone release command` in the quiet well-known discovery section.
+  - `Run from verified release tarball`.
+- Product pre-audit found the NPM package funding section in `llms.txt` still used `Latest GitHub package checkout` as the first package route.
+- Updated quiet `llms.txt` so all three release-labeled commands use:
+  - `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+  - SHA-256 URL: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`.
+- Updated product `llms.txt` NPM funding route to list:
+  - `Current release-tarball checkout`.
+  - `Current release-tarball SHA-256 file`.
+  - `GitHub package checkout fallback`.
+  - `Stable release-tarball fallback`.
+- Post-audit verified quiet `llms.txt` has current tarball lines at release-command positions and product `llms.txt` has current tarball primary/fallback wording.
+- `git diff --check` passed for product; quiet returned only a line-ending normalization warning for `llms.txt`.
+- This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
