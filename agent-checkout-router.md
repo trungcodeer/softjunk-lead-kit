@@ -4,9 +4,9 @@ Canonical JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-r
 
 Use this when an assistant, crawler, VA, or buyer-agent needs the shortest legitimate path from context to the exact 5 USD PayPal handoff.
 
-Latest release: `v2.29.161`
+Latest release: `v2.29.162`
 
-Latest release target: `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`
+Latest release target: `b8c335e6cfac3045155497b41e5532e1dfefae10`
 
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
 

@@ -2,8 +2,8 @@ SoftJunk Public Gist Checkout Index
 
 JSON: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
 Markdown: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md
-Latest release: v2.29.161
-Latest release target: b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe
+Latest release: v2.29.162
+Latest release target: b8c335e6cfac3045155497b41e5532e1dfefae10
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
 Owner-auth npm publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
 Current npmjs status: E404

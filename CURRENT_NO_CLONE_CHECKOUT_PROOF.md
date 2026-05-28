@@ -1,8 +1,8 @@
 # Current SoftJunk No-Clone Checkout Proof
 
-- Current release tag: `v2.29.161`
-- Current release URL: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
-- Current release target: `b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`
+- Current release tag: `v2.29.162`
+- Current release URL: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+- Current release target: `b8c335e6cfac3045155497b41e5532e1dfefae10`
 - Preferred no-clone checkout command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`
 - Agent relay command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`
 - MCP relay tool: `get_softjunk_agent_relay`

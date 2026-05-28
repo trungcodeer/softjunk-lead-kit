@@ -21,7 +21,7 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 ```
 
 Current release marker:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 
 Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
@@ -55,7 +55,7 @@ No-clone checkout proof:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
 Current release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 
 Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
@@ -88,7 +88,7 @@ No-clone checkout proof:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
 Current release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 
 Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz

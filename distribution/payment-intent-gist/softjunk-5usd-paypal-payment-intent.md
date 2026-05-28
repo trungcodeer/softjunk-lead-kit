@@ -38,11 +38,11 @@ MCP relay tool:
 
 Current product release:
 
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
 
 Current release target:
 
-`b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe`
+`b8c335e6cfac3045155497b41e5532e1dfefae10`
 
 Stable fallback release tarball command:
 

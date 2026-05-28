@@ -7,9 +7,9 @@
   "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
   "latest_release_status": {
-    "latest_release_tag": "v2.29.161",
-    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.161",
-    "latest_release_target": "b4fcb9f35b46f5e9833bc9b7bc4a2b03e46fc2fe",
+    "latest_release_tag": "v2.29.162",
+    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
+    "latest_release_target": "b8c335e6cfac3045155497b41e5532e1dfefae10",
     "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
     "npm_publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
     "npmjs_package_status": "E404",
