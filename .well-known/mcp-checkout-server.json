@@ -16,6 +16,9 @@
   "agent_checkout_router_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
   "agent_checkout_router_markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
   "agent_checkout_router_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
+  "agent_relay_markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/AGENT_RELAY.md",
+  "agent_relay_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json",
+  "agent_relay_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt",
   "latest_release_status": {
     "latest_release_tag": "v2.29.160",
     "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.160",
@@ -74,6 +77,10 @@
     {
       "name": "get_softjunk_npm_funding_route",
       "description": "Return package metadata, npm fund commands, exact 5 USD PayPal URL, order form, and verification gate for GitHub package installs and repo cloners."
+    },
+    {
+      "name": "get_softjunk_agent_relay",
+      "description": "Return the executable AI-agent relay packet with fit checks, GitHub package commands, exact 5 USD PayPal URL, order form, and verification gate."
     }
   ],
   "roofing_estimate_generator_url": "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
@@ -111,6 +118,8 @@
     "privacy_gate": "Use placeholders only; do not post customer or PayPal details in public forms."
   },
   "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
+  "mcp_agent_relay_tool_name": "get_softjunk_agent_relay",
+  "agent_relay_command": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json",
   "npm_funding_tool_name": "get_softjunk_npm_funding_route",
   "npm_funding_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
   "npm_funding_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
@@ -118,6 +127,7 @@
   "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
   "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
   "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+  "run_from_github_package_agent": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json",
   "run_from_github_package_doctor": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json",
   "run_from_github_package_pay_custom": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
   "run_from_release_tarball_doctor": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json",

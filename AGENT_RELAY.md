@@ -33,3 +33,7 @@ Do not claim paid, started, delivered, fulfilled, complete, received, or stop un
 Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json
 
 Text packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt
+
+MCP tool: `get_softjunk_agent_relay`
+
+MCP manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json

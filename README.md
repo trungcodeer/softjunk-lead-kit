@@ -74,7 +74,7 @@ The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment 
 
 Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.160` records this status. Until an owner publishes with npm auth, use the GitHub package route above first, or the release tarball fallback if GitHub package install is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
 
-MCP-capable agents can call `get_softjunk_npm_funding_route` from the local checkout server manifest:
+MCP-capable agents can call `get_softjunk_agent_relay` for the fit-check and checkout packet, or `get_softjunk_npm_funding_route` for package funding metadata, from the local checkout server manifest:
 https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 
 ## Dev Agent / Codespaces Start

@@ -2,7 +2,7 @@
 
 This repository includes a dependency-free Model Context Protocol stdio server for AI clients that can run local MCP tools.
 
-It exposes checkout-only tools for the SoftJunk 5 USD one-lead rescue, plus a roofing estimate follow-up sequence builder for MCP-capable buyer agents. It does not process payment and does not verify payment.
+It exposes checkout-only tools for the SoftJunk 5 USD one-lead rescue, an AI-agent relay packet, plus a roofing estimate follow-up sequence builder for MCP-capable buyer agents. It does not process payment and does not verify payment.
 
 ## Run
 
@@ -34,6 +34,7 @@ For MCP clients that accept JSON config, use this shape and adjust the absolute 
 - `build_roofing_estimate_follow_up_sequence`
 - `get_softjunk_checkout_routes`
 - `get_softjunk_npm_funding_route`
+- `get_softjunk_agent_relay`
 - `get_paypal_verification_gate`
 
 The main checkout tool returns:
@@ -59,6 +60,15 @@ The npm funding tool returns:
 - commands: `npm fund`, `npm run fund`, `npm run fund:kit`
 - verified release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
 - no-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
+- exact 5 USD payment URL: https://paypal.me/softjunk/5USD
+- verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
+
+The AI-agent relay tool returns:
+
+- fit checks for a real one-lead follow-up buyer
+- command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`
+- checkout command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`
+- relay packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json
 - exact 5 USD payment URL: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 

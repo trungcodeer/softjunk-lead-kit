@@ -38,6 +38,12 @@ const NPM_FUNDING_MARKDOWN =
   "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md";
 const NPM_PUBLISH_STATUS_JSON =
   "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json";
+const AGENT_RELAY_MARKDOWN =
+  "https://trungcodeer.github.io/softjunk-lead-kit/AGENT_RELAY.md";
+const AGENT_RELAY_JSON =
+  "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json";
+const AGENT_RELAY_TEXT =
+  "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt";
 const RELEASE_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
 const RELEASE_TARBALL_URL =
@@ -50,6 +56,8 @@ const RELEASE_TARBALL_PAY_CUSTOM_COMMAND =
   `npm exec --yes --package ${RELEASE_TARBALL_URL} -- softjunk-lead-kit pay --mode custom --json`;
 const GITHUB_PACKAGE_DOCTOR_COMMAND =
   "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit doctor --json";
+const GITHUB_PACKAGE_AGENT_COMMAND =
+  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json";
 const GITHUB_PACKAGE_PAY_CUSTOM_COMMAND =
   "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json";
 
@@ -226,6 +234,17 @@ const tools = [
     }
   },
   {
+    name: "get_softjunk_agent_relay",
+    title: "Get SoftJunk AI-agent relay",
+    description:
+      "Return the executable AI-agent relay packet with fit checks, GitHub package commands, exact 5 USD PayPal URL, order form, and verification gate.",
+    inputSchema: {
+      type: "object",
+      additionalProperties: false,
+      properties: {}
+    }
+  },
+  {
     name: "get_paypal_verification_gate",
     title: "Get PayPal verification gate",
     description:
@@ -377,10 +396,14 @@ function checkoutRoutes() {
     npm_funding_json_url: NPM_FUNDING_JSON,
     npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
     npm_publish_status_json_url: NPM_PUBLISH_STATUS_JSON,
+    agent_relay_markdown_url: AGENT_RELAY_MARKDOWN,
+    agent_relay_json_url: AGENT_RELAY_JSON,
+    agent_relay_text_url: AGENT_RELAY_TEXT,
     package_json_url: PACKAGE_JSON_URL,
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
     release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    run_from_github_package_agent: GITHUB_PACKAGE_AGENT_COMMAND,
     run_from_github_package_doctor: GITHUB_PACKAGE_DOCTOR_COMMAND,
     run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
     run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
@@ -393,6 +416,48 @@ function checkoutRoutes() {
     mcp_checkout_manifest_url:
       "https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json",
     verification_gate: verificationGate()
+  };
+}
+
+function agentRelayRoute() {
+  return {
+    name: "SoftJunk AI-Agent Relay",
+    purpose:
+      "Give MCP-capable assistants one tool call for fit checks, exact 5 USD PayPal handoff, package-native commands, and seller-side verification boundaries.",
+    agent_relay_markdown_url: AGENT_RELAY_MARKDOWN,
+    agent_relay_json_url: AGENT_RELAY_JSON,
+    agent_relay_text_url: AGENT_RELAY_TEXT,
+    run_from_github_package_agent: GITHUB_PACKAGE_AGENT_COMMAND,
+    run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
+    fallback_release_tarball_pay_custom: RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
+    amount: "5.00",
+    currency: "USD",
+    payment_url: PAYMENT_URL,
+    success_signal: "PAYPAL_PAYMENT_VERIFIED=true",
+    fit_checks: [
+      "Buyer has one real quiet lead, missed call, quote, estimate, no-show, price objection, or quiet DM.",
+      "Buyer can describe the business, service, lead source, tone, and next step without private customer details.",
+      "One recovered conversation, booking, quote, or job is worth more than 5 USD."
+    ],
+    do_not_use_when: [
+      "The request is unrelated to lead follow-up.",
+      "The buyer asks for spam, scraping, deception, fake reviews, or unauthorized outreach.",
+      "The buyer expects fulfillment before seller-side PayPal verification.",
+      "The context includes customer names, emails, phone numbers, addresses, invoice IDs, transaction IDs, or private PayPal details."
+    ],
+    fastest_buyer_path: [
+      `Call get_softjunk_agent_relay or run ${GITHUB_PACKAGE_AGENT_COMMAND}.`,
+      `Run ${GITHUB_PACKAGE_PAY_CUSTOM_COMMAND}.`,
+      `Pay exactly 5 USD at ${PAYMENT_URL}.`,
+      `Submit non-sensitive order details at ${ORDER_FORM_URL}.`,
+      "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before any paid, started, delivered, or complete claim."
+    ],
+    order_form_url: ORDER_FORM_URL,
+    privacy_rule:
+      "Use placeholders only. Do not post customer names, phone numbers, emails, addresses, invoice IDs, transaction IDs, payer email, or private lead details in public issues.",
+    verification_gate: verificationGate(),
+    route_rule:
+      "This is a payment route, not payment proof. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
   };
 }
 
@@ -416,6 +481,7 @@ function npmFundingRoute() {
     release_url: RELEASE_URL,
     release_tarball_url: RELEASE_TARBALL_URL,
     release_tarball_sha256: RELEASE_TARBALL_SHA256,
+    run_from_github_package_agent: GITHUB_PACKAGE_AGENT_COMMAND,
     run_from_github_package_doctor: GITHUB_PACKAGE_DOCTOR_COMMAND,
     run_from_github_package_pay_custom: GITHUB_PACKAGE_PAY_CUSTOM_COMMAND,
     run_from_release_tarball_doctor: RELEASE_TARBALL_DOCTOR_COMMAND,
@@ -493,7 +559,7 @@ function handleRequest(message) {
         version: "2026.05.28"
       },
       instructions:
-        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
+        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the agent relay tool when an MCP-capable assistant needs one fit-check and checkout packet. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
     };
   }
 
@@ -531,6 +597,10 @@ function handleRequest(message) {
 
     if (params.name === "get_softjunk_npm_funding_route") {
       return toolResult(npmFundingRoute());
+    }
+
+    if (params.name === "get_softjunk_agent_relay") {
+      return toolResult(agentRelayRoute());
     }
 
     if (params.name === "get_paypal_verification_gate") {
