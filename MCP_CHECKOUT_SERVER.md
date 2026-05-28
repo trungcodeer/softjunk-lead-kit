@@ -57,8 +57,8 @@ The npm funding tool returns:
 - package metadata URL: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json
 - npm funding contract: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
 - commands: `npm fund`, `npm run fund`, `npm run fund:kit`
-- verified release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz
-- no-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json`
+- verified release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
+- no-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
 - exact 5 USD payment URL: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 

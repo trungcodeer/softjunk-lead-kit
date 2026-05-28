@@ -21,9 +21,9 @@ Output:
 
 - PayPal note template
 - No-clone checkout command:
-  `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json`
-- Verified release notes: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
-- Release asset SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+  `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
+- Verified release notes: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+- Release asset SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 - Exact payment URL: https://paypal.me/softjunk/5USD
 - Order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - Verification gate: `PAYPAL_PAYMENT_VERIFIED=true`

@@ -23,16 +23,16 @@ https://paypal.me/softjunk/5USD
 Run this when an assistant, coding agent, VA, or buyer-agent needs the exact 5 USD PayPal handoff without cloning the repo or waiting for npm registry publish:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 Verified product release:
 
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
 
 Release tarball SHA-256:
 
-`c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+`1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 
 If the buyer has one quiet lead, open the root one-lead rescue route before direct PayPal, copy the generated PayPal note, pay exactly **5.00 USD**, then use the one-lead order form after seller-side verification.
 

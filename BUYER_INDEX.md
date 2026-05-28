@@ -28,10 +28,10 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - Exact PayPal payment: https://paypal.me/softjunk/5USD
-- No-clone checkout proof: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json`
-- Verified release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119
-- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz
-- Release tarball SHA-256: `c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d`
+- No-clone checkout proof: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
+- Verified release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
+- Release tarball SHA-256: `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 - Expected checkout: 5.00 USD at https://paypal.me/softjunk/5USD with success signal `PAYPAL_PAYMENT_VERIFIED=true`
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json

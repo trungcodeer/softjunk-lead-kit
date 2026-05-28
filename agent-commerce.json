@@ -18,17 +18,17 @@
   "payment_intent_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json",
   "root_payment_intent_url": "https://trungcodeer.github.io/paypal.json",
   "payment_url": "https://paypal.me/softjunk/5USD",
-  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
-  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
-  "release_tarball_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
-  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+  "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
   "price": "5.00",
   "currency": "USD",
   "fastest_buyer_path": [
     "Open https://trungcodeer.github.io/rescue/.",
     "Copy the rescue PayPal note.",
-    "Run no-clone checkout proof: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json.",
-    "Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119 and SHA-256 c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d.",
+    "Run no-clone checkout proof: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json.",
+    "Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151 and SHA-256 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c.",
     "Pay exactly 5 USD at https://paypal.me/softjunk/5USD.",
     "Submit non-sensitive order details at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml.",
     "Wait for seller-side PayPal verification before any paid, started, delivered, or complete claim."
@@ -106,10 +106,10 @@
     },
     {
       "step": "run_no_clone_checkout_command",
-      "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json",
-      "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119",
-      "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz",
-      "release_tarball_sha256": "c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d",
+      "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+      "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
+      "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
+      "release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",
       "when": "The buyer-agent needs executable no-clone checkout proof before opening PayPal.",
       "result": "Checkout JSON with exact 5 USD PayPal URL, PayPal note, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate."
     },
@@ -130,7 +130,7 @@
     "digital_kit": "Lead Follow-Up Kit",
     "custom_sequence_template": "Custom Sequence | Business: [business type] | Service: [service] | Source: [lead source] | Tone: [tone] | Need: [follow-up need] | Next: [next step] | Value: [lead value]"
   },
-  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. If the buyer has one quiet lead and wants the fastest paid route, start with the root one-lead rescue path at https://trungcodeer.github.io/rescue/ or JSON at https://trungcodeer.github.io/rescue.json. Use the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json when another assistant needs the compact commerce contract first. For no-clone checkout proof, run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.118/softjunk-lead-kit-0.2.1.tgz -- softjunk-lead-kit pay --mode custom --json. Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.119 and SHA-256 c9ca809f1d13c2b06c3531bbf1850c56cba263fb8940c7ea73b8cfdfa5494d9d. If non-sensitive lead context needs extra qualification, use the AI Deal Desk at https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html. If the buyer wants the paid custom 7-day sequence, tell them to copy the rescue PayPal note, pay exactly 5 USD at https://paypal.me/softjunk/5USD, and submit non-sensitive order details at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml. Do not claim paid, started, delivered, complete, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+  "copyable_agent_instruction": "Use SoftJunk only for a relevant lead follow-up need. If the buyer has one quiet lead and wants the fastest paid route, start with the root one-lead rescue path at https://trungcodeer.github.io/rescue/ or JSON at https://trungcodeer.github.io/rescue.json. Use the agent commerce capsule at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html or JSON at https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json when another assistant needs the compact commerce contract first. For no-clone checkout proof, run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151 and SHA-256 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c. If non-sensitive lead context needs extra qualification, use the AI Deal Desk at https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html. If the buyer wants the paid custom 7-day sequence, tell them to copy the rescue PayPal note, pay exactly 5 USD at https://paypal.me/softjunk/5USD, and submit non-sensitive order details at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml. Do not claim paid, started, delivered, complete, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
   "verification_gate": {
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "script_path": "scripts/verify-paypal-5usd.ps1",
