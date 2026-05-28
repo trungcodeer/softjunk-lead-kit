@@ -9933,3 +9933,51 @@ DriftCheckDraft:
 - Compatibility boundary: CLI, package metadata, GitHub package execution, GitHub Pages, sitemap, IndexNow, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; the GitHub package `agent --json` route is an additional relay surface, the `pay --mode custom --json` route remains the checkout command, and the release tarball remains fallback only.
 - Decision: continue.
+
+## 2026-05-28 MCP Agent Relay Tool Checkpoint
+
+Current todo:
+- Expose the AI-agent relay through the local MCP checkout server so MCP-capable assistants can call one tool for fit checks, checkout commands, PayPal URL, order form, and verification gate.
+- Keep the MCP route bounded to relevant one-lead follow-up needs and seller-side PayPal verification.
+- Publish the tool through package-native and owned public Pages manifests.
+
+Active slice:
+- Add `get_softjunk_agent_relay` to `mcp-server-softjunk.js`, the MCP manifests, public relay metadata, README, catalog, and smoke coverage.
+
+Completed todos:
+- Used TDD for the new MCP behavior.
+- Added `scripts/mcp-agent-relay-smoke.js` before implementation.
+- Verified RED: `node scripts/mcp-agent-relay-smoke.js` failed with `expected get_softjunk_agent_relay in tools/list`.
+- Implemented the `get_softjunk_agent_relay` MCP tool and `agentRelayRoute()` payload.
+- Updated `npm run mcp:smoke` to run the MCP agent relay smoke test.
+- Updated `mcp-checkout-server.json` and `.well-known/mcp-checkout-server.json` with the new tool and relay URLs.
+- Linked the MCP agent relay route from `agent-relay.json`, `AGENT_RELAY.md`, `MCP_CHECKOUT_SERVER.md`, `README.md`, `buyer-index.json`, `package.json`, and `agent-buyer-catalog.jsonl`.
+- Pushed commit `a96df5939bf8aea4c8735640ed756c7df573f17b`.
+- Verified local smoke, syntax, JSON, JSONL, package dry-run, remote GitHub package MCP execution, Pages, IndexNow, and PayPal verifier.
+
+Evidence refs:
+- RED test result: `node scripts/mcp-agent-relay-smoke.js` failed before implementation because `get_softjunk_agent_relay` was missing from `tools/list`.
+- GREEN local result: `npm run mcp:smoke` returned `mcp_agent_relay_smoke_ok`.
+- Regression `npm run cli:smoke` passed.
+- Local syntax checks passed for `mcp-server-softjunk.js`, `scripts/mcp-agent-relay-smoke.js`, `bin/softjunk-lead-kit.js`, and `scripts/agent-relay-smoke.js`.
+- Local JSON parse returned `json_ok`; JSONL parse returned `jsonl_ok lines=58`; `git diff --check` returned exit code 0.
+- Local `npm pack --dry-run --json` passed with `entryCount=212` including `scripts/mcp-agent-relay-smoke.js`.
+- Remote GitHub package MCP execution returned `remote_mcp_agent_relay_ok`.
+- Product Pages run `26566960460` for commit `a96df5939bf8aea4c8735640ed756c7df573f17b` completed with conclusion `success`.
+- Live Pages verification returned `mcp_agent_relay_pages_live_ok=8 urls=8 commit=a96df5939bf8aea4c8735640ed756c7df573f17b`.
+- IndexNow returned `indexnow_mcp_agent_relay_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it uses MCP and package-native execution to let capable agents retrieve the relay packet and PayPal handoff without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: MCP stdio server, package metadata, GitHub package execution, GitHub Pages manifests, IndexNow, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; MCP now has an additional `get_softjunk_agent_relay` tool, while `pay --mode custom --json` remains the checkout command and payment verification remains seller-side only.
+- Decision: continue.

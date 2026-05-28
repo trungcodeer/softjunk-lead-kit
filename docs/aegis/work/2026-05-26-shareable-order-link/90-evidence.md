@@ -7368,3 +7368,45 @@ Latest code-led relay slice:
 - The actual checkout command remains `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`.
 - Public relay surfaces are live at `https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json`, `https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt`, and `https://trungcodeer.github.io/softjunk-lead-kit/AGENT_RELAY.md`.
 - Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-28 MCP Agent Relay Tool Evidence
+
+Implementation:
+- Added `get_softjunk_agent_relay` to `mcp-server-softjunk.js`.
+- Added `agentRelayRoute()` returning fit checks, GitHub package relay and checkout commands, exact PayPal URL, order form, privacy rule, and verification gate.
+- Added `scripts/mcp-agent-relay-smoke.js`.
+- Updated `npm run mcp:smoke` to run the MCP agent relay smoke test.
+- Updated `mcp-checkout-server.json` and `.well-known/mcp-checkout-server.json` with the new tool and relay URLs.
+- Linked the MCP agent relay route from `agent-relay.json`, `AGENT_RELAY.md`, `MCP_CHECKOUT_SERVER.md`, `README.md`, `buyer-index.json`, `package.json`, and `agent-buyer-catalog.jsonl`.
+
+TDD:
+- RED: `node scripts/mcp-agent-relay-smoke.js` failed before implementation with `expected get_softjunk_agent_relay in tools/list`.
+- GREEN: `npm run mcp:smoke` returned `mcp_agent_relay_smoke_ok`.
+
+Validation:
+- `npm run mcp:smoke` passed.
+- `npm run cli:smoke` passed.
+- Syntax checks passed for `mcp-server-softjunk.js`, `scripts/mcp-agent-relay-smoke.js`, `bin/softjunk-lead-kit.js`, and `scripts/agent-relay-smoke.js`.
+- JSON parse returned `json_ok`.
+- JSONL parse returned `jsonl_ok lines=58`.
+- `git diff --check` returned exit code 0.
+- `npm pack --dry-run --json` passed with `entryCount=212`, including `scripts/mcp-agent-relay-smoke.js`.
+
+External verification:
+- Code commit: `a96df5939bf8aea4c8735640ed756c7df573f17b` (`Expose agent relay through MCP`).
+- Remote GitHub package MCP command returned `remote_mcp_agent_relay_ok`.
+- Product Pages run `26566960460` for commit `a96df5939bf8aea4c8735640ed756c7df573f17b` completed with conclusion `success`.
+- Live Pages verification returned `mcp_agent_relay_pages_live_ok=8 urls=8 commit=a96df5939bf8aea4c8735640ed756c7df573f17b` for `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `agent-relay.json`, `AGENT_RELAY.md`, `README.md`, `MCP_CHECKOUT_SERVER.md`, `buyer-index.json`, and `agent-buyer-catalog.jsonl`.
+- IndexNow returned `indexnow_mcp_agent_relay_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+
+Payment gate:
+- `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-28 MCP Agent Relay Tool Latest Note
+
+Latest MCP relay slice:
+- MCP-capable agents can now call `get_softjunk_agent_relay` from the local stdio server to retrieve fit checks, `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`, the checkout command, PayPal URL, order form, and seller-side verification gate.
+- Public MCP manifests are live at `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json` and `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
+- Payment is still not verified; `scripts/verify-paypal-5usd.ps1` returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
