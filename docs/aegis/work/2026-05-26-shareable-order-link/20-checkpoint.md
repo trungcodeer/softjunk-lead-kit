@@ -9542,3 +9542,42 @@ DriftCheckDraft:
 - Compatibility boundary: GitHub Releases, product/root GitHub Pages, package metadata, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `v2.29.159` is the latest release/feed marker, GitHub package checkout remains preferred, and the pinned tarball remains fallback while payment verification remains seller-side only.
 - Decision: continue.
+
+## 2026-05-28 GitHub Discussion Checkout Broadcast Checkpoint
+
+Current todo:
+- Keep legitimate owned public/package-native/GitHub-native conversion surfaces available while waiting for actual PayPal evidence.
+- Prefer a single relevant public thread update over creating duplicate issues/discussions.
+- Rerun PayPal verification when seller-side credentials, seller-side evidence, or trusted CSV proof are available.
+
+Active slice:
+- Update the existing GitHub Discussion #6 (`Fastest USD 5 SoftJunk buyer-agent checkout route`) so GitHub-native readers and watchers see the current `v2.29.159` package-native checkout route instead of the older tarball-first proof text.
+
+Completed todos:
+- Re-read current product/root worktree state, latest checkpoint, PayPal verifier output, GitHub issues, and GitHub discussions before editing external state.
+- Confirmed Discussion #6 already exists and is the correct owned public thread for the fastest USD 5 buyer-agent checkout route.
+- Updated Discussion #6 body to include `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, the 11-route agent checkout router, the preferred GitHub-package command, fallback tarball command, PayPal URL, and verification boundary.
+- Added one Discussion #6 comment as a public route broadcast instead of creating a duplicate thread.
+- Verified Discussion #6 body and the new comment through GitHub GraphQL.
+- Reran the PayPal verifier.
+
+Evidence refs:
+- Discussion #6: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.
+- New discussion comment: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6#discussioncomment-17086192.
+- Discussion update timestamp from GraphQL: `2026-05-28T07:20:56Z`.
+- GraphQL verification confirmed the body and new comment include `v2.29.159`, target `7500a0d27253c76be4979396c6f4b91abb690d15`, `ranked_routes=11` / `Ranked routes: 11`, the preferred command `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`, PayPal URL `https://paypal.me/softjunk/5USD`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual npmjs publish still requires owner-side npm auth or an `NPM_TOKEN`.
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Do not mark the goal complete. Continue only with legitimate owned public/package-native/GitHub-native/Gist buyer surfaces or rerun the PayPal verifier immediately when seller-side credentials/proof are available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it sends the current checkout route through an existing owned public GitHub discussion without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: GitHub Discussions, product/root GitHub Pages, package metadata, owned public Gists, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; Discussion #6 is an owned public broadcast thread, GitHub package checkout remains preferred, and the pinned tarball remains fallback while payment verification remains seller-side only.
+- Decision: continue.
