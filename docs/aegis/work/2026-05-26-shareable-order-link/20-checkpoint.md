@@ -10846,3 +10846,12 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub repo funding metadata, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; quiet funding now points more directly to the quiet handoff and order board.
 - Decision: continue.
+
+Live verification update:
+- Root commit `3fdee5b4a9dec297b421184d3cf6993814434f5b` pushed and Pages run `26615441205` completed successfully.
+- Profile commit `7c35df46ee270c71f81fc96cdfd554833c120700` pushed and Pages run `26615450374` completed successfully.
+- Quiet commit `cb5d2a921cbad0290684d5c2d5beee39aba49a64` pushed and Pages run `26615462887` completed successfully.
+- Product commit `5627c5ea672793e9467f2999b881a8edeb6b77fe` pushed and Pages run `26615476146` completed successfully.
+- Raw GitHub verification returned `raw_funding_current_ok repos=4`.
+- GitHub raw media inspection confirmed product and quiet funding files contain current tarball and PayPal routes.
+- PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.

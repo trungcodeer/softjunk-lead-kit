@@ -7923,4 +7923,17 @@ Latest adjacent-discovery refresh:
   - `profile_funding_current_ok custom=4`.
   - `quiet_funding_current_ok custom=4`.
 - Remote package verification returned JSON with `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- Commits pushed:
+  - Product `5627c5ea672793e9467f2999b881a8edeb6b77fe`.
+  - Root `3fdee5b4a9dec297b421184d3cf6993814434f5b`.
+  - Profile `7c35df46ee270c71f81fc96cdfd554833c120700`.
+  - Quiet `cb5d2a921cbad0290684d5c2d5beee39aba49a64`.
+- Pages runs completed successfully:
+  - Product `26615476146`.
+  - Root `26615441205`.
+  - Profile `26615450374`.
+  - Quiet `26615462887`.
+- Raw GitHub verification returned `raw_funding_current_ok repos=4`.
+- GitHub raw media inspection confirmed product and quiet funding files contain the current `v2.29.162` tarball route and exact PayPal URL.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
