@@ -10855,3 +10855,40 @@ Live verification update:
 - Raw GitHub verification returned `raw_funding_current_ok repos=4`.
 - GitHub raw media inspection confirmed product and quiet funding files contain current tarball and PayPal routes.
 - PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-29 README Current Tarball Checkpoint
+
+Current todo:
+- Keep first-screen GitHub README checkout paths aligned with the current verified `v2.29.162` release tarball.
+- Preserve GitHub package install only as fallback in those first-screen checkout sections.
+- Preserve seller-side PayPal verification as the only completion gate.
+
+Active slice:
+- Patch top-level `Direct PayPal checkout` sections in product, root, profile, and quiet-lead READMEs so GitHub viewers and repo-reading agents see the pinned release tarball command first.
+
+Completed todos:
+- Audited product/root/profile/quiet READMEs and GitHub repo metadata.
+- Confirmed repo descriptions, homepage URLs, and topics already advertise USD 5 PayPal / buyer-agent checkout.
+- Updated all four READMEs so the top checkout command is the current `v2.29.162` release tarball and `github:trungcodeer/softjunk-lead-kit` is explicitly fallback.
+- Validated top README sections locally and through raw GitHub content.
+- Verified the current tarball command still returns the exact 5 USD PayPal route.
+
+Evidence refs:
+- Local validation returned `product_readme_top_current_ok`, `root_readme_top_current_ok`, `profile_readme_top_current_ok`, and `quiet_readme_top_current_ok`.
+- Remote current tarball command returned `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- Commits pushed: product `f0b3b1350b169a7ed5e972fb6b096c68f53e9bba`, root `f62474a2b5de57639380107fd2821a72b3653e76`, profile `842b26051a4bfaff22b3508d212a2df4b3f7be82`, quiet `3e929f0f9f64f656170da3e24afe8faf9801f16a`.
+- Raw GitHub verification returned `raw_readme_top_current_ok repos=4`.
+- Pages runs completed successfully: root `26615679080`, profile `26615689797`, quiet `26615702160`, product `26615713423`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Rerun PayPal verification. If still unverified, continue only with legitimate owned public/package-native/GitHub-native buyer surfaces.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves first-screen owned GitHub README checkout routing without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub README files, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package install remains fallback.
+- Decision: continue.

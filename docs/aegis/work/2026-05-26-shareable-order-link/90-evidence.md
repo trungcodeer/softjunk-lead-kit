@@ -7937,3 +7937,33 @@ Latest adjacent-discovery refresh:
 - GitHub raw media inspection confirmed product and quiet funding files contain the current `v2.29.162` tarball route and exact PayPal URL.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 README Current Tarball Evidence
+
+- Audited first-screen README checkout sections in:
+  - Product `README.md`.
+  - Root `README.md`.
+  - Profile `README.md`.
+  - Quiet-lead `README.md`.
+- Repo metadata audit confirmed all four repos already advertise USD 5 PayPal / buyer-agent checkout in descriptions, homepage URLs, and topics.
+- Updated all four READMEs so the top Direct PayPal checkout command uses:
+  - `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+- Kept `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json` as the explicit GitHub package fallback.
+- Local validation returned:
+  - `product_readme_top_current_ok`.
+  - `root_readme_top_current_ok`.
+  - `profile_readme_top_current_ok`.
+  - `quiet_readme_top_current_ok`.
+- Remote package verification returned JSON with `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- Commits pushed:
+  - Product `f0b3b1350b169a7ed5e972fb6b096c68f53e9bba`.
+  - Root `f62474a2b5de57639380107fd2821a72b3653e76`.
+  - Profile `842b26051a4bfaff22b3508d212a2df4b3f7be82`.
+  - Quiet `3e929f0f9f64f656170da3e24afe8faf9801f16a`.
+- Raw GitHub verification returned `raw_readme_top_current_ok repos=4`.
+- Pages runs completed successfully:
+  - Root `26615679080`.
+  - Profile `26615689797`.
+  - Quiet `26615702160`.
+  - Product `26615713423`.
+- This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
