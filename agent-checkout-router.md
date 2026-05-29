@@ -6,7 +6,7 @@ Use this when an assistant, crawler, VA, or buyer-agent needs the shortest legit
 
 Latest release: `v2.29.163`
 
-Latest release target: `b8c335e6cfac3045155497b41e5532e1dfefae10`
+Latest release target: `9d6b527b2d008e8414e80d01f46683db80115f59`
 
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
 

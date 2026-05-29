@@ -850,7 +850,7 @@ NPM package funding route:
 - Contract JSON: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
 - Markdown guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
 - NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
-- Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163 targeting b8c335e6cfac3045155497b41e5532e1dfefae10
+- Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163 targeting 9d6b527b2d008e8414e80d01f46683db80115f59
 - Owner-auth npm publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
 - Package metadata: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json
 - Commands: npm fund; npm run fund; npm run fund:kit

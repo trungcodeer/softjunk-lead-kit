@@ -5,7 +5,7 @@
     "latest_release_status":  {
                                   "latest_release_tag":  "v2.29.163",
                                   "latest_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
-                                  "latest_release_target":  "b8c335e6cfac3045155497b41e5532e1dfefae10",
+                                  "latest_release_target":  "9d6b527b2d008e8414e80d01f46683db80115f59",
                                   "current_checkout_command":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
                                   "agent_relay_command":  "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json",
                                   "mcp_relay_tool":  "get_softjunk_agent_relay",

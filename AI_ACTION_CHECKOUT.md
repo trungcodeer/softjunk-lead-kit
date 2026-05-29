@@ -26,7 +26,7 @@ Output:
   `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`
 - MCP relay tool: `get_softjunk_agent_relay`
 - Current release marker: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
-- Current release target: `b8c335e6cfac3045155497b41e5532e1dfefae10`
+- Current release target: `9d6b527b2d008e8414e80d01f46683db80115f59`
 - Current release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
 - Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 - Current release tarball command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`

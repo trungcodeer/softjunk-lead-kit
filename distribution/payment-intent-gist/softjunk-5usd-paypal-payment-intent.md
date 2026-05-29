@@ -42,7 +42,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 
 Current release target:
 
-`b8c335e6cfac3045155497b41e5532e1dfefae10`
+`9d6b527b2d008e8414e80d01f46683db80115f59`
 
 Current release tarball command:
 

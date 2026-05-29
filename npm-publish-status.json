@@ -22,7 +22,7 @@
   "latest_release_status": {
     "tag": "v2.29.163",
     "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
-    "target_commit": "b8c335e6cfac3045155497b41e5532e1dfefae10"
+    "target_commit": "9d6b527b2d008e8414e80d01f46683db80115f59"
   },
   "public_gist_checkout_index": {
     "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",

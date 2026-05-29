@@ -45,7 +45,7 @@ Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.gith
 NPM funding route: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
 NPM funding guide: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
-Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163 targets `b8c335e6cfac3045155497b41e5532e1dfefae10`
+Latest release status: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163 targets `9d6b527b2d008e8414e80d01f46683db80115f59`
 Owner-auth npm publish workflow template: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example
 Public Gist checkout index: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
 Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json

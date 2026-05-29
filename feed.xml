@@ -12,7 +12,7 @@
       <link>https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json</guid>
       <pubDate>Thu, 28 May 2026 10:35:00 +0700</pubDate>
-      <description>Current npmjs status for softjunk-lead-kit: npm view returns E404, npm whoami returns ENEEDAUTH, npm pack dry-run passes, and the live no-auth checkout is the current release-tarball command with a GitHub package fallback. Latest release v2.29.163 targets b8c335e6cfac3045155497b41e5532e1dfefae10. Pay exactly 5 USD at https://paypal.me/softjunk/5USD. Do not claim paid or delivered unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</description>
+      <description>Current npmjs status for softjunk-lead-kit: npm view returns E404, npm whoami returns ENEEDAUTH, npm pack dry-run passes, and the live no-auth checkout is the current release-tarball command with a GitHub package fallback. Latest release v2.29.163 targets 9d6b527b2d008e8414e80d01f46683db80115f59. Pay exactly 5 USD at https://paypal.me/softjunk/5USD. Do not claim paid or delivered unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</description>
     </item>
     <item>
       <title>Public Gist Checkout Index</title>

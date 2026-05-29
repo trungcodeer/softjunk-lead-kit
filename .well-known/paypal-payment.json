@@ -212,7 +212,7 @@
   "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
   "current_release_tag": "v2.29.163",
   "current_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
-  "current_release_target": "b8c335e6cfac3045155497b41e5532e1dfefae10",
+  "current_release_target": "9d6b527b2d008e8414e80d01f46683db80115f59",
   "current_release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
   "current_release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
   "run_from_current_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",

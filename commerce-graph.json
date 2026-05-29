@@ -5,7 +5,7 @@
     "name": "SoftJunk latest release and npm publish status",
     "latestReleaseTag": "v2.29.163",
     "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
-    "latestReleaseTarget": "b8c335e6cfac3045155497b41e5532e1dfefae10",
+    "latestReleaseTarget": "9d6b527b2d008e8414e80d01f46683db80115f59",
     "currentCheckoutCommand": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
     "agentRelayCommand": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json",
     "mcpRelayTool": "get_softjunk_agent_relay",
