@@ -11147,3 +11147,54 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Pages root repo, product one-copy order packet, existing PayPal.Me URL, existing payment-intent Gist mirror, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; direct payment pages now prefer the product one-copy order packet before PayPal.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-29 Package-Native Packet Checkout Checkpoint
+
+Current todo:
+- Make package-native buyer surfaces route one-lead buyers and agents through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch product `README.md`, `AGENTS.md`, `NPM_FUNDING.md`, `npm-funding.json`, `package.json`, `bin/softjunk-lead-kit.js`, and `mcp-server-softjunk.js`.
+
+Completed todos:
+- Updated the README top checkout route from direct PayPal-first to packet-first, with the one-copy HTML/JSON packet before the PayPal URL.
+- Updated `AGENTS.md` fastest buyer, npm funding, one-buyer share, and ready-buyer instructions so agents build the one-copy order packet before PayPal.
+- Updated `NPM_FUNDING.md`, `npm-funding.json`, and `package.json` so package metadata exposes the packet route while keeping `funding.url` as the PayPal payment URL.
+- Updated the CLI `doctor`, `pay`, `rescue`, `send`, and `agent` outputs with one-copy packet fields and packet-before-PayPal instructions.
+- Updated the MCP checkout server route, agent relay, npm funding route, safe PayPal note response, tool description, and server instructions with packet-first fields.
+- Committed and pushed product commit `0b1296c` to `main`.
+- Product Pages run `26646522011` completed successfully.
+- Live Pages verification returned `live_package_packet_first_ok commit=0b1296c urls=7`.
+- Submitted the seven updated product Pages URLs to IndexNow; API returned `indexnow_package_packet_ok status=200 urls=7`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `package_native_json_ok`.
+- `node -c bin\softjunk-lead-kit.js` passed.
+- `node -c mcp-server-softjunk.js` passed.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `cli_packet_first_markers_ok`.
+- `metadata_packet_first_markers_ok`.
+- `mcp_packet_first_markers_ok`.
+- `json_parse_ok files=65`.
+- `docs_packet_first_markers_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26646522011` success.
+- Live verification: `live_package_packet_first_ok commit=0b1296c urls=7`.
+- IndexNow: `indexnow_package_packet_ok status=200 urls=7`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned package-native buyer routing and checkout metadata without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, package metadata, CLI/MCP source, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.

@@ -8233,3 +8233,42 @@ Latest adjacent-discovery refresh:
   - Verification returned `gist_payment_intent_one_copy_ok`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Package-Native Packet Checkout Evidence
+
+- Audited package-native and GitHub-native product surfaces after root/payment packet routing was live.
+- Found that `README.md`, `AGENTS.md`, `NPM_FUNDING.md`, `npm-funding.json`, `package.json`, the local CLI, and MCP checkout server still exposed several PayPal-first package routes.
+- Updated product commit `0b1296c`:
+  - `README.md` now starts with `Packet-First Checkout` and sends buyers to `fix-one-quiet-lead.html` / `fix-one-quiet-lead.json` before PayPal.
+  - `AGENTS.md` now sends buyer agents through the one-copy order packet in the fastest buyer, npm funding, one-buyer share, and ready-buyer routes.
+  - `NPM_FUNDING.md` now describes the one-copy order packet as the pre-PayPal package-native route.
+  - `npm-funding.json` now has `updated=2026-05-29`, `one_copy_order_packet_*` fields, a packet-first `homepage_url`, and a `build_one_copy_order_packet` route step before `pay_exactly_5_usd`.
+  - `package.json` now uses the packet page as `homepage`, adds the `order-packet` keyword, and includes `softjunk.one_copy_order_packet_*` URLs while preserving `funding.url=https://paypal.me/softjunk/5USD`.
+  - `bin/softjunk-lead-kit.js` now exposes the one-copy packet in `doctor`, `pay --mode custom`, `rescue`, `send`, `agent`, and `no_clone_checkout_proof` outputs.
+  - `mcp-server-softjunk.js` now exposes the one-copy packet in checkout routes, agent relay, npm funding route, route checkout, safe PayPal note response, tool description, and server instructions.
+- Local verification:
+  - `package_native_json_ok`.
+  - `node -c bin\softjunk-lead-kit.js` passed.
+  - `node -c mcp-server-softjunk.js` passed.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `cli_packet_first_markers_ok`.
+  - `metadata_packet_first_markers_ok`.
+  - `mcp_packet_first_markers_ok`.
+  - `json_parse_ok files=65`.
+  - `docs_packet_first_markers_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `0b1296c` pushed to `main`.
+  - Product Pages run `26646522011` completed successfully.
+- Live verification returned `live_package_packet_first_ok commit=0b1296c urls=7` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/AGENTS.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/NPM_FUNDING.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/package.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/bin/softjunk-lead-kit.js`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/mcp-server-softjunk.js`.
+- IndexNow returned `indexnow_package_packet_ok status=200 urls=7` for the seven updated product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
