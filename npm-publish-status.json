@@ -20,8 +20,8 @@
     "required": "Login with npm adduser or provide NPM_TOKEN/NODE_AUTH_TOKEN before npmjs publish."
   },
   "latest_release_status": {
-    "tag": "v2.29.162",
-    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
+    "tag": "v2.29.163",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
     "target_commit": "b8c335e6cfac3045155497b41e5532e1dfefae10"
   },
   "public_gist_checkout_index": {
@@ -64,10 +64,10 @@
       },
       "rule": "Use this when a coding agent wants the current GitHub main package checkout route without cloning or waiting for npmjs publish."
     },
-    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz",
-    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
-    "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
-    "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
+    "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
+    "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
+    "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "stable_fallback_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151",
     "stable_fallback_release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz",
     "stable_fallback_release_tarball_sha256": "1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c",

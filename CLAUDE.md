@@ -8,12 +8,12 @@ If a buyer has one real quiet lead and one recovered reply, quote, appointment, 
 - No-clone checkout proof:
 
   ```bash
-  npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+  npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
   ```
 
-- Current release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
-- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz
-- Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`
+- Current release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+- Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
+- Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256`
 - Pay exactly 5 USD: https://paypal.me/softjunk/5USD
 - Submit non-sensitive details after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 

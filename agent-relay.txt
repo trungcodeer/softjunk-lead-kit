@@ -4,6 +4,9 @@ Run the no-clone agent packet:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
 
 Run the no-clone checkout:
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+
+GitHub package fallback:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
 Pay exactly 5 USD:

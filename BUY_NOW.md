@@ -9,15 +9,15 @@ Pay exactly 5 USD: https://paypal.me/softjunk/5USD
 No-clone buyer-agent checkout command:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Current release notes: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+Current release notes: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 
 Current release tarball SHA-256 file:
 
 ```text
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 ```
 
 After seller-side PayPal verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
@@ -82,7 +82,7 @@ Do not post homeowner names, phone numbers, emails, street addresses, insurance 
 18. Buyer-agent close contract:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 19. No-clone buyer-agent checkout command:
-   `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
+   `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
 20. Direct PayPal checkout:
    https://paypal.me/softjunk/5USD
 21. After payment, submit non-sensitive order details if needed:

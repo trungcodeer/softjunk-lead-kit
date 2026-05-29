@@ -22,21 +22,21 @@ Use the AI-agent relay when an assistant needs the full fit check, route packet,
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
 ```
 
-Use the current GitHub package route when a coding agent, VA, or buyer assistant should print the exact PayPal handoff without cloning the repo:
+Use the current release tarball route when a coding agent, VA, or buyer assistant should print the exact PayPal handoff without cloning the repo:
+
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Use the GitHub package route only as the fallback:
 
 ```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Use the current release tarball only as the stable fallback:
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 
-```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
-```
-
-Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
-
-Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`.
+Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256`.
 
 ## Try One Real Use Case Locally
 

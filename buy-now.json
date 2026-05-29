@@ -8,11 +8,11 @@
     "gist_url":  "https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6",
     "gist_raw_markdown_url":  "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/BUY_NOW.md",
     "gist_raw_json_url":  "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json",
-    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
-    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz",
-    "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
-    "run_from_release_tarball_doctor":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json",
-    "run_from_release_tarball_pay_custom":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
+    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
+    "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
+    "run_from_release_tarball_doctor":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json",
+    "run_from_release_tarball_pay_custom":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "roofing_buyer_fast_path":  {
                                     "use_when":  "The buyer has one unanswered roofing estimate and one recovered roof job is worth more than 5 USD.",
                                     "public_issue_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/7",
@@ -193,9 +193,9 @@
                         },
                         {
                             "step":  "no_clone_checkout_command",
-                            "command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
-                            "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
-                            "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
+                            "command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+                            "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
+                            "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
                             "instruction":  "Use this when the buyer-agent needs the exact 5 USD checkout handoff without cloning the repo or waiting for npm registry publish."
                         },
                         {

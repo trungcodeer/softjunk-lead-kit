@@ -21,16 +21,16 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 ```
 
 Current release marker:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 
 Current release tarball:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
 
 Current release tarball SHA-256 file:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 
 Current release tarball command:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 
 Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
@@ -64,7 +64,7 @@ No-clone checkout proof:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
 Current release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 
 Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
@@ -97,7 +97,7 @@ No-clone checkout proof:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
 Current release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 
 Stable fallback tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz

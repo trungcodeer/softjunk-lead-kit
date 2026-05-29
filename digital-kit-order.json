@@ -6,18 +6,18 @@
     "price":  "5.00",
     "currency":  "USD",
     "payment_url":  "https://paypal.me/softjunk/5USD",
-    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
-    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz",
-    "release_asset_sha256":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
+    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
+    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
+    "release_asset_sha256":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
     "no_clone_checkout_proof":  {
                                     "label":  "No-clone checkout proof",
-                                    "command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+                                    "command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
                                     "expected_amount":  "5.00",
                                     "expected_currency":  "USD",
                                     "expected_payment_url":  "https://paypal.me/softjunk/5USD",
-                                    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162",
-                                    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz",
-                                    "release_asset_sha256":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256",
+                                    "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
+                                    "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
+                                    "release_asset_sha256":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
                                     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                                     "payment_boundary":  "This proves the executable checkout route only. Do not claim paid, started, delivered, fulfilled, complete, received, or stopped unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true."
                                 },
@@ -61,7 +61,7 @@
                          "action":  "If the buyer wants the ready kit, verify the no-clone checkout command, pay exactly 5 USD on PayPal, and paste the required note.",
                          "url":  "https://paypal.me/softjunk/5USD",
                          "paypal_note":  "Lead Follow-Up Kit",
-                         "no_clone_checkout_command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json"
+                         "no_clone_checkout_command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json"
                      },
                      {
                          "step":  "submit_order_form",
@@ -75,7 +75,7 @@
                          "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true"
                      }
                  ],
-    "copyable_agent_prompt":  "Use the SoftJunk digital kit order contract only for a buyer who wants the ready $5 lead follow-up kit. Open the proof page, manifest, and sample ZIP first. Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json, verify release https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162, load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256, then route exactly 5 USD to https://paypal.me/softjunk/5USD with PayPal note Lead Follow-Up Kit if the buyer wants it. Never claim payment or delivery unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "copyable_agent_prompt":  "Use the SoftJunk digital kit order contract only for a buyer who wants the ready $5 lead follow-up kit. Open the proof page, manifest, and sample ZIP first. Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json, verify release https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163, load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256, then route exactly 5 USD to https://paypal.me/softjunk/5USD with PayPal note Lead Follow-Up Kit if the buyer wants it. Never claim payment or delivery unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
     "url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
     "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
     "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt"

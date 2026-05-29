@@ -8,12 +8,12 @@ const CONSTANTS = Object.freeze({
   amount: '5.00',
   currency: 'USD',
   successSignal: 'PAYPAL_PAYMENT_VERIFIED=true',
-  latestReleaseTag: 'v2.29.162',
-  latestReleaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162',
+  latestReleaseTag: 'v2.29.163',
+  latestReleaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163',
   latestReleaseTarget: 'b8c335e6cfac3045155497b41e5532e1dfefae10',
-  releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162',
-  releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz',
-  releaseTarballSha256Url: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256',
+  releaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163',
+  releaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz',
+  releaseTarballSha256Url: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256',
   stableFallbackReleaseUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151',
   stableFallbackReleaseTarballUrl: 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz',
   stableFallbackReleaseTarballSha256: '1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c',
@@ -49,8 +49,8 @@ const CONSTANTS = Object.freeze({
   verificationGate: 'Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.'
 });
 
-const NO_CLONE_CHECKOUT_COMMAND = CONSTANTS.githubPackagePayCustomCommand;
 const CURRENT_RELEASE_TARBALL_COMMAND = `npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
+const NO_CLONE_CHECKOUT_COMMAND = CURRENT_RELEASE_TARBALL_COMMAND;
 const RELEASE_TARBALL_FALLBACK_COMMAND = `npm exec --yes --package ${CONSTANTS.stableFallbackReleaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json`;
 
 function noCloneCheckoutProof() {
@@ -66,6 +66,7 @@ function noCloneCheckoutProof() {
     current_release_tarball_command: CURRENT_RELEASE_TARBALL_COMMAND,
     current_release_tarball_url: CONSTANTS.releaseTarballUrl,
     current_release_tarball_sha256_url: CONSTANTS.releaseTarballSha256Url,
+    github_package_fallback_command: CONSTANTS.githubPackagePayCustomCommand,
     fallback_release_tarball_command: RELEASE_TARBALL_FALLBACK_COMMAND,
     fallback_release_url: CONSTANTS.stableFallbackReleaseUrl,
     fallback_release_tarball_url: CONSTANTS.stableFallbackReleaseTarballUrl,
@@ -86,8 +87,8 @@ Usage:
   softjunk-lead-kit pay [--mode custom|kit] [--json]
   npm fund
   npm run fund
-  npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
   npm exec --yes --package ${CONSTANTS.releaseTarballUrl} -- softjunk-lead-kit pay --mode custom --json
+  npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
 Examples:
   softjunk-lead-kit rescue --business "roofing contractor" --service "roof estimate" --source estimate --need "unanswered estimate" --tone direct --next quote
@@ -225,6 +226,8 @@ function buildSend(input) {
     rescue.paid_upgrade.paypal_note,
     '',
     'Optional no-clone checkout proof:',
+    CURRENT_RELEASE_TARBALL_COMMAND,
+    'GitHub package fallback:',
     CONSTANTS.githubPackagePayCustomCommand,
     'Stable release-tarball fallback:',
     RELEASE_TARBALL_FALLBACK_COMMAND,
@@ -276,7 +279,7 @@ function buildAgentRelay() {
   const copyableAgentInstruction = [
     'You are helping a small business recover leads that stopped replying.',
     'First confirm this is a real lead follow-up problem and one recovered reply, booking, estimate, or job is worth more than 5 USD.',
-    `If it fits, run ${CONSTANTS.githubPackagePayCustomCommand} to verify the current no-clone checkout packet.`,
+    `If it fits, run ${CURRENT_RELEASE_TARBALL_COMMAND} to verify the current no-clone checkout packet.`,
     `Route a ready buyer to pay exactly 5 USD at ${CONSTANTS.paymentUrl}, then submit non-sensitive order details at ${CONSTANTS.customOrderForm}.`,
     `Never claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or ${CONSTANTS.successSignal}.`
   ].join(' ');
@@ -292,7 +295,7 @@ function buildAgentRelay() {
     amount: CONSTANTS.amount,
     currency: CONSTANTS.currency,
     success_signal: CONSTANTS.successSignal,
-    preferred_no_clone_command: CONSTANTS.githubPackagePayCustomCommand,
+    preferred_no_clone_command: CURRENT_RELEASE_TARBALL_COMMAND,
     no_clone_checkout_proof: noCloneCheckoutProof(),
     fit_checks: [
       'Buyer has one real quiet lead, missed call, quote, estimate, no-show, price objection, or quiet DM.',
@@ -307,7 +310,7 @@ function buildAgentRelay() {
     ],
     fastest_buyer_path: [
       `Open ${CONSTANTS.rootRescueUrl} or ${CONSTANTS.rootRescueJson}.`,
-      `Run ${CONSTANTS.githubPackagePayCustomCommand}.`,
+      `Run ${CURRENT_RELEASE_TARBALL_COMMAND}.`,
       `Copy the PayPal note from the checkout output or build one with business/service/source/tone/need/next.`,
       `Pay exactly ${CONSTANTS.currency} ${CONSTANTS.amount} at ${CONSTANTS.paymentUrl}.`,
       `Submit non-sensitive order details at ${CONSTANTS.customOrderForm}.`,
@@ -382,8 +385,9 @@ async function buildDoctor(options) {
       npm_view_result: 'E404',
       local_publish_auth: 'missing_npm_auth',
       npm_whoami_result: 'ENEEDAUTH',
-      current_no_auth_route: CONSTANTS.githubPackagePayCustomCommand,
+      current_no_auth_route: CURRENT_RELEASE_TARBALL_COMMAND,
       current_release_tarball_route: CURRENT_RELEASE_TARBALL_COMMAND,
+      github_package_fallback_route: CONSTANTS.githubPackagePayCustomCommand,
       fallback_release_tarball_route: RELEASE_TARBALL_FALLBACK_COMMAND
     },
     latest_release_tag: CONSTANTS.latestReleaseTag,
@@ -430,7 +434,7 @@ function printText(payload) {
     console.log(`Node: ${payload.node_version}`);
     console.log(`Local-only: ${payload.local_only}`);
     console.log(`PayPal: ${payload.payment_url}`);
-    console.log(`No-clone checkout: ${payload.run_from_github_package_pay_custom}`);
+    console.log(`No-clone checkout: ${payload.no_clone_checkout_proof.command}`);
     console.log(`Current release tarball: ${payload.run_from_release_tarball_pay_custom}`);
     console.log(`Stable fallback tarball: ${payload.stable_fallback_release_tarball_pay_custom}`);
     console.log(`Gate: ${payload.success_signal}`);
