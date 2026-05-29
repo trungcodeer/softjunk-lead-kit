@@ -5,16 +5,16 @@
 Best current checkout route:
 
 1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
-2. Run the latest GitHub package no-clone buyer-agent command:
-
-```bash
-npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
-```
-
-3. Use the current pinned release-tarball route if GitHub package install is unavailable:
+2. Run the current pinned release-tarball buyer-agent command:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+3. Use the GitHub package fallback if the release tarball install is unavailable:
+
+```bash
+npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
 4. Current npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
