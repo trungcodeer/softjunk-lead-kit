@@ -10,6 +10,14 @@ const ROOFING_ORDER_FORM_URL =
 const ROOFING_BUYER_ISSUE_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/issues/7";
 const ROOT_RESCUE_URL = "https://trungcodeer.github.io/rescue/";
+const ONE_COPY_ORDER_PACKET_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html";
+const ONE_COPY_ORDER_PACKET_JSON =
+  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json";
+const ONE_COPY_ORDER_PACKET_TEXT =
+  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt";
+const ONE_COPY_ORDER_PACKET_GIST =
+  "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759";
 const ONE_BUYER_SHARE_URL =
   "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html";
 const ONE_BUYER_SHARE_JSON =
@@ -75,7 +83,7 @@ const tools = [
     name: "route_softjunk_one_lead_rescue_checkout",
     title: "Route SoftJunk one-lead rescue checkout",
     description:
-      "Qualify one quiet-lead follow-up problem and return the exact 5 USD PayPal handoff, PayPal note, order form, and verification gate.",
+      "Qualify one quiet-lead follow-up problem and return the one-copy order packet, exact 5 USD PayPal handoff, PayPal note, order form, and verification gate.",
     inputSchema: {
       type: "object",
       additionalProperties: false,
@@ -386,6 +394,11 @@ function buildRoofingEstimateSequence(args) {
 function checkoutRoutes() {
   return {
     root_rescue_url: ROOT_RESCUE_URL,
+    one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
+    one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
+    one_copy_order_packet_text_url: ONE_COPY_ORDER_PACKET_TEXT,
+    one_copy_order_packet_gist_url: ONE_COPY_ORDER_PACKET_GIST,
+    before_payment_action: "Build the one-copy order packet before opening PayPal.",
     one_buyer_share_url: ONE_BUYER_SHARE_URL,
     one_buyer_share_json_url: ONE_BUYER_SHARE_JSON,
     one_buyer_share_text_url: ONE_BUYER_SHARE_TEXT,
@@ -437,7 +450,7 @@ function agentRelayRoute() {
   return {
     name: "SoftJunk AI-Agent Relay",
     purpose:
-      "Give MCP-capable assistants one tool call for fit checks, exact 5 USD PayPal handoff, package-native commands, and seller-side verification boundaries.",
+      "Give MCP-capable assistants one tool call for fit checks, one-copy order packet routing, exact 5 USD PayPal handoff, package-native commands, and seller-side verification boundaries.",
     agent_relay_markdown_url: AGENT_RELAY_MARKDOWN,
     agent_relay_json_url: AGENT_RELAY_JSON,
     agent_relay_text_url: AGENT_RELAY_TEXT,
@@ -448,6 +461,10 @@ function agentRelayRoute() {
     fallback_release_tarball_pay_custom: STABLE_FALLBACK_RELEASE_TARBALL_PAY_CUSTOM_COMMAND,
     amount: "5.00",
     currency: "USD",
+    one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
+    one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
+    one_copy_order_packet_text_url: ONE_COPY_ORDER_PACKET_TEXT,
+    one_copy_order_packet_gist_url: ONE_COPY_ORDER_PACKET_GIST,
     payment_url: PAYMENT_URL,
     success_signal: "PAYPAL_PAYMENT_VERIFIED=true",
     fit_checks: [
@@ -463,6 +480,7 @@ function agentRelayRoute() {
     ],
     fastest_buyer_path: [
       `Call get_softjunk_agent_relay or run ${GITHUB_PACKAGE_AGENT_COMMAND}.`,
+      `Build the one-copy order packet at ${ONE_COPY_ORDER_PACKET_URL}.`,
       `Run ${PREFERRED_NO_CLONE_CHECKOUT_COMMAND}.`,
       `Use ${GITHUB_PACKAGE_PAY_CUSTOM_COMMAND} only as the GitHub package fallback.`,
       `Pay exactly 5 USD at ${PAYMENT_URL}.`,
@@ -482,6 +500,10 @@ function npmFundingRoute() {
   return {
     package_name: "softjunk-lead-kit",
     package_json_url: PACKAGE_JSON_URL,
+    one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
+    one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
+    one_copy_order_packet_text_url: ONE_COPY_ORDER_PACKET_TEXT,
+    before_payment_action: "Build the one-copy order packet before opening PayPal.",
     funding_type: "custom",
     funding_url: PAYMENT_URL,
     npm_funding_json_url: NPM_FUNDING_JSON,
@@ -512,11 +534,11 @@ function npmFundingRoute() {
     commands: [
       {
         command: "npm fund",
-        purpose: "Read package funding metadata and surface the exact PayPal URL."
+        purpose: "Read package funding metadata; build the one-copy order packet before opening the exact PayPal URL."
       },
       {
         command: "npm run fund",
-        purpose: "Print the custom one-lead rescue PayPal handoff JSON."
+        purpose: "Print the custom one-lead rescue packet-first PayPal handoff JSON."
       },
       {
         command: "npm run fund:kit",
@@ -524,6 +546,25 @@ function npmFundingRoute() {
       }
     ],
     value_first_commands: ["npm start", "npm run try:rescue", "npm run try:send"],
+    route_steps: [
+      {
+        step: "build_one_copy_order_packet",
+        url: ONE_COPY_ORDER_PACKET_URL,
+        json_url: ONE_COPY_ORDER_PACKET_JSON
+      },
+      {
+        step: "pay_exactly_5_usd",
+        url: PAYMENT_URL
+      },
+      {
+        step: "submit_non_sensitive_order",
+        url: ORDER_FORM_URL
+      },
+      {
+        step: "verify_before_fulfillment",
+        success_signal: "PAYPAL_PAYMENT_VERIFIED=true"
+      }
+    ],
     payment_url: PAYMENT_URL,
     price: "5.00",
     currency: "USD",
@@ -547,9 +588,12 @@ function routeCheckout(args) {
       "The buyer expects paid delivery before seller-side PayPal verification.",
       "The request would put private customer, patient, payment, or lead data into a public issue, URL, or Gist."
     ],
+    one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
+    one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
+    before_payment_action: "Build the one-copy order packet before opening PayPal.",
     paypal_note: paypalNote,
     buyer_message:
-      `Copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive order details at ${ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
+      `Build the one-copy order packet at ${ONE_COPY_ORDER_PACKET_URL}. Copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive order details at ${ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
     ...checkoutRoutes()
   };
 }
@@ -579,10 +623,10 @@ function handleRequest(message) {
       },
       serverInfo: {
         name: "softjunk-mcp-checkout",
-        version: "2026.05.28"
+        version: "2026.05.29"
       },
       instructions:
-        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Use the agent relay tool when an MCP-capable assistant needs one fit-check and checkout packet. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
+        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Build the one-copy order packet before opening PayPal for the custom rescue. Use the agent relay tool when an MCP-capable assistant needs one fit-check and checkout packet. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
     };
   }
 
@@ -609,6 +653,8 @@ function handleRequest(message) {
     if (params.name === "build_safe_paypal_note") {
       return toolResult({
         paypal_note: buildNote(args),
+        one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
+        before_payment_action: "Build the one-copy order packet before opening PayPal.",
         payment_url: PAYMENT_URL,
         verification_gate: verificationGate()
       });

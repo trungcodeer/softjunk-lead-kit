@@ -1,8 +1,8 @@
 {
     "schema_version":  "softjunk-npm-funding-v1",
-    "updated":  "2026-05-28",
+    "updated":  "2026-05-29",
     "name":  "SoftJunk NPM Funding Route",
-    "purpose":  "Expose the exact 5 USD PayPal checkout through public package metadata, npm fund, and machine-readable agent manifests for npm/GitHub package installs and repo clones.",
+    "purpose":  "Expose the one-copy order packet and exact 5 USD PayPal checkout through public package metadata, npm fund, and machine-readable agent manifests for npm/GitHub package installs and repo clones.",
     "package_name":  "softjunk-lead-kit",
     "package_version":  "0.2.2",
     "publish_ready":  true,
@@ -24,6 +24,10 @@
                                 "required_secret":  "NPM_TOKEN"
                             },
     "package_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json",
+    "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+    "one_copy_order_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+    "one_copy_order_packet_gist_url":  "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
     "funding_type":  "custom",
     "funding_url":  "https://paypal.me/softjunk/5USD",
     "payment_url":  "https://paypal.me/softjunk/5USD",
@@ -32,15 +36,28 @@
     "markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
     "pages_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
     "repository_url":  "https://github.com/trungcodeer/softjunk-lead-kit",
-    "homepage_url":  "https://paypal.me/softjunk/5USD",
+    "homepage_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "one_copy_order_packet":  {
+                                  "primary_action":  "Build the one-copy order packet before opening PayPal.",
+                                  "contains":  [
+                                                   "free rescue preview",
+                                                   "copyable PayPal note",
+                                                   "current release-tarball checkout proof",
+                                                   "exact 5 USD PayPal URL",
+                                                   "post-payment order form",
+                                                   "privacy rule",
+                                                   "PAYPAL_PAYMENT_VERIFIED=true boundary"
+                                               ],
+                                  "payment_rule":  "Pay exactly 5 USD only after the packet is ready; the funding URL is a payment path, not proof of payment."
+                              },
     "npm_commands":  [
                          {
                              "command":  "npm fund",
-                             "purpose":  "Read package funding metadata and surface the exact PayPal URL."
+                             "purpose":  "Read package funding metadata; for the one-lead rescue, build the one-copy order packet before opening the exact PayPal URL."
                          },
                          {
                              "command":  "npm run fund",
-                             "purpose":  "Print the custom one-lead rescue PayPal handoff JSON."
+                             "purpose":  "Print the custom one-lead rescue packet-first PayPal handoff JSON."
                          },
                          {
                              "command":  "npm run fund:kit",
@@ -92,12 +109,18 @@
                         {
                             "step":  "print_payment_handoff",
                             "command":  "npm run fund",
-                            "instruction":  "Print exact PayPal URL, note guidance, order form, and verification gate."
+                            "instruction":  "Print packet URL, exact PayPal URL, note guidance, order form, and verification gate."
+                        },
+                        {
+                            "step":  "build_one_copy_order_packet",
+                            "url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+                            "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+                            "instruction":  "Build or load the one-copy order packet before opening PayPal."
                         },
                         {
                             "step":  "pay_exactly_5_usd",
                             "url":  "https://paypal.me/softjunk/5USD",
-                            "instruction":  "Buyer pays exactly 5 USD through PayPal.Me."
+                            "instruction":  "Buyer pays exactly 5 USD through PayPal.Me after the packet is ready."
                         },
                         {
                             "step":  "submit_non_sensitive_order",

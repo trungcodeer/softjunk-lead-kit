@@ -1,6 +1,6 @@
 # NPM Funding Route
 
-Use this route when you install or inspect the repo as a GitHub package and want the shortest machine-readable path to the exact 5 USD PayPal checkout.
+Use this route when you install or inspect the repo as a GitHub package and want the shortest machine-readable path to the one-copy order packet and exact 5 USD PayPal checkout.
 
 ## Built-In NPM Signal
 
@@ -13,6 +13,14 @@ The package funding URL is:
 ```text
 https://paypal.me/softjunk/5USD
 ```
+
+For the custom one-lead rescue, build the order packet before opening PayPal:
+
+```text
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+```
+
+The packet includes the preview, PayPal note, checkout proof, exact PayPal URL, post-payment order form, privacy rule, and seller-side verification boundary.
 
 ## Current npmjs Publish Status
 
@@ -79,6 +87,12 @@ npm run try:rescue
 npm run try:send
 ```
 
+Then build the one-copy order packet:
+
+```text
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+```
+
 ## Pay Route
 
 Custom one-lead rescue:
@@ -104,6 +118,12 @@ Machine-readable contract:
 
 ```text
 https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
+```
+
+Packet-first contract:
+
+```text
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 ```
 
 After payment, submit placeholders only:

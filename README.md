@@ -1,34 +1,37 @@
 # SoftJunk Lead Kit
 
-## Direct PayPal checkout
+## Packet-First Checkout
 
 Best current checkout route:
 
-1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
-2. Run the current pinned release-tarball buyer-agent command:
+1. Build the one-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+2. If machine-readable data is needed, load the packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+3. The packet contains the free rescue preview, PayPal note, current release proof, exact PayPal URL, post-payment order form, and the `PAYPAL_PAYMENT_VERIFIED=true` boundary.
+4. Run the current pinned release-tarball buyer-agent command as checkout proof:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-3. Use the GitHub package fallback if the release tarball install is unavailable:
+5. Use the GitHub package fallback if the release tarball install is unavailable:
 
 ```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-4. Current npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+6. Current npm-exec release asset: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
    SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
-5. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
-6. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
-7. Use the executable AI-agent relay when an assistant needs the full fit check, route packet, and checkout boundary:
+7. Pay exactly 5 USD on PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+8. Use the buyer card if a human needs the shortest public route: https://trungcodeer.github.io/5/
+9. Use the buyer-agent BuyAction manifest only when an agent needs machine-readable context: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+10. Use the executable AI-agent relay when an assistant needs the full fit check, route packet, and checkout boundary:
 
 ```bash
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
 ```
 
-8. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
-9. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+11. After seller-side verification, a custom sequence includes one rewrite if the first draft is not usable and the buyer supplies non-sensitive business context.
+12. Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Privacy rule: use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
 
@@ -40,6 +43,8 @@ Privacy rule: use placeholders only. Do not post customer names, phone numbers, 
 
 A $5 lead follow-up kit and same-price custom sequence for small businesses that get leads from forms, DMs, email, ads, referrals, quotes, appointments, or calls.
 
+One-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+One-copy order packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 Sponsor button JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
 Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 NPM funding route: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
@@ -63,7 +68,11 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-When this repo is installed as a GitHub package or opened after clone, the package metadata points to the exact 5 USD PayPal route:
+When this repo is installed as a GitHub package or opened after clone, the package metadata exposes the exact 5 USD PayPal funding URL. For the one-lead rescue, build the order packet first:
+
+```text
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+```
 
 ```bash
 npm fund
@@ -71,7 +80,7 @@ npm run fund
 npm run fund:kit
 ```
 
-The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; the packet-first route gives the buyer the preview, note, proof, order form, and verification boundary before PayPal. Fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.163` records this status. Until an owner publishes with npm auth, use the current release tarball route above first, or the GitHub package route if the release asset is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
 
