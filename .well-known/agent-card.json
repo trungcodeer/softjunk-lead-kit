@@ -2,12 +2,12 @@
   "schemaVersion": "a2a-agent-card-v1",
   "protocolVersion": "0.3",
   "name": "SoftJunk Lead Rescue Checkout Agent",
-  "description": "Static buyer-agent handoff for one real quiet lead, the exact 5 USD PayPal checkout, and a strict seller-side verification gate. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and product card https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment.",
+  "description": "Static buyer-agent handoff for one real quiet lead, the one-copy order packet, exact 5 USD PayPal checkout, and a strict seller-side verification gate. Lowest-friction $5 buyer route: https://trungcodeer.github.io/5/ and one-copy packet https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html; it includes PayPal https://paypal.me/softjunk/5USD, one rewrite after verified payment, and PAYPAL_PAYMENT_VERIFIED=true before fulfillment.",
   "provider": {
     "organization": "SoftJunk",
     "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
   },
-  "version": "2026-05-28",
+  "version": "2026-05-29",
   "latestReleaseStatus": {
     "latestReleaseTag": "v2.29.163",
     "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
@@ -18,7 +18,11 @@
     "localNpmAuthStatus": "ENEEDAUTH",
     "paymentUrl": "https://paypal.me/softjunk/5USD",
     "successSignal": "PAYPAL_PAYMENT_VERIFIED=true",
-    "rule": "Use the current release tarball route first while npmjs returns E404; use the GitHub package route only as a fallback. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+    "rule": "Use the current release tarball route first while npmjs returns E404; use the GitHub package route only as a fallback. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
+    "oneCopyOrderPacketUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "oneCopyOrderPacketJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+    "oneCopyOrderPacketTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+    "beforePaymentAction": "Build the one-copy order packet before opening PayPal."
   },
   "agentCheckoutRouterUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
   "agentCheckoutRouterMarkdownUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
@@ -65,7 +69,7 @@
     {
       "id": "route_softjunk_one_lead_rescue_checkout",
       "name": "Route one-lead rescue checkout",
-      "description": "Qualify one quiet-lead follow-up problem and return the exact SoftJunk 5 USD PayPal handoff plus order form.",
+      "description": "Qualify one quiet-lead follow-up problem and return the one-copy order packet plus the exact SoftJunk 5 USD PayPal handoff and order form.",
       "tags": [
         "lead-follow-up",
         "checkout",
@@ -80,7 +84,7 @@
     {
       "id": "build_safe_paypal_note",
       "name": "Build safe PayPal note",
-      "description": "Create a non-sensitive PayPal note using business type, service, lead source, tone, and needed next step.",
+      "description": "Create a non-sensitive PayPal note using business type, service, lead source, tone, and needed next step after the buyer has the packet.",
       "tags": [
         "paypal-note",
         "privacy",
@@ -146,7 +150,11 @@
     "orderFormUrl": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
     "successSignal": "PAYPAL_PAYMENT_VERIFIED=true",
     "privacyRule": "Use only non-sensitive business context. Do not place customer names, emails, phone numbers, addresses, payment identifiers, or private PayPal details in public URLs, issues, or Gists.",
-    "fulfillmentRule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export verifies the 5 USD transaction."
+    "fulfillmentRule": "Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export verifies the 5 USD transaction.",
+    "oneCopyOrderPacketUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "oneCopyOrderPacketJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+    "oneCopyOrderPacketTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+    "beforePaymentAction": "Build the one-copy order packet before opening PayPal."
   },
   "paypal_buy_action_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
   "well_known_paypal_buy_action_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json",
@@ -158,7 +166,7 @@
     "price": "5.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "url": "https://paypal.me/softjunk/5USD",
+    "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "seller": {
       "@type": "Organization",
       "name": "SoftJunk",
@@ -205,6 +213,16 @@
         "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
       },
       "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "before_payment_action",
+          "value": "Build the one-copy order packet before opening PayPal."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "one_copy_order_packet_url",
+          "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+        },
         {
           "@type": "PropertyValue",
           "name": "success_signal",
@@ -260,6 +278,16 @@
     "additionalProperty": [
       {
         "@type": "PropertyValue",
+        "name": "before_payment_action",
+        "value": "Build the one-copy order packet before opening PayPal."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "one_copy_order_packet_url",
+        "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+      },
+      {
+        "@type": "PropertyValue",
         "name": "success_signal",
         "value": "PAYPAL_PAYMENT_VERIFIED=true"
       },
@@ -312,6 +340,16 @@
     "additionalProperty": [
       {
         "@type": "PropertyValue",
+        "name": "before_payment_action",
+        "value": "Build the one-copy order packet before opening PayPal."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "one_copy_order_packet_url",
+        "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+      },
+      {
+        "@type": "PropertyValue",
         "name": "success_signal",
         "value": "PAYPAL_PAYMENT_VERIFIED=true"
       },
@@ -359,11 +397,14 @@
     "recommended_steps": [
       "Open https://trungcodeer.github.io/5/ first.",
       "If machine-readable data is needed, load https://trungcodeer.github.io/5.json.",
+      "Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.",
       "Use Discussion #6 for GitHub-native buyer-agent routing: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.",
-      "Send the buyer to https://paypal.me/softjunk/5USD for exactly 5 USD.",
+      "Send the buyer to https://paypal.me/softjunk/5USD for exactly 5 USD after the packet is ready.",
       "After payment, collect placeholders only through the order form.",
       "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before fulfillment."
-    ]
+    ],
+    "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json"
   },
   "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
   "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",

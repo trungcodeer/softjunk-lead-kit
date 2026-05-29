@@ -2,7 +2,7 @@
 
 This repository includes a dependency-free Model Context Protocol stdio server for AI clients that can run local MCP tools.
 
-It exposes checkout-only tools for the SoftJunk 5 USD one-lead rescue, an AI-agent relay packet, plus a roofing estimate follow-up sequence builder for MCP-capable buyer agents. It does not process payment and does not verify payment.
+It exposes checkout-only tools for the SoftJunk 5 USD one-lead rescue, a one-copy order packet route, an AI-agent relay packet, plus a roofing estimate follow-up sequence builder for MCP-capable buyer agents. It does not process payment and does not verify payment.
 
 ## Run
 
@@ -39,8 +39,9 @@ For MCP clients that accept JSON config, use this shape and adjust the absolute 
 
 The main checkout tool returns:
 
+- one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - PayPal note
-- exact 5 USD payment URL: https://paypal.me/softjunk/5USD
+- exact 5 USD payment URL after the packet is ready: https://paypal.me/softjunk/5USD
 - one-buyer share route: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html
 - order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
@@ -57,19 +58,21 @@ The npm funding tool returns:
 
 - package metadata URL: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json
 - npm funding contract: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
+- one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - commands: `npm fund`, `npm run fund`, `npm run fund:kit`
 - current release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
 - no-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
-- exact 5 USD payment URL: https://paypal.me/softjunk/5USD
+- exact 5 USD payment URL after the packet is ready: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 
 The AI-agent relay tool returns:
 
 - fit checks for a real one-lead follow-up buyer
+- one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json`
 - checkout command: `npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json`
 - relay packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json
-- exact 5 USD payment URL: https://paypal.me/softjunk/5USD
+- exact 5 USD payment URL after the packet is ready: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 
 ## Safety Gate
