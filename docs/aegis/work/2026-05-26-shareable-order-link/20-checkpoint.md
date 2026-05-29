@@ -10932,3 +10932,35 @@ DriftCheckDraft:
 - Compatibility boundary: owned repos, GitHub Release tarball, owned Gists, owned Issue/Discussion bodies/comments, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package install remains fallback.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-29 Release Notes Buyer Packet Checkpoint
+
+Current todo:
+- Make the public `v2.29.163` GitHub Release page useful as a direct buyer-agent checkout packet, not just a technical asset note.
+- Preserve exact 5 USD PayPal routing and seller-side verification as the only completion gate.
+
+Active slice:
+- Update release notes for `v2.29.163` with fit checks, no-clone command, exact PayPal URL, order form, machine routes, and the verification boundary.
+
+Completed todos:
+- Replaced the terse release note with a buyer-agent oriented checkout packet.
+- Included the current release tarball command, PayPal URL, order form URL, machine-readable route URLs, target commit, and tarball SHA-256.
+- Kept explicit non-use cases for spam, scraped lists, deception, fake reviews, unauthorized outreach, and private customer data.
+
+Evidence refs:
+- `gh release view v2.29.163 --json body` verification returned `release_notes_checkout_packet_ok`.
+- Remote release tarball still returned `remote_tarball_pay_still_ok`.
+- PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-agent checkout surfaces or wait for seller-side PayPal evidence.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the public release endpoint that buyer-agents and GitHub users can read before paying.
+- Compatibility boundary: owned GitHub Release notes, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new owner or fulfillment path.
+- Decision: continue because PayPal proof is still missing.

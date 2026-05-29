@@ -8017,3 +8017,22 @@ Latest adjacent-discovery refresh:
 - PayPal verifier still returned:
   - `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Release Notes Buyer Packet Evidence
+
+- Updated the `v2.29.163` GitHub Release body from a terse technical note into a buyer-agent checkout packet.
+- The release notes now include:
+  - Fit context for one real quiet lead, missed call, estimate, quote, no-show, price objection, or quiet DM.
+  - Non-use boundary for spam, scraped lists, deception, fake reviews, unauthorized outreach, and private customer data.
+  - Current release tarball command:
+    `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+  - Exact PayPal URL: `https://paypal.me/softjunk/5USD`.
+  - Order form URL: `https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml`.
+  - Machine routes for `agent-relay.json`, `mcp-checkout-server.json`, `npm-funding.json`, and `llms-full.txt`.
+  - Target commit `9d6b527b2d008e8414e80d01f46683db80115f59`.
+  - Tarball SHA-256 `c92806238779e872727337bef10bce590f3e98f8943c5f31d5872e3eb376fe72`.
+- Verification returned `release_notes_checkout_packet_ok`.
+- Remote tarball verification after the release-note edit returned `remote_tarball_pay_still_ok`.
+- PayPal verifier still returned:
+  - `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
