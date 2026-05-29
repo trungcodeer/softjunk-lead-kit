@@ -8156,3 +8156,41 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_agent_index_one_copy_ok status=200 urls=5`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Root Route One-Copy Packet Evidence
+
+- Audited root-domain buyer routes after the product one-copy order packet and product agent-index surfaces were live.
+- Found that `/rescue/`, `/5/`, and `/send-5/` still allowed a buyer or buyer-agent to go straight from root copy to PayPal without first seeing the generated one-copy order packet.
+- Updated the root repo in commit `69f0917aa6d1ba2dd85e6f5e3df3856630c85e70`:
+  - `rescue/index.html`, `rescue.json`, and `rescue.txt` now promote the product one-copy order packet before PayPal.
+  - `5/index.html`, `5.json`, and `5.txt` now make `Build order packet` the first route and include the packet URL in the copy-ready handoff.
+  - `send-5/index.html`, `send-5.json`, and `send-5.txt` now include the packet URL before the PayPal URL in the handoff and expose a `Copy packet link` action.
+  - `root-offer.json` and `.well-known/softjunk-root-offer.json` now include `one_copy_order_packet_*` URLs and agent instructions for the packet route.
+  - `agent-card.json` and `.well-known/agent-card.json` now describe the one-copy order packet as part of the root checkout path.
+  - `sitemap.xml` lastmod values were updated to `2026-05-29` for the changed routes and manifests.
+- Local verification:
+  - `root_json_ok`.
+  - `root_sitemap_xml_ok`.
+  - `root_inline_scripts_and_jsonld_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - Playwright/Chrome checked `/5/`, `/rescue/`, and `/send-5/` at `390x844` and `1280x900`; all checks returned `noHorizontalOverflow=true`, required markers present, and button targets at least 44px.
+- Deployment:
+  - Root Pages run `26618526407` completed successfully for commit `69f0917aa6d1ba2dd85e6f5e3df3856630c85e70`.
+- Live verification returned `live_root_one_copy_packet_ok commit=69f0917 urls=14` for:
+  - `https://trungcodeer.github.io/rescue/`.
+  - `https://trungcodeer.github.io/rescue.json`.
+  - `https://trungcodeer.github.io/rescue.txt`.
+  - `https://trungcodeer.github.io/5/`.
+  - `https://trungcodeer.github.io/5.json`.
+  - `https://trungcodeer.github.io/5.txt`.
+  - `https://trungcodeer.github.io/send-5/`.
+  - `https://trungcodeer.github.io/send-5.json`.
+  - `https://trungcodeer.github.io/send-5.txt`.
+  - `https://trungcodeer.github.io/root-offer.json`.
+  - `https://trungcodeer.github.io/.well-known/softjunk-root-offer.json`.
+  - `https://trungcodeer.github.io/agent-card.json`.
+  - `https://trungcodeer.github.io/.well-known/agent-card.json`.
+  - `https://trungcodeer.github.io/sitemap.xml`.
+- IndexNow returned `indexnow_root_one_copy_packet_ok status=200 urls=14`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

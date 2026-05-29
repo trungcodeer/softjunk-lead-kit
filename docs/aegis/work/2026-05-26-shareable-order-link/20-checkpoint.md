@@ -11062,3 +11062,45 @@ Live verification update:
 - IndexNow returned `indexnow_agent_index_one_copy_ok status=200 urls=5`.
 - PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Root Route One-Copy Packet Checkpoint
+
+Current todo:
+- Route qualified one-lead buyers and buyer-agents from root-domain high-intent surfaces to the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict stop rule: do not mark paid, started, delivered, complete, or goal-done without seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch root repo short buyer routes and discovery manifests: `/rescue/`, `/5/`, `/send-5/`, their JSON/TXT companions, root offer manifests, root agent cards, and sitemap freshness.
+
+Completed todos:
+- Updated `/rescue/`, `rescue.json`, and `rescue.txt` so the route points to the product one-copy order packet and labels the primary action as `Build order packet`.
+- Updated `/5/`, `5.json`, and `5.txt` so the shortest 5 USD route tells buyers to build the one-copy order packet before PayPal.
+- Updated `/send-5/`, `send-5.json`, and `send-5.txt` so copy-ready buyer handoff includes the product packet link before the PayPal URL.
+- Added a `Copy packet link` action to `/send-5/`.
+- Updated `root-offer.json`, `.well-known/softjunk-root-offer.json`, `agent-card.json`, and `.well-known/agent-card.json` so buyer-agents see the packet route from root discovery surfaces.
+- Updated `sitemap.xml` lastmod values for the changed root routes and manifests.
+
+Evidence refs:
+- Root commit `69f0917aa6d1ba2dd85e6f5e3df3856630c85e70` pushed to `main`.
+- Root Pages run `26618526407` completed successfully.
+- Local JSON parse returned `root_json_ok`.
+- Sitemap XML parse returned `root_sitemap_xml_ok`.
+- Inline script and JSON-LD parse returned `root_inline_scripts_and_jsonld_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- Playwright/Chrome render check passed for `/5/`, `/rescue/`, and `/send-5/` at mobile and desktop viewports with no horizontal overflow, required markers present, and 44px button targets.
+- Live verification returned `live_root_one_copy_packet_ok commit=69f0917 urls=14`.
+- IndexNow returned `indexnow_root_one_copy_packet_ok status=200 urls=14`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing discovery and checkout surfaces, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned root-domain discovery and checkout routing without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Pages root repo, product one-copy order packet, existing PayPal.Me URL, GitHub order form, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; root routes now route to the product one-copy order packet before PayPal.
+- Decision: continue because PayPal proof is still missing.
