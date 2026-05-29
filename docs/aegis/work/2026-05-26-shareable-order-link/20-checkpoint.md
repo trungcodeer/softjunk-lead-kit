@@ -10798,3 +10798,14 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Pages text files, robots, sitemaps, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; `github:` package install remains fallback where included.
 - Decision: continue.
+
+Live verification update:
+- Root commit `0e3ccb135258c073a7c28a2def2486292b00472b` pushed and Pages run `26615185326` completed successfully.
+- Profile commit `c9fd186f3512dbb1cef8f4bdf95563ea088ac83c` pushed and Pages run `26615195556` completed successfully.
+- Quiet commit `56742e3fd009a9a7d11979abf31099c47057ffaf` pushed and Pages run `26615207094` completed successfully.
+- Product commit `44bbb566d9351dce8e504267b70d042a1fced96b` pushed and Pages run `26615220808` completed successfully.
+- Live verification returned `live_llms_full_ok urls=4 commits=44bbb56,0e3ccb1,c9fd186,56742e3`.
+- Live robots verification returned `live_robots_llms_full_ok urls=4`.
+- Live sitemap verification returned `live_sitemap_llms_full_ok urls=4`.
+- IndexNow returned `indexnow_llms_full_ok status=200 urls=4`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
