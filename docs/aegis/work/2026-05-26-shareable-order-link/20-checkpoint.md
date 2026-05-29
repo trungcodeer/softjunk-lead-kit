@@ -10760,3 +10760,41 @@ Live verification update:
 - Live `llms.txt` verification returned `live_llms_current_tarball_ok product=dd0b2c1 quiet=24b6499`.
 - IndexNow returned `indexnow_llms_current_tarball_ok status=200 urls=2`.
 - PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-29 LLM Full Context Discovery Checkpoint
+
+Current todo:
+- Add explicit `llms-full.txt` discovery files for LLM/crawler buyer-agent workflows on owned public surfaces.
+- Keep the current `v2.29.162` release tarball as the primary no-clone checkout route.
+- Preserve seller-side PayPal verification as the only completion gate.
+
+Active slice:
+- Add and index `llms-full.txt` across product, root, profile, and quiet-lead Pages surfaces.
+
+Completed todos:
+- Audited product, root, profile, and quiet-lead repos; all had `llms.txt`, `robots.txt`, and `sitemap.xml`, but no `llms-full.txt`.
+- Added `llms-full.txt` to product, root, profile, and quiet-lead repos with exact 5 USD PayPal route, current tarball command, SHA-256 URL, relevant buyer routes, and verification boundary.
+- Linked each `llms.txt` to its matching `llms-full.txt`.
+- Added `Allow: /llms-full.txt` to each repo's `robots.txt`.
+- Added each `llms-full.txt` URL to the matching `sitemap.xml`.
+- Promoted the profile `llms.txt` no-clone primary command from `github:` package install to the current `v2.29.162` tarball, leaving `github:` as fallback.
+
+Evidence refs:
+- Pre-audit returned `product_llms_full=False`, `root_llms_full=False`, `profile_llms_full=False`, and `quiet_llms_full=False`.
+- Local validation returned `product_llms_full_local_ok`, `root_llms_full_local_ok`, `profile_llms_full_local_ok`, and `quiet_llms_full_local_ok`.
+- Local XML parse passed for all four sitemaps.
+- `git diff --check` passed for all four repos; adjacent/root repos emitted only line-ending normalization warnings for changed text/XML files.
+- Remote current tarball command returned `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push all four `llms-full.txt` discovery updates, wait for Pages runs, live-verify all four public `llms-full.txt` URLs, submit them to IndexNow, and rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned LLM/crawler discovery and buyer-agent checkout routing without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Pages text files, robots, sitemaps, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; `github:` package install remains fallback where included.
+- Decision: continue.

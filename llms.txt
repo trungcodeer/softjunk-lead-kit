@@ -1,3 +1,6 @@
+Full LLM context:
+https://trungcodeer.github.io/softjunk-lead-kit/llms-full.txt
+
 GitHub Sponsor button route:
 - Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 - Sponsor markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md

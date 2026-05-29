@@ -5,6 +5,7 @@ Allow: /5/
 Allow: /5.json
 Allow: /5.txt
 Allow: /llms.txt
+Allow: /llms-full.txt
 Allow: /feed.xml
 Allow: /npm-publish-status.json
 Allow: /buyer-index.json

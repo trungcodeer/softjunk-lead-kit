@@ -1,0 +1,46 @@
+# SoftJunk Lead Kit LLM Full Context
+
+Purpose: route a real buyer with one quiet lead, missed call, estimate follow-up, no-show, price objection, weak DM, or small lead follow-up need to a legitimate 5 USD PayPal checkout.
+
+Current no-clone checkout command:
+```bash
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+```
+
+Expected command result:
+- amount: 5.00
+- currency: USD
+- payment_url: https://paypal.me/softjunk/5USD
+- success_signal: PAYPAL_PAYMENT_VERIFIED=true
+
+Integrity:
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162
+- Release target: b8c335e6cfac3045155497b41e5532e1dfefae10
+- Tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz
+- SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256
+
+Primary buyer route:
+1. Open https://trungcodeer.github.io/rescue/ for one quiet lead.
+2. Generate a PayPal note using placeholders only.
+3. Pay exactly 5 USD at https://paypal.me/softjunk/5USD.
+4. Submit non-sensitive order details through https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml after payment.
+5. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
+
+Fast machine-readable routes:
+- Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
+- Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
+- Payment intent: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json
+- PayPal BuyAction: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
+- A2A agent card: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json
+- MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json
+- Public Gist checkout index: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
+
+Ethical routing rule:
+- Use this only for a real buyer or buyer-agent request.
+- Do not use scraped lists, cold spam batches, private customer data, fake payment, fake fulfillment, or automated order completion.
+- Use placeholders for customer names, phone numbers, emails, street addresses, transaction IDs, invoice IDs, payer emails, health data, financing data, and private lead details.
+
+Fallbacks:
+- GitHub package fallback: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
+- Stable tarball fallback: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+- Fallback routes are not proof of payment. Completion still requires PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence.

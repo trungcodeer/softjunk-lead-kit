@@ -7851,3 +7851,34 @@ Latest adjacent-discovery refresh:
 - IndexNow accepted both updated `llms.txt` URLs: `indexnow_llms_current_tarball_ok status=200 urls=2`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 LLM Full Context Discovery Evidence
+
+- Audited owned LLM discovery surfaces:
+  - Product: `llms.txt` present, `llms-full.txt` absent.
+  - Root: `llms.txt` present, `llms-full.txt` absent.
+  - Profile: `llms.txt` present, `llms-full.txt` absent.
+  - Quiet-lead: `llms.txt` present, `llms-full.txt` absent.
+- Added `llms-full.txt` to:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms-full.txt`.
+  - `https://trungcodeer.github.io/llms-full.txt`.
+  - `https://trungcodeer.github.io/trungcodeer/llms-full.txt`.
+  - `https://trungcodeer.github.io/quiet-lead-follow-up/llms-full.txt`.
+- Each file includes:
+  - Current release tarball command for `v2.29.162`.
+  - Exact PayPal URL `https://paypal.me/softjunk/5USD`.
+  - Expected command result `amount=5.00`, `currency=USD`, and `success_signal=PAYPAL_PAYMENT_VERIFIED=true`.
+  - SHA-256 URL for the current tarball.
+  - A clear rule not to claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence or verifier success exists.
+- Linked each `llms.txt` to the new full-context file.
+- Added `Allow: /llms-full.txt` to all four `robots.txt` files.
+- Added all four `llms-full.txt` URLs to their respective sitemaps.
+- Profile `llms.txt` now uses the current release tarball as the no-clone primary command and keeps `github:trungcodeer/softjunk-lead-kit` as fallback.
+- Local verification returned:
+  - `product_llms_full_local_ok`.
+  - `root_llms_full_local_ok`.
+  - `profile_llms_full_local_ok`.
+  - `quiet_llms_full_local_ok`.
+- XML parse passed for product, root, profile, and quiet-lead sitemaps.
+- Remote package verification returned JSON with `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
