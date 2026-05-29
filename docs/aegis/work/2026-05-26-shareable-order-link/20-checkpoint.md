@@ -10809,3 +10809,40 @@ Live verification update:
 - Live sitemap verification returned `live_sitemap_llms_full_ok urls=4`.
 - IndexNow returned `indexnow_llms_full_ok status=200 urls=4`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+## 2026-05-29 Funding Current Tarball Checkpoint
+
+Current todo:
+- Keep GitHub Sponsor/FUNDING surfaces aligned with the current verified `v2.29.162` checkout route.
+- Use GitHub-native funding surfaces only; do not create outreach, spam, fake payment, or fulfillment claims.
+- Preserve seller-side PayPal verification as the only completion gate.
+
+Active slice:
+- Update `.github/FUNDING.yml` across product, root, profile, and quiet-lead repos so Sponsor-button metadata no longer advertises the stale `v2.29.151` tarball in its no-clone checkout proof.
+
+Completed todos:
+- Audited `.github/FUNDING.yml` in product, root, profile, and quiet-lead repos.
+- Confirmed all four repos had GitHub Sponsor custom funding configured.
+- Updated all four no-clone proof comments from fallback `v2.29.151` to current `v2.29.162` tarball command, release URL, tarball URL, and SHA-256 URL.
+- Updated quiet-lead `custom` funding URLs so they route to PayPal, the quiet PayPal handoff page, the quiet public order board, and the shared Sponsor buy doc.
+- Validated all four funding files for current tarball markers, PayPal URL, and custom URL counts.
+- Verified the current tarball command still returns the exact 5 USD PayPal route.
+
+Evidence refs:
+- Pre-audit found all four `.github/FUNDING.yml` files contained the stale `v2.29.151` tarball in comments.
+- Local validation returned `product_funding_current_ok custom=4`, `root_funding_current_ok custom=4`, `profile_funding_current_ok custom=4`, and `quiet_funding_current_ok custom=4`.
+- `git diff --check` passed for all four repos; warnings were only line-ending normalization for changed FUNDING files.
+- Remote current tarball command returned `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the four funding updates, verify via GitHub API/raw content, and rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves GitHub-native Sponsor surfaces without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub repo funding metadata, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; quiet funding now points more directly to the quiet handoff and order board.
+- Decision: continue.

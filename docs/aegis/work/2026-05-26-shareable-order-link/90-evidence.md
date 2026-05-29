@@ -7898,3 +7898,29 @@ Latest adjacent-discovery refresh:
 - IndexNow accepted all four `llms-full.txt` URLs: `indexnow_llms_full_ok status=200 urls=4`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Funding Current Tarball Evidence
+
+- Audited GitHub Sponsor metadata in four owned repos:
+  - Product `.github/FUNDING.yml`.
+  - Root `.github/FUNDING.yml`.
+  - Profile `.github/FUNDING.yml`.
+  - Quiet-lead `.github/FUNDING.yml`.
+- Pre-audit result: all four funding files existed and contained custom funding URLs, but the no-clone checkout proof comments still referenced the fallback `v2.29.151` tarball.
+- Updated all four funding files to reference:
+  - Command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`.
+  - Release: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.162`.
+  - Tarball: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz`.
+  - SHA-256 URL: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.162/softjunk-lead-kit-0.2.2.tgz.sha256`.
+- Updated quiet-lead custom funding URLs to prioritize:
+  - `https://paypal.me/softjunk/5USD`.
+  - `https://trungcodeer.github.io/quiet-lead-follow-up/pay-5-usd-paypal.html`.
+  - `https://github.com/trungcodeer/quiet-lead-follow-up/issues/1`.
+  - `https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md`.
+- Local validation returned:
+  - `product_funding_current_ok custom=4`.
+  - `root_funding_current_ok custom=4`.
+  - `profile_funding_current_ok custom=4`.
+  - `quiet_funding_current_ok custom=4`.
+- Remote package verification returned JSON with `amount=5.00`, `currency=USD`, and `payment_url=https://paypal.me/softjunk/5USD`.
+- This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
