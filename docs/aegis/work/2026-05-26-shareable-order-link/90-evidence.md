@@ -8145,4 +8145,14 @@ Latest adjacent-discovery refresh:
   - Description changed to "SoftJunk AI agent buyer packet - one-copy order packet + v2.29.163 PayPal 5 USD".
   - `agent-buyer-packet.json` and `agent-buyer-packet.txt` replaced from local files.
   - Verification returned `gist_agent_buyer_packet_json_one_copy_ok` and `gist_agent_buyer_packet_txt_one_copy_ok`.
+- Product commit `d48b594691ac7348489da8ac883b33b2146c960a` pushed to `main`.
+- Product Pages run `26617968965` completed successfully.
+- Live Pages verification returned `live_agent_index_one_copy_ok commit=d48b594 urls=5` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_agent_index_one_copy_ok status=200 urls=5`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
