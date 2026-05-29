@@ -8194,3 +8194,42 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_root_one_copy_packet_ok status=200 urls=14`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Root Payment Packet Evidence
+
+- Audited root high-intent payment and QR routes after root rescue/5/send-5 packet routing was live.
+- Found that `/pay/`, `/paypal/`, `/buy/`, `/pay-qr/`, `paypal.json`, `.well-known/paypal-payment.json`, `paypal-buy-action.json`, `.well-known/paypal-buy-action.json`, `pay-qr.json`, and `pay-qr.txt` still led buyer-agents toward direct PayPal without clearly making the one-copy order packet the first action.
+- Updated the root repo in commit `25459d02b3093ba50cf7c3674a2390d7a4b74890`:
+  - `/pay/`, `/paypal/`, and `/buy/` now present `Build order packet` before PayPal and label PayPal as post-packet payment.
+  - `/pay-qr/` now links the one-copy order packet before the QR/payment action and includes the packet URL in the copyable proof.
+  - `paypal.json` and `.well-known/paypal-payment.json` now include `one_copy_order_packet_*` URLs and packet-first routing instructions.
+  - `paypal-buy-action.json` and `.well-known/paypal-buy-action.json` now describe the packet-first buyer-agent BuyAction route.
+  - `pay-qr.json` and `pay-qr.txt` now include the one-copy order packet URL and packet-first verification gate.
+  - `sitemap.xml` lastmod values were updated to `2026-05-29` for the changed payment routes and manifests.
+- Local verification:
+  - `root_payment_json_ok`.
+  - `root_sitemap_xml_ok`.
+  - `root_payment_inline_scripts_and_jsonld_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - Playwright/Chrome checked `/pay/`, `/paypal/`, `/buy/`, and `/pay-qr/` at `390x844` and `1280x900`; all checks returned `noHorizontalOverflow=true`, required markers present, and button targets at least 44px.
+- Deployment:
+  - Root Pages run `26618860234` completed successfully for commit `25459d02b3093ba50cf7c3674a2390d7a4b74890`.
+- Live verification returned `live_root_payment_packet_ok commit=25459d0 urls=11` for:
+  - `https://trungcodeer.github.io/pay/`.
+  - `https://trungcodeer.github.io/paypal/`.
+  - `https://trungcodeer.github.io/buy/`.
+  - `https://trungcodeer.github.io/pay-qr/`.
+  - `https://trungcodeer.github.io/paypal.json`.
+  - `https://trungcodeer.github.io/.well-known/paypal-payment.json`.
+  - `https://trungcodeer.github.io/paypal-buy-action.json`.
+  - `https://trungcodeer.github.io/.well-known/paypal-buy-action.json`.
+  - `https://trungcodeer.github.io/pay-qr.json`.
+  - `https://trungcodeer.github.io/pay-qr.txt`.
+  - `https://trungcodeer.github.io/sitemap.xml`.
+- IndexNow returned `indexnow_root_payment_packet_ok status=200 urls=11`.
+- Existing public Gist mirror updated:
+  - Gist ID `167d3dc5f8696bf9edb04d3db6c53a02`.
+  - File `softjunk-5usd-paypal-payment-intent.json` replaced from root `paypal.json`.
+  - Verification returned `gist_payment_intent_one_copy_ok`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

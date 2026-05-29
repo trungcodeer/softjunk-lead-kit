@@ -11104,3 +11104,46 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Pages root repo, product one-copy order packet, existing PayPal.Me URL, GitHub order form, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; root routes now route to the product one-copy order packet before PayPal.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-29 Root Payment Packet Checkpoint
+
+Current todo:
+- Route high-intent root payment pages and machine-readable payment manifests through the one-copy order packet before direct PayPal.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch root `/pay/`, `/paypal/`, `/buy/`, `/pay-qr/`, payment intent JSON, BuyAction JSON, QR text/JSON, sitemap, and the existing payment-intent Gist mirror.
+
+Completed todos:
+- Updated `/pay/`, `/paypal/`, and `/buy/` so the first buyer action is `Build order packet` and the PayPal action reads as post-packet payment.
+- Updated `/pay-qr/`, `pay-qr.json`, and `pay-qr.txt` to include the product one-copy order packet before the exact PayPal checkout.
+- Updated `paypal.json` and `.well-known/paypal-payment.json` with `one_copy_order_packet_*` URLs and packet-first instructions.
+- Updated `paypal-buy-action.json` and `.well-known/paypal-buy-action.json` to describe the packet-first BuyAction route.
+- Updated `sitemap.xml` lastmod values for the changed payment routes and manifests.
+- Updated existing Gist `167d3dc5f8696bf9edb04d3db6c53a02` file `softjunk-5usd-paypal-payment-intent.json` from the current root `paypal.json`.
+
+Evidence refs:
+- Root commit `25459d02b3093ba50cf7c3674a2390d7a4b74890` pushed to `main`.
+- Root Pages run `26618860234` completed successfully.
+- Local JSON parse returned `root_payment_json_ok`.
+- Sitemap XML parse returned `root_sitemap_xml_ok`.
+- Inline script and JSON-LD parse returned `root_payment_inline_scripts_and_jsonld_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- Playwright/Chrome render check passed for `/pay/`, `/paypal/`, `/buy/`, and `/pay-qr/` at mobile and desktop viewports with no horizontal overflow, required markers present, and 44px button targets.
+- Live verification returned `live_root_payment_packet_ok commit=25459d0 urls=11`.
+- IndexNow returned `indexnow_root_payment_packet_ok status=200 urls=11`.
+- Gist verification returned `gist_payment_intent_one_copy_ok`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native discovery surfaces or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned high-intent payment and QR routes without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Pages root repo, product one-copy order packet, existing PayPal.Me URL, existing payment-intent Gist mirror, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; direct payment pages now prefer the product one-copy order packet before PayPal.
+- Decision: continue because PayPal proof is still missing.
