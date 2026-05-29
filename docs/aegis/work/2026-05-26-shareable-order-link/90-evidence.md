@@ -7967,3 +7967,53 @@ Latest adjacent-discovery refresh:
   - Quiet `26615702160`.
   - Product `26615713423`.
 - This slice has not yet verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 v2.29.163 Release Tarball Evidence
+
+- Product executable route changes:
+  - `bin/softjunk-lead-kit.js` now sets the no-clone checkout proof and agent `preferred_no_clone_command` to the current release tarball route.
+  - `mcp-server-softjunk.js` now returns `preferred_no_clone_command` and `npm_registry_status.current_no_auth_route` as the current release tarball route.
+  - `github:trungcodeer/softjunk-lead-kit` remains explicit fallback.
+- Product static and package surfaces were swept from `v2.29.162` to `v2.29.163`; stale phrase audits found no remaining `current GitHub package route first` or `GitHub package checkout route first` wording outside historical evidence.
+- Local verification passed:
+  - `node --check` for CLI, MCP server, and smoke scripts.
+  - `npm run cli:smoke`.
+  - `npm run mcp:smoke`.
+  - JSON parse for 65 product JSON files.
+  - CLI output assertions for `pay`, `doctor`, and `agent`.
+  - `npm pack --dry-run --json`.
+- Product commits pushed:
+  - `9d6b527b2d008e8414e80d01f46683db80115f59` - release route changes.
+  - `f61c96f68bb214e0e763e2f341c10192f5524094` - metadata target references.
+- Release created:
+  - URL: `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163`.
+  - Target: `9d6b527b2d008e8414e80d01f46683db80115f59`.
+  - Tarball SHA-256: `c92806238779e872727337bef10bce590f3e98f8943c5f31d5872e3eb376fe72`.
+  - Remote `.sha256` file verified with `remote_sha256_ok`.
+- Remote release execution verified:
+  - `remote_tarball_pay_ok`.
+  - `remote_tarball_agent_ok`.
+  - Remote output preserved `payment_url=https://paypal.me/softjunk/5USD`, `amount=5.00`, `currency=USD`, and `PAYPAL_PAYMENT_VERIFIED=true` as the success signal.
+- Product live/raw verification passed:
+  - Product Pages run `26616290778` completed successfully.
+  - Pages checks passed for `agent-relay.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `npm-funding.json`, `agent-card.json`, `.well-known/agent-card.json`, `agent-relay.txt`, `AGENT_RELAY.md`, `llms.txt`, and `llms-full.txt`.
+  - Raw checks passed for `bin/softjunk-lead-kit.js`, `mcp-server-softjunk.js`, and `package.json`.
+- Adjacent repo current-release sweep:
+  - Root commit `b5150c0983e88f68df99ec962669ae027e39f30b`, Pages run `26616401646`.
+  - Profile commit `85702678e4fe00ef3b0cac9778b3e7e096c37508`, Pages run `26616399894`.
+  - Quiet commit `f90b46eba4abbd139538b7a6fbc980082c379a96`, Pages run `26616400400`.
+  - Live/raw checks passed for root `5.json`, root `llms-full.txt`, profile `llms-full.txt`, profile `softjunk-profile-offer.json`, quiet `llms-full.txt`, quiet `buyer-route.json`, and raw README files.
+- Gists:
+  - Pre-audit found 29 owned Gists / 101 files containing `v2.29.162` or the old target.
+  - Updated existing Gist files/descriptions only; no new Gists were created.
+  - Verification returned `gist_v229163_verify_ok gists_checked=29 files_checked=106 current_files=101`.
+- GitHub-native Issue/Discussion surfaces:
+  - Issue audit found product `bodies=10 comments=114`, quiet `bodies=1 comments=0`, root/profile `0`.
+  - Updated existing owned content only: 11 Issue bodies and 114 Issue comments; skipped non-owner count was 0.
+  - Discussion audit found product `bodies=7 comments=1`; adjacent repos had 0.
+  - Updated existing owned content only: 7 Discussion bodies and 1 Discussion comment.
+  - Verification returned `issue_v229163_verify_ok` and `discussion_v229163_verify_ok`.
+- IndexNow accepted the changed representative Pages URLs: `indexnow_v229163_ok status=200 urls=18`.
+- PayPal verifier still returned:
+  - `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

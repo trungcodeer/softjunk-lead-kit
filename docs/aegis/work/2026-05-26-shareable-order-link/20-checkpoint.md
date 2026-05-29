@@ -10892,3 +10892,43 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub README files, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; GitHub package install remains fallback.
 - Decision: continue.
+
+## 2026-05-29 v2.29.163 Release Tarball Checkpoint
+
+Current todo:
+- Publish a real current release tarball whose executable output prefers the release tarball no-clone checkout route.
+- Sweep owned public/package-native/GitHub-native mirrors from `v2.29.162` to `v2.29.163`.
+- Keep `github:trungcodeer/softjunk-lead-kit` as fallback and preserve seller-side PayPal verification as the only completion gate.
+
+Active slice:
+- Replace stale current-release references, publish `v2.29.163`, verify remote execution, and update owned Pages/Gist/Issue/Discussion surfaces.
+
+Completed todos:
+- Updated product CLI/MCP output so `pay`, `doctor`, and `agent` prefer the current release tarball command and expose GitHub package as fallback.
+- Updated product static manifests/docs from `v2.29.162` to `v2.29.163` and release target `9d6b527b2d008e8414e80d01f46683db80115f59`.
+- Published GitHub Release `v2.29.163` with tarball SHA-256 `c92806238779e872727337bef10bce590f3e98f8943c5f31d5872e3eb376fe72`.
+- Updated root/profile/quiet owned repos to `v2.29.163`.
+- Updated 29 owned Gists, 11 owned Issue bodies, 114 owned Issue comments, 7 owned Discussion bodies, and 1 owned Discussion comment from the previous current release to `v2.29.163`.
+
+Evidence refs:
+- Product commits: `9d6b527b2d008e8414e80d01f46683db80115f59` (release route) and `f61c96f68bb214e0e763e2f341c10192f5524094` (metadata target).
+- Adjacent commits: root `b5150c0983e88f68df99ec962669ae027e39f30b`, profile `85702678e4fe00ef3b0cac9778b3e7e096c37508`, quiet `f90b46eba4abbd139538b7a6fbc980082c379a96`.
+- Product Pages run `26616290778`, root `26616401646`, profile `26616399894`, and quiet `26616400400` completed successfully.
+- Remote tarball execution returned `remote_tarball_pay_ok` and `remote_tarball_agent_ok`.
+- Product/root/profile/quiet live/raw checks returned current `v2.29.163` content with no `v2.29.162` in representative URLs.
+- Gist verification returned `gist_v229163_verify_ok gists_checked=29 files_checked=106 current_files=101`.
+- GitHub-native verification returned `issue_v229163_verify_ok` and `discussion_v229163_verify_ok` for owned repos.
+- IndexNow returned `indexnow_v229163_ok status=200 urls=18`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Rerun PayPal verification and, if still false, continue only with legitimate owned public/package-native/GitHub-native buyer surfaces or wait for seller-side PayPal evidence.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the executable release route true on remote GitHub assets and aligns owned discovery surfaces without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned repos, GitHub Release tarball, owned Gists, owned Issue/Discussion bodies/comments, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; GitHub package install remains fallback.
+- Decision: continue because PayPal proof is still missing.
