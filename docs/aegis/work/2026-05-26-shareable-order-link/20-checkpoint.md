@@ -11014,3 +11014,43 @@ Live verification update:
 - IndexNow returned `indexnow_one_copy_order_packet_ok status=200 urls=5`.
 - PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice did not verify a PayPal transaction; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Agent Index One-Copy Packet Checkpoint
+
+Current todo:
+- Promote the one-copy order packet through high-signal buyer-agent discovery manifests so agents route qualified one-lead buyers to the generated packet before PayPal.
+- Preserve exact 5 USD PayPal routing and seller-side PayPal verification as the only completion gate.
+
+Active slice:
+- Patch `buyer-index.json`, `agent-buyer-packet.json`, `agent-buyer-packet.txt`, `.well-known/openapi.yaml`, `sitemap.xml`, and the existing agent buyer packet Gist mirror.
+
+Completed todos:
+- Audited checkout/order/after-pay route coverage and found the one-copy order packet existed on the one-lead route but high-level agent manifests still described the old message + PayPal note route.
+- Updated `buyer-index.json` to list the one-copy order packet as the lowest-friction one-lead action and to enumerate packet contents.
+- Updated `agent-buyer-packet.json` and `agent-buyer-packet.txt` so buyer-agents are instructed to generate/copy the one-copy order packet before PayPal.
+- Updated `.well-known/openapi.yaml` descriptions for `fix-one-quiet-lead.html/json/txt` to mention the one-copy order packet and post-payment order form.
+- Updated sitemap `lastmod` values for `buyer-index.json`, `agent-buyer-packet.json`, `agent-buyer-packet.txt`, and `.well-known/openapi.yaml`.
+- Updated public Gist `85b6eef2cd6deb244d0bfbe18e744a3c` for `agent-buyer-packet.json` and `agent-buyer-packet.txt`.
+
+Evidence refs:
+- Local validation returned `agent_index_json_ok`.
+- Marker validation returned `one_copy_manifest_markers_ok`.
+- Full JSON parse returned `json_parse_ok files=61`.
+- Sitemap XML parse returned `sitemap_xml_ok`.
+- Sitemap freshness validation returned `sitemap_one_copy_manifest_lastmod_ok`.
+- `npm run cli:smoke` and `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- Gist verification returned `gist_agent_buyer_packet_json_one_copy_ok` and `gist_agent_buyer_packet_txt_one_copy_ok`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the manifest updates, wait for Pages, live-verify the public manifest URLs, submit IndexNow, then rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned buyer-agent discovery and checkout routing without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Pages manifests, existing public Gist, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; release tarball remains primary no-clone checkout proof and GitHub package remains fallback where already present.
+- Decision: continue because PayPal proof is still missing.

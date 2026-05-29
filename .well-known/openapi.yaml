@@ -1078,7 +1078,7 @@ paths:
       summary: Open the shortest one-lead follow-up offer.
       responses:
         "200":
-          description: One-screen builder with a generated follow-up message, PayPal note, shareable rescue link, and 5 USD checkout path.
+          description: One-screen builder with a generated follow-up message, one-copy buyer-agent order packet, PayPal note, shareable rescue link, post-payment order form, and 5 USD checkout path.
           content:
             text/html:
               schema:
@@ -1089,7 +1089,7 @@ paths:
       summary: Get the one-lead rescue builder JSON.
       responses:
         "200":
-          description: Machine-readable one-lead route with PayPal note template, payment URL, and verification gate.
+          description: Machine-readable one-lead route with one-copy order packet template, PayPal note template, payment URL, post-payment order form, and verification gate.
           content:
             application/json:
               schema:
@@ -1100,7 +1100,7 @@ paths:
       summary: Get the one-lead rescue builder text.
       responses:
         "200":
-          description: Plain-text one-lead route with PayPal URL and verification gate.
+          description: Plain-text one-lead route with one-copy order packet template, PayPal URL, post-payment order form, and verification gate.
           content:
             text/plain:
               schema:

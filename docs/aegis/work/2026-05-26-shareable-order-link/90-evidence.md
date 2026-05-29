@@ -8098,3 +8098,51 @@ Latest adjacent-discovery refresh:
 - IndexNow submission for the changed Pages URLs returned `indexnow_one_copy_order_packet_ok status=200 urls=5`.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 Agent Index One-Copy Packet Evidence
+
+- Audited high-signal buyer-agent discovery surfaces after the one-copy order packet page was live.
+- Found that `fix-one-quiet-lead.html/json/txt` and its Gist mirror already exposed the packet, but these higher-level surfaces still described the one-lead route as only message + PayPal note:
+  - `buyer-index.json`.
+  - `agent-buyer-packet.json`.
+  - `agent-buyer-packet.txt`.
+  - `.well-known/openapi.yaml`.
+- Updated `buyer-index.json`:
+  - One-lead `use_when` now says the buyer can copy one buyer-agent order packet before paying.
+  - One-lead `why` now lists the copyable order packet, PayPal note, shareable rescue link, post-payment order form, and direct 5 USD checkout.
+  - Added `primary_action`.
+  - Added `order_packet_contains` with free preview, PayPal note, shareable link, release-tarball proof, exact PayPal URL, post-payment order form, and `PAYPAL_PAYMENT_VERIFIED=true` boundary.
+  - Updated `fix_one_quiet_lead_message` to mention copying the one-copy order packet or PayPal note before exact PayPal payment.
+- Updated `agent-buyer-packet.json`:
+  - The `fix_one_quiet_lead` routing step now directs agents to the one-copy order packet route.
+  - Added `primary_action`.
+  - Added `order_packet_contains`.
+  - Updated `copyable_agent_prompt` so product-builder routing tells the buyer to generate one message, one-copy order packet, and PayPal note before exact 5 USD payment.
+- Updated `agent-buyer-packet.txt`:
+  - Added product one-copy order packet HTML/JSON/TXT URLs near the root rescue route.
+  - Added a one-copy order packet section describing the packet contents.
+  - Updated the agent instruction to route product-builder buyers to the generated packet before PayPal.
+- Updated `.well-known/openapi.yaml`:
+  - `/fix-one-quiet-lead.html` response description now includes one-copy buyer-agent order packet and post-payment order form.
+  - `/fix-one-quiet-lead.json` response description now includes one-copy order packet template and post-payment order form.
+  - `/fix-one-quiet-lead.txt` response description now includes one-copy order packet template and post-payment order form.
+- Updated `sitemap.xml` lastmod values to `2026-05-29` for:
+  - `buyer-index.json`.
+  - `agent-buyer-packet.json`.
+  - `agent-buyer-packet.txt`.
+  - `.well-known/openapi.yaml`.
+- Local verification:
+  - `agent_index_json_ok`.
+  - `one_copy_manifest_markers_ok`.
+  - `json_parse_ok files=61`.
+  - `sitemap_xml_ok`.
+  - `sitemap_one_copy_manifest_lastmod_ok`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Public Gist mirror updated:
+  - Gist ID `85b6eef2cd6deb244d0bfbe18e744a3c`.
+  - Description changed to "SoftJunk AI agent buyer packet - one-copy order packet + v2.29.163 PayPal 5 USD".
+  - `agent-buyer-packet.json` and `agent-buyer-packet.txt` replaced from local files.
+  - Verification returned `gist_agent_buyer_packet_json_one_copy_ok` and `gist_agent_buyer_packet_txt_one_copy_ok`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
