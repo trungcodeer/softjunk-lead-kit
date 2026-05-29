@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fix One Quiet Lead in 5 Minutes | SoftJunk $5</title>
-  <meta name="description" content="Generate a stronger follow-up for one quiet lead, copy the PayPal note, verify the no-clone checkout package, and pay $5 for the full custom SoftJunk 7-day sequence.">
+  <meta name="description" content="Generate a stronger follow-up for one quiet lead, copy one buyer-agent order packet, verify the no-clone checkout package, and pay $5 for the full custom SoftJunk 7-day sequence.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
   <link rel="stylesheet" href="niche-page.css">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json" title="Fix one quiet lead JSON">
@@ -12,7 +12,7 @@
   <link rel="alternate" type="application/json" href="https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json" title="Fix one quiet lead raw Gist JSON">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="Fix One Quiet Lead in 5 Minutes">
-  <meta property="og:description" content="Generate one stronger follow-up, verify the release-tarball checkout route, copy the PayPal note, and pay $5 for a custom 7-day sequence.">
+  <meta property="og:description" content="Generate one stronger follow-up, copy one buyer-agent order packet, verify the release-tarball checkout route, and pay $5 for a custom 7-day sequence.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -51,7 +51,7 @@
           "name": "Fix one quiet lead with SoftJunk",
           "step": [
             {"@type": "HowToStep", "text": "Generate one stronger follow-up message with non-sensitive lead context."},
-            {"@type": "HowToStep", "text": "Copy the PayPal note for the 5 USD custom sequence."},
+            {"@type": "HowToStep", "text": "Copy the one-lead order packet or PayPal note for the 5 USD custom sequence."},
             {"@type": "HowToStep", "text": "Verify checkout without cloning by running npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json."},
             {"@type": "HowToStep", "text": "Pay exactly 5 USD at the PayPal.Me URL."},
             {"@type": "HowToStep", "text": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true."}
@@ -94,6 +94,7 @@
         <p class="lead">Generate a better next message, copy the PayPal note, and pay exactly $5 for the full custom 7-day sequence when the lead is worth recovering.</p>
         <div class="actions">
           <a class="button primary" href="#rescue-tool">Generate rescue</a>
+          <button class="button" type="button" id="hero-copy-packet">Copy order packet</button>
           <button class="button" type="button" id="hero-copy-note">Copy PayPal note</button>
           <button class="button" type="button" id="hero-copy-proof">Copy no-clone proof</button>
           <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 on PayPal</a>
@@ -184,11 +185,17 @@
       </form>
       <p class="sample" id="free-message" aria-live="polite">Fill the fields or choose a preset to generate the next message.</p>
       <p class="sample" id="payment-note">PayPal note appears here.</p>
+      <details class="sample">
+        <summary>One-copy order packet</summary>
+        <p id="order-packet">Generate a rescue to create the buyer-agent packet.</p>
+      </details>
       <div class="actions">
+        <button class="button" type="button" id="copy-packet">Copy order packet</button>
         <button class="button" type="button" id="copy-note">Copy PayPal note</button>
         <a class="button" href="checkout.html#quick-note-title">Checkout note builder</a>
         <a class="button" href="https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759">Public Gist</a>
         <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5 after copying note</a>
+        <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">Open order form after PayPal</a>
       </div>
       <p class="status" id="status" aria-live="polite"></p>
     </section>
@@ -238,8 +245,14 @@
     const form = document.querySelector('#rescue-form');
     const messageEl = document.querySelector('#free-message');
     const noteEl = document.querySelector('#payment-note');
+    const packetEl = document.querySelector('#order-packet');
     const statusEl = document.querySelector('#status');
     const heroStatus = document.querySelector('#hero-status');
+    const releaseCommand = 'npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json';
+    const currentReleaseUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163';
+    const releaseShaUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256';
+    const paymentUrl = 'https://paypal.me/softjunk/5USD';
+    const orderFormUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml';
 
     const presets = {
       service: {
@@ -307,11 +320,43 @@ If you want to move forward, reply "yes" and I will send the easiest next step t
       return `${window.location.origin}${window.location.pathname}?${params.toString()}#rescue-tool`;
     }
 
+    function orderPacket() {
+      return `SoftJunk one-lead rescue order packet
+
+Free rescue preview:
+${message()}
+
+PayPal note:
+${note()}
+
+Shareable rescue link:
+${shareUrl()}
+
+No-clone checkout proof:
+${releaseCommand}
+
+Current release:
+${currentReleaseUrl}
+
+SHA-256:
+${releaseShaUrl}
+
+Pay exactly 5 USD:
+${paymentUrl}
+
+After PayPal, submit non-sensitive order details:
+${orderFormUrl}
+
+Verification boundary:
+Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.`;
+    }
+
     function render() {
       if (!form.reportValidity()) return false;
       messageEl.textContent = message();
-      noteEl.textContent = `PayPal note:\n${note()}\n\nNo-clone checkout proof:\nnpm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json\n\nCurrent release:\nhttps://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163\n\nCurrent release tarball SHA-256 file:\nhttps://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256\n\nPay exactly $5:\nhttps://paypal.me/softjunk/5USD\n\nDo not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.`;
-      statusEl.textContent = 'Message and PayPal note generated.';
+      noteEl.textContent = `PayPal note:\n${note()}\n\nNo-clone checkout proof:\n${releaseCommand}\n\nCurrent release:\n${currentReleaseUrl}\n\nCurrent release tarball SHA-256 file:\n${releaseShaUrl}\n\nPay exactly $5:\n${paymentUrl}\n\nAfter PayPal, submit non-sensitive order details:\n${orderFormUrl}\n\nDo not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.`;
+      packetEl.textContent = orderPacket();
+      statusEl.textContent = 'Message, PayPal note, and order packet generated.';
       return true;
     }
 
@@ -342,24 +387,33 @@ If you want to move forward, reply "yes" and I will send the easiest next step t
     document.querySelector('#copy-note').addEventListener('click', () => {
       if (render()) copyText(note(), 'PayPal note copied.');
     });
+    document.querySelector('#copy-packet').addEventListener('click', () => {
+      if (render()) copyText(orderPacket(), 'Order packet copied.');
+    });
     document.querySelector('#hero-copy-note').addEventListener('click', () => {
       if (render()) copyText(note(), 'PayPal note copied.', heroStatus);
     });
+    document.querySelector('#hero-copy-packet').addEventListener('click', () => {
+      if (render()) copyText(orderPacket(), 'Order packet copied.', heroStatus);
+    });
     function proofText() {
       return `No-clone checkout proof
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+${releaseCommand}
 
 Current release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+${currentReleaseUrl}
 
 Release tarball:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
 
 SHA-256:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
+${releaseShaUrl}
 
 Pay exactly $5:
-https://paypal.me/softjunk/5USD
+${paymentUrl}
+
+After PayPal, submit non-sensitive order details:
+${orderFormUrl}
 
 Payment-proof gate:
 PAYPAL_PAYMENT_VERIFIED=true

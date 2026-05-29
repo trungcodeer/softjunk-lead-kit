@@ -10964,3 +10964,45 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Release notes, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new owner or fulfillment path.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-29 One-Copy Order Packet Checkpoint
+
+Current todo:
+- Reduce checkout friction on the high-intent one-lead rescue route by turning generated lead context into one copyable buyer-agent order packet.
+- Keep exact 5 USD PayPal routing, current `v2.29.163` release-tarball proof, and seller-side PayPal verification as the only completion gate.
+
+Active slice:
+- Patch `fix-one-quiet-lead.html/json/txt`, update sitemap freshness, and align the existing public Gist mirror.
+
+Completed todos:
+- Audited `fix-one-quiet-lead.html`, `pay.html`, `checkout.html`, `fix-one-quiet-lead.json`, and `fix-one-quiet-lead.txt` for current PayPal/order/proof flow.
+- Added `Copy order packet` actions to the hero and generated-output sections of `fix-one-quiet-lead.html`.
+- Added a generated `One-copy order packet` payload containing the free rescue preview, PayPal note, shareable rescue link, no-clone proof command, current release, SHA-256 URL, exact PayPal URL, post-payment order form, and verification boundary.
+- Added the post-payment order form link next to the generated PayPal action.
+- Updated `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt` with the one-copy order packet contract.
+- Updated sitemap `lastmod` values for the HTML, JSON, and TXT one-lead route.
+- Updated the existing public Gist `7c25ec12b4c0f58506efe66bfbef6759` for `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`.
+
+Evidence refs:
+- Local JSON parse returned `json_parse_ok files=61`.
+- Sitemap XML parse returned `sitemap_xml_ok`.
+- Inline script compile returned `fix_one_inline_scripts_ok scripts=1`.
+- Content assertion returned `fix_one_order_packet_content_ok`.
+- Playwright/Chrome interaction check returned `fix_one_playwright_order_packet_ok viewports=2`.
+- Screenshots captured to `D:\codex-tmp\temp\fix-one-quiet-lead-mobile.png` and `D:\codex-tmp\temp\fix-one-quiet-lead-desktop.png`.
+- `npm run cli:smoke` and `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- Gist verification returned `gist_fix_one_json_packet_ok` and `gist_fix_one_txt_packet_ok`.
+
+Blocked-on items:
+- Actual PayPal payment cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Commit and push the one-copy order packet changes, wait for Pages, live-verify the public HTML/JSON/TXT routes, submit updated URLs to IndexNow, and rerun the PayPal verifier.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the owned high-intent checkout handoff without scraped outreach, spam, new comments, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: owned GitHub Pages route, existing public Gist, GitHub Release tarball, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; release tarball remains primary no-clone checkout proof and GitHub package remains fallback where already present.
+- Decision: continue because PayPal proof is still missing.

@@ -8036,3 +8036,56 @@ Latest adjacent-discovery refresh:
 - PayPal verifier still returned:
   - `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
+## 2026-05-29 One-Copy Order Packet Evidence
+
+- Audited the current buyer-facing checkout routes before editing:
+  - `fix-one-quiet-lead.html` already generated a rescue message, PayPal note, no-clone checkout proof, PayPal link, and post-payment order form link.
+  - `pay.html` and `checkout.html` already exposed broader checkout/payment flows.
+  - The high-intent gap was that one-lead buyers, VAs, and buyer-agents did not have one generated packet containing the message preview, PayPal note, rescue link, no-clone proof, PayPal URL, and post-payment order form.
+- Updated `fix-one-quiet-lead.html`:
+  - Added `Copy order packet` in the hero actions.
+  - Added a generated `One-copy order packet` details block after the free message and PayPal note.
+  - Added `Copy order packet` and `Open order form after PayPal` next to the generated PayPal action.
+  - Added shared constants for the current release-tarball command, current release URL, SHA-256 URL, PayPal URL, and order form URL.
+  - Added `orderPacket()` output with:
+    - free rescue preview.
+    - generated PayPal note.
+    - shareable rescue link.
+    - no-clone checkout proof for `v2.29.163`.
+    - current release and SHA-256 URLs.
+    - exact `https://paypal.me/softjunk/5USD`.
+    - post-payment order form.
+    - strict `PAYPAL_PAYMENT_VERIFIED=true` boundary.
+- Updated `niche-page.css` so the `details.sample summary` control has a 44px minimum target and visible pointer affordance.
+- Updated `fix-one-quiet-lead.json`:
+  - `updated` set to `2026-05-29`.
+  - purpose now includes the one-copy buyer-agent order packet.
+  - route steps now include `copy_order_packet`.
+  - added `one_copy_order_packet_template`.
+- Updated `fix-one-quiet-lead.txt`:
+  - `Updated: 2026-05-29`.
+  - added the one-copy order packet description and template.
+- Updated `sitemap.xml` lastmod values for:
+  - `fix-one-quiet-lead.html`.
+  - `fix-one-quiet-lead.json`.
+  - `fix-one-quiet-lead.txt`.
+- Local verification:
+  - `node -e "... JSON.parse ..."` returned `fix_one_json_ok`.
+  - Full JSON parse returned `json_parse_ok files=61`.
+  - Sitemap parse returned `sitemap_xml_ok`.
+  - Inline script compile returned `fix_one_inline_scripts_ok scripts=1`.
+  - Content assertion returned `fix_one_order_packet_content_ok`.
+  - Playwright with installed Chrome returned `fix_one_playwright_order_packet_ok viewports=2` after generating a preset on mobile and desktop and checking no horizontal overflow.
+  - Screenshots captured:
+    - `D:\codex-tmp\temp\fix-one-quiet-lead-mobile.png`.
+    - `D:\codex-tmp\temp\fix-one-quiet-lead-desktop.png`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Existing public Gist mirror updated:
+  - Gist ID `7c25ec12b4c0f58506efe66bfbef6759`.
+  - Description updated to "SoftJunk one-copy order packet, PayPal note, and no-clone proof for one quiet lead".
+  - `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt` replaced from local files.
+  - Verification returned `gist_fix_one_json_packet_ok` and `gist_fix_one_txt_packet_ok`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.

@@ -271,6 +271,15 @@ section {
   color: #26312b;
 }
 
+details.sample summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  color: var(--ink);
+  font-weight: 800;
+  cursor: pointer;
+}
+
 .answer-copy {
   margin: 10px 0 0;
   color: #26312b;
