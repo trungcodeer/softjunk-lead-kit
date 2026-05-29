@@ -11006,3 +11006,11 @@ DriftCheckDraft:
 - Compatibility boundary: owned GitHub Pages route, existing public Gist, GitHub Release tarball, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; release tarball remains primary no-clone checkout proof and GitHub package remains fallback where already present.
 - Decision: continue because PayPal proof is still missing.
+
+Live verification update:
+- Product commit `825e3d712c81766de1bef7bc132e976d5947d2cd` pushed to `main`.
+- Product Pages run `26617672196` completed successfully.
+- Live verification returned `live_fix_one_order_packet_ok commit=825e3d7 urls=4` for the HTML, JSON, TXT, and sitemap URLs.
+- IndexNow returned `indexnow_one_copy_order_packet_ok status=200 urls=5`.
+- PayPal verifier still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice did not verify a PayPal transaction; completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
