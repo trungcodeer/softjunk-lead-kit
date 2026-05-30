@@ -10262,3 +10262,31 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_dental_follow_up_copy_only_ok status=200 urls=4`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Appointment Setting Follow-Up Copy-Only Handoff Evidence
+
+- Product commit: `020ff50` (`020ff5079c1c2ec9ec68bb365e81cdb068446adf`) on `main`.
+- Changed buyer-facing route: `appointment-setting-follow-up.html`.
+- Changed discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `appointment_setting_follow_up_copy_only_static_ok direct_href=0 copy_markers=2 jsonld_blocks=1 inline_scripts=1`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Discovery marker scan returned `appointment_setting_follow_up_discovery_static_ok files=3`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-qQIfmaRC+iHFKFFw84k0+iLr1y6BnU8L+jP2U/t7jK2nBImPrpQUFSDgr5POc2yOjfBn6rS20VoeKAFU+9rSIg==`, shasum `173612e44d68401b5d703cdb33d7e19026809eee`.
+- Product Pages run `26692953512` completed successfully.
+- Live verification returned `live_appointment_setting_follow_up_copy_only_ok commit=020ff50 urls=4` for `appointment-setting-follow-up.html`, `README.md`, `llms.txt`, and `sitemap.xml`.
+- IndexNow returned `indexnow_appointment_setting_follow_up_copy_only_ok status=200 urls=4 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Appointment Setting Follow-Up Copy-Only Handoff, product commit `020ff50` (`020ff5079c1c2ec9ec68bb365e81cdb068446adf`).
+- Full evidence section: `2026-05-31 Appointment Setting Follow-Up Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26692953512` success.
+- Live verification evidence: `live_appointment_setting_follow_up_copy_only_ok commit=020ff50 urls=4`.
+- Discovery ping evidence: `indexnow_appointment_setting_follow_up_copy_only_ok status=200 urls=4`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

@@ -11242,6 +11242,38 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Appointment Setting Follow-Up Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `appointment-setting-follow-up.html` from a direct PayPal anchor to a copy-only after-packet PayPal URL button, while keeping the free appointment-setting sample, one-copy order packet, no-clone checkout proof, release proof links, and seller-side verification gate visible.
+- Updated discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Active slice status: product commit `020ff50` (`020ff5079c1c2ec9ec68bb365e81cdb068446adf`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML/static validation: `appointment_setting_follow_up_copy_only_static_ok direct_href=0 copy_markers=2 jsonld_blocks=1 inline_scripts=1`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Discovery marker scan returned `appointment_setting_follow_up_discovery_static_ok files=3`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-qQIfmaRC+iHFKFFw84k0+iLr1y6BnU8L+jP2U/t7jK2nBImPrpQUFSDgr5POc2yOjfBn6rS20VoeKAFU+9rSIg==`, shasum `173612e44d68401b5d703cdb33d7e19026809eee`.
+- Product Pages run: `26692953512`, conclusion `success`.
+- Live verification: `live_appointment_setting_follow_up_copy_only_ok commit=020ff50 urls=4`.
+- IndexNow: `indexnow_appointment_setting_follow_up_copy_only_ok status=200 urls=4 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an appointment-setting sample page that leads into the $5 custom sequence path and keeps the buyer action packet-first/copy-only without scraped outreach, spam, deception, fake payment, private lead exposure, client data exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, appointment-setting follow-up HTML, sitemap/LLM/README discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct HTML anchor.
+- Decision: continue because PayPal proof is still missing.
+
 ## 2026-05-31 Tail Resume Pointer
 
 Latest completed slice:
@@ -13703,6 +13735,17 @@ Latest completed slice:
 - Dental Follow-Up Copy-Only Handoff, product commit `e85d3aa` (`e85d3aa5763850c24bd44519c21cdec0008d0ddc`).
 - Full checkpoint section: `2026-05-31 Dental Follow-Up Copy-Only Handoff Checkpoint`.
 - Deployment evidence: GitHub Pages run `26692694265` success; live verification `live_dental_follow_up_copy_only_ok commit=e85d3aa urls=4`; IndexNow `indexnow_dental_follow_up_copy_only_ok status=200 urls=4`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Appointment Setting Follow-Up Copy-Only Handoff, product commit `020ff50` (`020ff5079c1c2ec9ec68bb365e81cdb068446adf`).
+- Full checkpoint section: `2026-05-31 Appointment Setting Follow-Up Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26692953512` success; live verification `live_appointment_setting_follow_up_copy_only_ok commit=020ff50 urls=4`; IndexNow `indexnow_appointment_setting_follow_up_copy_only_ok status=200 urls=4`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
