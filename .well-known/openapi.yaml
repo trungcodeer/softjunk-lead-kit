@@ -1198,10 +1198,10 @@ paths:
   /missed-call-follow-up.html:
     get:
       operationId: openMissedCallFollowUp
-      summary: Open the missed call follow-up sample generator.
+      summary: Open the packet-first missed call follow-up sample generator.
       responses:
         "200":
-          description: Browser page for missed call follow-up samples and the $5 custom sequence.
+          description: Browser page for missed call follow-up samples, one-copy order packet handoff, after-packet 5 USD PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -1319,10 +1319,10 @@ paths:
   /exact-intent-answer-pack.json:
     get:
       operationId: getExactIntentAnswerPack
-      summary: Get the exact-intent lead follow-up answer pack.
+      summary: Get the packet-first exact-intent lead follow-up answer pack.
       responses:
         "200":
-          description: JSON buyer-agent packet for exact follow-up questions, text routes, payment handoff, and verification gate.
+          description: JSON buyer-agent packet for exact follow-up questions, text routes, one-copy order packet handoff, after-packet payment handoff, and verification gate.
           content:
             application/json:
               schema:
@@ -1341,10 +1341,10 @@ paths:
   /missed-call-follow-up.txt:
     get:
       operationId: getMissedCallFollowUpText
-      summary: Get the missed-call follow-up answer as plain text.
+      summary: Get the packet-first missed-call follow-up answer as plain text.
       responses:
         "200":
-          description: Plain-text missed-call answer, sample, payment route, and verification gate.
+          description: Plain-text missed-call answer, sample, one-copy order packet route, after-packet payment route, privacy rule, and verification gate.
           content:
             text/plain:
               schema:

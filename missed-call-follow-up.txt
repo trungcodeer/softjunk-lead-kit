@@ -15,11 +15,20 @@ https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 Paid upgrade:
 Custom 7-day missed-call recovery sequence for one business and one service.
 
-Payment:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+One-copy order packet JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+
+Payment after packet:
 https://paypal.me/softjunk/5USD
 
 Payment note:
 Custom Sequence | Business: [business type] | Service: [service] | Source: missed call | Tone: [tone] | Need: missed-call follow-up
+
+Privacy rule:
+Use business context only. Do not post customer names, phone numbers, emails, addresses, appointment times, invoice IDs, transaction IDs, or PayPal details in public forms.
 
 Fulfillment rule:
 Do not claim paid, started, or delivered unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.
