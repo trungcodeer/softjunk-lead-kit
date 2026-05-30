@@ -3,91 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SoftJunk USD 5 Buyer Card</title>
-  <meta name="description" content="One-screen SoftJunk buyer card: pay exactly 5 USD on PayPal for one quiet-lead rescue, with one rewrite included after seller-side verification.">
+  <title>Build Packet, Then Pay 5 USD | SoftJunk</title>
+  <meta name="description" content="One-screen SoftJunk buyer card: build the one-copy order packet, copy the PayPal note, then pay exactly 5 USD on PayPal for one quiet-lead rescue.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html">
   <meta name="robots" content="index,follow">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json" title="SoftJunk five-dollar buyer card JSON">
   <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt" title="SoftJunk five-dollar buyer card text">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json" title="SoftJunk one-copy order packet JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt" title="SoftJunk one-copy order packet text">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
-  <meta property="og:title" content="SoftJunk USD 5 Buyer Card">
-  <meta property="og:description" content="Pay exactly 5 USD on PayPal for one quiet-lead rescue. One rewrite included after verified payment.">
+  <meta property="og:title" content="Build Packet, Then Pay 5 USD | SoftJunk">
+  <meta property="og:description" content="Build the one-copy order packet first, copy the PayPal note, then pay exactly 5 USD on PayPal.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <script type="application/ld+json">
 {
-    "@context":  "https://schema.org",
-    "@type":  "Offer",
-    "name":  "SoftJunk 5 USD One-Lead Rescue",
-    "description":  "One-screen 5 USD PayPal checkout card for a quiet lead follow-up rescue, with one rewrite included after seller-side verification.",
-    "price":  "5.00",
-    "priceCurrency":  "USD",
-    "availability":  "https://schema.org/InStock",
-    "url":  "https://paypal.me/softjunk/5USD",
-    "seller":  {
-                   "@type":  "Organization",
-                   "name":  "SoftJunk",
-                   "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
-               },
-    "itemOffered":  {
-                        "@type":  "DigitalDocument",
-                        "name":  "SoftJunk 5 USD buyer card",
-                        "url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
-                        "encodingFormat":  "application/json"
-                    },
-    "potentialAction":  {
-                            "@context":  "https://schema.org",
-                            "@type":  "BuyAction",
-                            "name":  "Pay exactly 5 USD to SoftJunk on PayPal",
-                            "target":  {
-                                           "@type":  "EntryPoint",
-                                           "urlTemplate":  "https://paypal.me/softjunk/5USD",
-                                           "httpMethod":  "GET",
-                                           "actionPlatform":  [
-                                                                  "https://schema.org/DesktopWebPlatform",
-                                                                  "https://schema.org/MobileWebPlatform"
-                                                              ]
-                                       },
-                            "priceSpecification":  {
-                                                       "@type":  "PriceSpecification",
-                                                       "price":  "5.00",
-                                                       "priceCurrency":  "USD"
-                                                   },
-                            "seller":  {
-                                           "@type":  "Organization",
-                                           "name":  "SoftJunk",
-                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/"
-                                       },
-                            "object":  {
-                                           "@type":  "DigitalDocument",
-                                           "name":  "SoftJunk 5 USD buyer card",
-                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
-                                           "encodingFormat":  "text/html"
-                                       },
-                            "result":  {
-                                           "@type":  "DigitalDocument",
-                                           "name":  "One-lead follow-up rescue after seller-side PayPal verification",
-                                           "url":  "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
-                                       },
-                            "additionalProperty":  [
-                                                       {
-                                                           "@type":  "PropertyValue",
-                                                           "name":  "success_signal",
-                                                           "value":  "PAYPAL_PAYMENT_VERIFIED=true"
-                                                       },
-                                                       {
-                                                           "@type":  "PropertyValue",
-                                                           "name":  "one_rewrite_included",
-                                                           "value":  "One rewrite is included for a custom sequence after verified payment when the buyer supplies non-sensitive context."
-                                                       },
-                                                       {
-                                                           "@type":  "PropertyValue",
-                                                           "name":  "privacy_gate",
-                                                           "value":  "Use placeholders only; do not post customer or PayPal details in public forms."
-                                                       }
-                                                   ]
-                        }
+  "@context": "https://schema.org",
+  "@type": "Offer",
+  "name": "SoftJunk 5 USD Packet-First One-Lead Rescue",
+  "description": "One-screen 5 USD buyer card that routes through the one-copy order packet before PayPal checkout, with one rewrite included after seller-side verification.",
+  "price": "5.00",
+  "priceCurrency": "USD",
+  "availability": "https://schema.org/InStock",
+  "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "seller": {
+    "@type": "Organization",
+    "name": "SoftJunk",
+    "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+  },
+  "itemOffered": {
+    "@type": "DigitalDocument",
+    "name": "SoftJunk 5 USD buyer card",
+    "url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
+    "encodingFormat": "application/json"
+  },
+  "potentialAction": {
+    "@context": "https://schema.org",
+    "@type": "BuyAction",
+    "name": "Build the one-copy order packet before PayPal",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "httpMethod": "GET",
+      "actionPlatform": [
+        "https://schema.org/DesktopWebPlatform",
+        "https://schema.org/MobileWebPlatform"
+      ]
+    },
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "price": "5.00",
+      "priceCurrency": "USD"
+    },
+    "seller": {
+      "@type": "Organization",
+      "name": "SoftJunk",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/"
+    },
+    "object": {
+      "@type": "DigitalDocument",
+      "name": "SoftJunk one-copy order packet",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "encodingFormat": "text/html"
+    },
+    "result": {
+      "@type": "DigitalDocument",
+      "name": "One-lead follow-up rescue after seller-side PayPal verification",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "name": "success_signal",
+        "value": "PAYPAL_PAYMENT_VERIFIED=true"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "one_rewrite_included",
+        "value": "One rewrite is included for a custom sequence after verified payment when the buyer supplies non-sensitive context."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "privacy_gate",
+        "value": "Use placeholders only; do not post customer or PayPal details in public forms."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "before_payment_action",
+        "value": "Build or inspect the one-copy order packet before opening PayPal."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "one_copy_order_packet_url",
+        "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "direct_payment_url",
+        "value": "https://paypal.me/softjunk/5USD"
+      }
+    ]
+  },
+  "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+  "paymentUrl": "https://paypal.me/softjunk/5USD"
 }
   </script>
   <style>
@@ -123,17 +142,20 @@
     <nav aria-label="Buyer routes">
       <a href="./">SoftJunk</a>
       <a href="pay.html">Pay</a>
+      <a href="fix-one-quiet-lead.html">Packet</a>
       <a href="after-pay.html">After paying</a>
       <a href="five-dollar-buyer-card.json">JSON</a>
     </nav>
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
-      <h1 id="page-title">Pay 5 USD. Get one quiet-lead rescue.</h1>
-      <p class="lead">Use this card when one real lead, quote, appointment, missed call, quiet DM, or unanswered estimate is worth more than 5 USD. Pay exactly 5 USD on PayPal; fulfillment starts only after seller-side PayPal evidence or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+      <h1 id="page-title">Build packet, then pay 5 USD.</h1>
+      <p class="lead">Use this card when one real lead, quote, appointment, missed call, quiet DM, or unanswered estimate is worth more than 5 USD. Build the one-copy order packet first, copy the PayPal note, then pay exactly 5 USD on PayPal; fulfillment starts only after seller-side PayPal evidence or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
       <div class="actions" aria-label="Primary actions">
-        <a id="paypal-payment-link" class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay 5 USD on PayPal</a>
+        <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
+        <a id="paypal-payment-link" class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">PayPal after packet</a>
         <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">Order form after payment</a>
+        <a class="button" href="fix-one-quiet-lead.json">Packet JSON</a>
         <a class="button" href="paypal-buy-action.json">Buyer-agent BuyAction</a>
       </div>
     </section>
@@ -144,7 +166,7 @@
     </section>
     <section class="panel" aria-labelledby="proof-title">
       <h2 id="proof-title">No-clone checkout proof</h2>
-      <p>Buyer agents can verify the current package route without cloning this repo:</p>
+      <p>Buyer agents can verify the current package route without cloning this repo, then open the one-copy order packet before PayPal:</p>
       <p class="note">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json</p>
       <p>Release: <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">v2.29.163</a>. Current release tarball SHA-256 file: <code>https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256</code>. Stop only after seller-side PayPal proof, PayPal API verification, trusted seller-side CSV proof, or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
     </section>
@@ -158,7 +180,7 @@
       </div>
     </section>
   </main>
-  <footer><p>Payment URL: https://paypal.me/softjunk/5USD. Do not mark paid or delivered until seller-side evidence verifies the 5 USD payment.</p></footer>
+  <footer><p>Order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. Payment URL after packet: https://paypal.me/softjunk/5USD. Do not mark paid or delivered until seller-side evidence verifies the 5 USD payment.</p></footer>
   <script>
     (function () {
       var noteButton = document.getElementById('copy-paypal-note');

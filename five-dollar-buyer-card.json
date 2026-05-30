@@ -1,8 +1,8 @@
 {
-  "schema_version": "softjunk-five-dollar-buyer-card-v1",
-  "updated": "2026-05-28",
-  "name": "SoftJunk 5 USD Buyer Card",
-  "purpose": "One-screen buyer handoff for paying exactly 5 USD on PayPal for one SoftJunk one-lead rescue without claiming payment before seller-side verification.",
+  "schema_version": "softjunk-five-dollar-buyer-card-v2",
+  "updated": "2026-05-30",
+  "name": "SoftJunk 5 USD Packet-First Buyer Card",
+  "purpose": "One-screen buyer handoff for building the one-copy order packet before paying exactly 5 USD on PayPal for one SoftJunk one-lead rescue without claiming payment before seller-side verification.",
   "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
   "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt",
@@ -22,16 +22,16 @@
     "verification_gate": "PAYPAL_PAYMENT_VERIFIED=true"
   },
   "privacy_gate": "Use placeholders only. Do not post customer names, phones, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
-  "pay_now_copy": "Pay exactly 5 USD on PayPal, then submit non-sensitive order context after seller-side verification.",
+  "pay_now_copy": "Build or inspect the one-copy order packet, copy the PayPal note, then pay exactly 5 USD on PayPal and submit non-sensitive order context after seller-side verification.",
   "schema_org_offer": {
     "@context": "https://schema.org",
     "@type": "Offer",
-    "name": "SoftJunk 5 USD One-Lead Rescue",
-    "description": "One-screen 5 USD PayPal checkout card for a quiet lead follow-up rescue, with one rewrite included after seller-side verification.",
+    "name": "SoftJunk 5 USD Packet-First One-Lead Rescue",
+    "description": "One-screen 5 USD buyer card that routes through the one-copy order packet before PayPal checkout, with one rewrite included after seller-side verification.",
     "price": "5.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
-    "url": "https://paypal.me/softjunk/5USD",
+    "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "seller": {
       "@type": "Organization",
       "name": "SoftJunk",
@@ -46,10 +46,10 @@
     "potentialAction": {
       "@context": "https://schema.org",
       "@type": "BuyAction",
-      "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+      "name": "Build the one-copy order packet before PayPal",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://paypal.me/softjunk/5USD",
+        "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
         "httpMethod": "GET",
         "actionPlatform": [
           "https://schema.org/DesktopWebPlatform",
@@ -68,8 +68,8 @@
       },
       "object": {
         "@type": "DigitalDocument",
-        "name": "SoftJunk 5 USD buyer card",
-        "url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+        "name": "SoftJunk one-copy order packet",
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
         "encodingFormat": "text/html"
       },
       "result": {
@@ -92,17 +92,34 @@
           "@type": "PropertyValue",
           "name": "privacy_gate",
           "value": "Use placeholders only; do not post customer or PayPal details in public forms."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "before_payment_action",
+          "value": "Build or inspect the one-copy order packet before opening PayPal."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "one_copy_order_packet_url",
+          "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "direct_payment_url",
+          "value": "https://paypal.me/softjunk/5USD"
         }
       ]
-    }
+    },
+    "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+    "paymentUrl": "https://paypal.me/softjunk/5USD"
   },
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Build the one-copy order packet before PayPal",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://paypal.me/softjunk/5USD",
+      "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "httpMethod": "GET",
       "actionPlatform": [
         "https://schema.org/DesktopWebPlatform",
@@ -121,8 +138,8 @@
     },
     "object": {
       "@type": "DigitalDocument",
-      "name": "SoftJunk 5 USD buyer card",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+      "name": "SoftJunk one-copy order packet",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "encodingFormat": "text/html"
     },
     "result": {
@@ -145,16 +162,31 @@
         "@type": "PropertyValue",
         "name": "privacy_gate",
         "value": "Use placeholders only; do not post customer or PayPal details in public forms."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "before_payment_action",
+        "value": "Build or inspect the one-copy order packet before opening PayPal."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "one_copy_order_packet_url",
+        "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "direct_payment_url",
+        "value": "https://paypal.me/softjunk/5USD"
       }
     ]
   },
   "buyAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Build the one-copy order packet before PayPal",
     "target": {
       "@type": "EntryPoint",
-      "urlTemplate": "https://paypal.me/softjunk/5USD",
+      "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "httpMethod": "GET",
       "actionPlatform": [
         "https://schema.org/DesktopWebPlatform",
@@ -173,8 +205,8 @@
     },
     "object": {
       "@type": "DigitalDocument",
-      "name": "SoftJunk 5 USD buyer card",
-      "url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
+      "name": "SoftJunk one-copy order packet",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "encodingFormat": "text/html"
     },
     "result": {
@@ -197,6 +229,21 @@
         "@type": "PropertyValue",
         "name": "privacy_gate",
         "value": "Use placeholders only; do not post customer or PayPal details in public forms."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "before_payment_action",
+        "value": "Build or inspect the one-copy order packet before opening PayPal."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "one_copy_order_packet_url",
+        "value": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "direct_payment_url",
+        "value": "https://paypal.me/softjunk/5USD"
       }
     ]
   },
@@ -213,6 +260,14 @@
     "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
     "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
-    "payment_boundary": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment."
-  }
+    "payment_boundary": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.",
+    "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+    "before_payment_action": "Build the one-copy order packet before opening PayPal."
+  },
+  "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+  "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+  "direct_payment_url": "https://paypal.me/softjunk/5USD",
+  "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
 }
