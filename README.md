@@ -586,7 +586,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
-- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+- After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html (packet-first: build the one-copy order packet before the after-packet PayPal URL; fulfill only after seller-side PayPal verification)
 
 Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For one quiet lead, start at the root rescue route. For the ready digital kit, inspect the proof page and build the one-copy order packet before paying. For a custom sequence, use the AI agent order path or AI Deal Desk to copy the generated PayPal note before paying.
 

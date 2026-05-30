@@ -117,6 +117,7 @@
   "checkout_note_builder_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
   "printable_paypal_flyer_url": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
+  "after_payment_rule": "The after-payment handoff is packet-first: build or copy the one-copy order packet and PayPal note before using the after-packet PayPal URL, then fulfill only after seller-side PayPal verification.",
   "payment_verification_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md",
   "payment_verification_workflow_template": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION_WORKFLOW.yml.example",
   "llms_url": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
@@ -413,7 +414,7 @@
     "digital_kit": "Lead Follow-Up Kit",
     "custom_sequence": "Use the root one-lead rescue route first for one quiet lead, then use the AI deal desk, custom sequence gallery, custom sequence preview, shareable order link, or agent order path when non-sensitive context is ready. Copy the PayPal note, paste that note into PayPal, pay exactly 5 USD, and submit the one-lead rescue order form.",
     "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
-    "after_payment": "Open the after-payment handoff page for delivery rules and copyable buyer summary.",
+    "after_payment": "Open the after-payment handoff page for packet-first delivery rules, copyable buyer summary, after-packet PayPal URL copy action, and seller-side verification gate.",
     "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment; success signal is PAYPAL_PAYMENT_VERIFIED=true.",
     "one_lead_rescue": "Use the root one-lead rescue route at https://trungcodeer.github.io/rescue/, copy the generated PayPal note, pay exactly 5 USD, then submit the one-lead rescue order form without private customer data."
   },

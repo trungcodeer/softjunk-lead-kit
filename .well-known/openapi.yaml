@@ -19,7 +19,7 @@ x-softjunk-latest-release-status:
   one_copy_order_packet_json_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
   before_payment_action: Build or inspect the one-copy order packet before opening PayPal.
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
-  rule: Use the one-copy order packet first, then open the direct PayPal URL only after the packet and PayPal note are ready. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+  rule: Use the one-copy order packet first, then use the after-packet PayPal URL only after the packet and PayPal note are ready. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 x-softjunk-no-clone-release:
   current_release_tag: v2.29.163
   current_release_url: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
@@ -1495,10 +1495,10 @@ paths:
   /after-pay.html:
     get:
       operationId: openAfterPaymentHandoff
-      summary: Open the after-payment handoff page.
+      summary: Open the packet-first after-payment handoff page.
       responses:
         "200":
-          description: Delivery rules after PayPal payment is visible.
+          description: Packet-first delivery rules that keep the one-copy order packet before the after-packet 5 USD PayPal URL and require seller-side PayPal verification before fulfillment.
           content:
             text/html:
               schema:

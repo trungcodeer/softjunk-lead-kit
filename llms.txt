@@ -623,6 +623,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt
 
 After-payment handoff:
 https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+Packet-first rule: build the one-copy order packet before using the after-packet PayPal URL; fulfill only after seller-side PayPal verification.
 
 Payment verification:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md
@@ -846,7 +847,7 @@ Offers:
 
 Delivery:
 The product ZIP is not public. Buyers pay through PayPal and receive fulfillment manually using the email shown in the PayPal transaction.
-After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
+After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html (packet-first: build the one-copy order packet before the after-packet PayPal URL; fulfill only after seller-side PayPal verification)
 Payment verification script: scripts/verify-paypal-5usd.ps1 in the GitHub repository.
 Manual CSV verification: run scripts/verify-paypal-5usd.ps1 -CsvPath "C:\path\to\paypal-activity.csv" -NoteContains "Lead Follow-Up Kit" against a seller-side PayPal activity export.
 GitHub Actions workflow template: PAYPAL_VERIFICATION_WORKFLOW.yml.example. The enabled workflow should succeed only when the verifier prints PAYPAL_PAYMENT_VERIFIED=true.
@@ -865,7 +866,7 @@ PayPal notes:
 - Agent buyer catalog JSONL: use https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl for retrieval-friendly records covering fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers.
 - Buyer-agent prompt relay: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json or public Gist https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950 when an assistant needs one prompt to qualify fit, inspect the commerce graph, generate a PayPal note, and route a ready buyer to the root one-lead rescue route before the 5 USD PayPal step.
 - Commerce graph: use https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json when a buyer-agent needs Product, Offer, BuyAction, root one-lead rescue, PayPal, order form, and verification nodes before payment.
-- AI checkout: use https://trungcodeer.github.io/rescue/ first for a one-lead buyer; use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready to generate a PayPal note inline, pay exactly $5, and open the after-payment handoff.
+- AI checkout: use https://trungcodeer.github.io/rescue/ first for a one-lead buyer; use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready to generate a PayPal note inline, build the one-copy order packet, use the after-packet PayPal URL, and open the verification-first after-payment handoff.
 
 Best-fit buyers:
 - Dental offices with new patient inquiries, treatment questions, missed calls, or consultation requests
