@@ -1440,10 +1440,10 @@ paths:
   /pay-qr.html:
     get:
       operationId: openPacketQrPage
-      summary: Open the packet-first QR page.
+      summary: Open the packet-first, copy-only QR page.
       responses:
         "200":
-          description: QR page that opens the one-copy order packet before the direct PayPal.Me handoff.
+          description: QR page that opens the one-copy order packet before the copy-only after-packet PayPal URL.
           content:
             text/html:
               schema:
@@ -1465,7 +1465,7 @@ paths:
       summary: Get the packet QR SVG for the $5 checkout handoff.
       responses:
         "200":
-          description: SVG QR code linking to the one-copy order packet before the PayPal handoff.
+          description: SVG QR code linking to the one-copy order packet before the copy-only after-packet PayPal handoff.
           content:
             image/svg+xml:
               schema:
@@ -1473,10 +1473,10 @@ paths:
   /paypal-qr.svg:
     get:
       operationId: getPayPalQrSvg
-      summary: Get the PayPal QR SVG for the $5 checkout.
+      summary: Get the legacy after-packet PayPal QR SVG for the $5 checkout.
       responses:
         "200":
-          description: SVG QR code linking to the exact 5 USD PayPal.Me payment URL.
+          description: Legacy SVG QR code for the exact 5 USD PayPal.Me URL; role legacy_after_packet_only, use only after the one-copy order packet and PayPal note are ready.
           content:
             image/svg+xml:
               schema:

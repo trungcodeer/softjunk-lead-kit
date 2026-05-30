@@ -809,7 +809,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 Direct PayPal handoff after packet:
 https://paypal.me/softjunk/5USD
 
-Packet QR page:
+Packet QR page (copy-only after-packet PayPal URL; build packet and note first):
 https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 
 Printable QR flyer:
@@ -818,7 +818,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
 Packet QR SVG:
 https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
 
-Direct PayPal QR SVG:
+Legacy after-packet PayPal QR SVG:
 https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 
 Social card:

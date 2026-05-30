@@ -579,10 +579,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Raw commerce graph text: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt
 - Fast checkout with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title (copy-only after-packet PayPal URL; build packet and note first)
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html (copy-only after-packet PayPal URL; build packet and note first)
-- Packet-first QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
+- Packet-first QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html (copy-only after-packet PayPal URL; build packet and note first)
 - Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
 - Packet QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
-- Direct PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
+- Legacy after-packet PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
 - Paid ZIP proof route: inspect proof and manifest, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then open PayPal only after the packet is ready.
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
