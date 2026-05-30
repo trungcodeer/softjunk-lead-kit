@@ -11253,6 +11253,50 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Roofing Estimate Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `roofing-estimate-follow-up`, `roofing-estimate-generator`, and `roofing-estimate-rescue` HTML/JSON/TXT routes from direct PayPal-first CTAs to one-copy order packet-first routes; updated OpenAPI, buyer index, README, `llms.txt`, RSS feed, and sitemap discovery.
+- Active slice status: product commit `7463ae1` (`7463ae184c6426ccfaecf329518289fdb0051e40`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused direct-href audit returned zero direct `href="https://paypal.me/softjunk/5USD"` entries in `roofing-estimate-follow-up.html`, `roofing-estimate-generator.html`, and `roofing-estimate-rescue.html`.
+- Focused marker audit returned packet URLs in all three HTML pages: follow-up `packetMentions=6`, generator `packetMentions=5`, rescue `packetMentions=3`.
+- Focused JSON-LD validation passed: `focused_html_jsonld_ok files=3`.
+- Recursive JSON parse passed: `json_parse_ok files=61`.
+- Feed and sitemap XML parse passed: `xml_parse_ok feed_sitemap=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-0WGC61QJEAcVgBe87nVlc/4Hhp9yh3skrVg3GAvfiJhJMfqix+lmR40pNIySWRJ3MDsCHxpjm7jrnosNT6KK5A==`, shasum `bd9c7e0309cbec660ce9d503678d57d79f6c301d`.
+- Product Pages run: `26685048946`, conclusion `success`.
+- Live verification: `live_roofing_estimate_packet_first_ok commit=7463ae1 urls=15`.
+- IndexNow: `indexnow_roofing_estimate_packet_first_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a high-intent roofing estimate buyer route and keeps payment packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, roofing estimate HTML/JSON/TXT surfaces, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Roofing Estimate Packet-First Route, product commit `7463ae1` (`7463ae184c6426ccfaecf329518289fdb0051e40`).
+- Full checkpoint section: `2026-05-30 Roofing Estimate Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26685048946` success; live verification `live_roofing_estimate_packet_first_ok commit=7463ae1 urls=15`; IndexNow `indexnow_roofing_estimate_packet_first_ok status=200 urls=15`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-30 Exact-Intent Samples Packet-First Checkpoint
 
 TodoCheckpointDraft:

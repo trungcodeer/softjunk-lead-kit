@@ -2365,6 +2365,35 @@ Payment gate:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 Roofing Estimate Packet-First Evidence
+
+- Product commit: `7463ae1` (`7463ae184c6426ccfaecf329518289fdb0051e40`) on `main`.
+- Changed buyer-facing routes: `roofing-estimate-follow-up.html/json/txt`, `roofing-estimate-generator.html/json/txt`, and `roofing-estimate-rescue.html/json/txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- Local focused direct-href audit returned zero direct PayPal hrefs in the three roofing estimate HTML pages and packet markers in all three pages.
+- Focused JSON-LD validation returned `focused_html_jsonld_ok files=3`.
+- Recursive JSON parse returned `json_parse_ok files=61`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-0WGC61QJEAcVgBe87nVlc/4Hhp9yh3skrVg3GAvfiJhJMfqix+lmR40pNIySWRJ3MDsCHxpjm7jrnosNT6KK5A==`, shasum `bd9c7e0309cbec660ce9d503678d57d79f6c301d`.
+- Product Pages run `26685048946` completed successfully.
+- Live verification returned `live_roofing_estimate_packet_first_ok commit=7463ae1 urls=15` for the nine roofing estimate files plus `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- IndexNow returned `indexnow_roofing_estimate_packet_first_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Roofing Estimate Packet-First Route, product commit `7463ae1` (`7463ae184c6426ccfaecf329518289fdb0051e40`).
+- Full evidence section: `2026-05-30 Roofing Estimate Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26685048946` success.
+- Live verification evidence: `live_roofing_estimate_packet_first_ok commit=7463ae1 urls=15`.
+- Discovery ping evidence: `indexnow_roofing_estimate_packet_first_ok status=200 urls=15`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 Exact-Intent Samples Packet-First Evidence
 
 - Audited exact-intent sample pages where direct PayPal appeared before the one-copy order packet.
