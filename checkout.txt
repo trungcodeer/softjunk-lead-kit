@@ -1,6 +1,12 @@
 SoftJunk AI checkout handoff
 
-Use this when a buyer, virtual assistant, or AI assistant is ready to pay 5 USD for the SoftJunk lead follow-up kit or custom 7-day sequence:
+Use this when a buyer, virtual assistant, or AI assistant is ready to build the one-copy order packet and then pay 5 USD for the SoftJunk lead follow-up kit or custom 7-day sequence:
+
+One-copy order packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Machine-readable packet JSON:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
@@ -8,19 +14,21 @@ Machine-readable checkout JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.json
 
 Recommended flow:
-1. If the buyer is ready to pay, open checkout and use the inline custom sequence note builder:
+1. Build or inspect the one-copy order packet first:
+   https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+2. If the buyer is ready to pay, open checkout and use the inline custom sequence note builder:
    https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
-2. If the buyer needs a decision or preview first, open the AI Deal Desk:
+3. If the buyer needs a decision or preview first, open the AI Deal Desk:
    https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
-3. Copy the generated PayPal note.
-4. Run no-clone checkout proof:
+4. Copy the generated PayPal note.
+5. Run no-clone checkout proof:
    npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
-5. Verify release notes and release asset SHA-256:
+6. Verify release notes and release asset SHA-256:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
    https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
-6. Pay exactly 5 USD:
+7. Pay exactly 5 USD after the packet is ready:
    https://paypal.me/softjunk/5USD
-7. Open the after-payment handoff:
+8. Open the after-payment handoff:
    https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
 Digital kit PayPal note:
