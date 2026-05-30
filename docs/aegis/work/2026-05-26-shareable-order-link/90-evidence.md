@@ -10588,3 +10588,35 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_buyer_relay_copy_only_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Broad Copy-Only Payment Handoff Evidence
+
+- Product commits: `e8d80e5` (`e8d80e5e784a0b968fc3e8f270e74b8f242a05e6`) and `c61e1ae` (`c61e1ae0d047e4af1f6eff2bb9ff6c07209cb644`) on `main`.
+- Changed surfaces: 134 files across public Pages routes, `.well-known` manifests, GitHub issue templates/support files, agent cards, checkout/payment-intent JSON, CLI/MCP strings, distribution gists, buyer-send/niche pages, README/LLM discovery, and XML discovery feeds.
+- Full JSON parse returned `json_parse_ok files=65`.
+- JSONL parse returned `jsonl_parse_ok files=1 lines=58`.
+- XML shape check returned `xml_shape_ok files=2`.
+- Hidden and non-hidden stale wording scan returned no matches for `before opening the after-packet PayPal URL`, `opening the after-packet PayPal URL`, `Open PayPal`, `open PayPal`, `Direct PayPal`, `direct PayPal`, `pay exactly`, `Pay exactly`, `then pay`, `ready to pay`, or `paying exactly` outside `docs/`.
+- Focused JSON parse after the final live-verifier fix returned `focused_json_parse_ok files=2`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, size `495308`, unpackedSize `2847042`, integrity `sha512-RaYhDYmMkEKcZRs2eSssgHIrPb2IkRXP0diqOhAId8brkgaNC8glper6/X3igwGE7sfo3LRoiWHH5y9lteB12Q==`, shasum `4757769f6643eabaa91e0ab719d93d51ef6715df`.
+- Product Pages run `26697521844` completed successfully for commit `e8d80e5e784a0b968fc3e8f270e74b8f242a05e6`.
+- Product Pages run `26697607366` completed successfully for commit `c61e1ae0d047e4af1f6eff2bb9ff6c07209cb644`.
+- Live verification initially found four case-insensitive stale labels (`Ready to pay`, `Then Pay`, and `then PayPal`) in `BUYER_INDEX.md`, `agent-buy-brief.html`, `agent-offer.json`, and `commerce-graph.json`; commit `c61e1ae` removed those remaining labels.
+- Final live verification returned `live_copy_only_payment_handoff_ok commit=c61e1ae pagesUrls=126 pagesMarkerUrls=119 rawUrls=8 rawMarkerUrls=4`.
+- IndexNow returned `indexnow_copy_only_payment_handoff_ok status=200 urls=125 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Broad Copy-Only Payment Handoff, product commits `e8d80e5` and `c61e1ae`.
+- Full evidence section: `2026-05-31 Broad Copy-Only Payment Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26697607366` success.
+- Live verification evidence: `live_copy_only_payment_handoff_ok commit=c61e1ae pagesUrls=126 rawUrls=8`.
+- Discovery ping evidence: `indexnow_copy_only_payment_handoff_ok status=200 urls=125`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

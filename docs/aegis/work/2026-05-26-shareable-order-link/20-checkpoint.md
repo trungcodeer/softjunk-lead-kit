@@ -14150,6 +14150,50 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Broad Copy-Only Payment Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted the remaining broad public/package/GitHub-native checkout wording from direct/pay-first phrasing to packet-first copy-only after-packet PayPal URL phrasing across Pages, `.well-known`, GitHub templates, agent cards, buyer packets, checkout JSON, CLI/MCP text, and niche buyer handoffs.
+- Active slice status: product commits `e8d80e5` (`e8d80e5e784a0b968fc3e8f270e74b8f242a05e6`) and `c61e1ae` (`c61e1ae0d047e4af1f6eff2bb9ff6c07209cb644`) are pushed to `main`; GitHub Pages run `26697607366` completed successfully for `c61e1ae`.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Full JSON parse returned `json_parse_ok files=65`.
+- JSONL parse returned `jsonl_parse_ok files=1 lines=58`.
+- XML shape check returned `xml_shape_ok files=2`.
+- Hidden and non-hidden stale wording scan returned no matches for the blocked direct/pay-first phrases in non-doc files.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, entryCount `215`, size `495308`, unpackedSize `2847042`, integrity `sha512-RaYhDYmMkEKcZRs2eSssgHIrPb2IkRXP0diqOhAId8brkgaNC8glper6/X3igwGE7sfo3LRoiWHH5y9lteB12Q==`, shasum `4757769f6643eabaa91e0ab719d93d51ef6715df`.
+- Product Pages run `26697607366` completed successfully for commit `c61e1ae0d047e4af1f6eff2bb9ff6c07209cb644`.
+- Live verification returned `live_copy_only_payment_handoff_ok commit=c61e1ae pagesUrls=126 pagesMarkerUrls=119 rawUrls=8 rawMarkerUrls=4`.
+- IndexNow returned `indexnow_copy_only_payment_handoff_ok status=200 urls=125`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned discovery and handoff surfaces so a fitting buyer receives packet-first, copy-only, payment-real instructions without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, GitHub Pages, package metadata, GitHub issue templates, buyer-agent/share routes, CLI/MCP output, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target and payment proof remains seller-side only.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Broad Copy-Only Payment Handoff, commits `e8d80e5` and `c61e1ae` on `main`.
+- Full checkpoint section: `2026-05-31 Broad Copy-Only Payment Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26697607366` success; live verification `live_copy_only_payment_handoff_ok commit=c61e1ae pagesUrls=126 rawUrls=8`; IndexNow `indexnow_copy_only_payment_handoff_ok status=200 urls=125`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-31 Buyer Relay Copy-Only PayPal Handoff Checkpoint
 
 TodoCheckpointDraft:
