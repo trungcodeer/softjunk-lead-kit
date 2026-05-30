@@ -2305,6 +2305,59 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 AI Handoff Packet-First Evidence
+
+- Audited high-intent AI handoff surfaces where buyer agents could still see direct PayPal before a one-copy order packet.
+- Updated product commit `25cb433` (`25cb43354c0b2676692fca60e109944117f0051d`):
+  - `ai-deal-desk.html`, `.json`, and `.txt` now route paid buyer handoff through `fix-one-quiet-lead.html` before PayPal.
+  - `custom-sequence-gallery.html`, `.json`, and `.txt` now route scenario buyers through the one-copy order packet before the after-packet PayPal URL.
+  - `shareable-order-link.html`, `.json`, and `.txt` now generate share links and PayPal notes but point paid CTAs to the order packet first.
+  - `buyer-index.json` now exposes `ai_handoff_order_packet_url` and packet-first copy-ready prompts for AI Deal Desk, custom sequence gallery, and shareable order link.
+  - `.well-known/openapi.yaml`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt` now describe the AI handoff packet-first route.
+  - Accessibility affordances remain present on the edited HTML surfaces: semantic anchors/buttons/forms, labels, live status regions, visible focus styling, and no mouse-only purchase path.
+- Local verification:
+  - `focused_ai_handoff_packet_first_ok files=10`.
+  - No `href="https://paypal.me/softjunk/5USD"`, `Open PayPal`, or visible `Pay $5` CTA remains in `ai-deal-desk.html`, `custom-sequence-gallery.html`, or `shareable-order-link.html`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-ofZ4RZ/IIVwVySBpn635eb5Q+Juk+zqBwI6GBHL34t3mZ8QhQZqc4E4PIsd2coxlxu7Hnbz50VxYbofzJqi1iQ==`, shasum `2b22282c92de0595c75bb32f7889288fcdd92340`.
+- Deployment:
+  - Product commit `25cb433` pushed to `main`.
+  - Product Pages run `26683076199` completed successfully.
+- Live verification returned `live_ai_handoff_packet_first_ok commit=25cb433 urls=15` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+- IndexNow returned `indexnow_ai_handoff_packet_first_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the fifteen changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: AI Handoff Packet-First Route, product commit `25cb433` (`25cb43354c0b2676692fca60e109944117f0051d`).
+- Full evidence section: `2026-05-30 AI Handoff Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26683076199` success.
+- Live verification evidence: `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`.
+- Discovery ping evidence: `indexnow_ai_handoff_packet_first_ok status=200 urls=15`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-26 Funnel Alignment Evidence
 
 Local validation:
@@ -9438,5 +9491,15 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26682499694` success.
 - Live verification evidence: `live_preview_order_funnel_packet_first_ok commit=f9dec40 urls=13`.
 - Discovery ping evidence: `indexnow_preview_order_funnel_packet_first_ok status=200 urls=13`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: AI Handoff Packet-First Route, product commit `25cb433` (`25cb43354c0b2676692fca60e109944117f0051d`).
+- Full evidence section: `2026-05-30 AI Handoff Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26683076199` success.
+- Live verification evidence: `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`.
+- Discovery ping evidence: `indexnow_ai_handoff_packet_first_ok status=200 urls=15`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

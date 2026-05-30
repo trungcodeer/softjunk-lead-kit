@@ -12655,3 +12655,57 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 AI Handoff Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: AI Handoff Packet-First Route.
+- Completed todos:
+  - Audited `ai-deal-desk.html`, `custom-sequence-gallery.html`, and `shareable-order-link.html` for visible direct PayPal CTAs before the one-copy order packet.
+  - Updated the three HTML surfaces so paid buyer CTAs route through `fix-one-quiet-lead.html`.
+  - Updated `ai-deal-desk.json`, `custom-sequence-gallery.json`, `shareable-order-link.json`, and their text mirrors with `one_copy_order_packet_url`, `before_payment_action`, and after-packet PayPal fields/copy.
+  - Updated `buyer-index.json` with `ai_handoff_order_packet_url` and packet-first copy-ready prompts.
+  - Updated discovery surfaces: `.well-known/openapi.yaml`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+  - Committed and pushed product commit `25cb433` (`25cb43354c0b2676692fca60e109944117f0051d`) to `main`.
+  - Waited for GitHub Pages run `26683076199`, which completed successfully.
+  - Live-verified fifteen product/discovery URLs with marker `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`.
+  - Submitted the fifteen changed owned Pages URLs to IndexNow with marker `indexnow_ai_handoff_packet_first_ok status=200 urls=15`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `focused_ai_handoff_packet_first_ok files=10`.
+- Direct PayPal CTA validation: no `href="https://paypal.me/softjunk/5USD"`, `Open PayPal`, or visible `Pay $5` CTA remains in `ai-deal-desk.html`, `custom-sequence-gallery.html`, or `shareable-order-link.html`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-ofZ4RZ/IIVwVySBpn635eb5Q+Juk+zqBwI6GBHL34t3mZ8QhQZqc4E4PIsd2coxlxu7Hnbz50VxYbofzJqi1iQ==`, shasum `2b22282c92de0595c75bb32f7889288fcdd92340`.
+- Product Pages run: `26683076199`, conclusion `success`, head SHA `25cb43354c0b2676692fca60e109944117f0051d`.
+- Live verification: `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`.
+- IndexNow: `indexnow_ai_handoff_packet_first_ok status=200 urls=15 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves high-intent AI handoff buyer routes and keeps payment packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, AI Deal Desk, custom sequence gallery, shareable order link, JSON/text mirrors, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- AI Handoff Packet-First Route, product commit `25cb433` (`25cb43354c0b2676692fca60e109944117f0051d`).
+- Full checkpoint section: `2026-05-30 AI Handoff Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26683076199` success; live verification `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`; IndexNow `indexnow_ai_handoff_packet_first_ok status=200 urls=15`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
