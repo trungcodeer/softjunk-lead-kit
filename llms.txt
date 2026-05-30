@@ -746,16 +746,22 @@ Niche pages:
 - Quiet DM follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 - Quiet DM follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt
 
-Payment:
+One-copy order packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Direct PayPal handoff after packet:
 https://paypal.me/softjunk/5USD
 
-PayPal QR page:
+Packet QR page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 
 Printable QR flyer:
 https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
 
-PayPal QR SVG:
+Packet QR SVG:
+https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
+
+Direct PayPal QR SVG:
 https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 
 Social card:

@@ -41,14 +41,21 @@
           "price": "5.00",
           "priceCurrency": "USD",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+          "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+          "paymentUrl": "https://paypal.me/softjunk/5USD",
           "availability": "https://schema.org/InStock",
           "seller": {
             "@type": "Organization",
             "name": "SoftJunk"
           },
           "potentialAction": {
-            "@type": "PayAction",
-            "target": "https://paypal.me/softjunk/5USD",
+            "@type": "BuyAction",
+            "name": "Build the one-copy order packet before paying exactly 5 USD",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+              "httpMethod": "GET"
+            },
             "price": "5.00",
             "priceCurrency": "USD"
           }
@@ -442,6 +449,8 @@
       "price": "5.00",
       "priceCurrency": "USD",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+      "paymentUrl": "https://paypal.me/softjunk/5USD",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
@@ -456,10 +465,10 @@
       },
       "potentialAction": {
         "@type": "BuyAction",
-        "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+        "name": "Build the one-copy order packet before paying exactly 5 USD",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://paypal.me/softjunk/5USD",
+          "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
           "httpMethod": "GET"
         },
         "priceSpecification": {
@@ -615,9 +624,9 @@
           <p><a href="checkout.json">Open checkout JSON</a></p>
         </div>
         <div class="scan-pay" aria-labelledby="scan-pay-title">
-          <h2 id="scan-pay-title">Scan to pay</h2>
-          <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk checkout">
-          <p><a href="pay-qr.html">Open QR payment page</a></p>
+          <h2 id="scan-pay-title">Scan packet first</h2>
+          <img src="packet-qr.svg" alt="QR code linking to the SoftJunk one-copy order packet">
+          <p><a href="pay-qr.html">Open packet QR page</a></p>
           <p><a href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal $5 link after packet</a></p>
         </div>
       </aside>

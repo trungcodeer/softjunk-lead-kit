@@ -1454,7 +1454,7 @@ paths:
       summary: Open the AI checkout handoff page.
       responses:
         "200":
-          description: Agent-first checkout page with inline PayPal note builder, AI Deal Desk, exact 5 USD PayPal payment, after-payment handoff, GitHub buyer discussion, and verification gate.
+          description: Agent-first checkout page that keeps the one-copy order packet before the exact 5 USD PayPal handoff, with inline PayPal note builder, after-payment handoff, GitHub buyer discussion, and verification gate.
           content:
             text/html:
               schema:
@@ -1465,7 +1465,7 @@ paths:
       summary: Get the AI checkout handoff JSON.
       responses:
         "200":
-          description: Machine-readable checkout contract with inline PayPal note builder, AI Deal Desk route, exact 5 USD PayPal URL, PayPal note templates, after-payment handoff, and verification gate.
+          description: Machine-readable checkout contract with one-copy order packet first, inline PayPal note builder, AI Deal Desk route, direct after-packet PayPal URL, PayPal note templates, after-payment handoff, and verification gate.
           content:
             application/json:
               schema:
