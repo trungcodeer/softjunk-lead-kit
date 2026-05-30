@@ -11199,6 +11199,56 @@ DriftCheckDraft:
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
 
+## 2026-05-30 NPM Funding Packet Checkpoint
+
+Current todo:
+- Route package-native funding surfaces through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `package.json`, `NPM_FUNDING.md`, `npm-funding.json`, package-facing buyer indexes, CLI doctor output, MCP funding route output, MCP smoke coverage, and `sitemap.xml`.
+
+Completed todos:
+- Updated `package.json` so top-level `funding.url` and `softjunk.npm_funding_url` point to `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+- Preserved the exact PayPal route as `softjunk.npm_funding_direct_payment_url=https://paypal.me/softjunk/5USD` and made `softjunk.before_payment_action` require the one-copy order packet before PayPal.
+- Updated `NPM_FUNDING.md` and `npm-funding.json` so package-native buyers see the packet URL first and PayPal only as the direct payment URL after the packet is ready.
+- Updated `README.md`, `llms.txt`, `sponsor-button-buy.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `agents-checkout.json` so package/native agent surfaces agree on the packet-first NPM funding route.
+- Updated `bin/softjunk-lead-kit.js` doctor output and `mcp-server-softjunk.js` `get_softjunk_npm_funding_route` output with packet-first funding URL plus direct PayPal URL.
+- Expanded `scripts/mcp-agent-relay-smoke.js` to assert the MCP NPM funding route is present, returns the packet URL as `funding_url`, returns PayPal as `direct_payment_url`, and includes a one-copy packet before-payment action.
+- Updated `sitemap.xml` to include `NPM_FUNDING.md`, `npm-funding.json`, `package.json`, `README.md`, `llms.txt`, and `agents-checkout.json` with `lastmod=2026-05-30`.
+- Committed and pushed product commit `ced8228` to `main`.
+- Product Pages run `26674667903` completed successfully.
+- Live Pages/raw verification returned `live_package_funding_packet_ok commit=ced8228 pages=10 raw=3 catalog_record=softjunk_npm_package_funding_route`.
+- Submitted ten changed product Pages URLs to IndexNow; API returned `indexnow_package_funding_packet_ok status=200 urls=10`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `package_funding_json_parse_ok json_files=5 jsonl_lines=58`.
+- `package_funding_packet_ok funding_url=https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+- `sitemap_package_funding_lastmod_ok urls=9`.
+- `npm fund --json` passed and returned package funding URL `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-bayu9kMOES/7yAhoXLqdlyhWW58iEQBjF96YRahIa56WbCv5c7vn9VUAtp7bWKcBhFE0Y1eiPX631yzIC+l2lg==`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26674667903` success.
+- Live verification: `live_package_funding_packet_ok commit=ced8228 pages=10 raw=3 catalog_record=softjunk_npm_package_funding_route`.
+- IndexNow: `indexnow_package_funding_packet_ok status=200 urls=10`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves package-native NPM funding, CLI, MCP, and machine-readable buyer routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, package metadata, NPM funding metadata, CLI/MCP outputs, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains the direct payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
 ## 2026-05-29 Agent Discovery Packet Checkout Checkpoint
 
 Current todo:
@@ -11492,3 +11542,14 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, `.github/FUNDING.yml`, public Gist mirrors, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- NPM Funding Packet, product commit `ced8228`.
+- Full checkpoint section: `2026-05-30 NPM Funding Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26674667903` success; live verification `live_package_funding_packet_ok commit=ced8228 pages=10 raw=3 catalog_record=softjunk_npm_package_funding_route`; IndexNow `indexnow_package_funding_packet_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

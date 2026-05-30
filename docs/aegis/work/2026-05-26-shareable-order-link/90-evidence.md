@@ -8326,6 +8326,49 @@ Latest adjacent-discovery refresh:
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 NPM Funding Packet Evidence
+
+- Audited package-native funding surfaces after the PayPal note and Sponsor button became packet-first.
+- Found that package metadata and package-facing agent surfaces still exposed direct PayPal as the package funding destination instead of making the one-copy order packet the first buyer action.
+- Updated product commit `ced8228`:
+  - `package.json` now sets top-level `funding.url` and `softjunk.npm_funding_url` to `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+  - `package.json` preserves `softjunk.npm_funding_direct_payment_url=https://paypal.me/softjunk/5USD` and `softjunk.before_payment_action=Build or inspect the one-copy order packet before opening PayPal.`
+  - `NPM_FUNDING.md` and `npm-funding.json` now document package-native funding as packet-first, with PayPal as the direct payment URL after the packet is ready.
+  - `README.md`, `llms.txt`, `sponsor-button-buy.json`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `agents-checkout.json` now agree on the packet-first NPM funding route.
+  - `bin/softjunk-lead-kit.js` doctor output now reports `npm_funding_url=https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html` and `npm_funding_direct_payment_url=https://paypal.me/softjunk/5USD`.
+  - `mcp-server-softjunk.js` `get_softjunk_npm_funding_route` output now returns the packet URL as `funding_url` and PayPal as `direct_payment_url`.
+  - `scripts/mcp-agent-relay-smoke.js` now covers the MCP NPM funding route and asserts packet-first behavior.
+  - `sitemap.xml` now includes package funding docs and package-facing metadata URLs with `lastmod=2026-05-30`.
+- Local verification:
+  - `package_funding_json_parse_ok json_files=5 jsonl_lines=58`.
+  - `package_funding_packet_ok funding_url=https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+  - `sitemap_package_funding_lastmod_ok urls=9`.
+  - `npm fund --json` returned the package funding URL `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-bayu9kMOES/7yAhoXLqdlyhWW58iEQBjF96YRahIa56WbCv5c7vn9VUAtp7bWKcBhFE0Y1eiPX631yzIC+l2lg==`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `ced8228` pushed to `main`.
+  - Product Pages run `26674667903` completed successfully.
+- Live verification returned `live_package_funding_packet_ok commit=ced8228 pages=10 raw=3 catalog_record=softjunk_npm_package_funding_route` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/NPM_FUNDING.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/package.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agents-checkout.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/ced8228/bin/softjunk-lead-kit.js`.
+  - `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/ced8228/mcp-server-softjunk.js`.
+  - `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/ced8228/scripts/mcp-agent-relay-smoke.js`.
+- IndexNow returned `indexnow_package_funding_packet_ok status=200 urls=10` for the ten changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 Agent Checkout Router Packet Evidence
 
 - Audited residual owned checkout surfaces after the agent discovery packet checkout slice.
@@ -8486,3 +8529,13 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_note_sponsor_packet_ok status=200 urls=5` for the five changed product Pages URLs.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: NPM Funding Packet, product commit `ced8228`.
+- Full evidence section: `2026-05-30 NPM Funding Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26674667903` success.
+- Live verification evidence: `live_package_funding_packet_ok commit=ced8228 pages=10 raw=3 catalog_record=softjunk_npm_package_funding_route`.
+- Discovery ping evidence: `indexnow_package_funding_packet_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
