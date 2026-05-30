@@ -10318,3 +10318,31 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_med_spa_follow_up_copy_only_ok status=200 urls=4`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tutoring Follow-Up Copy-Only Handoff Evidence
+
+- Product commit: `59ac55a` (`59ac55a1b47a9fb81922c80ac8237b258647c4c6`) on `main`.
+- Changed buyer-facing route: `tutoring-follow-up.html`.
+- Changed discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `tutoring_follow_up_copy_only_static_ok direct_href=0 copy_markers=2 jsonld_blocks=2 inline_scripts=1`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Discovery marker scan returned `tutoring_follow_up_discovery_static_ok files=3`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-4au0+LqwXGMlmYcIQ/0JA+4pX5avj7SW4mdbtMbpjmXGau2ULjhabrNlPV3AveeOYb69VRL01AzbQErgPPqHtQ==`, shasum `f0aae77f5e955522072e44a4c297bf0683280c56`.
+- Product Pages run `26693404951` completed successfully.
+- Live verification returned `live_tutoring_follow_up_copy_only_ok commit=59ac55a urls=4` for `tutoring-follow-up.html`, `README.md`, `llms.txt`, and `sitemap.xml`.
+- IndexNow returned `indexnow_tutoring_follow_up_copy_only_ok status=200 urls=4 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Tutoring Follow-Up Copy-Only Handoff, product commit `59ac55a` (`59ac55a1b47a9fb81922c80ac8237b258647c4c6`).
+- Full evidence section: `2026-05-31 Tutoring Follow-Up Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26693404951` success.
+- Live verification evidence: `live_tutoring_follow_up_copy_only_ok commit=59ac55a urls=4`.
+- Discovery ping evidence: `indexnow_tutoring_follow_up_copy_only_ok status=200 urls=4`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
