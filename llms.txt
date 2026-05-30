@@ -786,10 +786,10 @@ Niche pages:
 - Tutoring follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
 - HVAC lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
 - Roofing estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
-- Real estate lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
-- Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
+- Real estate lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
+- Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
 - Roofing estimate packet-first route: roofing-estimate-rescue, roofing-estimate-generator, and roofing-estimate-follow-up build the one-copy order packet before the after-packet PayPal handoff.
-- Niche template paid route: for the dental, appointment-setting, med spa, tutoring, and HVAC templates, build the one-copy order packet first, then copy the after-packet PayPal URL when the packet and note are ready. Real estate and plumbing templates remain packet-first before the after-packet PayPal handoff. Fulfillment is not proven until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+- Niche template paid route: for the dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then copy the after-packet PayPal URL when the packet and note are ready. Fulfillment is not proven until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 - Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
 - Missed call paid route: build the one-copy order packet before the after-packet PayPal handoff.
