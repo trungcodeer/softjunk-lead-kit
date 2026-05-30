@@ -10067,6 +10067,35 @@ Latest adjacent-discovery refresh:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-31 Packet QR Copy-Only Handoff Evidence
+
+- Product commit: `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`) on `main`.
+- Changed buyer-facing route: `pay-qr.html`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `pay_qr_copy_only_static_ok direct_href=0 copy_buttons=3 jsonld_blocks=2 inline_scripts=1`.
+- Local focused JSON parse returned `json_ok offers.json`, `json_ok product-feed.json`, and `json_ok buyer-index.json`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- Discovery marker scan returned `pay_qr_discovery_static_ok files=8`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-WQM71hjhpLqmXTI5MSNluZiaSBt1RRIRY/O3djqveOwfcYOkRXyL4MxPZcZ5xsL3OeJXDywcqPVKhabtrvXsIA==`, shasum `a15785963a0a061522de1ef3556849483babc64a`.
+- Product Pages run `26691476394` completed successfully.
+- Live verification returned `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9` for `pay-qr.html`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_pay_qr_copy_only_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Current Evidence Pointer
+
+- Latest completed slice: Packet QR Copy-Only Handoff, product commit `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`).
+- Full evidence section: `2026-05-31 Packet QR Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26691476394` success.
+- Live verification evidence: `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`.
+- Discovery ping evidence: `indexnow_pay_qr_copy_only_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-31 Five-Dollar Buyer Card Copy-Only Handoff Evidence
 
 - Product commit: `21c110f` (`21c110fce9a68b7e2a22ee88b9fb11c582bc30ad`) on `main`.
@@ -10123,5 +10152,15 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26690462736` success.
 - Live verification evidence: `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`.
 - Discovery ping evidence: `indexnow_share_kit_copy_only_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Packet QR Copy-Only Handoff, product commit `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`).
+- Full evidence section: `2026-05-31 Packet QR Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26691476394` success.
+- Live verification evidence: `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`.
+- Discovery ping evidence: `indexnow_pay_qr_copy_only_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

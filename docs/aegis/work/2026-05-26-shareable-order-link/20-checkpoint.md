@@ -11242,6 +11242,50 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Packet QR Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `pay-qr.html` from direct PayPal anchors to copy-only after-packet PayPal URL buttons, while keeping the QR route pointed at the one-copy order packet and retaining no-clone proof, buyer note, after-payment handoff, and seller-side verification gate.
+- Updated discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Active slice status: product commit `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML/static validation: `pay_qr_copy_only_static_ok direct_href=0 copy_buttons=3 jsonld_blocks=2 inline_scripts=1`.
+- Focused JSON parse returned `json_ok offers.json`, `json_ok product-feed.json`, and `json_ok buyer-index.json`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- Discovery marker scan returned `pay_qr_discovery_static_ok files=8`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-WQM71hjhpLqmXTI5MSNluZiaSBt1RRIRY/O3djqveOwfcYOkRXyL4MxPZcZ5xsL3OeJXDywcqPVKhabtrvXsIA==`, shasum `a15785963a0a061522de1ef3556849483babc64a`.
+- Product Pages run: `26691476394`, conclusion `success`.
+- Live verification: `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`.
+- IndexNow: `indexnow_pay_qr_copy_only_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the public packet QR route by keeping the QR packet-first and the PayPal URL copy-only after packet/note prep, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, packet QR HTML, OpenAPI/RSS/sitemap/LLM discovery, README, offer feeds, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct QR-page anchor.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Current Resume Pointer
+
+Latest completed slice:
+- Packet QR Copy-Only Handoff, product commit `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`).
+- Full checkpoint section: `2026-05-31 Packet QR Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26691476394` success; live verification `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`; IndexNow `indexnow_pay_qr_copy_only_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-31 Five-Dollar Buyer Card Copy-Only Handoff Checkpoint
 
 TodoCheckpointDraft:
@@ -13495,6 +13539,17 @@ Latest completed slice:
 - Share Kit Copy-Only Handoff, product commit `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`).
 - Full checkpoint section: `2026-05-31 Share Kit Copy-Only Handoff Checkpoint`.
 - Deployment evidence: GitHub Pages run `26690462736` success; live verification `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`; IndexNow `indexnow_share_kit_copy_only_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Packet QR Copy-Only Handoff, product commit `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`).
+- Full checkpoint section: `2026-05-31 Packet QR Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26691476394` success; live verification `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`; IndexNow `indexnow_pay_qr_copy_only_ok status=200 urls=9`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
