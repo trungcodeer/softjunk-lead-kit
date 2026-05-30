@@ -10523,3 +10523,38 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_release_target_alignment_v229165_ok status=200 urls=11`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Sample ZIP Copy-Only Release v2.29.166 Evidence
+
+- Product fix commit: `b06be51` (`b06be515e2d9a89288e1da67a0a4c64ace93921c`) on `main`.
+- Release-route commit: `c60d91f` (`c60d91f042df5db9dd79f59803c7372022a434e7`) on `main`.
+- Changed sample and release surfaces: free sample ZIP guide/README, rebuilt `softjunk-free-sample-pack.zip`, sample ZIP hash references, package-native release route markers, distribution release route markers, CLI/MCP smoke surfaces, and buyer-agent discovery files.
+- Local stale scan returned `release_bump_stale_markers_absent_non_docs`.
+- JSON parse validation returned `json_parse_ok files=56`.
+- JSONL parse validation returned `jsonl_parse_ok files=1 lines=58`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and returned release route `v2.29.166`, target `b06be515e2d9a89288e1da67a0a4c64ace93921c`, and sample ZIP SHA-256 `fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, size `504763`, unpackedSize `2860917`, integrity `sha512-OBuiLECP+kFF3GU35ZZp0UoqxtGkrZ/gJ850Ys9bKI+WpSpFPNaM4AtcMYexX0PBPj2j6zdcYAmmmemj5v8yKw==`, shasum `bdab50a59666bf9ec73c2096468f181675f85346`.
+- Release pack created `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-OBuiLECP+kFF3GU35ZZp0UoqxtGkrZ/gJ850Ys9bKI+WpSpFPNaM4AtcMYexX0PBPj2j6zdcYAmmmemj5v8yKw==`, shasum `bdab50a59666bf9ec73c2096468f181675f85346`, SHA-256 `1ee3a61e36683a3c2abab980d17e767fce0d5f33510f2f91ececddae9a9f52d4`.
+- GitHub Release `v2.29.166` was published with target `b06be515e2d9a89288e1da67a0a4c64ace93921c` and assets `softjunk-lead-kit-0.2.2.tgz` plus `softjunk-lead-kit-0.2.2.tgz.sha256`.
+- Public SHA-256 asset returned `release_sha256_asset_ok tag=v2.29.166 status=200 content=1ee3a61e36683a3c2abab980d17e767fce0d5f33510f2f91ececddae9a9f52d4  softjunk-lead-kit-0.2.2.tgz`.
+- Public release-tarball command returned `ok=true`, `tag=v2.29.166`, `target=b06be515e2d9a89288e1da67a0a4c64ace93921c`, amount `5.00`, currency `USD`, payment URL `https://paypal.me/softjunk/5USD`, and action `Build the one-copy order packet before copying the after-packet PayPal URL.`
+- Product Pages run `26696408747` completed successfully for commit `c60d91f042df5db9dd79f59803c7372022a434e7`.
+- Live text verification returned `live_text_release_v229166_ok urls=16 tagHits=16 targetHits=10 copyMarkerUrls=14 sampleMarkerUrls=7` for package-native and Pages surfaces including release route, buyer catalog, checkout, README, llms, CLI/MCP JS, proof, manifest, sample, PayPal intent, and commerce graph.
+- Live sample ZIP verification returned `live_sample_zip_copy_only_v229166_ok sampleSha=fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9 sampleBytes=4444 zipEntries=5`; `sample-guide.html` contains the copy button and `aria-live` status and has no direct PayPal href.
+- IndexNow returned `indexnow_sample_zip_copy_only_v229166_ok status=200 urls=17 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Sample ZIP Copy-Only Release v2.29.166, product fix commit `b06be51` (`b06be515e2d9a89288e1da67a0a4c64ace93921c`) and release-route commit `c60d91f` (`c60d91f042df5db9dd79f59803c7372022a434e7`).
+- Full evidence section: `2026-05-31 Sample ZIP Copy-Only Release v2.29.166 Evidence`.
+- Deployment evidence: GitHub Pages run `26696408747` success.
+- Release evidence: GitHub Release `v2.29.166` target `b06be515e2d9a89288e1da67a0a4c64ace93921c`, tarball SHA-256 `1ee3a61e36683a3c2abab980d17e767fce0d5f33510f2f91ececddae9a9f52d4`, and public no-clone command returned `ok=true`.
+- Live verification evidence: `live_text_release_v229166_ok` and `live_sample_zip_copy_only_v229166_ok`.
+- Discovery ping evidence: `indexnow_sample_zip_copy_only_v229166_ok status=200 urls=17`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

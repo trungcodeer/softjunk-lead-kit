@@ -14101,3 +14101,51 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Sample ZIP Copy-Only Release v2.29.166 Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: removed the direct PayPal checkout action from the free sample ZIP guide, rebuilt the sample ZIP, updated sample ZIP hashes/bytes across package-native and buyer-agent surfaces, routed the current no-clone release command to `v2.29.166`, published the public release tarball, verified the live Pages surfaces, and submitted changed URLs to IndexNow.
+- Active slice status: product fix commit `b06be51` (`b06be515e2d9a89288e1da67a0a4c64ace93921c`) and release-route commit `c60d91f` (`c60d91f042df5db9dd79f59803c7372022a434e7`) are pushed to `main`; GitHub Release `v2.29.166` exists with target `b06be515e2d9a89288e1da67a0a4c64ace93921c`.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Local stale scan returned `release_bump_stale_markers_absent_non_docs`.
+- JSON parse validation returned `json_parse_ok files=56`.
+- JSONL parse validation returned `jsonl_parse_ok files=1 lines=58`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and returned `latest_release_tag=v2.29.166`, `latest_release_target=b06be515e2d9a89288e1da67a0a4c64ace93921c`, and sample ZIP SHA-256 `fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, entryCount `215`, size `504763`, unpackedSize `2860917`, integrity `sha512-OBuiLECP+kFF3GU35ZZp0UoqxtGkrZ/gJ850Ys9bKI+WpSpFPNaM4AtcMYexX0PBPj2j6zdcYAmmmemj5v8yKw==`, shasum `bdab50a59666bf9ec73c2096468f181675f85346`.
+- Release pack created `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-OBuiLECP+kFF3GU35ZZp0UoqxtGkrZ/gJ850Ys9bKI+WpSpFPNaM4AtcMYexX0PBPj2j6zdcYAmmmemj5v8yKw==`, shasum `bdab50a59666bf9ec73c2096468f181675f85346`, SHA-256 `1ee3a61e36683a3c2abab980d17e767fce0d5f33510f2f91ececddae9a9f52d4`.
+- GitHub Release `v2.29.166` target: `b06be515e2d9a89288e1da67a0a4c64ace93921c`; assets: `softjunk-lead-kit-0.2.2.tgz` and `softjunk-lead-kit-0.2.2.tgz.sha256`; published at `2026-05-30T22:20:08Z`.
+- Public SHA-256 asset returned `release_sha256_asset_ok tag=v2.29.166 status=200 content=1ee3a61e36683a3c2abab980d17e767fce0d5f33510f2f91ececddae9a9f52d4  softjunk-lead-kit-0.2.2.tgz`.
+- Public no-clone release command returned `ok=true`, `tag=v2.29.166`, `target=b06be515e2d9a89288e1da67a0a4c64ace93921c`, amount `5.00`, currency `USD`, payment URL `https://paypal.me/softjunk/5USD`, and action `Build the one-copy order packet before copying the after-packet PayPal URL.`
+- Product Pages run: `26696408747`, conclusion `success`, head SHA `c60d91f042df5db9dd79f59803c7372022a434e7`.
+- Live text verification returned `live_text_release_v229166_ok urls=16 tagHits=16 targetHits=10 copyMarkerUrls=14 sampleMarkerUrls=7`.
+- Live sample ZIP verification returned `live_sample_zip_copy_only_v229166_ok sampleSha=fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9 sampleBytes=4444 zipEntries=5`; `sample-guide.html` has no direct PayPal href and includes the copy button plus `aria-live` status.
+- IndexNow returned `indexnow_sample_zip_copy_only_v229166_ok status=200 urls=17 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the sample ZIP and no-clone release route more consistent with packet-first, copy-only payment behavior, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, GitHub Release assets, product GitHub Pages, package metadata, CLI/MCP output, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; a fresh GitHub Release asset was added as the current package-native no-clone route while the stable fallback remains `v2.29.151`.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Sample ZIP Copy-Only Release v2.29.166, product fix commit `b06be51` (`b06be515e2d9a89288e1da67a0a4c64ace93921c`) and release-route commit `c60d91f` (`c60d91f042df5db9dd79f59803c7372022a434e7`).
+- Full checkpoint section: `2026-05-31 Sample ZIP Copy-Only Release v2.29.166 Checkpoint`.
+- Deployment evidence: GitHub Pages run `26696408747` success; release `v2.29.166` target `b06be515e2d9a89288e1da67a0a4c64ace93921c`; live verification `live_text_release_v229166_ok` and `live_sample_zip_copy_only_v229166_ok`; IndexNow `indexnow_sample_zip_copy_only_v229166_ok status=200 urls=17`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
