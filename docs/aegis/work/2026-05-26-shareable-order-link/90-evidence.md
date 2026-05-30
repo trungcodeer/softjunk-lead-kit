@@ -8759,3 +8759,46 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Share Kit Packet Evidence
+
+- Audited the copy-ready public share kit after the AI buyer brief became packet-first.
+- Found that `share-kit.html` and `share-kit.json` still exposed direct PayPal copy in share posts, email pitch, AI handoff, direct buy text, share intent URLs, and JSON-LD offer URL.
+- Updated product commit `ca2044c` (`ca2044c744989ba31e87c95dbb44686c18794147`):
+  - `share-kit.html` now presents "Share the packet-first $5 lead follow-up offer." and routes the primary paid CTA to `fix-one-quiet-lead.html`.
+  - `share-kit.html` links `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt` as alternate packet formats.
+  - `share-kit.html` JSON-LD offer URL now points to the one-copy order packet, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `share-kit.html` copy-ready short post, email pitch, AI handoff, and direct-buy text now list the packet before the PayPal URL.
+  - `share-kit.html` LinkedIn and X share intents now route to `fix-one-quiet-lead.html`.
+  - `share-kit.html` preserves accessibility affordances: skip link, semantic anchors/buttons, focus-visible styling, and `aria-live="polite"` copy status.
+  - `share-kit.json` now uses schema `softjunk-share-kit-v3`, `updated=2026-05-30`, one-copy order packet fields, direct payment field, packet-first buyer-agent instruction, packet-first copy blocks, and packet-first share intent URLs.
+  - `sitemap.xml` now marks `share-kit.html` and `share-kit.json` with `lastmod=2026-05-30`.
+- Local verification:
+  - `share_kit_packet_ok jsonld=1 html_packet_links=28`.
+  - `json_parse_ok files=54`.
+  - `sitemap_xml_ok`.
+  - `share_kit_share_links_packet_ok links=2`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-kAuqsCmpJeemexL9eu53jk0mhb2OQqK8zGNlIvuHadUvlefqZ3oBdS8Pih22MZynR3r/W6Vy641TuDG/MiduJw==`, shasum `99074330bdc5efc09189316a579d281ad1d326dd`.
+- Deployment:
+  - Product commit `ca2044c` pushed to `main`.
+  - Product Pages run `26676656388` completed successfully.
+- Live verification returned `live_share_kit_packet_ok commit=ca2044c urls=3` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_share_kit_packet_ok status=200 urls=3` for the three changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Share Kit Packet, product commit `ca2044c` (`ca2044c744989ba31e87c95dbb44686c18794147`).
+- Full evidence section: `2026-05-30 Share Kit Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26676656388` success.
+- Live verification evidence: `live_share_kit_packet_ok commit=ca2044c urls=3`.
+- Discovery ping evidence: `indexnow_share_kit_packet_ok status=200 urls=3`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

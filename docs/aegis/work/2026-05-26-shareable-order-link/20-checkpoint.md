@@ -11539,6 +11539,66 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Share Kit Packet Checkpoint
+
+Current todo:
+- Route copy-ready share-kit text and machine-readable share metadata through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `share-kit.html`, `share-kit.json`, and `sitemap.xml`.
+
+Completed todos:
+- Audited the owned share kit and found copy-ready posts, email pitch, AI handoff, direct buy text, share intents, JSON-LD offer URL, and JSON share fields still routed directly or ambiguously to PayPal.
+- Updated `share-kit.html` title, meta/OG/Twitter copy, alternate packet links, JSON-LD, nav, H1, hero CTAs, social share intents, copy-ready post blocks, proof section, core links, and footer so `fix-one-quiet-lead.html` is the first paid step.
+- Preserved PayPal as an after-packet handoff through visible copy plus JSON-LD `directPaymentUrl` and `paymentUrl`.
+- Preserved accessibility affordances: skip link, semantic anchors/buttons, focus-visible styling, and `aria-live="polite"` copy status.
+- Updated `share-kit.json` to schema `softjunk-share-kit-v3`, `updated=2026-05-30`, added one-copy order packet fields, direct payment field, packet-first buyer agent instruction, packet-first post/email/AI/direct-buy copy, and packet-first LinkedIn/X share URLs.
+- Updated `sitemap.xml` lastmod values to `2026-05-30` for `share-kit.html` and `share-kit.json`.
+- Committed and pushed product commit `ca2044c` (`ca2044c744989ba31e87c95dbb44686c18794147`) to `main`.
+- Product Pages run `26676656388` completed successfully.
+- Live Pages verification returned `live_share_kit_packet_ok commit=ca2044c urls=3`.
+- Submitted the three changed product Pages URLs to IndexNow; API returned `indexnow_share_kit_packet_ok status=200 urls=3`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `share_kit_packet_ok jsonld=1 html_packet_links=28`.
+- `json_parse_ok files=54`.
+- `sitemap_xml_ok`.
+- `share_kit_share_links_packet_ok links=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-kAuqsCmpJeemexL9eu53jk0mhb2OQqK8zGNlIvuHadUvlefqZ3oBdS8Pih22MZynR3r/W6Vy641TuDG/MiduJw==`, shasum `99074330bdc5efc09189316a579d281ad1d326dd`.
+- GitHub Pages run `26676656388` success.
+- Live verification: `live_share_kit_packet_ok commit=ca2044c urls=3`.
+- IndexNow: `indexnow_share_kit_packet_ok status=200 urls=3`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned public share-kit copy and machine-readable metadata without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, public HTML/JSON share kit, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains the direct payment handoff after the packet and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Share Kit Packet, product commit `ca2044c` (`ca2044c744989ba31e87c95dbb44686c18794147`).
+- Full checkpoint section: `2026-05-30 Share Kit Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26676656388` success; live verification `live_share_kit_packet_ok commit=ca2044c urls=3`; IndexNow `indexnow_share_kit_packet_ok status=200 urls=3`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
 - Current slice fit: yes, it improves package-native NPM funding, CLI, MCP, and machine-readable buyer routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
@@ -11890,6 +11950,17 @@ Latest completed slice:
 - Agent Buyer Brief Packet, product commit `204ffe9` (`204ffe9bd0efeea4236ebbdf9be6217baa64fe4d`).
 - Full checkpoint section: `2026-05-30 Agent Buyer Brief Packet Checkpoint`.
 - Deployment evidence: GitHub Pages run `26676235453` success; live verification `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4`; IndexNow `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Share Kit Packet, product commit `ca2044c` (`ca2044c744989ba31e87c95dbb44686c18794147`).
+- Full checkpoint section: `2026-05-30 Share Kit Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26676656388` success; live verification `live_share_kit_packet_ok commit=ca2044c urls=3`; IndexNow `indexnow_share_kit_packet_ok status=200 urls=3`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
