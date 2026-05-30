@@ -10374,3 +10374,32 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_hvac_follow_up_copy_only_ok status=200 urls=4`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Real Estate and Plumbing Copy-Only Handoff Evidence
+
+- Product commit: `dcd1dcf` (`dcd1dcfa788d323349c13fabe6aeb42d700743c0`) on `main`.
+- Changed buyer-facing routes: `real-estate-lead-follow-up.html` and `plumbing-lead-follow-up.html`.
+- Changed discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `real_estate_plumbing_copy_only_static_ok files=2 direct_href=0`.
+- JSON-LD validation returned `real_estate_plumbing_jsonld_ok files=2 jsonld_blocks=4`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Direct PayPal href audit returned `direct_paypal_href_absent files=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-OcF/l2F480iOLoGsclALb/mTflO1qsGrmsn8WGR71t7KVZ1FSJDSwQNoDTunfbA9PW8BLsrdmnS5UbJ7y9QQcA==`, shasum `923345805d28857638298e2205b689a74cfdfe8d`.
+- Product Pages run `26693879584` completed successfully.
+- Live verification returned `live_real_estate_plumbing_copy_only_ok commit=dcd1dcf urls=5` for `real-estate-lead-follow-up.html`, `plumbing-lead-follow-up.html`, `README.md`, `llms.txt`, and `sitemap.xml`.
+- IndexNow returned `indexnow_real_estate_plumbing_copy_only_ok status=200 urls=5 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Real Estate and Plumbing Copy-Only Handoff, product commit `dcd1dcf` (`dcd1dcfa788d323349c13fabe6aeb42d700743c0`).
+- Full evidence section: `2026-05-31 Real Estate and Plumbing Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26693879584` success.
+- Live verification evidence: `live_real_estate_plumbing_copy_only_ok commit=dcd1dcf urls=5`.
+- Discovery ping evidence: `indexnow_real_estate_plumbing_copy_only_ok status=200 urls=5`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

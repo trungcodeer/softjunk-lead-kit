@@ -13879,3 +13879,47 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Real Estate and Plumbing Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `real-estate-lead-follow-up.html` and `plumbing-lead-follow-up.html` from direct PayPal anchors to copy-only after-packet PayPal URL buttons, while keeping the free samples, one-copy order packet, no-clone checkout proof, release proof links, and seller-side verification gate visible.
+- Updated discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Active slice status: product commit `dcd1dcf` (`dcd1dcfa788d323349c13fabe6aeb42d700743c0`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML/static validation: `real_estate_plumbing_copy_only_static_ok files=2 direct_href=0`.
+- JSON-LD validation: `real_estate_plumbing_jsonld_ok files=2 jsonld_blocks=4`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Direct href audit returned `direct_paypal_href_absent files=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-OcF/l2F480iOLoGsclALb/mTflO1qsGrmsn8WGR71t7KVZ1FSJDSwQNoDTunfbA9PW8BLsrdmnS5UbJ7y9QQcA==`, shasum `923345805d28857638298e2205b689a74cfdfe8d`.
+- Product Pages run: `26693879584`, conclusion `success`.
+- Live verification: `live_real_estate_plumbing_copy_only_ok commit=dcd1dcf urls=5`.
+- IndexNow: `indexnow_real_estate_plumbing_copy_only_ok status=200 urls=5 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves two niche follow-up sample pages that lead into the $5 custom sequence path and keeps the buyer action packet-first/copy-only without scraped outreach, spam, deception, fake payment, private lead exposure, homeowner contact exposure, brokerage/client detail exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, real estate and plumbing follow-up HTML, sitemap/LLM/README discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct HTML anchor.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Real Estate and Plumbing Copy-Only Handoff, product commit `dcd1dcf` (`dcd1dcfa788d323349c13fabe6aeb42d700743c0`).
+- Full checkpoint section: `2026-05-31 Real Estate and Plumbing Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26693879584` success; live verification `live_real_estate_plumbing_copy_only_ok commit=dcd1dcf urls=5`; IndexNow `indexnow_real_estate_plumbing_copy_only_ok status=200 urls=5`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
