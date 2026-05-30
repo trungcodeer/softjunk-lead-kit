@@ -10491,3 +10491,35 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_release_route_v229164_copy_only_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Release Target Alignment v2.29.165 Evidence
+
+- Product commit: `c919d3a` (`c919d3acb2066fb55258bcf30e976a74f33646aa`) on `main`.
+- Changed release/package-native surfaces: 191 files, replacing current release route `v2.29.164` with `v2.29.165` and aligning `latest_release_target` / `current_release_target` metadata with GitHub Release target `db253ead85d910d85d2ec5d5a5ecaea29e83b595`.
+- Local scan returned `stale_release_target_and_open_paypal_wording_absent_non_docs`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- JSON parse validation returned `json_parse_ok files=56`.
+- JSONL parse validation returned `jsonl_parse_ok files=1 lines=58`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and returned release route `v2.29.165` with `latest_release_target=db253ead85d910d85d2ec5d5a5ecaea29e83b595`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- Release pack created `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-6dvuZrNup9MyEjQ2m7GircjCHE9Q0pFw+z4CTlye9MyKBfSBIzVKQ48L9AEOWENQvR95tTpnqPiZldtCDfBu+Q==`, shasum `b6e3782b471832feb48f83eae99c2f9aa95017df`, SHA-256 `d547786846b964d37357b61550a30d02b745937f7acbdc88d28912e25f5749ee`.
+- GitHub Release `v2.29.165` was published with target `db253ead85d910d85d2ec5d5a5ecaea29e83b595` and assets `softjunk-lead-kit-0.2.2.tgz` plus `softjunk-lead-kit-0.2.2.tgz.sha256`.
+- Public SHA-256 asset returned `release_sha256_asset_ok tag=v2.29.165 status=200 content=d547786846b964d37357b61550a30d02b745937f7acbdc88d28912e25f5749ee  softjunk-lead-kit-0.2.2.tgz`.
+- Public release-tarball command returned `release_tarball_no_clone_checkout_ok tag=v2.29.165 target=db253ead85d910d85d2ec5d5a5ecaea29e83b595 amount=5.00 currency=USD payment_url=https://paypal.me/softjunk/5USD action=Build the one-copy order packet before copying the after-packet PayPal URL.`
+- Product Pages run `26695412085` completed successfully for commit `c919d3a`.
+- Live verification returned `live_release_target_alignment_v229165_ok commit=c919d3a urls=11 targetUrls=8 copyMarkerUrls=9` for `agent-card.json`, `agent-buyer-catalog.jsonl`, `npm-funding.json`, `buyer-index.json`, `checkout.json`, `README.md`, `llms.txt`, `bin/softjunk-lead-kit.js`, `mcp-server-softjunk.js`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, and `npm-publish-status.json`.
+- IndexNow returned `indexnow_release_target_alignment_v229165_ok status=200 urls=11 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Release Target Alignment v2.29.165, product commit `c919d3a` (`c919d3acb2066fb55258bcf30e976a74f33646aa`).
+- Full evidence section: `2026-05-31 Release Target Alignment v2.29.165 Evidence`.
+- Deployment evidence: GitHub Pages run `26695412085` success.
+- Release evidence: GitHub Release `v2.29.165` target `db253ead85d910d85d2ec5d5a5ecaea29e83b595`, tarball SHA-256 `d547786846b964d37357b61550a30d02b745937f7acbdc88d28912e25f5749ee`, and public no-clone command `release_tarball_no_clone_checkout_ok`.
+- Live verification evidence: `live_release_target_alignment_v229165_ok commit=c919d3a urls=11`.
+- Discovery ping evidence: `indexnow_release_target_alignment_v229165_ok status=200 urls=11`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
