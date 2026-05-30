@@ -11361,6 +11361,64 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Pay Page Packet Checkpoint
+
+Current todo:
+- Route the public `pay.html` payment page through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `pay.html`, `.well-known/openapi.yaml`, and `sitemap.xml`.
+
+Completed todos:
+- Updated `pay.html` title, meta descriptions, H1, hero copy, primary CTAs, card CTAs, and delivery handoff copy so the page sends buyers to `fix-one-quiet-lead.html` before PayPal.
+- Preserved the direct PayPal URL as an after-packet handoff and JSON-LD `directPaymentUrl` / `paymentUrl`, while moving JSON-LD offer/action URLs to the one-copy order packet.
+- Kept accessibility affordances intact: skip link, semantic anchors/buttons, focus-visible styling, and `aria-live="polite"` copy status.
+- Updated `.well-known/openapi.yaml` `/pay.html` summary/description to describe the packet-first payment page.
+- Updated `sitemap.xml` lastmod for `pay.html` to `2026-05-30`.
+- Committed and pushed product commit `22c360e` (`22c360ee2655e3b449bf29561f80323e67bd2b4a`) to `main`.
+- Product Pages run `26675550233` completed successfully.
+- Live Pages verification returned `live_pay_page_packet_ok commit=22c360e urls=3`.
+- Submitted the three changed product Pages URLs to IndexNow; API returned `indexnow_pay_page_packet_ok status=200 urls=3`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `pay_page_packet_ok jsonld_blocks=2 packet_links=15 action_targets=1`.
+- `pay_page_sitemap_openapi_ok urls=1`.
+- `json_parse_ok files=65`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-QuaX8AWJAlpk+sDXGQ2ZB65vcFkZp1uJdrwrOx8KiaPFjN4Uht9E7LgqbXVHrL5zUovggbsyE5f7ugQLYLMymQ==`, shasum `99bdc1449300ec0ce90d0341605d62ea51829590`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26675550233` success.
+- Live verification: `live_pay_page_packet_ok commit=22c360e urls=3`.
+- IndexNow: `indexnow_pay_page_packet_ok status=200 urls=3`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an owned public payment page without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, public HTML payment page, OpenAPI metadata, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains the direct payment handoff after the packet and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Pay Page Packet, product commit `22c360e` (`22c360ee2655e3b449bf29561f80323e67bd2b4a`).
+- Full checkpoint section: `2026-05-30 Pay Page Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675550233` success; live verification `live_pay_page_packet_ok commit=22c360e urls=3`; IndexNow `indexnow_pay_page_packet_ok status=200 urls=3`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
 - Current slice fit: yes, it improves package-native NPM funding, CLI, MCP, and machine-readable buyer routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
@@ -11679,6 +11737,17 @@ Latest completed slice:
 - Well-Known Payment Packet, product commit `f40482a`.
 - Full checkpoint section: `2026-05-30 Well-Known Payment Packet Checkpoint`.
 - Deployment evidence: GitHub Pages run `26675021421` success; live verification `live_well_known_payment_packet_ok commit=f40482a urls=9`; IndexNow `indexnow_well_known_payment_packet_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Pay Page Packet, product commit `22c360e` (`22c360ee2655e3b449bf29561f80323e67bd2b4a`).
+- Full checkpoint section: `2026-05-30 Pay Page Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675550233` success; live verification `live_pay_page_packet_ok commit=22c360e urls=3`; IndexNow `indexnow_pay_page_packet_ok status=200 urls=3`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:

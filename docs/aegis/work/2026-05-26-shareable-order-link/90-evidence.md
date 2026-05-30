@@ -8630,3 +8630,43 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_commerce_product_packet_ok status=200 urls=7`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Pay Page Packet Evidence
+
+- Audited owned public payment pages after commerce/product feeds became packet-first.
+- Found that `pay.html` still used direct PayPal as its primary human and JSON-LD action target, and `.well-known/openapi.yaml` described it as a direct payment page.
+- Updated product commit `22c360e` (`22c360ee2655e3b449bf29561f80323e67bd2b4a`):
+  - `pay.html` now presents "Build the order packet, then pay $5" as the page title/H1 path and routes primary CTAs to `fix-one-quiet-lead.html`.
+  - `pay.html` keeps PayPal as an after-packet direct handoff, with JSON-LD `directPaymentUrl` and `paymentUrl` preserving `https://paypal.me/softjunk/5USD`.
+  - `pay.html` JSON-LD offer/action URLs now target `fix-one-quiet-lead.html` instead of direct PayPal.
+  - Accessibility affordances remain present: skip link, semantic anchors/buttons, focus-visible styling, and `aria-live="polite"` copy status.
+  - `.well-known/openapi.yaml` now describes `/pay.html` as the packet-first payment page.
+  - `sitemap.xml` now marks `pay.html` with `lastmod=2026-05-30`.
+- Local verification:
+  - `pay_page_packet_ok jsonld_blocks=2 packet_links=15 action_targets=1`.
+  - `pay_page_sitemap_openapi_ok urls=1`.
+  - `json_parse_ok files=65`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-QuaX8AWJAlpk+sDXGQ2ZB65vcFkZp1uJdrwrOx8KiaPFjN4Uht9E7LgqbXVHrL5zUovggbsyE5f7ugQLYLMymQ==`, shasum `99bdc1449300ec0ce90d0341605d62ea51829590`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `22c360e` pushed to `main`.
+  - Product Pages run `26675550233` completed successfully.
+- Live verification returned `live_pay_page_packet_ok commit=22c360e urls=3` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/pay.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_pay_page_packet_ok status=200 urls=3` for the three changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Pay Page Packet, product commit `22c360e` (`22c360ee2655e3b449bf29561f80323e67bd2b4a`).
+- Full evidence section: `2026-05-30 Pay Page Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26675550233` success.
+- Live verification evidence: `live_pay_page_packet_ok commit=22c360e urls=3`.
+- Discovery ping evidence: `indexnow_pay_page_packet_ok status=200 urls=3`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
