@@ -12333,3 +12333,56 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 HVAC Buyer Send Packet Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: HVAC Buyer Send Packet.
+- Completed todos:
+  - Audited `hvac-buyer-send.html`, `hvac-buyer-send.json`, `hvac-buyer-send.txt`, OpenAPI, RSS, sitemap, README, buyer-index, and LLM summary surfaces after the plumbing buyer send route became packet-first.
+  - Routed the HVAC buyer send page's paid JSON-LD Offer URL, BuyAction target, primary hero CTA, visible QR, short DM, email copy, route copy, and no-clone proof copy through the one-copy order packet before PayPal.
+  - Preserved direct PayPal as an explicit after-packet handoff through `directPaymentUrl`, `paymentUrl`, `direct_payment_url`, `hvac_buyer_send_payment_handoff_url`, and after-packet copy.
+  - Updated `hvac-buyer-send.json` to `softjunk-hvac-buyer-send-v3`, `updated=2026-05-30`, with one-copy order packet fields, top-level BuyAction fields, and packet-first buyer copy.
+  - Updated `hvac-buyer-send.txt`, `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` for packet-first HVAC buyer discovery.
+  - Committed and pushed product commit `e5a3ccd` (`e5a3ccdb971af74b490aa3d85bad0782db7c09c3`) to `main`.
+  - Waited for GitHub Pages run `26680016482`, which completed successfully for commit `e5a3ccd`.
+  - Live-verified nine product URLs with marker `live_hvac_buyer_send_packet_ok commit=e5a3ccd urls=9`.
+  - Submitted nine owned Pages URLs to IndexNow with marker `indexnow_hvac_buyer_send_packet_ok status=200 urls=9`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `hvac_buyer_send_packet_ok html=1 json=2 discovery=6`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-fOW5UzKkpWGE+Nohahi57Pnmd2BS9qbsS7SA/JQiy2fmCcXXGB+5RtbIWRpfPI5J8YymgCPuUwRfRkj6I/RAyg==`, shasum `3a951def1303b2cbb3b3b557f03f2e1b85f9a475`.
+- Product Pages run: `26680016482`, conclusion `success`, head SHA `e5a3ccdb971af74b490aa3d85bad0782db7c09c3`.
+- Live verification: `live_hvac_buyer_send_packet_ok commit=e5a3ccd urls=9`.
+- IndexNow: `indexnow_hvac_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a high-intent HVAC-specific buyer handoff and keeps the route packet-first without scraped outreach, spam, deception, fake payment, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, HTML/JSON/text HVAC buyer send surfaces, JSON/OpenAPI/RSS/sitemap/LLM discovery, README, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- HVAC Buyer Send Packet, product commit `e5a3ccd` (`e5a3ccdb971af74b490aa3d85bad0782db7c09c3`).
+- Full checkpoint section: `2026-05-30 HVAC Buyer Send Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26680016482` success; live verification `live_hvac_buyer_send_packet_ok commit=e5a3ccd urls=9`; IndexNow `indexnow_hvac_buyer_send_packet_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

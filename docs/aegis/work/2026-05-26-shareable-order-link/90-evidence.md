@@ -9142,3 +9142,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_plumbing_buyer_send_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 HVAC Buyer Send Packet Evidence
+
+- Audited the HVAC buyer send handoff after the plumbing buyer send route became packet-first.
+- Found that `hvac-buyer-send.html`, `hvac-buyer-send.json`, and `hvac-buyer-send.txt` still exposed direct PayPal as a primary buyer action or QR path before the one-copy order packet.
+- Updated product commit `e5a3ccd` (`e5a3ccdb971af74b490aa3d85bad0782db7c09c3`):
+  - `hvac-buyer-send.html` JSON-LD Offer URL and BuyAction target now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `hvac-buyer-send.html` primary hero CTA now says `Build order packet` and points to the one-copy order packet instead of a direct PayPal button.
+  - `hvac-buyer-send.html` visible QR now uses `packet-qr.svg` instead of the direct checkout QR route.
+  - `hvac-buyer-send.html` short DM, email, mailto body, route copy, and checkout proof copy now list the one-copy order packet before the after-packet PayPal checkout.
+  - `hvac-buyer-send.json` now uses schema `softjunk-hvac-buyer-send-v3`, `updated=2026-05-30`, one-copy order packet fields, direct PayPal fields, and packet-first BuyAction targets.
+  - `hvac-buyer-send.txt` now lists the one-copy order packet before the after-packet PayPal checkout and sets the structured commerce action target to the packet URL.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe HVAC buyer send as a packet-first buyer handoff.
+  - Accessibility affordances remain present on `hvac-buyer-send.html`: skip link, focus-visible styling, semantic anchors/buttons, QR alt text, and `aria-live="polite"` status messages.
+- Local verification:
+  - `hvac_buyer_send_packet_ok html=1 json=2 discovery=6`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-fOW5UzKkpWGE+Nohahi57Pnmd2BS9qbsS7SA/JQiy2fmCcXXGB+5RtbIWRpfPI5J8YymgCPuUwRfRkj6I/RAyg==`, shasum `3a951def1303b2cbb3b3b557f03f2e1b85f9a475`.
+- Deployment:
+  - Product commit `e5a3ccd` pushed to `main`.
+  - Product Pages run `26680016482` completed successfully.
+- Live verification returned `live_hvac_buyer_send_packet_ok commit=e5a3ccd urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_hvac_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: HVAC Buyer Send Packet, product commit `e5a3ccd` (`e5a3ccdb971af74b490aa3d85bad0782db7c09c3`).
+- Full evidence section: `2026-05-30 HVAC Buyer Send Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26680016482` success.
+- Live verification evidence: `live_hvac_buyer_send_packet_ok commit=e5a3ccd urls=9`.
+- Discovery ping evidence: `indexnow_hvac_buyer_send_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
