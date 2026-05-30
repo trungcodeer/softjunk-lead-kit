@@ -2355,6 +2355,40 @@ Payment gate:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-31 Agent Buy Brief Copy-Only Handoff Evidence
+
+- Product commit: `6fe0aed` (`6fe0aed4fd8da810bb5066eba432fe9507d64bae`) on `main`.
+- Changed buyer-facing route: `agent-buy-brief.html`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused HTML validation returned `agent_buy_brief_static direct_href=0 copy_buttons=2 status_message=True packet_mentions=7 verify_mentions=3`.
+- Inline script validation returned `agent_buy_brief_inline_script_ok scripts=1`.
+- JSON-LD parse returned `agent_buy_brief_json_ld_ok`.
+- Focused JSON parse returned `json_ok product-feed.json`, `json_ok offers.json`, and `json_ok buyer-index.json`.
+- Recursive JSON parse returned `json_recursive_ok count=65`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- OpenAPI static validation returned `openapi_agent_buy_brief_static_ok`.
+- Discovery marker validation returned `agent_buy_brief_discovery_markers_ok`.
+- Direct PayPal anchor validation returned `agent_buy_brief_direct_paypal_href_absent`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-LtqlhW09GbTyd0cCA4kvK2r6DkZ9bu8ojQHUoZfv/rld5NXytHF24yIhxH6fxNet6/D73N1S053EUIM2fsb10Q==`, shasum `7a770ae16f7f0b7777109a92e59c7d8849fcc8a8`.
+- Product Pages run `26689858915` completed successfully with head SHA `6fe0aed4fd8da810bb5066eba432fe9507d64bae`.
+- Live verification returned `live_agent_buy_brief_copy_only_ok commit=6fe0aed urls=9` for `agent-buy-brief.html`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_agent_buy_brief_copy_only_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Latest Evidence Pointer
+
+- Latest completed slice: Agent Buy Brief Copy-Only Handoff, product commit `6fe0aed` (`6fe0aed4fd8da810bb5066eba432fe9507d64bae`).
+- Full evidence section: `2026-05-31 Agent Buy Brief Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26689858915` success.
+- Live verification evidence: `live_agent_buy_brief_copy_only_ok commit=6fe0aed urls=9`.
+- Discovery ping evidence: `indexnow_agent_buy_brief_copy_only_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 Agent Commerce Copy-Only Handoff Evidence
 
 - Product commit: `67ac421` (`67ac421012551098cb995a8eb477c8075f7962cb`) on `main`.
