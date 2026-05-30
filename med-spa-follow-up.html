@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Med Spa Lead Follow-Up Template | SoftJunk Lead Kit</title>
-  <meta name="description" content="Free med spa lead follow-up sample for booking inquiries, pricing questions, and consultation requests. Build the one-copy order packet before the after-packet $5 PayPal handoff. Includes no-clone checkout proof from the current release tarball.">
+  <meta name="description" content="Free med spa lead follow-up sample for booking inquiries, pricing questions, and consultation requests. Build the one-copy order packet before the copy-only after-packet $5 PayPal URL. Includes no-clone checkout proof from the current release tarball.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html">
   <meta property="og:title" content="Med Spa Lead Follow-Up Template">
-  <meta property="og:description" content="Try a free med spa follow-up sample, then build the one-copy order packet before the after-packet $5 PayPal handoff.">
+  <meta property="og:description" content="Try a free med spa follow-up sample, then build the one-copy order packet before the copy-only after-packet $5 PayPal URL.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/preview.png">
@@ -24,6 +24,8 @@
         "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
         "directPaymentUrl": "https://paypal.me/softjunk/5USD",
         "paymentUrl": "https://paypal.me/softjunk/5USD",
+        "paymentHandoffMode": "copy_only_after_packet",
+        "paymentUrlRole": "copy_only_after_packet_paypal_handoff",
         "availability": "https://schema.org/InStock"
       },
       "potentialAction": {
@@ -58,7 +60,8 @@
       line-height: 1.5;
     }
 
-    a:focus-visible {
+    a:focus-visible,
+    button:focus-visible {
       outline: 3px solid var(--focus);
       outline-offset: 3px;
     }
@@ -166,7 +169,8 @@
       align-items: center;
     }
 
-    .button {
+    .button,
+    button.button {
       min-height: 48px;
       display: inline-flex;
       align-items: center;
@@ -178,15 +182,18 @@
       color: var(--ink);
       font-weight: 800;
       text-decoration: none;
+      cursor: pointer;
     }
 
-    .button.primary {
+    .button.primary,
+    button.button.primary {
       background: var(--accent);
       color: #fff;
       border-color: var(--accent);
     }
 
-    .button.primary:hover {
+    .button.primary:hover,
+    button.button.primary:hover {
       background: var(--accent-dark);
     }
 
@@ -272,6 +279,13 @@
       overflow-wrap: anywhere;
     }
 
+    .status {
+      min-height: 24px;
+      margin: 14px 0 0;
+      color: var(--accent-dark);
+      font-weight: 800;
+    }
+
     @media (max-width: 820px) {
       .hero,
       .grid,
@@ -292,6 +306,7 @@
       "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
       "sameAs": [
         "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
+        "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
         "https://paypal.me/softjunk/5USD"
       ]
     }
@@ -315,7 +330,7 @@
     <section class="hero" aria-labelledby="page-title">
       <div>
         <h1 id="page-title">Med spa lead follow-up template</h1>
-        <p class="lead">Use this free sample for booking inquiries, pricing questions, and consultation requests. If you want it written for one med spa, build the one-copy order packet before the after-packet $5 PayPal handoff.</p>
+        <p class="lead">Use this free sample for booking inquiries, pricing questions, and consultation requests. If you want it written for one med spa, build the one-copy order packet before copying the after-packet $5 PayPal URL.</p>
         <div class="actions">
           <a class="button primary" href="./?preset=medspa#generator">Try the med spa generator</a>
           <a class="button" href="#checkout-proof">Verify checkout</a>
@@ -359,17 +374,18 @@ Day 3: Hi [Name], should I close the loop on this for now? If you want to come b
       <div class="note-panel" id="checkout-proof">
         <div>
           <h2 id="checkout-proof-title">No-clone checkout proof</h2>
-          <p>Build the one-copy order packet first, then run the public release-tarball command to verify the exact after-packet $5 checkout route without cloning this repo.</p>
+          <p>Build the one-copy order packet first, then run the public release-tarball command to verify the exact copy-only after-packet $5 checkout route without cloning this repo.</p>
           <code class="proof-command">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json</code>
           <ul class="proof-list">
-            <li><strong>Expected checkout:</strong> amount <code>5.00</code> <code>USD</code> to <a href="https://paypal.me/softjunk/5USD">https://paypal.me/softjunk/5USD</a>.</li>
+            <li><strong>Copy-only PayPal URL after packet:</strong> amount <code>5.00</code> <code>USD</code> to <code>https://paypal.me/softjunk/5USD</code>.</li>
             <li><strong>Current release:</strong> <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">v2.29.163</a>.</li>
             <li><strong>Release tarball:</strong> <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz">softjunk-lead-kit-0.2.2.tgz</a>.</li>
             <li><strong>SHA-256:</strong> <code>https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256</code>.</li>
             <li><strong>Stop condition:</strong> this route is not payment proof; start fulfillment or stop only when seller-side PayPal evidence exists or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</li>
           </ul>
+          <p class="status" id="payment-url-status" aria-live="polite"></p>
         </div>
-        <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">PayPal after packet</a>
+        <button class="button primary" type="button" data-copy-payment-url>Copy PayPal URL</button>
       </div>
     </section>
 
@@ -377,7 +393,7 @@ Day 3: Hi [Name], should I close the loop on this for now? If you want to come b
       <div class="note-panel">
         <div>
           <h2 id="pay-title">Ready for a custom med spa sequence?</h2>
-          <p>Build the one-copy order packet, copy the PayPal note, verify checkout, then open PayPal after the packet is ready. The note is used to match the payment to the right custom sequence.</p>
+          <p>Build the one-copy order packet, copy the PayPal note, verify checkout, then copy the after-packet PayPal URL when the packet is ready. The note is used to match the payment to the right custom sequence.</p>
         </div>
         <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
       </div>
@@ -387,5 +403,31 @@ Day 3: Hi [Name], should I close the loop on this for now? If you want to come b
   <footer>
     <p>Seller note: review all customer communications for accuracy, compliance, and fit with your business before sending.</p>
   </footer>
+  <script>
+    (function () {
+      var paymentUrl = 'https://paypal.me/softjunk/5USD';
+      var status = document.getElementById('payment-url-status');
+
+      function setStatus(ok) {
+        status.textContent = ok
+          ? 'After-packet PayPal URL copied.'
+          : 'Copy failed. Select the URL manually.';
+      }
+
+      Array.prototype.forEach.call(document.querySelectorAll('[data-copy-payment-url]'), function (button) {
+        button.addEventListener('click', function () {
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(paymentUrl).then(function () {
+              setStatus(true);
+            }).catch(function () {
+              setStatus(false);
+            });
+            return;
+          }
+          setStatus(false);
+        });
+      });
+    }());
+  </script>
 </body>
 </html>
