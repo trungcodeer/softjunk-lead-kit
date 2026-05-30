@@ -11252,3 +11252,46 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, package metadata, MCP/A2A/AI action manifests, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Agent Checkout Router Packet Checkpoint
+
+Current todo:
+- Route the compact agent checkout router through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `agent-checkout-router.json`, `agent-checkout-router.md`, `agent-checkout-router.txt`, and `sitemap.xml`.
+
+Completed todos:
+- Updated `agent-checkout-router.json` to `updated=2026-05-30`, added one-copy order packet HTML/JSON/TXT URLs, added `before_payment_action`, and changed `default_route.route_id` to `one_copy_order_packet_fastest_usd5`.
+- Updated `agent-checkout-router.md` and `agent-checkout-router.txt` so the preferred route is the one-copy order packet before PayPal.
+- Updated `sitemap.xml` lastmod values to `2026-05-30` for the three agent checkout router URLs.
+- Committed and pushed product commit `eb8d93f` to `main`.
+- Product Pages run `26673371098` completed successfully.
+- Live Pages verification returned `live_agent_checkout_router_packet_ok commit=eb8d93f urls=4`.
+- Submitted the four changed product Pages URLs to IndexNow; API returned `indexnow_agent_checkout_router_packet_ok status=200 urls=4`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `agent_checkout_router_json_ok`.
+- `sitemap_xml_ok`.
+- `agent_checkout_router_packet_markers_ok files=3`.
+- `json_parse_ok files=56`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26673371098` success.
+- Live verification: `live_agent_checkout_router_packet_ok commit=eb8d93f urls=4`.
+- IndexNow: `indexnow_agent_checkout_router_packet_ok status=200 urls=4`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an owned agent/crawler checkout router without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, agent checkout router JSON/Markdown/text, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.

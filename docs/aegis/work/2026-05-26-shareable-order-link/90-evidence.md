@@ -8325,3 +8325,30 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_package_packet_ok status=200 urls=7` for the seven updated product Pages URLs.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Agent Checkout Router Packet Evidence
+
+- Audited residual owned checkout surfaces after the agent discovery packet checkout slice.
+- Found that `agent-checkout-router.json`, `agent-checkout-router.md`, and `agent-checkout-router.txt` still described the shortest path as direct PayPal handoff and did not expose the one-copy order packet as the default pre-payment route.
+- Updated product commit `eb8d93f`:
+  - `agent-checkout-router.json` now has `updated=2026-05-30`, one-copy order packet HTML/JSON/TXT URLs, a packet-first `before_payment_action`, and `default_route.route_id=one_copy_order_packet_fastest_usd5`.
+  - `agent-checkout-router.md` now shows the one-copy order packet and machine-readable packet before the PayPal URL.
+  - `agent-checkout-router.txt` now mirrors the packet-first route for raw text readers.
+  - `sitemap.xml` lastmod values were updated to `2026-05-30` for the changed router URLs.
+- Local verification:
+  - `agent_checkout_router_json_ok`.
+  - `sitemap_xml_ok`.
+  - `agent_checkout_router_packet_markers_ok files=3`.
+  - `json_parse_ok files=56`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `eb8d93f` pushed to `main`.
+  - Product Pages run `26673371098` completed successfully.
+- Live verification returned `live_agent_checkout_router_packet_ok commit=eb8d93f urls=4` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_agent_checkout_router_packet_ok status=200 urls=4` for the four changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
