@@ -9854,3 +9854,37 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_paid_kit_proof_packet_first_ok status=200 urls=14`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Fix One Quiet Lead Packet-First Evidence
+
+- Product commit: `9eb8f61` (`9eb8f61f492fa2a14c2dcdc3a6f52bcfec4c7013`) on `main`.
+- Changed buyer-facing route: `fix-one-quiet-lead.html`.
+- Changed machine-readable route mirrors: `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `agent-checkout-router.json`, `buyer-index.json`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- Local focused HTML validation returned `fix_one_quiet_lead_html_packet_first_ok directHref=0 packetMentions=16 paypalMentions=5 jsonld=1`.
+- Focused JSON parse returned `focused_json_parse_ok files=5`.
+- Recursive JSON parse returned `json_parse_ok files=65`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- Inline script validation returned `fix_one_quiet_lead_inline_script_ok scripts=1`.
+- JSON-LD parse returned `fix_one_quiet_lead_jsonld_parse_ok`.
+- OpenAPI static validation returned `openapi_fix_one_quiet_lead_packet_first_static_ok`.
+- PayPal-copy gate validation returned `fix_one_quiet_lead_paypal_copy_gate_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-WrHyh5T3YrAKgsJf5CmXwA0cNhag0pjjd0BTja4N8+ineRjrUiXY232ecQdV1WbI2Y0FtOEo0YewWllw+Uduiw==`, shasum `b6203280bbe17cd777657f419c94b3e675c6d637`.
+- Product Pages run `26687245782` completed successfully.
+- Live verification returned `live_fix_one_quiet_lead_packet_first_ok commit=9eb8f61 urls=12` for `fix-one-quiet-lead.html`, `fix-one-quiet-lead.json`, `fix-one-quiet-lead.txt`, `.well-known/openapi.yaml`, `offers.json`, `product-feed.json`, `buyer-index.json`, `agent-checkout-router.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- IndexNow returned `indexnow_fix_one_quiet_lead_packet_first_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Fix One Quiet Lead Packet-First Route, product commit `9eb8f61` (`9eb8f61f492fa2a14c2dcdc3a6f52bcfec4c7013`).
+- Full evidence section: `2026-05-30 Fix One Quiet Lead Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26687245782` success.
+- Live verification evidence: `live_fix_one_quiet_lead_packet_first_ok commit=9eb8f61 urls=12`.
+- Discovery ping evidence: `indexnow_fix_one_quiet_lead_packet_first_ok status=200 urls=12`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

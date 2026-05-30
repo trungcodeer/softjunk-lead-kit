@@ -13115,3 +13115,50 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Fix One Quiet Lead Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted the core `fix-one-quiet-lead.html` order packet builder from direct PayPal links to packet/note copy actions with only after-packet PayPal URL copy, and updated `fix-one-quiet-lead.json`, `fix-one-quiet-lead.txt`, `.well-known/openapi.yaml`, `agent-checkout-router.json`, `buyer-index.json`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- Active slice status: product commit `9eb8f61` (`9eb8f61f492fa2a14c2dcdc3a6f52bcfec4c7013`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML validation: `fix_one_quiet_lead_html_packet_first_ok directHref=0 packetMentions=16 paypalMentions=5 jsonld=1`.
+- Focused JSON parse: `focused_json_parse_ok files=5`.
+- Recursive JSON validation: `json_parse_ok files=65`.
+- Feed and sitemap XML parse: `xml_parse_ok feed_sitemap=2`.
+- Inline script validation: `fix_one_quiet_lead_inline_script_ok scripts=1`.
+- JSON-LD parse: `fix_one_quiet_lead_jsonld_parse_ok`.
+- OpenAPI static validation: `openapi_fix_one_quiet_lead_packet_first_static_ok`.
+- PayPal-copy gate validation: `fix_one_quiet_lead_paypal_copy_gate_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-WrHyh5T3YrAKgsJf5CmXwA0cNhag0pjjd0BTja4N8+ineRjrUiXY232ecQdV1WbI2Y0FtOEo0YewWllw+Uduiw==`, shasum `b6203280bbe17cd777657f419c94b3e675c6d637`.
+- Product Pages run: `26687245782`, conclusion `success`.
+- Live verification: `live_fix_one_quiet_lead_packet_first_ok commit=9eb8f61 urls=12`.
+- IndexNow: `indexnow_fix_one_quiet_lead_packet_first_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the core one-lead rescue packet builder and keeps the buyer action packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, core one-lead rescue HTML/JSON/TXT, OpenAPI/RSS/sitemap/LLM discovery, README, offer feeds, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet URL to copy rather than a pre-context link.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Fix One Quiet Lead Packet-First Route, product commit `9eb8f61` (`9eb8f61f492fa2a14c2dcdc3a6f52bcfec4c7013`).
+- Full checkpoint section: `2026-05-30 Fix One Quiet Lead Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26687245782` success; live verification `live_fix_one_quiet_lead_packet_first_ok commit=9eb8f61 urls=12`; IndexNow `indexnow_fix_one_quiet_lead_packet_first_ok status=200 urls=12`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
