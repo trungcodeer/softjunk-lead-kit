@@ -2355,6 +2355,38 @@ Payment gate:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 After-Payment Handoff Packet-First Evidence
+
+- Product commit: `8114229` (`8114229874b7642a00acb9ccea1eed02c0152131`) on `main`.
+- Changed buyer-facing route: `after-pay.html`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused HTML validation returned `after_pay_packet_first_ok directHref=0 copyButtons=5 packetMentions=39 verifyMentions=8`.
+- Inline script validation returned `after_pay_inline_script_ok scripts=1`.
+- JSON-LD parse returned `after_pay_jsonld_parse_ok blocks=2`.
+- Recursive JSON parse returned `json_parse_ok files=65`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation returned `openapi_after_pay_packet_first_static_ok`.
+- Discovery static validation returned `after_pay_discovery_rule_static_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-A0DlJ1EPmAd71TAi567V5OEY1U9cn3W9usKDrAcNoZUPcF2gsHzcw+z+rEHpFsAkn9oVK+wDLgy154POjJAXlw==`, shasum `84374107ce201c34fb478cfc8818c869684df2f5`.
+- Product Pages run `26687949736` completed successfully.
+- Live verification returned `live_after_pay_packet_first_ok commit=8114229 urls=9` for `after-pay.html`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_after_pay_packet_first_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: After-Payment Handoff Packet-First Route, product commit `8114229` (`8114229874b7642a00acb9ccea1eed02c0152131`).
+- Full evidence section: `2026-05-30 After-Payment Handoff Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26687949736` success.
+- Live verification evidence: `live_after_pay_packet_first_ok commit=8114229 urls=9`.
+- Discovery ping evidence: `indexnow_after_pay_packet_first_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 Latest Evidence Pointer
 
 - Latest completed slice: Exact-Intent Samples Packet-First Route, product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`).

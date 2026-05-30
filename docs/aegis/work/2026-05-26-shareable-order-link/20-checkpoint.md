@@ -11242,6 +11242,52 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 After-Payment Handoff Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `after-pay.html` from a direct PayPal-link handoff into a packet-first, verification-gated page with copy-only after-packet PayPal URL actions; updated `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Active slice status: product commit `8114229` (`8114229874b7642a00acb9ccea1eed02c0152131`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML validation: `after_pay_packet_first_ok directHref=0 copyButtons=5 packetMentions=39 verifyMentions=8`.
+- Inline script validation: `after_pay_inline_script_ok scripts=1`.
+- JSON-LD parse: `after_pay_jsonld_parse_ok blocks=2`.
+- Recursive JSON validation: `json_parse_ok files=65`.
+- Feed and sitemap XML parse: `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation: `openapi_after_pay_packet_first_static_ok`.
+- Discovery static validation: `after_pay_discovery_rule_static_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-A0DlJ1EPmAd71TAi567V5OEY1U9cn3W9usKDrAcNoZUPcF2gsHzcw+z+rEHpFsAkn9oVK+wDLgy154POjJAXlw==`, shasum `84374107ce201c34fb478cfc8818c869684df2f5`.
+- Product Pages run: `26687949736`, conclusion `success`.
+- Live verification: `live_after_pay_packet_first_ok commit=8114229 urls=9`.
+- IndexNow: `indexnow_after_pay_packet_first_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the post-payment/verification handoff and removes direct PayPal anchors from that page without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, after-payment HTML handoff, OpenAPI/RSS/sitemap/LLM discovery, README, offer feeds, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct pre-context link on `after-pay.html`.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- After-Payment Handoff Packet-First Route, product commit `8114229` (`8114229874b7642a00acb9ccea1eed02c0152131`).
+- Full checkpoint section: `2026-05-30 After-Payment Handoff Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26687949736` success; live verification `live_after_pay_packet_first_ok commit=8114229 urls=9`; IndexNow `indexnow_after_pay_packet_first_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-30 Latest Resume Pointer
 
 Latest completed slice:
