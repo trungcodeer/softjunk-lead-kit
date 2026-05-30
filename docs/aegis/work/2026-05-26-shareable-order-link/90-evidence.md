@@ -2305,6 +2305,36 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-31 Roofing Buyer Send Copy-Only Handoff Evidence
+
+- Product commit: `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`) on `main`.
+- Changed buyer-facing route: `roofing-buyer-send.html`.
+- Changed machine-readable route mirrors: `roofing-buyer-send.json` and `roofing-buyer-send.txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `roofing_buyer_send_copy_only_static_ok direct_href=0 copy_buttons=2 jsonld_blocks=3 inline_scripts=1`.
+- Local focused JSON parse returned `json_ok roofing-buyer-send.json` and `json_ok buyer-index.json`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- Discovery marker scan returned `roofing_buyer_send_discovery_static_ok files=8`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Spu/vAjnFYrH9bXmXAKmB3kECC4nLFcaYZLfd2enW7RULyYk9K+MDu8PmvTQYN0khrRsdRsWtYQQ4gacwasFug==`, shasum `c180eca7a7131b55b119a8273114cda4721a7296`.
+- Product Pages run `26691936738` completed successfully.
+- Live verification returned `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9` for `roofing-buyer-send.html`, `roofing-buyer-send.json`, `roofing-buyer-send.txt`, `.well-known/openapi.yaml`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Roofing Buyer Send Copy-Only Handoff, product commit `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`).
+- Full evidence section: `2026-05-31 Roofing Buyer Send Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26691936738` success.
+- Live verification evidence: `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9`.
+- Discovery ping evidence: `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 AI Prompt And Answer Packet-First Evidence
 
 - Audited `ai-follow-up-prompt.html` and `lead-follow-up-answers.html` for visible direct PayPal exposure before the one-copy order packet.
@@ -10162,5 +10192,15 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26691476394` success.
 - Live verification evidence: `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`.
 - Discovery ping evidence: `indexnow_pay_qr_copy_only_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Roofing Buyer Send Copy-Only Handoff, product commit `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`).
+- Full evidence section: `2026-05-31 Roofing Buyer Send Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26691936738` success.
+- Live verification evidence: `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9`.
+- Discovery ping evidence: `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

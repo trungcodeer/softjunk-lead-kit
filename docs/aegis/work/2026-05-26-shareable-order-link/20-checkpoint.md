@@ -11242,6 +11242,61 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Roofing Buyer Send Copy-Only Handoff, product commit `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`).
+- Full checkpoint section: `2026-05-31 Roofing Buyer Send Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26691936738` success; live verification `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9`; IndexNow `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Roofing Buyer Send Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `roofing-buyer-send.html` from direct PayPal anchors to a copy-only after-packet PayPal URL button, while keeping the one-buyer DM/email, free preview, one-copy order packet, PayPal note, no-clone proof, roofing order form, privacy rules, and seller-side verification gate visible.
+- Updated machine-readable and discovery routes: `roofing-buyer-send.json`, `roofing-buyer-send.txt`, `.well-known/openapi.yaml`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Active slice status: product commit `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML/static validation: `roofing_buyer_send_copy_only_static_ok direct_href=0 copy_buttons=2 jsonld_blocks=3 inline_scripts=1`.
+- Focused JSON parse returned `json_ok roofing-buyer-send.json` and `json_ok buyer-index.json`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- Discovery marker scan returned `roofing_buyer_send_discovery_static_ok files=8`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Spu/vAjnFYrH9bXmXAKmB3kECC4nLFcaYZLfd2enW7RULyYk9K+MDu8PmvTQYN0khrRsdRsWtYQQ4gacwasFug==`, shasum `c180eca7a7131b55b119a8273114cda4721a7296`.
+- Product Pages run: `26691936738`, conclusion `success`.
+- Live verification: `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9`.
+- IndexNow: `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a high-intent one-buyer roofing packet and keeps the buyer action packet-first/copy-only without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, roofing buyer send HTML/JSON/TXT, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct HTML anchor.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Roofing Buyer Send Copy-Only Handoff, product commit `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`).
+- Full checkpoint section: `2026-05-31 Roofing Buyer Send Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26691936738` success; live verification `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9`; IndexNow `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-31 Packet QR Copy-Only Handoff Checkpoint
 
 TodoCheckpointDraft:
@@ -13550,6 +13605,17 @@ Latest completed slice:
 - Packet QR Copy-Only Handoff, product commit `d0dbea7` (`d0dbea781c7edc581e6b61aa132f31a59ed76fff`).
 - Full checkpoint section: `2026-05-31 Packet QR Copy-Only Handoff Checkpoint`.
 - Deployment evidence: GitHub Pages run `26691476394` success; live verification `live_pay_qr_copy_only_ok commit=d0dbea7 urls=9`; IndexNow `indexnow_pay_qr_copy_only_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Roofing Buyer Send Copy-Only Handoff, product commit `ae7366d` (`ae7366d6ce8edd5f7b93cef5e5b3638c6f94404c`).
+- Full checkpoint section: `2026-05-31 Roofing Buyer Send Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26691936738` success; live verification `live_roofing_buyer_send_copy_only_ok commit=ae7366d urls=9`; IndexNow `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
