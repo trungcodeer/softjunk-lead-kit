@@ -1,14 +1,15 @@
 {
   "schema_version": "softjunk-five-dollar-buyer-card-v2",
-  "updated": "2026-05-30",
+  "updated": "2026-05-31",
   "name": "SoftJunk 5 USD Packet-First Buyer Card",
-  "purpose": "One-screen buyer handoff for building the one-copy order packet before paying exactly 5 USD on PayPal for one SoftJunk one-lead rescue without claiming payment before seller-side verification.",
+  "purpose": "One-screen buyer handoff for building the one-copy order packet before copying the after-packet 5 USD PayPal URL for one SoftJunk one-lead rescue without claiming payment before seller-side verification.",
   "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html",
   "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt",
   "root_short_url": "https://trungcodeer.github.io/5/",
   "root_json_url": "https://trungcodeer.github.io/5.json",
   "payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_handoff_mode": "copy_only_after_packet",
   "paypal_buy_action_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
   "price": "5.00",
   "currency": "USD",
@@ -22,12 +23,12 @@
     "verification_gate": "PAYPAL_PAYMENT_VERIFIED=true"
   },
   "privacy_gate": "Use placeholders only. Do not post customer names, phones, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.",
-  "pay_now_copy": "Build or inspect the one-copy order packet, copy the PayPal note, then pay exactly 5 USD on PayPal and submit non-sensitive order context after seller-side verification.",
+  "pay_now_copy": "Build or inspect the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL for exactly 5 USD and submit non-sensitive order context after seller-side verification.",
   "schema_org_offer": {
     "@context": "https://schema.org",
     "@type": "Offer",
     "name": "SoftJunk 5 USD Packet-First One-Lead Rescue",
-    "description": "One-screen 5 USD buyer card that routes through the one-copy order packet before PayPal checkout, with one rewrite included after seller-side verification.",
+    "description": "One-screen 5 USD buyer card that routes through the one-copy order packet before the copy-only after-packet PayPal URL, with one rewrite included after seller-side verification.",
     "price": "5.00",
     "priceCurrency": "USD",
     "availability": "https://schema.org/InStock",
@@ -46,7 +47,7 @@
     "potentialAction": {
       "@context": "https://schema.org",
       "@type": "BuyAction",
-      "name": "Build the one-copy order packet before PayPal",
+      "name": "Build the one-copy order packet before the copy-only PayPal URL",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -96,7 +97,12 @@
         {
           "@type": "PropertyValue",
           "name": "before_payment_action",
-          "value": "Build or inspect the one-copy order packet before opening PayPal."
+          "value": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
+        },
+        {
+          "@type": "PropertyValue",
+          "name": "payment_handoff_mode",
+          "value": "copy_only_after_packet"
         },
         {
           "@type": "PropertyValue",
@@ -116,7 +122,7 @@
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Build the one-copy order packet before PayPal",
+    "name": "Build the one-copy order packet before the copy-only PayPal URL",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -166,7 +172,12 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build or inspect the one-copy order packet before opening PayPal."
+        "value": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "payment_handoff_mode",
+        "value": "copy_only_after_packet"
       },
       {
         "@type": "PropertyValue",
@@ -183,7 +194,7 @@
   "buyAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Build the one-copy order packet before PayPal",
+    "name": "Build the one-copy order packet before the copy-only PayPal URL",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -233,7 +244,12 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build or inspect the one-copy order packet before opening PayPal."
+        "value": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "payment_handoff_mode",
+        "value": "copy_only_after_packet"
       },
       {
         "@type": "PropertyValue",
@@ -256,6 +272,7 @@
     "expected_amount": "5.00",
     "currency": "USD",
     "payment_url": "https://paypal.me/softjunk/5USD",
+    "payment_handoff_mode": "copy_only_after_packet",
     "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
     "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
     "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
@@ -263,11 +280,12 @@
     "payment_boundary": "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-    "before_payment_action": "Build the one-copy order packet before opening PayPal."
+    "before_payment_action": "Build the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
   },
   "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
-  "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+  "payment_url_role": "copy_only_after_packet_paypal_handoff",
+  "before_payment_action": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
 }

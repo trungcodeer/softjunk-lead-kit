@@ -193,8 +193,8 @@
       <title>Fastest USD 5 Buyer Route</title>
       <link>https://trungcodeer.github.io/5/</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/5/</guid>
-      <pubDate>Wed, 27 May 2026 02:45:00 +0700</pubDate>
-      <description>Shortest buyer route for the SoftJunk USD 5 one-lead rescue: open /5, pay exactly 5 USD on PayPal, use one rewrite after verified payment, and do not claim fulfillment until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true. Discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.</description>
+      <pubDate>Sun, 31 May 2026 09:45:00 +0700</pubDate>
+      <description>Shortest buyer route for the SoftJunk USD 5 one-lead rescue: open /5 or the product buyer card, build the packet, copy the PayPal note, copy the after-packet PayPal URL, use one rewrite after verified payment, and do not claim fulfillment until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true. Discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6.</description>
     </item>
     <item>
       <title>Roofing Estimate Follow-Up Generator</title>

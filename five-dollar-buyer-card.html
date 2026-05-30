@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Build Packet, Then Pay 5 USD | SoftJunk</title>
-  <meta name="description" content="One-screen SoftJunk buyer card: build the one-copy order packet, copy the PayPal note, then pay exactly 5 USD on PayPal for one quiet-lead rescue.">
+  <meta name="description" content="One-screen SoftJunk buyer card: build the one-copy order packet, copy the PayPal note, then copy the after-packet 5 USD PayPal URL for one quiet-lead rescue.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html">
   <meta name="robots" content="index,follow">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json" title="SoftJunk five-dollar buyer card JSON">
@@ -13,7 +13,7 @@
   <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt" title="SoftJunk one-copy order packet text">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
   <meta property="og:title" content="Build Packet, Then Pay 5 USD | SoftJunk">
-  <meta property="og:description" content="Build the one-copy order packet first, copy the PayPal note, then pay exactly 5 USD on PayPal.">
+  <meta property="og:description" content="Build the one-copy order packet first, copy the PayPal note, then copy the after-packet 5 USD PayPal URL.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -22,7 +22,7 @@
   "@context": "https://schema.org",
   "@type": "Offer",
   "name": "SoftJunk 5 USD Packet-First One-Lead Rescue",
-  "description": "One-screen 5 USD buyer card that routes through the one-copy order packet before PayPal checkout, with one rewrite included after seller-side verification.",
+  "description": "One-screen 5 USD buyer card that routes through the one-copy order packet before the copy-only after-packet PayPal URL, with one rewrite included after seller-side verification.",
   "price": "5.00",
   "priceCurrency": "USD",
   "availability": "https://schema.org/InStock",
@@ -41,7 +41,7 @@
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Build the one-copy order packet before PayPal",
+    "name": "Build the one-copy order packet before the copy-only PayPal URL",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -91,7 +91,12 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build or inspect the one-copy order packet before opening PayPal."
+        "value": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "payment_handoff_mode",
+        "value": "copy_only_after_packet"
       },
       {
         "@type": "PropertyValue",
@@ -113,7 +118,7 @@
     :root { color-scheme: light; --bg:#f7faf8; --ink:#13201a; --muted:#4c5f56; --line:#d7e1dc; --paper:#ffffff; --accent:#0f6959; --accent-dark:#0a4f43; --focus:#b45f00; }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: Arial, Helvetica, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
-    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
     .skip-link { position:absolute; left:16px; top:-80px; z-index:10; padding:10px 14px; background:var(--paper); border:1px solid var(--line); border-radius:7px; color:var(--ink); }
     .skip-link:focus { top:16px; }
     header, main, footer { width:min(920px, calc(100% - 32px)); margin:0 auto; }
@@ -149,11 +154,11 @@
   </header>
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
-      <h1 id="page-title">Build packet, then pay 5 USD.</h1>
-      <p class="lead">Use this card when one real lead, quote, appointment, missed call, quiet DM, or unanswered estimate is worth more than 5 USD. Build the one-copy order packet first, copy the PayPal note, then pay exactly 5 USD on PayPal; fulfillment starts only after seller-side PayPal evidence or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
+      <h1 id="page-title">Build packet, then copy the 5 USD PayPal URL.</h1>
+      <p class="lead">Use this card when one real lead, quote, appointment, missed call, quiet DM, or unanswered estimate is worth more than 5 USD. Build the one-copy order packet first, copy the PayPal note, then copy the after-packet PayPal URL for exactly 5 USD; fulfillment starts only after seller-side PayPal evidence or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
       <div class="actions" aria-label="Primary actions">
         <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
-        <a id="paypal-payment-link" class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">PayPal after packet</a>
+        <button class="button" type="button" data-copy-payment-url>Copy after-packet PayPal URL</button>
         <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml" target="_blank" rel="noopener noreferrer">Order form after payment</a>
         <a class="button" href="fix-one-quiet-lead.json">Packet JSON</a>
         <a class="button" href="paypal-buy-action.json">Buyer-agent BuyAction</a>
@@ -166,7 +171,7 @@
     </section>
     <section class="panel" aria-labelledby="proof-title">
       <h2 id="proof-title">No-clone checkout proof</h2>
-      <p>Buyer agents can verify the current package route without cloning this repo, then open the one-copy order packet before PayPal:</p>
+      <p>Buyer agents can verify the current package route without cloning this repo, then open the one-copy order packet before using the after-packet PayPal URL:</p>
       <p class="note">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json</p>
       <p>Release: <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">v2.29.163</a>. Current release tarball SHA-256 file: <code>https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256</code>. Stop only after seller-side PayPal proof, PayPal API verification, trusted seller-side CSV proof, or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
     </section>
@@ -175,19 +180,18 @@
       <p id="paypal-note" class="note">One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]</p>
       <div class="note-actions">
         <button id="copy-paypal-note" class="button" type="button">Copy PayPal note</button>
-        <button id="copy-paypal-link" class="button" type="button">Copy PayPal link</button>
+        <button class="button" type="button" data-copy-payment-url>Copy after-packet PayPal URL</button>
         <span id="copy-status" class="status" role="status" aria-live="polite"></span>
       </div>
     </section>
   </main>
-  <footer><p>Order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. Payment URL after packet: https://paypal.me/softjunk/5USD. Do not mark paid or delivered until seller-side evidence verifies the 5 USD payment.</p></footer>
+  <footer><p>Order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. Copy-only PayPal URL after packet: https://paypal.me/softjunk/5USD. Do not mark paid or delivered until seller-side evidence verifies the 5 USD payment.</p></footer>
   <script>
     (function () {
       var noteButton = document.getElementById('copy-paypal-note');
-      var linkButton = document.getElementById('copy-paypal-link');
       var note = document.getElementById('paypal-note');
-      var paymentLink = document.getElementById('paypal-payment-link');
       var status = document.getElementById('copy-status');
+      var paymentUrl = 'https://paypal.me/softjunk/5USD';
       if (!status) return;
       function copyText(text, successMessage, fallbackMessage) {
         function done(message) { status.textContent = message; }
@@ -206,11 +210,11 @@
           copyText(note.textContent.trim(), 'PayPal note copied.', 'Select the note text manually to copy it.');
         });
       }
-      if (linkButton && paymentLink) {
-        linkButton.addEventListener('click', function () {
-          copyText(paymentLink.href, 'PayPal link copied.', 'Select or open the PayPal link manually.');
+      document.querySelectorAll('[data-copy-payment-url]').forEach(function (button) {
+        button.addEventListener('click', function () {
+          copyText(paymentUrl, 'After-packet PayPal URL copied.', 'Select the after-packet PayPal URL manually to copy it.');
         });
-      }
+      });
     }());
   </script></body>
 </html>

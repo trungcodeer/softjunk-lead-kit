@@ -133,7 +133,7 @@ paths:
       summary: Get the SoftJunk GitHub Sponsor button buy route.
       responses:
         "200":
-          description: Machine-readable GitHub Sponsor/FUNDING route with one-copy order packet first, direct 5 USD PayPal handoff second, Send-5 handoff, root buyer card, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Machine-readable GitHub Sponsor/FUNDING route with one-copy order packet first, copy-only after-packet 5 USD PayPal URL second, Send-5 handoff, root buyer card, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             application/json:
               schema:
@@ -1553,7 +1553,7 @@ paths:
       summary: Open the shortest packet-first root USD 5 buyer card.
       responses:
         "200":
-          description: Root one-screen buyer card with one-copy order packet before the exact 5 USD PayPal URL, copy-safe PayPal note, one rewrite included after verified payment, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Root one-screen buyer card with one-copy order packet before the copy-only after-packet 5 USD PayPal URL, copy-safe PayPal note, one rewrite included after verified payment, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             text/html:
               schema:
@@ -1564,7 +1564,7 @@ paths:
       summary: Get the shortest packet-first root USD 5 buyer card JSON.
       responses:
         "200":
-          description: Machine-readable root buyer card with /5 route, one-copy order packet before the PayPal 5 USD URL, one-rewrite risk reversal, order form, privacy rule, and verification gate.
+          description: Machine-readable root buyer card with /5 route, one-copy order packet before the copy-only after-packet PayPal 5 USD URL, one-rewrite risk reversal, order form, privacy rule, and verification gate.
           content:
             application/json:
               schema:
@@ -1575,7 +1575,7 @@ paths:
       summary: Get the shortest packet-first root USD 5 buyer card text.
       responses:
         "200":
-          description: Plain-text root buyer card for routing a buyer to the one-copy order packet before PayPal 5 USD with one rewrite included after verified payment.
+          description: Plain-text root buyer card for routing a buyer to the one-copy order packet before the copy-only after-packet PayPal 5 USD URL with one rewrite included after verified payment.
           content:
             text/plain:
               schema:
@@ -1586,7 +1586,7 @@ paths:
       summary: Open the packet-first one-screen 5 USD buyer card.
       responses:
         "200":
-          description: Lowest-friction buyer card with one-copy order packet before the exact 5 USD PayPal URL, BuyAction manifest, one rewrite included, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Lowest-friction buyer card with one-copy order packet before the copy-only after-packet 5 USD PayPal URL, BuyAction manifest, one rewrite included, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             text/html:
               schema:
@@ -1597,7 +1597,7 @@ paths:
       summary: Get the packet-first one-screen 5 USD buyer card JSON.
       responses:
         "200":
-          description: Machine-readable buyer card with one-copy order packet before PayPal 5 USD URL, BuyAction, one-rewrite risk reversal, and verification gate.
+          description: Machine-readable buyer card with one-copy order packet before the copy-only after-packet PayPal 5 USD URL, BuyAction, one-rewrite risk reversal, and verification gate.
           content:
             application/json:
               schema:
@@ -1608,7 +1608,7 @@ paths:
       summary: Get the packet-first one-screen 5 USD buyer card text.
       responses:
         "200":
-          description: Plain-text buyer card for routing a buyer to the one-copy order packet before PayPal 5 USD with one rewrite included after verified payment.
+          description: Plain-text buyer card for routing a buyer to the one-copy order packet before the copy-only after-packet PayPal 5 USD URL with one rewrite included after verified payment.
           content:
             text/plain:
               schema:

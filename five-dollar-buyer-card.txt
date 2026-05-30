@@ -1,5 +1,5 @@
 SoftJunk 5 USD Packet-First Buyer Card
-Updated: 2026-05-30
+Updated: 2026-05-31
 
 Build the one-copy order packet first:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
@@ -8,7 +8,7 @@ Machine-readable packet:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
 
-Pay exactly 5 USD after the packet is ready:
+Copy-only PayPal URL after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 Buyer-agent BuyAction manifest:

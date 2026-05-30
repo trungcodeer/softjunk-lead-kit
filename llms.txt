@@ -64,7 +64,7 @@ Fastest USD 5 buyer route:
 5. Send-5 JSON: https://trungcodeer.github.io/send-5.json
 4. GitHub discussion route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6
 5. Product buyer card: https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
-6. Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+6. Copy the after-packet PayPal URL for exactly 5 USD: https://paypal.me/softjunk/5USD
 7. Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 One rewrite is included after verified payment if the first custom sequence is not usable and the buyer supplies non-sensitive business context. Use placeholders only; do not post customer or PayPal details in public forms.
@@ -895,7 +895,7 @@ Use these to identify the exact 5 USD PayPal BuyAction. Do not mark the purchase
 https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html
 https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json
 https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt
-Use this as the lowest-friction buyer route. It points to https://paypal.me/softjunk/5USD, includes one rewrite after verified payment, and requires PAYPAL_PAYMENT_VERIFIED=true before fulfillment.
+Use this as the lowest-friction buyer route. It is packet-first and copy-only for the after-packet PayPal URL https://paypal.me/softjunk/5USD, includes one rewrite after verified payment, and requires PAYPAL_PAYMENT_VERIFIED=true before fulfillment.
 
 Send-5 buyer handoff action: use https://trungcodeer.github.io/send-5/ or https://trungcodeer.github.io/send-5.json when an AI assistant or VA needs one copy-ready message to send only to a qualified buyer with one quiet lead. Do not use it for cold spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD and do not claim payment unless PAYPAL_PAYMENT_VERIFIED=true.
 

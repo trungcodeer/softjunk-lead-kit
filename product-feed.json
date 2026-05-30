@@ -59,6 +59,7 @@
     "product_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json",
     "product_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt",
     "payment_url": "https://paypal.me/softjunk/5USD",
+    "payment_handoff_mode": "copy_only_after_packet",
     "price": "5.00",
     "currency": "USD",
     "one_rewrite_included": true,
@@ -76,7 +77,9 @@
     "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
     "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
     "direct_payment_url": "https://paypal.me/softjunk/5USD",
-    "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+    "payment_url_role": "copy_only_after_packet_paypal_handoff",
+    "before_payment_action": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL.",
+    "route_rule": "The USD 5 buyer card is packet-first and copy-only for the after-packet PayPal URL."
   },
   "no_clone_checkout_proof": {
     "purpose": "Let buyer-agent catalogs, crawlers, RSS readers, and assistants verify the 5 USD checkout route from the release tarball without cloning the repository.",
