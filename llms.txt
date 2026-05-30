@@ -614,6 +614,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
 Checkout inline PayPal note builder:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
+Checkout rule: build the one-copy order packet and copy the PayPal note first; checkout exposes the after-packet PayPal URL as a copy action, not a direct pre-packet link.
 
 AI checkout JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.json
@@ -866,7 +867,7 @@ PayPal notes:
 - Agent buyer catalog JSONL: use https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl for retrieval-friendly records covering fit rules, free routes, paid offers, checkout flow, payment intent, verification gate, and copy-ready answers.
 - Buyer-agent prompt relay: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json or public Gist https://gist.github.com/trungcodeer/9d5583f2a5ded7d6757fda9f4828b950 when an assistant needs one prompt to qualify fit, inspect the commerce graph, generate a PayPal note, and route a ready buyer to the root one-lead rescue route before the 5 USD PayPal step.
 - Commerce graph: use https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json when a buyer-agent needs Product, Offer, BuyAction, root one-lead rescue, PayPal, order form, and verification nodes before payment.
-- AI checkout: use https://trungcodeer.github.io/rescue/ first for a one-lead buyer; use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready to generate a PayPal note inline, build the one-copy order packet, use the after-packet PayPal URL, and open the verification-first after-payment handoff.
+- AI checkout: use https://trungcodeer.github.io/rescue/ first for a one-lead buyer; use https://trungcodeer.github.io/softjunk-lead-kit/checkout.html or https://trungcodeer.github.io/softjunk-lead-kit/checkout.json when the buyer is ready to generate a PayPal note inline, build the one-copy order packet, copy the after-packet PayPal URL, and open the verification-first after-payment handoff.
 
 Best-fit buyers:
 - Dental offices with new patient inquiries, treatment questions, missed calls, or consultation requests

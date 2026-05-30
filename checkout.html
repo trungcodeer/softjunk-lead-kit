@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AI Checkout Handoff $5 | SoftJunk Lead Kit</title>
-  <meta name="description" content="Agent-first checkout handoff for the $5 SoftJunk one-copy order packet, AI Deal Desk, verified no-clone checkout command, exact PayPal payment, after-payment page, and seller-side verification gate.">
+  <meta name="description" content="Agent-first checkout handoff for the $5 SoftJunk one-copy order packet, AI Deal Desk, verified no-clone checkout command, copy-only after-packet PayPal URL, after-payment page, and seller-side verification gate.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.html">
   <meta name="robots" content="index,follow">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json" title="SoftJunk one-copy order packet JSON">
@@ -12,7 +12,7 @@
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json" title="SoftJunk well-known PayPal BuyAction manifest">
   <meta property="og:title" content="AI Checkout Handoff $5 | SoftJunk Lead Kit">
-  <meta property="og:description" content="Build the one-copy order packet, generate the PayPal note, run verified no-clone checkout proof, pay exactly $5, then use the after-payment handoff.">
+  <meta property="og:description" content="Build the one-copy order packet, generate the PayPal note, run verified no-clone checkout proof, copy the after-packet PayPal URL, then use the after-payment handoff.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/checkout.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="AI Checkout Handoff $5 | SoftJunk Lead Kit">
-  <meta name="twitter:description" content="Agent-first checkout for SoftJunk: one-copy order packet, verified no-clone checkout proof, exact $5 PayPal payment, and verification gate.">
+  <meta name="twitter:description" content="Agent-first checkout for SoftJunk: one-copy order packet, verified no-clone checkout proof, copy-only after-packet PayPal URL, and verification gate.">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.json" title="SoftJunk AI checkout intent JSON">
   <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt" title="SoftJunk AI checkout handoff text">
@@ -33,7 +33,7 @@
           "@type": "CheckoutPage",
           "name": "SoftJunk AI Checkout Handoff",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
-          "description": "Agent-first checkout page for the $5 SoftJunk one-copy order packet, verified no-clone checkout command, exact PayPal payment, after-payment handoff, and seller-side verification gate."
+          "description": "Agent-first checkout page for the $5 SoftJunk one-copy order packet, verified no-clone checkout command, copy-only after-packet PayPal URL, after-payment handoff, and seller-side verification gate."
         },
         {
           "@type": "Offer",
@@ -50,7 +50,7 @@
           },
           "potentialAction": {
             "@type": "BuyAction",
-            "name": "Build the one-copy order packet before paying exactly 5 USD",
+            "name": "Build the one-copy order packet before copying the after-packet PayPal URL",
             "target": {
               "@type": "EntryPoint",
               "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -465,7 +465,7 @@
       },
       "potentialAction": {
         "@type": "BuyAction",
-        "name": "Build the one-copy order packet before paying exactly 5 USD",
+            "name": "Build the one-copy order packet before copying the after-packet PayPal URL",
         "target": {
           "@type": "EntryPoint",
           "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -480,7 +480,7 @@
           {
             "@type": "PropertyValue",
             "name": "before_payment_action",
-            "value": "Build or inspect the one-copy order packet before opening PayPal."
+            "value": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
           },
           {
             "@type": "PropertyValue",
@@ -517,12 +517,12 @@
       <div>
         <p class="eyebrow">AI checkout handoff</p>
         <h1 id="page-title">Build packet, then pay $5.</h1>
-        <p class="note buyer-send-route"><strong>Roofing buyer-send route:</strong> read the <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html">one-read buyer packet</a> or <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json">agent JSON</a>, build the <a href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">one-copy order packet</a>, then pay exactly <a href="https://paypal.me/softjunk/5USD">5 USD on PayPal</a>. Fulfillment starts only after <code>PAYPAL_PAYMENT_VERIFIED=true</code>; use placeholders only.</p>
-        <p class="lead">Build or inspect the one-copy order packet first, copy the kit note or generate a custom PayPal note below, run the verified no-clone checkout command, pay exactly $5, then use the after-payment handoff. Delivery starts only after seller-side PayPal proof.</p>
+        <p class="note buyer-send-route"><strong>Roofing buyer-send route:</strong> read the <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html">one-read buyer packet</a> or <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json">agent JSON</a>, build the <a href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">one-copy order packet</a>, then use the after-packet PayPal URL <code>https://paypal.me/softjunk/5USD</code>. Fulfillment starts only after <code>PAYPAL_PAYMENT_VERIFIED=true</code>; use placeholders only.</p>
+        <p class="lead">Build or inspect the one-copy order packet first, copy the kit note or generate a custom PayPal note below, run the verified no-clone checkout command, copy the after-packet PayPal URL, then use the after-payment handoff. Delivery starts only after seller-side PayPal proof.</p>
         <div class="actions">
           <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
           <a class="button primary" href="ai-deal-desk.html">Open AI Deal Desk</a>
-          <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay after packet</a>
+          <button class="button" type="button" data-copy-payment-url>Copy after-packet PayPal URL</button>
           <a class="button" href="after-pay.html">After-payment handoff</a>
           <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">Current release</a>
           <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/discussions/4" target="_blank" rel="noopener noreferrer">GitHub buyer discussion</a>
@@ -534,7 +534,7 @@
         <div class="note">
           <div class="quick-note" aria-labelledby="packet-title">
             <h2 id="packet-title">One-copy order packet</h2>
-            <p>Open this first so the buyer-agent has one generated message, the PayPal note, exact payment URL, and after-payment route before payment.</p>
+            <p>Open this first so the buyer-agent has one generated message, the PayPal note, exact after-packet PayPal URL, and after-payment route before payment.</p>
             <div class="actions">
               <a class="button primary" href="fix-one-quiet-lead.html">Open packet</a>
               <a class="button" href="fix-one-quiet-lead.json">Packet JSON</a>
@@ -545,7 +545,7 @@
           <p><code id="paypal-note">Lead Follow-Up Kit</code></p>
           <div class="quick-note" aria-labelledby="no-clone-title">
             <h2 id="no-clone-title">No-clone checkout proof</h2>
-            <p>Run this current release-tarball command after opening the packet and before opening PayPal when an agent needs executable checkout proof.</p>
+            <p>Run this current release-tarball command after opening the packet and before using PayPal when an agent needs executable checkout proof.</p>
             <p class="note-output">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json</p>
             <p>Verify <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">release notes</a> and SHA-256 <code>https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256</code>.</p>
           </div>
@@ -593,12 +593,12 @@
               <div class="actions">
                 <button type="button" id="generate-note">Generate note</button>
                 <button type="button" id="copy-custom-note">Copy custom note</button>
-                <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay with this note after packet</a>
+                <button class="button" type="button" data-copy-payment-url>Copy after-packet PayPal URL</button>
               </div>
             </form>
           </div>
           <div class="contract">
-            <p><strong>Agent-first contract:</strong> one-copy order packet, kit note or custom sequence note, verified no-clone command, exact <code>5.00 USD</code> PayPal payment, after-payment handoff, then seller-side verification.</p>
+            <p><strong>Agent-first contract:</strong> one-copy order packet, kit note or custom sequence note, verified no-clone command, copy-only after-packet PayPal URL for exact <code>5.00 USD</code>, after-payment handoff, then seller-side verification.</p>
             <p>Do not mark paid, started, delivered, or complete until the seller can see the PayPal transaction or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
           </div>
           <p class="status" id="copy-status" role="status" aria-live="polite"></p>
@@ -627,7 +627,7 @@
           <h2 id="scan-pay-title">Scan packet first</h2>
           <img src="packet-qr.svg" alt="QR code linking to the SoftJunk one-copy order packet">
           <p><a href="pay-qr.html">Open packet QR page</a></p>
-          <p><a href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal $5 link after packet</a></p>
+          <p><button class="button" type="button" data-copy-payment-url>Copy after-packet PayPal URL</button></p>
         </div>
       </aside>
     </section>
@@ -644,6 +644,7 @@
     const note = document.querySelector('#paypal-note');
     const customNote = document.querySelector('#custom-note');
     const statusMessage = document.querySelector('#copy-status');
+    const paymentUrl = 'https://paypal.me/softjunk/5USD';
     const fields = {
       business: document.querySelector('#business'),
       service: document.querySelector('#service'),
@@ -674,7 +675,7 @@
         await navigator.clipboard.writeText(value.trim());
         statusMessage.textContent = success;
       } catch {
-        statusMessage.textContent = 'Copy failed. Select the note manually.';
+        statusMessage.textContent = 'Copy failed. Select the note or URL manually.';
       }
     }
 
@@ -690,6 +691,10 @@
 
     copyButton.addEventListener('click', () => copyText(note.textContent, 'Kit PayPal note copied.'));
     copyCustomButton.addEventListener('click', () => copyText(buildCustomNote(), 'Custom PayPal note copied.'));
+
+    document.querySelectorAll('[data-copy-payment-url]').forEach((button) => {
+      button.addEventListener('click', () => copyText(paymentUrl, 'After-packet PayPal URL copied.'));
+    });
   </script>
 </body>
 </html>

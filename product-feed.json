@@ -265,7 +265,9 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
-      "note_builder": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title"
+      "note_builder": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+      "payment_handoff_mode": "copy_only_after_packet",
+      "before_payment_action": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
     },
     {
       "name": "Agent Commerce Capsule",

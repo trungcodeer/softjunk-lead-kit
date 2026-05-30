@@ -575,7 +575,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Public commerce graph Gist: https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db
 - Raw commerce graph JSON: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json
 - Raw commerce graph text: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt
-- Fast checkout with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
+- Fast checkout with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title (copy-only after-packet PayPal URL; build packet and note first)
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
 - Packet-first QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 - Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html

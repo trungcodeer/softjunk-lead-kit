@@ -26,7 +26,7 @@ Recommended flow:
 6. Verify release notes and release asset SHA-256:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
    https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
-7. Use the after-packet PayPal handoff for exactly 5 USD:
+7. Copy the after-packet PayPal URL for exactly 5 USD:
    https://paypal.me/softjunk/5USD
 8. Open the after-payment handoff:
    https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html

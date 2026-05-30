@@ -1465,7 +1465,7 @@ paths:
       summary: Open the AI checkout handoff page.
       responses:
         "200":
-          description: Agent-first checkout page that keeps the one-copy order packet before the exact 5 USD PayPal handoff, with inline PayPal note builder, after-payment handoff, GitHub buyer discussion, and verification gate.
+          description: Agent-first checkout page that keeps the one-copy order packet and PayPal note before the copy-only after-packet 5 USD PayPal URL, with inline PayPal note builder, after-payment handoff, GitHub buyer discussion, and verification gate.
           content:
             text/html:
               schema:
@@ -1476,7 +1476,7 @@ paths:
       summary: Get the AI checkout handoff JSON.
       responses:
         "200":
-          description: Machine-readable checkout contract with one-copy order packet first, inline PayPal note builder, AI Deal Desk route, direct after-packet PayPal URL, PayPal note templates, after-payment handoff, and verification gate.
+          description: Machine-readable checkout contract with one-copy order packet first, inline PayPal note builder, AI Deal Desk route, copy-only after-packet PayPal URL, PayPal note templates, after-payment handoff, and verification gate.
           content:
             application/json:
               schema:
@@ -1487,7 +1487,7 @@ paths:
       summary: Get the AI checkout handoff text.
       responses:
         "200":
-          description: Plain-text checkout handoff for buyer-agents routing a qualified SoftJunk buyer to the inline note builder and exact 5 USD PayPal payment.
+          description: Plain-text checkout handoff for buyer-agents routing a qualified SoftJunk buyer to the inline note builder, copy-only after-packet PayPal URL, and seller-side verification gate.
           content:
             text/plain:
               schema:

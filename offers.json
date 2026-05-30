@@ -115,6 +115,7 @@
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
   "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
   "checkout_note_builder_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
+  "checkout_rule": "Checkout is packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then use the after-packet PayPal URL.",
   "printable_paypal_flyer_url": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",
   "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
   "after_payment_rule": "The after-payment handoff is packet-first: build or copy the one-copy order packet and PayPal note before using the after-packet PayPal URL, then fulfill only after seller-side PayPal verification.",

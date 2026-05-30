@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>Packet-first $5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 22:36:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 22:58:00 +0700</lastBuildDate>
+    <item>
+      <title>AI Checkout Copy-Only After-Packet PayPal Route</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/checkout.html</link>
+      <guid isPermaLink="false">checkout-copy-only-after-packet-2026-05-30</guid>
+      <pubDate>Sat, 30 May 2026 22:58:00 +0700</pubDate>
+      <description>AI checkout now keeps the one-copy order packet and PayPal note before payment, removes direct PayPal links from the page, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
+    </item>
     <item>
       <title>After-Payment Handoff Packet-First Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html</link>
@@ -424,7 +431,7 @@
       <title>Fast $5 Checkout for SoftJunk Lead Kit</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/checkout.html</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/checkout.html</guid>
-      <description>Agent-first checkout handoff that opens the one-copy order packet before the exact $5 PayPal handoff, with checkout JSON and seller-side verification gate.</description>
+      <description>Agent-first checkout handoff that opens the one-copy order packet and note builder before the copy-only after-packet $5 PayPal URL, with checkout JSON and seller-side verification gate.</description>
       <pubDate>Tue, 26 May 2026 10:20:00 +0700</pubDate>
     </item>
     <item>
