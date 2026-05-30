@@ -12548,3 +12548,57 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Niche Template Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Niche Template Packet-First Route.
+- Completed todos:
+  - Audited public HTML pages for direct PayPal exposure before the one-copy order packet.
+  - Identified seven high-intent niche template pages still exposing direct PayPal as a visible pre-packet CTA: appointment setting, dental, HVAC, med spa, plumbing, real estate, and tutoring.
+  - Updated the seven niche template pages so paid JSON-LD Offer URLs and BuyAction targets point to `fix-one-quiet-lead.html`.
+  - Preserved direct PayPal only as after-packet metadata via `directPaymentUrl`, `paymentUrl`, and visible `PayPal after packet` copy.
+  - Changed hero/payment/proof copy so buyers build the one-copy order packet before opening PayPal.
+  - Updated discovery surfaces: `.well-known/openapi.yaml`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md`.
+  - Committed and pushed product commit `afbbe69` (`afbbe695e8172dfcee41f5d472da70c2f0f5dd78`) to `main`.
+  - Waited for GitHub Pages run `26681952140`, which completed successfully for commit `afbbe69`.
+  - Live-verified twelve product/discovery URLs with marker `live_niche_template_packet_first_ok commit=afbbe69 urls=12`.
+  - Submitted the twelve changed owned Pages URLs to IndexNow with marker `indexnow_niche_template_packet_first_ok status=200 urls=12`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `niche_template_packet_first_ok files=7`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Xqf6X4ek8jlKr1PMNllnNXQ7+dfVZ5c0bDD6CAC5Nipwh9baO3z63h9nsASh+qcVorRnlBzTifvtytccBgsETQ==`, shasum `625a30caecf2719a74f3c3319ea3e28f40245833`.
+- Product Pages run: `26681952140`, conclusion `success`, head SHA `afbbe695e8172dfcee41f5d472da70c2f0f5dd78`.
+- Live verification: `live_niche_template_packet_first_ok commit=afbbe69 urls=12`.
+- IndexNow: `indexnow_niche_template_packet_first_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves high-intent niche template buyer routes and keeps payment packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, niche HTML template surfaces, OpenAPI/RSS/sitemap/LLM discovery, README, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Niche Template Packet-First Route, product commit `afbbe69` (`afbbe695e8172dfcee41f5d472da70c2f0f5dd78`).
+- Full checkpoint section: `2026-05-30 Niche Template Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26681952140` success; live verification `live_niche_template_packet_first_ok commit=afbbe69 urls=12`; IndexNow `indexnow_niche_template_packet_first_ok status=200 urls=12`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

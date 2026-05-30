@@ -9339,3 +9339,53 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_missed_call_packet_first_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Niche Template Packet-First Evidence
+
+- Audited public HTML pages for direct PayPal exposure before the one-copy order packet.
+- Found seven high-intent niche template pages where direct PayPal appeared as visible pre-packet CTA: `appointment-setting-follow-up.html`, `dental-follow-up.html`, `hvac-lead-follow-up.html`, `med-spa-follow-up.html`, `plumbing-lead-follow-up.html`, `real-estate-lead-follow-up.html`, and `tutoring-follow-up.html`.
+- Updated product commit `afbbe69` (`afbbe695e8172dfcee41f5d472da70c2f0f5dd78`):
+  - The seven niche template pages now expose `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html` as the paid JSON-LD Offer URL and BuyAction target.
+  - The seven pages preserve `https://paypal.me/softjunk/5USD` as `directPaymentUrl` and `paymentUrl`, and as visible `PayPal after packet` handoff copy.
+  - Hero CTA copy no longer sends buyers directly to PayPal; it sends them to `Build order packet`.
+  - Checkout proof copy now says to build the one-copy order packet first, then verify the after-packet 5 USD route.
+  - Discovery surfaces `.well-known/openapi.yaml`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe the niche template packet-first route.
+  - Accessibility affordances remain present: skip links, visible focus styling, semantic anchors, alt text on preview images, and no hover-only controls.
+- Local verification:
+  - `niche_template_packet_first_ok files=7`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Xqf6X4ek8jlKr1PMNllnNXQ7+dfVZ5c0bDD6CAC5Nipwh9baO3z63h9nsASh+qcVorRnlBzTifvtytccBgsETQ==`, shasum `625a30caecf2719a74f3c3319ea3e28f40245833`.
+- Deployment:
+  - Product commit `afbbe69` pushed to `main`.
+  - Product Pages run `26681952140` completed successfully.
+- Live verification returned `live_niche_template_packet_first_ok commit=afbbe69 urls=12` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/hvac-lead-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_niche_template_packet_first_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the twelve changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Niche Template Packet-First Route, product commit `afbbe69` (`afbbe695e8172dfcee41f5d472da70c2f0f5dd78`).
+- Full evidence section: `2026-05-30 Niche Template Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26681952140` success.
+- Live verification evidence: `live_niche_template_packet_first_ok commit=afbbe69 urls=12`.
+- Discovery ping evidence: `indexnow_niche_template_packet_first_ok status=200 urls=12`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
