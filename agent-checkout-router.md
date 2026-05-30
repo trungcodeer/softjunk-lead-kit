@@ -2,7 +2,7 @@
 
 Canonical JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
 
-Use this when an assistant, crawler, VA, or buyer-agent needs the shortest legitimate path from context to the exact 5 USD PayPal handoff.
+Use this when an assistant, crawler, VA, or buyer-agent needs the shortest legitimate path from context to the one-copy order packet, exact 5 USD PayPal handoff, and seller-side verification gate.
 
 Latest release: `v2.29.163`
 
@@ -16,12 +16,17 @@ Current npmjs status: `E404`
 
 Current local npm auth status: `ENEEDAUTH`
 
-Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+One-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+
+Pay exactly 5 USD after packet: https://paypal.me/softjunk/5USD
 
 Success signal: `PAYPAL_PAYMENT_VERIFIED=true`
 
 ## Ranked Routes
 
+0. Preferred packet-first route: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html and https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 1. Ready buyer fastest path: https://trungcodeer.github.io/5/ and https://trungcodeer.github.io/5.json
 2. Qualified buyer copy-ready handoff: https://trungcodeer.github.io/send-5/ and https://trungcodeer.github.io/send-5.json
 3. Buyer intent preview before payment: https://trungcodeer.github.io/intent-5/ and https://trungcodeer.github.io/intent-5.json
@@ -38,4 +43,4 @@ Success signal: `PAYPAL_PAYMENT_VERIFIED=true`
 
 ## Rules
 
-Use only owned public surfaces or one known fitting buyer context. Do not use scraped lists, spam, deception, unauthorized outreach, fake payment claims, or private customer/payment data. Do not claim paid, received, started, fulfilled, complete, or stopped unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+Use only owned public surfaces or one known fitting buyer context. Build or inspect the one-copy order packet before opening PayPal. Do not use scraped lists, spam, deception, unauthorized outreach, fake payment claims, or private customer/payment data. Do not claim paid, received, started, fulfilled, complete, or stopped unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
