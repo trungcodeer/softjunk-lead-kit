@@ -3,7 +3,7 @@
 # Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
 # Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
 # Release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
-# Payment URL after packet: copy https://paypal.me/softjunk/5USD from the Sponsor route only after the packet and note are ready.
+# Payment URL after packet: copy it from the Sponsor route only after the packet and note are ready.
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 blank_issues_enabled: false
@@ -22,7 +22,7 @@ contact_links:
     about: GitHub-native Sponsor/funding route with Sponsor page first, order packet second, Send-5 third, root buyer card fourth, and verification gate.
   - name: One-lead rescue route
     url: https://trungcodeer.github.io/rescue/
-    about: Generate one stronger reply and a PayPal note before copying the after-packet PayPal URL and completing the 5 USD PayPal payment and submitting the order form.
+    about: Generate one stronger reply and a PayPal note before using the Sponsor route to copy the after-packet PayPal URL and submitting the order form.
   - name: Buyer-agent JSON
     url: https://trungcodeer.github.io/5.json
     about: Machine-readable buyer card with exact PayPal URL, price, one rewrite, privacy boundary, and verification gate.
@@ -40,10 +40,10 @@ contact_links:
     about: One-read buyer route for one unanswered roofing estimate with exact 5 USD PayPal checkout, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
   - name: Roofing estimate rescue order form
     url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
-    about: Submit non-sensitive roofing estimate rescue details after completing the 5 USD PayPal payment.
+    about: Submit non-sensitive roofing estimate rescue details after packet-first payment.
   - name: Payment verification instructions
     url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_VERIFICATION.md
     about: Verifier and CSV workflow for proving the 5 USD PayPal payment before fulfillment starts.
   - name: Clone CLI paid order form
     url: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
-    about: Submit non-sensitive details after using the clone CLI and completing the 5 USD PayPal payment. Do not post private payment or customer details.
+    about: Submit non-sensitive details after using the clone CLI and completing packet-first payment. Do not post private payment or customer details.

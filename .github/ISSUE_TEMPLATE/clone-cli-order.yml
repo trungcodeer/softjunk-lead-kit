@@ -1,13 +1,14 @@
 # No-clone checkout proof:
-# Command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
-# Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
-# Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
-# Release tarball SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
-# Payment URL: https://paypal.me/softjunk/5USD
+# Command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+# Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
+# Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
+# Release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
+# Sponsor route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+# Payment URL after packet: copy the after-packet PayPal URL from the Sponsor route only after the packet and note are ready.
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 name: Clone CLI paid order
-about: Submit non-sensitive order details after using the clone CLI and completing the 5 USD PayPal payment on PayPal.
+about: Submit non-sensitive order details after using the clone CLI, building the packet, and completing the 5 USD after-packet PayPal payment.
 title: "Paid clone CLI order: [business type]"
 labels:
   - paid-order
@@ -16,7 +17,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this only after completing the 5 USD PayPal payment at https://paypal.me/softjunk/5USD.
+        Use this only after building the packet and completing the 5 USD after-packet PayPal payment from the packet-first Sponsor route:
+        https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
 
         Do not post PayPal transaction IDs, invoice IDs, payer email, customer names, phone numbers, emails, addresses, or private lead details.
         Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
@@ -50,7 +52,7 @@ body:
     attributes:
       label: Safety confirmation
       options:
-        - label: I paid exactly 5 USD at https://paypal.me/softjunk/5USD.
+        - label: I built or inspected the packet and completed the 5 USD after-packet PayPal payment.
           required: true
         - label: I did not include PayPal transaction IDs, payer email, or private customer details.
           required: true
