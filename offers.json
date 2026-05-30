@@ -441,5 +441,7 @@
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
   "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_url_role": "after_packet_paypal_handoff",
+  "fix_one_quiet_lead_packet_first_rule": "Generate the one-lead rescue, copy the one-copy order packet and PayPal note, then use the PayPal URL only as the after-packet handoff.",
   "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
 }

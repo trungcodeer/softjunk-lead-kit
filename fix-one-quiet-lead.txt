@@ -1,5 +1,5 @@
 SoftJunk Fix One Quiet Lead
-Updated: 2026-05-29
+Updated: 2026-05-30
 
 One-screen buyer route:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
@@ -16,9 +16,9 @@ https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/
 Raw text:
 https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt
 
-One-copy order packet:
+One-copy order packet first:
 - Generate the one-lead rescue on the page.
-- Copy the order packet when a buyer, VA, or agent needs one payload with the free message preview, PayPal note, shareable rescue link, no-clone checkout proof, exact PayPal URL, and post-payment order form.
+- Copy the order packet when a buyer, VA, or agent needs one payload with the free message preview, PayPal note, shareable rescue link, no-clone checkout proof, after-packet exact PayPal URL, and post-payment order form.
 - Use placeholders only; do not include private customer names, phone numbers, emails, payment IDs, or private PayPal details.
 
 Use when:
@@ -26,7 +26,7 @@ Use when:
 - The buyer wants one stronger next message before buying the custom 7-day sequence.
 - The buyer needs a PayPal note that identifies the business, service, source, tone, blocker, and next step.
 
-Payment:
+Payment after packet:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
@@ -70,7 +70,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 SHA-256:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 
-Pay exactly 5 USD:
+After-packet PayPal URL for exactly 5 USD:
 https://paypal.me/softjunk/5USD
 
 After PayPal, submit non-sensitive order details:
@@ -86,6 +86,6 @@ Verification gate:
 PAYPAL_PAYMENT_VERIFIED=true
 
 Copyable buyer-agent instruction:
-Use non-sensitive lead context in https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html#rescue-tool, copy the PayPal note, verify checkout with the no-clone command above, load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256 from https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163, pay exactly 5 USD at https://paypal.me/softjunk/5USD, then submit the order form. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+Use non-sensitive lead context in https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html#rescue-tool, copy the one-copy order packet and PayPal note, verify checkout with the no-clone command above, load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256 from https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163, then pay exactly 5 USD at https://paypal.me/softjunk/5USD after the packet is ready and submit the order form. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 This page is a payment request and buyer handoff, not proof that money arrived.

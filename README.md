@@ -781,6 +781,8 @@ SHA-256: 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba
 Free sample pack page:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 
+Fix-one-quiet-lead packet-first rule: generate the rescue, copy the one-copy order packet and PayPal note, then use the PayPal URL only as the after-packet handoff. The page no longer exposes direct PayPal links before the packet actions.
+
 Sample-pack paid upgrade rule: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
 
 Paid kit proof paid upgrade rule: inspect the proof and manifest, then build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.

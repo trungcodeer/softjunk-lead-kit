@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>Packet-first $5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 21:55:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 22:20:00 +0700</lastBuildDate>
+    <item>
+      <title>Fix One Quiet Lead Packet-First Route</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html</link>
+      <guid isPermaLink="false">fix-one-quiet-lead-packet-first-2026-05-30</guid>
+      <pubDate>Sat, 30 May 2026 22:20:00 +0700</pubDate>
+      <description>Fix One Quiet Lead now keeps the one-copy order packet and PayPal note as the primary buyer actions, removes direct PayPal links from the page, and preserves the after-packet 5 USD PayPal handoff plus seller-side verification gate.</description>
+    </item>
     <item>
       <title>Paid Kit Proof Packet-First Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</link>

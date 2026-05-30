@@ -2,7 +2,7 @@
   "schema_version": "softjunk-agent-checkout-router-v1",
   "updated": "2026-05-30",
   "name": "SoftJunk Agent Checkout Router",
-  "purpose": "A compact machine-readable decision router for assistants, crawlers, VAs, and buyer-agents that need the shortest legitimate path from buyer context to the one-copy order packet, exact 5 USD PayPal handoff, and seller-side verification gate.",
+  "purpose": "A compact machine-readable decision router for assistants, crawlers, VAs, and buyer-agents that need the shortest legitimate path from buyer context to the one-copy order packet, PayPal note, exact after-packet 5 USD PayPal handoff, and seller-side verification gate.",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
   "markdown_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt",
@@ -38,6 +38,8 @@
     "root_buyer_card_url": "https://trungcodeer.github.io/5/",
     "root_buyer_card_json_url": "https://trungcodeer.github.io/5.json",
     "payment_url": "https://paypal.me/softjunk/5USD",
+    "payment_url_role": "after_packet_paypal_handoff",
+    "before_payment_action": "Generate or inspect the one-copy order packet and copy the PayPal note before opening PayPal.",
     "after_payment": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml"
   },
   "root_fast_pay_routes": {

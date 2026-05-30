@@ -305,12 +305,18 @@
     {
       "name": "Fix One Quiet Lead",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-      "delivery": "One-screen builder that generates a stronger next message, PayPal note, shareable rescue link, and 5 USD checkout path",
+      "delivery": "Packet-first one-screen builder that generates a stronger next message, one-copy order packet, PayPal note, shareable rescue link, and after-packet 5 USD checkout path",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
       "gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
       "gist_raw_json_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.json",
-      "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt"
+      "gist_raw_text_url": "https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/raw/fix-one-quiet-lead.txt",
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+      "direct_payment_url": "https://paypal.me/softjunk/5USD",
+      "payment_url_role": "after_packet_paypal_handoff",
+      "before_payment_action": "Generate the one-lead rescue, copy the one-copy order packet, and copy the PayPal note before opening PayPal."
     },
     {
       "name": "Lead Follow-Up Rewriter",
