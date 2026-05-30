@@ -8995,3 +8995,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_free_buyer_tools_packet_ok status=202 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Send To Buyer Packet Evidence
+
+- Audited the send-to-buyer handoff after the free buyer tools became packet-first.
+- Found that `send-to-buyer.html`, `send-to-buyer.json`, and `SEND_TO_BUYER.md` still exposed direct PayPal as the primary buyer action or QR path before the one-copy order packet.
+- Updated product commit `365043e` (`365043ed5788844965dc1e085486d609147d4ebc`):
+  - `send-to-buyer.html` JSON-LD Offer URL now points to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `send-to-buyer.html` primary hero CTA now says `Build order packet` and points to the one-copy order packet instead of a direct PayPal button.
+  - `send-to-buyer.html` visible QR now uses `packet-qr.svg` instead of `paypal-qr.svg`.
+  - `send-to-buyer.html` default no-clone proof, generated short DM, generated email, and browser-generated payload now list the one-copy order packet before the after-packet PayPal checkout.
+  - `send-to-buyer.json` now uses schema `softjunk-send-to-buyer-v5`, `updated=2026-05-30`, one-copy order packet fields, direct PayPal fields, and packet-first DM/email copy.
+  - `SEND_TO_BUYER.md` now lists the one-copy order packet before the after-packet PayPal checkout in the top handoff, short DM, and email sections.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe send-to-buyer as a packet-first buyer handoff.
+  - Accessibility affordances remain present on `send-to-buyer.html`: skip link, focus-visible styling, semantic anchors/buttons, labeled inputs, QR alt text, and `aria-live="polite"` status messages.
+- Local verification:
+  - `send_to_buyer_packet_ok html=1 json=2 discovery=6`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-ojmKWaQo0DFxr/vQPTZq5xhBQAHQ6hU1Y9Ch9cihhqOfZylTK88MHdHJ887KQE7LHL+DS+4fXeEvqql862YZZQ==`, shasum `ec1cfc7dfd9c549930392bed6568f2cbcabade10`.
+- Deployment:
+  - Product commit `365043e` pushed to `main`.
+  - Product Pages run `26679017615` completed successfully.
+- Live verification returned `live_send_to_buyer_packet_ok commit=365043e urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/SEND_TO_BUYER.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_send_to_buyer_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Send To Buyer Packet, product commit `365043e` (`365043ed5788844965dc1e085486d609147d4ebc`).
+- Full evidence section: `2026-05-30 Send To Buyer Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26679017615` success.
+- Live verification evidence: `live_send_to_buyer_packet_ok commit=365043e urls=9`.
+- Discovery ping evidence: `indexnow_send_to_buyer_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
