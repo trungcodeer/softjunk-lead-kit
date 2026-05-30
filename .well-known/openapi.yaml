@@ -529,7 +529,7 @@ paths:
       summary: Open the SoftJunk roofing buyer send packet.
       responses:
         "200":
-          description: Copy-ready one-buyer DM, email, one-copy order packet route, PayPal note, free preview, checkout-card discussion, after-packet 5 USD PayPal URL, roofing order form, privacy rule, and verification gate.
+          description: Copy-ready one-buyer DM, email, one-copy order packet route, PayPal note, free preview, checkout-card discussion, copy-only after-packet 5 USD PayPal URL, roofing order form, privacy rule, and verification gate.
           content:
             text/html:
               schema:
@@ -540,7 +540,7 @@ paths:
       summary: Get the SoftJunk roofing buyer send packet JSON.
       responses:
         "200":
-          description: Machine-readable one-buyer send packet for a known fitting roofing contractor with one unanswered estimate, including DM, email, one-copy order packet route, PayPal note, checkout-card discussion, after-packet payment URL, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Machine-readable one-buyer send packet for a known fitting roofing contractor with one unanswered estimate, including DM, email, one-copy order packet route, PayPal note, checkout-card discussion, copy-only after-packet payment URL, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             application/json:
               schema:
@@ -551,7 +551,7 @@ paths:
       summary: Get the SoftJunk roofing buyer send packet text.
       responses:
         "200":
-          description: Plain-text one-buyer send packet with DM, email, one-copy order packet route, PayPal note, checkout-card discussion, after-packet payment URL, order form, privacy rule, and verification gate.
+          description: Plain-text one-buyer send packet with DM, email, one-copy order packet route, PayPal note, checkout-card discussion, copy-only after-packet payment URL, order form, privacy rule, and verification gate.
           content:
             text/plain:
               schema:

@@ -140,7 +140,7 @@ Use this first when the lead is an unanswered roofing estimate:
 3. Send one fitting buyer this copy-ready packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
 4. Generate a free preview: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
 5. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-6. Pay exactly 5 USD through PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+6. Copy the after-packet PayPal URL for exactly 5 USD after the packet and PayPal note are ready: https://paypal.me/softjunk/5USD
 7. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, insurance claim numbers, invoice IDs, transaction IDs, or PayPal details. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
