@@ -1057,7 +1057,7 @@ paths:
       summary: Open the free lead loss calculator.
       responses:
         "200":
-          description: Browser calculator for estimating missed follow-up value.
+          description: Browser calculator for estimating missed follow-up value, then building the one-copy order packet before the 5 USD PayPal handoff.
           content:
             text/html:
               schema:
@@ -1068,7 +1068,7 @@ paths:
       summary: Open the free lead recovery audit.
       responses:
         "200":
-          description: Browser audit that estimates missed lead value, rewrites the next follow-up, and creates a PayPal note.
+          description: Browser audit that estimates missed lead value, rewrites the next follow-up, builds the one-copy order packet, and creates the after-packet PayPal note.
           content:
             text/html:
               schema:
@@ -1123,7 +1123,7 @@ paths:
       summary: Open the free lead follow-up rewriter.
       responses:
         "200":
-          description: Browser tool that rewrites one weak follow-up message and offers the $5 custom sequence path.
+          description: Browser tool that rewrites one weak follow-up message and routes the $5 custom sequence path through the one-copy order packet before PayPal.
           content:
             text/html:
               schema:

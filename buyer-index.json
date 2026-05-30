@@ -371,7 +371,7 @@
                           {
                               "use_when":  "The buyer has a weak follow-up, basic lead numbers, and needs a concrete recovery audit before paying.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
-                              "why":  "Combines missed-value estimate, stronger Day 0/Day 3 messages, and a copyable PayPal note for the $5 custom sequence."
+                              "why":  "Combines missed-value estimate, stronger Day 0/Day 3 messages, and a one-copy order packet before the $5 PayPal note handoff."
                           },
                           {
                               "use_when":  "The buyer wants to see tailored custom sequence copy before paying.",
@@ -412,7 +412,7 @@
                           {
                               "use_when":  "The buyer already wrote a weak follow-up and wants it improved.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html",
-                              "why":  "Turns existing copy into a clearer message, then routes to a $5 custom 7-day sequence."
+                              "why":  "Turns existing copy into a clearer message, then routes through the one-copy order packet before the $5 custom 7-day sequence payment."
                           },
                           {
                               "use_when":  "The buyer asks a direct question like missed call, estimate follow-up, price objection, no-show, or quiet DM.",

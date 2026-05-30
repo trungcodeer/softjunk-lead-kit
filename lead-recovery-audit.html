@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lead Recovery Audit | SoftJunk $5</title>
-  <meta name="description" content="Generate a free lead recovery audit, stronger follow-up copy, a $5 PayPal note, and no-clone checkout proof with a current release tarball command.">
+  <meta name="description" content="Generate a free lead recovery audit, stronger follow-up copy, a one-copy order packet, a $5 PayPal note, and no-clone checkout proof with a current release tarball command.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="Lead Recovery Audit | SoftJunk $5">
-  <meta property="og:description" content="Estimate missed lead value, rewrite the next message, create the $5 PayPal note, and verify the no-clone checkout route.">
+  <meta property="og:description" content="Estimate missed lead value, rewrite the next message, build the one-copy order packet, create the $5 PayPal note, and verify the no-clone checkout route.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -16,7 +16,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Lead Recovery Audit | SoftJunk $5">
-  <meta name="twitter:description" content="One free audit: estimate leak, rewrite follow-up, then verify and pay $5 for the full sequence.">
+  <meta name="twitter:description" content="One free audit: estimate leak, rewrite follow-up, build the order packet, then verify and pay $5 for the full sequence.">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json" title="SoftJunk payment intent JSON">
   <script type="application/ld+json">
@@ -48,7 +48,9 @@
             "@type": "Offer",
             "price": "5.00",
             "priceCurrency": "USD",
-            "url": "https://paypal.me/softjunk/5USD",
+            "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+            "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+            "paymentUrl": "https://paypal.me/softjunk/5USD",
             "availability": "https://schema.org/InStock"
           }
         },
@@ -61,7 +63,7 @@
           "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
           "downloadUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
           "sha256": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
-          "text": "Run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Expected payment URL: https://paypal.me/softjunk/5USD. Success signal: PAYPAL_PAYMENT_VERIFIED=true."
+          "text": "Run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Build the one-copy order packet before the expected payment URL: https://paypal.me/softjunk/5USD. Success signal: PAYPAL_PAYMENT_VERIFIED=true."
         }
       ]
     }
@@ -460,12 +462,12 @@
           <a class="button primary" href="#audit-tool">Start audit</a>
           <a class="button" href="#checkout-proof">Verify route</a>
           <a class="button" href="https://trungcodeer.github.io/paypal/" target="_blank" rel="noopener noreferrer">Short PayPal route</a>
-          <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+          <a class="button blue" href="fix-one-quiet-lead.html">Build order packet</a>
         </div>
       </div>
-      <a class="qr-card" href="pay-qr.html" aria-label="Open PayPal QR page">
-        <img src="paypal-qr.svg" alt="PayPal QR code for the $5 SoftJunk custom sequence">
-        <p>Scan the $5 PayPal QR</p>
+      <a class="qr-card" href="pay-qr.html" aria-label="Open packet QR page">
+        <img src="packet-qr.svg" alt="QR code linking to the SoftJunk one-copy order packet">
+        <p>Scan the packet QR before PayPal</p>
       </a>
     </section>
 
@@ -569,8 +571,8 @@
         <div class="actions">
           <button class="button" type="button" id="copy-output">Copy audit</button>
           <button class="button" type="button" id="copy-link">Copy audit link</button>
-          <a class="button" href="checkout.html">Fast checkout</a>
-          <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+          <a class="button" href="checkout.html">Checkout after packet</a>
+          <a class="button blue" href="fix-one-quiet-lead.html">Build order packet</a>
         </div>
       </div>
     </section>
@@ -581,7 +583,7 @@
       <pre class="proof-command" id="no-clone-command">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json</pre>
       <dl class="proof-list">
         <dt>Expected checkout</dt>
-        <dd>5.00 USD to https://paypal.me/softjunk/5USD</dd>
+        <dd>One-copy order packet, then 5.00 USD to https://paypal.me/softjunk/5USD</dd>
         <dt>Current release</dt>
         <dd><a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163</a></dd>
         <dt>Release tarball</dt>
@@ -594,7 +596,7 @@
       <div class="actions">
         <button class="button" type="button" id="copy-proof">Copy proof command</button>
         <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">Current release</a>
-        <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+        <a class="button blue" href="fix-one-quiet-lead.html">Build order packet</a>
       </div>
     </section>
 
@@ -742,7 +744,7 @@ Command: ${noCloneCommand}
 Current release: ${verifiedReleaseUrl}
 Release tarball: ${releaseTarballUrl}
 SHA-256: ${releaseSha256}
-Expected checkout: 5.00 USD to https://paypal.me/softjunk/5USD
+Expected checkout: build the one-copy order packet, then pay 5.00 USD to https://paypal.me/softjunk/5USD
 Stop condition: do not claim paid, started, delivered, fulfilled, complete, received, or stopped unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.`;
     }
 
@@ -770,7 +772,10 @@ ${dayThreeMessage()}
 PayPal note for the $5 custom sequence:
 ${makeNote()}
 
-Pay exactly $5:
+Build the one-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly $5 after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 ${noCloneProofText()}
