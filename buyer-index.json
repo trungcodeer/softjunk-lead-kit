@@ -140,6 +140,8 @@
     "hvac_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html",
     "hvac_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json",
     "hvac_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt",
+    "hvac_buyer_send_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "hvac_buyer_send_payment_handoff_url":  "https://paypal.me/softjunk/5USD",
     "hvac_buyer_issue_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/11",
     "hvac_buyer_discussion_url":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/16",
     "dental_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html",

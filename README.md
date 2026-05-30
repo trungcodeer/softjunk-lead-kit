@@ -171,8 +171,9 @@ Use this first when the buyer is an HVAC company with one missed no-cool call, n
 4. Public HVAC buyer issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 5. Public HVAC buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
 6. Open the free HVAC preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
-7. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
-8. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
+7. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+8. Pay exactly 5 USD through PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+9. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
@@ -382,6 +383,8 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 
 Public HVAC buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
+
+Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
 
 Dental buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
