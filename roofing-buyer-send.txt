@@ -1,5 +1,5 @@
 SoftJunk Roofing Buyer Send Packet
-Updated: 2026-05-28
+Updated: 2026-05-30
 
 Use this only for one known fitting buyer:
 A roofing contractor with one estimate or quote that went quiet.
@@ -31,14 +31,18 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 Checkout-card discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
 
-Pay exactly 5 USD:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly 5 USD after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 
 Expected checkout:
-5.00 USD to https://paypal.me/softjunk/5USD
+One-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+Then 5.00 USD to https://paypal.me/softjunk/5USD
 
 Current release:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
@@ -59,7 +63,7 @@ PayPal note:
 Roofing estimate rescue | Business: [business] | Service: roof estimate | Estimate status: unanswered | Tone: direct
 
 Short DM:
-One roofing estimate went quiet? If one recovered roof job is worth more than $5, this $5 SoftJunk rescue gives you Day 0/1/3/5/7 follow-ups for that exact estimate situation. Preview first: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html Buyer route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8 Pay exactly $5 only if it fits: https://paypal.me/softjunk/5USD
+One roofing estimate went quiet? If one recovered roof job is worth more than $5, this $5 SoftJunk rescue gives you Day 0/1/3/5/7 follow-ups for that exact estimate situation. Preview first: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html Buyer route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8 Build the one-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html Pay exactly $5 after the packet is ready: https://paypal.me/softjunk/5USD
 
 Email subject:
 Recover one unanswered roofing estimate for $5
@@ -78,7 +82,10 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 Checkout-card discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
 
-Pay exactly $5 only if it fits:
+Build the one-copy order packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly $5 after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 After payment, submit non-sensitive order details here:
@@ -91,7 +98,8 @@ Do not claim paid, started, delivered, or complete unless seller-side PayPal evi
 STRUCTURED COMMERCE ACTION (schema.org BuyAction)
 Offer: SoftJunk Roofing Estimate Rescue for one known unanswered roofing estimate
 Action type: BuyAction
-Action target: https://paypal.me/softjunk/5USD
+Action target: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+Direct payment after packet: https://paypal.me/softjunk/5USD
 Price: 5.00 USD
 Seller: SoftJunk
 Item offered: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
