@@ -76,7 +76,8 @@
     "buy_now_raw_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json",
     "buy_now_gist_url":  "https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6",
     "buy_now_gist_raw_json_url":  "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json",
-    "sponsor_button_buy_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+    "sponsor_button_buy_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
+    "sponsor_button_buy_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
     "sponsor_button_buy_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json",
     "sponsor_button_buy_gist_url":  "https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7",
     "sponsor_button_buy_gist_raw_json_url":  "https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json",
@@ -271,7 +272,8 @@
                               "machine_readable_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json",
                               "gist_url":  "https://gist.github.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6",
                               "gist_raw_json_url":  "https://gist.githubusercontent.com/trungcodeer/f2c1e3469c1f9313f135f612b229b0e6/raw/buy-now.json",
-                              "sponsor_button_buy_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+                              "sponsor_button_buy_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
+                              "sponsor_button_buy_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
                               "sponsor_button_buy_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json",
                               "sponsor_button_buy_gist_url":  "https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7",
                               "sponsor_button_buy_gist_raw_json_url":  "https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json",
@@ -535,7 +537,7 @@
                     ],
     "copy_ready_prompts":  {
                                "one_line_recommendation":  "If one lead has gone quiet, use the root rescue route first, then buy the $5 custom 7-day sequence if the lead is worth recovering: https://trungcodeer.github.io/rescue/",
-                               "sponsor_button_buy_message":  "GitHub Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md. JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json. Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7. Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml. The first custom funding URL is the exact $5 PayPal checkout: https://paypal.me/softjunk/5USD. This is a payment route, not proof of payment; require PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence before claiming fulfillment started.",
+                               "sponsor_button_buy_message":  "GitHub Sponsor button buy route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html. Markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md. JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json. Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7. Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml. The first custom funding URL is the packet-first Sponsor route; copy the exact $5 PayPal URL only after the packet and note are ready. This is a payment route, not proof of payment; require PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence before claiming fulfillment started.",
                                "direct_buy_message":  "Build the $5 SoftJunk one-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. Use PayPal note: Lead Follow-Up Kit. The payment page https://trungcodeer.github.io/softjunk-lead-kit/pay.html exposes the after-packet PayPal URL as a copy action; use https://paypal.me/softjunk/5USD only after the packet and note, then open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html for the verification-first delivery rule.",
                                "short_root_buy_message":  "Short SoftJunk PayPal route: https://trungcodeer.github.io/paypal/. Copy-only after-packet PayPal URL: https://paypal.me/softjunk/5USD.",
                                "ai_checkout_message":  "AI checkout handoff with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title. Machine-readable checkout JSON: https://trungcodeer.github.io/softjunk-lead-kit/checkout.json. Build or inspect the one-copy order packet first at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, generate the PayPal note on checkout, copy the after-packet PayPal URL https://paypal.me/softjunk/5USD from checkout, then use the verification-first after-payment handoff.",
@@ -933,14 +935,15 @@
     "sponsor_button_send_five_route":  {
                                            "name":  "GitHub Sponsor button Send-5 route",
                                            "funding_config_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml",
-                                           "route_contract_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+                                           "route_contract_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
+                                           "route_contract_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
                                            "route_contract_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json",
                                            "gist_url":  "https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7",
                                            "funding_custom_urls":  [
-                                                                       "https://paypal.me/softjunk/5USD",
+                                                                       "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
+                                                                       "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                                                                        "https://trungcodeer.github.io/send-5/",
-                                                                       "https://trungcodeer.github.io/5/",
-                                                                       "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md"
+                                                                       "https://trungcodeer.github.io/5/"
                                                                    ],
                                            "payment_url":  "https://paypal.me/softjunk/5USD",
                                            "price":  "5.00",
@@ -1020,12 +1023,13 @@
     "devcontainer_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.devcontainer/devcontainer.json",
     "vscode_tasks_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.vscode/tasks.json",
     "sponsor_button_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md",
+    "sponsor_button_page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
     "sponsor_button_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json",
     "sponsor_button_custom_urls":  [
-                                       "https://paypal.me/softjunk/5USD",
+                                       "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
+                                       "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                                        "https://trungcodeer.github.io/send-5/",
-                                       "https://trungcodeer.github.io/5/",
-                                       "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md"
+                                       "https://trungcodeer.github.io/5/"
                                    ],
     "npm_funding_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
     "npm_funding_markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",

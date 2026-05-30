@@ -89,6 +89,7 @@
     "clone_cli_manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.json",
     "run_this_first_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
     "dev_agent_start_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
+    "sponsor_button_page_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html",
     "sponsor_button_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json",
     "funding_config_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml",
     "custom_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",

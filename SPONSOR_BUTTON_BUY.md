@@ -1,13 +1,17 @@
 # SoftJunk Sponsor Button Buy Route
 
-Use the repository Sponsor button when you want the fastest GitHub-native path to the SoftJunk 5 USD offer. Build the one-copy order packet before copying the after-packet PayPal URL.
+Use the repository Sponsor button when you want the fastest GitHub-native path to the SoftJunk 5 USD offer. Start from the Sponsor route, build the one-copy order packet, then copy the after-packet PayPal URL.
+
+Sponsor route:
+
+https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
 
 ## Sponsor Button URLs
 
 The visible GitHub Sponsor button is backed by `.github/FUNDING.yml` and should expose these owned routes in packet-first order:
 
-1. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-2. Copy after-packet PayPal URL and complete the 5 USD PayPal payment after the packet: https://paypal.me/softjunk/5USD
+1. Open the Sponsor route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+2. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 3. Copy/send the buyer handoff: https://trungcodeer.github.io/send-5/
 4. Open the shortest 5 USD buyer card: https://trungcodeer.github.io/5/
 
@@ -43,7 +47,7 @@ Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-l
 
 1. Confirm the buyer has one real quiet lead and one recovered conversation is worth more than 5 USD.
 2. Build or inspect the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-3. Use the Sponsor button or after-packet PayPal URL to copy the after-packet PayPal URL and complete the 5 USD PayPal payment only after the packet is ready: https://paypal.me/softjunk/5USD
+3. Use the Sponsor route to copy the after-packet PayPal URL and complete the 5 USD PayPal payment only after the packet is ready: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
 4. For a custom one-lead rescue, paste this PayPal note:
 
 ```text

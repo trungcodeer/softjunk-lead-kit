@@ -3,9 +3,10 @@ https://trungcodeer.github.io/softjunk-lead-kit/llms-full.txt
 
 GitHub Sponsor button route:
 - Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
+- Sponsor page: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
 - Sponsor markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
 - Sponsor JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
-- Sponsor custom URLs: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, https://paypal.me/softjunk/5USD, https://trungcodeer.github.io/send-5/, https://trungcodeer.github.io/5/
+- Sponsor custom URLs: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html, https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, https://trungcodeer.github.io/send-5/, https://trungcodeer.github.io/5/
 - Run-first JSON: https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json
 - Dev-agent JSON: https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json
 - Order form after PayPal: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
@@ -860,7 +861,7 @@ GitHub Actions workflow template: PAYPAL_VERIFICATION_WORKFLOW.yml.example. The 
 
 PayPal notes:
 - Root one-lead rescue route: open https://trungcodeer.github.io/rescue/ when the buyer has one stalled lead and needs the shortest route to builder, PayPal, order form, and verification gate.
-- GitHub Sponsor button: open https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md or use `.github/FUNDING.yml`; the first custom funding URL is https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.
+- GitHub Sponsor button: open https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html or use `.github/FUNDING.yml`; the first custom funding URL is the packet-first Sponsor route and the PayPal URL is copy-only after the packet.
 - Instant fulfillment packet: open https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md to inspect the delivery shell before copying the after-packet PayPal URL. It is not proof of payment.
 - Digital kit: Lead Follow-Up Kit
 - Custom sequence: fill the free generator, click Copy PayPal note, then copy the after-packet PayPal URL only after the packet and note are ready.
@@ -909,7 +910,7 @@ One-buyer share action:
 - Copy the after-packet PayPal URL only after the packet is ready: https://paypal.me/softjunk/5USD
 - Completion requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
 
-Sponsor button Send-5 action: use .github/FUNDING.yml or https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md when a GitHub-native buyer needs the Sponsor button route. It lists the one-copy order packet first, PayPal second, Send-5 third, root /5/ fourth, and preserves PAYPAL_PAYMENT_VERIFIED=true as the stop rule.
+Sponsor button Send-5 action: use .github/FUNDING.yml or https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html when a GitHub-native buyer needs the Sponsor button route. It lists the Sponsor page first, one-copy order packet second, Send-5 third, root /5/ fourth, and preserves PAYPAL_PAYMENT_VERIFIED=true as the stop rule.
 
 NPM package funding route:
 - Contract JSON: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json

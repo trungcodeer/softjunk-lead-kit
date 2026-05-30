@@ -1,9 +1,9 @@
 # No-clone checkout proof:
-# Command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
-# Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151
-# Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz
-# Release tarball SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
-# Payment URL: https://paypal.me/softjunk/5USD
+# Command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+# Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
+# Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
+# Release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
+# Payment URL after packet: copy https://paypal.me/softjunk/5USD from the Sponsor route only after the packet and note are ready.
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 blank_issues_enabled: false
@@ -11,15 +11,15 @@ contact_links:
   - name: Send-5 buyer handoff
     url: https://trungcodeer.github.io/send-5/
     about: Copy one buyer-facing message for a qualified one-lead buyer, then route to the exact 5 USD PayPal checkout without claiming payment before verification.
-  - name: Copy after-packet PayPal URL and complete the 5 USD PayPal payment
-    url: https://paypal.me/softjunk/5USD
-    about: After-packet PayPal.Me copy checkout for the SoftJunk 5 USD one-lead rescue after the buyer has the safe note.
+  - name: Copy after-packet PayPal URL from the Sponsor route
+    url: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+    about: Packet-first Sponsor checkout route with copy-only after-packet PayPal URL for the SoftJunk 5 USD one-lead rescue.
   - name: Root 5 USD buyer card
     url: https://trungcodeer.github.io/5/
     about: Shortest buyer card with PayPal link, copy-safe PayPal note, one rewrite included, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
   - name: Sponsor button buy route
-    url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
-    about: GitHub-native Sponsor/funding route with PayPal first, Send-5 second, root buyer card third, and verification gate.
+    url: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+    about: GitHub-native Sponsor/funding route with Sponsor page first, order packet second, Send-5 third, root buyer card fourth, and verification gate.
   - name: One-lead rescue route
     url: https://trungcodeer.github.io/rescue/
     about: Generate one stronger reply and a PayPal note before copying the after-packet PayPal URL and completing the 5 USD PayPal payment and submitting the order form.

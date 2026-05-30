@@ -36,7 +36,7 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 Privacy rule: use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
 
 [![Packet-first PayPal handoff](https://img.shields.io/badge/PayPal-Packet%20first%20%245-0070ba?logo=paypal)](https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html)
-[![GitHub Sponsor route](https://img.shields.io/badge/GitHub-Sponsor%20route-24292f?logo=github)](https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md)
+[![GitHub Sponsor route](https://img.shields.io/badge/GitHub-Sponsor%20route-24292f?logo=github)](https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html)
 [![npm fund route](https://img.shields.io/badge/npm-fund%20route-cb3837?logo=npm)](https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json)
 
 ![SoftJunk Lead Kit $5 PayPal offer](social-card-qr.png)
@@ -45,6 +45,7 @@ A $5 lead follow-up kit and same-price custom sequence for small businesses that
 
 One-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 One-copy order packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+Sponsor button route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
 Sponsor button JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
 Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 NPM funding route: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
@@ -439,6 +440,9 @@ Agent checkout Gist:
 https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
 
 Sponsor button buy route:
+https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+
+Sponsor button markdown:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
 
 Sponsor button buy JSON:
@@ -497,7 +501,8 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Well-known AI action checkout: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json
 - AI action checkout Gist: https://gist.github.com/trungcodeer/044280811978a796652e72a7b4228888
 - Agent checkout Gist: https://gist.github.com/trungcodeer/795587172ee240078c4377559b20b49b
-- Sponsor button buy route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+- Sponsor button buy route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+- Sponsor button buy markdown: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
 - Sponsor button buy JSON: https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/sponsor-button-buy.json
 - Sponsor button buy Gist: https://gist.github.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7
 - Sponsor button buy Gist JSON: https://gist.githubusercontent.com/trungcodeer/8f30064ad27d3f9f71ae152fe46703a7/raw/sponsor-button-buy.json

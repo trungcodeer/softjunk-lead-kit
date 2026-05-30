@@ -27,6 +27,8 @@ Primary buyer route:
 5. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 
 Fast machine-readable routes:
+- Sponsor button route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+- Sponsor button JSON: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json
 - Buyer index: https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json
 - Agent checkout router: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json
 - Payment intent: https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json

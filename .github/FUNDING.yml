@@ -1,16 +1,17 @@
 # No-clone checkout proof:
-# Command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
-# Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165
-# Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz
-# Release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256
+# Command: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+# Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
+# Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
+# Release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
 # One-copy order packet before PayPal: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-# Payment URL after packet: https://paypal.me/softjunk/5USD
+# Sponsor button route: https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
+# Payment URL after packet: copy https://paypal.me/softjunk/5USD from the Sponsor route only after the packet and note are ready.
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
-# GitHub Sponsor button custom URLs for the SoftJunk 5 USD checkout, packet first.
+# GitHub Sponsor button custom URLs for the SoftJunk 5 USD checkout, all packet-first owned routes.
 # Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 custom:
+  - https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html
   - https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-  - https://paypal.me/softjunk/5USD
   - https://trungcodeer.github.io/send-5/
   - https://trungcodeer.github.io/5/
