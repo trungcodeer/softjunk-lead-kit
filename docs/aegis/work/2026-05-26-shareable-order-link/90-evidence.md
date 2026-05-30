@@ -9240,3 +9240,53 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_dental_buyer_send_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Med Spa Buyer Send Packet Evidence
+
+- Audited the med spa buyer send handoff after the dental buyer send route became packet-first.
+- Found that `med-spa-buyer-send.html`, `med-spa-buyer-send.json`, and `med-spa-buyer-send.txt` still exposed direct PayPal as a primary buyer action or QR path before the one-copy order packet.
+- Updated product commit `abe230e` (`abe230efbcfaa12a675457587c328444a8aa4cce`):
+  - `med-spa-buyer-send.html` JSON-LD Offer URL and BuyAction target now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `med-spa-buyer-send.html` primary hero CTA now says `Build order packet` and points to the one-copy order packet instead of a direct PayPal button.
+  - `med-spa-buyer-send.html` visible QR now uses `packet-qr.svg` instead of the direct checkout QR route.
+  - `med-spa-buyer-send.html` short DM, email, mailto body, route copy, and checkout proof copy now list the one-copy order packet before the after-packet PayPal checkout.
+  - `med-spa-buyer-send.json` now uses schema `softjunk-med-spa-buyer-send-v3`, `updated=2026-05-30`, one-copy order packet fields, direct PayPal fields, and packet-first BuyAction targets.
+  - `med-spa-buyer-send.txt` now lists the one-copy order packet before the after-packet PayPal checkout and sets the structured commerce action target to the packet URL.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe med spa buyer send as a packet-first buyer handoff.
+  - Accessibility affordances remain present on `med-spa-buyer-send.html`: skip link, focus-visible styling, semantic anchors/buttons, QR alt text, and `aria-live="polite"` status messages.
+  - Privacy-sensitive med spa data is not collected or exposed by the public route: no client, health, treatment, photo, financing, private lead, or PayPal details.
+- Local verification:
+  - `med_spa_buyer_send_packet_ok html=1 json=2 discovery=6`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-FXo2ksY4baNGIKHMMjrpYwNuEFx2EZuupNg5Ma/4QxhArNXVukwtXL2j8GyZZIs5QIbbvRKovk2ZDT0N44CZeQ==`, shasum `2fdf696b948341e39c661c24d3bb178e8d832490`.
+- Deployment:
+  - Product commit `abe230e` pushed to `main`.
+  - Product Pages run `26680789895` completed successfully.
+- Live verification returned `live_med_spa_buyer_send_packet_ok commit=abe230e urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_med_spa_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Med Spa Buyer Send Packet, product commit `abe230e` (`abe230efbcfaa12a675457587c328444a8aa4cce`).
+- Full evidence section: `2026-05-30 Med Spa Buyer Send Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26680789895` success.
+- Live verification evidence: `live_med_spa_buyer_send_packet_ok commit=abe230e urls=9`.
+- Discovery ping evidence: `indexnow_med_spa_buyer_send_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
