@@ -9822,3 +9822,35 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_free_sample_pack_packet_first_ok status=200 urls=8`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Paid Kit Proof Packet-First Evidence
+
+- Product commit: `fd57c2d` (`fd57c2d5c1b29690c29d6e394deac300488ea691`) on `main`.
+- Changed buyer-facing route: `paid-kit-proof.html`.
+- Changed package-native route: `bin/softjunk-lead-kit.js` so `pay --mode kit --json` exposes the proof plus one-copy order packet before PayPal.
+- Changed machine-readable order/proof routes: `paid-kit-manifest.json`, `digital-kit-order.json`, `digital-kit-order.txt`, `agent-checkout-router.json`, and `buyer-index.json`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- Local focused HTML validation returned `paid_kit_proof_html_packet_first_ok directHref=0 packetMentions=26 paypalMentions=6 jsonld=1`.
+- Focused JSON parse returned `focused_json_parse_ok files=6`.
+- Recursive JSON parse returned `json_parse_ok files=54`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation returned `openapi_paid_kit_proof_packet_first_static_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`; `pay --mode kit --json` now includes `before_payment_action=Inspect the digital kit proof, then build the one-copy order packet before opening PayPal`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-58C2CdvsxCv+MZPTbSWQH09fi2IvaiCuQwx0kLZEfNZQS0uNDfsBhQEbO0Ahyi44AaSpjO7wq4yTBig7dkbQ0g==`, shasum `8411c4f4992ceb30050d43d3bfbf211fbf14ad45`.
+- Product Pages run `26686452357` completed successfully.
+- Live verification returned `live_paid_kit_proof_packet_first_ok commit=fd57c2d urls=14` for `paid-kit-proof.html`, `paid-kit-manifest.json`, `digital-kit-order.json`, `digital-kit-order.txt`, `.well-known/openapi.yaml`, `agent-checkout-router.json`, `buyer-index.json`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, `llms.txt`, and `bin/softjunk-lead-kit.js`.
+- IndexNow returned `indexnow_paid_kit_proof_packet_first_ok status=200 urls=14 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Paid Kit Proof Packet-First Route, product commit `fd57c2d` (`fd57c2d5c1b29690c29d6e394deac300488ea691`).
+- Full evidence section: `2026-05-30 Paid Kit Proof Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26686452357` success.
+- Live verification evidence: `live_paid_kit_proof_packet_first_ok commit=fd57c2d urls=14`.
+- Discovery ping evidence: `indexnow_paid_kit_proof_packet_first_ok status=200 urls=14`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
