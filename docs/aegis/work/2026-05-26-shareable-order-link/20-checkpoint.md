@@ -13923,3 +13923,47 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Missed Call and Flyer Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `missed-call-follow-up.html` and `printable-paypal-flyer.html` from direct PayPal anchors to copy-only after-packet PayPal URL buttons, while keeping the one-copy order packet, PayPal note path, no-clone checkout proof, print/share route, release proof links, and seller-side verification gate visible.
+- Updated discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Active slice status: product commit `75014ab` (`75014ab8c87fe9aae3a5dd3938d3599377b158af`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML/static validation: `missed_call_flyer_copy_only_static_ok files=2 direct_href=0`.
+- JSON-LD validation: `missed_call_flyer_jsonld_ok files=2 paid_offers=2`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Direct href audit returned `direct_paypal_href_absent files=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-FOEby82uyx+up0UrLJ6zIDDVjq3t3xXA5KqJ3zHbQI2e2A6kURhJtUv845g+g3XYxu7lRl5D7MR6uaybxz5Btg==`, shasum `995348c30449bfd94e41852e105f059f61c9300a`.
+- Product Pages run: `26694220660`, conclusion `success`.
+- Live verification: `live_missed_call_flyer_copy_only_ok commit=75014ab urls=5`.
+- IndexNow: `indexnow_missed_call_flyer_copy_only_ok status=200 urls=5 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a missed-call sample generator and printable flyer that lead into the $5 packet-first route and keeps the buyer action copy-only after packet without scraped outreach, spam, deception, fake payment, private lead exposure, caller contact exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, missed call/flyer HTML, sitemap/LLM/README discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct HTML anchor.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Missed Call and Flyer Copy-Only Handoff, product commit `75014ab` (`75014ab8c87fe9aae3a5dd3938d3599377b158af`).
+- Full checkpoint section: `2026-05-31 Missed Call and Flyer Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26694220660` success; live verification `live_missed_call_flyer_copy_only_ok commit=75014ab urls=5`; IndexNow `indexnow_missed_call_flyer_copy_only_ok status=200 urls=5`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

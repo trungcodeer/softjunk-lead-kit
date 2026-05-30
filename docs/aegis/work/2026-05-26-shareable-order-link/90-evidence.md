@@ -10403,3 +10403,32 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_real_estate_plumbing_copy_only_ok status=200 urls=5`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Missed Call and Flyer Copy-Only Handoff Evidence
+
+- Product commit: `75014ab` (`75014ab8c87fe9aae3a5dd3938d3599377b158af`) on `main`.
+- Changed buyer-facing routes: `missed-call-follow-up.html` and `printable-paypal-flyer.html`.
+- Changed discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `missed_call_flyer_copy_only_static_ok files=2 direct_href=0`.
+- JSON-LD validation returned `missed_call_flyer_jsonld_ok files=2 paid_offers=2`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Direct PayPal href audit returned `direct_paypal_href_absent files=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-FOEby82uyx+up0UrLJ6zIDDVjq3t3xXA5KqJ3zHbQI2e2A6kURhJtUv845g+g3XYxu7lRl5D7MR6uaybxz5Btg==`, shasum `995348c30449bfd94e41852e105f059f61c9300a`.
+- Product Pages run `26694220660` completed successfully.
+- Live verification returned `live_missed_call_flyer_copy_only_ok commit=75014ab urls=5` for `missed-call-follow-up.html`, `printable-paypal-flyer.html`, `README.md`, `llms.txt`, and `sitemap.xml`.
+- IndexNow returned `indexnow_missed_call_flyer_copy_only_ok status=200 urls=5 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Missed Call and Flyer Copy-Only Handoff, product commit `75014ab` (`75014ab8c87fe9aae3a5dd3938d3599377b158af`).
+- Full evidence section: `2026-05-31 Missed Call and Flyer Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26694220660` success.
+- Live verification evidence: `live_missed_call_flyer_copy_only_ok commit=75014ab urls=5`.
+- Discovery ping evidence: `indexnow_missed_call_flyer_copy_only_ok status=200 urls=5`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
