@@ -11242,6 +11242,64 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Commerce Product Packet Checkpoint
+
+Current todo:
+- Route commerce/product/answer feed discovery surfaces through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `commerce-graph.json`, `agent-commerce.json`, `product-feed.json`, `answer-engine.json`, `offers.json`, `.well-known/openapi.yaml`, and `sitemap.xml`.
+
+Completed todos:
+- Updated `commerce-graph.json` to `dateModified=2026-05-30`, added one-copy order packet URLs, preserved PayPal as `directPaymentUrl`, and changed JSON-LD action `urlTemplate` targets to `fix-one-quiet-lead.html` instead of direct PayPal.
+- Updated `agent-commerce.json`, `product-feed.json`, `answer-engine.json`, and `offers.json` to `updated=2026-05-30`, added one-copy order packet fields, preserved direct PayPal fields, and made buyer/agent instructions build or inspect the packet before payment.
+- Updated `.well-known/openapi.yaml` descriptions for commerce graph, offers, product feed, answer engine, and agent commerce endpoints to describe packet-first payment routing.
+- Updated `sitemap.xml` lastmod values to `2026-05-30` for the changed commerce/product JSON feeds.
+- Committed and pushed product commit `591c027` (`591c0275541c17c33e9dfbede228321d448168cc`) to `main`.
+- Product Pages run `26675280404` completed successfully.
+- Live Pages verification returned `live_commerce_product_packet_ok commit=591c027 urls=7`.
+- Submitted the seven changed product Pages URLs to IndexNow; API returned `indexnow_commerce_product_packet_ok status=200 urls=7`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `commerce_product_json_parse_ok files=5`.
+- `commerce_product_packet_ok files=5 graph_action_targets=2`.
+- `commerce_product_sitemap_openapi_ok urls=5`.
+- `json_parse_ok files=65`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-soBmqsv1QObPSJtHa2bMvGRuabdb/OiJu8cmZ8bVnLCIsjCkdq1Kp4PKnjWNx5Q+VudLgDQotw4NcImhx4GBiw==`, shasum `11a3402963ab8d34565d5bca0c54956668735853`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26675280404` success.
+- Live verification: `live_commerce_product_packet_ok commit=591c027 urls=7`.
+- IndexNow: `indexnow_commerce_product_packet_ok status=200 urls=7`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned commerce/product/answer feed discovery without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, JSON/JSON-LD commerce feeds, OpenAPI metadata, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Commerce Product Packet, product commit `591c027` (`591c0275541c17c33e9dfbede228321d448168cc`).
+- Full checkpoint section: `2026-05-30 Commerce Product Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675280404` success; live verification `live_commerce_product_packet_ok commit=591c027 urls=7`; IndexNow `indexnow_commerce_product_packet_ok status=200 urls=7`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-30 Well-Known Payment Packet Checkpoint
 
 Current todo:

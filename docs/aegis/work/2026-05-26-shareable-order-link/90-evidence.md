@@ -8587,3 +8587,46 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_well_known_payment_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Commerce Product Packet Evidence
+
+- Audited commerce/product/answer feed metadata after well-known payment actions became packet-first.
+- Found that `commerce-graph.json`, `agent-commerce.json`, `product-feed.json`, `answer-engine.json`, `offers.json`, and related OpenAPI descriptions still exposed direct PayPal payment in high-signal agent-readable commerce metadata without consistently making the one-copy order packet the first action.
+- Updated product commit `591c027` (`591c0275541c17c33e9dfbede228321d448168cc`):
+  - `commerce-graph.json` now has `dateModified=2026-05-30`, top-level one-copy order packet URLs, direct PayPal preserved as `directPaymentUrl`, and JSON-LD `BuyAction`/`PayAction` targets set to `fix-one-quiet-lead.html`.
+  - `agent-commerce.json`, `product-feed.json`, `answer-engine.json`, and `offers.json` now have packet-first fields, direct PayPal fields, and buyer/agent steps that build or inspect the packet before opening PayPal.
+  - `.well-known/openapi.yaml` now describes packet-first payment routing for commerce graph, offers, product feed, answer engine, and agent commerce endpoints.
+  - `sitemap.xml` now marks `agent-commerce.json`, `offers.json`, `product-feed.json`, `answer-engine.json`, and `commerce-graph.json` with `lastmod=2026-05-30`.
+- Local verification:
+  - `commerce_product_json_parse_ok files=5`.
+  - `commerce_product_packet_ok files=5 graph_action_targets=2`.
+  - `commerce_product_sitemap_openapi_ok urls=5`.
+  - `json_parse_ok files=65`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-soBmqsv1QObPSJtHa2bMvGRuabdb/OiJu8cmZ8bVnLCIsjCkdq1Kp4PKnjWNx5Q+VudLgDQotw4NcImhx4GBiw==`, shasum `11a3402963ab8d34565d5bca0c54956668735853`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `591c027` pushed to `main`.
+  - Product Pages run `26675280404` completed successfully.
+- Live verification returned `live_commerce_product_packet_ok commit=591c027 urls=7` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/offers.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_commerce_product_packet_ok status=200 urls=7` for the seven changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Commerce Product Packet, product commit `591c027` (`591c0275541c17c33e9dfbede228321d448168cc`).
+- Full evidence section: `2026-05-30 Commerce Product Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26675280404` success.
+- Live verification evidence: `live_commerce_product_packet_ok commit=591c027 urls=7`.
+- Discovery ping evidence: `indexnow_commerce_product_packet_ok status=200 urls=7`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
