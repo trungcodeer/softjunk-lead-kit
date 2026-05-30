@@ -9389,3 +9389,54 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_niche_template_packet_first_ok status=200 urls=12`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Preview And Order Funnel Packet-First Evidence
+
+- Audited the preview/order funnel pages for visible direct PayPal exposure before the one-copy order packet.
+- Found five high-intent pages where direct PayPal appeared as visible pre-packet CTA or pre-packet metadata: `free-preview.html`, `custom-sequence-preview.html`, `follow-up-examples.html`, `lead-follow-up-templates.html`, and `agent-order.html`.
+- Updated product commit `f9dec40` (`f9dec402f5bf8bc467914d659a7d9a55f5ee1395`):
+  - The five preview/order pages now route visible paid CTAs to `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+  - JSON-LD paid Offer URLs and BuyAction targets point to the packet-first path or paid-kit proof path; PayPal remains after-packet metadata via `directPaymentUrl`, `paymentUrl`, `direct_payment_url`, and `payment_after_packet_url`.
+  - `custom-sequence-preview.json` is now `softjunk-custom-sequence-preview-v3` and exposes `one_copy_order_packet_url`, `before_payment_action`, `direct_payment_url`, and `payment_after_packet_url`.
+  - Generated preview/order handoff text now lists the one-copy order packet before the PayPal URL.
+  - Discovery surfaces `.well-known/openapi.yaml`, `feed.xml`, `llms.txt`, `sitemap.xml`, `README.md`, and `buyer-index.json` now describe the preview/order funnel packet-first route.
+  - Accessibility affordances remain present: skip links, visible focus styling, semantic anchors/buttons/forms, labels on inputs, live status regions, and no hover-only controls.
+- Local verification:
+  - `preview_order_funnel_packet_first_ok files=13`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Bfk+v30U1TE8GB9Mf2m892/qwvz1QGZ7wSqisixaXUlj5d4k5xUS6O0HbYWuojxAG2Cas5RsSa8tK2dCjYBVtQ==`, shasum `1294b64b6f361b6944634823bd55560d1d039370`.
+- Deployment:
+  - Product commit `f9dec40` pushed to `main`.
+  - Product Pages run `26682499694` completed successfully.
+- Live verification returned `live_preview_order_funnel_packet_first_ok commit=f9dec40 urls=13` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+- IndexNow returned `indexnow_preview_order_funnel_packet_first_ok status=200 urls=13 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the thirteen changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Preview And Order Funnel Packet-First Route, product commit `f9dec40` (`f9dec402f5bf8bc467914d659a7d9a55f5ee1395`).
+- Full evidence section: `2026-05-30 Preview And Order Funnel Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26682499694` success.
+- Live verification evidence: `live_preview_order_funnel_packet_first_ok commit=f9dec40 urls=13`.
+- Discovery ping evidence: `indexnow_preview_order_funnel_packet_first_ok status=200 urls=13`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

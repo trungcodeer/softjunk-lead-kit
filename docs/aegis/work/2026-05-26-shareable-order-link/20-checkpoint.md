@@ -12602,3 +12602,56 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Preview And Order Funnel Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Preview And Order Funnel Packet-First Route.
+- Completed todos:
+  - Audited the preview/order funnel pages for visible direct PayPal CTAs before the one-copy order packet.
+  - Updated `free-preview.html`, `custom-sequence-preview.html`, `follow-up-examples.html`, `lead-follow-up-templates.html`, and `agent-order.html` so visible paid CTAs route through `fix-one-quiet-lead.html`.
+  - Preserved PayPal only as after-packet metadata and generated handoff text via `directPaymentUrl`, `paymentUrl`, `payment_after_packet_url`, and `PayPal after packet` copy.
+  - Updated `custom-sequence-preview.json` to `softjunk-custom-sequence-preview-v3` with `one_copy_order_packet_url`, `before_payment_action`, `direct_payment_url`, and `payment_after_packet_url`.
+  - Updated discovery surfaces: `.well-known/openapi.yaml`, `feed.xml`, `llms.txt`, `sitemap.xml`, `README.md`, and `buyer-index.json`.
+  - Committed and pushed product commit `f9dec40` (`f9dec402f5bf8bc467914d659a7d9a55f5ee1395`) to `main`.
+  - Waited for GitHub Pages run `26682499694`, which completed successfully for commit `f9dec40`.
+  - Live-verified thirteen product/discovery URLs with marker `live_preview_order_funnel_packet_first_ok commit=f9dec40 urls=13`.
+  - Submitted the thirteen changed owned Pages URLs to IndexNow with marker `indexnow_preview_order_funnel_packet_first_ok status=200 urls=13`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `preview_order_funnel_packet_first_ok files=13`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Bfk+v30U1TE8GB9Mf2m892/qwvz1QGZ7wSqisixaXUlj5d4k5xUS6O0HbYWuojxAG2Cas5RsSa8tK2dCjYBVtQ==`, shasum `1294b64b6f361b6944634823bd55560d1d039370`.
+- Product Pages run: `26682499694`, conclusion `success`, head SHA `f9dec402f5bf8bc467914d659a7d9a55f5ee1395`.
+- Live verification: `live_preview_order_funnel_packet_first_ok commit=f9dec40 urls=13`.
+- IndexNow: `indexnow_preview_order_funnel_packet_first_ok status=200 urls=13 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves high-intent preview/order buyer routes and keeps payment packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, preview/order HTML surfaces, custom sequence JSON/text, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Preview And Order Funnel Packet-First Route, product commit `f9dec40` (`f9dec402f5bf8bc467914d659a7d9a55f5ee1395`).
+- Full checkpoint section: `2026-05-30 Preview And Order Funnel Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26682499694` success; live verification `live_preview_order_funnel_packet_first_ok commit=f9dec40 urls=13`; IndexNow `indexnow_preview_order_funnel_packet_first_ok status=200 urls=13`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
