@@ -2375,6 +2375,36 @@ Payment gate:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 Free Sample Pack Packet-First Evidence
+
+- Product commit: `9d82add` (`9d82addccd8150f5396e585af0aa97cb96b98117`) on `main`.
+- Changed buyer-facing route: `free-sample-pack.html`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- Local focused HTML validation returned `free_sample_pack_html_packet_first_ok directHref=0 packetMentions=23 paypalMentions=5 jsonld=1`.
+- Focused JSON parse returned `focused_json_parse_ok files=2`.
+- Recursive JSON parse returned `json_parse_ok files=54`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation returned `openapi_free_sample_packet_first_static_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-X5JFoCK5SF59RBrA6O8MVhKCTF4dZZG/YkUNpjI7AZjncznFA7nq+21gAznN5kRj9fFAXvCqACriUWlKjL5dRQ==`, shasum `8fbf239cf65a8e7ad7525bc545b74fa547cbd23d`.
+- Product Pages run `26686089081` completed successfully.
+- Live verification returned `live_free_sample_pack_packet_first_ok commit=9d82add urls=8` for `free-sample-pack.html`, `.well-known/openapi.yaml`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- IndexNow returned `indexnow_free_sample_pack_packet_first_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Free Sample Pack Packet-First Route, product commit `9d82add` (`9d82addccd8150f5396e585af0aa97cb96b98117`).
+- Full evidence section: `2026-05-30 Free Sample Pack Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26686089081` success.
+- Live verification evidence: `live_free_sample_pack_packet_first_ok commit=9d82add urls=8`.
+- Discovery ping evidence: `indexnow_free_sample_pack_packet_first_ok status=200 urls=8`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 Roofing Estimate Packet-First Evidence
 
 - Product commit: `7463ae1` (`7463ae184c6426ccfaecf329518289fdb0051e40`) on `main`.
@@ -9760,5 +9790,35 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26685439532` success.
 - Live verification evidence: `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`.
 - Discovery ping evidence: `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Free Sample Pack Packet-First Evidence
+
+- Product commit: `9d82add` (`9d82addccd8150f5396e585af0aa97cb96b98117`) on `main`.
+- Changed buyer-facing route: `free-sample-pack.html`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- Local focused HTML validation returned `free_sample_pack_html_packet_first_ok directHref=0 packetMentions=23 paypalMentions=5 jsonld=1`.
+- Focused JSON parse returned `focused_json_parse_ok files=2`.
+- Recursive JSON parse returned `json_parse_ok files=54`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation returned `openapi_free_sample_packet_first_static_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-X5JFoCK5SF59RBrA6O8MVhKCTF4dZZG/YkUNpjI7AZjncznFA7nq+21gAznN5kRj9fFAXvCqACriUWlKjL5dRQ==`, shasum `8fbf239cf65a8e7ad7525bc545b74fa547cbd23d`.
+- Product Pages run `26686089081` completed successfully.
+- Live verification returned `live_free_sample_pack_packet_first_ok commit=9d82add urls=8` for `free-sample-pack.html`, `.well-known/openapi.yaml`, `offers.json`, `product-feed.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt`.
+- IndexNow returned `indexnow_free_sample_pack_packet_first_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Free Sample Pack Packet-First Route, product commit `9d82add` (`9d82addccd8150f5396e585af0aa97cb96b98117`).
+- Full evidence section: `2026-05-30 Free Sample Pack Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26686089081` success.
+- Live verification evidence: `live_free_sample_pack_packet_first_ok commit=9d82add urls=8`.
+- Discovery ping evidence: `indexnow_free_sample_pack_packet_first_ok status=200 urls=8`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
