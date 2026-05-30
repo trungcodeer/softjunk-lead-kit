@@ -626,11 +626,13 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
+- Preview funnel paid route: build the one-copy order packet from the preview or example pages first, then open PayPal only after the packet is ready.
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
 - Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Niche template paid route: for dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then open PayPal after the packet is ready.
 - Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
+- Agent order packet-first route: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html now builds the one-copy order packet before the after-packet PayPal handoff.
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
 - Missed call paid route: build the one-copy order packet before the after-packet PayPal handoff.
@@ -663,6 +665,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Custom sequence preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 - Custom sequence preview JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json
 - Custom sequence preview text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt
+- Preview funnel checkout rule: free preview, custom sequence preview, before-and-after examples, template library, and AI agent order pages expose `fix-one-quiet-lead.html` as the paid packet-first path; PayPal remains the after-packet 5 USD handoff and `PAYPAL_PAYMENT_VERIFIED=true` gate.
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - Custom sequence gallery JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 - Custom sequence gallery text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt

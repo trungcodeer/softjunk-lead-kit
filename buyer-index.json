@@ -107,6 +107,7 @@
     "custom_sequence_preview_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
     "custom_sequence_preview_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
     "custom_sequence_preview_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
+    "preview_funnel_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "custom_sequence_gallery_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
     "custom_sequence_gallery_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
     "custom_sequence_gallery_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
@@ -395,7 +396,7 @@
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
                               "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json",
                               "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
-                              "why":  "Generates Day 0, Day 1, and Day 3 preview copy plus a PayPal note and shareable order link."
+                              "why":  "Generates Day 0, Day 1, and Day 3 preview copy plus a PayPal note, shareable order link, one-copy order packet route, and after-packet 5 USD PayPal handoff."
                           },
                           {
                               "use_when":  "The buyer wants a ready-to-open example for a common quiet-lead situation before paying.",
@@ -441,7 +442,7 @@
                               "use_when":  "The buyer wants a new custom 7-day sequence for one business.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
                               "fallback_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
-                              "why":  "Creates a shareable order URL, explicit PayPal note, and buyer handoff for one custom sequence."
+                              "why":  "Creates a shareable order URL, explicit PayPal note, and buyer handoff that should route through the one-copy order packet before the after-packet PayPal handoff."
                           },
                           {
                               "use_when":  "The buyer is already ready to pay $5.",
@@ -463,7 +464,9 @@
                             "order_url":  "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
                             "shareable_order_link_url":  "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
                             "agent_order_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
+                            "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                             "payment_url":  "https://paypal.me/softjunk/5USD",
+                            "direct_payment_url":  "https://paypal.me/softjunk/5USD",
                             "delivery":  "Manual same-day delivery after PayPal payment is visible to the seller.",
                             "instant_fulfillment_packet_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md",
                             "instant_fulfillment_packet_json_url":  "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/instant-fulfillment-packet.json",

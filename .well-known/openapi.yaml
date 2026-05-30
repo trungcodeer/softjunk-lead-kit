@@ -914,7 +914,7 @@ paths:
       summary: Open the custom sequence preview builder.
       responses:
         "200":
-          description: Browser page that generates a free sequence preview, shareable order link, and PayPal note for the 5 USD custom sequence.
+          description: Browser page that generates a free sequence preview, shareable order link, one-copy order packet route, PayPal note, after-packet 5 USD payment handoff, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -925,7 +925,7 @@ paths:
       summary: Get custom sequence preview metadata.
       responses:
         "200":
-          description: Machine-readable metadata for the preview fields, PayPal note template, payment URL, paid upgrade, privacy rule, and verification gate.
+          description: Machine-readable metadata for the preview fields, one-copy order packet URL, PayPal note template, direct after-packet payment URL, paid upgrade, privacy rule, and verification gate.
           content:
             application/json:
               schema:
@@ -936,7 +936,7 @@ paths:
       summary: Get custom sequence preview text.
       responses:
         "200":
-          description: Plain-text instructions for using the preview and exact 5 USD PayPal checkout.
+          description: Plain-text instructions for using the preview, building the one-copy order packet first, and using the exact 5 USD PayPal handoff after the packet.
           content:
             text/plain:
               schema:
@@ -1139,6 +1139,17 @@ paths:
             text/html:
               schema:
                 type: string
+  /free-preview.html:
+    get:
+      operationId: openFreePreview
+      summary: Open the free follow-up preview builder.
+      responses:
+        "200":
+          description: Free 3-message preview builder that routes the full custom sequence through the one-copy order packet before the after-packet 5 USD PayPal handoff and seller-side verification gate.
+          content:
+            text/html:
+              schema:
+                type: string
   /free-sample-pack.html:
     get:
       operationId: openFreeSamplePack
@@ -1179,7 +1190,7 @@ paths:
       summary: Open lead follow-up before and after examples.
       responses:
         "200":
-          description: Before and after examples for weak and improved lead follow-up messages.
+          description: Before and after examples for weak and improved lead follow-up messages, with the paid custom sequence routed through the one-copy order packet before the after-packet 5 USD PayPal handoff.
           content:
             text/html:
               schema:
@@ -1190,7 +1201,7 @@ paths:
       summary: Open the buyer-safe AI agent order path.
       responses:
         "200":
-          description: Rescue-first order handoff page that opens root one-lead rescue, creates a PayPal note, points to exact 5 USD PayPal payment, and keeps delivery gated on PAYPAL_PAYMENT_VERIFIED=true.
+          description: Rescue-first order handoff page that opens root one-lead rescue, creates a packet-safe PayPal note, routes through the one-copy order packet before exact 5 USD PayPal payment, and keeps delivery gated on PAYPAL_PAYMENT_VERIFIED=true.
           content:
             text/html:
               schema:

@@ -14,10 +14,15 @@ It generates:
 - Day 3 close-the-loop message
 - PayPal note
 - Shareable order link
+- One-copy order packet handoff
 
 The paid $5 custom sequence adds Day 5, Day 7, no-show recovery, price-objection reply, and final copy tuned to one business and lead context.
 
-Pay exactly 5 USD:
+Build the one-copy order packet first:
+
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Then pay exactly 5 USD after the packet:
 
 https://paypal.me/softjunk/5USD
 
@@ -37,7 +42,7 @@ SHA-256:
 
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 
-Expected checkout: 5.00 USD to https://paypal.me/softjunk/5USD.
+Expected after-packet checkout: 5.00 USD to https://paypal.me/softjunk/5USD.
 Success signal: PAYPAL_PAYMENT_VERIFIED=true.
 
 Machine-readable JSON:

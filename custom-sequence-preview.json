@@ -1,6 +1,6 @@
 {
-  "schema_version": "softjunk-custom-sequence-preview-v2",
-  "updated": "2026-05-28",
+  "schema_version": "softjunk-custom-sequence-preview-v3",
+  "updated": "2026-05-30",
   "name": "SoftJunk Custom Sequence Preview",
   "url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
   "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt",
@@ -9,6 +9,10 @@
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "shareable_order_link_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
   "shareable_order_link_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json",
+  "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+  "before_payment_action": "Build the one-copy order packet first, then use PayPal after the packet.",
+  "direct_payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_after_packet_url": "https://paypal.me/softjunk/5USD",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "price": "5.00",
   "currency": "USD",
@@ -28,7 +32,7 @@
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "payment_boundary": "This proves the executable checkout route only. Do not claim paid, started, delivered, fulfilled, complete, received, or stopped unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true."
   },
-  "purpose": "Generate a free custom lead follow-up preview, a shareable order link, and a PayPal note before the buyer pays for the full 7-day sequence.",
+  "purpose": "Generate a free custom lead follow-up preview, a shareable order link, a one-copy order packet handoff, and a PayPal note before the buyer uses the after-packet payment handoff for the full 7-day sequence.",
   "query_parameters": [
     "business",
     "service",
@@ -46,7 +50,8 @@
     "Day 1 follow-up",
     "Day 3 close-the-loop message",
     "PayPal note",
-    "shareable order link"
+    "shareable order link",
+    "one-copy order packet handoff"
   ],
   "paid_sequence_adds": [
     "Day 5 follow-up",
@@ -57,6 +62,6 @@
   ],
   "paypal_note_template": "Custom Sequence Preview | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [blocker] | Next: [next] | Value: [value]",
   "privacy_rule": "Do not put customer names, phone numbers, addresses, private customer details, or PayPal transaction details in public URLs.",
-  "buyer_agent_instruction": "Generate the free preview first. If the buyer wants the full custom sequence, run the no-clone checkout command, compare the release SHA-256, verify the payment URL is https://paypal.me/softjunk/5USD for 5.00 USD, then open PayPal. Do not claim payment or fulfillment until PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal proof exists.",
+  "buyer_agent_instruction": "Generate the free preview first. If the buyer wants the full custom sequence, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, run the no-clone checkout command, compare the release SHA-256, verify the after-packet payment URL is https://paypal.me/softjunk/5USD for 5.00 USD, then open PayPal from the packet handoff. Do not claim payment or fulfillment until PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal proof exists.",
   "fulfillment_rule": "Do not mark the order paid, started, delivered, fulfilled, complete, received, or stopped unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
 }

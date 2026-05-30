@@ -542,6 +542,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.json
 Custom sequence preview text:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.txt
 
+Preview funnel checkout rule:
+Use https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html as the paid packet-first path for free preview, custom sequence preview, before-and-after examples, template library, and AI agent order pages. PayPal remains the after-packet 5 USD handoff and completion still requires seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
+
 Custom sequence gallery:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 
@@ -629,6 +632,9 @@ https://gist.githubusercontent.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759/
 Free preview builder:
 https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 
+Free preview paid route:
+Build the one-copy order packet first, then use the after-packet PayPal handoff.
+
 Lead follow-up rewriter:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 
@@ -661,6 +667,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 
 AI agent order path:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
+
+AI agent order packet-first route:
+Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before using the after-packet PayPal handoff.
 
 AI agent order path rule:
 Open the GitHub-native Buy Now packet first for the one-lead rescue route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md. Use https://github.com/trungcodeer/softjunk-lead-kit/issues/1 for a human buyer or https://github.com/trungcodeer/softjunk-lead-kit/issues/5 for a buyer-agent. Pay exactly 5 USD at https://paypal.me/softjunk/5USD, and submit non-sensitive details through https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml. Do not claim paid or delivered unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
