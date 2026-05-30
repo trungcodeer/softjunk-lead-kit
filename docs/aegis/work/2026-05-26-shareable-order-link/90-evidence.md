@@ -2305,6 +2305,66 @@ Payment gate:
 - This slice did not verify a PayPal transaction.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 AI Prompt And Answer Packet-First Evidence
+
+- Audited `ai-follow-up-prompt.html` and `lead-follow-up-answers.html` for visible direct PayPal exposure before the one-copy order packet.
+- Updated product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`):
+  - `ai-follow-up-prompt.html` now routes the primary paid CTA to `fix-one-quiet-lead.html`, while preserving PayPal as after-packet metadata and verification-boundary copy.
+  - `ai-follow-up-prompt.json` is now `softjunk-ai-follow-up-prompt-v4` and exposes `one_copy_order_packet_url`, `before_payment_action`, `direct_payment_url`, and `payment_after_packet_url`.
+  - `ai-follow-up-prompt.txt` now instructs assistants to build the one-copy order packet before after-packet PayPal.
+  - `lead-follow-up-answers.html` now routes paid custom-sequence CTAs to `fix-one-quiet-lead.html`, while preserving the after-packet PayPal URL and `PAYPAL_PAYMENT_VERIFIED=true` boundary.
+  - Discovery surfaces `.well-known/openapi.yaml`, `feed.xml`, `sitemap.xml`, `README.md`, `llms.txt`, and `buyer-index.json` now describe the AI prompt and answer packet-first route.
+  - Accessibility affordances remain present: semantic anchors/buttons, existing focus styling, alt text on QR imagery, and no new custom inaccessible controls.
+- Local verification:
+  - `direct_paypal_href_absent_ok files=2`.
+  - `focused_ai_prompt_answer_packet_first_ok files=2`.
+  - `ai_follow_up_prompt_json_packet_first_ok`.
+  - `ai_follow_up_prompt_text_packet_first_ok`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Ruw9+G1KaxpHTFHj5vkB1XVR7sLpJI+ZHuV8pe9uF10Rbe4502AZUg5MalNsAxbgAxfJmmdxo/nHfLd3Oxc6HQ==`, shasum `e157b7e61fd2cb7a8b26a3e5069a92a11ba03fe2`.
+- Deployment:
+  - Product commit `5349f72` pushed to `main`.
+  - Product Pages run `26684018298` completed successfully.
+- Live verification returned `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+- IndexNow returned `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the ten changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; process exited nonzero (`1`) as expected without seller-side credentials or proof.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
+- Full evidence section: `2026-05-30 AI Prompt And Answer Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26684018298` success.
+- Live verification evidence: `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`.
+- Discovery ping evidence: `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
+- Full evidence section: `2026-05-30 AI Prompt And Answer Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26684018298` success.
+- Live verification evidence: `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`.
+- Discovery ping evidence: `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 AI Handoff Packet-First Evidence
 
 - Audited high-intent AI handoff surfaces where buyer agents could still see direct PayPal before a one-copy order packet.
@@ -9553,5 +9613,15 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26683076199` success.
 - Live verification evidence: `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`.
 - Discovery ping evidence: `indexnow_ai_handoff_packet_first_ok status=200 urls=15`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
+- Full evidence section: `2026-05-30 AI Prompt And Answer Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26684018298` success.
+- Live verification evidence: `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`.
+- Discovery ping evidence: `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

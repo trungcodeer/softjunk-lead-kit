@@ -11242,6 +11242,73 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
+- Full checkpoint section: `2026-05-30 AI Prompt And Answer Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26684018298` success; live verification `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`; IndexNow `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 AI Prompt And Answer Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: AI Prompt And Answer Packet-First Route.
+- Completed todos:
+  - Audited `ai-follow-up-prompt.html` and `lead-follow-up-answers.html` for visible direct PayPal CTAs before the one-copy order packet.
+  - Updated both HTML surfaces so paid buyer CTAs route through `fix-one-quiet-lead.html`.
+  - Updated `ai-follow-up-prompt.json` to `softjunk-ai-follow-up-prompt-v4` with order-packet-first fields and after-packet PayPal metadata.
+  - Updated `ai-follow-up-prompt.txt` with the order-packet-first buyer path.
+  - Updated discovery surfaces: `.well-known/openapi.yaml`, `feed.xml`, `sitemap.xml`, `README.md`, `llms.txt`, and `buyer-index.json`.
+  - Committed and pushed product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`) to `main`.
+  - Waited for GitHub Pages run `26684018298`, which completed successfully for commit `5349f72`.
+  - Live-verified ten product/discovery URLs with marker `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`.
+  - Submitted the ten changed owned Pages URLs to IndexNow with marker `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Direct PayPal href validation: `direct_paypal_href_absent_ok files=2`.
+- Focused packet validation: `focused_ai_prompt_answer_packet_first_ok files=2`.
+- Prompt JSON validation: `ai_follow_up_prompt_json_packet_first_ok`.
+- Prompt text validation: `ai_follow_up_prompt_text_packet_first_ok`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Ruw9+G1KaxpHTFHj5vkB1XVR7sLpJI+ZHuV8pe9uF10Rbe4502AZUg5MalNsAxbgAxfJmmdxo/nHfLd3Oxc6HQ==`, shasum `e157b7e61fd2cb7a8b26a3e5069a92a11ba03fe2`.
+- Product Pages run: `26684018298`, conclusion `success`, head SHA `5349f721d1b0ca174e56c2410034531483b15c6d`.
+- Live verification: `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`.
+- IndexNow: `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; process exited nonzero (`1`) without seller-side credentials or proof.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves AI prompt and answer buyer routes and keeps payment packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, AI follow-up prompt HTML/JSON/text, lead follow-up answers HTML, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
+- Full checkpoint section: `2026-05-30 AI Prompt And Answer Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26684018298` success; live verification `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`; IndexNow `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-30 Agent Relay Commerce Packet-First Checkpoint
 
 TodoCheckpointDraft:
@@ -12759,6 +12826,17 @@ Latest completed slice:
 - AI Handoff Packet-First Route, product commit `25cb433` (`25cb43354c0b2676692fca60e109944117f0051d`).
 - Full checkpoint section: `2026-05-30 AI Handoff Packet-First Checkpoint`.
 - Deployment evidence: GitHub Pages run `26683076199` success; live verification `live_ai_handoff_packet_first_ok commit=25cb433 urls=15`; IndexNow `indexnow_ai_handoff_packet_first_ok status=200 urls=15`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
+- Full checkpoint section: `2026-05-30 AI Prompt And Answer Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26684018298` success; live verification `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`; IndexNow `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
