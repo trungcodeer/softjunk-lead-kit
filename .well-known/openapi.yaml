@@ -848,7 +848,7 @@ paths:
       summary: Get the SoftJunk agent commerce capsule text.
       responses:
         "200":
-          description: Plain-text commerce contract with the exact PayPal path, agent flow, payment note, privacy boundary, and verification gate.
+          description: Plain-text commerce contract with the one-copy order packet before the exact PayPal path, agent flow, payment note, privacy boundary, and verification gate.
           content:
             text/plain:
               schema:

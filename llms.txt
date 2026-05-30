@@ -786,7 +786,7 @@ Offers:
 - Instant fulfillment packet for $0 inspection: public Day 0, Day 1, Day 3, Day 5, Day 7, no-show, and price-objection delivery shell used only after seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true.
 - GitHub Sponsor button buy route: repository funding config lists https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html first and https://paypal.me/softjunk/5USD second, with SPONSOR_BUTTON_BUY.md and sponsor-button-buy.json as the route contract.
 - Free AI agent buyer packet for $0: compact decision packet with the audit route, exact PayPal URL, copyable prompt, payment note, and seller-side verification rule.
-- Free agent commerce capsule for $0: compact commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
+- Free agent commerce capsule for $0: compact commerce contract with fit rules, do-not-use rules, free proof routes, one-copy order packet before the exact 5 USD PayPal handoff, PayPal note, privacy boundary, and verification gate.
 - Free lead recovery audit for $0: estimates missed lead value, rewrites a weak follow-up, and creates a PayPal note.
 - Free lead loss calculator for $0: estimates missed monthly value from weak follow-up and creates a PayPal note.
 - Free lead follow-up rewriter for $0: rewrites one weak follow-up message and creates a PayPal note.
