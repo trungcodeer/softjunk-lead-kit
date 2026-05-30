@@ -562,7 +562,7 @@ paths:
       summary: Open the SoftJunk plumbing buyer send packet.
       responses:
         "200":
-          description: Copy-ready one-buyer DM, email, PayPal note, free plumbing preview, one-buyer share route, exact 5 USD PayPal URL, order form, privacy rule, and verification gate.
+          description: Copy-ready one-buyer DM, email, one-copy order packet route, PayPal note, free plumbing preview, one-buyer share route, after-packet 5 USD PayPal URL, order form, privacy rule, and verification gate.
           content:
             text/html:
               schema:
@@ -573,7 +573,7 @@ paths:
       summary: Get the SoftJunk plumbing buyer send packet JSON.
       responses:
         "200":
-          description: Machine-readable one-buyer send packet for a known fitting plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead.
+          description: Machine-readable one-buyer send packet for a known fitting plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead, including one-copy order packet route, after-packet payment URL, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             application/json:
               schema:
@@ -584,7 +584,7 @@ paths:
       summary: Get the SoftJunk plumbing buyer send packet text.
       responses:
         "200":
-          description: Plain-text one-buyer plumbing send packet with DM, email, PayPal note, preview route, payment URL, order form, privacy rule, and verification gate.
+          description: Plain-text one-buyer plumbing send packet with DM, email, one-copy order packet route, PayPal note, preview route, after-packet payment URL, order form, privacy rule, and verification gate.
           content:
             text/plain:
               schema:

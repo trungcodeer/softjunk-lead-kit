@@ -133,6 +133,8 @@
     "plumbing_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html",
     "plumbing_buyer_send_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json",
     "plumbing_buyer_send_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt",
+    "plumbing_buyer_send_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "plumbing_buyer_send_payment_handoff_url":  "https://paypal.me/softjunk/5USD",
     "plumbing_buyer_issue_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/10",
     "plumbing_buyer_discussion_url":  "https://github.com/trungcodeer/softjunk-lead-kit/discussions/15",
     "hvac_buyer_send_url":  "https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html",
