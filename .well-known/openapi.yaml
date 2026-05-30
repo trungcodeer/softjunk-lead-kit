@@ -1168,7 +1168,7 @@ paths:
       summary: Open the lead follow-up template library.
       responses:
         "200":
-          description: Template library for small-business follow-up samples and $5 custom sequence paths.
+          description: Template library for small-business follow-up samples and packet-first 5 USD custom sequence paths through the one-copy order packet, after-packet PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:

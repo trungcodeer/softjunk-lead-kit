@@ -629,6 +629,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
 - Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
+- Niche template paid route: for dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then open PayPal after the packet is ready.
 - Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
@@ -653,6 +654,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Roofing: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
 - Real estate: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
+- Niche template checkout rule: the public template pages expose `fix-one-quiet-lead.html` as the paid Offer and BuyAction target, keep `https://paypal.me/softjunk/5USD` as the direct after-packet payment URL, and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
 
 ## Machine-Readable Discovery
 
