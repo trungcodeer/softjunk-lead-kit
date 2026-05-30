@@ -999,10 +999,10 @@ paths:
   /agent-buy-brief.html:
     get:
       operationId: openAgentBuyBrief
-      summary: Open the AI buyer brief for the $5 follow-up offer.
+      summary: Open the packet-first AI buyer brief for the $5 follow-up offer.
       responses:
         "200":
-          description: Machine-readable buyer brief with root one-lead rescue route, PayPal URL, handoff copy, order form, and verification gate.
+          description: Machine-readable buyer brief with the one-copy order packet first, root one-lead rescue fallback, after-packet PayPal URL, handoff copy, order form, and seller-side verification gate.
           content:
             text/html:
               schema:
