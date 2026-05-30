@@ -13967,3 +13967,45 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Package Payment Wording Copy-Only Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: updated stale package/discovery/machine-readable payment wording from opening PayPal to copying the after-packet PayPal URL across 46 package-native surfaces, including CLI/MCP routes and root buyer metadata.
+- Active slice status: product commit `6119956` (`6119956cb35088e8c1cabc3242c8dd6e28f4758a`) pushed to `main` and verified live on public Pages surfaces.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Stale package wording scan returned `stale_open_paypal_wording_absent_all_package_surfaces`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- JSON parse validation returned `json_parse_ok files=54`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-FlaS3lRO7kkmUdnCUQB3NdWKNh10yH21JSrBbulbwKFwFvXfTRU1y7VjXcRkdoCpY8C7hlZtRhEjb4rM67R3jA==`, shasum `1d198c8584160defff974af22d87452f91155da1`.
+- Product Pages run: `26694501705`, conclusion `success`.
+- Live verification: `live_package_payment_wording_copy_only_ok commit=6119956 urls=10`.
+- IndexNow: `indexnow_package_payment_wording_copy_only_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves package-native and machine-readable checkout language so agents build the one-copy packet before copying the after-packet PayPal URL, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, package metadata, CLI/MCP output, root discovery files, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct pre-packet action.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Package Payment Wording Copy-Only, product commit `6119956` (`6119956cb35088e8c1cabc3242c8dd6e28f4758a`).
+- Full checkpoint section: `2026-05-31 Package Payment Wording Copy-Only Checkpoint`.
+- Deployment evidence: GitHub Pages run `26694501705` success; live verification `live_package_payment_wording_copy_only_ok commit=6119956 urls=10`; IndexNow `indexnow_package_payment_wording_copy_only_ok status=200 urls=12`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

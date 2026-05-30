@@ -10432,3 +10432,30 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_missed_call_flyer_copy_only_ok status=200 urls=5`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Package Payment Wording Copy-Only Evidence
+
+- Product commit: `6119956` (`6119956cb35088e8c1cabc3242c8dd6e28f4758a`) on `main`.
+- Changed package-native/discovery surfaces: 46 files, including `README.md`, `llms.txt`, package JSON metadata, agent checkout JSON/MD/TXT files, `bin/softjunk-lead-kit.js`, and `mcp-server-softjunk.js`.
+- Local stale wording scan returned `stale_open_paypal_wording_absent_all_package_surfaces` for package surfaces outside `docs/`, `node_modules/`, and `distribution/`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- JSON parse validation returned `json_parse_ok files=54`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`; CLI output now says to build the one-copy order packet before copying the after-packet PayPal URL.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-FlaS3lRO7kkmUdnCUQB3NdWKNh10yH21JSrBbulbwKFwFvXfTRU1y7VjXcRkdoCpY8C7hlZtRhEjb4rM67R3jA==`, shasum `1d198c8584160defff974af22d87452f91155da1`.
+- Product Pages run `26694501705` completed successfully for commit `6119956`.
+- Live verification returned `live_package_payment_wording_copy_only_ok commit=6119956 urls=10` for public Pages surfaces checked without query strings: `agent-checkout-router.json`, `agent-checkout-router.md`, `agent-checkout-router.txt`, `agent-card.json`, `mcp-checkout-server.json`, `npm-funding.json`, `product-feed.json`, `README.md`, `llms.txt`, and `mcp-server-softjunk.js`.
+- IndexNow returned `indexnow_package_payment_wording_copy_only_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Package Payment Wording Copy-Only, product commit `6119956` (`6119956cb35088e8c1cabc3242c8dd6e28f4758a`).
+- Full evidence section: `2026-05-31 Package Payment Wording Copy-Only Evidence`.
+- Deployment evidence: GitHub Pages run `26694501705` success.
+- Live verification evidence: `live_package_payment_wording_copy_only_ok commit=6119956 urls=10`.
+- Discovery ping evidence: `indexnow_package_payment_wording_copy_only_ok status=200 urls=12`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
