@@ -21,7 +21,7 @@
     ],
     "funding": {
         "type": "custom",
-        "url": "https://paypal.me/softjunk/5USD"
+        "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
     },
     "bin": {
         "softjunk-lead-kit": "bin/softjunk-lead-kit.js",
@@ -84,7 +84,9 @@
         "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
         "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
         "payment_url": "https://paypal.me/softjunk/5USD",
-        "npm_funding_url": "https://paypal.me/softjunk/5USD",
+        "npm_funding_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+        "npm_funding_direct_payment_url": "https://paypal.me/softjunk/5USD",
+        "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
         "npm_funding_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
         "npm_funding_markdown_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
         "npm_publish_status_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",

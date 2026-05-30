@@ -30,6 +30,7 @@ child.stderr.on('data', (chunk) => {
 child.stdin.write(`${request(1, 'initialize', { protocolVersion: '2025-11-25' })}\n`);
 child.stdin.write(`${request(2, 'tools/list', {})}\n`);
 child.stdin.write(`${request(3, 'tools/call', { name: 'get_softjunk_agent_relay', arguments: {} })}\n`);
+child.stdin.write(`${request(4, 'tools/call', { name: 'get_softjunk_npm_funding_route', arguments: {} })}\n`);
 child.stdin.end();
 
 const timer = setTimeout(() => {
@@ -50,6 +51,10 @@ child.on('close', (code) => {
   assert(
     list.result.tools.some((tool) => tool.name === 'get_softjunk_agent_relay'),
     'expected get_softjunk_agent_relay in tools/list'
+  );
+  assert(
+    list.result.tools.some((tool) => tool.name === 'get_softjunk_npm_funding_route'),
+    'expected get_softjunk_npm_funding_route in tools/list'
   );
 
   const call = messages.find((message) => message.id === 3);
@@ -82,6 +87,23 @@ child.on('close', (code) => {
   assert(
     payload.verification_gate && payload.verification_gate.success_signal === 'PAYPAL_PAYMENT_VERIFIED=true',
     'expected verification gate'
+  );
+
+  const fundingCall = messages.find((message) => message.id === 4);
+  assert(fundingCall && fundingCall.result && fundingCall.result.structuredContent, 'expected structuredContent for npm funding call');
+  const fundingPayload = fundingCall.result.structuredContent;
+  assert(
+    fundingPayload.funding_url === 'https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html',
+    'expected packet-first npm funding URL'
+  );
+  assert(
+    fundingPayload.direct_payment_url === 'https://paypal.me/softjunk/5USD',
+    'expected direct PayPal URL to remain explicit'
+  );
+  assert(
+    fundingPayload.before_payment_action &&
+      fundingPayload.before_payment_action.includes('one-copy order packet'),
+    'expected npm funding before-payment action'
   );
 
   console.log('mcp_agent_relay_smoke_ok');

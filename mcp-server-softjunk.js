@@ -40,6 +40,8 @@ const AI_ACTION_CHECKOUT_JSON =
   "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-action-checkout.json";
 const PACKAGE_JSON_URL =
   "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/package.json";
+const NPM_FUNDING_URL =
+  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html";
 const NPM_FUNDING_JSON =
   "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json";
 const NPM_FUNDING_MARKDOWN =
@@ -505,7 +507,8 @@ function npmFundingRoute() {
     one_copy_order_packet_text_url: ONE_COPY_ORDER_PACKET_TEXT,
     before_payment_action: "Build the one-copy order packet before opening PayPal.",
     funding_type: "custom",
-    funding_url: PAYMENT_URL,
+    funding_url: NPM_FUNDING_URL,
+    direct_payment_url: PAYMENT_URL,
     npm_funding_json_url: NPM_FUNDING_JSON,
     npm_funding_markdown_url: NPM_FUNDING_MARKDOWN,
     npm_publish_status_json_url: NPM_PUBLISH_STATUS_JSON,

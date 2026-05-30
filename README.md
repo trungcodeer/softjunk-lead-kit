@@ -68,7 +68,7 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-When this repo is installed as a GitHub package or opened after clone, the package metadata exposes the exact 5 USD PayPal funding URL. For the one-lead rescue, build the order packet first:
+When this repo is installed as a GitHub package or opened after clone, the package metadata exposes the one-copy order packet as the npm funding URL. For the one-lead rescue, build the order packet first:
 
 ```text
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
@@ -80,7 +80,7 @@ npm run fund
 npm run fund:kit
 ```
 
-The `funding.url` value is `https://paypal.me/softjunk/5USD`. This is a payment path, not proof of payment; the packet-first route gives the buyer the preview, note, proof, order form, and verification boundary before PayPal. Fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+The `funding.url` value is `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`. It opens the packet-first route with preview, note, proof, order form, and verification boundary before PayPal. The direct PayPal URL remains `https://paypal.me/softjunk/5USD`, and fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.163` records this status. Until an owner publishes with npm auth, use the current release tarball route above first, or the GitHub package route if the release asset is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
 

@@ -11,16 +11,24 @@ npm fund
 The package funding URL is:
 
 ```text
-https://paypal.me/softjunk/5USD
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 ```
 
-For the custom one-lead rescue, build the order packet before opening PayPal:
+That URL opens the one-copy order packet first. For the custom one-lead rescue, build the packet before opening PayPal:
 
 ```text
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 ```
 
 The packet includes the preview, PayPal note, checkout proof, exact PayPal URL, post-payment order form, privacy rule, and seller-side verification boundary.
+
+Direct PayPal payment remains:
+
+```text
+https://paypal.me/softjunk/5USD
+```
+
+Use it only after the one-copy order packet is ready.
 
 ## Current npmjs Publish Status
 
