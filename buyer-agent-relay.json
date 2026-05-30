@@ -33,7 +33,7 @@
     "rule": "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received until seller-side PayPal evidence verifies the 5 USD transaction.",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-    "before_payment_action": "Build the one-copy order packet before opening PayPal."
+    "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL."
   },
   "use_when": [
     "The buyer has one real quiet lead, missed call, estimate follow-up, no-show, price objection, or DM follow-up problem.",
@@ -70,7 +70,7 @@
       "step": "build_one_copy_order_packet",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-      "instruction": "Build or load the one-copy order packet before opening PayPal."
+      "instruction": "Build or load the one-copy order packet before copying the after-packet PayPal URL."
     },
     {
       "step": "inspect_graph_if_needed",
@@ -106,5 +106,5 @@
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
   "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
-  "before_payment_action": "Build the one-copy order packet before opening PayPal."
+  "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL."
 }

@@ -32,7 +32,7 @@
     "funding_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "payment_url":  "https://paypal.me/softjunk/5USD",
     "direct_payment_url":  "https://paypal.me/softjunk/5USD",
-    "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+    "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
     "price":  "5.00",
     "currency":  "USD",
     "markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md",
@@ -40,7 +40,7 @@
     "repository_url":  "https://github.com/trungcodeer/softjunk-lead-kit",
     "homepage_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet":  {
-                                  "primary_action":  "Build the one-copy order packet before opening PayPal.",
+                                  "primary_action":  "Build the one-copy order packet before copying the after-packet PayPal URL.",
                                   "contains":  [
                                                    "free rescue preview",
                                                    "copyable PayPal note",
@@ -118,7 +118,7 @@
                             "step":  "build_one_copy_order_packet",
                             "url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                             "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-                            "instruction":  "Build or load the one-copy order packet before opening PayPal."
+                            "instruction":  "Build or load the one-copy order packet before copying the after-packet PayPal URL."
                         },
                         {
                             "step":  "pay_exactly_5_usd",
@@ -155,7 +155,7 @@
                                   "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
                                   "payment_url":  "https://paypal.me/softjunk/5USD",
                                   "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-                                  "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+                                  "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                                   "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
                                   "share_actions":  [
                                                         "native share",

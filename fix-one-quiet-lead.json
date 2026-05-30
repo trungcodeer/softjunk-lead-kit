@@ -12,7 +12,7 @@
   "payment_url": "https://paypal.me/softjunk/5USD",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
   "payment_url_role": "after_packet_paypal_handoff",
-  "before_payment_action": "Generate the one-lead rescue, copy the one-copy order packet, and copy the PayPal note before opening PayPal.",
+  "before_payment_action": "Generate the one-lead rescue, copy the one-copy order packet, and copy the PayPal note before copying the after-packet PayPal URL.",
   "amount": "5.00",
   "currency": "USD",
   "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",

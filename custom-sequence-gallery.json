@@ -21,7 +21,7 @@
     "expected_amount": "5.00",
     "expected_currency": "USD",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-    "before_payment_action": "Build the one-copy order packet before opening PayPal.",
+    "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
     "expected_payment_url": "https://paypal.me/softjunk/5USD",
     "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
     "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
@@ -159,6 +159,6 @@
       "paypal_note": "Custom Sequence Preview | Business: Small agency | Service: lead follow-up help | Source: Referral | Tone: Warm | Need: fit and next steps | Next: book a quick call | Value: $900"
     }
   ],
-  "buyer_agent_instruction": "Open a scenario preview first. If the buyer wants the full custom sequence, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, run the no-clone checkout command, compare the release SHA-256, verify the after-packet payment URL is https://paypal.me/softjunk/5USD for 5.00 USD, then open PayPal from the packet handoff. Do not claim payment or fulfillment until PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal proof exists.",
+  "buyer_agent_instruction": "Open a scenario preview first. If the buyer wants the full custom sequence, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, run the no-clone checkout command, compare the release SHA-256, verify the after-packet payment URL is https://paypal.me/softjunk/5USD for 5.00 USD, then copy the after-packet PayPal URL from the packet handoff. Do not claim payment or fulfillment until PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal proof exists.",
   "payment_gate": "This gallery is not proof of payment. Fulfillment starts only after the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv."
 }

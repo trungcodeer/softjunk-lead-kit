@@ -11,7 +11,7 @@
     "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
     "one_copy_order_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
     "direct_payment_url":  "https://paypal.me/softjunk/5USD",
-    "before_payment_action":  "Inspect the paid kit proof and build or inspect the one-copy order packet before opening PayPal.",
+    "before_payment_action":  "Inspect the paid kit proof and build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
     "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
     "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
     "release_asset_sha256":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
@@ -23,7 +23,7 @@
                                     "expected_payment_url":  "https://paypal.me/softjunk/5USD",
                                     "expected_payment_url_role":  "after_packet_paypal_handoff",
                                     "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-                                    "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+                                    "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                                     "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
                                     "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
                                     "release_asset_sha256":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
@@ -67,7 +67,7 @@
                      },
                      {
                          "step":  "build_order_packet",
-                         "action":  "Build or inspect the one-copy order packet before opening PayPal.",
+                         "action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                          "url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                          "json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
                          "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt"

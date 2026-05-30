@@ -43,4 +43,4 @@ Success signal: `PAYPAL_PAYMENT_VERIFIED=true`
 
 ## Rules
 
-Use only owned public surfaces or one known fitting buyer context. Build or inspect the one-copy order packet before opening PayPal. Do not use scraped lists, spam, deception, unauthorized outreach, fake payment claims, or private customer/payment data. Do not claim paid, received, started, fulfilled, complete, or stopped unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.
+Use only owned public surfaces or one known fitting buyer context. Build or inspect the one-copy order packet before copying the after-packet PayPal URL. Do not use scraped lists, spam, deception, unauthorized outreach, fake payment claims, or private customer/payment data. Do not claim paid, received, started, fulfilled, complete, or stopped unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.

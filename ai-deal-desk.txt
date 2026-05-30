@@ -40,7 +40,7 @@ Turn non-sensitive lead follow-up context into a qualified SoftJunk buyer handof
 Use when:
 - An AI assistant, VA, crawler, or operator has a real lead follow-up need.
 - The buyer needs a decision about whether to start with a free proof route or pay for the custom 7-day sequence.
-- The buyer needs a one-lead rescue route, one-copy order packet, and PayPal note before opening PayPal.
+- The buyer needs a one-lead rescue route, one-copy order packet, and PayPal note before copying the after-packet PayPal URL.
 
 Do not use when:
 - The request is unrelated to lead follow-up.

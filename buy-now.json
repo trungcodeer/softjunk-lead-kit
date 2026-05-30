@@ -14,7 +14,7 @@
     "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
     "one_copy_order_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-    "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+    "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
     "run_from_release_tarball_doctor":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json",
     "run_from_release_tarball_pay_custom":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "roofing_buyer_fast_path":  {
@@ -27,7 +27,7 @@
                                     "one_buyer_send_packet_gist_url":  "https://gist.github.com/trungcodeer/75cf486f79f6a5ab61b938ba786e0805",
                                     "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                                     "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-                                    "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+                                    "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                                     "free_preview_url":  "https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html",
                                     "payment_url":  "https://paypal.me/softjunk/5USD",
                                     "post_payment_order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=roofing-estimate-rescue-order.yml",
@@ -297,7 +297,7 @@
                                                                                 {
                                                                                     "@type":  "PropertyValue",
                                                                                     "name":  "before_payment_action",
-                                                                                    "value":  "Build or inspect the one-copy order packet before opening PayPal."
+                                                                                    "value":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
                                                                                 },
                                                                                 {
                                                                                     "@type":  "PropertyValue",
@@ -350,7 +350,7 @@
                                                        {
                                                            "@type":  "PropertyValue",
                                                            "name":  "before_payment_action",
-                                                           "value":  "Build or inspect the one-copy order packet before opening PayPal."
+                                                           "value":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
                                                        },
                                                        {
                                                            "@type":  "PropertyValue",
@@ -402,7 +402,7 @@
                                                  {
                                                      "@type":  "PropertyValue",
                                                      "name":  "before_payment_action",
-                                                     "value":  "Build or inspect the one-copy order packet before opening PayPal."
+                                                     "value":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
                                                  },
                                                  {
                                                      "@type":  "PropertyValue",

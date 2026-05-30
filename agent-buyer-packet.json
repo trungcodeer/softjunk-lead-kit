@@ -133,7 +133,7 @@
                                     "action":  "Use https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html when the buyer has one quiet lead and needs one generated message, one-copy order packet, PayPal note, shareable rescue link, post-payment order form, and direct 5 USD checkout path.",
                                     "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
                                     "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-                                    "primary_action":  "Generate the rescue, copy the one-copy order packet, verify the current release-tarball checkout proof, open PayPal, then submit non-sensitive details after payment.",
+                                    "primary_action":  "Generate the rescue, copy the one-copy order packet, verify the current release-tarball checkout proof, copy the after-packet PayPal URL, then submit non-sensitive details after payment.",
                                     "order_packet_contains":  [
                                                                   "free rescue preview",
                                                                   "PayPal note",

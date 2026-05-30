@@ -91,7 +91,7 @@
         {
           "@type": "PropertyValue",
           "name": "before_payment_action",
-          "value": "Build or inspect the one-copy order packet before opening PayPal."
+          "value": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
         },
         {
           "@type": "PropertyValue",
@@ -159,7 +159,7 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build or inspect the one-copy order packet before opening PayPal."
+        "value": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
       },
       {
         "@type": "PropertyValue",
@@ -226,7 +226,7 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build or inspect the one-copy order packet before opening PayPal."
+        "value": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
       },
       {
         "@type": "PropertyValue",
@@ -269,7 +269,7 @@
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
   "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
-  "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
+  "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
   "payment_sequence": [
     "Open or build the one-copy order packet.",
     "Copy the packet PayPal note and confirm the amount is exactly 5.00 USD.",

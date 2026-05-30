@@ -17,7 +17,7 @@
   "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-  "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
+  "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
   "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
@@ -38,7 +38,7 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-      "instruction": "Build or inspect the one-copy order packet before opening PayPal."
+      "instruction": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     },
     {
       "step": "copy_note",
@@ -50,7 +50,7 @@
       "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
       "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
       "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
-      "instruction": "Run the current release-tarball command when the buyer-agent needs executable no-clone checkout proof after the one-copy order packet and before opening PayPal."
+      "instruction": "Run the current release-tarball command when the buyer-agent needs executable no-clone checkout proof after the one-copy order packet and before copying the after-packet PayPal URL."
     },
     {
       "step": "pay",

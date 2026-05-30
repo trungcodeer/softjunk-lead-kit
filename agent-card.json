@@ -24,7 +24,7 @@
     "oneCopyOrderPacketUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "oneCopyOrderPacketJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
     "oneCopyOrderPacketTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-    "beforePaymentAction": "Build the one-copy order packet before opening PayPal."
+    "beforePaymentAction": "Build the one-copy order packet before copying the after-packet PayPal URL."
   },
   "agentCheckoutRouterUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.json",
   "agentCheckoutRouterMarkdownUrl": "https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md",
@@ -156,7 +156,7 @@
     "oneCopyOrderPacketUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "oneCopyOrderPacketJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
     "oneCopyOrderPacketTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-    "beforePaymentAction": "Build the one-copy order packet before opening PayPal."
+    "beforePaymentAction": "Build the one-copy order packet before copying the after-packet PayPal URL."
   },
   "paypal_buy_action_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json",
   "well_known_paypal_buy_action_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json",
@@ -218,7 +218,7 @@
         {
           "@type": "PropertyValue",
           "name": "before_payment_action",
-          "value": "Build the one-copy order packet before opening PayPal."
+          "value": "Build the one-copy order packet before copying the after-packet PayPal URL."
         },
         {
           "@type": "PropertyValue",
@@ -281,7 +281,7 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build the one-copy order packet before opening PayPal."
+        "value": "Build the one-copy order packet before copying the after-packet PayPal URL."
       },
       {
         "@type": "PropertyValue",
@@ -343,7 +343,7 @@
       {
         "@type": "PropertyValue",
         "name": "before_payment_action",
-        "value": "Build the one-copy order packet before opening PayPal."
+        "value": "Build the one-copy order packet before copying the after-packet PayPal URL."
       },
       {
         "@type": "PropertyValue",

@@ -10,7 +10,7 @@ Use this when the buyer is ready to pay and wants the shortest safe path: build 
 
 ## Build Packet First
 
-Open or inspect the one-copy order packet before opening PayPal:
+Open or inspect the one-copy order packet before copying the after-packet PayPal URL:
 
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
@@ -46,7 +46,7 @@ Custom Sequence | Business: [business type] | Service: [service] | Source: [form
 
 ## Pay
 
-Run the no-clone checkout proof command when an agent needs executable payment handoff after the one-copy order packet and before opening PayPal:
+Run the no-clone checkout proof command when an agent needs executable payment handoff after the one-copy order packet and before copying the after-packet PayPal URL:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json

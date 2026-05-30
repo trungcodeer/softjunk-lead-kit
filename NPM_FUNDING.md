@@ -14,7 +14,7 @@ The package funding URL is:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 ```
 
-That URL opens the one-copy order packet first. For the custom one-lead rescue, build the packet before opening PayPal:
+That URL opens the one-copy order packet first. For the custom one-lead rescue, build the packet before copying the after-packet PayPal URL:
 
 ```text
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html

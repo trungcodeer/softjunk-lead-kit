@@ -1,6 +1,6 @@
 # SoftJunk Sponsor Button Buy Route
 
-Use the repository Sponsor button when you want the fastest GitHub-native path to the SoftJunk 5 USD offer. Build the one-copy order packet before opening PayPal.
+Use the repository Sponsor button when you want the fastest GitHub-native path to the SoftJunk 5 USD offer. Build the one-copy order packet before copying the after-packet PayPal URL.
 
 ## Sponsor Button URLs
 

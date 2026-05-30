@@ -24,7 +24,7 @@
       "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
       "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
       "direct_payment_url": "https://paypal.me/softjunk/5USD",
-      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+      "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     },
     "payment_proof_boundary": "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -32,7 +32,7 @@
     "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
     "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
     "direct_payment_url": "https://paypal.me/softjunk/5USD",
-    "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+    "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
   },
   "buy_now_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md",
   "buy_now_raw_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/buy-now.json",
@@ -151,7 +151,7 @@
       "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
       "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
       "direct_payment_url": "https://paypal.me/softjunk/5USD",
-      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+      "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     },
     {
       "name": "Free agent close contract",
@@ -300,7 +300,7 @@
       "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
       "direct_payment_url": "https://paypal.me/softjunk/5USD",
       "payment_url_role": "after_packet_paypal_handoff",
-      "before_payment_action": "Download the free sample, then build or inspect the one-copy order packet before opening PayPal."
+      "before_payment_action": "Download the free sample, then build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     },
     {
       "name": "Free follow-up before and after examples",
@@ -333,13 +333,13 @@
       "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
       "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
       "direct_payment_url": "https://paypal.me/softjunk/5USD",
-      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+      "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     },
     {
       "name": "7-Day Lead Follow-Up Kit",
       "price": "5.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-      "delivery": "Manual ZIP delivery after PayPal payment appears; buyer inspects proof and builds the one-copy order packet before opening PayPal",
+      "delivery": "Manual ZIP delivery after PayPal payment appears; buyer inspects proof and builds the one-copy order packet before copying the after-packet PayPal URL",
       "paypal_note": "Lead Follow-Up Kit",
       "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
@@ -347,7 +347,7 @@
       "one_copy_order_packet_gist_url": "https://gist.github.com/trungcodeer/7c25ec12b4c0f58506efe66bfbef6759",
       "direct_payment_url": "https://paypal.me/softjunk/5USD",
       "payment_url_role": "after_packet_paypal_handoff",
-      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+      "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     }
   ],
   "best_fit": [
@@ -452,5 +452,5 @@
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
   "payment_url_role": "after_packet_paypal_handoff",
   "fix_one_quiet_lead_packet_first_rule": "Generate the one-lead rescue, copy the one-copy order packet and PayPal note, then use the PayPal URL only as the after-packet handoff.",
-  "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal."
+  "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
 }

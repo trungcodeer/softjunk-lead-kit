@@ -382,7 +382,7 @@ function buildRoofingEstimateSequence(args) {
     sequence,
     paypal_note: paypalNote,
     buyer_message:
-      `Use this generated roofing estimate sequence. If a custom rescue is wanted, open the public roofing buyer issue at ${ROOFING_BUYER_ISSUE_URL}, copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive roofing order details at ${ROOFING_ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
+      `Use this generated roofing estimate sequence. If a custom rescue is wanted, open the public roofing buyer issue at ${ROOFING_BUYER_ISSUE_URL}, copy this PayPal note: ${paypalNote}. Copy the after-packet PayPal URL for exactly 5 USD: ${PAYMENT_URL}. After payment, submit non-sensitive roofing order details at ${ROOFING_ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
     roofing_estimate_generator_url: ROOFING_GENERATOR_URL,
     roofing_estimate_generator_json_url: ROOFING_GENERATOR_JSON_URL,
     roofing_estimate_generator_text_url: ROOFING_GENERATOR_TEXT_URL,
@@ -400,7 +400,7 @@ function checkoutRoutes() {
     one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
     one_copy_order_packet_text_url: ONE_COPY_ORDER_PACKET_TEXT,
     one_copy_order_packet_gist_url: ONE_COPY_ORDER_PACKET_GIST,
-    before_payment_action: "Build the one-copy order packet before opening PayPal.",
+    before_payment_action: "Build the one-copy order packet before copying the after-packet PayPal URL.",
     one_buyer_share_url: ONE_BUYER_SHARE_URL,
     one_buyer_share_json_url: ONE_BUYER_SHARE_JSON,
     one_buyer_share_text_url: ONE_BUYER_SHARE_TEXT,
@@ -505,7 +505,7 @@ function npmFundingRoute() {
     one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
     one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
     one_copy_order_packet_text_url: ONE_COPY_ORDER_PACKET_TEXT,
-    before_payment_action: "Build the one-copy order packet before opening PayPal.",
+    before_payment_action: "Build the one-copy order packet before copying the after-packet PayPal URL.",
     funding_type: "custom",
     funding_url: NPM_FUNDING_URL,
     direct_payment_url: PAYMENT_URL,
@@ -593,10 +593,10 @@ function routeCheckout(args) {
     ],
     one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
     one_copy_order_packet_json_url: ONE_COPY_ORDER_PACKET_JSON,
-    before_payment_action: "Build the one-copy order packet before opening PayPal.",
+    before_payment_action: "Build the one-copy order packet before copying the after-packet PayPal URL.",
     paypal_note: paypalNote,
     buyer_message:
-      `Build the one-copy order packet at ${ONE_COPY_ORDER_PACKET_URL}. Copy this PayPal note: ${paypalNote}. Pay exactly 5 USD at ${PAYMENT_URL}. After payment, submit non-sensitive order details at ${ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
+      `Build the one-copy order packet at ${ONE_COPY_ORDER_PACKET_URL}. Copy this PayPal note: ${paypalNote}. Copy the after-packet PayPal URL for exactly 5 USD: ${PAYMENT_URL}. After payment, submit non-sensitive order details at ${ORDER_FORM_URL}. Delivery starts only after seller-side PayPal proof confirms the payment.`,
     ...checkoutRoutes()
   };
 }
@@ -629,7 +629,7 @@ function handleRequest(message) {
         version: "2026.05.29"
       },
       instructions:
-        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Build the one-copy order packet before opening PayPal for the custom rescue. Use the agent relay tool when an MCP-capable assistant needs one fit-check and checkout packet. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
+        "Use the SoftJunk checkout tools only for legitimate one-lead rescue buyers. Build the one-copy order packet before copying the after-packet PayPal URL for the custom rescue. Use the agent relay tool when an MCP-capable assistant needs one fit-check and checkout packet. Use the npm funding tool when an agent, repo cloner, or package scanner needs package-native payment discovery. Use the roofing estimate tool only with non-sensitive context. Never claim payment or fulfillment before seller-side PayPal verification."
     };
   }
 
@@ -657,7 +657,7 @@ function handleRequest(message) {
       return toolResult({
         paypal_note: buildNote(args),
         one_copy_order_packet_url: ONE_COPY_ORDER_PACKET_URL,
-        before_payment_action: "Build the one-copy order packet before opening PayPal.",
+        before_payment_action: "Build the one-copy order packet before copying the after-packet PayPal URL.",
         payment_url: PAYMENT_URL,
         verification_gate: verificationGate()
       });

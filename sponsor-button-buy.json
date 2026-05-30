@@ -13,7 +13,7 @@
   "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-  "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
+  "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
   "price": "5.00",
   "currency": "USD",
   "send_five_buyer_handoff_url": "https://trungcodeer.github.io/send-5/",
@@ -38,7 +38,7 @@
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-      "instruction": "Build or inspect the one-copy order packet before opening PayPal."
+      "instruction": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL."
     },
     {
       "step": "open_sponsor_button_or_payment_url",
@@ -141,7 +141,7 @@
     "currency": "USD",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-    "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
+    "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
     "release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
     "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
     "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",

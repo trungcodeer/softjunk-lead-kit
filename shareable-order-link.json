@@ -56,7 +56,7 @@
     "expected_amount": "5.00",
     "currency": "USD",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-    "before_payment_action": "Build the one-copy order packet before opening PayPal.",
+    "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "current_release_tag": "v2.29.163",
     "current_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",

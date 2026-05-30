@@ -11,7 +11,7 @@
   "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-  "before_payment_action": "Build the one-copy order packet before opening PayPal.",
+  "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
@@ -47,7 +47,7 @@
       "step": "build_one_copy_order_packet",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
       "machine_readable_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-      "instruction": "Build or load the one-copy order packet and copy the packet PayPal note before opening PayPal."
+      "instruction": "Build or load the one-copy order packet and copy the packet PayPal note before copying the after-packet PayPal URL."
     },
     {
       "step": "build_note",
@@ -60,7 +60,7 @@
       "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
       "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
       "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
-      "instruction": "Run the current release-tarball command when the buyer-agent needs an executable no-clone checkout packet before opening PayPal."
+      "instruction": "Run the current release-tarball command when the buyer-agent needs an executable no-clone checkout packet before copying the after-packet PayPal URL."
     },
     {
       "step": "pay",

@@ -13,7 +13,7 @@
   "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-  "before_payment_action": "Build the one-copy order packet before opening PayPal.",
+  "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
   "buyer_index_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json",
   "lead_recovery_audit_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
   "public_buyer_thread_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/3",
@@ -41,7 +41,7 @@
       "amount": "5.00",
       "currency": "USD",
       "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-      "before_payment_action": "Build the one-copy order packet before opening PayPal.",
+      "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
       "payment_url": "https://paypal.me/softjunk/5USD",
       "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
     },

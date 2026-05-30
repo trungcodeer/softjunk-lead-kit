@@ -31,7 +31,7 @@
     "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
     "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-    "before_payment_action": "Build the one-copy order packet before opening PayPal.",
+    "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "rule": "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received until seller-side PayPal evidence verifies the 5 USD transaction."

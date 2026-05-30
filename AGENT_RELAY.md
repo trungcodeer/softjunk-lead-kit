@@ -4,7 +4,7 @@ Use this when an AI assistant, VA, crawler, or coding agent needs one executable
 
 ## One-Copy Order Packet
 
-Build this before opening PayPal:
+Build this before copying the after-packet PayPal URL:
 
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 

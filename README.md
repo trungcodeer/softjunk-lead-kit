@@ -551,7 +551,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Agent commerce rule: the capsule now routes assistants through no-clone proof, the one-copy order packet, and the PayPal note before a copy-only after-packet PayPal URL.
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
-- AI prompt and answer checkout rule: AI follow-up prompt and lead follow-up answers build the one-copy order packet before after-packet PayPal and keep `PAYPAL_PAYMENT_VERIFIED=true` as the completion gate.
+- AI prompt and answer checkout rule: AI follow-up prompt and lead follow-up answers build the one-copy order packet before copying the after-packet PayPal URL and keep `PAYPAL_PAYMENT_VERIFIED=true` as the completion gate.
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
@@ -584,7 +584,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Packet QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
 - Legacy after-packet PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
-- Paid ZIP proof route: inspect proof and manifest, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then open PayPal only after the packet is ready.
+- Paid ZIP proof route: inspect proof and manifest, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then copy the after-packet PayPal URL only after the packet is ready.
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
@@ -631,12 +631,12 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Exact-intent answer pack JSON: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json
 - Exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt
 - Exact-intent answer pack Gist: https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35
-- Exact-intent checkout route: answer first, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then open PayPal after the packet is ready.
-- Exact-intent sample checkout rule: estimate follow-up, price-objection reply, no-show follow-up, and quiet DM follow-up build the one-copy order packet before after-packet PayPal and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
+- Exact-intent checkout route: answer first, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then copy the after-packet PayPal URL after the packet is ready.
+- Exact-intent sample checkout rule: estimate follow-up, price-objection reply, no-show follow-up, and quiet DM follow-up build the one-copy order packet before copying the after-packet PayPal URL and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
-- Preview funnel paid route: build the one-copy order packet from the preview or example pages first, then open PayPal only after the packet is ready.
+- Preview funnel paid route: build the one-copy order packet from the preview or example pages first, then copy the after-packet PayPal URL only after the packet is ready.
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 - Free sample paid route: download the sample, then build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff.
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip

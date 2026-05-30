@@ -66,7 +66,7 @@ function noCloneCheckoutProof() {
     currency: CONSTANTS.currency,
     one_copy_order_packet_url: CONSTANTS.oneCopyOrderPacketUrl,
     one_copy_order_packet_json_url: CONSTANTS.oneCopyOrderPacketJson,
-    before_payment_action: 'Build the one-copy order packet before opening PayPal.',
+    before_payment_action: 'Build the one-copy order packet before copying the after-packet PayPal URL.',
     payment_url: CONSTANTS.paymentUrl,
     latest_release_tag: CONSTANTS.latestReleaseTag,
     latest_release_url: CONSTANTS.latestReleaseUrl,
@@ -207,7 +207,7 @@ function buildRescue(input) {
       name: 'SoftJunk One-Lead Rescue',
       price: CONSTANTS.amount,
       currency: CONSTANTS.currency,
-      before_payment_action: 'Build the one-copy order packet before opening PayPal.',
+      before_payment_action: 'Build the one-copy order packet before copying the after-packet PayPal URL.',
       one_copy_order_packet_url: CONSTANTS.oneCopyOrderPacketUrl,
       one_copy_order_packet_json_url: CONSTANTS.oneCopyOrderPacketJson,
       one_copy_order_packet_text_url: CONSTANTS.oneCopyOrderPacketText,
@@ -235,7 +235,7 @@ function buildSend(input) {
     'First build the one-copy order packet:',
     CONSTANTS.oneCopyOrderPacketUrl,
     '',
-    'Then pay exactly 5 USD:',
+    'Then copy the after-packet PayPal URL for exactly 5 USD:',
     CONSTANTS.paymentUrl,
     '',
     'Paste this PayPal note:',
@@ -372,8 +372,8 @@ function buildPay(options) {
     amount: CONSTANTS.amount,
     currency: CONSTANTS.currency,
     before_payment_action: mode === 'custom'
-      ? 'Build the one-copy order packet before opening PayPal.'
-      : 'Inspect the digital kit proof, then build the one-copy order packet before opening PayPal.',
+      ? 'Build the one-copy order packet before copying the after-packet PayPal URL.'
+      : 'Inspect the digital kit proof, then build the one-copy order packet before copying the after-packet PayPal URL.',
     one_copy_order_packet_url: CONSTANTS.oneCopyOrderPacketUrl,
     one_copy_order_packet_json_url: CONSTANTS.oneCopyOrderPacketJson,
     one_copy_order_packet_text_url: CONSTANTS.oneCopyOrderPacketText,

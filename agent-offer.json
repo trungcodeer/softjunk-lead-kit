@@ -14,7 +14,7 @@
                                   "direct_payment_url":  "https://paypal.me/softjunk/5USD",
                                   "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                                   "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-                                  "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+                                  "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                                   "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                                   "rule":  "Use the one-copy order packet first, then open the direct PayPal URL only after the packet and PayPal note are ready. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
                               },
@@ -108,7 +108,7 @@
     "direct_payment_url":  "https://paypal.me/softjunk/5USD",
     "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-    "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+    "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
     "verified_release_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
     "release_tarball_url":  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
     "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
@@ -122,7 +122,7 @@
                                     "direct_payment_url":  "https://paypal.me/softjunk/5USD",
                                     "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                                     "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-                                    "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal.",
+                                    "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                                     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
                                     "rule":  "This proves the checkout route only. Do not claim paid, started, delivered, fulfilled, complete, or received until seller-side PayPal evidence verifies the 5 USD transaction."
                                 },
