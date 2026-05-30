@@ -582,12 +582,13 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Packet QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
 - Direct PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
+- Paid ZIP proof route: inspect proof and manifest, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then open PayPal only after the packet is ready.
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
-Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For one quiet lead, start at the root rescue route. For a custom sequence, use the AI agent order path or AI Deal Desk to copy the generated PayPal note before paying.
+Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For one quiet lead, start at the root rescue route. For the ready digital kit, inspect the proof page and build the one-copy order packet before paying. For a custom sequence, use the AI agent order path or AI Deal Desk to copy the generated PayPal note before paying.
 
 ## What You Get
 
@@ -781,6 +782,8 @@ Free sample pack page:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 
 Sample-pack paid upgrade rule: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
+
+Paid kit proof paid upgrade rule: inspect the proof and manifest, then build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
 
 Digital kit order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/9

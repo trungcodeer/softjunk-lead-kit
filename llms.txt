@@ -953,4 +953,5 @@ Digital kit proof and order route:
 - Before payment: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Pay exactly 5 USD after the packet: https://paypal.me/softjunk/5USD
 - Required PayPal note: Lead Follow-Up Kit
+- Route rule: never open PayPal directly from the paid kit proof; inspect proof, build the packet, verify checkout, then use the after-packet PayPal handoff.
 - Completion requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.

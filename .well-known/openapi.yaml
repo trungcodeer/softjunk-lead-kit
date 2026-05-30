@@ -1013,7 +1013,7 @@ paths:
       summary: Get the digital kit proof and order contract.
       responses:
         "200":
-          description: Machine-readable order contract with proof page https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html, paid ZIP manifest https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json, sample ZIP SHA-256 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba, GitHub order board https://github.com/trungcodeer/softjunk-lead-kit/issues/9, order form https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml, exact 5 USD PayPal URL https://paypal.me/softjunk/5USD, required note, privacy rule, and seller-side verification gate.
+          description: Machine-readable packet-first order contract with proof page https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html, paid ZIP manifest https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json, sample ZIP SHA-256 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba, one-copy order packet https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet 5 USD PayPal URL https://paypal.me/softjunk/5USD, required note, privacy rule, and seller-side verification gate.
           content:
             application/json:
               schema:
@@ -1024,7 +1024,7 @@ paths:
       summary: Get the plain-text digital kit proof and order contract.
       responses:
         "200":
-          description: Plain-text route from paid kit proof https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html to exact 5 USD PayPal payment https://paypal.me/softjunk/5USD, required note Lead Follow-Up Kit, order form https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Plain-text route from paid kit proof https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html to the one-copy order packet https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before exact after-packet 5 USD PayPal payment https://paypal.me/softjunk/5USD, required note Lead Follow-Up Kit, order form https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             text/plain:
               schema:
@@ -1032,10 +1032,10 @@ paths:
   /paid-kit-proof.html:
     get:
       operationId: openPaidKitProof
-      summary: Open public proof that the paid ZIP is packaged.
+      summary: Open packet-first public proof that the paid ZIP is packaged.
       responses:
         "200":
-          description: Public paid kit proof page with ZIP hash, file manifest, sample ZIP hash 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba, GitHub order board https://github.com/trungcodeer/softjunk-lead-kit/issues/9, order form https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml, price, required PayPal note, and seller-side verification gate.
+          description: Public paid kit proof page with ZIP hash, file manifest, sample ZIP hash 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba, one-copy order packet before PayPal, GitHub order board https://github.com/trungcodeer/softjunk-lead-kit/issues/9, order form https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml, price, required PayPal note, and seller-side verification gate.
           content:
             text/html:
               schema:

@@ -371,10 +371,12 @@ function buildPay(options) {
     mode,
     amount: CONSTANTS.amount,
     currency: CONSTANTS.currency,
-    before_payment_action: mode === 'custom' ? 'Build the one-copy order packet before opening PayPal.' : 'Inspect the digital kit proof before opening PayPal.',
-    one_copy_order_packet_url: mode === 'custom' ? CONSTANTS.oneCopyOrderPacketUrl : undefined,
-    one_copy_order_packet_json_url: mode === 'custom' ? CONSTANTS.oneCopyOrderPacketJson : undefined,
-    one_copy_order_packet_text_url: mode === 'custom' ? CONSTANTS.oneCopyOrderPacketText : undefined,
+    before_payment_action: mode === 'custom'
+      ? 'Build the one-copy order packet before opening PayPal.'
+      : 'Inspect the digital kit proof, then build the one-copy order packet before opening PayPal.',
+    one_copy_order_packet_url: CONSTANTS.oneCopyOrderPacketUrl,
+    one_copy_order_packet_json_url: CONSTANTS.oneCopyOrderPacketJson,
+    one_copy_order_packet_text_url: CONSTANTS.oneCopyOrderPacketText,
     payment_url: CONSTANTS.paymentUrl,
     paypal_note: paypalNoteFor(mode, options),
     order_form_url: mode === 'kit' ? CONSTANTS.digitalKitOrderForm : CONSTANTS.customOrderForm,

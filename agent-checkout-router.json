@@ -128,12 +128,15 @@
     {
       "rank": 6,
       "route_id": "digital_kit_proof_order",
-      "use_when": "The buyer wants proof of the digital kit payload, sample ZIP hash, order contract, and paid-kit order form before paying.",
+      "use_when": "The buyer wants proof of the digital kit payload, sample ZIP hash, order contract, one-copy order packet, and paid-kit order form before paying.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.json",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/digital-kit-order.txt",
       "proof_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
       "manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
-      "payment_url": "https://paypal.me/softjunk/5USD"
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "before_payment_action": "Inspect the paid kit proof and build or inspect the one-copy order packet before opening PayPal.",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "payment_url_role": "after_packet_paypal_handoff"
     },
     {
       "rank": 7,

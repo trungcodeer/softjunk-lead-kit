@@ -6,7 +6,14 @@
     <atom:link href="https://trungcodeer.github.io/softjunk-lead-kit/feed.xml" rel="self" type="application/rss+xml" />
     <description>Packet-first $5 lead follow-up kit and custom follow-up sequence for small businesses.</description>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 May 2026 21:15:00 +0700</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 21:55:00 +0700</lastBuildDate>
+    <item>
+      <title>Paid Kit Proof Packet-First Route</title>
+      <link>https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</link>
+      <guid isPermaLink="false">paid-kit-proof-packet-first-2026-05-30</guid>
+      <pubDate>Sat, 30 May 2026 21:55:00 +0700</pubDate>
+      <description>Paid kit proof, manifest, and digital order contract now route buyers through the one-copy order packet before the after-packet 5 USD PayPal handoff while preserving no-clone proof and seller-side verification.</description>
+    </item>
     <item>
       <title>Free Sample Pack Packet-First Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html</link>
@@ -410,7 +417,7 @@
       <title>Paid ZIP Proof for SoftJunk Lead Kit</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html</guid>
-      <description>Public proof that the $5 paid ZIP is packaged, with SHA-256 hash, byte size, file manifest, and fulfillment gate.</description>
+      <description>Public proof that the $5 paid ZIP is packaged, with SHA-256 hash, byte size, file manifest, one-copy order packet before PayPal, and fulfillment gate.</description>
       <pubDate>Mon, 25 May 2026 22:55:00 +0700</pubDate>
     </item>
     <item>
