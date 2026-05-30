@@ -344,11 +344,14 @@
                               "why":  "Exposes Schema.org Product, Offer, BuyAction, root one-lead rescue, one-copy order packet, after-packet PayPal, order form, and verification gate nodes in one route."
                           },
                           {
-                              "use_when":  "The buyer or VA wants to paste one prompt into ChatGPT, Claude, Gemini, or another assistant.",
+                              "use_when":  "The buyer or VA wants to paste one prompt into ChatGPT, Claude, Gemini, or another assistant and route a ready custom-sequence buyer through the one-copy order packet before after-packet PayPal.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html",
+                              "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json",
                               "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt",
                               "gist_url":  "https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1",
-                              "why":  "Copyable prompt gives a free useful answer first, then routes to the exact $5 PayPal custom sequence when the buyer wants the full plan."
+                              "order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+                              "payment_after_packet_url":  "https://paypal.me/softjunk/5USD",
+                              "why":  "Copyable prompt gives a free useful answer first, then routes to the one-copy order packet and after-packet exact $5 PayPal custom sequence when the buyer wants the full plan."
                           },
                           {
                               "use_when":  "The buyer, VA, or AI assistant already has order context and needs a shareable URL plus a one-copy order packet before the after-packet PayPal handoff.",
@@ -444,10 +447,12 @@
                               "why":  "Turns existing copy into a clearer message, then routes through the one-copy order packet before the $5 custom 7-day sequence payment."
                           },
                           {
-                              "use_when":  "The buyer asks a direct question like missed call, estimate follow-up, price objection, no-show, or quiet DM.",
+                              "use_when":  "The buyer asks a direct question like missed call, estimate follow-up, price objection, no-show, or quiet DM, then may need the paid custom sequence through the one-copy order packet.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html",
                               "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/answer-engine.json",
-                              "why":  "Answers the immediate question and shows the paid upgrade path."
+                              "order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+                              "payment_after_packet_url":  "https://paypal.me/softjunk/5USD",
+                              "why":  "Answers the immediate question and routes the paid upgrade path through the one-copy order packet before after-packet PayPal."
                           },
                           {
                               "use_when":  "The buyer wants a new custom 7-day sequence for one business.",

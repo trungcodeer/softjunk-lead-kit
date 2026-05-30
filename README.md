@@ -548,6 +548,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
+- AI prompt and answer checkout rule: AI follow-up prompt and lead follow-up answers build the one-copy order packet before after-packet PayPal and keep `PAYPAL_PAYMENT_VERIFIED=true` as the completion gate.
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
@@ -685,6 +686,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Agent close public issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt JSON: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.json
+- AI prompt and answer checkout rule: `ai-follow-up-prompt` and `lead-follow-up-answers` expose `fix-one-quiet-lead.html` before the direct after-packet payment URL, and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Shareable order link JSON: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json
 - Shareable order link text: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt

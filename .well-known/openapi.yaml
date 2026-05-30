@@ -859,7 +859,7 @@ paths:
       summary: Get the AI follow-up prompt packet.
       responses:
         "200":
-          description: JSON packet with a copyable AI prompt, free audit route, exact PayPal URL, payment note, and verification rule.
+          description: JSON packet with a copyable AI prompt, free audit route, one-copy order packet before after-packet PayPal, payment note, and verification rule.
           content:
             application/json:
               schema:
@@ -870,7 +870,7 @@ paths:
       summary: Get the copyable AI follow-up prompt text.
       responses:
         "200":
-          description: Plain-text prompt for ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead.
+          description: Plain-text prompt for ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead and build the order packet before after-packet PayPal.
           content:
             text/plain:
               schema:
@@ -1079,7 +1079,7 @@ paths:
       summary: Open the AI follow-up prompt page.
       responses:
         "200":
-          description: Browser page with copyable AI prompt, free audit route, exact PayPal URL, payment note, and verification rule.
+          description: Browser page with copyable AI prompt, free audit route, one-copy order packet before after-packet PayPal, payment note, and verification rule.
           content:
             text/html:
               schema:
@@ -1134,7 +1134,7 @@ paths:
       summary: Open lead follow-up answers for quiet leads.
       responses:
         "200":
-          description: Answer page with FAQ schema, copy-ready follow-up examples, and the $5 custom sequence path.
+          description: Answer page with FAQ schema, copy-ready follow-up examples, and the one-copy order packet before the after-packet $5 custom sequence payment path.
           content:
             text/html:
               schema:

@@ -467,6 +467,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 AI follow-up prompt text:
 https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt
 
+AI prompt and answer checkout rule:
+Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff. Do not claim payment or fulfillment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
 Shareable order link:
 https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 
@@ -656,6 +659,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 Lead follow-up answers:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 
+Lead follow-up answers paid route:
+Answer first, build the one-copy order packet, then use PayPal only after the packet is ready.
+
 GitHub-native answer brief:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 
@@ -816,7 +822,7 @@ Pinned public order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 
 Offers:
-- Free AI follow-up prompt for $0: copy into ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead and route to the 5 USD custom sequence when useful.
+- Free AI follow-up prompt for $0: copy into ChatGPT, Claude, Gemini, or a VA workflow to recover one quiet lead and route to the one-copy order packet before the 5 USD custom sequence when useful.
 - Free shareable order link for $0: creates a URL, PayPal note, and buyer handoff when non-sensitive order context is already known.
 - Free custom sequence preview for $0: creates Day 0, Day 1, Day 3 preview copy, a PayPal note, and a shareable order link before the buyer pays.
 - Free custom sequence gallery for $0: ready-to-open HVAC, roofing, dental, med spa, real estate, tutoring, plumbing, and agency preview links.
