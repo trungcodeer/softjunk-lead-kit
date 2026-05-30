@@ -634,6 +634,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
 - Preview funnel paid route: build the one-copy order packet from the preview or example pages first, then open PayPal only after the packet is ready.
 - Free sample pack: https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
+- Free sample paid route: download the sample, then build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff.
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
 - Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
 - Niche template paid route: for dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then open PayPal after the packet is ready.
@@ -775,6 +776,11 @@ https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 Public sample ZIP:
 https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
 SHA-256: 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba
+
+Free sample pack page:
+https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
+
+Sample-pack paid upgrade rule: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
 
 Digital kit order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/9

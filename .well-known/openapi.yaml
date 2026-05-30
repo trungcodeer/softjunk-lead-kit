@@ -1153,10 +1153,10 @@ paths:
   /free-sample-pack.html:
     get:
       operationId: openFreeSamplePack
-      summary: Open the free lead follow-up sample pack page.
+      summary: Open the packet-first free lead follow-up sample pack page.
       responses:
         "200":
-          description: Free sample pack landing page with ZIP download and $5 checkout path.
+          description: Free sample pack landing page with ZIP download, one-copy order packet CTA, no-clone checkout proof, after-packet 5 USD PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:

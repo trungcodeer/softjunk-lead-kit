@@ -285,7 +285,13 @@
       "price": "0.00",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html",
       "download_url": "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
-      "delivery": "Instant ZIP download with sample templates, tracker preview, and AI prompts"
+      "delivery": "Instant ZIP download with sample templates, tracker preview, AI prompts, one-copy order packet CTA, no-clone proof, and after-packet PayPal handoff",
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
+      "direct_payment_url": "https://paypal.me/softjunk/5USD",
+      "payment_url_role": "after_packet_paypal_handoff",
+      "before_payment_action": "Download the free sample, then build or inspect the one-copy order packet before opening PayPal."
     },
     {
       "name": "Free follow-up before and after examples",
