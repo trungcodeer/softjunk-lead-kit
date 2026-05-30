@@ -172,6 +172,7 @@
     "checkout_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
     "checkout_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
     "payment_url": "https://paypal.me/softjunk/5USD",
+    "pay_page_rule": "The payment page is packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL.",
     "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
     "after_payment_url": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",
     "route_rule": "For one-lead buyers, build or copy the one-copy order packet before the after-packet PayPal URL.",

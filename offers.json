@@ -113,6 +113,7 @@
   "paid_kit_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
   "agent_offer_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json",
   "pay_page_url": "https://trungcodeer.github.io/softjunk-lead-kit/pay.html",
+  "pay_page_rule": "The payment page is packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL.",
   "checkout_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html",
   "checkout_note_builder_url": "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
   "checkout_rule": "Checkout is packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then use the after-packet PayPal URL.",

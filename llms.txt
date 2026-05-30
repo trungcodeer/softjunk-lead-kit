@@ -542,6 +542,7 @@ https://raw.githubusercontent.com/trungcodeer/trungcodeer/main/softjunk-profile-
 
 Payment page:
 https://trungcodeer.github.io/softjunk-lead-kit/pay.html
+Payment page rule: build the one-copy order packet and copy the PayPal note first; pay.html exposes the after-packet PayPal URL as a copy action, not a direct pre-packet link.
 
 Lead recovery audit:
 https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html

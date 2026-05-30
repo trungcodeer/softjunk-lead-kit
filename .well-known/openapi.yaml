@@ -1407,10 +1407,10 @@ paths:
   /pay.html:
     get:
       operationId: openPaymentPage
-      summary: Open the packet-first $5 payment page.
+      summary: Open the packet-first copy-only $5 payment page.
       responses:
         "200":
-          description: Payment options that route buyers through the one-copy order packet before the direct PayPal link.
+          description: Payment options that route buyers through the one-copy order packet and PayPal note before a copy-only after-packet 5 USD PayPal URL.
           content:
             text/html:
               schema:
