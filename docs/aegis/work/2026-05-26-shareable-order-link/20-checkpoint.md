@@ -11965,3 +11965,56 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 QR Flyer Packet Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: QR Flyer Packet.
+- Completed todos:
+  - Audited `pay-qr.html`, `printable-paypal-flyer.html`, `paypal-qr.svg`, OpenAPI, sitemap, README, RSS, and JSON discovery files.
+  - Generated `packet-qr.svg` for `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+  - Routed `pay-qr.html` and `printable-paypal-flyer.html` primary QR/CTA paths through the one-copy order packet before PayPal.
+  - Preserved direct PayPal as an after-packet handoff through visible links, JSON-LD `directPaymentUrl`/`paymentUrl`, and metadata.
+  - Updated `.well-known/openapi.yaml`, `sitemap.xml`, `buyer-index.json`, `offers.json`, `product-feed.json`, `feed.xml`, and `README.md` for packet-first QR discovery.
+  - Committed and pushed product commit `1a09836` (`1a09836d6fdcee31b81b809525e90b46935d64c2`) to `main`.
+  - Waited for GitHub Pages run `26677114425`, which completed successfully for commit `1a09836`.
+  - Live-verified ten product/raw URLs with marker `live_qr_flyer_packet_ok commit=1a09836 urls=10`.
+  - Submitted ten owned Pages URLs to IndexNow with marker `indexnow_qr_flyer_packet_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+  - Reran the PayPal verifier.
+
+Evidence refs:
+- Local packet validation: `qr_flyer_packet_ok pages=2 json_files=65`.
+- Sitemap XML validation: `sitemap_xml_ok urls=166`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Q6AzY3pIJwAgc75cXptGfLGaqOs3ecJcO2E9yvam4eyjtPt88sK5ivtOuh3e1VP092FB00MlKuYNcC1LfkN3cQ==`, shasum `22f07e1fa52d485045e9bbe7d7beaddcd4fe4ce9`.
+- Product Pages run: `26677114425`, conclusion `success`, head SHA `1a09836d6fdcee31b81b809525e90b46935d64c2`.
+- Live verification: `live_qr_flyer_packet_ok commit=1a09836 urls=10`.
+- IndexNow: `indexnow_qr_flyer_packet_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it turns QR/flyer buyer paths into packet-first surfaces and keeps PayPal as an explicit after-packet handoff without fake payment or automated fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, README/raw GitHub, JSON/OpenAPI/RSS/sitemap discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; `paypal-qr.svg` remains available only as direct PayPal QR metadata while `packet-qr.svg` becomes the primary QR for the packet-first pages.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- QR Flyer Packet, product commit `1a09836` (`1a09836d6fdcee31b81b809525e90b46935d64c2`).
+- Full checkpoint section: `2026-05-30 QR Flyer Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26677114425` success; live verification `live_qr_flyer_packet_ok commit=1a09836 urls=10`; IndexNow `indexnow_qr_flyer_packet_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

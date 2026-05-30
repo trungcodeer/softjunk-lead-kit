@@ -8802,3 +8802,54 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_share_kit_packet_ok status=200 urls=3`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 QR Flyer Packet Evidence
+
+- Audited the scan/share QR surfaces after the share kit became packet-first.
+- Found that `pay-qr.html` and `printable-paypal-flyer.html` still used `paypal-qr.svg` as the visible QR, presented direct PayPal as the primary CTA, and had metadata describing the QR as a PayPal checkout route.
+- Generated `packet-qr.svg` from `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`.
+- Updated product commit `1a09836` (`1a09836d6fdcee31b81b809525e90b46935d64c2`):
+  - `pay-qr.html` now presents "Scan the packet QR before PayPal.", routes the primary CTA to `fix-one-quiet-lead.html`, uses `packet-qr.svg`, and keeps PayPal as an after-packet handoff.
+  - `pay-qr.html` links `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt` as alternate packet formats.
+  - `pay-qr.html` JSON-LD offer URLs and BuyAction target now point to the one-copy order packet, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `printable-paypal-flyer.html` now presents "Scan packet, then pay $5.", uses `packet-qr.svg`, copies the packet URL, and keeps PayPal as an after-packet handoff.
+  - `printable-paypal-flyer.html` JSON-LD offer URL now points to the one-copy order packet, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `.well-known/openapi.yaml` now describes `/pay-qr.html` and `/printable-paypal-flyer.html` as packet-first and adds `/packet-qr.svg`.
+  - `buyer-index.json`, `offers.json`, and `product-feed.json` now point primary QR SVG fields to `packet-qr.svg` and preserve `paypal-qr.svg` as the direct PayPal QR field.
+  - `feed.xml` and `README.md` now advertise the packet-first QR route and packet QR SVG.
+  - `sitemap.xml` now marks `pay-qr.html`, `printable-paypal-flyer.html`, and `packet-qr.svg` with `lastmod=2026-05-30`.
+  - Accessibility affordances remain present on both pages: skip links, semantic anchors/buttons, focus-visible styling, QR alt text, and `aria-live="polite"` copy status.
+- Local verification:
+  - `qr_flyer_packet_ok pages=2 json_files=65`.
+  - `sitemap_xml_ok urls=166`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Q6AzY3pIJwAgc75cXptGfLGaqOs3ecJcO2E9yvam4eyjtPt88sK5ivtOuh3e1VP092FB00MlKuYNcC1LfkN3cQ==`, shasum `22f07e1fa52d485045e9bbe7d7beaddcd4fe4ce9`.
+- Deployment:
+  - Product commit `1a09836` pushed to `main`.
+  - Product Pages run `26677114425` completed successfully.
+- Live verification returned `live_qr_flyer_packet_ok commit=1a09836 urls=10` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/offers.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/README.md`.
+- IndexNow returned `indexnow_qr_flyer_packet_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the ten changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: QR Flyer Packet, product commit `1a09836` (`1a09836d6fdcee31b81b809525e90b46935d64c2`).
+- Full evidence section: `2026-05-30 QR Flyer Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26677114425` success.
+- Live verification evidence: `live_qr_flyer_packet_ok commit=1a09836 urls=10`.
+- Discovery ping evidence: `indexnow_qr_flyer_packet_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
