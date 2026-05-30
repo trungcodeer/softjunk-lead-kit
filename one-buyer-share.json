@@ -9,7 +9,7 @@
   "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
   "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-  "before_payment_action": "Build or inspect the one-copy order packet before opening the after-packet PayPal URL.",
+  "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
   "payment_url_role": "after_packet_paypal_handoff",
@@ -28,6 +28,7 @@
     "WhatsApp share link",
     "copy buyer message",
     "copy PayPal note",
+    "copy after-packet PayPal URL",
     "copy share URL"
   ],
   "inputs": [
@@ -46,7 +47,7 @@
     "release asset SHA-256",
     "prefilled share URL",
     "one-copy order packet URL",
-    "after-packet PayPal checkout URL",
+    "copy-only after-packet PayPal URL",
     "post-payment order form",
     "verification gate"
   ],
@@ -63,6 +64,6 @@
   ],
   "privacy_rule": "The browser-side generator does not submit data. Prefilled share links place field values in the URL, so only non-sensitive context should be used. Share actions stay disabled until the sender confirms this is one known relevant buyer and no private identifier is detected.",
   "verification_gate": "This route is a payment path, not payment proof. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
-  "copyable_buyer_message_template": "If one [lead problem] is sitting quiet and [value reason], this is the smallest useful test I found. SoftJunk builds one practical follow-up rescue for $5. Build the one-copy order packet first at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. For no-clone checkout proof, run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166 and SHA-256 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256. Pay exactly $5 at https://paypal.me/softjunk/5USD only after the packet is ready, use the generated PayPal note, then submit non-sensitive context at the order form. Fulfillment starts only after seller-side PayPal verification.",
+  "copyable_buyer_message_template": "If one [lead problem] is sitting quiet and [value reason], this is the smallest useful test I found. SoftJunk builds one practical follow-up rescue for $5. Build the one-copy order packet first at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. For no-clone checkout proof, run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166 and SHA-256 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256. Copy the after-packet PayPal URL https://paypal.me/softjunk/5USD only after the packet and generated PayPal note are ready, then submit non-sensitive context at the order form after seller-side payment can be verified. Fulfillment starts only after seller-side PayPal verification.",
   "paypal_note_template": "One Lead Rescue | Business: [buyer type] | Service: [service] | Source: one-buyer-share | Need: [lead problem] | Tone: [tone] | Next: reply"
 }

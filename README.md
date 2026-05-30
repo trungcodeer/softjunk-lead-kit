@@ -156,7 +156,7 @@ Use this first when the buyer is a plumbing company with one missed emergency ca
 5. Public plumbing buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
 6. Open the free plumbing preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Plumbing%20company&service=emergency%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20repair%20window&value=%24750&urgency=Same%20day&context=The%20lead%20called%20about%20an%20urgent%20plumbing%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 7. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-8. Pay exactly 5 USD through PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+8. Copy the after-packet PayPal URL only after the packet and note are ready: https://paypal.me/softjunk/5USD
 9. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
@@ -172,7 +172,7 @@ Use this first when the buyer is an HVAC company with one missed no-cool call, n
 5. Public HVAC buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
 6. Open the free HVAC preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=HVAC%20company&service=AC%20repair&source=Missed%20call&tone=Direct&blocker=availability%20and%20price&next=send%20the%20earliest%20diagnostic%20window&value=%24900&urgency=Same%20day&context=The%20lead%20called%20about%20a%20no-cool%20or%20no-heat%20problem%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 7. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-8. Pay exactly 5 USD through PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+8. Copy the after-packet PayPal URL only after the packet and note are ready: https://paypal.me/softjunk/5USD
 9. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post homeowner names, phone numbers, emails, street addresses, invoice IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
@@ -205,7 +205,7 @@ Use this first when the buyer is a med spa with one missed consult request, no-s
 6. Public med spa buyer release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
 7. Open the free med spa preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Med%20spa&service=consultation&source=Missed%20consult%20request&tone=Warm&blocker=scheduling%20and%20trust&next=offer%20the%20earliest%20consult%20window&value=%24500&urgency=This%20week&context=The%20lead%20asked%20about%20a%20consultation%20or%20treatment%20package%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 8. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-9. Pay exactly 5 USD through PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+9. Copy the after-packet PayPal URL only after the packet and note are ready: https://paypal.me/softjunk/5USD
 10. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post client names, phone numbers, emails, appointment dates, treatment details, health details, before/after photos, financing IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
@@ -243,7 +243,7 @@ Start here if you have one real quiet lead:
 27. Inspect the instant fulfillment packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md
 28. Human buyer start-here board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 29. Buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-30. Pay exactly 5 USD through PayPal: https://paypal.me/softjunk/5USD
+30. Copy the after-packet PayPal URL only after the packet and note are ready: https://paypal.me/softjunk/5USD
 29. After payment, submit the one-lead rescue order form if needed: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 30. Optional Pages helper if available: https://trungcodeer.github.io/rescue/
 
@@ -590,7 +590,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Order forms after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose
 - After-payment handoff: https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html (packet-first: build the one-copy order packet before the after-packet PayPal URL; fulfill only after seller-side PayPal verification)
 
-Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For one quiet lead, start at the root rescue route. For the ready digital kit, inspect the proof page and build the one-copy order packet before paying. For a custom sequence, use the AI agent order path or AI Deal Desk to copy the generated PayPal note before paying.
+Use PayPal note `Lead Follow-Up Kit` for the digital ZIP. For one quiet lead, start at the root rescue route. For the ready digital kit, inspect the proof page and build the one-copy order packet before copying the after-packet PayPal URL. For a custom sequence, use the AI agent order path or AI Deal Desk to copy the generated PayPal note before copying the after-packet PayPal URL.
 
 ## What You Get
 

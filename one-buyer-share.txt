@@ -21,7 +21,7 @@ Share actions:
 One-copy order packet before payment:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
-Pay exactly 5 USD after the packet is ready:
+Copy the after-packet PayPal URL only after the packet and note are ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:

@@ -245,7 +245,7 @@
         <a href="fix-one-quiet-lead.html">Order packet</a>
       </nav>
       <h1>Send one fitting buyer.</h1>
-      <p class="lead">Create one buyer-safe message with email, SMS, WhatsApp, native share, PayPal note, one-copy order packet, and after-packet $5 checkout. Use this only for a relevant buyer who has one real quiet lead problem.</p>
+      <p class="lead">Create one buyer-safe message with email, SMS, WhatsApp, native share, PayPal note, one-copy order packet, and copy-only after-packet $5 PayPal URL. Use this only for a relevant buyer who has one real quiet lead problem.</p>
     </div>
     <img class="qr" src="packet-qr.svg" alt="QR code for the SoftJunk one-copy order packet">
   </header>
@@ -343,6 +343,15 @@
         </div>
 
         <div>
+          <h3>After-packet PayPal URL</h3>
+          <textarea id="paypal-url" readonly aria-label="After-packet PayPal URL">https://paypal.me/softjunk/5USD</textarea>
+          <p class="hint">Copy this only after the one-copy order packet and PayPal note are ready.</p>
+          <div class="actions">
+            <button type="button" data-copy="paypal-url">Copy PayPal URL</button>
+          </div>
+        </div>
+
+        <div>
           <h3>No-clone checkout proof</h3>
           <textarea id="checkout-proof" readonly aria-label="Verified no-clone checkout command">npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 
@@ -368,7 +377,7 @@ Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-le
   </main>
 
   <footer>
-    <p>Payment path only. Build the one-copy order packet before PayPal. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</p>
+    <p>Payment path only. Build the one-copy order packet before copying the PayPal URL. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</p>
   </footer>
 
   <script>
@@ -383,6 +392,7 @@ Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-le
     const fitConfirm = document.querySelector("#fit-confirm");
     const buyerMessage = document.querySelector("#buyer-message");
     const paypalNote = document.querySelector("#paypal-note");
+    const paypalUrl = document.querySelector("#paypal-url");
     const shareUrl = document.querySelector("#share-url");
     const emailLink = document.querySelector("#email-link");
     const smsLink = document.querySelector("#sms-link");
@@ -420,9 +430,9 @@ Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-le
 
     function makeMessage(data, note) {
       return "If one " + data.problem + " is sitting quiet and " + data.value + ", this is the smallest useful test I found.\n\n"
-        + "SoftJunk builds one practical follow-up rescue for $5. Open the order packet, copy the PayPal note, pay exactly $5 after the packet is ready, then submit non-sensitive context only.\n\n"
+        + "SoftJunk builds one practical follow-up rescue for $5. Build the order packet, copy the PayPal note, then copy the after-packet PayPal URL only after the packet is ready. Submit non-sensitive context only after seller-side payment can be verified.\n\n"
         + "Order packet: " + packetUrl + "\n"
-        + "PayPal after packet: " + paymentUrl + "\n"
+        + "Copy after-packet PayPal URL only after packet and note: " + paymentUrl + "\n"
         + "PayPal note: " + note + "\n"
         + "No-clone checkout proof: " + checkoutCommand + "\n"
         + "Current release: " + verifiedReleaseUrl + "\n"
@@ -462,6 +472,7 @@ Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-le
 
       buyerMessage.value = message;
       paypalNote.value = note;
+      paypalUrl.value = paymentUrl;
       shareUrl.value = url;
       openShareUrl.href = url;
       emailLink.href = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(message);
