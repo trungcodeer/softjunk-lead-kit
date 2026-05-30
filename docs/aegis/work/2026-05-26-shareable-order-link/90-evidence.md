@@ -10067,6 +10067,35 @@ Latest adjacent-discovery refresh:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-31 Five-Dollar Buyer Card Copy-Only Handoff Evidence
+
+- Product commit: `21c110f` (`21c110fce9a68b7e2a22ee88b9fb11c582bc30ad`) on `main`.
+- Changed buyer-facing route: `five-dollar-buyer-card.html`.
+- Changed machine-readable route mirrors: `five-dollar-buyer-card.json` and `five-dollar-buyer-card.txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `buyer-index.json`, `index.html`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused JSON parse returned `json_ok five-dollar-buyer-card.json`, `json_ok product-feed.json`, and `json_ok buyer-index.json`.
+- Local focused HTML/static validation returned `html_static_ok five-dollar-buyer-card.html direct_href=0 jsonld_blocks=1 inline_scripts=1`, `html_static_ok index.html direct_href=0 jsonld_blocks=1 inline_scripts=1`, `five_buyer_card_static_ok direct_href=0 copy_buttons=3 jsonld_blocks=1 inline_scripts=1`, and `index_buyer_card_entry_ok direct_href=0`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-q8MERN7PONZS5EUbUtQXlJSQ12zRirunQ2+/WLTn27rjsvytYgE6ee7WGk0SeyHip1J+5iYzCBW0R1AvFxVYjw==`, shasum `4ef0e48511d106c02e5845656f17bc0d00611917`.
+- Product Pages run `26691017346` completed successfully.
+- Live verification returned `live_five_buyer_card_copy_only_ok commit=21c110f urls=11` for `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, `five-dollar-buyer-card.txt`, `index.html`, `.well-known/openapi.yaml`, `product-feed.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_five_buyer_card_copy_only_ok status=200 urls=11 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Current Evidence Pointer
+
+- Latest completed slice: Five-Dollar Buyer Card Copy-Only Handoff, product commit `21c110f` (`21c110fce9a68b7e2a22ee88b9fb11c582bc30ad`).
+- Full evidence section: `2026-05-31 Five-Dollar Buyer Card Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26691017346` success.
+- Live verification evidence: `live_five_buyer_card_copy_only_ok commit=21c110f urls=11`.
+- Discovery ping evidence: `indexnow_five_buyer_card_copy_only_ok status=200 urls=11`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-31 Share Kit Copy-Only Handoff Evidence
 
 - Product commit: `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`) on `main`.

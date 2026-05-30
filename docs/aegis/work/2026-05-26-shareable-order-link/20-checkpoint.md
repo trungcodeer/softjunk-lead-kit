@@ -11242,6 +11242,49 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Five-Dollar Buyer Card Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `five-dollar-buyer-card.html` from direct PayPal anchors to copy-only after-packet PayPal URL buttons, while keeping the one-copy order packet, PayPal note, no-clone proof, and seller-side verification gate visible.
+- Updated machine-readable/discovery routes: `five-dollar-buyer-card.json`, `five-dollar-buyer-card.txt`, `.well-known/openapi.yaml`, `product-feed.json`, `buyer-index.json`, `index.html`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Active slice status: product commit `21c110f` (`21c110fce9a68b7e2a22ee88b9fb11c582bc30ad`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused JSON parse returned `json_ok five-dollar-buyer-card.json`, `json_ok product-feed.json`, and `json_ok buyer-index.json`.
+- Focused HTML/static validation returned `html_static_ok five-dollar-buyer-card.html direct_href=0 jsonld_blocks=1 inline_scripts=1`, `html_static_ok index.html direct_href=0 jsonld_blocks=1 inline_scripts=1`, `five_buyer_card_static_ok direct_href=0 copy_buttons=3 jsonld_blocks=1 inline_scripts=1`, and `index_buyer_card_entry_ok direct_href=0`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-q8MERN7PONZS5EUbUtQXlJSQ12zRirunQ2+/WLTn27rjsvytYgE6ee7WGk0SeyHip1J+5iYzCBW0R1AvFxVYjw==`, shasum `4ef0e48511d106c02e5845656f17bc0d00611917`.
+- Product Pages run: `26691017346`, conclusion `success`.
+- Live verification: `live_five_buyer_card_copy_only_ok commit=21c110f urls=11`.
+- IndexNow: `indexnow_five_buyer_card_copy_only_ok status=200 urls=11 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the 5 USD buyer card and keeps the buyer action packet-first/copy-only without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, five-dollar buyer card HTML/JSON/TXT, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, product feed, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct pre-context link.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Current Resume Pointer
+
+Latest completed slice:
+- Five-Dollar Buyer Card Copy-Only Handoff, product commit `21c110f` (`21c110fce9a68b7e2a22ee88b9fb11c582bc30ad`).
+- Full checkpoint section: `2026-05-31 Five-Dollar Buyer Card Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26691017346` success; live verification `live_five_buyer_card_copy_only_ok commit=21c110f urls=11`; IndexNow `indexnow_five_buyer_card_copy_only_ok status=200 urls=11`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-31 Share Kit Copy-Only Handoff Checkpoint
 
 TodoCheckpointDraft:
