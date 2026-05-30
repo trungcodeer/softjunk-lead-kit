@@ -30,7 +30,7 @@ assert(payload.currency === 'USD', 'expected currency=USD');
 assert(payload.success_signal === 'PAYPAL_PAYMENT_VERIFIED=true', 'expected PayPal verification gate');
 assert(
   payload.preferred_no_clone_command ===
-    'npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json',
+    'npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json',
   'expected preferred current release tarball no-clone command'
 );
 assert(

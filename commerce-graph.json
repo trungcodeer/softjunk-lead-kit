@@ -3,9 +3,9 @@
   "softjunkLatestReleaseStatus": {
     "@type": "CreativeWork",
     "name": "SoftJunk latest release and npm publish status",
-    "latestReleaseTag": "v2.29.164",
-    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164",
-    "latestReleaseTarget": "6119956cb35088e8c1cabc3242c8dd6e28f4758a",
+    "latestReleaseTag": "v2.29.165",
+    "latestReleaseUrl": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165",
+    "latestReleaseTarget": "db253ead85d910d85d2ec5d5a5ecaea29e83b595",
     "currentCheckoutCommand": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json",
     "agentRelayCommand": "npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json",
     "mcpRelayTool": "get_softjunk_agent_relay",
@@ -201,8 +201,8 @@
       "codeSampleType": "command line",
       "programmingLanguage": "shell",
       "runtimePlatform": "Node.js npm exec",
-      "text": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
-      "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164",
+      "text": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+      "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165",
       "targetProduct": {
         "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#product"
       },
@@ -210,17 +210,17 @@
         {
           "@type": "PropertyValue",
           "name": "release_tarball_url",
-          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz"
+          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz"
         },
         {
           "@type": "PropertyValue",
           "name": "verified_release_url",
-          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164"
+          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165"
         },
         {
           "@type": "PropertyValue",
           "name": "release_tarball_sha256",
-          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256"
+          "value": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256"
         },
         {
           "@type": "PropertyValue",
@@ -288,8 +288,8 @@
         {
           "@type": "HowToStep",
           "name": "Verify no-clone checkout proof",
-          "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164",
-          "text": "Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json without cloning, verify the release notes, and load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256 before routing to the one-copy order packet and then PayPal."
+          "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165",
+          "text": "Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json without cloning, verify the release notes, and load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256 before routing to the one-copy order packet and then PayPal."
         },
         {
           "@type": "HowToStep",

@@ -32,12 +32,12 @@ Clone CLI manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.js
 No-clone checkout proof:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165
 
-Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256`
+Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256`
 
 ## Buyer Steps
 

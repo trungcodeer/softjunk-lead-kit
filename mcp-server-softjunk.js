@@ -55,11 +55,11 @@ const AGENT_RELAY_JSON =
 const AGENT_RELAY_TEXT =
   "https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt";
 const RELEASE_URL =
-  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164";
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165";
 const RELEASE_TARBALL_URL =
-  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz";
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz";
 const RELEASE_TARBALL_SHA256_URL =
-  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256";
+  "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256";
 const STABLE_FALLBACK_RELEASE_URL =
   "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.151";
 const STABLE_FALLBACK_RELEASE_TARBALL_URL =

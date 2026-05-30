@@ -38,21 +38,21 @@ MCP relay tool:
 
 Current product release:
 
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165
 
 Current release target:
 
-`6119956cb35088e8c1cabc3242c8dd6e28f4758a`
+`db253ead85d910d85d2ec5d5a5ecaea29e83b595`
 
 Current release tarball command:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 Current release tarball SHA-256 file:
 
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256
 
 Stable fallback release tarball command:
 

@@ -2,8 +2,8 @@ SoftJunk Public Gist Checkout Index
 
 JSON: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json
 Markdown: https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md
-Latest release: v2.29.164
-Latest release target: 6119956cb35088e8c1cabc3242c8dd6e28f4758a
+Latest release: v2.29.165
+Latest release target: db253ead85d910d85d2ec5d5a5ecaea29e83b595
 Current checkout command: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 Agent relay command: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
 NPM publish status: https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json
