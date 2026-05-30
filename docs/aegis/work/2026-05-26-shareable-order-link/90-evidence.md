@@ -8018,6 +8018,59 @@ Latest adjacent-discovery refresh:
   - `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
 
+## 2026-05-29 Agent Discovery Packet Checkout Evidence
+
+- Audited agent and crawler discovery surfaces after package-native checkout was packet-first.
+- Found that `AGENT_RELAY.md`, `agent-relay.json`, `agent-relay.txt`, `buyer-agent-relay.json`, `buyer-agent-relay.txt`, `agents-checkout.json`, `ai-action-checkout.json`, `.well-known/ai-action-checkout.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `agent-card.json`, `.well-known/agent-card.json`, `A2A_AGENT_CARD.md`, `AI_ACTION_CHECKOUT.md`, `MCP_CHECKOUT_SERVER.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, and `sitemap.xml` were missing packet-first ordering, were stale, or still let buyer-agents proceed toward PayPal without first using the one-copy order packet.
+- Updated product commit `d06db19`:
+  - `AGENT_RELAY.md`, `agent-relay.json`, and `agent-relay.txt` now instruct agents to build the one-copy order packet before PayPal and expose packet HTML/JSON routes.
+  - `buyer-agent-relay.json` and `buyer-agent-relay.txt` now use a packet-first copyable prompt and route PayPal as the post-packet payment step.
+  - `agents-checkout.json` now exposes `one_copy_order_packet_*` URLs, packet-first checkout fields, packet-first package/native metadata, and an agent step to build the packet before exact 5 USD payment.
+  - `ai-action-checkout.json` and `.well-known/ai-action-checkout.json` now describe the AI action output as one generated message, one-copy order packet, and PayPal note before payment.
+  - `mcp-checkout-server.json` and `.well-known/mcp-checkout-server.json` now describe checkout, npm funding, and agent relay tools as packet-first routes before PayPal.
+  - `agent-card.json`, `.well-known/agent-card.json`, and `A2A_AGENT_CARD.md` now expose the packet route in the A2A/agent checkout path before PayPal.
+  - `AI_ACTION_CHECKOUT.md`, `MCP_CHECKOUT_SERVER.md`, and `CURRENT_NO_CLONE_CHECKOUT_PROOF.md` now show the one-copy order packet before the exact PayPal checkout.
+  - `sitemap.xml` lastmod values were updated to `2026-05-29` for the changed agent discovery URLs.
+- Local verification:
+  - `json_parse_ok files=65`.
+  - `sitemap_agent_discovery_lastmod_ok`.
+  - `agent_discovery_packet_markers_ok files=13`.
+  - `gist_doc_packet_markers_ok`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Public Gist mirrors updated and verified:
+  - Gist `9d5583f2a5ded7d6757fda9f4828b950`: `buyer-agent-relay.json`, `buyer-agent-relay.txt`; description changed to "SoftJunk buyer-agent prompt relay: one-copy order packet before PayPal checkout".
+  - Gist `795587172ee240078c4377559b20b49b`: `agents-checkout.json`, `AGENTS.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`; description changed to "SoftJunk buyer-agent checkout instructions - one-copy order packet + v2.29.163 PayPal 5 USD".
+  - Gist `044280811978a796652e72a7b4228888`: `ai-action-checkout.json`, `AI_ACTION_CHECKOUT.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`; description changed to "SoftJunk AI action checkout - one-copy order packet + current release tarball".
+  - Gist `76b4b70a3b13bfec62c5f66c3ebec30d`: `mcp-checkout-server.json`, `mcp-server-softjunk.js`, `MCP_CHECKOUT_SERVER.md`, `package.json`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`; description changed to "SoftJunk MCP checkout server with one-copy order packet + agent relay".
+  - Gist `82e9935979596bbe2330db46dc9bc58a`: `A2A_AGENT_CARD.md`, `agent-card.json`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`; description changed to "SoftJunk A2A agent card checkout route - one-copy order packet + PayPal 5 USD".
+  - Verification returned `gist_agent_discovery_packet_verified files=11`.
+- Deployment:
+  - Product commit `d06db19` pushed to `main`.
+  - Product Pages run `26647346474` completed successfully.
+- Live verification returned `live_agent_discovery_packet_ok commit=d06db19 urls=17` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/AGENT_RELAY.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-relay.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agents-checkout.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/ai-action-checkout.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-action-checkout.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/mcp-checkout-server.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-card.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/agent-card.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/A2A_AGENT_CARD.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/AI_ACTION_CHECKOUT.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/MCP_CHECKOUT_SERVER.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/CURRENT_NO_CLONE_CHECKOUT_PROOF.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_agent_discovery_packet_ok status=200 urls=17` for the 17 changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted PayPal CSV proof.
+
 ## 2026-05-29 Release Notes Buyer Packet Evidence
 
 - Updated the `v2.29.163` GitHub Release body from a terse technical note into a buyer-agent checkout packet.

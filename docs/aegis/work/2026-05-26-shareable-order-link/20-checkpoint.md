@@ -11198,3 +11198,57 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, package metadata, CLI/MCP source, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-29 Agent Discovery Packet Checkout Checkpoint
+
+Current todo:
+- Route high-signal agent/crawler discovery surfaces through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch product agent discovery files: `AGENT_RELAY.md`, `agent-relay.json`, `agent-relay.txt`, `buyer-agent-relay.json`, `buyer-agent-relay.txt`, `agents-checkout.json`, `ai-action-checkout.json`, `.well-known/ai-action-checkout.json`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, `agent-card.json`, `.well-known/agent-card.json`, `A2A_AGENT_CARD.md`, `AI_ACTION_CHECKOUT.md`, `MCP_CHECKOUT_SERVER.md`, `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`, and `sitemap.xml`.
+
+Completed todos:
+- Updated agent relay markdown/JSON/text so agents build the one-copy order packet before PayPal.
+- Updated buyer-agent relay JSON/text so the copyable prompt and fastest path build the packet before PayPal.
+- Updated AI action, MCP, and A2A manifests plus well-known mirrors with packet URLs and `before_payment_action`.
+- Updated supporting AI action/MCP/no-clone proof markdown used by public Gist mirrors.
+- Updated sitemap lastmod values for the changed agent discovery URLs.
+- Updated public Gist mirrors:
+  - `9d5583f2a5ded7d6757fda9f4828b950`.
+  - `795587172ee240078c4377559b20b49b`.
+  - `044280811978a796652e72a7b4228888`.
+  - `76b4b70a3b13bfec62c5f66c3ebec30d`.
+  - `82e9935979596bbe2330db46dc9bc58a`.
+- Committed and pushed product commit `d06db19` to `main`.
+- Product Pages run `26647346474` completed successfully.
+- Live Pages verification returned `live_agent_discovery_packet_ok commit=d06db19 urls=17`.
+- Submitted the 17 changed product Pages URLs to IndexNow; API returned `indexnow_agent_discovery_packet_ok status=200 urls=17`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `json_parse_ok files=65`.
+- `sitemap_agent_discovery_lastmod_ok`.
+- `agent_discovery_packet_markers_ok files=13`.
+- `gist_doc_packet_markers_ok`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `gist_agent_discovery_packet_verified files=11`.
+- GitHub Pages run `26647346474` success.
+- Live verification: `live_agent_discovery_packet_ok commit=d06db19 urls=17`.
+- IndexNow: `indexnow_agent_discovery_packet_ok status=200 urls=17`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned agent/crawler discovery and checkout metadata without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, package metadata, MCP/A2A/AI action manifests, owned public Gists, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
