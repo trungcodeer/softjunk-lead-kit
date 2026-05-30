@@ -1396,10 +1396,10 @@ paths:
   /pay.html:
     get:
       operationId: openPaymentPage
-      summary: Open the $5 payment page.
+      summary: Open the packet-first $5 payment page.
       responses:
         "200":
-          description: Payment options and PayPal link.
+          description: Payment options that route buyers through the one-copy order packet before the direct PayPal link.
           content:
             text/html:
               schema:
