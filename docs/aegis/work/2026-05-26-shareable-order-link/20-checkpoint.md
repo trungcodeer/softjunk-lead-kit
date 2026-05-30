@@ -11242,6 +11242,50 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Share Kit Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `share-kit.html` from direct PayPal anchors to copy-only after-packet PayPal URL buttons, kept copy-ready posts/email/AI handoff/direct-buy text packet-first, and updated `share-kit.json` with `payment_handoff_mode: copy_only_after_packet`.
+- Updated discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Active slice status: product commit `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused share-kit validation: `share_kit_html_static_ok direct_href=0 copy_buttons=4 jsonld_blocks=1 inline_scripts=1`.
+- Focused JSON parse: `json_ok share-kit.json`, `json_ok product-feed.json`, `json_ok offers.json`, `json_ok buyer-index.json`.
+- Feed and sitemap XML parse: `xml_ok feed.xml sitemap.xml`.
+- Discovery markers present for `share_kit_rule`, `openShareKit`, and `getShareKit`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Je3q4JznepkK7rwBs8Ubx+sxbIlp2LqSLYq5ieQUxTwJmSps6609MeE88Ml6yb23zAZsQx3q0wu+yTM1StR9xA==`, shasum `221e1ea4c765a5c22224f8481c558f9c1912eb1b`.
+- Product Pages run: `26690462736`, conclusion `success`.
+- Live verification: `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`.
+- IndexNow: `indexnow_share_kit_copy_only_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the public share kit by keeping the buyer action packet-first/note-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, share-kit HTML/JSON, OpenAPI/RSS/sitemap/LLM discovery, README, offer feeds, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct pre-context link on `share-kit.html`.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Latest Resume Pointer
+
+Latest completed slice:
+- Share Kit Copy-Only Handoff, product commit `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`).
+- Full checkpoint section: `2026-05-31 Share Kit Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26690462736` success; live verification `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`; IndexNow `indexnow_share_kit_copy_only_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-31 Agent Buy Brief Copy-Only Handoff Checkpoint
 
 TodoCheckpointDraft:
@@ -13397,6 +13441,17 @@ Latest completed slice:
 - Pay Page Copy-Only Handoff, product commit `f6ace18` (`f6ace18fe4076a6b4fed8283f200bff0ae463d25`).
 - Full checkpoint section: `2026-05-30 Pay Page Copy-Only Handoff Checkpoint`.
 - Deployment evidence: GitHub Pages run `26688777882` success; live verification `live_pay_page_copy_only_ok commit=f6ace18 urls=8`; IndexNow `indexnow_pay_page_copy_only_ok status=200 urls=8`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Current Resume Pointer
+
+Latest completed slice:
+- Share Kit Copy-Only Handoff, product commit `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`).
+- Full checkpoint section: `2026-05-31 Share Kit Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26690462736` success; live verification `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`; IndexNow `indexnow_share_kit_copy_only_ok status=200 urls=10`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:

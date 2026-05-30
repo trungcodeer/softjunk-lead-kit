@@ -10056,3 +10056,43 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_pay_page_copy_only_ok status=200 urls=8`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Current Evidence Pointer
+
+- Latest completed slice: Share Kit Copy-Only Handoff, product commit `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`).
+- Full evidence section: `2026-05-31 Share Kit Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26690462736` success.
+- Live verification evidence: `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`.
+- Discovery ping evidence: `indexnow_share_kit_copy_only_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Share Kit Copy-Only Handoff Evidence
+
+- Product commit: `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`) on `main`.
+- Changed buyer-facing route: `share-kit.html`.
+- Changed machine-readable route mirror: `share-kit.json`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused HTML validation returned `share_kit_html_static_ok direct_href=0 copy_buttons=4 jsonld_blocks=1 inline_scripts=1`.
+- Focused JSON parse returned `json_ok share-kit.json`, `json_ok product-feed.json`, `json_ok offers.json`, and `json_ok buyer-index.json`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- Discovery marker scan found `share_kit_rule`, `openShareKit`, and `getShareKit`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Je3q4JznepkK7rwBs8Ubx+sxbIlp2LqSLYq5ieQUxTwJmSps6609MeE88Ml6yb23zAZsQx3q0wu+yTM1StR9xA==`, shasum `221e1ea4c765a5c22224f8481c558f9c1912eb1b`.
+- Product Pages run `26690462736` completed successfully.
+- Live verification returned `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10` for `share-kit.html`, `share-kit.json`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_share_kit_copy_only_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Latest Evidence Pointer
+
+- Latest completed slice: Share Kit Copy-Only Handoff, product commit `a7cfdf8` (`a7cfdf8f12e7d0ee5cdc17e103e1f2166391c5bb`).
+- Full evidence section: `2026-05-31 Share Kit Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26690462736` success.
+- Live verification evidence: `live_share_kit_copy_only_ok commit=a7cfdf8 urls=10`.
+- Discovery ping evidence: `indexnow_share_kit_copy_only_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
