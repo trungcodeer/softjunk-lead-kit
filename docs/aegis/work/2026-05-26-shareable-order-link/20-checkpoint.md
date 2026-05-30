@@ -12070,3 +12070,55 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Agent Commerce Packet Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Agent Commerce Packet.
+- Completed todos:
+  - Audited the agent commerce HTML/JSON/text capsule and adjacent discovery refs for direct-PayPal-first routing.
+  - Routed the agent commerce JSON-LD Offer URL, BuyAction target, hero CTA, copyable instruction, and agent-flow pay step through the one-copy order packet before PayPal.
+  - Preserved direct PayPal as an explicit after-packet handoff through `directPaymentUrl`, `paymentUrl`, `direct_payment_url`, visible `PayPal after packet` text, and payment-boundary copy.
+  - Updated `agent-commerce.html`, `agent-commerce.json`, `agent-commerce.txt`, `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, and `sitemap.xml`.
+  - Committed and pushed product commit `04060ce` (`04060ced5ea5b1a3289576dd0278d471078d1785`) to `main`.
+  - Waited for GitHub Pages run `26678088206`, which completed successfully for commit `04060ce`.
+  - Live-verified eight product URLs with marker `live_agent_commerce_packet_ok commit=04060ce urls=8`.
+  - Submitted eight owned Pages URLs to IndexNow with marker `indexnow_agent_commerce_packet_ok status=200 urls=8`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Local packet validation: `agent_commerce_packet_ok json_files=54 jsonld=1`.
+- Recursive JSON validation: `json_parse_recursive_ok files=65`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-3Rb3dTeNC7RxXRCshTS2qmM+0MY9mVT7H1KjgHv5VKxZGHAj5c1khsYZ8MHolwHfMu/sNKcTv3LXE/wMxRGyVw==`, shasum `d73583221ad6c531a65d833ec16544ebd551732d`.
+- Product Pages run: `26678088206`, conclusion `success`, head SHA `04060ced5ea5b1a3289576dd0278d471078d1785`.
+- Live verification: `live_agent_commerce_packet_ok commit=04060ce urls=8`.
+- IndexNow: `indexnow_agent_commerce_packet_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves an owned buyer-agent commerce capsule and adjacent discovery without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, HTML/JSON/text agent-commerce surfaces, JSON/OpenAPI/RSS/sitemap/LLM discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains a handoff after the one-copy order packet rather than a primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Agent Commerce Packet, product commit `04060ce` (`04060ced5ea5b1a3289576dd0278d471078d1785`).
+- Full checkpoint section: `2026-05-30 Agent Commerce Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26678088206` success; live verification `live_agent_commerce_packet_ok commit=04060ce urls=8`; IndexNow `indexnow_agent_commerce_packet_ok status=200 urls=8`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

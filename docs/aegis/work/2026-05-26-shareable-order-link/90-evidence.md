@@ -8902,3 +8902,48 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_core_checkout_packet_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Agent Commerce Packet Evidence
+
+- Audited `agent-commerce.html`, `agent-commerce.json`, `agent-commerce.txt`, OpenAPI, buyer-index copy prompts, RSS, LLM summary, and sitemap after the core checkout route became packet-first.
+- Found that the agent commerce capsule still exposed direct PayPal as the visible buyer-agent button/action path and as a direct preferred `pay` step.
+- Updated product commit `04060ce` (`04060ced5ea5b1a3289576dd0278d471078d1785`):
+  - `agent-commerce.html` JSON-LD Offer URL and BuyAction target now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `agent-commerce.html` now uses `Build order packet` and `Build packet first` as primary CTAs, keeps the direct PayPal link only as `PayPal after packet`, and updates the copyable instruction accordingly.
+  - `agent-commerce.json` now describes the one-copy order packet in `purpose`, `fastest_buyer_path`, root rescue result, decision result, and copyable agent instruction.
+  - `agent-commerce.json` replaces the direct `pay` preferred URL with `agent_flow.step=build_packet_then_pay` and `preferred_url=https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`, while preserving `direct_payment_url=https://paypal.me/softjunk/5USD`.
+  - `agent-commerce.txt` now has `Updated: 2026-05-30`, a `One-copy order packet first` section, `Direct PayPal after packet`, and a packet-before-payment recommended flow.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, and `sitemap.xml` now describe packet-first agent commerce discovery.
+  - Accessibility affordances remain present on `agent-commerce.html`: skip link, focus-visible styling, semantic anchors/buttons, image alt text, and `role="status" aria-live="polite"` for copy feedback.
+- Local verification:
+  - `agent_commerce_packet_ok json_files=54 jsonld=1`.
+  - `json_parse_recursive_ok files=65`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-3Rb3dTeNC7RxXRCshTS2qmM+0MY9mVT7H1KjgHv5VKxZGHAj5c1khsYZ8MHolwHfMu/sNKcTv3LXE/wMxRGyVw==`, shasum `d73583221ad6c531a65d833ec16544ebd551732d`.
+- Deployment:
+  - Product commit `04060ce` pushed to `main`.
+  - Product Pages run `26678088206` completed successfully.
+- Live verification returned `live_agent_commerce_packet_ok commit=04060ce urls=8` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_agent_commerce_packet_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the eight changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Agent Commerce Packet, product commit `04060ce` (`04060ced5ea5b1a3289576dd0278d471078d1785`).
+- Full evidence section: `2026-05-30 Agent Commerce Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26678088206` success.
+- Live verification evidence: `live_agent_commerce_packet_ok commit=04060ce urls=8`.
+- Discovery ping evidence: `indexnow_agent_commerce_packet_ok status=200 urls=8`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
