@@ -2357,6 +2357,55 @@ Payment gate:
 
 ## 2026-05-30 Latest Evidence Pointer
 
+- Latest completed slice: Exact-Intent Samples Packet-First Route, product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`).
+- Full evidence section: `2026-05-30 Exact-Intent Samples Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26684371982` success.
+- Live verification evidence: `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`.
+- Discovery ping evidence: `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Exact-Intent Samples Packet-First Evidence
+
+- Audited exact-intent sample pages where direct PayPal appeared before the one-copy order packet.
+- Updated product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`):
+  - `estimate-follow-up-template.html`, `price-objection-reply.html`, `no-show-follow-up.html`, and `quiet-dm-follow-up.html` now route paid CTAs to `fix-one-quiet-lead.html`.
+  - The four HTML pages now expose `fix-one-quiet-lead.html` as paid JSON-LD Offer URL and BuyAction target, while preserving PayPal as `directPaymentUrl` and `paymentUrl`.
+  - The four text mirrors now list the one-copy order packet before the after-packet PayPal URL.
+  - `exact-intent-answer-pack.json` is now `softjunk-exact-intent-answer-pack-v4` and includes packet/payment fields for estimate, price-objection, no-show, and quiet DM answers.
+  - Discovery surfaces `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `sitemap.xml`, `README.md`, and `llms.txt` now describe the exact-intent sample packet-first route.
+  - Accessibility affordances remain present: semantic anchors/buttons/forms, labels on inputs, live status regions, QR image alt text, and no new custom inaccessible controls.
+- Local verification:
+  - `focused_exact_intent_samples_packet_first_ok files=4`.
+  - `exact_intent_text_packet_first_ok files=5`.
+  - `exact_intent_answer_pack_v4_packet_first_ok`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-vLSYita0SsBdvImnghKRatO/8jb31faqMW/qh3hNnuGlZMv+jWfqxVio9Gxzy5E8VWWsqFeQ+lHmuXDk2YGaDA==`, shasum `d8270b8b1daac1006a18a39e0986a84be0b50988`.
+- Deployment:
+  - Product commit `37ead41` pushed to `main`.
+  - Product Pages run `26684371982` completed successfully.
+- Live verification returned `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`.
+- IndexNow returned `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the sixteen changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; process exited nonzero (`1`) without seller-side credentials or proof.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Exact-Intent Samples Packet-First Route, product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`).
+- Full evidence section: `2026-05-30 Exact-Intent Samples Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26684371982` success.
+- Live verification evidence: `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`.
+- Discovery ping evidence: `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
 - Latest completed slice: AI Prompt And Answer Packet-First Route, product commit `5349f72` (`5349f721d1b0ca174e56c2410034531483b15c6d`).
 - Full evidence section: `2026-05-30 AI Prompt And Answer Packet-First Evidence`.
 - Deployment evidence: GitHub Pages run `26684018298` success.
@@ -5955,7 +6004,7 @@ Updated and released:
 - Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4550932094
 
 Live validation:
-- https://trungcodeer.github.io/5/?check=copy-note returned HTML containing copy-paypal-note, 
+- https://trungcodeer.github.io/5/?check=copy-note returned HTML containing copy-paypal-note,
 avigator.clipboard, ria-live=\"polite\", PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
 - https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html?check=copy-note returned the same required markers.
 
@@ -6024,7 +6073,7 @@ Updated and released:
 
 Validation:
 - curl -I -L https://paypal.me/softjunk/5USD exited 0 with status chain 301 -> 301 -> 200 and final URL https://www.paypal.com/paypalme/softjunk/5USD.
-- Product/root health JSON returned status 200 and include inal_status=HTTP/1.1 200 OK, payment URL, success signal, and explicit 
+- Product/root health JSON returned status 200 and include inal_status=HTTP/1.1 200 OK, payment URL, success signal, and explicit
 ot proof of payment rule.
 - Product/root llms.txt, obots.txt, and sitemap.xml expose paypal-url-health.json.
 
@@ -6043,7 +6092,7 @@ Updated and released:
 - Issue evidence: https://github.com/trungcodeer/softjunk-lead-kit/issues/5#issuecomment-4551196212
 
 Live validation:
-- https://trungcodeer.github.io/5/?check=copy-paypal-link returned HTML containing paypal-payment-link, copy-paypal-link, copy-paypal-note, 
+- https://trungcodeer.github.io/5/?check=copy-paypal-link returned HTML containing paypal-payment-link, copy-paypal-link, copy-paypal-note,
 avigator.clipboard, ria-live=\"polite\", PayPal URL, and PAYPAL_PAYMENT_VERIFIED=true.
 - https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html?check=copy-paypal-link returned the same required markers.
 
@@ -9623,5 +9672,15 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26684018298` success.
 - Live verification evidence: `live_ai_prompt_answer_packet_first_ok commit=5349f72 urls=10`.
 - Discovery ping evidence: `indexnow_ai_prompt_answer_packet_first_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Exact-Intent Samples Packet-First Route, product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`).
+- Full evidence section: `2026-05-30 Exact-Intent Samples Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26684371982` success.
+- Live verification evidence: `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`.
+- Discovery ping evidence: `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
