@@ -1,15 +1,19 @@
 # SoftJunk Sponsor Button Buy Route
 
-Use the repository Sponsor button when you want the fastest GitHub-native path to the SoftJunk 5 USD offer.
+Use the repository Sponsor button when you want the fastest GitHub-native path to the SoftJunk 5 USD offer. Build the one-copy order packet before opening PayPal.
 
 ## Sponsor Button URLs
 
-The visible GitHub Sponsor button is backed by `.github/FUNDING.yml` and should expose these owned routes:
+The visible GitHub Sponsor button is backed by `.github/FUNDING.yml` and should expose these owned routes in packet-first order:
 
-1. Pay exactly 5 USD on PayPal: https://paypal.me/softjunk/5USD
-2. Copy/send the buyer handoff: https://trungcodeer.github.io/send-5/
-3. Open the shortest 5 USD buyer card: https://trungcodeer.github.io/5/
-4. Read this Sponsor button route: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md
+1. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+2. Pay exactly 5 USD on PayPal after the packet: https://paypal.me/softjunk/5USD
+3. Copy/send the buyer handoff: https://trungcodeer.github.io/send-5/
+4. Open the shortest 5 USD buyer card: https://trungcodeer.github.io/5/
+
+Machine-readable packet:
+
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 
 ## Value-First Route Before Paying
 
@@ -38,14 +42,15 @@ Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-l
 ## Buyer Steps
 
 1. Confirm the buyer has one real quiet lead and one recovered conversation is worth more than 5 USD.
-2. Use the Sponsor button or direct PayPal URL to pay exactly 5 USD: https://paypal.me/softjunk/5USD
-3. For a custom one-lead rescue, paste this PayPal note:
+2. Build or inspect the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+3. Use the Sponsor button or direct PayPal URL to pay exactly 5 USD after the packet is ready: https://paypal.me/softjunk/5USD
+4. For a custom one-lead rescue, paste this PayPal note:
 
 ```text
 One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
 ```
 
-4. If more context is needed after payment, submit placeholders only:
+5. If more context is needed after payment, submit placeholders only:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml
 
 ## Ready Digital Kit

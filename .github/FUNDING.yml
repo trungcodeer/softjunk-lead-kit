@@ -3,13 +3,14 @@
 # Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 # Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
 # Release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
-# Payment URL: https://paypal.me/softjunk/5USD
+# One-copy order packet before PayPal: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+# Payment URL after packet: https://paypal.me/softjunk/5USD
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
-# GitHub Sponsor button custom URLs for the SoftJunk 5 USD checkout.
+# GitHub Sponsor button custom URLs for the SoftJunk 5 USD checkout, packet first.
 # Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 custom:
+  - https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
   - https://paypal.me/softjunk/5USD
   - https://trungcodeer.github.io/send-5/
   - https://trungcodeer.github.io/5/
-  - https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md

@@ -1,4 +1,4 @@
-# SoftJunk PayPal Note First
+# SoftJunk PayPal Note After Packet
 
 ## One rewrite included
 
@@ -6,7 +6,21 @@ After the 5 USD PayPal payment is seller-side verified, a custom sequence includ
 
 Buyer-agent BuyAction manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
 
-Use this when the buyer is ready to pay and wants the shortest path: copy one safe note, pay 5 USD, and let the seller fulfill from the PayPal transaction.
+Use this when the buyer is ready to pay and wants the shortest safe path: build the one-copy order packet, copy one safe PayPal note, pay 5 USD, and let the seller fulfill from the PayPal transaction after seller-side verification.
+
+## Build Packet First
+
+Open or inspect the one-copy order packet before opening PayPal:
+
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Machine-readable packet:
+
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+
+Plain-text packet:
+
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
 
 ## Copy One Note
 
@@ -32,7 +46,7 @@ Custom Sequence | Business: [business type] | Service: [service] | Source: [form
 
 ## Pay
 
-Run the no-clone checkout proof command when an agent needs executable payment handoff before opening PayPal:
+Run the no-clone checkout proof command when an agent needs executable payment handoff after the one-copy order packet and before opening PayPal:
 
 ```bash
 npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
@@ -46,7 +60,7 @@ Current release tarball SHA-256 file:
 
 `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256`
 
-Pay exactly 5 USD:
+Pay exactly 5 USD after the one-copy order packet is ready:
 
 https://paypal.me/softjunk/5USD
 
@@ -71,6 +85,10 @@ Machine-readable route:
 https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
 
 https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json
+
+One-copy order packet:
+
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
 Buy Now packet:
 

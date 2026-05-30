@@ -55,6 +55,30 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/PAYPAL_NOTE_FIRST.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/paypal-note-first.json</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/SPONSOR_BUTTON_BUY.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl</loc>
     <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
