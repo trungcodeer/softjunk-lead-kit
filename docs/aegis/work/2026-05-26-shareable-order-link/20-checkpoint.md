@@ -12018,3 +12018,55 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Core Checkout Packet Refresh Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Core Checkout Packet Refresh.
+- Completed todos:
+  - Audited root/index, checkout, pay, checkout JSON/text, buyer-index, OpenAPI, RSS, LLM summary, and sitemap surfaces for direct-PayPal-first routing.
+  - Routed root and checkout primary CTAs, JSON-LD BuyAction targets, checkout contract action targets, and buyer prompt copy through the one-copy order packet before the PayPal handoff.
+  - Preserved direct PayPal as an explicit after-packet handoff using `directPaymentUrl`, `paymentUrl`, after-packet link text, and payment-boundary copy.
+  - Updated `index.html`, `checkout.html`, `checkout.json`, `checkout.txt`, `pay.html`, `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, and `sitemap.xml`.
+  - Committed and pushed product commit `43349ca` (`43349ca08e6a82c11bc0d00b55fa31eb89c464cc`) to `main`.
+  - Waited for GitHub Pages run `26677695517`, which completed successfully for commit `43349ca`.
+  - Live-verified ten product URLs with marker `live_core_checkout_packet_ok commit=43349ca urls=10`.
+  - Submitted ten owned Pages URLs to IndexNow with marker `indexnow_core_checkout_packet_ok status=200 urls=10`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Local packet validation: `core_checkout_packet_ok html=3 json_files=65`.
+- Sitemap XML validation: `sitemap_xml_ok urls=166`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-7IFDB0KjkMFtgPUQg4kA741evXga2Ofls566tnxCjA0NZjghu5Kxw1rcVp75xh1AN3hxiji1tfpfKA6Qt+3j5A==`, shasum `ce251d6f16d86a7b5e0ad16a935858dfb08b9086`.
+- Product Pages run: `26677695517`, conclusion `success`, head SHA `43349ca08e6a82c11bc0d00b55fa31eb89c464cc`.
+- Live verification: `live_core_checkout_packet_ok commit=43349ca urls=10`.
+- IndexNow: `indexnow_core_checkout_packet_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it makes the highest-signal root/checkout/pay buyer routes packet-first while keeping PayPal visible as the real after-packet payment handoff.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, README/raw GitHub, JSON/OpenAPI/RSS/sitemap/LLM discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains a handoff after the order packet rather than a primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Core Checkout Packet Refresh, product commit `43349ca` (`43349ca08e6a82c11bc0d00b55fa31eb89c464cc`).
+- Full checkpoint section: `2026-05-30 Core Checkout Packet Refresh Checkpoint`.
+- Deployment evidence: GitHub Pages run `26677695517` success; live verification `live_core_checkout_packet_ok commit=43349ca urls=10`; IndexNow `indexnow_core_checkout_packet_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

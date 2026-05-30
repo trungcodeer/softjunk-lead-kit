@@ -8853,3 +8853,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_qr_flyer_packet_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Core Checkout Packet Refresh Evidence
+
+- Audited the highest-signal root/index, checkout, pay, machine-readable checkout, buyer-index, OpenAPI, RSS, LLM summary, and sitemap surfaces after the QR/flyer route became packet-first.
+- Found that several root/index and checkout CTAs or machine-readable action targets still put direct PayPal before the one-copy order packet.
+- Updated product commit `43349ca` (`43349ca08e6a82c11bc0d00b55fa31eb89c464cc`):
+  - `index.html` now routes primary human CTAs through `fix-one-quiet-lead.html`, `roofing-estimate-rescue.html`, or checkout-after-packet flows instead of direct PayPal buttons.
+  - `index.html` OfferCatalog URLs now point to the one-copy order packet while preserving `directPaymentUrl` and `paymentUrl` as PayPal handoff fields.
+  - `checkout.html` now uses `packet-qr.svg`, labels the scan panel "Scan packet first", links "Open packet QR page", and keeps the direct PayPal link as "Open PayPal $5 link after packet".
+  - `checkout.html` JSON-LD BuyAction targets now point to the one-copy order packet instead of `https://paypal.me/softjunk/5USD`.
+  - `checkout.json` now describes the after-packet PayPal handoff and has packet-first `urlTemplate` values for `schema_org_offer.potentialAction`, root `potentialAction`, and `buyAction`.
+  - `checkout.txt` now says "Use the after-packet PayPal handoff for exactly 5 USD".
+  - `pay.html` now points the footer QR link to the packet QR page before PayPal.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, and `sitemap.xml` now describe packet-first checkout/root discovery.
+  - Accessibility affordances on the touched HTML pages remain present: skip links, focus-visible styling, semantic anchors/buttons, QR alt text, and live copy status.
+- Local verification:
+  - `core_checkout_packet_ok html=3 json_files=65`.
+  - `sitemap_xml_ok urls=166`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-7IFDB0KjkMFtgPUQg4kA741evXga2Ofls566tnxCjA0NZjghu5Kxw1rcVp75xh1AN3hxiji1tfpfKA6Qt+3j5A==`, shasum `ce251d6f16d86a7b5e0ad16a935858dfb08b9086`.
+- Deployment:
+  - Product commit `43349ca` pushed to `main`.
+  - Product Pages run `26677695517` completed successfully.
+- Live verification returned `live_core_checkout_packet_ok commit=43349ca urls=10` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/pay.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_core_checkout_packet_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the ten changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Core Checkout Packet Refresh, product commit `43349ca` (`43349ca08e6a82c11bc0d00b55fa31eb89c464cc`).
+- Full evidence section: `2026-05-30 Core Checkout Packet Refresh Evidence`.
+- Deployment evidence: GitHub Pages run `26677695517` success.
+- Live verification evidence: `live_core_checkout_packet_ok commit=43349ca urls=10`.
+- Discovery ping evidence: `indexnow_core_checkout_packet_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
