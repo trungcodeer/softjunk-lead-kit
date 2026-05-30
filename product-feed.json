@@ -456,6 +456,7 @@
     "custom_sequence_gallery_json": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json",
     "custom_sequence_gallery_text": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt",
     "agent_buy_brief": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
+    "agent_buy_brief_rule": "Packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL.",
     "lead_recovery_audit": "https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html",
     "fix_one_quiet_lead": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "printable_paypal_flyer": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",

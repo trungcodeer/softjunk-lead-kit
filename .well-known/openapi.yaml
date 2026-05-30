@@ -1002,7 +1002,7 @@ paths:
       summary: Open the packet-first AI buyer brief for the $5 follow-up offer.
       responses:
         "200":
-          description: Machine-readable buyer brief with the one-copy order packet first, root one-lead rescue fallback, after-packet PayPal URL, handoff copy, order form, and seller-side verification gate.
+          description: Machine-readable buyer brief with the one-copy order packet first, root one-lead rescue fallback, copy-only after-packet PayPal URL, handoff copy, order form, and seller-side verification gate.
           content:
             text/html:
               schema:

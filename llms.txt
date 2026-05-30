@@ -708,6 +708,7 @@ Use https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/ai-acti
 
 AI buyer brief:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+Rule: build the one-copy order packet and copy the PayPal note before copying the after-packet PayPal URL; do not claim payment or fulfillment without seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
 
 Paid ZIP proof:
 https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html

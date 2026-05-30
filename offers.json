@@ -109,6 +109,7 @@
   "template_library_url": "https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html",
   "examples_url": "https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html",
   "agent_buy_brief_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html",
+  "agent_buy_brief_rule": "The AI buyer brief is packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL.",
   "agent_order_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html",
   "paid_kit_proof_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
   "paid_kit_manifest_url": "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",

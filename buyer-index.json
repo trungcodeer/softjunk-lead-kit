@@ -322,11 +322,11 @@
                               "root_rescue_url":  "https://trungcodeer.github.io/rescue/",
                               "payment_url":  "https://paypal.me/softjunk/5USD",
                               "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
-                              "why":  "Turns a qualified one-lead buyer into a rescue-first PayPal note, one-copy order packet before exact 5 USD PayPal payment, order form, and verification-gated handoff.",
+                              "why":  "Turns a qualified one-lead buyer into a rescue-first PayPal note, one-copy order packet before the copy-only after-packet 5 USD PayPal URL, order form, and verification-gated handoff.",
                               "one_copy_order_packet_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
                               "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
                               "one_copy_order_packet_text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
-                              "before_payment_action":  "Build or inspect the one-copy order packet before opening PayPal."
+                              "before_payment_action":  "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
                           },
                           {
                               "use_when":  "An AI assistant, VA, crawler, or buyer-agent needs one copy-ready prompt to qualify a lead follow-up problem and route a ready buyer to root one-lead rescue and the one-copy order packet before the exact after-packet 5 USD PayPal checkout.",

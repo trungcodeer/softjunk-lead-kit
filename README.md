@@ -531,6 +531,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Agent close public issue: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
 - AI buyer brief: https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html
+- AI buyer brief rule: build the one-copy order packet and copy the PayPal note before copying the after-packet PayPal URL; completion still requires seller-side evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 - Pay $5 on PayPal after copying the rescue note: https://paypal.me/softjunk/5USD
