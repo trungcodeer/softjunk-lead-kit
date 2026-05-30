@@ -9920,3 +9920,37 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_fix_one_quiet_lead_packet_first_ok status=200 urls=12`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Checkout Copy-Only PayPal Handoff Evidence
+
+- Product commit: `a60f02a` (`a60f02ada2afca084d25c9a2780e1d534e326031`) on `main`.
+- Changed buyer-facing route: `checkout.html`.
+- Changed machine-readable route mirrors: `checkout.json` and `checkout.txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, and `feed.xml`.
+- Local focused HTML validation returned `checkout_packet_first_ok directHref=0 copyButtons=4 packetMentions=63 verifyMentions=3`.
+- Inline script validation returned `checkout_inline_script_ok scripts=1`.
+- JSON-LD parse returned `checkout_jsonld_parse_ok blocks=2`.
+- Focused JSON parse returned `focused_json_parse_ok files=4`.
+- Recursive JSON parse returned `json_parse_ok files=65`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation returned `openapi_checkout_copy_only_static_ok`.
+- Discovery static validation returned `checkout_discovery_static_ok files=8`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-0dVGEZ+1zJiZ0IF24i43Iepkw+v3UUA9oX+hnhQFSK1CEDNxmlQLzpemIUCrZZ31t/tbRqVixyUnlpS4JK11hw==`, shasum `0ae59aa90cdfa8b337007da2539a9072b7e53f08`.
+- Product Pages run `26688383935` completed successfully.
+- Live verification returned `live_checkout_copy_only_ok commit=a60f02a urls=10` for `checkout.html`, `checkout.json`, `checkout.txt`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, and `feed.xml`.
+- IndexNow returned `indexnow_checkout_copy_only_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Checkout Copy-Only PayPal Handoff, product commit `a60f02a` (`a60f02ada2afca084d25c9a2780e1d534e326031`).
+- Full evidence section: `2026-05-30 Checkout Copy-Only PayPal Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26688383935` success.
+- Live verification evidence: `live_checkout_copy_only_ok commit=a60f02a urls=10`.
+- Discovery ping evidence: `indexnow_checkout_copy_only_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
