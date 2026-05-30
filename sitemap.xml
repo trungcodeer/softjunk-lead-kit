@@ -32,9 +32,15 @@
   </url>
   <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://trungcodeer.github.io/softjunk-lead-kit/BUYER_INDEX.md</loc>
+    <lastmod>2026-05-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/BUY_NOW.md</loc>
@@ -50,7 +56,7 @@
   </url>
   <url>
     <loc>https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
