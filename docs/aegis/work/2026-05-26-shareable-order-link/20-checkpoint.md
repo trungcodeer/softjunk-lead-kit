@@ -12122,3 +12122,55 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Free Buyer Tools Packet Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Free Buyer Tools Packet.
+- Completed todos:
+  - Audited `lead-recovery-audit.html`, `lead-loss-calculator.html`, `lead-follow-up-rewriter.html`, OpenAPI, RSS, sitemap, buyer-index, offers, product-feed, and LLM summary surfaces after the agent commerce capsule became packet-first.
+  - Routed the three free buyer tools' paid 5 USD JSON-LD offer URLs, visible paid CTAs, QR cards, generated checkout copy, and adjacent discovery records through the one-copy order packet before PayPal.
+  - Preserved direct PayPal as an explicit after-packet handoff through `directPaymentUrl`, `paymentUrl`, visible after-packet payment copy, and generated buyer instructions.
+  - Updated `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `offers.json`, `product-feed.json`, and `sitemap.xml` for packet-first discovery of the free buyer tools.
+  - Committed and pushed product commit `7c7f03f` (`7c7f03fb0711a033de5bd29523f00d203365404f`) to `main`.
+  - Waited for GitHub Pages run `26678574719`, which completed successfully for commit `7c7f03f`.
+  - Live-verified ten product URLs with marker `live_free_buyer_tools_packet_ok commit=7c7f03f urls=10`.
+  - Submitted ten owned Pages URLs to IndexNow with marker `indexnow_free_buyer_tools_packet_ok status=202 urls=10`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `free_buyer_tools_packet_ok pages=3`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-e5+Zy2eeTvT3IDeqwlJBHjsWGU0ZDgpwcD+d7TFx3jZ4lm0WWDx2EOETAZSZtoAUMpVkvqkVLkY82Uk2M+G0eA==`, shasum `8d0494e90fe82e230bd51758afaf061be5e64301`.
+- Product Pages run: `26678574719`, conclusion `success`, head SHA `7c7f03fb0711a033de5bd29523f00d203365404f`.
+- Live verification: `live_free_buyer_tools_packet_ok commit=7c7f03f urls=10`.
+- IndexNow: `indexnow_free_buyer_tools_packet_ok status=202 urls=10`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves three owned free buyer tools that can naturally precede purchase, turning them into packet-first handoff surfaces without spam, scraping, deception, fake payment, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, HTML free-tool pages, JSON/OpenAPI/RSS/sitemap/LLM discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Free Buyer Tools Packet, product commit `7c7f03f` (`7c7f03fb0711a033de5bd29523f00d203365404f`).
+- Full checkpoint section: `2026-05-30 Free Buyer Tools Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26678574719` success; live verification `live_free_buyer_tools_packet_ok commit=7c7f03f urls=10`; IndexNow `indexnow_free_buyer_tools_packet_ok status=202 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.

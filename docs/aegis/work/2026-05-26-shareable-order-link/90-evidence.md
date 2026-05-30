@@ -8947,3 +8947,51 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_agent_commerce_packet_ok status=200 urls=8`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Free Buyer Tools Packet Evidence
+
+- Audited the free buyer tools after the agent commerce route became packet-first.
+- Found that `lead-recovery-audit.html`, `lead-loss-calculator.html`, and `lead-follow-up-rewriter.html` still exposed direct PayPal as a primary paid action or QR path before the one-copy order packet.
+- Updated product commit `7c7f03f` (`7c7f03fb0711a033de5bd29523f00d203365404f`):
+  - `lead-recovery-audit.html` now routes the paid JSON-LD Service Offer URL, paid buttons, QR card, and generated output through `fix-one-quiet-lead.html`, while preserving `directPaymentUrl` and `paymentUrl` for `https://paypal.me/softjunk/5USD`.
+  - `lead-loss-calculator.html` now routes the nav paid action, hero/action buttons, result CTAs, proof button, QR mini card, generated report, and paid JSON-LD offer through the one-copy order packet before PayPal.
+  - `lead-follow-up-rewriter.html` now routes the paid JSON-LD offer, proof button, result CTA, QR card, expected checkout output, and hero copy through the one-copy order packet before PayPal.
+  - The three touched HTML pages now use `packet-qr.svg` instead of `paypal-qr.svg` for the visible QR path.
+  - `.well-known/openapi.yaml`, `feed.xml`, `sitemap.xml`, `buyer-index.json`, `offers.json`, `product-feed.json`, and `llms.txt` now describe the free buyer tools as packet-first buyer paths.
+  - Accessibility affordances remain present on all three pages: skip links, focus-visible styling, semantic anchors/buttons, and live result/status areas.
+- Local verification:
+  - `free_buyer_tools_packet_ok pages=3`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-e5+Zy2eeTvT3IDeqwlJBHjsWGU0ZDgpwcD+d7TFx3jZ4lm0WWDx2EOETAZSZtoAUMpVkvqkVLkY82Uk2M+G0eA==`, shasum `8d0494e90fe82e230bd51758afaf061be5e64301`.
+- Deployment:
+  - Product commit `7c7f03f` pushed to `main`.
+  - Product Pages run `26678574719` completed successfully.
+- Live verification returned `live_free_buyer_tools_packet_ok commit=7c7f03f urls=10` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/lead-loss-calculator.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/offers.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/product-feed.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_free_buyer_tools_packet_ok status=202 urls=10` for the ten changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Free Buyer Tools Packet, product commit `7c7f03f` (`7c7f03fb0711a033de5bd29523f00d203365404f`).
+- Full evidence section: `2026-05-30 Free Buyer Tools Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26678574719` success.
+- Live verification evidence: `live_free_buyer_tools_packet_ok commit=7c7f03f urls=10`.
+- Discovery ping evidence: `indexnow_free_buyer_tools_packet_ok status=202 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
