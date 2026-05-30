@@ -11245,6 +11245,60 @@ Next step:
 ## 2026-05-30 Latest Resume Pointer
 
 Latest completed slice:
+- One-Buyer Share Packet-First Route, product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`).
+- Full checkpoint section: `2026-05-30 One-Buyer Share Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26685439532` success; live verification `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`; IndexNow `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 One-Buyer Share Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt` from direct PayPal-first share routing to one-copy order packet-first routing; updated OpenAPI, buyer index, README, `llms.txt`, RSS feed, sitemap, MCP checkout manifests, and agent checkout router discovery.
+- Active slice status: product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML validation: `directHref=0`, `packetMentions=4`, `paypalMentions=3`, `hasPacketQr=true`, and `one_buyer_share_html_focused_ok`.
+- Static route validation: `one_buyer_share_packet_first_static_ok`.
+- Recursive JSON parse passed: `json_parse_ok files=61`.
+- Feed and sitemap XML parse passed: `xml_parse_ok feed_sitemap=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-lbQQICTrK8cT+LE1o56Rx2V5jsVFeZZWpo7/aFsUw8AZCoDIkocDCz1TR7PyZn7Ax8CKYMIxntTiRfamPBYVcA==`, shasum `1901a72a16df397d05e446ff0c5aa2f846f3d353`.
+- Product Pages run: `26685439532`, conclusion `success`.
+- Live verification: `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`.
+- IndexNow: `indexnow_one_buyer_share_packet_first_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the one-known-buyer share route and keeps payment packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, one-buyer share HTML/JSON/TXT surfaces, OpenAPI/RSS/sitemap/LLM discovery, README, buyer index, MCP manifests, agent checkout router, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- One-Buyer Share Packet-First Route, product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`).
+- Full checkpoint section: `2026-05-30 One-Buyer Share Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26685439532` success; live verification `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`; IndexNow `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
 - Exact-Intent Samples Packet-First Route, product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`).
 - Full checkpoint section: `2026-05-30 Exact-Intent Samples Packet-First Checkpoint`.
 - Deployment evidence: GitHub Pages run `26684371982` success; live verification `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`; IndexNow `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16`.
@@ -12958,6 +13012,17 @@ Latest completed slice:
 - Exact-Intent Samples Packet-First Route, product commit `37ead41` (`37ead41415308ba5285f9cbc67c26e525429622b`).
 - Full checkpoint section: `2026-05-30 Exact-Intent Samples Packet-First Checkpoint`.
 - Deployment evidence: GitHub Pages run `26684371982` success; live verification `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`; IndexNow `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- One-Buyer Share Packet-First Route, product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`).
+- Full checkpoint section: `2026-05-30 One-Buyer Share Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26685439532` success; live verification `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`; IndexNow `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:

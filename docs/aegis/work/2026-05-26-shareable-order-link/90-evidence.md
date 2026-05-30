@@ -2365,6 +2365,16 @@ Payment gate:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: One-Buyer Share Packet-First Route, product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`).
+- Full evidence section: `2026-05-30 One-Buyer Share Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26685439532` success.
+- Live verification evidence: `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`.
+- Discovery ping evidence: `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
 ## 2026-05-30 Roofing Estimate Packet-First Evidence
 
 - Product commit: `7463ae1` (`7463ae184c6426ccfaecf329518289fdb0051e40`) on `main`.
@@ -2391,6 +2401,35 @@ Payment gate:
 - Deployment evidence: GitHub Pages run `26685048946` success.
 - Live verification evidence: `live_roofing_estimate_packet_first_ok commit=7463ae1 urls=15`.
 - Discovery ping evidence: `indexnow_roofing_estimate_packet_first_ok status=200 urls=15`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 One-Buyer Share Packet-First Evidence
+
+- Product commit: `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`) on `main`.
+- Changed buyer-facing routes: `one-buyer-share.html`, `one-buyer-share.json`, and `one-buyer-share.txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `sitemap.xml`, `README.md`, `llms.txt`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `agent-checkout-router.json`.
+- Local focused HTML validation returned `directHref=0`, `packetMentions=4`, `paypalMentions=3`, `hasPacketQr=true`, and `one_buyer_share_html_focused_ok`.
+- Static route validation returned `one_buyer_share_packet_first_static_ok`.
+- Recursive JSON parse returned `json_parse_ok files=61`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-lbQQICTrK8cT+LE1o56Rx2V5jsVFeZZWpo7/aFsUw8AZCoDIkocDCz1TR7PyZn7Ax8CKYMIxntTiRfamPBYVcA==`, shasum `1901a72a16df397d05e446ff0c5aa2f846f3d353`.
+- Product Pages run `26685439532` completed successfully.
+- Live verification returned `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12` for the three one-buyer share files plus `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `sitemap.xml`, `README.md`, `llms.txt`, `mcp-checkout-server.json`, `.well-known/mcp-checkout-server.json`, and `agent-checkout-router.json`.
+- IndexNow returned `indexnow_one_buyer_share_packet_first_ok status=200 urls=12 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: One-Buyer Share Packet-First Route, product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`).
+- Full evidence section: `2026-05-30 One-Buyer Share Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26685439532` success.
+- Live verification evidence: `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`.
+- Discovery ping evidence: `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
@@ -9711,5 +9750,15 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26684371982` success.
 - Live verification evidence: `live_exact_intent_samples_packet_first_ok commit=37ead41 urls=16`.
 - Discovery ping evidence: `indexnow_exact_intent_samples_packet_first_ok status=200 urls=16`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: One-Buyer Share Packet-First Route, product commit `42bd836` (`42bd83673236b83b095d30447e8ed91066997d9c`).
+- Full evidence section: `2026-05-30 One-Buyer Share Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26685439532` success.
+- Live verification evidence: `live_one_buyer_share_packet_first_ok commit=42bd836 urls=12`.
+- Discovery ping evidence: `indexnow_one_buyer_share_packet_first_ok status=200 urls=12`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
