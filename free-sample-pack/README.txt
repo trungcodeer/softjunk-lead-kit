@@ -11,7 +11,10 @@ Start here:
 Buy the full $5 kit or custom sequence:
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
-PayPal:
+Build the one-copy order packet before payment:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+After-packet PayPal URL to copy once the packet and note are ready:
 https://paypal.me/softjunk/5USD
 
 Paid ZIP proof:

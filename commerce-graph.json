@@ -293,9 +293,9 @@
         },
         {
           "@type": "HowToStep",
-          "name": "Open PayPal after the packet is ready",
+          "name": "Copy PayPal URL after the packet is ready",
           "url": "https://paypal.me/softjunk/5USD",
-          "text": "Open the exact PayPal.Me URL only after the packet is ready and paste the packet PayPal note before paying.",
+          "text": "Copy the exact PayPal.Me URL only after the packet is ready and paste the packet PayPal note before paying.",
           "oneCopyOrderPacketUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
           "oneCopyOrderPacketJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
           "oneCopyOrderPacketTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",

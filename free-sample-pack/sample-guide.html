@@ -70,6 +70,27 @@
       outline: 3px solid var(--teal);
       outline-offset: 3px;
     }
+
+    button {
+      min-height: 44px;
+      padding: 10px 14px;
+      border: 0;
+      border-radius: 8px;
+      color: #ffffff;
+      background: var(--teal);
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:focus-visible {
+      outline: 3px solid var(--blue);
+      outline-offset: 3px;
+    }
+
+    code {
+      overflow-wrap: anywhere;
+    }
   </style>
 </head>
 <body>
@@ -90,7 +111,9 @@
       <h2>Buy the full version</h2>
       <p>The paid kit adds the full 7-day cadence, more templates, tracker fields, and prompt pack. The same $5 also buys a custom 7-day sequence for one business.</p>
       <p><a href="https://trungcodeer.github.io/softjunk-lead-kit/checkout.html">Open fast checkout</a></p>
-      <p><a href="https://paypal.me/softjunk/5USD">Pay $5 on PayPal</a></p>
+      <p><a href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">Build the one-copy order packet</a> before payment. When the packet and PayPal note are ready, copy the after-packet PayPal URL: <code>https://paypal.me/softjunk/5USD</code>.</p>
+      <p><button type="button" id="copy-paypal-url">Copy after-packet PayPal URL</button></p>
+      <p id="copy-status" aria-live="polite"></p>
     </section>
 
     <section>
@@ -104,5 +127,24 @@
       <p>Release: <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165">v2.29.165</a>. Current release tarball SHA-256 file: <code>https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256</code>. Success signal: <code>PAYPAL_PAYMENT_VERIFIED=true</code>. Stop only after seller-side PayPal proof, PayPal API verification, trusted seller-side CSV proof, or <code>PAYPAL_PAYMENT_VERIFIED=true</code>.</p>
     </section>
   </main>
+  <script>
+    (function () {
+      var button = document.getElementById('copy-paypal-url');
+      var status = document.getElementById('copy-status');
+      var paymentUrl = 'https://paypal.me/softjunk/5USD';
+
+      button.addEventListener('click', function () {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) {
+          status.textContent = 'Copy failed. Select the PayPal URL manually.';
+          return;
+        }
+        navigator.clipboard.writeText(paymentUrl).then(function () {
+          status.textContent = 'After-packet PayPal URL copied.';
+        }).catch(function () {
+          status.textContent = 'Copy failed. Select the PayPal URL manually.';
+        });
+      });
+    }());
+  </script>
 </body>
 </html>

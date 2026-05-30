@@ -34,7 +34,7 @@
     "proof_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html",
     "manifest_url":  "https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json",
     "sample_zip_url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
-    "sample_zip_sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba",
+    "sample_zip_sha256":  "fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9",
     "order_board_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/9",
     "order_form_url":  "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml",
     "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
@@ -63,7 +63,7 @@
                          "step":  "check_sample",
                          "action":  "Download the public sample ZIP if the buyer wants a no-payment preview.",
                          "url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
-                         "sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba"
+                         "sha256":  "fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9"
                      },
                      {
                          "step":  "build_order_packet",

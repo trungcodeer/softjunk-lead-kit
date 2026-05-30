@@ -35,7 +35,7 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 
 Privacy rule: use placeholders only. Do not post customer names, phone numbers, emails, addresses, claim numbers, invoice IDs, transaction IDs, or PayPal details.
 
-[![Pay $5 on PayPal](https://img.shields.io/badge/PayPal-Pay%20%245-0070ba?logo=paypal)](https://paypal.me/softjunk/5USD)
+[![Packet-first PayPal handoff](https://img.shields.io/badge/PayPal-Packet%20first%20%245-0070ba?logo=paypal)](https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html)
 [![GitHub Sponsor route](https://img.shields.io/badge/GitHub-Sponsor%20route-24292f?logo=github)](https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md)
 [![npm fund route](https://img.shields.io/badge/npm-fund%20route-cb3837?logo=npm)](https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json)
 
@@ -534,7 +534,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - AI buyer brief rule: build the one-copy order packet and copy the PayPal note before copying the after-packet PayPal URL; completion still requires seller-side evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 - Agent offer JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json
 - One-lead rescue order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
-- Pay $5 on PayPal after copying the rescue note: https://paypal.me/softjunk/5USD
+- Copy the after-packet PayPal URL for 5 USD only after the rescue note is ready: https://paypal.me/softjunk/5USD
 - Short root PayPal route: https://trungcodeer.github.io/paypal/
 - Short root pay route: https://trungcodeer.github.io/pay/
 - Short root buy route: https://trungcodeer.github.io/buy/
@@ -781,7 +781,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json
 
 Public sample ZIP:
 https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
-SHA-256: 57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba
+SHA-256: fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9
 
 Free sample pack page:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html

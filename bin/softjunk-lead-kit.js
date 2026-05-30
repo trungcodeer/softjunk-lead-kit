@@ -44,7 +44,7 @@ const CONSTANTS = Object.freeze({
   digitalKitProof: 'https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html',
   digitalKitManifest: 'https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-manifest.json',
   digitalKitSample: 'https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip',
-  digitalKitSampleSha256: '57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba',
+  digitalKitSampleSha256: 'fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9',
   digitalKitBoard: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/9',
   digitalKitOrderForm: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml',
   customOrderForm: 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml',

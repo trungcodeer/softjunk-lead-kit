@@ -70,8 +70,8 @@
                       ],
     "public_sample_zip":  {
                               "url":  "https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip",
-                              "bytes":  3303,
-                              "sha256":  "57ef037d534763e804d428d4d19c794feace76168c4f49d8c68d3ed6872427ba",
+                              "bytes":  4444,
+                              "sha256":  "fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9",
                               "files":  [
                                             "README.txt",
                                             "sample-guide.html",
