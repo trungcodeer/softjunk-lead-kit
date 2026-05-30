@@ -69,7 +69,7 @@ Single decision packet for routing a small-business buyer to the right SoftJunk 
 - Weak message to rewrite: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-rewriter.html
 - Direct follow-up answer: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-answers.html
 - Custom 7-day sequence note builder: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html
-- Ready to pay after copying note: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
+- Ready to complete payment after copying note: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 - Exact PayPal payment after rescue note: https://paypal.me/softjunk/5USD
 - Root buyer hub: https://trungcodeer.github.io/
 - Short root PayPal route: https://trungcodeer.github.io/paypal/

@@ -136,7 +136,7 @@
     "fastest_buyer_path":  [
                                "Open buy_now_url first for the GitHub-native route, or root_one_lead_rescue_url if Pages is available.",
                                "Copy the rescue PayPal note with non-sensitive business type, service, lead source, tone, and need.",
-                               "For no-clone checkout proof, run run_from_release_tarball_pay_custom, verify verified_release_url, and compare release_tarball_sha256 before routing to the one-copy order packet and then PayPal.",
+                               "For no-clone checkout proof, run run_from_release_tarball_pay_custom, verify verified_release_url, and compare release_tarball_sha256 before routing to the one-copy order packet and then the after-packet PayPal handoff.",
                                "Build or inspect one_copy_order_packet_url, copy its PayPal note, then copy direct_payment_url only after the packet and note are ready, then complete the 5 USD PayPal payment.",
                                "Submit non-sensitive fulfillment details through one_lead_rescue_order_form_url.",
                                "Wait for seller-side PayPal visibility or PAYPAL_PAYMENT_VERIFIED=true before treating the order as paid or deliverable."

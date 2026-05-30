@@ -289,7 +289,7 @@
           "@type": "HowToStep",
           "name": "Verify no-clone checkout proof",
           "url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166",
-          "text": "Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json without cloning, verify the release notes, and load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256 before routing to the one-copy order packet and then PayPal."
+          "text": "Run npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json without cloning, verify the release notes, and load the current release tarball SHA-256 file https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256 before routing to the one-copy order packet and then the after-packet PayPal handoff."
         },
         {
           "@type": "HowToStep",
