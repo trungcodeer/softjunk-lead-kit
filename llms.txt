@@ -283,6 +283,7 @@ Use for one known med spa with one missed consult request, no-show consult, aest
 
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL. Keep https://paypal.me/softjunk/5USD only as the after-packet payment handoff.
 
 Roofing estimate follow-up generator:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
@@ -779,6 +780,7 @@ Niche pages:
 - Roofing estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
 - Real estate lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
+- Roofing estimate packet-first route: roofing-estimate-rescue, roofing-estimate-generator, and roofing-estimate-follow-up build the one-copy order packet before the after-packet PayPal handoff.
 - Niche template paid route: for dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then open PayPal after the packet is ready. The direct PayPal URL remains https://paypal.me/softjunk/5USD only as the after-packet handoff, and fulfillment is not proven until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 - Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt

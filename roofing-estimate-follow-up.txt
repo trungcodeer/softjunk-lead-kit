@@ -15,13 +15,16 @@ Day 5: Hi [Name], should I keep this roof estimate active? Reply "yes" and I wil
 
 Day 7: Hi [Name], I will close the loop for now so I do not keep bothering you. If the roof project comes back up, reply here and I can reopen the estimate path.
 
-Custom $5 rescue:
+Custom $5 rescue preview:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
+
+One-copy order packet before payment:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
 Prefilled buyer link:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245
 
-Pay exactly 5 USD:
+Pay exactly 5 USD after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 PayPal note:

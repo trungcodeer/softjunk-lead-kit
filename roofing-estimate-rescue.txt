@@ -17,7 +17,10 @@ https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
 Roofing buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
 
-Pay exactly 5 USD:
+One-copy order packet before payment:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly 5 USD after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 Roofing order form after payment:
@@ -38,7 +41,10 @@ https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roof
 Public roofing buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/7
 
-Pay exactly $5:
+Build the one-copy order packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+After the packet is ready, pay exactly $5:
 https://paypal.me/softjunk/5USD
 
 Use only non-sensitive context. No homeowner names, phone numbers, emails, addresses, payment identifiers, or private PayPal details.

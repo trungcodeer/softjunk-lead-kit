@@ -694,7 +694,7 @@ paths:
       summary: Open the SoftJunk roofing estimate rescue packet.
       responses:
         "200":
-          description: Buyer-facing page for a roofing contractor with one unanswered estimate, copy-ready message, PayPal note, prefilled send-to-buyer link, exact 5 USD PayPal URL, and verification gate.
+          description: Buyer-facing page for a roofing contractor with one unanswered estimate, copy-ready message, PayPal note, prefilled send-to-buyer link, one-copy order packet route, after-packet 5 USD PayPal URL, and verification gate.
           content:
             text/html:
               schema:
@@ -1234,7 +1234,7 @@ paths:
       summary: Open the roofing estimate follow-up answer page.
       responses:
         "200":
-          description: Answer page with FAQ schema, copy-ready Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, and the 5 USD custom rescue path.
+          description: Answer page with FAQ schema, copy-ready Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, and the packet-first 5 USD custom rescue path.
           content:
             text/html:
               schema:
@@ -1245,7 +1245,7 @@ paths:
       summary: Get the roofing estimate follow-up answer JSON.
       responses:
         "200":
-          description: Machine-readable roofing estimate follow-up answer, sequence, payment route, and verification gate.
+          description: Machine-readable roofing estimate follow-up answer, sequence, one-copy order packet route, after-packet payment handoff, and verification gate.
           content:
             application/json:
               schema:
@@ -1256,7 +1256,7 @@ paths:
       summary: Get the roofing estimate follow-up answer text.
       responses:
         "200":
-          description: Plain-text roofing estimate follow-up sequence, payment route, and verification gate.
+          description: Plain-text roofing estimate follow-up sequence, one-copy order packet route, after-packet payment handoff, and verification gate.
           content:
             text/plain:
               schema:
@@ -1267,7 +1267,7 @@ paths:
       summary: Open the roofing estimate follow-up generator.
       responses:
         "200":
-          description: Local-only browser generator for Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, PayPal note, share link, privacy guard, and 5 USD custom rescue route.
+          description: Local-only browser generator for Day 0, 1, 3, 5, and 7 roofing estimate follow-up texts, PayPal note, share link, privacy guard, one-copy order packet route, and after-packet 5 USD custom rescue handoff.
           content:
             text/html:
               schema:
@@ -1278,7 +1278,7 @@ paths:
       summary: Get the roofing estimate follow-up generator JSON.
       responses:
         "200":
-          description: Machine-readable generator metadata with query parameters, default sequence, payment route, privacy rule, and verification gate.
+          description: Machine-readable generator metadata with query parameters, default sequence, one-copy order packet route, after-packet payment handoff, privacy rule, and verification gate.
           content:
             application/json:
               schema:
@@ -1289,7 +1289,7 @@ paths:
       summary: Get the roofing estimate follow-up generator text.
       responses:
         "200":
-          description: Plain-text generator handoff with default sequence, PayPal note, payment route, privacy rule, and verification gate.
+          description: Plain-text generator handoff with default sequence, PayPal note, one-copy order packet route, after-packet payment handoff, privacy rule, and verification gate.
           content:
             text/plain:
               schema:

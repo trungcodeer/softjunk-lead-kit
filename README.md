@@ -320,6 +320,7 @@ https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
 Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
+Roofing estimate route rule: the rescue, generator, answer, JSON, and text pages expose the one-copy order packet as the buyer's first paid action and keep https://paypal.me/softjunk/5USD only as the after-packet payment handoff.
 
 Roofing estimate follow-up generator:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html
@@ -662,6 +663,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Roofing: https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-follow-up.html
 - Real estate: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
+- Roofing estimate packet-first route: roofing-estimate-rescue, roofing-estimate-generator, and roofing-estimate-follow-up build the one-copy order packet before the after-packet PayPal handoff.
 - Niche template checkout rule: the public template pages expose `fix-one-quiet-lead.html` as the paid Offer and BuyAction target, keep `https://paypal.me/softjunk/5USD` as the direct after-packet payment URL, and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
 
 ## Machine-Readable Discovery
