@@ -11242,6 +11242,54 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Agent Commerce Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `agent-commerce.html` from direct PayPal anchors to copy-only after-packet PayPal URL buttons, while keeping root rescue, one-copy order packet, no-clone checkout proof, order form, privacy boundary, and seller-side verification gate visible.
+- Updated machine-readable mirrors and discovery: `agent-commerce.json`, `agent-commerce.txt`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, and `feed.xml`.
+- Active slice status: product commit `67ac421` (`67ac421012551098cb995a8eb477c8075f7962cb`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML validation: `agent_commerce_static direct_href=0 copy_buttons=2 status_message=True packet_mentions=7 verify_mentions=4`.
+- Inline script validation: `agent_commerce_inline_script_ok scripts=1`.
+- JSON-LD parse: `agent_commerce_json_ld_ok`.
+- Focused JSON parse: `json_ok agent-commerce.json`, `json_ok product-feed.json`, `json_ok offers.json`, `json_ok buyer-index.json`.
+- Recursive JSON validation: `json_recursive_ok count=65`.
+- Feed and sitemap XML parse: `xml_ok feed.xml sitemap.xml`.
+- OpenAPI static validation: `openapi_agent_commerce_static_ok`.
+- Discovery static validation: `discovery_markers_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-NcPKDycpjfuIK5HfSQLiV/2PKQMVPCZ6AiyOrSTfH9XSHJGWPtFDo+TdKizj9B9bs5LDRnETYf7JK+o9BZNszA==`, shasum `602ac03d675d95a4839a5fa6f1f673f0aa45dcfc`.
+- Product Pages run: `26689264965`, conclusion `success`, head SHA `67ac421012551098cb995a8eb477c8075f7962cb`.
+- Live verification: `live_agent_commerce_copy_only_ok commit=67ac421 urls=10`.
+- IndexNow: `indexnow_agent_commerce_copy_only_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the AI/VA/crawler commerce contract by keeping buyer action packet-first/note-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, agent-commerce HTML/JSON/TXT, OpenAPI/RSS/LLM discovery, README, offer feeds, buyer index, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct pre-context link on `agent-commerce.html`.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Agent Commerce Copy-Only Handoff, product commit `67ac421` (`67ac421012551098cb995a8eb477c8075f7962cb`).
+- Full checkpoint section: `2026-05-30 Agent Commerce Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26689264965` success; live verification `live_agent_commerce_copy_only_ok commit=67ac421 urls=10`; IndexNow `indexnow_agent_commerce_copy_only_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 ## 2026-05-30 After-Payment Handoff Packet-First Checkpoint
 
 TodoCheckpointDraft:
