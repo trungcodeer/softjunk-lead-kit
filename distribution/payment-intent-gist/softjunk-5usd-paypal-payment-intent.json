@@ -2,7 +2,7 @@
   "schema_version": "softjunk-gist-paypal-payment-intent-v1",
   "updated": "2026-05-28",
   "name": "SoftJunk 5 USD PayPal Payment Intent",
-  "summary": "Pay exactly 5.00 USD via PayPal.Me for the SoftJunk Lead Follow-Up Kit or custom 7-day sequence.",
+  "summary": "Copy the after-packet PayPal URL and complete the 5.00 USD PayPal payment via PayPal.Me for the SoftJunk Lead Follow-Up Kit or custom 7-day sequence.",
   "payment": {
     "provider": "PayPal.Me",
     "amount": "5.00",
@@ -62,8 +62,8 @@
   "agent_action": {
     "intent": "use_root_one_lead_rescue_then_pay_softjunk_5_usd_paypal_and_wait_for_seller_side_verification",
     "steps": [
-      "If the buyer has one quiet lead, open the root one-lead rescue route at https://trungcodeer.github.io/rescue/ before direct PayPal.",
-      "Copy the generated PayPal note, then pay exactly 5.00 USD at https://paypal.me/softjunk/5USD.",
+      "If the buyer has one quiet lead, open the root one-lead rescue route at https://trungcodeer.github.io/rescue/ before after-packet PayPal.",
+      "Copy the generated PayPal note, then copy the after-packet PayPal URL and complete the 5.00 USD PayPal payment at https://paypal.me/softjunk/5USD.",
       "After payment, use the one-lead rescue order form without private customer data: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml.",
       "Confirm the buyer wants the SoftJunk 5 USD lead follow-up offer.",
       "If non-sensitive lead context is ready and the buyer needs a decision, PayPal note, preview route, and shareable order link, load the AI Deal Desk at https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html.",

@@ -52,7 +52,7 @@
     "potentialAction": {
       "@context": "https://schema.org",
       "@type": "BuyAction",
-      "name": "Build the one-copy order packet, then pay exactly 5 USD to SoftJunk on PayPal",
+      "name": "Build the one-copy order packet, then copy the after-packet 5 USD PayPal URL for SoftJunk",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -120,7 +120,7 @@
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Build the one-copy order packet, then pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Build the one-copy order packet, then copy the after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -187,7 +187,7 @@
   "buyAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Build the one-copy order packet, then pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Build the one-copy order packet, then copy the after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",

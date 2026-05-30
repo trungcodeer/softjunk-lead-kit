@@ -43,7 +43,7 @@ Hi [Name], quick follow-up on [service]. If you are still interested, reply with
 
 1. Open the Buy Now packet:
    https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
-2. Pay exactly 5 USD:
+2. Copy the after-packet PayPal URL after packet:
    https://paypal.me/softjunk/5USD
 3. Submit non-sensitive order details after payment:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml

@@ -30,13 +30,13 @@ Fast checkout:
 
 https://trungcodeer.github.io/softjunk-lead-kit/checkout.html
 
-Pay exactly $5 through PayPal:
+Copy the after-packet PayPal URL and complete the $5 PayPal payment through PayPal:
 
 https://paypal.me/softjunk/5USD
 
 For the digital kit, use PayPal note `Lead Follow-Up Kit`.
 
-For a custom sequence, open a ready scenario, generate the PayPal note, pay exactly $5, and paste the generated note into PayPal:
+For a custom sequence, open a ready scenario, generate the PayPal note, copy the after-packet PayPal URL and complete the $5 PayPal payment, and paste the generated note into PayPal:
 
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 

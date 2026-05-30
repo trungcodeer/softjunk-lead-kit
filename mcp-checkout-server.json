@@ -143,7 +143,7 @@
     "potentialAction": {
       "@context": "https://schema.org",
       "@type": "BuyAction",
-      "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+      "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -206,7 +206,7 @@
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -268,7 +268,7 @@
   "buyAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -369,7 +369,7 @@
     "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
-    "before_payment_action": "Build the one-copy order packet before opening the after-packet PayPal URL.",
+    "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "direct_payment_url": "https://paypal.me/softjunk/5USD",
     "payment_url_role": "after_packet_paypal_handoff",

@@ -16,11 +16,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this form after paying exactly $5 for one custom quiet-lead rescue. Fast path:
+        Use this form after completing the $5 PayPal payment for one custom quiet-lead rescue. Fast path:
 
         1. Copy the Send-5 buyer handoff: https://trungcodeer.github.io/send-5/
         2. Open the root 5 USD buyer card if you need the PayPal note/link: https://trungcodeer.github.io/5/
-        3. Pay exactly $5 on PayPal: https://paypal.me/softjunk/5USD
+        3. Copy the after-packet PayPal URL and complete the $5 PayPal payment on PayPal: https://paypal.me/softjunk/5USD
         4. Submit this form with placeholders only after payment.
 
         Machine-readable routes:

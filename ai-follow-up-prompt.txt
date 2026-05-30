@@ -43,7 +43,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
 4. Copy the packet PayPal note:
 Custom Sequence | Business: [business type] | Service: [service] | Source: [lead source] | Tone: [tone] | Need: [follow-up need]
-5. Pay exactly 5 USD after the packet here:
+5. Copy the after-packet PayPal URL after the packet here:
 https://paypal.me/softjunk/5USD
 6. Submit non-sensitive order details here after payment:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml

@@ -32,7 +32,7 @@ Use this card when an AI assistant, buyer-agent, VA, or crawler needs a structur
 6. Verify release notes and release asset SHA-256:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
    https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
-7. Pay exactly 5 USD at https://paypal.me/softjunk/5USD after the packet is ready.
+7. Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD after the packet is ready.
 8. Submit non-sensitive order details after payment:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 9. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or the verifier returns `PAYPAL_PAYMENT_VERIFIED=true`.

@@ -13,7 +13,7 @@ One-copy order packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-
 One-copy order packet text: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt
 Order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
 Order form after PayPal: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=digital-kit-order.yml
-Pay exactly 5 USD after the packet is ready: https://paypal.me/softjunk/5USD
+Copy the after-packet PayPal URL and complete the 5 USD PayPal payment only after the packet is ready: https://paypal.me/softjunk/5USD
 Required PayPal note: Lead Follow-Up Kit
 Success signal: PAYPAL_PAYMENT_VERIFIED=true
 
@@ -29,7 +29,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/sof
 SHA-256:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256
 
-Expected checkout: build the one-copy order packet first, then pay 5.00 USD to https://paypal.me/softjunk/5USD.
+Expected checkout: build the one-copy order packet first, then complete the 5.00 USD PayPal payment to https://paypal.me/softjunk/5USD.
 
 Privacy rule: do not post PayPal transaction IDs, invoice IDs, payer email, customer contact details, or private lead details in public issues.
 Verification gate: do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.

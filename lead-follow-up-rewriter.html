@@ -606,7 +606,7 @@ Why this is stronger for ${business}:
 
 Full $5 custom version adds Day 0, 1, 3, 5, and 7 messages plus no-show and price-objection replies.
 
-Pay exactly $5:
+Copy the after-packet PayPal URL and complete the $5 PayPal payment:
 ${paymentUrl}
 
 No-clone checkout proof:
@@ -614,7 +614,7 @@ Command: ${noCloneCommand}
 Current release: ${verifiedReleaseUrl}
 Release tarball: ${releaseTarballUrl}
 SHA-256: ${releaseSha256}
-Expected checkout: build the one-copy order packet, then pay 5.00 USD to ${paymentUrl}
+Expected checkout: build the one-copy order packet, then complete the 5.00 USD PayPal payment to ${paymentUrl}
 Stop condition: do not claim paid, started, delivered, fulfilled, complete, received, or stopped unless seller-side PayPal evidence exists or the verifier returns PAYPAL_PAYMENT_VERIFIED=true.`;
     }
 

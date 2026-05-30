@@ -73,8 +73,8 @@
                          "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt"
                      },
                      {
-                         "step":  "pay",
-                         "action":  "If the buyer wants the ready kit, verify the no-clone checkout command, pay exactly 5 USD on PayPal after the packet is ready, and paste the required note.",
+                         "step": "copy_after_packet_paypal_url",
+                         "action":  "If the buyer wants the ready kit, verify the no-clone checkout command, copy the after-packet PayPal URL and complete the 5 USD PayPal payment on PayPal after the packet is ready, and paste the required note.",
                          "url":  "https://paypal.me/softjunk/5USD",
                          "paypal_note":  "Lead Follow-Up Kit",
                          "no_clone_checkout_command":  "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json"

@@ -7,7 +7,7 @@
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 name: Digital $5 kit order
-about: Use this after paying exactly 5 USD for the digital Lead Follow-Up Kit ZIP. Do not include PayPal transaction details.
+about: Use this after completing the 5 USD PayPal payment for the digital Lead Follow-Up Kit ZIP. Do not include PayPal transaction details.
 title: "Digital kit order: [buyer type]"
 labels:
   - digital-kit

@@ -101,7 +101,7 @@
         "@type": "PriceSpecification",
         "price": "5.00",
         "priceCurrency": "USD",
-        "description": "Build or inspect the one-copy order packet, copy its PayPal note, then pay exactly 5 USD through PayPal.Me.",
+        "description": "Build or inspect the one-copy order packet, copy its PayPal note, then copy the after-packet PayPal URL and complete the 5 USD PayPal payment through PayPal.Me.",
         "oneCopyOrderPacketUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
         "oneCopyOrderPacketJsonUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
         "oneCopyOrderPacketTextUrl": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
@@ -170,7 +170,7 @@
     {
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#paypal-pay-action",
       "@type": "PayAction",
-      "name": "Build the one-copy order packet, then pay SoftJunk exactly 5 USD on PayPal",
+      "name": "Build the one-copy order packet, then copy SoftJunk's after-packet 5 USD PayPal URL",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -266,7 +266,7 @@
       "@id": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html#how-to-buy",
       "@type": "HowTo",
       "name": "How to buy the 5 USD SoftJunk follow-up sequence",
-      "description": "Use only for a relevant lead follow-up need. Build the one-copy order packet, copy the PayPal note, pay exactly 5 USD, submit non-sensitive order details, and wait for seller-side PayPal verification before fulfillment.",
+      "description": "Use only for a relevant lead follow-up need. Build the one-copy order packet, copy the PayPal note, copy the after-packet PayPal URL and complete the 5 USD PayPal payment, submit non-sensitive order details, and wait for seller-side PayPal verification before fulfillment.",
       "step": [
         {
           "@type": "HowToStep",

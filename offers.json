@@ -420,11 +420,11 @@
   ],
   "payment_notes": {
     "digital_kit": "Lead Follow-Up Kit",
-    "custom_sequence": "Use the root one-lead rescue route first for one quiet lead, then use the AI deal desk, custom sequence gallery, custom sequence preview, shareable order link, or agent order path when non-sensitive context is ready. Copy the PayPal note, paste that note into PayPal, pay exactly 5 USD, and submit the one-lead rescue order form.",
+    "custom_sequence": "Use the root one-lead rescue route first for one quiet lead, then use the AI deal desk, custom sequence gallery, custom sequence preview, shareable order link, or agent order path when non-sensitive context is ready. Copy the PayPal note, paste that note into PayPal, copy the after-packet PayPal URL and complete the 5 USD PayPal payment, and submit the one-lead rescue order form.",
     "shareable_order_link": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
     "after_payment": "Open the after-payment handoff page for packet-first delivery rules, copyable buyer summary, after-packet PayPal URL copy action, and seller-side verification gate.",
     "verification": "Run scripts/verify-paypal-5usd.ps1 or manually confirm the same 5 USD transaction inside PayPal before fulfillment; success signal is PAYPAL_PAYMENT_VERIFIED=true.",
-    "one_lead_rescue": "Use the root one-lead rescue route at https://trungcodeer.github.io/rescue/, copy the generated PayPal note, pay exactly 5 USD, then submit the one-lead rescue order form without private customer data."
+    "one_lead_rescue": "Use the root one-lead rescue route at https://trungcodeer.github.io/rescue/, copy the generated PayPal note, copy the after-packet PayPal URL and complete the 5 USD PayPal payment, then submit the one-lead rescue order form without private customer data."
   },
   "commerce_graph_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html",
   "commerce_graph_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json",

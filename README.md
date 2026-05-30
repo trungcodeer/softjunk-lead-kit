@@ -306,7 +306,7 @@ https://gist.github.com/trungcodeer/76b4b70a3b13bfec62c5f66c3ebec30d
 
 Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
-Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
+Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL.
 
 Send-to-buyer JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json
@@ -319,7 +319,7 @@ https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
-Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
+Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL.
 Roofing estimate route rule: the rescue, generator, answer, JSON, and text pages expose the one-copy order packet as the buyer's first paid action and keep https://paypal.me/softjunk/5USD only as the after-packet payment handoff.
 
 Roofing estimate follow-up generator:
@@ -370,7 +370,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/10
 Public plumbing buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 HVAC buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
@@ -387,7 +387,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/11
 Public HVAC buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Dental buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
@@ -424,7 +424,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
 Public med spa buyer release:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Roofing estimate rescue JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.json
@@ -788,9 +788,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 
 Fix-one-quiet-lead packet-first rule: generate the rescue, copy the one-copy order packet and PayPal note, then use the PayPal URL only as the after-packet handoff. The page no longer exposes pre-packet PayPal links before the packet actions.
 
-Sample-pack paid upgrade rule: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
+Sample-pack paid upgrade rule: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL.
 
-Paid kit proof paid upgrade rule: inspect the proof and manifest, then build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
+Paid kit proof paid upgrade rule: inspect the proof and manifest, then build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL.
 
 Digital kit order board:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/9

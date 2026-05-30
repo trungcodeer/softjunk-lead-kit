@@ -16,7 +16,7 @@
                                   "one_copy_order_packet_json_url":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
                                   "before_payment_action":  "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
                                   "success_signal":  "PAYPAL_PAYMENT_VERIFIED=true",
-                                  "rule":  "Use the one-copy order packet first, then open the direct PayPal URL only after the packet and PayPal note are ready. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
+                                  "rule":  "Use the one-copy order packet first, then open the after-packet PayPal URL only after the packet and PayPal note are ready. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
                               },
     "public_gist_checkout_index_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.json",
     "public_gist_checkout_index_markdown_url":  "https://trungcodeer.github.io/softjunk-lead-kit/public-gist-checkout-index.md",
@@ -137,7 +137,7 @@
                                "Open buy_now_url first for the GitHub-native route, or root_one_lead_rescue_url if Pages is available.",
                                "Copy the rescue PayPal note with non-sensitive business type, service, lead source, tone, and need.",
                                "For no-clone checkout proof, run run_from_release_tarball_pay_custom, verify verified_release_url, and compare release_tarball_sha256 before routing to the one-copy order packet and then PayPal.",
-                               "Build or inspect one_copy_order_packet_url, copy its PayPal note, then pay exactly 5 USD through direct_payment_url.",
+                               "Build or inspect one_copy_order_packet_url, copy its PayPal note, then copy direct_payment_url only after the packet and note are ready, then complete the 5 USD PayPal payment.",
                                "Submit non-sensitive fulfillment details through one_lead_rescue_order_form_url.",
                                "Wait for seller-side PayPal visibility or PAYPAL_PAYMENT_VERIFIED=true before treating the order as paid or deliverable."
                            ],
@@ -189,7 +189,7 @@
                                "Send the buyer to root_one_lead_rescue_url first when they are ready for the paid route; use fix_one_quiet_lead_url for the shortest free sample, lead_follow_up_rewriter_url when they already have a weak message, answer_engine_url when they ask a direct follow-up question, ai_deal_desk_url when non-sensitive context is ready, custom_sequence_gallery_url when a ready scenario fits, custom_sequence_preview_url when they want tailored proof before paying, shareable_order_link_url when context is ready to encode into a URL, or agent_order_url or free_preview_url when they need a new sequence.",
                                "Ask the buyer to copy the rescue PayPal note that includes business type, service, lead source, tone, and need.",
                                "Give buyer-agents the no-clone checkout proof: run run_from_release_tarball_pay_custom, verify verified_release_url, compare release_tarball_sha256, then use one_copy_order_packet_url before direct_payment_url.",
-                               "Tell the buyer to open root_one_lead_rescue_url first, build or inspect one_copy_order_packet_url, then pay exactly 5 USD through direct_payment_url.",
+                               "Tell the buyer to open root_one_lead_rescue_url first, build or inspect one_copy_order_packet_url, then copy direct_payment_url only after the packet and note are ready, then complete the 5 USD PayPal payment.",
                                "Use payment_intent_url or well_known_payment_intent_url when an autonomous agent needs a structured amount, currency, PayPal URL, and verification gate.",
                                "Use gist_payment_intent_url when an independent public Gist anchor is easier for the buyer or agent to inspect.",
                                "After payment, send the buyer to one_lead_rescue_order_form_url for structured non-sensitive fulfillment details, or public_order_board_url for public handoff examples.",
@@ -243,7 +243,7 @@
                              "potentialAction":  {
                                                      "@context":  "https://schema.org",
                                                      "@type":  "BuyAction",
-                                                     "name":  "Build the one-copy order packet, then pay exactly 5 USD to SoftJunk on PayPal",
+                                                     "name":  "Build the one-copy order packet, then copy the after-packet 5 USD PayPal URL for SoftJunk",
                                                      "target":  {
                                                                     "@type":  "EntryPoint",
                                                                     "urlTemplate":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -296,7 +296,7 @@
     "potentialAction":  {
                             "@context":  "https://schema.org",
                             "@type":  "BuyAction",
-                            "name":  "Build the one-copy order packet, then pay exactly 5 USD to SoftJunk on PayPal",
+                            "name":  "Build the one-copy order packet, then copy the after-packet 5 USD PayPal URL for SoftJunk",
                             "target":  {
                                            "@type":  "EntryPoint",
                                            "urlTemplate":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -348,7 +348,7 @@
     "buyAction":  {
                       "@context":  "https://schema.org",
                       "@type":  "BuyAction",
-                      "name":  "Build the one-copy order packet, then pay exactly 5 USD to SoftJunk on PayPal",
+                      "name":  "Build the one-copy order packet, then copy the after-packet 5 USD PayPal URL for SoftJunk",
                       "target":  {
                                      "@type":  "EntryPoint",
                                      "urlTemplate":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",

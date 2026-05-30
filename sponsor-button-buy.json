@@ -43,7 +43,7 @@
     {
       "step": "open_sponsor_button_or_payment_url",
       "url": "https://paypal.me/softjunk/5USD",
-      "instruction": "Use the repository Sponsor button or direct PayPal URL for the exact 5 USD checkout after the packet is ready."
+      "instruction": "Use the repository Sponsor button or after-packet PayPal URL for the exact 5 USD checkout after the packet is ready."
     },
     {
       "step": "copy_send_five_handoff",

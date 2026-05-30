@@ -4,7 +4,7 @@ Use this when you already know you want the paid SoftJunk lead follow-up kit or 
 
 ## Payment
 
-Pay exactly $5 through PayPal:
+Copy the after-packet PayPal URL and complete the $5 PayPal payment through PayPal:
 
 https://paypal.me/softjunk/5USD
 

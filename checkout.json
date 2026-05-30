@@ -81,7 +81,7 @@
                        {
                            "step":  "copy_after_packet_payment_url",
                            "url":  "https://paypal.me/softjunk/5USD",
-                           "instruction":  "After the one-copy order packet and note are ready, copy the after-packet PayPal URL from checkout, pay exactly 5.00 USD through PayPal.Me, and paste the generated PayPal note."
+                           "instruction":  "After the one-copy order packet and note are ready, copy the after-packet PayPal URL from checkout, copy the after-packet PayPal URL and complete the 5.00 USD PayPal payment through PayPal.Me, and paste the generated PayPal note."
                        },
                        {
                            "step":  "after_payment",
@@ -133,7 +133,7 @@
                              "potentialAction":  {
                                                      "@context":  "https://schema.org",
                                                      "@type":  "BuyAction",
-                                                     "name":  "Build the one-copy order packet before paying exactly 5 USD",
+                                                     "name":  "Build the one-copy order packet before copying the after-packet PayPal URL and completing the 5 USD PayPal payment",
                                                      "target":  {
                                                                     "@type":  "EntryPoint",
                                                                     "urlTemplate":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -191,7 +191,7 @@
     "potentialAction":  {
                             "@context":  "https://schema.org",
                             "@type":  "BuyAction",
-                            "name":  "Build the one-copy order packet before paying exactly 5 USD",
+                            "name":  "Build the one-copy order packet before copying the after-packet PayPal URL and completing the 5 USD PayPal payment",
                             "target":  {
                                            "@type":  "EntryPoint",
                                            "urlTemplate":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
@@ -248,7 +248,7 @@
     "buyAction":  {
                       "@context":  "https://schema.org",
                       "@type":  "BuyAction",
-                      "name":  "Build the one-copy order packet before paying exactly 5 USD",
+                      "name":  "Build the one-copy order packet before copying the after-packet PayPal URL and completing the 5 USD PayPal payment",
                       "target":  {
                                      "@type":  "EntryPoint",
                                      "urlTemplate":  "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",

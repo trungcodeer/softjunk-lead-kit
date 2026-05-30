@@ -12,7 +12,7 @@ Use this support path only for the SoftJunk Lead Follow-Up Kit or custom 7-day l
 - Funding config: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/.github/FUNDING.yml
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Pinned buyer-agent close contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
-- Direct PayPal.Me URL: https://paypal.me/softjunk/5USD
+- After-packet PayPal.Me copy URL: https://paypal.me/softjunk/5USD
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - Root one-lead rescue JSON: https://trungcodeer.github.io/rescue.json
 - AI agent order path: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html

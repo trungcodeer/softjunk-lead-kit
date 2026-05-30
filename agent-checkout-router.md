@@ -20,7 +20,7 @@ One-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix
 
 Machine-readable packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 
-Pay exactly 5 USD after packet: https://paypal.me/softjunk/5USD
+Copy the after-packet PayPal URL after packet: https://paypal.me/softjunk/5USD
 
 Success signal: `PAYPAL_PAYMENT_VERIFIED=true`
 

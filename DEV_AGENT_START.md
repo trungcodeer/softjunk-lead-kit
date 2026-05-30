@@ -60,7 +60,7 @@ npm run pay:custom
 npm run pay:kit
 ```
 
-Pay exactly 5 USD at https://paypal.me/softjunk/5USD.
+Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD.
 
 After payment, submit non-sensitive details here:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml

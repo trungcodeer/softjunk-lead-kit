@@ -16,7 +16,7 @@ Route a ready buyer:
 5. Compare the current release and SHA-256:
    https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
    `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256`
-6. Pay exactly 5 USD at https://paypal.me/softjunk/5USD
+6. Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD
 7. Submit non-sensitive details after payment at https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Never claim payment or delivery without seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.

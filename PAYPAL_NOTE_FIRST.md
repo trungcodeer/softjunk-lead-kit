@@ -6,7 +6,7 @@ After the 5 USD PayPal payment is seller-side verified, a custom sequence includ
 
 Buyer-agent BuyAction manifest: https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json
 
-Use this when the buyer is ready to pay and wants the shortest safe path: build the one-copy order packet, copy one safe PayPal note, pay 5 USD, and let the seller fulfill from the PayPal transaction after seller-side verification.
+Use this when the buyer is ready to complete the after-packet PayPal payment and wants the shortest safe path: build the one-copy order packet, copy one safe PayPal note, pay 5 USD, and let the seller fulfill from the PayPal transaction after seller-side verification.
 
 ## Build Packet First
 
@@ -60,7 +60,7 @@ Current release tarball SHA-256 file:
 
 `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256`
 
-Pay exactly 5 USD after the one-copy order packet is ready:
+Copy the after-packet PayPal URL only after the one-copy order packet is ready:
 
 https://paypal.me/softjunk/5USD
 

@@ -174,7 +174,7 @@ Agent checkout router:
 
 Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Send-to-buyer JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json
@@ -187,7 +187,7 @@ https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 
 Roofing buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Roofing buyer send JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json
@@ -207,7 +207,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json
 Plumbing buyer send text:
 https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Public plumbing buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/10
@@ -216,7 +216,7 @@ Public plumbing buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
 
 Plumbing buyer fit:
-Use for one known plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
+Use for one known plumbing company with one missed emergency call, urgent repair inquiry, or quiet estimate lead. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
 
 HVAC buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.html
@@ -227,7 +227,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.json
 HVAC buyer send text:
 https://trungcodeer.github.io/softjunk-lead-kit/hvac-buyer-send.txt
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Public HVAC buyer issue:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/11
@@ -236,7 +236,7 @@ Public HVAC buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
 
 HVAC buyer fit:
-Use for one known HVAC company with one missed no-cool call, no-heat call, urgent repair inquiry, or quiet replacement estimate. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
+Use for one known HVAC company with one missed no-cool call, no-heat call, urgent repair inquiry, or quiet replacement estimate. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists.
 
 Dental buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html
@@ -276,14 +276,14 @@ https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
 Public med spa buyer release:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.113
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Med spa buyer fit:
-Use for one known med spa with one missed consult request, no-show consult, aesthetic treatment inquiry, or quiet membership lead. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists. Do not include client, health, treatment, photo, financing, or PayPal details.
+Use for one known med spa with one missed consult request, no-show consult, aesthetic treatment inquiry, or quiet membership lead. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists. Do not include client, health, treatment, photo, financing, or PayPal details.
 
 Roofing estimate rescue:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-rescue.html
-Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL. Keep https://paypal.me/softjunk/5USD only as the after-packet payment handoff.
+Packet-first handoff: build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before copying the after-packet PayPal URL. Keep https://paypal.me/softjunk/5USD only as the after-packet payment handoff.
 
 Roofing estimate follow-up generator:
 https://trungcodeer.github.io/softjunk-lead-kit/roofing-estimate-generator.html

@@ -63,7 +63,7 @@ You have one lead that went quiet. If one recovered reply is worth more than $5,
 Use only non-sensitive business context. Build the one-copy order packet first:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
-Pay exactly $5 after the packet is ready:
+Copy the after-packet PayPal URL and complete the $5 PayPal payment only after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
@@ -99,7 +99,7 @@ You get Day 0, 1, 3, 5, and 7 messages, plus no-show and price-objection replies
 Build the one-copy order packet first:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
-Pay exactly $5 after the packet is ready:
+Copy the after-packet PayPal URL and complete the $5 PayPal payment only after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:

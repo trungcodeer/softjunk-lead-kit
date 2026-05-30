@@ -14,7 +14,7 @@ If a buyer has one real quiet lead and one recovered reply, quote, appointment, 
 - Current release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
 - Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
 - Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256`
-- Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+- Copy the after-packet PayPal URL after packet: https://paypal.me/softjunk/5USD
 - Submit non-sensitive details after payment: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.

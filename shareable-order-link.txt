@@ -16,7 +16,7 @@ The page creates:
 One-copy order packet:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
-Pay exactly 5 USD after the packet:
+Copy the after-packet PayPal URL after the packet:
 https://paypal.me/softjunk/5USD
 
 PayPal note template:

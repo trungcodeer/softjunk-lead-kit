@@ -31,7 +31,7 @@
   },
   "default_route": {
     "route_id": "one_copy_order_packet_fastest_usd5",
-    "use_when": "A qualified buyer or buyer-agent is ready to inspect the one-copy packet and then pay exactly 5 USD.",
+    "use_when": "A qualified buyer or buyer-agent is ready to inspect the one-copy packet and then copy the after-packet PayPal URL and complete the 5 USD PayPal payment.",
     "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "machine_readable": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
     "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
@@ -123,7 +123,7 @@
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
       "order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-      "before_payment_action": "Build the one-copy order packet before opening the after-packet PayPal URL.",
+      "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL.",
       "payment_url": "https://paypal.me/softjunk/5USD",
       "payment_url_role": "after_packet_paypal_handoff"
     },
@@ -178,7 +178,7 @@
     {
       "rank": 11,
       "route_id": "needs_free_preview_first",
-      "use_when": "The buyer is not ready to pay and needs a useful preview from non-sensitive context first.",
+      "use_when": "The buyer is not ready to complete the after-packet PayPal payment and needs a useful preview from non-sensitive context first.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html",
       "preview_builder_url": "https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html",
       "payment_url": "https://paypal.me/softjunk/5USD"

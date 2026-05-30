@@ -22,7 +22,7 @@ Build the one-copy order packet first:
 
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
-Then pay exactly 5 USD after the packet:
+Then copy the after-packet PayPal URL after the packet:
 
 https://paypal.me/softjunk/5USD
 

@@ -24,7 +24,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 Prefilled buyer link:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html?business=roofing%20contractor&service=roof%20estimate&source=estimate&need=has%20an%20unanswered%20estimate&tone=direct&next=quote&value=one%20roof%20job%20is%20worth%20more%20than%20%245
 
-Pay exactly 5 USD after the packet is ready:
+Copy the after-packet PayPal URL and complete the 5 USD PayPal payment only after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 PayPal note:

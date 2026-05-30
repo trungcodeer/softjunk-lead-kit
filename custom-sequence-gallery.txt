@@ -1,6 +1,6 @@
 SoftJunk Custom Sequence Gallery
 
-Open prefilled custom sequence previews for common quiet-lead situations, then build the one-copy order packet before paying exactly 5 USD for the full 7-day custom sequence.
+Open prefilled custom sequence previews for common quiet-lead situations, then build the one-copy order packet before copying the after-packet PayPal URL and completing the 5 USD PayPal payment for the full 7-day custom sequence.
 
 Gallery:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
@@ -50,7 +50,7 @@ Fast buyer path:
 2. Read the generated Day 0, Day 1, and Day 3 preview.
 3. Copy the generated PayPal note.
 4. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.
-5. Pay exactly 5 USD through https://paypal.me/softjunk/5USD after the packet.
+5. Copy the after-packet PayPal URL and complete the 5 USD PayPal payment through https://paypal.me/softjunk/5USD after the packet.
 6. Open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html.
 
 Payment gate:

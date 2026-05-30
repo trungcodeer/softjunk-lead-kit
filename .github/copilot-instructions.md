@@ -27,7 +27,7 @@ Clone CLI manifest: https://trungcodeer.github.io/softjunk-lead-kit/clone-cli.js
 
 Good fit: one real missed call, quiet DM, form lead, email inquiry, sent quote, no-show, estimate follow-up, referral, appointment request, or price objection where one recovered conversation is worth more than 5 USD.
 
-Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+Copy the after-packet PayPal URL after packet: https://paypal.me/softjunk/5USD
 
 After payment, use placeholders only in the clone CLI order form:
 https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=clone-cli-order.yml

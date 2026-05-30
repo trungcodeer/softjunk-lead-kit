@@ -2,7 +2,7 @@
   "schema_version": "softjunk-paypal-note-first-v3",
   "updated": "2026-05-30",
   "name": "SoftJunk PayPal Note After Packet",
-  "purpose": "A shortest-path checkout packet for buyers who are ready to build the one-copy order packet before paying exactly 5 USD and include safe fulfillment context in the PayPal note.",
+  "purpose": "A shortest-path checkout packet for buyers who are ready to build the one-copy order packet before copying the after-packet PayPal URL and completing the 5 USD PayPal payment and include safe fulfillment context in the PayPal note.",
   "canonical_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md",
   "raw_json_url": "https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/main/paypal-note-first.json",
   "gist_url": "https://gist.github.com/trungcodeer/fbd0764d1575076c27eaddb55042459a",
@@ -53,9 +53,9 @@
       "instruction": "Run the current release-tarball command when the buyer-agent needs executable no-clone checkout proof after the one-copy order packet and before copying the after-packet PayPal URL."
     },
     {
-      "step": "pay",
+      "step": "copy_after_packet_paypal_url",
       "url": "https://paypal.me/softjunk/5USD",
-      "instruction": "Pay exactly 5 USD through PayPal.Me and paste the packet-ready note."
+      "instruction": "Copy the after-packet PayPal URL only after the packet is ready, then paste the packet-ready note in PayPal."
     },
     {
       "step": "optional_order_form",

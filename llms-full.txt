@@ -22,7 +22,7 @@ Integrity:
 Primary buyer route:
 1. Open https://trungcodeer.github.io/rescue/ for one quiet lead.
 2. Generate a PayPal note using placeholders only.
-3. Pay exactly 5 USD at https://paypal.me/softjunk/5USD.
+3. Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD.
 4. Submit non-sensitive order details through https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml after payment.
 5. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 

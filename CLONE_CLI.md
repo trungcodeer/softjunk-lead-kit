@@ -52,5 +52,5 @@ Rules:
 
 - The CLI is local-only and does not collect lead data.
 - Use placeholders only. Do not put customer names, phone numbers, emails, addresses, invoice IDs, transaction IDs, payer email, or private lead details into public issues, URLs, logs, or prompts.
-- Pay exactly 5 USD at https://paypal.me/softjunk/5USD.
+- Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD.
 - Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.

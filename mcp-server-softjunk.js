@@ -485,7 +485,7 @@ function agentRelayRoute() {
       `Build the one-copy order packet at ${ONE_COPY_ORDER_PACKET_URL}.`,
       `Run ${PREFERRED_NO_CLONE_CHECKOUT_COMMAND}.`,
       `Use ${GITHUB_PACKAGE_PAY_CUSTOM_COMMAND} only as the GitHub package fallback.`,
-      `Pay exactly 5 USD at ${PAYMENT_URL}.`,
+      `Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at ${PAYMENT_URL}.`,
       `Submit non-sensitive order details at ${ORDER_FORM_URL}.`,
       "Wait for seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true before any paid, started, delivered, or complete claim."
     ],
@@ -537,7 +537,7 @@ function npmFundingRoute() {
     commands: [
       {
         command: "npm fund",
-        purpose: "Read package funding metadata; build the one-copy order packet before opening the exact PayPal URL."
+        purpose: "Read package funding metadata; build the one-copy order packet before copying the after-packet PayPal URL."
       },
       {
         command: "npm run fund",

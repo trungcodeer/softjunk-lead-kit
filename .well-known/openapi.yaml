@@ -353,7 +353,7 @@ paths:
       summary: Get the SoftJunk commerce graph JSON-LD.
       responses:
         "200":
-          description: JSON-LD graph with Product, Offer, BuyAction, one-copy order packet, direct PayPal handoff, HowTo, order form, and verification gate nodes.
+          description: JSON-LD graph with Product, Offer, BuyAction, one-copy order packet, after-packet PayPal handoff, HowTo, order form, and verification gate nodes.
           content:
             application/ld+json:
               schema:

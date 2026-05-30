@@ -74,7 +74,7 @@
   "human_start_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/1",
   "buyer_agent_contract_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/5",
   "paypal_note_template": "One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]",
-  "copyable_buyer_message": "If you have one quiet lead and one recovered conversation is worth more than $5, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, inspect the fulfillment packet at https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md, copy the safe PayPal note from the packet or https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md, then pay exactly 5 USD at https://paypal.me/softjunk/5USD. Use non-sensitive business context only. Delivery starts only after seller-side PayPal proof confirms the payment.",
+  "copyable_buyer_message": "If you have one quiet lead and one recovered conversation is worth more than $5, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, inspect the fulfillment packet at https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md, copy the safe PayPal note from the packet or https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md, then copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD. Use non-sensitive business context only. Delivery starts only after seller-side PayPal proof confirms the payment.",
   "fit_rule": [
     "The buyer has one real quiet lead from a form, DM, email, call, quote, estimate, appointment, referral, or proposal.",
     "The buyer wants practical lead follow-up copy for one business and one lead.",
@@ -120,7 +120,7 @@
     "potentialAction": {
       "@context": "https://schema.org",
       "@type": "BuyAction",
-      "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+      "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -183,7 +183,7 @@
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -245,7 +245,7 @@
   "buyAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://paypal.me/softjunk/5USD",

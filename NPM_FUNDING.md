@@ -22,7 +22,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 
 The packet includes the preview, PayPal note, checkout proof, exact PayPal URL, post-payment order form, privacy rule, and seller-side verification boundary.
 
-Direct PayPal payment remains:
+After-packet PayPal payment remains:
 
 ```text
 https://paypal.me/softjunk/5USD

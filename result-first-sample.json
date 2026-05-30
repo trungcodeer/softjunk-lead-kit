@@ -53,9 +53,9 @@
       "instruction": "Open the Buy Now packet for the shortest payment and order route."
     },
     {
-      "step": "pay",
+      "step": "copy_after_packet_paypal_url",
       "url": "https://paypal.me/softjunk/5USD",
-      "instruction": "Pay exactly 5 USD through PayPal.Me."
+      "instruction": "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment through PayPal.Me."
     },
     {
       "step": "submit_order_form",

@@ -17,7 +17,7 @@ Copy this into PayPal before paying:
 One Lead Rescue | Business: [business type] | Service: [service] | Source: [form/DM/call/email/referral] | Need: [missed call/estimate/no-show/quiet DM/price] | Tone: [friendly/professional/direct] | Next: [book/reply/quote/call]
 ```
 
-Pay exactly 5 USD:
+Copy the after-packet PayPal URL after packet:
 
 https://paypal.me/softjunk/5USD
 
@@ -105,4 +105,4 @@ That makes sense. If budget is the main issue, I can show the smallest useful ve
 - Raw Gist JSON: https://gist.githubusercontent.com/trungcodeer/b291f4850559d170ab8bcdd832e6d93d/raw/instant-fulfillment-packet.json
 - Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
 - PayPal note first: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/PAYPAL_NOTE_FIRST.md
-- Direct PayPal checkout: https://paypal.me/softjunk/5USD
+- After-packet PayPal URL copy target: https://paypal.me/softjunk/5USD

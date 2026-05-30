@@ -1,6 +1,6 @@
 # Try Now
 
-Run the value-producing path first, then pay only if the preview fits your lead follow-up problem.
+Run the value-producing path first, then complete payment only if the preview fits your lead follow-up problem.
 
 ```bash
 npm run try:rescue

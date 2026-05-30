@@ -16,7 +16,7 @@ Route only when the buyer has one real quiet lead and wants practical follow-up 
 - Current release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
 - Release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
 - Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256`
-- Direct PayPal checkout: https://paypal.me/softjunk/5USD
+- After-packet PayPal URL copy target: https://paypal.me/softjunk/5USD
 - Post-payment order form: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not use this for spam, deception, fake reviews, scraping, unauthorized outreach, or public posting of private customer/payment details. Do not claim paid, started, delivered, or complete unless seller-side PayPal evidence exists or `PAYPAL_PAYMENT_VERIFIED=true`.

@@ -98,7 +98,7 @@ child.on('close', (code) => {
   );
   assert(
     fundingPayload.direct_payment_url === 'https://paypal.me/softjunk/5USD',
-    'expected direct PayPal URL to remain explicit'
+    'expected after-packet PayPal URL to remain explicit'
   );
   assert(
     fundingPayload.before_payment_action &&

@@ -7,7 +7,7 @@
 # Success signal: PAYPAL_PAYMENT_VERIFIED=true
 # Boundary: Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists, PayPal API verification succeeds, or trusted seller-side CSV proof verifies the 5 USD payment.
 name: Clone CLI paid order
-about: Submit non-sensitive order details after using the clone CLI and paying exactly 5 USD on PayPal.
+about: Submit non-sensitive order details after using the clone CLI and completing the 5 USD PayPal payment on PayPal.
 title: "Paid clone CLI order: [business type]"
 labels:
   - paid-order
@@ -16,7 +16,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Use this only after paying exactly 5 USD at https://paypal.me/softjunk/5USD.
+        Use this only after completing the 5 USD PayPal payment at https://paypal.me/softjunk/5USD.
 
         Do not post PayPal transaction IDs, invoice IDs, payer email, customer names, phone numbers, emails, addresses, or private lead details.
         Fulfillment starts only after seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.

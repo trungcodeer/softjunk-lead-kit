@@ -15,7 +15,7 @@ https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 Machine-readable packet:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
 
-Then pay exactly 5 USD:
+Then copy the after-packet PayPal URL and complete the 5 USD PayPal payment:
 https://paypal.me/softjunk/5USD
 
 Use only when the buyer has one real quiet lead, missed call, quote, estimate, no-show, price objection, or quiet DM and one recovered reply is worth more than 5 USD.

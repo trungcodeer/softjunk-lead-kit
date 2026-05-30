@@ -34,7 +34,7 @@
   ],
   "privacy_rule": "Use only non-sensitive business context in the URL. Do not include customer names, phone numbers, emails, addresses, PayPal transaction IDs, or private lead details.",
   "generated_paypal_note_template": "Custom Sequence | Business: [business] | Service: [service] | Source: [source] | Tone: [tone] | Need: [need] | Next: [next] | Value: [value]",
-  "agent_instruction": "When the buyer has enough order context, send them to the shareable order link page or create a URL with the query parameters, tell them to copy the generated PayPal note, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then pay exactly 5 USD at the PayPal URL after the packet.",
+  "agent_instruction": "When the buyer has enough order context, send them to the shareable order link page or create a URL with the query parameters, tell them to copy the generated PayPal note, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then copy the after-packet PayPal URL and complete the 5 USD PayPal payment at the PayPal URL after the packet.",
   "fulfillment_rule": "Do not claim the order is paid, started, or delivered unless the seller can see the 5 USD PayPal transaction, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.",
   "related_urls": {
     "after_payment": "https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html",

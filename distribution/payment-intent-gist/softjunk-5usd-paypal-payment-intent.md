@@ -1,6 +1,6 @@
 # SoftJunk $5 PayPal Payment Intent
 
-Pay exactly **5.00 USD** for the SoftJunk Lead Follow-Up Kit or custom 7-day lead follow-up sequence.
+Copy the after-packet PayPal URL and complete **5.00 USD** payment for the SoftJunk Lead Follow-Up Kit or custom 7-day lead follow-up sequence.
 
 Fastest one-lead rescue route:
 
@@ -64,7 +64,7 @@ Fallback tarball SHA-256:
 
 `1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c`
 
-If the buyer has one quiet lead, open the root one-lead rescue route before direct PayPal, copy the generated PayPal note, pay exactly **5.00 USD**, then use the one-lead order form after seller-side verification.
+If the buyer has one quiet lead, open the root one-lead rescue route before after-packet PayPal, copy the generated PayPal note, complete the **5.00 USD** payment, then use the one-lead order form after seller-side verification.
 
 If non-sensitive lead context is already ready and an AI assistant, VA, crawler, or operator needs a buyer decision plus PayPal note first, load:
 

@@ -113,7 +113,7 @@
     "payment_url": "https://paypal.me/softjunk/5USD",
     "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
-    "copyable_buyer_message": "If one quiet lead is worth recovering, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, copy the packet PayPal note, pay exactly 5 USD at https://paypal.me/softjunk/5USD, and submit non-sensitive order details after payment. Delivery starts only after seller-side PayPal proof confirms the payment.",
+    "copyable_buyer_message": "If one quiet lead is worth recovering, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, copy the packet PayPal note, copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD, and submit non-sensitive order details after payment. Delivery starts only after seller-side PayPal proof confirms the payment.",
     "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
     "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
     "before_payment_action": "Build the one-copy order packet before copying the after-packet PayPal URL."
@@ -163,7 +163,7 @@
     "potentialAction": {
       "@context": "https://schema.org",
       "@type": "BuyAction",
-      "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+      "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
       "target": {
         "@type": "EntryPoint",
         "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -226,7 +226,7 @@
   "potentialAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://paypal.me/softjunk/5USD",
@@ -288,7 +288,7 @@
   "buyAction": {
     "@context": "https://schema.org",
     "@type": "BuyAction",
-    "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+    "name": "Copy after-packet 5 USD PayPal URL for SoftJunk",
     "target": {
       "@type": "EntryPoint",
       "urlTemplate": "https://paypal.me/softjunk/5USD",

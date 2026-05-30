@@ -5,7 +5,7 @@
       "label": "SoftJunk: Run this first",
       "type": "shell",
       "command": "npm start",
-      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "detail": "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -17,7 +17,7 @@
       "label": "SoftJunk: Try rescue preview",
       "type": "shell",
       "command": "npm run try:rescue",
-      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "detail": "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -29,7 +29,7 @@
       "label": "SoftJunk: Send buyer handoff",
       "type": "shell",
       "command": "npm run try:send",
-      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "detail": "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -41,7 +41,7 @@
       "label": "SoftJunk: Pay custom route",
       "type": "shell",
       "command": "npm run pay:custom",
-      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "detail": "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",
@@ -53,7 +53,7 @@
       "label": "SoftJunk: Pay kit route",
       "type": "shell",
       "command": "npm run pay:kit",
-      "detail": "Pay exactly 5 USD at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
+      "detail": "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment at https://paypal.me/softjunk/5USD; do not claim paid or delivered unless PAYPAL_PAYMENT_VERIFIED=true.",
       "problemMatcher": [],
       "presentation": {
         "reveal": "always",

@@ -50,12 +50,12 @@
                                                    "privacy rule",
                                                    "PAYPAL_PAYMENT_VERIFIED=true boundary"
                                                ],
-                                  "payment_rule":  "Pay exactly 5 USD only after the packet is ready; the funding URL is a payment path, not proof of payment."
+                                  "payment_rule":  "Copy the after-packet PayPal URL and complete the 5 USD PayPal payment only after the packet is ready; the funding URL is a payment path, not proof of payment."
                               },
     "npm_commands":  [
                          {
                              "command":  "npm fund",
-                             "purpose":  "Read package funding metadata; for the one-lead rescue, build the one-copy order packet before opening the exact PayPal URL."
+                             "purpose":  "Read package funding metadata; for the one-lead rescue, build the one-copy order packet before copying the after-packet PayPal URL."
                          },
                          {
                              "command":  "npm run fund",
