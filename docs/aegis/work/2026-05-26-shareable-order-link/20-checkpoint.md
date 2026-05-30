@@ -11440,3 +11440,55 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, Markdown/JSON/JSONL buyer indexes, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Funding Notes Packet Checkpoint
+
+Current todo:
+- Route the PayPal note and GitHub Sponsor button funding surfaces through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `PAYPAL_NOTE_FIRST.md`, `paypal-note-first.json`, `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.json`, `.github/FUNDING.yml`, and `sitemap.xml`.
+
+Completed todos:
+- Updated `PAYPAL_NOTE_FIRST.md` into a PayPal-note-after-packet route with a `Build Packet First` section before the PayPal URL.
+- Updated `paypal-note-first.json` to schema `softjunk-paypal-note-first-v3`, `updated=2026-05-30`, added one-copy order packet fields, and made `route_steps[0].step=build_one_copy_order_packet`.
+- Updated `SPONSOR_BUTTON_BUY.md` so Sponsor button URLs and Buyer Steps put the one-copy order packet before PayPal.
+- Updated `sponsor-button-buy.json` to `updated=2026-05-30`, added one-copy order packet fields, made `route_steps[0].step=build_one_copy_order_packet`, and made `funding_custom_urls[0]` the one-copy order packet.
+- Updated `.github/FUNDING.yml` so the first GitHub Sponsor custom URL is `fix-one-quiet-lead.html`, followed by PayPal, Send-5, and the root 5 USD buyer card.
+- Updated `sitemap.xml` to include `PAYPAL_NOTE_FIRST.md`, `paypal-note-first.json`, `SPONSOR_BUTTON_BUY.md`, and `sponsor-button-buy.json` with `lastmod=2026-05-30`.
+- Updated public Gists `fbd0764d1575076c27eaddb55042459a` and `8f30064ad27d3f9f71ae152fe46703a7` from the local Markdown/JSON files.
+- Committed and pushed product commit `bf0e499` to `main`.
+- Product Pages run `26674247387` completed successfully.
+- Live Pages/raw funding verification returned `live_note_sponsor_packet_ok commit=bf0e499 pages=5 funding_urls=4`.
+- Submitted the five changed product Pages URLs to IndexNow; API returned `indexnow_note_sponsor_packet_ok status=200 urls=5`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `note_sponsor_json_parse_ok files=2`.
+- `note_sponsor_packet_ok route0=build_one_copy_order_packet,build_one_copy_order_packet`.
+- `funding_packet_order_ok first=https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html urls=4`.
+- `note_sponsor_markers_ok files=5`.
+- `sitemap_note_sponsor_lastmod_ok urls=4`.
+- `json_parse_ok files=54`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- Gist verification showed packet-first markers in both PayPal note and Sponsor button Gist Markdown/JSON files.
+- GitHub Pages run `26674247387` success.
+- Live verification: `live_note_sponsor_packet_ok commit=bf0e499 pages=5 funding_urls=4`.
+- IndexNow: `indexnow_note_sponsor_packet_ok status=200 urls=5`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned PayPal-note, Sponsor-button, Funding.yml, and Gist mirror routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, `.github/FUNDING.yml`, public Gist mirrors, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.

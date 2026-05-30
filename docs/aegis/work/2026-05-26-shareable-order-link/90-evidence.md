@@ -8448,3 +8448,41 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_buyer_index_packet_ok status=200 urls=4` for the four changed product Pages URLs.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Funding Notes Packet Evidence
+
+- Audited PayPal note and Sponsor button surfaces after the central buyer index became packet-first.
+- Found that `PAYPAL_NOTE_FIRST.md`, `paypal-note-first.json`, `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.json`, and `.github/FUNDING.yml` still put direct PayPal payment before the one-copy order packet.
+- Updated product commit `bf0e499`:
+  - `PAYPAL_NOTE_FIRST.md` now presents itself as "PayPal Note After Packet" and adds a `Build Packet First` section before the PayPal URL.
+  - `paypal-note-first.json` now uses schema `softjunk-paypal-note-first-v3`, `updated=2026-05-30`, top-level one-copy order packet URLs, `before_payment_action`, and `route_steps[0].step=build_one_copy_order_packet`.
+  - `SPONSOR_BUTTON_BUY.md` now documents Sponsor button URLs and Buyer Steps in packet-first order.
+  - `sponsor-button-buy.json` now has `updated=2026-05-30`, top-level one-copy order packet URLs, `before_payment_action`, `route_steps[0].step=build_one_copy_order_packet`, `funding_config_first_url`, and packet-first `funding_custom_urls`.
+  - `.github/FUNDING.yml` now lists `fix-one-quiet-lead.html` as the first GitHub Sponsor custom URL, followed by PayPal, Send-5, and the root 5 USD buyer card.
+  - `sitemap.xml` now includes the PayPal note and Sponsor button Markdown/JSON Pages URLs with `lastmod=2026-05-30`.
+- Local verification:
+  - `note_sponsor_json_parse_ok files=2`.
+  - `note_sponsor_packet_ok route0=build_one_copy_order_packet,build_one_copy_order_packet`.
+  - `funding_packet_order_ok first=https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html urls=4`.
+  - `note_sponsor_markers_ok files=5`.
+  - `sitemap_note_sponsor_lastmod_ok urls=4`.
+  - `json_parse_ok files=54`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Public Gist mirrors updated and verified:
+  - Gist `fbd0764d1575076c27eaddb55042459a` files `PAYPAL_NOTE_FIRST.md` and `paypal-note-first.json` contain `PayPal Note After Packet`, `softjunk-paypal-note-first-v3`, `build_one_copy_order_packet`, `fix-one-quiet-lead`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+  - Gist `8f30064ad27d3f9f71ae152fe46703a7` files `SPONSOR_BUTTON_BUY.md` and `sponsor-button-buy.json` contain `build_one_copy_order_packet`, `funding_config_first_url`, `fix-one-quiet-lead`, and `PAYPAL_PAYMENT_VERIFIED=true`.
+- Deployment:
+  - Product commit `bf0e499` pushed to `main`.
+  - Product Pages run `26674247387` completed successfully.
+- Live verification returned `live_note_sponsor_packet_ok commit=bf0e499 pages=5 funding_urls=4` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/PAYPAL_NOTE_FIRST.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/paypal-note-first.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/SPONSOR_BUTTON_BUY.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://raw.githubusercontent.com/trungcodeer/softjunk-lead-kit/bf0e499/.github/FUNDING.yml`.
+- IndexNow returned `indexnow_note_sponsor_packet_ok status=200 urls=5` for the five changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
