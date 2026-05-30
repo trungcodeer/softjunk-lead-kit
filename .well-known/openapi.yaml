@@ -727,7 +727,7 @@ paths:
       summary: Get machine-readable SoftJunk offers.
       responses:
         "200":
-          description: Offer metadata with one-copy order packet before the direct PayPal payment URL.
+          description: Offer metadata with one-copy order packet before the copy-only after-packet PayPal URL.
           content:
             application/json:
               schema:
@@ -738,7 +738,29 @@ paths:
       summary: Get product feed for the $5 follow-up offer.
       responses:
         "200":
-          description: Product feed with one-copy order packet, direct PayPal payment, delivery, and free tool links.
+          description: Product feed with one-copy order packet, copy-only after-packet PayPal URL, delivery, and free tool links.
+          content:
+            application/json:
+              schema:
+                type: object
+  /share-kit.html:
+    get:
+      operationId: openShareKit
+      summary: Open the packet-first share kit.
+      responses:
+        "200":
+          description: Copy-ready posts, email pitch, AI handoff text, share links, no-clone checkout proof, and copy-only after-packet PayPal URL controls.
+          content:
+            text/html:
+              schema:
+                type: string
+  /share-kit.json:
+    get:
+      operationId: getShareKit
+      summary: Get the packet-first share kit JSON.
+      responses:
+        "200":
+          description: Machine-readable share kit with packet-first copy, no-clone checkout proof, copy-only after-packet PayPal URL, and seller-side verification gate.
           content:
             application/json:
               schema:

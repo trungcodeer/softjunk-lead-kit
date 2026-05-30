@@ -747,6 +747,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - RSS feed: https://trungcodeer.github.io/softjunk-lead-kit/feed.xml
 - Share kit: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html
 - Share kit JSON: https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
+- Share kit rule: packet-first copy and copy-only after-packet PayPal URL handoff.
 - Well-known offer: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json
 - OpenAPI discovery: https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml
 

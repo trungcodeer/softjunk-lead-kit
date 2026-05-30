@@ -488,6 +488,7 @@
     "openapi_yaml": "https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml",
     "share_kit": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html",
     "share_kit_json": "https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json",
+    "share_kit_rule": "Share-kit posts and buy text are packet-first and copy-only for the after-packet PayPal URL: build the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL.",
     "llms_txt": "https://trungcodeer.github.io/softjunk-lead-kit/llms.txt",
     "rss_feed": "https://trungcodeer.github.io/softjunk-lead-kit/feed.xml",
     "buyer_agent_relay": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",

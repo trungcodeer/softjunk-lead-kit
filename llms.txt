@@ -761,6 +761,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/share-kit.html
 Share kit JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/share-kit.json
 
+Share kit rule:
+Packet-first copy and copy-only after-packet PayPal URL handoff.
+
 Niche pages:
 - Fix one quiet lead: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - Fix one quiet lead JSON: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
