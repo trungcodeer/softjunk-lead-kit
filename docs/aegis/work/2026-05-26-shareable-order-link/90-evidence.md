@@ -8352,3 +8352,36 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_agent_checkout_router_packet_ok status=200 urls=4` for the four changed product Pages URLs.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Core Checkout Packet Evidence
+
+- Audited core checkout surfaces after the agent checkout router was packet-first.
+- Found that `checkout.html`, `checkout.json`, and `checkout.txt` still described the buyer route primarily as note generation, no-clone proof, and direct PayPal payment without making the one-copy order packet the first checkout action.
+- Updated product commit `0160ee1`:
+  - `checkout.html` now puts `Build order packet` before AI Deal Desk and PayPal, adds packet JSON/text alternates, exposes packet links in the order summary, and changes PayPal CTAs to post-packet wording.
+  - `checkout.json` now has `updated=2026-05-30`, top-level one-copy order packet URLs, `before_payment_action`, packet-first payment instructions, and `agent_flow[0].step=build_one_copy_order_packet`.
+  - `checkout.txt` now starts the recommended flow with the one-copy order packet before note generation, no-clone proof, exact 5 USD PayPal payment, and after-payment handoff.
+  - `sitemap.xml` lastmod values were updated to `2026-05-30` for `checkout.html`, `checkout.json`, and `checkout.txt`.
+- Local verification:
+  - `checkout_json_ok`.
+  - `checkout_jsonld_ok scripts=2`.
+  - `checkout_accessibility_structure_ok controls=5`.
+  - `sitemap_xml_ok`.
+  - `sitemap_checkout_lastmod_ok`.
+  - `checkout_packet_first_markers_ok files=3`.
+  - `json_parse_ok files=56`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - Playwright was not available locally (`playwright_missing`), so this slice used static structure checks and live marker verification instead of screenshots.
+- Deployment:
+  - Product commit `0160ee1` pushed to `main`.
+  - Product Pages run `26673598011` completed successfully.
+- Live verification returned `live_core_checkout_packet_ok commit=0160ee1 urls=4` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_core_checkout_packet_ok status=200 urls=4` for the four changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

@@ -11295,3 +11295,53 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, agent checkout router JSON/Markdown/text, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Core Checkout Packet Checkpoint
+
+Current todo:
+- Route the core human/agent checkout handoff through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `checkout.html`, `checkout.json`, `checkout.txt`, and `sitemap.xml`.
+
+Completed todos:
+- Updated `checkout.html` so the page headline, primary CTA, order summary, note builder flow, JSON-LD, and footer put the one-copy order packet before PayPal.
+- Updated `checkout.json` to `updated=2026-05-30`, added one-copy order packet HTML/JSON/TXT URLs, added `before_payment_action`, and made `agent_flow[0].step=build_one_copy_order_packet`.
+- Updated `checkout.txt` so the recommended flow starts with the one-copy order packet before note generation, no-clone proof, and PayPal.
+- Updated `sitemap.xml` lastmod values to `2026-05-30` for the three checkout URLs.
+- Committed and pushed product commit `0160ee1` to `main`.
+- Product Pages run `26673598011` completed successfully.
+- Live Pages verification returned `live_core_checkout_packet_ok commit=0160ee1 urls=4`.
+- Submitted the four changed product Pages URLs to IndexNow; API returned `indexnow_core_checkout_packet_ok status=200 urls=4`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `checkout_json_ok`.
+- `checkout_jsonld_ok scripts=2`.
+- `checkout_accessibility_structure_ok controls=5`.
+- `sitemap_xml_ok`.
+- `sitemap_checkout_lastmod_ok`.
+- `checkout_packet_first_markers_ok files=3`.
+- `json_parse_ok files=56`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26673598011` success.
+- Live verification: `live_core_checkout_packet_ok commit=0160ee1 urls=4`.
+- IndexNow: `indexnow_core_checkout_packet_ok status=200 urls=4`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+- Playwright was not available locally (`playwright_missing`), so this slice used static HTML/accessibility structure checks plus live marker verification rather than a browser screenshot.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the owned core checkout handoff without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, checkout HTML/JSON/text, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
