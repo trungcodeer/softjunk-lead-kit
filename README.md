@@ -641,7 +641,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Free sample paid route: download the sample, then build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff.
 - Download sample ZIP: https://trungcodeer.github.io/softjunk-lead-kit/softjunk-free-sample-pack.zip
 - Template library: https://trungcodeer.github.io/softjunk-lead-kit/lead-follow-up-templates.html
-- Niche template paid route: for dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then open PayPal after the packet is ready.
+- Niche template paid route: for the dental template, build the one-copy order packet first, then copy the after-packet PayPal URL when the packet and note are ready. Other niche templates remain packet-first before the after-packet PayPal handoff.
 - Before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
 - Agent order packet-first route: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html now builds the one-copy order packet before the after-packet PayPal handoff.
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html

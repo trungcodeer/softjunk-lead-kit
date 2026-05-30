@@ -780,7 +780,7 @@ Niche pages:
 - Exact-intent checkout route: answer first, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then open PayPal after the packet is ready.
 - Exact-intent sample checkout rule: estimate follow-up, price-objection reply, no-show follow-up, and quiet DM follow-up build the one-copy order packet before after-packet PayPal and preserve the PAYPAL_PAYMENT_VERIFIED=true completion gate.
 - Lead follow-up before and after examples: https://trungcodeer.github.io/softjunk-lead-kit/follow-up-examples.html
-- Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html
+- Dental appointment follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/dental-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
 - Appointment setting follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/appointment-setting-follow-up.html
 - Med spa follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/med-spa-follow-up.html
 - Tutoring follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/tutoring-follow-up.html
@@ -789,7 +789,7 @@ Niche pages:
 - Real estate lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/real-estate-lead-follow-up.html
 - Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html
 - Roofing estimate packet-first route: roofing-estimate-rescue, roofing-estimate-generator, and roofing-estimate-follow-up build the one-copy order packet before the after-packet PayPal handoff.
-- Niche template paid route: for dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then open PayPal after the packet is ready. The direct PayPal URL remains https://paypal.me/softjunk/5USD only as the after-packet handoff, and fulfillment is not proven until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+- Niche template paid route: for the dental template, build the one-copy order packet first, then copy the after-packet PayPal URL when the packet and note are ready. Appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates remain packet-first before the after-packet PayPal handoff. Fulfillment is not proven until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 - Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
 - Missed call paid route: build the one-copy order packet before the after-packet PayPal handoff.
