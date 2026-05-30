@@ -188,7 +188,7 @@ Use this first when the buyer is a dental office with one missed new-patient cal
 5. Public dental buyer discussion: https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
 6. Open the free dental preview: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html?business=Dental%20office&service=new%20patient%20appointment&source=Missed%20call&tone=Reassuring&blocker=scheduling%20and%20urgency&next=offer%20the%20earliest%20appointment%20window&value=%24600&urgency=Same%20day&context=The%20caller%20asked%20about%20a%20tooth%20pain%20appointment%20or%20new%20patient%20visit%20and%20did%20not%20answer%20the%20callback&ready=1#preview-tool
 7. Build the one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
-8. Pay exactly 5 USD through PayPal after the packet is ready: https://paypal.me/softjunk/5USD
+8. Copy the after-packet PayPal URL for exactly 5 USD after the packet and note are ready: https://paypal.me/softjunk/5USD
 9. After payment, submit non-sensitive order details: https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml
 
 Do not post patient names, phone numbers, emails, appointment dates, dental symptoms, treatment details, insurance IDs, transaction IDs, payer email, PayPal details, or private lead data. Delivery starts only after seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
@@ -404,7 +404,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/12
 Public dental buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
 
-Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+Packet-first handoff: build the one-copy order packet before copying the after-packet PayPal URL.
 
 Med spa buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html
