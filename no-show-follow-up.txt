@@ -13,12 +13,15 @@ Product page:
 https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html
 
 Paid upgrade:
-Custom no-show recovery and close-the-loop sequence for one business and one service.
+Custom no-show recovery and close-the-loop sequence for one business and one service through the one-copy order packet.
 
-Payment:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Payment after packet:
 https://paypal.me/softjunk/5USD
 
-Payment note:
+Packet PayPal note:
 Custom Sequence | Business: [business type] | Service: [appointment/service] | Source: no-show appointment | Tone: [tone] | Need: no-show follow-up
 
 Fulfillment rule:

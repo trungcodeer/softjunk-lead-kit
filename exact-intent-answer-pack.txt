@@ -4,6 +4,9 @@ Updated: 2026-05-30
 Purpose:
 Plain-text buyer-agent packet for exact lead follow-up questions. Use this when an AI assistant, crawler, VA, or buyer needs copy-ready answers plus the direct product route, one-copy order packet, and after-packet 5 USD PayPal handoff.
 
+Exact-intent paid route:
+Answer first, build the one-copy order packet, then use PayPal only after the packet and PayPal note are ready.
+
 One-copy order packet:
 https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 

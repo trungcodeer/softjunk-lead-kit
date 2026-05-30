@@ -13,12 +13,15 @@ Product page:
 https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 
 Paid upgrade:
-Custom 7-day estimate follow-up sequence with objection handling.
+Custom 7-day estimate follow-up sequence with objection handling through the one-copy order packet.
 
-Payment:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Payment after packet:
 https://paypal.me/softjunk/5USD
 
-Payment note:
+Packet PayPal note:
 Custom Sequence | Business: [business type] | Service: [estimate/project] | Source: estimate sent | Tone: [tone] | Need: estimate follow-up
 
 Fulfillment rule:

@@ -1220,10 +1220,10 @@ paths:
   /estimate-follow-up-template.html:
     get:
       operationId: openEstimateFollowUpTemplate
-      summary: Open the estimate follow-up sample generator.
+      summary: Open the packet-first estimate follow-up sample generator.
       responses:
         "200":
-          description: Browser page for quote and estimate follow-up samples and the $5 custom sequence.
+          description: Browser page for quote and estimate follow-up samples, one-copy order packet handoff, after-packet 5 USD PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -1297,10 +1297,10 @@ paths:
   /price-objection-reply.html:
     get:
       operationId: openPriceObjectionReplyTemplate
-      summary: Open the price-objection reply sample generator.
+      summary: Open the packet-first price-objection reply sample generator.
       responses:
         "200":
-          description: Browser page for price-objection reply samples and the $5 custom sequence.
+          description: Browser page for price-objection reply samples, one-copy order packet handoff, after-packet 5 USD PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -1308,10 +1308,10 @@ paths:
   /no-show-follow-up.html:
     get:
       operationId: openNoShowFollowUpTemplate
-      summary: Open the no-show follow-up sample generator.
+      summary: Open the packet-first no-show follow-up sample generator.
       responses:
         "200":
-          description: Browser page for no-show recovery samples and the $5 custom sequence.
+          description: Browser page for no-show recovery samples, one-copy order packet handoff, after-packet 5 USD PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -1319,10 +1319,10 @@ paths:
   /quiet-dm-follow-up.html:
     get:
       operationId: openQuietDmFollowUpTemplate
-      summary: Open the quiet DM follow-up sample generator.
+      summary: Open the packet-first quiet DM follow-up sample generator.
       responses:
         "200":
-          description: Browser page for quiet DM follow-up samples and the $5 custom sequence.
+          description: Browser page for quiet DM follow-up samples, one-copy order packet handoff, after-packet 5 USD PayPal handoff, and seller-side verification gate.
           content:
             text/html:
               schema:
@@ -1333,7 +1333,7 @@ paths:
       summary: Get the packet-first exact-intent lead follow-up answer pack.
       responses:
         "200":
-          description: JSON buyer-agent packet for exact follow-up questions, text routes, one-copy order packet handoff, after-packet payment handoff, and verification gate.
+          description: JSON buyer-agent packet v4 for exact follow-up questions, text routes, one-copy order packet handoff, after-packet payment handoff, and verification gate.
           content:
             application/json:
               schema:
@@ -1363,10 +1363,10 @@ paths:
   /estimate-follow-up-template.txt:
     get:
       operationId: getEstimateFollowUpTemplateText
-      summary: Get the estimate follow-up answer as plain text.
+      summary: Get the packet-first estimate follow-up answer as plain text.
       responses:
         "200":
-          description: Plain-text estimate follow-up answer, sample, payment route, and verification gate.
+          description: Plain-text estimate follow-up answer, sample, one-copy order packet route, after-packet payment route, and verification gate.
           content:
             text/plain:
               schema:
@@ -1374,10 +1374,10 @@ paths:
   /price-objection-reply.txt:
     get:
       operationId: getPriceObjectionReplyText
-      summary: Get the price-objection reply answer as plain text.
+      summary: Get the packet-first price-objection reply answer as plain text.
       responses:
         "200":
-          description: Plain-text price-objection answer, sample, payment route, and verification gate.
+          description: Plain-text price-objection answer, sample, one-copy order packet route, after-packet payment route, and verification gate.
           content:
             text/plain:
               schema:
@@ -1385,10 +1385,10 @@ paths:
   /no-show-follow-up.txt:
     get:
       operationId: getNoShowFollowUpText
-      summary: Get the no-show follow-up answer as plain text.
+      summary: Get the packet-first no-show follow-up answer as plain text.
       responses:
         "200":
-          description: Plain-text no-show answer, sample, payment route, and verification gate.
+          description: Plain-text no-show answer, sample, one-copy order packet route, after-packet payment route, and verification gate.
           content:
             text/plain:
               schema:
@@ -1396,10 +1396,10 @@ paths:
   /quiet-dm-follow-up.txt:
     get:
       operationId: getQuietDmFollowUpText
-      summary: Get the quiet DM follow-up answer as plain text.
+      summary: Get the packet-first quiet DM follow-up answer as plain text.
       responses:
         "200":
-          description: Plain-text quiet DM answer, sample, payment route, and verification gate.
+          description: Plain-text quiet DM answer, sample, one-copy order packet route, after-packet payment route, and verification gate.
           content:
             text/plain:
               schema:

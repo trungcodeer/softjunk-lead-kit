@@ -627,6 +627,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Exact-intent answer pack text: https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt
 - Exact-intent answer pack Gist: https://gist.github.com/trungcodeer/a40d54d6e66cdb58f861f2f9637a3e35
 - Exact-intent checkout route: answer first, build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, then open PayPal after the packet is ready.
+- Exact-intent sample checkout rule: estimate follow-up, price-objection reply, no-show follow-up, and quiet DM follow-up build the one-copy order packet before after-packet PayPal and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
 - GitHub-native answer brief: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/LEAD_FOLLOW_UP_ANSWERS.md
 - Public Gist answer brief: https://gist.github.com/trungcodeer/78f709d9550e952dc6c0595660ca643a
 - Free 3-message preview: https://trungcodeer.github.io/softjunk-lead-kit/free-preview.html
@@ -640,6 +641,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
 - Missed call paid route: build the one-copy order packet before the after-packet PayPal handoff.
+- Exact-intent sample paid route: build the one-copy order packet before the after-packet PayPal handoff for estimate, price-objection, no-show, and quiet DM samples.
 - Estimate follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 - Estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt
 - Price-objection reply sample: https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html

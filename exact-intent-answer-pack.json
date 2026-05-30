@@ -1,5 +1,5 @@
 {
-  "schema_version": "softjunk-exact-intent-answer-pack-v3",
+  "schema_version": "softjunk-exact-intent-answer-pack-v4",
   "updated": "2026-05-30",
   "name": "SoftJunk Exact-Intent Answer Pack",
   "purpose": "Buyer-agent packet for exact lead follow-up questions with copy-ready answers, product routes, text routes, one-copy order packet handoff, after-packet payment handoff, and verification gate.",
@@ -48,9 +48,9 @@
   },
   "fastest_buyer_path": [
     "Answer the exact lead follow-up question with the relevant free sample first.",
+    "Build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.",
     "If the buyer wants the custom 7-day sequence, verify checkout without cloning: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json.",
     "Compare current release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163 and SHA-256 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256.",
-    "Build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.",
     "Pay exactly 5 USD at https://paypal.me/softjunk/5USD after the packet and PayPal note are ready.",
     "Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
   ],
@@ -75,6 +75,10 @@
       "sample": "Hi [Name], checking that you saw the estimate for [project]. If the scope looks right, I can send the next step. If price or timing is the blocker, reply with that and I will adjust the path.",
       "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt",
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "direct_payment_url": "https://paypal.me/softjunk/5USD",
+      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
       "payment_note": "Custom Sequence | Business: [business type] | Service: [estimate/project] | Source: estimate sent | Tone: [tone] | Need: estimate follow-up"
     },
     {
@@ -84,6 +88,10 @@
       "sample": "Totally fair to compare options. If budget is the main issue, I can show the smallest useful version first or explain what is included so you can decide.",
       "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.html",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/price-objection-reply.txt",
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "direct_payment_url": "https://paypal.me/softjunk/5USD",
+      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
       "payment_note": "Custom Sequence | Business: [business type] | Service: [service] | Source: price objection | Tone: [tone] | Need: price-objection follow-up"
     },
     {
@@ -93,6 +101,10 @@
       "sample": "Hi [Name], looks like today got busy. Do you want me to send another time for [service], or should I close this for now?",
       "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.html",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/no-show-follow-up.txt",
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "direct_payment_url": "https://paypal.me/softjunk/5USD",
+      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
       "payment_note": "Custom Sequence | Business: [business type] | Service: [appointment/service] | Source: no-show appointment | Tone: [tone] | Need: no-show follow-up"
     },
     {
@@ -102,6 +114,10 @@
       "sample": "Hi [Name], quick follow-up on [service]. If you are still interested, reply with \"times\" and I will send the easiest next step. If not, no problem.",
       "product_url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html",
       "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.txt",
+      "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+      "direct_payment_url": "https://paypal.me/softjunk/5USD",
+      "before_payment_action": "Build or inspect the one-copy order packet before opening PayPal.",
       "payment_note": "Custom Sequence | Business: [business type] | Service: [service] | Source: quiet DM | Tone: [tone] | Need: quiet DM follow-up"
     }
   ],

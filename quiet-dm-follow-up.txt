@@ -13,12 +13,15 @@ Product page:
 https://trungcodeer.github.io/softjunk-lead-kit/quiet-dm-follow-up.html
 
 Paid upgrade:
-Custom DM follow-up sequence for one business and one service.
+Custom DM follow-up sequence for one business and one service through the one-copy order packet.
 
-Payment:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Payment after packet:
 https://paypal.me/softjunk/5USD
 
-Payment note:
+Packet PayPal note:
 Custom Sequence | Business: [business type] | Service: [service] | Source: quiet DM | Tone: [tone] | Need: quiet DM follow-up
 
 Fulfillment rule:
