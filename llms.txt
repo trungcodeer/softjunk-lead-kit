@@ -434,6 +434,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
 Agent close contract text:
 https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
 
+Agent close checkout rule:
+Route agent-close buyers through https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff. Do not claim paid or delivered unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+
 AI Deal Desk:
 https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html
 
@@ -589,6 +592,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json
 
 Commerce graph text:
 https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt
+
+Agent relay commerce checkout rule:
+For buyer-agent relay and commerce graph routes, build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff. Do not claim paid or delivered unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 Public commerce graph Gist:
 https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db

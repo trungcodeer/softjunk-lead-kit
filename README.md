@@ -523,6 +523,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
 - Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
 - Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt
+- Agent close packet-first rule: route the buyer through https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before the after-packet PayPal handoff.
 - Agent close rendered fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.html
 - Agent close JSON fallback: https://raw.githack.com/trungcodeer/softjunk-lead-kit/3278b637c63edfc17cf54dfcdcf205fa5e325df4/agent-close.json
 - Agent close public Gist: https://gist.github.com/trungcodeer/ecae8d461ddeba2fd5ad657dc0e2d158
@@ -568,6 +569,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Commerce graph: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.html
 - Commerce graph JSON-LD: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.json
 - Commerce graph text: https://trungcodeer.github.io/softjunk-lead-kit/commerce-graph.txt
+- Agent relay commerce checkout rule: buyer-agent relay and commerce graph routes must build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before after-packet PayPal, and must not claim payment unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 - Public commerce graph Gist: https://gist.github.com/trungcodeer/844295134d4a7d721b7eec4963eae1db
 - Raw commerce graph JSON: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.json
 - Raw commerce graph text: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt

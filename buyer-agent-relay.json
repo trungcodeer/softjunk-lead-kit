@@ -1,6 +1,6 @@
 {
-  "schema_version": "softjunk-buyer-agent-relay-v3",
-  "updated": "2026-05-29",
+  "schema_version": "softjunk-buyer-agent-relay-v4",
+  "updated": "2026-05-30",
   "name": "SoftJunk Buyer-Agent Prompt Relay",
   "purpose": "A copy-ready prompt and route packet for AI assistants, VAs, and buyer-agents that need to decide whether a real lead follow-up problem should be routed to the SoftJunk one-copy order packet before the 5 USD PayPal checkout.",
   "canonical_url": "https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html",
@@ -13,6 +13,8 @@
   "root_one_lead_rescue_json_url": "https://trungcodeer.github.io/rescue.json",
   "root_one_lead_rescue_text_url": "https://trungcodeer.github.io/rescue.txt",
   "one_lead_rescue_order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
+  "direct_payment_url": "https://paypal.me/softjunk/5USD",
+  "payment_after_packet_url": "https://paypal.me/softjunk/5USD",
   "payment_url": "https://paypal.me/softjunk/5USD",
   "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
   "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",

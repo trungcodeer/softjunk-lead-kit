@@ -276,7 +276,7 @@ paths:
       summary: Open the SoftJunk agent close contract.
       responses:
         "200":
-          description: One-read buyer-agent close contract with fit rules, root rescue route, PayPal URL, order form, privacy boundary, and verification gate.
+          description: One-read buyer-agent close contract with fit rules, root rescue route, one-copy order packet before after-packet PayPal, order form, privacy boundary, and verification gate.
           content:
             text/html:
               schema:
@@ -287,7 +287,7 @@ paths:
       summary: Get the SoftJunk agent close contract JSON.
       responses:
         "200":
-          description: Machine-readable close contract for routing a qualified quiet-lead buyer to root rescue before exact 5 USD PayPal payment.
+          description: Machine-readable close contract for routing a qualified quiet-lead buyer to root rescue and the one-copy order packet before exact after-packet 5 USD PayPal payment.
           content:
             application/json:
               schema:
@@ -298,7 +298,7 @@ paths:
       summary: Get the SoftJunk agent close contract text.
       responses:
         "200":
-          description: Plain-text buyer-agent instruction with fit rules, root rescue, PayPal, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Plain-text buyer-agent instruction with fit rules, root rescue, one-copy order packet, after-packet PayPal, order form, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             text/plain:
               schema:
@@ -309,7 +309,7 @@ paths:
       summary: Open the SoftJunk buyer-agent prompt relay page.
       responses:
         "200":
-          description: Copy-ready relay prompt that qualifies fit, routes to the commerce graph, root one-lead rescue, exact PayPal URL, and verification gate.
+          description: Copy-ready relay prompt that qualifies fit, routes to the commerce graph, root one-lead rescue, one-copy order packet, exact after-packet PayPal URL, and verification gate.
           content:
             text/html:
               schema:
@@ -320,7 +320,7 @@ paths:
       summary: Get the SoftJunk buyer-agent relay JSON.
       responses:
         "200":
-          description: Machine-readable prompt relay with fit rules, route steps, PayPal URL, and verification gate.
+          description: Machine-readable prompt relay with fit rules, route steps, one-copy order packet, after-packet PayPal URL, and verification gate.
           content:
             application/json:
               schema:
@@ -331,7 +331,7 @@ paths:
       summary: Get the SoftJunk buyer-agent relay text.
       responses:
         "200":
-          description: Plain-text copy-ready prompt for routing a relevant lead follow-up buyer to root one-lead rescue before exact 5 USD PayPal payment.
+          description: Plain-text copy-ready prompt for routing a relevant lead follow-up buyer to root one-lead rescue and the one-copy order packet before exact after-packet 5 USD PayPal payment.
           content:
             text/plain:
               schema:
@@ -364,7 +364,7 @@ paths:
       summary: Get the SoftJunk commerce graph text handoff.
       responses:
         "200":
-          description: Plain-text buyer-agent action path from relevant lead follow-up need to root one-lead rescue and exact 5 USD PayPal payment.
+          description: Plain-text buyer-agent action path from relevant lead follow-up need to root one-lead rescue, one-copy order packet, and exact after-packet 5 USD PayPal payment.
           content:
             text/plain:
               schema:
