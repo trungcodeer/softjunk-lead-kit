@@ -612,6 +612,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - AI follow-up prompt text: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt
 - Public AI follow-up prompt Gist: https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
+- AI handoff paid route: AI Deal Desk, custom sequence gallery, and shareable order link now build the one-copy order packet before the after-packet PayPal handoff.
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
 - AI agent buyer packet: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt
@@ -669,6 +670,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Custom sequence gallery: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
 - Custom sequence gallery JSON: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 - Custom sequence gallery text: https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
+- AI handoff checkout rule: `ai-deal-desk`, `custom-sequence-gallery`, and `shareable-order-link` expose `fix-one-quiet-lead.html` before the direct after-packet payment URL, and preserve the `PAYPAL_PAYMENT_VERIFIED=true` completion gate.
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
@@ -684,6 +686,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 - Shareable order link JSON: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json
 - Shareable order link text: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt
+- Shareable order link paid route: generate the URL and note, build the one-copy order packet, then use PayPal only after the packet is ready.
 - Public shareable order link Gist: https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 - AI agent buyer packet JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.json
 - AI agent buyer packet text: https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-packet.txt

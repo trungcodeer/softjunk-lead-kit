@@ -9,10 +9,14 @@ https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
 
 The page creates:
 - A shareable order URL with non-sensitive business context.
+- A one-copy order packet handoff before payment.
 - A PayPal note for matching the $5 payment to the custom sequence.
 - A buyer handoff message with payment and after-payment links.
 
-Pay exactly 5 USD:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly 5 USD after the packet:
 https://paypal.me/softjunk/5USD
 
 PayPal note template:

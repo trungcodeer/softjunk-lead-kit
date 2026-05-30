@@ -443,6 +443,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json
 AI Deal Desk text:
 https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt
 
+AI Deal Desk paid route:
+Generate the buyer handoff, build the one-copy order packet, then use PayPal only after the packet is ready.
+
 AI Deal Desk public Gist:
 https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 
@@ -469,6 +472,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json
 
 Shareable order link text:
 https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt
+
+Shareable order link paid route:
+Generate the URL and PayPal note, build the one-copy order packet, then use PayPal after the packet.
 
 Public shareable order link Gist:
 https://gist.github.com/trungcodeer/423bb45dd4b98d552f4db6ed11f399fb
@@ -553,6 +559,9 @@ https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.json
 
 Custom sequence gallery text:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.txt
+
+AI handoff checkout rule:
+For AI Deal Desk, custom sequence gallery, and shareable order link, use https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html as the one-copy order packet before the after-packet PayPal handoff. Do not claim paid or delivered unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 
 Buyer-agent prompt relay:
 https://trungcodeer.github.io/softjunk-lead-kit/buyer-agent-relay.html
@@ -831,8 +840,8 @@ PayPal notes:
 - Instant fulfillment packet: open https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_PACKET.md to inspect the delivery shell before paying. It is not proof of payment.
 - Digital kit: Lead Follow-Up Kit
 - Custom sequence: fill the free generator, click Copy PayPal note, and paste that note into PayPal before paying.
-- AI Deal Desk: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready, generate the buyer decision and PayPal note, and paste that note into PayPal before paying.
-- Shareable order link: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when order context is ready, generate the URL and PayPal note, and paste that note into PayPal before paying.
+- AI Deal Desk: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html when non-sensitive lead context is ready, generate the buyer decision and PayPal note, build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, and paste that note into PayPal only after the packet.
+- Shareable order link: open https://trungcodeer.github.io/rescue/ first for one quiet lead, then use https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html when order context is ready, generate the URL and PayPal note, build https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html, and paste that note into PayPal only after the packet.
 - Agent order: open https://trungcodeer.github.io/rescue/ first, then use the AI agent order path to generate the PayPal note, paste it into PayPal, pay exactly 5 USD, and submit the one-lead rescue order form.
 - Agent close contract: use https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json when an AI assistant needs a one-read fit rule, route, exact 5 USD PayPal URL, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate before recommending payment.
 - Buyer index: use https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json to choose the shortest path for one quiet lead, weak follow-up rewrite, answer lookup, custom sequence, or direct checkout.

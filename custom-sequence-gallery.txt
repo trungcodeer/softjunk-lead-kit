@@ -1,6 +1,6 @@
 SoftJunk Custom Sequence Gallery
 
-Open prefilled custom sequence previews for common quiet-lead situations, then pay exactly 5 USD for the full 7-day custom sequence.
+Open prefilled custom sequence previews for common quiet-lead situations, then build the one-copy order packet before paying exactly 5 USD for the full 7-day custom sequence.
 
 Gallery:
 https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-gallery.html
@@ -14,7 +14,10 @@ https://trungcodeer.github.io/softjunk-lead-kit/custom-sequence-preview.html
 Shareable order link:
 https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
 
-PayPal:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+After-packet PayPal:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
@@ -29,7 +32,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/sof
 SHA-256:
 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 
-Expected checkout: 5.00 USD to https://paypal.me/softjunk/5USD.
+Expected after-packet checkout: 5.00 USD to https://paypal.me/softjunk/5USD.
 Success signal: PAYPAL_PAYMENT_VERIFIED=true.
 
 Ready scenarios:
@@ -46,8 +49,9 @@ Fast buyer path:
 1. Open a scenario from the gallery.
 2. Read the generated Day 0, Day 1, and Day 3 preview.
 3. Copy the generated PayPal note.
-4. Pay exactly 5 USD through https://paypal.me/softjunk/5USD.
-5. Open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html.
+4. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html.
+5. Pay exactly 5 USD through https://paypal.me/softjunk/5USD after the packet.
+6. Open https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html.
 
 Payment gate:
 Do not claim paid, started, delivered, fulfilled, complete, received, or stopped unless seller-side PayPal evidence exists, the API verifier returns PAYPAL_PAYMENT_VERIFIED=true, or a trusted seller-side PayPal CSV export returns PAYPAL_PAYMENT_VERIFIED=true source=csv.

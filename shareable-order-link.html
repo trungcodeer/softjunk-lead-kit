@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Shareable SoftJunk Order Link | $5 PayPal Lead Follow-Up</title>
-  <meta name="description" content="Create a shareable SoftJunk order link, PayPal note, and buyer handoff for a $5 custom lead follow-up sequence.">
+  <title>Shareable SoftJunk Order Link | Packet-First $5 Lead Follow-Up</title>
+  <meta name="description" content="Create a shareable SoftJunk order link, one-copy order packet, PayPal note, and buyer handoff for a $5 custom lead follow-up sequence.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="Shareable SoftJunk Order Link">
-  <meta property="og:description" content="Turn lead details into a copyable PayPal note, buyer handoff, and $5 SoftJunk custom sequence link.">
+  <meta property="og:description" content="Turn lead details into a copyable PayPal note, one-copy order packet, buyer handoff, and $5 SoftJunk custom sequence link.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shareable SoftJunk Order Link">
-  <meta name="twitter:description" content="Create a shareable $5 custom lead follow-up sequence handoff with a PayPal note.">
+  <meta name="twitter:description" content="Create a shareable packet-first $5 custom lead follow-up sequence handoff with a PayPal note.">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.json" title="Shareable order link JSON">
   <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.txt" title="Shareable order link text">
@@ -28,15 +28,21 @@
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html",
           "applicationCategory": "BusinessApplication",
           "operatingSystem": "Any",
-          "description": "A browser tool for creating a shareable order URL and PayPal note for the SoftJunk 5 USD custom lead follow-up sequence."
+          "description": "A browser tool for creating a shareable order URL, one-copy order packet, and PayPal note for the SoftJunk 5 USD custom lead follow-up sequence."
         },
         {
           "@type": "Offer",
           "name": "Custom 7-Day Lead Follow-Up Sequence",
           "price": "5.00",
           "priceCurrency": "USD",
-          "url": "https://paypal.me/softjunk/5USD",
-          "availability": "https://schema.org/InStock"
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+          "availability": "https://schema.org/InStock",
+          "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+          "paymentUrl": "https://paypal.me/softjunk/5USD",
+          "potentialAction": {
+            "@type": "BuyAction",
+            "target": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html"
+          }
         }
       ]
     }
@@ -425,7 +431,7 @@
         <a href="ai-follow-up-prompt.html">AI prompt</a>
         <a href="agent-buyer-packet.json">Agent packet</a>
         <a href="lead-recovery-audit.html">Audit</a>
-        <a href="pay.html">Pay $5</a>
+        <a href="fix-one-quiet-lead.html">Order packet</a>
       </div>
     </nav>
   </header>
@@ -433,14 +439,14 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div>
-        <h1 id="page-title">Create a shareable $5 order link with the lead context already inside.</h1>
-        <p class="lead">For AI assistants, VAs, and operators: turn a buyer's lead details into a URL, PayPal note, and handoff message for the SoftJunk custom 7-day follow-up sequence.</p>
+        <h1 id="page-title">Create a shareable packet-first order link with the lead context already inside.</h1>
+        <p class="lead">For AI assistants, VAs, and operators: turn a buyer's lead details into a URL, one-copy order packet, PayPal note, and handoff message for the SoftJunk custom 7-day follow-up sequence.</p>
         <div class="actions">
           <a class="button primary" href="#order-link-tool">Build order link</a>
           <a class="button" href="shareable-order-link.json">Read JSON</a>
-          <a class="button blue" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal</a>
+          <a class="button blue" href="fix-one-quiet-lead.html">Build order packet</a>
         </div>
-        <p class="note">Payment is not treated as received until seller-side PayPal evidence or the verifier confirms the exact 5 USD transaction.</p>
+        <p class="note">Payment is not treated as received until seller-side PayPal evidence or the verifier confirms the exact after-packet 5 USD transaction.</p>
       </div>
       <div class="media" aria-label="SoftJunk PayPal preview">
         <img src="social-card-qr.png" alt="SoftJunk lead follow-up offer card with a PayPal QR code">
@@ -453,12 +459,12 @@
         <p>The share link stores only non-sensitive order details: business type, service, source, tone, lead value, and follow-up need.</p>
       </article>
       <article class="card">
-        <h2>PayPal note stays explicit</h2>
-        <p>The generated note lets the seller match the $5 payment to the custom sequence without guessing what to write.</p>
+        <h2>Packet note stays explicit</h2>
+        <p>The generated note travels through the order packet and lets the seller match the after-packet $5 payment to the custom sequence without guessing what to write.</p>
       </article>
       <article class="card">
         <h2>Fulfillment stays gated</h2>
-        <p>The link can create intent, but delivery starts only after the seller can see the PayPal payment.</p>
+        <p>The link can create intent, but delivery starts only after the seller can see the after-packet PayPal payment.</p>
       </article>
     </section>
 
@@ -537,7 +543,7 @@
           <p class="output" id="paypal-note">Fill the form to create the PayPal note.</p>
           <div class="actions">
             <button type="button" id="copy-note">Copy PayPal note</button>
-            <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Pay $5</a>
+            <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
           </div>
         </div>
 
@@ -573,6 +579,7 @@
     const noteOutput = document.querySelector('#paypal-note');
     const handoffOutput = document.querySelector('#handoff-message');
     const openLink = document.querySelector('#open-link');
+    const orderPacketUrl = 'https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html';
     const paymentUrl = 'https://paypal.me/softjunk/5USD';
     const afterPayUrl = 'https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html';
     const orderFormUrl = 'https://github.com/trungcodeer/softjunk-lead-kit/issues/new/choose';
@@ -633,7 +640,10 @@
 Shareable order link:
 ${shareUrl}
 
-Pay exactly 5 USD:
+Build the one-copy order packet first:
+${orderPacketUrl}
+
+Then pay exactly 5 USD after the packet:
 ${paymentUrl}
 
 Paste this PayPal note:
@@ -650,7 +660,7 @@ npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releas
 Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
 Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
 
-Delivery starts only after the seller can see the PayPal payment. Do not post private customer details in public.`;
+Delivery starts only after the seller can see the after-packet PayPal payment. Do not post private customer details in public.`;
     }
 
     function renderGenerated() {
@@ -665,7 +675,7 @@ Delivery starts only after the seller can see the PayPal payment. Do not post pr
       noteOutput.textContent = note;
       handoffOutput.textContent = handoff;
       openLink.href = shareUrl;
-      statusMessage.textContent = 'Order link generated. Copy the PayPal note before opening PayPal.';
+      statusMessage.textContent = 'Order link generated. Build the one-copy order packet first, then use PayPal after the packet.';
       return true;
     }
 

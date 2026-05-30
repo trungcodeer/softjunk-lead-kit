@@ -793,7 +793,7 @@ paths:
       summary: Open the SoftJunk AI Deal Desk.
       responses:
         "200":
-          description: Browser tool that turns non-sensitive lead context into a buyer decision, PayPal note, custom preview route, shareable order link, and exact 5 USD PayPal handoff.
+          description: Browser tool that turns non-sensitive lead context into a buyer decision, one-copy order packet route, PayPal note, custom preview route, shareable order link, and after-packet exact 5 USD PayPal handoff.
           content:
             text/html:
               schema:
@@ -804,7 +804,7 @@ paths:
       summary: Get the SoftJunk AI Deal Desk JSON.
       responses:
         "200":
-          description: Machine-readable AI deal desk packet with inputs, decision rule, generated routes, PayPal note template, privacy rule, and verification gate.
+          description: Machine-readable AI deal desk packet with inputs, decision rule, one-copy order packet URL, generated routes, PayPal note template, direct after-packet payment URL, privacy rule, and verification gate.
           content:
             application/json:
               schema:
@@ -815,7 +815,7 @@ paths:
       summary: Get the SoftJunk AI Deal Desk text packet.
       responses:
         "200":
-          description: Plain-text AI deal desk instructions with payment URL, generated routes, PayPal note template, privacy rule, and verification gate.
+          description: Plain-text AI deal desk instructions with one-copy order packet URL, after-packet payment URL, generated routes, PayPal note template, privacy rule, and verification gate.
           content:
             text/plain:
               schema:
@@ -881,7 +881,7 @@ paths:
       summary: Open the shareable order link builder.
       responses:
         "200":
-          description: Browser page that creates a shareable order URL, PayPal note, and buyer handoff for the 5 USD custom sequence.
+          description: Browser page that creates a shareable order URL, one-copy order packet route, PayPal note, and buyer handoff for the after-packet 5 USD custom sequence.
           content:
             text/html:
               schema:
@@ -892,7 +892,7 @@ paths:
       summary: Get the shareable order link metadata.
       responses:
         "200":
-          description: Machine-readable metadata for the order URL query parameters, PayPal note template, payment URL, privacy rule, and verification gate.
+          description: Machine-readable metadata for the order URL query parameters, one-copy order packet URL, PayPal note template, direct after-packet payment URL, privacy rule, and verification gate.
           content:
             application/json:
               schema:
@@ -903,7 +903,7 @@ paths:
       summary: Get the copyable shareable order link handoff.
       responses:
         "200":
-          description: Plain-text instructions for using the shareable order link and exact 5 USD PayPal checkout.
+          description: Plain-text instructions for using the shareable order link, building the one-copy order packet first, and using exact 5 USD PayPal checkout after the packet.
           content:
             text/plain:
               schema:
@@ -947,7 +947,7 @@ paths:
       summary: Open the custom sequence scenario gallery.
       responses:
         "200":
-          description: Ready-to-open scenario gallery with prefilled preview and order links for common quiet-lead situations.
+          description: Ready-to-open scenario gallery with prefilled preview links, one-copy order packet route, and after-packet 5 USD PayPal handoff for common quiet-lead situations.
           content:
             text/html:
               schema:
@@ -958,7 +958,7 @@ paths:
       summary: Get custom sequence scenario gallery metadata.
       responses:
         "200":
-          description: Machine-readable scenario gallery with preview URLs, order URLs, PayPal notes, and verification gate.
+          description: Machine-readable scenario gallery with preview URLs, order URLs, one-copy order packet URL, PayPal notes, after-packet payment URL, and verification gate.
           content:
             application/json:
               schema:
@@ -969,7 +969,7 @@ paths:
       summary: Get custom sequence scenario gallery text.
       responses:
         "200":
-          description: Plain-text scenario gallery and exact 5 USD PayPal checkout path.
+          description: Plain-text scenario gallery with one-copy order packet before the exact 5 USD PayPal checkout path.
           content:
             text/plain:
               schema:
