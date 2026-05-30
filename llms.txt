@@ -172,6 +172,7 @@ Agent checkout router:
 
 Send-to-buyer generator page:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html
+Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
 
 Send-to-buyer JSON:
 https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json

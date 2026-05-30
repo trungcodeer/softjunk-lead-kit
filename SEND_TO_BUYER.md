@@ -11,7 +11,10 @@ https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json
 Public Gist:
 https://gist.github.com/trungcodeer/2cb79cccf1e0e5d0efdfa4ae6d15f683
 
-PayPal checkout:
+One-copy order packet:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+PayPal checkout after packet:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
@@ -57,7 +60,10 @@ It outputs a buyer-specific short DM, email, PayPal note, `mailto:` link, and pr
 ```text
 You have one lead that went quiet. If one recovered reply is worth more than $5, I can write the Day 0, 1, 3, 5, and 7 follow-up sequence for that one situation.
 
-Use only non-sensitive business context. Pay exactly $5 here:
+Use only non-sensitive business context. Build the one-copy order packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly $5 after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
@@ -90,7 +96,10 @@ If you have one lead that stopped replying after a form, DM, call, quote, estima
 
 You get Day 0, 1, 3, 5, and 7 messages, plus no-show and price-objection replies. Use only non-sensitive business context.
 
-Pay exactly $5:
+Build the one-copy order packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
+Pay exactly $5 after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:

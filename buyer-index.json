@@ -354,12 +354,19 @@
                               "why":  "Provides an agent-safe decision path, copyable prompt, exact PayPal URL, payment note, and seller-side verification rule."
                           },
                           {
+                              "use_when":  "The operator has one fitting buyer and needs a copy-ready DM, email, PayPal note, and privacy-safe share link before the buyer pays.",
+                              "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html",
+                              "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.json",
+                              "markdown_url":  "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SEND_TO_BUYER.md",
+                              "why":  "Builds buyer-specific copy locally, routes the buyer through the one-copy order packet first, and keeps PayPal as the after-packet 5 USD handoff."
+                          },
+                          {
                               "use_when":  "An AI assistant, VA, crawler, or operator has non-sensitive lead context and needs a decision, PayPal note, preview route, and root one-lead rescue before payment.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.html",
                               "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.json",
                               "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/ai-deal-desk.txt",
                               "gist_url":  "https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844",
-                              "why":  "Turns real lead context into a qualified buyer handoff, PayPal note, custom preview, root one-lead rescue, and exact 5 USD PayPal route."
+                              "why":  "Turns real lead context into a qualified buyer handoff, one-copy order packet route, PayPal note, custom preview, root one-lead rescue, and after-packet exact 5 USD PayPal route."
                           },
                           {
                               "use_when":  "An AI assistant, VA, crawler, or buyer needs the most compact commerce contract before routing to root one-lead rescue and PayPal.",
