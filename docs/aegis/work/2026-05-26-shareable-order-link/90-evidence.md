@@ -9954,3 +9954,36 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_checkout_copy_only_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Pay Page Copy-Only Handoff Evidence
+
+- Product commit: `f6ace18` (`f6ace18fe4076a6b4fed8283f200bff0ae463d25`) on `main`.
+- Changed buyer-facing route: `pay.html`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, and `feed.xml`.
+- Local focused HTML validation returned `pay_page_copy_only_ok directHref=0 copyButtons=4 packetMentions=55 verifyMentions=4`.
+- Inline script validation returned `pay_page_inline_script_ok scripts=1`.
+- JSON-LD parse returned `pay_page_jsonld_parse_ok blocks=2`.
+- Focused JSON parse returned `focused_json_parse_ok files=3`.
+- Recursive JSON parse returned `json_parse_ok files=65`.
+- Feed and sitemap XML parse returned `xml_parse_ok feed_sitemap=2`.
+- OpenAPI static validation returned `openapi_pay_page_copy_only_static_ok`.
+- Discovery static validation returned `pay_page_discovery_static_ok files=6`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-lYwEfGpVsxLiejPGkWhL2huEQJnJ1ouYf+snwmNR2uAhEOx/pcCgIlSRn4/xS1WPLlZQgBXjL8+mud+G43mzbw==`, shasum `3d716d880ef8b4c4647f1ce0f7505023993abd30`.
+- Product Pages run `26688777882` completed successfully.
+- Live verification returned `live_pay_page_copy_only_ok commit=f6ace18 urls=8` for `pay.html`, `.well-known/openapi.yaml`, `product-feed.json`, `offers.json`, `buyer-index.json`, `README.md`, `llms.txt`, and `feed.xml`.
+- IndexNow returned `indexnow_pay_page_copy_only_ok status=200 urls=8 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Pay Page Copy-Only Handoff, product commit `f6ace18` (`f6ace18fe4076a6b4fed8283f200bff0ae463d25`).
+- Full evidence section: `2026-05-30 Pay Page Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26688777882` success.
+- Live verification evidence: `live_pay_page_copy_only_ok commit=f6ace18 urls=8`.
+- Discovery ping evidence: `indexnow_pay_page_copy_only_ok status=200 urls=8`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
