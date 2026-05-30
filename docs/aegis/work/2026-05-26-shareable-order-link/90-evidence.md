@@ -8418,3 +8418,33 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_buy_now_packet_ok status=200 urls=3` for the three changed product Pages URLs.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Buyer Index Packet Evidence
+
+- Audited central buyer index and agent catalog surfaces after the Buy Now route became packet-first.
+- Found that `BUYER_INDEX.md`, `buyer-index.json`, and high-signal `agent-buyer-catalog.jsonl` records still allowed direct PayPal routing before making the one-copy order packet the explicit first buyer action.
+- Updated product commit `374086b`:
+  - `BUYER_INDEX.md` now puts `fix-one-quiet-lead.html`, `.json`, and `.txt` at the top of Fast Route and Copy-Ready Recommendation before PayPal and Buy Now handoff.
+  - `buyer-index.json` now has `updated=2026-05-30`, top-level one-copy order packet URLs, `before_payment_action`, packet-first payment metadata, packet-first no-clone checkout expected checkout metadata, and packet fields on the first high-signal primary routes.
+  - `agent-buyer-catalog.jsonl` now has `updated=2026-05-30` on the meta record, one-copy order packet fields across PayPal-bearing records, and key records such as `root_five_dollar_buyer_card`, `github_native_buy_now`, `root_agents_checkout`, `softjunk_agent_checkout_router`, and `softjunk_root_fast_pay_route_selector` route through the packet before PayPal.
+  - `sitemap.xml` now lists `BUYER_INDEX.md` and updates buyer index/catalog lastmod values to `2026-05-30`.
+- Local verification:
+  - `buyer_index_packet_ok primary_paths=20`.
+  - `agent_catalog_jsonl_ok lines=58 packet_records=50`.
+  - `buyer_packet_markers_ok files=3`.
+  - `sitemap_buyer_catalog_lastmod_ok urls=3`.
+  - `json_parse_ok files=54`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `374086b` pushed to `main`.
+  - Product Pages run `26674075377` completed successfully.
+- Live verification returned `live_buyer_index_packet_ok commit=374086b urls=4 catalog_packet_records=50` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/BUYER_INDEX.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buyer-catalog.jsonl`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_buyer_index_packet_ok status=200 urls=4` for the four changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

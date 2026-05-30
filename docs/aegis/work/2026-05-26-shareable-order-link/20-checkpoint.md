@@ -11393,3 +11393,50 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, raw GitHub/Gist mirrors, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Buyer Index Packet Checkpoint
+
+Current todo:
+- Route central buyer index and agent buyer catalog discovery surfaces through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `BUYER_INDEX.md`, `buyer-index.json`, `agent-buyer-catalog.jsonl`, and `sitemap.xml`.
+
+Completed todos:
+- Updated `BUYER_INDEX.md` so Fast Route, Copy-Ready Recommendation, digital kit copy, custom sequence copy, and Machine-Readable Index expose the one-copy order packet before PayPal.
+- Updated `buyer-index.json` to `updated=2026-05-30`, added top-level one-copy order packet URLs, `before_payment_action`, packet-first payment metadata, no-clone checkout expected checkout metadata, and packet-first primary path fields for the first high-signal buyer routes.
+- Updated `agent-buyer-catalog.jsonl` to `updated=2026-05-30` for the catalog meta record, added one-copy order packet fields to PayPal-bearing discovery records, renamed `paypal_note_first` display name to `PayPal Note After Packet`, and made key route records packet-first.
+- Updated `sitemap.xml` lastmod values to `2026-05-30` for `buyer-index.json` and `agent-buyer-catalog.jsonl`, and added `BUYER_INDEX.md`.
+- Committed and pushed product commit `374086b` to `main`.
+- Product Pages run `26674075377` completed successfully.
+- Live Pages verification returned `live_buyer_index_packet_ok commit=374086b urls=4 catalog_packet_records=50`.
+- Submitted the four changed product Pages URLs to IndexNow; API returned `indexnow_buyer_index_packet_ok status=200 urls=4`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `buyer_index_packet_ok primary_paths=20`.
+- `agent_catalog_jsonl_ok lines=58 packet_records=50`.
+- `buyer_packet_markers_ok files=3`.
+- `sitemap_buyer_catalog_lastmod_ok urls=3`.
+- `json_parse_ok files=54`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26674075377` success.
+- Live verification: `live_buyer_index_packet_ok commit=374086b urls=4 catalog_packet_records=50`.
+- IndexNow: `indexnow_buyer_index_packet_ok status=200 urls=4`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned central buyer index and agent catalog discovery without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, Markdown/JSON/JSONL buyer indexes, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
