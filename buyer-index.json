@@ -479,7 +479,7 @@
                               "why":  "Creates a shareable order URL, explicit PayPal note, and buyer handoff that should route through the one-copy order packet before the after-packet PayPal handoff."
                           },
                           {
-                              "use_when":  "The buyer is already ready to pay $5.",
+                              "use_when":  "The buyer is already ready for the packet-first $5 PayPal handoff.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title",
                               "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/checkout.json",
                               "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/checkout.txt",
