@@ -10459,3 +10459,35 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_package_payment_wording_copy_only_ok status=200 urls=12`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Release Route v2.29.164 Copy-Only Evidence
+
+- Product commit: `db253ea` (`db253ead85d910d85d2ec5d5a5ecaea29e83b595`) on `main`.
+- Changed release/package-native surfaces: 191 files, replacing current release route `v2.29.163` with `v2.29.164`, updating the release target marker to product copy-only commit `6119956cb35088e8c1cabc3242c8dd6e28f4758a`, and removing remaining non-doc `open PayPal` wording.
+- Local scan returned `stale_release_and_open_paypal_wording_absent_non_docs`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- JSON parse validation returned `json_parse_ok files=56`.
+- JSONL parse validation returned `jsonl_parse_ok files=1 lines=58`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and returned release route `v2.29.164`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- Release pack created `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-r87YwG55jOf+yXzNTm5ydFbcfD6ndPcYsRPx70uUwgwbLEk72S3nLDnilDipKMoDdUTvf/QKJVozT6pkYLlbGQ==`, shasum `fc51dae35b6b4800fc252c0492e77af84079f7d1`, SHA-256 `5d39082003fbc26626155aaae66d603b953e61a94afcf6b8af5a16422c1e2c9f`.
+- GitHub Release `v2.29.164` was published with target `db253ead85d910d85d2ec5d5a5ecaea29e83b595` and assets `softjunk-lead-kit-0.2.2.tgz` plus `softjunk-lead-kit-0.2.2.tgz.sha256`.
+- Public SHA-256 asset returned `release_sha256_asset_ok status=200 content=5d39082003fbc26626155aaae66d603b953e61a94afcf6b8af5a16422c1e2c9f  softjunk-lead-kit-0.2.2.tgz`.
+- Public release-tarball command returned `release_tarball_no_clone_checkout_ok tag=v2.29.164 amount=5.00 currency=USD payment_url=https://paypal.me/softjunk/5USD action=Build the one-copy order packet before copying the after-packet PayPal URL.`
+- Product Pages run `26694926170` completed successfully for commit `db253ea`.
+- Live verification returned `live_release_route_v229164_copy_only_ok commit=db253ea urls=10` for `agent-card.json`, `agent-buyer-catalog.jsonl`, `npm-funding.json`, `buyer-index.json`, `checkout.json`, `README.md`, `llms.txt`, `bin/softjunk-lead-kit.js`, `mcp-server-softjunk.js`, and `CURRENT_NO_CLONE_CHECKOUT_PROOF.md`.
+- IndexNow returned `indexnow_release_route_v229164_copy_only_ok status=200 urls=10 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Release Route v2.29.164 Copy-Only, product commit `db253ea` (`db253ead85d910d85d2ec5d5a5ecaea29e83b595`).
+- Full evidence section: `2026-05-31 Release Route v2.29.164 Copy-Only Evidence`.
+- Deployment evidence: GitHub Pages run `26694926170` success.
+- Release evidence: GitHub Release `v2.29.164` target `db253ead85d910d85d2ec5d5a5ecaea29e83b595`, tarball SHA-256 `5d39082003fbc26626155aaae66d603b953e61a94afcf6b8af5a16422c1e2c9f`, and public no-clone command `release_tarball_no_clone_checkout_ok`.
+- Live verification evidence: `live_release_route_v229164_copy_only_ok commit=db253ea urls=10`.
+- Discovery ping evidence: `indexnow_release_route_v229164_copy_only_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
