@@ -253,8 +253,10 @@ https://github.com/trungcodeer/softjunk-lead-kit/issues/12
 Public dental buyer discussion:
 https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
 
+Packet-first handoff: build the one-copy order packet before opening the after-packet PayPal URL.
+
 Dental buyer fit:
-Use for one known dental office with one missed new-patient call, urgent inquiry, implant consult request, or quiet appointment lead. Send only to one known fitting buyer, not scraped lists or spam. Pay exactly 5 USD at https://paypal.me/softjunk/5USD only after fit is confirmed. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists. Do not include patient, health, insurance, or PayPal details.
+Use for one known dental office with one missed new-patient call, urgent inquiry, implant consult request, or quiet appointment lead. Send only to one known fitting buyer, not scraped lists or spam. Build the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL. Do not claim payment or fulfillment unless PAYPAL_PAYMENT_VERIFIED=true or seller-side PayPal evidence exists. Do not include patient, health, insurance, or PayPal details.
 
 Med spa buyer send packet:
 https://trungcodeer.github.io/softjunk-lead-kit/med-spa-buyer-send.html
