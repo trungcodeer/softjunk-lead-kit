@@ -14,8 +14,12 @@ x-softjunk-latest-release-status:
   npmjs_package_status: E404
   local_npm_auth_status: ENEEDAUTH
   payment_url: https://paypal.me/softjunk/5USD
+  direct_payment_url: https://paypal.me/softjunk/5USD
+  one_copy_order_packet_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+  one_copy_order_packet_json_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+  before_payment_action: Build or inspect the one-copy order packet before opening PayPal.
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
-  rule: Use the current release tarball route first while npmjs returns E404; use the GitHub package route only as a fallback. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
+  rule: Use the one-copy order packet first, then open the direct PayPal URL only after the packet and PayPal note are ready. Do not claim paid or fulfilled unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
 x-softjunk-no-clone-release:
   current_release_tag: v2.29.163
   current_release_url: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
@@ -34,6 +38,10 @@ x-softjunk-no-clone-release:
   release_tarball_sha256_url: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
   run_from_release_tarball_pay_custom: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
   payment_url: https://paypal.me/softjunk/5USD
+  direct_payment_url: https://paypal.me/softjunk/5USD
+  one_copy_order_packet_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+  one_copy_order_packet_json_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+  before_payment_action: Build or inspect the one-copy order packet before opening PayPal.
   success_signal: PAYPAL_PAYMENT_VERIFIED=true
 x-softjunk-fastest-buyer-path:
   root_one_lead_rescue_url: https://trungcodeer.github.io/rescue/
@@ -61,6 +69,10 @@ x-softjunk-fastest-buyer-path:
   agent_checkout_router_markdown_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.md
   agent_checkout_router_text_url: https://trungcodeer.github.io/softjunk-lead-kit/agent-checkout-router.txt
   payment_url: https://paypal.me/softjunk/5USD
+  direct_payment_url: https://paypal.me/softjunk/5USD
+  one_copy_order_packet_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+  one_copy_order_packet_json_url: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json
+  before_payment_action: Build or inspect the one-copy order packet before opening PayPal.
   npm_funding_json_url: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
   npm_funding_markdown_url: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_FUNDING.md
   npm_fund_command: npm fund
@@ -121,7 +133,7 @@ paths:
       summary: Get the SoftJunk GitHub Sponsor button buy route.
       responses:
         "200":
-          description: Machine-readable GitHub Sponsor/FUNDING route with exact 5 USD PayPal URL, Send-5 handoff, root buyer card, run-first/dev-agent routes, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Machine-readable GitHub Sponsor/FUNDING route with one-copy order packet first, direct 5 USD PayPal handoff second, Send-5 handoff, root buyer card, order form, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             application/json:
               schema:
@@ -143,7 +155,7 @@ paths:
       summary: Get the SoftJunk npm funding route.
       responses:
         "200":
-          description: Machine-readable package funding route for npm fund, exact 5 USD PayPal checkout, value-first commands, order forms, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Machine-readable package funding route for npm fund with the one-copy order packet before direct 5 USD PayPal checkout, value-first commands, order forms, privacy rule, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             application/json:
               schema:
@@ -154,7 +166,7 @@ paths:
       summary: Get the SoftJunk npm funding guide.
       responses:
         "200":
-          description: Markdown guide for using package metadata, npm fund, npm run fund, and npm run fund:kit to reach the exact 5 USD PayPal checkout.
+          description: Markdown guide for using package metadata, npm fund, npm run fund, and npm run fund:kit to reach the one-copy order packet before exact 5 USD PayPal checkout.
           content:
             text/markdown:
               schema:
@@ -968,7 +980,7 @@ paths:
       summary: Get the product-local PayPal payment intent.
       responses:
         "200":
-          description: Exact 5 USD PayPal payment intent with agent action and verification gate.
+          description: Packet-first 5 USD PayPal payment intent with agent action, one-copy order packet, direct payment URL, and verification gate.
           content:
             application/json:
               schema:
@@ -979,7 +991,7 @@ paths:
       summary: Get the well-known PayPal payment intent alias.
       responses:
         "200":
-          description: Well-known alias for the exact 5 USD PayPal payment intent.
+          description: Well-known alias for the packet-first 5 USD PayPal payment intent.
           content:
             application/json:
               schema:
