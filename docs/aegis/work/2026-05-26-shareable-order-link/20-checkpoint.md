@@ -11242,6 +11242,67 @@ Blocked-on items:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Well-Known Payment Packet Checkpoint
+
+Current todo:
+- Route well-known payment/action discovery surfaces through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `paypal-buy-action.json`, `.well-known/paypal-buy-action.json`, `paypal-payment-intent.json`, `.well-known/paypal-payment.json`, `agent-offer.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, `.well-known/openapi.yaml`, and `sitemap.xml`.
+
+Completed todos:
+- Updated PayPal BuyAction manifests so the offer/action URL and BuyAction target route to `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html` first, while preserving `https://paypal.me/softjunk/5USD` as `direct_payment_url`.
+- Updated PayPal payment intent manifests so `agent_action.intent` and first steps require building or inspecting the one-copy order packet before PayPal.
+- Updated `agent-offer.json`, `.well-known/softjunk-offer.json`, and `.well-known/ai-plugin.json` with packet-first fields, before-payment action, and direct PayPal fields for agent discovery.
+- Updated `.well-known/openapi.yaml` top-level extensions and payment-intent descriptions to expose packet-first payment intent metadata.
+- Updated `sitemap.xml` lastmod values for the changed payment/action discovery URLs to `2026-05-30`.
+- Committed and pushed product commit `f40482a` to `main`.
+- Product Pages run `26675021421` completed successfully.
+- Live Pages verification returned `live_well_known_payment_packet_ok commit=f40482a urls=9`.
+- Submitted the nine changed product Pages URLs to IndexNow; API returned `indexnow_well_known_payment_packet_ok status=200 urls=9`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `well_known_payment_json_parse_ok files=7`.
+- `well_known_payment_packet_ok files=7`.
+- `well_known_payment_sitemap_openapi_ok urls=8`.
+- `well_known_payment_sitemap_exact_ok urls=8`.
+- `agent_offer_packet_ok`.
+- `json_parse_ok files=65`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-7ykHcmpz4blNpVfoCPtySojqvGwwPnjdnoplmUpIga0RCTbiL717hO1VnQfIbAeavGn8b/KIzS+h9CGqCBW0cg==`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26675021421` success.
+- Live verification: `live_well_known_payment_packet_ok commit=f40482a urls=9`.
+- IndexNow: `indexnow_well_known_payment_packet_ok status=200 urls=9`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned well-known payment/action discovery surfaces without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, well-known JSON/OpenAPI discovery, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains the direct payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Well-Known Payment Packet, product commit `f40482a`.
+- Full checkpoint section: `2026-05-30 Well-Known Payment Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675021421` success; live verification `live_well_known_payment_packet_ok commit=f40482a urls=9`; IndexNow `indexnow_well_known_payment_packet_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
 - Current slice fit: yes, it improves package-native NPM funding, CLI, MCP, and machine-readable buyer routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
@@ -11549,6 +11610,17 @@ Latest completed slice:
 - NPM Funding Packet, product commit `ced8228`.
 - Full checkpoint section: `2026-05-30 NPM Funding Packet Checkpoint`.
 - Deployment evidence: GitHub Pages run `26674667903` success; live verification `live_package_funding_packet_ok commit=ced8228 pages=10 raw=3 catalog_record=softjunk_npm_package_funding_route`; IndexNow `indexnow_package_funding_packet_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Well-Known Payment Packet, product commit `f40482a`.
+- Full checkpoint section: `2026-05-30 Well-Known Payment Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675021421` success; live verification `live_well_known_payment_packet_ok commit=f40482a urls=9`; IndexNow `indexnow_well_known_payment_packet_ok status=200 urls=9`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:

@@ -8539,3 +8539,51 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_package_funding_packet_ok status=200 urls=10`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Well-Known Payment Packet Evidence
+
+- Audited well-known payment/action discovery surfaces after package funding became packet-first.
+- Found that `paypal-buy-action.json`, `.well-known/paypal-buy-action.json`, `paypal-payment-intent.json`, `.well-known/paypal-payment.json`, `agent-offer.json`, `.well-known/softjunk-offer.json`, `.well-known/ai-plugin.json`, and `.well-known/openapi.yaml` still exposed direct PayPal as the action target or primary payment action in high-signal agent-readable metadata.
+- Updated product commit `f40482a`:
+  - PayPal BuyAction manifests now set schema.org offer/action URLs to the one-copy order packet first, preserve PayPal as `direct_payment_url`, and add `before_payment_action`.
+  - PayPal payment intent manifests now set `agent_action.intent=build_one_copy_order_packet_then_pay_exactly_5_usd_via_paypal` and make the first agent step open `fix-one-quiet-lead.html`.
+  - `agent-offer.json`, `.well-known/softjunk-offer.json`, and `.well-known/ai-plugin.json` now expose packet-first fields and direct PayPal fields for agent discovery.
+  - `.well-known/openapi.yaml` now exposes packet-first payment intent metadata in top-level extensions and payment-intent descriptions.
+  - `sitemap.xml` now marks the changed payment/action discovery URLs with `lastmod=2026-05-30`.
+- Local verification:
+  - `well_known_payment_json_parse_ok files=7`.
+  - `well_known_payment_packet_ok files=7`.
+  - `well_known_payment_sitemap_openapi_ok urls=8`.
+  - `well_known_payment_sitemap_exact_ok urls=8`.
+  - `agent_offer_packet_ok`.
+  - `json_parse_ok files=65`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-7ykHcmpz4blNpVfoCPtySojqvGwwPnjdnoplmUpIga0RCTbiL717hO1VnQfIbAeavGn8b/KIzS+h9CGqCBW0cg==`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Deployment:
+  - Product commit `f40482a` pushed to `main`.
+  - Product Pages run `26675021421` completed successfully.
+- Live verification returned `live_well_known_payment_packet_ok commit=f40482a urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/paypal-payment-intent.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-payment.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-offer.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/softjunk-offer.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/ai-plugin.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_well_known_payment_packet_ok status=200 urls=9` for the nine changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Well-Known Payment Packet, product commit `f40482a`.
+- Full evidence section: `2026-05-30 Well-Known Payment Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26675021421` success.
+- Live verification evidence: `live_well_known_payment_packet_ok commit=f40482a urls=9`.
+- Discovery ping evidence: `indexnow_well_known_payment_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
