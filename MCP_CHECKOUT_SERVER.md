@@ -60,8 +60,8 @@ The npm funding tool returns:
 - npm funding contract: https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json
 - one-copy order packet: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 - commands: `npm fund`, `npm run fund`, `npm run fund:kit`
-- current release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
-- no-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
+- current release tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz
+- no-clone command: `npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json`
 - exact 5 USD payment URL after the packet is ready: https://paypal.me/softjunk/5USD
 - verification gate: `PAYPAL_PAYMENT_VERIFIED=true`
 
@@ -95,12 +95,12 @@ The official MCP Registry `server.json` format supports package and remote serve
 ## No-Clone Checkout Proof
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
 
-Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
+Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256
 
 Stable fallback command:
 

@@ -13,10 +13,10 @@
   "payment_url": "https://paypal.me/softjunk/5USD",
   "direct_payment_url": "https://paypal.me/softjunk/5USD",
   "payment_url_role": "after_packet_paypal_handoff",
-  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
-  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
-  "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
-  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+  "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164",
+  "release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz",
+  "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256",
+  "run_from_release_tarball_pay_custom": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
   "price": "5.00",
   "currency": "USD",
   "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
@@ -63,6 +63,6 @@
   ],
   "privacy_rule": "The browser-side generator does not submit data. Prefilled share links place field values in the URL, so only non-sensitive context should be used. Share actions stay disabled until the sender confirms this is one known relevant buyer and no private identifier is detected.",
   "verification_gate": "This route is a payment path, not payment proof. Do not claim paid, started, delivered, fulfilled, complete, received, or stop unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
-  "copyable_buyer_message_template": "If one [lead problem] is sitting quiet and [value reason], this is the smallest useful test I found. SoftJunk builds one practical follow-up rescue for $5. Build the one-copy order packet first at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. For no-clone checkout proof, run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163 and SHA-256 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256. Pay exactly $5 at https://paypal.me/softjunk/5USD only after the packet is ready, use the generated PayPal note, then submit non-sensitive context at the order form. Fulfillment starts only after seller-side PayPal verification.",
+  "copyable_buyer_message_template": "If one [lead problem] is sitting quiet and [value reason], this is the smallest useful test I found. SoftJunk builds one practical follow-up rescue for $5. Build the one-copy order packet first at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html. For no-clone checkout proof, run: npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json. Verify release notes at https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164 and SHA-256 https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256. Pay exactly $5 at https://paypal.me/softjunk/5USD only after the packet is ready, use the generated PayPal note, then submit non-sensitive context at the order form. Fulfillment starts only after seller-side PayPal verification.",
   "paypal_note_template": "One Lead Rescue | Business: [buyer type] | Service: [service] | Source: one-buyer-share | Need: [lead problem] | Tone: [tone] | Next: reply"
 }

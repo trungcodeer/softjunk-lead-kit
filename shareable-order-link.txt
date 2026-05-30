@@ -27,8 +27,8 @@ https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html
 
 No-clone checkout proof:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
-Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
-Release target: 9d6b527b2d008e8414e80d01f46683db80115f59
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
+Release target: 6119956cb35088e8c1cabc3242c8dd6e28f4758a
 Agent relay: npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit agent --json
 Stable fallback tarball SHA-256: 1bc8497b69211a11a28c4fb4cacb98fecb5911ac2b4ca20a30be7bf4456a986c
 

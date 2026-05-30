@@ -20,8 +20,8 @@
     "SOFTJUNK_RUN_FIRST_JSON": "https://trungcodeer.github.io/softjunk-lead-kit/run-this-first.json",
     "SOFTJUNK_DEV_AGENT_START_JSON": "https://trungcodeer.github.io/softjunk-lead-kit/dev-agent-start.json",
     "SOFTJUNK_NPM_FUNDING_JSON": "https://trungcodeer.github.io/softjunk-lead-kit/npm-funding.json",
-    "SOFTJUNK_RELEASE_TARBALL_URL": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz",
-    "SOFTJUNK_RELEASE_TARBALL_SHA256": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256",
-    "SOFTJUNK_NO_CLONE_CHECKOUT_COMMAND": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json"
+    "SOFTJUNK_RELEASE_TARBALL_URL": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz",
+    "SOFTJUNK_RELEASE_TARBALL_SHA256": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256",
+    "SOFTJUNK_NO_CLONE_CHECKOUT_COMMAND": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json"
   }
 }

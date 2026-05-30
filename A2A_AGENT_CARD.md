@@ -26,12 +26,12 @@ Use this card when an AI assistant, buyer-agent, VA, or crawler needs a structur
 5. Run the no-clone checkout proof command:
 
    ```bash
-   npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+   npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
    ```
 
 6. Verify release notes and release asset SHA-256:
-   https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
-   https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
+   https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
+   https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256
 7. Pay exactly 5 USD at https://paypal.me/softjunk/5USD after the packet is ready.
 8. Submit non-sensitive order details after payment:
    https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml

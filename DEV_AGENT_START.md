@@ -15,8 +15,8 @@ This runs the local CLI doctor and prints the exact payment gate. It does not co
 When the agent should route a buyer without a local clone, use the current release tarball first:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit doctor --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 Use the GitHub package route only as the fallback:
@@ -26,9 +26,9 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
 
-Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256`.
+Current release tarball SHA-256 file: `https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256`.
 
 ## Generate Value Before Payment
 

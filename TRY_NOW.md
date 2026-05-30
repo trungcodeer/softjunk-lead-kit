@@ -15,15 +15,15 @@ npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-k
 Stable release-tarball fallback:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
-Current release notes: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+Current release notes: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
 
 Current release tarball SHA-256 file:
 
 ```text
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256
 ```
 
 Example output includes Day 0, Day 1, and Day 3 follow-up copy plus a PayPal note.

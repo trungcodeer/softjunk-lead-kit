@@ -67,7 +67,7 @@ child.on('close', (code) => {
   assert(payload.success_signal === 'PAYPAL_PAYMENT_VERIFIED=true', 'expected success signal');
   assert(
     payload.preferred_no_clone_command ===
-      'npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json',
+      'npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json',
     'expected preferred current release tarball checkout command'
   );
   assert(

@@ -4,7 +4,7 @@ Purpose: route a real buyer with one quiet lead, missed call, estimate follow-up
 
 Current no-clone checkout command:
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 Expected command result:
@@ -14,10 +14,10 @@ Expected command result:
 - success_signal: PAYPAL_PAYMENT_VERIFIED=true
 
 Integrity:
-- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
-- Release target: 9d6b527b2d008e8414e80d01f46683db80115f59
-- Tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
-- SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
+- Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
+- Release target: 6119956cb35088e8c1cabc3242c8dd6e28f4758a
+- Tarball: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz
+- SHA-256 file: https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256
 
 Primary buyer route:
 1. Open https://trungcodeer.github.io/rescue/ for one quiet lead.

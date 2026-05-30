@@ -38,20 +38,20 @@ Pay exactly 5 USD after the packet is ready:
 https://paypal.me/softjunk/5USD
 
 No-clone checkout proof:
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 
 Expected checkout:
 One-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
 Then 5.00 USD to https://paypal.me/softjunk/5USD
 
 Current release:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.164
 
 Release tarball:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz
 
 SHA-256:
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz.sha256
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.164/softjunk-lead-kit-0.2.2.tgz.sha256
 
 Success signal:
 PAYPAL_PAYMENT_VERIFIED=true
