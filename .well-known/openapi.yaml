@@ -1406,11 +1406,11 @@ paths:
                 type: string
   /pay-qr.html:
     get:
-      operationId: openPayPalQrPage
-      summary: Open the scan-to-pay QR page.
+      operationId: openPacketQrPage
+      summary: Open the packet-first QR page.
       responses:
         "200":
-          description: Payment page with a PayPal QR code and direct PayPal.Me link.
+          description: QR page that opens the one-copy order packet before the direct PayPal.Me handoff.
           content:
             text/html:
               schema:
@@ -1418,12 +1418,23 @@ paths:
   /printable-paypal-flyer.html:
     get:
       operationId: openPrintablePayPalFlyer
-      summary: Open the printable $5 PayPal flyer.
+      summary: Open the printable packet-first $5 flyer.
       responses:
         "200":
-          description: Printable QR flyer for the $5 SoftJunk lead follow-up offer.
+          description: Printable QR flyer that opens the one-copy order packet before the $5 PayPal handoff.
           content:
             text/html:
+              schema:
+                type: string
+  /packet-qr.svg:
+    get:
+      operationId: getPacketQrSvg
+      summary: Get the packet QR SVG for the $5 checkout handoff.
+      responses:
+        "200":
+          description: SVG QR code linking to the one-copy order packet before the PayPal handoff.
+          content:
+            image/svg+xml:
               schema:
                 type: string
   /paypal-qr.svg:

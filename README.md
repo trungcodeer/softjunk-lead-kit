@@ -470,7 +470,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 
 ## Buy
 
-![PayPal QR code for the $5 SoftJunk checkout](paypal-qr.svg)
+![Packet QR code for the $5 SoftJunk order packet](packet-qr.svg)
 
 - Root one-lead rescue route: https://trungcodeer.github.io/rescue/
 - GitHub-native Buy Now packet: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/BUY_NOW.md
@@ -558,9 +558,10 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Raw commerce graph text: https://gist.githubusercontent.com/trungcodeer/844295134d4a7d721b7eec4963eae1db/raw/commerce-graph.txt
 - Fast checkout with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html
-- PayPal QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
+- Packet-first QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 - Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
-- PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
+- Packet QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
+- Direct PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
 - Pinned public order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
 - Public buyer examples thread: https://github.com/trungcodeer/softjunk-lead-kit/issues/3

@@ -3,14 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PayPal QR | SoftJunk Lead Kit</title>
-  <meta name="description" content="Scan or open the PayPal QR link to pay $5 for SoftJunk Lead Kit or a custom follow-up sequence, with verified no-clone checkout proof.">
+  <title>Packet QR | SoftJunk Lead Kit</title>
+  <meta name="description" content="Scan or open the SoftJunk one-copy order packet QR before the $5 PayPal handoff, with verified no-clone checkout proof.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html">
   <meta name="robots" content="index,follow">
+  <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json" title="SoftJunk one-copy order packet JSON">
+  <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt" title="SoftJunk one-copy order packet text">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/paypal-buy-action.json" title="SoftJunk PayPal BuyAction manifest">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/.well-known/paypal-buy-action.json" title="SoftJunk well-known PayPal BuyAction manifest">
-  <meta property="og:title" content="PayPal QR | SoftJunk Lead Kit">
-  <meta property="og:description" content="Scan or open the PayPal QR link to pay $5 after verified no-clone checkout proof.">
+  <meta property="og:title" content="Packet QR | SoftJunk Lead Kit">
+  <meta property="og:description" content="Scan or open the one-copy order packet before the $5 PayPal handoff.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -24,16 +26,18 @@
       "@graph": [
         {
           "@type": "WebPage",
-          "name": "PayPal QR",
+          "name": "Packet QR",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
-          "description": "QR payment page for the $5 SoftJunk Lead Kit offer with verified no-clone checkout proof."
+          "description": "QR page that sends buyers to the one-copy order packet before the $5 PayPal handoff."
         },
         {
           "@type": "Offer",
           "name": "SoftJunk Lead Follow-Up Kit",
           "price": "5.00",
           "priceCurrency": "USD",
-          "url": "https://paypal.me/softjunk/5USD",
+          "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+          "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+          "paymentUrl": "https://paypal.me/softjunk/5USD",
           "availability": "https://schema.org/InStock"
         }
       ]
@@ -251,10 +255,12 @@
       "@context": "https://schema.org",
       "@type": "Offer",
       "name": "SoftJunk One-Lead Rescue",
-      "description": "Exact 5 USD PayPal checkout for one real quiet-lead follow-up rescue. One rewrite is included for custom sequences after seller-side PayPal verification.",
+      "description": "Packet-first QR page for one real quiet-lead follow-up rescue. It opens the one-copy order packet before the exact 5 USD PayPal handoff.",
       "price": "5.00",
       "priceCurrency": "USD",
-      "url": "https://paypal.me/softjunk/5USD",
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+      "paymentUrl": "https://paypal.me/softjunk/5USD",
       "availability": "https://schema.org/InStock",
       "seller": {
         "@type": "Organization",
@@ -263,16 +269,16 @@
       },
       "itemOffered": {
         "@type": "DigitalDocument",
-        "name": "SoftJunk PayPal QR page",
+        "name": "SoftJunk one-copy order packet QR page",
         "url": "https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html",
         "encodingFormat": "text/html"
       },
       "potentialAction": {
         "@type": "BuyAction",
-        "name": "Pay exactly 5 USD to SoftJunk on PayPal",
+        "name": "Build the one-copy order packet before paying exactly 5 USD",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://paypal.me/softjunk/5USD",
+          "urlTemplate": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
           "httpMethod": "GET"
         },
         "priceSpecification": {
@@ -303,6 +309,7 @@
       <a class="brand" href="./">SoftJunk Lead Kit</a>
       <div class="nav-links">
         <a href="pay.html">Pay</a>
+        <a href="fix-one-quiet-lead.html">Packet</a>
         <a href="after-pay.html">After pay</a>
         <a href="share-kit.html">Share</a>
       </div>
@@ -312,24 +319,27 @@
   <main id="main">
     <section class="hero" aria-labelledby="page-title">
       <div>
-        <h1 id="page-title">Scan to pay $5 on PayPal.</h1>
-        <p class="note buyer-send-route"><strong>Roofing buyer-send route:</strong> read the <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html">one-read buyer packet</a> or <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json">agent JSON</a>, then pay exactly <a href="https://paypal.me/softjunk/5USD">5 USD on PayPal</a>. Fulfillment starts only after <code>PAYPAL_PAYMENT_VERIFIED=true</code>; use placeholders only.</p>
-        <p class="lead">Use this QR code for the SoftJunk Lead Kit or the custom 7-day follow-up sequence. Fulfillment starts only after the seller can see the $5 PayPal transaction.</p>
+        <h1 id="page-title">Scan the packet QR before PayPal.</h1>
+        <p class="note buyer-send-route"><strong>Roofing buyer-send route:</strong> read the <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html">one-read buyer packet</a> or <a href="https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json">agent JSON</a>, then build the <a href="https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">one-copy order packet</a> before paying exactly <a href="https://paypal.me/softjunk/5USD">5 USD on PayPal</a>. Fulfillment starts only after <code>PAYPAL_PAYMENT_VERIFIED=true</code>; use placeholders only.</p>
+        <p class="lead">Use this QR code to open the one-copy order packet for the SoftJunk Lead Kit or a custom 7-day follow-up sequence. Fulfillment starts only after the seller can see the $5 PayPal transaction.</p>
         <div class="actions">
-          <a class="button primary" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">Open PayPal $5</a>
+          <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
+          <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">PayPal after packet</a>
           <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">Current release</a>
           <a class="button" href="https://trungcodeer.github.io/pay-qr/">Root QR route</a>
-          <button class="button" type="button" data-copy="pay-link">Copy PayPal link</button>
+          <button class="button" type="button" data-copy="pay-link">Copy packet link</button>
         </div>
       </div>
-      <div class="qr-card" aria-label="PayPal QR code">
-        <img src="paypal-qr.svg" alt="QR code linking to https://paypal.me/softjunk/5USD">
+      <div class="qr-card" aria-label="Order packet QR code">
+        <img src="packet-qr.svg" alt="QR code linking to https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
       </div>
     </section>
 
     <section class="panel" aria-labelledby="details-title">
-      <h2 id="details-title">Payment details</h2>
-      <p class="note" id="pay-link">https://paypal.me/softjunk/5USD</p>
+      <h2 id="details-title">Packet and payment details</h2>
+      <p class="note" id="pay-link">https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html</p>
+      <p class="note" id="direct-payment-link">PayPal after packet:
+https://paypal.me/softjunk/5USD</p>
       <p class="note" id="checkout-proof">No-clone checkout proof:
 npm exec --yes --package github:trungcodeer/softjunk-lead-kit -- softjunk-lead-kit pay --mode custom --json
 
@@ -346,9 +356,13 @@ Fallback SHA-256: https://github.com/trungcodeer/softjunk-lead-kit/releases/down
       <p class="note" id="buyer-note">For the digital kit, use PayPal note:
 Lead Follow-Up Kit
 
+For one quiet lead, build the packet first:
+https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+
 For a custom sequence, build the note first:
-https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html</p>
+https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html</p>
       <div class="actions">
+        <button class="button" type="button" data-copy="direct-payment-link">Copy PayPal handoff</button>
         <button class="button" type="button" data-copy="checkout-proof">Copy checkout proof</button>
         <button class="button" type="button" data-copy="buyer-note">Copy buyer note</button>
         <a class="button primary" href="after-pay.html">After paying</a>

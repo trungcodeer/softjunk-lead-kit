@@ -256,7 +256,7 @@
       <title>SoftJunk Buyer Index</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json</guid>
-      <description>Machine-readable buyer index that routes one quiet lead, weak follow-up rewrites, direct follow-up answers, custom sequence orders, QR handoff, and the exact $5 PayPal checkout.</description>
+      <description>Machine-readable buyer index that routes one quiet lead, weak follow-up rewrites, direct follow-up answers, custom sequence orders, packet-first QR handoff, and the exact $5 PayPal checkout.</description>
       <pubDate>Tue, 26 May 2026 01:12:00 +0700</pubDate>
     </item>
     <item>
@@ -267,10 +267,10 @@
       <pubDate>Tue, 26 May 2026 00:32:00 +0700</pubDate>
     </item>
     <item>
-      <title>Printable $5 PayPal Flyer</title>
+      <title>Printable $5 Packet Flyer</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html</guid>
-      <description>Print, scan, or share a $5 PayPal QR flyer for the SoftJunk Lead Follow-Up Kit or custom sequence.</description>
+      <description>Print, scan, or share a packet-first $5 QR flyer for the SoftJunk one-copy order packet and after-packet PayPal handoff.</description>
       <pubDate>Tue, 26 May 2026 00:26:00 +0700</pubDate>
     </item>
     <item>
@@ -372,10 +372,10 @@
       <pubDate>Mon, 25 May 2026 20:45:00 +0700</pubDate>
     </item>
     <item>
-      <title>PayPal QR for SoftJunk $5 Offer</title>
+      <title>Packet QR for SoftJunk $5 Offer</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html</guid>
-      <description>Scan or open the PayPal QR page to pay $5 for the SoftJunk Lead Kit or custom sequence.</description>
+      <description>Scan or open the packet QR page to inspect the one-copy order packet before the $5 PayPal handoff.</description>
       <pubDate>Mon, 25 May 2026 13:25:00 +0700</pubDate>
     </item>
     <item>
