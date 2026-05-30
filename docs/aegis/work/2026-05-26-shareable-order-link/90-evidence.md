@@ -10620,3 +10620,35 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_copy_only_payment_handoff_ok status=200 urls=125`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Sponsor Route Packet-First Evidence
+
+- Product commit: `463633e` (`463633e95471b49eba673911e891725be70a5cc2`) on `main`.
+- Changed GitHub-native Sponsor surfaces: `.github/FUNDING.yml`, `.github/ISSUE_TEMPLATE/config.yml`, `.github/SUPPORT.md`, `SPONSOR_BUTTON_BUY.md`, `sponsor-button-buy.html`, `sponsor-button-buy.json`, `agent-buyer-catalog.jsonl`, `buyer-index.json`, `npm-funding.json`, `README.md`, `llms.txt`, `llms-full.txt`, `sitemap.xml`, and `feed.xml`.
+- The new `sponsor-button-buy.html` route uses semantic HTML, a skip link, a single H1, `aria-live` copy status, 44px-plus buttons through the existing shared CSS, and a visual route asset. It exposes copy buttons for packet URL, PayPal note, release proof, and after-packet PayPal URL, with no direct PayPal anchor.
+- `.github/FUNDING.yml` custom URLs now list `sponsor-button-buy.html`, `fix-one-quiet-lead.html`, `send-5/`, and `/5/`; the direct PayPal URL is no longer a custom Sponsor URL.
+- Local funding custom URL check returned `funding_custom_packet_first_ok urls=4`.
+- Sponsor JSON route check returned `sponsor_json_packet_first_ok`.
+- Sponsor HTML static check returned `sponsor_button_html_static_ok directPaypalHref=false h1=1`.
+- Inline HTML script parse returned `sponsor_button_html_script_ok scripts=1 hrefs=20`.
+- JSON/JSONL validation returned `json_parse_ok files=65 jsonl_lines=58`.
+- XML marker and parse checks returned `xml_markers_ok files=2` and `xml_parse_ok files=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` initially timed out when run in parallel with `npm pack --dry-run --json`; standalone rerun passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `216`, size `498280`, unpackedSize `2862035`, integrity `sha512-Wb9luf4UXEv5m6iEkWKsLy5nq2HdtsnSXHO854udtahc7UlbF2PQnci9hgALankmfaHvtHyO6qynh+Ok5O0dKA==`, shasum `038bbff2d718de600e5ce53796cab25184ba7b8e`.
+- Product Pages run `26698073985` completed successfully for commit `463633e95471b49eba673911e891725be70a5cc2`.
+- Live verification returned `live_sponsor_route_packet_first_ok commit=463633e pages=11 raw=3`, covering the new Sponsor HTML/JSON, public discovery files, raw `.github/FUNDING.yml`, raw issue chooser config, and raw support file.
+- IndexNow returned `indexnow_sponsor_route_packet_first_ok status=200 urls=11`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Sponsor Route Packet-First, product commit `463633e` (`463633e95471b49eba673911e891725be70a5cc2`).
+- Full evidence section: `2026-05-31 Sponsor Route Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26698073985` success.
+- Live verification evidence: `live_sponsor_route_packet_first_ok commit=463633e pages=11 raw=3`.
+- Discovery ping evidence: `indexnow_sponsor_route_packet_first_ok status=200 urls=11`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

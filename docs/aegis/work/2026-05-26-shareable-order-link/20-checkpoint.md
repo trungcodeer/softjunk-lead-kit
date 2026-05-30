@@ -14237,3 +14237,47 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Sponsor Route Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: added `sponsor-button-buy.html` as a packet-first Sponsor route, changed `.github/FUNDING.yml` custom URLs so GitHub Sponsor points to owned packet-first routes instead of direct PayPal, updated the issue chooser Sponsor links, and propagated the Sponsor route through JSON/JSONL, README/LLM context, sitemap, and RSS discovery.
+- Active slice status: product commit `463633e` (`463633e95471b49eba673911e891725be70a5cc2`) is pushed to `main`; GitHub Pages run `26698073985` completed successfully.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Local funding custom URL check returned `funding_custom_packet_first_ok urls=4`; no direct PayPal URL remains in `.github/FUNDING.yml` custom entries.
+- Sponsor JSON route check returned `sponsor_json_packet_first_ok`; `funding_custom_urls` and `sponsor_button_custom_urls` both start with `sponsor-button-buy.html`, include four URLs, and contain no direct PayPal URL.
+- Sponsor HTML static check returned `sponsor_button_html_static_ok directPaypalHref=false h1=1` and script parse returned `sponsor_button_html_script_ok scripts=1 hrefs=20`.
+- JSON/JSONL validation returned `json_parse_ok files=65 jsonl_lines=58`.
+- XML parse returned `xml_parse_ok files=2`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` initially timed out when run in parallel with package dry-run, then passed on a standalone rerun and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, entryCount `216`, size `498280`, unpackedSize `2862035`, integrity `sha512-Wb9luf4UXEv5m6iEkWKsLy5nq2HdtsnSXHO854udtahc7UlbF2PQnci9hgALankmfaHvtHyO6qynh+Ok5O0dKA==`, shasum `038bbff2d718de600e5ce53796cab25184ba7b8e`.
+- Product Pages run `26698073985` completed successfully for commit `463633e95471b49eba673911e891725be70a5cc2`.
+- Live verification returned `live_sponsor_route_packet_first_ok commit=463633e pages=11 raw=3`; the live Sponsor HTML has no direct PayPal anchor, the live Sponsor JSON/Funding custom URL arrays contain no direct PayPal URL, and raw issue chooser links no longer point directly to PayPal.
+- IndexNow returned `indexnow_sponsor_route_packet_first_ok status=200 urls=11`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the owned GitHub-native Sponsor path so a fitting buyer lands on a packet-first page with copy buttons and verification boundary instead of a pre-packet PayPal jump, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, GitHub Pages, package metadata, GitHub Sponsor/Funding config, issue chooser links, buyer-agent discovery files, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target and payment proof remains seller-side only.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Sponsor Route Packet-First, product commit `463633e` (`463633e95471b49eba673911e891725be70a5cc2`) on `main`.
+- Full checkpoint section: `2026-05-31 Sponsor Route Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26698073985` success; live verification `live_sponsor_route_packet_first_ok commit=463633e pages=11 raw=3`; IndexNow `indexnow_sponsor_route_packet_first_ok status=200 urls=11`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
