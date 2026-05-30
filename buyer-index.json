@@ -400,11 +400,11 @@
                               "why":  "Turns real lead context into a qualified buyer handoff, one-copy order packet route, PayPal note, custom preview, root one-lead rescue, and after-packet exact 5 USD PayPal route."
                           },
                           {
-                              "use_when":  "An AI assistant, VA, crawler, or buyer needs the most compact commerce contract before routing to root one-lead rescue and PayPal.",
+                              "use_when":  "An AI assistant, VA, crawler, or buyer needs the most compact commerce contract before routing to root one-lead rescue and the copy-only after-packet PayPal URL.",
                               "send_to":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
                               "machine_readable_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
                               "text_url":  "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
-                              "why":  "Combines fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, payment note, privacy boundary, and verification gate in one compact capsule."
+                              "why":  "Combines fit rules, do-not-use rules, free proof routes, one-copy order packet, copy-only after-packet 5 USD PayPal URL, payment note, privacy boundary, and verification gate in one compact capsule."
                           },
                           {
                               "use_when":  "The buyer has a weak follow-up, basic lead numbers, and needs a concrete recovery audit before paying.",

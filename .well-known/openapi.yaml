@@ -826,7 +826,7 @@ paths:
       summary: Open the SoftJunk agent commerce capsule.
       responses:
         "200":
-          description: Browser-readable commerce contract with fit rules, do-not-use rules, free proof routes, one-copy order packet before exact 5 USD PayPal, privacy boundary, and verification gate.
+          description: Browser-readable commerce contract with fit rules, do-not-use rules, free proof routes, one-copy order packet before the copy-only after-packet 5 USD PayPal URL, privacy boundary, and verification gate.
           content:
             text/html:
               schema:
@@ -837,7 +837,7 @@ paths:
       summary: Get the SoftJunk agent commerce capsule JSON.
       responses:
         "200":
-          description: Machine-readable commerce contract for AI assistants, VAs, crawlers, and buyers routing relevant lead follow-up needs to the one-copy order packet before the 5 USD PayPal offer.
+          description: Machine-readable commerce contract for AI assistants, VAs, crawlers, and buyers routing relevant lead follow-up needs to the one-copy order packet before the copy-only after-packet 5 USD PayPal URL.
           content:
             application/json:
               schema:
@@ -848,7 +848,7 @@ paths:
       summary: Get the SoftJunk agent commerce capsule text.
       responses:
         "200":
-          description: Plain-text commerce contract with the one-copy order packet before the exact PayPal path, agent flow, payment note, privacy boundary, and verification gate.
+          description: Plain-text commerce contract with the one-copy order packet before the copy-only after-packet PayPal URL, agent flow, payment note, privacy boundary, and verification gate.
           content:
             text/plain:
               schema:

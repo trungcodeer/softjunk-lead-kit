@@ -548,6 +548,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
+- Agent commerce rule: the capsule now routes assistants through no-clone proof, the one-copy order packet, and the PayPal note before a copy-only after-packet PayPal URL.
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI prompt and answer checkout rule: AI follow-up prompt and lead follow-up answers build the one-copy order packet before after-packet PayPal and keep `PAYPAL_PAYMENT_VERIFIED=true` as the completion gate.
 - Shareable order link: https://trungcodeer.github.io/softjunk-lead-kit/shareable-order-link.html
@@ -613,6 +614,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - AI Deal Desk Gist: https://gist.github.com/trungcodeer/16d6861c14de82187946861e4c448844
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
+- Agent commerce rule: the text capsule keeps the one-copy order packet and PayPal note before the copy-only after-packet PayPal URL.
 - AI follow-up prompt: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.html
 - AI follow-up prompt text: https://trungcodeer.github.io/softjunk-lead-kit/ai-follow-up-prompt.txt
 - Public AI follow-up prompt Gist: https://gist.github.com/trungcodeer/9536e55f193f941e05651ac8cd5139b1
@@ -683,6 +685,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Agent commerce capsule: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html
 - Agent commerce JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json
 - Agent commerce text: https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt
+- Agent commerce checkout rule: assistants should run no-clone proof, build or inspect the one-copy order packet, copy the PayPal note, then copy the after-packet PayPal URL; completion still requires seller-side evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 - Agent close contract: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.html
 - Agent close JSON: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.json
 - Agent close text: https://trungcodeer.github.io/softjunk-lead-kit/agent-close.txt

@@ -274,7 +274,10 @@
       "name": "Agent Commerce Capsule",
       "url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.json",
-      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt"
+      "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.txt",
+      "delivery": "Compact AI/VA/crawler commerce contract with fit rules, no-clone proof, one-copy order packet, copy-only after-packet PayPal URL, and seller-side verification gate",
+      "payment_handoff_mode": "copy_only_after_packet",
+      "before_payment_action": "Build or inspect the one-copy order packet and copy the PayPal note before using the after-packet PayPal URL."
     },
     {
       "name": "Shareable Order Link",
