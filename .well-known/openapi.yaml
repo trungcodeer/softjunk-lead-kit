@@ -342,7 +342,7 @@ paths:
       summary: Open the SoftJunk commerce graph page.
       responses:
         "200":
-          description: Human and crawler page exposing Product, Offer, BuyAction, root one-lead rescue, PayPal, order form, and verification nodes.
+          description: Human and crawler page exposing Product, Offer, BuyAction, one-copy order packet before PayPal, order form, and verification nodes.
           content:
             text/html:
               schema:
@@ -353,7 +353,7 @@ paths:
       summary: Get the SoftJunk commerce graph JSON-LD.
       responses:
         "200":
-          description: JSON-LD graph with Product, Offer, BuyAction, root one-lead rescue, PayPal, HowTo, order form, and verification gate nodes.
+          description: JSON-LD graph with Product, Offer, BuyAction, one-copy order packet, direct PayPal handoff, HowTo, order form, and verification gate nodes.
           content:
             application/ld+json:
               schema:
@@ -727,7 +727,7 @@ paths:
       summary: Get machine-readable SoftJunk offers.
       responses:
         "200":
-          description: Offer metadata with PayPal payment URL.
+          description: Offer metadata with one-copy order packet before the direct PayPal payment URL.
           content:
             application/json:
               schema:
@@ -738,7 +738,7 @@ paths:
       summary: Get product feed for the $5 follow-up offer.
       responses:
         "200":
-          description: Product feed with payment, delivery, and free tool links.
+          description: Product feed with one-copy order packet, direct PayPal payment, delivery, and free tool links.
           content:
             application/json:
               schema:
@@ -749,7 +749,7 @@ paths:
       summary: Get answer-engine-ready lead follow-up Q&A.
       responses:
         "200":
-          description: JSON answers for high-intent lead follow-up questions with payment routing.
+          description: JSON answers for high-intent lead follow-up questions with packet-first payment routing.
           content:
             application/json:
               schema:
@@ -826,7 +826,7 @@ paths:
       summary: Open the SoftJunk agent commerce capsule.
       responses:
         "200":
-          description: Browser-readable commerce contract with fit rules, do-not-use rules, free proof routes, exact 5 USD PayPal URL, PayPal note, privacy boundary, and verification gate.
+          description: Browser-readable commerce contract with fit rules, do-not-use rules, free proof routes, one-copy order packet before exact 5 USD PayPal, privacy boundary, and verification gate.
           content:
             text/html:
               schema:
@@ -837,7 +837,7 @@ paths:
       summary: Get the SoftJunk agent commerce capsule JSON.
       responses:
         "200":
-          description: Machine-readable commerce contract for AI assistants, VAs, crawlers, and buyers routing relevant lead follow-up needs to the 5 USD PayPal offer.
+          description: Machine-readable commerce contract for AI assistants, VAs, crawlers, and buyers routing relevant lead follow-up needs to the one-copy order packet before the 5 USD PayPal offer.
           content:
             application/json:
               schema:
