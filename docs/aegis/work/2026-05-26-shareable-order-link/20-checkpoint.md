@@ -11345,3 +11345,51 @@ DriftCheckDraft:
 - Compatibility boundary: product GitHub repo, product GitHub Pages, checkout HTML/JSON/text, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
 - New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
 - Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Buy Now Packet Checkpoint
+
+Current todo:
+- Route the GitHub-native `BUY_NOW.md` and raw `buy-now.json` checkout path through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `BUY_NOW.md`, `buy-now.json`, `sitemap.xml`, and public Gist `f2c1e3469c1f9313f135f612b229b0e6`.
+
+Completed todos:
+- Updated `BUY_NOW.md` so the main heading, roofing fast path, fastest route, buyer copy, buyer-agent copy, and machine-readable route all put the one-copy order packet before PayPal.
+- Updated `buy-now.json` to `updated=2026-05-30`, added one-copy order packet HTML/JSON/TXT URLs, added `before_payment_action`, and made `route_steps[0].step=build_one_copy_order_packet`.
+- Updated `sitemap.xml` to include Pages URLs for `BUY_NOW.md` and `buy-now.json` with `lastmod=2026-05-30`.
+- Updated public Gist `f2c1e3469c1f9313f135f612b229b0e6` files `BUY_NOW.md` and `buy-now.json`.
+- Committed and pushed product commit `27ef102` to `main`.
+- Product Pages run `26673765400` completed successfully.
+- Live Pages verification returned `live_buy_now_packet_ok commit=27ef102 urls=3`.
+- Submitted the three changed product Pages URLs to IndexNow; API returned `indexnow_buy_now_packet_ok status=200 urls=3`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `buy_now_json_ok route0=build_one_copy_order_packet`.
+- `sitemap_xml_ok`.
+- `buy_now_packet_first_markers_ok files=2`.
+- `sitemap_buy_now_lastmod_ok`.
+- `json_parse_ok files=56`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `gist_buy_now_packet_verified files=2`.
+- GitHub Pages run `26673765400` success.
+- Live verification: `live_buy_now_packet_ok commit=27ef102 urls=3`.
+- IndexNow: `indexnow_buy_now_packet_ok status=200 urls=3`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the owned GitHub-native Buy Now checkout route and its public Gist mirror without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, raw GitHub/Gist mirrors, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains payment route and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.

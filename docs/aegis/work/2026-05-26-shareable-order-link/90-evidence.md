@@ -8385,3 +8385,36 @@ Latest adjacent-discovery refresh:
 - IndexNow returned `indexnow_core_checkout_packet_ok status=200 urls=4` for the four changed product Pages URLs.
 - PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Buy Now Packet Evidence
+
+- Audited GitHub-native Buy Now surfaces after core checkout became packet-first.
+- Found that `BUY_NOW.md` and `buy-now.json` still described direct PayPal checkout before the one-copy order packet and were not listed in `sitemap.xml`.
+- Updated product commit `27ef102`:
+  - `BUY_NOW.md` now starts with "Build packet, then pay 5 USD" and routes human buyers and buyer-agents through `fix-one-quiet-lead.html` / `fix-one-quiet-lead.json` before PayPal.
+  - `buy-now.json` now has `updated=2026-05-30`, top-level one-copy order packet URLs, `before_payment_action`, a packet-first roofing fast path, packet-first copyable buyer/agent instructions, and `route_steps[0].step=build_one_copy_order_packet`.
+  - `sitemap.xml` now includes `BUY_NOW.md` and `buy-now.json` with `lastmod=2026-05-30`.
+- Local verification:
+  - `buy_now_json_ok route0=build_one_copy_order_packet`.
+  - `sitemap_xml_ok`.
+  - `buy_now_packet_first_markers_ok files=2`.
+  - `sitemap_buy_now_lastmod_ok`.
+  - `json_parse_ok files=56`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Public Gist mirror updated:
+  - Gist `f2c1e3469c1f9313f135f612b229b0e6`.
+  - Files `BUY_NOW.md` and `buy-now.json` replaced from local files.
+  - Description changed to "SoftJunk GitHub-native Buy Now route - one-copy order packet before PayPal 5 USD".
+  - Verification returned `gist_buy_now_packet_verified files=2`.
+- Deployment:
+  - Product commit `27ef102` pushed to `main`.
+  - Product Pages run `26673765400` completed successfully.
+- Live verification returned `live_buy_now_packet_ok commit=27ef102 urls=3` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/BUY_NOW.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buy-now.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+- IndexNow returned `indexnow_buy_now_packet_ok status=200 urls=3` for the three changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
