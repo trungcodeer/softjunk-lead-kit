@@ -80,20 +80,20 @@ https://paypal.me/softjunk/5USD
 No-clone checkout proof:
 
 ```bash
-npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
+npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json
 ```
 
 Current release:
 
-https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165
+https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
 
 Release tarball:
 
-https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz
+https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz
 
 Current release tarball SHA-256 file:
 
-`https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256`
+`https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256`
 
 Expected checkout:
 

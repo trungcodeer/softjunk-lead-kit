@@ -11,11 +11,11 @@
   "one_copy_order_packet_text_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.txt",
   "before_payment_action": "Build or inspect the one-copy order packet before copying the after-packet PayPal URL.",
   "latest_release_status": {
-    "latest_release_tag": "v2.29.165",
-    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165",
-    "latest_release_target": "db253ead85d910d85d2ec5d5a5ecaea29e83b595",
-    "current_release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz",
-    "current_release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256",
+    "latest_release_tag": "v2.29.166",
+    "latest_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166",
+    "latest_release_target": "b06be515e2d9a89288e1da67a0a4c64ace93921c",
+    "current_release_tarball_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz",
+    "current_release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256",
     "npm_publish_status_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/npm-publish-status.json",
     "npm_publish_workflow_template_url": "https://github.com/trungcodeer/softjunk-lead-kit/blob/main/NPM_PUBLISH_WORKFLOW.yml.example",
     "npmjs_package_status": "E404",
@@ -75,7 +75,7 @@
       "payment_url": "https://paypal.me/softjunk/5USD",
       "success_signal": "PAYPAL_PAYMENT_VERIFIED=true"
     },
-    "current_release_tarball_command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+    "current_release_tarball_command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "fallback_tarball_command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.151/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
     "payment_url": "https://paypal.me/softjunk/5USD",
     "verification_gate": "This proves the package checkout route only. Do not claim payment, fulfillment, or completion before seller-side PayPal evidence or PAYPAL_PAYMENT_VERIFIED=true."
@@ -153,9 +153,9 @@
       "rank": 8,
       "route_id": "current_release_tarball_checkout",
       "use_when": "A coding agent wants the pinned current release tarball checkout route rather than GitHub main.",
-      "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
-      "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.165",
-      "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.165/softjunk-lead-kit-0.2.2.tgz.sha256",
+      "command": "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json",
+      "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166",
+      "release_tarball_sha256_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.166/softjunk-lead-kit-0.2.2.tgz.sha256",
       "payment_url": "https://paypal.me/softjunk/5USD"
     },
     {
