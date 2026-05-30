@@ -8670,3 +8670,50 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_pay_page_packet_ok status=200 urls=3`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Five Dollar Buyer Card Packet Evidence
+
+- Audited the lowest-friction product buyer card after `pay.html` became packet-first.
+- Found that `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, `five-dollar-buyer-card.txt`, and the linked public Gist still used direct PayPal as the primary buyer action or schema action target.
+- Updated product commit `6f89aaf` (`6f89aaf2014c43f88998295c5dc0b639d9dc729b`):
+  - `five-dollar-buyer-card.html` now presents "Build packet, then pay 5 USD." and routes the primary CTA to `fix-one-quiet-lead.html`.
+  - `five-dollar-buyer-card.html` keeps PayPal as an after-packet direct handoff and preserves accessibility affordances: skip link, semantic anchors/buttons, focus-visible styling, and `aria-live="polite"` copy status.
+  - `five-dollar-buyer-card.json` now uses schema `softjunk-five-dollar-buyer-card-v2`, `updated=2026-05-30`, top-level one-copy order packet fields, direct PayPal fields, and packet-first schema.org action targets.
+  - `five-dollar-buyer-card.txt` now lists the one-copy order packet and machine-readable packet before the direct PayPal URL.
+  - `.well-known/openapi.yaml` now describes `/5/`, `/5.json`, `/5.txt`, and the product buyer-card routes as packet-first.
+  - `sitemap.xml` now marks the three product buyer-card URLs with `lastmod=2026-05-30`.
+- Local verification:
+  - `five_dollar_buyer_card_packet_ok action_targets=3 html_jsonld=1`.
+  - `five_dollar_sitemap_openapi_ok urls=3`.
+  - `json_parse_ok files=65`.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-+68VphdZu5JLiHkNEsg8CRjKZDMJxP38MHfuSCZeJRipDaZYKiWQ4bZBYbOv4q8EBCASNlPw0gwdg5A/7PXzWQ==`, shasum `596ca20c5aa21bf58c23e2bc7a501b08e6afacc5`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+- Public Gist mirror updated and verified:
+  - Gist `4507ec1fc5f1b009924dfdaa235859e8`.
+  - Files `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, and `five-dollar-buyer-card.txt` replaced from local files.
+  - Raw Gist verification returned `gist_five_dollar_packet_verified files=3`.
+- Deployment:
+  - Product commit `6f89aaf` pushed to `main`.
+  - Product Pages run `26675889577` completed successfully.
+- Live verification returned `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/five-dollar-buyer-card.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - Public Gist files `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, and `five-dollar-buyer-card.txt`.
+- IndexNow returned `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5` for the five changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Five Dollar Buyer Card Packet, product commit `6f89aaf` (`6f89aaf2014c43f88998295c5dc0b639d9dc729b`).
+- Full evidence section: `2026-05-30 Five Dollar Buyer Card Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26675889577` success.
+- Live verification evidence: `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3`.
+- Discovery ping evidence: `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

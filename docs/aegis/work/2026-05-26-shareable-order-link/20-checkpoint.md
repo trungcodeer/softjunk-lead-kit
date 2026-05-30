@@ -11419,6 +11419,67 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Five Dollar Buyer Card Packet Checkpoint
+
+Current todo:
+- Route the lowest-friction `five-dollar-buyer-card.*` buyer card through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, `five-dollar-buyer-card.txt`, `.well-known/openapi.yaml`, `sitemap.xml`, and public Gist `4507ec1fc5f1b009924dfdaa235859e8`.
+
+Completed todos:
+- Updated `five-dollar-buyer-card.html` title, description, Open Graph copy, H1, primary CTA, navigation, JSON-LD, and footer so buyers build `fix-one-quiet-lead.html` before PayPal.
+- Preserved the direct PayPal handoff as `PayPal after packet`, JSON-LD `directPaymentUrl` / `paymentUrl`, and plain-text after-packet payment URL.
+- Updated `five-dollar-buyer-card.json` to schema `softjunk-five-dollar-buyer-card-v2`, `updated=2026-05-30`, added one-copy order packet fields, direct payment fields, and packet-first action targets.
+- Updated `five-dollar-buyer-card.txt` so the one-copy order packet URLs appear before the PayPal URL.
+- Updated `.well-known/openapi.yaml` descriptions for `/5/`, `/5.json`, `/5.txt`, and the product buyer-card routes to describe packet-first routing.
+- Updated `sitemap.xml` lastmod values to `2026-05-30` for `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, and `five-dollar-buyer-card.txt`.
+- Updated public Gist `4507ec1fc5f1b009924dfdaa235859e8` files `five-dollar-buyer-card.html`, `five-dollar-buyer-card.json`, and `five-dollar-buyer-card.txt`; raw verification returned `gist_five_dollar_packet_verified files=3`.
+- Committed and pushed product commit `6f89aaf` (`6f89aaf2014c43f88998295c5dc0b639d9dc729b`) to `main`.
+- Product Pages run `26675889577` completed successfully.
+- Live Pages/Gist verification returned `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3`.
+- Submitted the five changed product Pages URLs to IndexNow; API returned `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `five_dollar_buyer_card_packet_ok action_targets=3 html_jsonld=1`.
+- `five_dollar_sitemap_openapi_ok urls=3`.
+- `gist_five_dollar_packet_verified files=3`.
+- `json_parse_ok files=65`.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-+68VphdZu5JLiHkNEsg8CRjKZDMJxP38MHfuSCZeJRipDaZYKiWQ4bZBYbOv4q8EBCASNlPw0gwdg5A/7PXzWQ==`, shasum `596ca20c5aa21bf58c23e2bc7a501b08e6afacc5`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- GitHub Pages run `26675889577` success.
+- Live verification: `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3`.
+- IndexNow: `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves the owned lowest-friction buyer card and its public Gist mirror without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, public Gist mirror, public HTML/JSON/TXT buyer card, OpenAPI metadata, sitemap, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains the direct payment handoff after the packet and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Five Dollar Buyer Card Packet, product commit `6f89aaf` (`6f89aaf2014c43f88998295c5dc0b639d9dc729b`).
+- Full checkpoint section: `2026-05-30 Five Dollar Buyer Card Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675889577` success; live verification `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3`; IndexNow `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
 - Current slice fit: yes, it improves package-native NPM funding, CLI, MCP, and machine-readable buyer routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
@@ -11748,6 +11809,17 @@ Latest completed slice:
 - Pay Page Packet, product commit `22c360e` (`22c360ee2655e3b449bf29561f80323e67bd2b4a`).
 - Full checkpoint section: `2026-05-30 Pay Page Packet Checkpoint`.
 - Deployment evidence: GitHub Pages run `26675550233` success; live verification `live_pay_page_packet_ok commit=22c360e urls=3`; IndexNow `indexnow_pay_page_packet_ok status=200 urls=3`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Five Dollar Buyer Card Packet, product commit `6f89aaf` (`6f89aaf2014c43f88998295c5dc0b639d9dc729b`).
+- Full checkpoint section: `2026-05-30 Five Dollar Buyer Card Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26675889577` success; live verification `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3`; IndexNow `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
