@@ -9093,3 +9093,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_roofing_buyer_send_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Plumbing Buyer Send Packet Evidence
+
+- Audited the plumbing buyer send handoff after the roofing buyer send route became packet-first.
+- Found that `plumbing-buyer-send.html`, `plumbing-buyer-send.json`, and `plumbing-buyer-send.txt` still exposed direct PayPal as a primary buyer action or QR path before the one-copy order packet.
+- Updated product commit `22dd494` (`22dd4948addafc30d163c1b191e1f392063ed62e`):
+  - `plumbing-buyer-send.html` JSON-LD Offer URL and BuyAction target now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `plumbing-buyer-send.html` primary hero CTA now says `Build order packet` and points to the one-copy order packet instead of a direct PayPal button.
+  - `plumbing-buyer-send.html` visible QR now uses `packet-qr.svg` instead of the direct checkout QR route.
+  - `plumbing-buyer-send.html` short DM, email, mailto body, route copy, and checkout proof copy now list the one-copy order packet before the after-packet PayPal checkout.
+  - `plumbing-buyer-send.json` now uses schema `softjunk-plumbing-buyer-send-v3`, `updated=2026-05-30`, one-copy order packet fields, direct PayPal fields, and packet-first BuyAction targets.
+  - `plumbing-buyer-send.txt` now lists the one-copy order packet before the after-packet PayPal checkout and sets the structured commerce action target to the packet URL.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe plumbing buyer send as a packet-first buyer handoff.
+  - Accessibility affordances remain present on `plumbing-buyer-send.html`: skip link, focus-visible styling, semantic anchors/buttons, QR alt text, and `aria-live="polite"` status messages.
+- Local verification:
+  - `plumbing_buyer_send_packet_ok html=1 json=2 discovery=6`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-r1ENhT9IdJAAvkf2DW0VL+i4lj45TJbmyzdgE9fJ9uk9Fwva5TGiIdGcI3Ry+FBgqIXcdO48Vcwwnr93Mxv19g==`, shasum `90e87a5053a68b46930d3cb63d1f19864c674af7`.
+- Deployment:
+  - Product commit `22dd494` pushed to `main`.
+  - Product Pages run `26679726617` completed successfully.
+- Live verification returned `live_plumbing_buyer_send_packet_ok commit=22dd494 urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_plumbing_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Plumbing Buyer Send Packet, product commit `22dd494` (`22dd4948addafc30d163c1b191e1f392063ed62e`).
+- Full evidence section: `2026-05-30 Plumbing Buyer Send Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26679726617` success.
+- Live verification evidence: `live_plumbing_buyer_send_packet_ok commit=22dd494 urls=9`.
+- Discovery ping evidence: `indexnow_plumbing_buyer_send_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
