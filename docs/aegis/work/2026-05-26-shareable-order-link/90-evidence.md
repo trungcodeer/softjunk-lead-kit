@@ -10558,3 +10558,33 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_sample_zip_copy_only_v229166_ok status=200 urls=17`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Buyer Relay Copy-Only PayPal Handoff Evidence
+
+- Product commits: `1295bdc` (`1295bdcb0805d4407b809ca296aecb8782351d12`), `c17cd21` (`c17cd21cbbfcb29f7088d366a6a27cf5b34932b1`), and `1843167` (`1843167c7165fb9131c30967a1cd1372fd3acb90`) on `main`.
+- Changed buyer/share surfaces: `one-buyer-share.html`, `one-buyer-share.json`, `one-buyer-share.txt`, `buyer-agent-relay.html`, `buyer-agent-relay.json`, `buyer-agent-relay.txt`, `buyer-index.json`, `README.md`, `llms.txt`, and `feed.xml`.
+- The `one-buyer-share.html` route now exposes a dedicated readonly after-packet PayPal URL field with a copy button (`data-copy="paypal-url"`) and keeps the existing `aria-live` status region.
+- Focused JSON parse returned `json_parse_ok files=3`; full JSON parse returned `json_parse_ok files=56`; JSONL parse returned `jsonl_parse_ok files=1 lines=58`.
+- `feed.xml` parsed as XML.
+- Focused copy-only wording scan returned `copy_only_payment_wording_ok files=10`.
+- `one-buyer-share.html` static check returned `one_buyer_share_static_ok copy_button=1 direct_href=0 aria_live=1`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, size `504848`, unpackedSize `2863119`, integrity `sha512-7YBkhoShpAwxLrLhfqWfk+PDfLGkNY0aKaA9a7lVSBqengsHtAeKz2hqUj950lpCDfn0V5UuRLFm99xBecjTgQ==`, shasum `baf202022844de65551624a083a6a42a4c638bb7`.
+- Product Pages run `26697170245` completed successfully for commit `1843167c7165fb9131c30967a1cd1372fd3acb90`.
+- Live verification returned `live_buyer_relay_copy_only_ok commit=1843167 urls=10 copyMarkerUrls=10`; live `one-buyer-share.html` includes `id="paypal-url"` and `data-copy="paypal-url"` and has no direct PayPal anchor.
+- IndexNow returned `indexnow_buyer_relay_copy_only_ok status=200 urls=10`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Buyer Relay Copy-Only PayPal Handoff, commits `1295bdc`, `c17cd21`, and `1843167` on `main`.
+- Full evidence section: `2026-05-31 Buyer Relay Copy-Only PayPal Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26697170245` success.
+- Live verification evidence: `live_buyer_relay_copy_only_ok commit=1843167 urls=10`.
+- Discovery ping evidence: `indexnow_buyer_relay_copy_only_ok status=200 urls=10`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

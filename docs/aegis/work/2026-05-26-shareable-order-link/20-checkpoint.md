@@ -14149,3 +14149,47 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Buyer Relay Copy-Only PayPal Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `one-buyer-share` and `buyer-agent-relay` from direct-pay wording to copy-only after-packet PayPal URL wording, added a dedicated copy target for the after-packet PayPal URL on `one-buyer-share.html`, and updated matching JSON/TXT mirrors plus buyer index, README, llms, and feed discovery text.
+- Active slice status: commits `1295bdc` (`1295bdcb0805d4407b809ca296aecb8782351d12`), `c17cd21` (`c17cd21cbbfcb29f7088d366a6a27cf5b34932b1`), and `1843167` (`1843167c7165fb9131c30967a1cd1372fd3acb90`) are pushed to `main`; GitHub Pages run `26697170245` completed successfully.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused JSON parse returned `json_parse_ok files=3`; full JSON parse returned `json_parse_ok files=56`; JSONL parse returned `jsonl_parse_ok files=1 lines=58`.
+- `feed.xml` parsed as XML.
+- Focused copy-only wording scan returned `copy_only_payment_wording_ok files=10`.
+- `one-buyer-share.html` static check returned `one_buyer_share_static_ok copy_button=1 direct_href=0 aria_live=1`.
+- JavaScript syntax checks passed for `bin/softjunk-lead-kit.js` and `mcp-server-softjunk.js`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, entryCount `215`, size `504848`, unpackedSize `2863119`, integrity `sha512-7YBkhoShpAwxLrLhfqWfk+PDfLGkNY0aKaA9a7lVSBqengsHtAeKz2hqUj950lpCDfn0V5UuRLFm99xBecjTgQ==`, shasum `baf202022844de65551624a083a6a42a4c638bb7`.
+- Product Pages run: `26697170245`, conclusion `success`, head SHA `1843167c7165fb9131c30967a1cd1372fd3acb90`.
+- Live verification returned `live_buyer_relay_copy_only_ok commit=1843167 urls=10 copyMarkerUrls=10`; live `one-buyer-share.html` includes `id="paypal-url"` and `data-copy="paypal-url"` and has no direct PayPal anchor.
+- IndexNow returned `indexnow_buyer_relay_copy_only_ok status=200 urls=10`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves owned buyer-agent/share surfaces so a fitting buyer receives packet-first copy-only payment instructions, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, GitHub Pages, package metadata, buyer-agent/share routes, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Buyer Relay Copy-Only PayPal Handoff, commits `1295bdc`, `c17cd21`, and `1843167` on `main`.
+- Full checkpoint section: `2026-05-31 Buyer Relay Copy-Only PayPal Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26697170245` success; live verification `live_buyer_relay_copy_only_ok commit=1843167 urls=10`; IndexNow `indexnow_buyer_relay_copy_only_ok status=200 urls=10`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
