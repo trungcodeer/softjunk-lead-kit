@@ -9191,3 +9191,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_hvac_buyer_send_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Dental Buyer Send Packet Evidence
+
+- Audited the dental buyer send handoff after the HVAC buyer send route became packet-first.
+- Found that `dental-buyer-send.html`, `dental-buyer-send.json`, and `dental-buyer-send.txt` still exposed direct PayPal as a primary buyer action or QR path before the one-copy order packet.
+- Updated product commit `431a5c4` (`431a5c4349cf6ac7e770c2df180ad645a22d647e`):
+  - `dental-buyer-send.html` JSON-LD Offer URL and BuyAction target now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `dental-buyer-send.html` primary hero CTA now says `Build order packet` and points to the one-copy order packet instead of a direct PayPal button.
+  - `dental-buyer-send.html` visible QR now uses `packet-qr.svg` instead of the direct checkout QR route.
+  - `dental-buyer-send.html` short DM, email, mailto body, route copy, and checkout proof copy now list the one-copy order packet before the after-packet PayPal checkout.
+  - `dental-buyer-send.json` now uses schema `softjunk-dental-buyer-send-v3`, `updated=2026-05-30`, one-copy order packet fields, direct PayPal fields, and packet-first BuyAction targets.
+  - `dental-buyer-send.txt` now lists the one-copy order packet before the after-packet PayPal checkout and sets the structured commerce action target to the packet URL.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe dental buyer send as a packet-first buyer handoff.
+  - Accessibility affordances remain present on `dental-buyer-send.html`: skip link, focus-visible styling, semantic anchors/buttons, QR alt text, and `aria-live="polite"` status messages.
+- Local verification:
+  - `dental_buyer_send_packet_ok html=1 json=2 discovery=6`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-NO1SPJZmXq8fCjqBumH4wTn0nmszFCCC1tzYKn/QOGgcLaqdV745/Vx0mztFsmJNDDIjxyUmLjKqBTMmiwOmuA==`, shasum `2e79123fb5d7f4590fc5c019d873be76100d7d8f`.
+- Deployment:
+  - Product commit `431a5c4` pushed to `main`.
+  - Product Pages run `26680463803` completed successfully.
+- Live verification returned `live_dental_buyer_send_packet_ok commit=431a5c4 urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/dental-buyer-send.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_dental_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Dental Buyer Send Packet, product commit `431a5c4` (`431a5c4349cf6ac7e770c2df180ad645a22d647e`).
+- Full evidence section: `2026-05-30 Dental Buyer Send Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26680463803` success.
+- Live verification evidence: `live_dental_buyer_send_packet_ok commit=431a5c4 urls=9`.
+- Discovery ping evidence: `indexnow_dental_buyer_send_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

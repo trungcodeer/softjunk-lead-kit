@@ -12386,3 +12386,56 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Dental Buyer Send Packet Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Dental Buyer Send Packet.
+- Completed todos:
+  - Audited `dental-buyer-send.html`, `dental-buyer-send.json`, `dental-buyer-send.txt`, OpenAPI, RSS, sitemap, README, buyer-index, and LLM summary surfaces after the HVAC buyer send route became packet-first.
+  - Routed the dental buyer send page's paid JSON-LD Offer URL, BuyAction target, primary hero CTA, visible QR, short DM, email copy, route copy, and no-clone proof copy through the one-copy order packet before PayPal.
+  - Preserved direct PayPal as an explicit after-packet handoff through `directPaymentUrl`, `paymentUrl`, `direct_payment_url`, `dental_buyer_send_payment_handoff_url`, and after-packet copy.
+  - Updated `dental-buyer-send.json` to `softjunk-dental-buyer-send-v3`, `updated=2026-05-30`, with one-copy order packet fields, top-level BuyAction fields, and packet-first buyer copy.
+  - Updated `dental-buyer-send.txt`, `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` for packet-first dental buyer discovery.
+  - Committed and pushed product commit `431a5c4` (`431a5c4349cf6ac7e770c2df180ad645a22d647e`) to `main`.
+  - Waited for GitHub Pages run `26680463803`, which completed successfully for commit `431a5c4`.
+  - Live-verified nine product URLs with marker `live_dental_buyer_send_packet_ok commit=431a5c4 urls=9`.
+  - Submitted nine owned Pages URLs to IndexNow with marker `indexnow_dental_buyer_send_packet_ok status=200 urls=9`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `dental_buyer_send_packet_ok html=1 json=2 discovery=6`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-NO1SPJZmXq8fCjqBumH4wTn0nmszFCCC1tzYKn/QOGgcLaqdV745/Vx0mztFsmJNDDIjxyUmLjKqBTMmiwOmuA==`, shasum `2e79123fb5d7f4590fc5c019d873be76100d7d8f`.
+- Product Pages run: `26680463803`, conclusion `success`, head SHA `431a5c4349cf6ac7e770c2df180ad645a22d647e`.
+- Live verification: `live_dental_buyer_send_packet_ok commit=431a5c4 urls=9`.
+- IndexNow: `indexnow_dental_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a privacy-sensitive dental-specific buyer handoff and keeps the route packet-first without scraped outreach, spam, deception, fake payment, patient data exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, HTML/JSON/text dental buyer send surfaces, JSON/OpenAPI/RSS/sitemap/LLM discovery, README, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Dental Buyer Send Packet, product commit `431a5c4` (`431a5c4349cf6ac7e770c2df180ad645a22d647e`).
+- Full checkpoint section: `2026-05-30 Dental Buyer Send Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26680463803` success; live verification `live_dental_buyer_send_packet_ok commit=431a5c4 urls=9`; IndexNow `indexnow_dental_buyer_send_packet_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
