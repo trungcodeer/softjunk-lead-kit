@@ -9044,3 +9044,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_send_to_buyer_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Roofing Buyer Send Packet Evidence
+
+- Audited the roofing buyer send handoff after the general send-to-buyer route became packet-first.
+- Found that `roofing-buyer-send.html`, `roofing-buyer-send.json`, and `roofing-buyer-send.txt` still exposed direct PayPal as a primary buyer action or QR path before the one-copy order packet.
+- Updated product commit `5b6f3f8` (`5b6f3f8a2fee7533ddd61c0d03eaf94d51f90d9f`):
+  - `roofing-buyer-send.html` JSON-LD Offer URL and BuyAction targets now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `roofing-buyer-send.html` primary hero CTA now says `Build order packet` and points to the one-copy order packet instead of a direct PayPal button.
+  - `roofing-buyer-send.html` visible QR now uses `packet-qr.svg` instead of `paypal-qr.svg`.
+  - `roofing-buyer-send.html` short DM, email, mailto body, exact route, and checkout proof copy now list the one-copy order packet before the after-packet PayPal checkout.
+  - `roofing-buyer-send.json` now uses schema `softjunk-roofing-buyer-send-v3`, `updated=2026-05-30`, one-copy order packet fields, direct PayPal fields, and packet-first buyer copy.
+  - `roofing-buyer-send.txt` now lists the one-copy order packet before the after-packet PayPal checkout and sets the structured commerce action target to the packet URL.
+  - `.well-known/openapi.yaml`, `buyer-index.json`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe roofing buyer send as a packet-first buyer handoff.
+  - Accessibility affordances remain present on `roofing-buyer-send.html`: skip link, focus-visible styling, semantic anchors/buttons, QR alt text, and `aria-live="polite"` status messages.
+- Local verification:
+  - `roofing_buyer_send_packet_ok html=1 json=2 discovery=6`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-Ej8NARJnpEaQqOQ2xQ7t1WMHUiSJKoBJkLpqR/bdFut08XZ0+D5JGKahtUHN/zjUPPN/XfWFYczBP3/sOgveOA==`, shasum `4ebc8026319b6f025952cbfb8162598a55a473ee`.
+- Deployment:
+  - Product commit `5b6f3f8` pushed to `main`.
+  - Product Pages run `26679339769` completed successfully.
+- Live verification returned `live_roofing_buyer_send_packet_ok commit=5b6f3f8 urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/buyer-index.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+- IndexNow returned `indexnow_roofing_buyer_send_packet_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Roofing Buyer Send Packet, product commit `5b6f3f8` (`5b6f3f8a2fee7533ddd61c0d03eaf94d51f90d9f`).
+- Full evidence section: `2026-05-30 Roofing Buyer Send Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26679339769` success.
+- Live verification evidence: `live_roofing_buyer_send_packet_ok commit=5b6f3f8 urls=9`.
+- Discovery ping evidence: `indexnow_roofing_buyer_send_packet_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
