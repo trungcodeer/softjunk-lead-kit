@@ -10290,3 +10290,31 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_appointment_setting_follow_up_copy_only_ok status=200 urls=4`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Med Spa Follow-Up Copy-Only Handoff Evidence
+
+- Product commit: `fdcb66b` (`fdcb66b32d5986d21a28644725efa6b52b903223`) on `main`.
+- Changed buyer-facing route: `med-spa-follow-up.html`.
+- Changed discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `med_spa_follow_up_copy_only_static_ok direct_href=0 copy_markers=2 jsonld_blocks=2 inline_scripts=1`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Discovery marker scan returned `med_spa_follow_up_discovery_static_ok files=3`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-k0P4wQpHTpcn7DSmczsh8z9rKhpeIrDhWNzl7Bc1x64voG7CMbj02PdustDL7qZUp64DX12ve+tYfaiOAtVACA==`, shasum `c6d48c04172f2b85a41422311da2d7ab4b193da8`.
+- Product Pages run `26693203410` completed successfully.
+- Live verification returned `live_med_spa_follow_up_copy_only_ok commit=fdcb66b urls=4` for `med-spa-follow-up.html`, `README.md`, `llms.txt`, and `sitemap.xml`.
+- IndexNow returned `indexnow_med_spa_follow_up_copy_only_ok status=200 urls=4 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Med Spa Follow-Up Copy-Only Handoff, product commit `fdcb66b` (`fdcb66b32d5986d21a28644725efa6b52b903223`).
+- Full evidence section: `2026-05-31 Med Spa Follow-Up Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26693203410` success.
+- Live verification evidence: `live_med_spa_follow_up_copy_only_ok commit=fdcb66b urls=4`.
+- Discovery ping evidence: `indexnow_med_spa_follow_up_copy_only_ok status=200 urls=4`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

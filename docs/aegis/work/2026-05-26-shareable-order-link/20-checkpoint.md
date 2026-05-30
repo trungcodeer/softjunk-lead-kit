@@ -13750,3 +13750,46 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Med Spa Follow-Up Copy-Only Handoff Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: converted `med-spa-follow-up.html` from direct PayPal anchors to a copy-only after-packet PayPal URL button, while keeping the free med spa sample, one-copy order packet, no-clone checkout proof, release proof links, and seller-side verification gate visible.
+- Updated discovery routes: `README.md`, `llms.txt`, and `sitemap.xml`.
+- Active slice status: product commit `fdcb66b` (`fdcb66b32d5986d21a28644725efa6b52b903223`) pushed to `main` and verified live.
+- Next step: continue with the next owned high-intent route, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Focused HTML/static validation: `med_spa_follow_up_copy_only_static_ok direct_href=0 copy_markers=2 jsonld_blocks=2 inline_scripts=1`.
+- Sitemap XML parse returned `xml_ok sitemap.xml`.
+- Discovery marker scan returned `med_spa_follow_up_discovery_static_ok files=3`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-k0P4wQpHTpcn7DSmczsh8z9rKhpeIrDhWNzl7Bc1x64voG7CMbj02PdustDL7qZUp64DX12ve+tYfaiOAtVACA==`, shasum `c6d48c04172f2b85a41422311da2d7ab4b193da8`.
+- Product Pages run: `26693203410`, conclusion `success`.
+- Live verification: `live_med_spa_follow_up_copy_only_ok commit=fdcb66b urls=4`.
+- IndexNow: `indexnow_med_spa_follow_up_copy_only_ok status=200 urls=4 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a med spa sample page that leads into the $5 custom sequence path and keeps the buyer action packet-first/copy-only without scraped outreach, spam, deception, fake payment, private lead exposure, client health/treatment detail exposure, financing detail exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, med spa follow-up HTML, sitemap/LLM/README discovery, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal remains an after-packet URL to copy rather than a direct HTML anchor.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Med Spa Follow-Up Copy-Only Handoff, product commit `fdcb66b` (`fdcb66b32d5986d21a28644725efa6b52b903223`).
+- Full checkpoint section: `2026-05-31 Med Spa Follow-Up Copy-Only Handoff Checkpoint`.
+- Deployment evidence: GitHub Pages run `26693203410` success; live verification `live_med_spa_follow_up_copy_only_ok commit=fdcb66b urls=4`; IndexNow `indexnow_med_spa_follow_up_copy_only_ok status=200 urls=4`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
