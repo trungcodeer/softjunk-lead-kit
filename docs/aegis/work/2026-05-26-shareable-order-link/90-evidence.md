@@ -10204,3 +10204,33 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_roofing_buyer_send_copy_only_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Dental Buyer Send Copy-Only Handoff Evidence
+
+- Product commit: `6b4d0a2` (`6b4d0a2389dfea5db6dc2e3cad144b9732b52d10`) on `main`.
+- Changed buyer-facing route: `dental-buyer-send.html`.
+- Changed machine-readable route mirrors: `dental-buyer-send.json` and `dental-buyer-send.txt`.
+- Changed discovery routes: `.well-known/openapi.yaml`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- Local focused HTML/static validation returned `dental_buyer_send_copy_only_static_ok direct_href=0 copy_markers=2 jsonld_blocks=2 inline_scripts=1`.
+- Local focused JSON parse returned `json_ok dental-buyer-send.json` and `json_ok buyer-index.json`.
+- Feed and sitemap XML parse returned `xml_ok feed.xml sitemap.xml`.
+- Discovery marker scan returned `dental_buyer_send_discovery_static_ok files=6`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-yijhV6IKKlTmC9gUpM1GzGEKB4mtcgrZ4TVsZLTGOy5uUCa55aXcjR5Koe8MGvIZdZbDfVpnM8KGVkxLT8u5tg==`, shasum `b60b6e871cddf4850e9759ee670a72e93ef49f4c`.
+- Product Pages run `26692431860` completed successfully.
+- Live verification returned `live_dental_buyer_send_copy_only_ok commit=6b4d0a2 urls=9` for `dental-buyer-send.html`, `dental-buyer-send.json`, `dental-buyer-send.txt`, `.well-known/openapi.yaml`, `buyer-index.json`, `README.md`, `llms.txt`, `feed.xml`, and `sitemap.xml`.
+- IndexNow returned `indexnow_dental_buyer_send_copy_only_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/softjunk-lead-kit/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Dental Buyer Send Copy-Only Handoff, product commit `6b4d0a2` (`6b4d0a2389dfea5db6dc2e3cad144b9732b52d10`).
+- Full evidence section: `2026-05-31 Dental Buyer Send Copy-Only Handoff Evidence`.
+- Deployment evidence: GitHub Pages run `26692431860` success.
+- Live verification evidence: `live_dental_buyer_send_copy_only_ok commit=6b4d0a2 urls=9`.
+- Discovery ping evidence: `indexnow_dental_buyer_send_copy_only_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
