@@ -9290,3 +9290,52 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_med_spa_buyer_send_packet_ok status=200 urls=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Missed Call Packet-First Evidence
+
+- Audited the missed-call follow-up handoff after the med spa buyer send route became packet-first.
+- Found that `missed-call-follow-up.html` exposed direct PayPal as a primary hero CTA, pay-panel CTA, and visible PayPal QR before the one-copy order packet.
+- Updated product commit `9464e98` (`9464e981140318729d0ed0debf15d503344ca50b`):
+  - `missed-call-follow-up.html` paid JSON-LD Offer URL and BuyAction target now point to `fix-one-quiet-lead.html`, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `missed-call-follow-up.html` hero and pay-panel primary CTAs now say `Build order packet` and point to the one-copy order packet instead of direct PayPal.
+  - `missed-call-follow-up.html` visible QR now uses `packet-qr.svg` and links to the one-copy order packet instead of `paypal-qr.svg`.
+  - `missed-call-follow-up.html` copy now tells buyers to copy the PayPal note, build the order packet, and open PayPal only after the packet is ready.
+  - `missed-call-follow-up.txt` now lists the one-copy order packet and packet JSON before the after-packet PayPal URL, plus a public-form privacy rule.
+  - `exact-intent-answer-pack.json` now uses schema `softjunk-exact-intent-answer-pack-v3`, `updated=2026-05-30`, packet-first top-level fields, after-packet direct payment fields, and packet-first missed-call answer fields.
+  - `exact-intent-answer-pack.txt`, `.well-known/openapi.yaml`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` now describe packet-first missed-call and exact-intent routing.
+  - Accessibility affordances remain present on `missed-call-follow-up.html`: skip link, shared `focus-visible` styling from `niche-page.css`, semantic anchors/buttons/form controls, QR alt text, and `aria-live="polite"` status messages.
+- Local verification:
+  - `missed_call_packet_first_ok html=1 txt=1 json=1 discovery=5`.
+  - `json_parse_recursive_ok files=65`.
+  - `feed_xml_ok`.
+  - `sitemap_xml_ok`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+  - `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-lfkUsRHYoa+zbkhChvxHui56yYVuQkKqYoonjenijI5BnOJ9VqCbohpcx+c/ar/ZhJo7cme5/rLctUzzSG8lJg==`, shasum `62d598a7d04a0efa61bad064d9e0b26349710e0c`.
+- Deployment:
+  - Product commit `9464e98` pushed to `main`.
+  - Product Pages run `26681301647` completed successfully.
+- Live verification returned `live_missed_call_packet_first_ok commit=9464e98 urls=9` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.json`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/exact-intent-answer-pack.txt`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/README.md`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/llms.txt`.
+- IndexNow returned `indexnow_missed_call_packet_first_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt` for the nine changed owned Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Missed Call Packet-First Route, product commit `9464e98` (`9464e981140318729d0ed0debf15d503344ca50b`).
+- Full evidence section: `2026-05-30 Missed Call Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26681301647` success.
+- Live verification evidence: `live_missed_call_packet_first_ok commit=9464e98 urls=9`.
+- Discovery ping evidence: `indexnow_missed_call_packet_first_ok status=200 urls=9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

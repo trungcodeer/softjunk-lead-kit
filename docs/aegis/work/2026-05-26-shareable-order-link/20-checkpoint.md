@@ -12493,3 +12493,58 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Missed Call Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: continue pursuing a real 5 USD PayPal payment through legitimate owned public/package-native/GitHub-native buyer surfaces.
+- Active slice completed: Missed Call Packet-First Route.
+- Completed todos:
+  - Audited `missed-call-follow-up.html`, `missed-call-follow-up.txt`, `exact-intent-answer-pack.json`, `exact-intent-answer-pack.txt`, OpenAPI, RSS, sitemap, README, and LLM summary surfaces after the med spa buyer send route became packet-first.
+  - Routed the missed-call page's paid JSON-LD Offer URL, BuyAction target, hero CTA, visible QR, pay panel, and checkout proof copy through the one-copy order packet before PayPal.
+  - Preserved direct PayPal as an explicit after-packet handoff through `directPaymentUrl`, `paymentUrl`, `direct_payment_url`, and after-packet copy.
+  - Updated `exact-intent-answer-pack.json` to `softjunk-exact-intent-answer-pack-v3`, `updated=2026-05-30`, with top-level packet fields, before-payment action, direct payment fields, and missed-call answer packet fields.
+  - Updated `missed-call-follow-up.txt` and `exact-intent-answer-pack.txt` to list the one-copy order packet before the after-packet PayPal URL.
+  - Updated `.well-known/openapi.yaml`, `feed.xml`, `llms.txt`, `sitemap.xml`, and `README.md` for packet-first missed-call and exact-intent discovery.
+  - Kept missed-call privacy boundaries explicit: no customer names, phone numbers, emails, addresses, appointment times, invoice IDs, transaction IDs, or PayPal details in public forms.
+  - Committed and pushed product commit `9464e98` (`9464e981140318729d0ed0debf15d503344ca50b`) to `main`.
+  - Waited for GitHub Pages run `26681301647`, which completed successfully for commit `9464e98`.
+  - Live-verified nine product URLs with marker `live_missed_call_packet_first_ok commit=9464e98 urls=9`.
+  - Submitted nine owned Pages URLs to IndexNow with marker `indexnow_missed_call_packet_first_ok status=200 urls=9`.
+  - Reran the PayPal verifier after deployment.
+
+Evidence refs:
+- Focused packet validation: `missed_call_packet_first_ok html=1 txt=1 json=1 discovery=5`.
+- Recursive parse validation: `json_parse_recursive_ok files=65`, `feed_xml_ok`, `sitemap_xml_ok`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `215`, integrity `sha512-lfkUsRHYoa+zbkhChvxHui56yYVuQkKqYoonjenijI5BnOJ9VqCbohpcx+c/ar/ZhJo7cme5/rLctUzzSG8lJg==`, shasum `62d598a7d04a0efa61bad064d9e0b26349710e0c`.
+- Product Pages run: `26681301647`, conclusion `success`, head SHA `9464e981140318729d0ed0debf15d503344ca50b`.
+- Live verification: `live_missed_call_packet_first_ok commit=9464e98 urls=9`.
+- IndexNow: `indexnow_missed_call_packet_first_ok status=200 urls=9 keyLocation=https://trungcodeer.github.io/aa82219152e573922c28c39ed0ad85ce.txt`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; wrapper observed expected false exit `2`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a high-intent missed-call buyer route and keeps the route packet-first without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, missed-call HTML/text surface, exact-intent JSON/text pack, OpenAPI/RSS/sitemap/LLM discovery, README, IndexNow for owned Pages URLs, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner; direct PayPal remains an after-packet handoff rather than the primary pre-context CTA.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Missed Call Packet-First Route, product commit `9464e98` (`9464e981140318729d0ed0debf15d503344ca50b`).
+- Full checkpoint section: `2026-05-30 Missed Call Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26681301647` success; live verification `live_missed_call_packet_first_ok commit=9464e98 urls=9`; IndexNow `indexnow_missed_call_packet_first_ok status=200 urls=9`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
