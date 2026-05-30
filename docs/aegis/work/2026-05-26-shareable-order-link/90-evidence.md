@@ -8717,3 +8717,45 @@ Latest adjacent-discovery refresh:
 - Discovery ping evidence: `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Agent Buyer Brief Packet Evidence
+
+- Audited the public AI buyer brief after the five-dollar buyer card became packet-first.
+- Found that `agent-buy-brief.html` still presented PayPal as a peer CTA while the page's discovery copy described root rescue as the purchase start.
+- Updated product commit `204ffe9` (`204ffe9bd0efeea4236ebbdf9be6217baa64fe4d`):
+  - `agent-buy-brief.html` now presents "Build the packet, then pay $5 for one-lead rescue." and routes the primary CTA to `fix-one-quiet-lead.html`.
+  - `agent-buy-brief.html` links `fix-one-quiet-lead.json` and `fix-one-quiet-lead.txt` as alternate packet formats.
+  - `agent-buy-brief.html` JSON-LD offer URL and PayAction target now point to the one-copy order packet, while `directPaymentUrl` and `paymentUrl` preserve `https://paypal.me/softjunk/5USD`.
+  - `agent-buy-brief.html` copyable buyer message and machine URLs now list the packet before the PayPal URL.
+  - `agent-buy-brief.html` preserves accessibility affordances: skip link, semantic anchors/buttons, focus-visible styling, image alt text, and `aria-live="polite"` copy status.
+  - `.well-known/openapi.yaml` now describes `/agent-buy-brief.html` as packet-first with root rescue fallback and after-packet PayPal handoff.
+  - `sitemap.xml` now marks `agent-buy-brief.html` with `lastmod=2026-05-30`.
+  - `feed.xml` now advertises the packet-first buyer brief.
+- Local verification:
+  - `agent_buy_brief_packet_ok jsonld=1 links=19`.
+  - `agent_buy_brief_discovery_ok urls=3`.
+  - `git diff --check` passed with line-ending normalization warnings only.
+  - `npm run cli:smoke` passed.
+  - `npm run mcp:smoke` passed.
+  - `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-vEZ2e17LLL8bukeRIJfUdeDVfH5CQBzBTjcpKmTgb5x004JvMf/RnrhUGlB34OS/CP54Qm9slOq75eiqNAmO3Q==`, shasum `b23d41d44f77821d50912bb9f13f79326f7dacd3`.
+- Deployment:
+  - Product commit `204ffe9` pushed to `main`.
+  - Product Pages run `26676235453` completed successfully.
+- Live verification returned `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4` for:
+  - `https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/.well-known/openapi.yaml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/sitemap.xml`.
+  - `https://trungcodeer.github.io/softjunk-lead-kit/feed.xml`.
+- IndexNow returned `indexnow_agent_buy_brief_packet_ok status=200 urls=4` for the four changed product Pages URLs.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-30 Latest Evidence Pointer
+
+- Latest completed slice: Agent Buyer Brief Packet, product commit `204ffe9` (`204ffe9bd0efeea4236ebbdf9be6217baa64fe4d`).
+- Full evidence section: `2026-05-30 Agent Buyer Brief Packet Evidence`.
+- Deployment evidence: GitHub Pages run `26676235453` success.
+- Live verification evidence: `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4`.
+- Discovery ping evidence: `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

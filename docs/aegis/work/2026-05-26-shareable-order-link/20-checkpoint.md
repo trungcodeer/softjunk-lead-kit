@@ -11480,6 +11480,65 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-30 Agent Buyer Brief Packet Checkpoint
+
+Current todo:
+- Route the public AI buyer brief through the one-copy order packet before exact 5 USD PayPal payment.
+- Preserve the strict completion gate: payment is unproven until seller-side PayPal evidence, PayPal API verification, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+Active slice:
+- Patch `agent-buy-brief.html`, `.well-known/openapi.yaml`, `sitemap.xml`, and `feed.xml`.
+
+Completed todos:
+- Audited owned public/payment surfaces and found `agent-buy-brief.html` still exposed PayPal as a peer CTA while using the root rescue route as the main purchase start.
+- Updated `agent-buy-brief.html` title, meta descriptions, Open Graph/Twitter copy, alternate links, JSON-LD, nav, H1, hero CTA, payment strip, copyable buyer message, machine URLs, and footer so the one-copy order packet at `fix-one-quiet-lead.html` is the primary first step.
+- Preserved PayPal as an after-packet handoff through visible copy plus JSON-LD `directPaymentUrl` and `paymentUrl`.
+- Preserved accessibility affordances: skip link, semantic anchors/buttons, focus-visible styling, image alt text, and `aria-live="polite"` copy status.
+- Updated `.well-known/openapi.yaml` so `/agent-buy-brief.html` is described as packet-first with root rescue fallback and after-packet PayPal URL.
+- Updated `sitemap.xml` lastmod for `agent-buy-brief.html` to `2026-05-30`.
+- Updated `feed.xml` item title, description, and pubDate for the packet-first buyer brief.
+- Committed and pushed product commit `204ffe9` (`204ffe9bd0efeea4236ebbdf9be6217baa64fe4d`) to `main`.
+- Product Pages run `26676235453` completed successfully.
+- Live Pages verification returned `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4`.
+- Submitted the four changed product Pages URLs to IndexNow; API returned `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
+- Reran the PayPal verifier; it still returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Evidence refs:
+- `agent_buy_brief_packet_ok jsonld=1 links=19`.
+- `agent_buy_brief_discovery_ok urls=3`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed.
+- `npm run mcp:smoke` passed.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `214`, integrity `sha512-vEZ2e17LLL8bukeRIJfUdeDVfH5CQBzBTjcpKmTgb5x004JvMf/RnrhUGlB34OS/CP54Qm9slOq75eiqNAmO3Q==`, shasum `b23d41d44f77821d50912bb9f13f79326f7dacd3`.
+- GitHub Pages run `26676235453` success.
+- Live verification: `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4`.
+- IndexNow: `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
+- PayPal verifier: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, or trusted seller-side CSV proof.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves a public AI buyer brief and discovery metadata without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
+- Compatibility boundary: product GitHub repo, product GitHub Pages, public HTML buyer brief, OpenAPI metadata, sitemap, feed, IndexNow for owned Pages URLs, PayPal.Me, seller-side payment verification.
+- New owner/branch/fallback: no new fulfillment owner; PayPal.Me remains the direct payment handoff after the packet and seller-side PayPal evidence remains the only completion gate.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Agent Buyer Brief Packet, product commit `204ffe9` (`204ffe9bd0efeea4236ebbdf9be6217baa64fe4d`).
+- Full checkpoint section: `2026-05-30 Agent Buyer Brief Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26676235453` success; live verification `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4`; IndexNow `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 DriftCheckDraft:
 - Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
 - Current slice fit: yes, it improves package-native NPM funding, CLI, MCP, and machine-readable buyer routes without scraped outreach, spam, deception, automated fulfillment, or false payment claims.
@@ -11820,6 +11879,17 @@ Latest completed slice:
 - Five Dollar Buyer Card Packet, product commit `6f89aaf` (`6f89aaf2014c43f88998295c5dc0b639d9dc729b`).
 - Full checkpoint section: `2026-05-30 Five Dollar Buyer Card Packet Checkpoint`.
 - Deployment evidence: GitHub Pages run `26675889577` success; live verification `live_five_dollar_buyer_card_packet_ok commit=6f89aaf urls=5 gist_files=3`; IndexNow `indexnow_five_dollar_buyer_card_packet_ok status=200 urls=5`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-30 Latest Resume Pointer
+
+Latest completed slice:
+- Agent Buyer Brief Packet, product commit `204ffe9` (`204ffe9bd0efeea4236ebbdf9be6217baa64fe4d`).
+- Full checkpoint section: `2026-05-30 Agent Buyer Brief Packet Checkpoint`.
+- Deployment evidence: GitHub Pages run `26676235453` success; live verification `live_agent_buy_brief_packet_ok commit=204ffe9 urls=4`; IndexNow `indexnow_agent_buy_brief_packet_ok status=200 urls=4`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
