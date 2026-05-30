@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Printable $5 Packet Flyer | SoftJunk Lead Kit</title>
-  <meta name="description" content="Printable QR flyer that opens the SoftJunk one-copy order packet before the $5 PayPal handoff, with verified no-clone checkout proof.">
+  <meta name="description" content="Printable QR flyer that opens the SoftJunk one-copy order packet before the copy-only after-packet $5 PayPal URL, with verified no-clone checkout proof.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html">
   <meta name="robots" content="index,follow">
   <meta property="og:title" content="Printable $5 Packet Flyer | SoftJunk Lead Kit">
-  <meta property="og:description" content="Scan or share this flyer to open the one-copy order packet before the $5 PayPal handoff.">
+  <meta property="og:description" content="Scan or share this flyer to open the one-copy order packet before the copy-only after-packet $5 PayPal URL.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -16,7 +16,7 @@
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Printable $5 Packet Flyer | SoftJunk Lead Kit">
-  <meta name="twitter:description" content="A printable packet-first flyer for the $5 lead follow-up offer with verified no-clone checkout proof.">
+  <meta name="twitter:description" content="A printable packet-first flyer for the $5 lead follow-up offer with copy-only after-packet PayPal handoff and verified no-clone checkout proof.">
   <meta name="twitter:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
   <script type="application/ld+json">
     {
@@ -26,7 +26,7 @@
           "@type": "WebPage",
           "name": "Printable $5 Packet Flyer",
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html",
-          "description": "A print and share flyer that opens the one-copy order packet before the $5 PayPal handoff."
+          "description": "A print and share flyer that opens the one-copy order packet before the copy-only after-packet $5 PayPal URL."
         },
         {
           "@type": "Offer",
@@ -36,6 +36,8 @@
           "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
           "directPaymentUrl": "https://paypal.me/softjunk/5USD",
           "paymentUrl": "https://paypal.me/softjunk/5USD",
+          "paymentHandoffMode": "copy_only_after_packet",
+          "paymentUrlRole": "copy_only_after_packet_paypal_handoff",
           "availability": "https://schema.org/InStock"
         }
       ]
@@ -350,7 +352,7 @@
       <div>
         <p class="eyebrow">Packet-first flyer</p>
         <h1 id="page-title">Scan packet, then pay $5.</h1>
-        <p class="lead">Open the one-copy order packet for missed calls, quiet estimates, no-shows, price objections, and leads that stopped replying before the PayPal handoff.</p>
+        <p class="lead">Open the one-copy order packet for missed calls, quiet estimates, no-shows, price objections, and leads that stopped replying before the copy-only after-packet PayPal URL.</p>
 
         <ul class="offer-list" aria-label="Included items">
           <li>7-day follow-up guide</li>
@@ -366,7 +368,7 @@
 
         <div class="actions">
           <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
-          <a class="button" href="https://paypal.me/softjunk/5USD" target="_blank" rel="noopener noreferrer">PayPal after packet</a>
+          <button class="button" type="button" id="copy-payment-url">Copy PayPal URL</button>
           <a class="button" href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">Current release</a>
           <button type="button" id="print-flyer">Print flyer</button>
           <button type="button" id="copy-link">Copy packet link</button>
@@ -378,7 +380,7 @@
         <p class="price">$5</p>
         <img src="packet-qr.svg" alt="QR code linking to https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html">
         <p class="pay-link">trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html</p>
-        <p>After the packet, pay exactly $5 at paypal.me/softjunk/5USD. Delivery starts only after the seller can see the PayPal transaction.</p>
+        <p>After the packet, copy the exact $5 PayPal URL: paypal.me/softjunk/5USD. Delivery starts only after the seller can see the PayPal transaction.</p>
       </aside>
     </section>
   </main>
@@ -390,6 +392,7 @@
   <script>
     const statusMessage = document.querySelector('#status');
     const packetUrl = 'https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html';
+    const paymentUrl = 'https://paypal.me/softjunk/5USD';
 
     document.querySelector('#print-flyer').addEventListener('click', () => {
       window.print();
@@ -401,6 +404,15 @@
         statusMessage.textContent = 'Packet link copied.';
       } catch {
         statusMessage.textContent = 'Copy failed. Select the packet link manually.';
+      }
+    });
+
+    document.querySelector('#copy-payment-url').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(paymentUrl);
+        statusMessage.textContent = 'After-packet PayPal URL copied.';
+      } catch {
+        statusMessage.textContent = 'Copy failed. Select the URL manually.';
       }
     });
   </script>

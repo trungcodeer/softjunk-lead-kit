@@ -580,7 +580,7 @@ Fulfillment starts only after seller-side PayPal evidence exists or `PAYPAL_PAYM
 - Fast checkout with inline PayPal note builder: https://trungcodeer.github.io/softjunk-lead-kit/checkout.html#quick-note-title (copy-only after-packet PayPal URL; build packet and note first)
 - Payment page: https://trungcodeer.github.io/softjunk-lead-kit/pay.html (copy-only after-packet PayPal URL; build packet and note first)
 - Packet-first QR: https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html (copy-only after-packet PayPal URL; build packet and note first)
-- Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
+- Printable QR flyer: https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html (copy-only after-packet PayPal URL; build packet and note first)
 - Packet QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/packet-qr.svg
 - Legacy after-packet PayPal QR SVG: https://trungcodeer.github.io/softjunk-lead-kit/paypal-qr.svg
 - Paid ZIP proof: https://trungcodeer.github.io/softjunk-lead-kit/paid-kit-proof.html
@@ -646,7 +646,7 @@ The paid ZIP is not public in this repository. Delivery is manual to the email s
 - Agent order packet-first route: https://trungcodeer.github.io/softjunk-lead-kit/agent-order.html now builds the one-copy order packet before the after-packet PayPal handoff.
 - Missed call follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
-- Missed call paid route: build the one-copy order packet before the after-packet PayPal handoff.
+- Missed call paid route: build the one-copy order packet before copying the after-packet PayPal URL.
 - Exact-intent sample paid route: build the one-copy order packet before the after-packet PayPal handoff for estimate, price-objection, no-show, and quiet DM samples.
 - Estimate follow-up sample: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 - Estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt

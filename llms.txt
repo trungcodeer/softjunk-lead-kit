@@ -790,9 +790,9 @@ Niche pages:
 - Plumbing lead follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-lead-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
 - Roofing estimate packet-first route: roofing-estimate-rescue, roofing-estimate-generator, and roofing-estimate-follow-up build the one-copy order packet before the after-packet PayPal handoff.
 - Niche template paid route: for the dental, appointment-setting, med spa, tutoring, HVAC, real estate, and plumbing templates, build the one-copy order packet first, then copy the after-packet PayPal URL when the packet and note are ready. Fulfillment is not proven until seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.
-- Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html
+- Missed call follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.html (copy-only after-packet PayPal URL; build packet and note first)
 - Missed call follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/missed-call-follow-up.txt
-- Missed call paid route: build the one-copy order packet before the after-packet PayPal handoff.
+- Missed call paid route: build the one-copy order packet before copying the after-packet PayPal URL.
 - Exact-intent sample paid route: build the one-copy order packet before the after-packet PayPal handoff for estimate, price-objection, no-show, and quiet DM samples.
 - Estimate follow-up template: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.html
 - Estimate follow-up text: https://trungcodeer.github.io/softjunk-lead-kit/estimate-follow-up-template.txt
@@ -812,7 +812,7 @@ https://paypal.me/softjunk/5USD
 Packet QR page (copy-only after-packet PayPal URL; build packet and note first):
 https://trungcodeer.github.io/softjunk-lead-kit/pay-qr.html
 
-Printable QR flyer:
+Printable QR flyer (copy-only after-packet PayPal URL; build packet and note first):
 https://trungcodeer.github.io/softjunk-lead-kit/printable-paypal-flyer.html
 
 Packet QR SVG:
