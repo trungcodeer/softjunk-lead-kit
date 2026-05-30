@@ -80,7 +80,7 @@ npm run fund
 npm run fund:kit
 ```
 
-The `funding.url` value is `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`. It opens the packet-first route with preview, note, proof, order form, and verification boundary before PayPal. The direct PayPal URL remains `https://paypal.me/softjunk/5USD`, and fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
+The `funding.url` value is `https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html`. It opens the packet-first route with preview, note, proof, order form, and verification boundary before PayPal. The after-packet PayPal URL remains `https://paypal.me/softjunk/5USD`, and fulfillment still requires seller-side PayPal evidence or `PAYPAL_PAYMENT_VERIFIED=true`.
 
 Current npmjs status from this machine on 2026-05-28: `npm view softjunk-lead-kit --json` returns `E404`, `npm whoami` returns `ENEEDAUTH`, and `npm pack --dry-run --json` passes. Latest release `v2.29.166` records this status. Until an owner publishes with npm auth, use the current release tarball route above first, or the GitHub package route if the release asset is unavailable; the owner-auth publish template is `NPM_PUBLISH_WORKFLOW.yml.example`.
 
@@ -604,7 +604,7 @@ https://github.com/trungcodeer/softjunk-lead-kit/blob/main/INSTANT_FULFILLMENT_P
 
 The paid ZIP is not public in this repository. Delivery is manual to the email shown in the PayPal transaction.
 
-## Try Before Paying
+## Try Before Payment
 
 - Free generator: https://trungcodeer.github.io/softjunk-lead-kit/
 - Lead recovery audit: https://trungcodeer.github.io/softjunk-lead-kit/lead-recovery-audit.html
@@ -786,7 +786,7 @@ SHA-256: fbc4c93288af458a568c84bf42fa04203f9a9ddeb466fb85a418b097f23f9aa9
 Free sample pack page:
 https://trungcodeer.github.io/softjunk-lead-kit/free-sample-pack.html
 
-Fix-one-quiet-lead packet-first rule: generate the rescue, copy the one-copy order packet and PayPal note, then use the PayPal URL only as the after-packet handoff. The page no longer exposes direct PayPal links before the packet actions.
+Fix-one-quiet-lead packet-first rule: generate the rescue, copy the one-copy order packet and PayPal note, then use the PayPal URL only as the after-packet handoff. The page no longer exposes pre-packet PayPal links before the packet actions.
 
 Sample-pack paid upgrade rule: build or inspect the one-copy order packet at https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html before opening the after-packet PayPal URL.
 

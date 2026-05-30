@@ -12,42 +12,42 @@
       <link>https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html</link>
       <guid isPermaLink="false">agent-buy-brief-copy-only-after-packet-2026-05-31</guid>
       <pubDate>Sun, 31 May 2026 00:00:00 +0700</pubDate>
-      <description>AI buyer brief now removes direct PayPal links from the page, keeps the one-copy order packet and PayPal note before payment, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
+      <description>AI buyer brief now removes pre-packet PayPal links from the page, keeps the one-copy order packet and PayPal note before payment, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
     </item>
     <item>
       <title>Agent Commerce Copy-Only After-Packet PayPal Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/agent-commerce.html</link>
       <guid isPermaLink="false">agent-commerce-copy-only-after-packet-2026-05-30</guid>
       <pubDate>Sat, 30 May 2026 23:32:00 +0700</pubDate>
-      <description>Agent commerce now removes direct PayPal links from the page, keeps no-clone proof, the one-copy order packet, and the PayPal note before payment, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
+      <description>Agent commerce now removes pre-packet PayPal links from the page, keeps no-clone proof, the one-copy order packet, and the PayPal note before payment, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
     </item>
     <item>
       <title>Payment Page Copy-Only After-Packet PayPal Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/pay.html</link>
       <guid isPermaLink="false">pay-page-copy-only-after-packet-2026-05-30</guid>
       <pubDate>Sat, 30 May 2026 23:13:00 +0700</pubDate>
-      <description>Payment page now removes direct PayPal links, keeps the one-copy order packet and PayPal note before payment, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
+      <description>Payment page now removes pre-packet PayPal links, keeps the one-copy order packet and PayPal note before payment, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
     </item>
     <item>
       <title>AI Checkout Copy-Only After-Packet PayPal Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/checkout.html</link>
       <guid isPermaLink="false">checkout-copy-only-after-packet-2026-05-30</guid>
       <pubDate>Sat, 30 May 2026 22:58:00 +0700</pubDate>
-      <description>AI checkout now keeps the one-copy order packet and PayPal note before payment, removes direct PayPal links from the page, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
+      <description>AI checkout now keeps the one-copy order packet and PayPal note before payment, removes pre-packet PayPal links from the page, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
     </item>
     <item>
       <title>After-Payment Handoff Packet-First Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/after-pay.html</link>
       <guid isPermaLink="false">after-pay-packet-first-2026-05-30</guid>
       <pubDate>Sat, 30 May 2026 22:36:00 +0700</pubDate>
-      <description>After-payment handoff now removes direct PayPal links from the page, makes the one-copy order packet the primary action, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
+      <description>After-payment handoff now removes pre-packet PayPal links from the page, makes the one-copy order packet the primary action, exposes the after-packet PayPal URL as a copy action, and preserves seller-side verification before fulfillment.</description>
     </item>
     <item>
       <title>Fix One Quiet Lead Packet-First Route</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html</link>
       <guid isPermaLink="false">fix-one-quiet-lead-packet-first-2026-05-30</guid>
       <pubDate>Sat, 30 May 2026 22:20:00 +0700</pubDate>
-      <description>Fix One Quiet Lead now keeps the one-copy order packet and PayPal note as the primary buyer actions, removes direct PayPal links from the page, and preserves the after-packet 5 USD PayPal handoff plus seller-side verification gate.</description>
+      <description>Fix One Quiet Lead now keeps the one-copy order packet and PayPal note as the primary buyer actions, removes pre-packet PayPal links from the page, and preserves the after-packet 5 USD PayPal handoff plus seller-side verification gate.</description>
     </item>
     <item>
       <title>Paid Kit Proof Packet-First Route</title>
@@ -463,7 +463,7 @@
       <pubDate>Mon, 25 May 2026 22:55:00 +0700</pubDate>
     </item>
     <item>
-      <title>AI Buyer Brief: Build Packet, Then Pay $5</title>
+      <title>AI Buyer Brief: Build Packet, Then Copy PayPal URL</title>
       <link>https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html</link>
       <guid isPermaLink="true">https://trungcodeer.github.io/softjunk-lead-kit/agent-buy-brief.html</guid>
       <description>A packet-first machine-readable buyer brief with the one-copy order packet, exact after-packet PayPal URL, agent handoff copy, and verification gate.</description>
