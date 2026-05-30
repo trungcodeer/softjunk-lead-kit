@@ -120,7 +120,10 @@
       "use_when": "A sender has exactly one known fitting buyer and needs one copy-ready message, not a scraped list.",
       "open_first": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
       "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
-      "payment_url": "https://paypal.me/softjunk/5USD"
+      "order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "before_payment_action": "Build the one-copy order packet before opening the after-packet PayPal URL.",
+      "payment_url": "https://paypal.me/softjunk/5USD",
+      "payment_url_role": "after_packet_paypal_handoff"
     },
     {
       "rank": 6,

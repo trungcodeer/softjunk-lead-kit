@@ -496,7 +496,7 @@ paths:
       summary: Open the SoftJunk one-buyer share route.
       responses:
         "200":
-          description: Buyer-facing page with email, SMS, WhatsApp, native share, copyable buyer message, PayPal note, exact 5 USD PayPal URL, order form, privacy guard, and PAYPAL_PAYMENT_VERIFIED=true gate.
+          description: Buyer-facing page with email, SMS, WhatsApp, native share, copyable buyer message, PayPal note, one-copy order packet route, after-packet 5 USD PayPal URL, order form, privacy guard, and PAYPAL_PAYMENT_VERIFIED=true gate.
           content:
             text/html:
               schema:
@@ -507,7 +507,7 @@ paths:
       summary: Get the SoftJunk one-buyer share JSON.
       responses:
         "200":
-          description: Machine-readable one-buyer share route with fit rules, share actions, payment URL, order form, privacy rule, and verification gate.
+          description: Machine-readable one-buyer share route with fit rules, share actions, one-copy order packet route, after-packet payment URL, order form, privacy rule, and verification gate.
           content:
             application/json:
               schema:
@@ -518,7 +518,7 @@ paths:
       summary: Get the SoftJunk one-buyer share text.
       responses:
         "200":
-          description: Plain-text one-buyer share route with share actions, PayPal URL, order form, privacy rule, and verification gate.
+          description: Plain-text one-buyer share route with share actions, one-copy order packet route, after-packet PayPal URL, order form, privacy rule, and verification gate.
           content:
             text/plain:
               schema:

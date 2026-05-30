@@ -223,7 +223,7 @@ Start here if you have one real quiet lead:
 7. MCP checkout server: https://github.com/trungcodeer/softjunk-lead-kit/blob/main/MCP_CHECKOUT_SERVER.md
 8. MCP checkout manifest: https://trungcodeer.github.io/softjunk-lead-kit/mcp-checkout-server.json
 9. Send-to-buyer generator packet: https://trungcodeer.github.io/softjunk-lead-kit/send-to-buyer.html (build the one-copy order packet before the PayPal handoff)
-10. One-buyer share action: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html
+10. One-buyer share action: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html (build the one-copy order packet before the PayPal handoff)
 11. Roofing buyer send packet: https://trungcodeer.github.io/softjunk-lead-kit/roofing-buyer-send.html
 12. Plumbing buyer send packet: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.html
 13. Plumbing buyer send JSON: https://trungcodeer.github.io/softjunk-lead-kit/plumbing-buyer-send.json

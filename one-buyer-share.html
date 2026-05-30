@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>One Buyer Share Route | SoftJunk $5 Lead Rescue</title>
-  <meta name="description" content="Generate one buyer-safe share message, email, SMS, WhatsApp, PayPal note, verified no-clone checkout proof, and PayPal handoff for the SoftJunk $5 one-lead rescue.">
+  <meta name="description" content="Generate one buyer-safe share message, email, SMS, WhatsApp, PayPal note, verified no-clone checkout proof, one-copy order packet, and after-packet PayPal handoff for the SoftJunk $5 one-lead rescue.">
   <link rel="canonical" href="https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html">
   <link rel="alternate" type="application/json" href="https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json" title="SoftJunk one buyer share JSON">
   <link rel="alternate" type="text/plain" href="https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt" title="SoftJunk one buyer share text">
   <meta property="og:title" content="Send one fitting buyer to the $5 SoftJunk rescue">
-  <meta property="og:description" content="A one-buyer share route with copy, email, SMS, WhatsApp, PayPal note, verified no-clone checkout proof, and verification gate.">
+  <meta property="og:description" content="A one-buyer share route with copy, email, SMS, WhatsApp, PayPal note, one-copy order packet, verified no-clone checkout proof, and verification gate.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html">
   <meta property="og:image" content="https://trungcodeer.github.io/softjunk-lead-kit/social-card-qr.png">
@@ -21,12 +21,14 @@
     "name": "SoftJunk One Buyer Share Route",
     "url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
     "applicationCategory": "BusinessApplication",
-    "description": "A browser-only tool for creating one buyer-safe share message, verified no-clone checkout proof, and payment handoff for the SoftJunk 5 USD one-lead rescue.",
+    "description": "A browser-only tool for creating one buyer-safe share message, verified no-clone checkout proof, one-copy order packet, and after-packet payment handoff for the SoftJunk 5 USD one-lead rescue.",
     "offers": {
       "@type": "Offer",
       "price": "5.00",
       "priceCurrency": "USD",
-      "url": "https://paypal.me/softjunk/5USD"
+      "url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+      "directPaymentUrl": "https://paypal.me/softjunk/5USD",
+      "paymentUrl": "https://paypal.me/softjunk/5USD"
     }
   }
   </script>
@@ -240,12 +242,12 @@
         <a href="send-to-buyer.html">Send generator</a>
         <a href="one-buyer-share.json">JSON</a>
         <a href="https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163">Current release</a>
-        <a href="https://paypal.me/softjunk/5USD">PayPal $5</a>
+        <a href="fix-one-quiet-lead.html">Order packet</a>
       </nav>
       <h1>Send one fitting buyer.</h1>
-      <p class="lead">Create one buyer-safe message with email, SMS, WhatsApp, native share, PayPal note, and the $5 checkout. Use this only for a relevant buyer who has one real quiet lead problem.</p>
+      <p class="lead">Create one buyer-safe message with email, SMS, WhatsApp, native share, PayPal note, one-copy order packet, and after-packet $5 checkout. Use this only for a relevant buyer who has one real quiet lead problem.</p>
     </div>
-    <img class="qr" src="social-card-qr.png" alt="SoftJunk $5 PayPal offer card with QR code">
+    <img class="qr" src="packet-qr.svg" alt="QR code for the SoftJunk one-copy order packet">
   </header>
 
   <main id="main">
@@ -320,7 +322,7 @@
         <a class="button secondary" id="email-link" href="mailto:">Email</a>
         <a class="button secondary" id="sms-link" href="sms:">SMS</a>
         <a class="button secondary" id="whatsapp-link" href="https://wa.me/" rel="noopener">WhatsApp</a>
-        <a class="button primary" href="https://paypal.me/softjunk/5USD">Open PayPal</a>
+        <a class="button primary" href="fix-one-quiet-lead.html">Build order packet</a>
       </div>
 
       <div class="output-grid">
@@ -366,11 +368,12 @@ Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-le
   </main>
 
   <footer>
-    <p>Payment path only. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</p>
+    <p>Payment path only. Build the one-copy order packet before PayPal. Do not claim paid, started, delivered, fulfilled, complete, or received unless seller-side PayPal evidence exists or PAYPAL_PAYMENT_VERIFIED=true.</p>
   </footer>
 
   <script>
     const paymentUrl = "https://paypal.me/softjunk/5USD";
+    const packetUrl = "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html";
     const orderFormUrl = "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml";
     const pageUrl = "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html";
     const checkoutCommand = "npm exec --yes --package https://github.com/trungcodeer/softjunk-lead-kit/releases/download/v2.29.163/softjunk-lead-kit-0.2.2.tgz -- softjunk-lead-kit pay --mode custom --json";
@@ -417,8 +420,9 @@ Current release tarball SHA-256 file: https://github.com/trungcodeer/softjunk-le
 
     function makeMessage(data, note) {
       return "If one " + data.problem + " is sitting quiet and " + data.value + ", this is the smallest useful test I found.\n\n"
-        + "SoftJunk builds one practical follow-up rescue for $5. Open the route, copy the PayPal note, pay exactly $5, then submit non-sensitive context only.\n\n"
-        + "PayPal: " + paymentUrl + "\n"
+        + "SoftJunk builds one practical follow-up rescue for $5. Open the order packet, copy the PayPal note, pay exactly $5 after the packet is ready, then submit non-sensitive context only.\n\n"
+        + "Order packet: " + packetUrl + "\n"
+        + "PayPal after packet: " + paymentUrl + "\n"
         + "PayPal note: " + note + "\n"
         + "No-clone checkout proof: " + checkoutCommand + "\n"
         + "Current release: " + verifiedReleaseUrl + "\n"

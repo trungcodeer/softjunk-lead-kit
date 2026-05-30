@@ -896,7 +896,8 @@ One-buyer share action:
 - Text: https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt
 - Use only for one known relevant buyer, not scraped lists or cold spam batches.
 - Share actions: native share, email, SMS, WhatsApp, copy buyer message, copy PayPal note, copy share URL.
-- Pay exactly 5 USD: https://paypal.me/softjunk/5USD
+- Build the one-copy order packet first: https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html
+- Pay exactly 5 USD after the packet is ready: https://paypal.me/softjunk/5USD
 - Completion requires seller-side evidence or PAYPAL_PAYMENT_VERIFIED=true.
 
 Sponsor button Send-5 action: use .github/FUNDING.yml or https://github.com/trungcodeer/softjunk-lead-kit/blob/main/SPONSOR_BUTTON_BUY.md when a GitHub-native buyer needs the Sponsor button route. It lists the one-copy order packet first, PayPal second, Send-5 third, root /5/ fourth, and preserves PAYPAL_PAYMENT_VERIFIED=true as the stop rule.

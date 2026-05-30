@@ -367,7 +367,12 @@
     "page_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.html",
     "json_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.json",
     "text_url": "https://trungcodeer.github.io/softjunk-lead-kit/one-buyer-share.txt",
+    "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
+    "one_copy_order_packet_json_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.json",
+    "before_payment_action": "Build the one-copy order packet before opening the after-packet PayPal URL.",
     "payment_url": "https://paypal.me/softjunk/5USD",
+    "direct_payment_url": "https://paypal.me/softjunk/5USD",
+    "payment_url_role": "after_packet_paypal_handoff",
     "order_form_url": "https://github.com/trungcodeer/softjunk-lead-kit/issues/new?template=one-lead-rescue-order.yml",
     "share_actions": [
       "native share",
@@ -380,9 +385,7 @@
     ],
     "success_signal": "PAYPAL_PAYMENT_VERIFIED=true",
     "use_when": "One known relevant buyer has one real quiet lead problem and should receive a user-initiated share action, not a scraped-list or cold-spam batch.",
-    "rule": "Payment route only; do not claim paid or fulfilled unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true.",
-    "one_copy_order_packet_url": "https://trungcodeer.github.io/softjunk-lead-kit/fix-one-quiet-lead.html",
-    "before_payment_action": "Build the one-copy order packet before opening PayPal."
+    "rule": "Build the one-copy order packet before opening the after-packet PayPal handoff. Payment route only; do not claim paid or fulfilled unless seller-side evidence exists or PAYPAL_PAYMENT_VERIFIED=true."
   },
   "verified_release_url": "https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.163",
   "current_release_tag": "v2.29.163",
