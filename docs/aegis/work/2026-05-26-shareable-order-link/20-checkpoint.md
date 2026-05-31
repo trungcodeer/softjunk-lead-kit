@@ -14150,6 +14150,43 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+## 2026-05-31 Related Owned Repos Packet-First Refresh Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: updated related owned public repos `trungcodeer/trungcodeer.github.io`, `trungcodeer/trungcodeer`, and `trungcodeer/quiet-lead-follow-up` so GitHub config, support docs, agent docs, README/LLM context, public JSON/HTML/text discovery routes, and repo metadata route buyers through the packet-first Sponsor page instead of stale direct PayPal/release-first copy.
+- Active slice status: related repo commits `b3ebb78` (`trungcodeer.github.io`), `008476c` (`trungcodeer`), and `045052f` (`quiet-lead-follow-up`) are pushed to `main`; Pages deployments `26699383570`, `26699382110`, and `26699382455` completed successfully.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Public verification returned `related_repos_public_packet_first_ok raw=33 live=10 sponsorHits=43 releaseHits=43`; checked raw GitHub files and live Pages URLs include `sponsor-button-buy.html`, raw checked files include `v2.29.166`, and none matched stale direct PayPal/release markers.
+- Local validation returned `json_yaml_parse_ok json=24 yaml=10` for the three related repos after the broad packet-first rewrite.
+- `git diff --check` passed in all three related repos with line-ending normalization warnings only.
+- Repo metadata verification showed all three homepages now point to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html` and descriptions use packet-first / seller-side verification language.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it removes stale direct-PayPal public entry points from owned related repos and keeps the payment proof boundary seller-side, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: owned GitHub repos, GitHub Pages, GitHub Funding/Sponsor config, support/agent docs, public static discovery files, PayPal.Me as after-packet copy target only, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target and payment proof remains seller-side only.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Related Owned Repos Packet-First Refresh, commits `b3ebb78`, `008476c`, and `045052f` pushed to owned related repos on `main`.
+- Full checkpoint section: `2026-05-31 Related Owned Repos Packet-First Refresh Checkpoint`.
+- Deployment evidence: Pages runs `26699383570`, `26699382110`, and `26699382455` succeeded.
+- Public raw/live verification evidence: `related_repos_public_packet_first_ok raw=33 live=10 sponsorHits=43 releaseHits=43`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
 
 ## 2026-05-31 Broad Copy-Only Payment Handoff Checkpoint
 
@@ -14456,6 +14493,18 @@ Latest completed slice:
 - Repo Metadata and Release Packet-First Refresh, GitHub repo homepage/description and release `v2.29.166` updated through GitHub API on `2026-05-31`.
 - Full checkpoint section: `2026-05-31 Repo Metadata and Release Packet-First Refresh Checkpoint`.
 - Public repo/release verification evidence: `github_repo_release_packet_first_ok release=v2.29.166 assets=2`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Related Owned Repos Packet-First Refresh, commits `b3ebb78`, `008476c`, and `045052f` pushed to owned related repos on `main`.
+- Full checkpoint section: `2026-05-31 Related Owned Repos Packet-First Refresh Checkpoint`.
+- Deployment evidence: Pages runs `26699383570`, `26699382110`, and `26699382455` succeeded.
+- Public raw/live verification evidence: `related_repos_public_packet_first_ok raw=33 live=10 sponsorHits=43 releaseHits=43`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:

@@ -10770,3 +10770,33 @@ Latest adjacent-discovery refresh:
 - Public repo/release verification evidence: `github_repo_release_packet_first_ok release=v2.29.166 assets=2`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Related Owned Repos Packet-First Refresh Evidence
+
+- Updated and pushed related owned repos:
+  - `trungcodeer/trungcodeer.github.io`: commit `b3ebb78` (`b3ebb78cb0a1bfbf8eb4392421f1fb41d8f452c9`) on `main`.
+  - `trungcodeer/trungcodeer`: commit `008476c` (`008476cc2c1f7c02a0e835273a165a76084f1563`) on `main`.
+  - `trungcodeer/quiet-lead-follow-up`: commit `045052f` (`045052f811ad8d44a37e7085af35e90d0b0e7fc3`) on `main`.
+- Changed public surfaces across those repos: GitHub Funding/Sponsor config, issue chooser config, support docs, Copilot/agent docs, README/LLM context, public static HTML/JSON/text discovery routes, OpenAPI/AI plugin metadata, robots/sitemap where present, and the quiet-lead paid order form.
+- GitHub repo metadata after update:
+  - `trungcodeer/trungcodeer.github.io` homepage `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`; description `Packet-first SoftJunk USD 5 one-lead rescue hub: inspect the order packet, copy the after-packet PayPal URL, then verify seller-side proof.`
+  - `trungcodeer/trungcodeer` homepage `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`; description `Packet-first SoftJunk USD 5 one-lead rescue profile route with buyer-agent checkout and seller-side PayPal verification.`
+  - `trungcodeer/quiet-lead-follow-up` homepage `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`; description `Quiet-lead templates plus packet-first USD 5 SoftJunk handoff with seller-side PayPal verification.`
+- Pages deployments completed successfully:
+  - `trungcodeer.github.io`: run `26699383570`.
+  - `trungcodeer`: run `26699382110`.
+  - `quiet-lead-follow-up`: run `26699382455`.
+- Public raw/live verification returned `related_repos_public_packet_first_ok raw=33 live=10 sponsorHits=43 releaseHits=43`; checked raw and live URLs include the packet-first Sponsor route, raw checked files include `v2.29.166`, and none matched stale direct PayPal or stale release markers.
+- Local parser validation returned `json_yaml_parse_ok json=24 yaml=10`.
+- `git diff --check` passed in all three related repos with line-ending normalization warnings only.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Related Owned Repos Packet-First Refresh, commits `b3ebb78`, `008476c`, and `045052f` on related owned repos.
+- Full evidence section: `2026-05-31 Related Owned Repos Packet-First Refresh Evidence`.
+- Public raw/live verification evidence: `related_repos_public_packet_first_ok raw=33 live=10 sponsorHits=43 releaseHits=43`.
+- Deployment evidence: Pages runs `26699383570`, `26699382110`, and `26699382455` success.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
