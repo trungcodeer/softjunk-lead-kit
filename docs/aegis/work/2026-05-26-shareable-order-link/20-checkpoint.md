@@ -14357,3 +14357,37 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Owned Discussions Packet-First Refresh Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: updated public owned GitHub discussion bodies `#4`, `#6`, `#8`, and `#14`-`#17` from stale direct-checkout/release copy to packet-first Sponsor route, release `v2.29.166`, no-clone proof command, after-packet payment language, privacy boundary, and seller-side PayPal verification rule.
+- Active slice status: external GitHub discussion bodies were updated through GraphQL `updateDiscussion`; no product source files changed before evidence docs.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- GraphQL discussion update returned current URLs and update timestamps: `#4` `2026-05-31T00:18:30Z`, `#6` `2026-05-31T00:18:36Z`, `#8` `2026-05-31T00:18:38Z`, `#14` `2026-05-31T00:18:40Z`, `#15` `2026-05-31T00:18:44Z`, `#16` `2026-05-31T00:18:46Z`, `#17` `2026-05-31T00:18:48Z`.
+- GraphQL body scan returned `github_owned_discussions_packet_first_ok discussions=4,6,8,14,15,16,17`; checked discussion bodies include `sponsor-button-buy.html`, `v2.29.166`, `after-packet PayPal URL`, and `PAYPAL_PAYMENT_VERIFIED=true`, with no match for stale `v2.29.163`, `v2.29.151`, direct-checkout headings, exact-pay-first copy, or Root PayPal QR stale blocks.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it updates existing owned public GitHub discussion routes so humans and buyer-agents see the current packet-first route instead of stale direct-checkout-first instructions, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: owned GitHub discussions, product GitHub repo evidence docs, GitHub Pages evidence, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target and payment proof remains seller-side only.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Owned Discussions Packet-First Refresh, public GitHub discussions `#4`, `#6`, `#8`, and `#14`-`#17` updated through GraphQL on `2026-05-31T00:18Z`.
+- Full checkpoint section: `2026-05-31 Owned Discussions Packet-First Refresh Checkpoint`.
+- Public discussion body verification evidence: `github_owned_discussions_packet_first_ok discussions=4,6,8,14,15,16,17`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.

@@ -10699,3 +10699,27 @@ Latest adjacent-discovery refresh:
 - Public issue body verification evidence: `github_owned_issue_packet_first_ok issues=1,5,9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Owned Discussions Packet-First Refresh Evidence
+
+- Updated external owned GitHub discussion bodies:
+  - `#4` AI Deal Desk buyer path: https://github.com/trungcodeer/softjunk-lead-kit/discussions/4
+  - `#6` Fastest buyer-agent checkout route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/6
+  - `#8` Roofing buyer-send packet: https://github.com/trungcodeer/softjunk-lead-kit/discussions/8
+  - `#14` Med spa consult route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/14
+  - `#15` Plumbing emergency route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/15
+  - `#16` HVAC urgent route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/16
+  - `#17` Dental new-patient route: https://github.com/trungcodeer/softjunk-lead-kit/discussions/17
+- The discussion bodies now route first to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`, reference current release `v2.29.166`, include the current release tarball/SHA-256 proof command, instruct buyers to copy the after-packet PayPal URL only after packet/note readiness, and preserve the privacy and seller-side verification boundary.
+- GraphQL update metadata: `#4` updated `2026-05-31T00:18:30Z`, `#6` `2026-05-31T00:18:36Z`, `#8` `2026-05-31T00:18:38Z`, `#14` `2026-05-31T00:18:40Z`, `#15` `2026-05-31T00:18:44Z`, `#16` `2026-05-31T00:18:46Z`, and `#17` `2026-05-31T00:18:48Z`.
+- GraphQL body scan returned `github_owned_discussions_packet_first_ok discussions=4,6,8,14,15,16,17`; checked discussion bodies include `sponsor-button-buy.html`, `v2.29.166`, `after-packet PayPal URL`, and `PAYPAL_PAYMENT_VERIFIED=true`, with no match for stale `v2.29.163`, `v2.29.151`, direct-checkout headings, exact-pay-first copy, or Root PayPal QR stale blocks.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Owned Discussions Packet-First Refresh, public GitHub discussions `#4`, `#6`, `#8`, and `#14`-`#17` updated through GraphQL on `2026-05-31T00:18Z`.
+- Full evidence section: `2026-05-31 Owned Discussions Packet-First Refresh Evidence`.
+- Public discussion body verification evidence: `github_owned_discussions_packet_first_ok discussions=4,6,8,14,15,16,17`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
