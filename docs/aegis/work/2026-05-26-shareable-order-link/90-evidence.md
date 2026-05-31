@@ -10679,3 +10679,23 @@ Latest adjacent-discovery refresh:
 - Raw public verification evidence: `raw_github_order_forms_packet_first_ok files=9 sponsorHits=9 releaseHits=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Owned Issue Packet-First Refresh Evidence
+
+- Updated external owned GitHub issue bodies:
+  - `#1` Start here: https://github.com/trungcodeer/softjunk-lead-kit/issues/1
+  - `#5` Agent Close Contract: https://github.com/trungcodeer/softjunk-lead-kit/issues/5
+  - `#9` Digital kit order board: https://github.com/trungcodeer/softjunk-lead-kit/issues/9
+- The issue bodies now route first to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`, reference current release `v2.29.166`, include the current release tarball/SHA-256 proof command, instruct buyers to copy the after-packet PayPal URL only after packet/note readiness, and preserve the privacy and seller-side verification boundary.
+- GitHub API/body scan returned `github_owned_issue_packet_first_ok issues=1,5,9`; checked issue bodies include `sponsor-button-buy.html`, `v2.29.166`, `after-packet PayPal URL`, and `PAYPAL_PAYMENT_VERIFIED=true`, with no match for stale `v2.29.163`, `v2.29.151`, direct-checkout headings, or `Pay exactly 5 USD`.
+- GitHub issue update metadata: issue `#1` updated `2026-05-31T00:12:15Z`, issue `#5` updated `2026-05-31T00:12:19Z`, and issue `#9` updated `2026-05-31T00:12:25Z`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Owned Issue Packet-First Refresh, public GitHub issues `#1`, `#5`, and `#9` updated through GitHub API on `2026-05-31T00:12Z`.
+- Full evidence section: `2026-05-31 Owned Issue Packet-First Refresh Evidence`.
+- Public issue body verification evidence: `github_owned_issue_packet_first_ok issues=1,5,9`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
