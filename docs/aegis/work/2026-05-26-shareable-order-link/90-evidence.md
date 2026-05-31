@@ -10747,3 +10747,26 @@ Latest adjacent-discovery refresh:
 - Public issue body verification evidence: `github_owned_niche_issues_packet_first_ok issues=2,3,7,10,11,12,13`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Repo Metadata and Release Packet-First Refresh Evidence
+
+- Updated external owned GitHub repo metadata:
+  - Repo: https://github.com/trungcodeer/softjunk-lead-kit
+  - Homepage now points to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`.
+  - Description now says `USD 5 packet-first one-lead rescue: inspect the order packet, copy the after-packet PayPal URL, then verify with seller-side PayPal proof.`
+- Updated latest release notes/title:
+  - Release: https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166
+  - Title: `SoftJunk Lead Kit v2.29.166 packet-first checkout`
+  - Target: `b06be515e2d9a89288e1da67a0a4c64ace93921c`
+- The release body now routes first to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`, references current release `v2.29.166`, includes current tarball/SHA-256 URLs, includes the no-clone proof command, instructs buyers to copy the after-packet PayPal URL only after packet/note readiness, and preserves the privacy and seller-side verification boundary.
+- GitHub repo/release scan returned `github_repo_release_packet_first_ok release=v2.29.166 assets=2`; release assets still include `softjunk-lead-kit-0.2.2.tgz` and `softjunk-lead-kit-0.2.2.tgz.sha256`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Repo Metadata and Release Packet-First Refresh, GitHub repo homepage/description and release `v2.29.166` updated through GitHub API on `2026-05-31`.
+- Full evidence section: `2026-05-31 Repo Metadata and Release Packet-First Refresh Evidence`.
+- Public repo/release verification evidence: `github_repo_release_packet_first_ok release=v2.29.166 assets=2`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

@@ -14425,3 +14425,38 @@ Latest completed slice:
 
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 Repo Metadata and Release Packet-First Refresh Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: changed the GitHub repo homepage from direct PayPal to the packet-first Sponsor route, refreshed the repo description to packet-first language, and updated latest release `v2.29.166` notes/title to direct buyers through Sponsor route, one-copy order packet, no-clone proof, after-packet PayPal copy, privacy boundary, and seller-side verification gate.
+- Active slice status: external GitHub repo metadata and release notes were updated through `gh repo edit` and `gh release edit`; no product source files changed before evidence docs.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- GitHub repo/release scan returned `github_repo_release_packet_first_ok release=v2.29.166 assets=2`; repo homepage is `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`, description contains packet-first after-packet PayPal wording, release `v2.29.166` body contains Sponsor route, current release tag, after-packet PayPal URL wording, and `PAYPAL_PAYMENT_VERIFIED=true`, with no stale direct-checkout markers.
+- Repo metadata after update: description `USD 5 packet-first one-lead rescue: inspect the order packet, copy the after-packet PayPal URL, then verify with seller-side PayPal proof.`, homepage `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`.
+- Release metadata after update: `v2.29.166` title `SoftJunk Lead Kit v2.29.166 packet-first checkout`, target `b06be515e2d9a89288e1da67a0a4c64ace93921c`, URL `https://github.com/trungcodeer/softjunk-lead-kit/releases/tag/v2.29.166`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it updates the highest-visibility GitHub repo metadata and latest release route so humans and buyer-agents see the current packet-first route instead of a direct PayPal homepage, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: owned GitHub repo metadata, owned GitHub release notes/assets, product GitHub repo evidence docs, GitHub Pages evidence, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target and payment proof remains seller-side only.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- Repo Metadata and Release Packet-First Refresh, GitHub repo homepage/description and release `v2.29.166` updated through GitHub API on `2026-05-31`.
+- Full checkpoint section: `2026-05-31 Repo Metadata and Release Packet-First Refresh Checkpoint`.
+- Public repo/release verification evidence: `github_repo_release_packet_first_ok release=v2.29.166 assets=2`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
