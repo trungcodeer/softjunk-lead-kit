@@ -10723,3 +10723,27 @@ Latest adjacent-discovery refresh:
 - Public discussion body verification evidence: `github_owned_discussions_packet_first_ok discussions=4,6,8,14,15,16,17`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Owned Niche Issues Packet-First Refresh Evidence
+
+- Updated external owned GitHub issue bodies:
+  - `#2` Free Lead Follow-Up Answers: https://github.com/trungcodeer/softjunk-lead-kit/issues/2
+  - `#3` Need one follow-up text: https://github.com/trungcodeer/softjunk-lead-kit/issues/3
+  - `#7` Roofing buyer-send packet: https://github.com/trungcodeer/softjunk-lead-kit/issues/7
+  - `#10` Plumbing emergency buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/issues/10
+  - `#11` HVAC urgent service buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/issues/11
+  - `#12` Dental new-patient buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/issues/12
+  - `#13` Med spa consult buyer packet: https://github.com/trungcodeer/softjunk-lead-kit/issues/13
+- The issue bodies now route first to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`, reference current release `v2.29.166`, include the current release tarball/SHA-256 proof command, instruct buyers to copy the after-packet PayPal URL only after packet/note readiness, and preserve the privacy and seller-side verification boundary.
+- GitHub issue body scan returned `github_owned_niche_issues_packet_first_ok issues=2,3,7,10,11,12,13`; checked issue bodies include `sponsor-button-buy.html`, `v2.29.166`, `after-packet PayPal URL`, and `PAYPAL_PAYMENT_VERIFIED=true`, with no match for stale `v2.29.163`, `v2.29.151`, direct-checkout headings, exact-pay-first copy, or Root PayPal QR stale blocks.
+- GitHub issue update metadata: issue `#2` updated `2026-05-31T00:24:45Z`, `#3` `2026-05-31T00:24:49Z`, `#7` `2026-05-31T00:24:53Z`, `#10` `2026-05-31T00:24:55Z`, `#11` `2026-05-31T00:24:58Z`, `#12` `2026-05-31T00:25:02Z`, and `#13` `2026-05-31T00:25:05Z`.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: Owned Niche Issues Packet-First Refresh, public GitHub issues `#2`, `#3`, `#7`, and `#10`-`#13` updated through GitHub API on `2026-05-31T00:24Z`.
+- Full evidence section: `2026-05-31 Owned Niche Issues Packet-First Refresh Evidence`.
+- Public issue body verification evidence: `github_owned_niche_issues_packet_first_ok issues=2,3,7,10,11,12,13`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
