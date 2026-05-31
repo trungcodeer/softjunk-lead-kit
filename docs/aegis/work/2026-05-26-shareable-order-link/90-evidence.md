@@ -2335,6 +2335,7 @@ Payment gate:
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
 
+
 ## 2026-05-30 AI Prompt And Answer Packet-First Evidence
 
 - Audited `ai-follow-up-prompt.html` and `lead-follow-up-answers.html` for visible direct PayPal exposure before the one-copy order packet.
@@ -10650,5 +10651,31 @@ Latest adjacent-discovery refresh:
 - Deployment evidence: GitHub Pages run `26698073985` success.
 - Live verification evidence: `live_sponsor_route_packet_first_ok commit=463633e pages=11 raw=3`.
 - Discovery ping evidence: `indexnow_sponsor_route_packet_first_ok status=200 urls=11`.
+- Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 GitHub Order Forms Packet-First Evidence
+
+- Product commit: `ef3d370` (`ef3d370c1d7dbd512f178ee5bc25a2952421f8f0`) on `main`.
+- Changed GitHub-native order/support surfaces: `.github/FUNDING.yml`, `.github/ISSUE_TEMPLATE/clone-cli-order.yml`, `.github/ISSUE_TEMPLATE/config.yml`, `.github/ISSUE_TEMPLATE/custom-sequence-order.yml`, `.github/ISSUE_TEMPLATE/digital-kit-order.yml`, `.github/ISSUE_TEMPLATE/one-lead-rescue-order.yml`, `.github/ISSUE_TEMPLATE/roofing-estimate-rescue-order.yml`, `.github/SUPPORT.md`, and `.github/copilot-instructions.md`.
+- The five order forms now use release `v2.29.166`, route users to `https://trungcodeer.github.io/softjunk-lead-kit/sponsor-button-buy.html`, and ask users to copy the after-packet PayPal URL only after the packet/note are ready.
+- `.github/ISSUE_TEMPLATE/config.yml`, `.github/SUPPORT.md`, `.github/copilot-instructions.md`, and `.github/FUNDING.yml` no longer present the stale direct PayPal custom route as the primary GitHub-native handoff.
+- Local stale wording scan returned `github_native_stale_payment_wording_absent files=9`.
+- YAML validation returned `yaml_parse_ok files=7`.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `216`, size `498293`, unpackedSize `2864319`, integrity `sha512-EQ7KZsMMdsV9k7pDwrrOW+an3l254E0TR5HQ7aeRjzoJ1SHJXs+Wg5F0M0gbfnwUr5B9cyykYA/oJJyJi+eRMA==`, shasum `4179a1f82784b3f1267fc607578475b9626c4190`.
+- Product Pages run `26698365710` completed successfully for commit `ef3d370c1d7dbd512f178ee5bc25a2952421f8f0`.
+- Raw GitHub verification returned `raw_github_order_forms_packet_first_ok files=9 sponsorHits=9 releaseHits=9`; all checked `.github` files include the Sponsor route and `v2.29.166`, and none matched stale direct-pay/order wording.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+- This slice has not verified a PayPal transaction. Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.
+
+## 2026-05-31 Tail Evidence Pointer
+
+- Latest completed slice: GitHub Order Forms Packet-First, product commit `ef3d370` (`ef3d370c1d7dbd512f178ee5bc25a2952421f8f0`).
+- Full evidence section: `2026-05-31 GitHub Order Forms Packet-First Evidence`.
+- Deployment evidence: GitHub Pages run `26698365710` success.
+- Raw public verification evidence: `raw_github_order_forms_packet_first_ok files=9 sponsorHits=9 releaseHits=9`.
 - Payment remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 - Completion still requires seller-side PayPal evidence, verifier success, or trusted seller-side CSV proof.

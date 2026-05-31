@@ -14150,6 +14150,7 @@ Latest completed slice:
 Next step:
 - Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
 
+
 ## 2026-05-31 Broad Copy-Only Payment Handoff Checkpoint
 
 TodoCheckpointDraft:
@@ -14277,6 +14278,47 @@ Latest completed slice:
 - Sponsor Route Packet-First, product commit `463633e` (`463633e95471b49eba673911e891725be70a5cc2`) on `main`.
 - Full checkpoint section: `2026-05-31 Sponsor Route Packet-First Checkpoint`.
 - Deployment evidence: GitHub Pages run `26698073985` success; live verification `live_sponsor_route_packet_first_ok commit=463633e pages=11 raw=3`; IndexNow `indexnow_sponsor_route_packet_first_ok status=200 urls=11`.
+- Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
+
+Next step:
+- Continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal evidence or verifier credentials become available.
+
+## 2026-05-31 GitHub Order Forms Packet-First Checkpoint
+
+TodoCheckpointDraft:
+- Current todo: keep moving toward a real 5 USD PayPal transaction through legitimate owned/package-native/GitHub-native buyer surfaces, without claiming completion before seller-side PayPal proof.
+- Completed this slice: updated GitHub-native order/support surfaces so issue forms, issue chooser links, Funding comments, support docs, and Copilot repo instructions all route users through the packet-first Sponsor page for the after-packet PayPal URL instead of stale direct-pay wording.
+- Active slice status: product commit `ef3d370` (`ef3d370c1d7dbd512f178ee5bc25a2952421f8f0`) is pushed to `main`; GitHub Pages run `26698365710` completed successfully.
+- Next step: continue improving legitimate owned buyer-facing/package-native/GitHub-native discovery, or verify the PayPal payment immediately if seller-side PayPal credentials/evidence becomes available.
+
+Evidence refs:
+- Local stale wording scan returned `github_native_stale_payment_wording_absent files=9` for `.github` order/support/funding files.
+- YAML validation returned `yaml_parse_ok files=7` for `.github/FUNDING.yml` plus issue template YAML files, with `name/body` checked on issue forms.
+- `git diff --check` passed with line-ending normalization warnings only.
+- `npm run cli:smoke` passed and ended with `agent_relay_smoke_ok`.
+- `npm run mcp:smoke` passed and ended with `mcp_agent_relay_smoke_ok`.
+- `npm pack --dry-run --json` passed for `softjunk-lead-kit@0.2.2`, filename `softjunk-lead-kit-0.2.2.tgz`, entryCount `216`, size `498293`, unpackedSize `2864319`, integrity `sha512-EQ7KZsMMdsV9k7pDwrrOW+an3l254E0TR5HQ7aeRjzoJ1SHJXs+Wg5F0M0gbfnwUr5B9cyykYA/oJJyJi+eRMA==`, shasum `4179a1f82784b3f1267fc607578475b9626c4190`.
+- Product Pages run `26698365710` completed successfully for commit `ef3d370c1d7dbd512f178ee5bc25a2952421f8f0`.
+- Raw GitHub verification returned `raw_github_order_forms_packet_first_ok files=9 sponsorHits=9 releaseHits=9`; all checked `.github` files include the Sponsor route and `v2.29.166`, and none matched stale direct-pay/order wording.
+- PayPal verifier returned `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`; command exited non-zero as expected for missing seller-side credentials.
+
+Blocked-on items:
+- Actual PayPal payment still cannot be verified without seller-side PayPal credentials, seller-side evidence, trusted seller-side CSV proof, or `PAYPAL_PAYMENT_VERIFIED=true`.
+
+DriftCheckDraft:
+- Original task intent: earn 5 USD ethically through owned public/package-native/GitHub-native assets and only stop when PayPal evidence exists.
+- Current slice fit: yes, it improves GitHub-native order intake so a fitting buyer sees packet-first instructions and copies the PayPal URL only after packet/note readiness, without scraped outreach, spam, deception, fake payment, private lead exposure, or automated false fulfillment.
+- Compatibility boundary: product GitHub repo, GitHub Pages, GitHub Funding/Sponsor config, GitHub issue forms, support docs, package smoke surfaces, PayPal.Me, seller-side PayPal verification.
+- New owner/branch/fallback: no new fulfillment owner and no new branch; PayPal remains an after-packet copy target and payment proof remains seller-side only.
+- Decision: continue because PayPal proof is still missing.
+
+## 2026-05-31 Tail Resume Pointer
+
+Latest completed slice:
+- GitHub Order Forms Packet-First, product commit `ef3d370` (`ef3d370c1d7dbd512f178ee5bc25a2952421f8f0`) on `main`.
+- Full checkpoint section: `2026-05-31 GitHub Order Forms Packet-First Checkpoint`.
+- Deployment evidence: GitHub Pages run `26698365710` success.
+- Raw public verification evidence: `raw_github_order_forms_packet_first_ok files=9 sponsorHits=9 releaseHits=9`.
 - Payment status remains unverified: `PAYPAL_PAYMENT_VERIFIED=false reason=missing_credentials required=PAYPAL_ACCESS_TOKEN_or_PAYPAL_CLIENT_ID_and_PAYPAL_SECRET`.
 
 Next step:
